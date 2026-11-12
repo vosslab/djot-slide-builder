@@ -1,0 +1,499 @@
+Set #6 Regulation
+BioTech Talking Points
+Nov 4, 2021
+
+Talking Points Guide
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+Internet-Only Based
+Talking Points this Week
+
+#1 Vincent:  What approval and testing is needed to grow a transgenic crop in a field? And from whom? What approval and testing is needed to sell a transgenic crop as food? And from whom? How does the method of creating the transgenic crop come into play (agrobacterium vs. gene guns)?  
+Approval for transgenic crops
+FDA, EPA, USDA
+Toxicity
+Environmental impact 
+Pests and disease
+Safe to consume
+Selling and testing transgenic crops
+“Substantially equivalent”
+Toxicity, allergenicity etc.
+“Generally recognized as safe”
+Federal Food Drug and Cosmetic Act
+(FFDCA 1992)
+ What approval and testing is needed to grow a transgenic crop in a field? And from whom? What approval and testing is needed to sell a transgenic crop as food? And from whom? How does the method of creating the transgenic crop come into play (agrobacterium vs. gene guns)?
+
+#1 Brittany  
+(1) What approval and testing is needed to grow a transgenic crop in a field? And from whom? What approval and testing is needed to sell a transgenic crop as food? And from whom? How does the method of creating the transgenic crop come into play (agrobacterium vs. gene guns)?
+Approval and Testing:
+EPA - regulates biopesticides
+FDA - responsible for regulating safety of GM crops eaten by humans or animals.
+USDA
+
+Agrobacterium -  injects the foreign DNA into the plant, where it is incorporated into the plant genome at random locations.
+Gene Gun - device used to transfect cells with foreign DNA by basically bombarding the target cells with DNA-coated microparticles. 
+Main Difference (Agro and Gene guns): number of copies inserted
+
+https://biosecurity.fas.org/education/dualuse-agriculture/2.-agricultural-biotechnology/us-regulation-of-genetically-engineered-crops.html
+https://royalsociety.org/topics-policy/projects/gm-plants/what-is-gm-and-how-is-it-done/#:~:text=GM%20is%20a%20technology%20that,will%20inherit%20the%20new%20DNA.
+
+
+#2 Clinton 
+Why was the FDA created and what was its original purpose?
+The Bureau of Chemistry- changed to the Food, Drug, and Insecticide Administration in July 1927
+Founded to protect consumers from adulterated and misbranded food and drugs
+
+How has it changed through the years?
+Inherited the responsibility to regulate new product areas and lost others
+Advancements in science
+ Public health crises
+How did it become what it is today?
+The 1906 Pure Food and Drug Act
+
+What does it do today?
+Responsible for protecting the public health
+Ensuring the safety of our nation's food supply, cosmetics, and products that emit radiation
+
+
+
+
+
+
+
+#2 Brittany 
+(2) Why was the FDA created and what was its original purpose? How has it changed through the years? How did it become what it is today? What does it do today?
+Food and Drug Administration - ensure safety of America's food, 				cosmetics, drugs and medical devices.
+Deem products scientifically, medically and nutritionally sound
+Bureau of Chemistry Chief Chemist Harvey Wiley: prohibit 						adulterated and misbranded food and drugs
+Now lead by medical doctors
+
+https://www.smithsonianmag.com/science-nature/origins-FDA-what-does-it-do-180962054/
+https://www.fda.gov/about-fda/fda-history
+
+
+#3 Omar 
+Human Trials conducted on
+Drugs, vaccines, 
+medical devices, surgeries,
+even new diets 
+
+
+Medical Devices: Some may not need Clinical Trials, 
+--Instead of Phase 1-4, Pilot, Pivotal, and Post approval Studies are used
+--They are much smaller, only containing participants of the afflicted group
+
+Many Clinical trials fail due to efficacy, safety, and financial costs. 
+
+https://www.imarcresearch.com/blog/medical-device-clinical-trials-101
+https://premier-research.com/perspectivesmedical-devices-vs-drug-trials/
+
+
+#3 Vincent: What types of products go through clinical trials? How do medical devices differ from drugs in clinical trials? How does a drug fail a clinical trial? How does a drug pass a clinical trial? Are there any faster methods for getting a drug approved? How does a drug get fast-tracked through the process? 
+ 
+Expediting drug approval
+Fast track
+Accelerated approval
+Priority Review
+Breakthrough therapy
+Emergency use authorization*
+How to get fast-tracked?
+Serious condition or unmet medical need
+Submit request
+Provide documents
+What does the product do?
+What’s the use?
+60 day approval window
+
+
+What types of products go through clinical trials? How do medical devices differ from drugs in clinical trials? How does a drug fail a clinical trial? How does a drug pass a clinical trial? Are there any faster methods for getting a drug approved? How does a drug get fast-tracked through the process?
+https://www.clinicaltrialsarena.com/news/outlining-the-key-differences-between-medical-device-and-drug-trials-to-determine-how-device-trials-can-best-be-run-effectively-4644599-2/
+
+#4 Dominique 
+How many clinical trial phases are there? What is tested for in each phase? What is the likelihood of succeeding in each phase? How many subjects are tested in each clinical trial phase?
+How many clinical trial phases are there? What is tested for in each phase? What is the likelihood of succeeding in each phase? How many subjects are tested in each clinical trial phase?
+Sources
+https://www.centerwatch.com/clinical-trials/overview
+https://www.mdanderson.org/patients-family/diagnosis-treatment/clinical-trials/phases-of-clinical-trials.html
+
+#4 Ashley  
+Participants
+Phase 1: 20 - 100 
+Phase 2: ~300 
+Phase 3: 300 - 3,000 
+Phase 4: ~3,000 
+Selection Criteria
+Optimal efficacy
+Prior medical history
+Cost & Duration
+Phase 1: ~ $4 million over several months
+Phase 2: ~$13 million over months to years
+Phase 3: ~$20 million years to decades
+Phase 4: ~ $30 million ongoing surveillance
+What type of participants are tested in each phase? How are subject chosen? What are the costs for each phase? How long does each phase last?
+
+#5 Segun 
+
+Generic drugs
+Risk of sensitivity or intolerance
+
+Exploitation
+Increasing sales for benefit 
+Advertising equal effectiveness similar to name brand drugs
+Development strategies
+
+
+
+#5 Ashley 
+Generic Drug Production
+Same active ingredient and strength 
+uses the same dosage form and route of administration
+All Generics are NOT equal
+Risk of potency
+Inactive fillers/impurities
+Release mechanisms
+Non-US manufacturing
+Difficult to perform inspections
+Falsified test data
+Greed
+Cheap does not mean quality.
+(5) Generic Drugs. What kind of threats to our health are there from the generic drugs we take every day? How does corporate greed and eagerness to exploit the weak for profit come into play? How and why do drug manufacturing company produce falsified data? What else can you say about generic drugs? 
+
+#6 Leila 
+Law requires dietary supplement to be labeled as
+Supplements
+FDA approval not required
+Not considered medicine/drug
+Not intend to:
+Treat
+Diagnose
+Cure
+Alleviate effects of diseases
+FDA’s role begins after product enters market place
+
+(6) How are supplements, such as vitamins, regulated? Why are supplements regulated differently than pharmaceuticals? What does it mean for a supplement to be “drug free”? 
+
+What does mean to “boost” or “support” your immune system? Can vitamin C prevent the common cold? What role did Linus Pauling play in the myth of vitamin C? What can you do if you want to buy high quality vitamins where you can trust its content and dosage?
+
+
+#6  Shivam
+
+Supplements are regulated by the FDA
+As food, not as drug
+Controversy - many supplements have ingredients that have
+Strong effects on human body
+Can conflict if taken with other medicine
+Supplements are not considered as drugs under law
+They do not get regulated as strict as medical drugs
+Drug Free - ensures product is free of drug contamination
+Issued by the BSCG Certified Drug Free Program
+Will ensure that supplement will not lead to positive drug test for athletes and workers
+Boost/Support - improve the function of immune system
+Vitamin C - Overall, Vitamin C does not help prevent or treat the cold
+Linus Pauling - claimed that Vitamin C prevents and treats the common cold
+Was correct from trials that were published up till then
+However, was very over optimistic and recent, more accurate trials disagree
+Do research on company, check ingredients list for fillers, preservatives, and other toxins, check will health care professional, third party testing, etc. 
+(6) How are supplements, such as vitamins, regulated? Why are supplements regulated differently than pharmaceuticals? What does it mean for a supplement to be “drug free”? What does mean to “boost” or “support” your immune system? Can vitamin C prevent the common cold? What role did Linus Pauling play in the myth of vitamin C? What can you do if you want to buy high quality vitamins where you can trust its content and dosage?
+Overall, experts have found little to no benefit from vitamin C for preventing or treating the common cold
+
+
+
+#7 Giovanni
+Per and Polyfluoroalkyl Substances (PFAS)
+“Forever Chemicals”
+EPA 
+National testing strategy
+EPA health advisory levels at 70 ppt
+
+#7 Dominique: PFAS
+Per- and polyfluoralkyl substances
+Never break down; remain present in human body
+EPA using multiple methods: Strategic Roadmap
+Research, Restrict, Remediate
+Life cycle
+Hold polluters accountable
+Science-based decision making
+Protect disadvantage communities
+(7) What are “forever chemicals” or PFAS? What does PFAS stand for? What product are they used in? Why are they called “forever” chemicals? What is the EPA doing about them? Which PFAS are banned and for what reason? How much PFAS does the average American have in their bodies?
+Dark Waters (2019) is a great movie on this subject.
+Sources:
+https://www.fda.gov/food/chemical-contaminants-food/and-polyfluoroalkyl-substances-pfas#:~:text=Per%2D%20and%20polyfluoroalkyl%20substances%20(PFAS)%20are%20a%20diverse%20group,oil%2C%20water%2C%20and%20heat.
+https://www.epa.gov/system/files/documents/2021-10/pfas-roadmap_final-508.pdf
+https://www.natlawreview.com/article/fda-ban-pfas-food-packaging-brought-to-forefront
+http://www.floridahealth.gov/environmental-health/hazardous-waste-sites/contaminant-facts/_documents/doh-pfas-faq-update-03052020.pdf
+
+
+#8 Greg
+(8) What is a patent? How long does a patent last? What are its advantages in scientific studies and industries? What is copyright? How long does copyright last? What is the criteria to be patentable? Explain “non-obvious” What is the difference between discovery and invention? Provide examples.
+
+#8 Segun 
+
+A patent 
+An exclusive right granted by the government
+A patent’s anatomy includes an abstract, background information, summary of the invention
+
+Patent time frame
+Filling date
+Kind of patent
+
+Advantages in science
+Prominent role in the entire technology life cycle
+Source of revenue 
+
+#9 Omar
+(9) What is the difference between "First to File" vs. "First to Invent" patent systems? Which do you prefer? How does “First Inventor to File” work? What is prior art and publication? How has prior art changed since 2013?  How can a patent be invalidated? What do you think about these laws? How would you change them?
+The first to FIle system depends on the time FIled, First to Invent requires that one can provide proof of invention and proof of filing for a patent. 
+Prior art refers to public knowledge at a time which might pertain to a patent. The change to this in 2013 includes prior art around the world 
+First to File, a patent is given to one who files for the patent first, which the US switched to in 2013 to align with international law. 
+The first to invent system was used previously and a patent was given to those who could prove that they had invented the product and were working to receive a patent were given the patent. 
+Prior art and Publication refers to any public knowledge at a time relevant to a patent filing. For instance if one wants to file a patent on something which was public knowledge, that patent will be invalidated. 
+
+#10 Giovanni
+Patent Rights
+If a researcher patented a particular apparatus, could she own all the information obtained from the equipment?
+Research Exception 
+Madey vs. Duke
+Right to Repair
+Fix by self or service provider of choice
+Apple 
+Attempts to block act
+John Deere 
+Rights to $800,000 tractor software
+
+
+
+
+#10 Clinton
+If a researcher patented a particular apparatus, could she own all the information obtained from the equipment? Such as mass spec. data or RT-qPCR. Why or why not? What laws govern this behavior?
+According to the US Patent Laws
+ 20 years from the date of filing 
+
+ 
+ What is the right to repair? What is “right to repair”? The idea behind “right to repair” is in the name
+The Right to Repair Act
+
+What do you think about these laws? How would you change them?
+Company makes it difficult to repair its products 
+Often charges close to new product
+Recommendation: A lifetime insurance policy plan
+
+
+US original patent law
+
+#11 Copyleft vs. Public Domain - Jamie
+Copyleft
+Free and open source software 
+Does not allow relicensing or sublicensing
+Enforces free shareability of software by not allowing license changes
+Public Domain
+No ownership to grant permission for access
+Software can be modified, distributed, or sold without attribution by anyone
+“License-free” software
+
+#11 Ethan?
+Public Domain - content not protected by copyright law
+Copy-left -  right to freely distribute and modify intellectual property with the requirement that the same rights be preserved in derivative works created from that property
+GNU Public license (GPL) - right to copy, modify and redistribute
+Same rights preserved in all derivative works
+Creative Commons License (CC) -  right to copy, modify and redistribute
+Conditions of license
+Ex. - youtube
+Wikipedia both GPL and CC licenses
+https://www.makeuseof.com/tag/copyleft-copyright-key-concepts/ 
+https://en.wikipedia.org/wiki/Copyleft 
+https://www.diffen.com/difference/Creative_Commons_License_vs_GPL 
+This means that the content can be used freely without permission or some sort of compensation from the copyright owner
+Which basically means that they in part have the same freedom as a public domain, but with one crucial clause that must allow for that work to be modified and distributed similarly by other users, they call this the “share-alike clause”
+With the creative commons license on youtube, you’re giving the right for the youtube community to reuse and edit that video
+
+#12 Shivam
+
+Plant Variety Protection Act of 1970 - gives breeders up to 25 years of exclusive control over new, distinct, uniform, and stable sexually reproduced plant varieties
+The act applies to multiple plant varieties rather then a single patent on a single species of plant. 
+PVP ACT - breeders will have exclusive rights to produce, sell, market, distribute, import the protected variety of plants
+Farmer’s Right - 
+A farmer who evolved/devloped a new variety is able to apply for registration as a breeder, 
+eligible for recognition and reward. 
+(12) Describe the “Plant Variety Protection Act of 1970”. How does it differ from a patent? What is the difference between a Plant Breeder’s Right and a Farmer’s Right? Explain the terminator gene or suicide seeds.
+The PVPA should not be confused with plant patents, which are limited to asexually reproduced plants (not including tuber propagated plants).
+
+
+
+#13 Ethan
+Association for Molecular Pathology v. Myriad Genetics
+Is a human gene patentable?
+Myriad Genetics
+Patent over BRCA1 and BRCA2 genes
+Control over diagnostic testing
+Control over scientific research
+Argument: Once a gene is isolated, distinguishable from other genes, it can be patented
+Ruled that human genes are not patentable
+
+https://www.ted.com/talks/tania_simoncelli_should_you_be_able_to_patent_a_human_gene?language=en 
+(13) Discuss the case “Association for Molecular Pathology v. Myriad Genetics”. What was the impact of the ruling on Biotechnology? What ways are currently used to patent genes? 
+
+#13 Association for Molecular Pathology vs. Myriad Genetics- Jamie
+Patents claimed by Myriad Genetics can give the right to isolate BRCA1 and BRCA2 genes
+Obtain exclusive right to create BRCA cDNA
+Only company to administer the BRCA1/2 test
+Types of Patents:
+Diagnostic 
+Functional Use
+Process
+Composition of matter
+(13) Discuss the case “Association for Molecular Pathology v. Myriad Genetics”. What was the impact of the ruling on Biotechnology? What ways are currently used to patent genes?
+
+
+#14 Julia
+Examples of biotech patents:
+Insulin
+Cancer and autoimmune drugs
+Pasteurization (1873 Louis Pasteur!) 
+Biological materials
+CRISPR
+mRNA vaccine technology
+Biotech patents = Utility patents
+
+New, useful, applicable to the industry
+
+Involve an inventive step
+
+Not merely a creation of nature
+Manipulate, change create usefulness
+
+Before anyone else!
+Importance?
+
+Allow you to commercialize the product
+
+Key for investors
+(14) What are some examples of patents in biotechnology? What products can be patented? What methods can be patented? What can be patented in biotechnology? Instrumentation, bioinformatics, organisms, microbial strains, crops, food, proteins, nucleic acids, organic molecules (vitamins and drugs), genes?
+
+#14 Riddhi
+What are some examples of patents in biotechnology? What products can be patented? What methods can be patented? What can be patented in biotechnology? Instrumentation, bioinformatics, organisms, microbial strains, crops, food, proteins, nucleic acids, organic molecules (vitamins and drugs), genes?
+Patented methods: Medical 
+Blood transfusion
+DNA fingerprinting
+Paternity tests
+Anti-cancer drugs
+Herceptin
+Avastin 
+Patents in Biotech
+Agriculture
+Pharmaceutical 
+Industrial 
+Herceptin - breast cancer 
+Avastin - colon cancer
+
+Industrial patents: in biotech
+AI - Hospital services: making appointments, lab services/results, Health Check on Apple (iWatch, iPhone)
+
+
+#15 Riddhi
+What are some really silly, dumb, or goofy things that have been patented over the year? What are patent trolls? 
+Silly, goofy patents
+Watch for Life expectancy
+1991. “In Time’’ movie
+Estimated years, months
+‘Wearable’ pet display
+1999.
+Belt-vest that allows you to carry hamster 
+<- Patent Troll
+Patent trolls: a company uses patent infringements to win court cases. Uses legal tactics to win case
+
+#15 Julia
+Lawsuits Involving Patents
+Myriad Genetics
+Genes linked to breast cancer
+Supreme court ruled “Naturally occurring DNA segment is a product of nature and can not be patented”
+Precedent
+
+Apple vs Samsung
+7 years
+Apple sued Samsung 2011
+Copied product design
+Supreme court
+No products came off the market 
+Apple won but did not gain competitive advantage
+Waste of time? Worth it?
+
+Case set the legal precedent that even if a company is shown to infringe on some patents, the courts might not block the product if the patents at issue play a small role in the device.
+Important for apple to protect its design
+Apple ignited the smartphone revolution with iPhone and it is a fact that Samsung blatantly copied our design,”
+
+#16 Leila
+NDA: Legally binding contract  
+Common for businesses 
+Confidential information:
+General description
+Marketing information
+Sale strategies
+Manufacturing arrangement
+Specific description
+will expressly identify the information provided/exchanged and considered confidential 
+Marking
+Only informations marked confidential 
+Things to watchout for:
+Length
+Exception
+Penalties or consequences to violation
+Non-compete clause: Employee agrees not to work with a rival company 
+(16) What is a confidentiality agreement or nondisclosure agreement (NDA)? When would you need one? How does one define “Confidential Information”? What are some things to watch out for in an NDA? What is a non-compete clause? 
+
+What is a IP assignment clause? What types of durations and obligations are in an NDA? What is a perpetual clause or obligation? What is an attorney's fee provision? How would you change them?
+
+
+#16 Greg
+(16) What is a confidentiality agreement or nondisclosure agreement (NDA)? When would you need one? How does one define “Confidential Information”? What are some things to watch out for in an NDA? What is a non-compete clause? What is a IP assignment clause? What types of durations and obligations are in an NDA? What is a perpetual clause or obligation? What is an attorney's fee provision? How would you change them?
+
+
+The End

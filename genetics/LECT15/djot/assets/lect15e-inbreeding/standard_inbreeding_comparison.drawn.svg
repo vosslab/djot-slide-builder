@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1234" viewBox="0 0 1320 1234" role="img" aria-labelledby="title desc">
+<title id="title">Standard inbreeding comparisons</title><desc id="desc">Five source pedigree diagrams with full siblings, half siblings, double first cousins, first cousins and uncle-niece relationships and their printed inbreeding coefficients.</desc>
+<rect width="1320" height="1234" fill="white"/>
+<g id="panel-full"><g id="edges-full" stroke="#293638" stroke-width="5" fill="none">
+<path id="full-a-c" d="M 95.000000 161.000000 L 95.000000 244.000000"/>
+<path id="full-a-d" d="M 116.532430 152.301445 L 213.467570 252.698555"/>
+<path id="full-b-c" d="M 205.068966 161.000000 L 124.931034 244.000000"/>
+<path id="full-b-d" d="M 235.000000 161.000000 L 235.000000 244.000000"/>
+<path id="full-c-e" d="M 119.111111 306.000000 L 151.437500 347.562500"/>
+<path id="full-d-e" d="M 215.967841 299.469919 L 178.562500 347.562500"/>
+</g><g id="symbols-full" fill="#5b87ef" stroke="#293638" stroke-width="5">
+<circle id="full-a" cx="95" cy="130" r="31"/>
+<rect id="full-b" x="204" y="99" width="62" height="62"/>
+<rect id="full-c" x="64" y="244" width="62" height="62"/>
+<circle id="full-d" cx="235" cy="275" r="31"/>
+<polygon id="full-e" points="165,334 196,365 165,396 134,365"/>
+</g><g font-family="Atkinson Hyperlegible Next" font-size="41" font-weight="650" text-anchor="middle" fill="#202b2e"><text x="165" y="50">Full siblings</text><text x="165" y="435">F = 1/4</text></g></g>
+<g id="panel-half"><g id="edges-half" stroke="#293638" stroke-width="5" fill="none">
+<path id="half-a-d" d="M 367.680733 158.287789 L 406.103448 244.000000"/>
+<path id="half-b-d" d="M 471.103448 161.000000 L 433.896552 244.000000"/>
+<path id="half-b-e" d="M 498.896552 161.000000 L 537.319267 246.712211"/>
+<path id="half-c-e" d="M 602.319267 158.287789 L 562.680733 246.712211"/>
+<path id="half-d-f" d="M 442.388889 306.000000 L 472.000000 347.000000"/>
+<path id="half-e-f" d="M 531.849793 300.131056 L 498.000000 347.000000"/>
+</g><g id="symbols-half" fill="#5b87ef" stroke="#293638" stroke-width="5">
+<circle id="half-a" cx="355" cy="130" r="31"/>
+<rect id="half-b" x="454" y="99" width="62" height="62"/>
+<circle id="half-c" cx="615" cy="130" r="31"/>
+<rect id="half-d" x="389" y="244" width="62" height="62"/>
+<circle id="half-e" cx="550" cy="275" r="31"/>
+<polygon id="half-f" points="485,334 516,365 485,396 454,365"/>
+</g><g font-family="Atkinson Hyperlegible Next" font-size="41" font-weight="650" text-anchor="middle" fill="#202b2e"><text x="485" y="50">Half siblings</text><text x="485" y="435">F = 1/8</text></g></g>
+<g id="panel-double"><g id="edges-double" stroke="#293638" stroke-width="5" fill="none">
+<path id="double-a-e" d="M 780.000000 161.000000 L 780.000000 229.000000"/>
+<path id="double-a-f" d="M 811.000000 158.785714 L 897.283402 238.906016"/>
+<path id="double-b-e" d="M 897.283402 151.093984 L 811.000000 231.214286"/>
+<path id="double-b-f" d="M 920.000000 161.000000 L 920.000000 229.000000"/>
+<path id="double-c-g" d="M 1070.000000 161.000000 L 1070.000000 229.000000"/>
+<path id="double-c-h" d="M 1101.000000 158.785714 L 1179.000000 231.214286"/>
+<path id="double-d-g" d="M 1187.283402 151.093984 L 1092.716598 238.906016"/>
+<path id="double-d-h" d="M 1210.000000 161.000000 L 1210.000000 229.000000"/>
+<path id="double-e-i" d="M 808.933333 291.000000 L 898.848134 387.337287"/>
+<path id="double-g-i" d="M 1048.079690 281.920310 L 941.920310 388.079690"/>
+<path id="double-f-j" d="M 941.920310 281.920310 L 1039.000000 379.000000"/>
+<path id="double-h-j" d="M 1181.066667 291.000000 L 1098.933333 379.000000"/>
+<path id="double-i-k" d="M 938.600000 434.800000 L 981.714286 492.285714"/>
+<path id="double-j-k" d="M 1046.750000 441.000000 L 1008.285714 492.285714"/>
+</g><g id="symbols-double" fill="#5b87ef" stroke="#293638" stroke-width="5">
+<rect id="double-a" x="749" y="99" width="62" height="62"/>
+<circle id="double-b" cx="920" cy="130" r="31"/>
+<rect id="double-c" x="1039" y="99" width="62" height="62"/>
+<circle id="double-d" cx="1210" cy="130" r="31"/>
+<rect id="double-e" x="749" y="229" width="62" height="62"/>
+<circle id="double-f" cx="920" cy="260" r="31"/>
+<circle id="double-g" cx="1070" cy="260" r="31"/>
+<rect id="double-h" x="1179" y="229" width="62" height="62"/>
+<circle id="double-i" cx="920" cy="410" r="31"/>
+<rect id="double-j" x="1039" y="379" width="62" height="62"/>
+<polygon id="double-k" points="995,479 1026,510 995,541 964,510"/>
+</g><g font-family="Atkinson Hyperlegible Next" font-size="41" font-weight="650" text-anchor="middle" fill="#202b2e"><text x="995" y="50">Double first cousins</text><text x="995" y="595">F = 1/8</text></g></g>
+<g id="panel-first"><g id="edges-first" stroke="#293638" stroke-width="5" fill="none">
+<path id="first-a-d" d="M 320.000000 786.000000 L 320.000000 859.000000"/>
+<path id="first-a-e" d="M 351.000000 784.892857 L 437.684827 868.481797"/>
+<path id="first-b-d" d="M 437.684827 776.518203 L 351.000000 860.107143"/>
+<path id="first-b-e" d="M 460.000000 786.000000 L 460.000000 859.000000"/>
+<path id="first-c-g" d="M 189.638864 917.325879 L 233.392857 999.000000"/>
+<path id="first-d-g" d="M 304.500000 921.000000 L 265.500000 999.000000"/>
+<path id="first-e-h" d="M 474.638864 917.325879 L 520.361136 1002.674121"/>
+<path id="first-f-h" d="M 589.500000 921.000000 L 548.863621 1002.272757"/>
+<path id="first-g-i" d="M 281.000000 1049.928571 L 371.130435 1107.869565"/>
+<path id="first-h-i" d="M 508.661155 1046.348249 L 409.127660 1108.127660"/>
+</g><g id="symbols-first" fill="#5b87ef" stroke="#293638" stroke-width="5">
+<rect id="first-a" x="289" y="724" width="62" height="62"/>
+<circle id="first-b" cx="460" cy="755" r="31"/>
+<circle id="first-c" cx="175" cy="890" r="31"/>
+<rect id="first-d" x="289" y="859" width="62" height="62"/>
+<circle id="first-e" cx="460" cy="890" r="31"/>
+<rect id="first-f" x="574" y="859" width="62" height="62"/>
+<rect id="first-g" x="219" y="999" width="62" height="62"/>
+<circle id="first-h" cx="535" cy="1030" r="31"/>
+<polygon id="first-i" points="390,1089 421,1120 390,1151 359,1120"/>
+</g><g font-family="Atkinson Hyperlegible Next" font-size="41" font-weight="650" text-anchor="middle" fill="#202b2e"><text x="390" y="667">First cousins</text><text x="390" y="1195">F = 1/16</text></g></g>
+<g id="panel-uncle"><g id="edges-uncle" stroke="#293638" stroke-width="5" fill="none">
+<path id="uncle-a-c" d="M 850.000000 786.000000 L 850.000000 859.000000"/>
+<path id="uncle-a-d" d="M 881.000000 784.892857 L 967.684827 868.481797"/>
+<path id="uncle-b-c" d="M 967.684827 776.518203 L 881.000000 860.107143"/>
+<path id="uncle-b-d" d="M 990.000000 786.000000 L 990.000000 859.000000"/>
+<path id="uncle-d-f" d="M 1003.863621 917.727243 L 1046.136379 1002.272757"/>
+<path id="uncle-e-f" d="M 1114.500000 921.000000 L 1073.863621 1002.272757"/>
+<path id="uncle-c-g" d="M 860.782609 921.000000 L 922.000000 1097.000000"/>
+<path id="uncle-f-g" d="M 1034.512042 1047.645509 L 948.318182 1107.318182"/>
+</g><g id="symbols-uncle" fill="#5b87ef" stroke="#293638" stroke-width="5">
+<rect id="uncle-a" x="819" y="724" width="62" height="62"/>
+<circle id="uncle-b" cx="990" cy="755" r="31"/>
+<rect id="uncle-c" x="819" y="859" width="62" height="62"/>
+<circle id="uncle-d" cx="990" cy="890" r="31"/>
+<rect id="uncle-e" x="1099" y="859" width="62" height="62"/>
+<circle id="uncle-f" cx="1060" cy="1030" r="31"/>
+<polygon id="uncle-g" points="930,1089 961,1120 930,1151 899,1120"/>
+</g><g font-family="Atkinson Hyperlegible Next" font-size="41" font-weight="650" text-anchor="middle" fill="#202b2e"><text x="1000" y="667">Uncle-niece</text><text x="1000" y="1195">F = 1/8</text></g></g>
+</svg>

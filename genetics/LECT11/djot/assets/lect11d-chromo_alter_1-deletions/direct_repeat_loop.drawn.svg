@@ -1,1 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc"><title id="title">direct repeat loop</title><desc id="desc">Source image_008. Direct repeat orientation; intervening segment excised as acentric circle. One centromere remains with linear chromosome. Original schematic; not to scale. LECT11 source figure.</desc><rect width="1000" height="630" fill="white"/><g font-family="Arial, sans-serif"><text x="35" y="40" font-size="29" fill="#242334" text-anchor="start">Direct-repeat recombination</text><path d="M75,105 L830,105" stroke="#076DAD" stroke-width="9" fill="none"/><circle cx="105" cy="105" r="12" fill="#34344A"/><path d="M290,93 h40 l16,12 l-16,12 h-40 z" fill="#A719DB"/><path d="M600,93 h40 l16,12 l-16,12 h-40 z" fill="#A719DB"/><path d="M346,105 L600,105" stroke="#935D00" stroke-width="10" fill="none"/><text x="405" y="85" font-size="22" fill="#242334" text-anchor="start">Intervening DNA</text><text x="75" y="150" font-size="22" fill="#242334" text-anchor="start">Direct repeats point in the same direction.</text><path d="M480,170 v35 m-10,-10 l10,10 l10,-10" fill="none" stroke="#34344A" stroke-width="3"/><path d="M80 275 H420 C620 115 690 400 470 400 C280 400 300 265 420 275 H850" stroke="#076DAD" stroke-width="9" fill="none"/><path d="M420 275 C620 115 690 400 470 400 C280 400 300 265 420 275" stroke="#935D00" stroke-width="9" fill="none"/><path d="M400,255 L440,295" stroke="#A719DB" stroke-width="9" fill="none"/><path d="M440,255 L400,295" stroke="#A719DB" stroke-width="9" fill="none"/><circle cx="105" cy="275" r="12" fill="#34344A"/><path d="M270,425 v35 m-10,-10 l10,10 l10,-10" fill="none" stroke="#34344A" stroke-width="3"/><path d="M700,425 v35 m-10,-10 l10,10 l10,-10" fill="none" stroke="#34344A" stroke-width="3"/><path d="M80,510 L430,510" stroke="#076DAD" stroke-width="9" fill="none"/><circle cx="105" cy="510" r="12" fill="#34344A"/><path d="M250 498 h40 l16 12 l-16 12 h-40z" fill="#A719DB"/><circle cx="720" cy="515" r="45" fill="none" stroke="#935D00" stroke-width="9"/><path d="M680 492 L710 475 L708 492 L689 509z" fill="#A719DB"/><text x="80" y="570" font-size="24" fill="#242334" text-anchor="start">Deletion chromosome</text><text x="590" y="590" font-size="24" fill="#242334" text-anchor="start">Acentric ring (lost)</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title description">
+<title id="title">Direct-repeat recombination</title>
+<desc id="description">Two parallel ribbons contain directly oriented purple and blue repeat copies enclosing A B ... Y Z. The ribbons fold together, bringing the purple repeat above the blue repeat at one black exchange X. Both open paths pass through A B ... Y Z; the outgoing flanks cross over the right bend without joining it. Recombination produces paired deletion ribbons with a purple-then-blue junction and a separate paired ring retaining A B ... Y Z with a blue-then-purple junction across its top. The source does not identify the molecular or replication state of the paired ribbons. Continuation chevrons are not chromosome termini; no centromere position or length scale is asserted.</desc>
+<g font-family="Atkinson Hyperlegible Next" fill="#20252b" font-size="24">
+
+<g id="initial">
+<text id="repeat-callout-1" x="330" y="36" font-size="25" text-anchor="middle">Repeated DNA sequences with</text>
+<text id="repeat-callout-2" x="330" y="65" font-size="25" text-anchor="middle">same (direct) orientation.</text>
+<path id="repeat-leader-purple" d="M205 77 L180 103" fill="none" stroke="#424a54" stroke-width="1.8"/>
+<path id="repeat-leader-blue" d="M460 77 L485 103" fill="none" stroke="#424a54" stroke-width="1.8"/>
+<g id="initial-1">
+<path id="initial-1-left" d="M40 103 H145 V131 H40 L52 117 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-1-purple" d="M145 103 H215 V131 H145 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-1-intervening" d="M215 103 H450 V131 H215 Z" fill="#d8b98e" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-1-blue" d="M450 103 H520 V131 H450 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-1-right" d="M520 103 H610 L622 117 L610 131 H520 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<text id="initial-1-gene-A" x="239" y="125" font-size="23" text-anchor="middle" font-style="italic">A</text>
+<text id="initial-1-gene-B" x="270" y="125" font-size="23" text-anchor="middle" font-style="italic">B</text>
+<text id="initial-1-gene-dotdotdot" x="330" y="125" font-size="23" text-anchor="middle">...</text>
+<text id="initial-1-gene-Y" x="394" y="125" font-size="23" text-anchor="middle" font-style="italic">Y</text>
+<text id="initial-1-gene-Z" x="426" y="125" font-size="23" text-anchor="middle" font-style="italic">Z</text>
+</g>
+<g id="initial-2">
+<path id="initial-2-left" d="M40 138 H145 V166 H40 L28 152 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-2-purple" d="M145 138 H215 V166 H145 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-2-intervening" d="M215 138 H450 V166 H215 Z" fill="#d8b98e" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-2-blue" d="M450 138 H520 V166 H450 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="initial-2-right" d="M520 138 H610 L598 152 L610 166 H520 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<text id="initial-2-gene-A" x="239" y="160" font-size="23" text-anchor="middle" font-style="italic">A</text>
+<text id="initial-2-gene-B" x="270" y="160" font-size="23" text-anchor="middle" font-style="italic">B</text>
+<text id="initial-2-gene-dotdotdot" x="330" y="160" font-size="23" text-anchor="middle">...</text>
+<text id="initial-2-gene-Y" x="394" y="160" font-size="23" text-anchor="middle" font-style="italic">Y</text>
+<text id="initial-2-gene-Z" x="426" y="160" font-size="23" text-anchor="middle" font-style="italic">Z</text>
+</g>
+</g>
+<path id="initial-to-folded" d="M300 186 L300 232 M307.0 217.0 L300 232 L293.0 217.0" fill="none" stroke="#30363d" stroke-width="2.7"/>
+<g id="folded">
+<path id="folded-1-outline" d="M310 278 H330 C400 278 450 325 450 420 C450 510 390 548 300 548 C200 548 175 520 175 475 C175 420 200 385 240 385" fill="none" stroke="#424a54" stroke-width="30.8"/>
+<path id="folded-1-intervening" d="M310 278 H330 C400 278 450 325 450 420 C450 510 390 548 300 548 C200 548 175 520 175 475 C175 420 200 385 240 385" fill="none" stroke="#d8b98e" stroke-width="28"/>
+<path id="folded-2-outline" d="M310 313 H330 C365 313 415 340 415 420 C415 485 375 513 300 513 C230 513 210 500 210 475 C210 445 225 420 240 420" fill="none" stroke="#424a54" stroke-width="30.8"/>
+<path id="folded-2-intervening" d="M310 313 H330 C365 313 415 340 415 420 C415 485 375 513 300 513 C230 513 210 500 210 475 C210 445 225 420 240 420" fill="none" stroke="#d8b98e" stroke-width="28"/>
+<path id="folded-1-left" d="M65 264 H240 V292 H65 L77 278 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-1-purple" d="M240 264 H310 V292 H240 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-2-left" d="M65 299 H240 V327 H65 L53 313 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-2-purple" d="M240 299 H310 V327 H240 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="overpass-clearance" d="M280 367 H510 V438 H280 Z" fill="white" stroke="none" stroke-width="0"/>
+<path id="folded-1-blue" d="M240 371 H310 V399 H240 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-1-right" d="M310 371 H500 L512 385 L500 399 H310 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-2-blue" d="M240 406 H310 V434 H240 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="folded-2-right" d="M310 406 H500 L488 420 L500 434 H310 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="exchange-X" d="M264 338 L285 359 M285 338 L264 359" fill="none" stroke="#000000" stroke-width="3"/>
+<text id="folded-1-gene-A" x="359" y="289" font-size="22" text-anchor="middle" font-style="italic">A</text>
+<text id="folded-1-gene-B" x="421" y="327" font-size="22" text-anchor="middle" font-style="italic">B</text>
+<text id="folded-1-gene-dotdotdot" x="300" y="555" font-size="22" text-anchor="middle">...</text>
+<text id="folded-1-gene-Y" x="210" y="542" font-size="22" text-anchor="middle" font-style="italic">Y</text>
+<text id="folded-1-gene-Z" x="176" y="484" font-size="22" text-anchor="middle" font-style="italic">Z</text>
+<text id="folded-2-gene-A" x="340" y="322" font-size="22" text-anchor="middle" font-style="italic">A</text>
+<text id="folded-2-gene-B" x="389" y="348" font-size="22" text-anchor="middle" font-style="italic">B</text>
+<text id="folded-2-gene-dotdotdot" x="300" y="520" font-size="22" text-anchor="middle">...</text>
+<text id="folded-2-gene-Y" x="238" y="515" font-size="22" text-anchor="middle" font-style="italic">Y</text>
+<text id="folded-2-gene-Z" x="211" y="479" font-size="22" text-anchor="middle" font-style="italic">Z</text>
+</g>
+<path id="folded-to-deletion" d="M545 338 L650 252 M633.9600936697965 256.08918144844415 L650 252 L642.8310386498448 266.91998636594485" fill="none" stroke="#30363d" stroke-width="2.7"/>
+<path id="folded-to-ring" d="M545 484 L658 461 M641.9052287869613 457.13239872790126 L658 461 L644.6975328443957 470.8511099666013" fill="none" stroke="#30363d" stroke-width="2.7"/>
+<g id="deletion">
+<path id="deletion-1-left" d="M690 206 H780 V234 H690 L702 220 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-1-purple" d="M780 206 H810 V234 H780 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-1-blue" d="M810 206 H840 V234 H810 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-1-right" d="M840 206 H950 L962 220 L950 234 H840 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-2-left" d="M690 241 H780 V269 H690 L678 255 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-2-purple" d="M780 241 H810 V269 H780 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-2-blue" d="M810 241 H840 V269 H810 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="deletion-2-right" d="M840 241 H950 L938 255 L950 269 H840 Z" fill="#a6bac7" stroke="#424a54" stroke-width="1.4"/>
+<text id="deletion-label" x="820" y="303" font-size="27" text-anchor="middle">Deletion</text>
+</g>
+<g id="ring">
+<circle id="ring-1-outline" cx="810" cy="453" r="108" fill="none" stroke="#424a54" stroke-width="30.8"/>
+<circle id="ring-1-intervening" cx="810" cy="453" r="108" fill="none" stroke="#d8b98e" stroke-width="28"/>
+<path id="ring-1-blue" d="M762.3308023243086 340.6984078788023 A122 122 0 0 1 810.0 331.0 L810.0 359.0 A94 94 0 0 0 773.2712739220083 366.4725437754706 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="ring-1-purple" d="M810.0 331.0 A122 122 0 0 1 857.6691976756914 340.6984078788023 L846.7287260779917 366.4725437754706 A94 94 0 0 0 810.0 359.0 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<text id="ring-1-gene-A" x="882.27" y="380.74" font-size="22" text-anchor="middle" font-style="italic">A</text>
+<text id="ring-1-gene-B" x="918.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>
+<text id="ring-1-gene-dotdotdot" x="810.0" y="569.0" font-size="22" text-anchor="middle">...</text>
+<text id="ring-1-gene-Y" x="702.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>
+<text id="ring-1-gene-Z" x="737.73" y="380.74" font-size="22" text-anchor="middle" font-style="italic">Z</text>
+<circle id="ring-2-outline" cx="810" cy="453" r="73" fill="none" stroke="#424a54" stroke-width="30.8"/>
+<circle id="ring-2-intervening" cx="810" cy="453" r="73" fill="none" stroke="#d8b98e" stroke-width="28"/>
+<path id="ring-2-blue" d="M776.0063918214332 372.9160777496377 A87 87 0 0 1 810.0 366.0 L810.0 394.0 A59 59 0 0 0 786.9468634191328 398.690213646306 Z" fill="#8dbce0" stroke="#424a54" stroke-width="1.4"/>
+<path id="ring-2-purple" d="M810.0 366.0 A87 87 0 0 1 843.9936081785668 372.9160777496377 L833.0531365808672 398.690213646306 A59 59 0 0 0 810.0 394.0 Z" fill="#c695d4" stroke="#424a54" stroke-width="1.4"/>
+<text id="ring-2-gene-A" x="858.85" y="406.75" font-size="22" text-anchor="middle" font-style="italic">A</text>
+<text id="ring-2-gene-B" x="883.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>
+<text id="ring-2-gene-dotdotdot" x="810.0" y="534.0" font-size="22" text-anchor="middle">...</text>
+<text id="ring-2-gene-Y" x="737.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>
+<text id="ring-2-gene-Z" x="761.15" y="406.75" font-size="22" text-anchor="middle" font-style="italic">Z</text>
+<text id="ring-label" x="810" y="603" font-size="24" text-anchor="middle">Acentric ring fragment (lost)</text>
+</g></g></svg>

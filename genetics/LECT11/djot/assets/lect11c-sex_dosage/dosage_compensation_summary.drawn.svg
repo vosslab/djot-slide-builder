@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="650" viewBox="0 0 1800 650" role="img" aria-labelledby="title desc">
+  <title id="title">Dosage compensation in worms, flies and mammals</title>
+  <desc id="desc">Schematic comparison. Worms reduce expression from both X chromosomes, flies increase expression from the single male X, and mammals inactivate one female X. Dark and light purple indicate expression states; gray indicates Y. The condensed inactive mammalian X remains present.</desc>
+  <rect width="1800" height="650" fill="#ffffff" />
+  <g id="worms" transform="translate(0 0)" font-family="Atkinson Hyperlegible Next" fill="#243b4b">
+    <rect x="9" y="9" width="582" height="632" rx="6" fill="none" stroke="#b7c1c8" stroke-width="2" />
+    <text x="300" y="66" font-size="48" font-weight="600" text-anchor="middle">worms</text>
+    <path d="M 158 275 H 239 M 224 262 L 242 275 L 224 288" fill="none" stroke="#243b4b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
+    <g id="worms-group-1">
+      <g data-chromosome="X">
+        <rect x="39" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="X">
+        <rect x="87" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 96 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
+    </g>
+    <g id="worms-group-2">
+      <g data-chromosome="X">
+        <rect x="274" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 283 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="X">
+        <rect x="322" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 331 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
+    </g>
+    <g id="worms-group-3">
+      <g data-chromosome="X">
+        <rect x="501" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 510 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XO</text>
+    </g>
+    <text x="300" y="560" font-size="34" text-anchor="middle">repression of both &#9893; Xs</text>
+    <text x="300" y="602" font-size="34" text-anchor="middle">by half</text>
+  </g>
+  <g id="flies" transform="translate(600 0)" font-family="Atkinson Hyperlegible Next" fill="#243b4b">
+    <rect x="9" y="9" width="582" height="632" rx="6" fill="none" stroke="#b7c1c8" stroke-width="2" />
+    <text x="300" y="66" font-size="48" font-weight="600" text-anchor="middle">flies</text>
+    <path d="M 158 275 H 239 M 224 262 L 242 275 L 224 288" fill="none" stroke="#243b4b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
+    <g id="flies-group-1">
+      <g data-chromosome="X">
+        <rect x="39" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="Y">
+        <rect x="87" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
+        <path d="M 96 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
+    </g>
+    <g id="flies-group-2">
+      <g data-chromosome="X">
+        <rect x="274" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 283 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="Y">
+        <rect x="322" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
+        <path d="M 331 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
+    </g>
+    <g id="flies-group-3">
+      <g data-chromosome="X">
+        <rect x="477" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 486 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="X">
+        <rect x="525" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 534 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
+    </g>
+    <text x="300" y="560" font-size="34" text-anchor="middle">2X transcription rate</text>
+    <text x="300" y="602" font-size="34" text-anchor="middle">of single &#9794; X</text>
+  </g>
+  <g id="mammals" transform="translate(1200 0)" font-family="Atkinson Hyperlegible Next" fill="#243b4b">
+    <rect x="9" y="9" width="582" height="632" rx="6" fill="none" stroke="#b7c1c8" stroke-width="2" />
+    <text x="300" y="66" font-size="48" font-weight="600" text-anchor="middle">mammals</text>
+    <path d="M 158 275 H 239 M 224 262 L 242 275 L 224 288" fill="none" stroke="#243b4b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
+    <g id="mammals-group-1">
+      <g data-chromosome="X">
+        <rect x="39" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="X">
+        <rect x="87" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 96 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
+    </g>
+    <g id="mammals-group-2">
+      <ellipse cx="291" cy="405" rx="19" ry="25" fill="#e1cfe6" stroke="#9e80aa" stroke-width="2.5" data-chromosome="Xi" />
+      <path d="M 282 400 Q 300 389 300 404 Q 282 419 284 408" fill="none" stroke="#b99cc3" stroke-width="2" />
+      <g data-chromosome="X">
+        <rect x="322" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 331 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
+    </g>
+    <g id="mammals-group-3">
+      <g data-chromosome="X">
+        <rect x="477" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
+        <path d="M 486 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g data-chromosome="Y">
+        <rect x="525" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
+        <path d="M 534 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
+    </g>
+    <text x="300" y="560" font-size="34" text-anchor="middle">random inactivation</text>
+    <text x="300" y="602" font-size="34" text-anchor="middle">of one &#9792; X</text>
+  </g>
+</svg>

@@ -186,7 +186,7 @@ hidden: true
 
 @body
 
-![Labeled diagram from source slide 17](assets/lect08c-gene_mapping/c17_labeled.svg)
+![Labeled diagram from source slide 17](assets/lect08c-gene_mapping/morgan_recombinant_offspring.drawn.svg)
 
 Recombination frequency
 
@@ -242,7 +242,7 @@ $\frac{391 \text{ recombinants}}{2300 \text{ total offspring}} \times 100 = 17\%
 
 @body
 
-![Labeled diagram from source slide 22](assets/lect08c-gene_mapping/c22_labeled.svg)
+![Labeled diagram from source slide 22](assets/lect08c-gene_mapping/linked_unlinked_gene_cell.drawn.svg)
 
 === layout: one-panel
 

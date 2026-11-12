@@ -89,7 +89,7 @@ F~1~ plants produce yellow-round seeds (_YyRr_). The two alleles for each gene s
 
 @right
 
-![Slide image 3](assets/lect08b-chap8-linked_genes/image_003.png)
+![Slide image 3](assets/lect08b-chap8-linked_genes/dihybrid_WG_punnett.drawn.svg)
 
 => disappear
 cover: 32.431 23.192 64.848 74.156
@@ -170,11 +170,11 @@ The slash separates the two homologous chromosomes.
 
 @top-left
 
-![Slide image 8](assets/lect08b-chap8-linked_genes/image_008.png)
+![Slide image 8](assets/lect08b-chap8-linked_genes/linked_allele_notation.quote.svg)
 
 @top-right
 
-![Slide image 9](assets/lect08b-chap8-linked_genes/image_009.png)
+![Slide image 9](assets/lect08b-chap8-linked_genes/parental_types.quote.svg)
 
 @bottom
 
@@ -299,7 +299,7 @@ In either linked arrangement, only two of the four gamete types possible for unl
 
 @body
 
-![Labeled diagram from source slide 24](assets/lect08b-chap8-linked_genes/b24_labeled.svg)
+![Labeled diagram from source slide 24](assets/lect08b-chap8-linked_genes/morgan_testcross_offspring.drawn.svg)
 
 === layout: one-panel
 
@@ -349,7 +349,7 @@ Both predictions are wrong...
 
 @body
 
-![Slide image 13](assets/lect08b-chap8-linked_genes/image_013.jpg)
+![Slide image 13](assets/lect08b-chap8-linked_genes/two_chiasmata.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -426,14 +426,14 @@ Both predictions are wrong...
 
 @body
 
-![Labeled diagram from source slide 35](assets/lect08b-chap8-linked_genes/b35_labeled.svg)
+![Labeled diagram from source slide 35](assets/lect08b-chap8-linked_genes/morgan_meiosis_testcross.drawn.svg)
 
 === layout: two-panels
 @replaceme
 
 @left
 
-![Source slide 36 meiosis diagram](assets/lect08b-chap8-linked_genes/b36_artwork.svg)
+![Source slide 36 meiosis diagram](assets/lect08b-chap8-linked_genes/double_crossover_meiosis.drawn.svg)
 
 @right
 

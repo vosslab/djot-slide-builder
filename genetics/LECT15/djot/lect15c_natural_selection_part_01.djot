@@ -108,7 +108,7 @@ hidden: true
 
 @body
 
-![Slide image 4](assets/lect15c-natural_selection/image_004.png)
+![Slide image 4](assets/lect15c-natural_selection/natural_selection_premises.quote.svg)
 
 === layout: one-panel
 
@@ -184,7 +184,7 @@ hidden: true
 
 @body
 
-![Slide image 6](assets/lect15c-natural_selection/image_006.jpg)
+![Slide image 6](assets/lect15c-natural_selection/average_fitness_population_size.drawn.svg)
 
 - &#169; John Wiley & Sons, Inc.
 
@@ -416,7 +416,7 @@ hidden: true
 
 @body
 
-![Slide image 11](assets/lect15c-natural_selection/image_011.jpg)
+![Slide image 11](assets/lect15c-natural_selection/forest_selection_frequency.plot.svg)
 
 === layout: one-panel
 
@@ -459,7 +459,7 @@ hidden: true
 
 @body
 
-![Slide image 12](assets/lect15c-natural_selection/image_012.jpg)
+![Slide image 12](assets/lect15c-natural_selection/field_selection_frequency.plot.svg)
 
 === layout: two-over-one-panels
 @replaceme
@@ -468,11 +468,11 @@ hidden: true
 
 @top-left
 
-![Slide image 12](assets/lect15c-natural_selection/image_012.jpg)
+![Slide image 12](assets/lect15c-natural_selection/field_selection_frequency.plot.svg)
 
 @top-right
 
-![Slide image 12](assets/lect15c-natural_selection/image_011.jpg)
+![Slide image 12](assets/lect15c-natural_selection/forest_selection_frequency.plot.svg)
 
 @bottom
 
@@ -569,7 +569,7 @@ hidden: true
 
 @body
 
-![Slide image 16](assets/lect15c-natural_selection/image_016.jpg)
+![Slide image 16](assets/lect15c-natural_selection/mutation_selection_balance.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -635,7 +635,7 @@ hidden: true
 
 @body
 
-![Slide image 21](assets/lect15c-natural_selection/image_021.jpg)
+![Slide image 21](assets/lect15c-natural_selection/heterozygosity_mutation_drift.drawn.svg)
 
 === layout: section
 

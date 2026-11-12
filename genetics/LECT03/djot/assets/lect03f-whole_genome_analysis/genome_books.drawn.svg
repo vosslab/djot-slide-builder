@@ -1,1 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc"><title id="title">Genome information as books</title><desc id="desc">Original03Fslide20. Schematic stack heights, not a quantitative book count. Native caption preserves6.4billion letters,4200books,180pages and500page assumption.</desc><g id="genome_books"><g id="open-book" stroke="#456785" stroke-width="3" fill="#F4F6F8"><path d="M100 430 Q170 390 250 430 Q330 390 400 430 L400 480 Q320 445 250 480 Q170 445 100 480 Z"/><path d="M250 430 V480"/></g><g id="book-0-0"><rect x="620" y="460" width="100" height="35" rx="5" fill="#8663A6"/><path d="M635 468 H715 V487 H635 Z" fill="#FFFDF5"/></g><g id="book-0-1"><rect x="620" y="416" width="100" height="35" rx="5" fill="#487DA3"/><path d="M635 424 H715 V443 H635 Z" fill="#FFFDF5"/></g><g id="book-0-2"><rect x="620" y="372" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M635 380 H715 V399 H635 Z" fill="#FFFDF5"/></g><g id="book-0-3"><rect x="620" y="328" width="100" height="35" rx="5" fill="#C39648"/><path d="M635 336 H715 V355 H635 Z" fill="#FFFDF5"/></g><g id="book-0-4"><rect x="620" y="284" width="100" height="35" rx="5" fill="#B36879"/><path d="M635 292 H715 V311 H635 Z" fill="#FFFDF5"/></g><g id="book-0-5"><rect x="620" y="240" width="100" height="35" rx="5" fill="#64958F"/><path d="M635 248 H715 V267 H635 Z" fill="#FFFDF5"/></g><g id="book-0-6"><rect x="620" y="196" width="100" height="35" rx="5" fill="#8663A6"/><path d="M635 204 H715 V223 H635 Z" fill="#FFFDF5"/></g><g id="book-0-7"><rect x="620" y="152" width="100" height="35" rx="5" fill="#487DA3"/><path d="M635 160 H715 V179 H635 Z" fill="#FFFDF5"/></g><g id="book-1-0"><rect x="745" y="460" width="100" height="35" rx="5" fill="#487DA3"/><path d="M760 468 H840 V487 H760 Z" fill="#FFFDF5"/></g><g id="book-1-1"><rect x="745" y="416" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M760 424 H840 V443 H760 Z" fill="#FFFDF5"/></g><g id="book-1-2"><rect x="745" y="372" width="100" height="35" rx="5" fill="#C39648"/><path d="M760 380 H840 V399 H760 Z" fill="#FFFDF5"/></g><g id="book-1-3"><rect x="745" y="328" width="100" height="35" rx="5" fill="#B36879"/><path d="M760 336 H840 V355 H760 Z" fill="#FFFDF5"/></g><g id="book-1-4"><rect x="745" y="284" width="100" height="35" rx="5" fill="#64958F"/><path d="M760 292 H840 V311 H760 Z" fill="#FFFDF5"/></g><g id="book-1-5"><rect x="745" y="240" width="100" height="35" rx="5" fill="#8663A6"/><path d="M760 248 H840 V267 H760 Z" fill="#FFFDF5"/></g><g id="book-1-6"><rect x="745" y="196" width="100" height="35" rx="5" fill="#487DA3"/><path d="M760 204 H840 V223 H760 Z" fill="#FFFDF5"/></g><g id="book-1-7"><rect x="745" y="152" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M760 160 H840 V179 H760 Z" fill="#FFFDF5"/></g><g id="book-2-0"><rect x="870" y="460" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M885 468 H965 V487 H885 Z" fill="#FFFDF5"/></g><g id="book-2-1"><rect x="870" y="416" width="100" height="35" rx="5" fill="#C39648"/><path d="M885 424 H965 V443 H885 Z" fill="#FFFDF5"/></g><g id="book-2-2"><rect x="870" y="372" width="100" height="35" rx="5" fill="#B36879"/><path d="M885 380 H965 V399 H885 Z" fill="#FFFDF5"/></g><g id="book-2-3"><rect x="870" y="328" width="100" height="35" rx="5" fill="#64958F"/><path d="M885 336 H965 V355 H885 Z" fill="#FFFDF5"/></g><g id="book-2-4"><rect x="870" y="284" width="100" height="35" rx="5" fill="#8663A6"/><path d="M885 292 H965 V311 H885 Z" fill="#FFFDF5"/></g><g id="book-2-5"><rect x="870" y="240" width="100" height="35" rx="5" fill="#487DA3"/><path d="M885 248 H965 V267 H885 Z" fill="#FFFDF5"/></g><g id="book-2-6"><rect x="870" y="196" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M885 204 H965 V223 H885 Z" fill="#FFFDF5"/></g><g id="book-2-7"><rect x="870" y="152" width="100" height="35" rx="5" fill="#C39648"/><path d="M885 160 H965 V179 H885 Z" fill="#FFFDF5"/></g><g id="book-3-0"><rect x="995" y="460" width="100" height="35" rx="5" fill="#C39648"/><path d="M1010 468 H1090 V487 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-1"><rect x="995" y="416" width="100" height="35" rx="5" fill="#B36879"/><path d="M1010 424 H1090 V443 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-2"><rect x="995" y="372" width="100" height="35" rx="5" fill="#64958F"/><path d="M1010 380 H1090 V399 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-3"><rect x="995" y="328" width="100" height="35" rx="5" fill="#8663A6"/><path d="M1010 336 H1090 V355 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-4"><rect x="995" y="284" width="100" height="35" rx="5" fill="#487DA3"/><path d="M1010 292 H1090 V311 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-5"><rect x="995" y="240" width="100" height="35" rx="5" fill="#7F9F61"/><path d="M1010 248 H1090 V267 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-6"><rect x="995" y="196" width="100" height="35" rx="5" fill="#C39648"/><path d="M1010 204 H1090 V223 H1010 Z" fill="#FFFDF5"/></g><g id="book-3-7"><rect x="995" y="152" width="100" height="35" rx="5" fill="#B36879"/><path d="M1010 160 H1090 V179 H1010 Z" fill="#FFFDF5"/></g><text x="250" y="540" font-family="Arial" font-size="34" text-anchor="middle" fill="#243247">Less than 1%</text><text x="860" y="540" font-family="Arial" font-size="34" text-anchor="middle" fill="#243247">Whole genome</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Genome information compared with books</title>
+  <desc id="desc">Original composition preserving the examples in Genetics LECT03F, source image_008.png. Printing all of your DNA, 6.4 billion letters, would fill 4,200 books. 23andMe looks at less than 1% of your DNA, equivalent to 180 pages. Veritas sequences your whole genome, equivalent to 4,200 books. Assumes a book like Darwin's Origin of Species has 500 pages. The open book and library are schematic illustrations, not a proportional book count.</desc>
+  <defs>
+    <g id="upright-book" stroke="#213547" stroke-width="2.3" stroke-linejoin="round">
+      <path d="M2 0 L34 -19 H65 V131 L34 150 H2 Z" fill="currentColor"/>
+      <path d="M6 -1 L36 -17 H60 L31 0 Z" fill="#FFF9E9"/>
+      <path d="M10 -3 L37 -17 M18 -3 L44 -17 M26 -3 L52 -17" fill="none" stroke="#C9BFA7" stroke-width="1"/>
+      <path d="M32 0 L65 -19 V131 L32 150 Z" fill="#213547" fill-opacity="0.18"/>
+      <path d="M2 0 Q-2 2 0 10 V141 Q-1 149 4 150 H32 V0 Z" fill="currentColor"/>
+      <path d="M7 9 V139" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M10 24 H25 M10 30 H25 M10 119 H25 M10 125 H25" fill="none" stroke="#FFF9E9" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+  <g id="printed-dna" font-family="Arial, Helvetica, sans-serif" fill="#213547">
+    <text x="70" y="68" font-size="37">If you printed all of your DNA (6.4 billion letters),</text>
+    <text x="70" y="128" font-size="43">it would fill <tspan font-weight="bold" fill="#1C4470">4,200 books*</tspan>.</text>
+  </g>
+  <path d="M70 168 H1330" stroke="#CAD7E2" stroke-width="2"/>
+  <g id="comparison-labels" font-family="Arial, Helvetica, sans-serif" fill="#213547">
+    <text x="95" y="230" font-size="37" font-weight="bold" fill="#8A410F">23andMe</text>
+    <text x="95" y="275" font-size="31">looks at <tspan font-weight="bold">less than 1%</tspan></text>
+    <text x="95" y="315" font-size="31">of your DNA</text>
+    <text x="765" y="230" font-size="37" font-weight="bold" fill="#1C4470">Veritas</text>
+    <text x="765" y="275" font-size="31">sequences your <tspan font-weight="bold">whole genome</tspan></text>
+  </g>
+  <g id="open-book" stroke-linejoin="round">
+    <ellipse cx="325" cy="652" rx="229" ry="18" fill="#EEF0EF"/>
+    <path d="M103 544 Q210 512 315 565 Q421 508 527 535 L547 636 Q431 603 324 654 Q215 615 108 645 Z" fill="#B96B30" stroke="#633D27" stroke-width="3"/>
+    <path d="M115 539 Q219 507 315 562 Q413 506 515 531 L529 620 Q420 594 323 640 Q223 601 119 631 Z" fill="#E8DDC6" stroke="#99866B" stroke-width="2"/>
+    <path d="M115 525 Q220 489 315 548 Q414 487 515 516 L529 605 Q417 578 323 627 Q221 585 119 616 Z" fill="#FFF9E9" stroke="#99866B" stroke-width="2.5"/>
+    <path d="M315 548 Q308 582 323 627 Q329 578 315 548" fill="#D9CDB7"/>
+    <path d="M128 622 Q228 597 323 634 Q423 589 523 614 M129 628 Q227 603 323 640 Q421 597 522 621" fill="none" stroke="#B7A88E" stroke-width="1.4"/>
+    <path d="M142 541 Q222 520 284 551 M143 553 Q222 532 285 563 M145 565 Q224 544 287 575 M147 577 Q225 556 289 587 M149 589 Q226 568 291 599" fill="none" stroke="#B9AA91" stroke-width="2"/>
+    <path d="M347 551 Q414 518 489 535 M348 563 Q415 530 491 547 M350 575 Q416 542 493 559 M352 587 Q416 554 495 571 M354 599 Q417 566 497 583" fill="none" stroke="#B9AA91" stroke-width="2"/>
+    <path d="M295 551 L300 620 L310 614 L320 620 L311 548" fill="#C57635"/>
+    <path d="M110 645 Q216 616 324 654 Q431 604 547 636" fill="none" stroke="#633D27" stroke-width="3"/>
+  </g>
+  <g id="library" stroke-linejoin="round">
+    <ellipse cx="1000" cy="682" rx="318" ry="17" fill="#EEF0EF"/>
+    <path d="M706 343 L740 323 H1292 V643 L1258 663 H706 Z" fill="#E3D9C6" stroke="#80745E" stroke-width="2.5"/>
+    <path d="M728 355 H1238 V643 H728 Z" fill="#F6F1E7"/>
+    <path d="M1258 343 L1292 323 V643 L1258 663 Z" fill="#B5A588" stroke="#80745E" stroke-width="2.5"/>
+    <path d="M706 343 L740 323 H1292 L1258 343 Z" fill="#EEE6D7" stroke="#80745E" stroke-width="2.5"/>
+    <g id="upper-shelf-books">
+      <use xlink:href="#upright-book" transform="translate(736 353) scale(.82 .89)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(783 367) scale(.86 .80)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(830 350) scale(.80 .91)" color="#B07438"/>
+      <use xlink:href="#upright-book" transform="translate(875 357) scale(.85 .865)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(923 371) scale(.82 .77)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(970 353) scale(.90 .89)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(1020 362) scale(.82 .83)" color="#B07438"/>
+      <use xlink:href="#upright-book" transform="translate(1067 351) scale(.85 .905)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(1115 358) scale(.85 .86)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(1163 364) scale(.82 .82)" color="#B07438"/>
+    </g>
+    <path d="M706 490 L740 470 H1292 L1258 490 Z" fill="#EEE6D7" stroke="#80745E" stroke-width="2"/>
+    <path d="M706 490 H1258 V503 H706 Z" fill="#C4B496" stroke="#80745E" stroke-width="2"/>
+    <g id="lower-shelf-books">
+      <use xlink:href="#upright-book" transform="translate(736 520) scale(.82 .82)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(783 512) scale(.86 .875)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(830 528) scale(.80 .77)" color="#B07438"/>
+      <use xlink:href="#upright-book" transform="translate(875 508) scale(.85 .90)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(923 520) scale(.82 .82)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(970 514) scale(.90 .86)" color="#B07438"/>
+      <use xlink:href="#upright-book" transform="translate(1020 523) scale(.82 .80)" color="#3177A4"/>
+      <use xlink:href="#upright-book" transform="translate(1067 509) scale(.85 .895)" color="#527D6D"/>
+      <use xlink:href="#upright-book" transform="translate(1115 518) scale(.85 .835)" color="#B07438"/>
+      <use xlink:href="#upright-book" transform="translate(1163 512) scale(.82 .875)" color="#3177A4"/>
+    </g>
+    <path d="M706 646 L740 626 H1292 L1258 646 Z" fill="#EEE6D7" stroke="#80745E" stroke-width="2"/>
+    <path d="M706 646 H1258 V663 H706 Z" fill="#C4B496" stroke="#80745E" stroke-width="2"/>
+    <path d="M706 343 H724 V663 H706 Z M1240 343 H1258 V663 H1240 Z" fill="#D1C3A9" stroke="#80745E" stroke-width="2"/>
+  </g>
+  <g id="equivalent-volumes" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="325" y="712" font-size="26" fill="#526879">equivalent to</text>
+    <text x="325" y="758" font-size="43" font-weight="bold" fill="#8A410F">180 pages</text>
+    <text x="1000" y="712" font-size="26" fill="#526879">equivalent to</text>
+    <text x="1000" y="758" font-size="43" font-weight="bold" fill="#1C4470">4,200 books</text>
+  </g>
+  <g id="assumption-and-scale" font-family="Arial, Helvetica, sans-serif" fill="#526879">
+    <text x="70" y="830" font-size="26">* Assuming that a book, like Darwin's <tspan font-style="italic">Origin of Species</tspan>, has 500 pages.</text>
+    <text x="70" y="871" font-size="24">Book forms are schematic; quantities are given by the labels.</text>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="287" viewBox="0 0 1100 287" role="img" aria-labelledby="title desc">
+  <title id="title">Complementary sticky ends of an opened plasmid</title>
+  <desc id="desc">Text-free enlarged view of the two exposed ends of the same opened plasmid. The left lower strand extends rightward beyond its upper strand; the right upper strand extends leftward beyond its lower strand. Pale-green site regions preserve paired tips and complementary overhang portions, with no inferred bases or strand polarity.</desc>
+  <rect width="1100" height="287" fill="#ffffff" />
+  <g id="opened-plasmid-ends" transform="translate(40 68) scale(1.2)">
+    <g id="left-end">
+      <g id="left-upper" data-start="0" data-end="240" data-pale-start="200" data-pale-end="240">
+        <rect x="0" y="0" width="240" height="36" fill="#3cad80" />
+        <rect x="200" y="0" width="40" height="36" fill="#bfdc98" />
+        <path d="M0 31 H240 V36 H0 Z" fill="#21553d" opacity=".12" />
+        <path d="M2 4 H238" stroke="#ffffff" stroke-width="3" opacity=".4" />
+        <rect x="0" y="0" width="240" height="36" fill="none" stroke="#245f4e" stroke-width="2.5" />
+      </g>
+      <g id="left-lower" data-start="0" data-end="360" data-pale-start="200" data-pale-end="360">
+        <rect x="0" y="54" width="360" height="36" fill="#3cad80" />
+        <rect x="200" y="54" width="160" height="36" fill="#bfdc98" />
+        <path d="M0 85 H360 V90 H0 Z" fill="#21553d" opacity=".12" />
+        <path d="M2 58 H358" stroke="#ffffff" stroke-width="3" opacity=".4" />
+        <rect x="0" y="54" width="360" height="36" fill="none" stroke="#245f4e" stroke-width="2.5" />
+      </g>
+    </g>
+    <g id="right-end">
+      <g id="right-upper" data-start="490" data-end="850" data-pale-start="490" data-pale-end="650">
+        <rect x="490" y="0" width="360" height="36" fill="#3cad80" />
+        <rect x="490" y="0" width="160" height="36" fill="#bfdc98" />
+        <path d="M490 31 H850 V36 H490 Z" fill="#21553d" opacity=".12" />
+        <path d="M492 4 H848" stroke="#ffffff" stroke-width="3" opacity=".4" />
+        <rect x="490" y="0" width="360" height="36" fill="none" stroke="#245f4e" stroke-width="2.5" />
+      </g>
+      <g id="right-lower" data-start="610" data-end="850" data-pale-start="610" data-pale-end="650">
+        <rect x="610" y="54" width="240" height="36" fill="#3cad80" />
+        <rect x="610" y="54" width="40" height="36" fill="#bfdc98" />
+        <path d="M610 85 H850 V90 H610 Z" fill="#21553d" opacity=".12" />
+        <path d="M612 58 H848" stroke="#ffffff" stroke-width="3" opacity=".4" />
+        <rect x="610" y="54" width="240" height="36" fill="none" stroke="#245f4e" stroke-width="2.5" />
+      </g>
+    </g>
+  </g>
+</svg>

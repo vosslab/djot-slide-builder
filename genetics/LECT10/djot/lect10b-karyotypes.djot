@@ -76,7 +76,7 @@ Use the following original slide to introduce karyotypes after students respond.
 
 @question
 
-![Lecture diagram](assets/lect10b-karyotypes/image_004.png)
+![Lecture diagram](assets/lect10b-karyotypes/mitosis_karyotype_stages.drawn.svg)
 
 Q. You are preparing a karyotype for a patient, during which phase of cell division do you take a snapshot of the cell?
 
@@ -215,7 +215,7 @@ chromatids; the homologs carry genes for the same characters and may have differ
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_010.png)
+![Lecture diagram](assets/lect10b-karyotypes/fish_probe_labeling_workflow.drawn.svg)
 
 === layout: one-panel
 
@@ -223,7 +223,7 @@ chromatids; the homologs carry genes for the same characters and may have differ
 
 @body
 
-![Lecture diagram](assets/lect10b-karyotypes/image_011.png)
+![Lecture diagram](assets/lect10b-karyotypes/sky_probe_mixture_workflow.drawn.svg)
 
 === layout: one-panel
 
@@ -332,7 +332,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @left
 
-![Lecture diagram](assets/lect10b-karyotypes/image_017.svg)
+![Lecture diagram](assets/lect10b-karyotypes/brainbow_excision.drawn.svg)
 
 @right
 
@@ -343,7 +343,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @left
 
-![Lecture diagram](assets/lect10b-karyotypes/image_019.svg)
+![Lecture diagram](assets/lect10b-karyotypes/brainbow_inversion.drawn.svg)
 
 @right
 
@@ -365,7 +365,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @body
 
-![Original textbook comparison of centromere positions and chromosome arms](assets/lect10b-karyotypes/image_022.png)
+![Original textbook comparison of centromere positions and chromosome arms](assets/lect10b-karyotypes/centromere_positions.drawn.svg)
 
 === layout: one-panel
 
@@ -373,7 +373,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @body
 
-![Original textbook diagram of metacentric chromosome movement](assets/lect10b-karyotypes/image_023.png)
+![Original textbook diagram of metacentric chromosome movement](assets/lect10b-karyotypes/metacentric_movement.drawn.svg)
 
 === layout: one-panel
 
@@ -381,7 +381,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @body
 
-![Original textbook diagram of submetacentric chromosome movement](assets/lect10b-karyotypes/image_024.png)
+![Original textbook diagram of submetacentric chromosome movement](assets/lect10b-karyotypes/submetacentric_movement.drawn.svg)
 
 === layout: one-panel
 
@@ -389,7 +389,7 @@ The following slides show how Cre-mediated recombination produces different fluo
 
 @body
 
-![Original textbook diagram of acrocentric chromosome movement](assets/lect10b-karyotypes/image_025.png)
+![Original textbook diagram of acrocentric chromosome movement](assets/lect10b-karyotypes/acrocentric_movement.drawn.svg)
 
 === layout: one-plus-two-panels
 

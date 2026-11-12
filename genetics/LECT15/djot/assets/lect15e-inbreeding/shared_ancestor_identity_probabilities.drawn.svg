@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
+<title id="title">Shared-ancestor identity probabilities</title><desc id="desc">Four colored circles connected in a diamond, with source allele markers and three double-headed probability annotations.</desc>
+<rect width="1200" height="590" fill="white"/>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M 1 1 L 10 6 L 1 11" fill="none" stroke="#293638" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<g id="descent-edges" stroke="#293638" stroke-width="5" fill="none">
+<path id="edge-A-D" d="M 524.861592 214.352833 L 415.138408 320.647167"/>
+<path id="edge-A-E" d="M 575.138408 214.352833 L 684.861592 320.647167"/>
+<path id="edge-D-I" d="M 414.748737 369.748737 L 525.251263 480.251263"/>
+<path id="edge-E-I" d="M 685.251263 369.748737 L 574.748737 480.251263"/>
+</g><g id="main-circles">
+<circle id="node-A" cx="550" cy="190" r="35" fill="#f3b589" stroke="#293638" stroke-width="5"/>
+<circle id="node-D" cx="390" cy="345" r="35" fill="#f3df7e" stroke="#293638" stroke-width="5"/>
+<circle id="node-E" cx="710" cy="345" r="35" fill="#a7c8e0" stroke="#293638" stroke-width="5"/>
+<circle id="node-I" cx="550" cy="505" r="35" fill="#b3d6a9" stroke="#293638" stroke-width="5"/>
+</g><g id="allele-markers" stroke="#277b95" stroke-width="2">
+<circle id="allele-1" cx="540" cy="190" r="10" fill="#1595ba"/>
+<circle id="allele-2" cx="560" cy="190" r="10" fill="#d33655"/>
+<circle id="allele-3" cx="540" cy="505" r="10" fill="#1595ba"/>
+<circle id="allele-4" cx="560" cy="505" r="10" fill="#1595ba"/>
+<circle id="allele-5" cx="470" cy="267.5" r="10" fill="#1595ba"/>
+<circle id="allele-6" cx="630" cy="267.5" r="10" fill="#1595ba"/>
+<circle id="allele-7" cx="470" cy="425" r="10" fill="#1595ba"/>
+<circle id="allele-8" cx="630" cy="425" r="10" fill="#1595ba"/>
+</g><g id="probability-arcs" stroke="#293638" stroke-width="4.5" fill="none" marker-start="url(#arrow)" marker-end="url(#arrow)">
+<path id="arc-top" d="M 492 205 C 492 92 608 92 608 205"/>
+<path id="arc-left" d="M 408 287 C 299 287 299 403 408 403"/>
+<path id="arc-right" d="M 692 287 C 801 287 801 403 692 403"/>
+</g><g id="callout-leaders" stroke="#293638" stroke-width="4" fill="none"><path d="M 714 104 L 615 159"/><path d="M 808 449 L 759 397"/><path d="M 430 518 L 499 518"/></g>
+<g font-family="Atkinson Hyperlegible Next" fill="#202b2e" font-size="32" font-weight="650">
+<text x="235" y="46" >(C)</text>
+<text x="438" y="92" xml:space="preserve">(<tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan>)(1 + <tspan font-style="italic">F</tspan><tspan baseline-shift="sub" font-size="24">A</tspan>)</text>
+<text x="280" y="356" ><tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan></text>
+<text x="777" y="356" ><tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan></text>
+<text x="730" y="64" >Probability that each</text>
+<text x="730" y="101" >offspring receives</text>
+<text x="730" y="138" >allele identical to parent</text>
+<text x="795" y="471" font-size="30">Probability that &quot;blue&quot;</text>
+<text x="795" y="508" font-size="30">allele is identical by</text>
+<text x="795" y="545" font-size="30">descent</text>
+<text x="20" y="482" >Inbreeding coefficient</text>
+<text x="20" y="523" xml:space="preserve" font-size="30">is <tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan> x <tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan> (1+<tspan font-style="italic">F</tspan><tspan baseline-shift="sub" font-size="24">A</tspan>) x <tspan baseline-shift="super" font-size="25">1</tspan>/<tspan baseline-shift="sub" font-size="25">2</tspan></text>
+</g></svg>

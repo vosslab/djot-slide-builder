@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="517" height="323" viewBox="0 0 517 323" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Numbered family in three generations</title>
+  <desc id="diagram-description">Fourteen people shown as black or white squares and circles in rows I, II and III. I1 and I2 connect to II2, II3 and II5. II1 and II2 connect to III1 and III2; II3 and II4 to III3 and III4; II5 and II6 to III5 and III6.</desc>
+  <rect id="background" width="517" height="323" fill="#ffffff"/>
+  <g id="connections" stroke="#000000" stroke-width="1.8" fill="none" stroke-linecap="square">
+    <g id="family-I1-I2">
+      <line id="family-I1-I2-union" x1="170" y1="35" x2="214" y2="35"/>
+      <line id="family-I1-I2-stem" x1="192" y1="35" x2="192" y2="94"/>
+      <line id="family-I1-I2-bar" x1="148" y1="94" x2="398" y2="94"/>
+      <line id="family-I1-I2-child-II2" x1="148" y1="94" x2="148" y2="129"/>
+      <line id="family-I1-I2-child-II3" x1="236" y1="94" x2="236" y2="129"/>
+      <line id="family-I1-I2-child-II5" x1="398" y1="94" x2="398" y2="129"/>
+    </g>
+    <g id="family-II1-II2">
+      <line id="family-II1-II2-union" x1="88" y1="151" x2="126" y2="151"/>
+      <line id="family-II1-II2-stem" x1="107" y1="151" x2="107" y2="215"/>
+      <line id="family-II1-II2-bar" x1="66" y1="215" x2="148" y2="215"/>
+      <line id="family-II1-II2-child-III1" x1="66" y1="215" x2="66" y2="247"/>
+      <line id="family-II1-II2-child-III2" x1="148" y1="215" x2="148" y2="247"/>
+    </g>
+    <g id="family-II3-II4">
+      <line id="family-II3-II4-union" x1="258" y1="151" x2="296" y2="151"/>
+      <line id="family-II3-II4-stem" x1="277" y1="151" x2="277" y2="215"/>
+      <line id="family-II3-II4-bar" x1="236" y1="215" x2="318" y2="215"/>
+      <line id="family-II3-II4-child-III3" x1="236" y1="215" x2="236" y2="247"/>
+      <line id="family-II3-II4-child-III4" x1="318" y1="215" x2="318" y2="247"/>
+    </g>
+    <g id="family-II5-II6">
+      <line id="family-II5-II6-union" x1="420" y1="151" x2="458" y2="151"/>
+      <line id="family-II5-II6-stem" x1="439" y1="151" x2="439" y2="215"/>
+      <line id="family-II5-II6-bar" x1="398" y1="215" x2="480" y2="215"/>
+      <line id="family-II5-II6-child-III5" x1="398" y1="215" x2="398" y2="247"/>
+      <line id="family-II5-II6-child-III6" x1="480" y1="215" x2="480" y2="247"/>
+    </g>
+  </g>
+  <g id="people" stroke="#000000" stroke-width="1.8">
+    <rect id="person-I1" x="126" y="13" width="44" height="44" fill="#ffffff"/>
+    <circle id="person-I2" cx="236" cy="35" r="22" fill="#000000"/>
+    <rect id="person-II1" x="44" y="129" width="44" height="44" fill="#ffffff"/>
+    <circle id="person-II2" cx="148" cy="151" r="22" fill="#ffffff"/>
+    <rect id="person-II3" x="214" y="129" width="44" height="44" fill="#000000"/>
+    <circle id="person-II4" cx="318" cy="151" r="22" fill="#ffffff"/>
+    <circle id="person-II5" cx="398" cy="151" r="22" fill="#000000"/>
+    <rect id="person-II6" x="458" y="129" width="44" height="44" fill="#ffffff"/>
+    <circle id="person-III1" cx="66" cy="269" r="22" fill="#ffffff"/>
+    <circle id="person-III2" cx="148" cy="269" r="22" fill="#ffffff"/>
+    <circle id="person-III3" cx="236" cy="269" r="22" fill="#000000"/>
+    <rect id="person-III4" x="296" y="247" width="44" height="44" fill="#000000"/>
+    <rect id="person-III5" x="376" y="247" width="44" height="44" fill="#000000"/>
+    <rect id="person-III6" x="458" y="247" width="44" height="44" fill="#ffffff"/>
+  </g>
+  <g id="labels" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="500" fill="#000000">
+    <g id="row-labels" text-anchor="end">
+      <text id="row-I" x="30" y="43">I</text>
+      <text id="row-II" x="30" y="159">II</text>
+      <text id="row-III" x="30" y="277">III</text>
+    </g>
+    <g id="person-numbers" text-anchor="middle">
+      <text id="number-I1" x="148" y="78">1</text>
+      <text id="number-I2" x="236" y="78">2</text>
+      <text id="number-II1" x="66" y="194">1</text>
+      <text id="number-II2" x="148" y="194">2</text>
+      <text id="number-II3" x="236" y="194">3</text>
+      <text id="number-II4" x="318" y="194">4</text>
+      <text id="number-II5" x="398" y="194">5</text>
+      <text id="number-II6" x="480" y="194">6</text>
+      <text id="number-III1" x="66" y="312">1</text>
+      <text id="number-III2" x="148" y="312">2</text>
+      <text id="number-III3" x="236" y="312">3</text>
+      <text id="number-III4" x="318" y="312">4</text>
+      <text id="number-III5" x="398" y="312">5</text>
+      <text id="number-III6" x="480" y="312">6</text>
+    </g>
+  </g>
+</svg>

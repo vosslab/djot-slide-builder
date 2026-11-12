@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="749" height="422" viewBox="0 0 749 422" role="img" aria-labelledby="cycle-title cycle-desc">
+<title id="cycle-title">The cell cycle: interphase and the mitotic phase</title>
+<desc id="cycle-desc">Clockwise cycle: G1, S (DNA synthesis), G2, and a short mitotic phase containing mitosis and cytokinesis. Interphase groups G1, S, and G2. Two schematic daughter cells accompany the return from the mitotic phase to G1. Phase proportions and cell structures are illustrative, not measured.</desc>
+<rect width="749" height="422" fill="#FFFFFF"/>
+
+<path id="g1-interval" d="M188.16,202.63 A264,154 0 0 1 550.90,65.21 L515.31,124.55 A169,90 0 0 0 283.10,204.86 Z" fill="#D8EDE5" stroke="#45796F" stroke-width="2" stroke-linejoin="round"/>
+<path id="s-interval" d="M559.38,67.31 A264,154 0 0 1 648.19,311.05 L577.59,268.22 A169,90 0 0 0 520.74,125.78 Z" fill="#D8EAF7" stroke="#527F9B" stroke-width="2" stroke-linejoin="round"/>
+<path id="g2-interval" d="M641.91,314.98 A264,154 0 0 1 241.16,300.68 L317.03,262.16 A169,90 0 0 0 573.57,270.52 Z" fill="#E5E1F0" stroke="#7C6E99" stroke-width="2" stroke-linejoin="round"/>
+<path id="mitotic-interval" d="M235.74,296.33 A264,154 0 0 1 188.00,208.00 L283.00,208.00 A169,90 0 0 0 313.56,259.62 Z" fill="#F5C768" stroke="#A97925" stroke-width="2" stroke-linejoin="round"/>
+<g id="g1-direction"><path d="M254.22,158.38 A216.5,122 0 0 1 315.75,113.19" fill="none" stroke="#45796F" stroke-width="2.2" stroke-linecap="round"/><path d="M315.75,113.19 L309.22,120.56 L305.90,113.29Z" fill="#45796F"/></g>
+<g id="s-direction"><path d="M576.18,108.06 A216.5,122 0 0 1 635.60,143.35" fill="none" stroke="#527F9B" stroke-width="2.2" stroke-linecap="round"/><path d="M635.60,143.35 L626.24,140.29 L631.60,134.35Z" fill="#527F9B"/></g>
+<g id="g2-direction"><path d="M367.41,320.30 A216.5,122 0 0 1 291.11,289.63" fill="none" stroke="#7C6E99" stroke-width="2.2" stroke-linecap="round"/><path d="M291.11,289.63 L300.86,291.02 L296.62,297.80Z" fill="#7C6E99"/></g>
+<g id="m-direction"><path d="M260.84,265.28 A216.5,122 0 0 1 237.11,222.87" fill="none" stroke="#8C641E" stroke-width="2.2" stroke-linecap="round"/><path d="M237.11,222.87 L242.94,230.81 L235.12,232.51Z" fill="#8C641E"/></g>
+<g id="phase-labels" font-family="Atkinson Hyperlegible Next, sans-serif" text-anchor="middle" fill="#213547">
+<text x="354" y="114" font-size="35" font-weight="bold">G<tspan baseline-shift="sub" font-size="23">1</tspan></text>
+<text x="644" y="190" font-size="35" font-weight="bold">S</text>
+<text x="664" y="218" font-size="17"><tspan x="664">(DNA </tspan><tspan x="664" dy="22">synthesis)</tspan></text>
+<text x="469" y="336" font-size="35" font-weight="bold">G<tspan baseline-shift="sub" font-size="23">2</tspan></text>
+<text x="452" y="205" font-size="27" font-weight="bold" letter-spacing="1">INTERPHASE</text>
+</g>
+<g id="interphase-bracket" transform="translate(81.36 37.44) scale(0.82)" fill="none" stroke="#526879" stroke-width="1.5" stroke-linecap="round">
+<path d="M299,196 C300,141 369,126 443,126 C526,126 597,158 601,204 C602,254 538,284 458,285 C397,286 340,272 317,248"/>
+<path d="M293,195 L305,197 M312,252 L322,244"/>
+</g>
+<g id="mitotic-labels" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#213547">
+<text x="32" y="286" font-size="23">Cytokinesis</text>
+<text x="94" y="328" font-size="23">Mitosis</text>
+<text x="32" y="390" font-size="24" font-weight="bold">MITOTIC (M) PHASE</text>
+</g>
+<g id="mitotic-leaders" fill="none" stroke="#8C641E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M161,278 L180,278 L199,231"/>
+<path d="M181,320 L209,320 L241,289"/>
+<path d="M32,346 L32,355 L279,355 L279,346"/>
+</g>
+
+<g id="daughter-cell-upper" transform="translate(120 108) rotate(-18)">
+<path d="M-35,-7 C-34,-28 -13,-37 7,-34 C28,-32 39,-14 35,6 C33,25 16,36 -4,34 C-25,33 -39,16 -35,-7Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2"/>
+<path d="M-31,13 C-20,29 0,31 16,22 C29,15 35,1 32,-13 C41,8 26,32 7,34 C-11,38 -29,28 -31,13Z" fill="#E7D7BB"/>
+<path d="M-25,-16 C-19,-26 -6,-29 4,-26" fill="none" stroke="#FFFCF3" stroke-width="4" stroke-linecap="round"/>
+<path d="M-15,-6 C-14,-18 -1,-22 10,-16 C22,-10 21,6 12,15 C2,24 -13,14 -15,-6Z" fill="#D6CEE4" stroke="#9585AD" stroke-width="1.5"/>
+<path d="M-11,-6 C-9,-14 -2,-17 6,-14" fill="none" stroke="#EEE9F5" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="daughter-cell-lower" transform="translate(100 192) rotate(20)">
+<path d="M-35,-7 C-34,-28 -13,-37 7,-34 C28,-32 39,-14 35,6 C33,25 16,36 -4,34 C-25,33 -39,16 -35,-7Z" fill="#F6ECDA" stroke="#A48B6E" stroke-width="2"/>
+<path d="M-31,13 C-20,29 0,31 16,22 C29,15 35,1 32,-13 C41,8 26,32 7,34 C-11,38 -29,28 -31,13Z" fill="#E7D7BB"/>
+<path d="M-25,-16 C-19,-26 -6,-29 4,-26" fill="none" stroke="#FFFCF3" stroke-width="4" stroke-linecap="round"/>
+<path d="M-15,-6 C-14,-18 -1,-22 10,-16 C22,-10 21,6 12,15 C2,24 -13,14 -15,-6Z" fill="#D6CEE4" stroke="#9585AD" stroke-width="1.5"/>
+<path d="M-11,-6 C-9,-14 -2,-17 6,-14" fill="none" stroke="#EEE9F5" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="division-exit" fill="none" stroke="#A97925" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M185,208 C163,207 157,201 145,197"/>
+<path d="M166,202 C160,180 161,156 150,139"/>
+</g>
+</svg>

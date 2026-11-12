@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ascii"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="678" viewBox="0 0 1400 678" role="img" aria-labelledby="trihybrid-title trihybrid-desc" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#1d2730">
+  <title id="trihybrid-title">Forked line method for a trihybrid cross</title>
+  <desc id="trihybrid-desc">A Dd Gg Ww by Dd Gg Ww cross branches through height, seed color, and seed texture to produce eight combined phenotype counts totaling sixty-four.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.4" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L7 3.5 L0 7" fill="none" stroke="#1d2730" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></marker>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#273342" flood-opacity=".16" /></filter>
+  </defs>
+  <rect width="1400" height="678" fill="#ffffff" />
+  <g id="cross" font-weight="700" text-anchor="middle">
+    <text x="78" y="49" font-size="33" text-anchor="start">Cross:</text>
+    <g id="left-parent"><rect x="184" y="16" width="86" height="50" rx="5" fill="#f6ca73" /><text x="227" y="52" font-size="35" font-style="italic">Dd</text><rect x="293" y="16" width="86" height="50" rx="5" fill="#b8cf74" /><text x="336" y="52" font-size="35" font-style="italic">Gg</text><rect x="402" y="16" width="86" height="50" rx="5" fill="#85a4dc" /><text x="445" y="52" font-size="35" font-style="italic">Ww</text></g>
+    <text x="574" y="53" font-size="37">X</text>
+    <g id="right-parent"><rect x="622" y="16" width="86" height="50" rx="5" fill="#f6ca73" /><text x="665" y="52" font-size="35" font-style="italic">Dd</text><rect x="731" y="16" width="86" height="50" rx="5" fill="#b8cf74" /><text x="774" y="52" font-size="35" font-style="italic">Gg</text><rect x="840" y="16" width="86" height="50" rx="5" fill="#85a4dc" /><text x="883" y="52" font-size="35" font-style="italic">Ww</text></g>
+  </g>
+  <g id="column-panels">
+    <rect x="12" y="82" width="294" height="575" rx="8" fill="#f9c85f" fill-opacity=".75" />
+    <rect x="330" y="82" width="300" height="575" rx="8" fill="#b2cb65" fill-opacity=".75" />
+    <rect x="654" y="82" width="300" height="575" rx="8" fill="#7898d4" fill-opacity=".75" />
+    <rect x="976" y="82" width="412" height="575" rx="8" fill="#f5f7fa" stroke="#d2dae5" stroke-width="2" />
+  </g>
+  <g id="headings" font-weight="700" text-anchor="middle">
+    <text x="159" y="123" font-size="30">Segregation of gene</text><text x="159" y="157" font-size="30">for plant height</text>
+    <text x="480" y="123" font-size="30">Segregation of gene</text><text x="480" y="157" font-size="30">for seed color</text>
+    <text x="804" y="123" font-size="30">Segregation of gene</text><text x="804" y="157" font-size="30">for seed texture</text>
+    <text x="1182" y="123" font-size="30">Combined phenotypes</text><text x="1182" y="157" font-size="30">of all three genes</text>
+  </g>
+  <g id="height-nodes" font-size="34" font-weight="700" text-anchor="middle" filter="url(#shadow)">
+    <rect x="72" y="252" width="174" height="62" rx="31" fill="#fff7dc" stroke="#bc8521" stroke-width="2" /><text x="159" y="294">3 tall</text>
+    <rect x="72" y="498" width="174" height="62" rx="31" fill="#fff7dc" stroke="#bc8521" stroke-width="2" /><text x="159" y="540">1 dwarf</text>
+  </g>
+  <g id="color-nodes" font-size="31" font-weight="700" text-anchor="middle" filter="url(#shadow)">
+    <rect x="388" y="195" width="184" height="58" rx="29" fill="#f5fbdd" stroke="#729232" stroke-width="2" /><text x="480" y="235">3 yellow</text>
+    <rect x="388" y="316" width="184" height="58" rx="29" fill="#f5fbdd" stroke="#729232" stroke-width="2" /><text x="480" y="356">1 green</text>
+    <rect x="388" y="439" width="184" height="58" rx="29" fill="#f5fbdd" stroke="#729232" stroke-width="2" /><text x="480" y="479">3 yellow</text>
+    <rect x="388" y="560" width="184" height="58" rx="29" fill="#f5fbdd" stroke="#729232" stroke-width="2" /><text x="480" y="600">1 green</text>
+  </g>
+  <g id="texture-nodes" font-size="29" font-weight="700" text-anchor="middle" filter="url(#shadow)">
+    <rect x="719" y="181" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="211">3 round</text>
+    <rect x="719" y="244" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="274">1 wrinkled</text>
+    <rect x="719" y="307" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="337">3 round</text>
+    <rect x="719" y="370" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="400">1 wrinkled</text>
+    <rect x="719" y="433" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="463">3 round</text>
+    <rect x="719" y="496" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="526">1 wrinkled</text>
+    <rect x="719" y="559" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="589">3 round</text>
+    <rect x="719" y="612" width="170" height="43" rx="21" fill="#edf3ff" stroke="#4d73bc" stroke-width="2" /><text x="804" y="642">1 wrinkled</text>
+  </g>
+  <g id="branches" fill="none" stroke="#1d2730" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <path id="height-tall-yellow" data-probability="3/4" d="M247 283 C290 283 336 224 382 224" /><path id="height-tall-green" data-probability="1/4" d="M247 283 C290 283 336 345 382 345" />
+    <path id="height-dwarf-yellow" data-probability="3/4" d="M247 529 C290 529 336 468 382 468" /><path id="height-dwarf-green" data-probability="1/4" d="M247 529 C290 529 336 589 382 589" />
+    <path id="tall-yellow-round" data-probability="3/4" d="M573 224 C622 224 663 202 713 202" /><path id="tall-yellow-wrinkled" data-probability="1/4" d="M573 224 C622 224 663 265 713 265" />
+    <path id="tall-green-round" data-probability="3/4" d="M573 345 C622 345 663 328 713 328" /><path id="tall-green-wrinkled" data-probability="1/4" d="M573 345 C622 345 663 391 713 391" />
+    <path id="dwarf-yellow-round" data-probability="3/4" d="M573 468 C622 468 663 454 713 454" /><path id="dwarf-yellow-wrinkled" data-probability="1/4" d="M573 468 C622 468 663 517 713 517" />
+    <path id="dwarf-green-round" data-probability="3/4" d="M573 589 C622 589 663 580 713 580" /><path id="dwarf-green-wrinkled" data-probability="1/4" d="M573 589 C622 589 663 633 713 633" />
+  </g>
+  <g id="result-arrows" fill="none" stroke="#1d2730" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <path id="outcome-1-arrow" d="M891 202 H1020" /><path id="outcome-2-arrow" d="M891 265 H1020" /><path id="outcome-3-arrow" d="M891 328 H1020" /><path id="outcome-4-arrow" d="M891 391 H1020" /><path id="outcome-5-arrow" d="M891 454 H1020" /><path id="outcome-6-arrow" d="M891 517 H1020" /><path id="outcome-7-arrow" d="M891 580 H1020" /><path id="outcome-8-arrow" d="M891 633 H1020" />
+  </g>
+  <g id="outcomes" font-size="26" font-weight="700">
+    <text id="outcome-1" x="1042" y="213">27 tall, yellow, round</text>
+    <text id="outcome-2" x="1042" y="276">9 tall, yellow, wrinkled</text>
+    <text id="outcome-3" x="1042" y="339">9 tall, green, round</text>
+    <text id="outcome-4" x="1042" y="402">3 tall, green, wrinkled</text>
+    <text id="outcome-5" x="1042" y="465">9 dwarf, yellow, round</text>
+    <text id="outcome-6" x="1042" y="528">3 dwarf, yellow, wrinkled</text>
+    <text id="outcome-7" x="1042" y="591">3 dwarf, green, round</text>
+    <text id="outcome-8" x="1042" y="644">1 dwarf, green, wrinkled</text>
+  </g>
+</svg>

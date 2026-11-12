@@ -95,7 +95,7 @@ hidden: true
 
 @right
 
-![Slide image 1](assets/lect04g-indep_assort/image_001.png)
+![Slide image 1](assets/lect04g-indep_assort/dependent_assortment_punnett.drawn.svg)
 
 === layout: two-panels
 
@@ -208,7 +208,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @left
 
-![Slide image 5](assets/lect04g-indep_assort/image_005.jpg)
+![Slide image 5](assets/lect04g-indep_assort/dihybrid_seed_phenotypes.drawn.svg)
 
 @right
 
@@ -225,7 +225,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @body
 
-![Slide image 6](assets/lect04g-indep_assort/image_006.jpg)
+![Slide image 6](assets/lect04g-indep_assort/dihybrid_f2_genotype_seeds.drawn.svg)
 
 - Genotypes and phenotypes of the F2 progeny of the dihybrid cross for seed shape and seed color.
 
@@ -328,7 +328,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @left
 
-![Slide image 7](assets/lect04g-indep_assort/image_007.jpg)
+![Slide image 7](assets/lect04g-indep_assort/independent_gamete_fork.drawn.svg)
 
 @right
 
@@ -506,7 +506,7 @@ Native reconstruction needed: 83 positioned diagram labels.
 
 @left
 
-![Slide image 8](assets/lect04g-indep_assort/image_008.jpg)
+![Slide image 8](assets/lect04g-indep_assort/testcross_WG_seed_outcomes.drawn.svg)
 
 @right
 

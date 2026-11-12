@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="700" viewBox="0 0 1800 700" role="img" aria-labelledby="title desc"><title id="title">Disease gene mapping with DNA markers</title><desc id="desc">An unreplicated chromosome has distributed purple DNA markers and a red disease locus D. Callouts distinguish close linked markers from distant markers; marker positions are schematic.</desc><rect width="1800" height="700" fill="white"/>
+<defs><clipPath id="rod-clip"><path d="M65 383 H550 Q581 383 596 405 Q611 383 641 383 H1310 A31 31 0 0 1 1310 445 H641 Q611 445 596 423 Q581 445 550 445 H65 A31 31 0 0 1 65 383 Z"/></clipPath></defs>
+<path id="chromosome" d="M65 383 H550 Q581 383 596 405 Q611 383 641 383 H1310 A31 31 0 0 1 1310 445 H641 Q611 445 596 423 Q581 445 550 445 H65 A31 31 0 0 1 65 383 Z" fill="#d7b15d" stroke="#aa833d" stroke-width="2.5"/>
+<g clip-path="url(#rod-clip)" id="marker-ticks" stroke="#8b789d" stroke-width="3">
+<path data-marker="true" d="M80 383 V445"/>
+<path data-marker="true" d="M91 383 V445"/>
+<path data-marker="true" d="M107 383 V445"/>
+<path data-marker="true" d="M121 383 V445"/>
+<path data-marker="true" d="M129 383 V445"/>
+<path data-marker="true" d="M145 383 V445"/>
+<path data-marker="true" d="M163 383 V445"/>
+<path data-marker="true" d="M171 383 V445"/>
+<path data-marker="true" d="M180 383 V445"/>
+<path data-marker="true" d="M192 383 V445"/>
+<path data-marker="true" d="M207 383 V445"/>
+<path data-marker="true" d="M218 383 V445"/>
+<path data-marker="true" d="M228 383 V445"/>
+<path data-marker="true" d="M244 383 V445"/>
+<path data-marker="true" d="M260 383 V445"/>
+<path data-marker="true" d="M270 383 V445"/>
+<path data-marker="true" d="M279 383 V445"/>
+<path data-marker="true" d="M296 383 V445"/>
+<path data-marker="true" d="M315 383 V445"/>
+<path data-marker="true" d="M325 383 V445"/>
+<path data-marker="true" d="M341 383 V445"/>
+<path data-marker="true" d="M354 383 V445"/>
+<path data-marker="true" d="M364 383 V445"/>
+<path data-marker="true" d="M379 383 V445"/>
+<path data-marker="true" d="M398 383 V445"/>
+<path data-marker="true" d="M412 383 V445"/>
+<path data-marker="true" d="M429 383 V445"/>
+<path data-marker="true" d="M438 383 V445"/>
+<path data-marker="true" d="M451 383 V445"/>
+<path data-marker="true" d="M470 383 V445"/>
+<path data-marker="true" d="M487 383 V445"/>
+<path data-marker="true" d="M501 383 V445"/>
+<path data-marker="true" d="M520 383 V445"/>
+<path data-marker="true" d="M536 383 V445"/>
+<path data-marker="true" d="M651 383 V445"/>
+<path data-marker="true" d="M670 383 V445"/>
+<path data-marker="true" d="M685 383 V445"/>
+<path data-marker="true" d="M710 383 V445"/>
+<path data-marker="true" d="M729 383 V445"/>
+<path data-marker="true" d="M746 383 V445"/>
+<path data-marker="true" d="M770 383 V445"/>
+<path data-marker="true" d="M883 383 V445"/>
+<path data-marker="true" d="M905 383 V445"/>
+<path data-marker="true" d="M920 383 V445"/>
+<path data-marker="true" d="M950 383 V445"/>
+<path data-marker="true" d="M978 383 V445"/>
+<path data-marker="true" d="M1009 383 V445"/>
+<path data-marker="true" d="M1098 383 V445"/>
+<path data-marker="true" d="M1110 383 V445"/>
+<path data-marker="true" d="M1126 383 V445"/>
+<path data-marker="true" d="M1148 383 V445"/>
+<path data-marker="true" d="M1160 383 V445"/>
+<path data-marker="true" d="M1190 383 V445"/>
+<path data-marker="true" d="M1202 383 V445"/>
+<path data-marker="true" d="M1227 383 V445"/>
+<path data-marker="true" d="M1250 383 V445"/>
+<path data-marker="true" d="M1284 383 V445"/>
+</g>
+<rect id="disease-locus" x="790" y="383" width="76" height="62" fill="#cf644b"/>
+<path d="M66 391 H546 M646 391 H784 M872 391 H1309" fill="none" stroke="#f0d49c" stroke-width="3" opacity=".75"/>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263844">
+<g id="close-callout"><rect x="30" y="105" width="620" height="176" rx="8" fill="#e4eff6" stroke="#6a9fbd" stroke-width="2"/>
+<text x="48" y="140" text-anchor="start" font-size="32">DNA markers that are close enough to a</text>
+<text x="48" y="178" text-anchor="start" font-size="32">disease gene tend to be inherited</text>
+<text x="48" y="216" text-anchor="start" font-size="32">together (genetically linked) with the</text>
+<text x="48" y="254" text-anchor="start" font-size="32">disease gene.</text>
+</g>
+<g id="far-callout"><rect x="1040" y="35" width="730" height="214" rx="8" fill="#e4eff6" stroke="#6a9fbd" stroke-width="2"/>
+<text x="1058" y="70" text-anchor="start" font-size="32">DNA markers that are too far from the disease</text>
+<text x="1058" y="108" text-anchor="start" font-size="32">gene in the chromosome (or are in a different</text>
+<text x="1058" y="146" text-anchor="start" font-size="32">chromosome) are not linked to the disease gene.</text>
+<text x="1058" y="184" text-anchor="start" font-size="32">They do not tend to be inherited with the disease</text>
+<text x="1058" y="222" text-anchor="start" font-size="32">gene in pedigrees.</text>
+</g>
+<g id="proximity-callout"><rect x="805" y="530" width="965" height="100" rx="8" fill="#fae9d8" stroke="#d2a47a" stroke-width="2"/>
+<text x="823" y="565" text-anchor="start" font-size="32">The closer a marker is to the disease gene, the closer the linkage</text>
+<text x="823" y="603" text-anchor="start" font-size="32">and the more likely it is that they will be inherited together.</text>
+</g>
+<text x="800" y="36" text-anchor="middle" font-size="30">Locus of a &#8220;disease gene&#8221;</text>
+<text x="800" y="76" text-anchor="middle" font-size="30">(a genetic risk factor), <tspan font-style="italic">D</tspan></text>
+<text x="828" y="428" text-anchor="middle" font-size="37"><tspan font-style="italic" fill="white">D</tspan></text>
+<text x="235" y="555" text-anchor="middle" font-size="31">DNA polymorphisms</text>
+<text x="235" y="593" text-anchor="middle" font-size="31">(genetic markers) along</text>
+<text x="235" y="631" text-anchor="middle" font-size="31">the chromosomes</text>
+</g>
+<g fill="none" stroke="#3983a7" stroke-width="3" stroke-linecap="round"><path d="M585 281 L746 383 M585 281 L883 383"/><path d="M1330 249 L1202 383 M1330 249 L1284 383"/><path d="M870 530 L770 445 M930 530 L905 445"/></g>
+<g fill="#3983a7"><circle cx="746" cy="383" r="5"/><circle cx="883" cy="383" r="5"/><circle cx="1202" cy="383" r="5"/><circle cx="1284" cy="383" r="5"/><circle cx="770" cy="445" r="5"/><circle cx="905" cy="445" r="5"/></g>
+<path d="M800 93 L800 375" fill="none" stroke="#53616a" stroke-width="2"/>
+<path d="M80 465 V478 H390 V465 M235 478 V512" fill="none" stroke="#53616a" stroke-width="2"/>
+</svg>

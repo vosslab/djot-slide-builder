@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="256" viewBox="0 0 584 256" role="img" aria-labelledby="pedigree-title pedigree-desc">
+<title id="pedigree-title">X-linked recessive pedigree</title>
+<desc id="pedigree-desc">Pedigree of 22 people across three generations. Squares represent males and circles represent females. Four affected males are red; 18 unaffected people are cream. The upper-right male is deceased, marked by a diagonal slash.</desc>
+<rect width="584" height="256" fill="#F1F6FB"/>
+<g id="family-connections" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round">
+<path id="left-union" d="M148 46 H184"/>
+<path id="left-descent" d="M166 46 V82"/>
+<path id="left-sibship" d="M40 82 H220"/>
+<path id="right-union" d="M396 46 H432"/>
+<path id="right-descent" d="M414 46 V82"/>
+<path id="right-sibship" d="M340 82 H520"/>
+<path id="central-union" d="M238 120 H322"/>
+<path id="central-descent" d="M280 120 V165"/>
+<path id="bottom-sibship" d="M31 165 H553"/>
+<path id="middle-drop-1" d="M40 82 V102"/>
+<path id="middle-drop-2" d="M100 82 V102"/>
+<path id="middle-drop-3" d="M160 82 V102"/>
+<path id="middle-drop-4" d="M220 82 V102"/>
+<path id="middle-drop-5" d="M340 82 V102"/>
+<path id="middle-drop-6" d="M400 82 V102"/>
+<path id="middle-drop-7" d="M460 82 V102"/>
+<path id="middle-drop-8" d="M520 82 V102"/>
+<path id="bottom-drop-1" d="M31 165 V189"/>
+<path id="bottom-drop-2" d="M89 165 V189"/>
+<path id="bottom-drop-3" d="M147 165 V189"/>
+<path id="bottom-drop-4" d="M205 165 V189"/>
+<path id="bottom-drop-5" d="M263 165 V189"/>
+<path id="bottom-drop-6" d="M321 165 V189"/>
+<path id="bottom-drop-7" d="M379 165 V189"/>
+<path id="bottom-drop-8" d="M437 165 V189"/>
+<path id="bottom-drop-9" d="M495 165 V189"/>
+<path id="bottom-drop-10" d="M553 165 V189"/>
+</g>
+<g id="people" stroke="#243645" stroke-width="2">
+<rect id="top-1" x="112" y="28" width="36" height="36" fill="#DF2444"/>
+<circle id="top-2" cx="202" cy="46" r="18" fill="#FFF8E7"/>
+<circle id="top-3" cx="378" cy="46" r="18" fill="#FFF8E7"/>
+<rect id="top-4" x="432" y="28" width="36" height="36" fill="#FFF8E7"/>
+<rect id="middle-1" x="22" y="102" width="36" height="36" fill="#FFF8E7"/>
+<circle id="middle-2" cx="100" cy="120" r="18" fill="#FFF8E7"/>
+<rect id="middle-3" x="142" y="102" width="36" height="36" fill="#FFF8E7"/>
+<circle id="middle-4" cx="220" cy="120" r="18" fill="#FFF8E7"/>
+<rect id="middle-5" x="322" y="102" width="36" height="36" fill="#FFF8E7"/>
+<circle id="middle-6" cx="400" cy="120" r="18" fill="#FFF8E7"/>
+<circle id="middle-7" cx="460" cy="120" r="18" fill="#FFF8E7"/>
+<circle id="middle-8" cx="520" cy="120" r="18" fill="#FFF8E7"/>
+<rect id="bottom-1" x="13" y="189" width="36" height="36" fill="#FFF8E7"/>
+<rect id="bottom-2" x="71" y="189" width="36" height="36" fill="#DF2444"/>
+<circle id="bottom-3" cx="147" cy="207" r="18" fill="#FFF8E7"/>
+<rect id="bottom-4" x="187" y="189" width="36" height="36" fill="#FFF8E7"/>
+<circle id="bottom-5" cx="263" cy="207" r="18" fill="#FFF8E7"/>
+<rect id="bottom-6" x="303" y="189" width="36" height="36" fill="#DF2444"/>
+<circle id="bottom-7" cx="379" cy="207" r="18" fill="#FFF8E7"/>
+<rect id="bottom-8" x="419" y="189" width="36" height="36" fill="#DF2444"/>
+<rect id="bottom-9" x="477" y="189" width="36" height="36" fill="#FFF8E7"/>
+<circle id="bottom-10" cx="553" cy="207" r="18" fill="#FFF8E7"/>
+</g>
+<path id="death-slash" d="M429 25 L471 67" fill="none" stroke="#243645" stroke-width="2" stroke-linecap="round"/>
+<g id="source-numbers" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">
+<text id="number-1" x="130" y="21">1</text>
+<text id="number-2" x="202" y="21">2</text>
+<text id="number-3" x="378" y="21">3</text>
+<text id="number-4" x="450" y="21">4</text>
+<text id="number-5" x="244" y="100">5</text>
+<text id="number-6" x="316" y="100">6</text>
+<text id="number-7" x="31" y="247">7</text>
+<text id="number-8" x="89" y="247">8</text>
+<text id="number-9" x="147" y="247">9</text>
+<text id="number-10" x="263" y="247">10</text>
+</g>
+</svg>

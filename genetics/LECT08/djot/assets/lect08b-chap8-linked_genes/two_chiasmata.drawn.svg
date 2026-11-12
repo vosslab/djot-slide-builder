@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="954" height="498" viewBox="0 0 954 498" role="img" aria-labelledby="figure-title figure-desc">
+<title id="figure-title">Two chiasmata in homologous chromosomes</title>
+<desc id="figure-desc">Four continuous chromatids form two replicated homologs with shared sister centromere regions at the left. The two inner nonsister chromatids cross twice; outer chromatids remain separate. The two chiasmata are schematic contacts, not finished genotype products. Teal and blue retain homolog identity throughout.</desc>
+<rect width="954" height="498" fill="white"/>
+<text x="20" y="39" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">(B)</text>
+<g id="teal-outer-chromatid">
+<path d="M 83,152 C 122,135 151,151 183,171 C 280,130 341,139 415,147 S 578,140 665,156 S 781,172 849,150" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 83,152 C 122,135 151,151 183,171 C 280,130 341,139 415,147 S 578,140 665,156 S 781,172 849,150" fill="none" stroke="#299b80" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="blue-outer-chromatid">
+<path d="M 79,358 C 121,381 151,359 183,335 C 280,382 349,398 432,397 S 582,405 669,391 S 780,368 850,391" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 79,358 C 121,381 151,359 183,335 C 280,382 349,398 432,397 S 582,405 669,391 S 780,368 850,391" fill="none" stroke="#247ca6" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="teal-inner-chromatid">
+<path d="M 85,198 C 123,198 150,183 183,171 C 259,183 305,209 364,266 C 423,323 477,348 549,339 C 619,331 661,307 714,266 C 767,225 808,223 850,240" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 85,198 C 123,198 150,183 183,171 C 259,183 305,209 364,266 C 423,323 477,348 549,339 C 619,331 661,307 714,266 C 767,225 808,223 850,240" fill="none" stroke="#299b80" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="blue-inner-chromatid">
+<path d="M 80,311 C 119,320 149,330 183,335 C 259,338 305,323 364,266 C 423,209 477,184 549,193 C 619,201 661,225 714,266 C 767,307 808,321 850,303" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 80,311 C 119,320 149,330 183,335 C 259,338 305,323 364,266 C 423,209 477,184 549,193 C 619,201 661,225 714,266 C 767,307 808,321 850,303" fill="none" stroke="#247ca6" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs><clipPath id="first-crossing-clip"><circle cx="364" cy="266" r="35"/></clipPath><clipPath id="second-crossing-clip"><circle cx="714" cy="266" r="35"/></clipPath></defs>
+<g id="first-chiasma-overpass" clip-path="url(#first-crossing-clip)">
+<path d="M 85,198 C 123,198 150,183 183,171 C 259,183 305,209 364,266 C 423,323 477,348 549,339 C 619,331 661,307 714,266 C 767,225 808,223 850,240" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 85,198 C 123,198 150,183 183,171 C 259,183 305,209 364,266 C 423,323 477,348 549,339 C 619,331 661,307 714,266 C 767,225 808,223 850,240" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 85,198 C 123,198 150,183 183,171 C 259,183 305,209 364,266 C 423,323 477,348 549,339 C 619,331 661,307 714,266 C 767,225 808,223 850,240" fill="none" stroke="#299b80" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="second-chiasma-overpass" clip-path="url(#second-crossing-clip)">
+<path d="M 80,311 C 119,320 149,330 183,335 C 259,338 305,323 364,266 C 423,209 477,184 549,193 C 619,201 661,225 714,266 C 767,307 808,321 850,303" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 80,311 C 119,320 149,330 183,335 C 259,338 305,323 364,266 C 423,209 477,184 549,193 C 619,201 661,225 714,266 C 767,307 808,321 850,303" fill="none" stroke="#213547" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 80,311 C 119,320 149,330 183,335 C 259,338 305,323 364,266 C 423,209 477,184 549,193 C 619,201 661,225 714,266 C 767,307 808,321 850,303" fill="none" stroke="#247ca6" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<g id="teal-centromere">
+<ellipse cx="183" cy="171" rx="13" ry="21" fill="#196b57" stroke="#f6fbfc" stroke-width="1.8"/>
+</g>
+<g id="blue-centromere">
+<ellipse cx="183" cy="335" rx="13" ry="21" fill="#185975" stroke="#f6fbfc" stroke-width="1.8"/>
+</g>
+<text x="206" y="68" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">Centromere</text>
+<path d="M 223,80 L 187,150" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="620" y="65" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">Chromatid</text>
+<path d="M 686,78 L 651,150" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="105" y="466" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">Centromere</text>
+<path d="M 202,435 L 185,357" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="35" y="265" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">Chiasma</text>
+<path d="M 163,257 L 346,264" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="798" y="279" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" text-anchor="start">Chiasma</text>
+<path d="M 787,270 L 733,267" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="296" viewBox="0 0 1200 296" role="img" aria-labelledby="title desc"><title id="title">Allele frequency definitions</title><desc id="desc">Source step one: red and white allele frequencies of 0.8 and 0.2. The continuation shaft is cropped at the bottom.</desc><defs><radialGradient id="red" cx="30%" cy="25%" r="75%"><stop stop-color="#ef997b" /><stop offset=".45" stop-color="#df4b39" /><stop offset="1" stop-color="#a52830" /></radialGradient>
+<radialGradient id="white" cx="30%" cy="25%" r="75%"><stop stop-color="#ffffff" /><stop offset=".5" stop-color="#f4f5f1" /><stop offset="1" stop-color="#c2ccca" /></radialGradient>
+</defs><rect width="1200" height="296" fill="white" /><g id="headings" font-family="Atkinson Hyperlegible Next" font-size="39" font-weight="750" text-anchor="middle" fill="#202b2e"><text x="795" y="59">Frequencies of alleles</text></g>
+<g id="definitions" font-family="Atkinson Hyperlegible Next" font-size="32" fill="#202b2e">
+<text x="470" y="139" xml:space="preserve"><tspan font-style="italic">p</tspan> = frequency of <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="23">R</tspan> allele</text>
+<text x="1062" y="139">= 0.8</text>
+<text x="470" y="231" xml:space="preserve"><tspan font-style="italic">q</tspan> = frequency of <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="23">W</tspan> allele</text>
+<text x="1062" y="231">= 0.2</text></g>
+<g id="key-tokens"><circle id="key-red" cx="1009" cy="127" r="25" fill="url(#red)" stroke="#ad4542" stroke-width="2" /><circle id="key-white" cx="1009" cy="219" r="25" fill="url(#white)" stroke="#9caaa9" stroke-width="2" /></g>
+<g id="callout-placement" transform="translate(0,-40)" font-family="Atkinson Hyperlegible Next" font-size="35" fill="#008bad" text-anchor="end"><g id="callout-1"><circle cx="73" cy="95" r="23" fill="#008bad" /><text x="73" y="107" text-anchor="middle" fill="white" font-weight="750">1</text>
+<text x="350" y="107">The allele</text><text x="350" y="151">frequencies of</text><text x="350" y="195">the population</text><text x="350" y="239">are 0.8 (80%)</text><text x="350" y="283">and 0.2 (20%).</text></g>
+</g><g id="leaders" fill="none" stroke="#058cac" stroke-width="2.3"><path d="M370 37 V260 M370 151 L447 127 M370 151 L447 219" /></g><g id="leader-dots" fill="#058cac"><circle cx="447" cy="127" r="7" /><circle cx="447" cy="219" r="7" /></g><rect id="continuation-shaft" x="785" y="270" width="20" height="40" fill="#6b7168" /></svg>

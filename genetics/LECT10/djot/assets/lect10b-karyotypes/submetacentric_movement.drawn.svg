@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="480" viewBox="0 0 1500 480" role="img" aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Submetacentric chromosome movement</title>
+  <desc id="figure-desc">Two sequential views of one cell, schematic and not measured to scale. At metaphase, one replicated submetacentric chromosome has two continuous sister chromatids joined at their paired centromeric units. Opposite poles attach to the outward-facing unit of each sister. At anaphase, two single daughter chromosomes separate in the same cell: their centromeres lead toward opposite poles, and their long upper and short lower arms trail as mirrored J shapes opening toward the middle.</desc>
+  <rect width="1500" height="480" fill="#ffffff"/>
+  <g font-family="Atkinson Hyperlegible Next" fill="#243b4b">
+    <g id="cell-outlines" fill="#f7fafb" stroke="#b3c3cb" stroke-width="2.5">
+      <path d="M 35 220 C 35 119 125 62 278 62 C 432 62 565 112 565 220 C 565 324 443 379 296 379 C 143 379 35 326 35 220 Z"/>
+      <path d="M 740 220 C 740 115 895 62 1091 62 C 1290 62 1465 112 1465 220 C 1465 327 1295 379 1106 379 C 904 379 740 326 740 220 Z"/>
+    </g>
+    <g id="metaphase">
+      <g id="metaphase-supporting-fibers" fill="none" stroke="#c5ced2" stroke-width="3" stroke-linecap="round">
+        <path d="M 83 220 C 168 40 442 40 518 220"/>
+        <path d="M 83 220 C 168 400 442 400 518 220"/>
+      </g>
+      <g id="metaphase-attachment-bundles" fill="none" stroke="#83989f" stroke-width="3.2" stroke-linecap="round">
+        <path d="M 83 220 Q 172 188 276 213 M 83 220 L 275 220 M 83 220 Q 172 252 276 227"/>
+        <path d="M 518 220 Q 425 188 324 213 M 518 220 L 325 220 M 518 220 Q 425 252 324 227"/>
+      </g>
+      <g id="replicated-chromosome" fill="#4c9ec7" stroke="#294d65" stroke-width="3.5" stroke-linejoin="round">
+        <path id="left-sister" d="M 248 99 C 236 98 232 107 235 120 C 246 161 271 194 275 220 C 268 235 247 254 244 274 C 242 287 250 293 260 290 C 270 288 271 280 273 273 C 277 257 290 242 293 233 C 297 224 297 216 293 207 C 290 190 278 158 268 120 C 265 109 260 99 248 99 Z"/>
+        <path id="right-sister" transform="translate(600 0) scale(-1 1)" d="M 248 99 C 236 98 232 107 235 120 C 246 161 271 194 275 220 C 268 235 247 254 244 274 C 242 287 250 293 260 290 C 270 288 271 280 273 273 C 277 257 290 242 293 233 C 297 224 297 216 293 207 C 290 190 278 158 268 120 C 265 109 260 99 248 99 Z"/>
+      </g>
+      <path id="sister-join" d="M 287 213 Q 300 209 313 213 L 313 227 Q 300 231 287 227 Z" fill="#294d65"/>
+      <g id="paired-centromeric-units" fill="#387086" stroke="#243f53" stroke-width="2.8">
+        <ellipse id="left-sister-centromere" cx="287" cy="220" rx="12" ry="14"/>
+        <ellipse id="right-sister-centromere" cx="313" cy="220" rx="12" ry="14"/>
+      </g>
+      <g id="metaphase-poles" fill="#83989f">
+        <circle cx="83" cy="220" r="6"/>
+        <circle cx="518" cy="220" r="6"/>
+      </g>
+      <text x="300" y="439" font-size="34" text-anchor="middle">Metaphase</text>
+    </g>
+    <g id="time-arrow" fill="none" stroke="#37566b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 608 220 H 696 M 681 207 L 699 220 L 681 233"/>
+    </g>
+    <g id="anaphase">
+      <g id="anaphase-supporting-fibers" fill="none" stroke="#c5ced2" stroke-width="3" stroke-linecap="round">
+        <path d="M 790 220 C 956 39 1262 39 1417 220"/>
+        <path d="M 790 220 C 956 401 1262 401 1417 220"/>
+      </g>
+      <g id="anaphase-attachment-bundles" fill="none" stroke="#83989f" stroke-width="3.2" stroke-linecap="round">
+        <path d="M 790 220 Q 849 199 917 213 M 790 220 H 916 M 790 220 Q 849 241 917 227"/>
+        <path d="M 1417 220 Q 1357 199 1283 213 M 1417 220 H 1284 M 1417 220 Q 1357 241 1283 227"/>
+      </g>
+      <g id="daughter-chromosomes" fill="#4c9ec7" stroke="#294d65" stroke-width="3.5" stroke-linejoin="round">
+        <path id="left-daughter" d="M 1031 118 C 1042 114 1051 121 1050 131 C 1050 139 1044 143 1037 146 C 993 162 959 183 945 220 C 951 236 965 247 984 252 C 995 254 999 264 994 272 C 991 278 984 280 976 277 C 951 271 930 252 921 233 C 915 225 915 215 921 207 C 937 166 976 138 1031 118 Z"/>
+        <path id="right-daughter" transform="translate(2200 0) scale(-1 1)" d="M 1031 118 C 1042 114 1051 121 1050 131 C 1050 139 1044 143 1037 146 C 993 162 959 183 945 220 C 951 236 965 247 984 252 C 995 254 999 264 994 272 C 991 278 984 280 976 277 C 951 271 930 252 921 233 C 915 225 915 215 921 207 C 937 166 976 138 1031 118 Z"/>
+      </g>
+      <g id="daughter-centromeres" fill="#387086" stroke="#243f53" stroke-width="2.8">
+        <ellipse id="left-daughter-centromere" cx="928" cy="220" rx="12" ry="14"/>
+        <ellipse id="right-daughter-centromere" cx="1272" cy="220" rx="12" ry="14"/>
+      </g>
+      <g id="anaphase-poles" fill="#83989f">
+        <circle cx="790" cy="220" r="6"/>
+        <circle cx="1417" cy="220" r="6"/>
+      </g>
+      <text x="1100" y="38" font-size="32" text-anchor="middle">Anaphase</text>
+      <text x="1100" y="423" font-size="37" font-weight="600" text-anchor="middle">Submetacentric</text>
+      <text x="1100" y="464" font-size="34" text-anchor="middle">(J-shaped)</text>
+    </g>
+    <g id="spindle-fiber-callout">
+      <text x="44" y="38" font-size="34">Spindle fibers</text>
+      <path d="M 70 50 L 70 139 L 165 204" fill="none" stroke="#37566b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="165" cy="204" r="3.5" fill="#37566b"/>
+    </g>
+  </g>
+</svg>

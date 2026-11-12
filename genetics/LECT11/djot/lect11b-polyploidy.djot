@@ -86,7 +86,7 @@ hidden: true
 
 @body
 
-![Slide image 7](assets/lect11b-polyploidy/image_007.png)
+![Slide image 7](assets/lect11b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg)
 
 - Polyploidy is the presence of extra sets of chromosomes due to accidents during cell division
 - Polyploidy is much more common in plants than in animals
@@ -298,22 +298,22 @@ hidden: true
 
 @top
 
-![Slide image 16](assets/lect11b-polyploidy/image_016.png)
+![Slide image 16](assets/lect11b-polyploidy/polyploidization_explanations.quote.svg)
 
 @bottom
 
-![Slide image 17](assets/lect11b-polyploidy/image_017.png)
+![Slide image 17](assets/lect11b-polyploidy/polyploidization_gametes.drawn.svg)
 
 === layout: stacked-panels
 
 
 @top
 
-![Slide image 17](assets/lect11b-polyploidy/image_016.png)
+![Slide image 17](assets/lect11b-polyploidy/polyploidization_explanations.quote.svg)
 
 @bottom
 
-![Slide image 18](assets/lect11b-polyploidy/image_018.png)
+![Slide image 18](assets/lect11b-polyploidy/polyploidization_zygotes.drawn.svg)
 
 === layout: stacked-panels
 @replaceme
@@ -321,11 +321,11 @@ hidden: true
 
 @top
 
-![Slide image 18](assets/lect11b-polyploidy/image_016.png)
+![Slide image 18](assets/lect11b-polyploidy/polyploidization_explanations.quote.svg)
 
 @bottom
 
-![Slide image 19](assets/lect11b-polyploidy/image_019.png)
+![Slide image 19](assets/lect11b-polyploidy/polyploidization_adults.drawn.svg)
 
 === layout: section
 
@@ -495,7 +495,7 @@ hidden: true
 
 @body
 
-![Slide image 26](assets/lect11b-polyploidy/image_026.png)
+![Slide image 26](assets/lect11b-polyploidy/auto_allopolyploid_comparison.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -586,7 +586,7 @@ hidden: true
 
 - This can be done by treatment with colchicine, which inhibits formation of the mitotic spindle.
 
-![Slide image 30](assets/lect11b-polyploidy/image_030.jpg)
+![Slide image 30](assets/lect11b-polyploidy/colchicine_chromosome_doubling.drawn.svg)
 
 - Production of a diploid from a monoploid by treatment with colchicine.
 

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="856" viewBox="0 0 600 856" role="img" aria-labelledby="title desc"><title id="title">Meiosis: diploid to haploid</title><desc id="desc">One cell labeled 2n gives rise to four cells labeled 1n. Two primary branches each fork into two daughter-directed arrows; intermediate cells are not depicted.</desc><rect width="600" height="856" fill="white"/>
+<g id="division-branches" fill="none" stroke="#476b78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M195 384 L272 236 L352 127"/><path d="M272 236 L352 306"/><path d="M195 472 L272 620 L352 550"/><path d="M272 620 L352 729"/></g>
+<g fill="#476b78"><path d="M361 115 L340 127 L353 137 Z"/><path d="M363 316 L353 295 L341 309 Z"/><path d="M363 540 L341 547 L353 561 Z"/><path d="M361 741 L353 719 L340 729 Z"/></g>
+<g id="cell-0" transform="translate(110 428)" data-ploidy="2n">
+<path d="M-78 -8 C-77 -53 -42 -81 2 -80 C47 -80 80 -48 79 -2 C80 42 50 79 5 81 C-40 84 -81 49 -78 -8 Z" fill="#dcecf0" stroke="#527d8b" stroke-width="3"/>
+<path d="M-68 -16 C-64 -53 -32 -70 4 -69 C40 -69 66 -44 68 -11" fill="none" stroke="#f8fcfd" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="48" ry="51" fill="#f6e8be" stroke="#bd9b4d" stroke-width="2"/>
+<text x="0" y="13" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" font-weight="500" fill="#263844">2n</text></g>
+<g id="cell-1" transform="translate(460 110)" data-ploidy="1n">
+<path d="M-78 -8 C-77 -53 -42 -81 2 -80 C47 -80 80 -48 79 -2 C80 42 50 79 5 81 C-40 84 -81 49 -78 -8 Z" fill="#dcecf0" stroke="#527d8b" stroke-width="3"/>
+<path d="M-68 -16 C-64 -53 -32 -70 4 -69 C40 -69 66 -44 68 -11" fill="none" stroke="#f8fcfd" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="48" ry="51" fill="#f6e8be" stroke="#bd9b4d" stroke-width="2"/>
+<text x="0" y="13" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" font-weight="500" fill="#263844">1n</text></g>
+<g id="cell-2" transform="translate(460 322)" data-ploidy="1n">
+<path d="M-78 -8 C-77 -53 -42 -81 2 -80 C47 -80 80 -48 79 -2 C80 42 50 79 5 81 C-40 84 -81 49 -78 -8 Z" fill="#dcecf0" stroke="#527d8b" stroke-width="3"/>
+<path d="M-68 -16 C-64 -53 -32 -70 4 -69 C40 -69 66 -44 68 -11" fill="none" stroke="#f8fcfd" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="48" ry="51" fill="#f6e8be" stroke="#bd9b4d" stroke-width="2"/>
+<text x="0" y="13" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" font-weight="500" fill="#263844">1n</text></g>
+<g id="cell-3" transform="translate(460 534)" data-ploidy="1n">
+<path d="M-78 -8 C-77 -53 -42 -81 2 -80 C47 -80 80 -48 79 -2 C80 42 50 79 5 81 C-40 84 -81 49 -78 -8 Z" fill="#dcecf0" stroke="#527d8b" stroke-width="3"/>
+<path d="M-68 -16 C-64 -53 -32 -70 4 -69 C40 -69 66 -44 68 -11" fill="none" stroke="#f8fcfd" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="48" ry="51" fill="#f6e8be" stroke="#bd9b4d" stroke-width="2"/>
+<text x="0" y="13" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" font-weight="500" fill="#263844">1n</text></g>
+<g id="cell-4" transform="translate(460 746)" data-ploidy="1n">
+<path d="M-78 -8 C-77 -53 -42 -81 2 -80 C47 -80 80 -48 79 -2 C80 42 50 79 5 81 C-40 84 -81 49 -78 -8 Z" fill="#dcecf0" stroke="#527d8b" stroke-width="3"/>
+<path d="M-68 -16 C-64 -53 -32 -70 4 -69 C40 -69 66 -44 68 -11" fill="none" stroke="#f8fcfd" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="48" ry="51" fill="#f6e8be" stroke="#bd9b4d" stroke-width="2"/>
+<text x="0" y="13" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" font-weight="500" fill="#263844">1n</text></g>
+</svg>

@@ -10,6 +10,41 @@ full-suite verification are complete. Broader creative renewal remains open. Thi
 [progress ledger](genetics_visual_renewal_progress.md) and
 [workstream index](../workstreams/genetics_visual_workstreams.md) own execution status and tasks.
 
+## November 11, 2026 review
+
+The original request was to research basic SVG drawing skills for replacing raster clipart and
+artwork, starting with Genetics; implementation was then approved. The historical local snapshot
+`_temp/svg_migration_research/GENETICS_VISUAL_RENEWAL_PLAN.md` introduced three expansions:
+local teaching-sequence improvements (including tree work), native text/table screenshot
+conversion, and ODP/PDF exports for every changed root. Those plan clauses explain the manager's
+scope and process drift; later instructor clarifications return the work to original art without
+requiring another plan-approval cycle.
+
+The authoritative master plan,
+[genetics_visual_renewal_plan.md](../active/genetics_visual_renewal_plan.md), governs older briefs
+and historical process below. It prioritizes pure SVG artwork across lecture decks, with Genetics
+and Biostatistics first and Biotechnology secondary. Choose manageable, high-impact illustrations
+actually in use, regardless of `@replaceme`; unused-file counts are not progress. Djot edits are
+limited to existing image URL/path substitutions, preserving all other content and directives.
+Faithful pure-text OCR produces an editable SVG card styled like a blockquote, preserving original
+words, errors and voice. Integration changes only the image URL; this is in-scope SVG replacement,
+not permission for native Djot prose or blockquote conversion. Retain photographs, empirical
+images and identities; defer human figures and drawings beyond reliable ability. Gene-tree work
+stays archived for future BPQ SVG work, with working code retained. Source checks supply facts
+needed for the art, not a global science audit.
+
+Dream big means creative, better original art, not tracing or pixel equivalence. Smaller batches
+and simpler methods preserve that ambition: drawing-book-informed construction, useful depth and
+geometric reuse, and a coherent visual language flexible enough for each subject. Flat editable
+Next/Mono labels fit this approach; restrained drawing depth or shading may help, without text
+gradients or advanced SVG features.
+
+Continue with one candidate, one original SVG, one intended-size preview, brief artist/manager
+review and image-URL integration. A concrete concern can justify extra checks. Complete ordinary
+art milestones autonomously; external human feedback is optional. Follow the runtime boundaries
+in [HUMAN_GUIDANCE.md](../../HUMAN_GUIDANCE.md). No new inventory, migration cycle, toolkit or test
+framework is needed. The completed reviews, tests and exports below remain historical evidence.
+
 ## What the clarification changes
 
 The goal remains ambitious original SVG artwork throughout Genetics. The instructor clarified
@@ -51,8 +86,8 @@ specific decisions, not a verdict on every candidate.
 | Bottleneck | Open bins/funnel weaken the bottle metaphor; an equal-color bead grid appears deliberately arranged. | Construct a recognizable bottle, narrow neck and receiving vessel; preserve stages and the five-blue/one-white result. |
 
 The earlier plan's completion criteria emphasized source preservation, parsing and export checks.
-Those checks remain necessary but did not explicitly require visible gains in recognition,
-comparison or explanation. Likewise, preserving "geometry" did not distinguish scientific
+Preservation and parsing remain necessary; export checks address concrete consumer concerns.
+Those checks did not explicitly require visible gains in recognition, comparison or explanation. Likewise, preserving "geometry" did not distinguish scientific
 topology from incidental contour. The revised plan makes that distinction and carries good work
 forward rather than imposing a blanket redraw.
 
@@ -111,7 +146,9 @@ chromosome identity/context investigation complete. Three remaining-family surve
 bounded assignments through the five active groups; selective refinements to strong examples
 remain lower-priority tasks. The first batch demonstrates the reviewed guide.
 Preserve scientific facts, examples and reveals while allowing fresh visual explanations. Use
-minimal course integration and inspect real ODP/PDF pages; standalone previews cannot prove fit.
+one intended-size SVG preview, brief artist/manager review and image-URL integration. Add a
+targeted consumer/export check only for a concrete concern, following
+[SVG_DIAGRAMS.md](../../slide-specs/SVG_DIAGRAMS.md).
 
 ## Accepted bounded work
 

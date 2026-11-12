@@ -32,6 +32,10 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
 - Implement queued messages and finish their requests. Do not depend on feedback questions;
   I may never see them. Use the recorded guidance and available evidence to complete the work.
 
+- "I would prefer to handle all git commands myself, stick to SVG and drawing." Agents run no
+  Git commands, directly or through helpers; `source_me.sh` invokes `git rev-parse`, so use
+  configured Python 3.12 directly and Git-free checks for SVG work.
+
 - Retain tests enforcing Djot syntax and authoring guidelines even when their exact assertions
   would otherwise look fragile. Tests must not force implementation to stay in monolithic files.
 
@@ -141,6 +145,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   layout with a colored prompt and required dark supporting examples.
 
 ## Labeled diagram reconstruction
+
+- Evaluate raster-to-SVG replacements directly at their intended display size whenever possible.
+  Keep the drawing checks simple; use Djot-to-PDF only when a specific consumer concern needs it.
 
 - I ignore SVGs with copyright information for a reason. Preserve that protection when
   adding tracking exceptions.
@@ -595,12 +602,34 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 ## Preserve teaching voice
 
+- This is a pure SVG goal, with no raster deliverables or embedded-raster SVG replacements.
+  Use quality-90 WebP for raster previews/review assets. Keep original rasters as fallbacks or
+  references; an SVG wrapper does not count as a completed original vector drawing.
+
+- If a raster drawing is too difficult to replace convincingly, defer or skip it with a brief
+  reason. I am fine with that limit; do not force a weak replacement.
+
+- Prioritize Genetics and Biostatistics because I want to write my own books for those courses.
+  Biotechnology is lower priority. Finish useful artwork already started in `_temp/`.
+
+- The prenatal fetus looks like a monster and is unusable to me. Avoid drawing human figures;
+  cells with chromosomes should be more straightforward, but those results also need improvement.
+  The prenatal drawings also look too close to the source artwork, which raises copyright concerns.
+
+- Keep the report of new SVG content deemed unusable easy to find, including nondisjunction
+  and CVS. Record my rejection even when an earlier manager review accepted the drawings.
+
 - Prioritize high-quality original SVG replacements for rasterized drawings and clipart by
   potential visual improvement and creation difficulty: achievable high-impact art first,
   complex work later. `@replaceme` status does not determine artwork priority.
 
-- For a pure-text image, faithful OCR may become a blockquote-style card; preserve the original
-  wording, errors and voice, and retain the source image.
+- For this SVG goal, edit Djot only to switch an existing image URL/path to SVG; preserve all
+  other slide content and directives. The master scope is
+  [active_plans/active/genetics_visual_renewal_plan.md](active_plans/active/genetics_visual_renewal_plan.md).
+
+- For a pure-text image, faithful OCR becomes an editable SVG card styled like a blockquote,
+  with only the image URL changed in Djot. Preserve wording, errors and voice, retain the source
+  image, and do not convert it to native Djot prose or a native blockquote.
 
 - This job is drawing and clipart replacement for rasterized images. Preserve my voice, titles,
   prose, examples, layouts and sequence; check sources only as needed to draw accurately, not for

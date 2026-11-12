@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1067" height="968" viewBox="0 0 1067 968" role="img" aria-labelledby="title desc">
+<title id="title">Tandem-repeat length and gel migration</title><desc id="desc">Schematic, not to scale. Ten duplexes contain one through ten repeat units, numbered individually on both-strand modules. Conserved flanks have two cleavage boundaries per row. All strands are antiparallel. Each corresponding gel strip has one purple band; longer fragments travel less far right. Original construction from the teaching facts in image_004.jpg; no base sequence or measured migration distance is implied.</desc>
+<g font-family="Arial, sans-serif">
+<rect  x="0" y="0" width="1067" height="968" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="26" y="35" font-size="29" text-anchor="start" fill="#213547" font-weight="700">Positions of</text>
+<text x="26" y="69" font-size="29" text-anchor="start" fill="#213547" font-weight="700">cleavage sites</text>
+<text x="370" y="35" font-size="29" text-anchor="start" fill="#213547" font-weight="700">Duplex DNA</text>
+<text x="370" y="69" font-size="29" text-anchor="start" fill="#213547" font-weight="700">molecules</text>
+<text x="878" y="35" font-size="28" text-anchor="middle" fill="#213547" font-weight="700">Direction of current</text>
+<path  d="M720 57 H1036 M1021 47 L1036 57 L1021 67" stroke="#206A91" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="710" y="99" font-size="27" text-anchor="start" fill="#213547" font-weight="400">Larger DNA</text>
+<text x="710" y="131" font-size="27" text-anchor="start" fill="#213547" font-weight="400">fragments</text>
+<text x="1045" y="99" font-size="27" text-anchor="end" fill="#213547" font-weight="400">Smaller DNA</text>
+<text x="1045" y="131" font-size="27" text-anchor="end" fill="#213547" font-weight="400">fragments</text>
+<path  d="M107 83 L85 176 M206 83 L225 176" stroke="#526879" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M420 83 L333 110 L192 222" stroke="#526879" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="878" y="167" font-size="26" text-anchor="middle" fill="#213547" font-weight="400">Position of band in DNA gel</text>
+<g id="vntr-row-1" data-repeat-count="1">
+<path  d="M294 228 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-1-top-rail" x="70" y="210" width="170" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-1-top-repeat-1" x="130" y="209" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-1-bottom-rail" x="70" y="233" width="170" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-1-bottom-repeat-1" x="130" y="232" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-1-cleavage-85" d="M76 177 L85 194 L94 177 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-1-cleavage-225" d="M216 177 L225 194 L234 177 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-1-number-1" x="148" y="201" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-1-left-top" x="50" y="220" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-1-left-bottom" x="50" y="243" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-1-right-top" x="263" y="220" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-1-right-bottom" x="263" y="243" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-1">
+<path  d="M710 202 L718 194 H1045 V250 L1037 258 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="202" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-1" x="1003" y="211" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-2" data-repeat-count="2">
+<path  d="M334 302 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-2-top-rail" x="70" y="284" width="210" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-2-top-repeat-1" x="130" y="283" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-2-top-repeat-2" x="170" y="283" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-2-bottom-rail" x="70" y="307" width="210" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-2-bottom-repeat-1" x="130" y="306" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-2-bottom-repeat-2" x="170" y="306" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-2-cleavage-85" d="M76 251 L85 268 L94 251 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-2-cleavage-265" d="M256 251 L265 268 L274 251 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-2-number-1" x="148" y="275" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-2-number-2" x="188" y="275" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-2-left-top" x="50" y="294" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-2-left-bottom" x="50" y="317" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-2-right-top" x="303" y="294" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-2-right-bottom" x="303" y="317" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-2">
+<path  d="M710 276 L718 268 H1045 V324 L1037 332 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="276" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-2" x="974" y="285" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-3" data-repeat-count="3">
+<path  d="M374 376 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-3-top-rail" x="70" y="358" width="250" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-3-top-repeat-1" x="130" y="357" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-3-top-repeat-2" x="170" y="357" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-3-top-repeat-3" x="210" y="357" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-3-bottom-rail" x="70" y="381" width="250" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-3-bottom-repeat-1" x="130" y="380" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-3-bottom-repeat-2" x="170" y="380" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-3-bottom-repeat-3" x="210" y="380" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-3-cleavage-85" d="M76 325 L85 342 L94 325 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-3-cleavage-305" d="M296 325 L305 342 L314 325 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-3-number-1" x="148" y="349" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-3-number-2" x="188" y="349" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-3-number-3" x="228" y="349" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-3-left-top" x="50" y="368" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-3-left-bottom" x="50" y="391" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-3-right-top" x="343" y="368" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-3-right-bottom" x="343" y="391" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-3">
+<path  d="M710 350 L718 342 H1045 V398 L1037 406 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="350" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-3" x="945" y="359" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-4" data-repeat-count="4">
+<path  d="M414 450 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-4-top-rail" x="70" y="432" width="290" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-4-top-repeat-1" x="130" y="431" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-top-repeat-2" x="170" y="431" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-top-repeat-3" x="210" y="431" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-top-repeat-4" x="250" y="431" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-bottom-rail" x="70" y="455" width="290" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-4-bottom-repeat-1" x="130" y="454" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-bottom-repeat-2" x="170" y="454" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-bottom-repeat-3" x="210" y="454" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-4-bottom-repeat-4" x="250" y="454" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-4-cleavage-85" d="M76 399 L85 416 L94 399 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-4-cleavage-345" d="M336 399 L345 416 L354 399 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-4-number-1" x="148" y="423" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-4-number-2" x="188" y="423" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-4-number-3" x="228" y="423" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-4-number-4" x="268" y="423" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-4-left-top" x="50" y="442" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-4-left-bottom" x="50" y="465" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-4-right-top" x="383" y="442" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-4-right-bottom" x="383" y="465" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-4">
+<path  d="M710 424 L718 416 H1045 V472 L1037 480 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="424" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-4" x="916" y="433" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-5" data-repeat-count="5">
+<path  d="M454 524 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-5-top-rail" x="70" y="506" width="330" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-5-top-repeat-1" x="130" y="505" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-top-repeat-2" x="170" y="505" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-top-repeat-3" x="210" y="505" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-top-repeat-4" x="250" y="505" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-top-repeat-5" x="290" y="505" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-bottom-rail" x="70" y="529" width="330" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-5-bottom-repeat-1" x="130" y="528" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-bottom-repeat-2" x="170" y="528" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-bottom-repeat-3" x="210" y="528" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-bottom-repeat-4" x="250" y="528" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-5-bottom-repeat-5" x="290" y="528" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-5-cleavage-85" d="M76 473 L85 490 L94 473 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-5-cleavage-385" d="M376 473 L385 490 L394 473 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-5-number-1" x="148" y="497" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-5-number-2" x="188" y="497" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-5-number-3" x="228" y="497" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-5-number-4" x="268" y="497" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-5-number-5" x="308" y="497" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-5-left-top" x="50" y="516" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-5-left-bottom" x="50" y="539" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-5-right-top" x="423" y="516" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-5-right-bottom" x="423" y="539" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-5">
+<path  d="M710 498 L718 490 H1045 V546 L1037 554 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="498" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-5" x="887" y="507" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-6" data-repeat-count="6">
+<path  d="M494 598 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-6-top-rail" x="70" y="580" width="370" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-6-top-repeat-1" x="130" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-top-repeat-2" x="170" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-top-repeat-3" x="210" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-top-repeat-4" x="250" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-top-repeat-5" x="290" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-top-repeat-6" x="330" y="579" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-rail" x="70" y="603" width="370" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-6-bottom-repeat-1" x="130" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-repeat-2" x="170" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-repeat-3" x="210" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-repeat-4" x="250" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-repeat-5" x="290" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-6-bottom-repeat-6" x="330" y="602" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-6-cleavage-85" d="M76 547 L85 564 L94 547 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-6-cleavage-425" d="M416 547 L425 564 L434 547 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-6-number-1" x="148" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-6-number-2" x="188" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-6-number-3" x="228" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-6-number-4" x="268" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-6-number-5" x="308" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-6-number-6" x="348" y="571" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">6</text>
+<text id="row-6-left-top" x="50" y="590" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-6-left-bottom" x="50" y="613" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-6-right-top" x="463" y="590" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-6-right-bottom" x="463" y="613" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-6">
+<path  d="M710 572 L718 564 H1045 V620 L1037 628 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="572" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-6" x="858" y="581" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-7" data-repeat-count="7">
+<path  d="M534 672 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-7-top-rail" x="70" y="654" width="410" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-7-top-repeat-1" x="130" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-2" x="170" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-3" x="210" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-4" x="250" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-5" x="290" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-6" x="330" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-top-repeat-7" x="370" y="653" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-rail" x="70" y="677" width="410" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-7-bottom-repeat-1" x="130" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-2" x="170" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-3" x="210" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-4" x="250" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-5" x="290" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-6" x="330" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-7-bottom-repeat-7" x="370" y="676" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-7-cleavage-85" d="M76 621 L85 638 L94 621 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-7-cleavage-465" d="M456 621 L465 638 L474 621 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-7-number-1" x="148" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-7-number-2" x="188" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-7-number-3" x="228" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-7-number-4" x="268" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-7-number-5" x="308" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-7-number-6" x="348" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">6</text>
+<text id="row-7-number-7" x="388" y="645" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">7</text>
+<text id="row-7-left-top" x="50" y="664" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-7-left-bottom" x="50" y="687" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-7-right-top" x="503" y="664" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-7-right-bottom" x="503" y="687" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-7">
+<path  d="M710 646 L718 638 H1045 V694 L1037 702 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="646" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-7" x="829" y="655" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-8" data-repeat-count="8">
+<path  d="M574 746 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-8-top-rail" x="70" y="728" width="450" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-8-top-repeat-1" x="130" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-2" x="170" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-3" x="210" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-4" x="250" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-5" x="290" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-6" x="330" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-7" x="370" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-top-repeat-8" x="410" y="727" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-rail" x="70" y="751" width="450" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-8-bottom-repeat-1" x="130" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-2" x="170" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-3" x="210" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-4" x="250" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-5" x="290" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-6" x="330" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-7" x="370" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-8-bottom-repeat-8" x="410" y="750" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-8-cleavage-85" d="M76 695 L85 712 L94 695 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-8-cleavage-505" d="M496 695 L505 712 L514 695 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-8-number-1" x="148" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-8-number-2" x="188" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-8-number-3" x="228" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-8-number-4" x="268" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-8-number-5" x="308" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-8-number-6" x="348" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">6</text>
+<text id="row-8-number-7" x="388" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">7</text>
+<text id="row-8-number-8" x="428" y="719" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">8</text>
+<text id="row-8-left-top" x="50" y="738" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-8-left-bottom" x="50" y="761" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-8-right-top" x="543" y="738" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-8-right-bottom" x="543" y="761" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-8">
+<path  d="M710 720 L718 712 H1045 V768 L1037 776 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="720" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-8" x="800" y="729" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-9" data-repeat-count="9">
+<path  d="M614 820 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-9-top-rail" x="70" y="802" width="490" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-9-top-repeat-1" x="130" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-2" x="170" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-3" x="210" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-4" x="250" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-5" x="290" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-6" x="330" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-7" x="370" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-8" x="410" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-top-repeat-9" x="450" y="801" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-rail" x="70" y="825" width="490" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-9-bottom-repeat-1" x="130" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-2" x="170" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-3" x="210" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-4" x="250" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-5" x="290" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-6" x="330" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-7" x="370" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-8" x="410" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-9-bottom-repeat-9" x="450" y="824" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-9-cleavage-85" d="M76 769 L85 786 L94 769 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-9-cleavage-545" d="M536 769 L545 786 L554 769 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-9-number-1" x="148" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-9-number-2" x="188" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-9-number-3" x="228" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-9-number-4" x="268" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-9-number-5" x="308" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-9-number-6" x="348" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">6</text>
+<text id="row-9-number-7" x="388" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">7</text>
+<text id="row-9-number-8" x="428" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">8</text>
+<text id="row-9-number-9" x="468" y="793" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">9</text>
+<text id="row-9-left-top" x="50" y="812" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-9-left-bottom" x="50" y="835" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-9-right-top" x="583" y="812" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-9-right-bottom" x="583" y="835" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-9">
+<path  d="M710 794 L718 786 H1045 V842 L1037 850 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="794" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-9" x="771" y="803" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<g id="vntr-row-10" data-repeat-count="10">
+<path  d="M654 894 H700" stroke="#D8E3E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="row-10-top-rail" x="70" y="876" width="530" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-10-top-repeat-1" x="130" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-2" x="170" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-3" x="210" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-4" x="250" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-5" x="290" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-6" x="330" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-7" x="370" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-8" x="410" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-9" x="450" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-top-repeat-10" x="490" y="875" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-rail" x="70" y="899" width="530" height="10" rx="0" fill="#206A91" stroke="none" stroke-width="1"/>
+<rect id="row-10-bottom-repeat-1" x="130" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-2" x="170" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-3" x="210" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-4" x="250" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-5" x="290" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-6" x="330" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-7" x="370" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-8" x="410" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-9" x="450" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<rect id="row-10-bottom-repeat-10" x="490" y="898" width="36" height="12" rx="2" fill="#F4C48F" stroke="#B85F20" stroke-width="2"/>
+<path id="row-10-cleavage-85" d="M76 843 L85 860 L94 843 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="row-10-cleavage-585" d="M576 843 L585 860 L594 843 Z" stroke="#AE3F29" stroke-width="2" fill="#D65A3C" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="row-10-number-1" x="148" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">1</text>
+<text id="row-10-number-2" x="188" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">2</text>
+<text id="row-10-number-3" x="228" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">3</text>
+<text id="row-10-number-4" x="268" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">4</text>
+<text id="row-10-number-5" x="308" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">5</text>
+<text id="row-10-number-6" x="348" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">6</text>
+<text id="row-10-number-7" x="388" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">7</text>
+<text id="row-10-number-8" x="428" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">8</text>
+<text id="row-10-number-9" x="468" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">9</text>
+<text id="row-10-number-10" x="508" y="867" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">10</text>
+<text id="row-10-left-top" x="50" y="886" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<text id="row-10-left-bottom" x="50" y="909" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-10-right-top" x="623" y="886" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">3&#8242;</text>
+<text id="row-10-right-bottom" x="623" y="909" font-size="23" text-anchor="middle" fill="#213547" font-weight="400">5&#8242;</text>
+<g id="gel-strip-10">
+<path  d="M710 868 L718 860 H1045 V916 L1037 924 H710 Z" stroke="#B6CDD8" stroke-width="1.5" fill="#CEDFE8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="710" y="868" width="327" height="56" rx="2" fill="#E7F0F5" stroke="#8EAEBD" stroke-width="1.8"/>
+<rect id="gel-band-10" x="742" y="877" width="11" height="38" rx="2" fill="#763D88" stroke="none" stroke-width="1"/>
+</g></g>
+<path  d="M990 173 L1009 209" stroke="#526879" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M130 917 V927 H526 V917" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="328" y="959" font-size="29" text-anchor="middle" fill="#213547" font-weight="700">Tandem repeats of a DNA sequence</text>
+</g></svg>

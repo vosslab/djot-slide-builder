@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="665" height="409" viewBox="0 0 432.25 265.85" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Numbered family across four rows</title>
+  <desc id="diagram-description">Sixteen people in rows I through IV, joined by five family connections. Three squares are black; five squares and eight circles are white. Numbers identify people within each row; Roman numerals identify rows.</desc>
+  <rect width="100%" height="100%" fill="white" id="background" />
+  <g id="connections">
+    <g id="family-I1-I2">
+      <line x1="191.5" y1="23.4" x2="214.1" y2="23.4" stroke="#000000" stroke-width="2" id="connection-1" />
+      <line x1="204.1" y1="23.4" x2="204.1" y2="62.4" stroke="#000000" stroke-width="2" id="connection-2" />
+      <line x1="68.9" y1="62.4" x2="345.8" y2="62.4" stroke="#000000" stroke-width="2" id="connection-3" />
+      <line x1="68.9" y1="62.4" x2="68.9" y2="78.25" stroke="#000000" stroke-width="2" id="connection-4" />
+      <line x1="175.5" y1="62.4" x2="175.5" y2="78.25" stroke="#000000" stroke-width="2" id="connection-5" />
+      <line x1="345.8" y1="62.4" x2="345.8" y2="78.25" stroke="#000000" stroke-width="2" id="connection-6" />
+    </g>
+    <g id="family-II1-II2">
+      <line x1="84.9" y1="94.25" x2="107.5" y2="94.25" stroke="#000000" stroke-width="2" id="connection-7" />
+      <line x1="96.2" y1="94.25" x2="96.2" y2="136.5" stroke="#000000" stroke-width="2" id="connection-8" />
+      <line x1="96.2" y1="136.5" x2="96.2" y2="145.2" stroke="#000000" stroke-width="2" id="connection-9" />
+    </g>
+    <g id="family-II3-II4">
+      <line x1="191.5" y1="94.25" x2="214.1" y2="94.25" stroke="#000000" stroke-width="2" id="connection-10" />
+      <line x1="204.1" y1="94.25" x2="204.1" y2="136.5" stroke="#000000" stroke-width="2" id="connection-11" />
+      <line x1="182" y1="136.5" x2="237.9" y2="136.5" stroke="#000000" stroke-width="2" id="connection-12" />
+      <line x1="182" y1="136.5" x2="182" y2="149.75" stroke="#000000" stroke-width="2" id="connection-13" />
+      <line x1="237.9" y1="136.5" x2="237.9" y2="149.75" stroke="#000000" stroke-width="2" id="connection-14" />
+    </g>
+    <g id="family-II5-II6">
+      <line x1="361.8" y1="94.25" x2="384.4" y2="94.25" stroke="#000000" stroke-width="2" id="connection-15" />
+      <line x1="375.7" y1="94.25" x2="375.7" y2="136.5" stroke="#000000" stroke-width="2" id="connection-16" />
+      <line x1="351" y1="136.5" x2="409.5" y2="136.5" stroke="#000000" stroke-width="2" id="connection-17" />
+      <line x1="351" y1="136.5" x2="351" y2="149.75" stroke="#000000" stroke-width="2" id="connection-18" />
+      <line x1="409.5" y1="136.5" x2="409.5" y2="149.75" stroke="#000000" stroke-width="2" id="connection-19" />
+    </g>
+    <g id="family-III1-III2">
+      <line x1="58.9" y1="161.2" x2="80.2" y2="161.2" stroke="#000000" stroke-width="2" id="connection-20" />
+      <line x1="68.9" y1="161.2" x2="68.9" y2="202.8" stroke="#000000" stroke-width="2" id="connection-21" />
+      <line x1="48.1" y1="202.8" x2="104" y2="202.8" stroke="#000000" stroke-width="2" id="connection-22" />
+      <line x1="48.1" y1="202.8" x2="48.1" y2="214.1" stroke="#000000" stroke-width="2" id="connection-23" />
+      <line x1="104" y1="202.8" x2="104" y2="214.1" stroke="#000000" stroke-width="2" id="connection-24" />
+    </g>
+  </g>
+  <g id="people">
+    <rect x="160.5" y="8.4" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="person-I1" />
+    <circle cx="230.1" cy="23.4" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-I2" />
+    <circle cx="68.9" cy="94.25" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-II1" />
+    <rect x="108.5" y="79.25" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="person-II2" />
+    <rect x="160.5" y="79.25" width="30" height="30" fill="#000000" stroke="#000000" stroke-width="2" id="person-II3" />
+    <circle cx="230.1" cy="94.25" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-II4" />
+    <circle cx="345.8" cy="94.25" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-II5" />
+    <rect x="385.4" y="79.25" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="person-II6" />
+    <rect x="27.9" y="146.2" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="person-III1" />
+    <circle cx="96.2" cy="161.2" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-III2" />
+    <rect x="167" y="150.75" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="person-III3" />
+    <circle cx="237.9" cy="165.75" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-III4" />
+    <rect x="336" y="150.75" width="30" height="30" fill="#000000" stroke="#000000" stroke-width="2" id="person-III5" />
+    <circle cx="409.5" cy="165.75" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-III6" />
+    <rect x="33.1" y="215.1" width="30" height="30" fill="#000000" stroke="#000000" stroke-width="2" id="person-IV1" />
+    <circle cx="104" cy="230.1" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="person-IV2" />
+  </g>
+  <g id="row-labels">
+    <text id="row-I" x="19.5" y="29.25" text-anchor="end" font-family="Atkinson Hyperlegible Next" font-size="16.9" font-weight="500" fill="#000000">I</text>
+    <text id="row-II" x="19.5" y="100.1" text-anchor="end" font-family="Atkinson Hyperlegible Next" font-size="16.9" font-weight="500" fill="#000000">II</text>
+    <text id="row-III" x="19.5" y="171.6" text-anchor="end" font-family="Atkinson Hyperlegible Next" font-size="16.9" font-weight="500" fill="#000000">III</text>
+    <text id="row-IV" x="19.5" y="235.95" text-anchor="end" font-family="Atkinson Hyperlegible Next" font-size="16.9" font-weight="500" fill="#000000">IV</text>
+  </g>
+  <g id="person-numbers">
+    <text x="175.5" y="52" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-I1" font-weight="500">1</text>
+    <text x="230.1" y="52" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-I2" font-weight="500">2</text>
+    <text x="68.9" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II1" font-weight="500">1</text>
+    <text x="123.5" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II2" font-weight="500">2</text>
+    <text x="175.5" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II3" font-weight="500">3</text>
+    <text x="230.1" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II4" font-weight="500">4</text>
+    <text x="345.8" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II5" font-weight="500">5</text>
+    <text x="400.4" y="122.85" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-II6" font-weight="500">6</text>
+    <text x="42.9" y="189.8" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III1" font-weight="500">1</text>
+    <text x="96.2" y="189.8" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III2" font-weight="500">2</text>
+    <text x="182" y="194.35" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III3" font-weight="500">3</text>
+    <text x="237.9" y="194.35" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III4" font-weight="500">4</text>
+    <text x="351" y="194.35" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III5" font-weight="500">5</text>
+    <text x="409.5" y="194.35" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-III6" font-weight="500">6</text>
+    <text x="48.1" y="258.7" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-IV1" font-weight="500">1</text>
+    <text x="104" y="258.7" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="16.9" fill="#000000" id="number-IV2" font-weight="500">2</text>
+  </g>
+</svg>

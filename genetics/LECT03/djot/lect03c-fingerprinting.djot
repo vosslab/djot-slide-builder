@@ -51,7 +51,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 1](assets/lect03c-fingerprinting/image_001.jpg)
+![Slide image 1](assets/lect03c-fingerprinting/marker_disease_linkage.drawn.svg)
 
 === layout: section
 
@@ -75,14 +75,14 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect03c-fingerprinting/image_002.jpg)
+![Slide image 2](assets/lect03c-fingerprinting/ecori_snp_rflp.drawn.svg)
 
 === layout: two-panels
 
 
 @left
 
-![Slide image 3](assets/lect03c-fingerprinting/image_003.jpg)
+![Slide image 3](assets/lect03c-fingerprinting/rflp_codominance.drawn.svg)
 
 @right
 
@@ -98,7 +98,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 4](assets/lect03c-fingerprinting/image_004.jpg)
+![Slide image 4](assets/lect03c-fingerprinting/tandem_repeat_migration.drawn.svg)
 
 @right
 
@@ -139,14 +139,14 @@ color-theme: genetics
 
 @body
 
-![Slide image 5](assets/lect03c-fingerprinting/image_005.png)
+![Slide image 5](assets/lect03c-fingerprinting/snp_str_comparison.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 6](assets/lect03c-fingerprinting/image_006.png)
+![Slide image 6](assets/lect03c-fingerprinting/str_locus_match.drawn.svg)
 
 === layout: two-panels
 
@@ -239,29 +239,29 @@ color-theme: genetics
 
 @body
 
-![Slide image 10](assets/lect03c-fingerprinting/image_010.png)
+![Slide image 10](assets/lect03c-fingerprinting/two_locus_paternity_gels.drawn.svg)
 
 - Answer\: A
 
-![Slide image 11](assets/lect03c-fingerprinting/image_011.png)
+![Slide image 11](assets/lect03c-fingerprinting/two_locus_paternity_exercise.quote.svg)
 
 === layout: stacked-panels
 
 
 @top
 
-![Slide image 12](assets/lect03c-fingerprinting/image_012.png)
+![Slide image 12](assets/lect03c-fingerprinting/rflp_progeny_exercise.quote.svg)
 
 @bottom
 
-![Slide image 13](assets/lect03c-fingerprinting/image_013.png)
+![Slide image 13](assets/lect03c-fingerprinting/rflp_family_gel_exercise.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 13](assets/lect03c-fingerprinting/image_013.png)
+![Slide image 13](assets/lect03c-fingerprinting/rflp_family_gel_exercise.drawn.svg)
 
 === layout: one-panel
 
@@ -284,47 +284,47 @@ color-theme: genetics
 
 @body
 
-![Slide image 14](assets/lect03c-fingerprinting/image_014.png)
+![Slide image 14](assets/lect03c-fingerprinting/csi_three_locus_exercise.quote.svg)
 
-![Slide image 15](assets/lect03c-fingerprinting/image_015.png)
-
-=== layout: four-panels
-
-
-@top-left
-
-![Slide image 16](assets/lect03c-fingerprinting/image_016.png)
-
-@top-right
-
-![Slide image 17](assets/lect03c-fingerprinting/image_017.png)
-
-@bottom-left
-
-![Slide image 18](assets/lect03c-fingerprinting/image_018.png)
-
-@bottom-right
-
-![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+![Slide image 15](assets/lect03c-fingerprinting/csi_three_locus_gels.drawn.svg)
 
 === layout: four-panels
 
 
 @top-left
 
-![Slide image 19](assets/lect03c-fingerprinting/image_016.png)
+![Slide image 16](assets/lect03c-fingerprinting/csi_locus_1_gel.drawn.svg)
 
 @top-right
 
-![Slide image 19](assets/lect03c-fingerprinting/image_017.png)
+![Slide image 17](assets/lect03c-fingerprinting/csi_locus_2_gel.drawn.svg)
 
 @bottom-left
 
-![Slide image 19](assets/lect03c-fingerprinting/image_018.png)
+![Slide image 18](assets/lect03c-fingerprinting/csi_locus_3_gel.drawn.svg)
 
 @bottom-right
 
-![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+![Slide image 19](assets/lect03c-fingerprinting/csi_three_locus_exercise.quote.svg)
+
+=== layout: four-panels
+
+
+@top-left
+
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_1_gel.drawn.svg)
+
+@top-right
+
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_2_gel.drawn.svg)
+
+@bottom-left
+
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_3_gel.drawn.svg)
+
+@bottom-right
+
+![Slide image 19](assets/lect03c-fingerprinting/csi_three_locus_exercise.quote.svg)
 
 
 
@@ -335,13 +335,13 @@ Compare A and B at locus 1; A and F at locus 2; A, B, and F at locus 3.
 
 @body
 
-![Slide image 19](assets/lect03c-fingerprinting/image_016.png)
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_1_gel.drawn.svg)
 
-![Slide image 19](assets/lect03c-fingerprinting/image_017.png)
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_2_gel.drawn.svg)
 
-![Slide image 19](assets/lect03c-fingerprinting/image_018.png)
+![Slide image 19](assets/lect03c-fingerprinting/csi_locus_3_gel.drawn.svg)
 
-![Slide image 19](assets/lect03c-fingerprinting/image_019.png)
+![Slide image 19](assets/lect03c-fingerprinting/csi_three_locus_exercise.quote.svg)
 
 - Answer\: A
 
@@ -363,7 +363,7 @@ Compare A and B at locus 1; A and F at locus 2; A, B, and F at locus 3.
 
 @body
 
-![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+![Slide image 20](assets/lect03c-fingerprinting/crime_scene_constraint_bands.drawn.svg)
 
 === layout: two-panels
 
@@ -371,7 +371,7 @@ Compare A and B at locus 1; A and F at locus 2; A, B, and F at locus 3.
 
 @left
 
-![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+![Slide image 20](assets/lect03c-fingerprinting/crime_scene_constraint_bands.drawn.svg)
 
 @right
 
@@ -383,7 +383,7 @@ Exclude suspects 1, 4, and 5: they have bands absent from the crime-scene sample
 
 @left
 
-![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+![Slide image 20](assets/lect03c-fingerprinting/crime_scene_constraint_bands.drawn.svg)
 
 @right
 
@@ -399,7 +399,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @left
 
-![Slide image 20](assets/lect03c-fingerprinting/image_020.png)
+![Slide image 20](assets/lect03c-fingerprinting/crime_scene_constraint_bands.drawn.svg)
 
 @right
 
@@ -525,7 +525,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @body
 
-![Slide image 21](assets/lect03c-fingerprinting/image_021.png)
+![Slide image 21](assets/lect03c-fingerprinting/paternity_band_challenge.drawn.svg)
 
 === layout: two-panels
 
@@ -533,7 +533,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @left
 
-![Slide image 21](assets/lect03c-fingerprinting/image_021.png)
+![Slide image 21](assets/lect03c-fingerprinting/paternity_band_challenge.drawn.svg)
 
 @right
 
@@ -557,7 +557,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @body
 
-![Slide image 22](assets/lect03c-fingerprinting/image_022.png)
+![Slide image 22](assets/lect03c-fingerprinting/crime_scene_band_challenge.drawn.svg)
 
 === layout: two-panels
 
@@ -565,7 +565,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @left
 
-![Slide image 22](assets/lect03c-fingerprinting/image_022.png)
+![Slide image 22](assets/lect03c-fingerprinting/crime_scene_band_challenge.drawn.svg)
 
 @right
 
@@ -577,7 +577,7 @@ Exclude suspect 2: the remaining crime-scene bands must also be accounted for.
 
 @body
 
-![Slide image 23](assets/lect03c-fingerprinting/image_023.png)
+![Slide image 23](assets/lect03g-chap2_challenges/challenge-problem-2.drawn.svg)
 
 === layout: theend
 

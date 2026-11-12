@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1386" viewBox="0 0 1000 1386" role="img" aria-labelledby="title desc">
+<title id="title">Population merger allele and genotype frequencies</title><desc id="desc">Separate orange A and yellow a population pies merge into a combined allele-frequency pie. Source genotype frequencies and Hardy-Weinberg prediction remain as printed.</desc>
+<rect width="1000" height="1386" fill="white"/>
+<g id="pie-charts" stroke="#293638" stroke-width="2.5">
+<g id="population-I"><circle cx="245" cy="265" r="165" fill="#dc7c30"/><path class="yellow-sector" d="M 245 265 L 245.000000 100.000000 A 165 165 0 0 1 245.000000 430.000000 Z" fill="#f4d33d"/></g>
+<g id="population-II"><circle cx="785" cy="265" r="165" fill="#dc7c30"/><path class="yellow-sector" d="M 785 265 L 943.608180 219.519836 A 165 165 0 0 1 877.266829 401.791199 Z" fill="#f4d33d"/></g>
+<g id="merged"><circle cx="520" cy="925" r="225" fill="#dc7c30"/><path class="yellow-sector" d="M 520 925 L 520.000000 700.000000 A 225 225 0 0 1 702.028824 1057.251682 Z" fill="#f4d33d"/></g>
+</g><g id="barrier" fill="none" stroke="#293638" stroke-width="3.5" stroke-dasharray="14 10"><path d="M 510 53 L 510 267"/><path d="M 510 365 L 510 528"/></g><g id="merging-connectors" fill="none" stroke="#293638" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M 430 550 L 510 625 L 590 550"/><path d="M 494 622 L 510 636 L 526 622"/></g>
+<g id="key"><rect x="790" y="674" width="160" height="162" fill="white" stroke="#293638" stroke-width="2"/><rect x="871" y="735" width="54" height="25" fill="#dc7c30" stroke="#293638" stroke-width="2"/><rect x="871" y="785" width="54" height="25" fill="#f4d33d" stroke="#293638" stroke-width="2"/></g>
+<g id="labels" font-family="Atkinson Hyperlegible Next" font-size="30" font-weight="650" fill="#202b2e">
+<text x="510" y="35" text-anchor="middle" >Separate populations</text>
+<text x="245" y="85" text-anchor="middle" >Population I</text>
+<text x="785" y="85" text-anchor="middle" >Population II</text>
+<text x="510" y="306" text-anchor="middle" font-size="28">Geographical</text>
+<text x="510" y="341" text-anchor="middle" font-size="28">barrier</text>
+<text x="162" y="278" text-anchor="middle" >0.5</text>
+<text x="327" y="278" text-anchor="middle" >0.5</text>
+<text x="723" y="231" text-anchor="middle" >0.8</text>
+<text x="873" y="306" text-anchor="middle" >0.2</text>
+<text x="420" y="990" text-anchor="middle" >0.65</text>
+<text x="625" y="875" text-anchor="middle" >0.35</text>
+<text x="15" y="477" text-anchor="start" >Genotype</text>
+<text x="15" y="515" text-anchor="start" >Frequency</text>
+<text x="205" y="477" text-anchor="middle" font-style="italic">AA</text>
+<text x="205" y="515" text-anchor="middle" >0.25</text>
+<text x="310" y="477" text-anchor="middle" font-style="italic">Aa</text>
+<text x="310" y="515" text-anchor="middle" >0.50</text>
+<text x="415" y="477" text-anchor="middle" font-style="italic">aa</text>
+<text x="415" y="515" text-anchor="middle" >0.25</text>
+<text x="685" y="477" text-anchor="middle" font-style="italic">AA</text>
+<text x="685" y="515" text-anchor="middle" >0.64</text>
+<text x="790" y="477" text-anchor="middle" font-style="italic">Aa</text>
+<text x="790" y="515" text-anchor="middle" >0.32</text>
+<text x="895" y="477" text-anchor="middle" font-style="italic">aa</text>
+<text x="895" y="515" text-anchor="middle" >0.04</text>
+<text x="510" y="677" text-anchor="middle" font-size="32">Merged population</text>
+<text x="807" y="715" text-anchor="start" >Key:</text>
+<text x="835" y="758" text-anchor="middle" font-style="italic">A</text>
+<text x="835" y="809" text-anchor="middle" font-style="italic">a</text>
+<text x="100" y="1195" text-anchor="start" >Genotype</text>
+<text x="100" y="1235" text-anchor="start" >Observed frequency</text>
+<text x="100" y="1277" text-anchor="start" >Hardy&#8211;Weinberg</text>
+<text x="100" y="1315" text-anchor="start" >prediction</text>
+<text x="570" y="1195" text-anchor="middle" font-style="italic">AA</text>
+<text x="570" y="1235" text-anchor="middle" >0.445</text>
+<text x="570" y="1315" text-anchor="middle" >0.422</text>
+<text x="725" y="1195" text-anchor="middle" font-style="italic">Aa</text>
+<text x="725" y="1235" text-anchor="middle" >0.410</text>
+<text x="725" y="1315" text-anchor="middle" >0.455</text>
+<text x="880" y="1195" text-anchor="middle" font-style="italic">aa</text>
+<text x="880" y="1235" text-anchor="middle" >0.145</text>
+<text x="880" y="1315" text-anchor="middle" >0.123</text>
+
+</g></svg>

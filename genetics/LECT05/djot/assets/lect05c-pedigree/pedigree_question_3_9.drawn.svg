@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="273.5" height="570" viewBox="0 0 273.5 570" role="img" aria-labelledby="question-title question-desc">
+  <title id="question-title">Pedigree question 3.9</title>
+  <desc id="question-desc">Question 3.9 asks you to identify the inheritance pattern in the accompanying pedigree and the possible genotypes under the stated assumptions.</desc>
+  <rect id="card-background" width="273.5" height="570" fill="#f7f8fa"/>
+  <rect id="quote-rule" width="4" height="570" fill="#66717a"/>
+  <g id="question" font-family="Atkinson Hyperlegible Next" fill="#20262b">
+    <text id="question-number" x="18" y="38" font-size="26" font-weight="600">3.9</text>
+    <text id="question-text" font-size="28" font-weight="400">
+      <tspan x="18" y="82">What mode of</tspan>
+      <tspan x="18" y="117">inheritance is</tspan>
+      <tspan x="18" y="152">suggested by the</tspan>
+      <tspan x="18" y="187">following</tspan>
+      <tspan x="18" y="222">pedigree? Based</tspan>
+      <tspan x="18" y="257">on this hypothesis,</tspan>
+      <tspan x="18" y="292">and assuming that</tspan>
+      <tspan x="18" y="327">the trait is rare and</tspan>
+      <tspan x="18" y="362">has complete</tspan>
+      <tspan x="18" y="397">penetrance, what</tspan>
+      <tspan x="18" y="432">are the possible</tspan>
+      <tspan x="18" y="467">genotypes of all</tspan>
+      <tspan x="18" y="502">individuals in this</tspan>
+      <tspan x="18" y="537">pedigree?</tspan>
+    </text>
+  </g>
+</svg>

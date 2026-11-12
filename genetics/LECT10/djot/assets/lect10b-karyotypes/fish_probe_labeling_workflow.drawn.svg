@@ -1,0 +1,681 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="924" height="849" viewBox="0 0 924 849" role="img" aria-labelledby="title desc">
+<title id="title">FISH probe labeling workflow</title>
+<desc id="desc">Stages a through e compare hapten and fluorophore labeling of probe DNA, denaturation, hybridization with a shared target strand and fluorescent detection on the left track. A small glass slide carries three chromosome silhouettes.</desc>
+<defs><radialGradient id="fluor-fill" cx="30%" cy="25%" r="80%"><stop stop-color="#e2f1d8"/><stop offset="1" stop-color="#80af79"/></radialGradient><linearGradient id="glass-fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#effaff"/><stop offset="1" stop-color="#b3d9e4"/></linearGradient></defs>
+<rect width="924" height="849" fill="white"/>
+<g id="stage-backgrounds"><rect x="8" y="8" width="908" height="177" fill="#f7dcc1"/><rect x="8" y="195" width="290" height="514" fill="#edf5e9"/><rect x="308" y="195" width="290" height="514" fill="#fff4da"/><path d="M8 390H598 M8 589H598" stroke="white" stroke-width="8"/></g>
+<text id="stage-label-a" x="12" y="30" font-family="Atkinson Hyperlegible Next" font-size="26" font-weight="700" fill="#252829">a</text>
+<text id="stage-label-b" x="12" y="222" font-family="Atkinson Hyperlegible Next" font-size="26" font-weight="700" fill="#252829">b</text>
+<text id="stage-label-c" x="12" y="420" font-family="Atkinson Hyperlegible Next" font-size="26" font-weight="700" fill="#252829">c</text>
+<text id="stage-label-d" x="12" y="617" font-family="Atkinson Hyperlegible Next" font-size="26" font-weight="700" fill="#252829">d</text>
+<text id="stage-label-e" x="12" y="746" font-family="Atkinson Hyperlegible Next" font-size="26" font-weight="700" fill="#252829">e</text>
+<text id="probe-label" x="40" y="172" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="700" fill="#252829">Probe</text>
+<text id="target-label" x="818" y="172" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="700" fill="#252829">Target</text>
+<g id="microscope-slide">
+<path id="slide-thickness" d="M650 56 L686 83 L827 55 L827 61 L686 89 L650 62 Z" stroke="#405962" stroke-width="1.3" fill="#91b7c3" />
+<path id="slide-plane" d="M650 56 L789 28 L827 55 L686 83 Z" stroke="#405962" stroke-width="1.3" fill="url(#glass-fill)" />
+<path id="slide-frosted-end" d="M755 35 L789 28 L827 55 L793 62 Z" stroke="#405962" stroke-width="1.1" fill="#718b95" />
+<g id="slide-chromosome-0" transform="translate(695 65) rotate(-55) scale(0.45)">
+<path id="slide-chromosome-body-0" d="M-10 -16 Q-16 -21 -16 -12 L-6 0 L-15 13 Q-17 22 -9 18 L0 5 L9 18 Q17 22 15 13 L6 0 L16 -12 Q16 -21 10 -16 L0 -5 Z" stroke="#694e49" stroke-width="1.8" fill="#d7b0a3" />
+</g>
+<g id="slide-chromosome-1" transform="translate(716 56) rotate(10) scale(0.45)">
+<path id="slide-chromosome-body-1" d="M-10 -16 Q-16 -21 -16 -12 L-6 0 L-15 13 Q-17 22 -9 18 L0 5 L9 18 Q17 22 15 13 L6 0 L16 -12 Q16 -21 10 -16 L0 -5 Z" stroke="#694e49" stroke-width="1.8" fill="#d7b0a3" />
+</g>
+<g id="slide-chromosome-2" transform="translate(749 54) rotate(-62) scale(0.48)">
+<path id="slide-chromosome-body-2" d="M-10 -16 Q-16 -21 -16 -12 L-6 0 L-15 13 Q-17 22 -9 18 L0 5 L9 18 Q17 22 15 13 L6 0 L16 -12 Q16 -21 10 -16 L0 -5 Z" stroke="#694e49" stroke-width="1.8" fill="#d7b0a3" />
+</g>
+</g>
+<path id="magnify-left" d="M686 83 L640 101" stroke="#435359" stroke-width="1.3" fill="none" stroke-dasharray="5 5"/>
+<path id="magnify-right" d="M793 62 L880 101" stroke="#435359" stroke-width="1.3" fill="none" stroke-dasharray="5 5"/>
+<g id="molecule-a-probe-0">
+<g id="strand-a-probe-0-upper">
+<path id="backbone-a-probe-0-upper" d="M94.000 108.000 L95.833 108.314 L97.667 108.624 L99.500 108.927 L101.333 109.220 L103.167 109.500 L105.000 109.763 L106.833 110.007 L108.667 110.229 L110.500 110.427 L112.333 110.598 L114.167 110.741 L116.000 110.853 L117.833 110.934 L119.667 110.984 L121.500 111.000 L123.333 110.984 L125.167 110.934 L127.000 110.853 L128.833 110.741 L130.667 110.598 L132.500 110.427 L134.333 110.229 L136.167 110.007 L138.000 109.763 L139.833 109.500 L141.667 109.220 L143.500 108.927 L145.333 108.624 L147.167 108.314 L149.000 108.000 L150.833 107.686 L152.667 107.376 L154.500 107.073 L156.333 106.780 L158.167 106.500 L160.000 106.237 L161.833 105.993 L163.667 105.771 L165.500 105.573 L167.333 105.402 L169.167 105.259 L171.000 105.147 L172.833 105.066 L174.667 105.016 L176.500 105.000 L178.333 105.016 L180.167 105.066 L182.000 105.147 L183.833 105.259 L185.667 105.402 L187.500 105.573 L189.333 105.771 L191.167 105.993 L193.000 106.237 L194.833 106.500 L196.667 106.780 L198.500 107.073 L200.333 107.376 L202.167 107.686 L204.000 108.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-0-upper-0" d="M96.973 108.507 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-1" d="M104.405 109.680 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-2" d="M111.838 110.555 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-3" d="M119.270 110.976 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-4" d="M126.703 110.869 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-5" d="M134.135 110.252 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-6" d="M141.568 109.236 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-7" d="M149.000 108.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-8" d="M156.432 106.764 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-9" d="M163.865 105.748 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-10" d="M171.297 105.131 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-11" d="M178.730 105.024 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-12" d="M186.162 105.445 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-13" d="M193.595 106.320 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-upper-14" d="M201.027 107.493 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="strand-a-probe-0-lower">
+<path id="backbone-a-probe-0-lower" d="M94.000 138.000 L95.833 138.314 L97.667 138.624 L99.500 138.927 L101.333 139.220 L103.167 139.500 L105.000 139.763 L106.833 140.007 L108.667 140.229 L110.500 140.427 L112.333 140.598 L114.167 140.741 L116.000 140.853 L117.833 140.934 L119.667 140.984 L121.500 141.000 L123.333 140.984 L125.167 140.934 L127.000 140.853 L128.833 140.741 L130.667 140.598 L132.500 140.427 L134.333 140.229 L136.167 140.007 L138.000 139.763 L139.833 139.500 L141.667 139.220 L143.500 138.927 L145.333 138.624 L147.167 138.314 L149.000 138.000 L150.833 137.686 L152.667 137.376 L154.500 137.073 L156.333 136.780 L158.167 136.500 L160.000 136.237 L161.833 135.993 L163.667 135.771 L165.500 135.573 L167.333 135.402 L169.167 135.259 L171.000 135.147 L172.833 135.066 L174.667 135.016 L176.500 135.000 L178.333 135.016 L180.167 135.066 L182.000 135.147 L183.833 135.259 L185.667 135.402 L187.500 135.573 L189.333 135.771 L191.167 135.993 L193.000 136.237 L194.833 136.500 L196.667 136.780 L198.500 137.073 L200.333 137.376 L202.167 137.686 L204.000 138.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-0-lower-0" d="M96.973 138.507 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-1" d="M104.405 139.680 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-2" d="M111.838 140.555 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-3" d="M119.270 140.976 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-4" d="M126.703 140.869 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-5" d="M134.135 140.252 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-6" d="M141.568 139.236 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-7" d="M149.000 138.000 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-8" d="M156.432 136.764 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-9" d="M163.865 135.748 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-10" d="M171.297 135.131 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-11" d="M178.730 135.024 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-12" d="M186.162 135.445 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-13" d="M193.595 136.320 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-0-lower-14" d="M201.027 137.493 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-a-probe-1">
+<g id="strand-a-probe-1-upper">
+<path id="backbone-a-probe-1-upper" d="M247.000 108.000 L248.833 108.314 L250.667 108.624 L252.500 108.927 L254.333 109.220 L256.167 109.500 L258.000 109.763 L259.833 110.007 L261.667 110.229 L263.500 110.427 L265.333 110.598 L267.167 110.741 L269.000 110.853 L270.833 110.934 L272.667 110.984 L274.500 111.000 L276.333 110.984 L278.167 110.934 L280.000 110.853 L281.833 110.741 L283.667 110.598 L285.500 110.427 L287.333 110.229 L289.167 110.007 L291.000 109.763 L292.833 109.500 L294.667 109.220 L296.500 108.927 L298.333 108.624 L300.167 108.314 L302.000 108.000 L303.833 107.686 L305.667 107.376 L307.500 107.073 L309.333 106.780 L311.167 106.500 L313.000 106.237 L314.833 105.993 L316.667 105.771 L318.500 105.573 L320.333 105.402 L322.167 105.259 L324.000 105.147 L325.833 105.066 L327.667 105.016 L329.500 105.000 L331.333 105.016 L333.167 105.066 L335.000 105.147 L336.833 105.259 L338.667 105.402 L340.500 105.573 L342.333 105.771 L344.167 105.993 L346.000 106.237 L347.833 106.500 L349.667 106.780 L351.500 107.073 L353.333 107.376 L355.167 107.686 L357.000 108.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-1-upper-0" d="M249.973 108.507 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-1" d="M257.405 109.680 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-2" d="M264.838 110.555 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-3" d="M272.270 110.976 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-4" d="M279.703 110.869 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-5" d="M287.135 110.252 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-6" d="M294.568 109.236 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-7" d="M302.000 108.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-8" d="M309.432 106.764 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-9" d="M316.865 105.748 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-10" d="M324.297 105.131 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-11" d="M331.730 105.024 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-12" d="M339.162 105.445 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-13" d="M346.595 106.320 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-upper-14" d="M354.027 107.493 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="strand-a-probe-1-lower">
+<path id="backbone-a-probe-1-lower" d="M247.000 138.000 L248.833 138.314 L250.667 138.624 L252.500 138.927 L254.333 139.220 L256.167 139.500 L258.000 139.763 L259.833 140.007 L261.667 140.229 L263.500 140.427 L265.333 140.598 L267.167 140.741 L269.000 140.853 L270.833 140.934 L272.667 140.984 L274.500 141.000 L276.333 140.984 L278.167 140.934 L280.000 140.853 L281.833 140.741 L283.667 140.598 L285.500 140.427 L287.333 140.229 L289.167 140.007 L291.000 139.763 L292.833 139.500 L294.667 139.220 L296.500 138.927 L298.333 138.624 L300.167 138.314 L302.000 138.000 L303.833 137.686 L305.667 137.376 L307.500 137.073 L309.333 136.780 L311.167 136.500 L313.000 136.237 L314.833 135.993 L316.667 135.771 L318.500 135.573 L320.333 135.402 L322.167 135.259 L324.000 135.147 L325.833 135.066 L327.667 135.016 L329.500 135.000 L331.333 135.016 L333.167 135.066 L335.000 135.147 L336.833 135.259 L338.667 135.402 L340.500 135.573 L342.333 135.771 L344.167 135.993 L346.000 136.237 L347.833 136.500 L349.667 136.780 L351.500 137.073 L353.333 137.376 L355.167 137.686 L357.000 138.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-1-lower-0" d="M249.973 138.507 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-1" d="M257.405 139.680 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-2" d="M264.838 140.555 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-3" d="M272.270 140.976 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-4" d="M279.703 140.869 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-5" d="M287.135 140.252 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-6" d="M294.568 139.236 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-7" d="M302.000 138.000 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-8" d="M309.432 136.764 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-9" d="M316.865 135.748 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-10" d="M324.297 135.131 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-11" d="M331.730 135.024 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-12" d="M339.162 135.445 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-13" d="M346.595 136.320 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-1-lower-14" d="M354.027 137.493 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-a-probe-2">
+<g id="strand-a-probe-2-upper">
+<path id="backbone-a-probe-2-upper" d="M400.000 108.000 L401.833 108.314 L403.667 108.624 L405.500 108.927 L407.333 109.220 L409.167 109.500 L411.000 109.763 L412.833 110.007 L414.667 110.229 L416.500 110.427 L418.333 110.598 L420.167 110.741 L422.000 110.853 L423.833 110.934 L425.667 110.984 L427.500 111.000 L429.333 110.984 L431.167 110.934 L433.000 110.853 L434.833 110.741 L436.667 110.598 L438.500 110.427 L440.333 110.229 L442.167 110.007 L444.000 109.763 L445.833 109.500 L447.667 109.220 L449.500 108.927 L451.333 108.624 L453.167 108.314 L455.000 108.000 L456.833 107.686 L458.667 107.376 L460.500 107.073 L462.333 106.780 L464.167 106.500 L466.000 106.237 L467.833 105.993 L469.667 105.771 L471.500 105.573 L473.333 105.402 L475.167 105.259 L477.000 105.147 L478.833 105.066 L480.667 105.016 L482.500 105.000 L484.333 105.016 L486.167 105.066 L488.000 105.147 L489.833 105.259 L491.667 105.402 L493.500 105.573 L495.333 105.771 L497.167 105.993 L499.000 106.237 L500.833 106.500 L502.667 106.780 L504.500 107.073 L506.333 107.376 L508.167 107.686 L510.000 108.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-2-upper-0" d="M402.973 108.507 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-1" d="M410.405 109.680 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-2" d="M417.838 110.555 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-3" d="M425.270 110.976 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-4" d="M432.703 110.869 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-5" d="M440.135 110.252 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-6" d="M447.568 109.236 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-7" d="M455.000 108.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-8" d="M462.432 106.764 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-9" d="M469.865 105.748 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-10" d="M477.297 105.131 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-11" d="M484.730 105.024 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-12" d="M492.162 105.445 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-13" d="M499.595 106.320 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-upper-14" d="M507.027 107.493 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="strand-a-probe-2-lower">
+<path id="backbone-a-probe-2-lower" d="M400.000 138.000 L401.833 138.314 L403.667 138.624 L405.500 138.927 L407.333 139.220 L409.167 139.500 L411.000 139.763 L412.833 140.007 L414.667 140.229 L416.500 140.427 L418.333 140.598 L420.167 140.741 L422.000 140.853 L423.833 140.934 L425.667 140.984 L427.500 141.000 L429.333 140.984 L431.167 140.934 L433.000 140.853 L434.833 140.741 L436.667 140.598 L438.500 140.427 L440.333 140.229 L442.167 140.007 L444.000 139.763 L445.833 139.500 L447.667 139.220 L449.500 138.927 L451.333 138.624 L453.167 138.314 L455.000 138.000 L456.833 137.686 L458.667 137.376 L460.500 137.073 L462.333 136.780 L464.167 136.500 L466.000 136.237 L467.833 135.993 L469.667 135.771 L471.500 135.573 L473.333 135.402 L475.167 135.259 L477.000 135.147 L478.833 135.066 L480.667 135.016 L482.500 135.000 L484.333 135.016 L486.167 135.066 L488.000 135.147 L489.833 135.259 L491.667 135.402 L493.500 135.573 L495.333 135.771 L497.167 135.993 L499.000 136.237 L500.833 136.500 L502.667 136.780 L504.500 137.073 L506.333 137.376 L508.167 137.686 L510.000 138.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-probe-2-lower-0" d="M402.973 138.507 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-1" d="M410.405 139.680 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-2" d="M417.838 140.555 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-3" d="M425.270 140.976 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-4" d="M432.703 140.869 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-5" d="M440.135 140.252 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-6" d="M447.568 139.236 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-7" d="M455.000 138.000 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-8" d="M462.432 136.764 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-9" d="M469.865 135.748 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-10" d="M477.297 135.131 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-11" d="M484.730 135.024 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-12" d="M492.162 135.445 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-13" d="M499.595 136.320 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-probe-2-lower-14" d="M507.027 137.493 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-a-target">
+<g id="strand-a-target-upper">
+<path id="backbone-a-target-upper" d="M640.000 104.000 L644.000 104.314 L648.000 104.624 L652.000 104.927 L656.000 105.220 L660.000 105.500 L664.000 105.763 L668.000 106.007 L672.000 106.229 L676.000 106.427 L680.000 106.598 L684.000 106.741 L688.000 106.853 L692.000 106.934 L696.000 106.984 L700.000 107.000 L704.000 106.984 L708.000 106.934 L712.000 106.853 L716.000 106.741 L720.000 106.598 L724.000 106.427 L728.000 106.229 L732.000 106.007 L736.000 105.763 L740.000 105.500 L744.000 105.220 L748.000 104.927 L752.000 104.624 L756.000 104.314 L760.000 104.000 L764.000 103.686 L768.000 103.376 L772.000 103.073 L776.000 102.780 L780.000 102.500 L784.000 102.237 L788.000 101.993 L792.000 101.771 L796.000 101.573 L800.000 101.402 L804.000 101.259 L808.000 101.147 L812.000 101.066 L816.000 101.016 L820.000 101.000 L824.000 101.016 L828.000 101.066 L832.000 101.147 L836.000 101.259 L840.000 101.402 L844.000 101.573 L848.000 101.771 L852.000 101.993 L856.000 102.237 L860.000 102.500 L864.000 102.780 L868.000 103.073 L872.000 103.376 L876.000 103.686 L880.000 104.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-target-upper-0" d="M643.117 104.245 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-1" d="M650.909 104.845 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-2" d="M658.701 105.411 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-3" d="M666.494 105.918 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-4" d="M674.286 106.345 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-5" d="M682.078 106.676 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-6" d="M689.870 106.895 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-7" d="M697.662 106.994 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-8" d="M705.455 106.969 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-9" d="M713.247 106.821 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-10" d="M721.039 106.556 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-11" d="M728.831 106.185 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-12" d="M736.623 105.724 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-13" d="M744.416 105.190 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-14" d="M752.208 104.608 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-15" d="M760.000 104.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-16" d="M767.792 103.392 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-17" d="M775.584 102.810 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-18" d="M783.377 102.276 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-19" d="M791.169 101.815 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-20" d="M798.961 101.444 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-21" d="M806.753 101.179 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-22" d="M814.545 101.031 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-23" d="M822.338 101.006 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-24" d="M830.130 101.105 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-25" d="M837.922 101.324 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-26" d="M845.714 101.655 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-27" d="M853.506 102.082 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-28" d="M861.299 102.589 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-29" d="M869.091 103.155 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-upper-30" d="M876.883 103.755 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="strand-a-target-lower">
+<path id="backbone-a-target-lower" d="M640.000 134.000 L644.000 134.314 L648.000 134.624 L652.000 134.927 L656.000 135.220 L660.000 135.500 L664.000 135.763 L668.000 136.007 L672.000 136.229 L676.000 136.427 L680.000 136.598 L684.000 136.741 L688.000 136.853 L692.000 136.934 L696.000 136.984 L700.000 137.000 L704.000 136.984 L708.000 136.934 L712.000 136.853 L716.000 136.741 L720.000 136.598 L724.000 136.427 L728.000 136.229 L732.000 136.007 L736.000 135.763 L740.000 135.500 L744.000 135.220 L748.000 134.927 L752.000 134.624 L756.000 134.314 L760.000 134.000 L764.000 133.686 L768.000 133.376 L772.000 133.073 L776.000 132.780 L780.000 132.500 L784.000 132.237 L788.000 131.993 L792.000 131.771 L796.000 131.573 L800.000 131.402 L804.000 131.259 L808.000 131.147 L812.000 131.066 L816.000 131.016 L820.000 131.000 L824.000 131.016 L828.000 131.066 L832.000 131.147 L836.000 131.259 L840.000 131.402 L844.000 131.573 L848.000 131.771 L852.000 131.993 L856.000 132.237 L860.000 132.500 L864.000 132.780 L868.000 133.073 L872.000 133.376 L876.000 133.686 L880.000 134.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-a-target-lower-0" d="M643.117 134.245 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-1" d="M650.909 134.845 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-2" d="M658.701 135.411 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-3" d="M666.494 135.918 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-4" d="M674.286 136.345 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-5" d="M682.078 136.676 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-6" d="M689.870 136.895 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-7" d="M697.662 136.994 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-8" d="M705.455 136.969 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-9" d="M713.247 136.821 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-10" d="M721.039 136.556 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-11" d="M728.831 136.185 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-12" d="M736.623 135.724 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-13" d="M744.416 135.190 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-14" d="M752.208 134.608 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-15" d="M760.000 134.000 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-16" d="M767.792 133.392 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-17" d="M775.584 132.810 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-18" d="M783.377 132.276 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-19" d="M791.169 131.815 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-20" d="M798.961 131.444 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-21" d="M806.753 131.179 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-22" d="M814.545 131.031 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-23" d="M822.338 131.006 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-24" d="M830.130 131.105 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-25" d="M837.922 131.324 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-26" d="M845.714 131.655 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-27" d="M853.506 132.082 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-28" d="M861.299 132.589 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-29" d="M869.091 133.155 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-a-target-lower-30" d="M876.883 133.755 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-b-hapten">
+<g id="strand-b-hapten-upper">
+<path id="backbone-b-hapten-upper" d="M100.000 289.000 L102.000 289.314 L104.000 289.624 L106.000 289.927 L108.000 290.220 L110.000 290.500 L112.000 290.763 L114.000 291.007 L116.000 291.229 L118.000 291.427 L120.000 291.598 L122.000 291.741 L124.000 291.853 L126.000 291.934 L128.000 291.984 L130.000 292.000 L132.000 291.984 L134.000 291.934 L136.000 291.853 L138.000 291.741 L140.000 291.598 L142.000 291.427 L144.000 291.229 L146.000 291.007 L148.000 290.763 L150.000 290.500 L152.000 290.220 L154.000 289.927 L156.000 289.624 L158.000 289.314 L160.000 289.000 L162.000 288.686 L164.000 288.376 L166.000 288.073 L168.000 287.780 L170.000 287.500 L172.000 287.237 L174.000 286.993 L176.000 286.771 L178.000 286.573 L180.000 286.402 L182.000 286.259 L184.000 286.147 L186.000 286.066 L188.000 286.016 L190.000 286.000 L192.000 286.016 L194.000 286.066 L196.000 286.147 L198.000 286.259 L200.000 286.402 L202.000 286.573 L204.000 286.771 L206.000 286.993 L208.000 287.237 L210.000 287.500 L212.000 287.780 L214.000 288.073 L216.000 288.376 L218.000 288.686 L220.000 289.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-b-hapten-upper-0" d="M103.038 289.475 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-1" d="M110.633 290.585 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-2" d="M118.228 291.448 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-3" d="M125.823 291.929 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-4" d="M133.418 291.952 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-5" d="M141.013 291.515 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-6" d="M148.608 290.685 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-7" d="M156.203 289.593 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-8" d="M163.797 288.407 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-9" d="M171.392 287.315 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-10" d="M178.987 286.485 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-11" d="M186.582 286.048 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-12" d="M194.177 286.071 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-13" d="M201.772 286.552 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-14" d="M209.367 287.415 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-upper-15" d="M216.962 288.525 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<g id="hapten-b-hapten-upper-0">
+<path id="hapten-stem-b-hapten-upper-0" d="M114.400 291.054 v-16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-b-hapten-upper-0" d="M102.400 265.054 Q104.400 275.054 114.400 275.054 Q124.400 275.054 126.400 265.054" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="hapten-b-hapten-upper-1">
+<path id="hapten-stem-b-hapten-upper-1" d="M184.000 286.147 v-16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-b-hapten-upper-1" d="M172.000 260.147 Q174.000 270.147 184.000 270.147 Q194.000 270.147 196.000 260.147" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+<g id="strand-b-hapten-lower">
+<path id="backbone-b-hapten-lower" d="M100.000 319.000 L102.000 319.314 L104.000 319.624 L106.000 319.927 L108.000 320.220 L110.000 320.500 L112.000 320.763 L114.000 321.007 L116.000 321.229 L118.000 321.427 L120.000 321.598 L122.000 321.741 L124.000 321.853 L126.000 321.934 L128.000 321.984 L130.000 322.000 L132.000 321.984 L134.000 321.934 L136.000 321.853 L138.000 321.741 L140.000 321.598 L142.000 321.427 L144.000 321.229 L146.000 321.007 L148.000 320.763 L150.000 320.500 L152.000 320.220 L154.000 319.927 L156.000 319.624 L158.000 319.314 L160.000 319.000 L162.000 318.686 L164.000 318.376 L166.000 318.073 L168.000 317.780 L170.000 317.500 L172.000 317.237 L174.000 316.993 L176.000 316.771 L178.000 316.573 L180.000 316.402 L182.000 316.259 L184.000 316.147 L186.000 316.066 L188.000 316.016 L190.000 316.000 L192.000 316.016 L194.000 316.066 L196.000 316.147 L198.000 316.259 L200.000 316.402 L202.000 316.573 L204.000 316.771 L206.000 316.993 L208.000 317.237 L210.000 317.500 L212.000 317.780 L214.000 318.073 L216.000 318.376 L218.000 318.686 L220.000 319.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-b-hapten-lower-0" d="M103.038 319.475 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-1" d="M110.633 320.585 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-2" d="M118.228 321.448 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-3" d="M125.823 321.929 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-4" d="M133.418 321.952 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-5" d="M141.013 321.515 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-6" d="M148.608 320.685 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-7" d="M156.203 319.593 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-8" d="M163.797 318.407 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-9" d="M171.392 317.315 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-10" d="M178.987 316.485 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-11" d="M186.582 316.048 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-12" d="M194.177 316.071 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-13" d="M201.772 316.552 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-14" d="M209.367 317.415 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-hapten-lower-15" d="M216.962 318.525 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<g id="hapten-b-hapten-lower-0">
+<path id="hapten-stem-b-hapten-lower-0" d="M142.000 321.427 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-b-hapten-lower-0" d="M130.000 347.427 Q132.000 337.427 142.000 337.427 Q152.000 337.427 154.000 347.427" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="hapten-b-hapten-lower-1">
+<path id="hapten-stem-b-hapten-lower-1" d="M208.000 317.237 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-b-hapten-lower-1" d="M196.000 343.237 Q198.000 333.237 208.000 333.237 Q218.000 333.237 220.000 343.237" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g id="molecule-b-fluor">
+<g id="strand-b-fluor-upper">
+<path id="backbone-b-fluor-upper" d="M400.000 289.000 L402.000 289.314 L404.000 289.624 L406.000 289.927 L408.000 290.220 L410.000 290.500 L412.000 290.763 L414.000 291.007 L416.000 291.229 L418.000 291.427 L420.000 291.598 L422.000 291.741 L424.000 291.853 L426.000 291.934 L428.000 291.984 L430.000 292.000 L432.000 291.984 L434.000 291.934 L436.000 291.853 L438.000 291.741 L440.000 291.598 L442.000 291.427 L444.000 291.229 L446.000 291.007 L448.000 290.763 L450.000 290.500 L452.000 290.220 L454.000 289.927 L456.000 289.624 L458.000 289.314 L460.000 289.000 L462.000 288.686 L464.000 288.376 L466.000 288.073 L468.000 287.780 L470.000 287.500 L472.000 287.237 L474.000 286.993 L476.000 286.771 L478.000 286.573 L480.000 286.402 L482.000 286.259 L484.000 286.147 L486.000 286.066 L488.000 286.016 L490.000 286.000 L492.000 286.016 L494.000 286.066 L496.000 286.147 L498.000 286.259 L500.000 286.402 L502.000 286.573 L504.000 286.771 L506.000 286.993 L508.000 287.237 L510.000 287.500 L512.000 287.780 L514.000 288.073 L516.000 288.376 L518.000 288.686 L520.000 289.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-b-fluor-upper-0" d="M403.038 289.475 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-1" d="M410.633 290.585 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-2" d="M418.228 291.448 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-3" d="M425.823 291.929 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-4" d="M433.418 291.952 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-5" d="M441.013 291.515 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-6" d="M448.608 290.685 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-7" d="M456.203 289.593 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-8" d="M463.797 288.407 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-9" d="M471.392 287.315 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-10" d="M478.987 286.485 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-11" d="M486.582 286.048 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-12" d="M494.177 286.071 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-13" d="M501.772 286.552 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-14" d="M509.367 287.415 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-upper-15" d="M516.962 288.525 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="fluor-stem-b-fluor-upper-0" d="M414.400 291.054 v-25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-b-fluor-upper-0" cx="414.400" cy="266.054" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-b-fluor-upper-1" d="M484.000 286.147 v-25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-b-fluor-upper-1" cx="484.000" cy="261.147" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+<g id="strand-b-fluor-lower">
+<path id="backbone-b-fluor-lower" d="M400.000 319.000 L402.000 319.314 L404.000 319.624 L406.000 319.927 L408.000 320.220 L410.000 320.500 L412.000 320.763 L414.000 321.007 L416.000 321.229 L418.000 321.427 L420.000 321.598 L422.000 321.741 L424.000 321.853 L426.000 321.934 L428.000 321.984 L430.000 322.000 L432.000 321.984 L434.000 321.934 L436.000 321.853 L438.000 321.741 L440.000 321.598 L442.000 321.427 L444.000 321.229 L446.000 321.007 L448.000 320.763 L450.000 320.500 L452.000 320.220 L454.000 319.927 L456.000 319.624 L458.000 319.314 L460.000 319.000 L462.000 318.686 L464.000 318.376 L466.000 318.073 L468.000 317.780 L470.000 317.500 L472.000 317.237 L474.000 316.993 L476.000 316.771 L478.000 316.573 L480.000 316.402 L482.000 316.259 L484.000 316.147 L486.000 316.066 L488.000 316.016 L490.000 316.000 L492.000 316.016 L494.000 316.066 L496.000 316.147 L498.000 316.259 L500.000 316.402 L502.000 316.573 L504.000 316.771 L506.000 316.993 L508.000 317.237 L510.000 317.500 L512.000 317.780 L514.000 318.073 L516.000 318.376 L518.000 318.686 L520.000 319.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-b-fluor-lower-0" d="M403.038 319.475 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-1" d="M410.633 320.585 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-2" d="M418.228 321.448 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-3" d="M425.823 321.929 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-4" d="M433.418 321.952 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-5" d="M441.013 321.515 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-6" d="M448.608 320.685 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-7" d="M456.203 319.593 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-8" d="M463.797 318.407 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-9" d="M471.392 317.315 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-10" d="M478.987 316.485 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-11" d="M486.582 316.048 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-12" d="M494.177 316.071 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-13" d="M501.772 316.552 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-14" d="M509.367 317.415 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-b-fluor-lower-15" d="M516.962 318.525 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="fluor-stem-b-fluor-lower-0" d="M407.200 320.104 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-b-fluor-lower-0" cx="407.200" cy="345.104" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-b-fluor-lower-1" d="M460.000 319.000 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-b-fluor-lower-1" cx="460.000" cy="344.000" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-b-fluor-lower-2" d="M512.800 317.896 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-b-fluor-lower-2" cx="512.800" cy="342.896" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+</g>
+<g id="molecule-c-hapten-upper">
+<g id="strand-c-hapten-upper">
+<path id="backbone-c-hapten-upper" d="M100.000 440.000 L102.000 440.314 L104.000 440.624 L106.000 440.927 L108.000 441.220 L110.000 441.500 L112.000 441.763 L114.000 442.007 L116.000 442.229 L118.000 442.427 L120.000 442.598 L122.000 442.741 L124.000 442.853 L126.000 442.934 L128.000 442.984 L130.000 443.000 L132.000 442.984 L134.000 442.934 L136.000 442.853 L138.000 442.741 L140.000 442.598 L142.000 442.427 L144.000 442.229 L146.000 442.007 L148.000 441.763 L150.000 441.500 L152.000 441.220 L154.000 440.927 L156.000 440.624 L158.000 440.314 L160.000 440.000 L162.000 439.686 L164.000 439.376 L166.000 439.073 L168.000 438.780 L170.000 438.500 L172.000 438.237 L174.000 437.993 L176.000 437.771 L178.000 437.573 L180.000 437.402 L182.000 437.259 L184.000 437.147 L186.000 437.066 L188.000 437.016 L190.000 437.000 L192.000 437.016 L194.000 437.066 L196.000 437.147 L198.000 437.259 L200.000 437.402 L202.000 437.573 L204.000 437.771 L206.000 437.993 L208.000 438.237 L210.000 438.500 L212.000 438.780 L214.000 439.073 L216.000 439.376 L218.000 439.686 L220.000 440.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-hapten-upper-0" d="M103.038 440.475 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-1" d="M110.633 441.585 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-2" d="M118.228 442.448 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-3" d="M125.823 442.929 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-4" d="M133.418 442.952 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-5" d="M141.013 442.515 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-6" d="M148.608 441.685 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-7" d="M156.203 440.593 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-8" d="M163.797 439.407 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-9" d="M171.392 438.315 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-10" d="M178.987 437.485 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-11" d="M186.582 437.048 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-12" d="M194.177 437.071 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-13" d="M201.772 437.552 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-14" d="M209.367 438.415 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-upper-15" d="M216.962 439.525 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<g id="hapten-c-hapten-upper-0">
+<path id="hapten-stem-c-hapten-upper-0" d="M114.400 442.054 v-16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-c-hapten-upper-0" d="M102.400 416.054 Q104.400 426.054 114.400 426.054 Q124.400 426.054 126.400 416.054" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="hapten-c-hapten-upper-1">
+<path id="hapten-stem-c-hapten-upper-1" d="M184.000 437.147 v-16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-c-hapten-upper-1" d="M172.000 411.147 Q174.000 421.147 184.000 421.147 Q194.000 421.147 196.000 411.147" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g id="molecule-c-hapten-lower">
+<g id="strand-c-hapten-lower">
+<path id="backbone-c-hapten-lower" d="M100.000 503.000 L102.000 503.314 L104.000 503.624 L106.000 503.927 L108.000 504.220 L110.000 504.500 L112.000 504.763 L114.000 505.007 L116.000 505.229 L118.000 505.427 L120.000 505.598 L122.000 505.741 L124.000 505.853 L126.000 505.934 L128.000 505.984 L130.000 506.000 L132.000 505.984 L134.000 505.934 L136.000 505.853 L138.000 505.741 L140.000 505.598 L142.000 505.427 L144.000 505.229 L146.000 505.007 L148.000 504.763 L150.000 504.500 L152.000 504.220 L154.000 503.927 L156.000 503.624 L158.000 503.314 L160.000 503.000 L162.000 502.686 L164.000 502.376 L166.000 502.073 L168.000 501.780 L170.000 501.500 L172.000 501.237 L174.000 500.993 L176.000 500.771 L178.000 500.573 L180.000 500.402 L182.000 500.259 L184.000 500.147 L186.000 500.066 L188.000 500.016 L190.000 500.000 L192.000 500.016 L194.000 500.066 L196.000 500.147 L198.000 500.259 L200.000 500.402 L202.000 500.573 L204.000 500.771 L206.000 500.993 L208.000 501.237 L210.000 501.500 L212.000 501.780 L214.000 502.073 L216.000 502.376 L218.000 502.686 L220.000 503.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-hapten-lower-0" d="M103.038 503.475 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-1" d="M110.633 504.585 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-2" d="M118.228 505.448 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-3" d="M125.823 505.929 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-4" d="M133.418 505.952 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-5" d="M141.013 505.515 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-6" d="M148.608 504.685 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-7" d="M156.203 503.593 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-8" d="M163.797 502.407 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-9" d="M171.392 501.315 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-10" d="M178.987 500.485 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-11" d="M186.582 500.048 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-12" d="M194.177 500.071 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-13" d="M201.772 500.552 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-14" d="M209.367 501.415 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-hapten-lower-15" d="M216.962 502.525 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<g id="hapten-c-hapten-lower-0">
+<path id="hapten-stem-c-hapten-lower-0" d="M142.000 505.427 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-c-hapten-lower-0" d="M130.000 531.427 Q132.000 521.427 142.000 521.427 Q152.000 521.427 154.000 531.427" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="hapten-c-hapten-lower-1">
+<path id="hapten-stem-c-hapten-lower-1" d="M208.000 501.237 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-c-hapten-lower-1" d="M196.000 527.237 Q198.000 517.237 208.000 517.237 Q218.000 517.237 220.000 527.237" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g id="molecule-c-fluor-upper">
+<g id="strand-c-fluor-upper">
+<path id="backbone-c-fluor-upper" d="M400.000 440.000 L402.000 440.314 L404.000 440.624 L406.000 440.927 L408.000 441.220 L410.000 441.500 L412.000 441.763 L414.000 442.007 L416.000 442.229 L418.000 442.427 L420.000 442.598 L422.000 442.741 L424.000 442.853 L426.000 442.934 L428.000 442.984 L430.000 443.000 L432.000 442.984 L434.000 442.934 L436.000 442.853 L438.000 442.741 L440.000 442.598 L442.000 442.427 L444.000 442.229 L446.000 442.007 L448.000 441.763 L450.000 441.500 L452.000 441.220 L454.000 440.927 L456.000 440.624 L458.000 440.314 L460.000 440.000 L462.000 439.686 L464.000 439.376 L466.000 439.073 L468.000 438.780 L470.000 438.500 L472.000 438.237 L474.000 437.993 L476.000 437.771 L478.000 437.573 L480.000 437.402 L482.000 437.259 L484.000 437.147 L486.000 437.066 L488.000 437.016 L490.000 437.000 L492.000 437.016 L494.000 437.066 L496.000 437.147 L498.000 437.259 L500.000 437.402 L502.000 437.573 L504.000 437.771 L506.000 437.993 L508.000 438.237 L510.000 438.500 L512.000 438.780 L514.000 439.073 L516.000 439.376 L518.000 439.686 L520.000 440.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-fluor-upper-0" d="M403.038 440.475 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-1" d="M410.633 441.585 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-2" d="M418.228 442.448 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-3" d="M425.823 442.929 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-4" d="M433.418 442.952 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-5" d="M441.013 442.515 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-6" d="M448.608 441.685 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-7" d="M456.203 440.593 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-8" d="M463.797 439.407 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-9" d="M471.392 438.315 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-10" d="M478.987 437.485 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-11" d="M486.582 437.048 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-12" d="M494.177 437.071 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-13" d="M501.772 437.552 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-14" d="M509.367 438.415 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-upper-15" d="M516.962 439.525 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="fluor-stem-c-fluor-upper-0" d="M414.400 442.054 v-25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-c-fluor-upper-0" cx="414.400" cy="417.054" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-c-fluor-upper-1" d="M484.000 437.147 v-25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-c-fluor-upper-1" cx="484.000" cy="412.147" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+</g>
+<g id="molecule-c-fluor-lower">
+<g id="strand-c-fluor-lower">
+<path id="backbone-c-fluor-lower" d="M400.000 503.000 L402.000 503.314 L404.000 503.624 L406.000 503.927 L408.000 504.220 L410.000 504.500 L412.000 504.763 L414.000 505.007 L416.000 505.229 L418.000 505.427 L420.000 505.598 L422.000 505.741 L424.000 505.853 L426.000 505.934 L428.000 505.984 L430.000 506.000 L432.000 505.984 L434.000 505.934 L436.000 505.853 L438.000 505.741 L440.000 505.598 L442.000 505.427 L444.000 505.229 L446.000 505.007 L448.000 504.763 L450.000 504.500 L452.000 504.220 L454.000 503.927 L456.000 503.624 L458.000 503.314 L460.000 503.000 L462.000 502.686 L464.000 502.376 L466.000 502.073 L468.000 501.780 L470.000 501.500 L472.000 501.237 L474.000 500.993 L476.000 500.771 L478.000 500.573 L480.000 500.402 L482.000 500.259 L484.000 500.147 L486.000 500.066 L488.000 500.016 L490.000 500.000 L492.000 500.016 L494.000 500.066 L496.000 500.147 L498.000 500.259 L500.000 500.402 L502.000 500.573 L504.000 500.771 L506.000 500.993 L508.000 501.237 L510.000 501.500 L512.000 501.780 L514.000 502.073 L516.000 502.376 L518.000 502.686 L520.000 503.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-fluor-lower-0" d="M403.038 503.475 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-1" d="M410.633 504.585 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-2" d="M418.228 505.448 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-3" d="M425.823 505.929 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-4" d="M433.418 505.952 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-5" d="M441.013 505.515 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-6" d="M448.608 504.685 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-7" d="M456.203 503.593 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-8" d="M463.797 502.407 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-9" d="M471.392 501.315 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-10" d="M478.987 500.485 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-11" d="M486.582 500.048 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-12" d="M494.177 500.071 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-13" d="M501.772 500.552 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-14" d="M509.367 501.415 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-fluor-lower-15" d="M516.962 502.525 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="fluor-stem-c-fluor-lower-0" d="M407.200 504.104 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-c-fluor-lower-0" cx="407.200" cy="529.104" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-c-fluor-lower-1" d="M460.000 503.000 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-c-fluor-lower-1" cx="460.000" cy="528.000" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-c-fluor-lower-2" d="M512.800 501.896 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-c-fluor-lower-2" cx="512.800" cy="526.896" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+</g>
+<g id="molecule-c-target-upper">
+<g id="strand-c-target-upper">
+<path id="backbone-c-target-upper" d="M640.000 440.000 L644.000 440.314 L648.000 440.624 L652.000 440.927 L656.000 441.220 L660.000 441.500 L664.000 441.763 L668.000 442.007 L672.000 442.229 L676.000 442.427 L680.000 442.598 L684.000 442.741 L688.000 442.853 L692.000 442.934 L696.000 442.984 L700.000 443.000 L704.000 442.984 L708.000 442.934 L712.000 442.853 L716.000 442.741 L720.000 442.598 L724.000 442.427 L728.000 442.229 L732.000 442.007 L736.000 441.763 L740.000 441.500 L744.000 441.220 L748.000 440.927 L752.000 440.624 L756.000 440.314 L760.000 440.000 L764.000 439.686 L768.000 439.376 L772.000 439.073 L776.000 438.780 L780.000 438.500 L784.000 438.237 L788.000 437.993 L792.000 437.771 L796.000 437.573 L800.000 437.402 L804.000 437.259 L808.000 437.147 L812.000 437.066 L816.000 437.016 L820.000 437.000 L824.000 437.016 L828.000 437.066 L832.000 437.147 L836.000 437.259 L840.000 437.402 L844.000 437.573 L848.000 437.771 L852.000 437.993 L856.000 438.237 L860.000 438.500 L864.000 438.780 L868.000 439.073 L872.000 439.376 L876.000 439.686 L880.000 440.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-target-upper-0" d="M643.117 440.245 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-1" d="M650.909 440.845 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-2" d="M658.701 441.411 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-3" d="M666.494 441.918 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-4" d="M674.286 442.345 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-5" d="M682.078 442.676 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-6" d="M689.870 442.895 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-7" d="M697.662 442.994 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-8" d="M705.455 442.969 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-9" d="M713.247 442.821 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-10" d="M721.039 442.556 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-11" d="M728.831 442.185 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-12" d="M736.623 441.724 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-13" d="M744.416 441.190 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-14" d="M752.208 440.608 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-15" d="M760.000 440.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-16" d="M767.792 439.392 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-17" d="M775.584 438.810 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-18" d="M783.377 438.276 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-19" d="M791.169 437.815 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-20" d="M798.961 437.444 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-21" d="M806.753 437.179 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-22" d="M814.545 437.031 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-23" d="M822.338 437.006 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-24" d="M830.130 437.105 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-25" d="M837.922 437.324 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-26" d="M845.714 437.655 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-27" d="M853.506 438.082 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-28" d="M861.299 438.589 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-29" d="M869.091 439.155 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-upper-30" d="M876.883 439.755 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-c-target-lower">
+<g id="strand-c-target-lower">
+<path id="backbone-c-target-lower" d="M640.000 503.000 L644.000 503.314 L648.000 503.624 L652.000 503.927 L656.000 504.220 L660.000 504.500 L664.000 504.763 L668.000 505.007 L672.000 505.229 L676.000 505.427 L680.000 505.598 L684.000 505.741 L688.000 505.853 L692.000 505.934 L696.000 505.984 L700.000 506.000 L704.000 505.984 L708.000 505.934 L712.000 505.853 L716.000 505.741 L720.000 505.598 L724.000 505.427 L728.000 505.229 L732.000 505.007 L736.000 504.763 L740.000 504.500 L744.000 504.220 L748.000 503.927 L752.000 503.624 L756.000 503.314 L760.000 503.000 L764.000 502.686 L768.000 502.376 L772.000 502.073 L776.000 501.780 L780.000 501.500 L784.000 501.237 L788.000 500.993 L792.000 500.771 L796.000 500.573 L800.000 500.402 L804.000 500.259 L808.000 500.147 L812.000 500.066 L816.000 500.016 L820.000 500.000 L824.000 500.016 L828.000 500.066 L832.000 500.147 L836.000 500.259 L840.000 500.402 L844.000 500.573 L848.000 500.771 L852.000 500.993 L856.000 501.237 L860.000 501.500 L864.000 501.780 L868.000 502.073 L872.000 502.376 L876.000 502.686 L880.000 503.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="tick-c-target-lower-0" d="M643.117 503.245 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-1" d="M650.909 503.845 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-2" d="M658.701 504.411 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-3" d="M666.494 504.918 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-4" d="M674.286 505.345 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-5" d="M682.078 505.676 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-6" d="M689.870 505.895 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-7" d="M697.662 505.994 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-8" d="M705.455 505.969 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-9" d="M713.247 505.821 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-10" d="M721.039 505.556 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-11" d="M728.831 505.185 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-12" d="M736.623 504.724 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-13" d="M744.416 504.190 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-14" d="M752.208 503.608 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-15" d="M760.000 503.000 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-16" d="M767.792 502.392 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-17" d="M775.584 501.810 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-18" d="M783.377 501.276 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-19" d="M791.169 500.815 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-20" d="M798.961 500.444 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-21" d="M806.753 500.179 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-22" d="M814.545 500.031 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-23" d="M822.338 500.006 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-24" d="M830.130 500.105 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-25" d="M837.922 500.324 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-26" d="M845.714 500.655 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-27" d="M853.506 501.082 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-28" d="M861.299 501.589 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-29" d="M869.091 502.155 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="tick-c-target-lower-30" d="M876.883 502.755 v-12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+</g>
+<g id="molecule-d-hapten">
+<g id="strand-d-hapten-target">
+<path id="backbone-d-hapten-target" d="M30.000 622.000 L34.000 622.314 L38.000 622.624 L42.000 622.927 L46.000 623.220 L50.000 623.500 L54.000 623.763 L58.000 624.007 L62.000 624.229 L66.000 624.427 L70.000 624.598 L74.000 624.741 L78.000 624.853 L82.000 624.934 L86.000 624.984 L90.000 625.000 L94.000 624.984 L98.000 624.934 L102.000 624.853 L106.000 624.741 L110.000 624.598 L114.000 624.427 L118.000 624.229 L122.000 624.007 L126.000 623.763 L130.000 623.500 L134.000 623.220 L138.000 622.927 L142.000 622.624 L146.000 622.314 L150.000 622.000 L154.000 621.686 L158.000 621.376 L162.000 621.073 L166.000 620.780 L170.000 620.500 L174.000 620.237 L178.000 619.993 L182.000 619.771 L186.000 619.573 L190.000 619.402 L194.000 619.259 L198.000 619.147 L202.000 619.066 L206.000 619.016 L210.000 619.000 L214.000 619.016 L218.000 619.066 L222.000 619.147 L226.000 619.259 L230.000 619.402 L234.000 619.573 L238.000 619.771 L242.000 619.993 L246.000 620.237 L250.000 620.500 L254.000 620.780 L258.000 621.073 L262.000 621.376 L266.000 621.686 L270.000 622.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="strand-d-hapten-probe">
+<path id="backbone-d-hapten-probe" d="M95.000 652.000 L97.000 652.314 L99.000 652.624 L101.000 652.927 L103.000 653.220 L105.000 653.500 L107.000 653.763 L109.000 654.007 L111.000 654.229 L113.000 654.427 L115.000 654.598 L117.000 654.741 L119.000 654.853 L121.000 654.934 L123.000 654.984 L125.000 655.000 L127.000 654.984 L129.000 654.934 L131.000 654.853 L133.000 654.741 L135.000 654.598 L137.000 654.427 L139.000 654.229 L141.000 654.007 L143.000 653.763 L145.000 653.500 L147.000 653.220 L149.000 652.927 L151.000 652.624 L153.000 652.314 L155.000 652.000 L157.000 651.686 L159.000 651.376 L161.000 651.073 L163.000 650.780 L165.000 650.500 L167.000 650.237 L169.000 649.993 L171.000 649.771 L173.000 649.573 L175.000 649.402 L177.000 649.259 L179.000 649.147 L181.000 649.066 L183.000 649.016 L185.000 649.000 L187.000 649.016 L189.000 649.066 L191.000 649.147 L193.000 649.259 L195.000 649.402 L197.000 649.573 L199.000 649.771 L201.000 649.993 L203.000 650.237 L205.000 650.500 L207.000 650.780 L209.000 651.073 L211.000 651.376 L213.000 651.686 L215.000 652.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g id="hapten-d-hapten-probe-0">
+<path id="hapten-stem-d-hapten-probe-0" d="M125.000 655.000 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-d-hapten-probe-0" d="M113.000 681.000 Q115.000 671.000 125.000 671.000 Q135.000 671.000 137.000 681.000" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="hapten-d-hapten-probe-1">
+<path id="hapten-stem-d-hapten-probe-1" d="M194.600 649.371 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-d-hapten-probe-1" d="M182.600 675.371 Q184.600 665.371 194.600 665.371 Q204.600 665.371 206.600 675.371" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+<path id="unpaired-tick-d-hapten-0" d="M34 622.314 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-1" d="M42 622.927 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-2" d="M50 623.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-3" d="M58 624.007 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-4" d="M66 624.427 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-5" d="M74 624.741 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-6" d="M82 624.934 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-7" d="M90 625.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-8" d="M98 624.934 V652.469" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-9" d="M106 624.741 V653.634" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-10" d="M114 624.427 V654.516" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-11" d="M122 624.007 V654.963" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-12" d="M130 623.500 V654.898" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-13" d="M138 622.927 V654.331" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-14" d="M146 622.314 V653.362" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-15" d="M154 621.686 V652.157" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-16" d="M162 621.073 V650.925" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-17" d="M170 620.500 V649.879" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-18" d="M178 619.993 V649.199" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-19" d="M186 619.573 V649.004" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-20" d="M194 619.259 V649.327" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-21" d="M202 619.066 V650.112" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-hapten-22" d="M210 619.000 V651.224" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-23" d="M218 619.066 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-24" d="M226 619.259 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-25" d="M234 619.573 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-26" d="M242 619.993 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-27" d="M250 620.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-28" d="M258 621.073 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-hapten-29" d="M266 621.686 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="molecule-d-fluor">
+<g id="strand-d-fluor-target">
+<path id="backbone-d-fluor-target" d="M330.000 622.000 L334.000 622.314 L338.000 622.624 L342.000 622.927 L346.000 623.220 L350.000 623.500 L354.000 623.763 L358.000 624.007 L362.000 624.229 L366.000 624.427 L370.000 624.598 L374.000 624.741 L378.000 624.853 L382.000 624.934 L386.000 624.984 L390.000 625.000 L394.000 624.984 L398.000 624.934 L402.000 624.853 L406.000 624.741 L410.000 624.598 L414.000 624.427 L418.000 624.229 L422.000 624.007 L426.000 623.763 L430.000 623.500 L434.000 623.220 L438.000 622.927 L442.000 622.624 L446.000 622.314 L450.000 622.000 L454.000 621.686 L458.000 621.376 L462.000 621.073 L466.000 620.780 L470.000 620.500 L474.000 620.237 L478.000 619.993 L482.000 619.771 L486.000 619.573 L490.000 619.402 L494.000 619.259 L498.000 619.147 L502.000 619.066 L506.000 619.016 L510.000 619.000 L514.000 619.016 L518.000 619.066 L522.000 619.147 L526.000 619.259 L530.000 619.402 L534.000 619.573 L538.000 619.771 L542.000 619.993 L546.000 620.237 L550.000 620.500 L554.000 620.780 L558.000 621.073 L562.000 621.376 L566.000 621.686 L570.000 622.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="strand-d-fluor-probe">
+<path id="backbone-d-fluor-probe" d="M395.000 652.000 L397.000 652.314 L399.000 652.624 L401.000 652.927 L403.000 653.220 L405.000 653.500 L407.000 653.763 L409.000 654.007 L411.000 654.229 L413.000 654.427 L415.000 654.598 L417.000 654.741 L419.000 654.853 L421.000 654.934 L423.000 654.984 L425.000 655.000 L427.000 654.984 L429.000 654.934 L431.000 654.853 L433.000 654.741 L435.000 654.598 L437.000 654.427 L439.000 654.229 L441.000 654.007 L443.000 653.763 L445.000 653.500 L447.000 653.220 L449.000 652.927 L451.000 652.624 L453.000 652.314 L455.000 652.000 L457.000 651.686 L459.000 651.376 L461.000 651.073 L463.000 650.780 L465.000 650.500 L467.000 650.237 L469.000 649.993 L471.000 649.771 L473.000 649.573 L475.000 649.402 L477.000 649.259 L479.000 649.147 L481.000 649.066 L483.000 649.016 L485.000 649.000 L487.000 649.016 L489.000 649.066 L491.000 649.147 L493.000 649.259 L495.000 649.402 L497.000 649.573 L499.000 649.771 L501.000 649.993 L503.000 650.237 L505.000 650.500 L507.000 650.780 L509.000 651.073 L511.000 651.376 L513.000 651.686 L515.000 652.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path id="fluor-stem-d-fluor-probe-0" d="M402.200 653.104 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-d-fluor-probe-0" cx="402.200" cy="678.104" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-d-fluor-probe-1" d="M455.000 652.000 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-d-fluor-probe-1" cx="455.000" cy="677.000" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<path id="fluor-stem-d-fluor-probe-2" d="M507.800 650.896 v25" stroke="#a7234b" stroke-width="3.5" fill="none" />
+<ellipse id="fluorophore-d-fluor-probe-2" cx="507.800" cy="675.896" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+<path id="unpaired-tick-d-fluor-0" d="M334 622.314 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-1" d="M342 622.927 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-2" d="M350 623.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-3" d="M358 624.007 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-4" d="M366 624.427 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-5" d="M374 624.741 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-6" d="M382 624.934 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-7" d="M390 625.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-8" d="M398 624.934 V652.469" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-9" d="M406 624.741 V653.634" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-10" d="M414 624.427 V654.516" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-11" d="M422 624.007 V654.963" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-12" d="M430 623.500 V654.898" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-13" d="M438 622.927 V654.331" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-14" d="M446 622.314 V653.362" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-15" d="M454 621.686 V652.157" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-16" d="M462 621.073 V650.925" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-17" d="M470 620.500 V649.879" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-18" d="M478 619.993 V649.199" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-19" d="M486 619.573 V649.004" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-20" d="M494 619.259 V649.327" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-21" d="M502 619.066 V650.112" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-d-fluor-22" d="M510 619.000 V651.224" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-23" d="M518 619.066 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-24" d="M526 619.259 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-25" d="M534 619.573 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-26" d="M542 619.993 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-27" d="M550 620.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-28" d="M558 621.073 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-d-fluor-29" d="M566 621.686 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="molecule-e-hapten">
+<g id="strand-e-hapten-target">
+<path id="backbone-e-hapten-target" d="M30.000 753.000 L34.000 753.314 L38.000 753.624 L42.000 753.927 L46.000 754.220 L50.000 754.500 L54.000 754.763 L58.000 755.007 L62.000 755.229 L66.000 755.427 L70.000 755.598 L74.000 755.741 L78.000 755.853 L82.000 755.934 L86.000 755.984 L90.000 756.000 L94.000 755.984 L98.000 755.934 L102.000 755.853 L106.000 755.741 L110.000 755.598 L114.000 755.427 L118.000 755.229 L122.000 755.007 L126.000 754.763 L130.000 754.500 L134.000 754.220 L138.000 753.927 L142.000 753.624 L146.000 753.314 L150.000 753.000 L154.000 752.686 L158.000 752.376 L162.000 752.073 L166.000 751.780 L170.000 751.500 L174.000 751.237 L178.000 750.993 L182.000 750.771 L186.000 750.573 L190.000 750.402 L194.000 750.259 L198.000 750.147 L202.000 750.066 L206.000 750.016 L210.000 750.000 L214.000 750.016 L218.000 750.066 L222.000 750.147 L226.000 750.259 L230.000 750.402 L234.000 750.573 L238.000 750.771 L242.000 750.993 L246.000 751.237 L250.000 751.500 L254.000 751.780 L258.000 752.073 L262.000 752.376 L266.000 752.686 L270.000 753.000" stroke="#21a0b7" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+<g id="strand-e-hapten-probe">
+<path id="backbone-e-hapten-probe" d="M95.000 783.000 L97.000 783.314 L99.000 783.624 L101.000 783.927 L103.000 784.220 L105.000 784.500 L107.000 784.763 L109.000 785.007 L111.000 785.229 L113.000 785.427 L115.000 785.598 L117.000 785.741 L119.000 785.853 L121.000 785.934 L123.000 785.984 L125.000 786.000 L127.000 785.984 L129.000 785.934 L131.000 785.853 L133.000 785.741 L135.000 785.598 L137.000 785.427 L139.000 785.229 L141.000 785.007 L143.000 784.763 L145.000 784.500 L147.000 784.220 L149.000 783.927 L151.000 783.624 L153.000 783.314 L155.000 783.000 L157.000 782.686 L159.000 782.376 L161.000 782.073 L163.000 781.780 L165.000 781.500 L167.000 781.237 L169.000 780.993 L171.000 780.771 L173.000 780.573 L175.000 780.402 L177.000 780.259 L179.000 780.147 L181.000 780.066 L183.000 780.016 L185.000 780.000 L187.000 780.016 L189.000 780.066 L191.000 780.147 L193.000 780.259 L195.000 780.402 L197.000 780.573 L199.000 780.771 L201.000 780.993 L203.000 781.237 L205.000 781.500 L207.000 781.780 L209.000 782.073 L211.000 782.376 L213.000 782.686 L215.000 783.000" stroke="#a7234b" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g id="hapten-e-hapten-probe-0">
+<path id="hapten-stem-e-hapten-probe-0" d="M125.000 786.000 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-e-hapten-probe-0" d="M113.000 812.000 Q115.000 802.000 125.000 802.000 Q135.000 802.000 137.000 812.000" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<ellipse id="fluorophore-e-hapten-probe-0" cx="125.000" cy="812.000" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<g id="hapten-e-hapten-probe-1">
+<path id="hapten-stem-e-hapten-probe-1" d="M194.600 780.371 v16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-e-hapten-probe-1" d="M182.600 806.371 Q184.600 796.371 194.600 796.371 Q204.600 796.371 206.600 806.371" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<ellipse id="fluorophore-e-hapten-probe-1" cx="194.600" cy="806.371" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+</g>
+<path id="unpaired-tick-e-hapten-0" d="M34 753.314 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-1" d="M42 753.927 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-2" d="M50 754.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-3" d="M58 755.007 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-4" d="M66 755.427 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-5" d="M74 755.741 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-6" d="M82 755.934 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-7" d="M90 756.000 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-8" d="M98 755.934 V783.469" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-9" d="M106 755.741 V784.634" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-10" d="M114 755.427 V785.516" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-11" d="M122 755.007 V785.963" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-12" d="M130 754.500 V785.898" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-13" d="M138 753.927 V785.331" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-14" d="M146 753.314 V784.362" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-15" d="M154 752.686 V783.157" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-16" d="M162 752.073 V781.925" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-17" d="M170 751.500 V780.879" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-18" d="M178 750.993 V780.199" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-19" d="M186 750.573 V780.004" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-20" d="M194 750.259 V780.327" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-21" d="M202 750.066 V781.112" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="paired-tick-e-hapten-22" d="M210 750.000 V782.224" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-23" d="M218 750.066 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-24" d="M226 750.259 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-25" d="M234 750.573 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-26" d="M242 750.993 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-27" d="M250 751.500 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-28" d="M258 752.073 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+<path id="unpaired-tick-e-hapten-29" d="M266 752.686 v12" stroke="#343238" stroke-width="1.6" fill="none" />
+</g>
+<g id="arrow-a-left">
+<path id="shaft-a-left" d="M145 157 V242" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-a-left" d="M139 239 L145 253 L151 239 L145 243 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-a-center">
+<path id="shaft-a-center" d="M445 157 V242" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-a-center" d="M439 239 L445 253 L451 239 L445 243 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-a-target">
+<path id="shaft-a-target" d="M760 157 V409" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-a-target" d="M754 406 L760 420 L766 406 L760 410 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-b-left">
+<path id="shaft-b-left" d="M155 365 V399" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-b-left" d="M149 396 L155 410 L161 396 L155 400 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-b-center">
+<path id="shaft-b-center" d="M458 365 V399" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-b-center" d="M452 396 L458 410 L464 396 L458 400 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-c-left">
+<path id="shaft-c-left" d="M155 549 V593" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-c-left" d="M149 590 L155 604 L161 590 L155 594 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-c-center">
+<path id="shaft-c-center" d="M458 549 V593" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-c-center" d="M452 590 L458 604 L464 590 L458 594 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<g id="arrow-d-left">
+<path id="shaft-d-left" d="M155 699 V723" stroke="#435359" stroke-width="3.4" fill="none" />
+<path id="head-d-left" d="M149 720 L155 734 L161 720 L155 724 Z" stroke="none" stroke-width="0" fill="#435359" />
+</g>
+<path id="shared-lower-target-branch" d="M760 522 V577 H155" stroke="#435359" stroke-width="3.4" fill="none" />
+<g id="legend"><rect x="558" y="780" width="350" height="58" fill="white" stroke="#737a7d" stroke-width="1.2"/>
+<g id="hapten-legend">
+<path id="hapten-stem-legend" d="M584.000 816.000 v-16" stroke="#822853" stroke-width="4" fill="none" />
+<path id="hapten-cup-legend" d="M572.000 790.000 Q574.000 800.000 584.000 800.000 Q594.000 800.000 596.000 790.000" stroke="#822853" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+<text id="legend-hapten" x="605" y="817" font-family="Atkinson Hyperlegible Next" font-size="22" font-weight="400" fill="#252829">Hapten</text>
+<ellipse id="fluorophore-legend" cx="756.000" cy="809.000" rx="8" ry="6" fill="url(#fluor-fill)" stroke="#526e55" stroke-width="1.1"/>
+<text id="legend-fluor" x="774" y="817" font-family="Atkinson Hyperlegible Next" font-size="21" font-weight="400" fill="#252829">Fluorophore</text>
+</g></svg>

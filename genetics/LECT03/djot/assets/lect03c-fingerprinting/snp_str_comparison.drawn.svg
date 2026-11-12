@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="570" viewBox="0 0 1300 570" role="img" aria-labelledby="title desc">
+  <title id="title">SNP and short tandem repeat comparison</title>
+  <desc id="desc">Three schematic DNA sequences. Man 1 has T at the SNP and five CTA repeats. Man 2 and Man 3 have A at the same SNP and six and seven CTA repeats respectively. The repeat flanks are conserved except for the marked SNP.</desc>
+  <rect width="1300" height="570" fill="#ffffff" />
+  <g id="annotations" font-family="Atkinson Hyperlegible Next" fill="#213547">
+    <text x="301.5" y="51" font-size="38" font-weight="600" text-anchor="middle">SNP</text>
+    <path d="M 301.5 68 V 132 M 292 119 L 301.5 134 L 311 119" fill="none" stroke="#526879" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="650" y="51" font-size="36" text-anchor="middle">short tandem repeat (STR)</text>
+    <path d="M 396 126 V 94 H 801 V 126" fill="none" stroke="#9b7718" stroke-width="3" stroke-linecap="round" />
+  </g>
+  <g id="man-1" data-repeat-count="5" data-motif="CTA">
+    <text x="22" y="184" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#213547">Man 1</text>
+    <g id="man-1-repeat-boundaries" fill="#fff5d9" stroke="#c19728" stroke-width="2.8">
+      <rect x="396" y="141" width="81" height="59" />
+      <rect x="477" y="141" width="81" height="59" />
+      <rect x="558" y="141" width="81" height="59" />
+      <rect x="639" y="141" width="81" height="59" />
+      <rect x="720" y="141" width="81" height="59" />
+    </g>
+    <text id="man-1-sequence" font-family="Atkinson Hyperlegible Mono" font-size="42" fill="#213547" text-anchor="middle"><tspan x="193.5" y="184">G</tspan><tspan x="220.5" y="184">T</tspan><tspan x="247.5" y="184">A</tspan><tspan x="274.5" y="184">C</tspan><tspan x="301.5" y="184" fill="#be3034" font-weight="700">T</tspan><tspan x="328.5" y="184">A</tspan><tspan x="355.5" y="184">G</tspan><tspan x="382.5" y="184">A</tspan><tspan x="409.5" y="184">C</tspan><tspan x="436.5" y="184">T</tspan><tspan x="463.5" y="184">A</tspan><tspan x="490.5" y="184">C</tspan><tspan x="517.5" y="184">T</tspan><tspan x="544.5" y="184">A</tspan><tspan x="571.5" y="184">C</tspan><tspan x="598.5" y="184">T</tspan><tspan x="625.5" y="184">A</tspan><tspan x="652.5" y="184">C</tspan><tspan x="679.5" y="184">T</tspan><tspan x="706.5" y="184">A</tspan><tspan x="733.5" y="184">C</tspan><tspan x="760.5" y="184">T</tspan><tspan x="787.5" y="184">A</tspan><tspan x="814.5" y="184">C</tspan><tspan x="841.5" y="184">T</tspan><tspan x="868.5" y="184">G</tspan><tspan x="895.5" y="184">G</tspan><tspan x="922.5" y="184">T</tspan><tspan x="949.5" y="184">G</tspan><tspan x="976.5" y="184">.</tspan><tspan x="1003.5" y="184">.</tspan><tspan x="1030.5" y="184">.</tspan></text>
+    <text x="598.5" y="247" font-family="Atkinson Hyperlegible Next" font-size="32" text-anchor="middle" fill="#75570c">5 repeats</text>
+  </g>
+  <g id="man-2" data-repeat-count="6" data-motif="CTA">
+    <text x="22" y="339" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#213547">Man 2</text>
+    <g id="man-2-repeat-boundaries" fill="#fff5d9" stroke="#c19728" stroke-width="2.8">
+      <rect x="396" y="296" width="81" height="59" />
+      <rect x="477" y="296" width="81" height="59" />
+      <rect x="558" y="296" width="81" height="59" />
+      <rect x="639" y="296" width="81" height="59" />
+      <rect x="720" y="296" width="81" height="59" />
+      <rect x="801" y="296" width="81" height="59" />
+    </g>
+    <text id="man-2-sequence" font-family="Atkinson Hyperlegible Mono" font-size="42" fill="#213547" text-anchor="middle"><tspan x="193.5" y="339">G</tspan><tspan x="220.5" y="339">T</tspan><tspan x="247.5" y="339">A</tspan><tspan x="274.5" y="339">C</tspan><tspan x="301.5" y="339" fill="#16733d" font-weight="700">A</tspan><tspan x="328.5" y="339">A</tspan><tspan x="355.5" y="339">G</tspan><tspan x="382.5" y="339">A</tspan><tspan x="409.5" y="339">C</tspan><tspan x="436.5" y="339">T</tspan><tspan x="463.5" y="339">A</tspan><tspan x="490.5" y="339">C</tspan><tspan x="517.5" y="339">T</tspan><tspan x="544.5" y="339">A</tspan><tspan x="571.5" y="339">C</tspan><tspan x="598.5" y="339">T</tspan><tspan x="625.5" y="339">A</tspan><tspan x="652.5" y="339">C</tspan><tspan x="679.5" y="339">T</tspan><tspan x="706.5" y="339">A</tspan><tspan x="733.5" y="339">C</tspan><tspan x="760.5" y="339">T</tspan><tspan x="787.5" y="339">A</tspan><tspan x="814.5" y="339">C</tspan><tspan x="841.5" y="339">T</tspan><tspan x="868.5" y="339">A</tspan><tspan x="895.5" y="339">C</tspan><tspan x="922.5" y="339">T</tspan><tspan x="949.5" y="339">G</tspan><tspan x="976.5" y="339">G</tspan><tspan x="1003.5" y="339">T</tspan><tspan x="1030.5" y="339">G</tspan><tspan x="1057.5" y="339">.</tspan><tspan x="1084.5" y="339">.</tspan><tspan x="1111.5" y="339">.</tspan></text>
+    <text x="639.0" y="402" font-family="Atkinson Hyperlegible Next" font-size="32" text-anchor="middle" fill="#75570c">6 repeats</text>
+  </g>
+  <g id="man-3" data-repeat-count="7" data-motif="CTA">
+    <text x="22" y="494" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#213547">Man 3</text>
+    <g id="man-3-repeat-boundaries" fill="#fff5d9" stroke="#c19728" stroke-width="2.8">
+      <rect x="396" y="451" width="81" height="59" />
+      <rect x="477" y="451" width="81" height="59" />
+      <rect x="558" y="451" width="81" height="59" />
+      <rect x="639" y="451" width="81" height="59" />
+      <rect x="720" y="451" width="81" height="59" />
+      <rect x="801" y="451" width="81" height="59" />
+      <rect x="882" y="451" width="81" height="59" />
+    </g>
+    <text id="man-3-sequence" font-family="Atkinson Hyperlegible Mono" font-size="42" fill="#213547" text-anchor="middle"><tspan x="193.5" y="494">G</tspan><tspan x="220.5" y="494">T</tspan><tspan x="247.5" y="494">A</tspan><tspan x="274.5" y="494">C</tspan><tspan x="301.5" y="494" fill="#16733d" font-weight="700">A</tspan><tspan x="328.5" y="494">A</tspan><tspan x="355.5" y="494">G</tspan><tspan x="382.5" y="494">A</tspan><tspan x="409.5" y="494">C</tspan><tspan x="436.5" y="494">T</tspan><tspan x="463.5" y="494">A</tspan><tspan x="490.5" y="494">C</tspan><tspan x="517.5" y="494">T</tspan><tspan x="544.5" y="494">A</tspan><tspan x="571.5" y="494">C</tspan><tspan x="598.5" y="494">T</tspan><tspan x="625.5" y="494">A</tspan><tspan x="652.5" y="494">C</tspan><tspan x="679.5" y="494">T</tspan><tspan x="706.5" y="494">A</tspan><tspan x="733.5" y="494">C</tspan><tspan x="760.5" y="494">T</tspan><tspan x="787.5" y="494">A</tspan><tspan x="814.5" y="494">C</tspan><tspan x="841.5" y="494">T</tspan><tspan x="868.5" y="494">A</tspan><tspan x="895.5" y="494">C</tspan><tspan x="922.5" y="494">T</tspan><tspan x="949.5" y="494">A</tspan><tspan x="976.5" y="494">C</tspan><tspan x="1003.5" y="494">T</tspan><tspan x="1030.5" y="494">G</tspan><tspan x="1057.5" y="494">G</tspan><tspan x="1084.5" y="494">T</tspan><tspan x="1111.5" y="494">G</tspan><tspan x="1138.5" y="494">.</tspan><tspan x="1165.5" y="494">.</tspan><tspan x="1192.5" y="494">.</tspan></text>
+    <text x="679.5" y="557" font-family="Atkinson Hyperlegible Next" font-size="32" text-anchor="middle" fill="#75570c">7 repeats</text>
+  </g>
+</svg>

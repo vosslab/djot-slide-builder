@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="616" viewBox="0 0 1400 616" role="img" aria-labelledby="title desc">
+<title id="title">Average fitness and population size</title><desc id="desc">Three source conceptual cases show growing, stable and declining populations. The curves have no measured scale or empirical points.</desc>
+<rect width="1400" height="616" fill="white"/>
+<g id="panel-fills"><rect x="80" y="70" width="430" height="430" fill="#cbdca7"/><rect x="510" y="70" width="430" height="430" fill="#f8d994"/><rect x="940" y="70" width="430" height="430" fill="#adc2e3"/>
+<path id="growing-area" d="M 80 401 C 220 389 375 270 454.1 70 L 510 70 L 510 500 L 80 500 Z" fill="#709b42"/>
+<path id="stable-area" d="M 510 297.9 H 940 V 500 H 510 Z" fill="#eaa126"/>
+<path id="declining-area" d="M 940 212 C 1060 350 1210 440 1370 471 L 1370 500 L 940 500 Z" fill="#356cb0"/></g>
+<g id="curves" fill="none" stroke="#293638" stroke-width="4"><path id="growing-curve" d="M 80 401 C 220 389 375 270 454.1 70"/><path id="stable-curve" d="M 510 297.9 H 940"/><path id="declining-curve" d="M 940 212 C 1060 350 1210 440 1370 471"/></g>
+<g id="plot-frame" fill="none" stroke="#293638" stroke-width="3.5"><rect x="80" y="70" width="1290" height="430"/><path d="M 510 70 V 500 M 940 70 V 500"/></g>
+<g id="axis-indicators" stroke="#293638" stroke-width="3.5" fill="none"><path d="M 32 478 L 32 440 M 32 173 L 32 111"/><path d="M 620 545 L 690 545 M 800 545 L 859 545"/></g>
+<g id="axis-heads" fill="#293638"><path d="M 20 120 L 32 84 L 44 120 Z"/><path d="M 851 534 L 885 545 L 851 556 Z"/></g>
+<g id="labels" font-family="Atkinson Hyperlegible Next" font-weight="750" fill="#202b2e" font-size="38"><text x="295" y="43" text-anchor="middle">Growing population</text><text x="725" y="43" text-anchor="middle">Stable population</text><text x="1155" y="43" text-anchor="middle">Declining population</text><text x="32" y="310" transform="rotate(-90 32 310)" text-anchor="middle">Population size</text><text x="745" y="557" text-anchor="middle">Time</text></g>
+<g id="fitness-conditions" font-family="Atkinson Hyperlegible Next" font-size="39" font-weight="700" fill="#202b2e"><text x="125" y="137"><tspan font-style="italic">w</tspan> &gt; 1</text><text x="555" y="137"><tspan font-style="italic">w</tspan> = 1</text><text x="985" y="137"><tspan font-style="italic">w</tspan> &lt; 1</text><g id="overbars" stroke="#202b2e" stroke-width="3"><path d="M 126 101 H 154"/><path d="M 556 101 H 584"/><path d="M 986 101 H 1014"/></g></g>
+</svg>

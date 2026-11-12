@@ -63,6 +63,51 @@ The apparatus recipe and 1200/320-pixel review renders live in the local scratch
 `_temp/svg_creative_refinements/construction/`. That demonstration does not establish engineering
 accuracy or exported-slide acceptance.
 
+## Single-chromatid chromosomes
+
+`chromosomes.chromosome_svg(name, genes, *, centromere_after=None, junctions=(),
+pitch=64, height=62, allele_labels=False)` returns `(fragment, width, boundaries)`. Give each fragment a
+document-unique XML-safe `name`, and supply ordered `(label, "#RRGGBB")` pairs.
+Empty labels draw an unlabeled rod. The returned boundary coordinates are indexed
+by the number of preceding regions; use them to position cut arrows without
+reconstructing the geometry. At a centromere boundary the coordinate is the
+collar center. Placement belongs to an enclosing SVG transform.
+
+`centromere_after=5` inserts a pale outlined, slightly narrowed collar after the
+fifth region. `None` deliberately draws no centromere. Explicit `junctions=(3,)`
+adds a white zigzag after region three; a join cannot occupy the collar boundary.
+Neutral rounded endcaps are illustrative chromosome ends, never extra genes.
+Subtle irregular bands are decorative, not measured G-bands. Region spacing is
+schematic; deletion and duplication change width when the number of regions changes.
+Keep colors attached to source segments through rearrangements. Labels remain
+flat editable Atkinson Hyperlegible Next text; XML escaping is automatic.
+
+Opt in to `allele_labels=True` for one lowercase ASCII gene letter followed by
+`+` or `-`, such as `a+` or `b-`. It renders a live italic gene and raised sign;
+minus uses the readable mathematical minus. Empty labels still represent unlabeled
+arm material, never an additional gene. Unsupported allele labels raise `ValueError`.
+Ordinary labels are never automatically reinterpreted. The specimen includes both modes.
+
+The helper adapts the established BPQ HTML/CSS chromosome vocabulary into native
+SVG: continuous outlined rods, terminal treatment, pale collars and explicit joins.
+It draws straight single chromatids. Replicated/X shapes, curved pairing diagrams,
+measured cytological band maps and internal telomere distractors need separate
+source-specific construction; they are not supported by this helper.
+
+The durable recipe is [chromosome_examples.py](chromosome_examples.py). From the
+repository root, run Python 3.12 directly (no bootstrap or Git invocation):
+
+```bash
+/opt/homebrew/bin/python3.12 -B -m svg_tools.chromosome_examples
+```
+
+It writes the [specimen](../docs/slide-specs/illustration_examples/chromosome_language.drawn.svg)
+and four review candidates under `_temp/chromosome_visual_language/implementation/`.
+It does not overwrite course assets. The recipe contains the explicit source gene
+orders, colors and cut positions; all chromosome geometry comes from the shared helper.
+See the [illustration guide](../docs/slide-specs/GENETICS_ILLUSTRATION_GUIDE.md)
+for the scientific meanings and review boundary.
+
 ## Example
 
 Save this as `_temp/draw_example.py` and run it from the repository root with

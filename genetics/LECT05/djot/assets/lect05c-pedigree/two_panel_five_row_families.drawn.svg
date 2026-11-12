@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="972" viewBox="0 0 1920 972" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Two families across five rows</title>
+  <desc id="figure-description">Two separate family diagrams with purple and white circles and squares, joined across five rows. The original panel headings and six half-purple circles are retained.</desc>
+  <rect id="background" width="1920" height="972" fill="white" />
+  <g id="panel-L" transform="translate(0 0) scale(3)">
+    <g id="L-connections">
+      <g id="L-family-I1-I2">
+        <line x1="152.667" y1="60" x2="174" y2="60" stroke="#000000" stroke-width="2" id="L-edge-1" />
+        <line x1="163.333" y1="60" x2="163.333" y2="90" stroke="#000000" stroke-width="2" id="L-edge-2" />
+        <line x1="93.3333" y1="90" x2="223.333" y2="90" stroke="#000000" stroke-width="2" id="L-edge-3" />
+        <line x1="93.3333" y1="90" x2="93.3333" y2="104" stroke="#000000" stroke-width="2" id="L-edge-4" />
+        <line x1="136.667" y1="90" x2="136.667" y2="104" stroke="#000000" stroke-width="2" id="L-edge-5" />
+        <line x1="180" y1="90" x2="180" y2="104" stroke="#000000" stroke-width="2" id="L-edge-6" />
+        <line x1="223.333" y1="90" x2="223.333" y2="104" stroke="#000000" stroke-width="2" id="L-edge-7" />
+      </g>
+      <g id="L-family-II1-II2">
+        <line x1="62.6667" y1="120" x2="77.3333" y2="120" stroke="#000000" stroke-width="2" id="L-edge-8" />
+        <line x1="70" y1="120" x2="70" y2="150" stroke="#000000" stroke-width="2" id="L-edge-9" />
+        <line x1="70" y1="150" x2="113.333" y2="150" stroke="#000000" stroke-width="2" id="L-edge-10" />
+        <line x1="70" y1="150" x2="70" y2="164" stroke="#000000" stroke-width="2" id="L-edge-11" />
+        <line x1="113.333" y1="150" x2="113.333" y2="164" stroke="#000000" stroke-width="2" id="L-edge-12" />
+      </g>
+      <g id="L-family-II5-II6">
+        <line x1="239.333" y1="120" x2="257.333" y2="120" stroke="#000000" stroke-width="2" id="L-edge-13" />
+        <line x1="248.333" y1="120" x2="248.333" y2="150" stroke="#000000" stroke-width="2" id="L-edge-14" />
+        <line x1="210" y1="150" x2="291.667" y2="150" stroke="#000000" stroke-width="2" id="L-edge-15" />
+        <line x1="210" y1="150" x2="210" y2="164" stroke="#000000" stroke-width="2" id="L-edge-16" />
+        <line x1="250" y1="150" x2="250" y2="164" stroke="#000000" stroke-width="2" id="L-edge-17" />
+        <line x1="291.667" y1="150" x2="291.667" y2="164" stroke="#000000" stroke-width="2" id="L-edge-18" />
+      </g>
+      <g id="L-family-III1-III2">
+        <line x1="42.6667" y1="180" x2="54" y2="180" stroke="#000000" stroke-width="2" id="L-edge-19" />
+        <line x1="48.3333" y1="180" x2="48.3333" y2="210" stroke="#000000" stroke-width="2" id="L-edge-20" />
+        <line x1="26.6667" y1="210" x2="70" y2="210" stroke="#000000" stroke-width="2" id="L-edge-21" />
+        <line x1="26.6667" y1="210" x2="26.6667" y2="224" stroke="#000000" stroke-width="2" id="L-edge-22" />
+        <line x1="70" y1="210" x2="70" y2="224" stroke="#000000" stroke-width="2" id="L-edge-23" />
+      </g>
+      <g id="L-family-III4-III5">
+        <line x1="182.667" y1="180" x2="194" y2="180" stroke="#000000" stroke-width="2" id="L-edge-24" />
+        <line x1="188.333" y1="180" x2="188.333" y2="210" stroke="#000000" stroke-width="2" id="L-edge-25" />
+        <line x1="166.667" y1="210" x2="213.333" y2="210" stroke="#000000" stroke-width="2" id="L-edge-26" />
+        <line x1="166.667" y1="210" x2="166.667" y2="224" stroke="#000000" stroke-width="2" id="L-edge-27" />
+        <line x1="213.333" y1="210" x2="213.333" y2="224" stroke="#000000" stroke-width="2" id="L-edge-28" />
+      </g>
+      <g id="L-family-IV2-IV3">
+        <line x1="86" y1="240" x2="100.667" y2="240" stroke="#000000" stroke-width="2" id="L-edge-29" />
+        <line x1="93.3333" y1="240" x2="93.3333" y2="270" stroke="#000000" stroke-width="2" id="L-edge-30" />
+        <line x1="93.3333" y1="270" x2="93.3333" y2="279" stroke="#000000" stroke-width="2" id="L-edge-31" />
+      </g>
+      <g id="L-family-IV5-IV6">
+        <line x1="229.333" y1="240" x2="250.667" y2="240" stroke="#000000" stroke-width="2" id="L-edge-32" />
+        <line x1="240" y1="240" x2="240" y2="270" stroke="#000000" stroke-width="2" id="L-edge-33" />
+        <line x1="213.333" y1="270" x2="266.667" y2="270" stroke="#000000" stroke-width="2" id="L-edge-34" />
+        <line x1="213.333" y1="270" x2="213.333" y2="279" stroke="#000000" stroke-width="2" id="L-edge-35" />
+        <line x1="266.667" y1="270" x2="266.667" y2="279" stroke="#000000" stroke-width="2" id="L-edge-36" />
+      </g>
+    </g>
+    <g id="L-people">
+      <circle cx="136.667" cy="60" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-I1" />
+      <rect x="175" y="45" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-I2" />
+      <rect x="31.6667" y="105" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-II1" />
+      <circle cx="93.3333" cy="120" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-II2" />
+      <circle cx="136.667" cy="120" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-II3" />
+      <circle cx="180" cy="120" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-II4" />
+      <rect x="208.333" y="105" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-II5" />
+      <circle cx="273.333" cy="120" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-II6" />
+      <rect x="11.6667" y="165" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-III1" />
+      <circle cx="70" cy="180" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-III2" />
+      <circle cx="113.333" cy="180" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-III3" />
+      <circle cx="166.667" cy="180" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-III4" />
+      <rect x="195" y="165" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-III5" />
+      <rect x="235" y="165" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-III6" />
+      <circle cx="291.667" cy="180" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-III7" />
+      <rect x="11.6667" y="225" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-IV1" />
+      <rect x="55" y="225" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-IV2" />
+      <circle cx="116.667" cy="240" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-IV3" />
+      <circle cx="166.667" cy="240" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-IV4" />
+      <circle cx="213.333" cy="240" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-IV5" />
+      <rect x="251.667" y="225" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-IV6" />
+      <rect x="78.3333" y="280" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-V1" />
+      <circle cx="213.333" cy="295" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="L-person-V2" />
+      <rect x="251.667" y="280" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="L-person-V3" />
+    </g>
+  </g>
+  <g id="panel-R" transform="translate(960 0) scale(3)">
+    <g id="R-connections">
+      <g id="R-family-I1-I2">
+        <line x1="159.333" y1="60" x2="180.667" y2="60" stroke="#000000" stroke-width="2" id="R-edge-1" />
+        <line x1="170" y1="60" x2="170" y2="90" stroke="#000000" stroke-width="2" id="R-edge-2" />
+        <line x1="100" y1="90" x2="230" y2="90" stroke="#000000" stroke-width="2" id="R-edge-3" />
+        <line x1="100" y1="90" x2="100" y2="104" stroke="#000000" stroke-width="2" id="R-edge-4" />
+        <line x1="143.333" y1="90" x2="143.333" y2="104" stroke="#000000" stroke-width="2" id="R-edge-5" />
+        <line x1="186.667" y1="90" x2="186.667" y2="104" stroke="#000000" stroke-width="2" id="R-edge-6" />
+        <line x1="230" y1="90" x2="230" y2="104" stroke="#000000" stroke-width="2" id="R-edge-7" />
+      </g>
+      <g id="R-family-II1-II2">
+        <line x1="72.6667" y1="120" x2="84" y2="120" stroke="#000000" stroke-width="2" id="R-edge-8" />
+        <line x1="78.3333" y1="120" x2="78.3333" y2="150" stroke="#000000" stroke-width="2" id="R-edge-9" />
+        <line x1="73.3333" y1="150" x2="116.667" y2="150" stroke="#000000" stroke-width="2" id="R-edge-10" />
+        <line x1="73.3333" y1="150" x2="73.3333" y2="164" stroke="#000000" stroke-width="2" id="R-edge-11" />
+        <line x1="116.667" y1="150" x2="116.667" y2="164" stroke="#000000" stroke-width="2" id="R-edge-12" />
+      </g>
+      <g id="R-family-II5-II6">
+        <line x1="246" y1="120" x2="267.333" y2="120" stroke="#000000" stroke-width="2" id="R-edge-13" />
+        <line x1="256.667" y1="120" x2="256.667" y2="150" stroke="#000000" stroke-width="2" id="R-edge-14" />
+        <line x1="243.333" y1="150" x2="290" y2="150" stroke="#000000" stroke-width="2" id="R-edge-15" />
+        <line x1="243.333" y1="150" x2="243.333" y2="164" stroke="#000000" stroke-width="2" id="R-edge-16" />
+        <line x1="290" y1="150" x2="290" y2="164" stroke="#000000" stroke-width="2" id="R-edge-17" />
+      </g>
+      <g id="R-family-III1-III2">
+        <line x1="42.6667" y1="180" x2="57.3333" y2="180" stroke="#000000" stroke-width="2" id="R-edge-18" />
+        <line x1="50" y1="180" x2="50" y2="210" stroke="#000000" stroke-width="2" id="R-edge-19" />
+        <line x1="26.6667" y1="210" x2="113.333" y2="210" stroke="#000000" stroke-width="2" id="R-edge-20" />
+        <line x1="26.6667" y1="210" x2="26.6667" y2="224" stroke="#000000" stroke-width="2" id="R-edge-21" />
+        <line x1="70" y1="210" x2="70" y2="224" stroke="#000000" stroke-width="2" id="R-edge-22" />
+        <line x1="113.333" y1="210" x2="113.333" y2="224" stroke="#000000" stroke-width="2" id="R-edge-23" />
+      </g>
+      <g id="R-family-III4-III5">
+        <line x1="212.667" y1="180" x2="227.333" y2="180" stroke="#000000" stroke-width="2" id="R-edge-24" />
+        <line x1="220" y1="180" x2="220" y2="210" stroke="#000000" stroke-width="2" id="R-edge-25" />
+        <line x1="196.667" y1="210" x2="243.333" y2="210" stroke="#000000" stroke-width="2" id="R-edge-26" />
+        <line x1="196.667" y1="210" x2="196.667" y2="224" stroke="#000000" stroke-width="2" id="R-edge-27" />
+        <line x1="243.333" y1="210" x2="243.333" y2="224" stroke="#000000" stroke-width="2" id="R-edge-28" />
+      </g>
+      <g id="R-family-IV3-IV4">
+        <line x1="129.333" y1="240" x2="140.667" y2="240" stroke="#000000" stroke-width="2" id="R-edge-29" />
+        <line x1="135" y1="240" x2="135" y2="270" stroke="#000000" stroke-width="2" id="R-edge-30" />
+        <line x1="135" y1="270" x2="135" y2="279" stroke="#000000" stroke-width="2" id="R-edge-31" />
+      </g>
+      <g id="R-family-IV6-IV7">
+        <line x1="259.333" y1="240" x2="274" y2="240" stroke="#000000" stroke-width="2" id="R-edge-32" />
+        <line x1="266.667" y1="240" x2="266.667" y2="270" stroke="#000000" stroke-width="2" id="R-edge-33" />
+        <line x1="266.667" y1="270" x2="266.667" y2="279" stroke="#000000" stroke-width="2" id="R-edge-34" />
+      </g>
+    </g>
+    <g id="R-people">
+      <rect x="128.333" y="45" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-I1" />
+      <circle cx="196.667" cy="60" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-I2" />
+      <rect x="41.6667" y="105" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-II1" />
+      <circle cx="100" cy="120" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-II2" />
+      <path d="M 100 106 A 14 14 0 0 0 100 134 Z" fill="#594DB1" id="R-half-II2" stroke="#000000" stroke-width="1.5" transform="translate(200 0) scale(-1 1)" />
+      <rect x="128.333" y="105" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-II3" />
+      <circle cx="186.667" cy="120" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-II4" />
+      <path d="M 186.667 106 A 14 14 0 0 0 186.667 134 Z" fill="#594DB1" id="R-half-II4" stroke="#000000" stroke-width="1.5" transform="translate(373.333 0) scale(-1 1)" />
+      <rect x="215" y="105" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-II5" />
+      <circle cx="283.333" cy="120" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-II6" />
+      <circle cx="26.6667" cy="180" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-III1" />
+      <rect x="58.3333" y="165" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-III2" />
+      <rect x="101.667" y="165" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-III3" />
+      <rect x="181.667" y="165" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-III4" />
+      <circle cx="243.333" cy="180" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-III5" />
+      <path d="M 243.333 166 A 14 14 0 0 0 243.333 194 Z" fill="#594DB1" id="R-half-III5" stroke="#000000" stroke-width="1.5" />
+      <circle cx="290" cy="180" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-III6" />
+      <path d="M 290 166 A 14 14 0 0 0 290 194 Z" fill="#594DB1" id="R-half-III6" stroke="#000000" stroke-width="1.5" />
+      <rect x="11.6667" y="225" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV1" />
+      <circle cx="70" cy="240" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV2" />
+      <path d="M 70 226 A 14 14 0 0 0 70 254 Z" fill="#594DB1" id="R-half-IV2" stroke="#000000" stroke-width="1.5" transform="translate(140 0) scale(-1 1)" />
+      <circle cx="113.333" cy="240" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV3" />
+      <path d="M 113.333 226 A 14 14 0 0 0 113.333 254 Z" fill="#594DB1" id="R-half-IV3" stroke="#000000" stroke-width="1.5" transform="translate(226.667 0) scale(-1 1)" />
+      <rect x="141.667" y="225" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV4" />
+      <rect x="181.667" y="225" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV5" />
+      <circle cx="243.333" cy="240" r="15" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-IV6" />
+      <rect x="275" y="225" width="30" height="30" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-IV7" />
+      <circle cx="135" cy="295" r="15" fill="#fff" stroke="#000000" stroke-width="2" id="R-person-V1" />
+      <rect x="251.667" y="280" width="30" height="30" fill="#594DB1" stroke="#000000" stroke-width="2" id="R-person-V2" />
+    </g>
+  </g>
+  <g id="panel-frame" fill="none" stroke="#000000" stroke-width="6">
+    <rect x="8" y="8" width="1904" height="956" />
+    <line x1="960" y1="8" x2="960" y2="964" />
+  </g>
+  <g id="source-labels" font-family="Atkinson Hyperlegible Next" fill="#000000" text-anchor="middle" font-weight="700">
+    <text x="480" y="91" font-size="82">X-linked dominant</text>
+    <text x="1440" y="91" font-size="82">X-linked recessive</text>
+  </g>
+</svg>

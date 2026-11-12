@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc">
+<title id="title">Carrier-risk pedigree</title>
+<desc id="desc">Six source pedigree individuals and their relationships, followed by the original parent-specific carrier and transmission probabilities and the complete risk calculation. Probability arrows are not pedigree offspring connections.</desc>
+<defs><marker id="arrow" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="6" markerHeight="5" orient="auto"><path d="M 0 0 L 12 5 L 0 10 L 3 5 Z" fill="#293638"/></marker></defs><rect width="1200" height="1040" fill="white"/>
+<g id="pedigree-edges" fill="none" stroke="#293638" stroke-width="5"><path id="I-partners" d="M 650 105 H 770"/><path id="I-descent" d="M 710 105 V 220"/><path id="sibling-bar" d="M 620 320 V 220 H 980 V 320"/><path id="II3-descent" d="M 800 220 V 320"/><path id="II-partners" d="M 460 320 H 590"/></g>
+<rect class="person" id="I-1" x="590" y="75" width="60" height="60" fill="white" stroke="#293638" stroke-width="5"/>
+<circle class="person" id="I-2" cx="800" cy="105" r="30" fill="white" stroke="#293638" stroke-width="5"/>
+<circle class="person" id="II-1" cx="430" cy="320" r="30" fill="white" stroke="#293638" stroke-width="5"/>
+<rect class="person" id="II-2" x="590" y="290" width="60" height="60" fill="white" stroke="#293638" stroke-width="5"/>
+<rect class="person" id="II-3" x="770" y="290" width="60" height="60" fill="white" stroke="#293638" stroke-width="5"/>
+<circle class="person" id="II-4" cx="980" cy="320" r="30" fill="#ba3e55" stroke="#293638" stroke-width="5"/>
+<text x="290" y="123" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="49" font-weight="600" fill="#293638" xml:space="preserve">I</text>
+<text x="290" y="338" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="49" font-weight="600" fill="#293638" xml:space="preserve">II</text>
+<text x="620" y="181" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<text x="800" y="181" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+<text x="430" y="392" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<text x="620" y="392" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+<text x="800" y="392" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">3</text>
+<text x="980" y="392" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">4</text>
+<text class="genotype" x="620" y="58" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="650" fill="#293638" font-style="italic" xml:space="preserve">TS ts</text>
+<text class="genotype" x="800" y="58" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="650" fill="#293638" font-style="italic" xml:space="preserve">TS ts</text>
+<text class="genotype" x="1044" y="335" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="39" font-weight="650" fill="#293638" font-style="italic" xml:space="preserve">ts ts</text>
+<path id="deceased-slash" d="M 943 358 L 1017 282" stroke="#293638" stroke-width="5"/>
+<path id="affected-callout" d="M 1065 490 Q 1103 429 1018 361" fill="none" stroke="#293638" stroke-width="4" stroke-dasharray="13 11" marker-end="url(#arrow)"/>
+<text x="898" y="542" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#293638" xml:space="preserve">Affected with</text>
+<text x="898" y="588" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#293638" xml:space="preserve">Tay-Sachs</text>
+<text x="898" y="634" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="36" font-weight="600" fill="#293638" xml:space="preserve">disease</text>
+<g id="probability-paths" stroke="#293638" stroke-width="5" fill="none" marker-end="url(#arrow)"><path id="external-parent-risk" d="M 430 416 V 646 L 510 827"/><path id="sibling-parent-risk" d="M 620 416 V 646 L 550 827"/></g>
+<text x="22" y="500" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="34" font-weight="600" fill="#293638" xml:space="preserve">Probability parent</text>
+<text x="22" y="544" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="34" font-weight="600" fill="#293638" xml:space="preserve">is a carrier (<tspan font-style="italic">TS ts</tspan>)</text>
+<text x="22" y="686" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="34" font-weight="600" fill="#293638" xml:space="preserve">Probability carrier</text>
+<text x="22" y="730" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="34" font-weight="600" fill="#293638" xml:space="preserve">parent transmits</text>
+<text x="22" y="774" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="34" font-weight="600" fill="#293638" xml:space="preserve">mutant allele</text>
+<g id="carrier-unrelated" class="fraction">
+<text x="375" y="494" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 344.8 510 H 405.2" stroke="#293638" stroke-width="2.5"/>
+<text x="375" y="557" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">30</text>
+</g>
+<g id="carrier-sibling" class="fraction">
+<text x="678" y="494" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+<path d="M 660.4 510 H 695.6" stroke="#293638" stroke-width="2.5"/>
+<text x="678" y="557" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">3</text>
+</g>
+<g id="transmission-unrelated" class="fraction">
+<text x="402" y="707" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 384.4 723 H 419.6" stroke="#293638" stroke-width="2.5"/>
+<text x="402" y="770" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+</g>
+<g id="transmission-sibling" class="fraction">
+<text x="645" y="707" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 627.4 723 H 662.6" stroke="#293638" stroke-width="2.5"/>
+<text x="645" y="770" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="42" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+</g>
+<text x="194" y="934" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">Risk child is</text>
+<text x="194" y="980" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">affected</text>
+<g id="risk-factor-1" class="fraction">
+<text x="514" y="930" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 485.0 946 H 543.0" stroke="#293638" stroke-width="2.5"/>
+<text x="514" y="993" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">30</text>
+</g>
+<g id="risk-factor-2" class="fraction">
+<text x="624" y="930" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 607.0 946 H 641.0" stroke="#293638" stroke-width="2.5"/>
+<text x="624" y="993" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+</g>
+<g id="risk-factor-3" class="fraction">
+<text x="734" y="930" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+<path d="M 717.0 946 H 751.0" stroke="#293638" stroke-width="2.5"/>
+<text x="734" y="993" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">3</text>
+</g>
+<g id="risk-factor-4" class="fraction">
+<text x="844" y="930" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 827.0 946 H 861.0" stroke="#293638" stroke-width="2.5"/>
+<text x="844" y="993" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">2</text>
+</g>
+<g id="risk-result" class="fraction">
+<text x="1040" y="930" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">1</text>
+<path d="M 999.0 946 H 1081.0" stroke="#293638" stroke-width="2.5"/>
+<text x="1040" y="993" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" font-weight="600" fill="#293638" xml:space="preserve">180</text>
+</g>
+<text x="569" y="958" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">x</text>
+<text x="679" y="958" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">x</text>
+<text x="789" y="958" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">x</text>
+<text x="931" y="958" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="38" font-weight="600" fill="#293638" xml:space="preserve">=</text>
+
+</svg>

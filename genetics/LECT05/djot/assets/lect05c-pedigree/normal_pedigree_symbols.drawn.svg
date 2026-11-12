@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="384" viewBox="0 0 792 384">
+  <rect id="normal-background" width="792" height="384" fill="#F1F6FB"/>
+  <g id="normal-row-1">
+    <circle cx="54" cy="64" r="32" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="84">Normal female</tspan>
+    </text>
+  </g>
+  <g id="normal-row-2">
+    <rect x="22" y="160" width="64" height="64" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="212">Normal male</tspan>
+    </text>
+  </g>
+  <g id="normal-row-3">
+    <polygon points="54,282 92,320 54,358 16,320" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="310">Normal, gender</tspan>
+      <tspan x="120" y="368">unspecified</tspan>
+    </text>
+  </g>
+</svg>

@@ -6,7 +6,7 @@
 
 - Possible gametes
 
-![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
 
 - Alternate (50%)
   - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
@@ -40,7 +40,7 @@
 
 - Possible gametes
 
-![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
 
 - Alternate (50%)
   - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
@@ -104,7 +104,7 @@
 
 - Possible gametes
 
-![Slide image 17](assets/lect13d-meiosis_translocation/image_008.png)
+![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
 
 - Alternate (50%)
   - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
@@ -257,7 +257,7 @@
 
 @left
 
-![Slide image 18](assets/lect13d-meiosis_translocation/image_018.png)
+![Slide image 18](assets/lect13d-meiosis_translocation/robertsonian_centromeric_fusion.drawn.svg)
 
 @right
 
@@ -311,14 +311,14 @@
 
 - A Robertsonian translocation can join chromosome 21 to any other acrocentric chromosome
 
-![Slide image 21](assets/lect13d-meiosis_translocation/image_021.png)
+![Slide image 21](assets/lect13d-meiosis_translocation/robertsonian_metaphase_orientations.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 22](assets/lect13d-meiosis_translocation/image_022.png)
+![Slide image 22](assets/lect13d-meiosis_translocation/robertsonian_gamete_products.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -326,7 +326,7 @@
 
 @body
 
-![Slide image 22](assets/lect13d-meiosis_translocation/image_022.png)
+![Slide image 22](assets/lect13d-meiosis_translocation/robertsonian_gamete_products.drawn.svg)
 
 - [Adjacent gametes]{color=blue} have missing portions and duplicate portions of the chromosomes
 - [Alternate gametes]{color=#800080} have exactly 100% of the genome; but the chromosomes might be scrambled

@@ -126,7 +126,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 5](assets/lect15e-inbreeding/image_005.jpg)
+![Slide image 5](assets/lect15e-inbreeding/inbreeding_recessive_frequency.plot.svg)
 
 === layout: one-panel
 
@@ -284,14 +284,14 @@ color-theme: genetics
 
 @body
 
-![Slide image 11](assets/lect15e-inbreeding/image_011.png)
+![Slide image 11](assets/lect15e-inbreeding/shared_dna_relationship_map.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 11](assets/lect15e-inbreeding/image_011.png)
+![Slide image 11](assets/lect15e-inbreeding/shared_dna_relationship_map.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -406,7 +406,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 17](assets/lect15e-inbreeding/image_017.png)
+![Slide image 17](assets/lect15e-inbreeding/shared_ancestor_pedigree.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -414,7 +414,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 17](assets/lect15e-inbreeding/image_017.png)
+![Slide image 17](assets/lect15e-inbreeding/shared_ancestor_pedigree.drawn.svg)
 
 === layout: two-panels
 @replaceme
@@ -422,11 +422,11 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @left
 
-![Slide image 18](assets/lect15e-inbreeding/image_018.png)
+![Slide image 18](assets/lect15e-inbreeding/shared_ancestor_allele_paths.drawn.svg)
 
 @right
 
-![Slide image 18](assets/lect15e-inbreeding/image_017.png)
+![Slide image 18](assets/lect15e-inbreeding/shared_ancestor_pedigree.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -434,7 +434,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 19](assets/lect15e-inbreeding/image_019.png)
+![Slide image 19](assets/lect15e-inbreeding/shared_ancestor_identity_probabilities.drawn.svg)
 
 - [If A is]{color=red}
 - [not inbred, then]{color=red}
@@ -499,7 +499,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 23](assets/lect15e-inbreeding/image_023.png)
+![Slide image 23](assets/lect15e-inbreeding/standard_inbreeding_comparison.drawn.svg)
 
 === layout: two-panels
 @replaceme
@@ -508,7 +508,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @left
 
-![Slide image 24](assets/lect15e-inbreeding/image_024.jpg)
+![Slide image 24](assets/lect15e-inbreeding/complex_inbreeding_paths.drawn.svg)
 
 @right
 
@@ -521,7 +521,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @left
 
-![Slide image 24](assets/lect15e-inbreeding/image_024.jpg)
+![Slide image 24](assets/lect15e-inbreeding/complex_inbreeding_paths.drawn.svg)
 
 @right
 
@@ -573,7 +573,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 26](assets/lect15e-inbreeding/image_026.png)
+![Slide image 26](assets/lect15e-inbreeding/inbreeding_coefficient_exercise.quote.svg)
 
 === layout: one-panel
 @replaceme
@@ -581,9 +581,9 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 27](assets/lect15e-inbreeding/image_027.png)
+![Slide image 27](assets/lect15e-inbreeding/multigeneration_inbreeding_pedigree.drawn.svg)
 
-![Slide image 28](assets/lect15e-inbreeding/image_028.png)
+![Slide image 28](assets/lect15e-inbreeding/common_ancestor_path_prompts.quote.svg)
 
 === layout: one-panel
 @replaceme
@@ -591,7 +591,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 28](assets/lect15e-inbreeding/image_027.png)
+![Slide image 28](assets/lect15e-inbreeding/multigeneration_inbreeding_pedigree.drawn.svg)
 
 - (a) common ancestors\:
 - B, H, and I
@@ -601,7 +601,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 - J[H]{underline=true}K
 - J[I]{underline=true}K
 
-![Slide image 28](assets/lect15e-inbreeding/image_028.png)
+![Slide image 28](assets/lect15e-inbreeding/common_ancestor_path_prompts.quote.svg)
 
 === layout: one-panel
 @replaceme
@@ -609,7 +609,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @body
 
-![Slide image 28](assets/lect15e-inbreeding/image_027.png)
+![Slide image 28](assets/lect15e-inbreeding/multigeneration_inbreeding_pedigree.drawn.svg)
 
 - (b) common paths\:
 - JHE[B]{underline=true}FIK
@@ -617,14 +617,14 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 - J[H]{underline=true}K
 - J[I]{underline=true}K
 
-![Slide image 29](assets/lect15e-inbreeding/image_029.png)
+![Slide image 29](assets/lect15e-inbreeding/inbreeding_calculation_prompt.quote.svg)
 
 === layout: two-over-one-panels
 
 
 @top-left
 
-![Slide image 29](assets/lect15e-inbreeding/image_027.png)
+![Slide image 29](assets/lect15e-inbreeding/multigeneration_inbreeding_pedigree.drawn.svg)
 
 @top-right
 
@@ -640,7 +640,7 @@ The [Closed Loop Method]{color=red} for Calculating the [Coefficient of Inbreedi
 
 @bottom
 
-![Slide image 29](assets/lect15e-inbreeding/image_029.png)
+![Slide image 29](assets/lect15e-inbreeding/inbreeding_calculation_prompt.quote.svg)
 
 === layout: bookend
 

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="681" height="768" viewBox="0 0 681 768" role="img" aria-labelledby="title desc">
+<title id="title">Chromosome copy number across four ploidy levels</title>
+<desc id="desc">Haploid, diploid, triploid and tetraploid groups contain one, two, three and four copies respectively of each of three chromosome types. Independent continuous rods retain their type-specific length and primary constriction.</desc>
+<defs>
+<linearGradient id="red-fill" x1="0" y1="0" x2="1" y2="0.18"><stop offset="0" stop-color="#f7b9b6"/><stop offset="0.35" stop-color="#f7b9b6"/><stop offset="1" stop-color="#df7977"/></linearGradient>
+<linearGradient id="purple-fill" x1="0" y1="0" x2="1" y2="0.18"><stop offset="0" stop-color="#d1b8ed"/><stop offset="0.35" stop-color="#d1b8ed"/><stop offset="1" stop-color="#9c77c8"/></linearGradient>
+<linearGradient id="yellow-fill" x1="0" y1="0" x2="1" y2="0.18"><stop offset="0" stop-color="#ffffad"/><stop offset="0.35" stop-color="#ffffad"/><stop offset="1" stop-color="#e8e869"/></linearGradient>
+</defs>
+<g font-family="Atkinson Hyperlegible Next" font-weight="400" font-style="normal" fill="#151515">
+<g id="panel-1" transform="translate(0 0)"><text x="170.25" y="37" font-size="30" text-anchor="middle">Haploid (N)</text>
+<g id="panel-1-red">
+<path id="panel-1-red-copy-1" transform="translate(62 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+</g>
+<g id="panel-1-purple">
+<path id="panel-1-purple-copy-1" transform="translate(169 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+</g>
+<g id="panel-1-yellow">
+<path id="panel-1-yellow-copy-1" transform="translate(276 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+</g>
+</g>
+<g id="panel-2" transform="translate(340.5 0)"><text x="170.25" y="37" font-size="30" text-anchor="middle">Diploid (2N)</text>
+<g id="panel-2-red">
+<path id="panel-2-red-copy-1" transform="translate(49.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-2-red-copy-2" transform="translate(74.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+</g>
+<g id="panel-2-purple">
+<path id="panel-2-purple-copy-1" transform="translate(156.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-2-purple-copy-2" transform="translate(181.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+</g>
+<g id="panel-2-yellow">
+<path id="panel-2-yellow-copy-1" transform="translate(263.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-2-yellow-copy-2" transform="translate(288.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+</g>
+</g>
+<g id="panel-3" transform="translate(0 384)"><text x="170.25" y="37" font-size="30" text-anchor="middle">Triploid (3N)</text>
+<g id="panel-3-red">
+<path id="panel-3-red-copy-1" transform="translate(37 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-3-red-copy-2" transform="translate(62 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-3-red-copy-3" transform="translate(87 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+</g>
+<g id="panel-3-purple">
+<path id="panel-3-purple-copy-1" transform="translate(144 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-3-purple-copy-2" transform="translate(169 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-3-purple-copy-3" transform="translate(194 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+</g>
+<g id="panel-3-yellow">
+<path id="panel-3-yellow-copy-1" transform="translate(251 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-3-yellow-copy-2" transform="translate(276 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-3-yellow-copy-3" transform="translate(301 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+</g>
+</g>
+<g id="panel-4" transform="translate(340.5 384)"><text x="170.25" y="37" font-size="30" text-anchor="middle">Tetraploid (4N)</text>
+<g id="panel-4-red">
+<path id="panel-4-red-copy-1" transform="translate(24.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-4-red-copy-2" transform="translate(49.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-4-red-copy-3" transform="translate(74.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+<path id="panel-4-red-copy-4" transform="translate(99.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 103.75 C 11 112.75 6 113.75 6 118.75 C 6 123.75 11 124.75 11 133.75 L 11 228.4 Q 11 239.4 0 239.4 Q -11 239.4 -11 228.4 L -11 133.75 C -11 124.75 -6 123.75 -6 118.75 C -6 113.75 -11 112.75 -11 103.75 Z" fill="url(#red-fill)" stroke="#95474a" stroke-width="1.1"/>
+</g>
+<g id="panel-4-purple">
+<path id="panel-4-purple-copy-1" transform="translate(131.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-4-purple-copy-2" transform="translate(156.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-4-purple-copy-3" transform="translate(181.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+<path id="panel-4-purple-copy-4" transform="translate(206.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 46.75 C 11 55.75 6 56.75 6 61.75 C 6 66.75 11 67.75 11 76.75 L 11 274.95 Q 11 285.95 0 285.95 Q -11 285.95 -11 274.95 L -11 76.75 C -11 67.75 -6 66.75 -6 61.75 C -6 56.75 -11 55.75 -11 46.75 Z" fill="url(#purple-fill)" stroke="#675080" stroke-width="1.1"/>
+</g>
+<g id="panel-4-yellow">
+<path id="panel-4-yellow-copy-1" transform="translate(238.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-4-yellow-copy-2" transform="translate(263.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-4-yellow-copy-3" transform="translate(288.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+<path id="panel-4-yellow-copy-4" transform="translate(313.5 61)" d="M -11 11 Q -11 0 0 0 Q 11 0 11 11 L 11 86.65 C 11 95.65 6 96.65 6 101.65 C 6 106.65 11 107.65 11 116.65 L 11 194.2 Q 11 205.2 0 205.2 Q -11 205.2 -11 194.2 L -11 116.65 C -11 107.65 -6 106.65 -6 101.65 C -6 96.65 -11 95.65 -11 86.65 Z" fill="url(#yellow-fill)" stroke="#969840" stroke-width="1.1"/>
+</g>
+</g>
+</g>
+</svg>

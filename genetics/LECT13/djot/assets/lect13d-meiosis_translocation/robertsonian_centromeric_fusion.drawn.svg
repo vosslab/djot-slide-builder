@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810" font-family="Atkinson Hyperlegible Next" fill="#293e43">
+<title>Robertsonian centromeric fusion</title><desc>Two separate unreplicated chromosomes, long blue and shorter red, join into one product with a shared red terminal-region centromere.</desc>
+<rect width="1200" height="810" fill="white"/>
+<g id="blue-input" data-chromosome="input-blue">
+<path data-arm="blue" d="M126 121 C117 205 139 259 126 359 C116 449 121 521 128 596 Q130 623 153 621 Q177 619 176 594 C167 515 171 452 180 363 C189 263 167 195 177 123Z" fill="#377eaf" stroke="#225d89" stroke-width="3"/>
+<path d="M139 150 C135 233 153 276 141 365 C133 444 136 523 141 583" fill="none" stroke="#73acd0" stroke-width="7" stroke-linecap="round"/>
+<circle data-centromere="blue" cx="152" cy="99" r="31" fill="#377eaf" stroke="#a9c9dd" stroke-width="4"/>
+</g>
+<g id="red-input" data-chromosome="input-red">
+<path data-arm="red" d="M254 122 C247 193 268 247 258 322 Q256 345 278 349 Q305 352 308 326 C320 245 299 190 306 122Z" fill="#d6533c" stroke="#a9392d" stroke-width="3"/>
+<path d="M267 148 C262 208 281 254 270 316" fill="none" stroke="#ed9b78" stroke-width="7" stroke-linecap="round"/>
+<circle data-centromere="red" cx="280" cy="99" r="31" fill="#d6533c" stroke="#efb098" stroke-width="4"/>
+</g>
+<g id="fusion-process"><text x="575" y="230" text-anchor="middle" font-size="46">Centromeric</text><text x="575" y="282" text-anchor="middle" font-size="46">fusion</text><path d="M405 323 H738 M716 309 L741 323 L716 337" fill="none" stroke="#293e43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="fused-product" data-chromosome="product">
+<path data-arm="blue" d="M837 122 C828 205 850 259 837 359 C827 449 832 521 839 596 Q841 623 864 621 Q888 619 887 594 C878 515 882 452 891 363 C900 263 878 195 888 123Z" fill="#377eaf" stroke="#225d89" stroke-width="3"/>
+<path d="M850 150 C846 233 864 276 852 365 C844 444 847 523 852 583" fill="none" stroke="#73acd0" stroke-width="7" stroke-linecap="round"/>
+<path data-arm="red" d="M887 89 C957 115 1014 160 1081 202 Q1103 215 1091 238 Q1079 258 1055 243 C989 201 930 160 867 137Z" fill="#d6533c" stroke="#a9392d" stroke-width="3"/>
+<path d="M906 111 C965 140 1022 181 1069 213" fill="none" stroke="#ed9b78" stroke-width="7" stroke-linecap="round"/>
+<circle data-centromere="red" cx="863" cy="99" r="31" fill="#d6533c" stroke="#efb098" stroke-width="4"/>
+</g>
+<g font-size="45" text-anchor="middle"><text x="205" y="708">Normal</text><text x="205" y="761">chromosomes</text><text x="925" y="708">Robertsonian</text><text x="925" y="761">translocation</text></g></svg>

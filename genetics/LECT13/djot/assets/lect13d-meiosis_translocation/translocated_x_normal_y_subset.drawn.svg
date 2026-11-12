@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="592" height="101" viewBox="0 0 592 101" role="img" aria-labelledby="title desc"><title id="title">Translocated x normal y subset</title><desc id="desc">Two source-specific unreplicated chromosome rods with integrated round centromeres and original row and allele labels.</desc><defs><linearGradient id="slate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7895a2" /><stop offset="1" stop-color="#546e7b" /></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#367cb7" /><stop offset="1" stop-color="#235d9a" /></linearGradient>
+<linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#df5146" /><stop offset="1" stop-color="#ba302b" /></linearGradient>
+<clipPath id="rod-clip-1"><rect x="184" y="15" width="320" height="26" rx="13" /></clipPath>
+</defs><rect width="592" height="101" fill="white" /><g font-family="Atkinson Hyperlegible Next" font-size="26" fill="#17191c" transform="translate(-8 -3)"><g id="row-1">
+<text id="row-1-label" x="15" y="37">X + part of 2</text>
+<g id="row-1-rod">
+<rect id="row-1-continuous-body" x="184" y="15" width="320" height="26" rx="13" fill="url(#slate)" />
+<g id="row-1-distal-segment" clip-path="url(#rod-clip-1)"><rect x="366" y="15" width="138" height="26" fill="url(#blue)" /></g>
+<rect x="184" y="15" width="320" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3" />
+<circle id="row-1-centromere" cx="236" cy="28" r="15" fill="url(#slate)" stroke="#b1bdcf" stroke-width="1.3" />
+</g>
+<text id="row-1-allele" x="279" y="37" fill="white" font-style="italic" font-weight="600">rb<tspan font-size="18" font-style="normal" baseline-shift="super">+</tspan></text>
+</g>
+<g id="row-2">
+<text id="row-2-label" x="15" y="90">Normal Y</text>
+<g id="row-2-rod">
+<rect id="row-2-continuous-body" x="184" y="68" width="396" height="26" rx="13" fill="url(#red)" />
+<rect x="184" y="68" width="396" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3" />
+<circle id="row-2-centromere" cx="330" cy="81" r="15" fill="url(#red)" stroke="#b1bdcf" stroke-width="1.3" />
+</g>
+</g>
+</g></svg>

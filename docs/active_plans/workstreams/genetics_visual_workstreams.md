@@ -1,17 +1,12 @@
 # Genetics visual workstreams
 
-Creative renewal execution package for
-[genetics_visual_renewal_plan.md](../active/genetics_visual_renewal_plan.md).
-D4-D9 replace broad native/teaching-sequence work and the three-helper toolkit limit. Current status and evidence live in
+The authoritative master scope is
+[genetics_visual_renewal_plan.md](../active/genetics_visual_renewal_plan.md). It governs older
+instructions in this index and linked briefs. Existing implementation approval continues;
+current status and historical evidence remain in
 [genetics_visual_renewal_progress.md](../reports/genetics_visual_renewal_progress.md).
-All agents use Astra. Source cleanup is complete; creative reassessment and cross-family prototype review
-are complete. The reassessment hold is released for the bounded original-art batch under existing
-authorization. The provisional guide and construction helpers are accepted. ABO/bottleneck
-contextual review, bounded canonical integration, canonical ABO/drift full-root exports and
-final batch checks are complete. Chromosome/folded-hemoglobin/corn/CCR5 drawings and their
-ten-page original-voice proof are accepted; art-only integration, canonical four-root exports
-and fresh full-suite verification are complete. Remaining art families and
-whole-course delivery stay open.
+Use Astra for artwork and Terra for OCR when useful. Genetics and Biostatistics have priority;
+finish useful started Biotechnology artwork without expanding its queue.
 
 ## Scope and original coverage
 
@@ -21,7 +16,12 @@ curriculum work is excluded. Preserve source facts and stages. A composite figur
 replacement, with data/prose/table content unchanged. The instructor reiterates raster-image
 drawing/clipart scope: preserve voice, titles, native prose, alt text, examples, layouts and
 sequence. Check sources only as needed to draw accurately; avoid a global science audit and
-bikeshedding. Integrate through the necessary image references.
+bikeshedding. Djot edits are limited to existing image URL/path substitutions; preserve all
+other bytes, including directives, dimensions, markers, reveals, hidden states and includes.
+Pure-text OCR produces an editable SVG card styled like a blockquote, preserving original words,
+errors and voice; its integration is the same image URL switch, never native Djot conversion.
+Fit art to the existing placement or retain/defer it. Raster artwork in mixed SVGs is eligible
+only within the master plan's pure-vector and source-evidence boundaries.
 Prioritize achievable high-impact replacements by visual improvement and creation difficulty,
 regardless of `@replaceme` status; defer complex inversion work until the tractable batch.
 
@@ -72,10 +72,14 @@ A general source-text or native-table repair remains excluded.
 
 Use successful current art and bounded book-informed trials for uncertain drawing methods.
 The provisional guide is demonstrated across equipment, organism and scientific diagram
-examples and accepted for focused family work. Do not assign hundreds of independent styles. Run all
-LibreOffice commands outside the sandbox through the serialized owner. Inspect actual changed
-and adjacent ODP/PDF pages; historical native-table editing and static page checks do not prove
-current acceptance or attended playback. The final full pytest requirement belongs to the plan.
+examples and accepted for focused family work. Keep the next replacement small: one candidate,
+one original SVG, one intended-size preview, brief artist and manager review, then image-URL
+integration. Extra sizes, independent review and targeted consumer/export checks serve a concrete
+concern: a known LibreOffice SVG failure, crop, overlay, reveal or uncertain image frame.
+Serialize any needed LibreOffice work outside the sandbox through the established export path.
+Complete ordinary art milestones autonomously; external feedback can inform later improvements.
+Retain/defer an unresolved target with a reason and continue other art. Use configured Python 3.12
+directly and Git-free filesystem checks; preserve historical test and export receipts.
 
 ## Next tasks
 
@@ -120,7 +124,7 @@ briefs preserve exact sources, edit boundaries and scientific invariants beyond 
 Chromosome complements also pass artwork/context review; guide/helpers/ABO/bottleneck remain
 accepted. New acceptance comes from independent review, not the surveys. Preserve
 strong current drawings, native tables/prose, original assets and empirical images. Shared
-Office Hours needs no redraw; its outstanding consumer exports remain delivery work.
+Office Hours needs no redraw; check a consumer only if a concrete placement or rendering concern arises.
 
 Local evidence is `_temp/svg_family_renewal/survey_foundations_inheritance/REPORT.md`,
 `survey_linkage_variation/REPORT.md` and `survey_population_shared/REPORT.md` under that root.

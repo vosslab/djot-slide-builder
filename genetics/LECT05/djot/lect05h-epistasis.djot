@@ -431,7 +431,7 @@ Use the flower, squash, and Labrador examples to explain phenotype grouping. The
 - The C and P genes in pea flower color interact producing a ratio of 9\:7
 @right
 
-![Slide image 7](assets/lect05h-epistasis/image_007.png)
+![Slide image 7](assets/lect05h-epistasis/complementary_pea_punnett.drawn.svg)
 
 === layout: section
 # Genotypes Explained
@@ -514,7 +514,7 @@ Color is made, but the final step cannot display it.
 # Yellow pigment is produced in a two-step biochemical pathway
 @body
 
-![Slide image 12](assets/lect05h-epistasis/image_012.png)
+![Slide image 12](assets/lect05h-epistasis/summer_squash_pathway.drawn.svg)
 
 === layout: one-panel
 
@@ -597,7 +597,7 @@ Color is made, but the final step cannot display it.
 === layout: one-panel
 @body
 
-![Slide image 13](assets/lect05h-epistasis/image_013.png)
+![Slide image 13](assets/lect05h-epistasis/squash_epistasis_generations.drawn.svg)
 
 === layout: section
 # Epistasis produces a modified F2 phenotype ratio
@@ -843,7 +843,7 @@ Color is made, but the final step cannot display it.
 === layout: one-panel
 @body
 
-![Slide image 21](assets/lect05h-epistasis/image_021.png)
+![Slide image 21](assets/lect05h-epistasis/complementary_testcross_question.drawn.svg)
 
 === layout: two-panels
 
@@ -880,7 +880,7 @@ Color is made, but the final step cannot display it.
   - Test cross is 1\:1\:1\:1
 @right
 
-![Slide image 22](assets/lect05h-epistasis/image_022.png)
+![Slide image 22](assets/lect05h-epistasis/seed_testcross_comparison.drawn.svg)
 
 === layout: two-panels
 

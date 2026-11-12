@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="744" viewBox="0 0 1600 744" role="img" aria-labelledby="title desc">
+<title id="title">Drosophila chromosome complements</title>
+<desc id="desc">Two complements of eight chromosomes each: paired chromosomes 2, 3 and 4 with XX on the left and XY on the right. Green regions denote heterochromatin; gray centromeres mark each chromosome.</desc>
+<rect width="1600" height="744" fill="white"/>
+<g id="xx-complement" transform="translate(0 0)">
+<g id="xx-chromosome-2-1" data-chromosome="2">
+<path d="M205 279 C187 234 187 191 171 124" fill="none" stroke="#ba8437" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 279 C187 234 187 191 171 124" fill="none" stroke="#f5bd66" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 279 C187 234 187 191 171 124" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" stroke="#bb514d" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" stroke="#ef8173" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="209" cy="330" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-2-2" data-chromosome="2">
+<path d="M255 279 C237 234 237 191 239 124" fill="none" stroke="#ba8437" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 279 C237 234 237 191 239 124" fill="none" stroke="#f5bd66" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 279 C237 234 237 191 239 124" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" stroke="#bb514d" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" stroke="#ef8173" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="259" cy="330" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-3-1" data-chromosome="3">
+<path d="M390 267 C402 224 455 188 472 126" fill="none" stroke="#6d558c" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 C402 224 455 188 472 126" fill="none" stroke="#987bb7" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 C402 224 455 188 472 126" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" stroke="#9684b2" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" stroke="#cabade" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="388" cy="328" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-3-2" data-chromosome="3">
+<path d="M444 267 C456 224 509 188 526 154" fill="none" stroke="#6d558c" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 C456 224 509 188 526 154" fill="none" stroke="#987bb7" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 C456 224 509 188 526 154" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" stroke="#9684b2" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" stroke="#cabade" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="442" cy="328" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-4-1" data-chromosome="4">
+<path d="M307 316 Q304 331 307 344" fill="none" stroke="#4385ae" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 316 Q304 331 307 344" fill="none" stroke="#78b9e1" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 316 Q304 331 307 344" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" stroke="#658f51" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" stroke="#96bd7a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="307" cy="371" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-4-2" data-chromosome="4">
+<path d="M347 316 Q344 331 347 344" fill="none" stroke="#4385ae" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 316 Q344 331 347 344" fill="none" stroke="#78b9e1" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 316 Q344 331 347 344" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" stroke="#658f51" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" stroke="#96bd7a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="347" cy="371" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-x-1" data-chromosome="X">
+<path d="M307 521 Q298 570 298 622" fill="none" stroke="#c7a638" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 521 Q298 570 298 622" fill="none" stroke="#f5d85b" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 521 Q298 570 298 622" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" stroke="#658f51" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" stroke="#96bd7a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="307" cy="432" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xx-chromosome-x-2" data-chromosome="X">
+<path d="M353 521 Q344 570 344 622" fill="none" stroke="#c7a638" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 521 Q344 570 344 622" fill="none" stroke="#f5d85b" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 521 Q344 570 344 622" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" stroke="#658f51" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" stroke="#96bd7a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="353" cy="432" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263844">
+<text x="112" y="61" text-anchor="middle" font-size="31">2R</text>
+<path d="M136 68 L169 103 M136 68 L241 103" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="41" y="459" text-anchor="middle" font-size="31">2L</text>
+<path d="M67 452 L91 464 M67 452 L160 491" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="580" y="71" text-anchor="middle" font-size="31">3</text>
+<path d="M563 80 L482 112 M563 80 L532 140" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="565" y="541" text-anchor="middle" font-size="31">3R</text>
+<path d="M547 524 L481 505 M547 524 L529 489" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="326" y="258" text-anchor="middle" font-size="31">4</text>
+<path d="M320 268 L307 297 M332 268 L347 297" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="326" y="702" text-anchor="middle" font-size="31">XX</text>
+<path d="M326 675 L298 648 M326 675 L344 648" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g></g>
+<g id="xy-complement" transform="translate(840 0)">
+<g id="xy-chromosome-2-1" data-chromosome="2">
+<path d="M205 279 C187 234 187 191 171 124" fill="none" stroke="#ba8437" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 279 C187 234 187 191 171 124" fill="none" stroke="#f5bd66" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 279 C187 234 187 191 171 124" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" stroke="#bb514d" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" stroke="#ef8173" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 379 C201 435 150 461 94 474" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 278 Q217 328 205 380" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="209" cy="330" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-2-2" data-chromosome="2">
+<path d="M255 279 C237 234 237 191 239 124" fill="none" stroke="#ba8437" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 279 C237 234 237 191 239 124" fill="none" stroke="#f5bd66" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 279 C237 234 237 191 239 124" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" stroke="#bb514d" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" stroke="#ef8173" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 379 C251 435 200 461 164 474" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 278 Q267 328 255 380" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="259" cy="330" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-3-1" data-chromosome="3">
+<path d="M390 267 C402 224 455 188 472 126" fill="none" stroke="#6d558c" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 C402 224 455 188 472 126" fill="none" stroke="#987bb7" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 C402 224 455 188 472 126" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" stroke="#9684b2" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" stroke="#cabade" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 382 C396 429 455 444 473 488" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M390 267 Q383 325 390 382" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="388" cy="328" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-3-2" data-chromosome="3">
+<path d="M444 267 C456 224 509 188 526 154" fill="none" stroke="#6d558c" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 C456 224 509 188 526 154" fill="none" stroke="#987bb7" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 C456 224 509 188 526 154" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" stroke="#9684b2" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" stroke="#cabade" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 382 C450 429 509 444 527 470" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" stroke="#658f51" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" stroke="#96bd7a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M444 267 Q437 325 444 382" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="442" cy="328" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-4-1" data-chromosome="4">
+<path d="M307 316 Q304 331 307 344" fill="none" stroke="#4385ae" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 316 Q304 331 307 344" fill="none" stroke="#78b9e1" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 316 Q304 331 307 344" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" stroke="#658f51" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" stroke="#96bd7a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 344 L307 363" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="307" cy="371" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-4-2" data-chromosome="4">
+<path d="M347 316 Q344 331 347 344" fill="none" stroke="#4385ae" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 316 Q344 331 347 344" fill="none" stroke="#78b9e1" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 316 Q344 331 347 344" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" stroke="#658f51" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" stroke="#96bd7a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 344 L347 363" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="347" cy="371" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-x-1" data-chromosome="X">
+<path d="M307 521 Q298 570 298 622" fill="none" stroke="#c7a638" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 521 Q298 570 298 622" fill="none" stroke="#f5d85b" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 521 Q298 570 298 622" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" stroke="#658f51" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" stroke="#96bd7a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307 446 Q299 484 307 521" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="307" cy="432" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g id="xy-chromosome-y-2" data-chromosome="Y">
+<path d="M353 521 Q356 580 357 621 Q376 619 390 589" fill="none" stroke="#c7a638" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 521 Q356 580 357 621 Q376 619 390 589" fill="none" stroke="#f5d85b" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 521 Q356 580 357 621 Q376 619 390 589" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" stroke="#658f51" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" stroke="#96bd7a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M353 446 Q345 484 353 521" fill="none" opacity="0.25" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse data-centromere="true" cx="353" cy="432" rx="13" ry="17" fill="#b8bdc2" stroke="#4d555c" stroke-width="2.5"/>
+</g>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263844">
+<text x="112" y="61" text-anchor="middle" font-size="31">2R</text>
+<path d="M136 68 L169 103 M136 68 L241 103" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="41" y="459" text-anchor="middle" font-size="31">2L</text>
+<path d="M67 452 L91 464 M67 452 L160 491" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="580" y="71" text-anchor="middle" font-size="31">3L</text>
+<path d="M563 80 L482 112 M563 80 L532 140" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="565" y="541" text-anchor="middle" font-size="31">3R</text>
+<path d="M547 524 L481 505 M547 524 L529 489" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="326" y="258" text-anchor="middle" font-size="31">4</text>
+<path d="M320 268 L307 297 M332 268 L347 297" fill="none" stroke="#394952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="298" y="690" text-anchor="middle" font-size="31">X</text>
+<text x="370" y="690" text-anchor="middle" font-size="31">Y</text>
+</g></g>
+<g id="legend" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263844"><rect x="615" y="595" width="39" height="39" fill="#96bd7a" stroke="#658f51" stroke-width="2"/><text x="672" y="626" font-size="30">Heterochromatin</text><rect x="615" y="657" width="39" height="39" fill="#b8bdc2" stroke="#4d555c" stroke-width="2"/><text x="672" y="688" font-size="30">Centromere</text></g>
+</svg>

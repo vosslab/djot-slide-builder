@@ -349,7 +349,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/rflp_three_allele_exercise.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -357,7 +357,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/rflp_three_allele_exercise.drawn.svg)
 
 - Count the alleles&#8230;
 - A1 = 18 &#215; 2 + 68 + 115 = 219
@@ -370,7 +370,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/rflp_three_allele_exercise.drawn.svg)
 
 - Find the allele frequencies&#8230;
 - p1 = 219/2000 = 0.1095
@@ -385,7 +385,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/rflp_three_allele_exercise.drawn.svg)
 
 - Allele frequencies&#8230;
 - p1 = 0.1095; p2 = 0.3040; p3 = 	0.5865
@@ -399,7 +399,7 @@ color-theme: genetics
 
 @top-left
 
-![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/image_017.png)
+![Slide image 17](assets/lect14e-hardy_weinberg_chi_square/rflp_three_allele_exercise.drawn.svg)
 
 @top-right
 

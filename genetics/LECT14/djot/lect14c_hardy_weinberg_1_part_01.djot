@@ -208,7 +208,7 @@
 
 @body
 
-![Slide image 3](assets/lect14c-hardy_weinberg_1/image_003.png)
+![Slide image 3](assets/lect14c-hardy_weinberg_1/allele_frequency_definitions.drawn.svg)
 
 - To calculate the frequency of each allele
   - p = freq C^R^ = 800 / (800 + 200) = 0.8
@@ -221,21 +221,21 @@
 
 @body
 
-![Slide image 4](assets/lect14c-hardy_weinberg_1/image_004.png)
+![Slide image 4](assets/lect14c-hardy_weinberg_1/allele_frequency_gene_pool.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 5](assets/lect14c-hardy_weinberg_1/image_005.png)
+![Slide image 5](assets/lect14c-hardy_weinberg_1/gene_pool_gamete_probabilities.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 6](assets/lect14c-hardy_weinberg_1/image_006.png)
+![Slide image 6](assets/lect14c-hardy_weinberg_1/egg_sperm_allele_probabilities.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -251,7 +251,7 @@
     - [an a sperm uniting with an A egg]{color=#EC9BA4}
   - [Each of these events occurs with probability p&#160;&#215;&#160;q, so the total probability of forming an Aa zygote is 2pq.]{color=#EC9BA4}
 
-![Slide image 7](assets/lect14c-hardy_weinberg_1/image_007.jpg)
+![Slide image 7](assets/lect14c-hardy_weinberg_1/expected_genotype_frequencies.quote.svg)
 
 === layout: two-panels
 @replaceme
@@ -283,7 +283,7 @@
 
 @body
 
-![Slide image 8](assets/lect14c-hardy_weinberg_1/image_008.png)
+![Slide image 8](assets/lect14c-hardy_weinberg_1/wildflower_genotype_combinations.drawn.svg)
 
 ![Slide image 9](assets/lect14c-hardy_weinberg_1/image_009.svg)
 
@@ -350,7 +350,7 @@
 
 @right
 
-![Slide image 12](assets/lect14c-hardy_weinberg_1/image_012.png)
+![Slide image 12](assets/lect14c-hardy_weinberg_1/tay_sachs_lysosome_comparison.drawn.svg)
 
 === layout: one-panel
 
@@ -373,7 +373,7 @@
 
 @body
 
-![Slide image 15](assets/lect14c-hardy_weinberg_1/image_015.jpg)
+![Slide image 15](assets/lect14c-hardy_weinberg_1/tay_sachs_carrier_risk.drawn.svg)
 
 === layout: multiple-choice
 
@@ -495,7 +495,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 17](assets/lect14c-hardy_weinberg_1/image_017.png)
+![Slide image 17](assets/lect14c-hardy_weinberg_1/hartnup_heterozygote_exercise.quote.svg)
 
 - What does the 1/14,000 represent?
 - A. p^2^
@@ -511,7 +511,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 17](assets/lect14c-hardy_weinberg_1/image_017.png)
+![Slide image 17](assets/lect14c-hardy_weinberg_1/hartnup_heterozygote_exercise.quote.svg)
 
 - q^2^ = 1/14000
 - q = sqrt(1/14000) = 0.0085
@@ -523,7 +523,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 18](assets/lect14c-hardy_weinberg_1/image_018.png)
+![Slide image 18](assets/lect14c-hardy_weinberg_1/dairy_cattle_carrier_exercise.quote.svg)
 
 - What does the 10% represent?
 - A. p^2^
@@ -539,7 +539,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 18](assets/lect14c-hardy_weinberg_1/image_018.png)
+![Slide image 18](assets/lect14c-hardy_weinberg_1/dairy_cattle_carrier_exercise.quote.svg)
 
 - q^2^ = 0.10
 - q = sqrt(0.1) = 0.316
@@ -554,7 +554,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+![Slide image 19](assets/lect14c-hardy_weinberg_1/nickel_resistant_grass_exercise.quote.svg)
 
 - What does the 60% represent?
 - A. p^2^
@@ -570,7 +570,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+![Slide image 19](assets/lect14c-hardy_weinberg_1/nickel_resistant_grass_exercise.quote.svg)
 
 - p^2^ + 2pq = 0.6  &#8592; how to solve?
 - q^2^ = 1 &#8211; 0.6 = 0.4
@@ -582,7 +582,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+![Slide image 19](assets/lect14c-hardy_weinberg_1/nickel_resistant_grass_exercise.quote.svg)
 
 - q = 0.63
 - p = 0.37
@@ -595,7 +595,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 19](assets/lect14c-hardy_weinberg_1/image_019.png)
+![Slide image 19](assets/lect14c-hardy_weinberg_1/nickel_resistant_grass_exercise.quote.svg)
 
 - q^2^ = 1 &#8211; 0.6 = 0.4
 - q = sqrt(0.4) = 0.63
@@ -667,13 +667,13 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
+![Slide image 22](assets/lect14c-hardy_weinberg_1/abo_genotype_frequency_exercise.quote.svg)
 
 === layout: one-panel
 
 @body
 
-![Slide image 22](assets/lect14c-hardy_weinberg_1/image_022.png)
+![Slide image 22](assets/lect14c-hardy_weinberg_1/abo_genotype_frequency_exercise.quote.svg)
 
 - p = 0.16; q = 0.10; r = 0.74
 
@@ -691,7 +691,7 @@ Suppose 64% of a remote mountain village can taste phenylthiocarbamide (PTC) and
 
 @body
 
-![Slide image 23](assets/lect14c-hardy_weinberg_1/image_022.png)
+![Slide image 23](assets/lect14c-hardy_weinberg_1/abo_genotype_frequency_exercise.quote.svg)
 
 - p = 0.16; q = 0.10; r = 0.74
 

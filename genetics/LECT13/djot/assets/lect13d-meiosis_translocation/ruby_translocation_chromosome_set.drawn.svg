@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="733" height="223" viewBox="0 0 733 223" role="img" aria-labelledby="title desc">
+<title id="title">Ruby translocation chromosome set</title>
+<desc id="desc">Four source-specific unreplicated chromosome rods with integrated round centromeres. Gray-blue and blue segments distinguish the two translocated chromosomes; the normal Y is red.</desc>
+<defs>
+<linearGradient id="slate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7895a2"/><stop offset="1" stop-color="#546e7b"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#367cb7"/><stop offset="1" stop-color="#235d9a"/></linearGradient>
+<linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#df5146"/><stop offset="1" stop-color="#ba302b"/></linearGradient>
+<clipPath id="rod-clip-1"><rect x="184" y="15" width="320" height="26" rx="13"/></clipPath>
+<clipPath id="rod-clip-2"><rect x="184" y="68" width="396" height="26" rx="13"/></clipPath>
+<clipPath id="rod-clip-3"><rect x="184" y="121" width="535" height="26" rx="13"/></clipPath>
+<clipPath id="rod-clip-4"><rect x="184" y="177" width="535" height="26" rx="13"/></clipPath>
+</defs>
+<rect width="733" height="223" fill="white"/>
+<g font-family="Atkinson Hyperlegible Next" font-size="26" fill="#17191c">
+<g id="row-1">
+<text id="row-1-label" x="15" y="37">X + part of 2</text>
+<g id="row-1-rod">
+<rect id="row-1-continuous-body" x="184" y="15" width="320" height="26" rx="13" fill="url(#slate)"/>
+<g id="row-1-distal-segment" clip-path="url(#rod-clip-1)"><rect x="366" y="15" width="138" height="26" fill="url(#blue)"/></g>
+<rect x="184" y="15" width="320" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3"/>
+<circle id="row-1-centromere" cx="236" cy="28" r="15" fill="url(#slate)" stroke="#b1bdcf" stroke-width="1.3"/>
+</g>
+<text id="row-1-allele" x="279" y="37" fill="white" font-style="italic" font-weight="600">rb<tspan font-size="18" font-style="normal" baseline-shift="super">+</tspan></text>
+</g>
+<g id="row-2">
+<text id="row-2-label" x="15" y="90">Normal Y</text>
+<g id="row-2-rod">
+<rect id="row-2-continuous-body" x="184" y="68" width="396" height="26" rx="13" fill="url(#red)"/>
+<rect x="184" y="68" width="396" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3"/>
+<circle id="row-2-centromere" cx="330" cy="81" r="15" fill="url(#red)" stroke="#b1bdcf" stroke-width="1.3"/>
+</g>
+</g>
+<g id="row-3">
+<text id="row-3-label" x="15" y="143">2 + part of X</text>
+<g id="row-3-rod">
+<rect id="row-3-continuous-body" x="184" y="121" width="535" height="26" rx="13" fill="url(#blue)"/>
+<g id="row-3-distal-segment" clip-path="url(#rod-clip-3)"><rect x="582" y="121" width="137" height="26" fill="url(#slate)"/></g>
+<rect x="184" y="121" width="535" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3"/>
+<circle id="row-3-centromere" cx="451" cy="134" r="15" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1.3"/>
+</g>
+<text id="row-3-allele" x="279" y="143" fill="white" font-style="italic" font-weight="600">dp<tspan font-size="18" font-style="normal" baseline-shift="super">+</tspan></text>
+</g>
+<g id="row-4">
+<text id="row-4-label" x="15" y="199">Normal 2</text>
+<g id="row-4-rod">
+<rect id="row-4-continuous-body" x="184" y="177" width="535" height="26" rx="13" fill="url(#blue)"/>
+<rect x="184" y="177" width="535" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3"/>
+<circle id="row-4-centromere" cx="451" cy="190" r="15" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1.3"/>
+</g>
+<text id="row-4-allele" x="279" y="199" fill="white" font-style="italic" font-weight="600">dp</text>
+</g>
+</g>
+</svg>

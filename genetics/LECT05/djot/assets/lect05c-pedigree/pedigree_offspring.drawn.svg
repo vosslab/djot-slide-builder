@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1088" height="352" viewBox="0 0 544 176" role="img" aria-labelledby="offspring-title">
+  <title id="offspring-title">Pedigree generations and offspring birth order</title>
+  <rect width="544" height="176" fill="#F1F6FB"/>
+  <g id="family-connectors" fill="none" stroke="#243645" stroke-width="1.7">
+    <line id="parents-mating" x1="244" y1="24" x2="296" y2="24"/>
+    <line id="descent" x1="270" y1="24" x2="270" y2="57"/>
+    <line id="sibship" x1="213" y1="57" x2="327" y2="57"/>
+    <line x1="213" y1="57" x2="213" y2="80"/>
+    <line x1="251" y1="57" x2="251" y2="80"/>
+    <line x1="289" y1="57" x2="289" y2="80"/>
+    <line x1="327" y1="57" x2="327" y2="80"/>
+  </g>
+  <g id="parents" fill="#FFF8E7" stroke="#243645" stroke-width="1.7">
+    <circle cx="232" cy="24" r="12"/>
+    <rect x="296" y="12" width="24" height="24"/>
+  </g>
+  <g id="children" fill="#FFF8E7" stroke="#243645" stroke-width="1.7">
+    <circle cx="213" cy="92" r="12"/>
+    <circle cx="251" cy="92" r="12"/>
+    <rect x="277" y="80" width="24" height="24"/>
+    <circle cx="327" cy="92" r="12"/>
+  </g>
+  <g id="explanation-leaders" fill="none" stroke="#487993" stroke-width="1.3" stroke-linecap="round">
+    <path d="M 130 46 L 168 27 M 130 67 L 168 91"/>
+    <path d="M 174 113 L 198 102 M 360 113 L 342 102"/>
+  </g>
+  <path id="siblings-brace" d="M 201 109 Q 201 115 208 115 L 260 115 Q 270 115 270 121 Q 270 115 280 115 L 332 115 Q 339 115 339 109" fill="none" stroke="#243645" stroke-width="1.2"/>
+  <g fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="14">
+    <text id="generation-explanation"><tspan x="12" y="35">Roman numerals</tspan><tspan x="12" y="52">represent</tspan><tspan x="12" y="69">generation</tspan></text>
+    <text id="generation-one" x="179" y="29" font-size="17">I</text>
+    <text id="generation-two" x="176" y="97" font-size="17">II</text>
+    <text id="first-born" x="125" y="126">First born</text>
+    <text id="last-born" x="355" y="126">Last born</text>
+    <text id="siblings-label" x="270" y="137" text-anchor="middle">Siblings</text>
+    <text id="caption" text-anchor="middle"><tspan x="272" y="155">Parents and offspring</tspan><tspan x="272" y="172">(offspring depicted in order of birth)</tspan></text>
+  </g>
+</svg>

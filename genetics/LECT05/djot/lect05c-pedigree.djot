@@ -35,15 +35,15 @@ Students should explain which family relationships support or exclude a model, r
 
 @top-left
 
-![Slide image 1](assets/lect05c-pedigree/image_001.png)
+![Slide image 1](assets/lect05c-pedigree/normal_pedigree_symbols.drawn.svg)
 
 @top-right
 
-![Slide image 2](assets/lect05c-pedigree/image_002.png)
+![Slide image 2](assets/lect05c-pedigree/affected_pedigree_symbols.drawn.svg)
 
 @bottom
 
-![Slide image 3](assets/lect05c-pedigree/image_003.png)
+![Slide image 3](assets/lect05c-pedigree/additional_pedigree_symbols.drawn.svg)
 
 === layout: one-panel
 
@@ -51,7 +51,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 4](assets/lect05c-pedigree/image_004.png)
+![Slide image 4](assets/lect05c-pedigree/mating_lines.drawn.svg)
 
 === layout: gallery
 
@@ -59,9 +59,9 @@ Students should explain which family relationships support or exclude a model, r
 
 @gallery
 
-![Slide image 5](assets/lect05c-pedigree/image_005.png)
+![Slide image 5](assets/lect05c-pedigree/pedigree_offspring.drawn.svg)
 
-![Slide image 5](assets/lect05c-pedigree/image_004.png)
+![Slide image 5](assets/lect05c-pedigree/mating_lines.drawn.svg)
 
 === layout: one-panel
 
@@ -69,14 +69,14 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 6](assets/lect05c-pedigree/image_006.jpg)
+![Slide image 6](assets/lect05c-pedigree/pedigree_symbols_composite.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 7](assets/lect05c-pedigree/image_007.png)
+![Slide image 7](assets/lect05c-pedigree/pedigree_line_conventions.drawn.svg)
 
 === layout: section
 
@@ -87,7 +87,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 8](assets/lect05c-pedigree/image_008.jpg)
+![Slide image 8](assets/lect05c-pedigree/dominant_disease_pedigree.drawn.svg)
 
 @right
 
@@ -116,7 +116,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 9](assets/lect05c-pedigree/image_009.jpg)
+![Slide image 9](assets/lect05c-pedigree/recessive_disease_pedigree.drawn.svg)
 
 @right
 
@@ -177,7 +177,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 11](assets/lect05c-pedigree/image_011.png)
+![Slide image 11](assets/lect05c-pedigree/x_linked_recessive_pedigree.drawn.svg)
 
 @right
 
@@ -190,7 +190,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 12](assets/lect05c-pedigree/image_012.png)
+![Slide image 12](assets/lect05c-pedigree/x_linked_recessive_worksheet.drawn.svg)
 
 @right
 
@@ -214,7 +214,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 14](assets/lect05c-pedigree/image_014.png)
+![Slide image 14](assets/lect05c-pedigree/x_linked_dominant_worksheet.drawn.svg)
 
 @right
 
@@ -238,7 +238,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 16](assets/lect05c-pedigree/image_016.png)
+![Slide image 16](assets/lect05c-pedigree/y_linked_worksheet.drawn.svg)
 
 @right
 
@@ -254,9 +254,9 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 17](assets/lect05c-pedigree/image_017.png)
+![Slide image 17](assets/lect05c-pedigree/sample_pedigree.drawn.svg)
 
-![Slide image 18](assets/lect05c-pedigree/image_018.png)
+![Slide image 18](assets/lect05c-pedigree/pedigree_question_3_9.drawn.svg)
 
 @right
 
@@ -271,9 +271,9 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 18](assets/lect05c-pedigree/image_017.png)
+![Slide image 18](assets/lect05c-pedigree/sample_pedigree.drawn.svg)
 
-![Slide image 18](assets/lect05c-pedigree/image_018.png)
+![Slide image 18](assets/lect05c-pedigree/pedigree_question_3_9.drawn.svg)
 
 @right
 
@@ -287,9 +287,9 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 18](assets/lect05c-pedigree/image_017.png)
+![Slide image 18](assets/lect05c-pedigree/sample_pedigree.drawn.svg)
 
-![Slide image 18](assets/lect05c-pedigree/image_018.png)
+![Slide image 18](assets/lect05c-pedigree/pedigree_question_3_9.drawn.svg)
 
 @right
 
@@ -304,9 +304,9 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 18](assets/lect05c-pedigree/image_017.png)
+![Slide image 18](assets/lect05c-pedigree/sample_pedigree.drawn.svg)
 
-![Slide image 18](assets/lect05c-pedigree/image_018.png)
+![Slide image 18](assets/lect05c-pedigree/pedigree_question_3_9.drawn.svg)
 
 @right
 
@@ -321,7 +321,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 19](assets/lect05c-pedigree/image_019.png)
+![Slide image 19](assets/lect05c-pedigree/paired_daughters_pedigree.drawn.svg)
 
 @right
 
@@ -337,7 +337,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 19](assets/lect05c-pedigree/image_019.png)
+![Slide image 19](assets/lect05c-pedigree/paired_daughters_pedigree.drawn.svg)
 
 === layout: two-panels
 
@@ -345,7 +345,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 20](assets/lect05c-pedigree/image_020.png)
+![Slide image 20](assets/lect05c-pedigree/joined_families_pedigree.drawn.svg)
 
 @right
 
@@ -361,7 +361,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 20](assets/lect05c-pedigree/image_020.png)
+![Slide image 20](assets/lect05c-pedigree/joined_families_pedigree.drawn.svg)
 
 === layout: two-panels
 
@@ -369,7 +369,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 21](assets/lect05c-pedigree/image_021.png)
+![Slide image 21](assets/lect05c-pedigree/numbered_pedigree.drawn.svg)
 
 @right
 
@@ -385,7 +385,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 21](assets/lect05c-pedigree/image_021.png)
+![Slide image 21](assets/lect05c-pedigree/numbered_pedigree.drawn.svg)
 
 === layout: two-panels
 
@@ -393,7 +393,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 22](assets/lect05c-pedigree/image_022.png)
+![Slide image 22](assets/lect05c-pedigree/three_generation_families.drawn.svg)
 
 @right
 
@@ -409,7 +409,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 22](assets/lect05c-pedigree/image_022.png)
+![Slide image 22](assets/lect05c-pedigree/three_generation_families.drawn.svg)
 
 === layout: two-panels
 
@@ -417,7 +417,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 23](assets/lect05c-pedigree/image_023.png)
+![Slide image 23](assets/lect05c-pedigree/three_row_numbered_family.drawn.svg)
 
 @right
 
@@ -433,7 +433,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 23](assets/lect05c-pedigree/image_023.png)
+![Slide image 23](assets/lect05c-pedigree/three_row_numbered_family.drawn.svg)
 
 === layout: section
 
@@ -445,7 +445,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 24](assets/lect05c-pedigree/image_024.png)
+![Slide image 24](assets/lect05c-pedigree/four_row_numbered_family.drawn.svg)
 
 @right
 
@@ -461,7 +461,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 24](assets/lect05c-pedigree/image_024.png)
+![Slide image 24](assets/lect05c-pedigree/four_row_numbered_family.drawn.svg)
 
 === layout: two-panels
 
@@ -469,7 +469,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 25](assets/lect05c-pedigree/image_025.png)
+![Slide image 25](assets/lect05c-pedigree/three_row_family_branches.drawn.svg)
 
 @right
 
@@ -485,7 +485,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 25](assets/lect05c-pedigree/image_025.png)
+![Slide image 25](assets/lect05c-pedigree/three_row_family_branches.drawn.svg)
 
 === layout: two-panels
 
@@ -493,7 +493,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @left
 
-![Slide image 26](assets/lect05c-pedigree/image_026.png)
+![Slide image 26](assets/lect05c-pedigree/four_row_family_branches.drawn.svg)
 
 @right
 
@@ -509,7 +509,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 26](assets/lect05c-pedigree/image_026.png)
+![Slide image 26](assets/lect05c-pedigree/four_row_family_branches.drawn.svg)
 
 === layout: section
 
@@ -528,7 +528,7 @@ Students should explain which family relationships support or exclude a model, r
 
 @body
 
-![Slide image 28](assets/lect05c-pedigree/image_028.png)
+![Slide image 28](assets/lect05c-pedigree/two_panel_four_row_families.drawn.svg)
 
 === layout: one-panel
 

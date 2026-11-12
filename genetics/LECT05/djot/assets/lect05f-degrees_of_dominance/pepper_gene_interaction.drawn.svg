@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1960" viewBox="0 0 1000 1960" role="img" aria-labelledby="title desc"><title id="title">Pepper gene interaction</title><desc id="desc">Two successive crosses show how two loci determine pepper fruit color. Nine symbolic bell peppers preserve the source phenotype classes, genotypes and ratios.</desc><rect width="1000" height="1960" fill="white"/>
+<rect id="p-panel" x="20" y="55" width="960" height="415" rx="25" fill="#faebce" stroke="#c2c0c2" stroke-width="2"/>
+<rect id="f1-product-panel" x="20" y="510" width="960" height="320" rx="25" fill="#f6e4dc" stroke="#c2c0c2" stroke-width="2"/>
+<rect id="f1-cross-panel" x="20" y="900" width="960" height="360" rx="25" fill="#f6e4dc" stroke="#c2c0c2" stroke-width="2"/>
+<rect id="f2-panel" x="20" y="1300" width="960" height="400" rx="25" fill="#e5e1ee" stroke="#c2c0c2" stroke-width="2"/>
+<g id="p-red" data-pepper="red" transform="translate(275 270) scale(0.82)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#7f243d" stroke="#7f243d" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#b7374d"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#b7374d"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#b7374d" stroke="#7f243d" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e56b73" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="p-cream" data-pepper="cream" transform="translate(725 270) scale(0.82)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#b0a878" stroke="#b0a878" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#ece2b3"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#ece2b3"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#ece2b3" stroke="#b0a878" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#fff6d3" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f1-red" data-pepper="red" transform="translate(500 685) scale(0.8)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#7f243d" stroke="#7f243d" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#b7374d"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#b7374d"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#b7374d" stroke="#7f243d" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e56b73" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f1-left" data-pepper="red" transform="translate(275 1060) scale(0.82)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#7f243d" stroke="#7f243d" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#b7374d"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#b7374d"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#b7374d" stroke="#7f243d" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e56b73" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f1-right" data-pepper="red" transform="translate(725 1060) scale(0.82)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#7f243d" stroke="#7f243d" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#b7374d"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#b7374d"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#b7374d" stroke="#7f243d" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e56b73" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f2-red" data-pepper="red" transform="translate(145 1510) scale(0.75)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#7f243d" stroke="#7f243d" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#b7374d"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#b7374d"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#b7374d" stroke="#7f243d" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e56b73" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f2-peach" data-pepper="peach" transform="translate(380 1510) scale(0.75)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#87562c" stroke="#87562c" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#bf7d3e"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#bf7d3e"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#bf7d3e" stroke="#87562c" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#e8b46e" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f2-orange" data-pepper="orange" transform="translate(620 1510) scale(0.75)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#c49a20" stroke="#c49a20" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#efc843"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#efc843"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#efc843" stroke="#c49a20" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#ffe37b" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g id="f2-cream" data-pepper="cream" transform="translate(855 1510) scale(0.75)">
+<path d="M-81 -39 C-88 -81 -49 -101 -18 -85 C-4 -106 29 -102 43 -85 C77 -94 99 -64 89 -26 L73 60 C67 89 44 96 24 83 C8 100 -20 99 -36 83 C-62 91 -78 72 -80 46 Z" fill="#b0a878" stroke="#b0a878" stroke-width="3"/>
+<path d="M-70 -43 C-72 -74 -47 -85 -22 -73 C-5 -58 -16 -21 -13 11 L-13 66 C-21 92 -46 87 -58 69 C-74 43 -72 -9 -70 -43 Z" fill="#ece2b3"/>
+<path d="M30 -73 C52 -88 80 -70 80 -40 C78 -7 70 10 69 41 C65 69 51 87 31 78 C13 66 23 32 20 7 C13 -28 12 -56 30 -73 Z" fill="#ece2b3"/>
+<path d="M-22 -64 C-12 -89 18 -90 31 -64 C40 -41 22 -15 25 15 L23 68 C17 96 -7 100 -19 77 C-26 51 -14 18 -24 -8 C-34 -32 -32 -50 -22 -64 Z" fill="#ece2b3" stroke="#b0a878" stroke-width="2"/>
+<path d="M-58 -57 C-70 -27 -61 3 -60 24 M-13 -58 C-23 -32 -8 -8 -12 15 M54 -60 C64 -43 54 -20 55 -8" fill="none" stroke="#fff6d3" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M-29 -78 L-13 -88 L-18 -101 L3 -94 L20 -104 L19 -85 L39 -76 L17 -74 L3 -65 L-9 -76 Z" fill="#4b854e" stroke="#3e6f42" stroke-width="2"/><path d="M3 -87 Q11 -111 -3 -129" fill="none" stroke="#457747" stroke-width="13" stroke-linecap="round"/><path d="M3 -90 Q8 -109 -2 -121" fill="none" stroke="#80aa61" stroke-width="4" stroke-linecap="round"/></g>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263844">
+<text x="25" y="39" font-size="34" text-anchor="start" font-weight="bold">(a)</text>
+<text x="55" y="107" font-size="38" text-anchor="start" font-weight="bold">P generation</text>
+<text x="275" y="145" font-size="35" text-anchor="middle" font-weight="normal">Red</text>
+<text x="725" y="145" font-size="35" text-anchor="middle" font-weight="normal">Cream</text>
+<text x="500" y="252" font-size="44" text-anchor="middle" font-weight="normal">&#215;</text>
+<text x="275" y="385" font-size="38" text-anchor="middle" font-weight="normal"><tspan font-style="italic">Y<tspan baseline-shift="15" font-size="24">+</tspan>Y<tspan baseline-shift="15" font-size="24">+</tspan> C<tspan baseline-shift="15" font-size="24">+</tspan>C<tspan baseline-shift="15" font-size="24">+</tspan></tspan></text>
+<text x="725" y="385" font-size="38" text-anchor="middle" font-weight="normal"><tspan font-style="italic">yy cc</tspan></text>
+<text x="55" y="560" font-size="38" text-anchor="start" font-weight="bold">F<tspan baseline-shift="-8" font-size="26">1</tspan> generation</text>
+<text x="500" y="567" font-size="35" text-anchor="middle" font-weight="normal">Red</text>
+<text x="500" y="806" font-size="38" text-anchor="middle" font-weight="normal"><tspan font-style="italic">Y<tspan baseline-shift="15" font-size="24">+</tspan>y C<tspan baseline-shift="15" font-size="24">+</tspan>c</tspan></text>
+<text x="25" y="880" font-size="34" text-anchor="start" font-weight="bold">(b)</text>
+<text x="55" y="950" font-size="38" text-anchor="start" font-weight="bold">F<tspan baseline-shift="-8" font-size="26">1</tspan> generation</text>
+<text x="275" y="1170" font-size="38" text-anchor="middle" font-weight="normal"><tspan font-style="italic">Y<tspan baseline-shift="15" font-size="24">+</tspan>y C<tspan baseline-shift="15" font-size="24">+</tspan>c</tspan></text>
+<text x="725" y="1170" font-size="38" text-anchor="middle" font-weight="normal"><tspan font-style="italic">Y<tspan baseline-shift="15" font-size="24">+</tspan>y C<tspan baseline-shift="15" font-size="24">+</tspan>c</tspan></text>
+<text x="500" y="1157" font-size="44" text-anchor="middle" font-weight="normal">&#215;</text>
+<text x="55" y="1352" font-size="38" text-anchor="start" font-weight="bold">F<tspan baseline-shift="-8" font-size="26">2</tspan> generation</text>
+<text x="145" y="1397" font-size="35" text-anchor="middle" font-weight="normal">Red</text>
+<text x="145" y="1645" font-size="32" text-anchor="middle" font-weight="normal"><tspan font-style="italic">9/16 Y<tspan baseline-shift="15" font-size="24">+</tspan>_ C<tspan baseline-shift="15" font-size="24">+</tspan>_</tspan></text>
+<text x="380" y="1397" font-size="35" text-anchor="middle" font-weight="normal">Peach</text>
+<text x="380" y="1645" font-size="32" text-anchor="middle" font-weight="normal"><tspan font-style="italic">3/16 Y<tspan baseline-shift="15" font-size="24">+</tspan>_ cc</tspan></text>
+<text x="620" y="1397" font-size="35" text-anchor="middle" font-weight="normal">Orange</text>
+<text x="620" y="1645" font-size="32" text-anchor="middle" font-weight="normal"><tspan font-style="italic">3/16 yy C<tspan baseline-shift="15" font-size="24">+</tspan>_</tspan></text>
+<text x="855" y="1397" font-size="35" text-anchor="middle" font-weight="normal">Cream</text>
+<text x="855" y="1645" font-size="32" text-anchor="middle" font-weight="normal"><tspan font-style="italic">1/16 yy cc</tspan></text>
+<path d="M275 407 Q275 419 292 419 H478 Q500 419 500 434 Q500 419 522 419 H708 Q725 419 725 407" fill="none" stroke="#59666e" stroke-width="3"/>
+<path d="M500 467 V487" fill="none" stroke="#59666e" stroke-width="3"/><path d="M500 500 L489 481 H511 Z" fill="#59666e"/><rect x="439" y="427" width="122" height="44" rx="6" fill="#e1e8ed" stroke="#9dabb3" stroke-width="2"/>
+<text x="500" y="460" font-size="32" text-anchor="middle" font-weight="normal">Cross</text>
+<path d="M275 1190 Q275 1202 292 1202 H478 Q500 1202 500 1217 Q500 1202 522 1202 H708 Q725 1202 725 1190" fill="none" stroke="#59666e" stroke-width="3"/>
+<path d="M500 1250 V1277" fill="none" stroke="#59666e" stroke-width="3"/><path d="M500 1290 L489 1271 H511 Z" fill="#59666e"/><rect x="439" y="1210" width="122" height="44" rx="6" fill="#e1e8ed" stroke="#9dabb3" stroke-width="2"/>
+<text x="500" y="1243" font-size="32" text-anchor="middle" font-weight="normal">Cross</text>
+<rect x="50" y="1670" width="900" height="66" rx="10" fill="#dce7f4" stroke="#a0b4c9" stroke-width="2"/>
+<text x="500" y="1714" font-size="32" text-anchor="middle" font-weight="bold">Conclusion: 9 red : 3 peach : 3 orange : 1 cream</text>
+<text x="35" y="1790" font-size="34" text-anchor="start" font-weight="600">4.17 Gene interaction in which two loci determine a</text>
+<text x="35" y="1835" font-size="34" text-anchor="start" font-weight="600">single characteristic, fruit color, in the pepper</text>
+<text x="35" y="1880" font-size="34" text-anchor="start" font-weight="600"><tspan font-style="italic">Capsicum annuum.</tspan></text>
+</g></svg>

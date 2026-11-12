@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="1551" viewBox="0 0 780 1551" role="img" aria-labelledby="title desc">
+<title id="title">Mutation-selection balance</title><desc id="desc">Source harmful recessive allele flow: introduction by mutation u toward a population compartment, elimination by selection sq squared away from it.</desc>
+<defs><radialGradient id="lavender" cx="40%" cy="35%" r="80%"><stop offset="0" stop-color="#f4f0f8"/><stop offset="1" stop-color="#d9cfe7"/></radialGradient></defs>
+<rect width="780" height="1551" fill="white"/>
+<g id="arrows" fill="#293638" stroke="#293638"><path id="incoming-shaft" d="M 275 170 L 275 505" fill="none" stroke-width="8"/><path id="incoming-head" d="M 254 485 L 275 540 L 296 485 L 275 498 Z" stroke="none"/><path id="outgoing-shaft" d="M 275 1105 L 275 1440" fill="none" stroke-width="8"/><path id="outgoing-head" d="M 254 1420 L 275 1475 L 296 1420 L 275 1433 Z" stroke="none"/></g>
+<rect id="population-square" x="42" y="580" width="466" height="466" fill="url(#lavender)" stroke="#293638" stroke-width="4"/>
+<g id="labels" font-family="Atkinson Hyperlegible Next" font-weight="700" font-size="61" fill="#202b2e">
+<text x="20" y="67">Harmful recessive</text><text x="20" y="139">allele</text>
+<text x="305" y="292">Introduction by</text><text x="305" y="369">mutation</text>
+<text x="275" y="833" text-anchor="middle">Population</text>
+<text x="305" y="1240">Elimination by</text><text x="305" y="1317">selection</text>
+<text id="mutation-rate" x="226" y="310" text-anchor="end" font-style="italic">u</text>
+<text id="selection-rate" x="231" y="1260" text-anchor="end"><tspan font-style="italic">sq</tspan><tspan baseline-shift="super" font-size="43">2</tspan></text>
+
+</g></svg>

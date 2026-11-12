@@ -150,7 +150,7 @@ Transition: show a parent producing its two possible gametes.
 
 @left
 
-![An A1A2 parent produces A1 or A2 gametes, each with probability one-half.](assets/lect05d-v2-probability_concepts/gamete_branch_single.png)
+![An A1A2 parent produces A1 or A2 gametes, each with probability one-half.](assets/lect05d-v2-probability_concepts/gamete_branch_single.drawn.svg)
 
 @right
 
@@ -174,7 +174,7 @@ Transition: write the rule that explains why addition worked here.
 
 @left
 
-![Disjoint circles B and C have no shared outcomes.](assets/lect05d-v2-probability_concepts/venn-disjoint.png)
+![Disjoint circles B and C have no shared outcomes.](assets/lect05d-v2-probability_concepts/venn-disjoint.svg)
 
 @right
 
@@ -207,7 +207,7 @@ Assume equal segregation and random fertilization.
 
 @bottom
 
-![Each parent produces two equally likely gametes: A1 or A2 from parent 1, A3 or A4 from parent 2.](assets/lect05d-v2-probability_concepts/gamete_branches.png)
+![Each parent produces two equally likely gametes: A1 or A2 from parent 1, A3 or A4 from parent 2.](assets/lect05d-v2-probability_concepts/gamete_branches.drawn.svg)
 
 @notes
 
@@ -323,7 +323,7 @@ Transition: the general addition rule makes this correction explicit for overlap
 
 @top
 
-![Adding B and C counts the shared region twice; subtract one copy.](assets/lect05d-v2-probability_concepts/venn-double-count.png)
+![Adding B and C counts the shared region twice; subtract one copy.](assets/lect05d-v2-probability_concepts/venn-double-count.svg)
 
 @bottom
 
@@ -387,7 +387,7 @@ Transition: name the condition that makes the shortcut valid.
 
 @left
 
-![The intersection of B and C contains the outcomes where both occur.](assets/lect05d-v2-probability_concepts/venn-intersection.png)
+![The intersection of B and C contains the outcomes where both occur.](assets/lect05d-v2-probability_concepts/venn-intersection.svg)
 
 @right
 
@@ -733,7 +733,7 @@ Transition: draw both possibilities for the son and follow each branch to his ch
 
 @top
 
-![The son is Hh or hh with equal probabilities. An Hh son has an Hh or hh child with equal probabilities; an hh son has only hh children with the hh partner.](assets/lect05d-v2-probability_concepts/family_branches.png)
+![The son is Hh or hh with equal probabilities. An Hh son has an Hh or hh child with equal probabilities; an hh son has only hh children with the hh partner.](assets/lect05d-v2-probability_concepts/family_branches.drawn.svg)
 
 @bottom
 

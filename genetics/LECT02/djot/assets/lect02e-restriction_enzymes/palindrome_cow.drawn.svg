@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="960" viewBox="0 0 780 960" role="img" aria-labelledby="title desc">
+  <title id="title">A Palindrome Cow</title>
+  <desc id="desc">A playful cream and brown cow with two outward-facing heads sharing one body and four legs. Both heads say MOOM in one speech balloon. Original illustration for Genetics LECT02E, Literary Palindromes, slide 4; a visual joke, not an anatomical specimen.</desc>
+  <defs>
+    <g id="cow-head" stroke="#213547" stroke-linecap="round" stroke-linejoin="round">
+      <g id="horns" fill="#E9D9B4" stroke-width="6">
+        <path d="M132 391 C114 376 110 355 119 333 C124 357 136 364 153 369 Z"/>
+        <path d="M183 378 C181 352 192 334 208 326 C202 348 205 362 213 376 Z"/>
+      </g>
+      <g id="ears" stroke-width="6">
+        <path d="M135 391 C111 373 88 378 65 391 C73 419 103 433 131 413 Z" fill="#FFF7E7"/>
+        <path d="M99 399 Q114 395 128 405 Q109 415 99 399" fill="#D99B91" stroke="none"/>
+        <path d="M207 389 C231 369 256 375 279 389 C268 418 241 428 212 411 Z" fill="#A56A43"/>
+        <path d="M220 401 Q237 388 253 392 Q245 411 220 406" fill="#DEABA0" stroke="none"/>
+      </g>
+      <path id="head-contour" d="M143 378 C160 362 187 365 205 379 C230 399 238 432 227 465 L209 513 C202 537 179 550 154 540 L116 521 C96 506 96 478 105 455 L119 410 Q125 388 143 378 Z" fill="#FFF7E7" stroke-width="7"/>
+      <path id="cheek-volume" d="M209 389 C231 415 225 448 213 477 L191 521 Q178 539 156 536 L171 543 Q202 546 211 519 L229 466 C239 432 231 406 209 389 Z" fill="#E4D4B7" stroke="none"/>
+      <path id="forehead-patch" d="M144 378 C160 365 180 365 195 374 C203 391 196 405 180 412 C166 419 167 438 151 441 C137 443 128 429 130 414 C131 397 137 388 144 378 Z" fill="#98613F" stroke="none"/>
+      <path id="forelock" d="M145 380 Q153 364 164 377 Q172 359 183 376 Q193 368 200 382" fill="#FFF7E7" stroke-width="5"/>
+      <path id="brow" d="M115 443 Q126 431 139 435" fill="none" stroke-width="4"/>
+      <ellipse id="eye" cx="125" cy="454" rx="8" ry="12" fill="#213547" stroke="none"/>
+      <circle cx="122.5" cy="450" r="3" fill="#FFFFFF" stroke="none"/>
+      <path id="muzzle" d="M98 479 C118 466 145 475 161 494 C176 512 173 537 156 550 C137 565 109 558 89 542 C72 528 76 495 98 479 Z" fill="#E7ADA0" stroke-width="7"/>
+      <path d="M84 521 C97 545 130 557 151 544 Q164 538 169 524 C174 539 158 556 142 558 C116 563 88 547 84 534 Z" fill="#CF8B82" stroke="none"/>
+      <ellipse cx="99" cy="504" rx="7" ry="10" transform="rotate(-22 99 504)" fill="#61433F" stroke="none"/>
+      <ellipse cx="135" cy="519" rx="6" ry="8" transform="rotate(-22 135 519)" fill="#61433F" stroke="none"/>
+      <path id="smile" d="M107 539 Q121 550 137 542" fill="none" stroke-width="4"/>
+    </g>
+  </defs>
+  <g id="speech" stroke="#213547" stroke-width="7" stroke-linejoin="round">
+    <path d="M202 96 H578 Q628 96 628 146 V226 Q628 266 590 274 L642 346 L553 279 H227 L138 346 L190 274 Q152 266 152 226 V146 Q152 96 202 96 Z" fill="#FFFFFF"/>
+    <text x="390" y="222" font-family="Arial, sans-serif" font-size="102" font-weight="700" text-anchor="middle" fill="#213547" stroke="none">MOOM</text>
+  </g>
+  <ellipse id="ground-shadow" cx="390" cy="790" rx="261" ry="24" fill="#E8E4DA"/>
+  <g id="cow" stroke="#213547" stroke-linecap="round" stroke-linejoin="round">
+    <g id="far-legs" fill="#E6D7BC" stroke-width="7">
+      <path transform="translate(18 0)" d="M283 604 Q302 612 313 628 L315 748 Q315 765 304 772 H276 Q267 764 272 750 L283 678 Z"/>
+      <path transform="translate(-18 0)" d="M497 604 Q478 612 467 628 L465 748 Q465 765 476 772 H504 Q513 764 508 750 L497 678 Z"/>
+      <path transform="translate(18 0)" d="M272 742 L314 742 L315 763 Q314 776 301 777 H278 Q265 774 269 762 Z" fill="#56606A"/>
+      <path transform="translate(-18 0)" d="M508 742 L466 742 L465 763 Q466 776 479 777 H502 Q515 774 511 762 Z" fill="#56606A"/>
+    </g>
+    <g id="udder" fill="#E7ADA0" stroke-width="5">
+      <path d="M347 638 Q390 626 433 638 L429 663 Q425 679 410 683 V702 Q402 712 394 702 V688 H386 V702 Q378 712 370 702 V683 Q354 679 351 663 Z"/>
+    </g>
+    <path id="shared-body" d="M207 445 C235 449 245 467 274 461 C340 444 440 444 506 461 C535 467 545 449 573 445 L593 496 C611 548 591 610 552 642 C512 674 455 677 390 677 C325 677 268 674 228 642 C189 610 169 548 187 496 Z" fill="#FFF7E7" stroke-width="7"/>
+    <path id="belly-volume" d="M191 549 C212 607 277 647 390 648 C503 647 568 607 589 549 C590 594 568 625 548 641 C508 671 452 674 390 674 C328 674 272 671 232 641 C212 625 190 594 191 549 Z" fill="#E9DCC4" stroke="none"/>
+    <path id="central-patch" d="M343 451 Q390 445 437 451 C450 471 442 492 421 505 C404 515 414 541 391 547 C369 551 369 521 352 513 C330 502 328 471 343 451 Z" fill="#98613F" stroke="none"/>
+    <path id="left-flank-patch" d="M231 507 C254 491 280 506 286 529 C292 548 279 557 263 555 C247 553 244 571 227 565 C211 559 213 521 231 507 Z" fill="#AE7950" stroke="none"/>
+    <path id="right-flank-patch" d="M549 507 C526 491 500 506 494 529 C488 548 501 557 517 555 C533 553 536 571 553 565 C569 559 567 521 549 507 Z" fill="#AE7950" stroke="none"/>
+    <g id="near-legs" fill="#FFF7E7" stroke-width="7">
+      <path d="M222 611 C220 647 224 676 226 705 L221 763 Q219 780 235 784 H260 Q274 782 272 767 L265 698 L272 645"/>
+      <path d="M558 611 C560 647 556 676 554 705 L559 763 Q561 780 545 784 H520 Q506 782 508 767 L515 698 L508 645"/>
+      <path d="M223 752 L269 752 L273 773 Q275 787 259 790 H233 Q217 787 220 774 Z" fill="#394B59"/>
+      <path d="M557 752 L511 752 L507 773 Q505 787 521 790 H547 Q563 787 560 774 Z" fill="#394B59"/>
+      <path d="M247 774 V788 M533 774 V788" fill="none" stroke="#95A0A6" stroke-width="3"/>
+    </g>
+    <use xlink:href="#cow-head"/>
+    <use xlink:href="#cow-head" transform="translate(780 0) scale(-1 1)"/>
+  </g>
+  <text id="caption" x="390" y="890" font-family="Arial, sans-serif" font-size="63" font-weight="700" text-anchor="middle" fill="#213547">A Palindrome Cow</text>
+</svg>

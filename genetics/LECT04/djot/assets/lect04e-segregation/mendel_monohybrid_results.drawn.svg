@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ascii"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1846" height="549" viewBox="0 0 1846 549" role="img" font-family="Atkinson Hyperlegible Next, sans-serif">
+<title>Results of Mendel&#8217;s monohybrid experiments</title>
+<desc>Table of seven parental pea traits, their first-generation traits, observed second-generation counts, and ratios.</desc>
+<rect id="background" width="1846" height="549" fill="white"/>
+<g id="table-frame">
+<rect x="25" y="25" width="1796" height="500" rx="14" fill="#f7f9fc" stroke="#465260" stroke-width="3"/>
+<rect id="table-tab" x="25" y="25" width="220" height="67" rx="10" fill="#f4c84b"/>
+<path d="M245 25 H1807 Q1821 25 1821 39 V78 Q1821 92 1807 92 H245 Z" fill="#123d66"/>
+<text x="47" y="70" font-size="37" font-weight="400" fill="#22282d" text-anchor="start" >Table <tspan font-weight="700" fill="#8b3918">3.1</tspan></text>
+<text x="267" y="70" font-size="35" font-weight="700" fill="white" text-anchor="start" >Results of Mendel&#8217;s monohybrid experiments</text>
+<line x1="25" y1="155" x2="1821" y2="155" stroke="#26333e" stroke-width="5"/>
+<line x1="25" y1="510" x2="1821" y2="510" stroke="#26333e" stroke-width="5"/>
+</g>
+<g id="headers" font-weight="700" fill="#9d401c">
+<text x="36" y="140" font-size="31" font-weight="700" fill="#9d401c" text-anchor="start" >Parental traits</text>
+<text x="670" y="140" font-size="31" font-weight="700" fill="#9d401c">F<tspan dy="7" font-size="20">1</tspan><tspan xml:space="preserve" dx="14" dy="-7" font-size="31"> trait</tspan></text>
+<text x="1032" y="140" font-size="31" font-weight="700" fill="#9d401c">Number of F<tspan dy="7" font-size="20">2</tspan><tspan xml:space="preserve" dx="14" dy="-7" font-size="31"> progeny</tspan></text>
+<text x="1599" y="140" font-size="31" font-weight="700" fill="#9d401c">F<tspan dy="7" font-size="20">2</tspan><tspan xml:space="preserve" dx="14" dy="-7" font-size="31"> ratio</tspan></text>
+</g>
+<g id="result-row-1"><rect x="28" y="158" width="1790" height="50" fill="#dceef8"/>
+<text x="37" y="194" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Round &#215; wrinkled (seeds)</text>
+<text x="670" y="194" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Round</text>
+<text x="1032" y="194" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >5474 round, 1850 wrinkled</text>
+<text x="1599" y="194" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >2.96 : 1</text>
+</g>
+<g id="result-row-2"><rect x="28" y="208" width="1790" height="50" fill="#f7f9fc"/>
+<text x="37" y="244" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Yellow &#215; green (seeds)</text>
+<text x="670" y="244" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Yellow</text>
+<text x="1032" y="244" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >6022 yellow, 2001 green</text>
+<text x="1599" y="244" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >3.01 : 1</text>
+</g>
+<g id="result-row-3"><rect x="28" y="258" width="1790" height="50" fill="#dceef8"/>
+<text x="37" y="294" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Purple &#215; white (flowers)</text>
+<text x="670" y="294" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Purple</text>
+<text x="1032" y="294" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >705 purple, 224 white</text>
+<text x="1599" y="294" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >3.15 : 1</text>
+</g>
+<g id="result-row-4"><rect x="28" y="308" width="1790" height="50" fill="#f7f9fc"/>
+<text x="37" y="344" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Inflated &#215; constricted (pods)</text>
+<text x="670" y="344" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Inflated</text>
+<text x="1032" y="344" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >882 inflated, 299 constricted</text>
+<text x="1599" y="344" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >2.95 : 1</text>
+</g>
+<g id="result-row-5"><rect x="28" y="358" width="1790" height="50" fill="#dceef8"/>
+<text x="37" y="394" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Green &#215; yellow (unripe pods)</text>
+<text x="670" y="394" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Green</text>
+<text x="1032" y="394" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >428 green, 152 yellow</text>
+<text x="1599" y="394" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >2.82 : 1</text>
+</g>
+<g id="result-row-6"><rect x="28" y="408" width="1790" height="50" fill="#f7f9fc"/>
+<text x="37" y="444" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Axial &#215; terminal (flower position)</text>
+<text x="670" y="444" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Axial</text>
+<text x="1032" y="444" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >651 axial, 207 terminal</text>
+<text x="1599" y="444" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >3.14 : 1</text>
+</g>
+<g id="result-row-7"><rect x="28" y="458" width="1790" height="50" fill="#dceef8"/>
+<text x="37" y="494" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Long &#215; short (stems)</text>
+<text x="670" y="494" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >Long</text>
+<text x="1032" y="494" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >787 long, 277 short</text>
+<text x="1599" y="494" font-size="29" font-weight="400" fill="#22282d" text-anchor="start" >2.84 : 1</text>
+</g>
+</svg>

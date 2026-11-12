@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1176" height="1551" viewBox="0 0 1176 1551" role="img" aria-labelledby="title desc">
+<title id="title">Heterozygosity mutation-drift balance</title><desc id="desc">Source green heterozygotes H and blue homozygotes one minus H, with mutation flow toward heterozygotes and genetic drift toward homozygotes.</desc>
+<defs><linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38803e"/><stop offset="1" stop-color="#286a32"/></linearGradient><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3269ae"/><stop offset="1" stop-color="#28538f"/></linearGradient><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="5" markerHeight="5" orient="auto"><path d="M 1 1 L 11 6 L 1 11 L 4 6 Z" fill="#293638"/></marker></defs>
+<rect width="1176" height="1551" fill="white"/>
+<g id="direction-arrows" stroke="#293638" stroke-width="6" fill="none" marker-end="url(#arrow)"><path id="mutation-direction" d="M 490 80 L 200 80"/><path id="drift-direction" d="M 748 1395 L 1045 1395"/></g>
+<g id="flow-arrows" stroke="#293638" stroke-width="5" stroke-dasharray="25 17" fill="none" marker-end="url(#arrow)"><path id="mutation-flow" d="M 865 415 C 640 230 385 260 240 510"/><path id="drift-flow" d="M 210 915 C 360 1245 715 1210 925 1020"/></g>
+<g id="compartments" stroke="#293638" stroke-width="4"><rect id="heterozygotes" x="125" y="635" width="220" height="220" fill="url(#green)"/><rect id="homozygotes" x="690" y="525" width="440" height="440" fill="url(#blue)"/></g>
+<g id="labels" font-family="Atkinson Hyperlegible Next" font-weight="700" font-size="59" fill="#202b2e">
+<text x="525" y="65">Mutation pressure</text><text x="525" y="142">(introduces variation)</text>
+<text x="235" y="590" text-anchor="middle">Heterozygotes</text><text x="910" y="488" text-anchor="middle">Homozygotes</text>
+<text x="235" y="767" text-anchor="middle" fill="white" font-style="italic">H</text><text x="910" y="767" text-anchor="middle" fill="white">1 &#8211; <tspan font-style="italic">H</tspan></text>
+<text id="mutation-rate" x="585" y="260" text-anchor="middle">2<tspan font-style="italic">u</tspan> (1 &#8211; <tspan font-style="italic">H</tspan>)</text>
+<text x="110" y="1369">Genetic drift</text><text x="110" y="1446">(eliminates variation)</text>
+
+</g>
+<g id="drift-rate" transform="translate(0 40)" font-family="Atkinson Hyperlegible Next" font-weight="700" fill="#202b2e" text-anchor="middle"><text x="512" y="1251" font-size="121">(</text><text x="620" y="1251" font-size="121">)</text><text x="566" y="1198" font-size="46">1</text><path d="M 528 1214 L 604 1214" stroke="#293638" stroke-width="3"/><text x="566" y="1267" font-size="46">2<tspan font-style="italic">N</tspan></text><text x="673" y="1247" font-size="59" font-style="italic">H</text></g>
+</svg>

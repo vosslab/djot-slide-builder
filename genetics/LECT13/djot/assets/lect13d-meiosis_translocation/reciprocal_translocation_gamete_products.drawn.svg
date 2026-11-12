@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1348.5" height="862" viewBox="0 0 1348.5 862" role="img" aria-labelledby="title desc">
+<title id="title">Reciprocal-translocation gamete products</title>
+<desc id="desc">Three columns of four gametes, each with two unreplicated chromosomes. Source red and blue ancestry segments and the distinct final two normal chromosome orders are preserved.</desc>
+<defs>
+<linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#df5146"/><stop offset="1" stop-color="#ba302b"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#367cb7"/><stop offset="1" stop-color="#235d9a"/></linearGradient>
+</defs>
+<rect width="1348.5" height="862" fill="white"/>
+<g font-family="Atkinson Hyperlegible Next" font-size="23" fill="#202328">
+<text x="18" y="34">Rest of meiosis I</text>
+<text x="18" y="62">and meiosis II</text>
+<g id="column-1">
+<g id="process-1" fill="none" stroke="#262626" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M 265 15 V 94"/><path d="M 256 73 Q 262 82 265 94 Q 268 82 274 73"/></g>
+<text x="265" y="127" text-anchor="middle">Gametes</text>
+<g id="fraction-1" fill="#d90042" font-weight="700" font-size="23"><text x="295" y="51">1</text><text x="304" y="61">/</text><text x="315" y="71">4</text></g>
+<g id="cell-1-1">
+<ellipse id="cell-body-1-1" cx="265" cy="210" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-1-1-1">
+<rect id="chromosome-1-1-1-body" x="96" y="186" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-1-1-1-clip"><rect x="96" y="186" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-1-1-1-distal" x="299" y="186" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-1-1-1-clip)"/>
+<rect x="96" y="186" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-1-1-centromere" cx="157" cy="194" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-1-1-2">
+<rect id="chromosome-1-1-2-body" x="96" y="218" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="96" y="218" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-1-2-centromere" cx="157" cy="226" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-1-2">
+<ellipse id="cell-body-1-2" cx="265" cy="355" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-1-2-1">
+<rect id="chromosome-1-2-1-body" x="96" y="331" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-1-2-1-clip"><rect x="96" y="331" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-1-2-1-distal" x="299" y="331" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-1-2-1-clip)"/>
+<rect x="96" y="331" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-2-1-centromere" cx="157" cy="339" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-1-2-2">
+<rect id="chromosome-1-2-2-body" x="96" y="363" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="96" y="363" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-2-2-centromere" cx="157" cy="371" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-1-3">
+<ellipse id="cell-body-1-3" cx="265" cy="500" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-1-3-1">
+<rect id="chromosome-1-3-1-body" x="96" y="476" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-1-3-1-clip"><rect x="96" y="476" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-1-3-1-distal" x="299" y="476" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-1-3-1-clip)"/>
+<rect x="96" y="476" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-3-1-centromere" cx="157" cy="484" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-1-3-2">
+<rect id="chromosome-1-3-2-body" x="96" y="508" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="96" y="508" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-3-2-centromere" cx="157" cy="516" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-1-4">
+<ellipse id="cell-body-1-4" cx="265" cy="645" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-1-4-1">
+<rect id="chromosome-1-4-1-body" x="96" y="621" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-1-4-1-clip"><rect x="96" y="621" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-1-4-1-distal" x="299" y="621" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-1-4-1-clip)"/>
+<rect x="96" y="621" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-4-1-centromere" cx="157" cy="629" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-1-4-2">
+<rect id="chromosome-1-4-2-body" x="96" y="653" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="96" y="653" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-1-4-2-centromere" cx="157" cy="661" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+</g>
+<g id="column-2">
+<g id="process-2" fill="none" stroke="#262626" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M 695 15 V 94"/><path d="M 686 73 Q 692 82 695 94 Q 698 82 704 73"/></g>
+<text x="695" y="127" text-anchor="middle">Gametes</text>
+<g id="fraction-2" fill="#d90042" font-weight="700" font-size="23"><text x="725" y="51">1</text><text x="734" y="61">/</text><text x="745" y="71">4</text></g>
+<g id="cell-2-1">
+<ellipse id="cell-body-2-1" cx="695" cy="210" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-2-1-1">
+<rect id="chromosome-2-1-1-body" x="526" y="186" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-2-1-1-clip"><rect x="526" y="186" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-2-1-1-distal" x="729" y="186" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-2-1-1-clip)"/>
+<rect x="526" y="186" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-1-1-centromere" cx="587" cy="194" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-2-1-2">
+<rect id="chromosome-2-1-2-body" x="526" y="218" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="526" y="218" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-1-2-centromere" cx="587" cy="226" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-2-2">
+<ellipse id="cell-body-2-2" cx="695" cy="355" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-2-2-1">
+<rect id="chromosome-2-2-1-body" x="526" y="331" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-2-2-1-clip"><rect x="526" y="331" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-2-2-1-distal" x="729" y="331" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-2-2-1-clip)"/>
+<rect x="526" y="331" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-2-1-centromere" cx="587" cy="339" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-2-2-2">
+<rect id="chromosome-2-2-2-body" x="526" y="363" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="526" y="363" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-2-2-centromere" cx="587" cy="371" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-2-3">
+<ellipse id="cell-body-2-3" cx="695" cy="500" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-2-3-1">
+<rect id="chromosome-2-3-1-body" x="526" y="476" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-2-3-1-clip"><rect x="526" y="476" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-2-3-1-distal" x="729" y="476" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-2-3-1-clip)"/>
+<rect x="526" y="476" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-3-1-centromere" cx="587" cy="484" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-2-3-2">
+<rect id="chromosome-2-3-2-body" x="526" y="508" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="526" y="508" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-3-2-centromere" cx="587" cy="516" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-2-4">
+<ellipse id="cell-body-2-4" cx="695" cy="645" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-2-4-1">
+<rect id="chromosome-2-4-1-body" x="526" y="621" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-2-4-1-clip"><rect x="526" y="621" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-2-4-1-distal" x="729" y="621" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-2-4-1-clip)"/>
+<rect x="526" y="621" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-4-1-centromere" cx="587" cy="629" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-2-4-2">
+<rect id="chromosome-2-4-2-body" x="526" y="653" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="526" y="653" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-2-4-2-centromere" cx="587" cy="661" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+</g>
+<g id="column-3">
+<g id="process-3" fill="none" stroke="#262626" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M 1125 15 V 94"/><path d="M 1116 73 Q 1122 82 1125 94 Q 1128 82 1134 73"/></g>
+<text x="1125" y="127" text-anchor="middle">Gametes</text>
+<g id="fraction-3" fill="#d90042" font-weight="700" font-size="23"><text x="1155" y="51">1</text><text x="1164" y="61">/</text><text x="1175" y="71">2</text></g>
+<g id="cell-3-1">
+<ellipse id="cell-body-3-1" cx="1125" cy="210" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-3-1-1">
+<rect id="chromosome-3-1-1-body" x="956" y="186" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-3-1-1-clip"><rect x="956" y="186" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-3-1-1-distal" x="1159" y="186" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-3-1-1-clip)"/>
+<rect x="956" y="186" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-1-1-centromere" cx="1017" cy="194" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-3-1-2">
+<rect id="chromosome-3-1-2-body" x="956" y="218" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-3-1-2-clip"><rect x="956" y="218" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-3-1-2-distal" x="1159" y="218" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-3-1-2-clip)"/>
+<rect x="956" y="218" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-1-2-centromere" cx="1017" cy="226" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-3-2">
+<ellipse id="cell-body-3-2" cx="1125" cy="355" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-3-2-1">
+<rect id="chromosome-3-2-1-body" x="956" y="331" width="338" height="16" rx="8" fill="url(#blue)"/>
+<clipPath id="chromosome-3-2-1-clip"><rect x="956" y="331" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-3-2-1-distal" x="1159" y="331" width="135" height="16" fill="url(#red)" clip-path="url(#chromosome-3-2-1-clip)"/>
+<rect x="956" y="331" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-2-1-centromere" cx="1017" cy="339" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-3-2-2">
+<rect id="chromosome-3-2-2-body" x="956" y="363" width="338" height="16" rx="8" fill="url(#red)"/>
+<clipPath id="chromosome-3-2-2-clip"><rect x="956" y="363" width="338" height="16" rx="8"/></clipPath>
+<rect id="chromosome-3-2-2-distal" x="1159" y="363" width="135" height="16" fill="url(#blue)" clip-path="url(#chromosome-3-2-2-clip)"/>
+<rect x="956" y="363" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-2-2-centromere" cx="1017" cy="371" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-3-3">
+<ellipse id="cell-body-3-3" cx="1125" cy="500" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-3-3-1">
+<rect id="chromosome-3-3-1-body" x="956" y="476" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="956" y="476" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-3-1-centromere" cx="1017" cy="484" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-3-3-2">
+<rect id="chromosome-3-3-2-body" x="956" y="508" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="956" y="508" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-3-2-centromere" cx="1017" cy="516" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+<g id="cell-3-4">
+<ellipse id="cell-body-3-4" cx="1125" cy="645" rx="200" ry="65" fill="#ead29a" stroke="#b98429" stroke-width="1.8"/>
+<g id="chromosome-3-4-1">
+<rect id="chromosome-3-4-1-body" x="956" y="621" width="338" height="16" rx="8" fill="url(#red)"/>
+<rect x="956" y="621" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-4-1-centromere" cx="1017" cy="629" r="9" fill="url(#red)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+<g id="chromosome-3-4-2">
+<rect id="chromosome-3-4-2-body" x="956" y="653" width="338" height="16" rx="8" fill="url(#blue)"/>
+<rect x="956" y="653" width="338" height="16" rx="8" fill="none" stroke="#b1bdcf" stroke-width="1"/>
+<circle id="chromosome-3-4-2-centromere" cx="1017" cy="661" r="9" fill="url(#blue)" stroke="#b1bdcf" stroke-width="1"/>
+</g>
+</g>
+</g>
+<path id="adjacent-brace" d="M65 718 Q65 729 80 729 H464 Q480 729 480 741 Q480 729 496 729 H880 Q895 729 895 718" fill="none" stroke="#343434" stroke-width="1.7"/>
+<g id="adjacent-callout"><rect x="170" y="752" width="620" height="96" fill="#d5e2f1" stroke="#4e81b3" stroke-width="1.2"/><text x="480" y="779" text-anchor="middle">All gametes from adjacent-1 and adjacent-2</text><text x="480" y="812" text-anchor="middle">segregation are aneuploid.</text></g>
+<g id="alternate-callout"><rect x="925" y="738" width="402" height="110" fill="#d5e2f1" stroke="#4e81b3" stroke-width="1.2"/><text x="1126" y="762" text-anchor="middle">All gametes from alternate</text><text x="1126" y="789" text-anchor="middle">segregation are euploid;</text><text x="1126" y="816" text-anchor="middle">half are translocation carriers.</text></g>
+</g></svg>

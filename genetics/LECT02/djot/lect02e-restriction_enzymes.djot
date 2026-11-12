@@ -46,7 +46,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 1](assets/lect02e-restriction_enzymes/image_001.png)
+![Slide image 1](assets/lect02e-restriction_enzymes/palindrome_cow.drawn.svg)
 
 === layout: two-panels
 
@@ -488,7 +488,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 8](assets/lect02e-restriction_enzymes/image_008.jpg)
+![Slide image 8](assets/lect02e-restriction_enzymes/bamhi_cleavage.drawn.svg)
 
 === layout: two-panels
 
@@ -510,14 +510,14 @@ color-theme: genetics
 
 @body
 
-![Slide image 10](assets/lect02e-restriction_enzymes/image_010.png)
+![Slide image 10](assets/lect02e-restriction_enzymes/restriction_end_types.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 11](assets/lect02e-restriction_enzymes/image_011.png)
+![Slide image 11](assets/lect02e-restriction_enzymes/restriction_symmetry.drawn.svg)
 
 === layout: one-panel
 
@@ -833,7 +833,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 12](assets/lect02e-restriction_enzymes/image_012.jpg)
+![Slide image 12](assets/lect02e-restriction_enzymes/plasmid_staggered_cut.drawn.svg)
 
 
 
@@ -846,7 +846,7 @@ Native reconstruction needed: 24 positioned diagram labels.
 
 @body
 
-![Slide image 13](assets/lect02e-restriction_enzymes/image_013.jpg)
+![Slide image 13](assets/lect02e-restriction_enzymes/complementary_sticky_ends.drawn.svg)
 
 
 
@@ -857,7 +857,7 @@ Native reconstruction needed: 13 positioned diagram labels.
 
 @body
 
-![Slide image 14](assets/lect02e-restriction_enzymes/image_014.jpg)
+![Slide image 14](assets/lect02e-restriction_enzymes/recombinant_insert_assembly.drawn.svg)
 
 
 
@@ -869,7 +869,7 @@ Native reconstruction needed: 49 positioned diagram labels.
 
 @body
 
-![Slide image 15](assets/lect02e-restriction_enzymes/image_015.jpg)
+![Slide image 15](assets/lect02e-restriction_enzymes/recombinant_plasmid_closure.drawn.svg)
 
 
 Native reconstruction needed: 33 positioned diagram labels.
@@ -883,14 +883,14 @@ Native reconstruction needed: 33 positioned diagram labels.
 
 @body
 
-![Slide image 16](assets/lect02e-restriction_enzymes/image_016.png)
+![Slide image 16](assets/lect02e-restriction_enzymes/palindrome_identification.quote.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 17](assets/lect02e-restriction_enzymes/image_017.png)
+![Slide image 17](assets/lect02e-restriction_enzymes/restriction_site_completion.quote.svg)
 
 === layout: section
 

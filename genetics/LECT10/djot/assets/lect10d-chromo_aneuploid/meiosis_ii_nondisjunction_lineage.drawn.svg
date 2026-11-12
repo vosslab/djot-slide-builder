@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="519" height="801" viewBox="0 0 519 801" role="img" aria-labelledby="title desc">
+<title id="title">Sister nondisjunction and four gamete products</title>
+<desc id="desc">A seven-cell sequence preserves one retained long sister pair in the left second division. Final products contain three, one, two and two separate chromosomes.</desc>
+<defs><radialGradient id="cell-fill" cx="30%" cy="23%" r="84%"><stop stop-color="#fff0cb"/><stop offset=".66" stop-color="#fbd08d"/><stop offset="1" stop-color="#efad62"/></radialGradient><linearGradient id="rod-fill"><stop stop-color="#c0b3ed"/><stop offset=".38" stop-color="#aa96db"/><stop offset="1" stop-color="#8670bb"/></linearGradient></defs>
+<circle id="cell-parent" cx="259" cy="111" r="96" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-left-middle" cx="125" cy="425" r="96" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-right-middle" cx="394" cy="425" r="96" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-product-1" cx="65" cy="720" r="55" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-product-2" cx="195" cy="720" r="55" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-product-3" cx="325" cy="720" r="55" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<circle id="cell-product-4" cx="455" cy="720" r="55" fill="url(#cell-fill)" stroke="#bf986d" stroke-width="1.8"/>
+<g id="lineage-arrows" fill="#171a1d" stroke="#171a1d" stroke-width="3.4" stroke-linecap="round">
+<g id="arrow-1"><path d="M217 205 L169.75247328252576 306.4946870227225" fill="none"/><path d="M163 321 L163.85968988550675 303.7514947516964 L175.64525667954476 309.23787929374856 Z" stroke="none"/></g>
+<g id="arrow-2"><path d="M301 205 L348.2475267174743 306.4946870227225" fill="none"/><path d="M355 321 L342.35474332045527 309.23787929374856 L354.1403101144933 303.7514947516964 Z" stroke="none"/></g>
+<g id="arrow-3"><path d="M112 524 L75.64955981901511 643.6904737666575" fill="none"/><path d="M71 659 L69.43006478671974 641.8015900901827 L81.86905485131048 645.5793574431324 Z" stroke="none"/></g>
+<g id="arrow-4"><path d="M151 521 L182.96124964564797 643.5181236416505" fill="none"/><path d="M187 659 L176.6717373750685 645.158865973106 L189.25076191622745 641.877381310195 Z" stroke="none"/></g>
+<g id="arrow-5"><path d="M380 523 L339.12646205828236 643.8435034798608" fill="none"/><path d="M334 659 L332.9691353469758 641.7608782686837 L345.2837887695889 645.926128691038 Z" stroke="none"/></g>
+<g id="arrow-6"><path d="M422 520 L445.94910993731935 643.293565973607" fill="none"/><path d="M449 659 L439.5683711140972 644.532990061571 L452.3298487605415 642.0541418856429 Z" stroke="none"/></g>
+</g>
+<g id="guides-parent" transform="translate(259 111)" fill="none" stroke="#9b8958" stroke-width="2.6" stroke-linecap="round">
+<path id="guide-parent-1" d="M -34 -43 Q -72 -35 -83 -12"/>
+<path id="guide-parent-2" d="M 34 -43 Q 72 -35 83 -12"/>
+<path id="guide-parent-3" d="M -83 12 Q -72 35 -34 43"/>
+<path id="guide-parent-4" d="M 83 12 Q 72 35 34 43"/>
+</g>
+<g id="guides-left-middle" transform="translate(125 425)" fill="none" stroke="#9b8958" stroke-width="2.6" stroke-linecap="round">
+<path id="guide-left-middle-1" d="M -34 -43 Q -72 -35 -83 -12"/>
+<path id="guide-left-middle-2" d="M 34 -43 Q 72 -35 83 -12"/>
+<path id="guide-left-middle-3" d="M -83 12 Q -72 35 -34 43"/>
+<path id="guide-left-middle-4" d="M 83 12 Q 72 35 34 43"/>
+</g>
+<g id="guides-right-middle" transform="translate(394 425)" fill="none" stroke="#9b8958" stroke-width="2.6" stroke-linecap="round">
+<path id="guide-right-middle-1" d="M -34 -43 Q -72 -35 -83 -12"/>
+<path id="guide-right-middle-2" d="M 34 -43 Q 72 -35 83 -12"/>
+<path id="guide-right-middle-3" d="M -83 12 Q -72 35 -34 43"/>
+<path id="guide-right-middle-4" d="M 83 12 Q 72 35 34 43"/>
+</g>
+<polygon id="error-burst" points="110,406 117.788,420.878 131.26,410.853 131.822,427.636 148.31,424.449 141.534,439.814 157.771,444.096 145,455 157.771,465.904 141.534,470.186 148.31,485.551 131.822,482.364 131.26,499.147 117.788,489.122 110,504 102.212,489.122 88.7397,499.147 88.1779,482.364 71.6903,485.551 78.4661,470.186 62.2285,465.904 75,455 62.2285,444.096 78.4661,439.814 71.6903,424.449 88.1779,427.636 88.7397,410.853 102.212,420.878" fill="#fff13c" stroke="#8d8a58" stroke-width="2.7"/>
+<g id="parent-short-left" data-unit="paired" transform="translate(223 66) scale(1 1)">
+<path id="parent-short-left-sister-1" transform="translate(0 0)" d="M 2.5 -17.5 Q 2.5 -21.5 7 -21.5 Q 11.5 -21.5 11.5 -17.5 L 3 -5 Q 2 0 3 5 L 11.5 17.5 Q 11.5 21.5 7 21.5 Q 2.5 21.5 2.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="parent-short-left-sister-2" transform="translate(3 0)" d="M 10.5 -15.5 Q 10.5 -19.5 15 -19.5 Q 19.5 -19.5 19.5 -15.5 L 3 -5 Q 2 0 3 5 L 19.5 15.5 Q 19.5 19.5 15 19.5 Q 10.5 19.5 10.5 15.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="parent-short-right" data-unit="paired" transform="translate(295 66) scale(-1 1)">
+<path id="parent-short-right-sister-1" transform="translate(0 0)" d="M 2.5 -17.5 Q 2.5 -21.5 7 -21.5 Q 11.5 -21.5 11.5 -17.5 L 3 -5 Q 2 0 3 5 L 11.5 17.5 Q 11.5 21.5 7 21.5 Q 2.5 21.5 2.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="parent-short-right-sister-2" transform="translate(3 0)" d="M 10.5 -15.5 Q 10.5 -19.5 15 -19.5 Q 19.5 -19.5 19.5 -15.5 L 3 -5 Q 2 0 3 5 L 19.5 15.5 Q 19.5 19.5 15 19.5 Q 10.5 19.5 10.5 15.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="parent-long-left" data-unit="paired" transform="translate(220 148) scale(1 1)">
+<path id="parent-long-left-sister-1" transform="translate(0 0)" d="M 2.5 -31.0 Q 2.5 -35.0 7 -35.0 Q 11.5 -35.0 11.5 -31.0 L 3 -5 Q 2 0 3 5 L 11.5 31.0 Q 11.5 35.0 7 35.0 Q 2.5 35.0 2.5 31.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="parent-long-left-sister-2" transform="translate(3 0)" d="M 10.5 -29.0 Q 10.5 -33.0 15 -33.0 Q 19.5 -33.0 19.5 -29.0 L 3 -5 Q 2 0 3 5 L 19.5 29.0 Q 19.5 33.0 15 33.0 Q 10.5 33.0 10.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="parent-long-right" data-unit="paired" transform="translate(298 148) scale(-1 1)">
+<path id="parent-long-right-sister-1" transform="translate(0 0)" d="M 2.5 -31.0 Q 2.5 -35.0 7 -35.0 Q 11.5 -35.0 11.5 -31.0 L 3 -5 Q 2 0 3 5 L 11.5 31.0 Q 11.5 35.0 7 35.0 Q 2.5 35.0 2.5 31.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="parent-long-right-sister-2" transform="translate(3 0)" d="M 10.5 -29.0 Q 10.5 -33.0 15 -33.0 Q 19.5 -33.0 19.5 -29.0 L 3 -5 Q 2 0 3 5 L 19.5 29.0 Q 19.5 33.0 15 33.0 Q 10.5 33.0 10.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<path id="left-middle-short-left" transform="translate(95 365)" d="M 0.5 -17.0 Q 0.5 -21.0 5 -21.0 Q 9.5 -21.0 9.5 -17.0 L 3 -5 Q 2 0 3 5 L 9.5 17.0 Q 9.5 21.0 5 21.0 Q 0.5 21.0 0.5 17.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="left-middle-short-right" transform="translate(155 365)" d="M -9.5 -17.0 Q -9.5 -21.0 -5 -21.0 Q -0.5 -21.0 -0.5 -17.0 L 3 -5 Q 2 0 3 5 L -0.5 17.0 Q -0.5 21.0 -5 21.0 Q -9.5 21.0 -9.5 17.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<g id="left-middle-long-retained" data-unit="paired" transform="translate(108 455) scale(1 1)">
+<path id="left-middle-long-retained-sister-1" transform="translate(0 0)" d="M 2.5 -31.0 Q 2.5 -35.0 7 -35.0 Q 11.5 -35.0 11.5 -31.0 L 3 -5 Q 2 0 3 5 L 11.5 31.0 Q 11.5 35.0 7 35.0 Q 2.5 35.0 2.5 31.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="left-middle-long-retained-sister-2" transform="translate(3 0)" d="M 10.5 -29.0 Q 10.5 -33.0 15 -33.0 Q 19.5 -33.0 19.5 -29.0 L 3 -5 Q 2 0 3 5 L 19.5 29.0 Q 19.5 33.0 15 33.0 Q 10.5 33.0 10.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<path id="right-middle-short-left" transform="translate(364 365)" d="M 0.5 -17.0 Q 0.5 -21.0 5 -21.0 Q 9.5 -21.0 9.5 -17.0 L 3 -5 Q 2 0 3 5 L 9.5 17.0 Q 9.5 21.0 5 21.0 Q 0.5 21.0 0.5 17.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="right-middle-short-right" transform="translate(424 365)" d="M -9.5 -17.0 Q -9.5 -21.0 -5 -21.0 Q -0.5 -21.0 -0.5 -17.0 L 3 -5 Q 2 0 3 5 L -0.5 17.0 Q -0.5 21.0 -5 21.0 Q -9.5 21.0 -9.5 17.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="right-middle-long-left" transform="translate(362 470)" d="M 3.5 -30.0 Q 3.5 -34.0 8 -34.0 Q 12.5 -34.0 12.5 -30.0 L 3 -5 Q 2 0 3 5 L 12.5 30.0 Q 12.5 34.0 8 34.0 Q 3.5 34.0 3.5 30.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="right-middle-long-right" transform="translate(426 470)" d="M -12.5 -30.0 Q -12.5 -34.0 -8 -34.0 Q -3.5 -34.0 -3.5 -30.0 L 3 -5 Q 2 0 3 5 L -3.5 30.0 Q -3.5 34.0 -8 34.0 Q -12.5 34.0 -12.5 30.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<g id="product-1-chromosomes">
+<path id="product-1-rod-1" transform="translate(46 720)" d="M -4.5 -17.5 Q -4.5 -21.5 0 -21.5 Q 4.5 -21.5 4.5 -17.5 L 3 -5 Q 2 0 3 5 L 4.5 17.5 Q 4.5 21.5 0 21.5 Q -4.5 21.5 -4.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="product-1-rod-2" transform="translate(65 720)" d="M -4.5 -29.0 Q -4.5 -33.0 0 -33.0 Q 4.5 -33.0 4.5 -29.0 L 3 -5 Q 2 0 3 5 L 4.5 29.0 Q 4.5 33.0 0 33.0 Q -4.5 33.0 -4.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="product-1-rod-3" transform="translate(84 720)" d="M -4.5 -29.0 Q -4.5 -33.0 0 -33.0 Q 4.5 -33.0 4.5 -29.0 L 3 -5 Q 2 0 3 5 L 4.5 29.0 Q 4.5 33.0 0 33.0 Q -4.5 33.0 -4.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="product-2-chromosomes">
+<path id="product-2-rod-1" transform="translate(195 720)" d="M -4.5 -17.5 Q -4.5 -21.5 0 -21.5 Q 4.5 -21.5 4.5 -17.5 L 3 -5 Q 2 0 3 5 L 4.5 17.5 Q 4.5 21.5 0 21.5 Q -4.5 21.5 -4.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="product-3-chromosomes">
+<path id="product-3-rod-1" transform="translate(315 720)" d="M -4.5 -17.5 Q -4.5 -21.5 0 -21.5 Q 4.5 -21.5 4.5 -17.5 L 3 -5 Q 2 0 3 5 L 4.5 17.5 Q 4.5 21.5 0 21.5 Q -4.5 21.5 -4.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="product-3-rod-2" transform="translate(335 720)" d="M -4.5 -29.0 Q -4.5 -33.0 0 -33.0 Q 4.5 -33.0 4.5 -29.0 L 3 -5 Q 2 0 3 5 L 4.5 29.0 Q 4.5 33.0 0 33.0 Q -4.5 33.0 -4.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+<g id="product-4-chromosomes">
+<path id="product-4-rod-1" transform="translate(445 720)" d="M -4.5 -17.5 Q -4.5 -21.5 0 -21.5 Q 4.5 -21.5 4.5 -17.5 L 3 -5 Q 2 0 3 5 L 4.5 17.5 Q 4.5 21.5 0 21.5 Q -4.5 21.5 -4.5 17.5 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+<path id="product-4-rod-2" transform="translate(465 720)" d="M -4.5 -29.0 Q -4.5 -33.0 0 -33.0 Q 4.5 -33.0 4.5 -29.0 L 3 -5 Q 2 0 3 5 L 4.5 29.0 Q 4.5 33.0 0 33.0 Q -4.5 33.0 -4.5 29.0 L -3 5 Q -4 0 -3 -5 Z" fill="url(#rod-fill)" stroke="#7762a3" stroke-width="1.3"/>
+</g>
+</svg>

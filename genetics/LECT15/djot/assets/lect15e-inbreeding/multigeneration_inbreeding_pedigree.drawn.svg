@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1027" viewBox="0 0 920 1027" role="img" aria-labelledby="title desc">
+<title id="title">Multigeneration inbreeding pedigree</title><desc id="desc">Twelve labeled pale-yellow source symbols and fourteen direct connections. H and I both connect to J and K; the diagonals cross without a junction.</desc>
+<rect width="920" height="1027" fill="white"/>
+<g id="relationships" stroke="#293638" stroke-width="7" fill="none">
+<path id="edge-A-E" d="M 165.884925 139.716784 L 259.115075 230.283216"/>
+<path id="edge-B-E" d="M 406.352941 157.000000 L 339.065788 228.492600"/>
+<path id="edge-B-F" d="M 517.000000 157.000000 L 573.000000 213.000000"/>
+<path id="edge-C-F" d="M 755.300904 140.902099 L 685.323529 213.000000"/>
+<path id="edge-D-H" d="M 180.416667 382.000000 L 244.583333 448.000000"/>
+<path id="edge-E-H" d="M 300.000000 327.000000 L 300.000000 448.000000"/>
+<path id="edge-F-I" d="M 630.000000 327.000000 L 630.000000 448.000000"/>
+<path id="edge-G-I" d="M 756.483696 367.017786 L 668.516304 462.982214"/>
+<path id="edge-H-J" d="M 300.000000 562.000000 L 300.000000 688.000000"/>
+<path id="edge-H-K" d="M 357.000000 546.454545 L 573.000000 703.545455"/>
+<path id="edge-I-J" d="M 583.902043 538.525787 L 346.097957 711.474213"/>
+<path id="edge-I-K" d="M 630.000000 562.000000 L 630.000000 688.000000"/>
+<path id="edge-J-L" d="M 338.516304 787.017786 L 426.483696 882.982214"/>
+<path id="edge-K-L" d="M 577.750000 802.000000 L 503.516304 882.982214"/>
+</g><g id="symbols" fill="#f7f4bc" stroke="#293638" stroke-width="6">
+<circle id="node-A" cx="125" cy="100" r="57"/>
+<rect id="node-B" x="403" y="43" width="114" height="114"/>
+<circle id="node-C" cx="795" cy="100" r="57"/>
+<rect id="node-D" x="68" y="268" width="114" height="114"/>
+<circle id="node-E" cx="300" cy="270" r="57"/>
+<rect id="node-F" x="573" y="213" width="114" height="114"/>
+<circle id="node-G" cx="795" cy="325" r="57"/>
+<rect id="node-H" x="243" y="448" width="114" height="114"/>
+<circle id="node-I" cx="630" cy="505" r="57"/>
+<circle id="node-J" cx="300" cy="745" r="57"/>
+<rect id="node-K" x="573" y="688" width="114" height="114"/>
+<circle id="node-L" cx="465" cy="925" r="57"/>
+</g><g id="labels" font-family="Atkinson Hyperlegible Next" font-size="76" font-weight="500" text-anchor="middle" fill="#202b2e">
+<text x="125" y="126">A</text>
+<text x="460" y="126">B</text>
+<text x="795" y="126">C</text>
+<text x="125" y="351">D</text>
+<text x="300" y="296">E</text>
+<text x="630" y="296">F</text>
+<text x="795" y="351">G</text>
+<text x="300" y="531">H</text>
+<text x="630" y="531">I</text>
+<text x="300" y="771">J</text>
+<text x="630" y="771">K</text>
+<text x="465" y="951">L</text>
+</g></svg>

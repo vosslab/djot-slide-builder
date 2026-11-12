@@ -51,7 +51,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 1](assets/lect04e-segregation/image_001.png)
+![Slide image 1](assets/lect04e-segregation/pea_generation_recap.drawn.svg)
 
 === layout: one-panel
 
@@ -59,7 +59,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 2](assets/lect04e-segregation/image_002.jpg)
+![Slide image 2](assets/lect04e-segregation/mendel_monohybrid_results.drawn.svg)
 
 - Very consistent
 

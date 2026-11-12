@@ -167,7 +167,7 @@ For a biologist studying a small fish population in the lab, which Hardy-Weinber
 
 @body
 
-![Slide image 4](assets/lect14d-hardy_weinberg_conditions/image_004.jpg)
+![Slide image 4](assets/lect14d-hardy_weinberg_conditions/count_individual_alleles.drawn.svg)
 
 - p = f(A) = 1780/2000 = 0.89 = 89%
 - q = f(a) = 220/2000 = 0.11 = 11%
@@ -179,7 +179,7 @@ For a biologist studying a small fish population in the lab, which Hardy-Weinber
 
 @body
 
-![Slide image 5](assets/lect14d-hardy_weinberg_conditions/image_005.jpg)
+![Slide image 5](assets/lect14d-hardy_weinberg_conditions/genotype_to_allele_frequencies.drawn.svg)
 
 - p = f(A) = 0.795 + 0.19/2 = 0.89 = 89%
 - q = f(a) = 0.015 + 0.19/2 = 0.11 = 11%
@@ -310,7 +310,7 @@ For a biologist studying a small fish population in the lab, which Hardy-Weinber
 
 @body
 
-![Slide image 10](assets/lect14d-hardy_weinberg_conditions/image_010.png)
+![Slide image 10](assets/lect14d-hardy_weinberg_conditions/sparrow_mating_network.drawn.svg)
 
 - Remarkably, [white birds]{color=gray} of either sex mate almost exclusively with [tan birds]{color=#E8A202} of the opposite sex.
 - A pattern which results in four effective &#8216;sexes&#8217;, as any given individual can breed with only one-quarter (25%) of the population

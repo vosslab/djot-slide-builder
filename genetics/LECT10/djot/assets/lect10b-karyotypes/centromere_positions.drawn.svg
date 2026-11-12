@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="507" viewBox="0 0 1200 507" role="img" aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Centromere positions in four replicated chromosomes</title>
+  <desc id="figure-desc">Original schematic comparison, not measured to scale. Each chromosome has two continuous sister chromatids joined at two associated centromeric units. From left to right: terminal, very short p arm, unequal p and q arms, and nearly equal arms. Brackets identify the short p and long q arms of the submetacentric chromosome.</desc>
+  <rect width="1200" height="507" fill="#ffffff"/>
+  <g font-family="Atkinson Hyperlegible Next" fill="#243b4b">
+    <g id="telocentric" transform="translate(145 0)">
+      <g fill="#4c9ec7" stroke="#294d65" stroke-width="2.5" stroke-linejoin="round">
+        <path id="telocentric-left-sister" d="M -21 96 C -27 183.92 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 205.9 -3 108 C -1 101 -1 98 -2 96 C -2 82 -23 82 -21 96 Z"/>
+        <path id="telocentric-right-sister" transform="scale(-1 1)" d="M -21 96 C -27 183.92 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 205.9 -3 108 C -1 101 -1 98 -2 96 C -2 82 -23 82 -21 96 Z"/>
+      </g>
+      <path d="M -8 91 Q 0 87 8 91 L 8 101 Q 0 105 -8 101 Z" fill="#294d65"/>
+      <g fill="#387086" stroke="#243f53" stroke-width="2.3">
+        <ellipse id="telocentric-left-centromere" cx="-10.5" cy="96" rx="10.5" ry="10.5"/>
+        <ellipse id="telocentric-right-centromere" cx="10.5" cy="96" rx="10.5" ry="10.5"/>
+      </g>
+      <text x="0" y="468" text-anchor="middle" font-size="33" font-weight="600">Telocentric</text>
+    </g>
+    <g id="acrocentric" transform="translate(400 0)">
+      <g fill="#4c9ec7" stroke="#294d65" stroke-width="2.5" stroke-linejoin="round">
+        <path id="acrocentric-left-sister" d="M -43 84 C -61 81 -66 94 -60 108 C -48 110.88 -22 128.8 -21 140 C -27 215.6 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 234.5 -3 152 C -1 143 -2 135 -5 127 C -13 118.72 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+        <path id="acrocentric-right-sister" transform="scale(-1 1)" d="M -43 84 C -61 81 -66 94 -60 108 C -48 110.88 -22 128.8 -21 140 C -27 215.6 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 234.5 -3 152 C -1 143 -2 135 -5 127 C -13 118.72 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+      </g>
+      <path d="M -8 135 Q 0 131 8 135 L 8 145 Q 0 149 -8 145 Z" fill="#294d65"/>
+      <g fill="#387086" stroke="#243f53" stroke-width="2.3">
+        <ellipse id="acrocentric-left-centromere" cx="-10.5" cy="140" rx="10.5" ry="10.5"/>
+        <ellipse id="acrocentric-right-centromere" cx="10.5" cy="140" rx="10.5" ry="10.5"/>
+      </g>
+      <text x="0" y="468" text-anchor="middle" font-size="33" font-weight="600">Acrocentric</text>
+    </g>
+    <g id="submetacentric" transform="translate(760 0)">
+      <g fill="#4c9ec7" stroke="#294d65" stroke-width="2.5" stroke-linejoin="round">
+        <path id="submetacentric-left-sister" d="M -43 84 C -61 81 -66 94 -60 108 C -48 144.48 -22 184.8 -21 210 C -27 266 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 280 -3 222 C -1 213 -2 205 -5 197 C -13 162.12 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+        <path id="submetacentric-right-sister" transform="scale(-1 1)" d="M -43 84 C -61 81 -66 94 -60 108 C -48 144.48 -22 184.8 -21 210 C -27 266 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 280 -3 222 C -1 213 -2 205 -5 197 C -13 162.12 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+      </g>
+      <path d="M -8 205 Q 0 201 8 205 L 8 215 Q 0 219 -8 215 Z" fill="#294d65"/>
+      <g fill="#387086" stroke="#243f53" stroke-width="2.3">
+        <ellipse id="submetacentric-left-centromere" cx="-10.5" cy="210" rx="10.5" ry="10.5"/>
+        <ellipse id="submetacentric-right-centromere" cx="10.5" cy="210" rx="10.5" ry="10.5"/>
+      </g>
+      <text x="0" y="468" text-anchor="middle" font-size="33" font-weight="600">Submetacentric</text>
+    </g>
+    <g id="metacentric" transform="translate(1060 0)">
+      <g fill="#4c9ec7" stroke="#294d65" stroke-width="2.5" stroke-linejoin="round">
+        <path id="metacentric-left-sister" d="M -43 84 C -61 81 -66 94 -60 108 C -48 162.24 -22 214.4 -21 247 C -27 292.64 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 304.05 -3 259 C -1 250 -2 242 -5 234 C -13 185.06 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+        <path id="metacentric-right-sister" transform="scale(-1 1)" d="M -43 84 C -61 81 -66 94 -60 108 C -48 162.24 -22 214.4 -21 247 C -27 292.64 -59 353 -64 388 C -71 409 -46 418 -32 409 C -17 400 -13 304.05 -3 259 C -1 250 -2 242 -5 234 C -13 185.06 -20 112 -28 93 C -31 86 -36 83 -43 84 Z"/>
+      </g>
+      <path d="M -8 242 Q 0 238 8 242 L 8 252 Q 0 256 -8 252 Z" fill="#294d65"/>
+      <g fill="#387086" stroke="#243f53" stroke-width="2.3">
+        <ellipse id="metacentric-left-centromere" cx="-10.5" cy="247" rx="10.5" ry="10.5"/>
+        <ellipse id="metacentric-right-centromere" cx="10.5" cy="247" rx="10.5" ry="10.5"/>
+      </g>
+      <text x="0" y="468" text-anchor="middle" font-size="33" font-weight="600">Metacentric</text>
+    </g>
+    <g id="centromere-callout">
+      <text x="24" y="31" font-size="30" font-weight="600">Replicated centromere</text>
+      <path d="M 104 44 L 104 65 L 134 83" fill="none" stroke="#243b4b" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g id="submetacentric-arm-brackets">
+      <path d="M 695 84 H 663 V 197 H 695 M 695 223 H 663 V 410 H 695" fill="none" stroke="#37566b" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="589" y="131" text-anchor="middle" font-size="35" font-style="italic" font-weight="600">p</text>
+      <text x="589" y="166" text-anchor="middle" font-size="27">short arm</text>
+      <text x="589" y="307" text-anchor="middle" font-size="35" font-style="italic" font-weight="600">q</text>
+      <text x="589" y="342" text-anchor="middle" font-size="27">long arm</text>
+    </g>
+  </g>
+</svg>

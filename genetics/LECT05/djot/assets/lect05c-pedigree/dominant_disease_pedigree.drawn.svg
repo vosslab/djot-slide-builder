@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="753" height="322" viewBox="0 0 753 322" role="img" aria-labelledby="pedigree-title">
+<title id="pedigree-title">Dominant disease pedigree</title>
+<rect width="753" height="322" fill="#F1F6FB"/>
+<path id="mating-I" d="M371 28 H419" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="mating-II-left" d="M116 107 H154" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="mating-II-middle" d="M311 107 H349" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="mating-II-right" d="M636 107 H674" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="sibship-II" d="M395 28 V75 M165 75 H625 M165 75 V96 M300 75 V96 M475 75 V96 M625 75 V96" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="sibship-III-left" d="M135 107 V156 M65 156 H200 M65 156 V173 M110 156 V173 M155 156 V173 M200 156 V173" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="sibship-III-middle" d="M330 107 V156 M270 156 H550 M270 156 V173 M310 156 V173 M350 156 V173 M390 156 V173 M430 156 V173 M470 156 V173 M510 156 V173 M550 156 V173" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<path id="sibship-III-right" d="M655 107 V156 M620 156 H710 M620 156 V173 M665 156 V173 M710 156 V173" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round"/>
+<text id="generation-I" x="24" y="34" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">I</text>
+<g id="person-I-1" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="360" cy="28" r="11"/></g>
+<text id="number-I-1" x="360" y="60" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-I-2" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="419" y="17" width="22" height="22"/></g>
+<text id="number-I-2" x="430" y="60" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<text id="generation-II" x="24" y="113" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">II</text>
+<g id="person-II-1" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="94" y="96" width="22" height="22"/></g>
+<text id="number-II-1" x="105" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-II-2" fill="#DF2444" stroke="#243645" stroke-width="2"><circle cx="165" cy="107" r="11"/></g>
+<text id="number-II-2" x="165" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<g id="person-II-3" fill="#DF2444" stroke="#243645" stroke-width="2"><circle cx="300" cy="107" r="11"/></g>
+<text id="number-II-3" x="300" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">3</text>
+<g id="person-II-4" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="349" y="96" width="22" height="22"/></g>
+<text id="number-II-4" x="360" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">4</text>
+<g id="person-II-5" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="464" y="96" width="22" height="22"/></g>
+<text id="number-II-5" x="475" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">5</text>
+<g id="person-II-6" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="614" y="96" width="22" height="22"/></g>
+<text id="number-II-6" x="625" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">6</text>
+<g id="person-II-7" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="685" cy="107" r="11"/></g>
+<text id="number-II-7" x="685" y="139" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">7</text>
+<text id="generation-III" x="24" y="190" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">III</text>
+<g id="person-III-1" fill="#DF2444" stroke="#243645" stroke-width="2"><circle cx="65" cy="184" r="11"/></g>
+<text id="number-III-1" x="65" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-III-2" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="110" cy="184" r="11"/></g>
+<text id="number-III-2" x="110" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<g id="person-III-3" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="144" y="173" width="22" height="22"/></g>
+<text id="number-III-3" x="155" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">3</text>
+<g id="person-III-4" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="200" cy="184" r="11"/></g>
+<text id="number-III-4" x="200" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">4</text>
+<g id="person-III-5" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="259" y="173" width="22" height="22"/></g>
+<text id="number-III-5" x="270" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">5</text>
+<g id="person-III-6" fill="#DF2444" stroke="#243645" stroke-width="2"><circle cx="310" cy="184" r="11"/></g>
+<text id="number-III-6" x="310" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">6</text>
+<g id="person-III-7" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="350" cy="184" r="11"/></g>
+<text id="number-III-7" x="350" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">7</text>
+<g id="person-III-8" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="390" cy="184" r="11"/></g>
+<text id="number-III-8" x="390" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">8</text>
+<g id="person-III-9" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="419" y="173" width="22" height="22"/></g>
+<text id="number-III-9" x="430" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">9</text>
+<g id="person-III-10" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="459" y="173" width="22" height="22"/></g>
+<text id="number-III-10" x="470" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">10</text>
+<g id="person-III-11" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="499" y="173" width="22" height="22"/></g>
+<text id="number-III-11" x="510" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">11</text>
+<g id="person-III-12" fill="#FFF8E7" stroke="#243645" stroke-width="2"><rect x="539" y="173" width="22" height="22"/></g>
+<text id="number-III-12" x="550" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">12</text>
+<g id="person-III-13" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="609" y="173" width="22" height="22"/></g>
+<text id="number-III-13" x="620" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">13</text>
+<g id="person-III-14" fill="#FFF8E7" stroke="#243645" stroke-width="2"><circle cx="665" cy="184" r="11"/></g>
+<text id="number-III-14" x="665" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">14</text>
+<g id="person-III-15" fill="#DF2444" stroke="#243645" stroke-width="2"><rect x="699" y="173" width="22" height="22"/></g>
+<text id="number-III-15" x="710" y="216" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">15</text>
+<path id="leader-unaffected" d="M565 195 V227 H402 V242" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round"/>
+<path id="leader-affected" d="M725 195 V227 H714 V242" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round"/>
+<circle id="leader-dot-III-12" cx="565" cy="195" r="3.2" fill="#247CA0"/>
+<circle id="leader-dot-III-15" cx="725" cy="195" r="3.2" fill="#247CA0"/>
+<rect id="callout-box-unaffected" x="48" y="242" width="376" height="73" rx="5" fill="#DDEBF7" stroke="#8BB5CE" stroke-width="1"/>
+<rect id="callout-box-affected" x="449" y="242" width="290" height="73" rx="5" fill="#DDEBF7" stroke="#8BB5CE" stroke-width="1"/>
+<text id="callout-unaffected-1" x="62" y="263" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">Nonaffected persons have</text>
+<text id="callout-unaffected-2" x="62" y="285" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">genotype <tspan font-style="italic">hd hd</tspan> because</text>
+<text id="callout-unaffected-3" x="62" y="307" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start"><tspan font-style="italic">hd</tspan> is recessive</text>
+<text id="callout-affected-1" x="463" y="263" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">Affected persons have</text>
+<text id="callout-affected-2" x="463" y="285" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">genotype <tspan font-style="italic">HD hd</tspan> because</text>
+<text id="callout-affected-3" x="463" y="307" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">the <tspan font-style="italic">HD</tspan> allele is very rare</text>
+</svg>

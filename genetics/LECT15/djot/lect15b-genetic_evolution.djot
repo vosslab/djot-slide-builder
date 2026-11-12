@@ -85,7 +85,7 @@ color-theme: genetics
 
 @right
 
-![Slide image 1](assets/lect15b-genetic_evolution/image_001.png)
+![Slide image 1](assets/lect15b-genetic_evolution/population_merger_frequencies.drawn.svg)
 
 === layout: one-panel
 
@@ -190,14 +190,14 @@ Reversible Mutations and Equilibrium [A]{color=red}&#8594;[a]{color=#800080} and
 
 @body
 
-![Slide image 4](assets/lect15b-genetic_evolution/image_004.png)
+![Slide image 4](assets/lect15b-genetic_evolution/reversible_mutation_equilibrium_exercise.quote.svg)
 
 === layout: stacked-panels
 
 
 @top
 
-![Slide image 4](assets/lect15b-genetic_evolution/image_004.png)
+![Slide image 4](assets/lect15b-genetic_evolution/reversible_mutation_equilibrium_exercise.quote.svg)
 
 @bottom
 
@@ -208,7 +208,7 @@ Reversible Mutations and Equilibrium [A]{color=red}&#8594;[a]{color=#800080} and
 
 @top
 
-![Slide image 5](assets/lect15b-genetic_evolution/image_004.png)
+![Slide image 5](assets/lect15b-genetic_evolution/reversible_mutation_equilibrium_exercise.quote.svg)
 
 @bottom
 

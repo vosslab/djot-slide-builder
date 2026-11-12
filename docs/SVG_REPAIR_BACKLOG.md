@@ -1,13 +1,25 @@
 # SVG repair backlog
 
-This is the canonical inventory of LLM-drawn SVGs removed from teaching decks because the
-replacement lost teaching detail or failed visual review. Keep the drawings at their existing
-paths as repair starting points. Record the replacement, source comparison, and reason here.
+This is the canonical report of new SVG content deemed unusable and removed from teaching
+decks. The eleven rejected drawings remain at their existing paths as review evidence;
+their presence does not mean they are approved for teaching or publication.
+
+Updated November 11, 2026: the instructor's classroom rejection supersedes earlier manager
+and artwork-review acceptance, including the prenatal drawings. The fetus looks like a monster
+to the instructor: its appearance and recognizability make the drawings unusable. The instructor
+also considers them too close to the source artwork and raises a copyright concern. This records
+human judgment, not a finding of anatomical pathology or copyright infringement. The original
+fallbacks preserve lecture continuity; they are not new original book illustrations or a claim
+of publication rights. Human-figure drawing is excluded from the current work.
+Prenatal status is **DEFERRED**: convincing human anatomy is beyond the reliable drawing ability
+demonstrated here. Preserve the fallback rather than force another weak replacement.
 
 Initial scope: Genetics LECT10, reviewed November 10, 2026. Eleven drawings have been dropped,
 including the four chromosome-shape drawings restored to textbook rasters in the final queue pass.
 Slide numbers below refer to the current Djot decks on that date. Original slide numbers identify
-the instructor's ODP/PDF under `genetics/LECT10/`.
+the instructor's ODP/PDF under `genetics/LECT10/`. Later lecture edits can shift those numbers.
+Current work and priorities are recorded in
+[genetics_visual_renewal_progress.md](active_plans/reports/genetics_visual_renewal_progress.md).
 
 ## Dropped drawings
 
@@ -41,16 +53,16 @@ Current replacements, relative to `genetics/LECT10/djot/`:
 - D22: `assets/lect10_repaired_figures/nondisjunction_meiosis_ii.svg`, original D36.
 - D23: `assets/lect10_repaired_figures/nondisjunction_gametes.svg`, original D37.
 
-These ordinary SVG replacements package the original artwork and reconstructed labels.
-Their SVG extension does not identify them as the rejected LLM drawings. The blank-rendering
+These fallback SVGs package original raster artwork and reconstructed labels. They are neither
+the rejected LLM drawings nor completed pure-vector deliverables. The blank-rendering
 failure above records the removal decision; it has not been retested in this inventory pass.
 
 ### Prenatal sampling
 
 | Drawing | Former use | Reason for removal | Repair target |
 | --- | --- | --- | --- |
-| [amniocentesis.drawn.svg](../genetics/LECT10/djot/assets/lect10_repaired_figures/amniocentesis.drawn.svg) | 10D54 | The instructor rejected the replacement drawing as an inadequate substitute for the original labeled figure. A particular anatomical error was not established in that review. | Match the original anatomy, needle destination, sample processing, labels, and test-workflow relationships clearly enough for teaching. |
-| [chorionic_villus_sampling.drawn.svg](../genetics/LECT10/djot/assets/lect10_repaired_figures/chorionic_villus_sampling.drawn.svg) | 10D55 | The instructor rejected the replacement drawing as an inadequate substitute for the original labeled figure. A particular anatomical error was not established in that review. | Match the original placental sampling routes, anatomy, labels, and downstream workflow clearly enough for teaching. |
+| [amniocentesis.drawn.svg](../genetics/LECT10/djot/assets/lect10_repaired_figures/amniocentesis.drawn.svg) | 10D54 | The instructor finds the fetus monster-like and unusable. The drawing also looks too close to the source artwork, raising a copyright concern. This supersedes earlier review acceptance. | Deferred: human-figure drawing is excluded from current work. Any future independent composition must clearly explain the needle destination, sample processing, and test workflow. |
+| [chorionic_villus_sampling.drawn.svg](../genetics/LECT10/djot/assets/lect10_repaired_figures/chorionic_villus_sampling.drawn.svg) | 10D55 | The instructor finds the fetus monster-like and unusable. The drawing also looks too close to the source artwork, raising a copyright concern. This supersedes earlier review acceptance. | Deferred: human-figure drawing is excluded from current work. Any future independent composition must clearly explain placental sampling routes and downstream workflow. |
 
 Current replacements, relative to `genetics/LECT10/djot/`:
 
@@ -58,7 +70,12 @@ Current replacements, relative to `genetics/LECT10/djot/`:
 - D55: `assets/lect10d-chromo_aneuploid/chorionic_villus_sampling_original_labeled.png`, original D29.
 
 These are 3x raster captures of the complete original figures, including overlaid labels and
-credits. The separately imported textbook JPEGs omit those labels.
+credits. The separately imported textbook JPEGs omit those labels. On November 11, the current
+70-slide deck places Amniocentesis on D55 and CVS on D56, between the D54 testing table and
+D57 PUBS. The rejected SVGs remain source evidence only; no new prenatal drawing is assigned.
+The attempted PNG-to-WebP fallback conversion was fully rolled back: source preimage and index
+restored, as recorded in `_temp/undo_prenatal_raster_conversion/HANDOFF.md`. A fresh fallback
+deck build is lecture maintenance evidence only, not SVG completion.
 
 ### Chromosome shapes
 
@@ -75,14 +92,40 @@ editable titles and existing matching exercise. B32 is the Chromosome Shapes sub
 
 Current replacements, relative to `genetics/LECT10/djot/`:
 
-- B33: `assets/lect10b-karyotypes/image_022.png`, original B33.
-- B34: `assets/lect10b-karyotypes/image_023.png`, original B34.
-- B35: `assets/lect10b-karyotypes/image_024.png`, original B35.
-- B36: `assets/lect10b-karyotypes/image_025.png`, original B36.
+- B33: `assets/lect10b-karyotypes/centromere_positions.drawn.svg`, new original drawing accepted
+  November 11 through artist/manager review at 900 pixels. Original B33 `image_022.png` is retained.
+- B34: `assets/lect10b-karyotypes/metacentric_movement.drawn.svg`, new original drawing
+  accepted November 11 through artist/manager review at 900 pixels. Original B34
+  `image_023.png` is retained.
+- B35: `assets/lect10b-karyotypes/submetacentric_movement.drawn.svg`, new original drawing
+  accepted November 11 through artist/manager review at 900 pixels. Original B35
+  `image_024.png` is retained.
+- B36: `assets/lect10b-karyotypes/acrocentric_movement.drawn.svg`, new original drawing
+  accepted November 11 through artist/manager review at 900 pixels. Original B36
+  `image_025.png` is retained.
 
-All four files match the embedded original ODP images byte-for-byte. The rejected SVGs remain
-at their listed paths as repair starting points. Restoration evidence:
+The four retained source rasters match the embedded original ODP images byte-for-byte. The
+rejected SVGs remain at their listed paths as evidence. Historical raster restoration evidence:
 `_temp/lect10b_shape_restore/`.
+
+The new B33 drawing is a separate asset, not a revision of the withdrawn SVG. Its continuous
+sister contours, paired centromeric joins, contrasting arm proportions and nine exact live labels
+passed artist and manager review. One URL substitution preserves every other Djot byte;
+XML/ASCII/pure-vector checks passed. Evidence: `_temp/centromere_overview_original_svg/`.
+This source integration follows the current master plan; existing ODP/PDF outputs update during
+the normal course build.
+
+The separate new B34 drawing restores a clear sister join, paired outward spindle
+attachments and two centromere-led V-shaped daughters within one anaphase cell.
+Artist and manager accepted the direct 900-pixel preview. XML/ASCII/pure-vector checks
+and one-URL inverse-byte proof passed; evidence is `_temp/metacentric_movement_original_svg/`.
+B35 now has a separate original J-shaped movement drawing, accepted at 900 pixels with
+XML/ASCII/pure-vector and one-URL inverse-byte checks. Evidence:
+`_temp/submetacentric_movement_original_svg/`. B36 now has a separate original I-shaped
+movement drawing with visible short lower tips; the same artist/manager, structural and
+inverse-byte checks pass. Evidence: `_temp/acrocentric_movement_original_svg/`.
+All four withdrawn SVGs remain rejection evidence.
+Normal course builds refresh B34's ODP/PDF; this receipt establishes source integration.
 
 The comparison found clearer teaching relationships in the textbook rasters despite their lower
 resolution. Temporary side-by-side evidence: `_temp/lect10b_shape_comparison/compare-33.webp`
@@ -91,14 +134,20 @@ are the durable comparison baseline.
 
 ## Repair and reuse
 
+- Pure-vector delivery requires editable SVG geometry without `<image>` elements or embedded
+  bitmaps. Keep original rasters as fallback/reference and use quality-90 WebP for review previews.
+- Defer or skip work beyond reliable drawing ability with a brief reason. Human-figure drawing
+  remains excluded; the listed repair targets do not require a forced replacement.
 - Add an entry when a drawing is dropped after a teaching or rendering review. Record its exact
   path, affected deck/title, replacement, reason, and source baseline. Use current deck references
   to distinguish a completed removal from a recommendation.
 - Compare a repaired drawing with the original at presentation size. Preserve the biological
-  relationships and labels needed to answer the slide's question.
-- Build through LibreOffice and inspect the exported PDF. Confirm complete rendering, readable
-  labels, useful scale, and the original teaching sequence. Record that evidence before marking
-  an entry restored to use.
+  relationships and labels needed to answer the slide's question. Compose original artwork
+  from those concepts; the original figure's contours and arrangement are not a template.
+- Follow the current [master plan](active_plans/active/genetics_visual_renewal_plan.md): inspect
+  one intended-size preview and perform a targeted consumer check when a concrete compatibility,
+  clipping, reveal or frame concern requires it. Record exactly what was checked; normal full-deck
+  builds and classroom acceptance remain separate from source integration.
 - Retain the rejection history when a repaired asset returns to a deck; record the repaired
   revision and review date in the same entry.
 

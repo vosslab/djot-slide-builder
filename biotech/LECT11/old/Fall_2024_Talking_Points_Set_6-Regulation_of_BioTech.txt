@@ -1,0 +1,731 @@
+Set #6: Regulation of BioTech
+Talking Points
+Nov 14, 2024
+
+Talking Points Guide
+
+Slides will be
+locked immediately
+prior to class
+~5:45pm
+
+Overall Setup of Talking Points Assignment
+
+
+Talking Points Assigned
+Talking points were assigned during last week’s class.
+Each student was assigned to one or two talking points based on class size.
+Collaboration with Classmates Expectation
+Each talking point will have at least two students talking about it.
+If you share a talking point with another student: Listen to what they say and do not repeat or duplicate what they said.
+Engagement and Points
+Keep It Concise: 60 seconds per talking point is short;
+Stay on topic and be impactful.
+Earn Extra Discussion Marks:
+Contributing gets you more discussion points.
+If you have something interesting to say about someone else’s talking point, you can score some extra points.
+Asking questions of other students gets you discussion marks as well.
+Use the chat for the question asking and answering
+
+Formatting Your Talking Point Slide Before Class
+Edit and update your slide
+Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
+Add several pictures and some text.
+Movies and animated gifs are discouraged but not forbidden.
+No external audio is allowed. Movies will be muted.
+Limit Text: No complete sentences on slides; use short phrases and keywords only.
+You get one slide and one slide only. Do not create more than one slide.
+Content Preparation
+Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
+Try to be unique and creative with your slide’s look and content.
+Don’t just copy the book; use the internet for research
+Provide your own perspective.
+Minimize jargon to make it accessible to all classmates.
+Images Are Required
+No complete sentences on slides
+
+Presenting Your Talking Point Slide During Class
+Structure
+Explain at the level of the class. If you have a technical term, define it. If you do not quite understand it, no one will.
+You do not have enough time to cover the entire topic in 60 seconds
+so choose the most interesting part or provide outside perspective
+but you also need to know the entire topic if I ask questions
+Presentation Delivery
+Show ENTHUSIASM and make it exciting!
+You will unmute to present your talking point, Video is not required
+Keep Things to the Point
+Do not read directly from slides
+put the words you plan to speak in your notes, not the slide.
+Put Into Your Own Words
+It is okay if you read from notes, but put notes in your own words.
+No direct quoting of an article, wikipedia or the textbook
+Engagement Tips
+Be prepared for questions.
+Respect the time limit: If you go over, the audience stops focusing on the talk and starts watching the clock.
+
+
+Student Selection
+
+Talking Point #1: NIH regulation -- Zakira
+Talking Point #2: USDA regulation -- Mudrika and Bhargavi
+Talking Point #3: EPA regulation -- Yoana and Nick
+Talking Point #4: FDA regulation -- Perla and Ewa
+Talking Point #5: early FDA -- Vishal and Joslyn
+Talking Point #6: supplements -- Chenyu and Sreeksha
+Talking Point #7: marijuana -- Tatiana and Fasiha
+Talking Point #8: drugs/devices -- Karolina and Jeel
+Talking Point #9: trials/phases -- Hailey and Bhakti
+Talking Point #10: generic regulation -- Bhavani
+Talking Point #11: foreign generics -- Dan and Aysun
+Talking Point #12: forever chem -- Leo and Devarsh
+Talking Point #13: patents -- Dipali and Cynthia
+Talking Point #14: biotech patents -- Foram and Khushi
+Talking Point #15: file/invent -- no one assigned
+Talking Point #16: data laws -- Umang and Yamini
+Talking Point #17: right to repair -- Uzair and Maria
+Talking Point #18: copyleft -- Mounisha
+Talking Point #19: plant rights -- Keren and Diamond
+Talking Point #20: AMP v Myriad -- Hareem
+Talking Point #21: patent troll -- Sai
+Talking Point #22: NDA -- Mary and Jessica
+Primary Presenters
+
+Question Asker #1: NIH regulation -- Dipali and Cynthia
+Question Asker #2: USDA regulation -- Foram and Khushi
+Question Asker #3: EPA regulation -- Vishal and Joslyn (shifted)
+Question Asker #4: FDA regulation -- Umang and Yamini
+Question Asker #5: early FDA -- Uzair and Maria
+Question Asker #6: supplements -- Mounisha
+Question Asker #7: marijuana -- Keren and Diamond
+Question Asker #8: drugs/devices -- Hareem
+Question Asker #9: trials/phases -- Sai
+Question Asker #10: generic regulation -- Mary and Jessica
+Question Asker #11: foreign generics -- Zakira
+
+Question Asker #12: forever chem -- Mudrika and Bhargavi
+Question Asker #13: patents -- Yoana and Nick
+Question Asker #14: biotech patents -- Perla and Ewa
+Question Asker #16: data laws -- Chenyu and Sreeksha
+Question Asker #17: right to repair -- Tatiana and Fasiha
+Question Asker #18: copyleft -- Karolina and Jeel
+Question Asker #19: plant rights -- Hailey and Bhakti
+Question Asker #20: AMP v Myriad -- Bhavani
+Question Asker #21: patent troll -- Dan and Aysun
+Question Asker #22: NDA -- Leo and Devarsh
+Helper Question Askers
+
+Internet-Only Based
+Talking Points this Week
+
+#1 NIH Guidelines for Research on Transgenic Crops
+Why are the NIH biosafety guidelines titled “Guidelines for Research Involving Recombinant or Synthetic Nucleic Acid Molecules” instead of specifically referencing transgenic plants or animals? Explain how this broader title relates to the scope of covered research. 
+How are cross-contamination or accidental release prevented? What containment practices do NIH biosafety guidelines require for transgenic crop research? Describe the roles of Physical Containment, Handling and Disposal Protocols, Record-Keeping and Monitoring, and Personnel Training in ensuring biosafety.
+What is the NIH’s “2/3rd rule,” and how does it apply to experiments involving viral genomes? Explain why this rule is essential for biosafety in genetic research.
+How does the NIH address containment for research involving “gene drive” modified organisms (GDMOs)? Describe the unique containment protocols required to prevent unintended spread of GDMOs.
+Resources: See Clark textbook pages 475-476;  https://en.wikipedia.org/wiki/Regulation_of_genetic_engineering; https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.pdf 
+
+NIH Guidelines for Research on Transgenic Crops - Zakira
+NIH create guidelines that encompass all types of genetic research of transgenic organisms
+
+NIH biosafety guidelines prevent cross-contamination and accidental release of cloned plants
+
+
+NIH's "2/3rd rule" - at least two-thirds of the viral genome be derived from non-viral sources to reduce the potential for pathogenicity
+
+
+For GDMOs, the NIH requires advanced containment strategies
+such as physical barriers that prevent escape 
+rigorous monitoring protocols that control spread
+Work Cited: Frederik Noack et al., Environmental impacts of genetically modified crops.Science385,eado9340(2024).DOI:10.1126/science.ado9340
+Clark textbook pages 475-476
+https://en.wikipedia.org/wiki/Regulation_of_genetic_engineering; https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.pdf 
+
+
+#2 USDA Regulations on Transgenic Crops
+How does the USDA’s Animal and Plant Health Inspection Service (APHIS) assess the agricultural and ecological impacts of transgenic crops, especially in terms of crop invasiveness and unintended ecological interactions? Mudrika
+What responsibilities does APHIS hold under the Plant Protection Act of 2000 and the National Environmental Policy Act (NEPA) when regulating genetically modified (GM) crops? How do these responsibilities influence field trial evaluations? Mudrika 
+What are the primary goals of USDA regulations on transgenic crops to protect U.S. agriculture and natural ecosystems? Describe the process APHIS follows when inspecting GM crop field trials, and explain the potential consequences if a trial fails to meet compliance standards.
+Why does APHIS regulate each transgenic event individually, and how do different methods of gene insertion (e.g., Agrobacterium, gene guns, CRISPR) affect the regulatory process?
+How did the USDA’s 2020 SECURE rule change the agency’s regulatory approach for transgenic crops? Explain how this rule facilitates crop innovation while addressing environmental safety. What does achieving “non-regulated status” mean for a GM crop, and how can developers apply for it?
+Resources: See Clark textbook pages 475 and 476;  https://en.wikipedia.org/wiki/Regulation_of_genetic_engineering; https://www.usda.gov/media/press-releases/2020/05/14/usda-secure-rule-paves-way-agricultural-innovation ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8179154/ (SECURE rule)
+
+#2 USDA Regulations on Transgenic Crops - Mudrika
+Assessing agricultural and ecological impact: APHIS
+Environmental Risk
+Gene Flow
+Non-Target Effects 
+Biodiversity Impact 
+Petition Process 
+Field testing 
+Environmental Assessment 
+Agricultural Impact Assessment 
+Crop yield and Performance 
+Pesticide Use 
+Resistance Management 
+Public and Stakeholder Input 
+Post- Market Monitoring 
+Plant Protection Act of 2000: 
+Prohibits/restricts import and export and interstate movement of plants, plant products, certain biological control organisms, noxious weeds and plant pests. 
+APHIS: responsible for regulating import/export, movement and release of GM crops. 
+NEPA (National Environmental Policy Act: 
+Requires conducting environmental assessments and considering environmental impacts before approving anything related to GM crops. 
+For actions that significantly affects environmental quality detailed Environmental Impact statement outlining effects and alternatives and measures of mitigation required. 
+Encourages public participation 
+
+
+#2 USDA Regulations on Transgenic Crops - Bhargavi
+
+#3 EPA Impact Standards for Transgenic Crops
+What regulatory authority does the EPA hold under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) for transgenic crops? How does this authority specifically apply to plant-incorporated protectants (PIPs)?
+How does the Toxic Substances Control Act (TSCA) affect EPA’s regulation of genetically modified microorganisms? Describe the screening process for intergeneric microorganisms under TSCA and why these organisms require EPA review.
+How does the EPA assess potential environmental impacts of GM crops, such as effects on non-target organisms and gene flow? What specific data and testing must companies provide to the EPA to ensure transgenic crops do not adversely impact the ecosystem?
+What specific data must a producer of a pesticidal GM crop, like a Bt crop, submit to the EPA to demonstrate that it does not harm non-target organisms? What are the requirements for insect resistance management programs?
+What are the EPA’s main concerns regarding herbicide-resistant crops, and what steps must producers take to manage potential environmental impacts?
+What is the purpose of the EPA’s “Feed Your Mind” initiative, and how does it aim to educate the public on genetically modified organisms (GMOs)? How might this initiative affect public perception of agricultural biotechnology?
+See Clark textbook pages 475-476; https://en.wikipedia.org/wiki/Regulation_of_genetic_engineering;  https://www.epa.gov/regulation-biotechnology-under-tsca-and-fifra 
+
+#3 EPA Impact Standards for Transgenic Crops - Yoana
+-Authority regulations on FIFRA and PIPs
+-Toxic Substances Control Act  on modified organisms 
+- Screening process 
+- Appropriate assessments for transgenic crops under EPA
+
+#3 EPA Impact Standards for Transgenic Crops - Nick
+Environmental Protections
+GM Crops: Test impacts on wildlife and ecosystems.
+Pesticidal Crops: Toxicity data; pest resistance plans.
+Herbicide-Resistant Crops: Manage overuse; protect ecosystems.
+
+Public Education
+Feed Your Mind: GMO facts, clears myths, builds trust.
+
+#4 FDA Oversight and Approval Process for GMO Food
+What regulatory responsibilities does the FDA hold regarding the safety of transgenic crops intended for human and animal consumption?perla 
+What criteria must a GM food meet to fulfill the concept of “substantial equivalence” with its non-GM counterpart? Describe each stage of the assessment process: (1) baseline comparison analysis, (2) molecular and compositional characterization, (3) toxicological and nutritional evaluations, and (4) risk assessment based on identified differences.
+How does the FDA assess health risks related to allergenicity and toxicity in genetically modified crops? What specific steps are taken if an allergen is detected in a GM food?
+What authority does the FDA have over genetically modified animals used in food production or medical research? Describe how this oversight differs from plant-based GMOs.
+Under what conditions does the FDA require special labeling for GM foods? Explain how the FDA determines when the presence of a specific gene, such as an allergen, necessitates labeling.
+Resources: See Clark textbook pages 475-476;  https://en.wikipedia.org/wiki/Regulation_of_genetic_engineering; https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statement-policy-foods-derived-new-plant-varieties https://en.wikipedia.org/wiki/Substantial_equivalence 
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6918800/ 
+https://www.who.int/news-room/questions-and-answers/item/food-genetically-modified 
+
+#4 FDA Oversight and Approval Process for GMO Food- Ewa 
+Assessing health risk
+Comparing to previously known allergens 
+Animal studies 
+Clinical studies 
+Labels on products  
+Recalls       
+
+
+FDA 
+
+#5 Early Evolution of the FDA 
+Before the FDA was formally named in 1930, it was a Division in the U.S. Department of Agriculture. 
+Biologics Control Act of 1902: What was the specific goal of the Biologics Control Act of 1902? What health risks prompted its enactment, and how did it shape early federal oversight of biologics?
+Pure Food and Drug Act (1906): Who was Dr. Harvey W. Wiley, and how did his work influence the 1906 Pure Food and Drug Act (often called the “Wiley Act”)? In what ways did this Act change federal regulation of food and drugs?
+FD&C Act of 1938: How did the Elixir Sulfanilamide incident in 1937 highlight gaps in drug safety regulations and lead to public demand for reform? What were the most impactful changes brought by the 1938 Food, Drug, and Cosmetic Act, and how did these affect drug oversight?
+Kefauver-Harris Amendment (1962): What major events led to the Kefauver-Harris Amendment in 1962? Describe how this amendment changed the FDA’s drug approval process, and explain what “substantial evidence” required for drug efficacy means in the context of these reforms.
+Resources: https://en.wikipedia.org/wiki/History_of_the_Food_and_Drug_Administration  ttps://en.wikipedia.org/wiki/Food_and_Drug_Administration https://www.fda.gov/about-fda/changes-science-law-and-regulatory-authorities/part-i-1906-food-and-drugs-act-and-its-enforcement 
+
+#5 Early Evolution of the FDA - Vishal 
+Biologics Control Act of 1902:-
+Specific Goal: The Biologics Control Act of 1902 aimed to regulate the safety and efficacy of biological products, such as vaccines, serums, and antitoxins, to ensure public health.
+
+Health Risks Prompting Enactment:The enactment was largely prompted by public health crises, notably the deaths of children in the early 1900s from contaminated diphtheria antitoxin. This highlighted the dangers of unregulated biologics, leading to increased demand for federal oversight.
+
+Impact on Federal Oversight: The Act marked a significant step in establishing federal authority over biologics, leading to the creation of a more structured regulatory framework. It empowered the government to assess the safety and efficacy of biologics, thus laying the groundwork for future regulations and the eventual establishment of the FDA.
+Pure Food and Drug Act (1906)
+
+Dr. Harvey W. Wiley:Dr. Harvey W. Wiley was a prominent chemist and a chief advocate for food safety reform. He led efforts to expose the dangers of food adulteration and the lack of regulation in food and drug manufacturing.
+Influence on the 1906 Act:Wiley's research and advocacy were instrumental in shaping public awareness and legislative action, leading to the passage of the Pure Food and Drug Act. His work emphasized the need for accurate labeling and safety standards.
+
+Changes in Federal Regulation:The 1906 Act prohibited the interstate commerce of adulterated or misbranded food and drugs. It established the foundation for federal regulatory oversight, requiring manufacturers to provide truthful information on product labels and enabling the government to inspect and enforce compliance. This Act significantly shifted the responsibility for consumer safety from the states to the federal government, enhancing public protection against unsafe products. 
+
+#5 Early Evolution of the FDA- Joslyn
+The event highlights the urgent need for stronger federal oversight, particularly regarding drug safety testing, labeling, and quality control.
+Kefauver-Harris Amendment (1962)
+Transformed the FDA’s drug approval process from a primarily safety-focused model to one that also rigorously assessed drug efficacy. 
+Biologics Control Act of (1902)
+Aimed to regulate the production and distribution of biologic products, specifically vaccines and antitoxins, to ensure their safety and efficacy.
+Pure Food and Drug Act (1906)
+Established a new federal role in protecting consumers from harmful or fraudulent food and drug practices.
+American consumers had also been dealing with ineffective and misleadingly advertised medications
+
+The act was prompted by public health crises involving contaminated biological products. In 1901, children would died due to contaminated diphtheria antitoxin and smallpox vaccines
+
+
+
+Dr. Harvey W. Wiley was a chemist and advocate for food and drug safety
+
+
+
+
+Elixir Sulfanilamide, was a chemical now known to be toxic at the time, there was no legal requirement for manufacturers to test drugs for safety before marketing them.
+
+
+
+Food, Drug, and Cosmetic Act of (1938)
+
+       Elixir Sulfanilamide incident of   (1937)
+
+No complete sentences on slides
+
+#6 The Supplement Industry and the DSHEA of 1994
+Before DSHEA of 1994: How does the FDA define the difference between a dietary supplement and a pharmaceutical drug? In what ways did pre-1994 FDA regulations for dietary supplements mirror those for food additives? What specific safety and efficacy evaluations were required for dietary supplements before the 1994 DSHEA act? Can vitamin C prevent the common cold? What role did Linus Pauling play in the myth of vitamin C? – Chenyu 
+Politics around the DSHEA of 1994: How did the media create a narrative of governmental overreach and interference with personal health freedoms? How did FDA Commissioner Dr. David Kessler's statements regarding dietary supplements get misinterpreted by the media and public? How did those statements contribute to the 'keep the government away from my vitamins' campaign? How did lobbying by the dietary supplement industry make it to where supplements would be regulated more like foods than drugs? How did public opinion and industry pressure overrule the role of scientific evidence? — Chenyu
+After DSHEA of 1994: Who bears the responsibility for proving the safety and efficacy of dietary supplements: the FDA or the manufacturer? And what is required for the FDA to demonstrate that a supplement is harmful? What is the role of the FDA in dietary supplements today? Why are dietary supplements permitted to state they 'support the immune system' but prohibited from claiming they 'prevent illness,' and what criteria does the FDA use to distinguish between permissible support claims and impermissible health claims?"  
+Future of Supplement Industry: Can you identify some private regulatory bodies that oversee dietary supplements (NPA, Ul, USP, NSF International, ConsumerLab.com) and describe the types of certifications or assurances they provide to consumers? Why do we need private regulatory bodies? What recent high-profile cases have there been regarding supplement safety or false claims, e.g. Herbalife?
+Resources: https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994 https://reason.com/1994/01/01/regulation-kesslers-log-supple/ https://en.wikipedia.org/wiki/Regulation_of_food_and_dietary_supplements_by_the_U.S._Food_and_Drug_Administration#Dietary_supplements  https://en.wikipedia.org/wiki/Dietary_supplement 
+
+#6 The Supplement Industry and DSHEA - Chenyu
+
+The Supplement Industry and DSHEA - Sreeksha
+FDA's Role Post-DSHEA 1994:
+Manufacturer responsible for safety/efficacy
+FDA must prove harm to remove product
+Regulates labeling claims
+Private Regulatory Bodies:
+NPA, UL, USP, NSF International, ConsumerLab.com
+Provide certifications and quality assurance
+Recent Case Study:
+Herbalife controversy
+
+#7 Federal vs. State Regulation of Drugs
+Marijuana Legalization: How has the legalization of marijuana by various states highlighted tensions between state sovereignty and federal authority? Which state was the first to legalize marijuana, and in what year did this occur? What is the overall direction of marijuana legislation in the United States? In states that have legalized marijuana, how they differentiate between medicinal and recreational use? 
+Psilocybin and Other Substances: What is psilocybin, and how has its legal status evolved at the state level? Which states have decriminalized or legalized psilocybin and other psychedelics ? How are new state laws around psilocybin and psychedelics shifting perceptions of their use and benefits? 
+Federal Reaction and Drug Scheduling: How is the federal government reacting to state-level legalizations of federally illegal substances like marijuana and psilocybin? How does the Controlled Substances Act classify drugs, and what does this mean for state-legalized substances? What are the different schedules for drugs? What schedules are marijuana and psilocybin classified under?
+Complexity in Regulation: What does the clash between state and federal drug laws reveal about U.S. drug regulation complexity? What was the Cole Memorandum of 2013? Why was it rescinded in 2018? What is the future of federal laws around marijuana and psilocybin?
+Resources: https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction https://en.wikipedia.org/wiki/Legalization_of_non-medical_cannabis_in_the_United_States https://en.wikipedia.org/wiki/Psilocybin_decriminalization_in_the_United_States https://en.wikipedia.org/wiki/Controlled_Substances_Act https://en.wikipedia.org/wiki/Cole_Memorandum 
+
+#7 Federal vs. State Regulation of Drugs - Tatiana
+California - first state to legalize marijuana in 1996
+Marijuana Legalization 
+Psilocybin and Other Substances
+Oregon - first state to legalize psilocybin in 2020
+
+#7 Federal vs. State Regulation of Drugs—Fasiha
+
+#8 Clinical Trials and Drug Approval 
+What types of products are subject to clinical trials? What are biologics? How do biologics differ from drugs in their clinical trial processes? What are medical devices? How do medical devices differ from drugs in their clinical trial processes?
+Drug Approval: What are the criteria for a drug to pass or fail a clinical trial? What statistical methods are used to determine the efficacy of a drug? How is the risk-benefit ratio evaluated during clinical trials?
+Designations: What impact does the "orphan drug" designation have on the clinical trial process? How does the FDA's "Breakthrough Therapy" designation impact clinical trial phases?  What are the criteria for receiving a "Breakthrough Therapy" designation?
+Fast-Track: Are there expedited processes for drug approval? What qualifies a drug to be fast-tracked? How does the FDA's "Breakthrough Therapy" designation connect with the fast-track approval? How did the FDA's response to the AIDS crisis reform the approval process for life-threatening diseases? What implications does the use of accelerated approval mechanisms have for new medications?
+Resources: https://en.wikipedia.org/wiki/Clinical_trial https://en.wikipedia.org/wiki/Orphan_drug https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-priority-review/breakthrough-therapy 
+
+#8 Clinical Trials and Drug Approval - Karolina 
+WHAT ARE BIOLOGICS
+Medicines made from living cells or organisms 
+           → often injectables
+Complex molecules
+→ proteins, stem cells, antibodies, or hormones
+Treat autoimmune disorders, cancers, and skin conditions
+CLINICAL TRIAL PROCESS
+Longer development time
+Additional testing phases to monitor adverse immune reactions and consideration for other indications
+→  Primary/secondary end point for statistical significance, comparability batch testing, post-market surveillance
+Regulatory Approval: Biologics License Application (BLA) vs New Drug Application (NDA) used for traditional drugs
+
+DUPIXENT ®( dupilumab)
+Atopic Dermatitis/Eczema, Prurigo Nodularis, and Asthma
+Fast-tracking for chronic spontaneous hives 
+Double-blind DUPIXENT vs placebo trial
+
+https://www.sanofi.com/en/media-room/press-releases/2024/2024-10-24-12-00-00-2968628
+
+#8 Clinical Trials and Drug Approval - Jeel
+
+#9 Clinical Trial Phases 
+There are 5 phases of Clinical Trials: 0, I, II, III, and IV. 
+What specific objectives does each phase aim to achieve? What particular aspects are under investigation in each phase? 
+How is the initial dosage determined in Phase 0/I, and how is it adjusted in subsequent phases?
+What criteria are used to select participants for each phase? How many participants are tested in each clinical trial phase? How are results scaled from a small cohort in early phases to a larger population in later phases?
+What is the average or expected duration of each phase? What are the typical costs for each phase? What is the likelihood of succeeding in each phase?
+In what situations might a clinical trial be halted prematurely, and why?
+Resources: https://www.healthline.com/health/clinical-trial-phases https://en.wikipedia.org/wiki/Phases_of_clinical_research https://www.fda.gov/patients/drug-development-process/step-3-clinical-research https://www.cancer.org/cancer/managing-cancer/making-treatment-decisions/clinical-trials/what-you-need-to-know/phases-of-clinical-trials.html 
+
+#9 Clinical Trial Phases - Hailey 
+Phase I: 
+Is the treatment safe?
+Phase II: Does the treatment work?
+Phase III: 
+Is it better than what’s already available?
+Phase IV: What else do we need to know?
+
+Safety Concerns
+     Severe adverse effects
+
+    Lack of Efficacy
+Ineffective treatment
+
+
+Ethical Concerns
+Better treatment available
+
+Operational/Financial Issues
+Budget or recruitment
+
+Interim Analysis Findings
+Early efficacy/futility
+
+When Trials Face an Early End: The High Stakes of Clinical Research
+Bhakti
+ $49.6 million
+$56.7 million
+$66.4 million
+$172.7 million
+
+#10 Generic Drug Regulation 
+In what ways does the Hatch-Waxman Act affect the production and regulation of generic drugs? How does the Hatch-Waxman Act strike a balance between extending patent life for brand-name drugs and encouraging generic drug competition? 
+How do pricing strategies differ between generic and brand-name drug manufacturers? What is the role of market exclusivity periods in the Hatch-Waxman Act, and how do they impact the entry of generic drugs into the market? In what ways have consumers benefited from the Hatch-Waxman Act economically? 
+How have patent litigations under the Hatch-Waxman Act influenced the pharmaceutical landscape? What are some significant legal precedents set by Hatch-Waxman-related court cases that have shaped the generic drug industry?
+How has the introduction of generic drugs under the Abbreviated New Drug Application (ANDA) influenced healthcare costs? What are the requirements for an ANDA submission, and how do they ensure that generic drugs are safe and effective? 
+What are the scientific and regulatory challenges in establishing bioequivalence for complex drug products? How does the FDA address variations in bioequivalence standards for drugs with narrow therapeutic indices? How does the FDA ensure that generic drugs continue to meet safety and efficacy standards post-approval?
+Resources: https://en.wikipedia.org/wiki/Generic_drug https://en.wikipedia.org/wiki/Drug_Price_Competition_and_Patent_Term_Restoration_Act https://en.wikipedia.org/wiki/Abbreviated_New_Drug_Application 
+
+10. Generic Drug Regulation                                    - bhavani
+
+#11 International Generic Drug Concerns
+Quality Control Concerns: What factors lead to quality control problems in generic drug manufacturing, especially overseas? How do manufacturing lapses impact the safety and effectiveness of generic drugs? How do economic and political pressures affect the oversight and quality assurance of generic drug production?
+Regulatory Challenges: What obstacles do organizations like the FDA face when monitoring international pharmaceutical manufacturers? What are the specific challenges associated with conducting surprise inspections at these international facilities? How does the manipulation of data and fraudulent reporting endanger drug safety? Can you identify cases of corporate misconduct in generic drug production and their consequences? What methods can regulators use to uncover and deter test result falsification by drug companies?
+Issues of Inefficacy: How does cost reduction in production affect the trustworthiness of generic drugs? Can you provide instances where substandard generics have led to treatment failures? What is the impact of ineffective (less active ingredient than labeled) or contaminated generics on patient health and public trust in the pharmaceutical industry?
+Consumer Knowledge: What approaches can consumers take to better understand the origins and quality of their medications? How can medical professionals promote higher standards in drug manufacturing?
+I recommend the book "Bottle of Lies: The Inside Story of the Generic Drug Boom" by Katherine Eban as it goes deeper into these topics above.
+Resources: https://en.wikipedia.org/wiki/Generic_drug https://www.goodreads.com/book/show/42448266-bottle-of-lies
+
+#11 International Generic Drug Concerns - Dan
+The One of the big issues that affect overseas inspection is that sometimes an interpreter is needed
+The owners/operators of the site need to provide one, this can be used to delay an audit to attempt to cover up any evidence of noncompliance
+Programs such as google translate aren’t made for a drug manufacturing environment
+Bad practices won’t remain hidden forever
+Post market surveillance / adverse drug events
+Future audits/strict documentation requirements
+Ways the FDA deters falsification/bad manufacturing practices
+Debarment
+Import refusal
+FDA office of criminal investigation
+
+
+Talk about the japanese protocol from previous job. Benzyl-peroxide was found to degrade into a carcinogen in formulation. This was found out viva an auditor realizing that a product’s validation didn’t cover benzene. Validation was re-done with benzene in mind and Benzyl-peroxide was found to break down into benzene at unsafe levels.
+
+#11 International Generic Drug Concerns
+Heparin Recall: Another Crisis for China and the FDA 
+FDA provides update on its ongoing investigation into ARB drug products; reports on finding of a new nitrosamine impurity in certain lots of losartan and product recall | FDA 
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4137817/#sec9 
+
+#12 Forever Chemicals: PFAS
+What are PFAS, and why are they termed "forever chemicals"?
+What are common applications of PFAS? What products are they commonly used in? For the following items, describe how PFAS exposure can impact human health: drinking water, dental floss, food packaging, nonstick cookware, stain-resistant carpets, and waterproof clothing. How do consumer choices affect the presence of PFAS in products?
+What health risks are tied to PFAS exposure? How much PFAS does the average American have in their bodies? How is the EPA addressing PFAS concerns? Which PFAS are banned and for what reason? 
+How are environmental PFAS levels monitored and managed? What challenges exist in decontaminating PFAS-polluted sites? 
+Are there any recent scientific breakthroughs help in degrading or neutralizing PFAS?
+The film "Dark Waters" (2019) provides a dramatic portrayal of issues related to PFAS.
+Resources: https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances https://en.wikipedia.org/wiki/Dark_Waters_(2019_film) https://silentspring.org/news/dental-flossing-and-other-behaviors-linked-higher-levels-pfas-body 
+
+#12 Forever Chemicals: PFAS - Leo
+Per- and polyfluoroalkyl substances 
+Used for their water and oil resistance
+Strong carbon-fluorine bonds keep them from breaking down
+Linked with thyroid diseases, immune suppression and cancer 
+
+Environmental agencies monitor PFAS levels in soil, water and air and use ion exchange resins and carbon filtration to manage them 
+
+
+#12 Forever Chemicals: PFAS - Devarsh
+
+Intellectual Property
+
+#13 Patents: Discovery vs. Invention and other IP
+What is a patent? How would you distinguish between a patent and other forms of intellectual property (e.g., copyright, trademark, trade secrets)? How long does a patent last today, and what rights does it confer to the patent holder?  
+What advantages do patents offer in science and industry? Discuss how patents encourage innovation by granting exclusivity and fostering investments.
+What are the criteria to be patentable? Explain the concepts of utility, novelty, and “non-obvious” with examples.
+What is the difference between discovery and invention? Provide general examples. Provide examples from biotechnology to illustrate each.
+What is copyright? How long does copyright last, and how does copyright compare with patents in terms of duration, scope, and nature of protection? When did the Mickey Mouse “Boxcar Willie” patent expire?
+Resources: https://en.wikipedia.org/wiki/Patentable_subject_matter_in_the_United_States https://en.wikipedia.org/wiki/Patent_Act_of_1952 https://en.wikipedia.org/wiki/First_to_file_and_first_to_invent 
+
+
+#13 Patents: Discovery vs. Invention and other IP : dipali
+Patent: intellectual property  that grants  in inventor exclusive right to their invention.
+Encourages Innovation: Incentivizes research and development.
+
+Monetary Reward: Allows profit through sales or licensing.   
+           
+Competitive Advantage: Blocks competitors from copying.
+
+Attracts Investment: Increases appeal to investors.
+
+Knowledge Sharing: Adds to public knowledge once disclosed.
+
+Job Creation: Drives industry growth and employment.
+
+Startup Protection: Shields small companies from larger companies
+Novelty:The invention must be new and not previously disclosed.
+Utility:The invention must have a practical use
+Subject Matter: Eligibility The invention must be eligible for patent protection.
+
+#13 Patents: Discovery vs. Invention and other IP       Cynthia
+                                                                             
+                                 Discovery
+- recognizing or  finding something that already exists and was previously unknown/ recognized -leads to new technologies, products and services
+             Invention
+-creating something new 
+-using one’s  own ideas and development. -Inventions lead to breakthroughs 
+   Intellectual Property (lP)
+- valuable intangible asset   -creations of the mind  inventions, artistic works, symbols , names and 
+images    
+-lPs allow people to benefit 
+from their creations
+No complete sentences on slides
+
+#14 Patents in BioTechnology
+What are some examples of patents in biotechnology? Discuss products like genetically modified crops, gene sequences, synthetic biology tools, and diagnostic kits.
+What can be patented in biotechnology? Consider categories such as instrumentation, bioinformatics algorithms, engineered organisms, microbial strains, and organic molecules.
+How does patenting in biotech address natural vs. synthetic entities? Discuss implications of patenting genetically modified organisms (GMOs) or synthetic biology products. What ethical considerations arise from patenting life forms?
+How can a patent influence the direction and funding of future research projects within the biotechnology sector? How do patents in bioinformatics or molecular biology impact data sharing, research directions, and collaboration within the scientific community.
+
+#14 Patents in BioTechnology - Foram
+Patented Biotechnology 
+
+
+
+Examples of patents
+
+Instruments 
+PCR Machines
+CRISPR-Cas9 Gene editing 
+Microbial strains 
+Lactic acid bacteria 
+Organic Molecules
+Recombinant Proteins
+Engineered Organisms
+Bt Crops 
+
+Bioinformatics algorithms
+Machine Learning Algorithms for Drug Discovery 
+Nutritionally enhanced crops - Golden rice
+Therapeutic protein genes - Insulin
+PCR-based diagnostic kits - COVID-19 tests
+
+#14 Patents in BioTechnology - Khushi
+ETHICAL CONSIDERATION
+Shaping research directions
+Public sector research
+Encouragement of investment
+“PATENT RHICKETS”
+NATURAL VS. SYNTHETIC ENTITIES!!
+
+PATENTING GMOs
+Market monopolies
+Economic implications
+Environmental implications
+Investment and innovation
+Regulatory challenges
+DIRECTION & FUNDING
+Ownership of life
+Biodiversity and ecosystem impacts
+Social impacts
+Animal welfare
+Religious and cultural beliefs
+V/S
+
+#16 Patent Law and Data
+Does patenting an apparatus, like a new mass spectrometer, grant ownership over the data it produces? If a researcher patents specific equipment, does she own all data generated by that equipment?
+How did Diamond v. Diehr (1981) influence the limits of patentable subject matter, particularly regarding physical processes that use software or generate data? What distinctions exist between physical inventions and the data they produce?
+How does the Bayh–Dole Act facilitate the commercialization of federally funded research? What responsibilities do research institutions have under this act, and how do they balance public interest with commercial incentives?
+What ethical issues arise from patenting technologies critical to public health, such as a vaccine delivery system? Can patents on essential health technologies impact data accessibility for researchers and public health agencies?
+Resources: https://en.wikipedia.org/wiki/Diamond_v._Diehr https://en.wikipedia.org/wiki/Bayh%E2%80%93Dole_Act 
+
+Patent Law and Data - Umang
+
+16 Patent Law and Data - Yamini
+Ethical Issues in Patenting Health Technologies
+Affordability: Patents can lead to high costs and limited access.
+Monopolies: Create barriers to competition.
+Data Access: Restrict data availability, hindering research and public health responses
+.
+Bayh-Dole Act (1980) Overview
+Patent Retention: Universities can retain patents on federally funded inventions.
+Institutional Responsibilities:
+Commercialize inventions.
+Seek patent protection.
+Promote public benefit.
+Balance: Navigate commercialization while ensuring accessibility for societal needs.
+
+
+#17 Right to Repair
+What is the “Right to Repair” movement, and what are its primary objectives? Explain the environmental, economic, and user-rights aspects.
+How has iFixit contributed to the movement? Discuss iFixit’s advocacy for public awareness and access to repair guides, as well as its role in legal reform efforts.
+What are examples of opposition from major companies? What roles did Apple iDevices and John Deere tractors play in the right to repair? What are the arguments against “Right to Repair” laws, and how do proponents address these concerns?
+In what ways might the right to repair conflict with safety and quality control measures in biotechnological equipment? Could "Right to Repair" laws influence the design and sustainability of biotechnological devices?
+What does the recent California Right to Repair bill mean for the rest of the USA? Why did Apple support the California “Right to Repair” bill after opposing similar legislation in the past?
+Resources: https://www.ifixit.com/News/84491/california-right-to-repair-signed-into-law 
+
+#17 Right to Repair - Uzair
+What is It?
+Arguments For -
+Environmental
+Economic
+User Rights
+iFixit
+Complaints Against -
+IP
+Safety
+Security
+The Opposition -
+Apple, Microsoft, John Deere
+What is the “Right to Repair” movement, and what are its primary objectives? 
+
+Explain the environmental, economic, and user-rights aspects.
+
+What are the arguments against “Right to Repair” laws, and how do proponents address these concerns?
+
+What are examples of opposition from major companies? 
+
+How has iFixit contributed to the movement? 
+
+Discuss iFixit’s advocacy for public awareness and access to repair guides, as well as its role in legal reform efforts.
+
+#17 Right to Repair - Maria
+Right to Repair
+→ Safety and quality control?
+→ Arguments against “Right to Repair” laws?
+→ farmers couldn’t repair their own equipment due to software locks
+→ could clash with safety and quality standards
+
+#18 Copyleft and Public Domain
+What is the public domain, What will be released to the public domain this coming January 1st? 
+How does copyleft differ from traditional copyright? How do licenses like GNU Public License (GPL) and Creative Commons (CC) work? Discuss the goals of copyleft? Explore the different types of Creative Commons licenses, including CC BY, CC BY-SA, CC BY-NC, and CC BY-NC-SA.
+How do copyleft and public domain licensing promote innovation? Examine how copyleft and public domain licensing foster collaboration and accelerate advancements, particularly in biotechnology, bioinformatics, and related educational materials. How does freely accessible educational materials in advancing scientific knowledge and supporting equitable access to information?
+How are textbook publishers generating profits from free online textbooks licensed under CC BY-SA by selling them as physical copies? To what extent might these practices be seen as “tricking” students into paying significant markups for material that is freely available online?
+Which license would you use if publishing on YouTube? Discuss scenarios where different licenses, such as CC BY or CC BY-NC-SA, might be appropriate.
+Resources: https://web.law.duke.edu/cspd/publicdomainday/ https://creativecommons.org/share-your-work/cclicenses/ 
+
+#18 Copyleft and Public Domain - Mounisha
+
+#19 Plant Rights
+What are Farmers’ Rights, especially in developing countries? How do these rights support traditional agricultural practices and biodiversity?
+What is the Plant Variety Protection Act (PVPA), and what rights does it grant to plant breeders? Compare PVPA protection duration with patent protection.
+How do Plant Breeders’ Rights under PVPA differ from Farmers’ Rights? Explore conflicts, such as seed replanting limitations, and whether they can be reconciled.
+What is the terminator gene technology, and what implications does it have for sustainable agriculture? Discuss its potential to prevent seed-saving and impacts on biodiversity and farmers’ livelihoods.
+
+#19 Plant Rights - Keren
+Farmer’s Rights: 
+give farmers control of their harvests
+Genetic diversity, cultural continuity, fair benefit sharing
+Plant Variety Protection Act (PVPA): 
+Intellectual property
+PVPA vs. Patent Protection: 
+PPVA = 20-25 years 
+Patent protection : 20 years
+
+
+#19 Plant Rights - Diamond
+Plant Breeders rights: Rights given to plant breeders that have created a new variety of plant
+
+Farmers Rights: Rights based on contributions of farmers. Centered around conserving and development of plant diversity 
+Terminator Gene technology GURT
+Plant Breeders rights vs Farmer Rights
+Plant Breeders Rights vs Farmer rights under PVPA
+Plant breeders
+Intellectual property rights 
+Control over propagation and sale
+
+Farmers 
+Limited rights to reproduce seeds 
+Permission from seed owners 
+Sterile seeds/suicide seeds
+
+Plants that self-pollinate
+
+#20 AMP v. Myriad Genetics
+Discuss the case “Association for Molecular Pathology v. Myriad Genetics”. What was the impact of the ruling on Biotechnology? What ways are currently used to patent genes?
+How has the AMP v. Myriad Genetics ruling influenced the approach to patenting biotechnological innovations related to human genetics?
+What are the long-term effects of this ruling on patient access to genetic testing and personalized medicine? How do current patent laws address the complexity of genetic information and its uses in biotechnology?
+Resources: https://en.wikipedia.org/wiki/Association_for_Molecular_Pathology_v._Myriad_Genetics,_Inc. 
+
+#20 AMP v. Myriad Genetics - Hareem
+AMP: AMP is the Association of molecular pathology involved in molecular diagnostics.
+MYRIAD: This company is particularly known for its work on testing for genetic mutations, such as BRCA1 and BRCA2 genes which are linked to an increased risk of breast and ovarian cancers.
+The Association for Molecular Pathology (AMP) v. Myriad Genetics case was a landmark Supreme Court ruling that challenged the patenting of human genes. The case was filed in 2009 by a coalition of researchers, genetic counselors, and patient groups. The ruling had many consequences, including: 
+The U.S. Supreme Court ruled 9-0 that Myriad's patents on the isolated BRCA1 and BRCA2 genes were invalid.
+The Court determined that isolated DNA, as it exists in nature, is not an invention, and therefore cannot be patented.
+After Myriad, the biotechnology industry had to adapt to new guidelines for patenting.
+
+After Myriad, the biotechnology industry had to adapt to new guidelines for patenting includes:
+Synthetic DNA (cDNA)
+Genomic Tools and Methods
+Gene Variants and Mutations
+Biotechnological Innovations Beyond Genes
+In the aftermath of the decision instead of patenting naturally occurring genetic material, companies have focused more on innovating diagnostic methods  which are subject to patent protection.
+
+n the long term, this decision is likely to continue shaping how genetic information is used in research, medicine, and the development of new treatments, with a focus on balancing intellectual property protection with public access and scientific progress.
+
+
+#21 Patent Trolls
+What are patent trolls, and how do they differ from traditional patent holders? Discuss how the business models of patent trolls impact innovation, particularly in tech and biotechnology, and consider why biotech may be especially vulnerable.
+What are some notable cases involving patent trolls or overly broad patents in technology? Examples include: BlackBerry v. NTP, Inc. and Eolas Technologies Inc. v. Microsoft. How did these cases highlight challenges in patent enforcement and reform?
+What are some examples of “silly” or trivial patents that illustrate the sometimes excessive scope of patent claims? Consider how these cases underscore weaknesses in the patent approval process. Examples include: (1) Apple v. Samsung over the “Slide to Unlock” patent, (2) Amazon v. Barnes & Noble over the 1-click buy patent, and (3) Oracle v. Google over the Java API.
+What steps can be taken within the biotechnology sector to protect against patent trolling and avoid stifling innovation? Discuss both legal strategies and industry-based solutions, such as cross-licensing agreements or shared patent pools.
+How do patent trolls increase costs and delay the development of new biotechnological products or methods? Consider the downstream effects on smaller biotech companies and how these effects could impact competition, innovation, and accessibility in the biotech industry.
+
+#21 Patent Trolls-Sai
+What are Patent Trolls?
+Patent trolls buy patents to litigate for profit, using them as legal tools instead of creating products.
+Impact on Innovation
+Patent trolls restrict innovation, especially in biotech, with legal and financial barriers..
+Examples of Trivial Patents
+Overly Broad Patents,Apple's Slide to Unlock’,Amazon’s‘1-clickbuy’,need stricter approval.
+Solutions for Biotechnology
+Biotech can counter trolls with cross-licensing and patent pools to boost innovation and cut legal barriers.
+Notable Cases in Technology
+Patent Troll Cases,BlackBerry v. NTP, Eolas v. Microsoft, exploit gaps, stress reform need.
+Cost & Delays Impacting Small Biotech
+Patent Troll Impact,Raise costs,delay development,hinder competition and innovation for small biotech firms.
+
+#22 NDA pitfalls
+What is a confidentiality agreement or nondisclosure agreement (NDA)? When would you need one? How does one define “Confidential Information”? What are some things to watch out for in an NDA? What is a non-compete clause? What is a IP assignment clause? What types of durations and obligations are in an NDA? What is a perpetual clause or obligation? What is an attorney's fee provision? How would you change them?
+How might NDAs impact academic and industry partnerships in biotechnology research and development?
+How do NDAs and confidentiality requirements affect the open communication of scientific findings and peer review in biotechnology?
+Which states have passed laws making NDA’s or non-compete clause mostly illegal?
+
+#22 NDA pitfalls - Mary
+Non-disclosure agreement (NDA)
+Non-compete clause
+IP assignment clause
+Perpetual clause / obligation
+- Legally binding contract for keeping specific information private.
+- Needed for business discussions, employment agreements, partnerships, etc.
+- Prevents employees from working for competitors when their employment ends.
+- Transfers rights to intellectual property (IP) created during engagement.
+
+- Ensures work ownership to the employer.
+- Indefinite confidentiality obligation that doesn’t expire.
+- Commonly used for highly sensitive trade secrets.
+ 
+
+
+The End
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+Best Slide Award
+Most Informative
+Award
+Best Visuals
+Award
+Data Presentation Mastery
+Clear Message Award
+Slide Simplicity Award
+Best Layout Design
+Most Engaging Slide
+Most Concise
+Award
+Best Use of Graphics Award

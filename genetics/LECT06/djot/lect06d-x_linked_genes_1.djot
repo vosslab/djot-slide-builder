@@ -76,7 +76,7 @@
 
 @body
 
-![Slide image 4](assets/lect06d-x_linked_genes_1/image_004.png)
+![Slide image 4](assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg)
 
 === layout: one-panel
 # Wild Type
@@ -431,7 +431,7 @@ Expected female : male ratio = 1 : 1.
 
 @right
 
-![Slide image 25](assets/lect06d-x_linked_genes_1/image_025.png)
+![Slide image 25](assets/lect06d-x_linked_genes_1/sex_ratio_punnett.drawn.svg)
 
 === layout: one-panel
 # The Punnett Square
@@ -450,7 +450,7 @@ Expected female : male ratio = 1 : 1.
 
 @right
 
-![Slide image 27](assets/lect06d-x_linked_genes_1/image_027.png)
+![Slide image 27](assets/lect06d-x_linked_genes_1/colorblind_affected_father.drawn.svg)
 
 === layout: question-ask
 # What are the parental phenotypes and genotypes for a color-blind female?
@@ -460,7 +460,7 @@ Expected female : male ratio = 1 : 1.
 
 @left
 
-![Slide image 28](assets/lect06d-x_linked_genes_1/image_028.png)
+![Slide image 28](assets/lect06d-x_linked_genes_1/colorblind_carrier_mother.drawn.svg)
 
 @right
 
@@ -479,7 +479,7 @@ Expected female : male ratio = 1 : 1.
 
 @right
 
-![Slide image 29](assets/lect06d-x_linked_genes_1/image_029.png)
+![Slide image 29](assets/lect06d-x_linked_genes_1/colorblind_carrier_affected_cross.drawn.svg)
 
 === layout: section
 # Sample Problems

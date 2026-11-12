@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="528" viewBox="0 0 1104 528">
+  <rect id="additional-background" width="1104" height="528" fill="#F1F6FB"/>
+  <g id="additional-row-1">
+    <circle cx="54" cy="66" r="32" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <path d="M 54 34 A 32 32 0 0 0 54 98 Z" fill="#DF2444"/>
+    <circle cx="54" cy="66" r="32" fill="none" stroke="#243645" stroke-width="4"/>
+    <line x1="54" y1="34" x2="54" y2="98" stroke="#243645" stroke-width="3"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="56">Female heterozygous for</tspan>
+      <tspan x="120" y="114">recessive allele</tspan>
+    </text>
+  </g>
+  <g id="additional-row-2">
+    <rect x="22" y="166" width="64" height="64" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <rect x="22" y="166" width="32" height="64" fill="#DF2444"/>
+    <rect x="22" y="166" width="64" height="64" fill="none" stroke="#243645" stroke-width="4"/>
+    <line x1="54" y1="166" x2="54" y2="230" stroke="#243645" stroke-width="3"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="188">Male heterozygous for</tspan>
+      <tspan x="120" y="246">recessive allele</tspan>
+    </text>
+  </g>
+  <g id="additional-row-3">
+    <polygon points="54,307 92,350 16,350" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="350">Spontaneous abortion</tspan>
+    </text>
+  </g>
+  <g id="additional-row-4">
+    <circle cx="54" cy="462" r="32" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
+    <line x1="14" y1="502" x2="94" y2="422" stroke="#243645" stroke-width="5" stroke-linecap="round"/>
+    <text fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="400">
+      <tspan x="120" y="482">Deceased</tspan>
+    </text>
+  </g>
+</svg>

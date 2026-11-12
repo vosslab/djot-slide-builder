@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="503" viewBox="0 0 760 503" role="img" aria-labelledby="title desc">
+  <title id="title">Sheep testcross: two possible genotypes</title>
+  <desc id="desc">A black sheep of unknown genotype, BB or Bb, is crossed with a white bb sheep. The BB alternative gives four Bb cells and 100% black offspring. The Bb alternative gives Bb, bb, Bb, bb and 50% black, 50% white offspring. Five sheep icons illustrate the parents and the possible offspring phenotypes.</desc>
+  <rect width="760" height="503" fill="#FFFFFF"/>
+  <g id="labels-and-diagram" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+    <g id="parent-labels" font-size="22">
+      <text x="190" y="25">Unknown dominant phenotype</text>
+      <text x="190" y="51" font-weight="700">(BB or Bb)</text>
+      <text x="570" y="25">Known homozygous recessive</text>
+      <text x="570" y="51" font-weight="700">(bb)</text>
+    </g>
+    <g id="cross-symbol" stroke="#213547" stroke-width="5" stroke-linecap="round"><path d="M369 114 L391 136 M391 114 L369 136"/></g>
+    <g id="branch-routes" fill="none" stroke="#43848D" stroke-width="5" stroke-linejoin="round">
+      <path d="M380 163 V188 H190 V206 M380 188 H570 V206"/>
+      <path d="M181 200 L190 209 L199 200 M561 200 L570 209 L579 200"/>
+    </g>
+    <g id="branch-labels" font-size="23">
+      <text x="190" y="237">If unknown is</text>
+      <text x="190" y="264" font-weight="700">homozygous (BB)</text>
+      <text x="570" y="237">If unknown is</text>
+      <text x="570" y="264" font-weight="700">heterozygous (Bb)</text>
+    </g>
+<g id="homozygous-grid" transform="translate(68 306)">
+<rect x="0" y="0" width="154" height="116" fill="#FAFCFC" stroke="#43848D" stroke-width="2"/>
+<path d="M77 0 V116 M0 58 H154" fill="none" stroke="#43848D" stroke-width="2"/>
+<g id="homozygous-grid-column-gametes" font-size="27" font-weight="700" fill="#236975">
+<text x="38.5" y="-12">B</text>
+<text x="115.5" y="-12">B</text>
+</g><g id="homozygous-grid-row-gametes" font-size="27" font-weight="700" fill="#236975">
+<text x="-20" y="39">b</text><text x="-20" y="97">b</text></g>
+<g id="homozygous-grid-genotype-cells" font-size="29">
+<text x="38.5" y="40">Bb</text>
+<text x="115.5" y="40">Bb</text>
+<text x="38.5" y="98">Bb</text>
+<text x="115.5" y="98">Bb</text></g></g><g id="heterozygous-grid" transform="translate(438 306)">
+<rect x="0" y="0" width="154" height="116" fill="#FAFCFC" stroke="#43848D" stroke-width="2"/>
+<path d="M77 0 V116 M0 58 H154" fill="none" stroke="#43848D" stroke-width="2"/>
+<g id="heterozygous-grid-column-gametes" font-size="27" font-weight="700" fill="#236975">
+<text x="38.5" y="-12">B</text>
+<text x="115.5" y="-12">b</text>
+</g><g id="heterozygous-grid-row-gametes" font-size="27" font-weight="700" fill="#236975">
+<text x="-20" y="39">b</text><text x="-20" y="97">b</text></g>
+<g id="heterozygous-grid-genotype-cells" font-size="29">
+<text x="38.5" y="40">Bb</text>
+<text x="115.5" y="40">bb</text>
+<text x="38.5" y="98">Bb</text>
+<text x="115.5" y="98">bb</text></g></g><g id="phenotypic-ratios" font-size="23">
+      <text x="190" y="457" font-weight="700">Phenotypic Ratio:</text>
+      <text x="190" y="486">100% Black</text>
+      <text x="570" y="457" font-weight="700">Phenotypic Ratio:</text>
+      <text x="570" y="486">50% Black ; 50% White</text>
+    </g>
+  </g>
+<g id="parent-black" data-phenotype="black" transform="translate(100 61) scale(0.88)" stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+      <g id="parent-black-far-legs" fill="#D8BA95" stroke-width="3.2">
+        <path d="M59 76 L75 78 L72 113 L60 113 Z"/>
+        <path d="M123 75 L137 77 L142 111 L129 112 Z"/>
+        <path d="M60 106 L73 107 L74 117 Q65 120 58 116 Z M128 105 L141 104 L145 115 Q137 120 129 116 Z" fill="#53616B"/>
+      </g>
+      <path id="parent-black-tail" d="M30 49 Q12 41 10 54 Q12 68 29 66" fill="#303B45" stroke-width="3.5"/>
+      <g id="parent-black-near-legs" fill="#F0D4AF" stroke-width="3.5">
+        <path d="M42 79 L58 83 L55 118 L42 118 Z"/>
+        <path d="M106 83 L123 80 L122 118 L108 118 Z"/>
+        <path d="M42 111 L56 111 L57 121 Q48 125 40 121 Z M108 111 L123 111 L125 121 Q116 125 107 121 Z" fill="#34434F"/>
+        <path d="M49 116 V122 M116 116 V122" stroke="#B6BEC2" stroke-width="1.5"/>
+      </g>
+      <path id="parent-black-fleece" d="M29 38 Q24 23 40 21 Q42 8 57 13 Q66 2 79 10 Q93 0 105 10 Q121 3 130 17 Q148 15 151 31 Q166 36 158 51 Q168 64 156 75 Q159 90 143 94 Q138 107 123 101 Q110 111 98 103 Q83 112 71 103 Q57 110 48 98 Q32 102 28 88 Q12 83 20 69 Q10 55 25 48 Q19 41 29 38 Z" fill="#303B45" stroke-width="4"/>
+      <path id="parent-black-fleece-volume" d="M29 77 Q39 87 49 82 Q60 96 72 89 Q84 100 98 92 Q112 100 124 90 Q140 96 150 80 Q154 90 143 94 Q138 105 123 99 Q110 109 98 101 Q83 109 72 100 Q58 108 49 96 Q33 100 29 86 Z" fill="#25313A" stroke="none"/>
+      <path id="parent-black-wool-highlight" d="M40 32 Q46 21 58 27 Q66 16 78 22 M92 19 Q103 15 111 24" fill="none" stroke="#53616B" stroke-width="4"/>
+      <g id="parent-black-ears" fill="#F0D4AF" stroke-width="3.2">
+        <path d="M148 36 Q134 23 119 27 Q122 44 145 47 Z"/>
+        <path d="M174 34 Q188 20 203 26 Q198 43 178 45 Z"/>
+        <path d="M132 33 L144 39 M181 37 L192 30" fill="none" stroke="#C49980" stroke-width="2.4"/>
+      </g>
+      <path id="parent-black-face" d="M149 28 Q164 20 176 31 Q187 43 183 61 L180 84 Q176 98 166 98 Q153 97 149 84 L142 56 Q138 39 149 28 Z" fill="#F0D4AF" stroke-width="3.5"/>
+      <path id="parent-black-cheek" d="M177 42 Q183 58 176 78 Q173 92 165 95 Q177 96 180 83 L183 60 Q186 48 177 42 Z" fill="#D8BA95" stroke="none"/>
+      <path id="parent-black-forelock" d="M144 36 Q138 27 146 21 Q153 14 161 20 Q169 14 175 22 Q185 23 180 34 Q171 39 165 32 Q155 40 150 33 Z" fill="#303B45" stroke-width="3"/>
+      <g id="parent-black-expression" fill="#263746" stroke="none">
+        <ellipse cx="153" cy="51" rx="3.6" ry="5"/>
+        <ellipse cx="174" cy="50" rx="3.5" ry="5"/>
+        <circle cx="152" cy="49.5" r="1.1" fill="#FFFFFF"/>
+        <circle cx="173" cy="48.5" r="1.1" fill="#FFFFFF"/>
+        <path d="M161 77 Q166 73 171 77 Q167 84 161 77 Z"/>
+        <path d="M166 81 V86 M166 86 Q160 91 156 86 M166 86 Q171 90 175 85" fill="none" stroke="#775D4D" stroke-width="2"/>
+      </g>
+    </g><g id="parent-white" data-phenotype="white" transform="translate(480 61) scale(0.88) translate(204 0) scale(-1 1)" stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+      <g id="parent-white-far-legs" fill="#D8BA95" stroke-width="3.2">
+        <path d="M59 76 L75 78 L72 113 L60 113 Z"/>
+        <path d="M123 75 L137 77 L142 111 L129 112 Z"/>
+        <path d="M60 106 L73 107 L74 117 Q65 120 58 116 Z M128 105 L141 104 L145 115 Q137 120 129 116 Z" fill="#53616B"/>
+      </g>
+      <path id="parent-white-tail" d="M30 49 Q12 41 10 54 Q12 68 29 66" fill="#FFFBF1" stroke-width="3.5"/>
+      <g id="parent-white-near-legs" fill="#F0D4AF" stroke-width="3.5">
+        <path d="M42 79 L58 83 L55 118 L42 118 Z"/>
+        <path d="M106 83 L123 80 L122 118 L108 118 Z"/>
+        <path d="M42 111 L56 111 L57 121 Q48 125 40 121 Z M108 111 L123 111 L125 121 Q116 125 107 121 Z" fill="#34434F"/>
+        <path d="M49 116 V122 M116 116 V122" stroke="#B6BEC2" stroke-width="1.5"/>
+      </g>
+      <path id="parent-white-fleece" d="M29 38 Q24 23 40 21 Q42 8 57 13 Q66 2 79 10 Q93 0 105 10 Q121 3 130 17 Q148 15 151 31 Q166 36 158 51 Q168 64 156 75 Q159 90 143 94 Q138 107 123 101 Q110 111 98 103 Q83 112 71 103 Q57 110 48 98 Q32 102 28 88 Q12 83 20 69 Q10 55 25 48 Q19 41 29 38 Z" fill="#FFFBF1" stroke-width="4"/>
+      <path id="parent-white-fleece-volume" d="M29 77 Q39 87 49 82 Q60 96 72 89 Q84 100 98 92 Q112 100 124 90 Q140 96 150 80 Q154 90 143 94 Q138 105 123 99 Q110 109 98 101 Q83 109 72 100 Q58 108 49 96 Q33 100 29 86 Z" fill="#E6DFD0" stroke="none"/>
+      <path id="parent-white-wool-highlight" d="M40 32 Q46 21 58 27 Q66 16 78 22 M92 19 Q103 15 111 24" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <g id="parent-white-ears" fill="#F0D4AF" stroke-width="3.2">
+        <path d="M148 36 Q134 23 119 27 Q122 44 145 47 Z"/>
+        <path d="M174 34 Q188 20 203 26 Q198 43 178 45 Z"/>
+        <path d="M132 33 L144 39 M181 37 L192 30" fill="none" stroke="#C49980" stroke-width="2.4"/>
+      </g>
+      <path id="parent-white-face" d="M149 28 Q164 20 176 31 Q187 43 183 61 L180 84 Q176 98 166 98 Q153 97 149 84 L142 56 Q138 39 149 28 Z" fill="#F0D4AF" stroke-width="3.5"/>
+      <path id="parent-white-cheek" d="M177 42 Q183 58 176 78 Q173 92 165 95 Q177 96 180 83 L183 60 Q186 48 177 42 Z" fill="#D8BA95" stroke="none"/>
+      <path id="parent-white-forelock" d="M144 36 Q138 27 146 21 Q153 14 161 20 Q169 14 175 22 Q185 23 180 34 Q171 39 165 32 Q155 40 150 33 Z" fill="#FFFBF1" stroke-width="3"/>
+      <g id="parent-white-expression" fill="#263746" stroke="none">
+        <ellipse cx="153" cy="51" rx="3.6" ry="5"/>
+        <ellipse cx="174" cy="50" rx="3.5" ry="5"/>
+        <circle cx="152" cy="49.5" r="1.1" fill="#FFFFFF"/>
+        <circle cx="173" cy="48.5" r="1.1" fill="#FFFFFF"/>
+        <path d="M161 77 Q166 73 171 77 Q167 84 161 77 Z"/>
+        <path d="M166 81 V86 M166 86 Q160 91 156 86 M166 86 Q171 90 175 85" fill="none" stroke="#775D4D" stroke-width="2"/>
+      </g>
+    </g><g id="offspring-left-black" data-phenotype="black" transform="translate(245 337) scale(0.55)" stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+      <g id="offspring-left-black-far-legs" fill="#D8BA95" stroke-width="3.2">
+        <path d="M59 76 L75 78 L72 113 L60 113 Z"/>
+        <path d="M123 75 L137 77 L142 111 L129 112 Z"/>
+        <path d="M60 106 L73 107 L74 117 Q65 120 58 116 Z M128 105 L141 104 L145 115 Q137 120 129 116 Z" fill="#53616B"/>
+      </g>
+      <path id="offspring-left-black-tail" d="M30 49 Q12 41 10 54 Q12 68 29 66" fill="#303B45" stroke-width="3.5"/>
+      <g id="offspring-left-black-near-legs" fill="#F0D4AF" stroke-width="3.5">
+        <path d="M42 79 L58 83 L55 118 L42 118 Z"/>
+        <path d="M106 83 L123 80 L122 118 L108 118 Z"/>
+        <path d="M42 111 L56 111 L57 121 Q48 125 40 121 Z M108 111 L123 111 L125 121 Q116 125 107 121 Z" fill="#34434F"/>
+        <path d="M49 116 V122 M116 116 V122" stroke="#B6BEC2" stroke-width="1.5"/>
+      </g>
+      <path id="offspring-left-black-fleece" d="M29 38 Q24 23 40 21 Q42 8 57 13 Q66 2 79 10 Q93 0 105 10 Q121 3 130 17 Q148 15 151 31 Q166 36 158 51 Q168 64 156 75 Q159 90 143 94 Q138 107 123 101 Q110 111 98 103 Q83 112 71 103 Q57 110 48 98 Q32 102 28 88 Q12 83 20 69 Q10 55 25 48 Q19 41 29 38 Z" fill="#303B45" stroke-width="4"/>
+      <path id="offspring-left-black-fleece-volume" d="M29 77 Q39 87 49 82 Q60 96 72 89 Q84 100 98 92 Q112 100 124 90 Q140 96 150 80 Q154 90 143 94 Q138 105 123 99 Q110 109 98 101 Q83 109 72 100 Q58 108 49 96 Q33 100 29 86 Z" fill="#25313A" stroke="none"/>
+      <path id="offspring-left-black-wool-highlight" d="M40 32 Q46 21 58 27 Q66 16 78 22 M92 19 Q103 15 111 24" fill="none" stroke="#53616B" stroke-width="4"/>
+      <g id="offspring-left-black-ears" fill="#F0D4AF" stroke-width="3.2">
+        <path d="M148 36 Q134 23 119 27 Q122 44 145 47 Z"/>
+        <path d="M174 34 Q188 20 203 26 Q198 43 178 45 Z"/>
+        <path d="M132 33 L144 39 M181 37 L192 30" fill="none" stroke="#C49980" stroke-width="2.4"/>
+      </g>
+      <path id="offspring-left-black-face" d="M149 28 Q164 20 176 31 Q187 43 183 61 L180 84 Q176 98 166 98 Q153 97 149 84 L142 56 Q138 39 149 28 Z" fill="#F0D4AF" stroke-width="3.5"/>
+      <path id="offspring-left-black-cheek" d="M177 42 Q183 58 176 78 Q173 92 165 95 Q177 96 180 83 L183 60 Q186 48 177 42 Z" fill="#D8BA95" stroke="none"/>
+      <path id="offspring-left-black-forelock" d="M144 36 Q138 27 146 21 Q153 14 161 20 Q169 14 175 22 Q185 23 180 34 Q171 39 165 32 Q155 40 150 33 Z" fill="#303B45" stroke-width="3"/>
+      <g id="offspring-left-black-expression" fill="#263746" stroke="none">
+        <ellipse cx="153" cy="51" rx="3.6" ry="5"/>
+        <ellipse cx="174" cy="50" rx="3.5" ry="5"/>
+        <circle cx="152" cy="49.5" r="1.1" fill="#FFFFFF"/>
+        <circle cx="173" cy="48.5" r="1.1" fill="#FFFFFF"/>
+        <path d="M161 77 Q166 73 171 77 Q167 84 161 77 Z"/>
+        <path d="M166 81 V86 M166 86 Q160 91 156 86 M166 86 Q171 90 175 85" fill="none" stroke="#775D4D" stroke-width="2"/>
+      </g>
+    </g><g id="offspring-right-black" data-phenotype="black" transform="translate(623 294) scale(0.55)" stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+      <g id="offspring-right-black-far-legs" fill="#D8BA95" stroke-width="3.2">
+        <path d="M59 76 L75 78 L72 113 L60 113 Z"/>
+        <path d="M123 75 L137 77 L142 111 L129 112 Z"/>
+        <path d="M60 106 L73 107 L74 117 Q65 120 58 116 Z M128 105 L141 104 L145 115 Q137 120 129 116 Z" fill="#53616B"/>
+      </g>
+      <path id="offspring-right-black-tail" d="M30 49 Q12 41 10 54 Q12 68 29 66" fill="#303B45" stroke-width="3.5"/>
+      <g id="offspring-right-black-near-legs" fill="#F0D4AF" stroke-width="3.5">
+        <path d="M42 79 L58 83 L55 118 L42 118 Z"/>
+        <path d="M106 83 L123 80 L122 118 L108 118 Z"/>
+        <path d="M42 111 L56 111 L57 121 Q48 125 40 121 Z M108 111 L123 111 L125 121 Q116 125 107 121 Z" fill="#34434F"/>
+        <path d="M49 116 V122 M116 116 V122" stroke="#B6BEC2" stroke-width="1.5"/>
+      </g>
+      <path id="offspring-right-black-fleece" d="M29 38 Q24 23 40 21 Q42 8 57 13 Q66 2 79 10 Q93 0 105 10 Q121 3 130 17 Q148 15 151 31 Q166 36 158 51 Q168 64 156 75 Q159 90 143 94 Q138 107 123 101 Q110 111 98 103 Q83 112 71 103 Q57 110 48 98 Q32 102 28 88 Q12 83 20 69 Q10 55 25 48 Q19 41 29 38 Z" fill="#303B45" stroke-width="4"/>
+      <path id="offspring-right-black-fleece-volume" d="M29 77 Q39 87 49 82 Q60 96 72 89 Q84 100 98 92 Q112 100 124 90 Q140 96 150 80 Q154 90 143 94 Q138 105 123 99 Q110 109 98 101 Q83 109 72 100 Q58 108 49 96 Q33 100 29 86 Z" fill="#25313A" stroke="none"/>
+      <path id="offspring-right-black-wool-highlight" d="M40 32 Q46 21 58 27 Q66 16 78 22 M92 19 Q103 15 111 24" fill="none" stroke="#53616B" stroke-width="4"/>
+      <g id="offspring-right-black-ears" fill="#F0D4AF" stroke-width="3.2">
+        <path d="M148 36 Q134 23 119 27 Q122 44 145 47 Z"/>
+        <path d="M174 34 Q188 20 203 26 Q198 43 178 45 Z"/>
+        <path d="M132 33 L144 39 M181 37 L192 30" fill="none" stroke="#C49980" stroke-width="2.4"/>
+      </g>
+      <path id="offspring-right-black-face" d="M149 28 Q164 20 176 31 Q187 43 183 61 L180 84 Q176 98 166 98 Q153 97 149 84 L142 56 Q138 39 149 28 Z" fill="#F0D4AF" stroke-width="3.5"/>
+      <path id="offspring-right-black-cheek" d="M177 42 Q183 58 176 78 Q173 92 165 95 Q177 96 180 83 L183 60 Q186 48 177 42 Z" fill="#D8BA95" stroke="none"/>
+      <path id="offspring-right-black-forelock" d="M144 36 Q138 27 146 21 Q153 14 161 20 Q169 14 175 22 Q185 23 180 34 Q171 39 165 32 Q155 40 150 33 Z" fill="#303B45" stroke-width="3"/>
+      <g id="offspring-right-black-expression" fill="#263746" stroke="none">
+        <ellipse cx="153" cy="51" rx="3.6" ry="5"/>
+        <ellipse cx="174" cy="50" rx="3.5" ry="5"/>
+        <circle cx="152" cy="49.5" r="1.1" fill="#FFFFFF"/>
+        <circle cx="173" cy="48.5" r="1.1" fill="#FFFFFF"/>
+        <path d="M161 77 Q166 73 171 77 Q167 84 161 77 Z"/>
+        <path d="M166 81 V86 M166 86 Q160 91 156 86 M166 86 Q171 90 175 85" fill="none" stroke="#775D4D" stroke-width="2"/>
+      </g>
+    </g><g id="offspring-right-white" data-phenotype="white" transform="translate(623 365) scale(0.55)" stroke="#263746" stroke-linecap="round" stroke-linejoin="round">
+      <g id="offspring-right-white-far-legs" fill="#D8BA95" stroke-width="3.2">
+        <path d="M59 76 L75 78 L72 113 L60 113 Z"/>
+        <path d="M123 75 L137 77 L142 111 L129 112 Z"/>
+        <path d="M60 106 L73 107 L74 117 Q65 120 58 116 Z M128 105 L141 104 L145 115 Q137 120 129 116 Z" fill="#53616B"/>
+      </g>
+      <path id="offspring-right-white-tail" d="M30 49 Q12 41 10 54 Q12 68 29 66" fill="#FFFBF1" stroke-width="3.5"/>
+      <g id="offspring-right-white-near-legs" fill="#F0D4AF" stroke-width="3.5">
+        <path d="M42 79 L58 83 L55 118 L42 118 Z"/>
+        <path d="M106 83 L123 80 L122 118 L108 118 Z"/>
+        <path d="M42 111 L56 111 L57 121 Q48 125 40 121 Z M108 111 L123 111 L125 121 Q116 125 107 121 Z" fill="#34434F"/>
+        <path d="M49 116 V122 M116 116 V122" stroke="#B6BEC2" stroke-width="1.5"/>
+      </g>
+      <path id="offspring-right-white-fleece" d="M29 38 Q24 23 40 21 Q42 8 57 13 Q66 2 79 10 Q93 0 105 10 Q121 3 130 17 Q148 15 151 31 Q166 36 158 51 Q168 64 156 75 Q159 90 143 94 Q138 107 123 101 Q110 111 98 103 Q83 112 71 103 Q57 110 48 98 Q32 102 28 88 Q12 83 20 69 Q10 55 25 48 Q19 41 29 38 Z" fill="#FFFBF1" stroke-width="4"/>
+      <path id="offspring-right-white-fleece-volume" d="M29 77 Q39 87 49 82 Q60 96 72 89 Q84 100 98 92 Q112 100 124 90 Q140 96 150 80 Q154 90 143 94 Q138 105 123 99 Q110 109 98 101 Q83 109 72 100 Q58 108 49 96 Q33 100 29 86 Z" fill="#E6DFD0" stroke="none"/>
+      <path id="offspring-right-white-wool-highlight" d="M40 32 Q46 21 58 27 Q66 16 78 22 M92 19 Q103 15 111 24" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <g id="offspring-right-white-ears" fill="#F0D4AF" stroke-width="3.2">
+        <path d="M148 36 Q134 23 119 27 Q122 44 145 47 Z"/>
+        <path d="M174 34 Q188 20 203 26 Q198 43 178 45 Z"/>
+        <path d="M132 33 L144 39 M181 37 L192 30" fill="none" stroke="#C49980" stroke-width="2.4"/>
+      </g>
+      <path id="offspring-right-white-face" d="M149 28 Q164 20 176 31 Q187 43 183 61 L180 84 Q176 98 166 98 Q153 97 149 84 L142 56 Q138 39 149 28 Z" fill="#F0D4AF" stroke-width="3.5"/>
+      <path id="offspring-right-white-cheek" d="M177 42 Q183 58 176 78 Q173 92 165 95 Q177 96 180 83 L183 60 Q186 48 177 42 Z" fill="#D8BA95" stroke="none"/>
+      <path id="offspring-right-white-forelock" d="M144 36 Q138 27 146 21 Q153 14 161 20 Q169 14 175 22 Q185 23 180 34 Q171 39 165 32 Q155 40 150 33 Z" fill="#FFFBF1" stroke-width="3"/>
+      <g id="offspring-right-white-expression" fill="#263746" stroke="none">
+        <ellipse cx="153" cy="51" rx="3.6" ry="5"/>
+        <ellipse cx="174" cy="50" rx="3.5" ry="5"/>
+        <circle cx="152" cy="49.5" r="1.1" fill="#FFFFFF"/>
+        <circle cx="173" cy="48.5" r="1.1" fill="#FFFFFF"/>
+        <path d="M161 77 Q166 73 171 77 Q167 84 161 77 Z"/>
+        <path d="M166 81 V86 M166 86 Q160 91 156 86 M166 86 Q171 90 175 85" fill="none" stroke="#775D4D" stroke-width="2"/>
+      </g>
+    </g>
+</svg>

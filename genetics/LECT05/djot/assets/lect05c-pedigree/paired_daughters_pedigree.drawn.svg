@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="576" height="441" viewBox="0 0 576 441" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Three-row family diagram</title>
+  <desc id="diagram-description">Sixteen circles and squares joined by three family branches. One circle in the top row and one square in the bottom row are red; the other family symbols are white. Two bottom-row circles share a rectangular branch below the main horizontal line. A question and three-symbol legend accompany the diagram.</desc>
+  <rect id="background" width="576" height="441" fill="#ffffff"/>
+  <g id="question" font-family="Atkinson Hyperlegible Next" font-size="32" fill="#171313" text-anchor="middle">
+    <text x="288" y="30">What pattern of inheritance does</text>
+    <text x="288" y="69">this trait follow?</text>
+  </g>
+  <g id="connections" stroke="#171313" stroke-width="2.2" fill="none" stroke-linecap="square">
+    <g id="branch-1">
+      <line x1="114" y1="124" x2="154" y2="124"/>
+      <line x1="134" y1="124" x2="134" y2="169"/>
+      <line x1="30" y1="169" x2="272" y2="169"/>
+      <line x1="30" y1="169" x2="30" y2="186"/>
+      <line x1="110" y1="169" x2="110" y2="186"/>
+      <line x1="190" y1="169" x2="190" y2="186"/>
+      <line x1="272" y1="169" x2="272" y2="186"/>
+    </g>
+    <g id="branch-2">
+      <line x1="456" y1="124" x2="495" y2="124"/>
+      <line x1="475.5" y1="124" x2="475.5" y2="167"/>
+      <line x1="392" y1="167" x2="546" y2="167"/>
+      <line x1="392" y1="167" x2="392" y2="186"/>
+      <line x1="475" y1="167" x2="475" y2="186"/>
+      <line x1="546" y1="167" x2="546" y2="186"/>
+    </g>
+    <g id="branch-3">
+      <line x1="294" y1="208" x2="370" y2="208"/>
+      <line x1="332" y1="208" x2="332" y2="270"/>
+      <line x1="182" y1="270" x2="492" y2="270"/>
+      <line x1="182" y1="270" x2="182" y2="305"/>
+      <line x1="261" y1="270" x2="261" y2="305"/>
+      <line x1="376" y1="270" x2="376" y2="293"/>
+      <line x1="492" y1="270" x2="492" y2="305"/>
+      <line x1="338" y1="293" x2="414" y2="293"/>
+      <line x1="338" y1="293" x2="338" y2="305"/>
+      <line x1="414" y1="293" x2="414" y2="305"/>
+    </g>
+  </g>
+  <g id="family-symbols" stroke="#171313" stroke-width="2.2">
+    <rect x="70" y="102" width="44" height="44" fill="#ffffff"/>
+    <circle cx="176" cy="124" r="22" fill="#e4003b"/>
+    <circle cx="434" cy="124" r="22" fill="#ffffff"/>
+    <rect x="495" y="102" width="44" height="44" fill="#ffffff"/>
+    <rect x="8" y="186" width="44" height="44" fill="#ffffff"/>
+    <circle cx="110" cy="208" r="22" fill="#ffffff"/>
+    <circle cx="190" cy="208" r="22" fill="#ffffff"/>
+    <rect x="250" y="186" width="44" height="44" fill="#ffffff"/>
+    <circle cx="392" cy="208" r="22" fill="#ffffff"/>
+    <rect x="453" y="186" width="44" height="44" fill="#ffffff"/>
+    <circle cx="546" cy="208" r="22" fill="#ffffff"/>
+    <circle cx="182" cy="327" r="22" fill="#ffffff"/>
+    <rect x="239" y="305" width="44" height="44" fill="#e4003b"/>
+    <circle cx="338" cy="327" r="22" fill="#ffffff"/>
+    <circle cx="414" cy="327" r="22" fill="#ffffff"/>
+    <rect x="470" y="305" width="44" height="44" fill="#ffffff"/>
+  </g>
+  <g id="legend" stroke="#171313" stroke-width="2">
+    <rect x="10" y="316" width="30" height="30" fill="#ffffff"/>
+    <circle cx="25" cy="375" r="15" fill="#ffffff"/>
+    <rect x="10" y="404" width="30" height="30" fill="#e4003b"/>
+  </g>
+  <g id="legend-text" font-family="Atkinson Hyperlegible Next" font-size="18" fill="#171313">
+    <text x="50" y="337">= male</text>
+    <text x="50" y="381">= female</text>
+    <text x="50" y="425">= affected</text>
+  </g>
+</svg>

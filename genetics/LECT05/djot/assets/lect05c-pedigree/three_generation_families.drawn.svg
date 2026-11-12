@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1526" height="747" viewBox="0 0 1526 747" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Three-generation numbered families</title>
+  <desc id="diagram-description">Nineteen numbered people in three rows, with squares and circles filled black or white. Five family branches connect pairs 1 and 2 to children 6, 7 and 8; 3 and 4 to 9, 10 and 12; 5 and 6 to 13 and 14; 8 and 9 to 15, 16 and 17; and 10 and 11 to 18 and 19. Detached response lines appear beneath numbers 1 through 12.</desc>
+  <rect id="background" width="1526" height="747" fill="#ffffff"/>
+  <g id="connections" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="square">
+    <g id="family-1-2">
+      <line id="family-1-2-union" x1="408" y1="80" x2="552" y2="80"/>
+      <line id="family-1-2-stem" x1="470" y1="80" x2="470" y2="280"/>
+      <line id="family-1-2-bar" x1="290" y1="280" x2="660" y2="280"/>
+      <line id="family-1-2-child-6" x1="290" y1="280" x2="290" y2="307"/>
+      <line id="family-1-2-child-7" x1="470" y1="280" x2="470" y2="307"/>
+      <line id="family-1-2-child-8" x1="660" y1="280" x2="660" y2="307"/>
+    </g>
+    <g id="family-3-4">
+      <line id="family-3-4-union" x1="1048" y1="80" x2="1192" y2="80"/>
+      <line id="family-3-4-stem" x1="1140" y1="80" x2="1140" y2="280"/>
+      <line id="family-3-4-bar" x1="860" y1="280" x2="1450" y2="280"/>
+      <line id="family-3-4-child-9" x1="860" y1="280" x2="860" y2="307"/>
+      <line id="family-3-4-child-10" x1="1070" y1="280" x2="1070" y2="307"/>
+      <line id="family-3-4-child-12" x1="1450" y1="280" x2="1450" y2="307"/>
+    </g>
+    <g id="family-5-6">
+      <line id="family-5-6-union" x1="148" y1="365" x2="232" y2="365"/>
+      <line id="family-5-6-stem" x1="190" y1="365" x2="190" y2="540"/>
+      <line id="family-5-6-bar" x1="90" y1="540" x2="290" y2="540"/>
+      <line id="family-5-6-child-13" x1="90" y1="540" x2="90" y2="562"/>
+      <line id="family-5-6-child-14" x1="290" y1="540" x2="290" y2="562"/>
+    </g>
+    <g id="family-8-9">
+      <line id="family-8-9-union" x1="718" y1="365" x2="802" y2="365"/>
+      <line id="family-8-9-stem" x1="760" y1="365" x2="760" y2="540"/>
+      <line id="family-8-9-bar" x1="550" y1="540" x2="910" y2="540"/>
+      <line id="family-8-9-child-15" x1="550" y1="540" x2="550" y2="562"/>
+      <line id="family-8-9-child-16" x1="730" y1="540" x2="730" y2="562"/>
+      <line id="family-8-9-child-17" x1="910" y1="540" x2="910" y2="562"/>
+    </g>
+    <g id="family-10-11">
+      <line id="family-10-11-union" x1="1128" y1="365" x2="1192" y2="365"/>
+      <line id="family-10-11-stem" x1="1160" y1="365" x2="1160" y2="540"/>
+      <line id="family-10-11-bar" x1="1070" y1="540" x2="1250" y2="540"/>
+      <line id="family-10-11-child-18" x1="1070" y1="540" x2="1070" y2="562"/>
+      <line id="family-10-11-child-19" x1="1250" y1="540" x2="1250" y2="562"/>
+    </g>
+  </g>
+  <g id="people" stroke="#000000" stroke-width="5">
+    <rect id="person-1" x="292" y="22" width="116" height="116" fill="#000000"/>
+    <circle id="person-2" cx="610" cy="80" r="58" fill="#ffffff"/>
+    <rect id="person-3" x="932" y="22" width="116" height="116" fill="#ffffff"/>
+    <circle id="person-4" cx="1250" cy="80" r="58" fill="#000000"/>
+    <circle id="person-5" cx="90" cy="365" r="58" fill="#000000"/>
+    <rect id="person-6" x="232" y="307" width="116" height="116" fill="#ffffff"/>
+    <circle id="person-7" cx="470" cy="365" r="58" fill="#ffffff"/>
+    <circle id="person-8" cx="660" cy="365" r="58" fill="#ffffff"/>
+    <rect id="person-9" x="802" y="307" width="116" height="116" fill="#ffffff"/>
+    <rect id="person-10" x="1012" y="307" width="116" height="116" fill="#000000"/>
+    <circle id="person-11" cx="1250" cy="365" r="58" fill="#000000"/>
+    <circle id="person-12" cx="1450" cy="365" r="58" fill="#ffffff"/>
+    <rect id="person-13" x="32" y="562" width="116" height="116" fill="#000000"/>
+    <circle id="person-14" cx="290" cy="620" r="58" fill="#ffffff"/>
+    <rect id="person-15" x="492" y="562" width="116" height="116" fill="#ffffff"/>
+    <circle id="person-16" cx="730" cy="620" r="58" fill="#ffffff"/>
+    <circle id="person-17" cx="910" cy="620" r="58" fill="#000000"/>
+    <circle id="person-18" cx="1070" cy="620" r="58" fill="#000000"/>
+    <rect id="person-19" x="1192" y="562" width="116" height="116" fill="#000000"/>
+  </g>
+  <g id="numbers" font-family="Atkinson Hyperlegible Next" font-size="48" text-anchor="middle" fill="#000000">
+    <text id="number-1" x="350" y="187">1</text>
+    <text id="number-2" x="610" y="187">2</text>
+    <text id="number-3" x="990" y="187">3</text>
+    <text id="number-4" x="1250" y="187">4</text>
+    <text id="number-5" x="90" y="472">5</text>
+    <text id="number-6" x="290" y="472">6</text>
+    <text id="number-7" x="470" y="472">7</text>
+    <text id="number-8" x="660" y="472">8</text>
+    <text id="number-9" x="860" y="472">9</text>
+    <text id="number-10" x="1070" y="472">10</text>
+    <text id="number-11" x="1250" y="472">11</text>
+    <text id="number-12" x="1450" y="472">12</text>
+    <text id="number-13" x="90" y="727">13</text>
+    <text id="number-14" x="290" y="727">14</text>
+    <text id="number-15" x="550" y="727">15</text>
+    <text id="number-16" x="730" y="727">16</text>
+    <text id="number-17" x="910" y="727">17</text>
+    <text id="number-18" x="1070" y="727">18</text>
+    <text id="number-19" x="1250" y="727">19</text>
+  </g>
+  <g id="response-lines" stroke="#000000" stroke-width="4">
+    <line id="response-1" x1="308" y1="225" x2="392" y2="225"/>
+    <line id="response-2" x1="568" y1="225" x2="652" y2="225"/>
+    <line id="response-3" x1="948" y1="225" x2="1032" y2="225"/>
+    <line id="response-4" x1="1208" y1="225" x2="1292" y2="225"/>
+    <line id="response-5" x1="48" y1="510" x2="132" y2="510"/>
+    <line id="response-6" x1="248" y1="510" x2="332" y2="510"/>
+    <line id="response-7" x1="428" y1="510" x2="512" y2="510"/>
+    <line id="response-8" x1="618" y1="510" x2="702" y2="510"/>
+    <line id="response-9" x1="818" y1="510" x2="902" y2="510"/>
+    <line id="response-10" x1="1028" y1="510" x2="1112" y2="510"/>
+    <line id="response-11" x1="1208" y1="510" x2="1292" y2="510"/>
+    <line id="response-12" x1="1408" y1="510" x2="1492" y2="510"/>
+  </g>
+</svg>

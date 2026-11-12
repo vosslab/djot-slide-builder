@@ -1,4 +1,4 @@
-"""Enforce the universal cover contract on standalone tracked Djot decks."""
+"""Enforce cover and agenda-only contracts on standalone tracked Djot decks."""
 
 import pathlib
 import re
@@ -63,11 +63,25 @@ def check_file(relative_path: str) -> list[str]:
 	if not deck.slides:
 		return ["Deck has no slide 1."]
 	first = deck.slides[0]
-	is_announcement = "announcements" in path.stem.lower() or any(
-		isinstance(block, slide_lib.native_model.Heading)
-		and "announcements" in slide_lib.djot_parser.visible_text(block.inlines).lower()
-		for block in first.blocks)
-	problems = cover_violations(first, is_announcement)
+	if path.name.endswith("-agenda.djot"):
+		# ANNOUNCEMENT_DECK_GUIDE.md permits undated agenda-only topic maps.
+		problems = []
+		if len(deck.slides) != 1 or first.hidden:
+			problems.append("An agenda-only source must contain exactly one visible slide.")
+		headings = [slide_lib.djot_parser.visible_text(block.inlines).strip()
+			for block in first.blocks if isinstance(block, slide_lib.native_model.Heading)]
+		if headings != ["Today's Agenda"]:
+			problems.append("An agenda-only source must have the heading Today's Agenda.")
+		if not any(slide_lib.djot_parser.visible_text(item.inlines).strip()
+				for cell in first.cells for block in cell.blocks
+				if isinstance(block, slide_lib.native_model.ListBlock) for item in block.items):
+			problems.append("An agenda-only source must contain nonempty topic bullets.")
+	else:
+		is_announcement = "announcements" in path.stem.lower() or any(
+			isinstance(block, slide_lib.native_model.Heading)
+			and "announcements" in slide_lib.djot_parser.visible_text(block.inlines).lower()
+			for block in first.blocks)
+		problems = cover_violations(first, is_announcement)
 	return [f"{first.location.path}:{first.location.line}: {problem}" for problem in problems]
 
 
@@ -109,3 +123,19 @@ def test_cover_contract(tmp_path: pathlib.Path, metadata: tuple[str, ...],
 		"\n\n".join(f"## {line}" for line in metadata) + "\n", encoding="utf-8")
 	slide = slide_lib.djot_parser.parse_deck(path).slides[0]
 	assert (not cover_violations(slide, announcements)) == valid
+
+
+def test_agenda_only_contract(tmp_path: pathlib.Path) -> None:
+	"""Accept standalone topic maps without weakening ordinary deck covers."""
+	agenda = "=== layout: one-panel\n# Today's Agenda\n\n@body\n\n- Allele Frequencies\n"
+	for filename, source, valid in (
+		("lecture-agenda.djot", agenda, True),
+		("lecture-agenda.djot", agenda.replace("Today's Agenda", "Other Topic"), False),
+		("lecture-agenda.djot", agenda.replace("- Allele Frequencies", ""), False),
+		("lecture-agenda.djot", agenda.replace("# Today's", "hidden: true\n# Today's"), False),
+		("lecture-agenda.djot", agenda + "\n" + agenda, False),
+		("lecture-topic.djot", agenda, False),
+	):
+		path = tmp_path / filename
+		path.write_text(source, encoding="utf-8")
+		assert (not check_file(str(path))) == valid, (filename, source)

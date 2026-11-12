@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1158" height="614" viewBox="0 0 1158 614" role="img" aria-labelledby="title desc">
+<title id="title">SKY probe mixture workflow</title>
+<desc id="desc">Six representative flow-sorted chromosome tubes feed six labeled probe tubes, followed by a mixed probe tube and hybridization on a metaphase preparation slide. The mixed colors are schematic, not measured quantities.</desc>
+<defs><clipPath id="tube-interior"><path d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z"/></clipPath><linearGradient id="tube-glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#edf2f4"/><stop offset="1" stop-color="#dfe6eb"/></linearGradient><linearGradient id="slide-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9fcfd"/><stop offset="1" stop-color="#e6f0f4"/></linearGradient></defs>
+<rect width="1158" height="614" fill="white"/>
+<text id="panel-a" x="190" y="43" font-family="Atkinson Hyperlegible Next" font-size="27" font-weight="700" text-anchor="start" fill="#202529">a</text>
+<g id="tube-source-0" transform="translate(300 67)">
+<path id="tube-body-source-0" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-0" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-0" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-0" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-0" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-0" x="300" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">1</text>
+<g id="tube-source-1" transform="translate(372 67)">
+<path id="tube-body-source-1" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-1" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-1" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-1" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-1" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-1" x="372" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">2</text>
+<g id="tube-source-2" transform="translate(444 67)">
+<path id="tube-body-source-2" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-2" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-2" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-2" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-2" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-2" x="444" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">3</text>
+<g id="tube-source-3" transform="translate(622 67)">
+<path id="tube-body-source-3" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-3" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-3" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-3" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-3" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-3" x="622" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">22</text>
+<g id="tube-source-4" transform="translate(694 67)">
+<path id="tube-body-source-4" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-4" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-4" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-4" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-4" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-4" x="694" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">X</text>
+<g id="tube-source-5" transform="translate(766 67)">
+<path id="tube-body-source-5" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<path id="tube-highlight-source-5" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-source-5" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-source-5" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-source-5" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-source-5" x="766" y="193" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">Y</text>
+<g id="source-description">
+<text id="source-description-0" x="968" y="116" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">24 flow-sorted human</text>
+<text id="source-description-1" x="968" y="144" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">chromosomes</text>
+</g>
+<g id="tube-labeled-0" transform="translate(62 278)">
+<path id="tube-body-labeled-0" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-0" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#f3a12b"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-0" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-0" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-0" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-0" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-0" x="62" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">1B</text>
+<g id="tube-labeled-1" transform="translate(136 278)">
+<path id="tube-body-labeled-1" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-1" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#d91f29"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-1" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-1" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-1" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-1" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-1" x="136" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">1C</text>
+<g id="tube-labeled-2" transform="translate(210 278)">
+<path id="tube-body-labeled-2" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-2" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#8a31a1"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-2" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-2" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-2" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-2" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-2" x="210" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">2E</text>
+<g id="tube-labeled-3" transform="translate(284 278)">
+<path id="tube-body-labeled-3" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-3" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#65a044"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-3" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-3" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-3" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-3" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-3" x="284" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">3A</text>
+<g id="tube-labeled-4" transform="translate(358 278)">
+<path id="tube-body-labeled-4" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-4" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#793a24"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-4" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-4" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-4" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-4" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-4" x="358" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">3C</text>
+<g id="tube-labeled-5" transform="translate(432 278)">
+<path id="tube-body-labeled-5" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-labeled-5" clip-path="url(#tube-interior)"><rect x="-19" y="25" width="38" height="75" fill="#ee8bc2"/><ellipse cx="0" cy="25" rx="18" ry="3" fill="white" opacity=".18"/></g>
+<path id="tube-highlight-labeled-5" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-labeled-5" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-labeled-5" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-labeled-5" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<text id="tube-label-labeled-5" x="432" y="404" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="middle" fill="#202529">3D</text>
+<g id="tube-mixture" transform="translate(790 291)">
+<path id="tube-body-mixture" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />
+<g id="liquid-mixture" clip-path="url(#tube-interior)">
+<ellipse id="mixture-color-0" cx="-12" cy="30" rx="7" ry="10" fill="#913d23"/>
+<ellipse id="mixture-color-1" cx="-3" cy="30" rx="7" ry="10" fill="#982eae"/>
+<ellipse id="mixture-color-2" cx="7" cy="31" rx="7" ry="10" fill="#e42e2a"/>
+<ellipse id="mixture-color-3" cx="15" cy="32" rx="6" ry="10" fill="#2746aa"/>
+<ellipse id="mixture-color-4" cx="-13" cy="44" rx="7" ry="11" fill="#1daec5"/>
+<ellipse id="mixture-color-5" cx="-3" cy="43" rx="8" ry="9" fill="#65a944"/>
+<ellipse id="mixture-color-6" cx="12" cy="49" rx="8" ry="12" fill="#f49421"/>
+<ellipse id="mixture-color-7" cx="-5" cy="59" rx="8" ry="13" fill="#f49acb"/>
+<ellipse id="mixture-color-8" cx="-12" cy="68" rx="8" ry="13" fill="#f2d923"/>
+<ellipse id="mixture-color-9" cx="3" cy="58" rx="8" ry="13" fill="#913d23"/>
+<ellipse id="mixture-color-10" cx="12" cy="70" rx="8" ry="12" fill="#982eae"/>
+<ellipse id="mixture-color-11" cx="-5" cy="80" rx="8" ry="12" fill="#e42e2a"/>
+<ellipse id="mixture-color-12" cx="8" cy="85" rx="7" ry="11" fill="#2746aa"/>
+<ellipse id="mixture-color-13" cx="0" cy="94" rx="8" ry="12" fill="#1daec5"/>
+</g>
+<path id="tube-highlight-mixture" d="M-12 11 Q-12 52 -5 73" fill="none" stroke="white" stroke-width="2" opacity=".7"/>
+<path id="lid-hinge-mixture" d="M-13 -1 L-27 -20" fill="none" stroke="#747982" stroke-width="3" />
+<ellipse id="lid-mixture" cx="-30" cy="-32" rx="14" ry="18" transform="rotate(-22 -30 -32)" fill="#f4f7f8" stroke="#747982" stroke-width="3"/><ellipse id="rim-mixture" cx="0" cy="0" rx="22" ry="4.5" fill="#dfe5e9" stroke="#747982" stroke-width="2.4"/>
+</g>
+<g id="labeling-description">
+<text id="labeling-description-0" x="8" y="450" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="start" fill="#202529">Labelling of the individual chromosome-painting probes</text>
+<text id="labeling-description-1" x="8" y="478" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="start" fill="#202529">using the various combinations of fluorochromes</text>
+</g>
+<text id="cot-dna" x="500" y="343" font-family="Atkinson Hyperlegible Next" font-size="25" font-weight="400" text-anchor="start" fill="#202529">+ Cot-1 DNA</text>
+<g id="mixture-description">
+<text id="mixture-description-0" x="1000" y="291" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="400" text-anchor="middle" fill="#202529">SKY probe mixture,</text>
+<text id="mixture-description-1" x="1000" y="317" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="400" text-anchor="middle" fill="#202529">which contains all of the</text>
+<text id="mixture-description-2" x="1000" y="343" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="400" text-anchor="middle" fill="#202529">differentially labelled</text>
+<text id="mixture-description-3" x="1000" y="369" font-family="Atkinson Hyperlegible Next" font-size="23" font-weight="400" text-anchor="middle" fill="#202529">chromosome-painting probes</text>
+</g>
+<g id="arrow-continuation">
+<path id="shaft-continuation" d="M474 187 L585.000 187.000" fill="none" stroke="#252b2d" stroke-width="2.6" stroke-dasharray="2 7" stroke-linecap="round"/>
+<path id="head-continuation" d="M599 187 L585.000 192.000 L589.000 187.000 L585.000 182.000 Z" fill="#252b2d" stroke="none" stroke-width="0" />
+</g>
+<g id="arrow-labeling">
+<path id="shaft-labeling" d="M510 216 L466.178 257.387" fill="none" stroke="#252b2d" stroke-width="2.6" />
+<path id="head-labeling" d="M456 267 L462.745 253.752 L463.270 260.134 L469.611 261.022 Z" fill="#252b2d" stroke="none" stroke-width="0" />
+</g>
+<g id="arrow-mixing">
+<path id="shaft-mixing" d="M676 338 L736.000 338.000" fill="none" stroke="#252b2d" stroke-width="2.6" />
+<path id="head-mixing" d="M750 338 L736.000 343.000 L740.000 338.000 L736.000 333.000 Z" fill="#252b2d" stroke="none" stroke-width="0" />
+</g>
+<g id="arrow-hybridization">
+<path id="shaft-hybridization" d="M777 401 L660.665 499.930" fill="none" stroke="#252b2d" stroke-width="2.6" />
+<path id="head-hybridization" d="M650 509 L657.426 496.122 L657.618 502.522 L663.904 503.739 Z" fill="#252b2d" stroke="none" stroke-width="0" />
+</g>
+<g id="metaphase-slide">
+<path id="slide-front" d="M316 589 L760 589 L760 600 L316 600 Z" fill="#d6e3e9" stroke="#4b555b" stroke-width="2" />
+<path id="slide-top" d="M316 589 L420 518 L660 518 L760 589 Z" fill="url(#slide-glass)" stroke="#4b555b" stroke-width="2" />
+<ellipse id="slide-mark-pale-1" cx="396" cy="563" rx="16" ry="5" transform="rotate(0 396 563)" fill="#e8e6e7" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-red" cx="421" cy="551" rx="23" ry="6" transform="rotate(-42 421 551)" fill="#da2435" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-yellow" cx="464" cy="546" rx="23" ry="6" transform="rotate(48 464 546)" fill="#f0d331" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-pale-2" cx="488" cy="565" rx="17" ry="5" transform="rotate(24 488 565)" fill="#e8e6e7" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-pale-3" cx="552" cy="563" rx="13" ry="5" transform="rotate(0 552 563)" fill="#e8e6e7" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-green" cx="577" cy="551" rx="23" ry="6" transform="rotate(-32 577 551)" fill="#66a343" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-pale-4" cx="608" cy="566" rx="17" ry="5" transform="rotate(25 608 566)" fill="#e8e6e7" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-pale-5" cx="644" cy="554" rx="17" ry="5" transform="rotate(0 644 554)" fill="#e8e6e7" stroke="#8b8c90" stroke-width="1.7"/>
+<ellipse id="slide-mark-orange" cx="667" cy="554" rx="9" ry="5" transform="rotate(0 667 554)" fill="#ed8c2b" stroke="#8b8c90" stroke-width="1.7"/>
+</g>
+<text id="panel-b" x="8" y="550" font-family="Atkinson Hyperlegible Next" font-size="27" font-weight="700" text-anchor="start" fill="#202529">b</text>
+<g id="hybridization-description">
+<text id="hybridization-description-0" x="170" y="548" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">Hybridisation at 37&#176;C</text>
+<text id="hybridization-description-1" x="170" y="575" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">for 24&#8211;72 hours</text>
+</g>
+<g id="slide-description">
+<text id="slide-description-0" x="961" y="548" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">Metaphase chromosome</text>
+<text id="slide-description-1" x="961" y="575" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">preparation</text>
+</g>
+<path id="cropped-bottom-continuation" d="M160 603 V614" fill="none" stroke="#303335" stroke-width="2" />
+</svg>

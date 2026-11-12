@@ -51,7 +51,7 @@ color-theme: genetics
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_036.png)
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/ascus_division_sequence.drawn.svg)
 
 === layout: two-panels
 
@@ -150,7 +150,7 @@ Gene-to-centromere estimate using the single-crossover model; multiple crossover
 
 @body
 
-![Lecture diagram](assets/lect09b-tetrads_1_introduction/image_037.jpg)
+![Lecture diagram](assets/lect09b-tetrads_1_introduction/neurospora_paired_life_cycles.drawn.svg)
 
 
 === layout: reference
@@ -159,7 +159,7 @@ Gene-to-centromere estimate using the single-crossover model; multiple crossover
 
 @body
 
-![Random Ordering Reference](assets/lect09b-tetrads_1_introduction/image_043.png)
+![Random Ordering Reference](assets/lect09b-tetrads_1_introduction/random_ascus_ordering.drawn.svg)
 
 @citation
 
@@ -171,7 +171,7 @@ Randomly order two A and two a products: six equally likely orders. Observed cou
 
 @body
 
-![A Spore-Color Example](assets/lect09b-tetrads_1_introduction/image_044.png)
+![A Spore-Color Example](assets/lect09b-tetrads_1_introduction/spore_color_segregation.drawn.svg)
 
 @citation
 

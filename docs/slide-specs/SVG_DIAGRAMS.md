@@ -13,6 +13,10 @@ Do not convert a complete slide into a bitmap to preserve its layout.
 - Supply positive absolute width/height or a finite, positive-size `viewBox`.
 - Embed PNG/JPEG component artwork with data URIs. Preserve transparency and source geometry.
 - Keep labels as text, with explicit coordinates, fonts, sizes, and subscript positioning.
+- Apply the font roles in [HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md): Atkinson Hyperlegible Next for
+  ordinary SVG text, Atkinson Hyperlegible Mono for monospace and IBM Plex Sans Condensed for
+  narrow text. Use the installed families by name; keep font files out of individual SVGs.
+- Use simple shapes/paths and flat live text. Add a text outline only when it improves readability.
 - Keep leaders and arrows as vector paths. Use stable group and element IDs for later edits.
 - Use static, self-contained content; external resources, scripts, and foreign objects are rejected.
 - The ODP contains the original SVG bytes with `image/svg+xml` MIME type. Sizing reads the SVG
@@ -95,11 +99,19 @@ Record rejected LLM drawings and their repair targets in
 [../SVG_REPAIR_BACKLOG.md](../SVG_REPAIR_BACKLOG.md). Keep exact asset paths and distinguish
 completed removals from drawings still in use with replacement recommended.
 
-Compare each repaired slide with its original source and the actual exported PDF. Check labels,
-leaders, subscripts, transparency, crop boundaries, and readable captions. Confirm direct SVG
-packaging in ODP. Keep source provenance in separate import reports, slide maps, or review files,
-not in Djot notes or comments. Reserve `@notes` for instructor notes. Retain `@replaceme` where the original
-teaching relationships or reveal sequence still need reconstruction.
+Start with one candidate, one original SVG and one direct preview at intended display size.
+Brief artist and manager review checks taught relationships, labels, leaders, subscripts,
+transparency and figure boundaries. Keep captions and surrounding prose native; use the known
+image frame when available.
+
+Use extra sizes, independent review or a targeted consumer/export check for a concrete concern:
+a known LibreOffice SVG failure, crop, overlay, reveal or uncertain image frame. Inspect only the
+placement and context needed to resolve it. Complete ordinary art milestones through the brief
+review and image-URL integration; classroom, playback, printing and instructor feedback are optional.
+
+Keep source provenance in separate import reports, slide maps, or review files. Reserve `@notes`
+for instructor notes. Retain `@replaceme` where teaching relationships or reveals still need
+reconstruction; record unresolved targets with a reason and continue other artwork.
 
 Lecture 06 results and remaining work are recorded in
 [../../genetics/LECT06/djot/LECT06_REVIEW.md](../../genetics/LECT06/djot/LECT06_REVIEW.md).

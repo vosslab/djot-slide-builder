@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="312" viewBox="0 0 888 312" role="img" aria-labelledby="mating-title">
+  <title id="mating-title">Single and double pedigree mating lines</title>
+  <rect width="888" height="312" fill="#F1F6FB"/>
+  <g id="single-mating" stroke="#243645" stroke-width="4" fill="#FFF8E7">
+    <line x1="100" y1="80" x2="266" y2="80"/>
+    <circle cx="68" cy="80" r="32"/>
+    <rect x="266" y="48" width="64" height="64"/>
+  </g>
+  <g id="related-mating" stroke="#243645" stroke-width="4" fill="#FFF8E7">
+    <line x1="99.433" y1="218" x2="266" y2="218"/>
+    <line x1="99.433" y1="230" x2="266" y2="230"/>
+    <circle cx="68" cy="224" r="32"/>
+    <rect x="266" y="192" width="64" height="64"/>
+  </g>
+  <g fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="42">
+    <text x="388" y="94">Mating</text>
+    <text><tspan x="388" y="216">Mating between</tspan><tspan x="388" y="264">relatives</tspan></text>
+  </g>
+</svg>

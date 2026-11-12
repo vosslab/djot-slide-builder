@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ascii"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="613" height="340" viewBox="0 0 613 340" role="img" aria-labelledby="figure-title figure-description" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="16" fill="#111820">
+  <title id="figure-title">Counting individual alleles</title>
+  <desc id="figure-description">Each AA individual contributes two A alleles, each Aa individual contributes one A and one a, and each aa individual contributes two a alleles. Contributions are aligned in A and a columns and summed beneath the rule.</desc>
+  <rect width="613" height="340" fill="#ffffff"/>
+  <g id="row-AA">
+    <rect id="strip-AA" x="8" y="116" width="390" height="34" rx="2" fill="#d8e1ed"/>
+    <text id="genotype-AA" x="16" y="139">795 <tspan font-style="italic">AA</tspan><tspan xml:space="preserve"> genotypes</tspan></text>
+    <text x="157" y="139">=</text>
+    <text id="contribution-AA-A" x="180" y="139">1590 <tspan font-style="italic">A</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+  </g>
+  <g id="row-Aa">
+    <rect id="strip-Aa" x="8" y="186" width="390" height="34" rx="2" fill="#d9eee8"/>
+    <text id="genotype-Aa" x="16" y="209">190 <tspan font-style="italic">Aa</tspan><tspan xml:space="preserve"> genotypes</tspan></text>
+    <text x="157" y="209">=</text>
+    <text id="contribution-Aa-A" x="180" y="209">190 <tspan font-style="italic">A</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+    <text x="286" y="209">+</text>
+    <text id="contribution-Aa-a" x="302" y="209">190 <tspan font-style="italic">a</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+  </g>
+  <g id="row-aa">
+    <rect id="strip-aa" x="8" y="256" width="390" height="34" rx="2" fill="#fff1bf"/>
+    <text id="genotype-aa" x="16" y="279">15 <tspan font-style="italic">aa</tspan><tspan xml:space="preserve"> genotypes</tspan></text>
+    <text x="157" y="279">=</text>
+    <text id="contribution-aa-a" x="302" y="279">30 <tspan font-style="italic">a</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+  </g>
+  <g id="allele-totals">
+    <line id="sum-rule" x1="8" y1="294" x2="398" y2="294" stroke="#000000" stroke-width="1.3"/>
+    <rect id="strip-total" x="8" y="304" width="390" height="30" rx="2" fill="#f8dfcf"/>
+    <text id="total-A" x="180" y="325">1780 <tspan font-style="italic">A</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+    <text x="286" y="325">+</text>
+    <text id="total-a" x="302" y="325">220 <tspan font-style="italic">a</tspan><tspan xml:space="preserve"> alleles</tspan></text>
+  </g>
+  <g id="callout-leaders" fill="none" stroke="#2879b8" stroke-width="2.1" stroke-linecap="round">
+    <path id="leader-AA-A" d="M421 47 L212 118"/>
+    <path id="leader-Aa-A" d="M421 156 L212 188"/>
+    <path id="leader-Aa-a" d="M421 170 L334 188"/>
+    <path id="leader-aa-a" d="M421 244 L334 258"/>
+  </g>
+  <g id="contribution-dots" fill="#2879b8">
+    <circle id="dot-AA-A" cx="212" cy="118" r="3.1"/>
+    <circle id="dot-Aa-A" cx="212" cy="188" r="3.1"/>
+    <circle id="dot-Aa-a" cx="334" cy="188" r="3.1"/>
+    <circle id="dot-aa-a" cx="334" cy="258" r="3.1"/>
+  </g>
+  <g id="callouts" font-size="17">
+    <g id="callout-AA">
+      <rect x="421" y="18" width="184" height="62" fill="#d8e3f1" stroke="#6b9ed3" stroke-width="1.2"/>
+      <text x="430" y="42">Each <tspan font-style="italic">AA</tspan><tspan xml:space="preserve"> genotype</tspan></text>
+      <text x="430" y="64">carries two <tspan font-style="italic">A</tspan><tspan xml:space="preserve"> alleles.</tspan></text>
+    </g>
+    <g id="callout-Aa">
+      <rect x="421" y="106" width="184" height="84" fill="#d8e3f1" stroke="#6b9ed3" stroke-width="1.2"/>
+      <text x="430" y="130">Each <tspan font-style="italic">Aa</tspan><tspan xml:space="preserve"> genotype</tspan></text>
+      <text x="430" y="152">carries one <tspan font-style="italic">A</tspan><tspan xml:space="preserve"> allele</tspan></text>
+      <text x="430" y="174">and one <tspan font-style="italic">a</tspan><tspan xml:space="preserve"> allele.</tspan></text>
+    </g>
+    <g id="callout-aa">
+      <rect x="421" y="218" width="184" height="62" fill="#d8e3f1" stroke="#6b9ed3" stroke-width="1.2"/>
+      <text x="430" y="242">Each <tspan font-style="italic">aa</tspan><tspan xml:space="preserve"> genotype</tspan></text>
+      <text x="430" y="264">carries two <tspan font-style="italic">a</tspan><tspan xml:space="preserve"> alleles.</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="924" viewBox="0 0 1200 924" role="img" aria-labelledby="title desc">
+<title id="title">Allele frequencies and the gene pool</title><desc id="desc">Two source steps show allele frequencies and a schematic open bin containing sixteen red and four white allele tokens.</desc>
+<defs>
+<radialGradient id="red" cx="30%" cy="25%" r="75%"><stop stop-color="#ef997b"/><stop offset=".45" stop-color="#df4b39"/><stop offset="1" stop-color="#a52830"/></radialGradient>
+<radialGradient id="white" cx="30%" cy="25%" r="75%"><stop stop-color="#ffffff"/><stop offset=".5" stop-color="#f4f5f1"/><stop offset="1" stop-color="#c2ccca"/></radialGradient>
+<linearGradient id="wall" x2="1" y2="1"><stop stop-color="#dcecee" stop-opacity=".8"/><stop offset="1" stop-color="#9bc6ce" stop-opacity=".7"/></linearGradient>
+<linearGradient id="rim" y2="1" x2="0"><stop stop-color="#d5edef"/><stop offset="1" stop-color="#80afb9"/></linearGradient>
+</defs><rect width="1200" height="924" fill="white"/>
+<g id="headings" font-family="Atkinson Hyperlegible Next" font-size="39" font-weight="750" text-anchor="middle" fill="#202b2e"><text x="795" y="59">Frequencies of alleles</text><text x="795" y="436">Alleles in the population</text></g>
+<g id="definitions" font-family="Atkinson Hyperlegible Next" font-size="32" fill="#202b2e">
+<text x="470" y="139" xml:space="preserve"><tspan font-style="italic">p</tspan> = frequency of <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="23">R</tspan> allele</text>
+<text x="1062" y="139">= 0.8</text>
+<text x="470" y="231" xml:space="preserve"><tspan font-style="italic">q</tspan> = frequency of <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="23">W</tspan> allele</text>
+<text x="1062" y="231">= 0.2</text></g>
+<g id="key-tokens"><circle id="key-red" cx="1009" cy="127" r="25" fill="url(#red)" stroke="#ad4542" stroke-width="2"/><circle id="key-white" cx="1009" cy="219" r="25" fill="url(#white)" stroke="#9caaa9" stroke-width="2"/></g>
+<path id="down-arrow" d="M785 270 H805 V350 H820 L795 390 L770 350 H785 Z" fill="#6b7168"/>
+<g id="bin">
+<path id="rear-wall" d="M526 477 H1085 L1135 526 L1118 854 Q1116 880 1090 880 H497 Q471 880 470 854 L451 526 Z" fill="url(#wall)" stroke="#759ea7" stroke-width="3"/>
+<path id="inner-floor" d="M493 843 L535 811 H1080 L1112 847 L1092 873 H510 Z" fill="#a0c6cc" opacity=".5"/>
+<path id="side-wall" d="M1085 494 L1126 534 L1110 847 L1080 811 Z" fill="#83b4bf" opacity=".3"/>
+<path id="front-wall" d="M460 534 H1127 L1112 855 Q1110 873 1090 873 H499 Q480 873 479 855 Z" fill="#d5e9eb" fill-opacity=".32" stroke="#82adb6" stroke-width="3"/>
+<path id="open-rim" fill="url(#rim)" fill-rule="evenodd" stroke="#739fa8" stroke-width="3" d="M518 468 H1090 L1144 513 Q1156 532 1131 540 H456 Q433 534 446 515 Z M530 484 L480 518 H1108 L1080 484 Z"/>
+<path d="M462 544 L480 849 Q482 865 502 865" fill="none" stroke="#edf8f8" stroke-width="7" opacity=".65"/>
+<g id="bin-tokens">
+<circle id="bin-token-1-white" cx="522" cy="583" r="24" fill="url(#white)" stroke="#9caaa9" stroke-width="2"/>
+<circle id="bin-token-2-red" cx="637" cy="605" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-3-red" cx="770" cy="600" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-4-red" cx="920" cy="611" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-5-red" cx="1065" cy="585" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-6-red" cx="518" cy="697" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-7-red" cx="610" cy="676" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-8-white" cx="736" cy="719" r="24" fill="url(#white)" stroke="#9caaa9" stroke-width="2"/>
+<circle id="bin-token-9-white" cx="914" cy="704" r="24" fill="url(#white)" stroke="#9caaa9" stroke-width="2"/>
+<circle id="bin-token-10-red" cx="1062" cy="692" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-11-red" cx="640" cy="760" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-12-red" cx="800" cy="778" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-13-red" cx="973" cy="778" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-14-red" cx="1081" cy="759" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-15-red" cx="524" cy="825" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-16-red" cx="618" cy="837" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-17-red" cx="722" cy="832" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-18-white" cx="849" cy="839" r="24" fill="url(#white)" stroke="#9caaa9" stroke-width="2"/>
+<circle id="bin-token-19-red" cx="983" cy="839" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+<circle id="bin-token-20-red" cx="1080" cy="830" r="24" fill="url(#red)" stroke="#ad4542" stroke-width="2"/>
+</g></g>
+<g id="leaders" fill="none" stroke="#058cac" stroke-width="2.3"><path d="M370 77 V283 M370 171 L447 127 M370 171 L447 219 M370 464 V882 M370 654 L469 677"/></g><g id="leader-dots" fill="#058cac"><circle cx="447" cy="127" r="7"/><circle cx="447" cy="219" r="7"/><circle cx="469" cy="677" r="7"/></g>
+<g id="callouts" font-family="Atkinson Hyperlegible Next" font-size="35" fill="#008bad" text-anchor="end">
+<g id="callout-1"><circle cx="73" cy="95" r="23" fill="#008bad"/><text x="73" y="107" text-anchor="middle" fill="white" font-weight="750">1</text>
+<text x="350" y="107">The allele</text><text x="350" y="151">frequencies of</text><text x="350" y="195">the population</text><text x="350" y="239">are 0.8 (80%)</text><text x="350" y="283">and 0.2 (20%).</text></g>
+<g id="callout-2"><circle cx="46" cy="480" r="23" fill="#008bad"/><text x="46" y="492" text-anchor="middle" fill="white" font-weight="750">2</text>
+<text x="350" y="492">If all of these</text><text x="350" y="536">alleles could be</text><text x="350" y="580">placed in a large</text><text x="350" y="624">bin (representing</text><text x="350" y="668">the gene pool),</text><text x="350" y="712">80% would be <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="25">R</tspan></text><text x="350" y="756">and 20% would</text><text x="350" y="800">be <tspan font-style="italic">C</tspan><tspan font-style="italic" baseline-shift="super" font-size="25">W</tspan>.</text></g></g></svg>

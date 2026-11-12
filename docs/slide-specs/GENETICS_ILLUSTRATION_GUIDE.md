@@ -61,16 +61,16 @@ the sequence. Keep the teaching relationship visible when reducing either drawin
 small panels need the larger figure pages or zoom for fine labels. Current canonical build
 status remains in the progress ledger below.
 
-## Canonical organism example
+## Historical human compatibility example
 
 [human_life_cycle.drawn.svg](../../genetics/LECT06/djot/assets/lect06c-meiosis/human_life_cycle.drawn.svg)
 connects recognizable adult silhouettes to separate gonad details and gamete branches, then
 joins fertilization and the diploid return. Clear contours and route spacing carry the cycle.
 Actual-source ODP/PDF review found skin banding absent from the standalone preview; replacing
 four skin fills with existing palette solids removed it while preserving all other artwork
-bytes. This is a scoped compatibility example, not a general gradient restriction. The drawing
-is integrated and passes contextual review; canonical full-root delivery status remains in the
-progress ledger.
+bytes. This retained historical example records a scoped compatibility fix, not a general
+gradient restriction or a current drawing assignment. New human-figure drawing is deferred;
+the earlier integration and review evidence remains in the progress ledger.
 
 ## Canonical cell example
 
@@ -79,6 +79,13 @@ combines curved cell outlines and restrained shading for volume with flat, trace
 Cell depth supports recognition while chromosome ancestry and pairings remain the teaching
 focus. Fine anatomy labels need the large lecture view. This example passes actual-source
 contextual and canonical ODP/PDF review; delivery evidence remains in the progress ledger.
+
+[colchicine_chromosome_doubling.drawn.svg](../../genetics/LECT11/djot/assets/lect11b-polyploidy/colchicine_chromosome_doubling.drawn.svg)
+uses four rounded cells and two clear branches to compare three replicated chromosomes with
+3 + 3 untreated singles and six treated singles. Joined sisters in the parent and separate
+single chromosomes in the outcomes make counts visible. Color, length and shape preserve
+chromosome identity. All five live source labels remain readable in the actual slide.
+The pure-vector drawing passes canonical ODP/PDF contextual review.
 
 ## Cutaway compartments
 
@@ -90,15 +97,13 @@ adjacent big-image slide supplies readable fine labels and bilayer detail. Both 
 placements pass contextual review; canonical full-root delivery status remains in the progress
 ledger. Use this composition for this source's compartments, not as a universal delivery model.
 
-## Compose for available space
+## Withdrawn prenatal composition example
 
 [amniocentesis.drawn.svg](../../genetics/LECT10/djot/assets/lect10_repaired_figures/amniocentesis.drawn.svg)
-places the cutaway anatomy beside its laboratory workflow to use a wide slide area. Scale
-the anatomy uniformly and position live labels separately so both remain legible in the actual
-slide. Preserve sampling targets, branch identities and source wording while arranging them.
-This composition passes actual-source contextual and canonical ODP/PDF review; delivery evidence
-remains in the progress ledger. Judge each rendered placement rather than adopting a global
-font-size rule.
+is **WITHDRAWN** following the instructor's rejection; prenatal drawing is **DEFERRED**.
+The earlier placement/font-fit review remains historical evidence and does not establish
+acceptable artwork. Use the original labeled raster fallback for lecture continuity, and
+consult [SVG_REPAIR_BACKLOG.md](../SVG_REPAIR_BACKLOG.md) for the controlling decision.
 
 ## Organic cycles with evidence
 
@@ -158,6 +163,76 @@ uses a continuous funnel. Related line weights and restrained shading keep the d
 coherent while their different silhouettes preserve botanical identity. Both pass actual-source
 ODP/PDF contextual review; canonical delivery status remains in the progress ledger.
 
+## Chromosome language: straight single chromatids
+
+The [editable specimen](illustration_examples/chromosome_language.drawn.svg) establishes
+a native-SVG adaptation of the BPQ chromosome visual vocabulary. Use the small
+[chromosome helper and recipe](../../svg_tools/README.md#single-chromatid-chromosomes)
+for repeated straight rods: one continuous outlined silhouette with rounded neutral
+ends, ordered colored regions, a pale outlined centromere collar, and explicit white
+zigzag joins. The collar narrows the silhouette slightly while remaining attached
+to both arms. It is never a floating dot or an exchange seam.
+
+- Gene letters carry order and identity; colored regions carry the source's emphasis
+  or segment ancestry. Carry colors with exchanged segments. Keep the same region
+  pitch across a comparison so deletion shortens and duplication lengthens the rod.
+- The two terminal caps are illustrative end treatments, not labeled regions or
+  extra genes. A collar represents a source-established centromere locus. Omitting
+  the collar is explicit, never an inferred claim about an unknown centromere.
+- White zigzags mark explicitly authored joins. Red cut pointers belong at actual
+  source break boundaries, using the helper's returned coordinates. They are not
+  centromeres. Source captions and slide titles remain native Djot.
+- Restrained irregular banding suggests chromosome material; it is decorative,
+  never a measured G-band pattern. Equal letter spacing is also schematic.
+- Use flat live Atkinson Hyperlegible Next labels. Judge gene order, contrast and
+  collar/join distinction at the actual smallest image placement, not just enlarged art.
+- For source alleles such as `a+` and `b-`, opt in to the helper's `allele_labels=True`:
+  live italic lowercase letters and raised plus/minus signs preserve genotype identity
+  independently of hue. Empty regions can depict an unlabeled arm before a centromere;
+  they are not genes. Separate homolog rods remain separate, never joined as sisters.
+
+The recipe's four LECT11 overview candidates preserve deletion `ABCDE|FGH -> ABCE|FGH`,
+duplication `ABCDE|FGH -> ABCBCDE|FGH`, inversion `ABCDE|FGH -> ADCBE|FGH`, and reciprocal
+translocation `ABCDE|FGH + MNOPQ|R -> MNOCDE|FGH + ABPQ|R`; `|` denotes the centromere.
+Each uses single chromatids and depicts no discarded fragments. These are a bounded
+pilot, not evidence that every LECT11 chromosome family has been migrated.
+
+Replicated sisters/X forms, curved pairing and crossover forms, ploidy-count scenes,
+sex-chromosome pairing, deletion interval maps and measured cytological bands require
+their own source checks and construction. A straight rod must not erase those meanings.
+The specimen and candidate previews establish standalone rendering only; actual course
+integration, independent review and export evidence belong to the progress ledger.
+
+## Pedigrees: reuse the BPQ native SVG renderer
+
+Author pedigree figures through biology-problems (BPQ), under
+`problems/inheritance-problems/pedigrees/`: `pedigree_lib.family` supplies `Person`,
+`Union`, `Observation` and `Family`; `pedigree_lib.svg_output.render_svg` emits
+editable circles, squares, lines and live text. Use stable person IDs, explicit
+parent/child lists and observed fills; validate the family and observations before
+rendering. Parent roles do not determine the left/right order of drawn spouses.
+
+For source-faithful slides, construct `layout.Symbol`, `Segment` and `Diagram`
+objects with fixed coordinates and explicit union membership. Automatic `lay_out`
+is optional: it may rearrange source order or require centered offspring. Keep
+`render_svg`'s geometry validation enabled; resolve a rejected layout before
+styling. The current family model supports one union per person and unique
+parentage, and rejects inconsistent generations. Do not silently simplify a source
+that exceeds these limits or build a second pedigree renderer in this project.
+
+The renderer currently uses 30-unit symbols and fixed label styling. Apply a
+consistent coordinate scale, then adapt the returned SVG's live text to installed
+Atkinson Hyperlegible Next, the source palette and readable placement-specific
+sizes. Preserve symbol shapes, spouse order, child order and all connections,
+including offset stems and deliberately unconnected nearby symbols. Add neutral
+accessible metadata and row labels where the source includes them; add no inferred
+genotypes, inheritance answer or carrier marks. Check the smallest actual frame
+for every label, connector, symbol boundary and margin.
+
+Use BPQ during authoring only. Keep the final `.drawn.svg` static and self-contained;
+course builds do not import BPQ. Record the authoring call, BPQ source hashes,
+source/graph checks and rendered proofs in task evidence so reuse is reproducible.
+
 ## Shared drawing choices
 
 | Choice | Apply it to the subject |
@@ -189,20 +264,27 @@ real drawings need the same operation; keep biological assembly and scientific t
 
 ## Editable source and review
 
+- The active goal delivers pure vector SVG, with no `<image>` elements or embedded bitmaps.
+  Quality-90 WebP previews and retained raster fallbacks are not completed SVG deliverables.
 - Keep original vector art in self-contained `.drawn.svg` files with a stable positive `viewBox`,
   meaningful groups and unique IDs. Reuse small parts only where it makes editing clearer.
 - Preserve live text, a useful `title` and `desc`, and host image alt text. The SVG is the editable
   artwork; Impress embeds it as one image object. No linked fonts, scripts or raster wrappers
-  belong in these original-drawing examples.
+  belong in these original-drawing examples. Use the installed Atkinson Hyperlegible Next and
+  Mono font roles by family name, without per-SVG font embedding; follow
+  [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md).
 - Keep source ASCII. Use numeric XML character references such as `&#8722;` for a minus sign;
   HTML-only names such as `&alpha;` are not valid standalone SVG entities.
   ASCII source bytes are compatible with an `encoding="UTF-8"` XML declaration. In the fuel-cell
   drawings, `encoding="ASCII"` caused blank LibreOffice import; changing only that declaration
   to UTF-8 restored both drawings and their selectable labels without changing parsed artwork.
-- Parse XML and resolve references, then inspect at intended lecture size and reduced size.
-  The 320-pixel previews test recognition and hierarchy; small captions need the larger view.
-- Inspect the actual changed ODP/PDF consumers for labels, clipping, color meaning and reveals
-  before lecture delivery. A valid SVG or standalone preview cannot establish slide fit.
+- Parse XML and resolve references, then inspect one direct preview at intended display size.
+  Brief artist and manager review checks labels, boundaries, color meaning and taught relationships
+  before image-URL integration. Use the known image frame when available.
+- Add extra sizes, independent review or a targeted consumer/export check for a concrete concern,
+  such as a known LibreOffice SVG failure, crop, overlay, reveal or uncertain image frame.
+  Ordinary art milestones complete through the brief review and integration; external human
+  feedback is optional.
 - In scratch Djot proofs, use supported repository-relative image URLs such as
   `repo:_temp/art_proof/example.drawn.svg`. Absolute paths and `../` traversal can parse but
   fail the builder's image-path checks; reuse `repo:` for artwork elsewhere in the checkout.

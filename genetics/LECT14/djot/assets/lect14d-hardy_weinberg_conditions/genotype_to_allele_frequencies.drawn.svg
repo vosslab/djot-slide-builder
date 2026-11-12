@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ascii"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="484" viewBox="0 0 1125 484" role="img" font-family="Atkinson Hyperlegible Next, sans-serif">
+  <title>Allele frequencies from genotype frequencies</title>
+  <desc>Genotype frequencies are separated into allele contributions from gametes and summed into A and a allele frequencies.</desc>
+  <defs>
+    <marker id="allele-flow-head" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 5L0 10" fill="none" stroke="#16232d" stroke-width="2.5"/></marker>
+  </defs>
+  <rect width="1125" height="484" fill="white"/>
+  <g id="row-headings" font-size="30" font-weight="700" fill="#121820">
+    <text x="20" y="136">Genotypes of</text><text x="20" y="168">parents</text>
+    <text x="20" y="258">Alleles present</text><text x="20" y="290">in gametes</text>
+  </g>
+  <g id="genotype-frequencies" font-size="28" font-weight="700" fill="#111820" text-anchor="middle">
+    <rect id="genotype-AA" x="258" y="108" width="124" height="48" rx="2" fill="#d8e1ed"/><text x="320" y="140">0.795 <tspan font-style="italic">AA</tspan></text>
+    <rect id="genotype-Aa" x="469" y="108" width="124" height="48" rx="2" fill="#d9eee8"/><text x="531" y="140">0.190 <tspan font-style="italic">Aa</tspan></text>
+    <rect id="genotype-aa" x="680" y="108" width="124" height="48" rx="2" fill="#fff1bf"/><text x="742" y="140">0.015 <tspan font-style="italic">aa</tspan></text>
+  </g>
+  <g id="allele-contributions" font-size="27" font-weight="700" fill="#111820" text-anchor="middle">
+    <rect id="contribution-A-from-AA" x="255" y="220" width="130" height="48" rx="2" fill="#f8dfcf"/><text x="320" y="252">0.795 <tspan font-style="italic">A</tspan></text>
+    <rect id="contribution-halves" x="414" y="220" width="234" height="48" rx="2" fill="#f8dfcf"/><text x="472" y="252">0.095 <tspan font-style="italic">A</tspan></text><text x="588" y="252">0.095 <tspan font-style="italic">a</tspan></text>
+    <rect id="contribution-a-from-aa" x="677" y="220" width="130" height="48" rx="2" fill="#f8dfcf"/><text x="742" y="252">0.015 <tspan font-style="italic">a</tspan></text>
+  </g>
+  <g id="allele-flow-arrows" fill="none" stroke="#16232d" stroke-width="3.2" marker-end="url(#allele-flow-head)">
+    <path id="arrow-AA-to-A" d="M320 157V211"/>
+    <path id="arrow-Aa-to-A" d="M531 157L472 211"/>
+    <path id="arrow-Aa-to-a" d="M531 157L588 211"/>
+    <path id="arrow-aa-to-a" d="M742 157V211"/>
+  </g>
+  <g id="totals" fill="none" stroke="#17232d" stroke-width="2.5">
+    <path id="brace-A" d="M286 277c0 10 11 12 20 12h72c10 0 20 4 20 14c0-10 10-14 20-14h72c10 0 20-2 20-12"/>
+    <path id="brace-a" d="M550 277c0 10 11 12 20 12h55c10 0 20 4 20 14c0-10 10-14 20-14h55c10 0 20-2 20-12"/>
+  </g>
+  <g id="allele-totals" font-size="30" font-weight="700" fill="#111820" text-anchor="middle">
+    <text id="total-A" x="398" y="335">0.89 <tspan font-style="italic">A</tspan></text>
+    <text id="total-a" x="645" y="335">0.11 <tspan font-style="italic">a</tspan></text>
+  </g>
+  <g id="callout-leaders" fill="none" stroke="#2879b8" stroke-width="3">
+    <path id="leader-genotypes" d="M836 80L800 104"/><path id="leader-gametes" d="M836 244L806 244"/>
+  </g>
+  <g id="callouts" fill="#d8e3f1" stroke="#6b9ed3" stroke-width="1.5" font-size="27" font-weight="700" fill-opacity="1">
+    <rect id="callout-genotypes" x="838" y="20" width="267" height="126"/><rect id="callout-gametes" x="838" y="219" width="267" height="125"/>
+    <rect id="callout-total-A" x="300" y="352" width="185" height="122"/><rect id="callout-total-a" x="548" y="352" width="185" height="122"/>
+  </g>
+  <g id="callout-text" font-size="27" font-weight="700" fill="#111820">
+    <text x="849" y="51"><tspan x="849" dy="0">Frequencies of</tspan><tspan x="849" dy="29">genotypes among</tspan><tspan x="849" dy="29">mating adults in the</tspan><tspan x="849" dy="29">local population</tspan></text>
+    <text x="849" y="250"><tspan x="849" dy="0">Frequencies of</tspan><tspan x="849" dy="29">alleles among</tspan><tspan x="849" dy="29">gametes produced</tspan><tspan x="849" dy="29">by mating adults</tspan></text>
+    <text x="312" y="381"><tspan x="312" dy="0">Total</tspan><tspan x="312" dy="29">frequency of</tspan><tspan x="312" dy="29" font-style="italic">A<tspan font-style="normal" xml:space="preserve" dx="4"> among all</tspan></tspan><tspan x="312" dy="29">gametes</tspan></text>
+    <text x="560" y="381"><tspan x="560" dy="0">Total</tspan><tspan x="560" dy="29">frequency of</tspan><tspan x="560" dy="29" font-style="italic">a<tspan font-style="normal" xml:space="preserve" dx="4"> among all</tspan></tspan><tspan x="560" dy="29">gametes</tspan></text>
+  </g>
+</svg>

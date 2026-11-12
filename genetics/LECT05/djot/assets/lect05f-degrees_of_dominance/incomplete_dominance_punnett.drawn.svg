@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="267" height="281" viewBox="0 0 267 281" role="img" aria-labelledby="title desc" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#253640" xml:space="preserve"><title id="title">Incomplete dominance flower Punnett square</title><desc id="desc">Four genotype combinations yield one red, two pink and one white tubular bilabiate flower.</desc><rect width="267" height="281" fill="white" /><rect id="grid" x="57" y="40" width="209" height="208" fill="white" stroke="#344650" stroke-width="1" /><path id="grid-dividers" d="M161.5 40 V248 M57 144 H266" fill="none" stroke="#344650" stroke-width="1" /><rect id="f2-badge" x="3" y="5" width="24" height="26" fill="#f3f7fa" stroke="#344650" stroke-width="1" /><text x="7" y="23" font-size="17" id="generation">F<tspan font-size="11" baseline-shift="-4">2</tspan></text><circle id="circle-top-R" cx="109.25" cy="20" r="16" fill="white" stroke="#344650" stroke-width="1" /><text id="gamete-top-R" x="109.25" y="26" font-size="19" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan></text><circle id="circle-top-w" cx="213.75" cy="20" r="16" fill="white" stroke="#344650" stroke-width="1" /><text id="gamete-top-w" x="213.75" y="26" font-size="19" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan></text><circle id="circle-left-R" cx="31" cy="92" r="16" fill="white" stroke="#344650" stroke-width="1" /><text id="gamete-left-R" x="31" y="98" font-size="19" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan></text><circle id="circle-left-w" cx="31" cy="196" r="16" fill="white" stroke="#344650" stroke-width="1" /><text id="gamete-left-w" x="31" y="202" font-size="19" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan></text><g id="flower-1" stroke-linejoin="round" stroke-linecap="round" transform="translate(109.25 85) scale(.62)" data-phenotype="red">
+
+<path d="M-28 37 Q-38 46 -44 52 L-49 48 Q-41 35 -33 28Z" fill="#3d7850" stroke="#285b40" stroke-width="1.8" />
+<path d="M-38 39 Q-49 27 -40 15 Q-37 28 -24 28 Q-15 19 -11 22 Q-13 36 -30 41Z" fill="#6a9959" stroke="#285b40" stroke-width="1.6" />
+<path d="M-31 36 Q-39 29 -32 12 Q-25 19 -20 28 Q-8 25 -4 31 Q-14 44 -31 36Z" fill="#4b8450" stroke="#285b40" stroke-width="1.6" />
+
+<path d="M-30 31 C-36 18 -37 -1 -27 -14 C-16 -25 3 -27 18 -12 C27 2 17 21 4 28 C-10 37 -19 37 -30 31Z" fill="#d73540" stroke="#771f31" stroke-width="1.8" />
+<path d="M-29 29 C-32 12 -30 1 -20 -9 C-15 -17 -3 -19 8 -14 C-9 -7 -12 7 -12 21 Q-19 33 -29 29Z" fill="#a11f32" />
+
+<path d="M-18 -5 C-26 0 -29 13 -21 21 C-15 29 -9 27 -5 22 C-3 32 11 39 21 32 C26 29 27 24 27 20 C39 26 52 18 48 7 C46 -2 35 -9 25 -11 C10 -17 -5 -16 -18 -5Z" fill="#d73540" stroke="#771f31" stroke-width="1.8" />
+<path d="M-13 4 C-17 12 -17 19 -11 22 Q-7 22 -5 18 C-3 29 10 34 17 29 C8 25 4 15 6 9Z" fill="#a11f32" />
+<path d="M16 2 C29 -4 39 2 44 10 C44 16 37 19 31 17 Q35 9 22 8Z" fill="#ef6770" />
+<path d="M-15 1 C-5 -8 11 -9 25 -3 C28 1 24 7 16 9 C5 13 -6 10 -15 1Z" fill="#ef6770" />
+
+<path d="M-26 -11 C-34 -17 -36 -30 -29 -40 C-23 -49 -11 -48 -3 -41 C3 -36 4 -36 8 -42 C13 -51 22 -56 31 -50 C39 -46 41 -34 35 -24 C31 -17 21 -16 15 -16 C2 -17 -12 -12 -26 -11Z" fill="#ef6770" stroke="#771f31" stroke-width="1.8" />
+<path d="M-27 -17 C-17 -25 -5 -24 7 -25 C24 -25 30 -30 32 -43 C37 -34 32 -24 24 -21 C9 -16 -7 -18 -21 -12Z" fill="#d73540" />
+<path d="M-25 -11 C-10 -16 0 -17 15 -16 Q21 -16 27 -19 C20 -9 7 -5 -5 -6 Q-18 -7 -25 -11Z" fill="#a11f32" stroke="#771f31" stroke-width="1.4" />
+<path d="M-27 -36 Q-18 -44 -9 -39 M14 -42 Q23 -51 29 -44" fill="none" stroke="#ffafb0" stroke-width="2.2" />
+<path d="M-8 13 Q-8 20 -5 23 M22 13 Q24 19 23 24" fill="none" stroke="#771f31" stroke-width="1" />
+<path d="M-39 37 L-30 24 M-31 34 L-21 31" fill="none" stroke="#a1bc78" stroke-width="1.4" />
+</g><text id="genotype-1" x="109.25" y="134" font-size="20" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan></text><g id="flower-2" stroke-linejoin="round" stroke-linecap="round" transform="translate(213.75 85) scale(.62)" data-phenotype="pink">
+
+<path d="M-28 37 Q-38 46 -44 52 L-49 48 Q-41 35 -33 28Z" fill="#3d7850" stroke="#285b40" stroke-width="1.8" />
+<path d="M-38 39 Q-49 27 -40 15 Q-37 28 -24 28 Q-15 19 -11 22 Q-13 36 -30 41Z" fill="#6a9959" stroke="#285b40" stroke-width="1.6" />
+<path d="M-31 36 Q-39 29 -32 12 Q-25 19 -20 28 Q-8 25 -4 31 Q-14 44 -31 36Z" fill="#4b8450" stroke="#285b40" stroke-width="1.6" />
+
+<path d="M-30 31 C-36 18 -37 -1 -27 -14 C-16 -25 3 -27 18 -12 C27 2 17 21 4 28 C-10 37 -19 37 -30 31Z" fill="#e895b6" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-29 29 C-32 12 -30 1 -20 -9 C-15 -17 -3 -19 8 -14 C-9 -7 -12 7 -12 21 Q-19 33 -29 29Z" fill="#c25b87" />
+
+<path d="M-18 -5 C-26 0 -29 13 -21 21 C-15 29 -9 27 -5 22 C-3 32 11 39 21 32 C26 29 27 24 27 20 C39 26 52 18 48 7 C46 -2 35 -9 25 -11 C10 -17 -5 -16 -18 -5Z" fill="#e895b6" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-13 4 C-17 12 -17 19 -11 22 Q-7 22 -5 18 C-3 29 10 34 17 29 C8 25 4 15 6 9Z" fill="#c25b87" />
+<path d="M16 2 C29 -4 39 2 44 10 C44 16 37 19 31 17 Q35 9 22 8Z" fill="#f7bed2" />
+<path d="M-15 1 C-5 -8 11 -9 25 -3 C28 1 24 7 16 9 C5 13 -6 10 -15 1Z" fill="#f7bed2" />
+
+<path d="M-26 -11 C-34 -17 -36 -30 -29 -40 C-23 -49 -11 -48 -3 -41 C3 -36 4 -36 8 -42 C13 -51 22 -56 31 -50 C39 -46 41 -34 35 -24 C31 -17 21 -16 15 -16 C2 -17 -12 -12 -26 -11Z" fill="#f7bed2" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-27 -17 C-17 -25 -5 -24 7 -25 C24 -25 30 -30 32 -43 C37 -34 32 -24 24 -21 C9 -16 -7 -18 -21 -12Z" fill="#e895b6" />
+<path d="M-25 -11 C-10 -16 0 -17 15 -16 Q21 -16 27 -19 C20 -9 7 -5 -5 -6 Q-18 -7 -25 -11Z" fill="#c25b87" stroke="#8b4665" stroke-width="1.4" />
+<path d="M-27 -36 Q-18 -44 -9 -39 M14 -42 Q23 -51 29 -44" fill="none" stroke="#ffe1e9" stroke-width="2.2" />
+<path d="M-8 13 Q-8 20 -5 23 M22 13 Q24 19 23 24" fill="none" stroke="#8b4665" stroke-width="1" />
+<path d="M-39 37 L-30 24 M-31 34 L-21 31" fill="none" stroke="#a1bc78" stroke-width="1.4" />
+</g><text id="genotype-2" x="213.75" y="134" font-size="20" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan></text><g id="flower-3" stroke-linejoin="round" stroke-linecap="round" transform="translate(109.25 189) scale(.62)" data-phenotype="pink">
+
+<path d="M-28 37 Q-38 46 -44 52 L-49 48 Q-41 35 -33 28Z" fill="#3d7850" stroke="#285b40" stroke-width="1.8" />
+<path d="M-38 39 Q-49 27 -40 15 Q-37 28 -24 28 Q-15 19 -11 22 Q-13 36 -30 41Z" fill="#6a9959" stroke="#285b40" stroke-width="1.6" />
+<path d="M-31 36 Q-39 29 -32 12 Q-25 19 -20 28 Q-8 25 -4 31 Q-14 44 -31 36Z" fill="#4b8450" stroke="#285b40" stroke-width="1.6" />
+
+<path d="M-30 31 C-36 18 -37 -1 -27 -14 C-16 -25 3 -27 18 -12 C27 2 17 21 4 28 C-10 37 -19 37 -30 31Z" fill="#e895b6" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-29 29 C-32 12 -30 1 -20 -9 C-15 -17 -3 -19 8 -14 C-9 -7 -12 7 -12 21 Q-19 33 -29 29Z" fill="#c25b87" />
+
+<path d="M-18 -5 C-26 0 -29 13 -21 21 C-15 29 -9 27 -5 22 C-3 32 11 39 21 32 C26 29 27 24 27 20 C39 26 52 18 48 7 C46 -2 35 -9 25 -11 C10 -17 -5 -16 -18 -5Z" fill="#e895b6" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-13 4 C-17 12 -17 19 -11 22 Q-7 22 -5 18 C-3 29 10 34 17 29 C8 25 4 15 6 9Z" fill="#c25b87" />
+<path d="M16 2 C29 -4 39 2 44 10 C44 16 37 19 31 17 Q35 9 22 8Z" fill="#f7bed2" />
+<path d="M-15 1 C-5 -8 11 -9 25 -3 C28 1 24 7 16 9 C5 13 -6 10 -15 1Z" fill="#f7bed2" />
+
+<path d="M-26 -11 C-34 -17 -36 -30 -29 -40 C-23 -49 -11 -48 -3 -41 C3 -36 4 -36 8 -42 C13 -51 22 -56 31 -50 C39 -46 41 -34 35 -24 C31 -17 21 -16 15 -16 C2 -17 -12 -12 -26 -11Z" fill="#f7bed2" stroke="#8b4665" stroke-width="1.8" />
+<path d="M-27 -17 C-17 -25 -5 -24 7 -25 C24 -25 30 -30 32 -43 C37 -34 32 -24 24 -21 C9 -16 -7 -18 -21 -12Z" fill="#e895b6" />
+<path d="M-25 -11 C-10 -16 0 -17 15 -16 Q21 -16 27 -19 C20 -9 7 -5 -5 -6 Q-18 -7 -25 -11Z" fill="#c25b87" stroke="#8b4665" stroke-width="1.4" />
+<path d="M-27 -36 Q-18 -44 -9 -39 M14 -42 Q23 -51 29 -44" fill="none" stroke="#ffe1e9" stroke-width="2.2" />
+<path d="M-8 13 Q-8 20 -5 23 M22 13 Q24 19 23 24" fill="none" stroke="#8b4665" stroke-width="1" />
+<path d="M-39 37 L-30 24 M-31 34 L-21 31" fill="none" stroke="#a1bc78" stroke-width="1.4" />
+</g><text id="genotype-3" x="109.25" y="238" font-size="20" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">R</tspan><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan></text><g id="flower-4" stroke-linejoin="round" stroke-linecap="round" transform="translate(213.75 189) scale(.62)" data-phenotype="white">
+
+<path d="M-28 37 Q-38 46 -44 52 L-49 48 Q-41 35 -33 28Z" fill="#3d7850" stroke="#285b40" stroke-width="1.8" />
+<path d="M-38 39 Q-49 27 -40 15 Q-37 28 -24 28 Q-15 19 -11 22 Q-13 36 -30 41Z" fill="#6a9959" stroke="#285b40" stroke-width="1.6" />
+<path d="M-31 36 Q-39 29 -32 12 Q-25 19 -20 28 Q-8 25 -4 31 Q-14 44 -31 36Z" fill="#4b8450" stroke="#285b40" stroke-width="1.6" />
+
+<path d="M-30 31 C-36 18 -37 -1 -27 -14 C-16 -25 3 -27 18 -12 C27 2 17 21 4 28 C-10 37 -19 37 -30 31Z" fill="#f7f8f5" stroke="#74847b" stroke-width="1.8" />
+<path d="M-29 29 C-32 12 -30 1 -20 -9 C-15 -17 -3 -19 8 -14 C-9 -7 -12 7 -12 21 Q-19 33 -29 29Z" fill="#d6ddd8" />
+
+<path d="M-18 -5 C-26 0 -29 13 -21 21 C-15 29 -9 27 -5 22 C-3 32 11 39 21 32 C26 29 27 24 27 20 C39 26 52 18 48 7 C46 -2 35 -9 25 -11 C10 -17 -5 -16 -18 -5Z" fill="#f7f8f5" stroke="#74847b" stroke-width="1.8" />
+<path d="M-13 4 C-17 12 -17 19 -11 22 Q-7 22 -5 18 C-3 29 10 34 17 29 C8 25 4 15 6 9Z" fill="#d6ddd8" />
+<path d="M16 2 C29 -4 39 2 44 10 C44 16 37 19 31 17 Q35 9 22 8Z" fill="#ffffff" />
+<path d="M-15 1 C-5 -8 11 -9 25 -3 C28 1 24 7 16 9 C5 13 -6 10 -15 1Z" fill="#ffffff" />
+
+<path d="M-26 -11 C-34 -17 -36 -30 -29 -40 C-23 -49 -11 -48 -3 -41 C3 -36 4 -36 8 -42 C13 -51 22 -56 31 -50 C39 -46 41 -34 35 -24 C31 -17 21 -16 15 -16 C2 -17 -12 -12 -26 -11Z" fill="#ffffff" stroke="#74847b" stroke-width="1.8" />
+<path d="M-27 -17 C-17 -25 -5 -24 7 -25 C24 -25 30 -30 32 -43 C37 -34 32 -24 24 -21 C9 -16 -7 -18 -21 -12Z" fill="#f7f8f5" />
+<path d="M-25 -11 C-10 -16 0 -17 15 -16 Q21 -16 27 -19 C20 -9 7 -5 -5 -6 Q-18 -7 -25 -11Z" fill="#d6ddd8" stroke="#74847b" stroke-width="1.4" />
+<path d="M-27 -36 Q-18 -44 -9 -39 M14 -42 Q23 -51 29 -44" fill="none" stroke="#ffffff" stroke-width="2.2" />
+<path d="M-8 13 Q-8 20 -5 23 M22 13 Q24 19 23 24" fill="none" stroke="#74847b" stroke-width="1" />
+<path d="M-39 37 L-30 24 M-31 34 L-21 31" fill="none" stroke="#a1bc78" stroke-width="1.4" />
+</g><text id="genotype-4" x="213.75" y="238" font-size="20" text-anchor="middle" font-style="italic"><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan><tspan>C</tspan><tspan font-size="12" baseline-shift="7">w</tspan></text><text id="ratio" x="161.5" y="273" font-size="16" text-anchor="middle">1 red : 2 pink: 1 white</text></svg>

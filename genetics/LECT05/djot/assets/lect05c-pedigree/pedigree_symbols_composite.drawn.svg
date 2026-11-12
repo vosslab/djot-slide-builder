@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1048" height="536" viewBox="0 0 1048 536" role="img" aria-labelledby="composite-title">
+<title id="composite-title">Pedigree symbols and family relationships</title>
+<rect width="1048" height="536" fill="#F1F6FB"/>
+<g id="legend-symbol-1" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="42" cy="40" r="12"/>
+</g>
+<text id="legend-label-1" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="46">Normal female</tspan>
+</text>
+<g id="legend-symbol-2" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="30" y="77" width="24" height="24"/>
+</g>
+<text id="legend-label-2" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="95">Normal male</tspan>
+</text>
+<g id="legend-symbol-3" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<polygon points="42,123 57,138 42,153 27,138"/>
+</g>
+<text id="legend-label-3" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="144">Normal, gender unspecified</tspan>
+</text>
+<g id="legend-symbol-4" fill="#DF2444" stroke="#243645" stroke-width="2">
+<circle cx="42" cy="187" r="12"/>
+</g>
+<text id="legend-label-4" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="193">Affected female</tspan>
+</text>
+<g id="legend-symbol-5" fill="#DF2444" stroke="#243645" stroke-width="2">
+<rect x="30" y="224" width="24" height="24"/>
+</g>
+<text id="legend-label-5" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="242">Affected male</tspan>
+</text>
+<g id="legend-symbol-6" fill="#DF2444" stroke="#243645" stroke-width="2">
+<polygon points="42,270 57,285 42,300 27,285"/>
+</g>
+<text id="legend-label-6" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="291">Affected, gender unspecified</tspan>
+</text>
+<g id="legend-symbol-7" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="42" cy="337" r="12"/>
+</g>
+<path id="female-carrier-left" d="M42 325 A12 12 0 0 0 42 349 Z" fill="#DF2444"/>
+<path id="female-carrier-outline" d="M42 325 A12 12 0 1 0 42 349 A12 12 0 1 0 42 325 M42 325 V349" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="legend-label-7" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="333">Female heterozygous for</tspan>
+<tspan x="80" y="355">recessive allele</tspan>
+</text>
+<g id="legend-symbol-8" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="30" y="377" width="24" height="24"/>
+</g>
+<rect id="male-carrier-left" x="30" y="377" width="12" height="24" fill="#DF2444"/>
+<path id="male-carrier-outline" d="M30 377 H54 V401 H30 Z M42 377 V401" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="legend-label-8" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="385">Male heterozygous for</tspan>
+<tspan x="80" y="407">recessive allele</tspan>
+</text>
+<g id="legend-symbol-9" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<polygon points="42,431 57,451 27,451"/>
+</g>
+<text id="legend-label-9" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="447">Spontaneous abortion</tspan>
+</text>
+<g id="legend-symbol-10" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="42" cy="493" r="12"/>
+</g>
+<path id="deceased-slash" d="M26 509 L58 477" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="legend-label-10" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="80" y="499">Deceased</tspan>
+</text>
+<path id="single-mating" d="M692 40 H768" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="mating-female" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="680" cy="40" r="12"/>
+</g>
+<g id="mating-male" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="768" y="28" width="24" height="24"/>
+</g>
+<path id="double-mating" d="M691.619 99 H768 M691.619 105 H768" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="related-female" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="680" cy="102" r="12"/>
+</g>
+<g id="related-male" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="768" y="90" width="24" height="24"/>
+</g>
+<text id="mating-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="825" y="46">Mating</tspan>
+</text>
+<text id="related-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">
+<tspan x="825" y="98">Mating between</tspan>
+<tspan x="825" y="120">relatives</tspan>
+</text>
+<path id="family-connections" d="M692 187 H768 M730 187 V226 M660 226 H798 M660 226 V255 M706 226 V255 M752 226 V255 M798 226 V255" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="family-mother" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="680" cy="187" r="12"/>
+</g>
+<g id="family-father" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="768" y="175" width="24" height="24"/>
+</g>
+<g id="child-1" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="660" cy="267" r="12"/>
+</g>
+<g id="child-2" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="706" cy="267" r="12"/>
+</g>
+<g id="child-3" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<rect x="740" y="255" width="24" height="24"/>
+</g>
+<g id="child-4" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="798" cy="267" r="12"/>
+</g>
+<text id="generation-one" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">
+<tspan x="633" y="194">I</tspan>
+</text>
+<text id="generation-two" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="start">
+<tspan x="625" y="274">II</tspan>
+</text>
+<text id="generation-explanation" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="start">
+<tspan x="480" y="178">Roman</tspan>
+<tspan x="480" y="200">numerals</tspan>
+<tspan x="480" y="222">represent</tspan>
+<tspan x="480" y="244">generation</tspan>
+</text>
+<path id="generation-leaders" d="M586 178 L620 187 M586 244 L613 267" fill="none" stroke="#087FAB" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle id="generation-one-dot" cx="620" cy="187" r="3" fill="#087FAB"/>
+<circle id="generation-two-dot" cx="613" cy="267" r="3" fill="#087FAB"/>
+<circle id="first-dot" cx="646" cy="279" r="3" fill="#087FAB"/>
+<circle id="last-dot" cx="812" cy="279" r="3" fill="#087FAB"/>
+<text id="family-caption" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="start">
+<tspan x="835" y="182">Parents and offspring</tspan>
+<tspan x="835" y="204">(offspring depicted</tspan>
+<tspan x="835" y="226">in order of birth)</tspan>
+</text>
+<path id="siblings-brace" d="M648 288 Q648 296 656 296 H718 Q729 296 729 303 Q729 296 740 296 H802 Q810 296 810 288" fill="none" stroke="#243645" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="siblings-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">
+<tspan x="729" y="326">Siblings</tspan>
+</text>
+<path id="birth-order-leaders" d="M646 279 L625 310 L625 324 M812 279 L839 310 L839 324" fill="none" stroke="#087FAB" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="first-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="middle">
+<tspan x="611" y="347">First born</tspan>
+</text>
+<text id="last-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="middle">
+<tspan x="853" y="347">Last born</tspan>
+</text>
+<path id="twins-shared-bar" d="M651 427 V401 H841 V427" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path id="monozygotic-branches" d="M651 427 L629 451 M651 427 L673 451 M640 439 H662" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path id="dizygotic-branches" d="M841 427 L819 451 M841 427 L863 451" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="mono-left" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="623" cy="461" r="12"/>
+</g>
+<g id="mono-right" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="679" cy="461" r="12"/>
+</g>
+<g id="di-left" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="813" cy="461" r="12"/>
+</g>
+<g id="di-right" fill="#FFF8E7" stroke="#243645" stroke-width="2">
+<circle cx="869" cy="461" r="12"/>
+</g>
+<text id="mono-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="middle">
+<tspan x="651" y="501">One-egg</tspan>
+<tspan x="651" y="523">(monozygotic twins)</tspan>
+</text>
+<text id="di-label" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="18" text-anchor="middle">
+<tspan x="855" y="501">Two-egg</tspan>
+<tspan x="855" y="523">(dizygotic twins)</tspan>
+</text>
+</svg>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.3900260925292 603.8359985351562" role="img" aria-labelledby="title desc">
+  <title id="title">Meiosis produces parental and reciprocal recombinant products</title>
+  <desc id="desc">Eight cells show two contacts between the same nonsister chromatids, segregation of homologs and sisters, and four products: red, blue-red-blue, red-blue-red, and blue.</desc>
+  <defs>
+    <radialGradient id="cell-fill" cx=".32" cy=".25" r=".8">
+      <stop offset="0" stop-color="#fff0cb" />
+      <stop offset=".7" stop-color="#f7cd87" />
+      <stop offset="1" stop-color="#e9b66e" />
+    </radialGradient>
+    <linearGradient id="ancestry-R" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#e93b38" />
+      <stop offset="1" stop-color="#e93b38" />
+    </linearGradient>
+    <linearGradient id="ancestry-B" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#149dc8" />
+      <stop offset="1" stop-color="#149dc8" />
+    </linearGradient>
+    <linearGradient id="ancestry-BRB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#149dc8" />
+      <stop offset="0.24" stop-color="#149dc8" />
+      <stop offset="0.24" stop-color="#e93b38" />
+      <stop offset="0.76" stop-color="#e93b38" />
+      <stop offset="0.76" stop-color="#149dc8" />
+      <stop offset="1" stop-color="#149dc8" />
+    </linearGradient>
+    <linearGradient id="ancestry-RBR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#e93b38" />
+      <stop offset="0.24" stop-color="#e93b38" />
+      <stop offset="0.24" stop-color="#149dc8" />
+      <stop offset="0.76" stop-color="#149dc8" />
+      <stop offset="0.76" stop-color="#e93b38" />
+      <stop offset="1" stop-color="#e93b38" />
+    </linearGradient>
+  </defs>
+  <g id="synapsis" transform="translate(110 302)">
+    <ellipse id="synapsis-cell" cx="0" cy="0" rx="104" ry="91" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <path id="synapsis-guide-0" d="M0 -74 V-51" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <path id="synapsis-guide-1" d="M0 51 V74" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <g id="initial-red-parent">
+      <path id="initial-red-parent-outline" d="M-73 -35 C-43 -35 -42 -12 0 -12 C42 -12 43 -35 73 -35" fill="none" stroke="#6b4a45" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="initial-red-parent-backbone" d="M-73 -35 C-43 -35 -42 -12 0 -12 C42 -12 43 -35 73 -35" fill="none" stroke="url(#ancestry-R)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="initial-red-parent-highlight" d="M-73 -35 C-43 -35 -42 -12 0 -12 C42 -12 43 -35 73 -35" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <g id="initial-blue-parent">
+      <path id="initial-blue-parent-outline" d="M-73 35 C-43 35 -42 12 0 12 C42 12 43 35 73 35" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="initial-blue-parent-backbone" d="M-73 35 C-43 35 -42 12 0 12 C42 12 43 35 73 35" fill="none" stroke="url(#ancestry-B)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="initial-blue-parent-highlight" d="M-73 35 C-43 35 -42 12 0 12 C42 12 43 35 73 35" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <g id="initial-blue-exchanging">
+      <path id="initial-blue-exchanging-outline" d="M-73 -21 C-43 -21 -42 12 0 12 C42 12 43 -21 73 -21" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="initial-blue-exchanging-backbone" d="M-73 -21 C-43 -21 -42 12 0 12 C42 12 43 -21 73 -21" fill="none" stroke="url(#ancestry-B)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="initial-blue-exchanging-highlight" d="M-73 -21 C-43 -21 -42 12 0 12 C42 12 43 -21 73 -21" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <g id="initial-red-exchanging">
+      <path id="initial-red-exchanging-outline" d="M-73 21 C-43 21 -42 -12 0 -12 C42 -12 43 21 73 21" fill="none" stroke="#6b4a45" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="initial-red-exchanging-backbone" d="M-73 21 C-43 21 -42 -12 0 -12 C42 -12 43 21 73 21" fill="none" stroke="url(#ancestry-R)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="initial-red-exchanging-highlight" d="M-73 21 C-43 21 -42 -12 0 -12 C42 -12 43 21 73 21" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="homologs" transform="translate(440 302)">
+    <ellipse id="homologs-cell" cx="0" cy="0" rx="104" ry="91" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <path id="homologs-guide-0" d="M0 -74 V-51" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <path id="homologs-guide-1" d="M0 51 V74" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <g id="red-paired-unit" transform="translate(0 -40)">
+      <g id="red-sister-1">
+        <path id="red-sister-1-outline" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" fill="none" stroke="#6b4a45" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+        <path id="red-sister-1-backbone" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" fill="none" stroke="url(#ancestry-R)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="red-sister-1-highlight" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+      </g>
+      <g id="red-sister-2">
+        <path id="red-sister-2-outline" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+        <path id="red-sister-2-backbone" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" fill="none" stroke="url(#ancestry-BRB)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="red-sister-2-highlight" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </g>
+    <g id="blue-paired-unit" transform="translate(0 40)">
+      <g id="blue-sister-1">
+        <path id="blue-sister-1-outline" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+        <path id="blue-sister-1-backbone" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" fill="none" stroke="url(#ancestry-RBR)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="blue-sister-1-highlight" d="M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+      </g>
+      <g id="blue-sister-2">
+        <path id="blue-sister-2-outline" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+        <path id="blue-sister-2-backbone" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" fill="none" stroke="url(#ancestry-B)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="blue-sister-2-highlight" d="M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+  <g id="upper-daughter" transform="translate(730 160)">
+    <ellipse id="upper-daughter-cell" cx="0" cy="0" rx="104" ry="91" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <path id="upper-daughter-guide-0" d="M0 -74 V-51" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <path id="upper-daughter-guide-1" d="M0 51 V74" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <g id="upper-daughter-single-1">
+      <path id="upper-daughter-single-1-outline" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" fill="none" stroke="#6b4a45" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="upper-daughter-single-1-backbone" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" fill="none" stroke="url(#ancestry-R)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="upper-daughter-single-1-highlight" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <g id="upper-daughter-single-2">
+      <path id="upper-daughter-single-2-outline" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="upper-daughter-single-2-backbone" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" fill="none" stroke="url(#ancestry-BRB)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="upper-daughter-single-2-highlight" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="lower-daughter" transform="translate(730 445)">
+    <ellipse id="lower-daughter-cell" cx="0" cy="0" rx="104" ry="91" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <path id="lower-daughter-guide-0" d="M0 -74 V-51" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <path id="lower-daughter-guide-1" d="M0 51 V74" fill="none" stroke="#b58e5c" stroke-width="1.8" />
+    <g id="lower-daughter-single-1">
+      <path id="lower-daughter-single-1-outline" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="lower-daughter-single-1-backbone" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" fill="none" stroke="url(#ancestry-RBR)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="lower-daughter-single-1-highlight" d="M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+    <g id="lower-daughter-single-2">
+      <path id="lower-daughter-single-2-outline" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="lower-daughter-single-2-backbone" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" fill="none" stroke="url(#ancestry-B)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="lower-daughter-single-2-highlight" d="M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="product-1" transform="translate(1020 70)">
+    <ellipse id="product-1-cell" cx="0" cy="0" rx="76" ry="64" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <g id="final-1">
+      <path id="final-1-outline" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="#6b4a45" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="final-1-backbone" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="url(#ancestry-R)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="final-1-highlight" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="product-2" transform="translate(1020 222)">
+    <ellipse id="product-2-cell" cx="0" cy="0" rx="76" ry="64" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <g id="final-2">
+      <path id="final-2-outline" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="final-2-backbone" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="url(#ancestry-BRB)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="final-2-highlight" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="product-3" transform="translate(1020 382)">
+    <ellipse id="product-3-cell" cx="0" cy="0" rx="76" ry="64" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <g id="final-3">
+      <path id="final-3-outline" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="final-3-backbone" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="url(#ancestry-RBR)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="final-3-highlight" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="product-4" transform="translate(1020 534)">
+    <ellipse id="product-4-cell" cx="0" cy="0" rx="76" ry="64" fill="url(#cell-fill)" stroke="#c9a46d" stroke-width="2" />
+    <g id="final-4">
+      <path id="final-4-outline" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="#28586a" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7" />
+      <path id="final-4-backbone" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" fill="none" stroke="url(#ancestry-B)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path id="final-4-highlight" d="M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0" transform="translate(0 -1.6)" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+  <g id="process-arrows" fill="none" stroke="#303638" stroke-width="2.3" stroke-linejoin="round">
+    <g id="process-arrow-1">
+      <path id="arrow-1-shaft" d="M217 302 L331 302" />
+      <path id="arrow-1-head" d="M331.0000 302.0000 L319.0000 297.5000 L322.0000 302.0000 L319.0000 306.5000 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-2">
+      <path id="arrow-2-shaft" d="M537 257 L631 208" />
+      <path id="arrow-2-head" d="M631.0000 208.0000 L618.2789 209.5565 L623.0192 212.1602 L622.4391 217.5373 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-3">
+      <path id="arrow-3-shaft" d="M537 347 L631 397" />
+      <path id="arrow-3-head" d="M631.0000 397.0000 L622.5188 387.3917 L623.0541 392.7735 L618.2923 395.3376 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-4">
+      <path id="arrow-4-shaft" d="M830 129 L941 91" />
+      <path id="arrow-4-head" d="M941.0000 91.0000 L928.1894 90.6292 L932.4851 93.9150 L931.1044 99.1441 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-5">
+      <path id="arrow-5-shaft" d="M830 190 L941 205" />
+      <path id="arrow-5-head" d="M941.0000 205.0000 L929.7107 198.9335 L932.0811 203.7947 L928.5055 207.8525 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-6">
+      <path id="arrow-6-shaft" d="M830 414 L941 399" />
+      <path id="arrow-6-head" d="M941.0000 399.0000 L928.5055 396.1475 L932.0811 400.2053 L929.7107 405.0665 Z" fill="#303638" stroke="none" />
+    </g>
+    <g id="process-arrow-7">
+      <path id="arrow-7-shaft" d="M830 477 L941 515" />
+      <path id="arrow-7-head" d="M941.0000 515.0000 L931.1044 506.8559 L932.4851 512.0850 L928.1894 515.3708 Z" fill="#303638" stroke="none" />
+    </g>
+  </g>
+</svg>

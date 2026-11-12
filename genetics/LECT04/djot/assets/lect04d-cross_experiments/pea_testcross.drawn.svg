@@ -1,0 +1,372 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="798" height="730" viewBox="0 0 798 730" role="img" aria-labelledby="title desc">
+  <title id="title">Pea-flower testcross: predictions for an unknown dominant parent</title>
+  <desc id="desc">Two parents, one purple of unknown genotype PP or Pp and one white pp. If the purple parent is PP, all four predicted offspring are purple Pp. If it is Pp, two purple Pp and two white pp appear in the prediction grid. Original pea flowers reuse accepted banner, wings, paired keel, calyx and connected stem geometry.</desc>
+  <rect id="background" width="798" height="730" fill="#ffffff" />
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202329">
+    <g id="parents">
+      <g id="parent-purple" data-phenotype="purple" transform="translate(125.9756 2.8780) scale(0.512195)" stroke-linejoin="round" stroke-linecap="round">
+        <g id="parent-purple-stem-calyx" stroke="#416548" stroke-width="3.3">
+          <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+          <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+          <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+          <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+        </g>
+        <g id="parent-purple-standard" stroke="#513761" stroke-width="3.2">
+          <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+          <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+          <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+          <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+          <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+        </g>
+        <g id="parent-purple-far-wing" stroke="#513761" stroke-width="3">
+          <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+          <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+        </g>
+        <g id="parent-purple-paired-keel" stroke="#513761" stroke-width="3.2">
+          <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+          <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+        </g>
+        <g id="parent-purple-near-wing" stroke="#513761" stroke-width="3.5">
+          <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+          <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+          <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+          <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+        </g>
+      </g>
+      <g id="parent-white" data-phenotype="white" transform="translate(523.9756 2.8780) scale(0.512195)" stroke-linejoin="round" stroke-linecap="round">
+        <g id="parent-white-stem-calyx" stroke="#416548" stroke-width="3.3">
+          <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+          <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+          <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+          <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+        </g>
+        <g id="parent-white-standard" stroke="#686c61" stroke-width="3.2">
+          <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#f5f3e9" />
+          <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#ffffff" stroke="none" />
+          <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#dfddd0" stroke="none" />
+          <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.42" />
+          <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#ffffff" stroke-width="4" />
+        </g>
+        <g id="parent-white-far-wing" stroke="#686c61" stroke-width="3">
+          <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#dfddd0" />
+          <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#ffffff" stroke="none" />
+        </g>
+        <g id="parent-white-paired-keel" stroke="#686c61" stroke-width="3.2">
+          <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#c6c5b7" />
+          <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#f5f3e9" stroke="none" />
+        </g>
+        <g id="parent-white-near-wing" stroke="#686c61" stroke-width="3.5">
+          <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#f5f3e9" />
+          <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#ffffff" stroke="none" />
+          <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#dfddd0" stroke="none" />
+          <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.5" />
+        </g>
+      </g>
+      <text x="399" y="79" font-size="39" text-anchor="middle" font-weight="bold" id="parent-cross">&#215;</text>
+      <text x="201" y="163" font-size="26" text-anchor="middle" font-weight="normal">Dominant phenotype,</text>
+      <text x="201" y="192" font-size="26" text-anchor="middle" font-weight="normal">unknown genotype:</text>
+      <text x="201" y="223" font-size="26" text-anchor="middle" font-weight="bold">PP or Pp?</text>
+      <text x="599" y="163" font-size="26" text-anchor="middle" font-weight="normal">Recessive phenotype,</text>
+      <text x="599" y="192" font-size="26" text-anchor="middle" font-weight="normal">known genotype:</text>
+      <text x="599" y="223" font-size="26" text-anchor="middle" font-weight="bold">pp</text>
+    </g>
+    <text x="399" y="270" font-size="29" text-anchor="middle" font-weight="bold">Predictions</text>
+    <g id="prediction-branches">
+      <g id="branch-if-PP" fill="#38534b" stroke="#38534b" stroke-width="3.4" stroke-linecap="round">
+        <path d="M379 283 L253.69 318.80" fill="none" />
+        <polygon points="246,321 261.11,322.92 257.81,311.38" stroke="none" />
+      </g>
+      <g id="branch-if-Pp" fill="#38534b" stroke="#38534b" stroke-width="3.4" stroke-linecap="round">
+        <path d="M419 283 L638.11 319.68" fill="none" />
+        <polygon points="646,321 633.18,312.77 631.20,324.61" stroke="none" />
+      </g>
+    </g>
+    <text x="399" y="349" font-size="25" text-anchor="middle" font-weight="normal">or</text>
+    <g id="prediction-PP">
+      <text x="244" y="350" font-size="29" text-anchor="middle" font-weight="bold">If PP</text>
+      <g id="PP-gametes">
+        <text x="244" y="387" font-size="27" text-anchor="middle" font-weight="normal">Sperm</text>
+        <text x="52" y="578" font-size="25" text-anchor="middle" font-weight="normal">Eggs</text>
+        <text x="187" y="425" font-size="31" text-anchor="middle" font-weight="normal">p</text>
+        <text x="301" y="425" font-size="31" text-anchor="middle" font-weight="normal">p</text>
+        <text x="104" y="516" font-size="31" text-anchor="middle" font-weight="normal">P</text>
+        <text x="104" y="641" font-size="31" text-anchor="middle" font-weight="normal">P</text>
+      </g>
+      <g id="PP-punnett-grid">
+        <rect x="130" y="447" width="228" height="250" rx="1" fill="#ffffff" stroke="#909b98" stroke-width="2" />
+        <path d="M244 447 V697 M130 572 H358" fill="none" stroke="#909b98" stroke-width="2" />
+        <g id="PP-cell-1-1" data-genotype="Pp">
+          <g id="PP-offspring-1-1" data-phenotype="purple" transform="translate(134.4780 450.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="PP-offspring-1-1-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-1-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="PP-offspring-1-1-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-1-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-1-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="187" y="562" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+        <g id="PP-cell-1-2" data-genotype="Pp">
+          <g id="PP-offspring-1-2" data-phenotype="purple" transform="translate(248.4780 450.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="PP-offspring-1-2-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-2-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="PP-offspring-1-2-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-2-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="PP-offspring-1-2-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="301" y="562" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+        <g id="PP-cell-2-1" data-genotype="Pp">
+          <g id="PP-offspring-2-1" data-phenotype="purple" transform="translate(134.4780 575.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="PP-offspring-2-1-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-1-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="PP-offspring-2-1-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-1-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-1-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="187" y="687" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+        <g id="PP-cell-2-2" data-genotype="Pp">
+          <g id="PP-offspring-2-2" data-phenotype="purple" transform="translate(248.4780 575.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="PP-offspring-2-2-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-2-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="PP-offspring-2-2-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-2-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="PP-offspring-2-2-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="301" y="687" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+      </g>
+    </g>
+    <g id="prediction-Pp">
+      <text x="644" y="350" font-size="29" text-anchor="middle" font-weight="bold">If Pp</text>
+      <g id="Pp-gametes">
+        <text x="644" y="387" font-size="27" text-anchor="middle" font-weight="normal">Sperm</text>
+        <text x="452" y="578" font-size="25" text-anchor="middle" font-weight="normal">Eggs</text>
+        <text x="587" y="425" font-size="31" text-anchor="middle" font-weight="normal">p</text>
+        <text x="701" y="425" font-size="31" text-anchor="middle" font-weight="normal">p</text>
+        <text x="504" y="516" font-size="31" text-anchor="middle" font-weight="normal">P</text>
+        <text x="504" y="641" font-size="31" text-anchor="middle" font-weight="normal">p</text>
+      </g>
+      <g id="Pp-punnett-grid">
+        <rect x="530" y="447" width="228" height="250" rx="1" fill="#ffffff" stroke="#909b98" stroke-width="2" />
+        <path d="M644 447 V697 M530 572 H758" fill="none" stroke="#909b98" stroke-width="2" />
+        <g id="Pp-cell-1-1" data-genotype="Pp">
+          <g id="Pp-offspring-1-1" data-phenotype="purple" transform="translate(534.4780 450.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="Pp-offspring-1-1-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-1-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="Pp-offspring-1-1-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-1-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-1-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="587" y="562" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+        <g id="Pp-cell-1-2" data-genotype="Pp">
+          <g id="Pp-offspring-1-2" data-phenotype="purple" transform="translate(648.4780 450.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="Pp-offspring-1-2-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-2-standard" stroke="#513761" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#a16abe" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#c798db" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#80509c" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#c798db" stroke-width="4" />
+            </g>
+            <g id="Pp-offspring-1-2-far-wing" stroke="#513761" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#80509c" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#c798db" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-2-paired-keel" stroke="#513761" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#653980" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#a16abe" stroke="none" />
+            </g>
+            <g id="Pp-offspring-1-2-near-wing" stroke="#513761" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#a16abe" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#c798db" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#80509c" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#513761" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="701" y="562" font-size="30" text-anchor="middle" font-weight="bold">Pp</text>
+        </g>
+        <g id="Pp-cell-2-1" data-genotype="pp">
+          <g id="Pp-offspring-2-1" data-phenotype="white" transform="translate(534.4780 575.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="Pp-offspring-2-1-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-1-standard" stroke="#686c61" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#f5f3e9" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#ffffff" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#dfddd0" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#ffffff" stroke-width="4" />
+            </g>
+            <g id="Pp-offspring-2-1-far-wing" stroke="#686c61" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#dfddd0" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#ffffff" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-1-paired-keel" stroke="#686c61" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#c6c5b7" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#f5f3e9" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-1-near-wing" stroke="#686c61" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#f5f3e9" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#ffffff" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#dfddd0" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="587" y="687" font-size="30" text-anchor="middle" font-weight="bold">pp</text>
+        </g>
+        <g id="Pp-cell-2-2" data-genotype="pp">
+          <g id="Pp-offspring-2-2" data-phenotype="white" transform="translate(648.4780 575.3902) scale(0.360976)" stroke-linejoin="round" stroke-linecap="round">
+            <g id="Pp-offspring-2-2-stem-calyx" stroke="#416548" stroke-width="3.3">
+              <path d="M91 196 C74 208 64 224 60 245 C65 245 69 246 72 244 C75 225 85 215 102 207 Z" fill="#638a50" />
+              <path d="M64 239 C72 220 81 212 94 205" fill="none" stroke="#a8bc7f" stroke-width="3" />
+              <path d="M88 198 C77 187 75 168 79 153 L96 170 L107 151 L115 179 L139 177 L124 202 L118 225 L103 209 L91 224 Z" fill="#77975a" />
+              <path d="M87 197 C96 205 105 207 116 202 L118 225 L103 209 L91 224 Z" fill="#476f45" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-2-standard" stroke="#686c61" stroke-width="3.2">
+              <path d="M105 184 C84 173 66 154 58 131 C52 112 55 92 49 76 C43 55 55 34 77 26 C96 17 113 21 127 30 C137 15 151 8 170 12 C193 10 217 26 226 47 C235 70 224 82 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#f5f3e9" />
+              <path d="M62 77 C53 55 66 36 83 32 C104 26 119 34 128 42 C143 23 159 18 177 23 C197 25 211 36 218 52 C192 41 163 44 141 58 C113 76 85 86 62 77 Z" fill="#ffffff" stroke="none" />
+              <path d="M105 184 C138 160 161 145 181 126 C207 101 213 82 218 52 C232 70 223 85 229 100 C233 119 222 140 203 152 C177 171 144 185 105 184 Z" fill="#dfddd0" stroke="none" />
+              <path d="M108 174 C127 127 129 79 128 42 M105 166 C92 128 79 114 65 103 M119 172 C151 143 164 118 169 92" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.42" />
+              <path d="M67 57 C73 40 92 36 107 40 M146 35 C163 25 181 28 193 35" fill="none" stroke="#ffffff" stroke-width="4" />
+            </g>
+            <g id="Pp-offspring-2-2-far-wing" stroke="#686c61" stroke-width="3">
+              <path d="M114 176 C133 147 166 132 196 134 C219 136 235 128 246 130 C245 146 230 165 212 175 C182 191 145 193 114 176 Z" fill="#dfddd0" />
+              <path d="M138 166 C170 144 203 151 232 138 C219 155 187 168 159 172 Z" fill="#ffffff" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-2-paired-keel" stroke="#686c61" stroke-width="3.2">
+              <path d="M110 186 C137 187 159 173 184 170 C200 168 221 176 236 171 C229 190 216 212 197 218 C168 229 129 216 110 196 Z" fill="#c6c5b7" />
+              <path d="M122 190 C155 194 189 194 220 179 C214 196 203 205 187 209 C158 215 136 204 122 190 Z" fill="#f5f3e9" stroke="none" />
+            </g>
+            <g id="Pp-offspring-2-2-near-wing" stroke="#686c61" stroke-width="3.5">
+              <path d="M96 178 C113 157 144 149 164 154 C184 157 195 170 213 171 C206 183 200 198 184 205 C154 216 116 210 96 193 C92 189 92 183 96 178 Z" fill="#f5f3e9" />
+              <path d="M101 179 C118 162 140 157 160 162 C176 164 186 173 198 175 C173 172 161 182 145 185 C127 189 114 185 101 179 Z" fill="#ffffff" stroke="none" />
+              <path d="M96 193 C124 199 147 202 170 196 C186 192 195 184 207 178 C199 194 194 201 184 205 C154 216 116 210 96 193 Z" fill="#dfddd0" stroke="none" />
+              <path d="M110 188 C134 197 158 196 178 187" fill="none" stroke="#686c61" stroke-width="1.7" opacity="0.5" />
+            </g>
+          </g>
+          <text x="701" y="687" font-size="30" text-anchor="middle" font-weight="bold">pp</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

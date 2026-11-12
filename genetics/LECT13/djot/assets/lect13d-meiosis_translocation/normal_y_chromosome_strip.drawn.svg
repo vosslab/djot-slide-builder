@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="606" height="61" viewBox="0 0 606 61" role="img" aria-labelledby="title desc"><title id="title">Normal Y chromosome</title><desc id="desc">One red unreplicated rod with a round integrated centromere and the Normal Y row label.</desc><defs><linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#df5146" /><stop offset="1" stop-color="#ba302b" /></linearGradient>
+</defs><rect width="606" height="61" fill="white" /><g font-family="Atkinson Hyperlegible Next" font-size="26" fill="#17191c" transform="translate(8 -51)"><g id="row-2">
+<text id="row-2-label" x="15" y="90">Normal Y</text>
+<g id="row-2-rod">
+<rect id="row-2-continuous-body" x="184" y="68" width="396" height="26" rx="13" fill="url(#red)" />
+<rect x="184" y="68" width="396" height="26" rx="13" fill="none" stroke="#b1bdcf" stroke-width="1.3" />
+<circle id="row-2-centromere" cx="330" cy="81" r="15" fill="url(#red)" stroke="#b1bdcf" stroke-width="1.3" />
+</g>
+</g>
+</g></svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="861" height="804" viewBox="0 0 861 804" role="img" aria-labelledby="title desc">
+<title id="title">Opsin hybrid genes and impaired color vision</title>
+<desc id="desc">Three schematic continuous locus strips compare red and green gene segments. Panel A has a green-to-red hybrid; both arrangements in panel B have a red-to-green hybrid. Source labels and caption are retained.</desc>
+<defs>
+<linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eb7a64"/><stop offset="1" stop-color="#ce493d"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#83b66a"/><stop offset="1" stop-color="#4b8b43"/></linearGradient>
+<linearGradient id="locus" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c9c1dc"/><stop offset="1" stop-color="#aba0c2"/></linearGradient>
+</defs>
+<rect width="861" height="804" fill="white"/>
+<g font-family="Atkinson Hyperlegible Next" fill="#20262b">
+<g id="source-callout"><rect x="217" y="40" width="588" height="184" rx="5" fill="#e6f0f8" stroke="#287daf" stroke-width="2"/>
+<text id="callout-line-0" x="238" y="87" font-size="29" >Unequal crossing-over within the opsin</text>
+<text id="callout-line-1" x="238" y="136" font-size="29" >genes results in chimeric genes and</text>
+<text id="callout-line-2" x="238" y="185" font-size="29" >defects in either green or red perception.</text>
+</g>
+<text id="panel-A" x="90" y="224" font-size="30" font-weight="700">(A)</text>
+<text id="phenotype-A" x="90" y="262" font-size="29" >R<tspan baseline-shift="super" font-size="21">+</tspan> G<tspan baseline-shift="super" font-size="21">-</tspan></text>
+<text id="panel-B" x="90" y="418" font-size="30" font-weight="700">(B)</text>
+<text id="phenotype-B" x="90" y="456" font-size="29" >R<tspan baseline-shift="super" font-size="21">-</tspan> G<tspan baseline-shift="super" font-size="21">+</tspan></text>
+<g id="strip-A"><rect id="backbone-A" x="90" y="292" width="715" height="54" fill="url(#locus)"/>
+<g id="gene-A-0">
+<path id="segment-A-0-0-r" d="M 240.0 292 C 249.0 306 249.0 332 240.0 346 L 350.0 346 C 359.0 332 359.0 306 350.0 292 Z" fill="url(#red)"/>
+<path d="M 240.0 292 C 249.0 306 249.0 332 240.0 346" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-A-0-0" x="299.0" y="329" font-size="32" fill="white" text-anchor="middle">r</text>
+<path d="M 350 292 C 359 306 359 332 350 346" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<g id="gene-A-1">
+<path id="segment-A-1-0-g" d="M 405.0 292 C 414.0 306 414.0 332 405.0 346 L 457.0 346 C 466.0 332 466.0 306 457.0 292 Z" fill="url(#green)"/>
+<path d="M 405.0 292 C 414.0 306 414.0 332 405.0 346" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-A-1-0" x="435.0" y="329" font-size="32" fill="white" text-anchor="middle">g</text>
+<path id="segment-A-1-1-r" d="M 457.0 292 C 466.0 306 466.0 332 457.0 346 L 509.0 346 C 518.0 332 518.0 306 509.0 292 Z" fill="url(#red)"/>
+<path d="M 457.0 292 C 466.0 306 466.0 332 457.0 346" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-A-1-1" x="487.0" y="329" font-size="32" fill="white" text-anchor="middle">r</text>
+<path d="M 509 292 C 518 306 518 332 509 346" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<path id="boundaries-A" d="M 90 292 H 805 M 90 346 H 805" fill="none" stroke="#27252d" stroke-width="2"/></g>
+<g id="strip-B-upper"><rect id="backbone-B-upper" x="90" y="491" width="715" height="54" fill="url(#locus)"/>
+<g id="gene-B-upper-0">
+<path id="segment-B-upper-0-0-r" d="M 240.0 491 C 249.0 505 249.0 531 240.0 545 L 295.0 545 C 304.0 531 304.0 505 295.0 491 Z" fill="url(#red)"/>
+<path d="M 240.0 491 C 249.0 505 249.0 531 240.0 545" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-upper-0-0" x="271.5" y="528" font-size="32" fill="white" text-anchor="middle">r</text>
+<path id="segment-B-upper-0-1-g" d="M 295.0 491 C 304.0 505 304.0 531 295.0 545 L 350.0 545 C 359.0 531 359.0 505 350.0 491 Z" fill="url(#green)"/>
+<path d="M 295.0 491 C 304.0 505 304.0 531 295.0 545" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-upper-0-1" x="326.5" y="528" font-size="32" fill="white" text-anchor="middle">g</text>
+<path d="M 350 491 C 359 505 359 531 350 545" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<g id="gene-B-upper-1">
+<path id="segment-B-upper-1-0-g" d="M 405.0 491 C 414.0 505 414.0 531 405.0 545 L 515.0 545 C 524.0 531 524.0 505 515.0 491 Z" fill="url(#green)"/>
+<path d="M 405.0 491 C 414.0 505 414.0 531 405.0 545" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-upper-1-0" x="464.0" y="528" font-size="32" fill="white" text-anchor="middle">g</text>
+<path d="M 515 491 C 524 505 524 531 515 545" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<path id="boundaries-B-upper" d="M 90 491 H 805 M 90 545 H 805" fill="none" stroke="#27252d" stroke-width="2"/></g>
+<g id="strip-B-lower"><rect id="backbone-B-lower" x="90" y="587" width="715" height="54" fill="url(#locus)"/>
+<g id="gene-B-lower-0">
+<path id="segment-B-lower-0-0-r" d="M 240.0 587 C 249.0 601 249.0 627 240.0 641 L 295.0 641 C 304.0 627 304.0 601 295.0 587 Z" fill="url(#red)"/>
+<path d="M 240.0 587 C 249.0 601 249.0 627 240.0 641" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-lower-0-0" x="271.5" y="624" font-size="32" fill="white" text-anchor="middle">r</text>
+<path id="segment-B-lower-0-1-g" d="M 295.0 587 C 304.0 601 304.0 627 295.0 641 L 350.0 641 C 359.0 627 359.0 601 350.0 587 Z" fill="url(#green)"/>
+<path d="M 295.0 587 C 304.0 601 304.0 627 295.0 641" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-lower-0-1" x="326.5" y="624" font-size="32" fill="white" text-anchor="middle">g</text>
+<path d="M 350 587 C 359 601 359 627 350 641" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<g id="gene-B-lower-1">
+<path id="segment-B-lower-1-0-g" d="M 405.0 587 C 414.0 601 414.0 627 405.0 641 L 515.0 641 C 524.0 627 524.0 601 515.0 587 Z" fill="url(#green)"/>
+<path d="M 405.0 587 C 414.0 601 414.0 627 405.0 641" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-lower-1-0" x="464.0" y="624" font-size="32" fill="white" text-anchor="middle">g</text>
+<path d="M 515 587 C 524 601 524 627 515 641" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<g id="gene-B-lower-2">
+<path id="segment-B-lower-2-0-g" d="M 570.0 587 C 579.0 601 579.0 627 570.0 641 L 680.0 641 C 689.0 627 689.0 601 680.0 587 Z" fill="url(#green)"/>
+<path d="M 570.0 587 C 579.0 601 579.0 627 570.0 641" fill="none" stroke="white" stroke-width="2"/>
+<text id="allele-B-lower-2-0" x="629.0" y="624" font-size="32" fill="white" text-anchor="middle">g</text>
+<path d="M 680 587 C 689 601 689 627 680 641" fill="none" stroke="white" stroke-width="2"/>
+</g>
+<path id="boundaries-B-lower" d="M 90 587 H 805 M 90 641 H 805" fill="none" stroke="#27252d" stroke-width="2"/></g>
+<g id="callout-leaders" fill="#287daf" stroke="#287daf" stroke-width="3"><path id="leader-A" d="M 435 224 L 457 277" fill="none"/><circle cx="457" cy="277" r="6"/><path id="leader-B" d="M 360 224 L 295 476" fill="none"/><circle cx="295" cy="476" r="6"/></g>
+<g id="caption">
+<text id="caption-1" x="28" y="697" font-size="27" ><tspan font-weight="700" fill="#a43c26">FIGURE 8.18</tspan><tspan xml:space="preserve"> Genetic basis of absent or impaired</tspan></text>
+<text id="caption-2" x="28" y="733" font-size="27" >red&#8211;green color vision. (A) Defects in green vision.</text>
+<text id="caption-3" x="28" y="769" font-size="27" >(B) Defects in red vision.</text>
+</g></g></svg>

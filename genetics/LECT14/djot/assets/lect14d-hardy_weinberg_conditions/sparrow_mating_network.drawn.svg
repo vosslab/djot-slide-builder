@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700" role="img" aria-labelledby="title desc">
+<title id="title">White-throated sparrow mating network</title>
+<desc id="desc">Four illustrated sparrow heads show white male, tan male, tan female and white female nodes. Four dashed undirected connections retain the source mating percentages and genotype notation. Crossing diagonals do not form a junction.</desc>
+<rect width="1400" height="700" fill="white"/>
+<g id="head-white-male" data-morph="white" transform="translate(22 20)">
+<path class="head-silhouette" d="M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z" fill="#dddccf" stroke="#555b50" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z" fill="#292f2d"/>
+<path class="crown-stripe" d="M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z" fill="#f5f3e5"/>
+<path class="eyebrow-stripe" d="M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z" fill="#f5f3e5"/>
+<path d="M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z" fill="#a7b1a8"/>
+<path d="M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z" fill="#f3f1df"/>
+<path d="M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z" fill="#292f2d" opacity="0.82"/>
+<path class="yellow-lores" d="M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z" fill="#d9c340"/>
+<path class="upper-bill" d="M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z" fill="#788e89" stroke="#465a57" stroke-width="2"/><path class="lower-bill" d="M 180 111 L 224 108 C 209 117 194 123 182 117 Z" fill="#a0ada2" stroke="#465a57" stroke-width="2"/><path d="M 184 91 Q 198 94 211 103" stroke="#b9c8b8" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="138" cy="88" rx="14" ry="15" fill="#e4dac0"/><circle class="iris" cx="139" cy="88" r="10.7" fill="#805330" stroke="#3c3b2f" stroke-width="2"/><circle class="pupil" cx="139" cy="88" r="6.5" fill="#172421"/><circle cx="136" cy="84" r="2.6" fill="#f9f6e8"/>
+<path d="M 70 49 l 8 -6" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 88 39 l 9 -5" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 107 33 l 9 -2" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 140 34 l 8 4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 61 91 l 11 -8" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 78 79 l 11 -6" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 101 67 l 12 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 57 119 l 11 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 72 111 l 10 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 90 102 l 9 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 60 156 l -2 15" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 76 159 l -1 18" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 92 165 l 2 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 112 167 l 3 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 132 162 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 151 153 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<g id="head-tan-male" data-morph="tan" transform="translate(1378 20) scale(-1 1)">
+<path class="head-silhouette" d="M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z" fill="#d2c2a2" stroke="#555b50" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z" fill="#493f30"/>
+<path class="crown-stripe" d="M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z" fill="#c7ab78"/>
+<path class="eyebrow-stripe" d="M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z" fill="#c7ab78"/>
+<path d="M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z" fill="#b9aa8b"/>
+<path d="M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z" fill="#f3f1df"/>
+<path d="M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z" fill="#493f30" opacity="0.82"/>
+<path class="yellow-lores" d="M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z" fill="#d9c340"/>
+<path class="upper-bill" d="M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z" fill="#788e89" stroke="#465a57" stroke-width="2"/><path class="lower-bill" d="M 180 111 L 224 108 C 209 117 194 123 182 117 Z" fill="#a0ada2" stroke="#465a57" stroke-width="2"/><path d="M 184 91 Q 198 94 211 103" stroke="#b9c8b8" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="138" cy="88" rx="14" ry="15" fill="#e4dac0"/><circle class="iris" cx="139" cy="88" r="10.7" fill="#805330" stroke="#3c3b2f" stroke-width="2"/><circle class="pupil" cx="139" cy="88" r="6.5" fill="#172421"/><circle cx="136" cy="84" r="2.6" fill="#f9f6e8"/>
+<path d="M 70 49 l 8 -6" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 88 39 l 9 -5" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 107 33 l 9 -2" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 140 34 l 8 4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 61 91 l 11 -8" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 78 79 l 11 -6" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 101 67 l 12 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 57 119 l 11 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 72 111 l 10 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 90 102 l 9 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 60 156 l -2 15" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 76 159 l -1 18" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 92 165 l 2 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 112 167 l 3 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 132 162 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 151 153 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<g id="head-tan-female" data-morph="tan" transform="translate(22 480)">
+<path class="head-silhouette" d="M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z" fill="#d2c2a2" stroke="#555b50" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z" fill="#493f30"/>
+<path class="crown-stripe" d="M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z" fill="#c7ab78"/>
+<path class="eyebrow-stripe" d="M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z" fill="#c7ab78"/>
+<path d="M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z" fill="#b9aa8b"/>
+<path d="M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z" fill="#f3f1df"/>
+<path d="M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z" fill="#493f30" opacity="0.82"/>
+<path class="yellow-lores" d="M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z" fill="#d9c340"/>
+<path class="upper-bill" d="M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z" fill="#788e89" stroke="#465a57" stroke-width="2"/><path class="lower-bill" d="M 180 111 L 224 108 C 209 117 194 123 182 117 Z" fill="#a0ada2" stroke="#465a57" stroke-width="2"/><path d="M 184 91 Q 198 94 211 103" stroke="#b9c8b8" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="138" cy="88" rx="14" ry="15" fill="#e4dac0"/><circle class="iris" cx="139" cy="88" r="10.7" fill="#805330" stroke="#3c3b2f" stroke-width="2"/><circle class="pupil" cx="139" cy="88" r="6.5" fill="#172421"/><circle cx="136" cy="84" r="2.6" fill="#f9f6e8"/>
+<path d="M 70 49 l 8 -6" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 88 39 l 9 -5" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 107 33 l 9 -2" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 140 34 l 8 4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 61 91 l 11 -8" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 78 79 l 11 -6" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 101 67 l 12 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 57 119 l 11 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 72 111 l 10 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 90 102 l 9 -4" stroke="#c7ab78" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 60 156 l -2 15" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 76 159 l -1 18" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 92 165 l 2 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 112 167 l 3 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 132 162 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 151 153 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<g id="head-white-female" data-morph="white" transform="translate(1378 480) scale(-1 1)">
+<path class="head-silhouette" d="M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z" fill="#dddccf" stroke="#555b50" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z" fill="#292f2d"/>
+<path class="crown-stripe" d="M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z" fill="#f5f3e5"/>
+<path class="eyebrow-stripe" d="M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z" fill="#f5f3e5"/>
+<path d="M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z" fill="#a7b1a8"/>
+<path d="M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z" fill="#f3f1df"/>
+<path d="M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z" fill="#292f2d" opacity="0.82"/>
+<path class="yellow-lores" d="M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z" fill="#d9c340"/>
+<path class="upper-bill" d="M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z" fill="#788e89" stroke="#465a57" stroke-width="2"/><path class="lower-bill" d="M 180 111 L 224 108 C 209 117 194 123 182 117 Z" fill="#a0ada2" stroke="#465a57" stroke-width="2"/><path d="M 184 91 Q 198 94 211 103" stroke="#b9c8b8" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="138" cy="88" rx="14" ry="15" fill="#e4dac0"/><circle class="iris" cx="139" cy="88" r="10.7" fill="#805330" stroke="#3c3b2f" stroke-width="2"/><circle class="pupil" cx="139" cy="88" r="6.5" fill="#172421"/><circle cx="136" cy="84" r="2.6" fill="#f9f6e8"/>
+<path d="M 70 49 l 8 -6" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 88 39 l 9 -5" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 107 33 l 9 -2" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 140 34 l 8 4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 61 91 l 11 -8" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 78 79 l 11 -6" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 101 67 l 12 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 57 119 l 11 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 72 111 l 10 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 90 102 l 9 -4" stroke="#f5f3e5" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+<path d="M 60 156 l -2 15" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 76 159 l -1 18" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 92 165 l 2 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 112 167 l 3 16" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 132 162 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M 151 153 l 2 19" stroke="#c9cabb" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<g id="mating-links" stroke="#4d5558" stroke-width="4" stroke-dasharray="16 15" fill="none">
+<path id="edge-white-male_tan-female" d="M 380 190 L 380 500"/>
+<path id="edge-tan-male_white-female" d="M 1020 190 L 1020 500"/>
+<path id="edge-white-male_white-female" d="M 380 190 L 1020 500"/>
+<path id="edge-tan-male_tan-female" d="M 1020 190 L 380 500"/>
+</g><g font-family="Atkinson Hyperlegible Next" fill="#273638">
+<g id="label-white-male"><text x="380" y="85" text-anchor="middle" font-size="47" font-weight="700" xml:space="preserve">White <tspan font-weight="400">&#9794;</tspan></text>
+<text class="genotype" x="380" y="140" text-anchor="middle" font-size="43" font-weight="700">ZZ 22<tspan baseline-shift="super" font-size="29">m</tspan></text></g>
+<g id="label-tan-male"><text x="1020" y="85" text-anchor="middle" font-size="47" font-weight="700" xml:space="preserve">Tan <tspan font-weight="400">&#9794;</tspan></text>
+<text class="genotype" x="1020" y="140" text-anchor="middle" font-size="43" font-weight="700">ZZ 22</text></g>
+<g id="label-tan-female"><text x="380" y="580" text-anchor="middle" font-size="47" font-weight="700" xml:space="preserve">Tan <tspan font-weight="400">&#9792;</tspan></text>
+<text class="genotype" x="380" y="635" text-anchor="middle" font-size="43" font-weight="700">ZW 22</text></g>
+<g id="label-white-female"><text x="1020" y="580" text-anchor="middle" font-size="47" font-weight="700" xml:space="preserve">White <tspan font-weight="400">&#9792;</tspan></text>
+<text class="genotype" x="1020" y="635" text-anchor="middle" font-size="43" font-weight="700">ZW 22<tspan baseline-shift="super" font-size="29">m</tspan></text></g>
+<text id="percent-left" x="290" y="360" text-anchor="middle" font-size="43" paint-order="stroke" stroke="white" stroke-width="9" stroke-linejoin="round">53.8%</text>
+<text id="percent-right" x="1110" y="360" text-anchor="middle" font-size="43" paint-order="stroke" stroke="white" stroke-width="9" stroke-linejoin="round">44.7%</text>
+<text id="percent-descending" x="567" y="262" text-anchor="middle" font-size="43" paint-order="stroke" stroke="white" stroke-width="9" stroke-linejoin="round">0.8%</text>
+<text id="percent-ascending" x="839" y="262" text-anchor="middle" font-size="43" paint-order="stroke" stroke="white" stroke-width="9" stroke-linejoin="round">0.7%</text>
+</g></svg>

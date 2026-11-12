@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="576" height="377" viewBox="0 0 576 377" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Three-row family diagram</title>
+  <desc id="diagram-description">Sixteen circles and squares joined by three family branches. Eight symbols are red and eight are white. The top row contains two couples; their children include the couple connected to five bottom-row children. The question asks: What pattern of inheritance does this trait follow?</desc>
+  <rect id="background" width="576" height="377" fill="#ffffff"/>
+  <g id="question" font-family="Atkinson Hyperlegible Next" font-size="32" fill="#171313" text-anchor="middle">
+    <text x="288" y="31">What pattern of inheritance does</text>
+    <text x="288" y="70">this trait follow?</text>
+  </g>
+  <g id="connections" stroke="#171313" stroke-width="2.2" fill="none" stroke-linecap="square">
+    <g id="branch-1">
+      <line x1="82" y1="140" x2="122" y2="140"/>
+      <line x1="102" y1="140" x2="102" y2="184"/>
+      <line x1="30" y1="184" x2="186" y2="184"/>
+      <line x1="30" y1="184" x2="30" y2="204"/>
+      <line x1="102" y1="184" x2="102" y2="204"/>
+      <line x1="186" y1="184" x2="186" y2="204"/>
+    </g>
+    <g id="branch-2">
+      <line x1="422" y1="140" x2="460" y2="140"/>
+      <line x1="441" y1="140" x2="441" y2="184"/>
+      <line x1="304" y1="184" x2="546" y2="184"/>
+      <line x1="304" y1="184" x2="304" y2="204"/>
+      <line x1="386" y1="184" x2="386" y2="204"/>
+      <line x1="466" y1="184" x2="466" y2="204"/>
+      <line x1="546" y1="184" x2="546" y2="204"/>
+    </g>
+    <g id="branch-3">
+      <line x1="208" y1="226" x2="282" y2="226"/>
+      <line x1="245" y1="226" x2="245" y2="286"/>
+      <line x1="84" y1="286" x2="394" y2="286"/>
+      <line x1="84" y1="286" x2="84" y2="322"/>
+      <line x1="162" y1="286" x2="162" y2="322"/>
+      <line x1="235" y1="286" x2="235" y2="322"/>
+      <line x1="314" y1="286" x2="314" y2="322"/>
+      <line x1="394" y1="286" x2="394" y2="322"/>
+    </g>
+  </g>
+  <g id="family-symbols" stroke="#171313" stroke-width="2.2">
+    <rect x="38" y="118" width="44" height="44" fill="#ffffff"/>
+    <circle cx="144" cy="140" r="22" fill="#e4003b"/>
+    <circle cx="400" cy="140" r="22" fill="#e4003b"/>
+    <rect x="460" y="118" width="44" height="44" fill="#ffffff"/>
+    <circle cx="30" cy="226" r="22" fill="#ffffff"/>
+    <rect x="80" y="204" width="44" height="44" fill="#ffffff"/>
+    <circle cx="186" cy="226" r="22" fill="#e4003b"/>
+    <rect x="282" y="204" width="44" height="44" fill="#e4003b"/>
+    <circle cx="386" cy="226" r="22" fill="#ffffff"/>
+    <circle cx="466" cy="226" r="22" fill="#e4003b"/>
+    <rect x="524" y="204" width="44" height="44" fill="#ffffff"/>
+    <rect x="62" y="322" width="44" height="44" fill="#ffffff"/>
+    <circle cx="162" cy="344" r="22" fill="#e4003b"/>
+    <circle cx="235" cy="344" r="22" fill="#ffffff"/>
+    <rect x="292" y="322" width="44" height="44" fill="#e4003b"/>
+    <circle cx="394" cy="344" r="22" fill="#e4003b"/>
+  </g>
+</svg>

@@ -59,7 +59,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 2](assets/lect13b-chromo_alter_3-inversion/image_002.png)
+![Slide image 2](assets/lect13b-chromo_alter_3-inversion/inverted_repeat_recombination.drawn.svg)
 
 @right
 
@@ -89,11 +89,11 @@ color-theme: genetics
 
 @top-left
 
-![Slide image 4](assets/lect13b-chromo_alter_3-inversion/image_004.png)
+![Slide image 4](assets/lect13b-chromo_alter_3-inversion/inversion_loop_without_crossover.drawn.svg)
 
 @top-right
 
-![Slide image 5](assets/lect13b-chromo_alter_3-inversion/image_005.png)
+![Slide image 5](assets/lect13b-chromo_alter_3-inversion/inversion_without_crossover_products.drawn.svg)
 
 @bottom
 
@@ -126,7 +126,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 8](assets/lect13b-chromo_alter_3-inversion/image_008.png)
+![Slide image 8](assets/lect13b-chromo_alter_3-inversion/paracentric_inversion_homozygote.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -160,7 +160,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 11](assets/lect13b-chromo_alter_3-inversion/image_011.png)
+![Slide image 11](assets/lect13b-chromo_alter_3-inversion/pericentric_inversion_loop_comparison.drawn.svg)
 
 === layout: one-panel
 
@@ -178,7 +178,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 13](assets/lect13b-chromo_alter_3-inversion/image_013.png)
+![Slide image 13](assets/lect13b-chromo_alter_3-inversion/inversion_gene_order_comparison.drawn.svg)
 
 === layout: one-panel
 
@@ -273,14 +273,14 @@ color-theme: genetics
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 - Hint\: start with ancestral sequence (c); compare chromosomes pairwise to find those that differ by a single inversion.
 
@@ -290,7 +290,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 - comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
 
@@ -300,7 +300,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 - comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
 - Now compare (d) to (a) and (b) to find a match with only one inversion
@@ -311,7 +311,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 - comparing (c) to (d) we see an inversion in the I-d-c to c-d-i.
 - comparing (d) to (a) we see an inversion of the h-g-c-d to d-c-g-h
@@ -322,7 +322,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 20](assets/lect13b-chromo_alter_3-inversion/image_020.png)
+![Slide image 20](assets/lect13b-chromo_alter_3-inversion/inversion_ancestry_exercise.quote.svg)
 
 - comparing (c) to (d) inversion in the I-d-c to c-d-i.
 - comparing (d) to (a) inversion of the h-g-c-d to d-c-g-h
@@ -350,7 +350,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 22](assets/lect13b-chromo_alter_3-inversion/image_022.png)
+![Slide image 22](assets/lect13b-chromo_alter_3-inversion/position_effect_fly_eyes.drawn.svg)
 
 ![Slide image 22](assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
 
@@ -407,7 +407,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 27](assets/lect13b-chromo_alter_3-inversion/image_027.png)
+![Slide image 27](assets/lect13b-chromo_alter_3-inversion/sparrow_morph_comparison.drawn.svg)
 
 - [White]{color=gray} and [tan]{color=#E8A202} individuals also show alternative reproductive strategies\:
   - [White males]{color=gray} are aggressive, provide little parental care, and are promiscuous, whereas [tan males]{color=#E8A202} are monogamous and invest highly in rearing their nestlings

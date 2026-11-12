@@ -46,7 +46,7 @@ color-theme: genetics
 
 @bottom-left
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_002.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/monosomy_trisomy_effects.quote.svg)
 
 @right
 
@@ -79,7 +79,7 @@ Chromosome rearrangements: December 1
 
 @left
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_003.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/ploidy_chromosome_multiplicity.drawn.svg)
 
 @right
 
@@ -216,7 +216,7 @@ E. 36 chromosomes
 
 @right
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_004.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/meiosis_ii_nondisjunction_lineage.drawn.svg)
 
 === layout: one-panel
 
@@ -599,7 +599,7 @@ The offspring question leads into the explicit chromosome-segregation model on t
 
 @body
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_027.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/trisomic_metaphase_arrangements.drawn.svg)
 
 === layout: one-panel
 
@@ -607,14 +607,14 @@ The offspring question leads into the explicit chromosome-segregation model on t
 
 @body
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_028.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/trisomic_metaphase_anaphase.drawn.svg)
 
 === layout: one-panel
 
 
 @body
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_029.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/trisomic_anaphase_products.drawn.svg)
 
 === layout: two-panels
 
@@ -622,7 +622,7 @@ The offspring question leads into the explicit chromosome-segregation model on t
 
 @left
 
-![Lecture diagram](assets/lect10d-chromo_aneuploid/image_030.png)
+![Lecture diagram](assets/lect10d-chromo_aneuploid/trisomic_meiosis_gamete_products.drawn.svg)
 
 @right
 

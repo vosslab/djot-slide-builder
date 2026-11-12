@@ -59,7 +59,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 1](assets/lect03f-whole_genome_analysis/image_001.jpg)
+![Slide image 1](assets/lect03f-whole_genome_analysis/shotgun_1.drawn.svg)
 
 @right
 
@@ -72,7 +72,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 2](assets/lect03f-whole_genome_analysis/image_002.jpg)
+![Slide image 2](assets/lect03f-whole_genome_analysis/shotgun_2.drawn.svg)
 
 @right
 
@@ -89,7 +89,7 @@ color-theme: genetics
 
 @left
 
-![Slide image 3](assets/lect03f-whole_genome_analysis/image_003.jpg)
+![Slide image 3](assets/lect03f-whole_genome_analysis/shotgun_assembly.drawn.svg)
 
 @right
 
@@ -230,7 +230,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 8](assets/lect03f-whole_genome_analysis/image_008.png)
+![Slide image 8](assets/lect03f-whole_genome_analysis/genome_books.drawn.svg)
 
 === layout: one-panel
 

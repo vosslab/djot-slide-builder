@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1029" height="354" viewBox="0 0 1029 354" role="img" aria-labelledby="title desc">
+<title id="title">A restriction-site SNP changes fragment length</title>
+<desc id="desc">Two DNA cases. The fourth base pair is T/A in A and C/G in B. EcoRI cleavage produces two fragments in A and one longer fragment in B. Product ends show schematic 5-prime overhangs.</desc>
+<metadata>Original vector construction. Source teaching facts and labels: image_002.jpg. Schematic; no measured fragment lengths or intensities.</metadata>
+<rect width="1029" height="354" fill="#FFFFFF"/>
+<path d="M514,22 L514,330" fill="none" stroke="#D8E2E8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="case-A" transform="translate(0,0)">
+<text x="14" y="29" font-family="Arial, sans-serif" font-size="24" fill="#183044" text-anchor="start" font-weight="700">(A)</text>
+<text x="255" y="27" font-family="Arial, sans-serif" font-size="21" fill="#183044" text-anchor="middle" font-weight="400">Polymorphic site</text>
+<g class="sequence" data-top="GAATTC" data-bottom="CTTAAG">
+<text x="38" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="38" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="56" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="56" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="74" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="74" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="92" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="92" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="110" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="110" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="128" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="128" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M33,89 L83,112 L133,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="sequence" data-top="GAATTC" data-bottom="CTTAAG">
+<text x="208" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="208" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="226" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="226" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="244" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="244" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<rect x="253" y="43" width="18" height="43" rx="3" fill="#F8D78C" stroke="#A76A08" stroke-width="1"/>
+<text x="262" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="700">T</text>
+<text x="262" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="700">A</text>
+<text x="280" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="280" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="298" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="298" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M203,89 L253,112 L303,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="sequence" data-top="GAATTC" data-bottom="CTTAAG">
+<text x="378" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="378" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="396" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="396" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="414" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="414" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="432" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="432" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="450" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="450" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="468" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="468" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M373,89 L423,112 L473,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="58" y="121" width="390" height="22" rx="3" fill="#E6F1F7" stroke="none" stroke-width="1"/>
+<path d="M68,125 L68,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M84,125 L84,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100,125 L100,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M116,125 L116,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M132,125 L132,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M148,125 L148,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M164,125 L164,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M180,125 L180,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196,125 L196,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M212,125 L212,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M228,125 L228,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M244,125 L244,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M260,125 L260,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M276,125 L276,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M292,125 L292,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M308,125 L308,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M324,125 L324,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M340,125 L340,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M356,125 L356,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M372,125 L372,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M388,125 L388,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M404,125 L404,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M420,125 L420,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436,125 L436,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58,121 L448,121" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58,143 L448,143" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="44" y="127" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="end" font-weight="400">5&#8242;</text>
+<text x="44" y="150" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="end" font-weight="400">3&#8242;</text>
+<text x="462" y="127" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="start" font-weight="400">3&#8242;</text>
+<text x="462" y="150" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="start" font-weight="400">5&#8242;</text>
+<rect x="78" y="117" width="10" height="30" rx="2" fill="#F8D78C" stroke="none" stroke-width="1"/>
+<path d="M76,102 L83,112 L90,102" fill="none" stroke="#A76A08" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="248" y="117" width="10" height="30" rx="2" fill="#F8D78C" stroke="none" stroke-width="1"/>
+<path d="M246,102 L253,112 L260,102" fill="none" stroke="#A76A08" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="418" y="117" width="10" height="30" rx="2" fill="#F8D78C" stroke="none" stroke-width="1"/>
+<path d="M416,102 L423,112 L430,102" fill="none" stroke="#A76A08" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M253,161 L253,215" fill="none" stroke="#183044" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M248,207 L253,215 L258,207" fill="none" stroke="#183044" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="274" y="178" font-family="Arial, sans-serif" font-size="19" fill="#183044" text-anchor="start" font-weight="400">Treatment of DNA</text>
+<text x="274" y="202" font-family="Arial, sans-serif" font-size="19" fill="#183044" text-anchor="start" font-weight="400">with EcoRI</text>
+<text x="253" y="240" font-family="Arial, sans-serif" font-size="21" fill="#A76A08" text-anchor="middle" font-weight="700">Cleavage</text>
+<g id="products-A">
+<rect x="85" y="258" width="137" height="22" rx="2" fill="#E6F1F7" stroke="none" stroke-width="1"/>
+<path d="M93,262 L93,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M109,262 L109,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M125,262 L125,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M141,262 L141,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M157,262 L157,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M173,262 L173,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M189,262 L189,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M205,262 L205,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M65,258 L222,258" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M85,280 L242,280" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="292" y="258" width="137" height="22" rx="2" fill="#E6F1F7" stroke="none" stroke-width="1"/>
+<path d="M300,262 L300,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M316,262 L316,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M332,262 L332,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M348,262 L348,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M364,262 L364,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M380,262 L380,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M396,262 L396,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M412,262 L412,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M272,258 L429,258" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M292,280 L449,280" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<text x="253" y="326" font-family="Arial, sans-serif" font-size="24" fill="#183044" text-anchor="middle" font-weight="700">Result: Two fragments</text>
+</g>
+<g id="case-B" transform="translate(522,0)">
+<text x="14" y="29" font-family="Arial, sans-serif" font-size="24" fill="#183044" text-anchor="start" font-weight="700">(B)</text>
+<text x="255" y="27" font-family="Arial, sans-serif" font-size="21" fill="#183044" text-anchor="middle" font-weight="400">Polymorphic site</text>
+<g class="sequence" data-top="GAATTC" data-bottom="CTTAAG">
+<text x="38" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="38" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="56" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="56" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="74" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="74" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="92" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="92" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="110" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="110" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="128" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="128" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M33,89 L83,112 L133,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="sequence" data-top="GAACTC" data-bottom="CTTGAG">
+<text x="208" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="208" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="226" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="226" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="244" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="244" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<rect x="253" y="43" width="18" height="43" rx="3" fill="#F1C9D3" stroke="#A83D59" stroke-width="1"/>
+<text x="262" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="700">C</text>
+<text x="262" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="700">G</text>
+<text x="280" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="280" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="298" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="298" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M203,89 L253,112 L303,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<g class="sequence" data-top="GAATTC" data-bottom="CTTAAG">
+<text x="378" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+<text x="378" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="396" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="396" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="414" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="414" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="432" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="432" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="450" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">T</text>
+<text x="450" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">A</text>
+<text x="468" y="60" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">C</text>
+<text x="468" y="81" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#183044" text-anchor="middle" font-weight="400">G</text>
+</g>
+<path d="M373,89 L423,112 L473,89" fill="none" stroke="#8197A3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="58" y="121" width="390" height="22" rx="3" fill="#E6F1F7" stroke="none" stroke-width="1"/>
+<path d="M68,125 L68,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M84,125 L84,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100,125 L100,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M116,125 L116,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M132,125 L132,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M148,125 L148,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M164,125 L164,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M180,125 L180,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196,125 L196,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M212,125 L212,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M228,125 L228,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M244,125 L244,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M260,125 L260,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M276,125 L276,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M292,125 L292,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M308,125 L308,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M324,125 L324,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M340,125 L340,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M356,125 L356,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M372,125 L372,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M388,125 L388,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M404,125 L404,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M420,125 L420,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436,125 L436,139" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58,121 L448,121" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58,143 L448,143" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="44" y="127" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="end" font-weight="400">5&#8242;</text>
+<text x="44" y="150" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="end" font-weight="400">3&#8242;</text>
+<text x="462" y="127" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="start" font-weight="400">3&#8242;</text>
+<text x="462" y="150" font-family="Arial, sans-serif" font-size="18" fill="#183044" text-anchor="start" font-weight="400">5&#8242;</text>
+<rect x="78" y="117" width="10" height="30" rx="2" fill="#F8D78C" stroke="none" stroke-width="1"/>
+<path d="M76,102 L83,112 L90,102" fill="none" stroke="#A76A08" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="248" y="117" width="10" height="30" rx="2" fill="#F1C9D3" stroke="none" stroke-width="1"/>
+<rect x="418" y="117" width="10" height="30" rx="2" fill="#F8D78C" stroke="none" stroke-width="1"/>
+<path d="M416,102 L423,112 L430,102" fill="none" stroke="#A76A08" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M253,161 L253,215" fill="none" stroke="#183044" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M248,207 L253,215 L258,207" fill="none" stroke="#183044" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="274" y="178" font-family="Arial, sans-serif" font-size="19" fill="#183044" text-anchor="start" font-weight="400">Treatment of DNA</text>
+<text x="274" y="202" font-family="Arial, sans-serif" font-size="19" fill="#183044" text-anchor="start" font-weight="400">with EcoRI</text>
+<text x="253" y="240" font-family="Arial, sans-serif" font-size="21" fill="#A83D59" text-anchor="middle" font-weight="700">No cleavage</text>
+<g id="products-B">
+<rect x="85" y="258" width="344" height="22" rx="2" fill="#E6F1F7" stroke="none" stroke-width="1"/>
+<path d="M93,262 L93,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M109,262 L109,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M125,262 L125,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M141,262 L141,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M157,262 L157,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M173,262 L173,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M189,262 L189,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M205,262 L205,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M221,262 L221,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M237,262 L237,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M253,262 L253,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M269,262 L269,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M285,262 L285,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M301,262 L301,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M317,262 L317,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M333,262 L333,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M349,262 L349,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M365,262 L365,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M381,262 L381,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M397,262 L397,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M413,262 L413,276" fill="none" stroke="#B0CEDD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M65,258 L429,258" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M85,280 L449,280" fill="none" stroke="#246C96" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<text x="253" y="326" font-family="Arial, sans-serif" font-size="24" fill="#183044" text-anchor="middle" font-weight="700">Result: One larger fragment</text>
+</g>
+</svg>

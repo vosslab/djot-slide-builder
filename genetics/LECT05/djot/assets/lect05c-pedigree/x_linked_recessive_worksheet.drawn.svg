@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="462" viewBox="0 0 572 462" role="img" aria-labelledby="worksheet145-title worksheet145-desc">
+<title id="worksheet145-title">X-linked recessive pedigree worksheet</title>
+<desc id="worksheet145-desc">Fifteen numbered people in three generations, with two people in the top row, six in the middle row, and seven in the bottom row. Circles and squares have black or white interiors. Each number has a blank response line below it. Three couples connect to separate sibship bars.</desc>
+<rect id="background" width="572" height="462" fill="#FFFFFF"/>
+<g id="heading" font-family="Atkinson Hyperlegible Next" font-size="27" font-weight="500" text-anchor="middle" fill="#000000">
+<text id="heading-line-1" x="256" y="29">X-linked</text>
+<text id="heading-line-2" x="256" y="59">Recessive</text>
+</g>
+<g id="family-connections" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round">
+<path id="top-union" d="M217 104 H295"/>
+<path id="top-descent" d="M256 104 V192"/>
+<path id="top-sibship" d="M140 192 H380"/>
+<path id="left-union" d="M61 244 H119"/>
+<path id="left-descent" d="M90 244 V332"/>
+<path id="left-sibship" d="M40 332 H274"/>
+<path id="right-union" d="M401 244 H459"/>
+<path id="right-descent" d="M430 244 V332"/>
+<path id="right-sibship" d="M380 332 H536"/>
+<path id="drop-4" d="M140 192 V223"/>
+<path id="drop-5" d="M220 192 V223"/>
+<path id="drop-6" d="M300 192 V223"/>
+<path id="drop-7" d="M380 192 V223"/>
+<path id="drop-9" d="M40 332 V359"/>
+<path id="drop-10" d="M118 332 V359"/>
+<path id="drop-11" d="M196 332 V359"/>
+<path id="drop-12" d="M274 332 V359"/>
+<path id="drop-13" d="M380 332 V359"/>
+<path id="drop-14" d="M458 332 V359"/>
+<path id="drop-15" d="M536 332 V359"/>
+</g>
+<g id="people" stroke="#000000" stroke-width="2">
+<circle id="person-1" cx="196" cy="104" r="21" fill="#000000"/>
+<rect id="person-2" x="295" y="83" width="42" height="42" fill="#FFFFFF"/>
+<rect id="person-3" x="19" y="223" width="42" height="42" fill="#FFFFFF"/>
+<circle id="person-4" cx="140" cy="244" r="21" fill="#FFFFFF"/>
+<rect id="person-5" x="199" y="223" width="42" height="42" fill="#000000"/>
+<circle id="person-6" cx="300" cy="244" r="21" fill="#FFFFFF"/>
+<rect id="person-7" x="359" y="223" width="42" height="42" fill="#000000"/>
+<circle id="person-8" cx="480" cy="244" r="21" fill="#000000"/>
+<rect id="person-9" x="19" y="359" width="42" height="42" fill="#000000"/>
+<circle id="person-10" cx="118" cy="380" r="21" fill="#FFFFFF"/>
+<rect id="person-11" x="175" y="359" width="42" height="42" fill="#FFFFFF"/>
+<circle id="person-12" cx="274" cy="380" r="21" fill="#FFFFFF"/>
+<rect id="person-13" x="359" y="359" width="42" height="42" fill="#000000"/>
+<circle id="person-14" cx="458" cy="380" r="21" fill="#000000"/>
+<rect id="person-15" x="515" y="359" width="42" height="42" fill="#000000"/>
+</g>
+<g id="numbers" fill="#000000" font-family="Atkinson Hyperlegible Next" font-size="21" text-anchor="middle">
+<text id="number-1" x="196" y="144">1</text>
+<text id="number-2" x="316" y="144">2</text>
+<text id="number-3" x="40" y="284">3</text>
+<text id="number-4" x="140" y="284">4</text>
+<text id="number-5" x="220" y="284">5</text>
+<text id="number-6" x="300" y="284">6</text>
+<text id="number-7" x="380" y="284">7</text>
+<text id="number-8" x="480" y="284">8</text>
+<text id="number-9" x="40" y="420">9</text>
+<text id="number-10" x="118" y="420">10</text>
+<text id="number-11" x="196" y="420">11</text>
+<text id="number-12" x="274" y="420">12</text>
+<text id="number-13" x="380" y="420">13</text>
+<text id="number-14" x="458" y="420">14</text>
+<text id="number-15" x="536" y="420">15</text>
+</g>
+<g id="blank-response-rules" fill="none" stroke="#000000" stroke-width="1.4">
+<line id="response-1" x1="172" x2="220" y1="168" y2="168"/>
+<line id="response-2" x1="292" x2="340" y1="168" y2="168"/>
+<line id="response-3" x1="16" x2="64" y1="308" y2="308"/>
+<line id="response-4" x1="116" x2="164" y1="308" y2="308"/>
+<line id="response-5" x1="196" x2="244" y1="308" y2="308"/>
+<line id="response-6" x1="276" x2="324" y1="308" y2="308"/>
+<line id="response-7" x1="356" x2="404" y1="308" y2="308"/>
+<line id="response-8" x1="456" x2="504" y1="308" y2="308"/>
+<line id="response-9" x1="16" x2="64" y1="444" y2="444"/>
+<line id="response-10" x1="94" x2="142" y1="444" y2="444"/>
+<line id="response-11" x1="172" x2="220" y1="444" y2="444"/>
+<line id="response-12" x1="250" x2="298" y1="444" y2="444"/>
+<line id="response-13" x1="356" x2="404" y1="444" y2="444"/>
+<line id="response-14" x1="434" x2="482" y1="444" y2="444"/>
+<line id="response-15" x1="512" x2="560" y1="444" y2="444"/>
+</g>
+</svg>

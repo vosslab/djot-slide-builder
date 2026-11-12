@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2119" height="1485" viewBox="0 0 1200 840.962718263" role="img" aria-labelledby="figure-title figure-description">
+<title id="figure-title">Autopolyploidy and allopolyploidy</title>
+<desc id="figure-description">Conceptual, unscaled comparison. Each diploid parent has four single chromosomes: two long blue rods and two short red rods. Dark colors identify species A; light colors identify species B. The autotetraploid contains two complete diploid A genomes, eight rods. The allotetraploid contains one complete diploid A genome and one complete diploid B genome, eight rods. Rods are unreplicated chromosomes; their narrowed waists represent centromeres.</desc>
+<defs>
+  <path id="long-rod" d="M -3,-55 C -13,-56 -13,-48 -12,-41 C -11,-28 -8,-15 -5,-6 Q -3,0 -5,6 C -11,22 -12,40 -7,52 Q -4,59 4,56 Q 11,54 9,46 C 5,31 7,18 10,7 Q 12,0 9,-8 C 5,-23 3,-34 5,-45 Q 7,-53 -3,-55 Z"/>
+  <path id="short-rod" d="M -2,-34 Q -12,-36 -12,-26 C -11,-16 -8,-8 -5,-3 Q -3,1 -5,6 C -8,14 -7,26 -3,33 Q 1,40 8,35 Q 12,32 9,26 C 5,17 7,10 10,4 Q 12,0 8,-6 C 4,-14 3,-20 5,-26 Q 7,-33 -2,-34 Z"/>
+</defs>
+<rect width="1200" height="840.962718263" fill="#ffffff"/>
+<path d="M 534,38 V 801" stroke="#e4e9eb" stroke-width="1.5"/>
+<g id="labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif">
+  <text id="auto-heading" x="255" y="46" text-anchor="middle" font-size="32" font-weight="bold">Autopolyploidy</text>
+  <text id="allo-heading" x="873" y="46" text-anchor="middle" font-size="32" font-weight="bold">Allopolyploidy</text>
+  <text id="auto-parent-label" x="255" y="100" text-anchor="middle" font-size="25">Species A (diploid)</text>
+  <text id="allo-a-label" x="708" y="100" text-anchor="middle" font-size="25">Species A (diploid)</text>
+  <text id="allo-b-label" x="1040" y="100" text-anchor="middle" font-size="25">Species B (diploid)</text>
+</g>
+
+<g id="auto-a-parent" data-cell="true" transform="translate(255 218)">
+<g transform="scale(1 1)"><path d="M -139,-6 C -144,-66 -93,-101 -29,-103 C 40,-114 117,-85 137,-29 C 162,40 111,94 44,104 C -29,121 -129,84 -139,-6 Z" fill="#f4ecdc" stroke="#667a80" stroke-width="2.7"/><path d="M -128,24 C -101,82 -27,100 41,90 C 91,84 124,57 137,26 C 124,75 92,97 44,101 C -31,117 -111,84 -128,24 Z" fill="#e4d9c3"/><path d="M -114,-40 C -95,-76 -56,-88 -24,-89" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round"/></g>
+<g id="auto-a-parent-genome-1-long-1" data-species="A" data-kind="long" transform="translate(-80 -1) rotate(-13) scale(1)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-a-parent-genome-1-long-2" data-species="A" data-kind="long" transform="translate(-27 2) rotate(9) scale(1)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-a-parent-genome-1-short-3" data-species="A" data-kind="short" transform="translate(40 -8) rotate(-17) scale(1)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-a-parent-genome-1-short-4" data-species="A" data-kind="short" transform="translate(91 9) rotate(14) scale(1)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</g>
+<g id="allo-a-parent" data-cell="true" transform="translate(708 218)">
+<g transform="scale(1 1)"><path d="M -139,-8 C -138,-65 -95,-98 -35,-103 C 38,-116 117,-86 139,-27 C 158,29 116,88 50,103 C -26,121 -126,84 -139,-8 Z" fill="#f4ecdc" stroke="#667a80" stroke-width="2.7"/><path d="M -124,30 C -98,78 -29,103 46,88 C 93,79 125,57 138,24 C 125,73 93,91 50,100 C -26,117 -109,83 -124,30 Z" fill="#e4d9c3"/><path d="M -113,-41 C -95,-73 -60,-88 -27,-90" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round"/></g>
+<g id="allo-a-parent-genome-1-long-1" data-species="A" data-kind="long" transform="translate(-80 -1) rotate(-13) scale(1)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-a-parent-genome-1-long-2" data-species="A" data-kind="long" transform="translate(-27 2) rotate(9) scale(1)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-a-parent-genome-1-short-3" data-species="A" data-kind="short" transform="translate(40 -8) rotate(-17) scale(1)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-a-parent-genome-1-short-4" data-species="A" data-kind="short" transform="translate(91 9) rotate(14) scale(1)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</g>
+<g id="allo-b-parent" data-cell="true" transform="translate(1040 218)">
+<g transform="scale(1 1)"><path d="M -141,1 C -153,-54 -110,-98 -45,-104 C 22,-113 103,-95 132,-39 C 168,21 126,81 67,99 C -8,122 -122,92 -141,1 Z" fill="#f4ecdc" stroke="#667a80" stroke-width="2.7"/><path d="M -128,27 C -91,88 -14,103 62,85 C 106,73 130,54 141,23 C 127,70 108,85 66,96 C -11,119 -110,82 -128,27 Z" fill="#e4d9c3"/><path d="M -116,-34 C -100,-68 -67,-87 -38,-90" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round"/></g>
+<g id="allo-b-parent-genome-1-long-1" data-species="B" data-kind="long" transform="translate(-80 -1) rotate(-13) scale(1)">
+      <use xlink:href="#long-rod" fill="#7ba9ca" stroke="#4f7f9f" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#4f7f9f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-b-parent-genome-1-long-2" data-species="B" data-kind="long" transform="translate(-27 2) rotate(9) scale(1)">
+      <use xlink:href="#long-rod" fill="#7ba9ca" stroke="#4f7f9f" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#4f7f9f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-b-parent-genome-1-short-3" data-species="B" data-kind="short" transform="translate(40 -8) rotate(-17) scale(1)">
+      <use xlink:href="#short-rod" fill="#de8e77" stroke="#b56753" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#b56753" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-b-parent-genome-1-short-4" data-species="B" data-kind="short" transform="translate(91 9) rotate(14) scale(1)">
+      <use xlink:href="#short-rod" fill="#de8e77" stroke="#b56753" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#b56753" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</g>
+<g id="process-arrows" fill="none" stroke="#263b48" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <path id="auto-process" d="M 230,340 L 230,423 M 219,406 L 230,423 L 241,406"/>
+  <path id="allo-merge" d="M 708,336 V 337 Q 708,347 724,347 H 853 Q 870,347 870,365 M 1040,336 V 337 Q 1040,347 1024,347 H 887 Q 870,347 870,365 V 423 M 859,406 L 870,423 L 881,406"/>
+</g>
+<g id="process-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" font-size="23">
+  <text id="auto-process-label" x="264" y="371"><tspan x="264">Sexual or asexual </tspan><tspan x="264" dy="29">polyploidization</tspan></text>
+  <text id="allo-process-label" x="899" y="378"><tspan x="899">Hybridization accompanied </tspan><tspan x="899" dy="26">by sexual or asexual </tspan><tspan x="899" dy="26">polyploidization</tspan></text>
+</g>
+<g id="auto-product" data-cell="true" transform="translate(255 580)">
+<g transform="scale(1.27 1.31)"><path d="M -141,1 C -153,-54 -110,-98 -45,-104 C 22,-113 103,-95 132,-39 C 168,21 126,81 67,99 C -8,122 -122,92 -141,1 Z" fill="#f4ecdc" stroke="#667a80" stroke-width="2.7"/><path d="M -128,27 C -91,88 -14,103 62,85 C 106,73 130,54 141,23 C 127,70 108,85 66,96 C -11,119 -110,82 -128,27 Z" fill="#e4d9c3"/><path d="M -116,-34 C -100,-68 -67,-87 -38,-90" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round"/></g>
+<g id="auto-product-genome-1-long-1" data-species="A" data-kind="long" transform="translate(-80 -62) rotate(-13) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-1-long-2" data-species="A" data-kind="long" transform="translate(-27 -59) rotate(9) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-1-short-3" data-species="A" data-kind="short" transform="translate(40 -69) rotate(-17) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-1-short-4" data-species="A" data-kind="short" transform="translate(91 -52) rotate(14) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-2-long-1" data-species="A" data-kind="long" transform="translate(-80 60) rotate(-13) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-2-long-2" data-species="A" data-kind="long" transform="translate(-27 63) rotate(9) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-2-short-3" data-species="A" data-kind="short" transform="translate(40 53) rotate(-17) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="auto-product-genome-2-short-4" data-species="A" data-kind="short" transform="translate(91 70) rotate(14) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</g>
+<g id="allo-product" data-cell="true" transform="translate(870 580)">
+<g transform="scale(1.27 1.31)"><path d="M -139,-6 C -144,-66 -93,-101 -29,-103 C 40,-114 117,-85 137,-29 C 162,40 111,94 44,104 C -29,121 -129,84 -139,-6 Z" fill="#f4ecdc" stroke="#667a80" stroke-width="2.7"/><path d="M -128,24 C -101,82 -27,100 41,90 C 91,84 124,57 137,26 C 124,75 92,97 44,101 C -31,117 -111,84 -128,24 Z" fill="#e4d9c3"/><path d="M -114,-40 C -95,-76 -56,-88 -24,-89" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round"/></g>
+<g id="allo-product-genome-1-long-1" data-species="A" data-kind="long" transform="translate(-80 -62) rotate(-13) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-1-long-2" data-species="A" data-kind="long" transform="translate(-27 -59) rotate(9) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#2d719e" stroke="#245b80" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#245b80" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-1-short-3" data-species="A" data-kind="short" transform="translate(40 -69) rotate(-17) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-1-short-4" data-species="A" data-kind="short" transform="translate(91 -52) rotate(14) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#b95040" stroke="#963e32" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#963e32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-2-long-1" data-species="B" data-kind="long" transform="translate(-80 60) rotate(-13) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#7ba9ca" stroke="#4f7f9f" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#4f7f9f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-2-long-2" data-species="B" data-kind="long" transform="translate(-27 63) rotate(9) scale(0.94)">
+      <use xlink:href="#long-rod" fill="#7ba9ca" stroke="#4f7f9f" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#4f7f9f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-2-short-3" data-species="B" data-kind="short" transform="translate(40 53) rotate(-17) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#de8e77" stroke="#b56753" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#b56753" stroke-width="3" stroke-linecap="round"/>
+    </g>
+<g id="allo-product-genome-2-short-4" data-species="B" data-kind="short" transform="translate(91 70) rotate(14) scale(0.94)">
+      <use xlink:href="#short-rod" fill="#de8e77" stroke="#b56753" stroke-width="1.3"/>
+      <path d="M -4,0 Q 2,3 9,0" fill="none" stroke="#b56753" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</g>
+<g id="genome-leaders" fill="none" stroke="#667a80" stroke-width="2" stroke-linecap="round">
+  <path d="M 255,723 V 735"/><path d="M 870,723 V 735"/>
+</g>
+<g id="outcome-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <text id="auto-genome-label" x="255" y="765" font-size="23"><tspan x="255">Two complete diploid A genomes</tspan></text>
+  <text id="allo-genome-label" xml:space="preserve" x="870" y="765" font-size="23"><tspan x="870">Complete diploid A genome </tspan><tspan font-style="italic">plus </tspan><tspan x="870" dy="27">complete diploid B genome</tspan></text>
+  <text id="auto-product-label" x="255" y="827" font-size="25" font-weight="bold">New autotetraploid species</text>
+  <text id="allo-product-label" x="870" y="827" font-size="25" font-weight="bold">New allotetraploid species</text>
+</g>
+</svg>

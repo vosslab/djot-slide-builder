@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1402" height="617" viewBox="0 0 1402 617" role="img" aria-labelledby="title desc">
+<title id="title">Short tandem repeat comparison at two loci</title><desc id="desc">Two samples are compared at two STR loci. Crime scene DNA above and suspect DNA below each have seven AGAT modules at site 1. At site 2, the crime scene has eight GATA modules and the suspect has thirteen. Each visible outlined module denotes one motif copy; the internal line separates two schematic DNA rails and is not a second copy. Original vector construction from image_006.png, whose source footer credits Copyright 2009 Pearson Education, Inc.; that source provenance is not a copyright claim on this new artwork. The drawing is schematic and not to scale.</desc>
+<g font-family="Arial, sans-serif">
+<rect  x="0" y="0" width="1402" height="617" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="505" y="54" font-size="42" text-anchor="middle" fill="#213547" font-weight="700">STR site 1</text>
+<text x="1070" y="54" font-size="42" text-anchor="middle" fill="#213547" font-weight="700">STR site 2</text>
+<path  d="M325 76 H685" stroke="#B85F20" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M800 76 H1350" stroke="#763D88" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="23" y="218" font-size="32" text-anchor="start" fill="#213547" font-weight="700">Crime scene DNA</text>
+<text x="23" y="473" font-size="32" text-anchor="start" fill="#213547" font-weight="700">Suspect&#8217;s DNA</text>
+<g id="crime-site-1" data-repeat-count="7" data-motif="AGAT">
+<rect  x="313" y="195" width="364" height="43" rx="0" fill="#E5F1F7" stroke="none" stroke-width="1"/>
+<path  d="M313 195 H677" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M313 238 H677" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M323 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M337 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M653 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M667 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-1" x="357" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M362 216.5 H388" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-2" x="397" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M402 216.5 H428" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-3" x="437" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M442 216.5 H468" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-4" x="477" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M482 216.5 H508" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-5" x="517" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M522 216.5 H548" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-6" x="557" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M562 216.5 H588" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="crime-site-1-repeat-7" x="597" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M602 216.5 H628" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="322" y="109" width="106" height="47" rx="6" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.5"/>
+<text x="375" y="143" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
+<path  d="M359 156 L375 181 L391 156" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M355 256 V267 Q355 276 365 276 H484.0 L495.0 288 L506.0 276 H625 Q635 276 635 267 V256" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="crime-site-2" data-repeat-count="8" data-motif="GATA">
+<rect  x="778" y="195" width="404" height="43" rx="0" fill="#E5F1F7" stroke="none" stroke-width="1"/>
+<path  d="M778 195 H1182" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M778 238 H1182" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M788 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M802 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1158 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1172 202 V231" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-1" d="M828 193 H852 L858 200 V233 L852 240 H828 L822 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M827 216.5 H853" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-2" d="M868 193 H892 L898 200 V233 L892 240 H868 L862 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M867 216.5 H893" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-3" d="M908 193 H932 L938 200 V233 L932 240 H908 L902 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M907 216.5 H933" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-4" d="M948 193 H972 L978 200 V233 L972 240 H948 L942 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M947 216.5 H973" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-5" d="M988 193 H1012 L1018 200 V233 L1012 240 H988 L982 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M987 216.5 H1013" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-6" d="M1028 193 H1052 L1058 200 V233 L1052 240 H1028 L1022 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1027 216.5 H1053" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-7" d="M1068 193 H1092 L1098 200 V233 L1092 240 H1068 L1062 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1067 216.5 H1093" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="crime-site-2-repeat-8" d="M1108 193 H1132 L1138 200 V233 L1132 240 H1108 L1102 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1107 216.5 H1133" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="787" y="109" width="106" height="47" rx="6" fill="#E6D4EF" stroke="#763D88" stroke-width="2.5"/>
+<text x="840" y="143" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
+<path  d="M824 156 L840 181 L856 156" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M820 256 V267 Q820 276 830 276 H969.0 L980.0 288 L991.0 276 H1130 Q1140 276 1140 267 V256" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="suspect-site-1" data-repeat-count="7" data-motif="AGAT">
+<rect  x="313" y="450" width="364" height="43" rx="0" fill="#E5F1F7" stroke="none" stroke-width="1"/>
+<path  d="M313 450 H677" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M313 493 H677" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M323 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M337 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M653 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M667 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-1" x="357" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M362 471.5 H388" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-2" x="397" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M402 471.5 H428" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-3" x="437" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M442 471.5 H468" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-4" x="477" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M482 471.5 H508" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-5" x="517" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M522 471.5 H548" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-6" x="557" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M562 471.5 H588" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="suspect-site-1-repeat-7" x="597" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
+<path  d="M602 471.5 H628" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="322" y="552" width="106" height="47" rx="6" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.5"/>
+<text x="375" y="586" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
+<path  d="M359 552 L375 515 L391 552" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M355 433 V422 Q355 413 365 413 H484.0 L495.0 401 L506.0 413 H625 Q635 413 635 422 V433" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="suspect-site-2" data-repeat-count="13" data-motif="GATA">
+<rect  x="778" y="450" width="604" height="43" rx="0" fill="#E5F1F7" stroke="none" stroke-width="1"/>
+<path  d="M778 450 H1382" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M778 493 H1382" stroke="#206A91" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M788 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M802 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1358 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1372 457 V486" stroke="#9EBECD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-1" d="M828 448 H852 L858 455 V488 L852 495 H828 L822 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M827 471.5 H853" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-2" d="M868 448 H892 L898 455 V488 L892 495 H868 L862 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M867 471.5 H893" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-3" d="M908 448 H932 L938 455 V488 L932 495 H908 L902 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M907 471.5 H933" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-4" d="M948 448 H972 L978 455 V488 L972 495 H948 L942 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M947 471.5 H973" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-5" d="M988 448 H1012 L1018 455 V488 L1012 495 H988 L982 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M987 471.5 H1013" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-6" d="M1028 448 H1052 L1058 455 V488 L1052 495 H1028 L1022 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1027 471.5 H1053" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-7" d="M1068 448 H1092 L1098 455 V488 L1092 495 H1068 L1062 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1067 471.5 H1093" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-8" d="M1108 448 H1132 L1138 455 V488 L1132 495 H1108 L1102 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1107 471.5 H1133" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-9" d="M1148 448 H1172 L1178 455 V488 L1172 495 H1148 L1142 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1147 471.5 H1173" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-10" d="M1188 448 H1212 L1218 455 V488 L1212 495 H1188 L1182 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1187 471.5 H1213" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-11" d="M1228 448 H1252 L1258 455 V488 L1252 495 H1228 L1222 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1227 471.5 H1253" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-12" d="M1268 448 H1292 L1298 455 V488 L1292 495 H1268 L1262 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1267 471.5 H1293" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="suspect-site-2-repeat-13" d="M1308 448 H1332 L1338 455 V488 L1332 495 H1308 L1302 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M1307 471.5 H1333" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="787" y="552" width="106" height="47" rx="6" fill="#E6D4EF" stroke="#763D88" stroke-width="2.5"/>
+<text x="840" y="586" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
+<path  d="M824 552 L840 515 L856 552" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path  d="M820 433 V422 Q820 413 830 413 H1069.0 L1080.0 401 L1091.0 413 H1330 Q1340 413 1340 422 V433" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="500" y="330" font-size="30" text-anchor="middle" fill="#213547" font-weight="400">Number of short tandem</text>
+<text x="500" y="369" font-size="33" text-anchor="middle" fill="#B85F20" font-weight="700">repeats match</text>
+<text x="1070" y="330" font-size="30" text-anchor="middle" fill="#213547" font-weight="400">Number of short tandem</text>
+<text x="1070" y="369" font-size="33" text-anchor="middle" fill="#763D88" font-weight="700">repeats do not match</text>
+</g></svg>

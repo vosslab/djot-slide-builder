@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="622" height="390" viewBox="0 0 622 390" role="img" aria-label="Recessive disease pedigree">
+<rect width="622" height="390" fill="#F1F6FB"/>
+<path id="mating-I" d="M201 82 H259" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="mating-II-left" d="M171 155 H219" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="mating-II-right" d="M386 155 H454" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="mating-III-left" d="M83 235 H129" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="mating-III-cousins" d="M301 233 H359 M301 237 H359" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="sibship-II" d="M230 82 V122 M92 122 H375 M92 122 V144 M160 122 V144 M375 122 V144" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="sibship-III-left" d="M195 155 V200 M140 200 H290 M140 200 V224 M190 200 V224 M240 200 V224 M290 200 V224" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="sibship-III-right" d="M420 155 V200 M370 200 H480 M370 200 V224 M425 200 V224 M480 200 V224" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="sibship-IV-left" d="M106 235 V281 M85 281 H135 M85 281 V299 M135 281 V299" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<path id="sibship-IV-cousins" d="M330 237 V299 M285 281 H375 M285 281 V299 M375 281 V299" fill="none" stroke="#243645" stroke-width="2" stroke-linejoin="round" />
+<text id="generation-I" x="23" y="88" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">I</text>
+<g id="person-I-1" data-sex="M" data-state="U">
+<rect x="179" y="71" width="22" height="22" fill="#FFF8E7"/>
+<path id="uncertainty-I-1" d="M190 73 V91" fill="none" stroke="#DF2444" stroke-width="2" stroke-linejoin="round" stroke-dasharray="3 2"/>
+<rect x="179" y="71" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-I-1" x="190" y="112" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-I-2" data-sex="F" data-state="U">
+<circle cx="270" cy="82" r="11" fill="#FFF8E7"/>
+<path id="uncertainty-I-2" d="M270 73 V91" fill="none" stroke="#DF2444" stroke-width="2" stroke-linejoin="round" stroke-dasharray="3 2"/>
+<circle cx="270" cy="82" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-I-2" x="270" y="112" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<text id="generation-II" x="23" y="161" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">II</text>
+<g id="person-II-1" data-sex="F" data-state="C">
+<circle cx="92" cy="155" r="11" fill="#FFF8E7"/>
+<circle cx="92" cy="155" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-II-1" x="92" y="185" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-II-2" data-sex="F" data-state="H">
+<circle cx="160" cy="155" r="11" fill="#FFF8E7"/>
+<defs><clipPath id="clip-II-2" clipPathUnits="userSpaceOnUse"><rect x="149" y="144" width="11" height="22"/></clipPath></defs>
+<circle cx="160" cy="155" r="11" fill="#DF2444" clip-path="url(#clip-II-2)"/>
+<circle cx="160" cy="155" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-II-2" x="160" y="185" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<g id="person-II-3" data-sex="M" data-state="H">
+<rect x="219" y="144" width="22" height="22" fill="#FFF8E7"/>
+<defs><clipPath id="clip-II-3" clipPathUnits="userSpaceOnUse"><rect x="219" y="144" width="11" height="22"/></clipPath></defs>
+<rect x="219" y="144" width="22" height="22" fill="#DF2444" clip-path="url(#clip-II-3)"/>
+<rect x="219" y="144" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-II-3" x="230" y="185" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">3</text>
+<g id="person-II-4" data-sex="M" data-state="H">
+<rect x="364" y="144" width="22" height="22" fill="#FFF8E7"/>
+<defs><clipPath id="clip-II-4" clipPathUnits="userSpaceOnUse"><rect x="364" y="144" width="11" height="22"/></clipPath></defs>
+<rect x="364" y="144" width="22" height="22" fill="#DF2444" clip-path="url(#clip-II-4)"/>
+<rect x="364" y="144" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-II-4" x="375" y="185" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">4</text>
+<g id="person-II-5" data-sex="F" data-state="C">
+<circle cx="465" cy="155" r="11" fill="#FFF8E7"/>
+<circle cx="465" cy="155" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-II-5" x="465" y="185" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">5</text>
+<text id="generation-III" x="23" y="241" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">III</text>
+<g id="person-III-1" data-sex="F" data-state="C">
+<circle cx="72" cy="235" r="11" fill="#FFF8E7"/>
+<circle cx="72" cy="235" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-1" x="72" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-III-2" data-sex="M" data-state="A">
+<rect x="129" y="224" width="22" height="22" fill="#DF2444"/>
+<rect x="129" y="224" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-2" x="140" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<g id="person-III-3" data-sex="F" data-state="C">
+<circle cx="190" cy="235" r="11" fill="#FFF8E7"/>
+<circle cx="190" cy="235" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-3" x="190" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">3</text>
+<g id="person-III-4" data-sex="F" data-state="A">
+<circle cx="240" cy="235" r="11" fill="#DF2444"/>
+<circle cx="240" cy="235" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-4" x="240" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">4</text>
+<g id="person-III-5" data-sex="F" data-state="H">
+<circle cx="290" cy="235" r="11" fill="#FFF8E7"/>
+<defs><clipPath id="clip-III-5" clipPathUnits="userSpaceOnUse"><rect x="279" y="224" width="11" height="22"/></clipPath></defs>
+<circle cx="290" cy="235" r="11" fill="#DF2444" clip-path="url(#clip-III-5)"/>
+<circle cx="290" cy="235" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-5" x="290" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">5</text>
+<g id="person-III-6" data-sex="M" data-state="H">
+<rect x="359" y="224" width="22" height="22" fill="#FFF8E7"/>
+<defs><clipPath id="clip-III-6" clipPathUnits="userSpaceOnUse"><rect x="359" y="224" width="11" height="22"/></clipPath></defs>
+<rect x="359" y="224" width="22" height="22" fill="#DF2444" clip-path="url(#clip-III-6)"/>
+<rect x="359" y="224" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-6" x="370" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">6</text>
+<g id="person-III-7" data-sex="F" data-state="C">
+<circle cx="425" cy="235" r="11" fill="#FFF8E7"/>
+<circle cx="425" cy="235" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-7" x="425" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">7</text>
+<g id="person-III-8" data-sex="M" data-state="C">
+<rect x="469" y="224" width="22" height="22" fill="#FFF8E7"/>
+<rect x="469" y="224" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-III-8" x="480" y="265" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">8</text>
+<text id="generation-IV" x="23" y="316" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="middle">IV</text>
+<g id="person-IV-1" data-sex="F" data-state="H">
+<circle cx="85" cy="310" r="11" fill="#FFF8E7"/>
+<defs><clipPath id="clip-IV-1" clipPathUnits="userSpaceOnUse"><rect x="74" y="299" width="11" height="22"/></clipPath></defs>
+<circle cx="85" cy="310" r="11" fill="#DF2444" clip-path="url(#clip-IV-1)"/>
+<circle cx="85" cy="310" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-IV-1" x="85" y="340" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">1</text>
+<g id="person-IV-2" data-sex="M" data-state="H">
+<rect x="124" y="299" width="22" height="22" fill="#FFF8E7"/>
+<defs><clipPath id="clip-IV-2" clipPathUnits="userSpaceOnUse"><rect x="124" y="299" width="11" height="22"/></clipPath></defs>
+<rect x="124" y="299" width="22" height="22" fill="#DF2444" clip-path="url(#clip-IV-2)"/>
+<rect x="124" y="299" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-IV-2" x="135" y="340" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">2</text>
+<g id="person-IV-3" data-sex="M" data-state="C">
+<rect x="274" y="299" width="22" height="22" fill="#FFF8E7"/>
+<rect x="274" y="299" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-IV-3" x="285" y="340" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">3</text>
+<g id="person-IV-4" data-sex="F" data-state="C">
+<circle cx="330" cy="310" r="11" fill="#FFF8E7"/>
+<circle cx="330" cy="310" r="11" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-IV-4" x="330" y="340" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">4</text>
+<g id="person-IV-5" data-sex="M" data-state="A">
+<rect x="364" y="299" width="22" height="22" fill="#DF2444"/>
+<rect x="364" y="299" width="22" height="22" fill="none" stroke="#243645" stroke-width="2"/>
+</g>
+<text id="number-IV-5" x="375" y="340" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="17" text-anchor="middle">5</text>
+<path id="leader-I-1" d="M310 50 L207 65" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round" />
+<path id="leader-I-2" d="M330 58 L285 66" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round" />
+<path id="leader-II-4" d="M432 132 L391 142" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round" />
+<path id="leader-cousins" d="M250 345 V274 H310 V249 H318" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round" />
+<path id="leader-IV-5" d="M430 315 L392 310" fill="none" stroke="#247CA0" stroke-width="1.8" stroke-linejoin="round" />
+<circle id="leader-dot-I-1" cx="207" cy="65" r="3" fill="#247CA0"/>
+<circle id="leader-dot-I-2" cx="285" cy="66" r="3" fill="#247CA0"/>
+<circle id="leader-dot-II-4" cx="391" cy="142" r="3" fill="#247CA0"/>
+<circle id="leader-dot-cousins" cx="318" cy="249" r="3" fill="#247CA0"/>
+<circle id="leader-dot-IV-5" cx="392" cy="310" r="3" fill="#247CA0"/>
+<g id="callout-uncertain"><rect x="310" y="12" width="294" height="48" rx="4" fill="#DDEBF7" stroke="#8BB5CE"/>
+<text id="callout-uncertain-line1" x="320" y="34" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">One of these persons</text>
+<text id="callout-uncertain-line2" x="320" y="53" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">is heterozygous</text>
+</g>
+<g id="callout-carrier"><rect x="432" y="106" width="172" height="32" rx="4" fill="#DDEBF7" stroke="#8BB5CE"/>
+<text id="callout-carrier-line1" x="442" y="128" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">Heterozygous</text>
+</g>
+<g id="callout-cousins"><rect x="45" y="345" width="221" height="40" rx="4" fill="#DDEBF7" stroke="#8BB5CE"/>
+<text id="callout-cousins-line1" x="55" y="362" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">Mating between</text>
+<text id="callout-cousins-line2" x="55" y="381" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">first cousins</text>
+</g>
+<g id="callout-affected"><rect x="430" y="289" width="174" height="52" rx="4" fill="#DDEBF7" stroke="#8BB5CE"/>
+<text id="callout-affected-line1" x="440" y="311" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">Homozygous</text>
+<text id="callout-affected-line2" x="440" y="330" fill="#243645" font-family="Atkinson Hyperlegible Next" font-size="19" text-anchor="start">recessive</text>
+</g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="436" height="318" viewBox="0 0 436 318" role="img" aria-labelledby="sample-title sample-desc">
+  <title id="sample-title">Four-row family diagram</title>
+  <desc id="sample-desc">Twenty circles and squares in four rows, connected by five paired horizontal lines and branching vertical connections. Five symbols are red and fifteen are pale cream.</desc>
+  <rect id="background" width="436" height="318" fill="#ffffff"/>
+  <g id="connections" fill="none" stroke="#171313" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <g id="connection-1">
+      <line id="connection-1-segment-1" x1="178" y1="24" x2="254" y2="24"/>
+      <line id="connection-1-segment-2" x1="216" y1="24" x2="216" y2="76"/>
+      <line id="connection-1-segment-3" x1="108" y1="76" x2="304" y2="76"/>
+      <line id="connection-1-segment-4" x1="108" y1="76" x2="108" y2="102"/>
+      <line id="connection-1-segment-5" x1="172" y1="76" x2="172" y2="102"/>
+      <line id="connection-1-segment-6" x1="236" y1="76" x2="236" y2="102"/>
+      <line id="connection-1-segment-7" x1="304" y1="76" x2="304" y2="102"/>
+    </g>
+    <g id="connection-2">
+      <line id="connection-2-segment-1" x1="54" y1="118" x2="92" y2="118"/>
+      <line id="connection-2-segment-2" x1="73" y1="118" x2="73" y2="158"/>
+      <line id="connection-2-segment-3" x1="24" y1="158" x2="132" y2="158"/>
+      <line id="connection-2-segment-4" x1="24" y1="158" x2="24" y2="182"/>
+      <line id="connection-2-segment-5" x1="78" y1="158" x2="78" y2="182"/>
+      <line id="connection-2-segment-6" x1="132" y1="158" x2="132" y2="182"/>
+    </g>
+    <g id="connection-3">
+      <line id="connection-3-segment-1" x1="320" y1="118" x2="382" y2="118"/>
+      <line id="connection-3-segment-2" x1="351" y1="118" x2="351" y2="158"/>
+      <line id="connection-3-segment-3" x1="304" y1="158" x2="412" y2="158"/>
+      <line id="connection-3-segment-4" x1="304" y1="158" x2="304" y2="182"/>
+      <line id="connection-3-segment-5" x1="358" y1="158" x2="358" y2="182"/>
+      <line id="connection-3-segment-6" x1="412" y1="158" x2="412" y2="182"/>
+    </g>
+    <g id="connection-4">
+      <line id="connection-4-segment-1" x1="148" y1="198" x2="170" y2="198"/>
+      <line id="connection-4-segment-2" x1="159" y1="198" x2="159" y2="254"/>
+      <line id="connection-4-segment-3" x1="124" y1="254" x2="194" y2="254"/>
+      <line id="connection-4-segment-4" x1="124" y1="254" x2="124" y2="278"/>
+      <line id="connection-4-segment-5" x1="194" y1="254" x2="194" y2="278"/>
+    </g>
+    <g id="connection-5">
+      <line id="connection-5-segment-1" x1="266" y1="198" x2="288" y2="198"/>
+      <line id="connection-5-segment-2" x1="277" y1="198" x2="277" y2="254"/>
+      <line id="connection-5-segment-3" x1="250" y1="254" x2="320" y2="254"/>
+      <line id="connection-5-segment-4" x1="250" y1="254" x2="250" y2="278"/>
+      <line id="connection-5-segment-5" x1="320" y1="254" x2="320" y2="278"/>
+    </g>
+  </g>
+  <g id="symbols" stroke="#171313" stroke-width="2">
+    <circle id="row-1-symbol-1" fill="#e4003b" cx="162" cy="24" r="16"/>
+    <rect id="row-1-symbol-2" fill="#f8f8bc" x="254" y="8" width="32" height="32"/>
+    <rect id="row-2-symbol-1" fill="#f8f8bc" x="22" y="102" width="32" height="32"/>
+    <circle id="row-2-symbol-2" fill="#f8f8bc" cx="108" cy="118" r="16"/>
+    <circle id="row-2-symbol-3" fill="#e4003b" cx="172" cy="118" r="16"/>
+    <rect id="row-2-symbol-4" fill="#f8f8bc" x="220" y="102" width="32" height="32"/>
+    <rect id="row-2-symbol-5" fill="#e4003b" x="288" y="102" width="32" height="32"/>
+    <circle id="row-2-symbol-6" fill="#f8f8bc" cx="398" cy="118" r="16"/>
+    <rect id="row-3-symbol-1" fill="#f8f8bc" x="8" y="182" width="32" height="32"/>
+    <circle id="row-3-symbol-2" fill="#f8f8bc" cx="78" cy="198" r="16"/>
+    <rect id="row-3-symbol-3" fill="#f8f8bc" x="116" y="182" width="32" height="32"/>
+    <circle id="row-3-symbol-4" fill="#f8f8bc" cx="186" cy="198" r="16"/>
+    <rect id="row-3-symbol-5" fill="#f8f8bc" x="234" y="182" width="32" height="32"/>
+    <circle id="row-3-symbol-6" fill="#e4003b" cx="304" cy="198" r="16"/>
+    <circle id="row-3-symbol-7" fill="#f8f8bc" cx="358" cy="198" r="16"/>
+    <rect id="row-3-symbol-8" fill="#f8f8bc" x="396" y="182" width="32" height="32"/>
+    <circle id="row-4-symbol-1" fill="#f8f8bc" cx="124" cy="294" r="16"/>
+    <rect id="row-4-symbol-2" fill="#f8f8bc" x="178" y="278" width="32" height="32"/>
+    <rect id="row-4-symbol-3" fill="#e4003b" x="234" y="278" width="32" height="32"/>
+    <circle id="row-4-symbol-4" fill="#f8f8bc" cx="320" cy="294" r="16"/>
+  </g>
+</svg>

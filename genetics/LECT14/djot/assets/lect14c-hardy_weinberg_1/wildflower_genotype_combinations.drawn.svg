@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1213" height="960" viewBox="0 0 1213 960" role="img" aria-labelledby="title desc"><title id="title">Wildflower genotype combinations</title><desc id="desc">Four unnamed five-lobed wildflowers in a two-by-two grid: red, pink, pink and white. Red and white allele circles appear above the columns and beside the rows. Unequal source cell dimensions are schematic, not a numerical area scale.</desc><defs>
+<linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f45c68"/><stop offset=".48" stop-color="#d92e45"/><stop offset="1" stop-color="#a51f39"/></linearGradient>
+<linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9d1dd"/><stop offset=".48" stop-color="#eda1b8"/><stop offset="1" stop-color="#ca6e91"/></linearGradient>
+<linearGradient id="white" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".6" stop-color="#f4f5f3"/><stop offset="1" stop-color="#d8dedb"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b1d297"/><stop offset=".55" stop-color="#7fac65"/><stop offset="1" stop-color="#527b47"/></linearGradient>
+</defs><rect width="1213" height="960" fill="white"/>
+<g id="grid" fill="white" stroke="#283334" stroke-width="3"><rect x="191" y="350" width="799" height="602"/><path d="M750 350 V952 M191 748 H990" fill="none"/></g>
+<g id="convergence" fill="none" stroke="#202929" stroke-width="4" stroke-linejoin="round"><path d="M466 40 L587 105 L708 40 M587 105 V180"/><path d="M577 171 L587 209 L597 171 L587 178 Z" fill="#202929" stroke="none"/></g>
+<g id="allele-circles" stroke="#263233" stroke-width="3"><circle cx="475" cy="283" r="44" fill="#df263f"/><circle cx="878" cy="283" r="44" fill="white"/><circle cx="90" cy="464" r="44" fill="#df263f"/><circle cx="90" cy="818" r="44" fill="white"/></g>
+<g id="flower-1-red" transform="translate(450,435)">
+<path id="stem-1" d="M-3 30 C-5 57 -4 82 19 107 L29 107 C5 79 7 57 4 30 Z" fill="url(#leaf)" stroke="#55794b" stroke-width="2"/>
+<g id="leaves-1" fill="url(#leaf)" stroke="#55794b" stroke-width="2"><path d="M6 85 C-11 57 -42 61 -59 98 C-34 96 -20 79 6 85 Z"/><path d="M4 71 C19 42 52 45 71 76 C46 75 29 63 4 71 Z"/></g>
+<g fill="none" stroke="#608850" stroke-width="1.4"><path d="M-51 92 Q-25 69 5 84 M12 67 Q41 56 65 72 M-26 77 L-32 87 M-11 78 L-16 87 M32 61 L41 70 M46 64 L50 72"/></g>
+<g id="petals-1" fill="url(#red)" stroke="#9b3044" stroke-width="2.1">
+<path transform="rotate(144)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(216)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(288)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(0)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(72)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+</g><g fill="none" stroke="#9b3044" stroke-width="1" opacity=".45">
+<path transform="rotate(0)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(72)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(144)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(216)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(288)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+</g><g id="pale-center-1" fill="#f5f4e8" stroke="#8b968c" stroke-width=".8">
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(0)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(45)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(90)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(135)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(180)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(225)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(270)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(315)"/>
+<circle r="4.5" fill="#e6ead5"/></g></g>
+<g id="flower-2-pink" transform="translate(870,435)">
+<path id="stem-2" d="M-3 30 C-5 57 -4 82 19 107 L29 107 C5 79 7 57 4 30 Z" fill="url(#leaf)" stroke="#55794b" stroke-width="2"/>
+<g id="leaves-2" fill="url(#leaf)" stroke="#55794b" stroke-width="2"><path d="M6 85 C-11 57 -42 61 -59 98 C-34 96 -20 79 6 85 Z"/><path d="M4 71 C19 42 52 45 71 76 C46 75 29 63 4 71 Z"/></g>
+<g fill="none" stroke="#608850" stroke-width="1.4"><path d="M-51 92 Q-25 69 5 84 M12 67 Q41 56 65 72 M-26 77 L-32 87 M-11 78 L-16 87 M32 61 L41 70 M46 64 L50 72"/></g>
+<g id="petals-2" fill="url(#pink)" stroke="#b86a86" stroke-width="2.1">
+<path transform="rotate(144)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(216)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(288)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(0)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(72)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+</g><g fill="none" stroke="#b86a86" stroke-width="1" opacity=".45">
+<path transform="rotate(0)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(72)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(144)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(216)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(288)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+</g><g id="pale-center-2" fill="#f5f4e8" stroke="#8b968c" stroke-width=".8">
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(0)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(45)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(90)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(135)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(180)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(225)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(270)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(315)"/>
+<circle r="4.5" fill="#e6ead5"/></g></g>
+<g id="flower-3-pink" transform="translate(450,830)">
+<path id="stem-3" d="M-3 30 C-5 57 -4 82 19 107 L29 107 C5 79 7 57 4 30 Z" fill="url(#leaf)" stroke="#55794b" stroke-width="2"/>
+<g id="leaves-3" fill="url(#leaf)" stroke="#55794b" stroke-width="2"><path d="M6 85 C-11 57 -42 61 -59 98 C-34 96 -20 79 6 85 Z"/><path d="M4 71 C19 42 52 45 71 76 C46 75 29 63 4 71 Z"/></g>
+<g fill="none" stroke="#608850" stroke-width="1.4"><path d="M-51 92 Q-25 69 5 84 M12 67 Q41 56 65 72 M-26 77 L-32 87 M-11 78 L-16 87 M32 61 L41 70 M46 64 L50 72"/></g>
+<g id="petals-3" fill="url(#pink)" stroke="#b86a86" stroke-width="2.1">
+<path transform="rotate(144)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(216)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(288)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(0)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(72)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+</g><g fill="none" stroke="#b86a86" stroke-width="1" opacity=".45">
+<path transform="rotate(0)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(72)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(144)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(216)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(288)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+</g><g id="pale-center-3" fill="#f5f4e8" stroke="#8b968c" stroke-width=".8">
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(0)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(45)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(90)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(135)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(180)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(225)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(270)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(315)"/>
+<circle r="4.5" fill="#e6ead5"/></g></g>
+<g id="flower-4-white" transform="translate(870,830)">
+<path id="stem-4" d="M-3 30 C-5 57 -4 82 19 107 L29 107 C5 79 7 57 4 30 Z" fill="url(#leaf)" stroke="#55794b" stroke-width="2"/>
+<g id="leaves-4" fill="url(#leaf)" stroke="#55794b" stroke-width="2"><path d="M6 85 C-11 57 -42 61 -59 98 C-34 96 -20 79 6 85 Z"/><path d="M4 71 C19 42 52 45 71 76 C46 75 29 63 4 71 Z"/></g>
+<g fill="none" stroke="#608850" stroke-width="1.4"><path d="M-51 92 Q-25 69 5 84 M12 67 Q41 56 65 72 M-26 77 L-32 87 M-11 78 L-16 87 M32 61 L41 70 M46 64 L50 72"/></g>
+<g id="petals-4" fill="url(#white)" stroke="#9ca9a5" stroke-width="2.1">
+<path transform="rotate(144)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(216)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(288)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(0)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+<path transform="rotate(72)" d="M-10 9 C-22 -5 -34 -28 -23 -43 C-17 -52 -8 -47 0 -54 C8 -48 21 -50 27 -39 C33 -23 17 -4 10 9 C3 13 -4 13 -10 9 Z"/>
+</g><g fill="none" stroke="#9ca9a5" stroke-width="1" opacity=".45">
+<path transform="rotate(0)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(72)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(144)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(216)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+<path transform="rotate(288)" d="M0 -7 Q-8 -23 0 -39 M-4 -15 L-15 -29 M4 -17 L15 -31"/>
+</g><g id="pale-center-4" fill="#f5f4e8" stroke="#8b968c" stroke-width=".8">
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(0)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(45)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(90)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(135)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(180)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(225)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(270)"/>
+<ellipse cx="0" cy="-9" rx="3.2" ry="6.5" transform="rotate(315)"/>
+<circle r="4.5" fill="#e6ead5"/></g></g>
+</svg>

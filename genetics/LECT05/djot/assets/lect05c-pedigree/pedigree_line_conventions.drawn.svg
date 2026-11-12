@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="819" height="563" viewBox="0 0 819 563" role="img" aria-labelledby="figure-title figure-description">
+  <title id="figure-title">Pedigree symbols and line conventions</title>
+  <desc id="figure-description">Seven pedigree symbols and a two-generation family with four unaffected symbols. Arrows identify marriage, descent, sibling line and generation number. The thin ring highlights generation II.</desc>
+  <defs>
+    <marker id="annotation-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#456985"/>
+    </marker>
+  </defs>
+  <rect width="819" height="563" fill="#FFFFFF"/>
+  <rect id="family-panel" x="330" y="60" width="465" height="443" rx="12" fill="#F1F6FB" stroke="#BDCEDB" stroke-width="1.5"/>
+  <g id="legend" stroke="#243645" stroke-width="3" fill="#FFF8E7" stroke-linejoin="round">
+    <circle id="female" cx="72" cy="51" r="23"/>
+    <rect id="male" x="49" y="103" width="46" height="46"/>
+    <rect id="affected" x="49" y="178" width="46" height="46" fill="#243645"/>
+    <g id="deceased"><circle cx="72" cy="276" r="23"/><path d="M 42 306 L 102 246" fill="none"/></g>
+    <g id="twins">
+      <path id="twin-branches" d="M 35 365 L 72 329 L 109 365" fill="none"/>
+      <rect x="21" y="365" width="28" height="28"/>
+      <circle cx="109" cy="379" r="14"/>
+    </g>
+    <g id="adopted"><circle cx="72" cy="440" r="21"/><path d="M 44 411 H 36 V 469 H 44 M 100 411 H 108 V 469 H 100" fill="none"/></g>
+    <polygon id="miscarriage" points="72,495 48,537 96,537"/>
+  </g>
+  <g id="legend-labels" font-family="Atkinson Hyperlegible Next" font-size="26" fill="#243645">
+    <text x="140" y="60">Female</text>
+    <text x="140" y="135">Male</text>
+    <text x="140" y="193"><tspan x="140">Affected</tspan><tspan x="140" dy="29">with trait</tspan></text>
+    <text x="140" y="285">Deceased</text>
+    <text x="140" y="368">Twins</text>
+    <text x="140" y="449">Adopted</text>
+    <text x="140" y="525">Miscarriage</text>
+  </g>
+  <g id="pedigree-connectors" fill="none" stroke="#243645" stroke-width="3" stroke-linejoin="round">
+    <path id="marriage" d="M 484 220 H 556"/>
+    <path id="descent" d="M 520 220 V 315"/>
+    <path id="sibship" d="M 460 315 H 600"/>
+    <path id="child-drops" d="M 460 315 V 361 M 600 315 V 361"/>
+  </g>
+  <g id="family-people" fill="#FFF8E7" stroke="#243645" stroke-width="3">
+    <circle id="parent-female" cx="460" cy="220" r="24"/>
+    <rect id="parent-male" x="556" y="196" width="48" height="48"/>
+    <rect id="child-male" x="436" y="361" width="48" height="48"/>
+    <circle id="child-female" cx="600" cy="385" r="24"/>
+  </g>
+  <g id="generation-labels" font-family="Atkinson Hyperlegible Next" font-size="27" fill="#243645" text-anchor="middle">
+    <text x="385" y="229">I</text>
+    <text x="385" y="394">II</text>
+  </g>
+  <ellipse id="generation-highlight" cx="385" cy="385" rx="18" ry="25" fill="none" stroke="#456985" stroke-width="1"/>
+  <g id="callout-arrows" fill="none" stroke="#456985" stroke-width="1.8" marker-end="url(#annotation-arrow)">
+    <path id="marriage-arrow" d="M 520 147 V 220"/>
+    <path id="descent-arrow" d="M 637 276 H 520"/>
+    <path id="sibship-arrow" d="M 648 302 L 565 315"/>
+    <path id="generation-arrow" d="M 472 453 L 395 407"/>
+  </g>
+  <g id="callout-labels" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#243645" text-anchor="middle">
+    <text x="520" y="108"><tspan x="520">Marriage</tspan><tspan x="520" dy="28">line</tspan></text>
+    <text x="705" y="267"><tspan x="705">Line of</tspan><tspan x="705" dy="28">descent</tspan></text>
+    <text x="713" y="327"><tspan x="713">Sibling</tspan><tspan x="713" dy="28">line</tspan></text>
+    <text x="555" y="480">Generation number</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1020" viewBox="0 0 1000 1020" role="img" aria-labelledby="title desc">
+<title id="title">Simplified shared-ancestor allele paths</title><desc id="desc">Four source circles connect A to D and E, and D and E to I. A contains blue and red alleles, D and E each blue and white, and I two blue alleles.</desc>
+<rect width="1000" height="1020" fill="white"/>
+<g font-family="Atkinson Hyperlegible Next" font-size="48" font-weight="700" fill="#293638"><text x="40" y="65">(B) Simplified representation</text><text x="140" y="123">of pedigree in A</text></g>
+<g id="inheritance-paths" stroke="#293638" stroke-width="7" fill="none">
+<path id="edge-A-D" d="M 456.451130 356.898783 L 283.548870 543.101217"/>
+<path id="edge-A-E" d="M 543.548870 356.898783 L 716.451130 543.101217"/>
+<path id="edge-D-I" d="M 283.548870 636.898783 L 456.451130 823.101217"/>
+<path id="edge-E-I" d="M 716.451130 636.898783 L 543.548870 823.101217"/>
+</g>
+<g id="node-A"><circle class="individual" cx="500" cy="310" r="64" fill="#f3b589" stroke="#293638" stroke-width="7"/>
+<circle class="allele" cx="480" cy="310" r="17" fill="#1595ba" stroke="#277b95" stroke-width="3"/>
+<circle class="allele" cx="520" cy="310" r="17" fill="#d33655" stroke="#b6324c" stroke-width="3"/>
+</g>
+<g id="node-D"><circle class="individual" cx="240" cy="590" r="64" fill="#f3df7e" stroke="#293638" stroke-width="7"/>
+<circle class="allele" cx="220" cy="590" r="17" fill="#1595ba" stroke="#277b95" stroke-width="3"/>
+<circle class="allele" cx="260" cy="590" r="17" fill="#ffffff" stroke="#8d9b9a" stroke-width="3"/>
+</g>
+<g id="node-E"><circle class="individual" cx="760" cy="590" r="64" fill="#a7c8e0" stroke="#293638" stroke-width="7"/>
+<circle class="allele" cx="740" cy="590" r="17" fill="#1595ba" stroke="#277b95" stroke-width="3"/>
+<circle class="allele" cx="780" cy="590" r="17" fill="#ffffff" stroke="#8d9b9a" stroke-width="3"/>
+</g>
+<g id="node-I"><circle class="individual" cx="500" cy="870" r="64" fill="#b3d6a9" stroke="#293638" stroke-width="7"/>
+<circle class="allele" cx="480" cy="870" r="17" fill="#1595ba" stroke="#277b95" stroke-width="3"/>
+<circle class="allele" cx="520" cy="870" r="17" fill="#1595ba" stroke="#277b95" stroke-width="3"/>
+</g>
+<text x="500" y="218" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="650" fill="#293638">A</text>
+<text x="146" y="610" text-anchor="end" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="650" fill="#293638">D</text>
+<text x="854" y="610" text-anchor="start" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="650" fill="#293638">E</text>
+<text x="500" y="984" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="58" font-weight="650" fill="#293638">I</text>
+</svg>

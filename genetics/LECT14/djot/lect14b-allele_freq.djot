@@ -146,7 +146,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+![Slide image 3](assets/lect14d-hardy_weinberg_conditions/count_individual_alleles.drawn.svg)
 
 - How many of each
 - allele do we have?
@@ -158,7 +158,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+![Slide image 3](assets/lect14d-hardy_weinberg_conditions/count_individual_alleles.drawn.svg)
 
 - How many of each
 - allele do we have?
@@ -168,7 +168,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+![Slide image 3](assets/lect14d-hardy_weinberg_conditions/count_individual_alleles.drawn.svg)
 
 === layout: one-plus-two-panels
 @replaceme
@@ -206,7 +206,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 3](assets/lect14b-allele_freq/image_003.jpg)
+![Slide image 3](assets/lect14d-hardy_weinberg_conditions/count_individual_alleles.drawn.svg)
 
 - f(A) = 1780/2000 = 0.89 = 89%
 - f(a) = 220/2000 = 0.11 = 11%
@@ -218,7 +218,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 4](assets/lect14b-allele_freq/image_004.jpg)
+![Slide image 4](assets/lect14d-hardy_weinberg_conditions/genotype_to_allele_frequencies.drawn.svg)
 
 - f(A) = 0.795 + 0.19/2 = 0.89 = 89%
 - f(a) = 0.015 + 0.19/2 = 0.11 = 11%

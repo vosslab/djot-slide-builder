@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1005" height="1575" viewBox="0 0 1005 1575" role="img" aria-labelledby="title desc">
+<title id="title">Complex inbreeding paths</title><desc id="desc">Six source-colored circles connect A to B and C, both B and C to D and E, and D and E to I. The two central diagonals cross without a node.</desc>
+<rect width="1005" height="1575" fill="white"/>
+<g id="inheritance-edges" stroke="#293638" stroke-width="8" fill="none">
+<path id="edge-A-B" d="M 451.593172 238.649683 L 273.406828 491.350317"/>
+<path id="edge-A-C" d="M 548.406828 238.649683 L 726.593172 491.350317"/>
+<path id="edge-B-D" d="M 225.000000 644.000000 L 225.000000 931.000000"/>
+<path id="edge-B-E" d="M 289.723088 613.543645 L 710.276912 961.456355"/>
+<path id="edge-C-D" d="M 710.276912 613.543645 L 289.723088 961.456355"/>
+<path id="edge-C-E" d="M 775.000000 644.000000 L 775.000000 931.000000"/>
+<path id="edge-D-I" d="M 273.406828 1083.649683 L 451.593172 1336.350317"/>
+<path id="edge-E-I" d="M 726.593172 1083.649683 L 548.406828 1336.350317"/>
+</g><g id="individuals">
+<circle id="node-A" cx="500" cy="170" r="84" fill="#f3b589" stroke="#293638" stroke-width="8"/>
+<circle id="node-B" cx="225" cy="560" r="84" fill="#d6a4ab" stroke="#293638" stroke-width="8"/>
+<circle id="node-C" cx="775" cy="560" r="84" fill="#b7a6ce" stroke="#293638" stroke-width="8"/>
+<circle id="node-D" cx="225" cy="1015" r="84" fill="#f3df7e" stroke="#293638" stroke-width="8"/>
+<circle id="node-E" cx="775" cy="1015" r="84" fill="#a7c8e0" stroke="#293638" stroke-width="8"/>
+<circle id="node-I" cx="500" cy="1405" r="84" fill="#b3d6a9" stroke="#293638" stroke-width="8"/>
+</g><g id="labels" font-family="Atkinson Hyperlegible Next" font-size="88" font-weight="750" text-anchor="middle" fill="#202b2e">
+<text x="500" y="200">A</text>
+<text x="225" y="590">B</text>
+<text x="775" y="590">C</text>
+<text x="225" y="1045">D</text>
+<text x="775" y="1045">E</text>
+<text x="500" y="1435">I</text>
+</g></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="738" viewBox="0 0 1200 738" role="img" aria-labelledby="title desc">
+<title id="title">Cell cycle phases, timing and checkpoints</title>
+<desc id="desc">Clockwise G1, 10 hours; S, 9 hours; G2, 4 hours; M, 1 hour. Start is at the G1/S checkpoint. The second marked checkpoint is G2/M.</desc>
+<rect width="1200" height="738" fill="white"/>
+<g id="phase-arrows">
+<path id="s-phase" d="M310.00,365.00 A260,260 0 0 1 688.04,133.34 L696.21,117.30 L704.99,204.13 L634.47,238.48 L642.64,222.44 A160,160 0 0 0 410.00,365.00 Z" fill="#009b73" stroke="#08795e" stroke-width="3" stroke-linejoin="round"/>
+<path id="g2-phase" d="M737.12,165.83 A260,260 0 0 1 797.40,491.05 L813.14,499.78 L726.06,505.52 L694.20,433.84 L709.94,442.57 A160,160 0 0 0 672.85,242.43 Z" fill="#087fb0" stroke="#126080" stroke-width="3" stroke-linejoin="round"/>
+<path id="m-phase" d="M763.22,538.97 A260,260 0 0 1 730.07,569.88 L741.15,584.07 L658.75,555.32 L657.42,476.90 L668.51,491.08 A160,160 0 0 0 688.90,472.06 Z" fill="#efb222" stroke="#b57d0b" stroke-width="3" stroke-linejoin="round"/>
+<path id="g1-phase" d="M679.88,600.64 A260,260 0 0 1 316.66,423.49 L299.13,427.54 L360.00,365.00 L431.64,396.94 L414.10,400.99 A160,160 0 0 0 637.62,510.01 Z" fill="#d95b37" stroke="#aa4126" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g font-family="Atkinson Hyperlegible Next, sans-serif">
+<text x="540" y="186" font-size="33" text-anchor="middle" fill="white" font-weight="bold">9 hours</text>
+<g transform="rotate(90 779 365)"><text x="779" y="365" font-size="33" text-anchor="middle" fill="white" font-weight="bold">4 hours</text></g>
+<text x="474" y="548" font-size="33" text-anchor="middle" fill="white" font-weight="bold">10 hours</text>
+<g transform="rotate(51 704 531)"><text x="704" y="531" font-size="27" text-anchor="middle" fill="#352b12" font-weight="bold">1 hour</text></g>
+<text x="535" y="49" font-size="32" text-anchor="middle" fill="#263844" font-weight="normal">S (DNA synthesis)</text>
+<text x="880" y="212" font-size="33" text-anchor="start" fill="#263844" font-weight="normal">G<tspan baseline-shift="sub" font-size="22">2</tspan></text>
+<text x="880" y="250" font-size="29" text-anchor="start" fill="#263844" font-weight="normal">(Post-DNA synthesis)</text>
+<text x="165" y="635" font-size="30" text-anchor="start" fill="#263844" font-weight="normal">G<tspan baseline-shift="sub" font-size="22">1</tspan> (Pre-DNA synthesis)</text>
+<text x="804" y="677" font-size="32" text-anchor="start" fill="#263844" font-weight="normal">M (mitosis)</text>
+<g id="checkpoint-leaders" fill="none" stroke="#53636d" stroke-width="2.5" stroke-linecap="round"><path d="M290 365 H264"/><path d="M763 539 L836 576 H867"/><path d="M790 615 L818 651"/></g>
+<text x="257" y="373" font-size="29" text-anchor="end" fill="#263844" font-weight="normal">G<tspan baseline-shift="sub" font-size="22">1</tspan>/S checkpoint</text>
+<text x="873" y="585" font-size="29" text-anchor="start" fill="#263844" font-weight="normal">G<tspan baseline-shift="sub" font-size="22">2</tspan>/M</text>
+<text x="873" y="620" font-size="29" text-anchor="start" fill="#263844" font-weight="normal">checkpoint</text>
+<g id="start-checkpoint"><path d="M311 390 V359 H290 L360 322 L430 359 H409 V390 Z" fill="#a84f6c" stroke="#803950" stroke-width="2.5"/><path d="M431 359 H463" fill="none" stroke="#803950" stroke-width="2.5"/><rect x="464" y="335" width="104" height="48" rx="8" fill="#a84f6c"/>
+<text x="516" y="369" font-size="30" text-anchor="middle" fill="white" font-weight="bold">Start</text>
+</g></g></svg>
