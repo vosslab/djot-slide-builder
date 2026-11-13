@@ -1,7 +1,7 @@
 # SVG drawing helpers
 
-See [SVG_TOOL_ROADMAP.md](../docs/SVG_TOOL_ROADMAP.md) for priorities on cells, flowchart parts, and extensions to gene tracks,
-with existing work to reuse.
+See [SVG_TOOL_ROADMAP.md](../docs/SVG_TOOL_ROADMAP.md) for the 1,039-path repository SVG inventory and reuse-aware priorities: cells,
+flowchart parts, and extensions to gene tracks.
 
 `drawing.py` supports small local drawing recipes with editable SVG fragments:
 
