@@ -10,7 +10,7 @@
 <path id="set-1-50-240-0-type-8" transform="translate(415,240)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-1-50-240-0-type-9" transform="translate(465,240)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<text x="265" y="335" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Monoploid set: 9</text>
+<text x="265" y="335" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">Monoploid set: 9</text>
 <g id="cell-2-620-100" data-sets="2" data-chromosomes="18"><rect x="605" y="75" width="460" height="92" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path id="set-2-620-100-0-type-1" transform="translate(635,100)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-2-620-100-0-type-2" transform="translate(685,100)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,7 +31,7 @@
 <path id="set-2-620-100-1-type-8" transform="translate(985,136)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-2-620-100-1-type-9" transform="translate(1035,136)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<text x="835" y="212" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Diploid (18)</text>
+<text x="835" y="212" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">Diploid (18)</text>
 <g id="cell-4-620-365" data-sets="4" data-chromosomes="36"><rect x="605" y="340" width="460" height="164" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path id="set-4-620-365-0-type-1" transform="translate(635,365)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-4-620-365-0-type-2" transform="translate(685,365)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -70,5 +70,5 @@
 <path id="set-4-620-365-3-type-8" transform="translate(985,473)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-4-620-365-3-type-9" transform="translate(1035,473)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<text x="835" y="549" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Tetraploid (36)</text>
+<text x="835" y="549" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">Tetraploid (36)</text>
 </svg>

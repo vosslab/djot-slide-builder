@@ -2,10 +2,10 @@
 <title id="figure-title">Anaphase, Telophase and Cytokinesis</title><desc id="figure-desc">Anaphase has twelve daughter chromosomes, six moving to each pole with centromeres leading and arms trailing. Telophase has two emerging animal daughter cells joined at a cleavage furrow, with reforming envelopes, nucleoli and decondensing chromatin. Original unmeasured animal-cell schematics after lecture 06B source figures. Purple denotes chromosomes; yellow denotes microtubules and centrosomes. Counts of chromatin loops and spindle fibers are illustrative.</desc>
 <rect width="1200" height="760" fill="white"/>
 <path d="M560,390 H625 M613,382 L625,390 L613,398" fill="none" stroke="#758994" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-<text x="280" y="53" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
+<text x="280" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
 <tspan x="280" dy="0">Anaphase</tspan>
 </text>
-<text x="900" y="53" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#213547" text-anchor="middle" font-weight="700">
+<text x="900" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="31" fill="#213547" text-anchor="middle" font-weight="700">
 <tspan x="900" dy="0">Telophase and Cytokinesis</tspan>
 </text>
 <g id="anaphase-cell-cutaway" transform="translate(280 390) scale(1 1.08)">
@@ -298,7 +298,7 @@
 <path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 </g>
-<text x="41" y="675" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#213547" text-anchor="start" font-weight="400">
+<text x="41" y="675" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="24" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="41" dy="0">Daughter</tspan>
 <tspan x="41" dy="28.32">chromosomes</tspan>
 </text>
@@ -306,19 +306,19 @@
 <path d="M149,637 L83,566 L83,410 L107,347" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M163,637 L163,562 L169,425" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M163,637 L163,562 L169,425" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="641" y="113" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<text x="641" y="113" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="641" dy="0">Cleavage</tspan>
 <tspan x="641" dy="27.139999999999997">furrow</tspan>
 </text>
 <path d="M716,151 L659,258 L697,384 L772,405" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M716,151 L659,258 L697,384 L772,405" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1034" y="112" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
+<text x="1034" y="112" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
 <tspan x="1034" dy="0">Nucleolus</tspan>
 <tspan x="1034" dy="27.139999999999997">forming</tspan>
 </text>
 <path d="M1049,148 L1057,224 L955,300" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M1049,148 L1057,224 L955,300" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="877" y="685" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">
+<text x="877" y="685" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="24" fill="#213547" text-anchor="middle" font-weight="400">
 <tspan x="877" dy="0">Nuclear envelope forming</tspan>
 </text>
 <path d="M807,654 L763,604 L785,548" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />

@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1203" viewBox="0 0 1200 1203" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Anaphase I, telophase I and cytokinesis</title><desc id="figure-desc">Original schematic after lecture 06C. Homologs segregate while both sisters stay joined. The upper daughter receives red medium, red short, blue long homologs; the lower receives the reciprocal set. Terminal exchanges persist unchanged.</desc>
 <rect width="1200" height="1203" fill="white"/>
-<text x="300" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#213547">
+<text x="300" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="40" font-weight="bold" fill="#213547">
 <tspan x="300" dy="0">Anaphase I</tspan>
 </text>
-<text x="900" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#213547">
+<text x="900" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="38" font-weight="bold" fill="#213547">
 <tspan x="900" dy="0">Telophase I and</tspan>
 <tspan x="900" dy="44.08">Cytokinesis</tspan>
 </text>
@@ -265,19 +265,19 @@
 </g>
 <path d="M558,594 L640,594" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M625.0,587.0 L640.0,594.0 L625.0,601.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-<text x="53" y="177" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<text x="53" y="177" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" font-weight="normal" fill="#213547">
 <tspan x="53" dy="0">Sister chromatids</tspan>
 <tspan x="53" dy="33.64">remain attached</tspan>
 </text>
 <path d="M249,224 L216,329 L156,458" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="48" y="1012" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<text x="48" y="1012" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" font-weight="normal" fill="#213547">
 <tspan x="48" dy="0">Homologous</tspan>
 <tspan x="48" dy="33.64">chromosomes</tspan>
 <tspan x="48" dy="33.64">separate</tspan>
 </text>
 <path d="M276,1038 L280,957 L295,765" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M286,1005 L525,986 L499,587 L442,470" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1052" y="1097" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<text x="1052" y="1097" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" font-weight="normal" fill="#213547">
 <tspan x="1052" dy="0">Cleavage</tspan>
 <tspan x="1052" dy="33.64">furrow</tspan>
 </text>

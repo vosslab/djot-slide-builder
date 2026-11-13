@@ -21,7 +21,7 @@
     </g>
   </defs>
   <rect width="1208" height="834" fill="#ffffff"/>
-  <g id="source-label" fill="#263b48" font-family="Arial, Helvetica, sans-serif" font-size="38" text-anchor="middle">
+  <g id="source-label" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="38" text-anchor="middle">
     <text x="615" y="46"><tspan x="615">Metaphase in mitosis</tspan><tspan x="615" dy="46">in a monoploid cell</tspan></text>
   </g>
   <g id="metaphase-cell">
@@ -50,7 +50,7 @@
       <path d="M 897,469 L 923,472 L 915,447"/>
     </g>
   </g>
-  <g id="treatment-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" font-size="38" text-anchor="middle">
+  <g id="treatment-labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="38" text-anchor="middle">
     <text x="240" y="418">No colchicine</text>
     <text x="999" y="418">Colchicine</text>
   </g>
@@ -80,7 +80,7 @@
     <g id="diploid-green-a" transform="translate(993 661) rotate(9)"><use xlink:href="#green-single"/></g>
     <g id="diploid-green-b" transform="translate(1080 664) rotate(-5)"><use xlink:href="#green-single"/></g>
   </g>
-  <g id="outcome-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" font-size="39" text-anchor="middle">
+  <g id="outcome-labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="39" text-anchor="middle">
     <text x="309" y="810">Two monoploid cells</text>
     <text x="976" y="810">One diploid cell</text>
   </g>

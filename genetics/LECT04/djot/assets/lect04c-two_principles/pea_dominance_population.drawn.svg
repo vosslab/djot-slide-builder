@@ -32,7 +32,7 @@
 			</g>
 		</g>
 	</defs>
-	<g font-family="Liberation Sans, sans-serif">
+	<g font-family="Atkinson Hyperlegible Next, sans-serif">
 		<g id="plant-1">
 			<use href="#pea_dominance_population-purple" transform="translate(115 95) scale(0.48)" />
 			<text x="115" y="235" font-size="40" fill="#253342" text-anchor="middle" font-style="italic">WW</text>

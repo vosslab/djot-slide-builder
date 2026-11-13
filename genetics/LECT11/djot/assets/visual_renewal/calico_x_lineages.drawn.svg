@@ -3,19 +3,19 @@
 <path d="M283 63 V117" stroke="#DA8A35" stroke-width="9" stroke-linecap="round"/>
 <path d="M317 63 V117" stroke="#29292D" stroke-width="9" stroke-linecap="round"/>
 </g>
-<text x="300" y="30" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Early embryo: both X alleles</text>
+<text x="300" y="30" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early embryo: both X alleles</text>
 <path d="M300 135 L145 275" stroke="#647681" stroke-width="2" fill="none"/>
 <g id="adult-population-0"><ellipse cx="145" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <circle cx="128" cy="320" r="12" fill="#DA8A35"/>
 <path d="M162 293 V347" stroke="#29292D" stroke-width="9" stroke-linecap="round"/>
 </g>
-<text x="145" y="410" font-family="Arial" font-size="28" text-anchor="middle" fill="#222">Black fur</text>
+<text x="145" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Black fur</text>
 <path d="M300 135 L455 275" stroke="#647681" stroke-width="2" fill="none"/>
 <g id="adult-population-1"><ellipse cx="455" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path d="M438 293 V347" stroke="#DA8A35" stroke-width="9" stroke-linecap="round"/>
 <circle cx="472" cy="320" r="12" fill="#29292D"/>
 </g>
-<text x="455" y="410" font-family="Arial" font-size="28" text-anchor="middle" fill="#222">Orange fur</text>
-<text x="300" y="480" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">Line: active X; circle: inactive X</text>
-<text x="300" y="525" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">Two cell populations in the adult cat</text>
+<text x="455" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Orange fur</text>
+<text x="300" y="480" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Line: active X; circle: inactive X</text>
+<text x="300" y="525" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Two cell populations in the adult cat</text>
 </svg>

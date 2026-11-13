@@ -32,7 +32,7 @@ def label(parent: ET.Element, x: float, y: float, value: object,
 		color: str = "#1D2433", bold: bool = False, anchor: str = "middle",
 		size: int = 30) -> None:
 	"""Keep headings, counts, and classifications as live SVG text."""
-	text = element(parent, "text", x=x, y=y, fill=color, font_family="sans-serif",
+	text = element(parent, "text", x=x, y=y, fill=color, font_family="Atkinson Hyperlegible Next, sans-serif",
 		font_size=size, font_weight="bold" if bold else "normal", text_anchor=anchor)
 	text.text = str(value)
 

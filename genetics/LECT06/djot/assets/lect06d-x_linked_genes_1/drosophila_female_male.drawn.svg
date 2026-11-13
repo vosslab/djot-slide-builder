@@ -172,8 +172,8 @@
 <circle cx="0" cy="58" r="2.2" fill="#493C2E"/><circle cx="-4" cy="64" r="1.8" fill="#493C2E"/><circle cx="4" cy="64" r="1.8" fill="#493C2E"/>
 </g></g>
 </g>
-<g id="sex-labels" fill="#213547" font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle">
- <text x="250" y="580" font-size="39">Female <tspan font-family="Arial Unicode MS" font-size="49">&#9792;</tspan></text>
- <text x="749" y="580" font-size="39">Male <tspan font-family="Arial Unicode MS" font-size="49">&#9794;</tspan></text>
+<g id="sex-labels" fill="#213547" font-family="Atkinson Hyperlegible Next" text-anchor="middle">
+ <text x="250" y="580" font-size="39">Female <tspan font-family="Atkinson Hyperlegible Next, DejaVu Sans, sans-serif" font-size="49">&#9792;</tspan></text>
+ <text x="749" y="580" font-size="39">Male <tspan font-family="Atkinson Hyperlegible Next, DejaVu Sans, sans-serif" font-size="49">&#9794;</tspan></text>
 </g>
 </svg>

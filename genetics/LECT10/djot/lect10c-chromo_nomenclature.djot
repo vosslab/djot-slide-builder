@@ -49,7 +49,7 @@ color-theme: genetics
 
 @left
 
-![Original exact band reference for chromosomes 1-3](assets/lect10c-chromo_nomenclature/image_002.png)
+![Original exact band reference for chromosomes 1-3](assets/lect10c-chromo_nomenclature/banded_chromosomes_1_3.drawn.svg)
 
 @right
 
@@ -197,7 +197,7 @@ SRY locus &ndash; [*Y*]{color=#D40000}[*p*]{color=#B74300}[*1*]{color=#007A00}[*
 
 @right
 
-![Original chromosome 7 band-location figure showing region 3, band 1, and subband 2 at CFTR address 7q31.2](assets/lect10c-chromo_nomenclature/image_012.png)
+![Original chromosome 7 band-location figure showing region 3, band 1, and subband 2 at CFTR address 7q31.2](assets/lect10c-chromo_nomenclature/cftr_band_location.drawn.svg)
 
 @citation
 
@@ -209,7 +209,7 @@ https://medlineplus.gov/genetics/understanding/howgeneswork/genelocation/
 
 @body
 
-![Original chromosome 7 band-location illustration for CFTR at 7q31.2](assets/lect10c-chromo_nomenclature/image_012.png)
+![Original chromosome 7 band-location illustration for CFTR at 7q31.2](assets/lect10c-chromo_nomenclature/cftr_band_location.drawn.svg)
 
 === layout: one-panel
 

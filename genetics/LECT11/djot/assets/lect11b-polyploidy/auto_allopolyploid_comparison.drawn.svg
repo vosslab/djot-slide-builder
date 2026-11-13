@@ -7,7 +7,7 @@
 </defs>
 <rect width="1200" height="840.962718263" fill="#ffffff"/>
 <path d="M 534,38 V 801" stroke="#e4e9eb" stroke-width="1.5"/>
-<g id="labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif">
+<g id="labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif">
   <text id="auto-heading" x="255" y="46" text-anchor="middle" font-size="32" font-weight="bold">Autopolyploidy</text>
   <text id="allo-heading" x="873" y="46" text-anchor="middle" font-size="32" font-weight="bold">Allopolyploidy</text>
   <text id="auto-parent-label" x="255" y="100" text-anchor="middle" font-size="25">Species A (diploid)</text>
@@ -76,7 +76,7 @@
   <path id="auto-process" d="M 230,340 L 230,423 M 219,406 L 230,423 L 241,406"/>
   <path id="allo-merge" d="M 708,336 V 337 Q 708,347 724,347 H 853 Q 870,347 870,365 M 1040,336 V 337 Q 1040,347 1024,347 H 887 Q 870,347 870,365 V 423 M 859,406 L 870,423 L 881,406"/>
 </g>
-<g id="process-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" font-size="23">
+<g id="process-labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23">
   <text id="auto-process-label" x="264" y="371"><tspan x="264">Sexual or asexual </tspan><tspan x="264" dy="29">polyploidization</tspan></text>
   <text id="allo-process-label" x="899" y="378"><tspan x="899">Hybridization accompanied </tspan><tspan x="899" dy="26">by sexual or asexual </tspan><tspan x="899" dy="26">polyploidization</tspan></text>
 </g>
@@ -153,7 +153,7 @@
 <g id="genome-leaders" fill="none" stroke="#667a80" stroke-width="2" stroke-linecap="round">
   <path d="M 255,723 V 735"/><path d="M 870,723 V 735"/>
 </g>
-<g id="outcome-labels" fill="#263b48" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<g id="outcome-labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" text-anchor="middle">
   <text id="auto-genome-label" x="255" y="765" font-size="23"><tspan x="255">Two complete diploid A genomes</tspan></text>
   <text id="allo-genome-label" xml:space="preserve" x="870" y="765" font-size="23"><tspan x="870">Complete diploid A genome </tspan><tspan font-style="italic">plus </tspan><tspan x="870" dy="27">complete diploid B genome</tspan></text>
   <text id="auto-product-label" x="255" y="827" font-size="25" font-weight="bold">New autotetraploid species</text>

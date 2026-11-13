@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3084" height="1838" viewBox="0 0 1542 919" role="img" aria-labelledby="title description">
 <title id="title">Meiosis followed by mitosis in an ascus</title><desc id="description">Seven successive stages: one nucleus, one meiotic spindle, two nuclei, two meiotic spindles, four nuclei, four mitotic spindles, and eight ordered spores. Six arrows give temporal order. A bracket identifies only the bottom adjacent pair as genetically identical cells. Chromatin is schematic and unmeasured; colors do not denote alleles.</desc>
 <rect width="1542" height="919" fill="white"/>
-<g fill="#263b48" font-family="Arial, Helvetica, sans-serif">
+<g fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif">
 <text x="330" y="58" font-size="35" text-anchor="middle" >Meiosis I</text>
 <path d="M 35 112 V 100 H 625 V 112" fill="none" stroke="#87988e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <text x="843" y="58" font-size="35" text-anchor="middle" >Meiosis II</text>

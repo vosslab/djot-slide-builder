@@ -39,6 +39,11 @@ Current replacements, relative to `genetics/LECT10/djot/`:
 - C16-17: `assets/lect10c-chromo_nomenclature/image_012.png`;
   original CFTR chromosome-7 band-location figure, alongside the editable answer table on C16.
 
+The left 1-3 image on current 10C slide 6 (historical C5) now uses
+[banded_chromosomes_1_3.drawn.svg](../genetics/LECT10/djot/assets/lect10c-chromo_nomenclature/banded_chromosomes_1_3.drawn.svg).
+The right 21-22 and 11-14 fallbacks remain original. This is a partial repair; the rejected
+landmarks drawing and historical record remain. Integration review is pending.
+
 ### Nondisjunction sequence
 
 | Drawing | Former use | Reason for removal | Repair target |
@@ -187,3 +192,52 @@ source-backed chromosome in single/sister views, common per-chromatid proportion
 centromere collars, and a linked flat-ended internal crop. Root personally viewed and approved
 that concept direction; production implementation and fresh review remain pending. This is not
 instructor or classroom acceptance. Preserve both earlier rejection entries.
+
+Revision receipt, November 12, 2026: the current public specimen now implements the
+root-approved shared-theme concept. Single and rounded-X forms use the same 44-band chr7
+model, longitudinal/per-rod proportions, source boundaries, rounded ends, restrained outline
+and hollow centromere markers; linked q31 is a true fivefold crop with flat cut ends. Fresh
+[specification](../_temp/chromosome_theme_revision/spec_review.md),
+[quality](../_temp/chromosome_theme_revision/quality_review.md) and
+[integration](../_temp/chromosome_theme_revision/integration_review.md) reviews PASS; root
+viewed all five final production proofs. [Closure](../_temp/chromosome_theme_revision/closure.md)
+records frozen hashes. The earlier rejected v2 visual remains in the saved
+[preimage](../_temp/chromosome_theme_revision/production/gallery.preimage.svg); its rejection
+above remains valid for that version. This completes the standalone revision only. No
+instructor, classroom, print, native-course or course-theme migration acceptance is claimed.
+
+## CFTR band-location repair and clip receipt - November 12, 2026
+
+The new [banded CFTR drawing](../genetics/LECT10/djot/assets/lect10c-chromo_nomenclature/cftr_band_location.drawn.svg)
+is integrated at current authored 10C slides 18 and 19, historically labeled C16/C17 above.
+It shows the chromosome 7 q31.2 address with a linked five-band enlargement. An explicit
+clip corrected the first native export's crop overflow; root viewed both corrected native
+proofs and fresh specification and quality reviews passed. The original `image_012.png` and
+the rejected `cftr_address.drawn.svg` remain preserved, as does the rejection above. The
+artwork's source-based banding and end caps are approximate schematics. Integration review
+and closure remain pending; no instructor or classroom acceptance is implied. Evidence:
+[REPORT.md](../_temp/cftr_band_location_v2/integration/REPORT.md).
+
+## CFTR delivery closure - November 12, 2026
+
+Fresh [integration review](../_temp/cftr_band_location_v2/integration_review.md) PASS and
+[closure](../_temp/cftr_band_location_v2/closure.md) COMPLETE for the corrected figure at
+the two existing authored 10C image URLs. The explicit clip corrected demonstrated native
+overflow; the earlier failed proof and rejected figure remain historical evidence. Root
+viewed both corrected native proofs; full and focused native output and all 23 ordered ODP
+members match the accepted candidate. The original raster remains preserved. Shared-gallery
+librsvg renders are pixel-identical, with no separate gallery native export claim. Broader
+visual renewal remains ACTIVE; no instructor, classroom, print, whole-deck PDF or full-suite
+acceptance is claimed.
+
+## Chromosomes 1-3 partial repair closure - November 12, 2026
+
+The left figure on current authored 10C slide 6 (historical C5) is delivered with
+[banded_chromosomes_1_3.drawn.svg](../genetics/LECT10/djot/assets/lect10c-chromo_nomenclature/banded_chromosomes_1_3.drawn.svg).
+Fresh [integration review](../_temp/chromosome_1_3_integration/integration_review.md) PASS
+and [closure](../_temp/chromosome_1_3_integration/closure.md) COMPLETE. Root viewed the
+production and native proofs and verified all 24 ordered ODP members against the accepted
+candidate. This closes the left 1-3 figure only. The rejected landmarks drawing and its
+historical rejection above remain valid; right 21-22 and 11-14 originals remain. Broader
+visual renewal remains ACTIVE. No instructor, classroom, print, whole-deck PDF or full-suite
+acceptance is claimed.

@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1288" viewBox="0 0 1200 1288" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Prophase II and metaphase II</title><desc id="figure-desc">Original schematic after lecture 06C. Both haploid products of meiosis I enter the second division with three replicated chromosomes. The same sister identities and terminal exchanges persist. Metaphase-II spindle fibers contact opposite sister centromeres.</desc>
 <rect width="1200" height="1288" fill="white"/>
-<text x="300" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#213547">
+<text x="300" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="42" font-weight="bold" fill="#213547">
 <tspan x="300" dy="0">Prophase II</tspan>
 </text>
-<text x="900" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="#213547">
+<text x="900" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="42" font-weight="bold" fill="#213547">
 <tspan x="900" dy="0">Metaphase II</tspan>
 </text>
 <g id="prophase-II-upper-cell" transform="translate(300 365) scale(1.16 1.175)">

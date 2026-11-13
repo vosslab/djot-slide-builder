@@ -129,5 +129,5 @@
 <ellipse id="roan-offspring-nostril" cx="389" cy="117" rx="3.6" ry="5.5" fill="#6C514B" stroke="none" transform="rotate(18 389 117)"/>
 <path id="roan-offspring-mouth" d="M373 137 Q383 138 389 133" fill="none" stroke="#6C514B" stroke-width="2.5"/>
 </g>
-<g id="phenotype-labels" fill="#293D46" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" text-anchor="middle"><text id="red-label" x="229" y="368">Red</text><text id="white-label" x="805" y="368">White</text><text id="roan-label" x="517" y="854">Roan</text></g>
+<g id="phenotype-labels" fill="#293D46" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="64" font-weight="700" text-anchor="middle"><text id="red-label" x="229" y="368">Red</text><text id="white-label" x="805" y="368">White</text><text id="roan-label" x="517" y="854">Roan</text></g>
 </svg>

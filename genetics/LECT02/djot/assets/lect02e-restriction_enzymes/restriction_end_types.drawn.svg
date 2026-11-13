@@ -2,7 +2,7 @@
 <title id="title">Restriction digests: 5-prime, 3-prime, and blunt ends</title><desc id="desc">HindIII: A|AGCTT / TTCGA|A, 5-prime protruding ends. PstI: CTGCA|G / G|ACGTC, 3-prime protruding ends. EcoRV: GAT|ATC / CTA|TAG, blunt ends. Blue and gold identify restriction fragments; both strands preserve antiparallel polarity. Source teaching content: image_010.png.</desc>
 <rect width="984" height="634.5" fill="#FFFFFF"/>
 <g id="hindiii-digest">
-<text x="38" y="24" fill="#183044" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">HindIII</text>
+<text x="38" y="24" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="25" font-weight="700" text-anchor="start">HindIII</text>
 <path d="M75,107 L75,117" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,107 L104,117" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,107 L133,117" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -12,125 +12,125 @@
 <rect x="62.5" y="72" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,67 L89.5,67" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,67 L75,72" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="97.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="75" y="97.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="91.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M89.5,67 L118.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,67 L104,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="104" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="120.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M118.5,67 L147.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,67 L133,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="133" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="149.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M147.5,67 L176.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,67 L162,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="162" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="178.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M176.5,67 L205.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,67 L191,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="191" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="207.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,67 L234.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,67 L220,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
-<text x="52.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="242.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="220" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="52.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="242.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="62.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,157 L89.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,157 L75,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="75" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="91.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M89.5,157 L118.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,157 L104,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="104" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="120.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M118.5,157 L147.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,157 L133,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="133" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="149.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M147.5,157 L176.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,157 L162,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="162" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="178.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M176.5,157 L205.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,157 L191,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="191" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="207.5" y="118" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,157 L234.5,157" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,157 L220,152" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="143.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="52.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="242.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="220" y="143.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="52.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="242.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M89.5,29 L89.5,58" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M83.5,53 L89.5,67 L95.5,53 Z" fill="#C33235"/>
 <path d="M205.5,195 L205.5,166" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M199.5,171 L205.5,157 L211.5,171 Z" fill="#C33235"/>
-<text x="323" y="74" fill="#183044" font-family="Arial, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
+<text x="323" y="74" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
 <path d="M289,111 L351,111" fill="none" stroke="#5B7180" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M351,111 l-12,-8 v16 Z" fill="#5B7180"/>
 <path d="M414,107 L414,117" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="401.5" y="72" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,67 L428.5,67" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,67 L414,72" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="97.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="391.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="436.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="414" y="97.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="391.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="436.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="401.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,157 L428.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,157 L414,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="414" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="430.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M428.5,157 L457.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M443,157 L443,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="443" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="443" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="459.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M457.5,157 L486.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,157 L472,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="472" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="472" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="488.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M486.5,157 L515.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M501,157 L501,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="501" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="501" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="517.5" y="118" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M515.5,157 L544.5,157" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M530,157 L530,152" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="530" y="143.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="391.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="552.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="530" y="143.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="391.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="552.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M901,107 L901,117" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="772.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M770.5,67 L799.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M785,67 L785,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="785" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="785" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="801.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M799.5,67 L828.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M814,67 L814,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="814" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="814" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="830.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M828.5,67 L857.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M843,67 L843,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="843" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="843" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="859.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M857.5,67 L886.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M872,67 L872,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="872" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="872" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="888.5" y="72" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,67 L915.5,67" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,67 L901,72" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="97.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
-<text x="762.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="923.5" y="95" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="901" y="97.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="762.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="923.5" y="95" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="888.5" y="118" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,157 L915.5,157" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,157 L901,152" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="143.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="878.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="923.5" y="141" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
-<text x="671" y="190" fill="#183044" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">5&#8242; protruding ends</text>
+<text x="901" y="143.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="878.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="923.5" y="141" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="671" y="190" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" font-weight="700" text-anchor="middle">5&#8242; protruding ends</text>
 </g>
 <g id="psti-digest">
 <path d="M28,211 L956,211" fill="none" stroke="#DCE5EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-<text x="38" y="235" fill="#183044" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">PstI</text>
+<text x="38" y="235" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="25" font-weight="700" text-anchor="start">PstI</text>
 <path d="M75,318 L75,328" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,318 L104,328" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,318 L133,328" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -140,125 +140,125 @@
 <rect x="62.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,278 L89.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,278 L75,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="75" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="91.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M89.5,278 L118.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,278 L104,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="104" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="120.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M118.5,278 L147.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,278 L133,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="133" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="149.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M147.5,278 L176.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,278 L162,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="162" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="178.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M176.5,278 L205.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,278 L191,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="191" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="207.5" y="283" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,278 L234.5,278" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,278 L220,283" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="308.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
-<text x="52.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="242.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="220" y="308.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="52.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="242.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="62.5" y="329" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,368 L89.5,368" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,368 L75,363" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="354.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="75" y="354.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="91.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M89.5,368 L118.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,368 L104,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="104" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="120.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M118.5,368 L147.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,368 L133,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="133" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="149.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M147.5,368 L176.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,368 L162,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="162" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="178.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M176.5,368 L205.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,368 L191,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="191" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="207.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,368 L234.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,368 L220,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
-<text x="52.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="242.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="220" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="52.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="242.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M205.5,240 L205.5,269" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M199.5,264 L205.5,278 L211.5,264 Z" fill="#C33235"/>
 <path d="M89.5,406 L89.5,377" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M83.5,382 L89.5,368 L95.5,382 Z" fill="#C33235"/>
-<text x="323" y="285" fill="#183044" font-family="Arial, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
+<text x="323" y="285" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
 <path d="M289,322 L351,322" fill="none" stroke="#5B7180" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M351,322 l-12,-8 v16 Z" fill="#5B7180"/>
 <path d="M414,318 L414,328" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="401.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,278 L428.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,278 L414,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="414" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="430.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M428.5,278 L457.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M443,278 L443,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="443" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="443" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="459.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M457.5,278 L486.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,278 L472,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="472" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="472" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="488.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M486.5,278 L515.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M501,278 L501,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="501" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="501" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="517.5" y="283" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M515.5,278 L544.5,278" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M530,278 L530,283" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="530" y="308.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="391.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="552.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="530" y="308.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="391.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="552.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="401.5" y="329" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,368 L428.5,368" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,368 L414,363" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="354.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
-<text x="391.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="436.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="414" y="354.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="391.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="436.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M901,318 L901,328" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="888.5" y="283" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,278 L915.5,278" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,278 L901,283" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="308.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
-<text x="878.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="923.5" y="306" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="901" y="308.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="878.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="923.5" y="306" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="772.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M770.5,368 L799.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M785,368 L785,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="785" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="785" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="801.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M799.5,368 L828.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M814,368 L814,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="814" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="814" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="830.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M828.5,368 L857.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M843,368 L843,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="843" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="843" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="859.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M857.5,368 L886.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M872,368 L872,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="872" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="872" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="888.5" y="329" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,368 L915.5,368" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,368 L901,363" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="354.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
-<text x="762.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="923.5" y="352" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
-<text x="671" y="401" fill="#183044" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">3&#8242; protruding ends</text>
+<text x="901" y="354.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="762.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="923.5" y="352" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="671" y="401" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" font-weight="700" text-anchor="middle">3&#8242; protruding ends</text>
 </g>
 <g id="ecorv-digest">
 <path d="M28,422 L956,422" fill="none" stroke="#DCE5EB" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-<text x="38" y="446" fill="#183044" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="start">EcoRV</text>
+<text x="38" y="446" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="25" font-weight="700" text-anchor="start">EcoRV</text>
 <path d="M75,529 L75,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,529 L104,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,529 L133,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -268,60 +268,60 @@
 <rect x="62.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,489 L89.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,489 L75,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="75" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="91.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M89.5,489 L118.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,489 L104,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="104" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="120.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M118.5,489 L147.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,489 L133,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="133" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="149.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M147.5,489 L176.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,489 L162,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="162" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="178.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M176.5,489 L205.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,489 L191,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="191" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="207.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,489 L234.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,489 L220,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
-<text x="52.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="242.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="220" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="52.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="242.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="62.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M60.5,579 L89.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M75,579 L75,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="75" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="75" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="91.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M89.5,579 L118.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M104,579 L104,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="104" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="104" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="120.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M118.5,579 L147.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M133,579 L133,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="133" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="133" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="149.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M147.5,579 L176.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M162,579 L162,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="162" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="162" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="178.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M176.5,579 L205.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M191,579 L191,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="191" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="191" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="207.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M205.5,579 L234.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M220,579 L220,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="220" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
-<text x="52.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="242.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="220" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="52.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="242.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M147.5,451 L147.5,480" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M141.5,475 L147.5,489 L153.5,475 Z" fill="#C33235"/>
 <path d="M147.5,617 L147.5,588" fill="none" stroke="#C33235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M141.5,593 L147.5,579 L153.5,593 Z" fill="#C33235"/>
-<text x="323" y="496" fill="#183044" font-family="Arial, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
+<text x="323" y="496" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="19" font-weight="400" text-anchor="middle">digest</text>
 <path d="M289,533 L351,533" fill="none" stroke="#5B7180" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M351,533 l-12,-8 v16 Z" fill="#5B7180"/>
 <path d="M414,529 L414,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -330,62 +330,62 @@
 <rect x="401.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,489 L428.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,489 L414,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="414" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
 <rect x="430.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M428.5,489 L457.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M443,489 L443,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="443" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="443" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="459.5" y="494" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M457.5,489 L486.5,489" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,489 L472,494" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="472" y="519.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
-<text x="391.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="494.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="472" y="519.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="391.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="494.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="401.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M399.5,579 L428.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M414,579 L414,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="414" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="414" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
 <rect x="430.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M428.5,579 L457.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M443,579 L443,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="443" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="443" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="459.5" y="540" width="25" height="34" rx="5" fill="#E5F1F7"/>
 <path d="M457.5,579 L486.5,579" fill="none" stroke="#206A91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,579 L472,574" fill="none" stroke="#206A91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="472" y="565.16" fill="#206A91" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
-<text x="391.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="494.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="472" y="565.16" fill="#206A91" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="391.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="494.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
 <path d="M843,529 L843,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M872,529 L872,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,529 L901,539" fill="none" stroke="#9CAEB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="830.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M828.5,489 L857.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M843,489 L843,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="843" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="843" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="859.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M857.5,489 L886.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M872,489 L872,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="872" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="872" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="888.5" y="494" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,489 L915.5,489" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,489 L901,494" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="519.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
-<text x="820.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
-<text x="923.5" y="517" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
+<text x="901" y="519.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">C</text>
+<text x="820.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">5&#8242;</text>
+<text x="923.5" y="517" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">3&#8242;</text>
 <rect x="830.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M828.5,579 L857.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M843,579 L843,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="843" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
+<text x="843" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">T</text>
 <rect x="859.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M857.5,579 L886.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M872,579 L872,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="872" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
+<text x="872" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">A</text>
 <rect x="888.5" y="540" width="25" height="34" rx="5" fill="#FFF2D4"/>
 <path d="M886.5,579 L915.5,579" fill="none" stroke="#A86B0A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M901,579 L901,574" fill="none" stroke="#A86B0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="901" y="565.16" fill="#A86B0A" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
-<text x="820.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
-<text x="923.5" y="563" fill="#183044" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
-<text x="671" y="612" fill="#183044" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Blunt ends</text>
+<text x="901" y="565.16" fill="#A86B0A" font-family="Atkinson Hyperlegible Mono, monospace" font-size="24" font-weight="700" text-anchor="middle">G</text>
+<text x="820.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="end">3&#8242;</text>
+<text x="923.5" y="563" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" font-weight="400" text-anchor="start">5&#8242;</text>
+<text x="671" y="612" fill="#183044" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Blunt ends</text>
 </g>
 </svg>

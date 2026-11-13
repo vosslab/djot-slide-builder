@@ -13,12 +13,12 @@
     </g>
   </defs>
   <rect width="1400" height="900" fill="#FFFFFF"/>
-  <g id="printed-dna" font-family="Arial, Helvetica, sans-serif" fill="#213547">
+  <g id="printed-dna" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#213547">
     <text x="70" y="68" font-size="37">If you printed all of your DNA (6.4 billion letters),</text>
     <text x="70" y="128" font-size="43">it would fill <tspan font-weight="bold" fill="#1C4470">4,200 books*</tspan>.</text>
   </g>
   <path d="M70 168 H1330" stroke="#CAD7E2" stroke-width="2"/>
-  <g id="comparison-labels" font-family="Arial, Helvetica, sans-serif" fill="#213547">
+  <g id="comparison-labels" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#213547">
     <text x="95" y="230" font-size="37" font-weight="bold" fill="#8A410F">23andMe</text>
     <text x="95" y="275" font-size="31">looks at <tspan font-weight="bold">less than 1%</tspan></text>
     <text x="95" y="315" font-size="31">of your DNA</text>
@@ -73,13 +73,13 @@
     <path d="M706 646 H1258 V663 H706 Z" fill="#C4B496" stroke="#80745E" stroke-width="2"/>
     <path d="M706 343 H724 V663 H706 Z M1240 343 H1258 V663 H1240 Z" fill="#D1C3A9" stroke="#80745E" stroke-width="2"/>
   </g>
-  <g id="equivalent-volumes" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <g id="equivalent-volumes" font-family="Atkinson Hyperlegible Next, sans-serif" text-anchor="middle">
     <text x="325" y="712" font-size="26" fill="#526879">equivalent to</text>
     <text x="325" y="758" font-size="43" font-weight="bold" fill="#8A410F">180 pages</text>
     <text x="1000" y="712" font-size="26" fill="#526879">equivalent to</text>
     <text x="1000" y="758" font-size="43" font-weight="bold" fill="#1C4470">4,200 books</text>
   </g>
-  <g id="assumption-and-scale" font-family="Arial, Helvetica, sans-serif" fill="#526879">
+  <g id="assumption-and-scale" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#526879">
     <text x="70" y="830" font-size="26">* Assuming that a book, like Darwin's <tspan font-style="italic">Origin of Species</tspan>, has 500 pages.</text>
     <text x="70" y="871" font-size="24">Book forms are schematic; quantities are given by the labels.</text>
   </g>

@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="570" viewBox="0 0 800 570" role="img" aria-labelledby="title desc"><title id="title">Flies dosage compensation</title><desc id="desc">Chromosome size is separate from expression. Blue bars show relative expression, not chromosome length. In mammals some genes escape X inactivation.</desc><rect width="800" height="570" fill="white"/>
 <rect x="97.5" y="85" width="40" height="165" rx="20" fill="#A1467E"/>
-<text x="117.5" y="285" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">X</text>
+<text x="117.5" y="285" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">X</text>
 <rect x="91.5" y="310" width="52" height="140" fill="#076DAD"/>
-<text x="117.5" y="390" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">2</text>
+<text x="117.5" y="390" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">2</text>
 <rect x="182.5" y="165" width="40" height="85" rx="20" fill="#888"/>
-<text x="202.5" y="285" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">Y</text>
-<text x="160" y="500" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">2</text>
+<text x="202.5" y="285" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Y</text>
+<text x="160" y="500" font-family="Atkinson Hyperlegible Next" font-size="26" text-anchor="middle" fill="#222">2</text>
 <rect x="517.5" y="85" width="40" height="165" rx="20" fill="#A1467E"/>
-<text x="537.5" y="285" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">X</text>
+<text x="537.5" y="285" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">X</text>
 <rect x="511.5" y="310" width="52" height="70" fill="#076DAD"/>
-<text x="537.5" y="370.0" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">1</text>
+<text x="537.5" y="370.0" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">1</text>
 <rect x="602.5" y="85" width="40" height="165" rx="20" fill="#A1467E"/>
-<text x="622.5" y="285" font-family="Arial" font-size="24" text-anchor="middle" fill="#222">X</text>
+<text x="622.5" y="285" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">X</text>
 <rect x="596.5" y="310" width="52" height="70" fill="#076DAD"/>
-<text x="622.5" y="370.0" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">1</text>
-<text x="580" y="500" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">1 + 1 = 2</text>
-<text x="390" y="390" font-family="Arial" font-size="54" text-anchor="middle" fill="#222">=</text>
-<text x="400" y="35" font-family="Arial" font-size="27" text-anchor="middle" fill="#222">Flies: equalize X-linked expression</text>
-<text x="400" y="550" font-family="Arial" font-size="25" text-anchor="middle" fill="#222">Blue bars: relative expression</text>
+<text x="622.5" y="370.0" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">1</text>
+<text x="580" y="500" font-family="Atkinson Hyperlegible Next" font-size="26" text-anchor="middle" fill="#222">1 + 1 = 2</text>
+<text x="390" y="390" font-family="Atkinson Hyperlegible Next" font-size="54" text-anchor="middle" fill="#222">=</text>
+<text x="400" y="35" font-family="Atkinson Hyperlegible Next" font-size="27" text-anchor="middle" fill="#222">Flies: equalize X-linked expression</text>
+<text x="400" y="550" font-family="Atkinson Hyperlegible Next" font-size="25" text-anchor="middle" fill="#222">Blue bars: relative expression</text>
 </svg>

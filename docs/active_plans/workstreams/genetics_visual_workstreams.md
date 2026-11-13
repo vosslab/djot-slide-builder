@@ -5,7 +5,7 @@ The authoritative master scope is
 instructions in this index and linked briefs. Existing implementation approval continues;
 current status and historical evidence remain in
 [genetics_visual_renewal_progress.md](../reports/genetics_visual_renewal_progress.md).
-Use Astra for artwork and Terra for OCR when useful. Genetics and Biostatistics have priority;
+Use Terra for coding and artwork as appropriate; no Astra subagents while usage is low. Genetics and Biostatistics have priority;
 finish useful started Biotechnology artwork without expanding its queue.
 
 ## Scope and original coverage

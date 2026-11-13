@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 369" role="img" aria-labelledby="title desc">
+  <title id="title">Chromosome banding comparison</title>
+  <desc id="desc">Three pairs of schematic rods compare G-bands, reverse R-bands, and dark central C-bands.</desc>
+  <defs>
+    <clipPath id="rod-clip"><path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z"/></clipPath>
+    <g id="g-rod">
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="white"/>
+      <g clip-path="url(#rod-clip)">
+      <rect x="0" y="45" width="18" height="5" fill="#141414"/>
+      <rect x="0" y="57" width="18" height="6" fill="#141414"/>
+      <rect x="0" y="85" width="18" height="25" fill="#141414"/>
+      <rect x="0" y="131" width="18" height="4" fill="#141414"/>
+      <rect x="0" y="175" width="18" height="25" fill="#141414"/>
+      <rect x="0" y="214" width="18" height="5" fill="#141414"/>
+      <rect x="0" y="222" width="18" height="4" fill="#141414"/>
+      <rect x="0" y="247" width="18" height="15" fill="#141414"/>
+      <rect x="0" y="285" width="18" height="5" fill="#141414"/>
+      </g>
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="none" stroke="#141414" stroke-width="1.4"/>
+    </g>
+    <g id="r-rod">
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="#141414"/>
+      <g clip-path="url(#rod-clip)">
+      <rect x="0" y="45" width="18" height="5" fill="white"/>
+      <rect x="0" y="57" width="18" height="6" fill="white"/>
+      <rect x="0" y="85" width="18" height="25" fill="white"/>
+      <rect x="0" y="131" width="18" height="4" fill="white"/>
+      <rect x="0" y="175" width="18" height="25" fill="white"/>
+      <rect x="0" y="214" width="18" height="5" fill="white"/>
+      <rect x="0" y="222" width="18" height="4" fill="white"/>
+      <rect x="0" y="247" width="18" height="15" fill="white"/>
+      <rect x="0" y="285" width="18" height="5" fill="white"/>
+      </g>
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="none" stroke="#141414" stroke-width="1.4"/>
+    </g>
+    <g id="c-rod">
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="white"/>
+      <g clip-path="url(#rod-clip)"><rect x="0" y="155" width="18" height="22" fill="#141414"/></g>
+      <path d="M 4 14 H 14 Q 18 14 18 18 V 157 Q 18 163 15 166 Q 18 169 18 175 V 314 Q 18 318 14 318 H 4 Q 0 318 0 314 V 175 Q 0 169 3 166 Q 0 163 0 157 V 18 Q 0 14 4 14 Z" fill="none" stroke="#141414" stroke-width="1.4"/>
+    </g>
+  </defs>
+  <g aria-label="G-Bands"><use href="#g-rod" x="91"/><use href="#g-rod" x="125"/></g>
+  <g aria-label="R-Bands"><use href="#r-rod" x="260"/><use href="#r-rod" x="294"/></g>
+  <g aria-label="C-Bands"><use href="#c-rod" x="419"/><use href="#c-rod" x="453"/></g>
+  <g fill="#141414" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="30" text-anchor="middle">
+    <text x="117" y="359">G-Bands</text>
+    <text x="286" y="359">R-Bands</text>
+    <text x="445" y="359">C-Bands</text>
+  </g>
+</svg>

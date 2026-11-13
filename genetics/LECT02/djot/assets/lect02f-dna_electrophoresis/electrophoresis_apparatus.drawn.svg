@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550" viewBox="0 0 1000 550" role="img" aria-labelledby="gel_angled-title gel_angled-desc">
   <title id="gel_angled-title">Agarose electrophoresis chamber</title>
   <desc id="gel_angled-desc">Schematic open chamber with wells nearest the negative electrode and DNA migration toward the positive electrode. Bands illustrate migration, not experimental measurements. The angled view uses parallel projection to show the tank and buffer; proportions are illustrative. Source slide: LECT02F apparatus, original image_003.jpg. Buffer, gel, wells and bands are separately labeled; visible bands require suitable treatment.</desc>
-  <g font-family="Liberation Sans, sans-serif" id="apparatus">
+  <g font-family="Atkinson Hyperlegible Next, sans-serif" id="apparatus">
     <path d="M140 150 L770 150 L920 300 L290 300 Z" fill="#EBF3F7" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-1" />
     <path d="M290 300 L920 300 L920 425 L290 425 Z" fill="#CADFEA" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-2" />
     <path d="M140 150 L290 300 L290 425 L140 275 Z" fill="#DCEBF1" stroke="#527080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" id="apparatus-part-3" />

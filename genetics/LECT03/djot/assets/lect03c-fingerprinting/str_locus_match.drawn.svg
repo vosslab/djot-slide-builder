@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1402" height="617" viewBox="0 0 1402 617" role="img" aria-labelledby="title desc">
 <title id="title">Short tandem repeat comparison at two loci</title><desc id="desc">Two samples are compared at two STR loci. Crime scene DNA above and suspect DNA below each have seven AGAT modules at site 1. At site 2, the crime scene has eight GATA modules and the suspect has thirteen. Each visible outlined module denotes one motif copy; the internal line separates two schematic DNA rails and is not a second copy. Original vector construction from image_006.png, whose source footer credits Copyright 2009 Pearson Education, Inc.; that source provenance is not a copyright claim on this new artwork. The drawing is schematic and not to scale.</desc>
-<g font-family="Arial, sans-serif">
+<g font-family="Atkinson Hyperlegible Next, sans-serif">
 <rect  x="0" y="0" width="1402" height="617" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
 <text x="505" y="54" font-size="42" text-anchor="middle" fill="#213547" font-weight="700">STR site 1</text>
 <text x="1070" y="54" font-size="42" text-anchor="middle" fill="#213547" font-weight="700">STR site 2</text>
@@ -31,7 +31,7 @@
 <rect id="crime-site-1-repeat-7" x="597" y="193" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
 <path  d="M602 216.5 H628" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <rect  x="322" y="109" width="106" height="47" rx="6" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.5"/>
-<text x="375" y="143" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
+<text font-family="Atkinson Hyperlegible Mono, monospace" x="375" y="143" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
 <path  d="M359 156 L375 181 L391 156" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M355 256 V267 Q355 276 365 276 H484.0 L495.0 288 L506.0 276 H625 Q635 276 635 267 V256" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
@@ -60,7 +60,7 @@
 <path id="crime-site-2-repeat-8" d="M1108 193 H1132 L1138 200 V233 L1132 240 H1108 L1102 233 V200 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M1107 216.5 H1133" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <rect  x="787" y="109" width="106" height="47" rx="6" fill="#E6D4EF" stroke="#763D88" stroke-width="2.5"/>
-<text x="840" y="143" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
+<text font-family="Atkinson Hyperlegible Mono, monospace" x="840" y="143" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
 <path  d="M824 156 L840 181 L856 156" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M820 256 V267 Q820 276 830 276 H969.0 L980.0 288 L991.0 276 H1130 Q1140 276 1140 267 V256" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
@@ -87,7 +87,7 @@
 <rect id="suspect-site-1-repeat-7" x="597" y="448" width="36" height="47" rx="3" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.4"/>
 <path  d="M602 471.5 H628" stroke="#B85F20" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <rect  x="322" y="552" width="106" height="47" rx="6" fill="#FFE2BD" stroke="#B85F20" stroke-width="2.5"/>
-<text x="375" y="586" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
+<text font-family="Atkinson Hyperlegible Mono, monospace" x="375" y="586" font-size="32" text-anchor="middle" fill="#B85F20" font-weight="700">AGAT</text>
 <path  d="M359 552 L375 515 L391 552" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M355 433 V422 Q355 413 365 413 H484.0 L495.0 401 L506.0 413 H625 Q635 413 635 422 V433" stroke="#B85F20" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
@@ -126,7 +126,7 @@
 <path id="suspect-site-2-repeat-13" d="M1308 448 H1332 L1338 455 V488 L1332 495 H1308 L1302 488 V455 Z" stroke="#763D88" stroke-width="2.4" fill="#E6D4EF" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M1307 471.5 H1333" stroke="#763D88" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <rect  x="787" y="552" width="106" height="47" rx="6" fill="#E6D4EF" stroke="#763D88" stroke-width="2.5"/>
-<text x="840" y="586" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
+<text font-family="Atkinson Hyperlegible Mono, monospace" x="840" y="586" font-size="32" text-anchor="middle" fill="#763D88" font-weight="700">GATA</text>
 <path  d="M824 552 L840 515 L856 552" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path  d="M820 433 V422 Q820 413 830 413 H1069.0 L1080.0 401 L1091.0 413 H1330 Q1340 413 1340 422 V433" stroke="#763D88" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </g>

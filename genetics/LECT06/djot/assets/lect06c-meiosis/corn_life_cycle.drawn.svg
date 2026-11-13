@@ -15,7 +15,7 @@
  <g id="other-nucleus"><circle r="6" fill="#334757"/></g>
 </defs>
 <style>
- text{font-family:"DejaVu Sans",Arial,sans-serif;fill:#213547;font-size:24px}
+ text{font-family:"Atkinson Hyperlegible Next",sans-serif;fill:#213547;font-size:24px}
  .small{font-size:21px}.tiny{font-size:19px}.label{font-size:24px}.head{font-size:27px;font-weight:bold}
  .leader{fill:none;stroke:#526879;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
  .flow{fill:none;stroke:#526879;stroke-width:3;marker-end:url(#arrow)}

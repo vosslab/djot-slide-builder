@@ -2,7 +2,7 @@
   <title id="title">Pea flower color through parental, F1 and F2 generations</title>
   <desc id="desc">A purple and a white true-breeding parent produce purple F1 hybrids. Self- or cross-pollination produces F2 plants shown as three purple flower icons and one white. Observed counts are 705 purple-flowered plants and 224 white-flowered plants; icon counts are schematic. Original pea flowers reuse accepted banner, wings, paired keel, calyx and connected stem geometry.</desc>
   <rect id="background" width="840" height="815" fill="#ffffff" />
-  <g font-family="Arial, Helvetica, sans-serif" fill="#202329">
+  <g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#202329">
     <g id="p-generation">
       <rect x="8" y="10" width="824" height="235" rx="15" fill="#f6f7f0" />
       <text x="30" y="47" font-size="29" text-anchor="start" font-weight="bold">P Generation (true-breeding parents)</text>

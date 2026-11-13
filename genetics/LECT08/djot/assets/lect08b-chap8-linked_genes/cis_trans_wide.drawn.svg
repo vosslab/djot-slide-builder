@@ -3,7 +3,7 @@
 	<title id="linkage_chromosomes-title">Cis and trans arrangements of linked w and m loci</title>
 	<desc id="linkage_chromosomes-desc">Each panel shows a homologous pair schematically, with one rod per homolog. Cis has w m together and + + together; trans has w + and + m. Gene positions match between homologs. Colors track homolog identity, not dominance. No replication or crossover is depicted.</desc>
 	<!-- Source: LECT08B Cis and Trans Configurations and gamete sequence; LECT08C Cis and Trans Configurations. Original vector construction from the approved linkage pilot. -->
-	<g font-family="Liberation Sans, sans-serif">
+	<g font-family="Atkinson Hyperlegible Next, sans-serif">
 		<g id="cis">
 			<text x="215" y="47" font-size="34" fill="#253342" text-anchor="middle" font-style="italic">cis</text>
 			<g id="cis-blue-homolog">

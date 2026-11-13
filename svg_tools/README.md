@@ -250,8 +250,8 @@ whole form. With `PANGOCAIRO_BACKEND=fc`, the rendered font diagnostic matched i
 Atkinson Hyperlegible Next glyph operations and advances. Inspect text at the intended
 placement; a font-family declaration alone does not prove actual font selection. The user
 rejected the previous v2 gallery's inconsistent theme; the current revision follows the
-root-approved shared-family direction. Fresh specification, quality and integration reviews
-are pending. Standalone rendering does not establish instructor, classroom, print or native
+root-approved shared-family direction. Fresh specification, quality and integration reviews PASS; root viewed all five
+final production proofs. The standalone shared-theme revision is DONE. Standalone rendering does not establish instructor, classroom, print or native
 slide/export acceptance.
 
 The saved [chromosome_tool.drawn.svg](../docs/slide-specs/illustration_examples/chromosome_tool.drawn.svg)
@@ -259,6 +259,20 @@ is historical v1 evidence. Its sister shape was rejected and is superseded by th
 renderer; its rejection remains recorded in
 [SVG_REPAIR_BACKLOG.md](../docs/SVG_REPAIR_BACKLOG.md). Its earlier 1150-pixel sister and
 480-pixel overview proofs are historical, not v2 placement requirements.
+
+The `make_banded_chromosomes_1_3(path)` recipe uses the three hg38 source TSVs
+`data/chr1_hg38_cytobands.tsv`, `data/chr2_hg38_cytobands.tsv`, and
+`data/chr3_hg38_cytobands.tsv`; portable source and retrieval details are in
+[data/chr1_2_3_hg38_cytobands.provenance.json](data/chr1_2_3_hg38_cytobands.provenance.json).
+Regenerate to a scratch path from the repository root:
+
+```sh
+/opt/homebrew/bin/python3.12 -B -c 'import pathlib; import svg_tools.chromosome_examples as e; e.make_banded_chromosomes_1_3(pathlib.Path("_temp/banded_chromosomes_1_3.drawn.svg"))'
+```
+
+The 187 true intervals share one genomic scale; 46 band labels, 16 region numbers, six arm
+labels and three group labels are teaching selections. Caps and centromeres are schematic;
+genomic spans do not establish exact physical arm ratios.
 
 ## Single-chromatid chromosomes
 

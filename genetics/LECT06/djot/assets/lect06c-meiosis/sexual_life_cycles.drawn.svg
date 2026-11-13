@@ -5,7 +5,7 @@
 <marker id="n_arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="2.3" markerHeight="2.3" orient="auto"><path d="M0 0 L10 5 L0 10 L2.6 5Z" fill="#188A86"/></marker>
 <marker id="2n_arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="2.3" markerHeight="2.3" orient="auto"><path d="M0 0 L10 5 L0 10 L2.6 5Z" fill="#BE6952"/></marker>
 </defs>
-<g font-family="Arial, Helvetica, sans-serif" stroke-linejoin="round"><rect width="1800" height="900" fill="#FFFFFF"/>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" stroke-linejoin="round"><rect width="1800" height="900" fill="#FFFFFF"/>
 <g id="ploidy_key">
 <text x="30" y="37" font-size="23" fill="#213547" text-anchor="start" font-weight="700">Key</text>
 <path id="key_haploid" d="M100 29 H155" fill="none" stroke="#188A86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#n_arrow)"/>

@@ -29,7 +29,7 @@
  </g>
  <g id="P1-identity">
   <circle cx="-32" cy="-15" r="39" fill="#f6b6c3" stroke="#c34664" stroke-width="3.8"/>
-  <text x="-55" y="1" fill="#213547" font-family="Arial, sans-serif" font-size="47" font-weight="600">P<tspan dy="12" font-size="29">1</tspan></text>
+  <text x="-55" y="1" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="47" font-weight="600">P<tspan dy="12" font-size="29">1</tspan></text>
  </g>
 </g>
 <g id="mouse-P2" transform="translate(945 125)">
@@ -56,7 +56,7 @@
  </g>
  <g id="P2-identity">
   <circle cx="32" cy="-15" r="39" fill="#f8d77d" stroke="#a77b18" stroke-width="3.8"/>
-  <text x="9" y="1" fill="#213547" font-family="Arial, sans-serif" font-size="47" font-weight="600">P<tspan dy="12" font-size="29">2</tspan></text>
+  <text x="9" y="1" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="47" font-weight="600">P<tspan dy="12" font-size="29">2</tspan></text>
  </g>
 </g>
 <g id="mouse-F1" transform="translate(600 450)">
@@ -83,7 +83,7 @@
  </g>
  <g id="F1-identity">
   <circle cx="-32" cy="-15" r="39" fill="#9ac8e9" stroke="#347db3" stroke-width="3.8"/>
-  <text x="-55" y="1" fill="#213547" font-family="Arial, sans-serif" font-size="47" font-weight="600">F<tspan dy="12" font-size="29">1</tspan></text>
+  <text x="-55" y="1" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="47" font-weight="600">F<tspan dy="12" font-size="29">1</tspan></text>
  </g>
 </g>
 <g id="mouse-F2" transform="translate(600 805)">
@@ -110,7 +110,7 @@
  </g>
  <g id="F2-identity">
   <circle cx="32" cy="-15" r="39" fill="#b7df9d" stroke="#4b8e41" stroke-width="3.8"/>
-  <text x="9" y="1" fill="#213547" font-family="Arial, sans-serif" font-size="47" font-weight="600">F<tspan dy="12" font-size="29">2</tspan></text>
+  <text x="9" y="1" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="47" font-weight="600">F<tspan dy="12" font-size="29">2</tspan></text>
  </g>
 </g>
 </g>

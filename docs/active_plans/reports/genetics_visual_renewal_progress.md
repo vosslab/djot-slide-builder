@@ -1,3 +1,219 @@
+## Down syndrome illustration and variation selection closed - 2026-11-12
+
+The original editable Down syndrome SVG is DELIVERED through one LECT10D image URL. Specification, quality and integration reviews PASS; root accepted the 559-pixel comparison and 1200-pixel proof. The approved taller display fits the unchanged allocation. [Artwork closure](../../../_temp/down_syndrome_original/closure.md) records evidence and limits. The five-row [selection closure](../../../_temp/variation_next_selection/closure.md) records the remaining retain/defer decisions and corrects an earlier unverified karyotype assumption. Other variation decisions remain open; broader visual renewal remains ACTIVE.
+
+## Centromere artwork and bounded coverage routing - 2026-11-12
+
+The original editable centromere SVG is DELIVERED through one LECT09H image URL. Specification, quality and integration reviews PASS; root accepted the 559- and 1200-pixel comparisons. [Artwork closure](../../../_temp/centromere_original/closure.md) records the evidence and limits.
+
+The [inheritance/linkage coverage closure](../../../_temp/inheritance_linkage_coverage/closure.md) and [variation coverage closure](../../../_temp/variation_candidate_coverage/closure.md) complete bounded decision routing, not a course census. LECT04E image_003 still needs source clarification; variation has five assigned decision groups. Historical coverage receipts remain unchanged. Broader visual renewal remains ACTIVE.
+
+## Inheritance and linkage selection closed - 2026-11-12
+
+This bounded selection is DONE with no new SVG delivery. Root accepted three dispositions:
+LECT04G image_003 remains on hold as an incomplete scaffold with 83 separate source text blocks,
+unsupported lines and an unchanged native note; verified future SVG restoration remains possible.
+LECT06D chicken image_015 is deferred as a larger original illustration task, without assuming a
+photograph. LECT08B b31 is retained for its empirical TEM evidence. The LECT07B/C image_019
+selection 117 hold is historical only. Fresh specification rereview and quality review PASS;
+[closure](../../../_temp/inheritance_next_selection/closure.md) records the evidence and limits.
+The prior independent Punnett 002 delivery is unaffected. No product or Djot files changed.
+Broader renewal remains ACTIVE and the remaining frontier is not exhaustive. The future selection
+owner should reconcile remaining current-original inheritance/linkage candidate rows against accepted
+delivery, retain and defer records before opening another source; these three should not be
+reselected. No user approval is pending.
+
+## Independent assortment Punnett square delivered - 2026-11-12
+
+The original 4x4 SVG is integrated by one image URL on LECT04G authored slide 9;
+all 16 genotypes and the source phenotype order are preserved. Specification, quality
+and integration reviews PASS, and root accepted the 428-pixel comparison and 320- and
+1200-pixel candidate proofs. The retained source confirms the third row is fS, correcting
+an earlier reading rather than changing biology. [Closure](../../../_temp/independent_punnett_original/closure.md)
+records evidence and limits. Broader visual renewal remains ACTIVE; the remaining frontier
+is not exhaustively resolved.
+
+## GC-1 human genome composition chart delivered - 2026-11-12
+
+**DELIVERED:** The original editable chart is integrated by one URL substitution; all reviews PASS and root accepted the 559- and 1200-pixel proofs. Native categories and values are preserved; [closure](../../../_temp/genome_composition_original/closure.md) records the scoped evidence and limits. Broader visual renewal remains ACTIVE.
+
+## Tetrad font follow-through complete - 2026-11-12
+
+The six-figure font repair is DONE; specification, quality and integration reviews PASS, and root accepted all six before/after pairs at 559 and 1200 pixels. The [closure](../../../_temp/tetrad_font_followthrough/closure.md) records evidence and limits. The [54-item ownership triage](../../../_temp/other_svg_ownership_triage/REPORT.md) is bounded routing current at its creation, not global completion or conclusive ownership. The 463-vector declaration screen remains bounded; broader visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 13 and bounded font screen complete - 2026-11-12
+
+Eighteen font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired 559 px panels and CCR5, fly and wildflower 1200 px finals. Asset, consumer and proof hashes matched at closure. The independent screen found zero non-Next/Mono-first declarations among 4,287 declarations in the exact 463 frozen named original live-text vectors. This completes that bounded declaration criterion only; actual glyph selection, native rendering and 54 other ownership-uncertain vectors remain unverified. The historical 235 screen is not a remaining count; broader visual renewal remains ACTIVE. [Closure](../../../_temp/atkinson_batch13/closure.md) records evidence and limits.
+
+## Worm dosage annotation repair complete - 2026-11-12
+
+The worm-label repair is DONE: specification, visual quality and integration reviews PASS, and root accepted the 559- and 1200-pixel finals. The current worm asset legitimately supersedes the frozen batch 12 final; its receipt remains historical. [Closure](../../../_temp/worm_dosage_annotation/closure.md) records evidence and limits. Broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 12 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and CAG and worm details. Current asset, consumer and proof hashes matched at closure. A separate worm-label repair is pending and will supersede that asset. [Closure](../../../_temp/atkinson_batch12/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 11 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and two selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch11/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 10 complete - 2026-11-12
+
+Twenty-one font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and two selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch10/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 9 complete - 2026-11-12
+
+Twenty-five font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and three selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch9/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 8 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and two selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch8/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 7 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and two selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch7/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 6 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and selected details. Current asset, consumer and proof hashes matched at closure. [Closure](../../../_temp/atkinson_batch6/closure.md) records evidence and limits. The historical 235 declaration screen is not a remaining count; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 5 complete - 2026-11-12
+
+Twenty font-only SVG corrections are DONE; specification, quality and integration reviews PASS, and root accepted all paired panels and selected details. Current asset, consumer and proof hashes matched at closure. SCI-B5-1 was withdrawn: the sheep cross is correct. The batch 4 preview incident retains a provenance limit for individual proofs; current contact 4 was re-viewed and accepted. [Closure](../../../_temp/atkinson_batch5/closure.md) and [incident audit](../../../_temp/atkinson_batch5/preview_incident.md) record the evidence. The historical 235 declaration screen remains qualified; broader font and visual renewal remains ACTIVE.
+
+## Atkinson SVG batch 4 complete - 2026-11-12
+
+Sixteen font-only SVG corrections and one separate ribose annotation repair are DONE; specification, visual quality and integration reviews PASS, and root accepted all paired proofs. Current asset and consumer hashes were verified at closure. [Closure](../../../_temp/atkinson_batch4/closure.md) records evidence and limits. The historical 235 declaration screen remains unchanged; broader font and visual renewal remains ACTIVE. Next batches require semantic and matched-render review.
+
+## Atkinson SVG batch 3 complete - 2026-11-12
+
+Eighteen font-only SVG corrections are DONE; specification, visual quality and integration reviews PASS, and root accepted the paired proofs. Current asset and consumer hashes were verified at closure. [Closure](../../../_temp/atkinson_batch3/closure.md) records evidence and limits. The historical 235 declaration screen remains unchanged; broader font and visual renewal remains ACTIVE. Next batches need semantic inspection and matched render checks.
+
+## Atkinson SVG batch 2 complete - 2026-11-12
+
+Twelve font-only SVG corrections are DONE; three reviews PASS and root accepted the final proofs. Current asset and consumer hashes were verified at closure. [Closure](../../../_temp/atkinson_batch2/closure.md) records evidence and limits. The historical 235 declaration screen remains unchanged; broader font and visual renewal remains ACTIVE. Next batches need semantic and CSS inspection and matched rendering.
+
+## Atkinson SVG batch 1 complete - 2026-11-12
+
+Five font-only SVG corrections are DONE; all three reviews PASS and root accepted all five final proofs. Current asset and consumer hashes were verified at closure. [Closure](../../../_temp/atkinson_batch1/closure.md) records evidence and limits. The earlier 235 declaration-screen snapshot remains historical, not a count of confirmed violations. Broader font and visual renewal remains ACTIVE; next batches need semantic and CSS inspection and render checks.
+
+## Font declaration screen and selection 195 retains - 2026-11-12
+
+The [bounded font screen](../../../_temp/current_svg_font_audit/REPORT.md) is complete: of 647 currently referenced SVGs, 463 clearly named pure original vectors contain live text; 235 have a non-Next/Mono-first declaration and 228 have only desired-first declarations. These are declaration counts, not confirmed visible violations; effective CSS and native rendering remain unverified. Ownership of 54 other-named pure vectors remains unresolved. [Selection 195](../../../_temp/genetics_selection_195/ASSESSMENT.md) retains the clear agarose chemistry, decorative genome-letter texture and clear sequencing timeline; root viewed the white agarose proof and agrees. Its 02B008 next-step suggestion is superseded by the existing [selection 132 hold](../../../_temp/genetics_next_simple_art_132/REPORT.md). Next, inspect representative flagged assets for inheritance, CSS and appropriate sequence Mono use, then select a bounded render-reviewed font batch; font correction has not started. The local Biostatistics records support ten accepted SVG references and five reasoned retained rasters in the sole local announcements source, not external-course completion. Broader renewal remains ACTIVE; no approval is pending.
+
+## ABO carbohydrate comparison delivered - 2026-11-12
+
+Selection 194 is DONE: LECT05F authored slide 17 uses the original four-cell
+ABO drawing. Specification, quality and fresh integration reviews PASS; root accepted
+the source and white-background proofs. [Closure](../../../_temp/abo_carbohydrates_194/closure.md)
+records evidence and limits. Broader visual renewal remains ACTIVE.
+
+## Staining comparison delivered - 2026-11-12
+
+Selection 193 is DONE: one image URL on LECT10B authored slide 14 now uses the
+original staining comparison SVG. Six rods show paired generic G, R and C comparisons;
+the retained raster remains available. Root accepted a modest clarity gain; specification,
+quality and fresh integration reviews PASS. [Closure](../../../_temp/staining_comparison_193/closure.md)
+records evidence and limits. Broader visual renewal remains ACTIVE.
+
+## Chromatin reuse delivered - 2026-11-12
+
+Selection 192 is DONE: LECT10B now reuses the original LECT09B chromatin artwork
+in place of its cropped raster; four shared SVG font declarations were corrected to
+Atkinson Hyperlegible Next. Specification, quality and integration reviews PASS; root
+accepted both final proofs. [Closure](../../../_temp/chromatin_reuse/closure.md)
+records checks and limits. Broader visual renewal remains ACTIVE.
+
+## LECT08B isomer font correction complete - 2026-11-12
+
+The integrated cis and trans SVGs now use the requested Atkinson Hyperlegible Next
+in twelve font declarations; previous geometry and labels are unchanged. Specification
+and quality reviews PASS, and root accepted all four white-background full/half proofs.
+[Closure](../../../_temp/isomer_font_fix/closure.md) records hashes and limits. Selection
+188 is a duplicate and 189 overlaps 176; both remain HOLD as documented in the
+[selection ledger](../../../_temp/genetics_selection_188/TASK_LEDGER.md). Broader visual
+renewal remains ACTIVE; native LibreOffice font and export acceptance is not claimed.
+
+## Chromosomes 1-3 figure delivered - 2026-11-12
+
+The left figure on current authored 10C slide 6 (historical C5) is DELIVERED through
+one image URL. It draws 187 hg38 intervals at a common genomic scale with 46 band
+labels, 16 region numbers, six arm labels and three chromosome groups (71 labels).
+Caps and physical arm ratios remain schematic. The original left raster, right 21-22
+panel, 11-14 fallback, CFTR URLs and rejected landmarks drawing remain preserved.
+Root viewed all three production proofs and both final native proofs; the right panel
+remains intact and chr2 p11/q11 are distinct. Native checks passed 71/71 label positions
+and 14/14 actual regular glyphs. Fresh full30/focused1 models, plans and zero-diagnostic
+JSON match the accepted candidate; root also compared all 24 ordered, uncompressed ODP
+members byte-for-byte. Fresh [integration review](../../../_temp/chromosome_1_3_integration/integration_review.md)
+PASS and [closure](../../../_temp/chromosome_1_3_integration/closure.md) COMPLETE.
+The reusable production recipe and three source TSVs are documented; earlier module and
+gallery behavior remains preserved. Broader visual renewal remains ACTIVE. No whole-deck
+PDF, full-suite, instructor, classroom or print acceptance is claimed. Biotechnology
+LECT11 is excluded. Earlier checkpoints below retain their historical status.
+
+## Chromosomes 1-3 integrated; review pending - 2026-11-12
+
+The left image on current authored 10C slide 6 (historical C5) is INTEGRATED via one URL.
+The original raster, right chromosome 21-22 image and 11-14 fallback remain. Fresh full30 and
+focused1 models, plans and diagnostics and ordered ODP members match the accepted candidate.
+Root reviewed the native proof; all 71 labels and 14 actual regular glyphs passed. Fresh
+integration review and metadata closure are pending; broader visual renewal remains ACTIVE.
+See [REPORT.md](../../../_temp/chromosome_1_3_integration/REPORT.md). No whole-deck PDF,
+full-suite or classroom acceptance is claimed.
+
+## CFTR band-location delivery complete - 2026-11-12
+
+The corrected CFTR figure is DELIVERED at the two existing image URLs on current authored
+10C slides 18 and 19 (historical C16/C17). The exact two-URL inverse restores the original
+source; its original raster remains preserved. The figure uses 44 UCSC chromosome 7 bands,
+a linked five-band q31 crop, a white selected q31.2 subband and the shared hollow purple
+marker. The gene span, band lengths and caps are approximate teaching schematics.
+
+Root viewed both final corrected 1280-pixel native proofs; fresh specification, quality and
+[integration](../../../_temp/cftr_band_location_v2/integration_review.md) reviews PASS. The
+explicit clip fixes demonstrated LibreOffice overflow; the earlier failed proof remains
+historical evidence. Full 30-slide and focused two-slide models, plans and empty diagnostics,
+plus all 23 ordered uncompressed ODP members, match the accepted native candidate. The
+[font addendum](../../../_temp/chromosome_clip_compat/native_font/REPORT.md) corrects the
+older Type 3 attribution: actual figure labels are embedded TrueType F2/xref 53, with all
+29 rendered characters and 30 mapped glyphs matching sampled outlines and advances.
+[Closure](../../../_temp/cftr_band_location_v2/closure.md) records current hashes and checks.
+The shared gallery has pixel-identical old/new librsvg renders, without a separate native
+export claim. Broader Genetics visual renewal remains ACTIVE; no instructor, classroom,
+print, whole-deck PDF or full-suite acceptance is claimed. Biotechnology LECT11 is excluded.
+Earlier checkpoints below retain their historical status.
+
+## CFTR artwork integrated; review pending - 2026-11-12
+
+The corrected banded CFTR artwork is INTEGRATED at the two image URLs on authored 10C
+slides 18 and 19. All other Djot bytes and the original raster remain intact. Fresh full30
+and focused2 models, plans and empty diagnostics match the root-accepted candidate, as do
+all 23 uncompressed ODP members and their order. Root viewed both corrected native proofs;
+fresh specification and quality reviews passed. The explicit crop fixes the earlier native
+overflow. The figure-font addendum corrects the earlier Type 3 attribution and verifies the
+sampled TrueType outlines and advances. See
+[integration evidence](../../../_temp/cftr_band_location_v2/integration/REPORT.md).
+Fresh integration review and metadata-only closure are pending. Broader renewal remains
+ACTIVE; no instructor, classroom or full-suite acceptance is claimed. Earlier checkpoints
+below retain their historical status.
+
+## Shared chromosome theme revision complete - 2026-11-12
+
+The standalone chromosome library/gallery revision is DONE. The same 44-band chr7 model,
+520 length, 64 per-rod width, 2.24 outline and hollow 100-by-38 marker unify single and
+rounded-X sister forms; q31 is a linked true fivefold crop with flat cut ends. Root viewed
+all five final proofs. Fresh [specification](../../../_temp/chromosome_theme_revision/spec_review.md),
+[quality](../../../_temp/chromosome_theme_revision/quality_review.md) and
+[integration](../../../_temp/chromosome_theme_revision/integration_review.md) reviews PASS;
+44 actual-font glyphs matched and 11 focused tests passed in the specification lane.
+[Closure](../../../_temp/chromosome_theme_revision/closure.md) records exact hashes. The
+instructor's earlier v2-theme rejection remains historical. Broader visual renewal ACTIVE:
+183/184 delivered, 185 masked HOLD; the new CFTR course draft remains unintegrated and
+held pending course-theme work. No course theme migration, instructor, classroom, print or
+native-course acceptance is claimed. Biotechnology LECT11 remains excluded. Earlier dated
+checkpoints below retain their original state.
+
 ## Answer184 complete - 2026-11-12
 
 Selection184 DONE: the sole answer-image URL at local49/source517 is integrated, and

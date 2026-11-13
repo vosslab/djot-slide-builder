@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1288" viewBox="0 0 1200 1288" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Anaphase II, telephase II and cytokinesis</title><desc id="figure-desc">Original schematic after lecture 06C, preserving the source stage spelling Telephase. Sister centromeres separate. Each of four forming haploid daughter cells contains medium, short and long unreplicated chromosomes; exchanged segments remain attached to the same chromatid identities.</desc>
 <rect width="1200" height="1288" fill="white"/>
-<text x="295" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#213547">
+<text x="295" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="40" font-weight="bold" fill="#213547">
 <tspan x="295" dy="0">Anaphase II</tspan>
 </text>
-<text x="912" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="bold" fill="#213547">
+<text x="912" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="37" font-weight="bold" fill="#213547">
 <tspan x="912" dy="0">Telephase II and</tspan>
 <tspan x="912" dy="42.919999999999995">Cytokinesis</tspan>
 </text>
@@ -312,13 +312,13 @@
 </g>
 <path d="M552,943 L681,943" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M666.0,936.0 L681.0,943.0 L666.0,950.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-<text x="74" y="642" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<text x="74" y="642" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" font-weight="normal" fill="#213547">
 <tspan x="74" dy="0">Sister chromatids</tspan>
 <tspan x="74" dy="33.64">separate</tspan>
 </text>
 <path d="M253,602 L214,526 L208,484" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M276,602 L356,526 L382,484" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="921" y="1207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" fill="#213547">
+<text x="921" y="1207" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="31" font-weight="normal" fill="#213547">
 <tspan x="921" dy="0">Haploid daughter cells</tspan>
 <tspan x="921" dy="35.96">forming</tspan>
 </text>

@@ -29,7 +29,7 @@
   </defs>
   <g id="speech" stroke="#213547" stroke-width="7" stroke-linejoin="round">
     <path d="M202 96 H578 Q628 96 628 146 V226 Q628 266 590 274 L642 346 L553 279 H227 L138 346 L190 274 Q152 266 152 226 V146 Q152 96 202 96 Z" fill="#FFFFFF"/>
-    <text x="390" y="222" font-family="Arial, sans-serif" font-size="102" font-weight="700" text-anchor="middle" fill="#213547" stroke="none">MOOM</text>
+    <text x="390" y="222" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="102" font-weight="700" text-anchor="middle" fill="#213547" stroke="none">MOOM</text>
   </g>
   <ellipse id="ground-shadow" cx="390" cy="790" rx="261" ry="24" fill="#E8E4DA"/>
   <g id="cow" stroke="#213547" stroke-linecap="round" stroke-linejoin="round">
@@ -57,5 +57,5 @@
     <use xlink:href="#cow-head"/>
     <use xlink:href="#cow-head" transform="translate(780 0) scale(-1 1)"/>
   </g>
-  <text id="caption" x="390" y="890" font-family="Arial, sans-serif" font-size="63" font-weight="700" text-anchor="middle" fill="#213547">A Palindrome Cow</text>
+  <text id="caption" x="390" y="890" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="63" font-weight="700" text-anchor="middle" fill="#213547">A Palindrome Cow</text>
 </svg>

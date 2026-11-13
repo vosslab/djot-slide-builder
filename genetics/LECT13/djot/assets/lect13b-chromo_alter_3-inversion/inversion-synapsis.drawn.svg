@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1090" viewBox="0 0 1000 1090" role="img" aria-labelledby="title description">
 <title id="title">Homologous chromosome pairing with an inversion</title><desc id="description">Two chromosome ribbons show reversed gene-for-gene attraction within an inverted interval, then a physical pairing loop. This overview does not depict four chromatids or crossing over.</desc>
 <metadata>Original editable schematic, created 2026-11-10. Source facts: genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/image_003.png; original ODP slides 6, 10, 12, 14, 16. Geometry newly composed, not traced. Unmeasured. Source labels and stage/copy counts preserved.</metadata>
-<rect width="1000" height="1090" fill="white"/><g font-family="Arial, sans-serif">
+<rect width="1000" height="1090" fill="white"/><g font-family="Atkinson Hyperlegible Next">
 <defs><linearGradient id="wildtype-blue-direction"><stop offset="0" stop-color="#237EB3"/><stop offset="1" stop-color="#DCEBF5"/></linearGradient><linearGradient id="inverted-blue-direction"><stop offset="0" stop-color="#DCEBF5"/><stop offset="1" stop-color="#237EB3"/></linearGradient></defs>
 <text x="40" y="40" font-size="30" text-anchor="start" font-weight="bold" fill="#213547">Wildtype chromosome</text>
 <text x="40" y="242" font-size="30" text-anchor="start" font-weight="bold" fill="#213547">Inversion chromosome</text>

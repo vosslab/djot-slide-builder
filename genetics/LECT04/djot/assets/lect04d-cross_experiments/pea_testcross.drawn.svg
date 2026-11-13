@@ -2,7 +2,7 @@
   <title id="title">Pea-flower testcross: predictions for an unknown dominant parent</title>
   <desc id="desc">Two parents, one purple of unknown genotype PP or Pp and one white pp. If the purple parent is PP, all four predicted offspring are purple Pp. If it is Pp, two purple Pp and two white pp appear in the prediction grid. Original pea flowers reuse accepted banner, wings, paired keel, calyx and connected stem geometry.</desc>
   <rect id="background" width="798" height="730" fill="#ffffff" />
-  <g font-family="Arial, Helvetica, sans-serif" fill="#202329">
+  <g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#202329">
     <g id="parents">
       <g id="parent-purple" data-phenotype="purple" transform="translate(125.9756 2.8780) scale(0.512195)" stroke-linejoin="round" stroke-linecap="round">
         <g id="parent-purple-stem-calyx" stroke="#416548" stroke-width="3.3">

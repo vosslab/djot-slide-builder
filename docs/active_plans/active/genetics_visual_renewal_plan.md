@@ -85,8 +85,7 @@ Use these families regardless of fonts in the source artwork.
 1. Select one useful candidate from existing work. Inspect its source, current placement and
    relevant reveal states; identify the teaching purpose and the visible improvement to pursue.
    Name the physical asset owner and shared consumers before editing.
-2. Create one original SVG, or reuse accepted artwork. Use Astra for artwork and Terra for OCR
-   when useful, as requested. For OCR, check transcription against the raster and style the SVG
+2. Create one original SVG, or reuse accepted artwork. Use Terra for coding and artwork as appropriate; no Astra subagents while usage is low. For OCR, check transcription against the raster and style the SVG
    quote card without rewriting the words. Keep experiments and previews under root `_temp/`.
 3. Render one intended-size preview and complete brief artist and manager review. Check that the
    subject is recognizable, the explanation and labels are clear, and the art visibly improves

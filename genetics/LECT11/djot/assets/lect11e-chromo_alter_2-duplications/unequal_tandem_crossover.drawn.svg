@@ -4,7 +4,7 @@
 <metadata id="provenance">Original editable schematic constructed from instructor asset genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_002.png; source meaning and labels retained, geometry recomposed. Unmeasured chromosome lengths. 2026-11-09.</metadata>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect width="1600" height="460" fill="white"/>
-<g font-family="Arial, Helvetica, sans-serif">
+<g font-family="Atkinson Hyperlegible Next">
 <text x="22" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(A)  Normal pairing</text>
 <text x="410" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(B)  Mispairing</text>
 <text x="800" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(C)  Unequal crossing over</text>

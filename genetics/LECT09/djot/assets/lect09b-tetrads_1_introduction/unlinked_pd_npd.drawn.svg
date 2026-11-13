@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1469" height="1021" viewBox="0 0 1469 1021" role="img" aria-labelledby="title description">
 <title id="title">Unlinked genes: parental and nonparental ditypes</title><desc id="description">Two alternative arrangements without crossing over. Each row has two homologous pairs, four replicated chromosomes and eight chromatids. The upper ascus contains AB, AB, ab, ab; the lower contains Ab, Ab, aB, aB. Each ascus contains four unordered spores. Schematic, not measured.</desc>
 <rect width="1469" height="1021" fill="white"/>
-<g fill="#263b48" font-family="Arial, Helvetica, sans-serif">
+<g fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif">
 <text x="42" y="60" font-size="43" text-anchor="start" >(A) No crossing over</text>
 <g id="pd-arrangement">
 <g id="pd-pair-one-A" transform="translate(52 213)">
@@ -9,12 +9,12 @@
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">A</text>
+<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
 <g id="pd-pair-one-A-sister-3">
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">A</text>
+<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
 <ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3"/>
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -23,12 +23,12 @@
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">B</text>
+<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
 <g id="pd-pair-two-B-sister-3">
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">B</text>
+<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
 <ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3"/>
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -37,12 +37,12 @@
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">a</text>
+<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
 <g id="pd-pair-one-a-sister-3">
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">a</text>
+<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
 <ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3"/>
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -51,12 +51,12 @@
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">b</text>
+<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
 <g id="pd-pair-two-b-sister-3">
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">b</text>
+<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
 <ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3"/>
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -67,22 +67,22 @@
 <g id="pd-ascus-spore-1" transform="translate(-70 -63)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">AB</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">AB</text>
 </g>
 <g id="pd-ascus-spore-2" transform="translate(68 -59)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">AB</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">AB</text>
 </g>
 <g id="pd-ascus-spore-3" transform="translate(-67 65)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">ab</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">ab</text>
 </g>
 <g id="pd-ascus-spore-4" transform="translate(71 69)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">ab</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">ab</text>
 </g>
 </g>
 <text x="1230" y="502" font-size="34" text-anchor="middle" >Parental ditype tetrad</text>
@@ -93,12 +93,12 @@
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">A</text>
+<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
 <g id="npd-pair-one-A-sister-3">
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">A</text>
+<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
 <ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3"/>
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -107,12 +107,12 @@
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">b</text>
+<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
 <g id="npd-pair-two-b-sister-3">
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">b</text>
+<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
 <ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3"/>
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -121,12 +121,12 @@
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">a</text>
+<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
 <g id="npd-pair-one-a-sister-3">
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#263b48">a</text>
+<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
 <ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3"/>
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -135,12 +135,12 @@
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">B</text>
+<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
 <g id="npd-pair-two-B-sister-3">
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Georgia, serif" fill="#ffffff">B</text>
+<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
 <ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3"/>
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
@@ -151,22 +151,22 @@
 <g id="npd-ascus-spore-1" transform="translate(-70 -63)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">Ab</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">Ab</text>
 </g>
 <g id="npd-ascus-spore-2" transform="translate(68 -59)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">Ab</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">Ab</text>
 </g>
 <g id="npd-ascus-spore-3" transform="translate(-67 65)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">aB</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">aB</text>
 </g>
 <g id="npd-ascus-spore-4" transform="translate(71 69)">
 <path d="M -56 -7 C -51 -43 -23 -56 9 -50 C 44 -45 58 -21 55 9 C 49 44 20 55 -12 48 C -45 44 -63 20 -56 -7 Z" fill="#fff2c9" stroke="#9b895d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M -41 -16 Q -28 -39 -3 -36" fill="none" stroke="#fffdf1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Georgia, serif">aB</text>
+<text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">aB</text>
 </g>
 </g>
 <text x="1230" y="977" font-size="34" text-anchor="middle" >Nonparental ditype tetrad</text>

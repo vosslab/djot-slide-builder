@@ -3,7 +3,7 @@
 	<title id="linkage_portrait-title">Cis and trans arrangements in a narrow panel</title>
 	<desc id="linkage_portrait-desc">Two homologs in each arrangement; w m and + + in cis, w + and + m in trans. Homolog identity uses blue and orange. The view is schematic, with no replication or crossing over.</desc>
 	<!-- Source: LECT08B Cis and Trans Configurations and gamete sequence; LECT08C Cis and Trans Configurations. Original vector construction from the approved linkage pilot. -->
-	<g font-family="Liberation Sans, sans-serif">
+	<g font-family="Atkinson Hyperlegible Next, sans-serif">
 		<g id="cis">
 			<text x="290" y="68" font-size="46" fill="#253342" text-anchor="middle" font-style="italic">cis</text>
 			<g id="cis-blue-homolog">

@@ -228,6 +228,12 @@ specimen uses the broad hollow marker in both whole forms. Both source `acen` ba
 exposed around its collar gap, although their narrow intervals are subtle at reduced size.
 Marker and collar space are not genomic length.
 
+The chromosome 1-3 recipe in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
+uses three source TSVs and portable provenance to render 187 intervals at one genomic scale.
+Its 46 band labels, 16 region numbers, six arm labels and three groups are teaching selections;
+caps and centromeres are schematic, and physical arm ratios are not exact. The documented
+command regenerates the figure to a scratch path.
+
 The saved [chromosome_tool.drawn.svg](illustration_examples/chromosome_tool.drawn.svg) and
 its [closure.md](../../_temp/chromosome_svg_tool/closure.md) record historical v1 review.
 The user rejected that sister shape; the rounded-X renderer supersedes that acceptance.
@@ -242,7 +248,8 @@ the whole forms and 530 x 385 for q31 detail. A 1800 x 270 centromere diagnostic
 the narrow `acen` rows; it is not a minimum readable placement. These proofs are not universal
 minima. The user rejected the previous v2 gallery's inconsistent theme; the revised specimen
 follows the root-approved shared-family direction. Fresh specification, quality and integration
-reviews are pending. With `PANGOCAIRO_BACKEND=fc`, the rendered font diagnostic matched
+reviews PASS; root viewed all five final production proofs. The standalone shared-theme
+revision is DONE. With `PANGOCAIRO_BACKEND=fc`, the rendered font diagnostic matched
 installed Atkinson Hyperlegible Next glyph operations and advances. Inspect text at the intended
 placement; label fitting is approximate and a family declaration alone does not establish
 font selection.

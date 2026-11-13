@@ -310,16 +310,16 @@ def make_tool_v2_specimen(path: pathlib.Path) -> None:
 	body += bracket(718, 212+y0, 212+y1, accent)
 	body += label(730, 212+(y0+y1)/2+8, "q31", 25, accent)
 
-	# Reuse the whole map isotropically; the viewport gives internal bands flat cut ends.
+	# Reuse the whole map isotropically; the clip gives internal bands flat cut ends.
 	left = (whole.width-rod_width)/2
 	zoom_x, zoom_y, scale = 1000, 365, 5
 	zoom_width, zoom_height = rod_width*scale, (y1-y0)*scale
 	body += (f'<path d="M 790 {212+(y0+y1)/2} H 890 L 970 {zoom_y+zoom_height/2}" '
 		f'fill="none" stroke="{accent}" stroke-width="2"/>')
-	body += (f'<svg id="v2-q31-crop" x="{zoom_x}" y="{zoom_y}" '
-		f'width="{zoom_width}" height="{zoom_height}" '
-		f'viewBox="{left} {y0} {rod_width} {y1-y0}" overflow="hidden">'
-		'<use href="#v2-chr7"/></svg>')
+	body += (f'<defs><clipPath id="v2-q31-clip" clipPathUnits="userSpaceOnUse">'
+		f'<rect x="{zoom_x}" y="{zoom_y}" width="{zoom_width}" height="{zoom_height}"/>'
+		f'</clipPath></defs><g id="v2-q31-crop" clip-path="url(#v2-q31-clip)">'
+		f'<use href="#v2-chr7" transform="matrix({scale} 0 0 {scale} {zoom_x-scale*left} {zoom_y-scale*y0})"/></g>')
 	for y in (zoom_y, zoom_y+zoom_height):
 		body += (f'<path d="M {zoom_x-8} {y+5} l 16 -10 '
 			f'M {zoom_x+zoom_width-8} {y+5} l 16 -10" '
@@ -356,3 +356,67 @@ def main() -> None:
 
 if __name__ == "__main__":
 	main()
+
+
+#============================================
+def make_banded_chromosomes_1_3(path: pathlib.Path) -> None:
+	"""Draw three hg38 cytoband maps with the source teaching labels."""
+	labels = {
+		1: ('36 34 32 31 22 21 13', '12 21 23 24 25 31 32 41 42 44'),
+		2: ('25 24 22 16 13 12 11', '11 12 14 21 22 24 31 32 34 36 37'),
+		3: ('25 24 21 14 12', '11 13 21 24 26 29'),
+	}
+	svg = ['<rect width="700" height="650" fill="white"/>']
+	for number in (1, 2, 3):
+		data = pathlib.Path(__file__).parent / f'data/chr{number}_hg38_cytobands.tsv'
+		model, records = svg_tools.chromosomes.read_cytobands(data)
+		schematic_space = 47 * .61 * (1 + .48)
+		length = schematic_space + (500 - schematic_space) * records[-1].end / 248956422
+		top = 565 - length
+		x = 112 + (number - 1) * 233
+		layout = svg_tools.chromosomes.render_chromosome_layout(f'chr{number}', model, length=length,
+			thickness=47, orientation='vertical', bands=False, labels=False, marker_size=(16, 44))
+		svg.append(f'<g transform="translate({x-23.5} {top})">{layout.svg}</g>')
+		center = top + layout.centromere[1]
+		for arm, words in zip(('p', 'q'), labels[number]):
+			items = []
+			for i, word in enumerate(words.split()):
+				matches = [a for r, a in zip(records, layout.segments) if r.segment.label.startswith(arm+word)]
+				anchor = top + (matches[0].start[1] + matches[-1].end[1]) / 2
+				items.append([word, anchor, i % 2])
+			for side in (0, 1):
+				selected = [item for item in items if item[2] == side]
+				low, high = (top+12, center-14) if arm == 'p' else (center+14, 557)
+				positions = []
+				for _, anchor, _ in selected:
+					positions.append(max(anchor, low if not positions else positions[-1]+34))
+				for i in range(len(positions)-1, -1, -1):
+					positions[i] = min(positions[i], high if i == len(positions)-1 else positions[i+1]-34)
+				for (word, anchor, _), y in zip(selected, positions):
+					direction = -1 if side == 0 else 1
+					rod_edge = x + direction * 15
+					label_edge = x + direction * 29
+					text_x = x + direction * 34
+					align = 'end' if side == 0 else 'start'
+					svg.append(f'<path d="M {rod_edge} {anchor:.2f} L {label_edge} {y:.2f}" fill="none" stroke="#52636d" stroke-width="1.3"/>')
+					svg.append(f'<text x="{text_x}" y="{y+10:.2f}" text-anchor="{align}" class="band">{word}</text>')
+			arm_rows = [(r, a) for r, a in zip(records, layout.segments) if r.segment.label.startswith(arm)]
+			regions = sorted(set(r.segment.label[1] for r, _ in arm_rows), reverse=arm == 'p')
+			for region in regions:
+				anchors = [a for r, a in arm_rows if r.segment.label.startswith(arm+region)]
+				a = top+anchors[0].start[1]
+				b = top+anchors[-1].end[1]
+				rx = x-108
+				svg.append(f'<path d="M {rx+5} {a:.2f} H {rx} V {b:.2f} H {rx+5}" fill="none" stroke="#667781" stroke-width="1.4"/>')
+				svg.append(f'<text x="{rx+6}" y="{(a+b)/2+9:.2f}" class="region">{region}</text>')
+			a, b = (top, center-10) if arm == 'p' else (center+10, 565)
+			ax = x+112
+			svg.append(f'<path d="M {ax-5} {a:.2f} H {ax} V {b:.2f} H {ax-5}" fill="none" stroke="#667781" stroke-width="1.4"/>')
+			svg.append(f'<text x="{ax-10}" y="{(a+b)/2+10:.2f}" text-anchor="end" class="arm">{arm}</text>')
+		svg.append(f'<text x="{x}" y="610" text-anchor="middle" class="group">{number} (A)</text>')
+	svg.insert(0, '<style>text{font-family:Atkinson Hyperlegible Next;fill:#172B3A}.band{font-size:33px}.region{font-size:29px}.arm{font-size:32px}.group{font-size:33px}</style>')
+	svg_tools.drawing.write_svg(path, 700, 650,
+		'Chromosome bands on chromosomes 1, 2 and 3',
+		'Schematic chromosomes with hg38 cytobands, region numbers, p and q arms and group A labels. '
+		'Genomic interval projection; caps and centromeres are schematic and physical arm ratios are approximate.',
+		'\n'.join(svg))

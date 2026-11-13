@@ -2,7 +2,7 @@
   <title id="title">Sheep testcross: two possible genotypes</title>
   <desc id="desc">A black sheep of unknown genotype, BB or Bb, is crossed with a white bb sheep. The BB alternative gives four Bb cells and 100% black offspring. The Bb alternative gives Bb, bb, Bb, bb and 50% black, 50% white offspring. Five sheep icons illustrate the parents and the possible offspring phenotypes.</desc>
   <rect width="760" height="503" fill="#FFFFFF"/>
-  <g id="labels-and-diagram" font-family="Arial, sans-serif" fill="#213547" text-anchor="middle">
+  <g id="labels-and-diagram" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#213547" text-anchor="middle">
     <g id="parent-labels" font-size="22">
       <text x="190" y="25">Unknown dominant phenotype</text>
       <text x="190" y="51" font-weight="700">(BB or Bb)</text>

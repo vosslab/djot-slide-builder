@@ -73,7 +73,7 @@
 <path id="set-8-40-45-7-type-8" transform="translate(405,297)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-8-40-45-7-type-9" transform="translate(455,297)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<text x="255" y="373" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Octoploid (72)</text>
+<text x="255" y="373" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">Octoploid (72)</text>
 <g id="cell-10-40-433" data-sets="10" data-chromosomes="90"><rect x="25" y="408" width="460" height="380" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path id="set-10-40-433-0-type-1" transform="translate(55,433)" d="M-11 0 Q0 -7 11 0" fill="none" stroke="#B68C00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-10-40-433-0-type-2" transform="translate(105,433)" d="M-13 -4 Q8 -7 13 5" fill="none" stroke="#C06B35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -166,5 +166,5 @@
 <path id="set-10-40-433-9-type-8" transform="translate(405,757)" d="M-11 9 Q-21 -10 11 -8" fill="none" stroke="#C45462" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="set-10-40-433-9-type-9" transform="translate(455,757)" d="M-18 0 L18 0" fill="none" stroke="#697AA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<text x="255" y="833" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Decaploid (90)</text>
+<text x="255" y="833" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">Decaploid (90)</text>
 </svg>

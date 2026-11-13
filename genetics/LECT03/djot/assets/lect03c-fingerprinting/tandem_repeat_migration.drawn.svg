@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1067" height="968" viewBox="0 0 1067 968" role="img" aria-labelledby="title desc">
 <title id="title">Tandem-repeat length and gel migration</title><desc id="desc">Schematic, not to scale. Ten duplexes contain one through ten repeat units, numbered individually on both-strand modules. Conserved flanks have two cleavage boundaries per row. All strands are antiparallel. Each corresponding gel strip has one purple band; longer fragments travel less far right. Original construction from the teaching facts in image_004.jpg; no base sequence or measured migration distance is implied.</desc>
-<g font-family="Arial, sans-serif">
+<g font-family="Atkinson Hyperlegible Next, sans-serif">
 <rect  x="0" y="0" width="1067" height="968" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
 <text x="26" y="35" font-size="29" text-anchor="start" fill="#213547" font-weight="700">Positions of</text>
 <text x="26" y="69" font-size="29" text-anchor="start" fill="#213547" font-weight="700">cleavage sites</text>

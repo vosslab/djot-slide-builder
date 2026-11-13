@@ -10,13 +10,13 @@
       <circle cx="130" r="28" fill="#F3D828"/>
       <rect x="232" y="-28" width="56" height="56" fill="#149ED0"/>
       <circle cx="390" r="28" fill="#F3D828"/>
-      <g font-family="Arial, sans-serif" font-size="26" fill="#213547" stroke="none" text-anchor="middle">
+      <g font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" fill="#213547" stroke="none" text-anchor="middle">
         <text x="65" y="49">&#945;2</text>
         <text x="195" y="49">&#946;3</text>
         <text x="325" y="49">&#946;3</text>
       </g>
     </g>
-    <g id="chemical-backbone" font-family="Arial, sans-serif" font-size="33" fill="#213547" text-anchor="middle">
+    <g id="chemical-backbone" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="33" fill="#213547" text-anchor="middle">
       <g stroke="#526879" stroke-width="2.8" fill="none">
         <path d="M 45 0 H 112"/>
         <path d="M 194 0 H 268"/>
@@ -34,7 +34,7 @@
       </g>
     </g>
   </defs>
-  <g font-family="Arial, sans-serif" fill="#213547">
+  <g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#213547">
     <g id="representation-headings" font-size="29" fill="#526879" text-anchor="middle">
       <text x="470" y="65">Symbolic glycan</text>
       <text x="1150" y="65">Chemical chain</text>

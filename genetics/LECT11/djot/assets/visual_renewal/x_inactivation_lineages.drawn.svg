@@ -3,7 +3,7 @@
 <path d="M683 38 V92" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
 <path d="M717 38 V92" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
 </g>
-<text x="180" y="70" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Zygote</text>
+<text x="180" y="70" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Zygote</text>
 <path d="M700 110 L400 177" stroke="#647681" stroke-width="2" fill="none"/>
 <g id="early-0"><ellipse cx="400" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path d="M383 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
@@ -84,9 +84,9 @@
 <path d="M1033 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
 <circle cx="1067" cy="540" r="12" fill="#076DAD"/>
 </g>
-<text x="180" y="215" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Early cleavage</text>
-<text x="180" y="245" font-family="Arial" font-size="20" text-anchor="middle" fill="#222">Both X chromosomes active</text>
-<text x="180" y="375" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Random X inactivation</text>
-<text x="180" y="540" font-family="Arial" font-size="23" text-anchor="middle" fill="#222">Somatic descendants</text>
-<text x="700" y="635" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">Line: active X    *    Compact circle: inactive X</text>
+<text x="180" y="215" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early cleavage</text>
+<text x="180" y="245" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="middle" fill="#222">Both X chromosomes active</text>
+<text x="180" y="375" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Random X inactivation</text>
+<text x="180" y="540" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Somatic descendants</text>
+<text x="700" y="635" font-family="Atkinson Hyperlegible Next" font-size="26" text-anchor="middle" fill="#222">Line: active X    *    Compact circle: inactive X</text>
 </svg>

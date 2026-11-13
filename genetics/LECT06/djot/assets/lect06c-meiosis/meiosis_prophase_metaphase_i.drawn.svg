@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1144" viewBox="0 0 1200 1144" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Prophase I and metaphase I</title><desc id="figure-desc">Original schematic after lecture 06C source slide 7. Three replicated homolog pairs. Long homologs show two chiasmata; all pairs have exchanged distal segments by metaphase I. Spindle fibers terminate at centromeres. Positions and sizes are schematic.</desc>
 <rect width="1200" height="1144" fill="white"/>
-<text x="300" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="bold" fill="#213547">
+<text x="300" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="41" font-weight="bold" fill="#213547">
 <tspan x="300" dy="0">Prophase I</tspan>
 </text>
-<text x="900" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="bold" fill="#213547">
+<text x="900" y="65" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="41" font-weight="bold" fill="#213547">
 <tspan x="900" dy="0">Metaphase I</tspan>
 </text>
 <g id="prophase-I-cell" transform="translate(300 590) scale(1.215 1.225)">
@@ -244,49 +244,49 @@
 </g>
 <path d="M552,590 L632,590" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M617.0,583.0 L632.0,590.0 L617.0,597.0" fill="none" stroke="#678397" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-<text x="80" y="151" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="80" y="151" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="80" dy="0">Centrosome</tspan>
 <tspan x="80" dy="32.48">(with centriole pair)</tspan>
 </text>
 <path d="M259,204 L259,280 L244,359" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="60" y="288" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="60" y="288" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="60" dy="0">Sister</tspan>
 <tspan x="60" dy="32.48">chromatids</tspan>
 </text>
 <path d="M137,335 L140,459 L184,532" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M149,335 L153,454 L204,526" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="449" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="449" y="215" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="449" dy="0">Chiasmata</tspan>
 </text>
 <path d="M438,234 L390,470 L316,530" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M459,234 L451,486 L390,580" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="577" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="577" y="330" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="577" dy="0">Spindle</tspan>
 </text>
 <path d="M564,344 L465,456" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="831" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="831" y="158" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="831" dy="0">Centromere</tspan>
 <tspan x="831" dy="32.48">(with kinetochore)</tspan>
 </text>
 <path d="M811,205 L760,460 L744,570" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1119" y="300" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="1119" y="300" text-anchor="end" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="1119" dy="0">Metaphase</tspan>
 <tspan x="1119" dy="32.48">plate</tspan>
 </text>
 <path d="M1096,345 L1150,448 L1133,590" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="56" y="939" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" fill="#213547">
+<text x="56" y="939" text-anchor="start" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="29" font-weight="normal" fill="#213547">
 <tspan x="56" dy="0">Homologous</tspan>
 <tspan x="56" dy="33.64">chromosomes</tspan>
 </text>
 <path d="M240,913 L252,808 L267,743" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M251,913 L274,797 L277,717" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="475" y="1014" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="475" y="1014" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="475" dy="0">Fragments</tspan>
 <tspan x="475" dy="32.48">of nuclear</tspan>
 <tspan x="475" dy="32.48">envelope</tspan>
 </text>
 <path d="M460,978 L426,877 L419,724" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="907" y="966" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" fill="#213547">
+<text x="907" y="966" text-anchor="middle" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="28" font-weight="normal" fill="#213547">
 <tspan x="907" dy="0">Microtubule</tspan>
 <tspan x="907" dy="32.48">attached to</tspan>
 <tspan x="907" dy="32.48">kinetochore</tspan>

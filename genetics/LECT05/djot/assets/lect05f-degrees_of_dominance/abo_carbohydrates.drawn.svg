@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="851" height="675" viewBox="0 0 851 675" role="img" aria-labelledby="title desc">
+<title id="title">ABO red blood cell antigens</title>
+<desc id="desc">Four red blood cells: group A has triangle markers, B has circle markers, AB has both, and O has neither. Markers are schematic.</desc>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#243746">
+<g id="key" font-size="29"><path d="M248 48 L260 25 L272 48 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/><text x="281" y="48">A antigen</text><circle cx="491" cy="38" r="11" fill="#D18324" stroke="#243746" stroke-width="2"/><text x="510" y="48">B antigen</text></g>
+<g id="cell-A"><circle cx="230" cy="210" r="77" fill="#D3453D" stroke="#8B302D" stroke-width="3"/><ellipse cx="230" cy="210" rx="47" ry="40" fill="#ED8A7F"/><ellipse cx="230" cy="210" rx="31" ry="25" fill="#E5776C"/>
+<path d="M230.0 139.0 L230.0 114.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M219.0 123.0 L230.0 103.0 L241.0 123.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M291.5 174.5 L313.1 162.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M302.1 171.0 L313.1 151.0 L324.1 171.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M291.5 245.5 L313.1 258.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M302.1 267.0 L313.1 247.0 L324.1 267.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M230.0 281.0 L230.0 306.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M219.0 315.0 L230.0 295.0 L241.0 315.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M168.5 245.5 L146.9 258.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M135.9 267.0 L146.9 247.0 L157.9 267.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M168.5 174.5 L146.9 162.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M135.9 171.0 L146.9 151.0 L157.9 171.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<text x="230" y="349" font-size="36" font-weight="bold" text-anchor="middle">A</text></g>
+<g id="cell-B"><circle cx="621" cy="210" r="77" fill="#D3453D" stroke="#8B302D" stroke-width="3"/><ellipse cx="621" cy="210" rx="47" ry="40" fill="#ED8A7F"/><ellipse cx="621" cy="210" rx="31" ry="25" fill="#E5776C"/>
+<path d="M621.0 139.0 L621.0 114.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="621.0" cy="114.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M682.5 174.5 L704.1 162.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="704.1" cy="162.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M682.5 245.5 L704.1 258.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="704.1" cy="258.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M621.0 281.0 L621.0 306.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="621.0" cy="306.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M559.5 245.5 L537.9 258.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="537.9" cy="258.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M559.5 174.5 L537.9 162.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="537.9" cy="162.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<text x="621" y="349" font-size="36" font-weight="bold" text-anchor="middle">B</text></g>
+<g id="cell-AB"><circle cx="230" cy="480" r="77" fill="#D3453D" stroke="#8B302D" stroke-width="3"/><ellipse cx="230" cy="480" rx="47" ry="40" fill="#ED8A7F"/><ellipse cx="230" cy="480" rx="31" ry="25" fill="#E5776C"/>
+<path d="M230.0 409.0 L230.0 384.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M219.0 393.0 L230.0 373.0 L241.0 393.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M291.5 444.5 L313.1 432.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="313.1" cy="432.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M291.5 515.5 L313.1 528.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M302.1 537.0 L313.1 517.0 L324.1 537.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M230.0 551.0 L230.0 576.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="230.0" cy="576.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<path d="M168.5 515.5 L146.9 528.0" stroke="#607580" stroke-width="4"/>
+<path class="antigen-A" d="M135.9 537.0 L146.9 517.0 L157.9 537.0 Z" fill="#2374AB" stroke="#243746" stroke-width="2"/>
+<path d="M168.5 444.5 L146.9 432.0" stroke="#607580" stroke-width="4"/>
+<circle class="antigen-B" cx="146.9" cy="432.0" r="10" fill="#D18324" stroke="#243746" stroke-width="2"/>
+<text x="230" y="619" font-size="36" font-weight="bold" text-anchor="middle">AB</text></g>
+<g id="cell-O"><circle cx="621" cy="480" r="77" fill="#D3453D" stroke="#8B302D" stroke-width="3"/><ellipse cx="621" cy="480" rx="47" ry="40" fill="#ED8A7F"/><ellipse cx="621" cy="480" rx="31" ry="25" fill="#E5776C"/>
+<text x="621" y="619" font-size="36" font-weight="bold" text-anchor="middle">O</text></g>
+</g></svg>

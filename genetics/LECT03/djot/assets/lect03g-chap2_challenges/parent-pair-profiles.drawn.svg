@@ -2,7 +2,7 @@
 <title id="title">DNA profiles for five parent pairs and victim X at two loci</title>
 <desc id="desc">Schematic bands, not experimental gel data. Each locus shows A father, A mother, B father, B mother, C father, C mother, D father, D mother, E father, E mother, then X. Two bands per lane. Source: Lecture 03G slides 4 through 10. Migration positions preserve source band relationships.</desc>
 <rect width="1320" height="440" fill="white" />
-<g id="locus-1" font-family="Arial, sans-serif" fill="#222222">
+<g id="locus-1" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#222222">
 <text x="330" y="38" font-size="30" text-anchor="middle">Locus 1</text>
 <rect x="18.8571" y="119" width="622.286" height="305" fill="#eef4f7" stroke="#596e7b" stroke-width="2" />
 <text x="77" y="77" font-size="30" text-anchor="middle">A</text>
@@ -77,7 +77,7 @@
 <rect id="locus-1-lane-11-band-2" x="595.571" y="222.72" width="37.7143" height="6" fill="#222222" />
 </g>
 </g>
-<g id="locus-2" font-family="Arial, sans-serif" fill="#222222">
+<g id="locus-2" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#222222">
 <text x="990" y="38" font-size="30" text-anchor="middle">Locus 2</text>
 <rect x="678.857" y="119" width="622.286" height="305" fill="#eef4f7" stroke="#596e7b" stroke-width="2" />
 <text x="737" y="77" font-size="30" text-anchor="middle">A</text>

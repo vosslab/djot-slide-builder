@@ -4,53 +4,53 @@
 <g id="parent-calico-0" transform="translate(410,90) scale(1)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M0 -23 L18 -20 L26 -5 Q22 15 0 21 Z M-30 47 Q0 25 18 60 L4 84 L-26 72 Z" fill="#DA8A35" stroke="none"/><path d="M-7 23 Q18 25 15 60 L0 82 L-13 61 Z" fill="white" stroke="none"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="300" y="128" text-anchor="middle" font-family="Arial" font-size="40" fill="#222">&#215;</text>
-<text x="190" y="235" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Black male</text>
-<text x="410" y="235" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Calico female</text>
+<text x="300" y="128" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" fill="#222">&#215;</text>
+<text x="190" y="235" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Black male</text>
+<text x="410" y="235" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Calico female</text>
 <path d="M300 260 V320 M65 340 V320 H535 V340 M220 320 V340 M380 320 V340" fill="none" stroke="#647681" stroke-width="3"/>
 <g id="offspring-0-0" transform="translate(70,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M0 -23 L18 -20 L26 -5 Q22 15 0 21 Z M-30 47 Q0 25 18 60 L4 84 L-26 72 Z" fill="#DA8A35" stroke="none"/><path d="M-7 23 Q18 25 15 60 L0 82 L-13 61 Z" fill="white" stroke="none"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="70" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Calico</text>
-<text x="70" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">daughter</text>
+<text x="70" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Calico</text>
+<text x="70" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">daughter</text>
 <g id="offspring-0-1" transform="translate(220,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="220" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Black</text>
-<text x="220" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">daughter</text>
+<text x="220" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Black</text>
+<text x="220" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">daughter</text>
 <g id="offspring-0-2" transform="translate(370,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="370" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Black</text>
-<text x="370" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">son</text>
+<text x="370" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Black</text>
+<text x="370" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">son</text>
 <g id="offspring-0-3" transform="translate(520,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#DA8A35" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#DA8A35"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#DA8A35"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="520" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Orange</text>
-<text x="520" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">son</text>
-<text x="300" y="625" text-anchor="middle" font-family="Arial" font-size="26" fill="#222">Black male &#215; calico female</text>
+<text x="520" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Orange</text>
+<text x="520" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">son</text>
+<text x="300" y="625" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="26" fill="#222">Black male &#215; calico female</text>
 <g id="parent-Orange" transform="translate(790,90) scale(1)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#DA8A35" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#DA8A35"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#DA8A35"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
 <g id="parent-calico-1" transform="translate(1010,90) scale(1)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M0 -23 L18 -20 L26 -5 Q22 15 0 21 Z M-30 47 Q0 25 18 60 L4 84 L-26 72 Z" fill="#DA8A35" stroke="none"/><path d="M-7 23 Q18 25 15 60 L0 82 L-13 61 Z" fill="white" stroke="none"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="900" y="128" text-anchor="middle" font-family="Arial" font-size="40" fill="#222">&#215;</text>
-<text x="790" y="235" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Orange male</text>
-<text x="1010" y="235" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Calico female</text>
+<text x="900" y="128" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="40" fill="#222">&#215;</text>
+<text x="790" y="235" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Orange male</text>
+<text x="1010" y="235" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Calico female</text>
 <path d="M900 260 V320 M665 340 V320 H1135 V340 M820 320 V340 M980 320 V340" fill="none" stroke="#647681" stroke-width="3"/>
 <g id="offspring-1-0" transform="translate(670,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M0 -23 L18 -20 L26 -5 Q22 15 0 21 Z M-30 47 Q0 25 18 60 L4 84 L-26 72 Z" fill="#DA8A35" stroke="none"/><path d="M-7 23 Q18 25 15 60 L0 82 L-13 61 Z" fill="white" stroke="none"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="670" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Calico</text>
-<text x="670" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">daughter</text>
+<text x="670" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Calico</text>
+<text x="670" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">daughter</text>
 <g id="offspring-1-1" transform="translate(820,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#DA8A35" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#DA8A35"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#DA8A35"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="820" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Orange</text>
-<text x="820" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">daughter</text>
+<text x="820" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Orange</text>
+<text x="820" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">daughter</text>
 <g id="offspring-1-2" transform="translate(970,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#29292D" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#29292D"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#29292D"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="970" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Black</text>
-<text x="970" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">son</text>
+<text x="970" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Black</text>
+<text x="970" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">son</text>
 <g id="offspring-1-3" transform="translate(1120,405) scale(0.78)" stroke="#29292D" stroke-width="3"><path d="M28 85 Q90 118 65 55" fill="none" stroke="#DA8A35" stroke-width="13" stroke-linecap="round"/><ellipse cx="0" cy="55" rx="35" ry="52" fill="#DA8A35"/><path d="M-30 0 L-33 -40 L-12 -22 Q0 -28 12 -22 L33 -40 L30 0 Q28 28 0 28 Q-28 28 -30 0" fill="#DA8A35"/>
 <path d="M-24 97 V75 M23 97 V75" fill="none" stroke="#DDD" stroke-width="2"/><ellipse cx="-13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><ellipse cx="13" cy="-4" rx="6" ry="4" fill="#C6DA9F"/><path d="M-4 7 L4 7 L0 12 Z" fill="#E0ADAB" stroke="none"/></g>
-<text x="1120" y="520" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Orange</text>
-<text x="1120" y="552" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">son</text>
-<text x="900" y="625" text-anchor="middle" font-family="Arial" font-size="26" fill="#222">Orange male &#215; calico female</text>
+<text x="1120" y="520" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Orange</text>
+<text x="1120" y="552" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">son</text>
+<text x="900" y="625" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="26" fill="#222">Orange male &#215; calico female</text>
 </svg>

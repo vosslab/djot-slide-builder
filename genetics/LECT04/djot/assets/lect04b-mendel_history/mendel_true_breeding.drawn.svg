@@ -48,7 +48,7 @@
       <path d="M-26 48 L0 67 L26 48 Q0 78 -26 48 Z" fill="#719663" stroke="#315C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
   </defs>
-  <g font-family="Liberation Sans, sans-serif">
+  <g font-family="Atkinson Hyperlegible Next, sans-serif">
     <use href="#purple-flower" transform="translate(235 115) scale(0.85)" />
     <use href="#purple-flower" transform="translate(415 115) scale(0.85)" />
     <text x="325" y="110" font-size="40" text-anchor="middle" fill="#253342">&#215;</text>

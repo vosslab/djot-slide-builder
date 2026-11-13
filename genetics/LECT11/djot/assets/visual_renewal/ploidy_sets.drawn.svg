@@ -4,7 +4,7 @@
 <path d="M165 90 L165 235" stroke="#8970AD" stroke-width="13" stroke-linecap="round"/><circle cx="165" cy="125" r="5" fill="#333"/>
 <path d="M270 90 L270 185" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="270" cy="125" r="5" fill="#333"/>
 </g>
-<text x="200" y="325" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">N</text>
+<text x="200" y="325" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">N</text>
 <g id="sets-2"><rect x="410" y="55" width="340" height="230" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path d="M440 90 L440 205" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="440" cy="125" r="5" fill="#333"/>
 <path d="M460 90 L460 205" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="460" cy="125" r="5" fill="#333"/>
@@ -13,7 +13,7 @@
 <path d="M650 90 L650 185" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="650" cy="125" r="5" fill="#333"/>
 <path d="M670 90 L670 185" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="670" cy="125" r="5" fill="#333"/>
 </g>
-<text x="580" y="325" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">2N</text>
+<text x="580" y="325" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">2N</text>
 <g id="sets-3"><rect x="30" y="360" width="340" height="230" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path d="M60 395 L60 510" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="60" cy="430" r="5" fill="#333"/>
 <path d="M80 395 L80 510" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="80" cy="430" r="5" fill="#333"/>
@@ -25,7 +25,7 @@
 <path d="M290 395 L290 490" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="290" cy="430" r="5" fill="#333"/>
 <path d="M310 395 L310 490" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="310" cy="430" r="5" fill="#333"/>
 </g>
-<text x="200" y="630" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">3N</text>
+<text x="200" y="630" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">3N</text>
 <g id="sets-4"><rect x="410" y="360" width="340" height="230" rx="35" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
 <path d="M440 395 L440 510" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="440" cy="430" r="5" fill="#333"/>
 <path d="M460 395 L460 510" stroke="#C45462" stroke-width="13" stroke-linecap="round"/><circle cx="460" cy="430" r="5" fill="#333"/>
@@ -40,5 +40,5 @@
 <path d="M690 395 L690 490" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="690" cy="430" r="5" fill="#333"/>
 <path d="M710 395 L710 490" stroke="#B68C00" stroke-width="13" stroke-linecap="round"/><circle cx="710" cy="430" r="5" fill="#333"/>
 </g>
-<text x="580" y="630" font-family="Arial" font-size="26" text-anchor="middle" fill="#222">4N</text>
+<text x="580" y="630" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="26" text-anchor="middle" fill="#222">4N</text>
 </svg>

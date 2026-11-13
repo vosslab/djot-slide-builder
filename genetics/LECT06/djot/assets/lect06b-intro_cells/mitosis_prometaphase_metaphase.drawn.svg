@@ -2,10 +2,10 @@
 <title id="figure-title">Prometaphase and Metaphase</title><desc id="figure-desc">Six duplicated chromosomes are exposed as the nuclear envelope fragments. Kinetochore fibers attach to chromosomes; nonkinetochore fibers overlap. Six individual chromosomes align at a single metaphase plate with bipolar attachments. Original unmeasured animal-cell schematics after lecture 06B source figures. Purple denotes chromosomes; yellow denotes microtubules and centrosomes. Counts of chromatin loops and spindle fibers are illustrative.</desc>
 <rect width="1200" height="760" fill="white"/>
 <path d="M560,390 H625 M613,382 L625,390 L613,398" fill="none" stroke="#758994" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-<text x="280" y="53" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
+<text x="280" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
 <tspan x="280" dy="0">Prometaphase</tspan>
 </text>
-<text x="900" y="53" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
+<text x="900" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
 <tspan x="900" dy="0">Metaphase</tspan>
 </text>
 <g id="prometaphase-cell-cutaway" transform="translate(280 390) scale(1 1)">
@@ -400,7 +400,7 @@
 <path d="M-1,-9 V9" fill="none" stroke="#FFF3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 </g>
-<text x="37" y="112" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<text x="37" y="112" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="37" dy="0">Fragments of</tspan>
 <tspan x="37" dy="27.139999999999997">nuclear envelope</tspan>
 </text>
@@ -408,7 +408,7 @@
 <path d="M136,151 L136,223 L180,316" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M115,151 L115,269 L139,381" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M115,151 L115,269 L139,381" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="347" y="112" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<text x="347" y="112" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="347" dy="0">Nonkinetochore</tspan>
 <tspan x="347" dy="27.139999999999997">microtubules</tspan>
 </text>
@@ -416,30 +416,30 @@
 <path d="M452,152 L485,201 L456,381" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,152 L502,214 L467,406" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M472,152 L502,214 L467,406" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1046" y="115" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
+<text x="1046" y="115" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
 <tspan x="1046" dy="0">Metaphase</tspan>
 <tspan x="1046" dy="27.139999999999997">plate</tspan>
 </text>
 <path d="M1096,147 L1140,230 L1099,400" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M1096,147 L1140,230 L1099,400" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="53" y="660" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<text x="53" y="660" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="53" dy="0">Kinetochore</tspan>
 </text>
 <path d="M137,632 L118,548 L171,383" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M137,632 L118,548 L171,383" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="353" y="655" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
+<text x="353" y="655" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
 <tspan x="353" dy="0">Kinetochore</tspan>
 <tspan x="353" dy="27.139999999999997">microtubule</tspan>
 </text>
 <path d="M353,624 L353,551 L327,498" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M353,624 L353,551 L327,498" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M688,234 Q675,234 675,250 V374 Q675,390 664,392 Q675,394 675,410 V535 Q675,551 688,551" fill="none" stroke="#526879" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-<text x="648" y="654" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
+<text x="648" y="654" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="start" font-weight="400">
 <tspan x="648" dy="0">Spindle</tspan>
 </text>
 <path d="M682,628 L650,586 L664,392" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M682,628 L650,586 L664,392" fill="none" stroke="#526879" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1000" y="656" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
+<text x="1000" y="656" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" fill="#213547" text-anchor="middle" font-weight="400">
 <tspan x="1000" dy="0">Centrosome at</tspan>
 <tspan x="1000" dy="27.139999999999997">one spindle pole</tspan>
 </text>

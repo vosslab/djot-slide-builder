@@ -79,7 +79,7 @@
 <use id="clumped-tetramer-6" xlink:href="#hb-tetramer" transform="translate(994 181) rotate(27)"/>
 <use id="clumped-tetramer-7" xlink:href="#hb-tetramer" transform="translate(1027 106) rotate(35)"/>
 </g>
-<g id="hemoglobin-labels" fill="#213547" font-family="Arial, sans-serif" text-anchor="middle">
+<g id="hemoglobin-labels" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" text-anchor="middle">
  <text x="280" y="523" font-size="35">Normal hemoglobin</text>
  <text x="885" y="523" font-size="35">Clumped hemoglobin</text>
  <text x="600" y="566" font-size="24" fill="#526879">Schematic folded subunits and assembly</text>

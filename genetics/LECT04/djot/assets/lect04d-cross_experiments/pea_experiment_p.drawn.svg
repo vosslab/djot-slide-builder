@@ -32,7 +32,7 @@
 			</g>
 		</g>
 	</defs>
-	<g font-family="Liberation Sans, sans-serif">
+	<g font-family="Atkinson Hyperlegible Next, sans-serif">
 		<g id="parental-generation">
 			<text x="225" y="40" font-size="33" fill="#253342" text-anchor="middle" font-style="normal">P: true-breeding parents</text>
 			<use href="#pea_experiment_p-purple" transform="translate(125 125) scale(0.55)" />

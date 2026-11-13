@@ -71,18 +71,18 @@
 <path d="M850 270 H950 l-12 -7 m12 7 l-12 7" stroke="#333" stroke-width="3" fill="none"/>
 <path d="M389 253 H451" stroke="#333" stroke-width="2" stroke-dasharray="4 4"/>
 <path d="M689 253 H751" stroke="#333" stroke-width="2" stroke-dasharray="4 4"/>
-<text x="140" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Ancestral chromosomes</text>
-<text x="420" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Telomere fusion</text>
-<text x="720" y="40" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Centromere inactivation</text>
-<text x="1020" y="40" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Human chromosome 2</text>
-<text x="140" y="510" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Two acrocentrics</text>
-<text x="420" y="510" text-anchor="middle" font-family="Arial" font-size="25" fill="#222">Two centromeres</text>
-<text x="720" y="510" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">One active centromere</text>
-<text x="1020" y="510" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">One active centromere</text>
+<text x="140" y="40" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Ancestral chromosomes</text>
+<text x="420" y="40" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Telomere fusion</text>
+<text x="720" y="40" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Centromere inactivation</text>
+<text x="1020" y="40" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Human chromosome 2</text>
+<text x="140" y="510" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Two acrocentrics</text>
+<text x="420" y="510" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="25" fill="#222">Two centromeres</text>
+<text x="720" y="510" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">One active centromere</text>
+<text x="1020" y="510" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">One active centromere</text>
 <path d="M1056 100 H1070 V205 H1056 M1056 239 H1070 V455 H1056" fill="none" stroke="#333" stroke-width="2"/>
-<text x="1130" y="155" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">Short</text>
-<text x="1130" y="183" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">arm</text>
-<text x="1130" y="335" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">Long</text>
-<text x="1130" y="363" text-anchor="middle" font-family="Arial" font-size="22" fill="#222">arm</text>
-<text x="610" y="555" text-anchor="middle" font-family="Arial" font-size="23" fill="#222">Filled circle: active centromere   *   Open circle: inactive centromere</text>
+<text x="1130" y="155" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="22" fill="#222">Short</text>
+<text x="1130" y="183" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="22" fill="#222">arm</text>
+<text x="1130" y="335" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="22" fill="#222">Long</text>
+<text x="1130" y="363" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="22" fill="#222">arm</text>
+<text x="610" y="555" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="23" fill="#222">Filled circle: active centromere   *   Open circle: inactive centromere</text>
 </svg>
