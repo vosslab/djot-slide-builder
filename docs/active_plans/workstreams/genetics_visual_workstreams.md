@@ -1,5 +1,7 @@
 # Genetics visual workstreams
 
+2026-11-13: Temporary evidence was removed; the [durable renewal report](../../ILLUSTRATION_RENEWAL_REPORT.md) preserves the summary.
+
 The authoritative master scope is
 [genetics_visual_renewal_plan.md](../active/genetics_visual_renewal_plan.md). It governs older
 instructions in this index and linked briefs. Existing implementation approval continues;
@@ -81,7 +83,10 @@ Complete ordinary art milestones autonomously; external feedback can inform late
 Retain/defer an unresolved target with a reason and continue other art. Use configured Python 3.12
 directly and Git-free filesystem checks; preserve historical test and export receipts.
 
-## Next tasks
+## Historical milestone tasks (superseded by completion)
+
+The current goal is COMPLETE; this dated table records earlier dispatch planning and does not authorize new work. See the [final review](../../ILLUSTRATION_RENEWAL_REPORT.md) and [closeout](../../ILLUSTRATION_RENEWAL_REPORT.md). Four-stage meiosis is now a complex-family HOLD; the Morgan work has subsequent delivery evidence. Revisit only a concrete source or compatibility concern.
+
 
 These are the dispatchable tasks for the revised milestones. Role ownership below becomes an
 exact file assignment before execution. Research, trial artwork, seven-page prototype review,
@@ -108,7 +113,7 @@ mechanism, useful hierarchy and legibility at the intended size, with scientific
 A source-preservation check cannot establish these qualities. Conversely, artistic originality
 does not require changing a chemical topology or a composition that already teaches well.
 
-## Surveyed family priorities
+## Historical surveyed family priorities
 
 The 2026-11-09 surveys nominate the following order within each surveyed group pair. They do
 not nominate three tasks for every individual workstream. Original inventory/classification

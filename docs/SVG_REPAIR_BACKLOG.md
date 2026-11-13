@@ -1,5 +1,7 @@
 # SVG repair backlog
 
+2026-11-13: Temporary evidence was removed; the [durable renewal report](ILLUSTRATION_RENEWAL_REPORT.md) preserves the summary.
+
 This is the canonical report of new SVG content deemed unusable and removed from teaching
 decks. The eleven rejected drawings remain at their existing paths as review evidence;
 their presence does not mean they are approved for teaching or publication.
@@ -176,7 +178,7 @@ source-backed named chr7 bands. Corrected specification, independent quality and
 reviews PASS; root viewed all five final proofs. This closes the standalone tool repair only.
 The original v1 rejection above remains; the user has not personally approved the final v2
 shape. No withdrawn LECT10 course art is restored. See
-[closure.md](../_temp/chromosome_svg_tool_v2/closure.md).
+closure.md (`_temp/chromosome_svg_tool_v2/closure.md`; scratch evidence removed 2026-11-13).
 
 ### Subsequent v2 rejection: shared visual theme, November 12, 2026
 
@@ -187,7 +189,7 @@ share a common theme anymore". The preceding standalone closure and review passe
 establish acceptance of this v2 artwork. Keep the public specimen as the current repair
 baseline; no course fallback or course-art substitution changes here.
 
-A bounded [theme-revision concept](../_temp/chromosome_theme_revision/PLAN.md) uses the same
+A bounded theme-revision concept (`_temp/chromosome_theme_revision/PLAN.md`; scratch evidence removed 2026-11-13) uses the same
 source-backed chromosome in single/sister views, common per-chromatid proportions and hollow
 centromere collars, and a linked flat-ended internal crop. Root personally viewed and approved
 that concept direction; production implementation and fresh review remain pending. This is not
@@ -197,12 +199,12 @@ Revision receipt, November 12, 2026: the current public specimen now implements 
 root-approved shared-theme concept. Single and rounded-X forms use the same 44-band chr7
 model, longitudinal/per-rod proportions, source boundaries, rounded ends, restrained outline
 and hollow centromere markers; linked q31 is a true fivefold crop with flat cut ends. Fresh
-[specification](../_temp/chromosome_theme_revision/spec_review.md),
-[quality](../_temp/chromosome_theme_revision/quality_review.md) and
-[integration](../_temp/chromosome_theme_revision/integration_review.md) reviews PASS; root
-viewed all five final production proofs. [Closure](../_temp/chromosome_theme_revision/closure.md)
+specification (`_temp/chromosome_theme_revision/spec_review.md`; scratch evidence removed 2026-11-13),
+quality (`_temp/chromosome_theme_revision/quality_review.md`; scratch evidence removed 2026-11-13) and
+integration (`_temp/chromosome_theme_revision/integration_review.md`; scratch evidence removed 2026-11-13) reviews PASS; root
+viewed all five final production proofs. Closure (`_temp/chromosome_theme_revision/closure.md`; scratch evidence removed 2026-11-13)
 records frozen hashes. The earlier rejected v2 visual remains in the saved
-[preimage](../_temp/chromosome_theme_revision/production/gallery.preimage.svg); its rejection
+preimage (`_temp/chromosome_theme_revision/production/gallery.preimage.svg`; scratch evidence removed 2026-11-13); its rejection
 above remains valid for that version. This completes the standalone revision only. No
 instructor, classroom, print, native-course or course-theme migration acceptance is claimed.
 
@@ -216,12 +218,12 @@ proofs and fresh specification and quality reviews passed. The original `image_0
 the rejected `cftr_address.drawn.svg` remain preserved, as does the rejection above. The
 artwork's source-based banding and end caps are approximate schematics. Integration review
 and closure remain pending; no instructor or classroom acceptance is implied. Evidence:
-[REPORT.md](../_temp/cftr_band_location_v2/integration/REPORT.md).
+REPORT.md (`_temp/cftr_band_location_v2/integration/REPORT.md`; scratch evidence removed 2026-11-13).
 
 ## CFTR delivery closure - November 12, 2026
 
-Fresh [integration review](../_temp/cftr_band_location_v2/integration_review.md) PASS and
-[closure](../_temp/cftr_band_location_v2/closure.md) COMPLETE for the corrected figure at
+Fresh integration review (`_temp/cftr_band_location_v2/integration_review.md`; scratch evidence removed 2026-11-13) PASS and
+closure (`_temp/cftr_band_location_v2/closure.md`; scratch evidence removed 2026-11-13) COMPLETE for the corrected figure at
 the two existing authored 10C image URLs. The explicit clip corrected demonstrated native
 overflow; the earlier failed proof and rejected figure remain historical evidence. Root
 viewed both corrected native proofs; full and focused native output and all 23 ordered ODP
@@ -234,10 +236,23 @@ acceptance is claimed.
 
 The left figure on current authored 10C slide 6 (historical C5) is delivered with
 [banded_chromosomes_1_3.drawn.svg](../genetics/LECT10/djot/assets/lect10c-chromo_nomenclature/banded_chromosomes_1_3.drawn.svg).
-Fresh [integration review](../_temp/chromosome_1_3_integration/integration_review.md) PASS
-and [closure](../_temp/chromosome_1_3_integration/closure.md) COMPLETE. Root viewed the
+Fresh integration review (`_temp/chromosome_1_3_integration/integration_review.md`; scratch evidence removed 2026-11-13) PASS
+and closure (`_temp/chromosome_1_3_integration/closure.md`; scratch evidence removed 2026-11-13) COMPLETE. Root viewed the
 production and native proofs and verified all 24 ordered ODP members against the accepted
 candidate. This closes the left 1-3 figure only. The rejected landmarks drawing and its
 historical rejection above remain valid; right 21-22 and 11-14 originals remain. Broader
 visual renewal remains ACTIVE. No instructor, classroom, print, whole-deck PDF or full-suite
 acceptance is claimed.
+
+## Nondisjunction family repair - November 12, 2026
+
+Three new original drawings, `nondisjunction_meiosis_i.drawn.svg`,
+`nondisjunction_meiosis_ii.drawn.svg` and `nondisjunction_gametes.drawn.svg`, are
+integrated under `assets/lect10_repaired_figures/`. Focused native rendering,
+root visual review, specification, quality and integration reviews passed; see
+closure (`_temp/nondisjunction_original/closure.md`; scratch evidence removed 2026-11-13). The earlier
+instructor-rejected `visual_renewal` drawings remain rejection evidence and were
+not revived. The fallback description above records the historical state as of its
+date; the three fallback files remain intact. No instructor approval of the new
+family is claimed. The earlier input hash receipt containing this backlog is
+historical and was not resealed after this metadata update.

@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="792" height="384" viewBox="0 0 792 384">
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="384" viewBox="0 0 792 384" role="img" aria-labelledby="normal-title normal-desc">
+  <title id="normal-title">Normal pedigree symbols</title>
+  <desc id="normal-desc">From top to bottom: normal female, normal male, and normal, gender unspecified.</desc>
   <rect id="normal-background" width="792" height="384" fill="#F1F6FB"/>
   <g id="normal-row-1">
     <circle cx="54" cy="64" r="32" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>

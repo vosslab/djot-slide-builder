@@ -76,7 +76,7 @@ source's half-open interval convention. CFTR maps to 7q31.2; band numbers increa
 from the centromere. Do not infer a gene's precise base-pair position from its band address.
 
 Source evidence is now retained in `_temp/chromosome_svg_tool_v2/band_source/REPORT.md`
-and `provenance.json`: 44 chr7 rows cover [0, 159345973); q31.2 is
+and `provenance.json`: 44 chr7 rows cover 0, 159345973); q31.2 is
 [115000000, 117700000), gneg. The centromeric p11.1/q11.1 boundary is 60100000.
 The q3 union spans [107800000, 159345973), and q31 spans [107800000, 127500000).
 The exact subset SHA-256 is
@@ -113,7 +113,7 @@ Record each result and proof hash in the task ledger before promoting its change
 | E2 | Collar lacks label area | Broad generic labelable oval; explicit marker bounds | Live cen text and external attachment fit complete envelope | DONE; generic label retained; real-map marker confined to collar after P2 correction | Keep |
 | E3 | Decorative stripes discard addresses | Exact 44-row chr7 hg38 adapter and identity-linked anchors | Actual stains, original intervals and shared q/q3/q31/q31.2/CFTR zoom | DONE; all 44 paint spans visible, including both acen intervals | Keep |
 
-The [architecture_review.md](../../../_temp/chromosome_svg_tool_v2/architecture_review.md)
+The architecture_review.md (`_temp/chromosome_svg_tool_v2/architecture_review.md`; scratch evidence removed 2026-11-13)
 approved the explicit construction and satisfied the separate algorithm-proposal gate.
 The first quality review found P2 map-marker occlusion. The bounded recipe correction uses
 `marker_size=(24, 112)` without internal text and an exterior Centromere callout. It leaves
@@ -126,9 +126,9 @@ Architecture approval, E1/E2/E3 implementation, final production proofs, correct
 specification review, different quality review, and integration review are complete. Root
 personally viewed all five final frozen proofs. Current authority:
 
-- [spec_review_v2.md](../../../_temp/chromosome_svg_tool_v2/spec_review_v2.md): PASS.
-- [quality_review_v2.md](../../../_temp/chromosome_svg_tool_v2/quality_review_v2.md): PASS.
-- [integration_review.md](../../../_temp/chromosome_svg_tool_v2/integration_review.md): PASS.
+- spec_review_v2.md (`_temp/chromosome_svg_tool_v2/spec_review_v2.md`; scratch evidence removed 2026-11-13): PASS.
+- quality_review_v2.md (`_temp/chromosome_svg_tool_v2/quality_review_v2.md`; scratch evidence removed 2026-11-13): PASS.
+- integration_review.md (`_temp/chromosome_svg_tool_v2/integration_review.md`; scratch evidence removed 2026-11-13): PASS.
 
 Earlier reviews remain historical evidence; their pending follow-on language does not override
 these completed gates. The user has not personally approved the final v2 shape.
@@ -136,7 +136,7 @@ these completed gates. The user has not personally approved the final v2 shape.
 ## Compatibility contract
 
 The implemented contract follows
-[architecture_review.md](../../../_temp/chromosome_svg_tool_v2/architecture_review.md).
+architecture_review.md (`_temp/chromosome_svg_tool_v2/architecture_review.md`; scratch evidence removed 2026-11-13).
 One immutable `Segment` represents each source row; `Segment` and `Chromosome` stay unchanged.
 No nested `Band` model was implemented. Frozen `Cytoband(chromosome, start, end, stain, segment)`
 retains source coordinates and the original Segment reference; its address is `segment.label`.
@@ -191,7 +191,7 @@ course assets are read-only compatibility references. Review callers with target
 before editing the shared renderer. Python follows repository tabs, annotations and absolute
 module imports. The original planning assignment wrote only the new plan, ledger, and backlog entry.
 Metadata closure owns exactly seven existing files, with one preimage each; see
-[closure.md](../../../_temp/chromosome_svg_tool_v2/closure.md).
+closure.md (`_temp/chromosome_svg_tool_v2/closure.md`; scratch evidence removed 2026-11-13).
 
 ## Verification
 

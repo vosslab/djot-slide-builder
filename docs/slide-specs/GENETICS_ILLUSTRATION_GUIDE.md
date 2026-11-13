@@ -235,7 +235,7 @@ caps and centromeres are schematic, and physical arm ratios are not exact. The d
 command regenerates the figure to a scratch path.
 
 The saved [chromosome_tool.drawn.svg](illustration_examples/chromosome_tool.drawn.svg) and
-its [closure.md](../../_temp/chromosome_svg_tool/closure.md) record historical v1 review.
+its closure.md (`_temp/chromosome_svg_tool/closure.md`; scratch evidence removed 2026-11-13) record historical v1 review.
 The user rejected that sister shape; the rounded-X renderer supersedes that acceptance.
 The rejection remains in [SVG_REPAIR_BACKLOG.md](../SVG_REPAIR_BACKLOG.md). Historical
 1150-pixel sister and 480-pixel overview proofs establish no v2 minimum placement size. Historical
@@ -356,11 +356,12 @@ fit; they do not establish final lecture placement, attended playback or learner
 Current task status belongs to
 [genetics_visual_renewal_progress.md](../active_plans/reports/genetics_visual_renewal_progress.md).
 
-Local historical evidence is retained under `_temp/` and is not distributed with this guide:
+Historical scratch evidence removed 2026-11-13 was recorded under:
 `_temp/svg_construction_primitives/findings.md`,
 `_temp/svg_visual_language/organism/REVIEW.md`,
 `_temp/svg_visual_language/diagram/NOTES.md`,
 `_temp/svg_visual_language/VISUAL_REVIEW.md`, and
 `_temp/svg_visual_language/export/evidence.json` with `visual_language_proof.pdf`.
-Those records contain construction passages, source checks and the seven-page export receipt.
+Those records contained construction passages, source checks and the seven-page export receipt.
+The [durable renewal report](../ILLUSTRATION_RENEWAL_REPORT.md) supersedes their summary.
 The durable examples and guidance above remain usable without those local files.

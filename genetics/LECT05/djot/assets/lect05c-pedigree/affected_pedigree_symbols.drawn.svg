@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="816" height="384" viewBox="0 0 816 384">
+<svg xmlns="http://www.w3.org/2000/svg" width="816" height="384" viewBox="0 0 816 384" role="img" aria-labelledby="affected-title affected-desc">
+  <title id="affected-title">Affected pedigree symbols</title>
+  <desc id="affected-desc">From top to bottom: affected female, affected male, and affected, gender unspecified.</desc>
   <rect id="affected-background" width="816" height="384" fill="#F1F6FB"/>
   <g id="affected-row-1">
     <circle cx="54" cy="64" r="32" fill="#DF2444" stroke="#243645" stroke-width="4"/>

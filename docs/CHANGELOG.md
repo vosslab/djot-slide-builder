@@ -1,70 +1,81 @@
+## 2026-11-13
+
+### Documentation and Cleanup
+
+- Preserve the visual-renewal closeout in [ILLUSTRATION_RENEWAL_REPORT.md](ILLUSTRATION_RENEWAL_REPORT.md) and remove 811 old temporary entries, retaining the two excluded Biotechnology trees.
+
 ## 2026-11-12
 
 ### Fixes and Improvements
 
-- Integrate the original editable Down syndrome illustration through one LECT10D image URL. Reviews PASS and root accepted the proofs. Evidence and limits: [closure.md](../_temp/down_syndrome_original/closure.md). Broader visual renewal remains ACTIVE.
+- Close the approved local Genetics, Biostatistics and started Biotechnology visual-renewal goal after final review and documented retain/defer decisions. [Closeout](ILLUSTRATION_RENEWAL_REPORT.md) records scope and limits.
+- Correct the shared Office Hours SVG font family and add accessible names to three pedigree SVGs; inverse and visible-tree checks preserve the original artwork. Final specification, quality and integration reviews PASS.
 
-- Integrate the original editable centromere SVG through one LECT09H image URL. Reviews PASS and root accepted the proofs. Evidence and limits: [closure.md](../_temp/centromere_original/closure.md). Broader visual renewal remains ACTIVE.
+- Integrate three original editable nondisjunction SVGs through the three LECT10D image URLs. Reviews PASS, including a focused native export and root visual acceptance. Evidence and limits: closure.md (`_temp/nondisjunction_original/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Integrate the original independent-assortment Punnett SVG through one image URL; reviews PASS and root accepted the proofs. Evidence and limits: [closure.md](../_temp/independent_punnett_original/closure.md). Broader visual renewal remains ACTIVE.
+- Integrate the original editable Down syndrome illustration through one LECT10D image URL. Reviews PASS and root accepted the proofs. Evidence and limits: closure.md (`_temp/down_syndrome_original/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Integrate the original editable human genome composition chart; reviews PASS and root accepted the proofs. Evidence and limits: [closure.md](../_temp/genome_composition_original/closure.md). Broader visual renewal remains ACTIVE.
+- Integrate the original editable centromere SVG through one LECT09H image URL. Reviews PASS and root accepted the proofs. Evidence and limits: closure.md (`_temp/centromere_original/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Complete six LECT09 tetrad font repairs; reviews PASS and root accepted the paired proofs. Evidence and limits: [closure.md](../_temp/tetrad_font_followthrough/closure.md). Broader visual renewal remains ACTIVE.
+- Integrate the original independent-assortment Punnett SVG through one image URL; reviews PASS and root accepted the proofs. Evidence and limits: closure.md (`_temp/independent_punnett_original/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Correct font families in eighteen Genetics SVGs; reviews PASS and root accepted the proofs. The bounded 463-vector declaration screen is complete; broader visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch13/closure.md).
+- Integrate the original editable human genome composition chart; reviews PASS and root accepted the proofs. Evidence and limits: closure.md (`_temp/genome_composition_original/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Repair three overlapping worm dosage labels; reviews PASS and root accepted both final proof sizes. Evidence: [closure.md](../_temp/worm_dosage_annotation/closure.md). Broader visual renewal remains ACTIVE.
+- Complete six LECT09 tetrad font repairs; reviews PASS and root accepted the paired proofs. Evidence and limits: closure.md (`_temp/tetrad_font_followthrough/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. A separate worm-label repair is pending; broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch12/closure.md).
+- Correct font families in eighteen Genetics SVGs; reviews PASS and root accepted the proofs. The bounded 463-vector declaration screen is complete; broader visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch13/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch11/closure.md).
+- Repair three overlapping worm dosage labels; reviews PASS and root accepted both final proof sizes. Evidence: closure.md (`_temp/worm_dosage_annotation/closure.md`; scratch evidence removed 2026-11-13). Broader visual renewal remains ACTIVE.
 
-- Correct font families in twenty-one Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch10/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. A separate worm-label repair is pending; broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch12/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty-five Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch9/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch11/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch8/closure.md).
+- Correct font families in twenty-one Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch10/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch7/closure.md).
+- Correct font families in twenty-five Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch9/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch6/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch8/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Batch 4 preview provenance limits are documented; broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch5/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch7/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in sixteen Genetics SVGs and repair two ribose 1-prime annotation positions; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch4/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch6/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in eighteen Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch3/closure.md).
+- Correct font families in twenty Genetics SVGs; reviews PASS and root accepted the paired proofs. Batch 4 preview provenance limits are documented; broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch5/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in twelve Genetics SVGs; reviews PASS and root accepted the final proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch2/closure.md).
+- Correct font families in sixteen Genetics SVGs and repair two ribose 1-prime annotation positions; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch4/closure.md`; scratch evidence removed 2026-11-13).
 
-- Correct font families in five Genetics SVGs; reviews PASS and root accepted the final proofs. Broader font and visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/atkinson_batch1/closure.md).
+- Correct font families in eighteen Genetics SVGs; reviews PASS and root accepted the paired proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch3/closure.md`; scratch evidence removed 2026-11-13).
+
+- Correct font families in twelve Genetics SVGs; reviews PASS and root accepted the final proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch2/closure.md`; scratch evidence removed 2026-11-13).
+
+- Correct font families in five Genetics SVGs; reviews PASS and root accepted the final proofs. Broader font and visual renewal remains ACTIVE. Evidence: closure.md (`_temp/atkinson_batch1/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate the original four-cell ABO carbohydrate comparison at the LECT05F slide 17
   image URL. Reviews PASS and root accepted the proofs. Broader visual renewal remains
-  ACTIVE. Evidence: [closure.md](../_temp/abo_carbohydrates_194/closure.md).
+  ACTIVE. Evidence: closure.md (`_temp/abo_carbohydrates_194/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate the original staining comparison SVG at the single LECT10B slide 14 image
   URL. Reviews PASS; root accepted a modest clarity gain. Broader visual renewal remains
-  ACTIVE. Evidence: [closure.md](../_temp/staining_comparison_193/closure.md).
+  ACTIVE. Evidence: closure.md (`_temp/staining_comparison_193/closure.md`; scratch evidence removed 2026-11-13).
 
 - Reuse the existing LECT09B chromatin schematic in LECT10B, replacing its cropped
   raster and correcting four shared SVG font declarations. Reviews PASS; focused
-  compilation and root visual review passed. Evidence: [closure.md](../_temp/chromatin_reuse/closure.md).
+  compilation and root visual review passed. Evidence: closure.md (`_temp/chromatin_reuse/closure.md`; scratch evidence removed 2026-11-13).
 
 - Correct twelve font declarations in the integrated LECT08B cis/trans isomer SVGs to
   Atkinson Hyperlegible Next, preserving geometry and labels. Reviews PASS and root accepted
   the four raster proofs; native LibreOffice rendering was not checked. Evidence:
-  [closure.md](../_temp/isomer_font_fix/closure.md).
+  closure.md (`_temp/isomer_font_fix/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate the banded chromosome 1-3 artwork at the single 10C slide 6 image URL.
   Native single-slide proof and actual fonts passed; fresh integration review PASS and
-  metadata-only closure COMPLETE. Root verified all 24 ordered ODP members byte-for-byte. Broader visual renewal remains ACTIVE. Evidence: [REPORT.md](../_temp/chromosome_1_3_integration/REPORT.md).
+  metadata-only closure COMPLETE. Root verified all 24 ordered ODP members byte-for-byte. Broader visual renewal remains ACTIVE. Evidence: REPORT.md (`_temp/chromosome_1_3_integration/REPORT.md`; scratch evidence removed 2026-11-13).
 
 - Integrate the corrected banded CFTR artwork at the two existing 10C image URLs. Fresh
   full30/focused2 models, plans, diagnostics and all 23 ODP members/order match the
   root-accepted native candidate. Fresh integration review PASS and metadata-only closure COMPLETE; broader
-  visual renewal remains ACTIVE. Evidence: [closure.md](../_temp/cftr_band_location_v2/closure.md).
+  visual renewal remains ACTIVE. Evidence: closure.md (`_temp/cftr_band_location_v2/closure.md`; scratch evidence removed 2026-11-13).
 
 - Complete the chromosome shared-theme revision in the standalone library/gallery: one chr7
   band model and matched rod geometry join single and rounded-X forms; hollow centromere
@@ -72,35 +83,35 @@
   specification, quality and integration reviews PASS; root viewed all five final proofs.
   Actual-font diagnostic matched 44 glyphs; 11 focused tests passed. Broader Genetics art
   remains ACTIVE; no instructor or course acceptance.
-  Evidence: [closure.md](../_temp/chromosome_theme_revision/closure.md).
+  Evidence: closure.md (`_temp/chromosome_theme_revision/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate Answer184 through the single local49 image URL; preserve the masked local50.
   Fresh full62/focused3 models/plans/diagnostics and all27 raw ODP members/order equal the
   root-accepted native candidate, including its measured one-pixel edge-fringe exception.
   Fresh independent integration review PASS; metadata-only closure COMPLETE. Broader goal ACTIVE.
   No export replay or full suite. Evidence:
-  [REPORT.md](../_temp/hemophilia_response_184/integration/REPORT.md) and
-  [closure.md](../_temp/hemophilia_response_184/closure.md).
+  REPORT.md (`_temp/hemophilia_response_184/integration/REPORT.md`; scratch evidence removed 2026-11-13) and
+  closure.md (`_temp/hemophilia_response_184/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate question183 through exactly two image URLs at local48/49; retain the original
   masked local50 image. Fresh full62/focused3 models/plans/diagnostics and all raw ODP members
   and order equal the root-accepted candidate. Independent integration review and metadata
   closure COMPLETE after fresh independent integration review PASS; broader art goal ACTIVE.
   Selection184 isolated native proof PASS, production integration pending;185 masked HOLD.
-  No export replay or full suite. Evidence: [closure.md](../_temp/hemophilia_problem_183/closure.md).
+  No export replay or full suite. Evidence: closure.md (`_temp/hemophilia_problem_183/closure.md`; scratch evidence removed 2026-11-13).
 
 - Complete chromosome tool v2: source-backed named hg38 chr7 cytobands, a larger labelable
   centromere target, and rounded continuous open-X sisters replace the rejected wedge shape.
   Correct map-marker occlusion while exposing all 44 source stains. Fresh corrected specification,
   independent quality and integration reviews PASS; 11 focused tests and actual-font proofs.
   Library/standalone artifact DONE; v1 rejection preserved and broader lecture art ACTIVE.
-  Evidence: [closure.md](../_temp/chromosome_svg_tool_v2/closure.md).
+  Evidence: closure.md (`_temp/chromosome_svg_tool_v2/closure.md`; scratch evidence removed 2026-11-13).
 
 - Complete the reusable Python chromosome SVG tool: requested sizes/colors, plain/banded rods,
   joined sisters, bounded deletion/tail exchange and distinct exon/intron tracks. Preserve legacy
   callers; fresh specification, quality and integration reviews PASS with 10 focused tests and
   actual-font proofs. Standalone SVG acceptance only; broader artwork remains ACTIVE.
-  Evidence: [closure.md](../_temp/chromosome_svg_tool/closure.md).
+  Evidence: closure.md (`_temp/chromosome_svg_tool/closure.md`; scratch evidence removed 2026-11-13).
 
 - Integrate selection182 original Punnett carrier-phenotype SVG through one local41 image URL;
   all other Djot bytes and fallback retained. Actual full62/focused41 models/plans/diagnostics

@@ -5,7 +5,7 @@
     <path id="note-shadow" d="M53 67 H357 V328 L321 365 H53 Z" fill="#D9D5B6"/>
     <path id="yellow-paper" d="M43 57 H347 V318 L311 355 H43 Z" fill="#FFF49A"/>
     <path id="turned-corner" d="M311 355 V318 H347 Z" fill="#E4CF57"/>
-    <g id="note-label" fill="#183575" font-family="Arial, sans-serif" font-size="66" font-weight="700" text-anchor="middle">
+    <g id="note-label" fill="#183575" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="66" font-weight="700" text-anchor="middle">
       <text x="195" y="179">Office</text>
       <text x="195" y="260">Hours</text>
     </g>

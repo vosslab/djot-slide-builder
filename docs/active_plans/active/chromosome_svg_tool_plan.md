@@ -24,7 +24,7 @@ including sisters at 1150 pixels wide with approximately 19-pixel smallest C lab
 is approximate; other placements require inspection. No full-suite, native slide/export,
 classroom/Zoom or print acceptance is claimed. No course migration is part of this delivery.
 See [README.md](../../../svg_tools/README.md#chromosome-drawing-tool) for usage and
-[closure.md](../../../_temp/chromosome_svg_tool/closure.md) for the bounded evidence receipt.
+closure.md (`_temp/chromosome_svg_tool/closure.md`; scratch evidence removed 2026-11-13) for the bounded evidence receipt.
 The remaining sections preserve the approved design and milestone criteria as historical scope.
 
 The existing [chromosomes.py](../../../svg_tools/chromosomes.py) is the starting point. The named

@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="528" viewBox="0 0 1104 528">
+<svg xmlns="http://www.w3.org/2000/svg" width="1104" height="528" viewBox="0 0 1104 528" role="img" aria-labelledby="additional-title additional-desc">
+  <title id="additional-title">Additional pedigree symbols</title>
+  <desc id="additional-desc">From top to bottom: female heterozygous for recessive allele, male heterozygous for recessive allele, spontaneous abortion, and deceased.</desc>
   <rect id="additional-background" width="1104" height="528" fill="#F1F6FB"/>
   <g id="additional-row-1">
     <circle cx="54" cy="66" r="32" fill="#FFF8E7" stroke="#243645" stroke-width="4"/>
