@@ -1,5 +1,8 @@
 # SVG drawing helpers
 
+See [SVG_TOOL_ROADMAP.md](../docs/SVG_TOOL_ROADMAP.md) for priorities on cells, flowchart parts, and extensions to gene tracks,
+with existing work to reuse.
+
 `drawing.py` supports small local drawing recipes with editable SVG fragments:
 
 - `text(x, y, value, *, size, color, anchor="middle", font="Arial, sans-serif")`

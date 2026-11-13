@@ -2,6 +2,8 @@
 
 ### Documentation and Cleanup
 
+- Add [SVG_TOOL_ROADMAP.md](SVG_TOOL_ROADMAP.md), prioritizing cell structures, flowchart parts, and gene-track extensions while identifying existing work to reuse.
+
 - Preserve the visual-renewal closeout in [ILLUSTRATION_RENEWAL_REPORT.md](ILLUSTRATION_RENEWAL_REPORT.md) and remove 811 old temporary entries, retaining the two excluded Biotechnology trees.
 
 ## 2026-11-12
