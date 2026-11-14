@@ -1,5 +1,10 @@
 # SVG toolkit implementation report
 
+This report records the initial toolkit delivery and its historical verification. For the
+current visual direction, see the [visual style guide](SVG_VISUAL_STYLE.md); the aesthetic
+upgrade has separate verification in [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md)
+and does not inherit acceptance from this report.
+
 The SVG toolkit provides reusable Python drawing parts for editable slide illustrations. All 27 planned milestones are complete and accepted in the [final quality and integration review](active_plans/reports/svg_toolkit_final_integration.md). Start with the [capability catalogue](SVG_TOOLKIT.md), [cookbook](SVG_TOOLKIT_COOKBOOK.md), [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp), and [native showcase](../exemplars/svg_toolkit.djot). The [plan and progress ledger](active_plans/active/svg_toolkit_progress.md) record milestone decisions and reviews.
 
 The toolkit uses ordinary functions and `SvgPart` fragments with painted bounds and named anchors. Authors supply coordinates, labels, data, and biological relationships. It covers composition, curved paths, measured and styled text, imported SVG, Lucide icons, annotations, membranes and signaling, cells and organelles, chromosome and gene tracks, binding and detection, phenotypes, and Matplotlib plots. Atkinson Hyperlegible Next is used for normal labels and Mono for aligned sequences; both fonts must be installed. From the repository root, run an example directly:

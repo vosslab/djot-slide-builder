@@ -472,7 +472,7 @@ def _render(name: str, chromosome: Chromosome, *, width: float | None = None,
 			xml.etree.ElementTree.SubElement(group, 'ellipse', {
 				'id': f'{name}-centromere', 'cx': str(cx), 'cy': str(height/2),
 				'rx': str(along/2), 'ry': str(across/2), 'fill': 'none',
-				'stroke': '#72508C', 'stroke-width': str(body_height*.035),
+				'stroke': '#72508C', 'stroke-width': str(body_height*.045),
 			})
 			if marker_label is not None:
 				text_width, text_height = (across, along) if orientation == 'vertical' else (along, across)

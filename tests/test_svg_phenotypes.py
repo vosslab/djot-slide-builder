@@ -26,7 +26,7 @@ def test_seed_shapes_are_deterministic_and_color_independent():
 
 def test_flower_count_and_population_positions():
 	flower = phenotypes.flower(size=100, color='pink', petals=7)
-	assert len(ET.fromstring(flower.fragment).findall('ellipse')) == 7
+	assert len(ET.fromstring(flower.fragment).findall('.//ellipse')) == 7
 	assert flower.bounds[0] < 0 < flower.bounds[2]
 	assert flower.bounds[1] < 0 < flower.bounds[3]
 	assert flower.anchors['top'] == (0, -50)

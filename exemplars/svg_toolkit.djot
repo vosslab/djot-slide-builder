@@ -203,3 +203,15 @@ Seed and flower tokens show phenotype variation.
 *Allele Frequencies*
 
 Illustrative supplied allele frequencies across six generations.
+
+=== layout: big-image
+
+@image
+
+![Chromosome 7 comparison of one chromatid, sister chromatids, and a q31 detail.](repo:docs/slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg)
+
+@caption
+
+*Chromosome Comparison*
+
+Chromosome 7: one chromatid, sister chromatids, and a q31 detail.

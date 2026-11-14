@@ -1,3 +1,11 @@
+## 2026-11-14
+
+### Documentation
+
+- Complete the SVG toolkit aesthetic upgrade and document its visual direction and anchor-based
+  composition. Code, standalone art, 32 native proof pages and integration passed review; scoped
+  cleanup is complete. See [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md).
+
 ## 2026-11-13
 
 ### Additions and New Features

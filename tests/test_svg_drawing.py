@@ -42,6 +42,27 @@ def test_namespaced_import_serializes_for_libreoffice(tmp_path: pathlib.Path) ->
 
 
 #============================================
+def test_foreign_namespace_does_not_collide_with_xlink(tmp_path, monkeypatch):
+	et = xml.etree.ElementTree
+	dc = 'http://purl.org/dc/elements/1.1/'
+	xlink = 'http://www.w3.org/1999/xlink'
+	monkeypatch.setattr(et, '_namespace_map', et._namespace_map.copy())
+	et.register_namespace('xlink', dc)
+	before = et._namespace_map.copy()
+	body = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="{dc}" xmlns:xlink="{xlink}">'
+		'<metadata><!-- license --><dc:title dc:lang="en">Plot</dc:title></metadata>'
+		'<path id="mark"/><use xlink:href="#mark"/></svg>')
+	output = tmp_path / 'metadata.svg'
+	svg_tools.drawing.write_svg(output, 20, 20, 'Title', 'Description', body)
+	assert et._namespace_map == before
+	root = et.parse(output).getroot()
+	title = root.find(f'.//{{{dc}}}title')
+	assert title.text == 'Plot' and title.get(f'{{{dc}}}lang') == 'en'
+	assert root.find('.//{http://www.w3.org/2000/svg}use').get(f'{{{xlink}}}href') == '#mark'
+	assert '<!-- license -->' in output.read_text()
+
+
+#============================================
 def test_scientific_labels_survive_and_invalid_xml_preserves_file(tmp_path: pathlib.Path) -> None:
 	"""Fix serialization if labels change or malformed XML overwrites a usable drawing."""
 	output = tmp_path / "labels.drawn.svg"

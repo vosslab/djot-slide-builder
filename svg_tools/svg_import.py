@@ -10,7 +10,6 @@ import defusedxml.common
 import svg_tools.parts
 
 SVG = 'http://www.w3.org/2000/svg'
-XLINK = 'http://www.w3.org/1999/xlink'
 _ELEMENTS = frozenset('svg g defs path rect circle ellipse line polyline polygon text tspan use '
 	'clipPath mask pattern linearGradient radialGradient stop title desc metadata'.split())
 _METADATA = frozenset(('http://www.w3.org/1999/02/22-rdf-syntax-ns#',
@@ -120,6 +119,5 @@ def import_svg(markup: str | bytes, *, name: str, size: float | None = None) -> 
 	root.set('height', str(height))
 	# Inline style wins over any original overflow attribute or stylesheet.
 	root.set('style', root.attrib.get('style', '') + ';overflow:hidden')
-	ET.register_namespace('xlink', XLINK)
 	fragment = svg_tools.parts.namespace_ids(ET.tostring(root, encoding='unicode'), name)
 	return svg_tools.parts.SvgPart(fragment, (0, 0, width, height), {})

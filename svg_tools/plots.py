@@ -19,8 +19,18 @@ import svg_tools.svg_import
 def plot_style(course: str = 'genetics') -> collections.abc.Iterator[None]:
 	"""Apply course colors and editable labels while constructing a plot."""
 	color = '#' + slide_lib.presentation_theme.course_color_theme(course).accent_color
-	with matplotlib.rc_context({'svg.fonttype': 'none',
-		'font.family': 'Atkinson Hyperlegible Next', 'axes.prop_cycle': matplotlib.cycler(color=[color])}):
+	with matplotlib.rc_context({
+		'svg.fonttype': 'none', 'font.family': 'Atkinson Hyperlegible Next',
+		'font.size': 11, 'text.color': '#233b4b', 'axes.labelcolor': '#233b4b',
+		'axes.titlesize': 13, 'axes.titleweight': 'bold', 'axes.titlepad': 10,
+		'axes.labelsize': 11, 'axes.labelpad': 6, 'axes.edgecolor': '#a5b4bc',
+		'axes.spines.top': False, 'axes.spines.right': False,
+		'axes.grid': True, 'axes.axisbelow': True, 'grid.color': '#dce4e8',
+		'grid.linewidth': .7, 'xtick.color': '#526773', 'ytick.color': '#526773',
+		'xtick.major.size': 0, 'ytick.major.size': 0,
+		'lines.linewidth': 2.5, 'lines.markersize': 7,
+		'legend.frameon': False, 'axes.prop_cycle': matplotlib.cycler(color=[color]),
+	}):
 		yield
 
 

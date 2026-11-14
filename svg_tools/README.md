@@ -1,6 +1,9 @@
 # SVG drawing helpers
 
 For the complete task-oriented API catalogue, see [SVG toolkit](../docs/SVG_TOOLKIT.md).
+The [visual style guide](../docs/SVG_VISUAL_STYLE.md) and [gallery](../docs/slide-specs/illustration_examples/svg_toolkit/index.webp)
+show the shared illustration direction. Servier Medical Art is a style reference only; author
+all geometry locally. Preserve the original Genetics LECT02 B-DNA illustration unchanged.
 
 See [SVG_TOOL_ROADMAP.md](../docs/SVG_TOOL_ROADMAP.md) for the 1,039-path repository SVG inventory and reuse-aware priorities: cells,
 flowchart parts, and extensions to gene tracks.

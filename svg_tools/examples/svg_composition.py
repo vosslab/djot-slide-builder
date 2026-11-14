@@ -10,12 +10,12 @@ import svg_tools.svg_import
 
 FIGURE = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 20 100 65">
 <defs><pattern id="stripes" width="12" height="12" patternUnits="userSpaceOnUse">
-<path d="M0 0L12 12" stroke="#195f82" stroke-width="4"/></pattern></defs>
+<path d="M0 0L12 12" stroke="#a5cbd3" stroke-width="2"/></pattern></defs>
 <rect x="10" y="20" width="100" height="65" fill="#e1f2f6"/>
 <rect x="10" y="20" width="100" height="65" fill="url(#stripes)"/>
 <rect x="26" y="42" width="68" height="21" rx="3" fill="#e1f2f6"/>
 <text x="60" y="58" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="14"
- fill="#102c40">Live text</text></svg>'''
+ fill="#344651">Live text</text></svg>'''
 
 
 #============================================

@@ -25,7 +25,8 @@ def generate(output: pathlib.Path) -> pathlib.Path:
 		axes.plot(GENERATION, Q, marker='s', color='#a44232', label='q')
 		axes.set(xlabel='Generation', ylabel='Allele frequency', ylim=(0, 1),
 			xlim=(-0.25, 5.25), xticks=GENERATION)
-		axes.legend()
+		axes.grid(axis='x', visible=False)
+		axes.legend(loc='upper right', ncols=2)
 		part = svg_tools.plots.figure_to_part(figure, name='allele_frequencies', size=600)
 	output.parent.mkdir(parents=True, exist_ok=True)
 	svg_tools.drawing.write_svg(output, 600, 400, 'Illustrative allele frequencies',

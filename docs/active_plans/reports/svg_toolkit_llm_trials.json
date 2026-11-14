@@ -39,27 +39,50 @@
   "artifact_sha256": {
     "new_signaling": {
       "README.md": "fded5ea8b13b9e3b64a3b832ddcec027d2b821304461efc00c009ac6770c3c23",
-      "build.py": "23460cd8da5fdd14a1e928a70fa83212a329cc492770cdbfff9d94ab10729312",
+      "build.py": "3a1c68410d7ac31fdf2b74a6a67f590df40c5343b29faf4a54b6b6d11d591271",
       "new_signaling_trial.djot": "a3ef6e452ce921c88829221026564d3cdc76c8997f93ecc911170d8fd06ffc2b",
-      "new_signaling_trial.drawn.svg": "9e488367de49e81b7ec4177b9bc19d2804ed70ca3b2a9cec66d0d392cd360a5e",
-      "new_signaling_trial.odp": "219824c30d280d994fc8831252ceef0effb86601edb2e2200b45cabc7c6369c9",
-      "new_signaling_trial.pdf": "16f76dd0a39ef9e1c9c5884d1378759ba72a72501fc0879d657e084adc4b7d49",
-      "new_signaling_trial.webp": "79ab6dc37ca9dfafd1e7a218609a9056be58e9ef619bdff748f9809365aef5b8",
-      "new_signaling_trial_native.webp": "0060c7aaae0d04c9ec03abd2f74f2580ee58dd7411be61657db5f001aa8cf5f2"
+      "new_signaling_trial.drawn.svg": "56e242f01d80ea5435ac8789638228d48fe430c57a5d0437ce62e3f8d7967a97",
+      "new_signaling_trial.odp": "f0f1c9ed4c71a26b5e8f7f6165d4f1b79653a0460369ccbde0e92fcdf64aea56",
+      "new_signaling_trial.pdf": "71a9f44b45e212767f8e61cf686fda8c49df717c7b84345e4c792f941ef5a95a",
+      "new_signaling_trial.webp": "025c28e9efc859361c71d9dbb87cf27300c4d07d1d53f281ed7e4cd1a34cc197",
+      "new_signaling_trial_native.webp": "e4ca78463b641f8c4dc177a22699970745eef60853f8475c58eb125b45c60fb9"
     },
     "sxl_reconstruction": {
       "README.md": "8bfc87c13e318a43e16422706736e62bc46fd435b05b1b9030395f7c3454e72e",
       "build.py": "804ce4e9a60553c11a86c48fd4f9d79b25b8f9159f178e81b1735e7cc016b94b",
       "sxl_reconstruction_trial.djot": "8a7e3d89b9759a76d122764a145814bff89be6ff1b793076e61b88adbe25c24b",
       "sxl_reconstruction_trial.drawn.svg": "6a0e61eb148aedf638e48a00e1fc0dceb9afbf20d35474af3befad0d3de32c07",
-      "sxl_reconstruction_trial.odp": "b77d2726632c2e17d9804e65f19489073c2c4702b0e2966d15dc26537e5a83bf",
-      "sxl_reconstruction_trial.pdf": "aafb44e30cdd600f2738881cb9e7bc236731dfa6656bb2d0316869b3d0ba5073",
-      "sxl_reconstruction_trial.webp": "c0fe2f98297c0ca90079f91abff2342f00a1b01365bf793190d22055bf41104b",
-      "sxl_reconstruction_trial_native.webp": "33c21c2c27992b44b43c7eb8569acf0d8d02a4eb014ac58a00b40d3e8e2c0b47"
+      "sxl_reconstruction_trial.odp": "ea0d8fd756a756824e20691b90a531bf08aba5b6bf9fca0e9cbefe4688308af6",
+      "sxl_reconstruction_trial.pdf": "65e8560006575b439d7e3ac8c3d4316446e057c7c663b7c4b52a0d84348f3305",
+      "sxl_reconstruction_trial.webp": "8f5f52c63a7fc3f22b6f8c67ad9a9cf1de08ed04fb8225965eeda022eee00c65",
+      "sxl_reconstruction_trial_native.webp": "a59b27fea504c526d898dcb07337b9e6710eefff6bc7d7ba6e05a6d1ac38e5c5"
     }
   },
   "limits": [
     "No interactive Impress editing or live Zoom test.",
     "Rendering checked on this LibreOffice installation only."
-  ]
+  ],
+  "review_scope_note": "Earlier spec and quality reviews describe the prior SVGs; refreshed aesthetic outputs await independent review.",
+  "native_rebuild": {
+    "new_signaling": {
+      "pages": 1,
+      "embedded_svg_matches": {
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/new_signaling_trial.drawn.svg": [
+          "Pictures/56e242f01d80ea5435ac8789.svg"
+        ]
+      },
+      "pdf_text_characters": 909,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     38  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     35  0\n"
+    },
+    "sxl_reconstruction": {
+      "pages": 1,
+      "embedded_svg_matches": {
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/sxl_reconstruction_trial.drawn.svg": [
+          "Pictures/6a0e61eb148aedf638e48a00.svg"
+        ]
+      },
+      "pdf_text_characters": 1346,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     20  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     12  0\nDAAAAA+AtkinsonHyperlegibleNext-RegularItalic Type 1            Builtin          yes yes yes     17  0\n"
+    }
+  }
 }

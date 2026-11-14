@@ -9,6 +9,7 @@ import xml.etree.ElementTree
 
 import svgpathtools
 
+import svg_tools._style
 import svg_tools.curves
 import svg_tools.parts
 import svg_tools.text
@@ -54,7 +55,8 @@ def membrane(path_d: str, *, spacing: float, thickness: float, color: str,
 		for side in (-1, 1):
 			for offset in (-radius * 0.35, radius * 0.35):
 				xml.etree.ElementTree.SubElement(lipids, 'path', {
-					'd': f'M {offset} {side * head} L {offset} {side * thickness * 0.04}', 'fill': 'none',
+					'd': f'M {offset} {side * head} C {offset + radius*.3} {side * head*.65} '
+						f'{offset - radius*.2} {side * head*.35} {offset} {side * thickness*.04}', 'fill': 'none',
 				})
 			xml.etree.ElementTree.SubElement(lipids, 'circle', {
 				'cx': '0', 'cy': str(side * head), 'r': str(radius), 'fill': color,
@@ -80,14 +82,33 @@ def membrane(path_d: str, *, spacing: float, thickness: float, color: str,
 
 #============================================
 def _molecule(path: str, width: float, height: float, color: str,
-	anchors: dict[str, tuple[float, float]]) -> svg_tools.parts.SvgPart:
+	anchors: dict[str, tuple[float, float]], shape_kind: str) -> svg_tools.parts.SvgPart:
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError('Width and height must be finite and positive')
-	group = xml.etree.ElementTree.Element('g', {
-		'transform': f'scale({width} {height})', 'fill': color, 'stroke': '#344651',
-		'stroke-width': '0.025', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
+	group = xml.etree.ElementTree.Element('g', {'fill': color})
+	shape = svg_tools._style.scaled_path(path, width, height)
+	xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, **svg_tools._style.outline(width, height)})
+	shadows = {
+		'globular': 'M .44 -.08 C .49 .14 .34 .36 .11 .41 C -.13 .47 -.38 .34 -.44 .15 C -.32 .27 -.11 .34 .10 .31 C .28 .28 .39 .12 .44 -.08 Z',
+		'kinase': 'M .23 .08 C .34 .17 .30 .32 .16 .39 C -.01 .48 -.28 .40 -.37 .27 C -.24 .34 -.01 .38 .14 .30 C .24 .25 .25 .16 .23 .08 Z',
+		'ligand': 'M .43 -.06 C .46 .12 .32 .25 .17 .26 C .09 .27 .05 .35 0 .42 C -.07 .34 -.11 .27 -.20 .25 C -.35 .22 -.46 .10 -.43 -.06 C -.39 .12 -.27 .16 -.17 .17 C -.08 .18 -.04 .24 0 .30 C .05 .23 .09 .19 .18 .18 C .31 .17 .40 .09 .43 -.06 Z',
+		'receptor': 'M .38 .31 C .41 .41 .25 .46 .10 .44 C -.08 .48 -.32 .45 -.38 .34 C -.30 .39 -.08 .40 .10 .36 C .24 .38 .35 .36 .38 .31 Z',
+	}
+	xml.etree.ElementTree.SubElement(group, 'path', {
+		'd': svg_tools._style.scaled_path(shadows[shape_kind], width, height),
+		'fill': '#344651', 'opacity': '.18',
 	})
-	xml.etree.ElementTree.SubElement(group, 'path', {'d': path})
+	highlights = {
+		'globular': 'M -.38 -.14 C -.38 -.31 -.23 -.38 -.08 -.36 C -.20 -.33 -.29 -.24 -.30 -.13 C -.31 -.06 -.29 .01 -.26 .06 C -.34 .02 -.38 -.05 -.38 -.14 Z',
+		'kinase': 'M -.39 -.14 C -.39 -.29 -.26 -.36 -.14 -.35 C -.23 -.31 -.30 -.23 -.31 -.12 C -.31 -.05 -.29 .02 -.26 .07 C -.35 .02 -.39 -.05 -.39 -.14 Z',
+		'ligand': 'M -.36 -.08 C -.33 -.26 -.17 -.37 -.02 -.35 C -.18 -.31 -.25 -.19 -.26 -.06 C -.26 .02 -.23 .09 -.19 .15 C -.30 .12 -.37 .03 -.36 -.08 Z',
+		'receptor': 'M -.32 -.34 C -.33 -.41 -.27 -.43 -.21 -.40 C -.16 -.38 -.14 -.34 -.11 -.31 C -.22 -.35 -.27 -.34 -.28 -.28 C -.31 -.30 -.32 -.32 -.32 -.34 Z',
+	}
+	highlight = highlights[shape_kind]
+	xml.etree.ElementTree.SubElement(group, 'path', {'d': svg_tools._style.scaled_path(highlight, width, height),
+		'fill': 'white', 'opacity': '.30'})
+	xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, 'fill': 'none', **svg_tools._style.outline(width, height)})
+
 	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
 		(-.5525*width, -.5525*height, .5525*width, .5525*height),
 		{name: (x*width, y*height) for name, (x, y) in anchors.items()})
@@ -107,21 +128,22 @@ def protein(*, width: float, height: float, color: str,
 		raise ValueError('Kind must be globular or kinase')
 	if kind == 'globular':
 		part = _molecule(
-			'M -0.42 -0.10 C -0.48 -0.29 -0.33 -0.43 -0.17 -0.40 '
-			'C -0.04 -0.49 0.08 -0.45 0.15 -0.37 C 0.33 -0.43 0.48 -0.27 0.43 -0.10 '
-			'C 0.51 0.04 0.44 0.20 0.32 0.24 C 0.26 0.43 0.09 0.47 -0.03 0.40 '
-			'C -0.18 0.47 -0.34 0.38 -0.35 0.26 C -0.49 0.20 -0.50 0.02 -0.42 -0.10 Z',
-			width, height, color, {'center': (0, 0), 'binding': (.15, -.37),
-				'input': (-.44, 0), 'output': (.44, 0), 'modification': (.25, .38)})
+			'M -0.44 -0.10 C -0.48 -0.33 -0.26 -0.46 -0.05 -0.41 '
+			'C 0.05 -0.39 0.10 -0.32 0.15 -0.25 C 0.25 -0.34 0.42 -0.25 0.44 -0.08 '
+			'C 0.49 0.14 0.34 0.36 0.11 0.41 C -0.13 0.47 -0.38 0.34 -0.44 0.15 '
+			'C -0.47 0.06 -0.47 -0.02 -0.44 -0.10 Z',
+			width, height, color, {'center': (0, 0), 'binding': (.15, -.25),
+				'input': (-.4625, .02125), 'output': (.449609375, .00216796875),
+				'modification': (.25, .35)}, 'globular')
 	else:
 		part = _molecule(
-		'M -0.45 -0.06 C -0.52 -0.25 -0.39 -0.44 -0.22 -0.43 '
-		'C -0.09 -0.49 -0.04 -0.37 0 -0.27 C 0.04 -0.38 0.13 -0.45 0.25 -0.41 '
-		'C 0.44 -0.42 0.52 -0.25 0.45 -0.08 C 0.54 0.10 0.44 0.23 0.35 0.28 '
-		'C 0.29 0.46 0.10 0.48 0 0.40 C -0.14 0.49 -0.30 0.44 -0.35 0.31 '
-		'C -0.50 0.25 -0.52 0.09 -0.45 -0.06 Z', width, height, color,
-		{'center': (0, 0), 'binding': (0, -.27), 'input': (-.46, 0),
-			'output': (.46, 0), 'modification': (.25, .40)})
+			'M -0.45 -0.12 C -0.46 -0.31 -0.30 -0.43 -0.13 -0.40 '
+			'C -0.05 -0.39 -0.02 -0.32 0 -0.24 C 0.04 -0.32 0.13 -0.37 0.25 -0.34 '
+			'C 0.40 -0.31 0.47 -0.18 0.43 -0.04 C 0.39 0.04 0.30 0.07 0.23 0.08 '
+			'C 0.34 0.17 0.30 0.32 0.16 0.39 C -0.01 0.48 -0.28 0.40 -0.37 0.27 '
+			'C -0.45 0.16 -0.49 0.01 -0.45 -0.12 Z', width, height, color,
+			{'center': (0, 0), 'binding': (0, -.24), 'input': (-.455, .0825),
+				'output': (.41279296875, -.01228515625), 'modification': (.16, .39)}, 'kinase')
 	if activity is None:
 		return part
 	return _activity(part, activity, min(width, height))
@@ -184,12 +206,13 @@ def phosphate(part: svg_tools.parts.SvgPart, *, site: str = 'modification',
 def ligand(*, width: float, height: float, color: str) -> svg_tools.parts.SvgPart:
 	"""Draw a ligand centered at local origin (0, 0), with a lower binding point."""
 	return _molecule(
-		'M -0.40 -0.12 C -0.49 -0.30 -0.31 -0.46 -0.14 -0.40 '
-		'C -0.01 -0.52 0.15 -0.46 0.21 -0.36 C 0.42 -0.38 0.50 -0.21 0.43 -0.07 '
-		'C 0.50 0.09 0.39 0.23 0.24 0.24 C 0.20 0.41 0.06 0.48 -0.04 0.38 '
-		'C -0.17 0.48 -0.31 0.36 -0.30 0.23 C -0.48 0.20 -0.51 0.03 -0.40 -0.12 Z',
+		'M -0.43 -0.06 C -0.39 -0.31 -0.20 -0.43 0.02 -0.40 '
+		'C 0.21 -0.38 0.39 -0.25 0.43 -0.06 C 0.46 0.12 0.32 0.25 0.17 0.26 '
+		'C 0.09 0.27 0.05 0.35 0 0.42 C -0.07 0.34 -0.11 0.27 -0.20 0.25 '
+		'C -0.35 0.22 -0.46 0.10 -0.43 -0.06 Z',
 		width, height, color, {'center': (0, 0), 'binding': (0, .42),
-			'input': (-.45, 0), 'output': (.45, 0), 'modification': (.20, -.38)})
+			'input': (-.43, -.06), 'output': (.43359375, .00501953125),
+			'modification': (.20, -.35)}, 'ligand')
 
 
 #============================================
@@ -200,13 +223,13 @@ def receptor(*, width: float, height: float, color: str) -> svg_tools.parts.SvgP
 	Its narrow central stalk can be placed in a caller-sized membrane gap.
 	"""
 	return _molecule(
-		'M -0.10 -0.13 C -0.14 -0.20 -0.36 -0.21 -0.37 -0.32 '
-		'C -0.43 -0.43 -0.29 -0.49 -0.18 -0.44 C -0.09 -0.50 -0.04 -0.44 0 -0.37 '
-		'C 0.04 -0.44 0.12 -0.50 0.21 -0.44 C 0.34 -0.47 0.43 -0.39 0.37 -0.30 '
-		'C 0.34 -0.22 0.14 -0.19 0.10 -0.13 L 0.10 0.13 '
-		'C 0.16 0.19 0.37 0.19 0.39 0.31 C 0.44 0.42 0.30 0.49 0.17 0.44 '
-		'C 0.06 0.50 -0.05 0.47 -0.10 0.43 C -0.24 0.48 -0.40 0.42 -0.39 0.31 '
-		'C -0.38 0.20 -0.16 0.19 -0.10 0.13 Z', width, height, color,
-		{'center': (0, 0), 'binding': (0, -.37), 'input': (0, -.37),
-			'output': (0, .46), 'modification': (.28, .42), 'extracellular': (0, -.37),
-			'membrane': (0, 0), 'cytoplasmic': (0, .46)})
+		'M -0.10 -0.13 C -0.15 -0.20 -0.34 -0.21 -0.38 -0.32 '
+		'C -0.42 -0.42 -0.31 -0.47 -0.21 -0.43 C -0.11 -0.40 -0.08 -0.32 0 -0.28 '
+		'C 0.08 -0.32 0.11 -0.40 0.21 -0.43 C 0.31 -0.47 0.42 -0.42 0.38 -0.32 '
+		'C 0.34 -0.21 0.15 -0.20 0.10 -0.13 L 0.10 0.13 '
+		'C 0.15 0.19 0.35 0.21 0.38 0.31 C 0.41 0.41 0.25 0.46 0.10 0.44 '
+		'C -0.08 0.48 -0.32 0.45 -0.38 0.34 C -0.42 0.24 -0.16 0.19 -0.10 0.13 Z',
+		width, height, color,
+		{'center': (0, 0), 'binding': (0, -.28), 'input': (0, -.28),
+			'output': (.03015625, .45169921875), 'modification': (.28, .42), 'extracellular': (0, -.28),
+			'membrane': (0, 0), 'cytoplasmic': (.03015625, .45169921875)}, 'receptor')

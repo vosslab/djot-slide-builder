@@ -6,11 +6,13 @@ import xml.etree.ElementTree as ET
 import pytest
 
 from svg_tools.parts import group
+from svg_tools.drawing import write_svg
 from svg_tools.svg_import import import_svg
 
 
 FIGURE = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
- viewBox="10 20 40 20" fill="red"><defs><pattern id="p" width="2" height="2">
+ xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="10 20 40 20" fill="red">
+ <!-- License: ISC --><metadata><dc:title>Figure metadata</dc:title></metadata><defs><pattern id="p" width="2" height="2">
  <path id="line" d="M0 0L2 2"/></pattern></defs><rect x="10" y="20" width="40"
  height="20" fill="url(#p)"/><use xlink:href="#line"/><text x="12" y="30">Live words</text></svg>'''
 
@@ -25,6 +27,29 @@ def test_repeated_figures_preserve_geometry_and_references():
 	assert [e.text for e in root.findall('.//{http://www.w3.org/2000/svg}text')] == ['Live words'] * 2
 	assert 'url(#part0-first-p)' in ET.tostring(root, encoding='unicode')
 	assert '#part1-second-line' in ET.tostring(root, encoding='unicode')
+
+
+@pytest.mark.parametrize('uri,prefix', [
+	('http://www.w3.org/1999/xlink', 'previous'),
+	('http://www.w3.org/2000/svg', 'xlink'),
+	('http://purl.org/dc/elements/1.1/', 'xlink'),
+])
+def test_import_preserves_namespace_registry_and_xlink(monkeypatch, tmp_path, uri, prefix):
+	monkeypatch.setattr(ET, '_namespace_map', ET._namespace_map.copy())
+	ET.register_namespace(prefix, uri)
+	before = ET._namespace_map.copy()
+	part = import_svg(FIGURE, name='figure')
+	assert ET._namespace_map == before
+	assert ET.fromstring(part.fragment).find('.//{http://www.w3.org/2000/svg}use').get(
+		'{http://www.w3.org/1999/xlink}href') == '#figure-line'
+	output = tmp_path / 'figure.svg'
+	write_svg(output, 40, 20, 'Figure', 'Imported figure', part.fragment)
+	assert ET._namespace_map == before
+	assert 'xlink:href="#figure-line"' in output.read_text()
+	assert ET.parse(output).find('.//{http://www.w3.org/2000/svg}use').get(
+		'{http://www.w3.org/1999/xlink}href') == '#figure-line'
+	assert ET.parse(output).find('.//{http://purl.org/dc/elements/1.1/}title').text == 'Figure metadata'
+	assert '<!-- License: ISC -->' in output.read_text()
 
 
 def test_matplotlib_universal_style_is_scoped_and_preserves_override():

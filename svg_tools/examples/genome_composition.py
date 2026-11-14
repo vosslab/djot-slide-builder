@@ -32,11 +32,12 @@ def main() -> None:
 			axes.text(0, y + .25, name, fontsize=15, fontweight='bold', va='bottom', color='#172d3c')
 			axes.text(value + .8, y, display, fontsize=14, fontweight='bold', va='center', color='#172d3c')
 		axes.set(xlim=(0, 50), ylim=(-.45, 5.75), yticks=[])
+		axes.grid(axis='y', visible=False)
 		axes.set_xticks(range(0, 51, 10), [f'{value}%' for value in range(0, 51, 10)])
 		axes.tick_params(axis='x', labelsize=13, colors='#344651')
 		for side in ('top', 'left', 'right'):
 			axes.spines[side].set_visible(False)
-		axes.spines['bottom'].set_color('#344651')
+		axes.spines['bottom'].set_color('#a5b4bc')
 		part = svg_tools.plots.figure_to_part(figure, name='genome_composition', size=700)
 	output.parent.mkdir(parents=True, exist_ok=True)
 	svg_tools.drawing.write_svg(output, 700, 700, 'Components of the human genome',

@@ -19,7 +19,7 @@ def main() -> None:
 	membrane = svg_tools.signaling.membrane('M 40 135 L 290 135', spacing=10,
 		thickness=32, color='#b9e3ea', gaps=((95, 125),))
 	receptor = move(svg_tools.signaling.receptor(width=90, height=150, color='#cbdcf0'), x=150, y=135)
-	ligand = move(svg_tools.signaling.ligand(width=42, height=34, color='#f4cf9f'), x=150, y=38)
+	ligand = move(svg_tools.signaling.ligand(width=42, height=34, color='#f4cf9f'), x=150, y=78.72)
 	kinase = move(svg_tools.signaling.protein(width=100, height=90, color='#e5d7ef',
 		kind='kinase', activity='active'), x=350, y=245)
 	inactive = move(svg_tools.signaling.phosphate(svg_tools.signaling.protein(width=100, height=90,
@@ -32,7 +32,7 @@ def main() -> None:
 		connector([(150, 205), (150, 245), (293, 245)]),
 		connector([(407, 245), (498, 245)], kind='inhibition'),
 		connector([(300, 260), (260, 260), (260, 445), (498, 445)]),
-		label(150, 21, 'Ligand', size=16, color='#344651'),
+		label(150, 54, 'Ligand', size=16, color='#344651'),
 		label(150, 340, 'Receptor', size=16, color='#344651'),
 		label(350, 340, 'Kinase', size=16, color='#344651'),
 		label(555, 340, 'Response protein', size=16, color='#344651'),

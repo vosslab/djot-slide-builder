@@ -120,7 +120,10 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	"""Write a complete SVG after validating XML; the parent folder must exist."""
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError("SVG width and height must be finite and positive")
-	root = defusedxml.ElementTree.fromstring("<svg>" + body + "</svg>")
+	parser = defusedxml.ElementTree.DefusedXMLParser(
+		target=xml.etree.ElementTree.TreeBuilder(insert_comments=True))
+	parser.feed("<svg>" + body + "</svg>")
+	root = parser.close()
 	root.attrib.update({
 		"xmlns": "http://www.w3.org/2000/svg", "width": str(width), "height": str(height),
 		"viewBox": f"0 0 {width} {height}", "role": "img", "aria-labelledby": "title desc",
@@ -134,13 +137,27 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	# LibreOffice requires unprefixed SVG elements and the literal xlink prefix.
 	svg_ns = "{http://www.w3.org/2000/svg}"
 	xlink_ns = "{http://www.w3.org/1999/xlink}"
+	namespaces = {xlink_ns: "xlink", "{http://www.w3.org/XML/1998/namespace}": "xml"}
+	def local_name(name: str, *, attribute: bool = False) -> str:
+		if not name.startswith("{"):
+			return name
+		namespace, local = name.split("}", 1)
+		namespace += "}"
+		if namespace == svg_ns and not attribute:
+			return local
+		if namespace not in namespaces:
+			namespaces[namespace] = f"local{len(namespaces)}"
+		prefix = namespaces[namespace]
+		if prefix != "xml":
+			root.set("xmlns:" + prefix, namespace[1:-1])
+		return prefix + ":" + local
 	for element in root.iter():
-		if element.tag.startswith(svg_ns):
-			element.tag = element.tag[len(svg_ns):]
+		if not isinstance(element.tag, str):
+			continue
+		element.tag = local_name(element.tag)
 		for name in list(element.attrib):
-			if name.startswith(xlink_ns):
-				element.set("xlink:" + name[len(xlink_ns):], element.attrib.pop(name))
-				root.set("xmlns:xlink", xlink_ns[1:-1])
+			if name.startswith("{"):
+				element.set(local_name(name, attribute=True), element.attrib.pop(name))
 	# LibreOffice may render SVGs with an ASCII declaration blank.
 	payload = xml.etree.ElementTree.tostring(root, encoding="ascii", xml_declaration=False)
 	# Reject invalid XML characters in metadata before opening an existing destination.

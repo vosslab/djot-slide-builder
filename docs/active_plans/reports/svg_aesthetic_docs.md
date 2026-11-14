@@ -1,0 +1,7 @@
+# SVG aesthetic documentation handoff
+
+Updated `docs/SVG_TOOLKIT.md`, `docs/SVG_TOOLKIT_COOKBOOK.md`, `svg_tools/README.md`, the historical-context note at the top of `docs/SVG_TOOLKIT_IMPLEMENTATION_REPORT.md`, and one entry in `docs/CHANGELOG.md`. The catalogue and cookbook link the visual guide and gallery. The helper README identifies Servier as a style reference, requires local geometry, and preserves the LECT02 B-DNA exception. The cookbook uses named connector anchors and painted bounds to position labels around state symbols. The initial implementation report is explicitly historical; it does not claim acceptance of this upgrade.
+
+Checks: all five edited files contain only ASCII. Relative Markdown targets exist, except `allele_frequencies.svg`, which is intentionally a generated file beside the example Djot deck rather than a documentation link. Extracted signaling, styled-flow, and icon Python snippets ran with `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B` and output redirected to `_temp/svg_aesthetic/docs/`. Rendered and inspected the signaling and styled-flow snippets with `rsvg-convert`; their labels and relationships are visible. Scratch scripts and renders remain there for review.
+
+Limits: this documentation check did not run LibreOffice or native slide proofs, and does not establish visual acceptance of the upgrade. The final upgrade report and verification are assigned separately.

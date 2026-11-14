@@ -47,9 +47,9 @@ def gene_track_svg(name: str,
 		region = xml.etree.ElementTree.SubElement(group, "g", {"id": f"{name}-exon-{index}"})
 		xml.etree.ElementTree.SubElement(region, "rect", {
 			"x": str(x), "y": "0", "width": str(exon_width), "height": str(height),
-			"fill": exon.color, "stroke": "#344651", "stroke-width": str(height * .035),
+			"fill": exon.color, "stroke": "#344651", "stroke-width": str(height * .05),
 		})
-		font_size = min(height * .59, exon_width * .8 / max(1, len(exon.label)))
+		font_size = min(height * .45, exon_width * .8 / max(1, len(exon.label)) / .65)
 		xml.etree.ElementTree.SubElement(region, "text", {
 			"x": str(x + exon_width / 2), "y": str(height / 2 + font_size * .34),
 			"font-family": "Atkinson Hyperlegible Next", "font-size": str(font_size),
@@ -62,7 +62,7 @@ def gene_track_svg(name: str,
 			xml.etree.ElementTree.SubElement(group, "line", {
 				"id": f"{name}-intron-{index}", "x1": str(x), "x2": str(end),
 				"y1": str(height / 2), "y2": str(height / 2),
-				"stroke": "#344651", "stroke-width": str(height * .06),
+				"stroke": "#344651", "stroke-width": str(height * .03),
 			})
 			x = end
 	boundaries.append(x)
@@ -79,7 +79,7 @@ def gene_track_part(name: str,
 	"""Render a local part with start, end, center and boundary_N exon anchors."""
 	fragment, track_width, boundaries = gene_track_svg(name, exons, intron_lengths,
 		width=width, height=height)
-	margin = height * .035 / 2
+	margin = height * .05 / 2
 	bounds = (-margin, -margin, track_width+margin, height+margin)
 	bounds = svg_tools.parts.include_text_bounds(fragment, bounds)
 	anchors = {f'boundary_{index}': (x, height/2) for index, x in enumerate(boundaries)}

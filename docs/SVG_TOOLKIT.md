@@ -3,8 +3,10 @@
 Use `svg_tools` to author editable, static SVG illustrations for slides. Start with the
 [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp), its
 [Djot showcase](../exemplars/svg_toolkit.djot), and the [cookbook](SVG_TOOLKIT_COOKBOOK.md)
-for complete compositions. The [implementation report](SVG_TOOLKIT_IMPLEMENTATION_REPORT.md) records
-verification and limits; independent [signaling](slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/README.md)
+for complete compositions. Follow the [visual style guide](SVG_VISUAL_STYLE.md) for locally authored
+geometry, line hierarchy, color, and slide-size review. The [initial implementation report](SVG_TOOLKIT_IMPLEMENTATION_REPORT.md) records
+earlier verification and limits; [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md)
+records the current upgrade and its verification. Independent [signaling](slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/README.md)
 and [Sxl reconstruction](slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/README.md)
 recipes show complete native slides. The [SVG diagram contract](slide-specs/SVG_DIAGRAMS.md) covers
 provenance, `.drawn.svg` eligibility, and slide integration. The code is a set of drawing

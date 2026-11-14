@@ -11,7 +11,7 @@ import svg_tools.text
 def main() -> None:
 	labels = [
 		svg_tools.text.label(30, 45, 'Ordinary label: \u03b1, \u03b2, \u0394', size=24,
-			color='#17324D', anchor='start'),
+			color='#344651', anchor='start'),
 		svg_tools.text.label(30, 85, 'Bold italic gene', size=24, color='#7D245B',
 			anchor='start', bold=True, italic=True),
 		svg_tools.text.label(30, 125, 'ACGT 012345', size=24, color='#175E48',

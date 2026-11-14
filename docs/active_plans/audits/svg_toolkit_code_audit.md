@@ -2,7 +2,14 @@
 
 Six independent passes completed against the current source and supplied implementation evidence. Each pass reported findings; none reported a blocker or high-severity finding. This is a current-source audit, not a Git diff or an independent rerun of historical acceptance.
 
-## Open findings
+## 2026-11-14 follow-up
+
+Both shared-state findings below were resolved in the SVG aesthetic upgrade. Namespace and
+gallery caller-state regressions passed the [code re-review](../reports/svg_aesthetic_code_respec.md);
+the [integration review](../reports/svg_aesthetic_integration.md) confirmed the fixes and
+completion. The original findings below are retained as historical audit evidence.
+
+## Original open findings
 
 1. **Medium: process-wide XML namespace mutation.** [svg_import.py:123](../../../svg_tools/svg_import.py#L123) registers XLink on each import, changing ElementTree serialization for unrelated callers and overriding their prefix. The style reviewer reproduced this change. Handle the prefix locally at serialization without mutating the global registry; reconcile the implementation report's historical statement when fixed. The source remains unchanged in this low-risk cleanup.
 2. **Medium: gallery caller state leaks.** [build_gallery.py:46](../../../svg_tools/examples/build_gallery.py#L46) changes the working directory and [line 56](../../../svg_tools/examples/build_gallery.py#L56) replaces the curve example's `__file__`, without restoration even on failure. A Python caller can subsequently resolve relative paths or write outputs in an unexpected location. Avoid changing these values or restore both in `finally`, with an explicit output destination if needed. The source remains unchanged.

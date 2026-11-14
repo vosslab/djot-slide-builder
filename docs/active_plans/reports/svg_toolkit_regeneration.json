@@ -1,6 +1,6 @@
 {
-  "environment": "PYTHONPATH=repository root; MPLCONFIGDIR=_temp/mplconfig; SOURCE_DATE_EPOCH and MATPLOTLIBRC removed from child environment",
-  "note": "Gallery regenerated in place and separately in fresh scratch; pilot recipes regenerated only in scratch and compared with existing canonical SVGs. No external plot seed environment or temporary Matplotlib configuration was used.",
+  "environment": "PYTHONPATH=repository root; MPLCONFIGDIR=_temp/mplconfig; PANGOCAIRO_BACKEND=fc; SOURCE_DATE_EPOCH and MATPLOTLIBRC removed",
+  "note": "Gallery, pilots and chromosome compared byte-for-byte with independent scratch builds. Trials built twice in place and compared. Previews use white background and WebP quality 90.",
   "commands": [
     {
       "argv": [
@@ -10,7 +10,7 @@
         "svg_tools.examples.build_gallery"
       ],
       "returncode": 0,
-      "stdout": "_temp/placement.svg\n_temp/text_labels.svg\n_temp/styled_text.svg\n_temp/svg_composition.svg\nMicroscope matches: microscope\n_temp/icons.svg\n_temp/annotations.svg\n_temp/plots.svg\n_temp/gene_features.svg\n",
+      "stdout": "_temp/placement.svg\n_temp/text_labels.svg\n_temp/styled_text.svg\n_temp/svg_composition.svg\nMicroscope matches: microscope\n_temp/icons.svg\n_temp/annotations.svg\n/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/plots.svg\n_temp/gene_features.svg\n",
       "stderr": ""
     },
     {
@@ -20,10 +20,10 @@
         "-m",
         "svg_tools.examples.build_gallery",
         "--output-dir",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/gallery"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/gallery"
       ],
       "returncode": 0,
-      "stdout": "_temp/placement.svg\n_temp/text_labels.svg\n_temp/styled_text.svg\n_temp/svg_composition.svg\nMicroscope matches: microscope\n_temp/icons.svg\n_temp/annotations.svg\n_temp/plots.svg\n_temp/gene_features.svg\n",
+      "stdout": "_temp/placement.svg\n_temp/text_labels.svg\n_temp/styled_text.svg\n_temp/svg_composition.svg\nMicroscope matches: microscope\n_temp/icons.svg\n_temp/annotations.svg\n/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/plots.svg\n_temp/gene_features.svg\n",
       "stderr": ""
     },
     {
@@ -32,10 +32,22 @@
         "-B",
         "-m",
         "svg_tools.examples.genome_composition",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/human_genome_composition_toolkit.plot.svg"
+        "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg"
       ],
       "returncode": 0,
-      "stdout": "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/human_genome_composition_toolkit.plot.svg\n",
+      "stdout": "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.examples.genome_composition",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/human_genome_composition_toolkit.plot.svg"
+      ],
+      "returncode": 0,
+      "stdout": "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/human_genome_composition_toolkit.plot.svg\n",
       "stderr": ""
     },
     {
@@ -44,10 +56,22 @@
         "-B",
         "-m",
         "svg_tools.examples.array_comparison",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/array_comparison_workflow_toolkit.drawn.svg"
+        "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg"
       ],
       "returncode": 0,
-      "stdout": "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/array_comparison_workflow_toolkit.drawn.svg\n",
+      "stdout": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.examples.array_comparison",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/array_comparison_workflow_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/array_comparison_workflow_toolkit.drawn.svg\n",
       "stderr": ""
     },
     {
@@ -57,7 +81,20 @@
         "-m",
         "svg_tools.examples.yeast_mating",
         "--output-dir",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots"
+        "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.examples.yeast_mating",
+        "--output-dir",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots"
       ],
       "returncode": 0,
       "stdout": "",
@@ -69,7 +106,19 @@
         "-B",
         "-m",
         "svg_tools.examples.seed_cross",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/dihybrid_seed_phenotypes_toolkit.drawn.svg"
+        "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.examples.seed_cross",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/dihybrid_seed_phenotypes_toolkit.drawn.svg"
       ],
       "returncode": 0,
       "stdout": "",
@@ -81,7 +130,61 @@
         "-B",
         "-m",
         "svg_tools.examples.western_detection",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/pilots/western_detection_detail_toolkit.drawn.svg"
+        "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.examples.western_detection",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/pilots/western_detection_detail_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-m",
+        "svg_tools.chromosome_examples"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "-c",
+        "import pathlib; from svg_tools.chromosome_examples import make_tool_v2_specimen; make_tool_v2_specimen(pathlib.Path('/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/chromosome_tool_v2.drawn.svg'))"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/build.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/build.py"
       ],
       "returncode": 0,
       "stdout": "",
@@ -95,8 +198,28 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/human_genome_composition_toolkit.plot.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/new_signaling.png",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/new_signaling_trial.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/build.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/build.py"
       ],
       "returncode": 0,
       "stdout": "",
@@ -110,8 +233,18 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/array_comparison_workflow_toolkit.drawn.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/sxl_reconstruction.png",
+        "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/sxl_reconstruction_trial.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "-B",
+        "_temp/svg_aesthetic/composition/comparison.py"
       ],
       "returncode": 0,
       "stdout": "",
@@ -125,8 +258,8 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/yeast_mating_toolkit.drawn.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating_toolkit.drawn.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/human_genome_composition_toolkit.plot.png",
+        "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg"
       ],
       "returncode": 0,
       "stdout": "",
@@ -140,8 +273,8 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/yeast_diploid_toolkit.drawn.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid_toolkit.drawn.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/array_comparison_workflow_toolkit.drawn.png",
+        "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg"
       ],
       "returncode": 0,
       "stdout": "",
@@ -155,8 +288,8 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/dihybrid_seed_phenotypes_toolkit.drawn.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/yeast_mating_toolkit.drawn.png",
+        "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating_toolkit.drawn.svg"
       ],
       "returncode": 0,
       "stdout": "",
@@ -170,8 +303,53 @@
         "--background-color",
         "white",
         "--output",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_toolkit/native_final/western_detection_detail_toolkit.drawn.png",
-        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg"
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/yeast_diploid_toolkit.drawn.png",
+        "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rsvg-convert",
+        "--width",
+        "1200",
+        "--background-color",
+        "white",
+        "--output",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/dihybrid_seed_phenotypes_toolkit.drawn.png",
+        "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rsvg-convert",
+        "--width",
+        "1200",
+        "--background-color",
+        "white",
+        "--output",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/western_detection_detail_toolkit.drawn.png",
+        "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rsvg-convert",
+        "--width",
+        "1200",
+        "--background-color",
+        "white",
+        "--output",
+        "/Volumes/Ex2GB/Documents/teaching/CLASS/djot-slide-builder/_temp/svg_aesthetic/composition/final/chromosome_tool_v2.drawn.png",
+        "docs/slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg"
       ],
       "returncode": 0,
       "stdout": "",
@@ -180,58 +358,66 @@
   ],
   "outputs": {
     "docs/slide-specs/illustration_examples/svg_toolkit/allele_frequencies.plot.svg": {
-      "sha256": "a6a9b892fb0254b88b9965c94ef2956127541903725e5671c10dcd9c8a482011",
-      "bytes": 20345,
-      "scratch_sha256": "a6a9b892fb0254b88b9965c94ef2956127541903725e5671c10dcd9c8a482011",
+      "sha256": "390a6bed78d8a5b55fc6a0bf64012beeefcd9daae68c6077e4de4392ec19b6fe",
+      "bytes": 18160,
+      "scratch_sha256": "390a6bed78d8a5b55fc6a0bf64012beeefcd9daae68c6077e4de4392ec19b6fe",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/allele_frequencies.webp": {
-      "sha256": "886602fa66dbd6717c7ebfbe5c070240c4dc4f75583ef6f67a7df8048bada999",
-      "bytes": 21130,
-      "scratch_sha256": "886602fa66dbd6717c7ebfbe5c070240c4dc4f75583ef6f67a7df8048bada999",
+      "sha256": "41d40b69829988518588f990e0a7b26160261b7b04be5ab6e43562f36484919a",
+      "bytes": 23210,
+      "scratch_sha256": "41d40b69829988518588f990e0a7b26160261b7b04be5ab6e43562f36484919a",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/annotations.drawn.svg": {
-      "sha256": "a32892c30ec24418934d29ec505a5fb70d1b9b97176226d2e9dc0042599d4982",
-      "bytes": 4710,
-      "scratch_sha256": "a32892c30ec24418934d29ec505a5fb70d1b9b97176226d2e9dc0042599d4982",
+      "sha256": "945756ddd484d00852127752a51965fd7e2320910de06d10a938b524d7ed5799",
+      "bytes": 4706,
+      "scratch_sha256": "945756ddd484d00852127752a51965fd7e2320910de06d10a938b524d7ed5799",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/annotations.webp": {
-      "sha256": "586c650a12e9e5adc3abccba090d2d92cfa28198f66ff2a528cc63e18856b746",
-      "bytes": 19850,
-      "scratch_sha256": "586c650a12e9e5adc3abccba090d2d92cfa28198f66ff2a528cc63e18856b746",
+      "sha256": "c73c79b9cc8186aac5ea2b249eae8b1e7e6eb1b3f9c3812f4d1211421e01f095",
+      "bytes": 19818,
+      "scratch_sha256": "c73c79b9cc8186aac5ea2b249eae8b1e7e6eb1b3f9c3812f4d1211421e01f095",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
+    "docs/slide-specs/illustration_examples/svg_toolkit/before_after_details.webp": {
+      "sha256": "07c4d7212a4d99a8baa9a528a1f83dd2aa6ce3df0a7f71fb582ecb4bb20ee825",
+      "bytes": 87462
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit/before_after_gallery.webp": {
+      "sha256": "0e8a79bbf0534528a6f5b4547c591c6981c8af498a3047cf77ce9e2ba8e90241",
+      "bytes": 111798
+    },
     "docs/slide-specs/illustration_examples/svg_toolkit/binding.drawn.svg": {
-      "sha256": "812fddcb09d16988804554d28f5c36bca105b50dabf39aa927207c4a18ab9733",
-      "bytes": 4232,
-      "scratch_sha256": "812fddcb09d16988804554d28f5c36bca105b50dabf39aa927207c4a18ab9733",
+      "sha256": "fec734373e8de52478c88e349e606c35181221e97b6014a667d92c748942de13",
+      "bytes": 10216,
+      "scratch_sha256": "fec734373e8de52478c88e349e606c35181221e97b6014a667d92c748942de13",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/binding.webp": {
-      "sha256": "d71357e331116369401c20cc955b4a2b6074af63cd5085c5d79602101f5633a8",
-      "bytes": 28234,
-      "scratch_sha256": "d71357e331116369401c20cc955b4a2b6074af63cd5085c5d79602101f5633a8",
+      "sha256": "9618d25529e5d0fc7acd18b7a69be5342e50d3321ebe545e424371fd19be3944",
+      "bytes": 29050,
+      "scratch_sha256": "9618d25529e5d0fc7acd18b7a69be5342e50d3321ebe545e424371fd19be3944",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/cells.drawn.svg": {
-      "sha256": "a5d6e34834ee194fff8da9430af9f28156e868fa2680bfe85905376c615e90c6",
-      "bytes": 6682,
-      "scratch_sha256": "a5d6e34834ee194fff8da9430af9f28156e868fa2680bfe85905376c615e90c6",
+      "sha256": "18e12aaef1ba3c6a90c10a74c86083505289b5b55b0525a1d9cb275525daae77",
+      "bytes": 15241,
+      "scratch_sha256": "18e12aaef1ba3c6a90c10a74c86083505289b5b55b0525a1d9cb275525daae77",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/cells.webp": {
-      "sha256": "f67284d28ec7f5f6b17948b0f966c02f60edb2b36381ef9cd4befeb63759c861",
-      "bytes": 27316,
-      "scratch_sha256": "f67284d28ec7f5f6b17948b0f966c02f60edb2b36381ef9cd4befeb63759c861",
+      "sha256": "9ef6563619dae5244d9b9f52bf0c2215f2c54978d8f88efbd61b97c39175ae60",
+      "bytes": 30890,
+      "scratch_sha256": "9ef6563619dae5244d9b9f52bf0c2215f2c54978d8f88efbd61b97c39175ae60",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
@@ -250,188 +436,187 @@
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/gene_features.drawn.svg": {
-      "sha256": "34eeb1aef6f888969a2aeb509962865126859e943e82b98a7eca6a051f4f2d52",
-      "bytes": 5707,
-      "scratch_sha256": "34eeb1aef6f888969a2aeb509962865126859e943e82b98a7eca6a051f4f2d52",
+      "sha256": "c2d3a7f0b0325310604c6137acf69837793849490a6a845aa160ecd2de69b36e",
+      "bytes": 5715,
+      "scratch_sha256": "c2d3a7f0b0325310604c6137acf69837793849490a6a845aa160ecd2de69b36e",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/gene_features.webp": {
-      "sha256": "2dac80bd3723a53dfb1d268a7ba25cf46c511ebe7d67c9378b207427fec58f1b",
-      "bytes": 21372,
-      "scratch_sha256": "2dac80bd3723a53dfb1d268a7ba25cf46c511ebe7d67c9378b207427fec58f1b",
+      "sha256": "75d739c6687d4bb9757369367e778a2776ffb1db83925549019ea067de9c8a2b",
+      "bytes": 23326,
+      "scratch_sha256": "75d739c6687d4bb9757369367e778a2776ffb1db83925549019ea067de9c8a2b",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg": {
-      "sha256": "0e26fbc8f10fb3fc5b876989ad88a44d591cb362cb15f7071cb2aae46098f49f",
-      "bytes": 15647,
-      "scratch_sha256": "0e26fbc8f10fb3fc5b876989ad88a44d591cb362cb15f7071cb2aae46098f49f",
+      "sha256": "ce6cbae15981572dbe2d6aa99e8dc2ef217264f4b3a50e9e675de1ac950b73ab",
+      "bytes": 15827,
+      "scratch_sha256": "ce6cbae15981572dbe2d6aa99e8dc2ef217264f4b3a50e9e675de1ac950b73ab",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/icons.webp": {
-      "sha256": "d3990184d5dd2436637667f792e6711cb14f3cbe9fa6f9c06ddb04eb42834466",
-      "bytes": 13888,
-      "scratch_sha256": "d3990184d5dd2436637667f792e6711cb14f3cbe9fa6f9c06ddb04eb42834466",
+      "sha256": "890494b879a60d6ece101dc87200a719b3db3361182673acc001bc179f777605",
+      "bytes": 11600,
+      "scratch_sha256": "890494b879a60d6ece101dc87200a719b3db3361182673acc001bc179f777605",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/index.webp": {
-      "sha256": "4b57910f62ad362162b8879339926ffa9cae0f9380dde815623d2bd9d5d74bc5",
-      "bytes": 83956,
-      "scratch_sha256": "4b57910f62ad362162b8879339926ffa9cae0f9380dde815623d2bd9d5d74bc5",
+      "sha256": "178999794d2105eaee5b9aac81270cfa64dde10e9738ecb9b9b12ef9f4713dcb",
+      "bytes": 77182,
+      "scratch_sha256": "178999794d2105eaee5b9aac81270cfa64dde10e9738ecb9b9b12ef9f4713dcb",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/membranes.drawn.svg": {
-      "sha256": "9f51e6972e478821096ef81bbd19a0baabaa44fe7d1dc77ce22b535d40ffa83d",
-      "bytes": 24178,
-      "scratch_sha256": "9f51e6972e478821096ef81bbd19a0baabaa44fe7d1dc77ce22b535d40ffa83d",
+      "sha256": "f9e8b8dc88206d179349efee8935de6b5a5a8710f9e21bf132709b78e7c18211",
+      "bytes": 35506,
+      "scratch_sha256": "f9e8b8dc88206d179349efee8935de6b5a5a8710f9e21bf132709b78e7c18211",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/membranes.webp": {
-      "sha256": "cac3ee91051d9a40947c7d78f646c073ba833bf0b0f32445c18a253d0a1e58d6",
-      "bytes": 50884,
-      "scratch_sha256": "cac3ee91051d9a40947c7d78f646c073ba833bf0b0f32445c18a253d0a1e58d6",
+      "sha256": "6bd689bc55ab65f6cf3e4c7fe20f9ad10f5977a7b03fda8e37645ea61f33740e",
+      "bytes": 56028,
+      "scratch_sha256": "6bd689bc55ab65f6cf3e4c7fe20f9ad10f5977a7b03fda8e37645ea61f33740e",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/organelles.drawn.svg": {
-      "sha256": "69d4e31d94b6e61d6d283602f09252edfb2d1d9c166dbe3253fb51a3d02ae8d7",
-      "bytes": 9608,
-      "scratch_sha256": "69d4e31d94b6e61d6d283602f09252edfb2d1d9c166dbe3253fb51a3d02ae8d7",
+      "sha256": "58d71419ac06719dce714e5aa4a53fab9e11aa1110d01a88f06017a9f214678b",
+      "bytes": 28279,
+      "scratch_sha256": "58d71419ac06719dce714e5aa4a53fab9e11aa1110d01a88f06017a9f214678b",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/organelles.webp": {
-      "sha256": "f44b2d6d96ddd0e3097bdb0ff8d603ca8fcb5043d3292cb125ad8d249189e31a",
-      "bytes": 31146,
-      "scratch_sha256": "f44b2d6d96ddd0e3097bdb0ff8d603ca8fcb5043d3292cb125ad8d249189e31a",
+      "sha256": "1b4ba8fc016b4fed947dcf9f5108ca3e262b0967e2df05ab481dc96a5e28031a",
+      "bytes": 39732,
+      "scratch_sha256": "1b4ba8fc016b4fed947dcf9f5108ca3e262b0967e2df05ab481dc96a5e28031a",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/phenotypes.drawn.svg": {
-      "sha256": "246673ef4978e28bbdbdcc62870bd684e70a03cce48fa829a86ba538cde0dc1a",
-      "bytes": 7541,
-      "scratch_sha256": "246673ef4978e28bbdbdcc62870bd684e70a03cce48fa829a86ba538cde0dc1a",
+      "sha256": "2b1c402acbdb9e458eb8c07f405c36ce0bd55ded8ab6e3c0eee24454f87f87a4",
+      "bytes": 15825,
+      "scratch_sha256": "2b1c402acbdb9e458eb8c07f405c36ce0bd55ded8ab6e3c0eee24454f87f87a4",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/phenotypes.webp": {
-      "sha256": "39ae946856be8092d45e5eb8ebd74042ec843cd7c8c5bd2c90e22460e325d2e3",
-      "bytes": 51162,
-      "scratch_sha256": "39ae946856be8092d45e5eb8ebd74042ec843cd7c8c5bd2c90e22460e325d2e3",
+      "sha256": "71ac215b95cc9e9aa2a129b3597c000961aacea3a3efe5bf6fe58eb739de70d5",
+      "bytes": 52830,
+      "scratch_sha256": "71ac215b95cc9e9aa2a129b3597c000961aacea3a3efe5bf6fe58eb739de70d5",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/placement.drawn.svg": {
-      "sha256": "0bed33f88c03ebeaa08d499910dc278275789b0113b75ebd4fd2b9bdda501b21",
+      "sha256": "29f007b5c3a796fdb5f94faa8194933c708f112d235a186eb93cc7c792eda512",
       "bytes": 4844,
-      "scratch_sha256": "0bed33f88c03ebeaa08d499910dc278275789b0113b75ebd4fd2b9bdda501b21",
+      "scratch_sha256": "29f007b5c3a796fdb5f94faa8194933c708f112d235a186eb93cc7c792eda512",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/placement.webp": {
-      "sha256": "bf5cdce0804eb744a778c17818fa0f5df8fb711b0c042b9e2289c0658e2f22a2",
-      "bytes": 21132,
-      "scratch_sha256": "bf5cdce0804eb744a778c17818fa0f5df8fb711b0c042b9e2289c0658e2f22a2",
+      "sha256": "0994f3b360533eb123c73903c69f5efab45942e48cd559c060785779fa89a715",
+      "bytes": 20972,
+      "scratch_sha256": "0994f3b360533eb123c73903c69f5efab45942e48cd559c060785779fa89a715",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/plots.plot.svg": {
-      "sha256": "7695036a4940f65779fa383dccfda7bf01390385fecb2a9508a1d5f9b6a18926",
-      "bytes": 44714,
-      "scratch_sha256": "7695036a4940f65779fa383dccfda7bf01390385fecb2a9508a1d5f9b6a18926",
+      "sha256": "43bdc44732a46fa30aae3f6fa738d4baab4f4a80a8388ebd20af9c25b863e4d1",
+      "bytes": 46891,
+      "scratch_sha256": "43bdc44732a46fa30aae3f6fa738d4baab4f4a80a8388ebd20af9c25b863e4d1",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/plots.webp": {
-      "sha256": "ad9fe293d606bf526f3a796b181b80dd28b596e753a12eb123a0696a0f3eea93",
-      "bytes": 27122,
-      "scratch_sha256": "ad9fe293d606bf526f3a796b181b80dd28b596e753a12eb123a0696a0f3eea93",
+      "sha256": "1c8ef1d579ab7b5190746cd6e02fb5f72b34f6290be131180fff7ade322c0c8f",
+      "bytes": 33996,
+      "scratch_sha256": "1c8ef1d579ab7b5190746cd6e02fb5f72b34f6290be131180fff7ade322c0c8f",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/proteins.drawn.svg": {
-      "sha256": "5937e02c7c406289e21e40339ac5233956352b80156e701da8a49854bffc1ac0",
-      "bytes": 15533,
-      "scratch_sha256": "5937e02c7c406289e21e40339ac5233956352b80156e701da8a49854bffc1ac0",
+      "sha256": "87100215fad8fc7d79831cdcc0f9c4a2f402d1d1be23d07bce467343eb02470a",
+      "bytes": 27263,
+      "scratch_sha256": "87100215fad8fc7d79831cdcc0f9c4a2f402d1d1be23d07bce467343eb02470a",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/proteins.webp": {
-      "sha256": "339dc3944031b38d29e73485020203470da566579ed651f76978c964e281dfe0",
-      "bytes": 29238,
-      "scratch_sha256": "339dc3944031b38d29e73485020203470da566579ed651f76978c964e281dfe0",
+      "sha256": "6ca5fa0260ecd39f0a700052128facddadf58955c3efc7f982422b6a203a2a8a",
+      "bytes": 31704,
+      "scratch_sha256": "6ca5fa0260ecd39f0a700052128facddadf58955c3efc7f982422b6a203a2a8a",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/signaling.drawn.svg": {
-      "sha256": "1c904f42ce170259fff2fe38900faf249b19ba7e1c0709b7d9e75fbdb1b54c4b",
-      "bytes": 17931,
-      "scratch_sha256": "1c904f42ce170259fff2fe38900faf249b19ba7e1c0709b7d9e75fbdb1b54c4b",
+      "sha256": "bb0d4f727cb7eb92f08a47ee15ffb486a344f990a4fa38d85cc6364e54a3d65f",
+      "bytes": 30077,
+      "scratch_sha256": "bb0d4f727cb7eb92f08a47ee15ffb486a344f990a4fa38d85cc6364e54a3d65f",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/signaling.webp": {
-      "sha256": "42df9072cbf9692b2af7b3e9080e2acbc48e918760defb657d36f9014dd6e14c",
-      "bytes": 33174,
-      "scratch_sha256": "42df9072cbf9692b2af7b3e9080e2acbc48e918760defb657d36f9014dd6e14c",
+      "sha256": "9efb6503a013fb317a6dabe86c29880f928459e37e4dd614dc2b1e7c23f7803e",
+      "bytes": 33804,
+      "scratch_sha256": "9efb6503a013fb317a6dabe86c29880f928459e37e4dd614dc2b1e7c23f7803e",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/styled_text.drawn.svg": {
-      "sha256": "87a65673f406882adf239bdadd041c5a837c25803fc5452b5d270fe4dbc6f5b7",
-      "bytes": 4104,
-      "scratch_sha256": "87a65673f406882adf239bdadd041c5a837c25803fc5452b5d270fe4dbc6f5b7",
+      "sha256": "1aed1a5f559e008b46f601907d6a01cd214e34fba4c5ba2ce37e2db18956b5bc",
+      "bytes": 4059,
+      "scratch_sha256": "1aed1a5f559e008b46f601907d6a01cd214e34fba4c5ba2ce37e2db18956b5bc",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/styled_text.webp": {
-      "sha256": "f87e80de089eff493090d65e0b771e3f2ead610f64d7503c6d8bcacb3dc8497a",
-      "bytes": 33868,
-      "scratch_sha256": "f87e80de089eff493090d65e0b771e3f2ead610f64d7503c6d8bcacb3dc8497a",
+      "sha256": "9abcee66fa6ef45027ae9d7808dd9e0987265cd543b0ad50b47fbc3610ed1408",
+      "bytes": 27342,
+      "scratch_sha256": "9abcee66fa6ef45027ae9d7808dd9e0987265cd543b0ad50b47fbc3610ed1408",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/svg_composition.drawn.svg": {
-      "sha256": "28a84053f253007a937c7312de76ab48cfd60a7850e2256effdb9e681b2a63e5",
+      "sha256": "9c1529953ef935ff53de317b15e175ffb1079cc01b177621de4766f1a2e8b151",
       "bytes": 1578,
-      "scratch_sha256": "28a84053f253007a937c7312de76ab48cfd60a7850e2256effdb9e681b2a63e5",
+      "scratch_sha256": "9c1529953ef935ff53de317b15e175ffb1079cc01b177621de4766f1a2e8b151",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/svg_composition.webp": {
-      "sha256": "638c4d07025307c4e0c8b43dc4b9b80d797ae366a0d71962c09dbf5f466fc2c4",
-      "bytes": 46172,
-      "scratch_sha256": "638c4d07025307c4e0c8b43dc4b9b80d797ae366a0d71962c09dbf5f466fc2c4",
+      "sha256": "8179a913953c71db1887f027f1cd4c2be6955c6730f2b9fb46303cbf5f754ee0",
+      "bytes": 24006,
+      "scratch_sha256": "8179a913953c71db1887f027f1cd4c2be6955c6730f2b9fb46303cbf5f754ee0",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/text_labels.drawn.svg": {
-      "sha256": "0f2cd8918fc918697e81a07b3d6fd2d08bdc7c38ef6cf128c75767e6a128a9da",
+      "sha256": "759463fa13208f05873ef6cb6f621c0261a920c43009c9f4707b89796a315385",
       "bytes": 833,
-      "scratch_sha256": "0f2cd8918fc918697e81a07b3d6fd2d08bdc7c38ef6cf128c75767e6a128a9da",
+      "scratch_sha256": "759463fa13208f05873ef6cb6f621c0261a920c43009c9f4707b89796a315385",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/text_labels.webp": {
-      "sha256": "70840a2f4221d60e517e49af1dae442d78e6d35fd170be80f2993c121167c3fb",
-      "bytes": 17678,
-      "scratch_sha256": "70840a2f4221d60e517e49af1dae442d78e6d35fd170be80f2993c121167c3fb",
+      "sha256": "b3c75c3fa3f8aa9463aebd16ba7651ddacec1dc8af6e56f09df1b92076084f2a",
+      "bytes": 16982,
+      "scratch_sha256": "b3c75c3fa3f8aa9463aebd16ba7651ddacec1dc8af6e56f09df1b92076084f2a",
       "byte_identical": true,
       "recipe": "svg_tools.examples.build_gallery"
     },
     "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg": {
-      "sha256": "62f8cd0ff0e42e615b64337bcd75e1650530406f5367757fa5de60dedb71930c",
-      "bytes": 14023,
-      "scratch_sha256": "62f8cd0ff0e42e615b64337bcd75e1650530406f5367757fa5de60dedb71930c",
+      "sha256": "9e2e172733f434d8daaecaf92bf0fe96e64b5f7b6cd836bbce02b786053f7ec0",
+      "bytes": 14186,
+      "scratch_sha256": "9e2e172733f434d8daaecaf92bf0fe96e64b5f7b6cd836bbce02b786053f7ec0",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.genome_composition",
-      "recipe_arguments": "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg",
-      "preview": "_temp/svg_toolkit/native_final/human_genome_composition_toolkit.plot.webp"
+      "recipe_arguments": "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg"
     },
     "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg": {
       "sha256": "ba556985bf8a4678d5a1e9fc4f14e7fe0b3847ea5d869bc771d82bc54b8e4ff1",
@@ -439,207 +624,172 @@
       "scratch_sha256": "ba556985bf8a4678d5a1e9fc4f14e7fe0b3847ea5d869bc771d82bc54b8e4ff1",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.array_comparison",
-      "recipe_arguments": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg",
-      "preview": "_temp/svg_toolkit/native_final/array_comparison_workflow_toolkit.drawn.webp"
+      "recipe_arguments": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg"
     },
     "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating_toolkit.drawn.svg": {
-      "sha256": "688f8d33497c770d381966deff25924cdeed7f1bc6df4e4b99f6e2e01c5f7a45",
-      "bytes": 2227,
-      "scratch_sha256": "688f8d33497c770d381966deff25924cdeed7f1bc6df4e4b99f6e2e01c5f7a45",
+      "sha256": "3edfc999df608cba1fa8e9e7596c65cff45d0e68382d9bb413928a76959fe1bc",
+      "bytes": 4171,
+      "scratch_sha256": "3edfc999df608cba1fa8e9e7596c65cff45d0e68382d9bb413928a76959fe1bc",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.yeast_mating",
-      "recipe_arguments": "--output-dir genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads",
-      "preview": "_temp/svg_toolkit/native_final/yeast_mating_toolkit.drawn.webp"
+      "recipe_arguments": "--output-dir genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads"
     },
     "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid_toolkit.drawn.svg": {
-      "sha256": "c62f477558428edee015eb305839da51d16e51353f04f941590d15200ff22aec",
-      "bytes": 1688,
-      "scratch_sha256": "c62f477558428edee015eb305839da51d16e51353f04f941590d15200ff22aec",
+      "sha256": "eab9fcb24b6aaf5d860aee3c92d4425f5fb1dc422f6a99a6b12f5a7c615ca091",
+      "bytes": 3350,
+      "scratch_sha256": "eab9fcb24b6aaf5d860aee3c92d4425f5fb1dc422f6a99a6b12f5a7c615ca091",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.yeast_mating",
-      "recipe_arguments": "--output-dir genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads",
-      "preview": "_temp/svg_toolkit/native_final/yeast_diploid_toolkit.drawn.webp"
+      "recipe_arguments": "--output-dir genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads"
     },
     "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg": {
-      "sha256": "558896f6dfdf0ebcd170df0e85474a99e4392bc68e7db9f196d8fed4ec679c0f",
-      "bytes": 8276,
-      "scratch_sha256": "558896f6dfdf0ebcd170df0e85474a99e4392bc68e7db9f196d8fed4ec679c0f",
+      "sha256": "2b6da0320aaf7bee06c4021416f16b418bb2f01e8c44a711a61e3104a877b049",
+      "bytes": 11685,
+      "scratch_sha256": "2b6da0320aaf7bee06c4021416f16b418bb2f01e8c44a711a61e3104a877b049",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.seed_cross",
-      "recipe_arguments": "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg",
-      "preview": "_temp/svg_toolkit/native_final/dihybrid_seed_phenotypes_toolkit.drawn.webp"
+      "recipe_arguments": "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg"
     },
     "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg": {
-      "sha256": "378d96142da441e7e1cd20d845cb2b6f7c388091c37a2c4edf63c25b343573c6",
-      "bytes": 5675,
-      "scratch_sha256": "378d96142da441e7e1cd20d845cb2b6f7c388091c37a2c4edf63c25b343573c6",
+      "sha256": "623d1bd8ce13870be4223047c5ebf720a48aa9390582c874539fe94bc4cfb6fd",
+      "bytes": 8898,
+      "scratch_sha256": "623d1bd8ce13870be4223047c5ebf720a48aa9390582c874539fe94bc4cfb6fd",
       "byte_identical": true,
       "recipe_module": "svg_tools.examples.western_detection",
-      "recipe_arguments": "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg",
-      "preview": "_temp/svg_toolkit/native_final/western_detection_detail_toolkit.drawn.webp"
+      "recipe_arguments": "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg"
+    },
+    "docs/slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg": {
+      "sha256": "c476d27f21229e9410fda71f783811be7de52651f5886b8f855501e576e7afd2",
+      "bytes": 36233,
+      "scratch_sha256": "c476d27f21229e9410fda71f783811be7de52651f5886b8f855501e576e7afd2",
+      "byte_identical": true,
+      "recipe_module": "svg_tools.chromosome_examples"
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/new_signaling_trial.drawn.svg": {
+      "sha256": "56e242f01d80ea5435ac8789638228d48fe430c57a5d0437ce62e3f8d7967a97",
+      "bytes": 28538,
+      "recipe": "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/build.py"
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/new_signaling_trial.webp": {
+      "sha256": "025c28e9efc859361c71d9dbb87cf27300c4d07d1d53f281ed7e4cd1a34cc197",
+      "bytes": 37596,
+      "recipe": "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/build.py"
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/sxl_reconstruction_trial.drawn.svg": {
+      "sha256": "6a0e61eb148aedf638e48a00e1fc0dceb9afbf20d35474af3befad0d3de32c07",
+      "bytes": 18387,
+      "recipe": "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/build.py"
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/sxl_reconstruction_trial.webp": {
+      "sha256": "8f5f52c63a7fc3f22b6f8c67ad9a9cf1de08ed04fb8225965eeda022eee00c65",
+      "bytes": 43504,
+      "recipe": "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/build.py"
     }
   },
   "svg_checks": {
     "docs/slide-specs/illustration_examples/svg_toolkit/allele_frequencies.plot.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/annotations.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/binding.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/cells.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/curve_samples.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/gene_features.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/membranes.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/organelles.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/phenotypes.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/placement.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/plots.plot.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/proteins.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/signaling.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/styled_text.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/svg_composition.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "docs/slide-specs/illustration_examples/svg_toolkit/text_labels.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating_toolkit.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid_toolkit.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
     },
     "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg": {
       "ascii_xml": true,
-      "positive_viewbox": true,
-      "static_vector": true,
-      "live_atkinson_text_where_present": true,
-      "external_render_references": false
+      "positive_viewbox": true
+    },
+    "docs/slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg": {
+      "ascii_xml": true,
+      "positive_viewbox": true
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/new_signaling_trial.drawn.svg": {
+      "ascii_xml": true,
+      "positive_viewbox": true
+    },
+    "docs/slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/sxl_reconstruction_trial.drawn.svg": {
+      "ascii_xml": true,
+      "positive_viewbox": true
     }
   },
   "originals": {
@@ -671,6 +821,11 @@
     "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg": {
       "sha256": "a7cc2655e78ca5c3590675360acffe7cfdd8e50a6ff2889748d23c4bdcc09204",
       "baseline_sha256": "a7cc2655e78ca5c3590675360acffe7cfdd8e50a6ff2889748d23c4bdcc09204",
+      "matches_baseline": true
+    },
+    "genetics/LECT02/djot/assets/lect02d-dna_structure_overview/b_dna_helix.drawn.svg": {
+      "sha256": "5559e48a7ccab780408bb402d8585c134667a10cce47e785d38a8c9b2cc037ba",
+      "baseline_sha256": "5559e48a7ccab780408bb402d8585c134667a10cce47e785d38a8c9b2cc037ba",
       "matches_baseline": true
     }
   },

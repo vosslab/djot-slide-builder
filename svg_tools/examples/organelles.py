@@ -25,10 +25,10 @@ def main() -> None:
 	for index, (kind, title, color) in enumerate(items):
 		x = 120 + (index % 3) * 260
 		y = 110 + (index // 3) * 180
-		width, height = ((130, 86) if index < 4 else (72, 72))
+		width, height = ((190, 110) if index < 4 else (105, 105))
 		parts.append(move(svg_tools.cells.organelle(kind=kind, width=width, height=height,
 			color=color), x=x, y=y))
-		parts.append(svg_tools.text.label(x, y + 75, title, size=18, color='#344651'))
+		parts.append(svg_tools.text.label(x, y + 75, title, size=20, color='#344651'))
 	parts.append(move(svg_tools.cells.cell_envelope(kind='animal', width=440, height=340,
 		color='#edf5f1'), x=1050, y=230))
 	nucleus = svg_tools.cells.nucleus(width=130, height=115, color='#cbdcf0')

@@ -2,10 +2,11 @@
 
 Use these recipes from the repository root. The [capability catalogue](SVG_TOOLKIT.md) lists
 parts and their examples; the [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp)
-and [native showcase](../exemplars/svg_toolkit.djot) show them together. See the
+and [native showcase](../exemplars/svg_toolkit.djot) show them together. The
+[visual style guide](SVG_VISUAL_STYLE.md) explains the shared illustration direction. See the
 [slide illustration rules](slide-specs/SVG_DIAGRAMS.md) for editable assets and review. The
-[implementation report](SVG_TOOLKIT_IMPLEMENTATION_REPORT.md) links accepted independent trials
-and records verification limits.
+[initial implementation report](SVG_TOOLKIT_IMPLEMENTATION_REPORT.md) links earlier independent trials
+and records their verification limits.
 
 Choose parts from the catalogue for the relationships you need, then place and connect them with
 explicit coordinates. `SvgPart` contains an SVG fragment, painted bounds, and named anchors;
@@ -37,12 +38,14 @@ parts = {
 	'target': target,
 	'inhibition': svg_tools.annotations.connector(
 		[source.anchors['output'], target.anchors['input']], kind='inhibition'),
-	'source_label': svg_tools.text.label(110, 185, 'Kinase', size=16, color='#344651'),
-	'target_label': svg_tools.text.label(330, 185, 'Response protein', size=16, color='#344651'),
+	'source_label': svg_tools.text.label(source.anchors['center'][0], source.bounds[3] + 25,
+		'Kinase', size=16, color='#344651'),
+	'target_label': svg_tools.text.label(target.anchors['center'][0], target.bounds[3] + 25,
+		'Response protein', size=16, color='#344651'),
 }
 output = pathlib.Path('_temp/signaling_recipe.svg')
 output.parent.mkdir(parents=True, exist_ok=True)
-svg_tools.drawing.write_svg(output, 450, 200, 'Signaling example',
+svg_tools.drawing.write_svg(output, 450, 230, 'Signaling example',
 	'An active kinase inhibits a phosphorylated inactive response protein.',
 	svg_tools.parts.group(parts).fragment)
 ```
@@ -51,6 +54,8 @@ svg_tools.drawing.write_svg(output, 450, 200, 'Signaling example',
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B _temp/signaling_recipe.py
 ```
 
+The connectors use named anchors; labels use each part's center anchor and painted bottom bound
+so that state symbols have room. Check label bounds and the final slide placement for legibility.
 Protein activity and phosphate are separate authored states; neither implies the other. The
 protein `input`, `output`, `binding`, and `modification` anchors are schematic attachment points.
 An `activity` value draws its own visible label and symbol, included in the protein's bounds;
@@ -84,7 +89,8 @@ parts = {
 	'gene': gene,
 	'protein': protein,
 	'arrow': svg_tools.annotations.connector([gene.anchors['right'], protein.anchors['input']]),
-	'protein_label': svg_tools.text.label(280, 145, 'SXL protein', size=16, color='#344651'),
+	'protein_label': svg_tools.text.label(protein.anchors['center'][0], protein.bounds[3] + 25,
+		'SXL protein', size=16, color='#344651'),
 }
 output = pathlib.Path('_temp/svg_toolkit/styled_flow/styled_flow.svg')
 output.parent.mkdir(parents=True, exist_ok=True)

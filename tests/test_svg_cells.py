@@ -16,7 +16,9 @@ def test_cell_envelopes_and_anchors():
 			color='#e8f2ed', wall_color='#c2ddb9' if kind == 'plant' else None)
 		root = xml.etree.ElementTree.fromstring(part.fragment)
 		shapes = root.findall('path')
-		assert len(shapes) == (2 if kind == 'plant' else 1)
+		assert shapes[0].get('fill') == ('#c2ddb9' if kind == 'plant' else '#e8f2ed')
+		if kind == 'plant':
+			assert shapes[1].get('fill') == '#e8f2ed'
 		assert root.attrib['stroke'] == '#344651'
 		assert part.bounds == pytest.approx((-110.5, -55.25, 110.5, 55.25))
 		assert {'center', 'top', 'bottom', 'left', 'right'} <= part.anchors.keys()
@@ -42,7 +44,7 @@ def test_nuclear_parts_are_explicit_and_validate_dimensions():
 		'right': svg_tools.parts.transform(nucleus, x=cell.anchors['right_lobe'][0]),
 		'nucleolus': nucleolus}
 	root = xml.etree.ElementTree.fromstring('<g>' + svg_tools.parts.group(parts).fragment + '</g>')
-	assert len(root.findall('.//path')) == 4
+	assert len(root.findall('.//g')) >= 4
 	assert nucleus.anchors['center'] == nucleolus.anchors['center'] == (0, 0)
 	for factory in (svg_tools.cells.nucleus, svg_tools.cells.nucleolus):
 		for width, height in ((0, 10), (10, -1), (math.inf, 10), (10, math.nan)):
