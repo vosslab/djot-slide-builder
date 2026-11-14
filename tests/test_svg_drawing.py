@@ -10,6 +10,38 @@ import svg_tools.drawing
 
 
 #============================================
+def test_namespaced_import_serializes_for_libreoffice(tmp_path: pathlib.Path) -> None:
+	"""Keep SVG elements and xlink references usable regardless of global registrations."""
+	et = xml.etree.ElementTree
+	svg = "http://www.w3.org/2000/svg"
+	xlink = "http://www.w3.org/1999/xlink"
+	body = (f'<svg xmlns="{svg}" xmlns:xlink="{xlink}">'
+		'<defs><clipPath id="clip"><rect width="10" height="10"/></clipPath>'
+		'<path id="mark" d="M0 0L1 1"/></defs>'
+		'<g clip-path="url(#clip)"><use xlink:href="#mark"/>'
+		'<text x="2">Live label</text></g></svg>')
+	registry = et._namespace_map.copy()
+	try:
+		et.register_namespace("svg", "urn:other-svg")
+		et.register_namespace("other", svg)
+		et.register_namespace("custom", xlink)
+		output = tmp_path / "import.svg"
+		svg_tools.drawing.write_svg(output, 20, 20, "Title", "Description", body)
+	finally:
+		et._namespace_map.clear()
+		et._namespace_map.update(registry)
+	payload = output.read_bytes()
+	root = defusedxml.ElementTree.fromstring(payload)
+	assert b'<svg xmlns=' in payload and b'<use xlink:href="#mark"' in payload
+	assert b'other:' not in payload and b'custom:' not in payload
+	group = root.find(f'.//{{{svg}}}g')
+	assert group.get('clip-path') == 'url(#clip)'
+	assert group.find(f'{{{svg}}}use').get(f'{{{xlink}}}href') == '#mark'
+	assert group.find(f'{{{svg}}}text').text == 'Live label'
+	assert root.find(f'.//{{{svg}}}clipPath/{{{svg}}}rect').get('width') == '10'
+
+
+#============================================
 def test_scientific_labels_survive_and_invalid_xml_preserves_file(tmp_path: pathlib.Path) -> None:
 	"""Fix serialization if labels change or malformed XML overwrites a usable drawing."""
 	output = tmp_path / "labels.drawn.svg"

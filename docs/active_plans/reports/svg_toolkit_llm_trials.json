@@ -1,0 +1,65 @@
+{
+  "new_signaling": {
+    "spec": "PASS",
+    "quality": "PASS",
+    "maintainer_hints": false,
+    "api_changes": false,
+    "author_errors": [],
+    "self_resolved": [
+      "Automatic activity labels initially overlapped authored labels; adjusted placement and height."
+    ],
+    "embedded_svg_byte_identical": true,
+    "svg_mime": true,
+    "native_pdf_pages": 1
+  },
+  "sxl_reconstruction": {
+    "spec": "PASS",
+    "quality": "PASS",
+    "first_attempt": {
+      "spec": "FAIL",
+      "reason": "Four Sxl gene names upright rather than italic.",
+      "author_errors": [
+        "Sandbox qlmanage thumbnail failed.",
+        "rsvg-convert with white background omitted box labels."
+      ],
+      "self_resolved": [
+        "Transparent SVG rendering plus Pillow composition retained box labels."
+      ]
+    },
+    "intervening_fix": "Small styled-box API and documentation fix before independent repeat.",
+    "repeat_maintainer_hints": false,
+    "repeat_api_changes": false,
+    "word_multiset_matches": true,
+    "branch_states_and_symbols_match": true,
+    "embedded_svg_byte_identical": true,
+    "svg_mime": true,
+    "native_pdf_pages": 1
+  },
+  "documentation_gap": "Activity label and spacing documentation fixed.",
+  "artifact_sha256": {
+    "new_signaling": {
+      "README.md": "fded5ea8b13b9e3b64a3b832ddcec027d2b821304461efc00c009ac6770c3c23",
+      "build.py": "23460cd8da5fdd14a1e928a70fa83212a329cc492770cdbfff9d94ab10729312",
+      "new_signaling_trial.djot": "a3ef6e452ce921c88829221026564d3cdc76c8997f93ecc911170d8fd06ffc2b",
+      "new_signaling_trial.drawn.svg": "9e488367de49e81b7ec4177b9bc19d2804ed70ca3b2a9cec66d0d392cd360a5e",
+      "new_signaling_trial.odp": "219824c30d280d994fc8831252ceef0effb86601edb2e2200b45cabc7c6369c9",
+      "new_signaling_trial.pdf": "16f76dd0a39ef9e1c9c5884d1378759ba72a72501fc0879d657e084adc4b7d49",
+      "new_signaling_trial.webp": "79ab6dc37ca9dfafd1e7a218609a9056be58e9ef619bdff748f9809365aef5b8",
+      "new_signaling_trial_native.webp": "0060c7aaae0d04c9ec03abd2f74f2580ee58dd7411be61657db5f001aa8cf5f2"
+    },
+    "sxl_reconstruction": {
+      "README.md": "8bfc87c13e318a43e16422706736e62bc46fd435b05b1b9030395f7c3454e72e",
+      "build.py": "804ce4e9a60553c11a86c48fd4f9d79b25b8f9159f178e81b1735e7cc016b94b",
+      "sxl_reconstruction_trial.djot": "8a7e3d89b9759a76d122764a145814bff89be6ff1b793076e61b88adbe25c24b",
+      "sxl_reconstruction_trial.drawn.svg": "6a0e61eb148aedf638e48a00e1fc0dceb9afbf20d35474af3befad0d3de32c07",
+      "sxl_reconstruction_trial.odp": "b77d2726632c2e17d9804e65f19489073c2c4702b0e2966d15dc26537e5a83bf",
+      "sxl_reconstruction_trial.pdf": "aafb44e30cdd600f2738881cb9e7bc236731dfa6656bb2d0316869b3d0ba5073",
+      "sxl_reconstruction_trial.webp": "c0fe2f98297c0ca90079f91abff2342f00a1b01365bf793190d22055bf41104b",
+      "sxl_reconstruction_trial_native.webp": "33c21c2c27992b44b43c7eb8569acf0d8d02a4eb014ac58a00b40d3e8e2c0b47"
+    }
+  },
+  "limits": [
+    "No interactive Impress editing or live Zoom test.",
+    "Rendering checked on this LibreOffice installation only."
+  ]
+}

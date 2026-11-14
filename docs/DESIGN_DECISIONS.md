@@ -760,17 +760,16 @@ snapshots remain with the lecture; this organization does not change their refre
 
 ### Builds without Git
 
-**Decision.** Use the Git root when available and fall back to the current working directory
-when Git is missing or fails. Apply this to the launcher, environment setup, native build root,
-and shared slide/image resolution.
+**Decision.** Native source resolution finds an ancestor containing both `deck_tools.py` and
+`slide_lib`, falling back to the current working directory when no such ancestor exists.
+The launcher and bootstrap retain their separate legacy root-discovery behavior.
 
 **Why.** A copied project folder must build without `.git` metadata.
 
-**Consequence.** Run Git-free builds from the top-level project folder. The existing traversal
-and symlink-containment checks use that folder as their boundary.
+**Consequence.** Run Git-free builds from the top-level project folder. Traversal and
+symlink-containment checks use the resolved native root as their boundary.
 
-**Owner.** `build_slides.sh`, `source_me.sh`, `slide_lib/djot_sources.py`, and
-[USAGE.md](USAGE.md).
+**Owner.** [../slide_lib/djot_sources.py](../slide_lib/djot_sources.py) and [USAGE.md](USAGE.md).
 
 ### Bookend and definitions layouts
 

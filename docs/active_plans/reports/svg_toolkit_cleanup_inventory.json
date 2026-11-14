@@ -1,0 +1,274 @@
+{
+  "created_local": "2026-11-13T14:01:48.959773-06:00",
+  "status": "executed",
+  "original_snapshot_entries": 889,
+  "original_decision_counts": {
+    "conditional_remove": 869,
+    "conditional_remove_container": 1,
+    "keep": 9,
+    "keep_pending_promotion": 10
+  },
+  "original_top_level_entries": [
+    {
+      "path": "_temp/allele_check.svg",
+      "type": "file",
+      "size_bytes": 21410,
+      "mtime_ns": 1794594395174699058,
+      "decision": "keep",
+      "ownership_reason": "Ownership or provenance not established from available evidence; keep.",
+      "sha256": "96045cef806458a509bc6099e0d269585dc001c150382604f70cba1bb0c0d973"
+    },
+    {
+      "path": "_temp/allele_frequencies.svg",
+      "type": "file",
+      "size_bytes": 20345,
+      "mtime_ns": 1794599820269314157,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "a6a9b892fb0254b88b9965c94ef2956127541903725e5671c10dcd9c8a482011"
+    },
+    {
+      "path": "_temp/allele_slide.djot",
+      "type": "file",
+      "size_bytes": 252,
+      "mtime_ns": 1794594408832918603,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "55c8abfb1419be0177ce02b9e3d8a4bbdc9bc44be26549d73f3c2f984c852d9d"
+    },
+    {
+      "path": "_temp/annotations.png",
+      "type": "file",
+      "size_bytes": 25667,
+      "mtime_ns": 1794592883453123495,
+      "decision": "keep",
+      "ownership_reason": "Ownership or provenance not established from available evidence; keep.",
+      "sha256": "63342f3c9db7d2797bdb472e30d32526fd40f4be6c7cb6161392552d9d24d201"
+    },
+    {
+      "path": "_temp/annotations.svg",
+      "type": "file",
+      "size_bytes": 4710,
+      "mtime_ns": 1794599819394238403,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "a32892c30ec24418934d29ec505a5fb70d1b9b97176226d2e9dc0042599d4982"
+    },
+    {
+      "path": "_temp/biotech_lect11",
+      "type": "directory",
+      "size_bytes": 2336,
+      "mtime_ns": 1794506589537435395,
+      "decision": "keep",
+      "ownership_reason": "Protected Biotechnology work; another manager owns this tree."
+    },
+    {
+      "path": "_temp/biotech_lect11_scope_exclusion",
+      "type": "directory",
+      "size_bytes": 192,
+      "mtime_ns": 1794498267531160178,
+      "decision": "keep",
+      "ownership_reason": "Protected Biotechnology work; another manager owns this tree."
+    },
+    {
+      "path": "_temp/curve_samples.drawn.svg",
+      "type": "file",
+      "size_bytes": 2610,
+      "mtime_ns": 1794599819199530295,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "99c8186338a173b3ff7244b2a1c44205c16afa31f1066550aa7782e5ca99f6da"
+    },
+    {
+      "path": "_temp/draw_example.py",
+      "type": "file",
+      "size_bytes": 412,
+      "mtime_ns": 1794594579404080503,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "6b28595771a00fad24901e166c9e6363a232388045d330c56e5f9e3ae75db264"
+    },
+    {
+      "path": "_temp/gallery_reproduction",
+      "type": "directory",
+      "size_bytes": 1184,
+      "mtime_ns": 1794594477886229396,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit gallery review/reproduction directory; contents match toolkit gallery naming and are scratch builds."
+    },
+    {
+      "path": "_temp/gene_features.png",
+      "type": "file",
+      "size_bytes": 23643,
+      "mtime_ns": 1794593166302378585,
+      "decision": "keep",
+      "ownership_reason": "Ownership or provenance not established from available evidence; keep.",
+      "sha256": "0c1dace04ce985997a82fb687f66253348e2af8de46e674e22fe43d510382f54"
+    },
+    {
+      "path": "_temp/gene_features.svg",
+      "type": "file",
+      "size_bytes": 5707,
+      "mtime_ns": 1794599820009128065,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "34eeb1aef6f888969a2aeb509962865126859e943e82b98a7eca6a051f4f2d52"
+    },
+    {
+      "path": "_temp/icon_recipe.py",
+      "type": "file",
+      "size_bytes": 878,
+      "mtime_ns": 1794594744799581400,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "8288d38af593d8ce3dff9c5e1a4340674f102f3a26c443664334bffd93347b95"
+    },
+    {
+      "path": "_temp/icon_recipe.svg",
+      "type": "file",
+      "size_bytes": 4331,
+      "mtime_ns": 1794594745955928533,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "a3fab19d11f497a071ae3b10a11cc442c5a3b9038da13f7dd73009b915f5052d"
+    },
+    {
+      "path": "_temp/icons.svg",
+      "type": "file",
+      "size_bytes": 15647,
+      "mtime_ns": 1794599819341149112,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "0e26fbc8f10fb3fc5b876989ad88a44d591cb362cb15f7071cb2aae46098f49f"
+    },
+    {
+      "path": "_temp/m19_review_gallery",
+      "type": "directory",
+      "size_bytes": 1184,
+      "mtime_ns": 1794595019185628447,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit gallery review/reproduction directory; contents match toolkit gallery naming and are scratch builds."
+    },
+    {
+      "path": "_temp/matplotlib",
+      "type": "directory",
+      "size_bytes": 96,
+      "mtime_ns": 1794593221863995735,
+      "decision": "keep",
+      "ownership_reason": "Shared Matplotlib font cache; repository documentation uses mplconfig and ownership of matplotlib is unproven."
+    },
+    {
+      "path": "_temp/mplconfig",
+      "type": "directory",
+      "size_bytes": 96,
+      "mtime_ns": 1794592245068944961,
+      "decision": "keep",
+      "ownership_reason": "Shared Matplotlib font cache; repository documentation uses mplconfig and ownership of matplotlib is unproven."
+    },
+    {
+      "path": "_temp/placement.svg",
+      "type": "file",
+      "size_bytes": 4844,
+      "mtime_ns": 1794599818511446107,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "0bed33f88c03ebeaa08d499910dc278275789b0113b75ebd4fd2b9bdda501b21"
+    },
+    {
+      "path": "_temp/plots.png",
+      "type": "file",
+      "size_bytes": 36111,
+      "mtime_ns": 1794592920429357474,
+      "decision": "keep",
+      "ownership_reason": "Ownership or provenance not established from available evidence; keep.",
+      "sha256": "8e4081895d972b80db4652cfbf86c9535acfa7c2720b164c6e1356ee6c3fa955"
+    },
+    {
+      "path": "_temp/plots.svg",
+      "type": "file",
+      "size_bytes": 44714,
+      "mtime_ns": 1794599819783927539,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "7695036a4940f65779fa383dccfda7bf01390385fecb2a9508a1d5f9b6a18926"
+    },
+    {
+      "path": "_temp/signal.drawn.svg",
+      "type": "file",
+      "size_bytes": 528,
+      "mtime_ns": 1794594580410601553,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "867dcb31f5922941006defe3099c59856a2e89f58fcf1e99aaf564f5b8e09a63"
+    },
+    {
+      "path": "_temp/signaling_recipe.py",
+      "type": "file",
+      "size_bytes": 1125,
+      "mtime_ns": 1794594744799462316,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "87935c0a6cacf599c433a98d8bdca9ec93e60b9712e16ecbea8f636e79418f6a"
+    },
+    {
+      "path": "_temp/signaling_recipe.svg",
+      "type": "file",
+      "size_bytes": 2991,
+      "mtime_ns": 1794595009032706230,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "96d0056a2c6cb4c09a67276d53a267c464357bd744cab1f113f467fb34e4e57d"
+    },
+    {
+      "path": "_temp/styled_text.svg",
+      "type": "file",
+      "size_bytes": 4104,
+      "mtime_ns": 1794599818697481835,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "87a65673f406882adf239bdadd041c5a837c25803fc5452b5d270fe4dbc6f5b7"
+    },
+    {
+      "path": "_temp/svg_composition.png",
+      "type": "file",
+      "size_bytes": 16727,
+      "mtime_ns": 1794592637753808383,
+      "decision": "keep",
+      "ownership_reason": "Ownership or provenance not established from available evidence; keep.",
+      "sha256": "31da6399694e9308c465205e4761fd77d38b581a9ed8c4cee763fd7cb23ee472"
+    },
+    {
+      "path": "_temp/svg_composition.svg",
+      "type": "file",
+      "size_bytes": 1578,
+      "mtime_ns": 1794599819257337028,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "28a84053f253007a937c7312de76ab48cfd60a7850e2256effdb9e681b2a63e5"
+    },
+    {
+      "path": "_temp/svg_toolkit",
+      "type": "directory",
+      "size_bytes": 1440,
+      "mtime_ns": 1794600080262067672,
+      "decision": "conditional_remove_container",
+      "ownership_reason": "Toolkit-owned scratch; remove container only after protected trial is promoted and all reviews released."
+    },
+    {
+      "path": "_temp/text_labels.svg",
+      "type": "file",
+      "size_bytes": 833,
+      "mtime_ns": 1794599818597618329,
+      "decision": "conditional_remove",
+      "ownership_reason": "Toolkit example or recipe output; referenced by svg_tools/examples/build_gallery.py, svg_tools/README.md, or docs/SVG_TOOLKIT_COOKBOOK.md.",
+      "sha256": "0f2cd8918fc918697e81a07b3d6fd2d08bdc7c38ef6cf128c75767e6a128a9da"
+    }
+  ],
+  "execution_report": "svg_toolkit_cleanup.json",
+  "execution_totals": {
+    "files": 664,
+    "directories": 178,
+    "symlinks": 56,
+    "bytes": 21019311
+  }
+}

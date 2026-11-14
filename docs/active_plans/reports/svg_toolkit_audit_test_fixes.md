@@ -1,0 +1,7 @@
+# SVG toolkit test audit: applied pruning
+
+Removed fixed organelle control-point anchors, path inventories and opening counts. Retained public anchors and bounds, invalid inputs, the ER's enclosed openings and its distinction from Golgi. Membrane checks retain input-dependent public anchors and bounds and invalid-gap validation. Serialized markup inspection was removed; appearance, leaflets and rendered gaps require temporary or native visual checks. Molecule and phenotype checks retain caller colors, positive bounds, anchors, shape distinction, petal count and input validation without fixing default stroke or bounds padding.
+
+The root-discovery test retains copied, nested and symlink cases, and no longer globally overrides `Path.is_file` or asserts a synthetic fallback. No substitute fallback test was added. The coordinator retained the deterministic plot, current/legacy adapter consistency, real Matplotlib input asset, binding contact and chromosome source-map tests as deliberate contracts; the independent review's differing recommendations remain in [test review](../audits/svg_toolkit_audit_test.md).
+
+Verification: after creating `_temp/svg_toolkit_audit/test_fixes/pytest`, ran `PYTHONPATH="$PWD:$PWD/tests" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest --basetemp="$PWD/_temp/svg_toolkit_audit/test_fixes/pytest/run" tests/test_svg_*.py tests/test_djot_includes.py -q`: **107 passed in 1.74s**. This does not verify visual appearance or the removed synthetic fallback case.

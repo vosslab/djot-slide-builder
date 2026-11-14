@@ -1,0 +1,231 @@
+{
+  "executed_local": "2026-11-13T14:06:57.488269-06:00",
+  "status": "executed",
+  "manager_release": "Final specification review passed; manager released owned toolkit scratch.",
+  "removed": [
+    {
+      "path": "_temp/allele_frequencies.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 20345
+    },
+    {
+      "path": "_temp/allele_slide.djot",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 252
+    },
+    {
+      "path": "_temp/annotations.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 4710
+    },
+    {
+      "path": "_temp/curve_samples.drawn.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 2610
+    },
+    {
+      "path": "_temp/draw_example.py",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 412
+    },
+    {
+      "path": "_temp/gene_features.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 5707
+    },
+    {
+      "path": "_temp/icon_recipe.py",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 878
+    },
+    {
+      "path": "_temp/icon_recipe.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 4331
+    },
+    {
+      "path": "_temp/icons.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 15647
+    },
+    {
+      "path": "_temp/placement.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 4844
+    },
+    {
+      "path": "_temp/plots.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 44714
+    },
+    {
+      "path": "_temp/signal.drawn.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 528
+    },
+    {
+      "path": "_temp/signaling_recipe.py",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 1125
+    },
+    {
+      "path": "_temp/signaling_recipe.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 2991
+    },
+    {
+      "path": "_temp/styled_text.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 4104
+    },
+    {
+      "path": "_temp/svg_composition.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 1578
+    },
+    {
+      "path": "_temp/text_labels.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 833
+    },
+    {
+      "path": "_temp/annotations.png",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 25667
+    },
+    {
+      "path": "_temp/svg_composition.png",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 16727
+    },
+    {
+      "path": "_temp/plots.png",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 36111
+    },
+    {
+      "path": "_temp/gene_features.png",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 23643
+    },
+    {
+      "path": "_temp/allele_check.svg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 21410
+    },
+    {
+      "path": "_temp/component_review_contact.jpg",
+      "files": 1,
+      "directories": 0,
+      "symlinks": 0,
+      "bytes": 76679
+    },
+    {
+      "path": "_temp/svg_toolkit",
+      "files": 571,
+      "directories": 176,
+      "symlinks": 56,
+      "bytes": 19170139
+    },
+    {
+      "path": "_temp/gallery_reproduction",
+      "files": 35,
+      "directories": 1,
+      "symlinks": 0,
+      "bytes": 766012
+    },
+    {
+      "path": "_temp/m19_review_gallery",
+      "files": 35,
+      "directories": 1,
+      "symlinks": 0,
+      "bytes": 767314
+    }
+  ],
+  "totals": {
+    "files": 664,
+    "directories": 178,
+    "symlinks": 56,
+    "bytes": 21019311
+  },
+  "protected_tree_rollups_before": {
+    "biotech_lect11": {
+      "entries": 1624,
+      "sha256": "096a8374afb2d3acc8c2693c1df3ba5a76f7a953ccc1b1095cbda6e8a2a15fb3"
+    },
+    "biotech_lect11_scope_exclusion": {
+      "entries": 11,
+      "sha256": "4a5b4701e203433c0ba9de1f03f0202dd5668d219e06db80f74475edfd9acc16"
+    }
+  },
+  "protected_tree_rollups_after": {
+    "biotech_lect11": {
+      "entries": 1624,
+      "sha256": "096a8374afb2d3acc8c2693c1df3ba5a76f7a953ccc1b1095cbda6e8a2a15fb3"
+    },
+    "biotech_lect11_scope_exclusion": {
+      "entries": 11,
+      "sha256": "4a5b4701e203433c0ba9de1f03f0202dd5668d219e06db80f74475edfd9acc16"
+    }
+  },
+  "durable_hashes_checked_before_and_after": {
+    "regeneration": 41,
+    "native": 42,
+    "trial": 16
+  },
+  "remaining_temp_roots": [
+    "biotech_lect11",
+    "biotech_lect11_scope_exclusion",
+    "matplotlib",
+    "mplconfig"
+  ],
+  "notes": [
+    "The four component PNGs were visually checked against their toolkit examples; allele_check.svg identifies the illustrative allele-frequency chart.",
+    "component_review_contact.jpg was created during cleanup and removed.",
+    "Symlinks were removed as links and not followed. Logical file bytes are reported."
+  ]
+}

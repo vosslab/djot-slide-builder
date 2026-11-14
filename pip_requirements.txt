@@ -5,4 +5,5 @@ fonttools  # Read metrics from bundled, hash-verified layout fonts
 rich  # Concise presentation-build progress, summaries, and error panels
 PyYAML  # Safe loading of untracked course URL configuration
 yt-dlp  # Fetch YouTube titles and thumbnails for explicitly generated slides
-cairosvg  # Render previews in local SVG drawing recipes
+svgpathtools  # Distance and tangent calculations for SVG curves
+matplotlib>=3.11.2  # Scientific plots for SVG illustrations

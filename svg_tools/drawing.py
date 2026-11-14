@@ -87,7 +87,7 @@ def cylinder(name: str, x: float, y: float, z: float, radius: float, height: flo
 
 #============================================
 def text(x: float, y: float, value: str, *, size: float, color: str,
-	anchor: str = "middle", font: str = "Arial, sans-serif") -> str:
+	anchor: str = "middle", font: str = "Atkinson Hyperlegible Next") -> str:
 	"""Make an editable label, escaping its value and attributes as XML."""
 	element = xml.etree.ElementTree.Element("text", {
 		"x": str(x), "y": str(y), "font-size": str(size), "fill": color,
@@ -131,6 +131,16 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	detail = xml.etree.ElementTree.Element("desc", {"id": "desc"})
 	detail.text = description
 	root.insert(1, detail)
+	# LibreOffice requires unprefixed SVG elements and the literal xlink prefix.
+	svg_ns = "{http://www.w3.org/2000/svg}"
+	xlink_ns = "{http://www.w3.org/1999/xlink}"
+	for element in root.iter():
+		if element.tag.startswith(svg_ns):
+			element.tag = element.tag[len(svg_ns):]
+		for name in list(element.attrib):
+			if name.startswith(xlink_ns):
+				element.set("xlink:" + name[len(xlink_ns):], element.attrib.pop(name))
+				root.set("xmlns:xlink", xlink_ns[1:-1])
 	# LibreOffice may render SVGs with an ASCII declaration blank.
 	payload = xml.etree.ElementTree.tostring(root, encoding="ascii", xml_declaration=False)
 	# Reject invalid XML characters in metadata before opening an existing destination.

@@ -42,7 +42,7 @@ class ExportResult:
 
 #============================================
 def find_repo_root() -> pathlib.Path:
-	"""Return the current Git root, falling back to CWD for unpacked projects."""
+	"""Find the project containing CWD, or use CWD for standalone sources."""
 	return slide_lib.djot_sources.repository_root()
 
 

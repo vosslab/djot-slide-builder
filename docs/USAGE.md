@@ -21,6 +21,19 @@ Build all eligible Djot decks below a lecture folder as ODP and PDF:
 Outputs are written under `output/odp/` and `output/pdf/`. Open the ODP in LibreOffice Impress
 to edit it. Run the build outside an agent sandbox because PDF output invokes LibreOffice.
 
+## Author an SVG figure
+
+Use the [toolkit catalogue](SVG_TOOLKIT.md), [cookbook](SVG_TOOLKIT_COOKBOOK.md), and
+[gallery](slide-specs/illustration_examples/svg_toolkit/index.webp) to choose and compose parts.
+For SVG work, run Homebrew Python directly from the repository root; set a local plot cache:
+
+```bash
+PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.allele_frequencies _temp/allele_frequencies.svg
+```
+
+The cookbook explains adding the SVG to a native slide. Check example output paths before running
+them: some recipes default to lecture assets.
+
 ## Core commands
 
 ```bash

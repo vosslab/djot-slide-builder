@@ -8,6 +8,9 @@ enters only through the one-time import workflow.
 
 ## Major components
 
+- [../svg_tools/](../svg_tools/) helps authors create reusable SVG figure assets referenced by
+  Djot decks. See the [SVG toolkit catalogue](SVG_TOOLKIT.md).
+
 - Physical text and font metrics remain in
   [../slide_lib/layout_measurement.py](../slide_lib/layout_measurement.py).
   [../slide_lib/layout_size_selection.py](../slide_lib/layout_size_selection.py) owns fitting policy,

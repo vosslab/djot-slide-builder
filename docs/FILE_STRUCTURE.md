@@ -5,6 +5,7 @@
 ```text
 deck_tools.py        application CLI for build, capacity, import, lint, and visibility
 slide_lib/           reusable Djot, native-export, and importer package
+svg_tools/           reusable SVG figure authoring tools and examples
 genetics/            example and lecture Djot corpus
 biotech/             lecture-organized Biotechnology Djot corpus
 evergreen/           slides, prompt collections, and assets shared across courses
@@ -19,6 +20,9 @@ Brewfile             declared macOS command-line and desktop dependencies
 ```
 
 ## Key subtrees
+
+- [../svg_tools/](../svg_tools/) creates SVG assets for Djot decks; the
+  [SVG toolkit catalogue](SVG_TOOLKIT.md) covers its authoring tools.
 
 - [../slide_lib/](../slide_lib/) contains the application package. Its top-level modules cover the
   command interface, Djot syntax and semantic validation, typed native model, layouts, export,

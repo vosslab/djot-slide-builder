@@ -1,0 +1,24 @@
+# SVG toolkit implementation report
+
+The SVG toolkit provides reusable Python drawing parts for editable slide illustrations. All 27 planned milestones are complete and accepted in the [final quality and integration review](active_plans/reports/svg_toolkit_final_integration.md). Start with the [capability catalogue](SVG_TOOLKIT.md), [cookbook](SVG_TOOLKIT_COOKBOOK.md), [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp), and [native showcase](../exemplars/svg_toolkit.djot). The [plan and progress ledger](active_plans/active/svg_toolkit_progress.md) record milestone decisions and reviews.
+
+The toolkit uses ordinary functions and `SvgPart` fragments with painted bounds and named anchors. Authors supply coordinates, labels, data, and biological relationships. It covers composition, curved paths, measured and styled text, imported SVG, Lucide icons, annotations, membranes and signaling, cells and organelles, chromosome and gene tracks, binding and detection, phenotypes, and Matplotlib plots. Atkinson Hyperlegible Next is used for normal labels and Mono for aligned sequences; both fonts must be installed. From the repository root, run an example directly:
+
+```sh
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.placement
+```
+
+The independent author trials provide complete [new signaling](slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/README.md) and [Sxl reconstruction](slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/README.md) recipes and native slides. Both fresh artifacts passed specification and quality review. The first reconstruction failed to preserve italic gene names; a styled-box API and documentation correction enabled a fresh repeat that passed. See [trial quality](active_plans/reports/svg_toolkit_trials_quality.md) and [repeat specification](active_plans/reports/svg_toolkit_reconstruction_repeat_spec.md). The earlier failure remains historical evidence, not the final verdict.
+
+## Verification and scope
+
+- The focused SVG and include lane passed 107 tests. A fresh scratch build reproduced all 41 canonical generated artifacts byte for byte: 23 SVGs and 18 WebPs, including 17 gallery previews and the index. The gallery has 17 SVGs and a 17-slide showcase; six additional SVGs are lecture pilots. [Final checks](active_plans/reports/svg_toolkit_final_checks.md) record commands and hashes.
+- Six ODP/PDF proof pairs contain 29 pages, with all 23 canonical SVGs embedded byte for byte and assigned the SVG MIME type. Fresh independent visual review passed every page. Two additional trial native pages were reviewed separately, for 31 visually reviewed pages across eight proof pairs; they are not part of the 29-page manifest. See [native verification](active_plans/reports/svg_toolkit_native_verification.md), [native quality](active_plans/reports/svg_toolkit_native_quality.md), and [trial quality](active_plans/reports/svg_toolkit_trials_quality.md).
+- Five consumer files received 12 image path substitutions; reversing them matches their baseline hashes, and six original SVGs retain their baseline hashes. An earlier complete compilation of the five consumer decks produced 351 slides and was not repeated for the final proof refresh. Biotechnology LECT11 was excluded and preserved. [Baseline and regeneration evidence](active_plans/reports/svg_toolkit_native_verification.md) records the scope.
+- Native corrections preserve literal text spaces, allow conservative bounds for missing glyphs, and normalize SVG namespaces and the XLINK prefix at the shared output boundary. The genome chart and previously clipped allele endpoints passed the refreshed native review. These corrections do not require global namespace registration.
+
+The full project suite, interactive Impress editing, projector and Zoom presentation, and other LibreOffice installations were not tested. Some compact Western and array labels are small. PDF font inventories do not prove the font used for each glyph or interactive editing of SVG elements.
+
+Three read-only Git process deviations are disclosed in the [progress ledger](active_plans/active/svg_toolkit_progress.md). No intentional metadata changes were reported; unchanged metadata was not verified. The [executed cleanup](active_plans/reports/svg_toolkit_cleanup.md) removed 664 files, 178 directories, and 56 symlinks (21,019,311 logical bytes), retaining protected Biotechnology trees and shared caches. Historical report paths under `_temp/` describe removed scratch, including the baseline snapshots. After cleanup, all 41 generated, 42 native proof, and 16 trial artifact hashes matched their durable manifests.
+
+The subsequent [code audit](active_plans/audits/svg_toolkit_code_audit.md) retains two open medium findings involving process-wide XML namespace and gallery state; historical integration acceptance above remains unchanged.

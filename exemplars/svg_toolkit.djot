@@ -1,0 +1,205 @@
+color-theme: genetics
+
+=== layout: big-image
+
+@image
+
+![Alignment and distribution place repeated chromosome parts.](repo:docs/slide-specs/illustration_examples/svg_toolkit/placement.drawn.svg)
+
+@caption
+
+*Placement*
+
+Alignment and distribution place repeated chromosome parts.
+
+=== layout: big-image
+
+@image
+
+![Ordinary, emphasized, and monospace labels remain editable.](repo:docs/slide-specs/illustration_examples/svg_toolkit/text_labels.drawn.svg)
+
+@caption
+
+*Text Labels*
+
+Ordinary, emphasized, and monospace labels remain editable.
+
+=== layout: big-image
+
+@image
+
+![Styled runs combine emphasis, subscripts, and wrapped text.](repo:docs/slide-specs/illustration_examples/svg_toolkit/styled_text.drawn.svg)
+
+@caption
+
+*Styled Text*
+
+Styled runs combine emphasis, subscripts, and wrapped text.
+
+=== layout: big-image
+
+@image
+
+![Repeated marks follow a sampled cubic curve.](repo:docs/slide-specs/illustration_examples/svg_toolkit/curve_samples.drawn.svg)
+
+@caption
+
+*Curves*
+
+Repeated marks follow a sampled cubic curve.
+
+=== layout: big-image
+
+@image
+
+![Imported patterns and live text can be repeated.](repo:docs/slide-specs/illustration_examples/svg_toolkit/svg_composition.drawn.svg)
+
+@caption
+
+*SVG Import*
+
+Imported patterns and live text can be repeated.
+
+=== layout: big-image
+
+@image
+
+![Lucide icons can be placed beside editable labels.](repo:docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg)
+
+@caption
+
+*Icons*
+
+Lucide icons can be placed beside editable labels.
+
+=== layout: big-image
+
+@image
+
+![Shapes and connectors make an authored branching workflow.](repo:docs/slide-specs/illustration_examples/svg_toolkit/annotations.drawn.svg)
+
+@caption
+
+*Annotations*
+
+Shapes and connectors make an authored branching workflow.
+
+=== layout: big-image
+
+@image
+
+![Lipid strips follow straight and curved paths.](repo:docs/slide-specs/illustration_examples/svg_toolkit/membranes.drawn.svg)
+
+@caption
+
+*Membranes*
+
+Lipid strips follow straight and curved paths.
+
+=== layout: big-image
+
+@image
+
+![Ligand, receptor, and protein parts can be assembled.](repo:docs/slide-specs/illustration_examples/svg_toolkit/proteins.drawn.svg)
+
+@caption
+
+*Proteins*
+
+Ligand, receptor, and protein parts can be assembled.
+
+=== layout: big-image
+
+@image
+
+![Separate phosphorylation and activity states support signaling diagrams.](repo:docs/slide-specs/illustration_examples/svg_toolkit/signaling.drawn.svg)
+
+@caption
+
+*Signaling*
+
+Separate phosphorylation and activity states support signaling diagrams.
+
+=== layout: big-image
+
+@image
+
+![Editable plots include lines, bars, error bars, and histograms.](repo:docs/slide-specs/illustration_examples/svg_toolkit/plots.plot.svg)
+
+@caption
+
+*Plots*
+
+Editable plots include lines, bars, error bars, and histograms.
+
+=== layout: big-image
+
+@image
+
+![Cell envelopes and nuclear parts can be composed independently.](repo:docs/slide-specs/illustration_examples/svg_toolkit/cells.drawn.svg)
+
+@caption
+
+*Cells*
+
+Cell envelopes and nuclear parts can be composed independently.
+
+=== layout: big-image
+
+@image
+
+![Lysosome and vesicle are generic compartments, distinguished here by labels.](repo:docs/slide-specs/illustration_examples/svg_toolkit/organelles.drawn.svg)
+
+@caption
+
+*Organelles*
+
+Lysosome and vesicle are generic compartments, distinguished here by labels.
+
+=== layout: big-image
+
+@image
+
+![Directional genes, regulatory features, and exons form gene tracks.](repo:docs/slide-specs/illustration_examples/svg_toolkit/gene_features.drawn.svg)
+
+@caption
+
+*Gene Features*
+
+Directional genes, regulatory features, and exons form gene tracks.
+
+=== layout: big-image
+
+@image
+
+![Antibody, antigen, and enzyme parts support binding illustrations.](repo:docs/slide-specs/illustration_examples/svg_toolkit/binding.drawn.svg)
+
+@caption
+
+*Binding*
+
+Antibody, antigen, and enzyme parts support binding illustrations.
+
+=== layout: big-image
+
+@image
+
+![Seed and flower tokens show phenotype variation.](repo:docs/slide-specs/illustration_examples/svg_toolkit/phenotypes.drawn.svg)
+
+@caption
+
+*Phenotypes*
+
+Seed and flower tokens show phenotype variation.
+
+=== layout: big-image
+
+@image
+
+![Illustrative supplied allele frequencies across six generations.](repo:docs/slide-specs/illustration_examples/svg_toolkit/allele_frequencies.plot.svg)
+
+@caption
+
+*Allele Frequencies*
+
+Illustrative supplied allele frequencies across six generations.

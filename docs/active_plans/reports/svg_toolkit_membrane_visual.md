@@ -1,0 +1,9 @@
+# Membrane specification and visual review
+
+Specification: **FAIL**, limited to the missing gap-clearance documentation. `membrane()` describes inclusive distance intervals, but does not explain that those intervals exclude lipid center samples only and that the caller must allow extra clearance for the painted heads and strokes. A receptor placed exactly at a gap's nominal endpoints can overlap them. The implementation need not change to meet the stated caller-owned-clearance contract.
+
+Evidence: `/opt/homebrew/bin/python3.12 -B -m pytest -q tests/test_svg_membranes.py` passed both tests. A direct vertical-line check with gap `(10, 20)` omitted both boundary samples, leaving three lipid groups; its extracellular anchor was `(10, 20)` and cytoplasmic anchor `(-10, 20)`, consistent with negative and positive `(-dy, dx)` normals. A closed centerline was rejected. The margin uses a rotation-independent circular envelope and includes half the stroke width. The example was generated with `/opt/homebrew/bin/python3.12 -B -m svg_tools.examples.membranes`, rendered using `PANGOCAIRO_BACKEND=fc rsvg-convert -w 1200`, and flattened on white to quality-90 WebP with Pillow.
+
+Visual evidence: `_temp/svg_toolkit/membrane_review/membranes.webp`. Straight and curved strips share the outlined circular heads, paired tails, and clear gaps. The opposed tail pairs meet at the centerline and visually form continuous rods; this is a theme-quality observation for the human review, not a separate specification failure. Both strips are visible without clipping. The example's file-path invocation fails to resolve `svg_tools` from the repository root; module invocation succeeds.
+
+Scope: no native exports or slide integration were checked. This review does not establish acceptance of the visual theme.

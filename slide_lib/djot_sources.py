@@ -4,7 +4,6 @@
 import re
 import pathlib
 import dataclasses
-import subprocess
 
 # Local Modules
 import slide_lib.djot_errors
@@ -86,18 +85,14 @@ def source_header(path: pathlib.Path, text: str) -> tuple[str | None, list[tuple
 
 #============================================
 def repository_root(path: pathlib.Path | None = None) -> pathlib.Path:
-	"""Use the containing Git root, or CWD when Git is missing or fails."""
-	directory = path.parent if path is not None else pathlib.Path.cwd()
-	# ASVS 1.2.5: pass the directory as an argument, never through a shell.
-	try:
-		result = subprocess.run(["git", "-C", str(directory), "rev-parse", "--show-toplevel"],
-			check=False, capture_output=True, text=True)
-	except FileNotFoundError:
-		return pathlib.Path.cwd().resolve()
-	if result.returncode:
-		return pathlib.Path.cwd().resolve()
-	root = pathlib.Path(result.stdout.strip()).resolve()
-	return root
+	"""Find the nearest project markers, or use CWD for standalone sources."""
+	directory = (path if path is not None else pathlib.Path.cwd()).resolve()
+	if not directory.is_dir():
+		directory = directory.parent
+	for candidate in (directory, *directory.parents):
+		if (candidate / "deck_tools.py").is_file() and (candidate / "slide_lib").is_dir():
+			return candidate
+	return pathlib.Path.cwd().resolve()
 
 
 #============================================

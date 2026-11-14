@@ -6,11 +6,13 @@ presentations and ODP-derived PDFs. Run commands from the repository root.
 ## Requirements
 
 - macOS with Homebrew.
-- Python 3.12. Use `source source_me.sh && python3` for every repository Python command.
+- Python 3.12. For general repository work use `source source_me.sh && python3`;
+  for SVG work use the direct Python route below.
 - LibreOffice Impress for ODP import, ODP output, and PDF export.
 - Poppler for PDF inspection tools such as `pdfinfo`.
-- Node.js and the locked npm dependencies for local MathJax rendering.
-- Packages declared in `pip_requirements.txt`, including yt-dlp for the explicit YouTube-slide tool.
+- Node.js and the locked npm dependencies for MathJax rendering and Lucide icons.
+- Packages declared in `pip_requirements.txt`, including Pillow, fonttools, svgpathtools,
+  Matplotlib >= 3.11.2, and yt-dlp for the explicit YouTube-slide tool.
 
 `Brewfile` declares Python 3.12, Node.js, Poppler, and LibreOffice. The normal compiler uses
 saved local assets and does not need network access. The YouTube, weather, and podcast helpers
@@ -24,12 +26,44 @@ source source_me.sh && python3 -m pip install -r pip_requirements.txt
 npm ci
 ```
 
-`npm ci` installs MathJax and its locked dependencies locally. Generated equation SVGs are reusable
+`npm ci` installs MathJax, Lucide icons, and their locked dependencies locally. Generated equation SVGs are reusable
 artifacts below `_temp/math/`.
 
 Keep the root `package.json` and `package-lock.json` dependency entries for `@mathjax/src` at
 `>=4.1.3`; do not restore the older `^4.0.0` range. Keep the root `@xmldom/xmldom` override at
 `>=0.9.12` when regenerating the lockfile.
+
+## SVG authoring environment
+
+For SVG work on this host, use Homebrew Python directly from the repository root. Its packages
+are installed under `/opt/homebrew/lib/python3.12/site-packages/`; install the same requirements
+there if needed. Keep plot caches in the repository temporary directory:
+
+```bash
+PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -c "import PIL, fontTools, svgpathtools, matplotlib; import svg_tools.icons"
+```
+
+The toolkit measures text using the bundled font files, but its SVGs name font families rather
+than embedding them. Install all four faces (regular, bold, italic, and bold italic) of both
+Atkinson Hyperlegible Next and Mono for faithful rendering. On macOS, from the repository root:
+
+```bash
+mkdir -p "$HOME/Library/Fonts"
+cp assets/fonts/atkinson_hyperlegible_next/*.ttf "$HOME/Library/Fonts/"
+cp assets/fonts/atkinson_hyperlegible_mono/*.ttf "$HOME/Library/Fonts/"
+open -a "Font Book"
+```
+
+In Font Book, verify that both families and all four faces appear; restart rendering applications
+if needed. See the [SVG toolkit catalogue](SVG_TOOLKIT.md) for authoring and Lucide icons.
+
+Gallery and preview rendering additionally needs `rsvg-convert` from librsvg; ordinary SVG
+authoring does not. Install and verify it when needed:
+
+```bash
+brew install librsvg
+rsvg-convert --version
+```
 
 ## Optional strict Djot gate
 

@@ -1,0 +1,416 @@
+{
+  "description": "Pre-replacement bytes and source observations for SVG toolkit pilots M20-M24. Paths relative to repository root. Snapshot copies are temporary.",
+  "files": {
+    "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot": {
+      "sha256": "f213c14b5d8d2fe79bee087da3cab82aac28eb65eb16698fd88777489e45af97",
+      "bytes": 6871,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT03/djot/lect03f-whole_genome_analysis.djot"
+    },
+    "genetics/LECT11/djot/lect11d_deletion_mechanisms.djot": {
+      "sha256": "5873a4608fbe846fd38636be00044cbbab5e5206c7acf8017ec084e5fd9db4bd",
+      "bytes": 21402,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT11/djot/lect11d_deletion_mechanisms.djot"
+    },
+    "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot": {
+      "sha256": "a2bc7c595a865e321a5c370f540ab75725127ca53624cae9e42102033f1a3c6d",
+      "bytes": 4610,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot"
+    },
+    "genetics/LECT04/djot/lect04g-indep_assort.djot": {
+      "sha256": "0563452322164fe20444c16cafac15a5422021c106a59af9094d48e8f37fa94d",
+      "bytes": 12381,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT04/djot/lect04g-indep_assort.djot"
+    },
+    "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot": {
+      "sha256": "06c9cac255a61db1905da428802003f329eb5ded7daed93ca324e60373cb6844",
+      "bytes": 103824,
+      "snapshot": "_temp/svg_toolkit/baseline/biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot"
+    },
+    "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition.plot.svg": {
+      "sha256": "2059903ad86b5aade0249c7ab7d84f6029de0d5f9de52368265bb0d6fc7d6b52",
+      "bytes": 2901,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition.plot.svg"
+    },
+    "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg": {
+      "sha256": "b739fac24f49ab7009298acf2a6dbbffd44dfdfef45ab7559a038c1582663f64",
+      "bytes": 3983,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg"
+    },
+    "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating.drawn.svg": {
+      "sha256": "bebcfacff1292dcdcf9db63a6774bcf4cebbe95a1922dfce6873dc18d17fb05a",
+      "bytes": 2489,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating.drawn.svg"
+    },
+    "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid.drawn.svg": {
+      "sha256": "a4c48c8f2d75c8d41af3abe53ca878acd44ab4e0dda474ae646dd95f7ca0567f",
+      "bytes": 2190,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid.drawn.svg"
+    },
+    "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes.drawn.svg": {
+      "sha256": "3de072b6d7cc350dc8daf5a397eb52a96fc10276744f55abb3748b449eed0986",
+      "bytes": 7942,
+      "snapshot": "_temp/svg_toolkit/baseline/genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes.drawn.svg"
+    },
+    "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg": {
+      "sha256": "a7cc2655e78ca5c3590675360acffe7cfdd8e50a6ff2889748d23c4bdcc09204",
+      "bytes": 6323,
+      "snapshot": "_temp/svg_toolkit/baseline/biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg"
+    }
+  },
+  "references": {
+    "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition.plot.svg": {
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "source": "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot",
+          "line": 147,
+          "context_start_line": 142,
+          "context": [
+            "",
+            "# Components of the Human Genome",
+            "",
+            "@left",
+            "",
+            "![Slide image 5](assets/lect03f-whole_genome_analysis/human_genome_composition.plot.svg)",
+            "",
+            "@right",
+            "",
+            "- Exons: 1.5%",
+            "- Regulatory sequences: 5%"
+          ]
+        }
+      ],
+      "source_facts": {
+        "categories": [
+          {
+            "label": "Exons",
+            "value": "1.5%"
+          },
+          {
+            "label": "Regulatory sequences",
+            "value": "5%"
+          },
+          {
+            "label": "Introns",
+            "value": "about 20%"
+          },
+          {
+            "label": "Unique noncoding DNA",
+            "value": "15%"
+          },
+          {
+            "label": "Repeats related to transposable elements",
+            "value": "44%"
+          },
+          {
+            "label": "Other repetitive DNA",
+            "value": "14%"
+          }
+        ],
+        "axis": "0%, 10%, 20%, 30%, 40%, 50%",
+        "note": "Preserve exact shown values and approximation; do not normalize their sum."
+      }
+    },
+    "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg": {
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "source": "genetics/LECT11/djot/lect11d_deletion_mechanisms.djot",
+          "line": 115,
+          "context_start_line": 110,
+          "context": [
+            "",
+            "# *Deletion Detection in Humans*",
+            "",
+            "@left",
+            "",
+            "![SNP arrays and comparative genomic hybridization workflows](assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg)",
+            "",
+            "![Original measured copy-number trace](assets/lect11d-chromo_alter_1-deletions/array_trace.evidence.png)",
+            "",
+            "@right",
+            ""
+          ]
+        }
+      ],
+      "source_facts": {
+        "workflows": [
+          {
+            "name": "SNP genotyping arrays",
+            "inputs": [
+              "Reference DNAs",
+              "Test DNA"
+            ],
+            "separate_outputs": [
+              "Reference baseline",
+              "Test SNP calls"
+            ],
+            "relationship": "Indirect comparison of DNA samples"
+          },
+          {
+            "name": "Comparative genomic hybridization",
+            "inputs": [
+              "Test DNA",
+              "Reference DNA"
+            ],
+            "shared_output": "Combined hybridization",
+            "relationship": "Direct comparison of DNA samples"
+          }
+        ]
+      }
+    },
+    "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating.drawn.svg": {
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "source": "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot",
+          "line": 103,
+          "context_start_line": 98,
+          "context": [
+            "",
+            "# Haploid Yeast Cells Mate",
+            "",
+            "@body",
+            "",
+            "![Haploid Yeast Cells Mate](assets/lect09d-yeast_unordered_tetrads/yeast_mating.drawn.svg)",
+            "",
+            "- The cells join; their two haploid nuclei are still separate.",
+            "",
+            "=== layout: one-panel",
+            ""
+          ]
+        }
+      ],
+      "source_facts": {
+        "stage": "2 Mating",
+        "cell": "One shared connected cell envelope",
+        "nuclei": [
+          "a",
+          "α"
+        ],
+        "count": 2
+      }
+    },
+    "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid.drawn.svg": {
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "source": "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot",
+          "line": 113,
+          "context_start_line": 108,
+          "context": [
+            "",
+            "# Mating Produces a Diploid Cell",
+            "",
+            "@body",
+            "",
+            "![Mating Produces a Diploid Cell](assets/lect09d-yeast_unordered_tetrads/yeast_diploid.drawn.svg)",
+            "",
+            "- The nuclei fuse, producing one diploid a/&#945; cell.",
+            "",
+            "=== layout: section",
+            ""
+          ]
+        }
+      ],
+      "source_facts": {
+        "stage": "3 New a/α cell",
+        "cell": "One shared connected cell envelope",
+        "nuclei": [
+          "a/α"
+        ],
+        "count": 1
+      }
+    },
+    "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes.drawn.svg": {
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "source": "genetics/LECT04/djot/lect04g-indep_assort.djot",
+          "line": 211,
+          "context_start_line": 206,
+          "context": [
+            "",
+            "# Results of a dihybrid cross",
+            "",
+            "@left",
+            "",
+            "![Slide image 5](assets/lect04g-indep_assort/dihybrid_seed_phenotypes.drawn.svg)",
+            "",
+            "@right",
+            "",
+            "- The coat color gene and seed shape genes assort (segregate) independently.",
+            "- 3 \\: 1 ratio of round \\: wrinkled"
+          ]
+        }
+      ],
+      "source_facts": {
+        "color_marginals": {
+          "Yellow": "3/4",
+          "Green": "1/4"
+        },
+        "shape_marginals": {
+          "Round": "3/4",
+          "Wrinkled": "1/4"
+        },
+        "combinations": {
+          "Round, yellow": "9/16",
+          "Round, green": "3/16",
+          "Wrinkled, yellow": "3/16",
+          "Wrinkled, green": "1/16"
+        },
+        "caption": "Ratio of phenotypes in the F2 progeny of a dihybrid cross is 9 : 3 : 3 : 1."
+      }
+    },
+    "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg": {
+      "occurrence_count": 7,
+      "occurrences": [
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 1020,
+          "context_start_line": 1015,
+          "context": [
+            "",
+            "",
+            "@image",
+            "",
+            "",
+            "![Instructor figure related to protein gels and western blotting](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "",
+            "",
+            "@caption",
+            "",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 2840,
+          "context_start_line": 2835,
+          "context": [
+            "",
+            "",
+            "@bottom-left",
+            "",
+            "",
+            "![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "",
+            "",
+            "@right",
+            "",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 2872,
+          "context_start_line": 2867,
+          "context": [
+            "",
+            "",
+            "@bottom-right",
+            "",
+            "",
+            "![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "=== layout: one-plus-two-panels",
+            "",
+            "",
+            "# Answers: Western Blotting",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 2890,
+          "context_start_line": 2885,
+          "context": [
+            "",
+            "",
+            "@top-right",
+            "",
+            "",
+            "![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "",
+            "",
+            "@bottom-right",
+            "",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 2986,
+          "context_start_line": 2981,
+          "context": [
+            "",
+            "",
+            "@bottom-right",
+            "",
+            "",
+            "![Instructor figure related to antibody target](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "=== layout: two-plus-one-panels",
+            "",
+            "",
+            "# 5. Isoelectric Points and Isoelectric Focusing",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 4203,
+          "context_start_line": 4198,
+          "context": [
+            "",
+            "",
+            "@bottom-right",
+            "",
+            "",
+            "![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "=== layout: one-plus-two-panels",
+            "",
+            "",
+            "# Answers: Protein Quantification - Choosing a method",
+            ""
+          ]
+        },
+        {
+          "source": "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "line": 4221,
+          "context_start_line": 4216,
+          "context": [
+            "",
+            "",
+            "@top-right",
+            "",
+            "",
+            "![Instructor figure related to protein amount](assets/lect04c-talking_points_set_3/western_detection_detail.drawn.svg)",
+            "",
+            "",
+            "@bottom-right",
+            "",
+            ""
+          ]
+        }
+      ],
+      "source_facts": {
+        "labels": [
+          "Detection in Western Blots",
+          "Enzyme-conjugated Secondary Antibody",
+          "Primary Antibody",
+          "Target Protein",
+          "Enzyme Substrate",
+          "Detection Signal (colorimetric or chemiluminescent)",
+          "Membrane Containing Transferred Protein",
+          "Diagram 2: Illustration of detection in Western Blots."
+        ],
+        "relationships": [
+          "Target protein rests on membrane.",
+          "One primary antibody arm (Fab end) contacts target protein.",
+          "One secondary antibody arm (Fab end) contacts the primary antibody stem (Fc region).",
+          "Enzyme is attached to secondary antibody stem; substrate enters enzyme and detection signal leaves it."
+        ],
+        "note": "Fab and Fc are descriptive structural terms; they are not written as labels in the original SVG."
+      }
+    }
+  }
+}

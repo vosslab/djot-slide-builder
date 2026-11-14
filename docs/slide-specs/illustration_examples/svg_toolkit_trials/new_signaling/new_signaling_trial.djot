@@ -1,0 +1,9 @@
+=== layout: one-panel
+
+# Protein Activity and Phosphorylation
+
+@body
+
+![A ligand and membrane receptor signal to an active kinase. The kinase activates response A and inhibits phosphorylated response B.](new_signaling_trial.drawn.svg)
+
+Phosphorylation and protein activity are distinct states.

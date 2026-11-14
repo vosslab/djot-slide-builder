@@ -6,8 +6,7 @@ pytest rules rather than repeating them.
 
 ## Start a maintainer session
 
-- Work from the repository root and use the required Python environment for every repository Python
-  command:
+- Work from the repository root and use the required Python environment for general repository work:
 
   ```bash
   source source_me.sh && python3 <command>
@@ -42,9 +41,19 @@ pytest rules rather than repeating them.
    source source_me.sh && python3 -m pytest tests/ -q
    ```
 
-4. Run `git diff --check` before handoff. Check links changed by documentation edits directly.
+4. Inspect changed files before handoff. For SVG work, use direct Python to check whitespace and
+   changed documentation links; do not invoke Git or `source_me.sh`.
    [TROUBLESHOOTING.md](TROUBLESHOOTING.md) covers current failure recovery;
    [GATE_AUDIT.md](GATE_AUDIT.md) retains historical gate-removal decisions.
+
+For SVG work, use direct Homebrew Python and the focused test lane instead of the bootstrap above:
+
+```bash
+PYTHONPATH="$PWD:$PWD/tests" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_<svg_topic>.py
+```
+
+Use `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B` for SVG scripts, and set
+`MPLCONFIGDIR="$PWD/_temp/mplconfig"` when plotting. Keep temporary review artifacts in `_temp/`.
 
 The permanent suite establishes fast, deterministic source and native-object behavior. Follow
 [PYTEST_STYLE.md](PYTEST_STYLE.md) to decide whether new coverage belongs there; use the separate

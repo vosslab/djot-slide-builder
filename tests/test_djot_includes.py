@@ -2,7 +2,6 @@
 
 # Standard Library
 import pathlib
-import subprocess
 import unittest.mock
 
 # Third-Party Modules
@@ -19,27 +18,26 @@ import slide_lib.layout_flow_measurement
 
 
 #============================================
-@pytest.mark.parametrize("git_state", ("checkout", "not_checkout", "missing"))
-def test_project_roots_prefer_git_and_fall_back_to_cwd(
-		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch, git_state: str) -> None:
-	"""Native builds and shared includes agree when Git cannot supply a root."""
-	working = tmp_path / "working folder"
-	working.mkdir()
-	checkout = tmp_path / "checkout"
-	monkeypatch.chdir(working)
-
-	def run(command: object, **kwargs) -> object:
-		if git_state == "missing":
-			raise FileNotFoundError("git")
-		if git_state == "not_checkout" and kwargs.get("check"):
-			raise subprocess.CalledProcessError(128, command)
-		return subprocess.CompletedProcess(command, 0 if git_state == "checkout" else 128,
-			stdout=f"{checkout}\n" if git_state == "checkout" else "", stderr="")
-
-	monkeypatch.setattr(slide_lib.djot_sources.subprocess, "run", run)
-	expected = checkout if git_state == "checkout" else working
-	assert slide_lib.native_export.find_repo_root() == expected
-	assert slide_lib.djot_sources.repository_root(checkout / "lecture.djot") == expected
+def test_project_roots_find_nearest_markers(
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
+	"""Copied projects are found from source paths, including symlinks and nested roots."""
+	checkout = tmp_path / "copied project"
+	checkout.mkdir()
+	(checkout / "deck_tools.py").touch()
+	(checkout / "slide_lib").mkdir()
+	nested = checkout / "nested"
+	nested.mkdir()
+	(nested / "deck_tools.py").touch()
+	(nested / "slide_lib").mkdir()
+	lecture = nested / "lecture.djot"
+	lecture.touch()
+	link = tmp_path / "lecture.djot"
+	link.symlink_to(lecture)
+	assert slide_lib.djot_sources.repository_root(link) == nested.resolve()
+	assert slide_lib.djot_sources.repository_root(nested) == nested.resolve()
+	assert slide_lib.djot_sources.repository_root(checkout / "lecture.djot") == checkout.resolve()
+	monkeypatch.chdir(nested)
+	assert slide_lib.native_export.find_repo_root() == nested.resolve()
 
 
 #============================================
@@ -171,7 +169,9 @@ def test_repository_includes_share_guidance_and_enforce_checkout_boundary(
 	shared.mkdir(parents=True)
 	chapter = shared / "exam.djot"
 	chapter.write_text("=== layout: blank\n=== layout: blank\n")
-	monkeypatch.setattr("slide_lib.djot_sources.repository_root", lambda path: root)
+	(root / "deck_tools.py").touch()
+	(root / "slide_lib").mkdir()
+	monkeypatch.chdir(tmp_path)
 	master = lecture / "announcements.djot"
 	text = "=== include: repo:genetics/evergreen/exam.djot\nhidden: true\n"
 	master.write_text(text)
@@ -195,15 +195,15 @@ def test_repository_includes_share_guidance_and_enforce_checkout_boundary(
 #============================================
 def test_repository_images_lint_measure_and_package_from_shared_assets(
 		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
-	"""Git-free shared slides and images build from CWD while symlink escapes fail."""
+	"""Shared slides and images resolve from the project while symlink escapes fail."""
 	root = tmp_path / "repo"
 	lecture = root / "genetics" / "LECT08"
 	assets = root / "genetics" / "evergreen" / "assets"
 	lecture.mkdir(parents=True)
 	assets.mkdir(parents=True)
-	monkeypatch.chdir(root)
-	monkeypatch.setattr(slide_lib.djot_sources.subprocess, "run",
-		unittest.mock.Mock(side_effect=FileNotFoundError("git")))
+	(root / "deck_tools.py").touch()
+	(root / "slide_lib").mkdir()
+	monkeypatch.chdir(tmp_path)
 	image = assets / "figure.png"
 	PIL.Image.new("RGB", (32, 18)).save(image)
 	chapter = assets.parent / "figure.djot"

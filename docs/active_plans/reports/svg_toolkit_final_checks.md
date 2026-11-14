@@ -1,0 +1,13 @@
+# SVG toolkit final checks
+
+The latest focused test run passed all 107 tests in 1.73 seconds. The earlier run had 106 passes and one failure: its fallback working directory was under repository markers. The fallback assertion now isolates those enclosing markers; copied and nested project discovery still runs with the original file checks restored.
+
+The test command used `/opt/homebrew/bin/python3.12 -B -m pytest --noconftest --basetemp=_temp/svg_toolkit/last_fixes_quality/pytest tests/test_svg_*.py tests/test_djot_includes.py`, with `PYTHONPATH` set to the repository root and `tests`, and `MPLCONFIGDIR=_temp/mplconfig`. Inspection of the selected tests and toolkit found no actual LibreOffice or Git invocation in this lane. The gallery uses `rsvg-convert` for previews.
+
+A fresh scratch gallery and five pilot recipes completed successfully. All 41 existing canonical SVG and WebP outputs matched both their recorded hashes and fresh scratch outputs; six original assets matched baseline hashes, and five consumer sources matched their baseline after reversing the 12 intended references. Canonical outputs were not regenerated in place.
+
+The 37 toolkit Python modules and examples, excluding unchanged legacy `chromosome_examples.py`, parsed and imported successfully; all functions had parameter and return annotations and each file had fewer than 1,000 lines. The initial check found a non-ASCII en dash in `svg_tools/examples/signaling.py:2` and mixed tab/space indentation in `svg_tools/svg_import.py:19`; a leading space in `examples/svg_composition.py:18` belongs to an SVG literal. The two actual style findings were fixed; a fresh 37-file scan found no non-ASCII text or space indentation outside string literals. AST comparisons of the reconstructed prior text show unchanged executable statements for the docstring edit and unchanged syntax for the indentation edit.
+
+Ten toolkit and related guides, progress, installation, usage, and changelog files were ASCII; all 287 checked local Markdown file targets existed. Package and root lockfile declare MathJax `>=4.1.3` and Lucide `>=1.72.0`; the package override requires xmldom `>=0.9.12`, and pip requirements declare Matplotlib and svgpathtools.
+
+The existing native verification records 29 pages across six proofs, and all 42 recorded artifact hashes still match. This is a hash and recorded-results check: no native conversion was performed. Fresh trial 2 artifacts were not yet final and were excluded. The whole-project suite, interactive Impress, and projector display were not checked. Detailed paths, hashes, and command results are in [svg_toolkit_final_checks.json](svg_toolkit_final_checks.json).

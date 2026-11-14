@@ -1,5 +1,7 @@
 # SVG drawing helpers
 
+For the complete task-oriented API catalogue, see [SVG toolkit](../docs/SVG_TOOLKIT.md).
+
 See [SVG_TOOL_ROADMAP.md](../docs/SVG_TOOL_ROADMAP.md) for the 1,039-path repository SVG inventory and reuse-aware priorities: cells,
 flowchart parts, and extensions to gene tracks.
 
@@ -326,7 +328,7 @@ for the scientific meanings and review boundary.
 ## Example
 
 Save this as `_temp/draw_example.py` and run it from the repository root with
-`source source_me.sh && python3 _temp/draw_example.py`:
+`PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B _temp/draw_example.py`:
 
 ```python
 import pathlib
@@ -353,6 +355,6 @@ Review actual renders at the intended display sizes. Follow
 [the SVG diagram contract](../docs/slide-specs/SVG_DIAGRAMS.md) for labels, provenance,
 `.drawn.svg` eligibility, and slide integration. The deterministic fixer for existing non-ASCII
 source files is `tests/fix_ascii_compliance.py`; for SVG it preserves symbols using numeric XML
-references. Run `source source_me.sh && python3 tests/fix_ascii_compliance.py -i PATH.svg`.
+references. Run `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B tests/fix_ascii_compliance.py -i PATH.svg`.
 
 The drawing helpers are original to this project and use its MIT license.

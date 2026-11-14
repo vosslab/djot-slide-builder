@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="135" viewBox="0 0 370 135" role="img" aria-labelledby="title desc"><title id="title">Imported SVG composition</title><desc id="desc">Two copies of a patterned figure with live text.</desc><g><g transform="matrix(1.0 0.0 -0.0 1.0 15 15)"><svg viewBox="10 20 100 65" x="0" y="0" width="160" height="104.0" style=";overflow:hidden">
+<defs><pattern id="part0-figure-stripes" width="12" height="12" patternUnits="userSpaceOnUse">
+<path d="M0 0L12 12" stroke="#195f82" stroke-width="4" /></pattern></defs>
+<rect x="10" y="20" width="100" height="65" fill="#e1f2f6" />
+<rect x="10" y="20" width="100" height="65" fill="url(#part0-figure-stripes)" />
+<rect x="26" y="42" width="68" height="21" rx="3" fill="#e1f2f6" />
+<text x="60" y="58" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="14" fill="#102c40">Live text</text></svg></g><g transform="matrix(1.0 0.0 -0.0 1.0 195 15)"><svg viewBox="10 20 100 65" x="0" y="0" width="160" height="104.0" style=";overflow:hidden">
+<defs><pattern id="part1-figure-stripes" width="12" height="12" patternUnits="userSpaceOnUse">
+<path d="M0 0L12 12" stroke="#195f82" stroke-width="4" /></pattern></defs>
+<rect x="10" y="20" width="100" height="65" fill="#e1f2f6" />
+<rect x="10" y="20" width="100" height="65" fill="url(#part1-figure-stripes)" />
+<rect x="26" y="42" width="68" height="21" rx="3" fill="#e1f2f6" />
+<text x="60" y="58" text-anchor="middle" font-family="Atkinson Hyperlegible Next" font-size="14" fill="#102c40">Live text</text></svg></g></g></svg>

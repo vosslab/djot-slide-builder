@@ -1,9 +1,9 @@
 # Reusable SVG drawing-tool roadmap
 
-This roadmap identifies reusable **drawing parts** after a repository-wide SVG inventory and
-checks for existing coverage in nearby projects. It recommends cells and cell structures first,
-basic flowchart parts second, and extensions to existing gene tracks third. It does not implement
-new tools, specify an API, or change slides or source illustrations.
+This dated roadmap records the 2026-11-13 SVG inventory and its original priorities. The
+implemented toolkit is documented in the [capability catalogue](SVG_TOOLKIT.md),
+[cookbook](SVG_TOOLKIT_COOKBOOK.md), and [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp).
+The inventory is a historical baseline, not a current resurvey of later files or `OTHER_REPOS`.
 
 ![Existing cell and workflow illustrations and an existing gene-track demonstration](slide-specs/illustration_examples/svg_tool_candidates.webp)
 

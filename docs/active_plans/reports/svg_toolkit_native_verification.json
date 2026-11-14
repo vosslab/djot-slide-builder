@@ -1,0 +1,221 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "array_comparison",
+      "pages": 1,
+      "svg_matches": {
+        "Pictures/ba556985bf8a4678d5a1e9fc.svg": [
+          "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg"
+        ]
+      },
+      "svg_references": {
+        "Pictures/ba556985bf8a4678d5a1e9fc.svg": 1
+      },
+      "extractable_characters": 1232,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     32  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     24  0\nDAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes     29  0\n"
+    },
+    {
+      "name": "human_genome",
+      "pages": 1,
+      "svg_matches": {
+        "Pictures/62f8cd0ff0e42e615b64337b.svg": [
+          "genetics/LECT03/djot/assets/lect03f-whole_genome_analysis/human_genome_composition_toolkit.plot.svg"
+        ]
+      },
+      "svg_references": {
+        "Pictures/62f8cd0ff0e42e615b64337b.svg": 1
+      },
+      "extractable_characters": 1020,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     51  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     43  0\nDAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes     48  0\n"
+    },
+    {
+      "name": "seed_phenotypes",
+      "pages": 1,
+      "svg_matches": {
+        "Pictures/558896f6dfdf0ebcd170df0e.svg": [
+          "genetics/LECT04/djot/assets/lect04g-indep_assort/dihybrid_seed_phenotypes_toolkit.drawn.svg"
+        ]
+      },
+      "svg_references": {
+        "Pictures/558896f6dfdf0ebcd170df0e.svg": 1
+      },
+      "extractable_characters": 1303,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     40  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     37  0\nDAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes     32  0\n"
+    },
+    {
+      "name": "toolkit_showcase",
+      "pages": 17,
+      "svg_matches": {
+        "Pictures/0bed33f88c03ebeaa08d4999.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/placement.drawn.svg"
+        ],
+        "Pictures/0e26fbc8f10fb3fc5b876989.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg"
+        ],
+        "Pictures/0f2cd8918fc918697e81a07b.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/text_labels.drawn.svg"
+        ],
+        "Pictures/1c904f42ce170259fff2fe38.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/signaling.drawn.svg"
+        ],
+        "Pictures/246673ef4978e28bbdbdcc62.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/phenotypes.drawn.svg"
+        ],
+        "Pictures/28a84053f253007a937c7312.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/svg_composition.drawn.svg"
+        ],
+        "Pictures/34eeb1aef6f888969a2aeb50.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/gene_features.drawn.svg"
+        ],
+        "Pictures/5937e02c7c406289e21e4033.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/proteins.drawn.svg"
+        ],
+        "Pictures/69d4e31d94b6e61d6d283602.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/organelles.drawn.svg"
+        ],
+        "Pictures/7695036a4940f65779fa383d.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/plots.plot.svg"
+        ],
+        "Pictures/812fddcb09d16988804554d2.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/binding.drawn.svg"
+        ],
+        "Pictures/87a65673f406882adf239bda.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/styled_text.drawn.svg"
+        ],
+        "Pictures/99c8186338a173b3ff7244b2.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/curve_samples.drawn.svg"
+        ],
+        "Pictures/9f51e6972e478821096ef81b.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/membranes.drawn.svg"
+        ],
+        "Pictures/a32892c30ec24418934d29ec.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/annotations.drawn.svg"
+        ],
+        "Pictures/a5d6e34834ee194fff8da943.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/cells.drawn.svg"
+        ],
+        "Pictures/a6a9b892fb0254b88b9965c9.svg": [
+          "docs/slide-specs/illustration_examples/svg_toolkit/allele_frequencies.plot.svg"
+        ]
+      },
+      "svg_references": {
+        "Pictures/0bed33f88c03ebeaa08d4999.svg": 1,
+        "Pictures/0e26fbc8f10fb3fc5b876989.svg": 1,
+        "Pictures/0f2cd8918fc918697e81a07b.svg": 1,
+        "Pictures/1c904f42ce170259fff2fe38.svg": 1,
+        "Pictures/246673ef4978e28bbdbdcc62.svg": 1,
+        "Pictures/28a84053f253007a937c7312.svg": 1,
+        "Pictures/34eeb1aef6f888969a2aeb50.svg": 1,
+        "Pictures/5937e02c7c406289e21e4033.svg": 1,
+        "Pictures/69d4e31d94b6e61d6d283602.svg": 1,
+        "Pictures/7695036a4940f65779fa383d.svg": 1,
+        "Pictures/812fddcb09d16988804554d2.svg": 1,
+        "Pictures/87a65673f406882adf239bda.svg": 1,
+        "Pictures/99c8186338a173b3ff7244b2.svg": 1,
+        "Pictures/9f51e6972e478821096ef81b.svg": 1,
+        "Pictures/a32892c30ec24418934d29ec.svg": 1,
+        "Pictures/a5d6e34834ee194fff8da943.svg": 1,
+        "Pictures/a6a9b892fb0254b88b9965c9.svg": 1
+      },
+      "extractable_characters": 6191,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes    181  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes    146  0\nDAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes    136  0\nEAAAAA+AtkinsonHyperlegibleNext-Italic Type 3            Custom           yes yes yes    161  0\nFAAAAA+AtkinsonHyperlegibleMono-RegularItalic Type 1            Builtin          yes yes yes    141  0\nGAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes    149  0\n"
+    },
+    {
+      "name": "western_detection",
+      "pages": 7,
+      "svg_matches": {
+        "Pictures/07834bb006305c796969851e.svg": [],
+        "Pictures/378d96142da441e7e1cd20d8.svg": [
+          "biotech/LECT04/djot/assets/lect04c-talking_points_set_3/western_detection_detail_toolkit.drawn.svg"
+        ],
+        "Pictures/697b69133b8056f35783a134.svg": []
+      },
+      "svg_references": {
+        "Pictures/07834bb006305c796969851e.svg": 1,
+        "Pictures/378d96142da441e7e1cd20d8.svg": 7,
+        "Pictures/697b69133b8056f35783a134.svg": 4
+      },
+      "extractable_characters": 18014,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes    161  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes    148  0\nDAAAAA+AtkinsonHyperlegibleNext-Italic Type 3            Custom           yes yes yes    196  0\nEAAAAA+AtkinsonHyperlegibleNext-RegularItalic Type 1            Builtin          yes yes yes    153  0\nFAAAAA+ArialMT                       TrueType          WinAnsi          yes yes yes    138  0\nGAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes    158  0\nHAAAAA+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes    143  0\n"
+    },
+    {
+      "name": "yeast_mating_and_diploid",
+      "pages": 2,
+      "svg_matches": {
+        "Pictures/688f8d33497c770d381966de.svg": [
+          "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_mating_toolkit.drawn.svg"
+        ],
+        "Pictures/c62f477558428edee015eb30.svg": [
+          "genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_diploid_toolkit.drawn.svg"
+        ]
+      },
+      "svg_references": {
+        "Pictures/688f8d33497c770d381966de.svg": 1,
+        "Pictures/c62f477558428edee015eb30.svg": 1
+      },
+      "extractable_characters": 388,
+      "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+AtkinsonHyperlegibleNext-Regular Type 3            Custom           yes yes yes     36  0\nCAAAAA+AtkinsonHyperlegibleNext-Regular TrueType          WinAnsi          yes yes yes     28  0\nDAAAAA+Helvetica                     TrueType          WinAnsi          yes yes yes     33  0\n"
+    }
+  ],
+  "canonical_svg_count": 23,
+  "matched_canonical_svg_count": 23,
+  "regeneration_output_hashes_checked": 41,
+  "baseline_original_hashes_checked": 6,
+  "consumer_source_hashes_checked": 5,
+  "inverse_reference_substitutions": 12,
+  "pages": 29,
+  "prior_full_consumer_decks_compiled": 351,
+  "artifact_sha256": {
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/array_comparison.odp": "40aad4d12e73a1fed79d0c501e8c7f0d9c5f090c16b1100939a7b60406590174",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/array_comparison.pdf": "5086dc0273b1f7672dc32d3b7d4531aa082d970108ebd678b9cb973daea49dbb",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/array_comparison_page_01.webp": "5b6dda6341b0a2a7543ddb7f0c81676e80c9681af0cf19a885fd59808691a281",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/human_genome.odp": "43252fbe766ea4b7567a8b7f94198e88fb433d9fe05d43d40665c149d57389f0",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/human_genome.pdf": "9ed5fb58ca6e85127edd6c2a2e72e7ec1dd72d4940eed18055a4f9f0212ddcd7",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/human_genome_page_01.webp": "f0f8c65c7a9e32b69bda7c771a0889ce3e9c3ded5c49d60ef72fcb075bd328f2",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/native_proof_index.webp": "eb949b2c2860120702e1b7f3978199ec641b6403e6f5c80ad8dd254b5435cab7",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/seed_phenotypes.odp": "738da184fc7e201050a7840e8ac3bcdcff0f9997f3b74c6c29a013b7255d3fdc",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/seed_phenotypes.pdf": "777de9231e0fc8602959c6f9f44bf505268bad9f42160e51d442388283d429d3",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/seed_phenotypes_page_01.webp": "a1ad94d94f1cdd3f39ada37348164afdbbe44979ddd5f6dbc2571b581e6ac831",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase.odp": "50ff2b707b2b0c1a7b9aac9cf7fcc8941650c4a3af9af280619d0d68f3833b08",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase.pdf": "ebbad20aae1eb3a1e280ae61f74de1503bdf5ea5f4a2fc8395c2bebac11dbb0d",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_01.webp": "b43e124e08a1634ad005ffe90360a5a52be1a2e17ac860eb6f7a043b178d5067",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_02.webp": "73d35f9fa4595083fcb021a3db269163971bb02be9b4f5ca4028e1899f0a18a9",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_03.webp": "b806a3038edbc65b33ad5cb6919e0d27e372e5692fd2873217d91a819e2c9d5f",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_04.webp": "e1213bcda95ad3da9a1bb189024bd58dd394d8b2da0953ee69200c4b7b2a2f87",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_05.webp": "e70cdcb22876ad6f060f26497baef1c1222c61895fec13f985b1d8cd5b87f5da",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_06.webp": "bfc1af826bdd4d3c044017a7aca4976518142643359d31ded117c6df226a83be",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_07.webp": "cb062131fac452b65c6cbd6594eaef0a72285728495db4d8c78a6c531c85b8fc",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_08.webp": "0773d0d367e997fcfed8c654ebf9bb83567c1378708b15ee558ed2a5ec095968",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_09.webp": "f09522bd6e1927bc2064be7ef2b3033d7570ed4a0709227d5a9d3b1095ae5ef2",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_10.webp": "de59736d594f4d6d41125439b387b2075550cb807743c47d4a96457b8801dd80",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_11.webp": "39994bd5c23f308fe8c4a838b90e1284926aabcfeeb695458132dacd09bda886",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_12.webp": "e3e26948b1b22b2dc94d79c8a42237de7ecc423121dd989cbe87d362f71189be",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_13.webp": "35ba9a1502d08832f8306d7a0ef7835efbb14008148932b7eb90691e0a8e6e3f",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_14.webp": "01ebd1af6ebd2e39cf8e81db0a3eeb9d4b518eedcb093ca3536192bca334db9b",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_15.webp": "a9d389ad42c8cb640a8434e8de06aeaecaff705a9f16dab3c49f12c26c0f92b4",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_16.webp": "f7e44889ccfe9e14f407c6d9a7a0e25a51cf6cbc1dc83ab13ba087ab633739a8",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/toolkit_showcase_page_17.webp": "324e06b87f2ee0806da1e6b4e4576847d17984f5af022aece2daf15215cb711e",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection.odp": "1c4223c53879e29d574c98828ce23a675ca339805304b3c5b58446549999bccc",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection.pdf": "f963106d61737df122bbc3fd31f41953af43aa0a6e726f58d01f951089dca448",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_01.webp": "a7178dedef42b01b3d2d1e222be6714523514febc6ed4a9fbdf7a8dcb638cac7",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_02.webp": "88e65fe99f8f25ec75a30f973b37c079385084116e39818e2cb82b964e6211b0",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_03.webp": "6f6bbdd1a9631b70a0148b7196e2c60577260efc7222824633a57a12dcc54579",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_04.webp": "af312757c3fb8c2d7bad1a275a7d7ac87e407f4501b3788ec429222f582cc9a5",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_05.webp": "8c83de2820c2f872d28dc57a4ef15a3e9e8c086aea4868181d98fba6951e6093",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_06.webp": "295ce519d622639298d0ea8de4807acac472f762fe9e17dc2542306f4b3c01a8",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/western_detection_page_07.webp": "ee1d7e7260fb9cdb48ade7042b00075798c1b094bcb09b7ccada3a7f1f16bfa5",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/yeast_mating_and_diploid.odp": "665dd9cc4ec2a51d844ed9784673eb3ec826cbed8ee5a95ca6c5c017eb59cef4",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/yeast_mating_and_diploid.pdf": "e52311eb6a64135328803d3bc07d18746be298a1bda9538caf1130e809f95555",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/yeast_mating_and_diploid_page_01.webp": "f7e291617dc3863dfd9d4e291dc15109609b5e1a85058ba89477c59dd00a4d96",
+    "docs/slide-specs/illustration_examples/svg_toolkit_native/yeast_mating_and_diploid_page_02.webp": "c405361f9491e1c78f09474ebb0decf512bbc1804bcef41c4664d3791562ed53"
+  },
+  "notes": [
+    "The 351-slide full-deck compilation was performed in the previous namespace rebuild; this refresh rebuilt only the showcase.",
+    "The five consumer ODP/PDF pairs and their 12 rendered pages were byte-hash verified against the prior proof before reuse.",
+    "Genome bars and six category/value labels visible and extractable.",
+    "All individual embedded SVG entries have image/svg+xml MIME; Western contains two additional non-toolkit SVGs.",
+    "SVG source text remains live; no claim that every object is independently editable in LibreOffice.",
+    "The refreshed native showcase shows complete allele endpoint markers and a clear site A label. Compact Western labels are small."
+  ]
+}

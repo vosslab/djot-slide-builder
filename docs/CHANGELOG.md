@@ -1,5 +1,19 @@
 ## 2026-11-13
 
+### Additions and New Features
+
+- Add reusable SVG parts for composition, text, imported vectors, Lucide icons, cells, signaling,
+  binding, phenotypes, curves, annotations, and Matplotlib plots, with a catalogue, cookbook,
+  gallery, and native Djot showcase. Six pilot images cover genome composition, array comparison,
+  two yeast mating states, seed phenotypes, and Western detection; lecture edits are limited to
+  the corresponding image URLs. Native proofs and independent author trials passed review;
+  final quality and integration review passed. See the [implementation report](SVG_TOOLKIT_IMPLEMENTATION_REPORT.md).
+
+### Fixes and Maintenance
+
+- Clarify SVG font and optional gallery prerequisites, document toolkit ownership, and remove the
+  unused CairoSVG requirement.
+
 ### Documentation and Cleanup
 
 - Add [SVG_TOOL_ROADMAP.md](SVG_TOOL_ROADMAP.md), covering all 1,039 inventoried repository SVG paths and prioritizing cell structures, flowchart parts, and gene-track extensions after checking existing coverage.

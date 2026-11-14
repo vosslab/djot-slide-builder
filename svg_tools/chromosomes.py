@@ -6,6 +6,8 @@ import pathlib
 import dataclasses
 import xml.etree.ElementTree
 
+import svg_tools.parts
+
 
 _BANDS = (((.13, .045),), ((.84, .035),), ((.10, .025), (.89, .055)),
 	((.79, .045),), ((.18, .035),))
@@ -498,3 +500,27 @@ def _render(name: str, chromosome: Chromosome, *, width: float | None = None,
 	result = ChromosomeLayout(fragment, final_width, final_height,
 		tuple(point(x, height/2) for x in boundary), tuple(anchors), center, marker_bounds)
 	return result
+
+
+#============================================
+def chromosome_part(name: str, chromosome: Chromosome, *,
+	length: float | None = None, thickness: float = 62,
+	orientation: str = 'horizontal', bands: bool = True, sisters: bool = False,
+	junctions: tuple[int, ...] = (), allele_labels: bool = False, labels: bool = True,
+	marker_size: tuple[float, float] | None = None,
+	marker_label: str | None = None) -> svg_tools.parts.SvgPart:
+	"""Render a local part with start, end, center, boundary_N and centromere anchors."""
+	layout = render_chromosome_layout(name, chromosome, length=length, thickness=thickness,
+		orientation=orientation, bands=bands, sisters=sisters, junctions=junctions,
+		allele_labels=allele_labels, labels=labels, marker_size=marker_size,
+		marker_label=marker_label)
+	margin = thickness * .035 / 2
+	bounds = (-margin, -margin, layout.width+margin, layout.height+margin)
+	bounds = svg_tools.parts.include_text_bounds(layout.svg, bounds)
+	anchors = {f'boundary_{index}': point for index, point in enumerate(layout.boundaries)}
+	anchors['start'], anchors['end'] = layout.boundaries[0], layout.boundaries[-1]
+	anchors['center'] = (layout.width/2, layout.height/2)
+	if layout.centromere is not None:
+		anchors['centromere'] = layout.centromere
+	part = svg_tools.parts.SvgPart(layout.svg, bounds, anchors)
+	return part
