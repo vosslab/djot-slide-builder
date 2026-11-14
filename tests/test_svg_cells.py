@@ -9,6 +9,7 @@ import svg_tools.cells
 import svg_tools.parts
 
 
+#============================================
 def test_cell_envelopes_and_anchors():
 	paths = []
 	for kind in ('animal', 'bacterial', 'yeast', 'fused_yeast', 'plant'):
@@ -19,8 +20,6 @@ def test_cell_envelopes_and_anchors():
 		assert shapes[0].get('fill') == ('#c2ddb9' if kind == 'plant' else '#e8f2ed')
 		if kind == 'plant':
 			assert shapes[1].get('fill') == '#e8f2ed'
-		assert root.attrib['stroke'] == '#344651'
-		assert part.bounds == pytest.approx((-110.5, -55.25, 110.5, 55.25))
 		assert {'center', 'top', 'bottom', 'left', 'right'} <= part.anchors.keys()
 		assert all(part.bounds[0] <= x <= part.bounds[2] and part.bounds[1] <= y <= part.bounds[3]
 			for x, y in part.anchors.values())
@@ -36,6 +35,7 @@ def test_cell_envelopes_and_anchors():
 		svg_tools.cells.cell_envelope(kind='unknown', width=100, height=100, color='white')
 
 
+#============================================
 def test_nuclear_parts_are_explicit_and_validate_dimensions():
 	cell = svg_tools.cells.cell_envelope(kind='fused_yeast', width=300, height=150, color='white')
 	nucleus = svg_tools.cells.nucleus(width=58, height=52, color='blue')

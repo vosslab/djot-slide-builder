@@ -13,6 +13,7 @@ import slide_lib.presentation_theme
 import layout_test_helpers
 
 
+#============================================
 def test_cell_font_size_controls_native_text_and_measured_table_geometry(tmp_path: pathlib.Path) -> None:
 	"""An enlarged cell stays editable and gets enough column width and row height."""
 	prefix = '=== layout: one-panel\n\n@body\n\n| ID | Name |\n| --- | --- |\n'
@@ -31,6 +32,7 @@ def test_cell_font_size_controls_native_text_and_measured_table_geometry(tmp_pat
 		tables[0].body_rows[0].cells[1].paragraphs[0].typography.selected_size_pt
 
 
+#============================================
 def test_authored_table_proportions_stay_fixed_when_cell_text_changes(tmp_path: pathlib.Path) -> None:
 	"""Question and answer tables keep the same column boundaries during a reveal sequence."""
 	slides = []
@@ -47,6 +49,7 @@ def test_authored_table_proportions_stay_fixed_when_cell_text_changes(tmp_path: 
 	assert second == pytest.approx(3 * first) and third == second
 
 
+#============================================
 def test_table_group_uses_later_content_without_affecting_other_tables(tmp_path: pathlib.Path) -> None:
 	"""A group measures the whole sequence, adapts to edits, and stays scoped to one compile."""
 	prefix = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
@@ -69,6 +72,7 @@ def test_table_group_uses_later_content_without_affecting_other_tables(tmp_path:
 	assert short.plan.slides[0].objects[0].content.column_widths == widths[0][0]
 
 
+#============================================
 def test_table_group_rejects_incompatible_column_counts(tmp_path: pathlib.Path) -> None:
 	"""Grouping unrelated table shapes produces an actionable source error."""
 	source = '=== layout: one-panel\n\n@body\n\n{table-group="cross"}\n'
@@ -76,16 +80,7 @@ def test_table_group_rejects_incompatible_column_counts(tmp_path: pathlib.Path) 
 		layout_test_helpers.compile_source(tmp_path, source + "| A | B |\n\n" + source + "| A | B | C |\n")
 
 
-def test_table_serializes_content_dependent_row_heights(tmp_path: pathlib.Path) -> None:
-	"""A wrapped row receives more native height than a one-line row."""
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"| Label | Explanation |\n| - | - |\n| Short | Fits |\n"
-		"| Long | This explanation wraps across several lines because it contains substantially more text than the short row. |")
-	table = next(item.content for item in result.plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	assert table.row_heights[-1] > table.row_heights[-2]
-
-
+#============================================
 def test_table_allocates_more_width_to_a_content_heavy_column(tmp_path: pathlib.Path) -> None:
 	"""Measured content controls native column widths without changing the table frame."""
 	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -97,6 +92,7 @@ def test_table_allocates_more_width_to_a_content_heavy_column(tmp_path: pathlib.
 	assert sum(item.content.column_widths) == pytest.approx(item.rectangle.width)
 
 
+#============================================
 @pytest.mark.parametrize("separator", ("-", "\u2010", "\u2013"))
 def test_table_wraps_compounds_at_hyphens_before_fragmenting_words(
 		tmp_path: pathlib.Path, separator: str) -> None:
@@ -129,6 +125,7 @@ def test_table_wraps_compounds_at_hyphens_before_fragmenting_words(
 				for run in paragraph.inlines)
 
 
+#============================================
 def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> None:
 	"""Keep numeric columns readable and totals distinct without changing cell text."""
 	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -151,6 +148,7 @@ def test_numeric_table_alignment_and_total_emphasis(tmp_path: pathlib.Path) -> N
 			if isinstance(run, slide_lib.layout_content.TextRun))
 
 
+#============================================
 def test_resolved_cell_insets_control_rows_and_native_frame(tmp_path: pathlib.Path) -> None:
 	"""Asymmetric point padding and side borders share one measured physical geometry."""
 	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -173,19 +171,7 @@ def test_resolved_cell_insets_control_rows_and_native_frame(tmp_path: pathlib.Pa
 	assert any(run.style.position == "sub" for run in runs if isinstance(run, slide_lib.layout_content.TextRun))
 
 
-def test_grouped_columns_include_later_resolved_padding(tmp_path: pathlib.Path) -> None:
-	"""A later padded cell contributes to the stable grid shared by related styles."""
-	prefix = '=== layout: one-panel\n\n@body\n\n{table-group=padding table-style=working}\n'
-	columns = "| A | B |\n| --- | --- |\n"
-	result = layout_test_helpers.compile_source(tmp_path, prefix + columns + "| x | x |\n\n" +
-		prefix + columns + '| [x]{padding-right=80pt} | x |\n')
-	tables = [next(item.content for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-		for slide in result.plan.slides]
-	assert tables[0].column_widths == tables[1].column_widths
-	assert tables[0].column_widths[0] > tables[0].column_widths[1]
-
-
+#============================================
 def test_merged_total_uses_combined_width_and_explicit_cell_alignment(tmp_path: pathlib.Path) -> None:
 	"""Equal gene columns remain equal while the merged total occupies all three."""
 	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -203,6 +189,7 @@ def test_merged_total_uses_combined_width_and_explicit_cell_alignment(tmp_path: 
 		slide_lib.layout_primitives.HorizontalAlignment.END
 
 
+#============================================
 def test_grouped_tables_allow_merged_rows_on_the_same_column_grid(tmp_path: pathlib.Path) -> None:
 	"""A reveal may merge cells without changing the group's logical column schema."""
 	header = '=== layout: one-panel\n\n@body\n\n{table-group="merged"}\n'

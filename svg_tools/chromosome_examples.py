@@ -234,31 +234,6 @@ def make_tool_specimen(path: pathlib.Path) -> None:
 
 
 #============================================
-def _source_runs(layout: "svg_tools.chromosomes.ChromosomeLayout",
-	selected: tuple[svg_tools.chromosomes.Segment, ...]
-	) -> tuple[tuple[float, float, float, float], ...]:
-	"""Union consecutive selected source anchors per sister without bridging gaps."""
-	identities = {id(segment) for segment in selected}
-	runs = []
-	for sister in sorted({anchor.sister for anchor in layout.segments}):
-		bounds = None
-		for anchor in (item for item in layout.segments if item.sister == sister):
-			if id(anchor.segment) in identities:
-				x0, y0, x1, y1 = anchor.bounds
-				if bounds is None:
-					bounds = (x0, y0, x1, y1)
-				else:
-					bounds = (min(bounds[0], x0), min(bounds[1], y0),
-						max(bounds[2], x1), max(bounds[3], y1))
-			elif bounds is not None:
-				runs.append(bounds)
-				bounds = None
-		if bounds is not None:
-			runs.append(bounds)
-	return tuple(runs)
-
-
-#============================================
 def make_tool_v2_specimen(path: pathlib.Path) -> None:
 	"""Show one source map as matched whole chromatids and a literal q31 crop."""
 	ink, plum, accent = "#344651", "#72508C", "#963B12"

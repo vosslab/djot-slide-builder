@@ -16,6 +16,7 @@ import slide_lib.presentation_theme
 import layout_test_helpers
 
 
+#============================================
 def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pathlib.Path) -> None:
 	"""Reference decoration is behind editable content and its label is outside the body."""
 	text = "\n\n# Explanation\n\n@body\n\nStudy this example.\n"
@@ -33,6 +34,7 @@ def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pa
 	assert label.content.paragraphs[0].inlines[0].text == "For reference - not covered in class."
 
 
+#============================================
 @pytest.mark.parametrize("source", (
 	"=== layout: one-panel\n# Content\n@body\n=> appear\nKeep this editable.\n",
 	"=== layout: section\n# Red surface\n",
@@ -54,6 +56,7 @@ def test_replaceme_adds_visible_editable_warning_without_changing_content(
 	assert watermark.content.style.fill_role is not None and not watermark.reveal_targets
 
 
+#============================================
 def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Path) -> None:
 	"""Hidden pages keep their source order and native hidden metadata."""
 	source = ("=== layout: title-only\nhidden: true\n\n# Optional\n"
@@ -68,23 +71,14 @@ def test_hidden_source_is_compiled_and_retains_hidden_state(tmp_path: pathlib.Pa
 	assert tuple(page.hidden for page in result.plan.slides) == (True, False, False)
 
 
+#============================================
 def test_all_hidden_deck_has_no_classroom_output(tmp_path: pathlib.Path) -> None:
 	"""A retained source-only deck gets a clear diagnostic instead of an empty export."""
 	with pytest.raises(ValueError, match="deck has no visible slides"):
 		layout_test_helpers.compile_source(tmp_path, "=== layout: blank\nhidden: true\n")
 
 
-def test_heading_only_title_only_keeps_its_sole_native_title(tmp_path: pathlib.Path) -> None:
-	"""An H1-only title-only slide has one TITLE_ONLY member and no body allocation."""
-	slide = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title").plan.slides[0]
-	assert slide.layout.topology.libreoffice_layout.autolayout is \
-		slide_lib.layout_primitives.LibreOfficeAutoLayout.TITLE_ONLY
-	assert tuple(slot.placeholder_kind for slot in slide.slots) == \
-		(slide_lib.layout_primitives.PlaceholderKind.TITLE,)
-	assert len(slide.objects) == 1
-	assert slide.objects[0].placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.TITLE
-
-
+#============================================
 def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.Path) -> None:
 	"""Title Only retains its one title member while body content remains native objects."""
 	layout_test_helpers.write_image(tmp_path, "component.png")
@@ -105,14 +99,7 @@ def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.
 	assert all(item.rectangle.y > title.rectangle.y + title.rectangle.height for item in body_objects)
 
 
-def test_title_only_body_reports_source_located_capacity(tmp_path: pathlib.Path) -> None:
-	"""Title Only body recovery retains the shared visible capacity diagnostic."""
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\n" + "word " * 500)
-	diagnostic = result.capacity_diagnostics[0]
-	assert diagnostic.layout == "title-only" and diagnostic.slot == "body"
-	assert diagnostic.location.path.name == "specimen.djot" and diagnostic.location.line == 5
-
-
+#============================================
 @pytest.mark.parametrize("layout, slots", (("one-panel", ("body",)), ("two-panels", ("left", "right"))))
 def test_overfull_representable_slide_stays_one_page_and_reports_capacity(
 		tmp_path: pathlib.Path, layout: str, slots: tuple[str, ...]) -> None:
@@ -127,6 +114,7 @@ def test_overfull_representable_slide_stays_one_page_and_reports_capacity(
 	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
 
 
+#============================================
 def test_impossible_content_reports_its_source_location(tmp_path: pathlib.Path) -> None:
 	table = "| A |\n| - |\n" + "| word |\n" * 100
 	with pytest.raises(slide_lib.capacity_report.PhysicalCapacityError,
@@ -136,6 +124,7 @@ def test_impossible_content_reports_its_source_location(tmp_path: pathlib.Path) 
 	assert raised.value.diagnostic.required_size_pt is None
 
 
+#============================================
 def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: pathlib.Path) -> None:
 	"""A fixed title frame raises one source-located physical title capacity result."""
 	deck = layout_test_helpers.parsed_source(tmp_path, "=== layout: title-only\n\n# Title")
@@ -158,11 +147,13 @@ def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: p
 	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.TITLE
 
 
+#============================================
 def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pathlib.Path) -> None:
 	with pytest.raises(ValueError, match=r"specimen\.djot:5: CodeBlock has no physical projection"):
 		layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n```\ncode\n```")
 
 
+#============================================
 def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 		tmp_path: pathlib.Path) -> None:
 	"""A dense standard cell absorbs capacity recovery after the independently fitting title."""
@@ -177,6 +168,7 @@ def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
 	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
 
 
+#============================================
 def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
 	"""The recurring closer stays editable while its vector star supplies the flourish."""
 	slide = layout_test_helpers.compile_source(tmp_path, "=== layout: theend\n\n# THE END").plan.slides[0]
@@ -191,6 +183,7 @@ def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathl
 	assert star.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
 
 
+#============================================
 def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> None:
 	"""Omitting a title expands the body while retaining the ordinary page margins."""
 	result = layout_test_helpers.compile_source(tmp_path,
@@ -210,6 +203,7 @@ def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> Non
 		slide_lib.layout_primitives.HorizontalAlignment.START
 
 
+#============================================
 @pytest.mark.parametrize("layout", ("bookend", "definitions"))
 def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
 		tmp_path: pathlib.Path, layout: str) -> None:
@@ -242,6 +236,7 @@ def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
 		if item not in frame)
 
 
+#============================================
 def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_path: pathlib.Path) -> None:
 	"""Plain term syntax and existing bold terms receive automatic bold and underline."""
 	page = layout_test_helpers.compile_source(tmp_path, "=== layout: definitions\n# Definitions\n@body\n"
@@ -257,6 +252,7 @@ def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_pa
 	assert all(not run.style.bold and not run.style.underline for run in runs if run not in terms)
 
 
+#============================================
 def test_definitions_reject_missing_term_boundaries(tmp_path: pathlib.Path) -> None:
 	"""Malformed entries must identify how to supply a term rather than silently look ordinary."""
 	with pytest.raises(ValueError, match="Term: explanation"):

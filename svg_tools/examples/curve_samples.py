@@ -9,7 +9,7 @@ import svg_tools.drawing
 
 #============================================
 def main(output: pathlib.Path | None = None) -> None:
-	"""Write the curve placement example beside this script."""
+	"""Write the curve placement example under _temp by default."""
 	path = "M 40 150 C 115 15 235 285 320 100"
 	body = f'<path d="{path}" fill="none" stroke="#b8c4ce" stroke-width="3"/>'
 	for x, y, angle in svg_tools.curves.sample_curve(path, spacing=28):
@@ -17,7 +17,7 @@ def main(output: pathlib.Path | None = None) -> None:
 		body += '<circle r="9" fill="#276c78"/><path d="M 0 0 L 14 0" '
 		body += 'stroke="#eab655" stroke-width="4" stroke-linecap="round"/></g>'
 	if output is None:
-		output = pathlib.Path(__file__).with_suffix(".drawn.svg")
+		output = pathlib.Path('_temp/curve_samples.drawn.svg')
 	svg_tools.drawing.write_svg(output, 360, 260, "Curve placement",
 		"Repeated circles and tangent marks follow a cubic curve.", body)
 

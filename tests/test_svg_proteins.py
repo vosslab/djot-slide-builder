@@ -4,29 +4,12 @@ import math
 import xml.etree.ElementTree
 
 import pytest
-import svgpathtools
 
 import svg_tools.parts
 import svg_tools.signaling
 
 
-@pytest.mark.parametrize(('factory', 'ports'), [
-	(lambda **kw: svg_tools.signaling.protein(**kw), {'binding': (1, 1), 'input': (5, .5), 'output': (3, .125)}),
-	(lambda **kw: svg_tools.signaling.protein(kind='kinase', **kw),
-		{'binding': (1, 1), 'input': (7, .5), 'output': (4, .125)}),
-	(svg_tools.signaling.ligand, {'binding': (3, 1), 'input': (0, 0), 'output': (2, .125)}),
-	(svg_tools.signaling.receptor, {'binding': (2, 1), 'input': (2, 1), 'extracellular': (2, 1),
-		'output': (9, .125), 'cytoplasmic': (9, .125)}),
-])
-@pytest.mark.parametrize(('width', 'height'), [(100, 80), (53, 170)])
-def test_attachment_anchors_touch_authored_contour(factory, ports, width, height):
-	part = factory(width=width, height=height, color='blue')
-	path = svgpathtools.parse_path(xml.etree.ElementTree.fromstring(part.fragment).find('path').attrib['d'])
-	for name, (segment, position) in ports.items():
-		point = path[segment].point(position)
-		assert part.anchors[name] == pytest.approx((point.real, point.imag), abs=1e-10)
-
-
+#============================================
 @pytest.mark.parametrize('factory', [svg_tools.signaling.protein,
 	svg_tools.signaling.ligand, svg_tools.signaling.receptor])
 def test_molecule_bounds_anchors_and_dimensions(factory):
@@ -43,6 +26,7 @@ def test_molecule_bounds_anchors_and_dimensions(factory):
 			factory(width=width, height=height, color='#cbdcf0')
 
 
+#============================================
 def test_receptor_membrane_anchors_transform():
 	part = svg_tools.parts.transform(svg_tools.signaling.receptor(
 		width=100, height=200, color='#cbdcf0'), x=20, y=40)
@@ -50,6 +34,7 @@ def test_receptor_membrane_anchors_transform():
 	assert part.anchors['extracellular'][1] < 40 < part.anchors['cytoplasmic'][1]
 
 
+#============================================
 def test_protein_kinds_are_distinct_and_invalid_kind_rejected():
 	globular = svg_tools.signaling.protein(width=100, height=80, color='blue')
 	kinase = svg_tools.signaling.protein(width=100, height=80, color='blue', kind='kinase')

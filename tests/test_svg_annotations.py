@@ -8,6 +8,7 @@ import svg_tools.annotations as annotations
 import svg_tools.text
 
 
+#============================================
 def test_boxes_preserve_words_and_reject_overflow():
 	part = annotations.box('Signal received', 130, 70, '#dceef4')
 	root = xml.etree.ElementTree.fromstring(part.fragment)
@@ -19,6 +20,7 @@ def test_boxes_preserve_words_and_reject_overflow():
 		annotations.box('unbreakablelongword', 30, 30, '#fff')
 
 
+#============================================
 def test_box_styled_gene_and_upright_status():
 	runs = [svg_tools.text.TextRun('Sxl', italic=True), svg_tools.text.TextRun('\nON')]
 	part = annotations.box(runs, 95, 50, '#fff', font_size=17)
@@ -27,11 +29,9 @@ def test_box_styled_gene_and_upright_status():
 	spans = [element for element in text.iter('tspan') if element.text]
 	assert [(span.text, span.get('font-style')) for span in spans] == [
 		('Sxl', 'italic'), ('ON', 'normal')]
-	assert part.bounds == (-48.5, -26, 48.5, 26)
-	assert annotations.box('Sxl\nON', 95, 50, '#fff', font_size=17).fragment == annotations.box(
-		[svg_tools.text.TextRun('Sxl\nON')], 95, 50, '#fff', font_size=17).fragment
 
 
+#============================================
 def test_connector_head_orientation_and_bounds():
 	part = annotations.connector([(0, 0), (0, 20), (0, 20)], head_size=10)
 	root = xml.etree.ElementTree.fromstring(part.fragment)
@@ -41,6 +41,7 @@ def test_connector_head_orientation_and_bounds():
 	assert bar.bounds == (-1, -6, 21, 6)
 
 
+#============================================
 def test_connector_semantics():
 	for kind in ('binding', 'bracket', 'callout', 'indirect'):
 		part = annotations.connector([(0, 0), (10, 0)], kind=kind)

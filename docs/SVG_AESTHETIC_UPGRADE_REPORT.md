@@ -5,6 +5,8 @@ illustrations. This report records the 2026-11-14 upgrade and the evidence avail
 completion. Code specification, standalone artwork, native specification, native quality and
 integration reviews passed, and scoped cleanup is complete. The current milestone status is
 in [svg_aesthetic_progress.md](active_plans/active/svg_aesthetic_progress.md).
+The subsequent pruning and six-pass review are recorded in
+[svg_toolkit_post_aesthetic_audit.md](active_plans/audits/svg_toolkit_post_aesthetic_audit.md).
 
 See [index.webp](slide-specs/illustration_examples/svg_toolkit/index.webp) for the gallery,
 [before_after_details.webp](slide-specs/illustration_examples/svg_toolkit/before_after_details.webp)

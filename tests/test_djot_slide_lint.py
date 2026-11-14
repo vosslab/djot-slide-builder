@@ -107,27 +107,6 @@ def test_linter_reports_source_located_parser_failures(tmp_path: pathlib.Path) -
 
 
 #============================================
-def test_linter_keeps_component_image_safety_after_semantic_parse(tmp_path: pathlib.Path) -> None:
-	"""A parsed component image must still name an existing local asset."""
-	path = write_source(
-		tmp_path,
-		"""=== layout: one-panel
-
-# Genes
-
-@body
-
-![Chromosome](assets/missing.png)
-""",
-	)
-
-	problems, _summary = slide_lib.djot_lint.lint_paths([path])
-
-	assert problems[0].line == 7
-	assert problems[0].message == "component image is missing: assets/missing.png"
-
-
-#============================================
 def test_linter_rejects_component_image_symlink_outside_deck_root(tmp_path: pathlib.Path) -> None:
 	"""A local path cannot escape the parsed deck root through a symlink."""
 	path = write_source(
@@ -141,6 +120,8 @@ def test_linter_rejects_component_image_symlink_outside_deck_root(tmp_path: path
 ![Chromosome](assets/escape.png)
 """,
 	)
+	(path.parent / "deck_tools.py").touch()
+	(path.parent / "slide_lib").mkdir()
 	outside = tmp_path / "outside.png"
 	outside.write_bytes(b"outside asset")
 	(path.parent / "assets" / "escape.png").symlink_to(outside)

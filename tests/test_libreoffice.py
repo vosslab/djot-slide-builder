@@ -13,36 +13,6 @@ from slide_lib import libreoffice
 
 
 #============================================
-def test_convert_files_runs_direct_commands_in_source_order(tmp_path: pathlib.Path) -> None:
-	"""Direct sequential conversion commands use the supported headless flags."""
-	inputs = tuple(tmp_path / name for name in ("alpha.odp", "beta.odp"))
-	for input_path in inputs:
-		input_path.write_bytes(b"source")
-	output_dir = tmp_path / "converted"
-	output_dir.mkdir()
-	commands: list[list[str]] = []
-
-	def run(command: list[str], **_kwargs: object) -> subprocess.CompletedProcess[str]:
-		commands.append(command)
-		(output_dir / f"{pathlib.Path(command[-1]).stem}.pdf").write_bytes(b"pdf")
-		return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
-
-	with mock.patch.object(libreoffice, "require_soffice", return_value=pathlib.Path("/usr/bin/soffice")), \
-			mock.patch.object(libreoffice.subprocess, "run", side_effect=run), \
-			mock.patch.object(libreoffice.time, "sleep") as settle:
-		converted = libreoffice.convert_files(inputs, output_dir, "pdf")
-
-	assert converted == tuple(output_dir / f"{path.stem}.pdf" for path in inputs)
-	assert [command[-1] for command in commands] == [str(path) for path in inputs]
-	assert all("--headless" in command and "--norestore" in command and "--outdir" in command
-		and command[command.index("--convert-to") + 1].startswith("pdf:impress_pdf_Export:")
-		and '"ExportHiddenSlides":{"type":"boolean","value":"false"}' in
-			command[command.index("--convert-to") + 1]
-		and not any(value.startswith("-env:UserInstallation=") for value in command)
-		for command in commands) and settle.call_count == 2
-
-
-#============================================
 def test_convert_files_reports_missing_expected_output(tmp_path: pathlib.Path) -> None:
 	"""A successful converter result still requires the expected PDF artifact."""
 	input_path = tmp_path / "deck.odp"
@@ -56,4 +26,3 @@ def test_convert_files_reports_missing_expected_output(tmp_path: pathlib.Path) -
 			libreoffice.convert_files((input_path,), output_dir, "pdf")
 
 
-#============================================

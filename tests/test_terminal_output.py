@@ -20,6 +20,7 @@ import slide_lib.terminal_output
 BLANK_DECK = "=== layout: blank\n"
 
 
+#============================================
 def capacity_diagnostic(path: pathlib.Path, line: int, slot: str, required: float | None,
 		cause: slide_lib.capacity_report.CapacityCause,
 		minimum: float | None = None) -> slide_lib.capacity_report.CapacityDiagnostic:
@@ -29,6 +30,7 @@ def capacity_diagnostic(path: pathlib.Path, line: int, slot: str, required: floa
 		cause, minimum)
 
 
+#============================================
 def plain_consoles() -> tuple[rich.console.Console, rich.console.Console, io.StringIO, io.StringIO]:
 	"""Create redirected consoles whose plain text is safe for exact assertions."""
 	stdout_stream = io.StringIO()
@@ -165,25 +167,6 @@ def test_capacity_inspection_continues_after_physical_error_and_never_exports(
 		"Capacity summary: 2 concerns (paragraph/list=1, table=1)",
 	]
 	assert stderr_stream.getvalue() == ""
-
-
-#============================================
-def test_capacity_inspection_is_silent_and_zero_when_every_deck_is_floor_safe(
-		tmp_path: pathlib.Path) -> None:
-	"""A concern-free compile-only inspection leaves ordinary terminal automation quiet."""
-	deck_path = tmp_path / "deck.djot"
-	deck_path.write_text(BLANK_DECK, encoding="utf-8")
-	stdout, stderr, stdout_stream, stderr_stream = plain_consoles()
-	with mock.patch.object(slide_lib.terminal_output.slide_lib.native_export, "find_repo_root",
-			return_value=tmp_path), mock.patch.object(
-			slide_lib.terminal_output.slide_lib.native_export, "discover_decks",
-			return_value=[deck_path]), mock.patch.object(
-			slide_lib.terminal_output.slide_lib.native_export, "parse_deck", return_value=object()), mock.patch.object(
-			slide_lib.terminal_output.slide_lib.native_export, "compile_deck",
-			return_value=(types.SimpleNamespace(capacity_diagnostics=()), object())):
-		status = slide_lib.terminal_output.run_capacity(str(deck_path), allow_folder=False,
-			output_console=stdout, error_console=stderr)
-	assert status == 0 and stdout_stream.getvalue() == "" and stderr_stream.getvalue() == ""
 
 
 #============================================

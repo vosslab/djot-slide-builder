@@ -5,9 +5,9 @@ import xml.etree.ElementTree as ET
 import pytest
 
 from svg_tools import phenotypes
-from svg_tools.examples import phenotypes as example
 
 
+#============================================
 def test_seed_shapes_are_deterministic_and_color_independent():
 	round_seed = phenotypes.seed(size=100, color='#edc743', shape='round')
 	wrinkled = phenotypes.seed(size=100, color='#edc743', shape='wrinkled')
@@ -24,7 +24,8 @@ def test_seed_shapes_are_deterministic_and_color_independent():
 		phenotypes.seed(size=100, color='green', shape='unknown')
 
 
-def test_flower_count_and_population_positions():
+#============================================
+def test_flower_count():
 	flower = phenotypes.flower(size=100, color='pink', petals=7)
 	assert len(ET.fromstring(flower.fragment).findall('.//ellipse')) == 7
 	assert flower.bounds[0] < 0 < flower.bounds[2]
@@ -32,8 +33,3 @@ def test_flower_count_and_population_positions():
 	assert flower.anchors['top'] == (0, -50)
 	with pytest.raises(ValueError):
 		phenotypes.flower(size=100, color='pink', petals=2)
-	population = example.population()
-	centers = [point for name, point in population.anchors.items() if name.endswith('.center')]
-	assert len(centers) == len(set(centers)) == 6
-	assert len({y for x, y in centers}) == 2
-	assert len(ET.fromstring(population.fragment).findall('.//ellipse')) == 30

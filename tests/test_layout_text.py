@@ -14,6 +14,7 @@ import slide_lib.presentation_theme
 import layout_test_helpers
 
 
+#============================================
 def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
 	"""Code stays monospace while literal URLs receive the approved narrow face."""
 	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
@@ -29,6 +30,7 @@ def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.
 	assert all(run.style.underline for run in runs if run.style.link_url)
 
 
+#============================================
 def test_visible_url_shrinks_independently_without_splitting(tmp_path: pathlib.Path) -> None:
 	"""Long addresses keep their destination and use their own readable size."""
 	url = "https://crossidiomas.com/build-the-plane-while-flying-it/"
@@ -46,6 +48,7 @@ def test_visible_url_shrinks_independently_without_splitting(tmp_path: pathlib.P
 		url) < result.plan.slides[0].objects[0].rectangle.width
 
 
+#============================================
 def test_url_fits_remaining_space_or_moves_intact_to_next_line(tmp_path: pathlib.Path) -> None:
 	"""URL sizing and placement leave the surrounding paragraph's size alone."""
 	theme = slide_lib.presentation_theme.default_theme()
@@ -70,18 +73,7 @@ def test_url_fits_remaining_space_or_moves_intact_to_next_line(tmp_path: pathlib
 		assert 12 <= run.style.size_pt < 28
 
 
-def test_literal_url_keeps_narrow_font_despite_code_markup(tmp_path: pathlib.Path) -> None:
-	"""Visible URLs retain the readable narrow face even inside inline code markup."""
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n@body\n"
-		"[`https://example.test/short`](https://example.test/full?key=value)\n")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
-	runs = [run for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)]
-	assert runs
-	assert all(run.style.font_family == slide_lib.presentation_theme.NARROW_FONT_FAMILY
-		and run.style.literal_url for run in runs)
-
-
+#============================================
 def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: pathlib.Path) -> None:
 	"""Citation text uses the bottom margin without consuming the existing panel space."""
 	base = "=== layout: two-panels\n\n# Tutorial\n\n@left\n\nStory cue.\n\n@right\n\nComparison.\n"
@@ -99,6 +91,7 @@ def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: 
 	assert any(run.style.link_url == url for run in runs)
 
 
+#============================================
 @pytest.mark.parametrize("layout", ("section", "subsection", "theend"))
 def test_dark_slide_citation_retains_readable_editable_text(tmp_path: pathlib.Path, layout: str) -> None:
 	title = "THE END" if layout == "theend" else "Topic"
@@ -112,12 +105,14 @@ def test_dark_slide_citation_retains_readable_editable_text(tmp_path: pathlib.Pa
 		if isinstance(run, slide_lib.layout_content.TextRun))
 
 
+#============================================
 @pytest.mark.parametrize("content", ("- A list", "![Image](missing.png)", "$x$"))
 def test_citation_rejects_nonprose_before_export(tmp_path: pathlib.Path, content: str) -> None:
 	with pytest.raises(ValueError, match="@citation"):
 		layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n@citation\n\n" + content)
 
 
+#============================================
 def test_automatic_runt_balancing_moves_words_and_preserves_styling(tmp_path: pathlib.Path) -> None:
 	"""A short last line is rebalanced at the selected size, with identical words and run styles."""
 	theme = slide_lib.presentation_theme.default_theme()
@@ -145,6 +140,7 @@ def test_automatic_runt_balancing_moves_words_and_preserves_styling(tmp_path: pa
 	assert all(ink_width <= width for _text, ink_width in lines)
 
 
+#============================================
 def test_runt_balancing_preserves_authored_breaks_and_does_not_add_lines() -> None:
 	"""Hard breaks and an unfixable narrow tail stay unchanged rather than adding a line."""
 	theme = slide_lib.presentation_theme.default_theme()

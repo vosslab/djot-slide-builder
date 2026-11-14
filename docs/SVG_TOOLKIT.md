@@ -37,7 +37,7 @@ Run an example from the repository root, substituting a module name from the tab
 /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.placement
 ```
 
-Most component examples write SVGs under `_temp/`; `curve_samples` writes beside its source.
+Component examples write SVGs under `_temp/` by default.
 Lecture pilot recipes can default to durable lecture assets, including [seed_cross](../svg_tools/examples/seed_cross.py),
 [yeast_mating](../svg_tools/examples/yeast_mating.py), and [western_detection](../svg_tools/examples/western_detection.py).
 Check each source for its default and optional output path or directory before running it; supply an

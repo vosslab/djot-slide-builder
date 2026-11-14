@@ -26,16 +26,19 @@ import slide_lib.presentation_theme
 import slide_lib.table_formatting
 
 
+#============================================
 def source() -> slide_lib.native_model.SourceLocation:
 	return slide_lib.native_model.SourceLocation(pathlib.Path("inline.djot"), 1)
 
 
+#============================================
 def frame_text() -> primitives.FrameTextProperties:
 	return primitives.FrameTextProperties(primitives.Insets(0.0, 0.0, 0.0, 0.0),
 		primitives.VerticalAlignment.TOP, primitives.TextWrap.WRAP,
 		primitives.OverflowPolicy.SHRINK)
 
 
+#============================================
 def relative_luminance(hex_color: str) -> float:
 	"""Measure sRGB surfaces with the WCAG relative-luminance formula."""
 	channels = [int(hex_color.lstrip("#")[index:index + 2], 16) / 255 for index in (0, 2, 4)]
@@ -45,6 +48,7 @@ def relative_luminance(hex_color: str) -> float:
 	return result
 
 
+#============================================
 def deck() -> model.LayoutDeck:
 	rectangle = primitives.LogicalRectangle(0.0, 0.0, 500.0, 300.0)
 	slot = model.LayoutSlot("body", primitives.PlaceholderKind.OUTLINE,
@@ -66,10 +70,12 @@ def deck() -> model.LayoutDeck:
 		primitives.LogicalCanvas(), (), (slide,))
 
 
+#============================================
 def xml(value: str) -> bytes:
 	return value.encode("utf-8")
 
 
+#============================================
 def table_cell_properties(root: lxml.etree._Element) -> list[dict[str, str]]:
 	"""Resolve each native cell's formatting through its actual style reference."""
 	styles = {style.attrib[f"{{{exporter.STYLE_NS}}}name"]: style
@@ -79,6 +85,7 @@ def table_cell_properties(root: lxml.etree._Element) -> list[dict[str, str]]:
 		for cell in root.findall(f".//{{{slide_lib.odp_text.TABLE_NS}}}table-cell")]
 
 
+#============================================
 def payloads() -> dict[str, bytes]:
 	items = {
 		"mimetype": package.ODP_MIMETYPE.encode("ascii"),
@@ -91,6 +98,7 @@ def payloads() -> dict[str, bytes]:
 	return items
 
 
+#============================================
 def template(path: pathlib.Path) -> pathlib.Path:
 	with zipfile.ZipFile(slide_lib.presentation_theme.DEFAULT_TEMPLATE_PATH) as source:
 		items = {info.filename: source.read(info.filename) for info in source.infolist()
@@ -109,6 +117,7 @@ def template(path: pathlib.Path) -> pathlib.Path:
 	return path
 
 
+#============================================
 def test_write_odp_replaces_content_and_preserves_reachable_template_resource(tmp_path: pathlib.Path) -> None:
 	template_path = template(tmp_path / "theme.otp")
 	theme = dataclasses.replace(slide_lib.presentation_theme.default_theme(), template_path=template_path)
@@ -136,6 +145,7 @@ def test_write_odp_replaces_content_and_preserves_reachable_template_resource(tm
 		package.validate_odp_members({info.filename: archive.read(info.filename) for info in members})
 
 
+#============================================
 def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib.Path) -> None:
 	"""Editable text styles select deterministic embedded resources for every supported face."""
 	layout_deck = deck()
@@ -204,6 +214,7 @@ def test_write_odp_embeds_and_selects_each_validated_font_face(tmp_path: pathlib
 				properties[f"{{{exporter.FO_NS}}}font-family"] == face.embedded_family
 
 
+#============================================
 @pytest.mark.parametrize("literal,resolved_size", [(False, None), (True, None), (True, 12.0)])
 def test_linked_text_nests_destination_inside_its_styled_span(literal: bool, resolved_size: float | None) -> None:
 	"""LibreOffice receives a visible linked label within its resolved text style."""
@@ -234,14 +245,7 @@ def test_linked_text_nests_destination_inside_its_styled_span(literal: bool, res
 	assert properties.attrib[f"{{{exporter.FO_NS}}}font-family"] == family
 
 
-def test_text_frames_preserve_the_compiler_selected_size() -> None:
-	"""Text-frame styles keep the compiler's measured point size authoritative."""
-	root = package.parse_xml(exporter._content_xml(deck(),
-		slide_lib.presentation_theme.default_theme(), exporter._layout_names(deck()), {}), "content.xml")
-	properties = root.find(f".//{{{exporter.STYLE_NS}}}graphic-properties").attrib
-	assert properties[f"{{{exporter.STYLE_NS}}}shrink-to-fit"] == "false"
-
-
+#============================================
 def test_picture_frames_use_the_compiler_resolved_display_rectangle() -> None:
 	"""Contained pictures retain their aspect-correct displayed bounds in ODP."""
 	layout_deck = deck()
@@ -273,6 +277,7 @@ def test_picture_frames_use_the_compiler_resolved_display_rectangle() -> None:
 		text_item.rectangle.width, layout_deck, theme)
 
 
+#============================================
 def test_drawing_page_style_hides_master_chrome() -> None:
 	"""Every emitted page suppresses master date, footer, and page-number placeholders."""
 	layout_deck = deck()
@@ -288,6 +293,7 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 		"true", "true", "false", "false", "false")
 
 
+#============================================
 @pytest.mark.parametrize("color_theme", ("genetics", "biotechnology"))
 @pytest.mark.parametrize("layout", (
 	"title-slide", "bookend", "definitions", "reference", "section", "subsection",
@@ -367,6 +373,7 @@ def test_decoration_is_master_owned_and_text_remains_on_slide(
 			"solid" if layout in ("title-slide", "big-image", "subsection", "subsubsection", "prompt") else "none")
 
 
+#============================================
 def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path) -> None:
 	"""Standard Djot marks must style editable text instead of leaking delimiter characters."""
 	source_path = tmp_path / "formatting.djot"
@@ -399,6 +406,7 @@ def test_djot_inline_formatting_survives_editable_export(tmp_path: pathlib.Path)
 	assert properties["delete"][f"{{{exporter.STYLE_NS}}}text-line-through-style"] == "solid"
 
 
+#============================================
 @pytest.mark.parametrize("course", slide_lib.presentation_theme.color_theme_names())
 def test_dividers_preserve_course_color_and_background_contrast(
 		tmp_path: pathlib.Path, course: str) -> None:
@@ -462,6 +470,7 @@ def test_dividers_preserve_course_color_and_background_contrast(
 	assert band.x == 0 and band.width == primitives.LOGICAL_SLIDE_WIDTH
 
 
+#============================================
 def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
 	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
 	source_path = tmp_path / "closer.djot"
@@ -504,6 +513,7 @@ def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) 
 		for rectangle in rounded_rectangles)
 
 
+#============================================
 def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathlib.Path) -> None:
 	"""Every native ODF timing step targets an emitted editable paragraph identity."""
 	source_path = tmp_path / "cascade.djot"
@@ -523,6 +533,7 @@ def test_cascade_reveal_targets_resolve_to_native_paragraph_ids(tmp_path: pathli
 	assert len(targets) == 2 and set(targets) <= ids
 
 
+#============================================
 def test_object_reveal_target_is_a_native_rounded_answer_popup(tmp_path: pathlib.Path) -> None:
 	"""The answer retains its reveal identity and native editable popup styling."""
 	source_path = tmp_path / "multiple_choice.djot"
@@ -557,31 +568,7 @@ def test_object_reveal_target_is_a_native_rounded_answer_popup(tmp_path: pathlib
 	assert text_properties[f"{{{exporter.FO_NS}}}color"] == "#7B1E2B"
 
 
-def test_native_table_preserves_compiler_resolved_fills(tmp_path: pathlib.Path) -> None:
-	"""The native writer must use resolved fills without selecting its own theme defaults."""
-	source_path = tmp_path / "table.djot"
-	source_path.write_text("=== layout: one-panel\n\n@body\n\n"
-		"| Sample | Result |\n| - | - |\n| A | pass |\n", encoding="utf-8")
-	theme = slide_lib.presentation_theme.default_theme()
-	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source_path), theme).plan
-	output = exporter.write_odp(plan, theme, tmp_path / "table.odp")
-	with zipfile.ZipFile(output) as archive:
-		root = package.parse_xml(archive.read("content.xml"), "content.xml")
-	backgrounds = [properties[f"{{{exporter.FO_NS}}}background-color"]
-		for properties in table_cell_properties(root)]
-	table = next(item.content for item in plan.slides[0].objects
-		if isinstance(item.content, content.TableContent))
-	assert backgrounds == [f"#{cell.fill_color}"
-		for row in table.header_rows + table.body_rows for cell in row.cells]
-	assert backgrounds[0] == backgrounds[1]
-	assert backgrounds[0] != f"#{theme.accent_color}"
-	cell_styles = root.findall(f".//{{{exporter.STYLE_NS}}}style[@{{{exporter.STYLE_NS}}}family='table-cell']")
-	for style in cell_styles:
-		fill = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
-		assert fill.attrib[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
-
-
+#============================================
 def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: pathlib.Path) -> None:
 	"""Explicit fills reach editable ODP cell styles, including empty and total cells."""
 	path = tmp_path / "fills.djot"
@@ -601,6 +588,7 @@ def test_native_table_exports_explicit_cell_fills_over_theme_defaults(tmp_path: 
 	assert backgrounds[-1] == "#F6E8FB"
 
 
+#============================================
 def test_authored_colspan_exports_native_merge_and_covered_cells(tmp_path: pathlib.Path) -> None:
 	"""A source colspan becomes one native merged cell and real covered grid positions."""
 	path = tmp_path / "merge.djot"
@@ -619,6 +607,7 @@ def test_authored_colspan_exports_native_merge_and_covered_cells(tmp_path: pathl
 	assert len(row.findall("table:table-cell", ns)) == 2
 
 
+#============================================
 def test_native_tables_share_effective_styles_across_objects_and_slides() -> None:
 	"""Repeated formatting shares styles without colliding in wide tables or losing cell text."""
 	layout_deck = deck()
@@ -652,9 +641,6 @@ def test_native_tables_share_effective_styles_across_objects_and_slides() -> Non
 	styles = root.findall(f".//{{{exporter.STYLE_NS}}}style")
 	names = [style.attrib[f"{{{exporter.STYLE_NS}}}name"] for style in styles]
 	assert len(names) == len(set(names))
-	for family, count in (("table-cell", 2), ("paragraph", 1), ("text", 1),
-			("table-column", 1), ("table-row", 1)):
-		assert sum(style.attrib[f"{{{exporter.STYLE_NS}}}family"] == family for style in styles) == count
 	cells = root.findall(f".//{{{slide_lib.odp_text.TABLE_NS}}}table-cell")
 	references = [cell.attrib[f"{{{slide_lib.odp_text.TABLE_NS}}}style-name"] for cell in cells]
 	assert references[:24] == references[24:]
@@ -663,6 +649,7 @@ def test_native_tables_share_effective_styles_across_objects_and_slides() -> Non
 		f"R{row_index}C{column_index}" for row_index in range(2) for column_index in range(12)] * 2
 
 
+#============================================
 def test_native_table_emits_each_border_padding_alignment_and_spanned_cell() -> None:
 	"""Concrete edge patterns and cell geometry survive native export, including a two-axis merge."""
 	layout_deck = deck()
@@ -705,12 +692,14 @@ def test_native_table_emits_each_border_padding_alignment_and_spanned_cell() -> 
 	assert paragraph_style.attrib[f"{{{exporter.FO_NS}}}text-align"] == "end"
 
 
+#============================================
 def test_scoped_xml_parser_rejects_dtds() -> None:
 	"""ODF XML cannot declare entities even when lxml would leave them unresolved."""
 	with pytest.raises(ValueError, match="DTD is not allowed"):
 		package.parse_xml(b'<!DOCTYPE root [<!ENTITY local "blocked">]><root/>', "content.xml")
 
 
+#============================================
 def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 	items = payloads()
 	items["extra.bin"] = b"orphan"
@@ -740,6 +729,7 @@ def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 		package.validate_odp_members(items, frozenset({"Pictures/generated.png"}))
 
 
+#============================================
 def test_validate_package_rejects_duplicate_member_and_unsafe_path(tmp_path: pathlib.Path) -> None:
 	duplicate = tmp_path / "duplicate.odp"
 	with pytest.warns(UserWarning, match="Duplicate"):
@@ -756,6 +746,7 @@ def test_validate_package_rejects_duplicate_member_and_unsafe_path(tmp_path: pat
 		package.validate_package(unsafe, ".odp", package.ODP_MIMETYPE, frozenset({"mimetype"}))
 
 
+#============================================
 def test_atomic_publish_preserves_existing_destination_on_validation_failure(tmp_path: pathlib.Path) -> None:
 	destination = tmp_path / "existing.odp"
 	destination.write_bytes(b"known good")

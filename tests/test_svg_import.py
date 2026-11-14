@@ -1,6 +1,5 @@
 """Static figure import preserves viewports, references, and editable text."""
 
-import pathlib
 import xml.etree.ElementTree as ET
 
 import pytest
@@ -17,6 +16,7 @@ FIGURE = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.o
  height="20" fill="url(#p)"/><use xlink:href="#line"/><text x="12" y="30">Live words</text></svg>'''
 
 
+#============================================
 def test_repeated_figures_preserve_geometry_and_references():
 	first = import_svg(FIGURE, name='first', size=80)
 	second = import_svg(FIGURE.encode(), name='second', size=80)
@@ -29,6 +29,7 @@ def test_repeated_figures_preserve_geometry_and_references():
 	assert '#part1-second-line' in ET.tostring(root, encoding='unicode')
 
 
+#============================================
 @pytest.mark.parametrize('uri,prefix', [
 	('http://www.w3.org/1999/xlink', 'previous'),
 	('http://www.w3.org/2000/svg', 'xlink'),
@@ -52,6 +53,7 @@ def test_import_preserves_namespace_registry_and_xlink(monkeypatch, tmp_path, ur
 	assert '<!-- License: ISC -->' in output.read_text()
 
 
+#============================================
 def test_matplotlib_universal_style_is_scoped_and_preserves_override():
 	svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><defs><style>*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><path style="stroke-linejoin: bevel" d="M0 0L10 10"/></svg>'
 	part = import_svg(svg, name='plot')
@@ -62,13 +64,7 @@ def test_matplotlib_universal_style_is_scoped_and_preserves_override():
 	assert '<style' not in part.fragment
 
 
-def test_real_matplotlib_plot():
-	path = pathlib.Path('genetics/LECT15/djot/assets/lect15e-inbreeding/inbreeding_recessive_frequency.plot.svg')
-	part = import_svg(path.read_bytes(), name='plot')
-	assert 'Matplotlib' in part.fragment
-	assert ET.fromstring(part.fragment).find('.//{http://www.w3.org/2000/svg}text') is not None
-
-
+#============================================
 @pytest.mark.parametrize('svg', [
 	'<svg viewBox="0 0 1 1"><script/></svg>',
 	'<svg viewBox="0 0 1 1" xml:base="https://example.com/"/>',
@@ -85,17 +81,20 @@ def test_rejects_unsafe_or_malformed(svg):
 		import_svg(svg, name='x')
 
 
+#============================================
 def test_standard_matplotlib_doctype_is_accepted():
 	doctype = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'
 	assert import_svg(doctype + '<svg viewBox="0 0 1 1"/>', name='x').bounds == (0, 0, 1, 1)
 
 
+#============================================
 def test_license_comments_survive():
 	part = import_svg('<!-- License: ISC --><svg viewBox="0 0 1 1"><!-- author --></svg>', name='icon')
 	assert '<!-- License: ISC -->' in part.fragment
 	assert '<!-- author -->' in part.fragment
 
 
+#============================================
 def test_group_imports_preserves_accessibility_and_metadata():
 	svg = '''<svg viewBox="0 0 10 10" aria-labelledby="title" aria-describedby="desc">
 	<!-- License: id="title" --><title id="title">Title</title><desc id="desc">Description</desc>

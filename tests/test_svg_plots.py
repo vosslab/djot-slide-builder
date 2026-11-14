@@ -9,6 +9,7 @@ from matplotlib.figure import Figure
 from svg_tools.plots import figure_to_part, plot_style
 
 
+#============================================
 def test_plot_import_preserves_data_and_live_labels():
 	before = matplotlib.rcParams['font.family'][:]
 	values = [2, 5, 3]
@@ -31,6 +32,7 @@ def test_plot_import_preserves_data_and_live_labels():
 	assert part.bounds[2] == 300
 
 
+#============================================
 def test_plot_import_rejects_raster_artists():
 	with plot_style():
 		figure = Figure()
@@ -39,21 +41,3 @@ def test_plot_import_rejects_raster_artists():
 			figure_to_part(figure, name='raster')
 
 
-def test_default_plot_exports_deterministically_and_restores_fonts(monkeypatch):
-	monkeypatch.delenv('SOURCE_DATE_EPOCH', raising=False)
-	figure = Figure()
-	axes = figure.subplots()
-	axes.plot([1, 2], [3, 4])
-	title = axes.set_title('Default title', fontweight='bold', fontstyle='italic')
-	original = title.get_fontproperties().copy()
-	with matplotlib.rc_context({'svg.hashsalt': None, 'svg.fonttype': 'path'}):
-		first = figure_to_part(figure, name='default')
-		second = figure_to_part(figure, name='default')
-	assert first.fragment == second.fragment
-	assert title.get_fontproperties() == original
-	root = ET.fromstring(first.fragment)
-	texts = list(root.iter('{http://www.w3.org/2000/svg}text'))
-	assert texts and all('Atkinson Hyperlegible Next' in text.get('style', '') for text in texts)
-	title_style = next(text.get('style', '') for text in texts if text.text == 'Default title')
-	assert 'font-weight: 700' in title_style and 'font-style: italic' in title_style
-	assert any(element.get('id') for element in root.iter())

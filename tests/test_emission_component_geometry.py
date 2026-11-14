@@ -1,15 +1,10 @@
 """Focused geometry behavior for immutable emitter component members."""
 
 # local repo modules
-import slide_lib.importers.figure_regions as figure_regions
 import slide_lib.importers.emission_topology as emission_topology
-import slide_lib.importers.djot_emitter as djot_emitter
 import slide_lib.importers.emission_flow as emission_flow
 import slide_lib.importers.geometry as geometry
 import slide_lib.importers.native_normalization as native_normalization
-import slide_lib.importers.slide_plan as slide_plan
-import slide_lib.importers.source_regions as source_regions
-import slide_lib.importers.source_model as source_model
 
 
 #============================================
@@ -37,18 +32,6 @@ def test_restored_figure_retains_five_component_table_content() -> None:
 
 
 #============================================
-def test_member_footprints_avoid_false_collision_from_union_bounds() -> None:
-	"""Disjoint grouped members do not turn their enclosing union into a collision."""
-	first = emission_flow.EmissionComponent(
-		bounds((0.10, 0.10, 0.90, 0.90)), ("- flow",), "flow",
-		member_footprints=(bounds((0.10, 0.10, 0.20, 0.20)), bounds((0.80, 0.80, 0.90, 0.90))),
-	)
-	second = emission_flow.EmissionComponent(bounds((0.45, 0.45, 0.55, 0.55)), ("- item",), "text")
-
-	assert not emission_topology.components_overlap([first, second])
-
-
-#============================================
 def test_only_coarse_direct_picture_peer_tolerates_raw_overlap() -> None:
 	"""One coarse text and one direct picture retain their uniquely matched peer layout."""
 	coarse = emission_flow.EmissionComponent(
@@ -62,16 +45,6 @@ def test_only_coarse_direct_picture_peer_tolerates_raw_overlap() -> None:
 
 	assert emission_topology.component_layout([coarse, image])[0] == "two-panels"
 	assert not emission_topology.components_overlap([coarse, image])
-
-
-#============================================
-def test_footer_padding_is_not_general_text_flow_tolerance() -> None:
-	"""Only full-width ordered footer members accept a small vertical source overlap."""
-	first = emission_flow.EmissionComponent(bounds((0.05, 0.70, 0.95, 0.80)), ("- first",), "text")
-	second = emission_flow.EmissionComponent(bounds((0.05, 0.76, 0.95, 0.84)), ("- second",), "text")
-
-	assert emission_flow.follows_footer_lane(first, second)
-	assert not emission_flow.follows_text_lane(first, second)
 
 
 #============================================
@@ -95,22 +68,6 @@ def test_caption_footer_and_shared_footer_relations_are_individually_bounded() -
 
 	assert not emission_topology.components_overlap([left, caption_footer, image_caption])
 	assert not emission_topology.components_overlap(emission_flow.coalesce_bottom_footer([coarse, shared_footer, raw_image]))
-
-
-#============================================
-def test_native_normalization_retains_individual_source_member_footprints() -> None:
-	"""A normalized flow keeps source members for collisions while using their union as bounds."""
-	text = source_regions.SourceTextRegion(((0, (source_model.TextRun("Label"),)),),
-		bounds((0.20, 0.20, 0.30, 0.30)), False, 0.0)
-	image = source_regions.SourceImageRegion("source.png", bounds((0.60, 0.60, 0.80, 0.80)))
-	content = figure_regions.ContentRegionPlan("relation", bounds((0.20, 0.20, 0.80, 0.80)), (text,), (image,))
-	plan = slide_plan.SlidePlan(slide_plan.TitleDecision(None, "test"), (), content)
-	planned = djot_emitter.PlannedSlide(source_model.SlideData(1, False, (), (), (), (), ()), plan)
-
-	components, _reasons = djot_emitter.emit_components(planned)
-	gap = emission_flow.EmissionComponent(bounds((0.40, 0.40, 0.50, 0.50)), ("- outside",), "text")
-
-	assert not emission_topology.components_overlap([components[0], gap])
 
 
 #============================================

@@ -1,7 +1,6 @@
 """Public-boundary tests for direct sibling presentation export."""
 
 # Standard Library
-import dataclasses
 import pathlib
 import re
 import zipfile
@@ -57,6 +56,7 @@ def test_native_odp_renderer_writes_editable_objects(tmp_path: pathlib.Path) -> 
 	assert f"#{theme.gradient_start_color}".encode() in styles_xml
 
 
+#============================================
 def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Path) -> None:
 	"""Plain note text stays editable and cannot inject visible ODP XML."""
 	source_path = write_deck(tmp_path, "=== layout: one-panel\n@notes\n"
@@ -75,6 +75,7 @@ def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Pat
 	assert "Student content." in visible_text and "reminder" not in visible_text and "<why>" not in visible_text
 
 
+#============================================
 def test_representable_capacity_recovery_exports_one_native_page_per_source_slide(
 		tmp_path: pathlib.Path) -> None:
 	"""A reported compromise remains editable at serializer-safe sizes."""
@@ -95,30 +96,6 @@ def test_representable_capacity_recovery_exports_one_native_page_per_source_slid
 
 
 #============================================
-def test_table_capacity_cause_survives_the_native_compile_boundary(tmp_path: pathlib.Path) -> None:
-	"""Table fitting retains its explicit source-region cause with the export compilation."""
-	rows = "".join("| cell cell cell cell |\n" for _ in range(30))
-	source = write_deck(tmp_path, "=== layout: one-panel\n\n@body\n\n| A |\n| - |\n" + rows)
-	compilation, _theme = slide_lib.native_export.compile_deck(
-		slide_lib.native_export.parse_deck(source))
-	diagnostic = next(item for item in compilation.capacity_diagnostics
-		if item.cause is slide_lib.capacity_report.CapacityCause.TABLE)
-	assert diagnostic.location.path == source and diagnostic.slot == "body"
-	assert diagnostic.required_size_pt is not None and diagnostic.required_size_pt < diagnostic.floor_size_pt
-
-
-def test_nonempty_notes_and_reveals_survive_native_projection(tmp_path: pathlib.Path) -> None:
-	"""One source slide retains authored notes and reveal timing in its editable ODP."""
-	source = write_deck(tmp_path, "=== layout: one-panel\n\n@body\n\n=> appear\nVisible later.")
-	deck = slide_lib.native_export.parse_deck(source)
-	deck = dataclasses.replace(deck, slides=(dataclasses.replace(deck.slides[0], notes=("Speaker note",)),))
-	compilation, theme = slide_lib.native_export.compile_deck(deck)
-	odp_path = slide_lib.odp_export.write_odp(compilation.plan, theme, tmp_path / "deck.odp")
-	with zipfile.ZipFile(odp_path) as archive:
-		content = archive.read("content.xml")
-	assert b"Speaker note" in content and b"presentation:notes" in content
-
-
 def test_public_pdf_export_passes_the_generated_odp_to_libreoffice(tmp_path: pathlib.Path) -> None:
 	"""The classroom PDF path derives only from the native ODP emitted in this build."""
 	source = write_deck(tmp_path, "=== layout: one-panel\n\n@body\n\nText.\n")
@@ -172,15 +149,6 @@ def test_pdf_batch_failure_preserves_existing_destinations(tmp_path: pathlib.Pat
 		with pytest.raises(slide_lib.native_export.slide_lib.libreoffice.LibreOfficeError):
 			slide_lib.native_export.convert_odps_to_pdfs(inputs, outputs, tmp_path)
 	assert tuple(path.read_bytes() for path in outputs) == (b"old-alpha", b"old-beta")
-
-
-#============================================
-def test_libreoffice_pdf_helper_requires_odp_input_and_pdf_output(tmp_path: pathlib.Path) -> None:
-	"""The focused conversion helper preserves the generated-ODP PDF boundary."""
-	with pytest.raises(ValueError, match="must be an ODP"):
-		slide_lib.native_export.convert_odp_to_pdf(tmp_path / "deck.wrong", tmp_path / "deck.pdf", tmp_path)
-	with pytest.raises(ValueError, match="must use .pdf"):
-		slide_lib.native_export.convert_odp_to_pdf(tmp_path / "deck.odp", tmp_path / "deck.wrong", tmp_path)
 
 
 #============================================

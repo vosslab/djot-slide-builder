@@ -1,10 +1,21 @@
 ## 2026-11-14
 
-### Documentation
+### Fixes and Maintenance
 
 - Complete the SVG toolkit aesthetic upgrade and document its visual direction and anchor-based
   composition. Code, standalone art, 32 native proof pages and integration passed review; scoped
   cleanup is complete. See [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md).
+
+- Correct the curve example's temporary output location and remove an uncalled chromosome helper.
+
+### Removals and Deprecations
+
+- Prune duplicate and implementation-specific tests, removing 32 test definitions and two modules.
+
+### Developer Tests and Notes
+
+- Complete six audit passes and the retained 476-case test lane. Record remaining coverage gaps
+  and limits in [svg_toolkit_post_aesthetic_audit.md](active_plans/audits/svg_toolkit_post_aesthetic_audit.md).
 
 ## 2026-11-13
 
