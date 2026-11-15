@@ -1,15 +1,27 @@
-# LECT12 conversion review
+# Lecture 12 refresh review
 
-Reviewed draft, November 9, 2026. 5 canonical Djot decks produce editable ODP
-and LibreOffice-derived PDF. 101 explicit `@replaceme` slides retain difficult conversions.
-Those slides need reconstruction before classroom use.
+The November 14, 2026 renumbering moves these chromosome decks to Lecture 12 on December 1.
+The current announcements reflect that agenda and Quiz 4; B-E retain the inherited content and
+limitations. The historical counts and agenda below describe the earlier conversion, not this
+refresh. See [GENETICS_GENE_TREE_REFRESH_REPORT.md](../../../docs/GENETICS_GENE_TREE_REFRESH_REPORT.md)
+for current status; independent acceptance remains in review.
+
+## Historical conversion review
+
+Historical review: this bundle became LECT12 on November 14, 2026. Original lecture
+numbers, dates, slide numbers, and results below describe the earlier conversion.
+
+Reviewed draft, November 9, 2026. Five canonical Djot masters produce editable ODP and
+LibreOffice-derived PDF. Difficult conversions retain 62 explicit `@replaceme` slides;
+this draft is not classroom-ready wherever those watermarks appear.
 
 ## November 10 agenda wording
 
-Use brief deck and activity labels under Chapter 11: Gene Trees, Gene Tree Handout Activity,
-and Evolutionary Time. Include Group Quiz 4 on the
-December 1 agenda and correct its schedule date; next week's Quiz 5 remains conditional.
-A retains 54 authored / 17 hidden / 37 PDF pages; its agenda is PDF 2. Rebuilt ODP/PDF, passed
+Keep the original Chapter 9: Chromosomal Disorders grouping and short labels: Polyploidy,
+Sex Dosage, Deletions, and Duplications. Quiz 4 is December 1:
+hide its obsolete November 17 opening card, remove it from today's agenda, and correct the
+assessment schedule and lookahead. Quiz 5 remains conditional on the class vote.
+A now has 55 authored / 18 hidden / 37 PDF pages; its agenda is PDF 2. Rebuilt ODP/PDF, passed
 strict native lint, and inspected the agenda and changed logistics. The wording correction passes
 213 documentation/guidance checks. Evidence: `_temp/genetics_agendas_09_15/`. Existing weather/registration
 capacity advisories remain. The wording correction is verified separately in
@@ -17,324 +29,310 @@ capacity advisories remain. The wording correction is verified separately in
 
 ## Outputs and counts
 
-Editable sources are in this directory. Generated artifacts use the same stem under
-`output/odp/` and `output/pdf/` at the repository root. The accompanying
-[LECT12_SOURCE_MAP.md](LECT12_SOURCE_MAP.md) maps all original content slides and additions.
+Sources are in this directory; generated decks are under `output/odp/` and `output/pdf/`
+at the repository root. [LECT12_SOURCE_MAP.md](LECT12_SOURCE_MAP.md) maps every original
+content slide, hidden status, source PDF page, and final page.
 
-| Deck | Authored ODP | Hidden | PDF pages | Replacements |
+| Deck | Authored ODP | Hidden | PDF pages | Replacement slides |
 | --- | --- | --- | --- | --- |
-| lect12a-2026_announcements | 54 | 17 | 37 | 0 |
-| lect12b-gene_trees | 77 | 0 | 77 | 39 |
-| lect12c-more_gene_trees | 56 | 0 | 56 | 43 |
-| lect12d-gene_tree_activity | 32 | 0 | 32 | 18 |
-| lect12e-evol_time | 19 | 0 | 19 | 1 |
+| lect11a-2026_announcements | 55 | 18 | 37 | 0 |
+| lect11b-polyploidy | 49 | 1 | 48 | 13 |
+| lect11c-sex_dosage | 67 | 0 | 67 | 26 |
+| lect11d-chromo_alter_1-deletions | 112 | 0 | 112 | 20 |
+| lect11e-chromo_alter_2-duplications | 37 | 0 | 37 | 3 |
 
-Total: 238 authored, 17 hidden, 221 PDF pages.
-Content decks preserve 171 original slides and add 13 opening/closing slides.
-Sibling Djot includes keep long source files below the repository size limit without splitting slides.
-Original THE END slides and following appendices retain their order; repeated closing bookends
-close appendices where necessary. Existing definition slides serve the introduced vocabulary.
+Total: 320 authored slides, 19 hidden slides, 301 PDF pages. B-E retain all 253 original
+content slides in order and add 12 opening/closing slides. C and D use sibling topic includes
+to keep editable source files below the repository size limit. No slides were split.
+The original D95 THE END and subsequent book-problem appendix remain in their original order;
+a repeated summary and a final THE END close the appendix.
 
-## Inputs and source order
+## Inputs and announcements
 
-There was no existing Djot in these target folders. Source ODP files were imported with the
-repository tools; limited temporary import adapters are described below. All 18 original ODP
-SHA-256 hashes across this conversion match the pre-import inventory. Original PDFs were retained.
-Raw announcement Djot imports are intermediate evidence under `_temp/lect12_13_1x/`;
-their unused extracted artwork was removed, while the import reports remain.
+All six supplied ODP files were imported with `deck_tools.py import`. There was no existing
+LECT11 Djot. Original ODP/PDF files were not edited. The deletion-guide ODT/PDF is a handout,
+not a slide deck, and remains unchanged. The original announcement imports are intermediate
+evidence in `_temp/lect11/*_imported.djot`; their unused extracted images were removed.
+All six original import reports remain under `assets/<source-stem>/import_report.json`.
 
-- `lect12a-2025_announcements 2.odp`: 60 authored; hidden 2-3, 5-6, 12-13, 15, 17, 27-31, 39-42, 45-46, 52-53, 58-59; source animation elements none.
-- `lect12a-2025_announcements.odp`: 60 authored; hidden 2-3, 5-6, 12-13, 15, 17, 27-31, 39-42, 45-46, 52-53, 58-59; source animation elements none.
-- `lect12b-gene_trees.odp`: 74 authored; hidden none; source animation elements none.
-- `lect12c-more_gene_trees.odp`: 52 authored; hidden none; source animation elements 26.
-- `lect12d-gene_tree_activity.odp`: 29 authored; hidden none; source animation elements none.
-- `lect12e-evol_time.odp`: 16 authored; hidden none; source animation elements none.
+Starting inputs:
 
-Source section order, `lect12b-gene_trees`: 3 Why do we want to study molecular evolution? -> 6 Gene Trees -> 18 Reading a Gene Tree -> 25 Constructing a Gene Tree from Sequences -> 28 Gene Tree Methods -> 38 Simple Example of Gene Tree by Distance Method -> 39 UPGMA Simple Example Part 1: Create Distance Matrix -> 54 UPGMA Simple Example Part 2: Create Gene Tree -> 65 17.22 From Gene Tree to Distance Matrix -> 74 THE END.
+- `lect09a-2026_announcements.odp`: 52 authored; hidden: 25, 26, 27, 28, 29, 30, 36, 37, 38, 47, 48, 49, 50, 51; animation/reveal elements: none.
+- `lect11a-2025_announcements.odp`: 62 authored; hidden: 4, 5, 11, 12, 14, 16, 26, 27, 28, 29, 30, 38, 39, 40, 41, 43, 44, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61; animation/reveal elements: none.
+- `lect11b-polyploidy.odp`: 46 authored; hidden: 2; animation/reveal elements: 12.
+- `lect11c-sex_dosage.odp`: 65 authored; hidden: none; animation/reveal elements: 4, 31, 41, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62.
+- `lect11d-chromo_alter_1-deletions.odp`: 108 authored; hidden: none; animation/reveal elements: 9.
+- `lect11e-chromo_alter_2-duplications.odp`: 34 authored; hidden: none; animation/reveal elements: none.
 
-Source section order, `lect12c-more_gene_trees`: 2 Full Example -> 28 Hartl Question 17.27 -> 41 THE END -> 42 Former Textbook Example of Gene Tree by Distance Method.
+For 2026 announcements, use the most recent current-year deck for course information and
+formatting, and the matching prior-year deck for useful week-specific material. The supplied
+current-year file is still Lecture 09; the repository's reviewed Lecture 10A Djot is newer and
+supplies current shared groups. The prior-year Lecture 11A supplies the Group Quiz 4 cue and
+chromosome topics. The instructor-cleaned Biotechnology Lecture 10A is the shared formatting
+example described in the announcement guide; no Biotechnology sources were edited here.
 
-Source section order, `lect12d-gene_tree_activity`: 6 Gene Tree Handout -> 29 THE END.
-
-Source section order, `lect12e-evol_time`: 3 Molecular Clocks and Evolutionary Time -> 10 Homologous Genes -> 16 THE END.
-
-## Dates, announcements, and conversion findings
-
-The current-year Lecture 11A Djot is the newest shared course-information and formatting
-source. The matching prior-year announcement deck supplies useful week-specific cues. This is
-the ordinary two-source workflow in [the announcement guide](../../../docs/slide-specs/ANNOUNCEMENT_DECK_GUIDE.md).
-The instructor-cleaned Biotechnology Lecture 10A remains the guide's formatting example;
-no Biotechnology files were edited. The earlier Lecture 09 current-year starter is superseded.
-
-Dates were checked against `/Users/vosslab/nsh/syllabus/site_docs/fall_2026/genetics/SCHEDULE.md`,
-generated from the [course spreadsheet](https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit).
-The local schedule was read; the underlying spreadsheet was not separately refreshed.
+Lecture date: November 17, 2026, from
+`/Users/vosslab/nsh/syllabus/site_docs/fall_2026/genetics/SCHEDULE.md`, itself generated from
+the [course spreadsheet](https://docs.google.com/spreadsheets/d/1XLZcg8PnW4GyMxFctAKCTvzN9qImIb5S3bK6hyeDz0Q/edit).
 The [published schedule](https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/)
-is the student-facing link used in the slides.
+provides the student-facing citation. The local schedule was read; the underlying spreadsheet
+was not separately refreshed.
 
-**Content/date mismatch:** the schedule places gene trees/population genetics on November 17,
-chromosome abnormalities on December 1, and population genetics on December 8. The supplied
-LECT12 folder contains gene trees and LECT13 contains chromosome rearrangements. Their supplied
-content and order are retained; covers use their 2026 lecture dates and the calendar controls
-assessment deadlines. No rescheduling was inferred.
+**Schedule mismatch:** that schedule assigns gene trees/population genetics and Movie Night to
+November 17, and these chromosome topics to December 1. The supplied LECT11 content and prior-year
+agenda control the converted teaching content; the calendar controls quiz/homework deadlines.
+No course rescheduling was inferred. Covers use Lecture 11's November 17 date. Review this
+content/date correspondence before teaching. No translocation-meiosis deck was supplied, so
+none was invented; D retains its original conditional reference to that homework.
 
-Quiz 5 and homework 11/12 are due December 8; the cumulative final and homework 13 are due
-December 15. Assessment colors and next-week wording follow those dates. Quiz guidance is
-visible through one include setting because Quiz 5 is next week/this week. First-week signup,
-profile, and assignment groups remain hidden and Discord information remains in the shared
-course-information group. Evaluations and club groups remain hidden; current evaluation
-availability dates were not established. Refresh those dates before showing that group.
+Assignments 09/10 are due November 17. Quiz 4 moved to December 1; its November 17 opening
+card is now hidden and the schedule/lookahead reflect December 1.
+Past assessments remain gray and future ones black. The November 24 lookahead states no class
+and the December 1 return. Quiz guidance is visible through its single include setting; exam,
+first-week assignments, evaluation, and club groups remain hidden. Registration remains visible.
+The historical exam-corrections reminder has no verified 2026 deadline and was not promoted.
 
-The podcast helper preview (`--by-lecture-date`) selected regular StVC episode 37 as of the
-November 9 conversion, excluding special 38. The saved Bad Cell Day title, thumbnail, video,
-and game agree with the reviewed current-year source. The video oEmbed and game returned HTTP
-200 during the preceding LECT11 conversion; browser playback/gameplay were not tested.
-Future episodes published before the December lecture dates need a teaching-time refresh.
-The inherited November 9 NWS weather snapshot remains hidden; it is not a December forecast.
-Refresh weather on the day before class. YouTube/anonymous-message/Discord/Zoom slides use
-the shared groups, local artwork, and existing private course-link references.
+Selected icebreaker: `modify-an-animal` in `evergreen/icebreakers.yaml`.
+Podcast preview with `--by-lecture-date` selected regular episode 37, excluding special 38.
+The saved Bad Cell Day title, thumbnail, video, and game agree. YouTube oEmbed and the game
+returned HTTP 200; browser playback/gameplay were not tested. The November 9 NWS snapshot
+was refreshed with the repository helper and kept hidden because it is too early for the
+November 17 lecture. Refresh weather November 16-17 before showing it.
 
-The canonical announcement deck is `lect12a-2026_announcements.djot`, dated December 1.
-The popular-culture icebreaker comes from `evergreen/icebreakers.yaml`. The November 10 calendar
-follow-up adds Group Quiz 4 on December 1. The December 8 quiz/homework lookahead is visible;
-Quiz 5 is conditional on the class vote.
-Exam guidance remains hidden, registration remains visible through its documented December 1
-window, and early homework dates remain hidden. The complete updated visibility inventory is
-in the source map. The duplicate `lect12a-2025_announcements 2.odp` has exactly the same ZIP
-members and member bytes as the normally named source; it was imported once. Both originals
-remain unchanged.
+## Repairs and visual findings
 
-Gene-tree branches and their positioned labels are the largest conversion failures. B42-53
-lose aligned sequence columns/highlights; B55-64 lose progressive tree geometry; B67-72
-lose table/diagonal-arrow relationships. C3 and C5-24 duplicate bitmap/native matrices or
-lose merge highlights. C26 retains an animation warning; C38-39 lose tree geometry. C45-52
-lose static masks and expose the full later tree. The D activity retains the original
-year-labeled group-sheet URLs; its matrix outlines and selected merge cells need repair.
-No 2026 group-sheet copies were invented, and historical spreadsheet access was not tested.
+All 252 visible original content slides were compared with watermark-free diagnostic renders
+in `_temp/lect11/review/`. Final announcement pages and added bookends were inspected in
+`_temp/lect11/final_review/`. Contact sheets establish overall content, ordering, and visual
+relationships; they do not certify every small label's classroom readability.
 
-E3's imported three-bullet divider is now a native Molecular Clocks and Evolutionary Time
-section. E2/E4 retain their complete bitmap/prose content despite frame/bounds warnings;
-those flags were cleared after comparison. E5's substitution diagram remains tiny with
-detached labels and retains its marker. B23/B33/B35's colored text and complete figures were
-verified before clearing their color-only flags. No new special layout was added.
+- Covers, objectives, section framing, and closing summaries use editable native text.
+  Chapter 9 was checked against the [BPW course index](https://biologyproblems.org/genetics/).
+  No extra vocabulary slide was needed: definitions already appear near the relevant material.
+- B20's colored GMO answers were restored to two columns with the complete legend in a citation.
+  The final render preserves all ten choices and their emphasis. Its original question title
+  still wraps, as it did in the source; no unapproved title rewrite was made.
+- B31-32's figure-number-only titles now read Hybridization Between Species. Bitmap figure
+  numbers remain baked into some original textbook images; those image pixels were not edited.
+- D44-89 preserve the four-gene/six-gene problems, intermediate gene orders, gray deemphasis,
+  purple active deletions, and colored verification steps. Color-only importer markers were
+  cleared after paired comparison. D12, D18, D22, D24, D93, and D101 also preserve the visible
+  content despite conservative import flags. Source animations were not cleared on that basis.
+- C13 and C23-25 retain the complete visible source image/problem content; their non-content
+  frame/bounds warnings were cleared. The missing-label implementation message on C29 was
+  removed from student-facing content; its replacement marker remains.
+- E30's table retains its complete visible contents; its unsupported-frame warning was cleared.
+  Decorative unsupported shapes on original closing slides were replaced by native THE END
+  layouts, after checking that no teaching content was missing.
+- B27/B37 and E26 received additional markers for materially reduced figure/text readability.
+  D91 received a marker for the still-small dense challenge prompt. Source prose was retained.
+- Image-area shrinkage was audited by the importer before additions. The original per-image
+  values remain in the import reports. The source map accounts for later numbering shifts.
+  Many image-only figures remain usable despite a numeric area warning; tiny isolated artwork,
+  missing connectors, and detached labels retain replacement markers. No special layouts were added.
 
-The ordinary importer could not express C39's seven mixed components as an exact grid.
-A temporary adapter grouped the non-table components into one ordinary panel beside the
-native table. The source image count was asserted unchanged and C39 remains marked.
+Conversion preserves original scientific claims rather than treating them as newly verified.
+Examples needing separate content review include B's dated GMO salmon availability and C10's
+claim that the fly dosage-compensation complex is on the Y. These were not silently corrected.
 
-Covers/objectives/summaries and ordinary teaching prose remain selectable native text.
-Original scanned problem and textbook text within bitmap figures remains raster content.
-Chapter assignments were checked against the [BPW genetics index](https://biologyproblems.org/genetics/):
-gene trees 11, chromosome disorders 9, population genetics 10. Cover chapter numbers follow those topics.
+## Unresolved conversions
 
-## Visual review and replacement tasks
+Numbers below are original source ODP slides. The source map gives final Djot/PDF numbers.
+Retained source text and assets are editable under the watermark; original ODP/PDF remains the
+reference for missing relationships. Replacement is an accepted conversion outcome.
 
-All 641 visible original content slides across the three folders were compared against
-watermark-free diagnostic ODP-derived PDFs in 45 paired sheets under
-`_temp/lect12_13_1x/review/`. Original pages are on the left and diagnostic pages on the right.
-Hidden source slides were checked through source text/XML, not a visible source PDF page.
-Final announcement pages and all added covers/bookends were inspected in `final_review/`.
-Selected dense tables, equations, colored dividers, and repaired notation were inspected at
-readable size. Contact sheets do not certify every small label at classroom viewing distance.
+### lect11b-polyploidy
 
-Numbers below are original ODP numbers; the source map gives final Djot/PDF positions.
-Keep the original assets and ODP as references. Each task ends by rendering and comparing
-the native repair before clearing its marker. Do not split content slides as a default repair.
+- Source 8 -> Djot 10: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 12 -> Djot 14: source reveal/animation not preserved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 23 -> Djot 25: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 27 -> Djot 29: figure/text readability reduced in conversion. Rework the native layout/figure and compare with the original before clearing.
+- Source 30 -> Djot 32: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 31 -> Djot 33: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 32 -> Djot 34: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 33 -> Djot 35: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 34 -> Djot 36: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 36 -> Djot 38: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 37 -> Djot 39: figure/text readability reduced in conversion. Rework the native layout/figure and compare with the original before clearing.
+- Source 38 -> Djot 40: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 43 -> Djot 45: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
 
-### lect12b-gene_trees
+### lect11c-sex_dosage
 
-Cleared after paired/rendered verification: source 23, 33, 35.
+- Source 4 -> Djot 5: source reveal/animation not preserved; readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 5 -> Djot 6: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 6 -> Djot 7: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 17 -> Djot 18: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 28 -> Djot 29: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 29 -> Djot 30: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 41 -> Djot 42: source reveal/animation not preserved. Rework the native layout/figure and compare with the original before clearing.
+- Source 44 -> Djot 45: figure/text readability reduced in conversion. Rework the native layout/figure and compare with the original before clearing.
+- Source 45 -> Djot 46: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 46 -> Djot 47: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 47 -> Djot 48: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 49 -> Djot 50: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 50 -> Djot 51: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 51 -> Djot 52: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 52 -> Djot 53: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 53 -> Djot 54: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 54 -> Djot 55: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 55 -> Djot 56: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 56 -> Djot 57: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 57 -> Djot 58: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 58 -> Djot 59: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 59 -> Djot 60: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 60 -> Djot 61: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 61 -> Djot 62: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 62 -> Djot 63: source reveal/animation not preserved; readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 64 -> Djot 65: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
 
-- Source 10 -> Djot 12: source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 11 -> Djot 13: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 12 -> Djot 14: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 13 -> Djot 15: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 14 -> Djot 16: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 15 -> Djot 17: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 16 -> Djot 18: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 19 -> Djot 21: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 20 -> Djot 22: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 24 -> Djot 26: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 27 -> Djot 29: source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 42 -> Djot 44: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 43 -> Djot 45: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 44 -> Djot 46: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 45 -> Djot 47: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 46 -> Djot 48: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 47 -> Djot 49: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 48 -> Djot 50: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 49 -> Djot 51: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 50 -> Djot 52: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 51 -> Djot 53: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 52 -> Djot 54: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 53 -> Djot 55: aligned sequence columns, dot notation, or highlighted differences lost; restore a monospace alignment and matching highlights.
-- Source 55 -> Djot 57: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 56 -> Djot 58: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 57 -> Djot 59: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 58 -> Djot 60: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 59 -> Djot 61: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 60 -> Djot 62: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 61 -> Djot 63: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 62 -> Djot 64: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 63 -> Djot 65: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 64 -> Djot 66: matrix-to-tree branch geometry or merge highlights lost; rebuild the progressive tree and matrix emphasis.
-- Source 67 -> Djot 69: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 68 -> Djot 70: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 69 -> Djot 71: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 70 -> Djot 72: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 71 -> Djot 73: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 72 -> Djot 74: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
+### lect11d-chromo_alter_1-deletions
 
-### lect12c-more_gene_trees
+- Source 14 -> Djot 15: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 19 -> Djot 20: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 29 -> Djot 30: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 30 -> Djot 31: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 31 -> Djot 32: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 32 -> Djot 33: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 33 -> Djot 34: diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 34 -> Djot 35: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 35 -> Djot 36: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 36 -> Djot 37: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 37 -> Djot 38: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 38 -> Djot 39: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 39 -> Djot 40: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 40 -> Djot 41: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 41 -> Djot 42: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 91 -> Djot 92: figure/text readability reduced in conversion. Rework the native layout/figure and compare with the original before clearing.
+- Source 92 -> Djot 93: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 94 -> Djot 95: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 99 -> Djot 101: readable fit unresolved; diagram geometry, labels, or source grouping unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 108 -> Djot 110: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
 
-- Source 3 -> Djot 4: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 5 -> Djot 6: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 6 -> Djot 7: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 7 -> Djot 8: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 8 -> Djot 9: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 9 -> Djot 10: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 10 -> Djot 11: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 11 -> Djot 12: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 12 -> Djot 13: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 13 -> Djot 14: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 14 -> Djot 15: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 15 -> Djot 16: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 16 -> Djot 17: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 17 -> Djot 18: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 18 -> Djot 19: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 19 -> Djot 20: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 20 -> Djot 21: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 21 -> Djot 22: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 22 -> Djot 23: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 23 -> Djot 24: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 24 -> Djot 25: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 26 -> Djot 27: source reveal/animation not preserved; source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 29 -> Djot 30: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 30 -> Djot 31: figure or notation remains too small or loses source emphasis; rework the native layout/figure and compare with the original.
-- Source 31 -> Djot 32: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 32 -> Djot 33: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 33 -> Djot 34: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 34 -> Djot 35: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 35 -> Djot 36: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 36 -> Djot 37: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 37 -> Djot 38: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 38 -> Djot 39: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 39 -> Djot 40: table spans, highlights, or native/bitmap duplication unresolved; source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 40 -> Djot 41: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 44 -> Djot 46: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 45 -> Djot 47: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 46 -> Djot 48: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 47 -> Djot 49: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 48 -> Djot 50: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 49 -> Djot 51: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 50 -> Djot 52: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 51 -> Djot 53: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
-- Source 52 -> Djot 54: static white masks lost, exposing the completed tree before its teaching step; restore source masks and paint order.
+### lect11e-chromo_alter_2-duplications
 
-### lect12d-gene_tree_activity
-
-- Source 3 -> Djot 5: figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-- Source 8 -> Djot 10: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 9 -> Djot 11: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 10 -> Djot 12: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 12 -> Djot 14: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 13 -> Djot 15: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 14 -> Djot 16: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 16 -> Djot 18: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 17 -> Djot 19: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 18 -> Djot 20: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 20 -> Djot 22: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 21 -> Djot 23: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 22 -> Djot 24: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 24 -> Djot 26: source geometry, labels, or spatial grouping unresolved; rework the native layout/figure and compare with the original.
-- Source 25 -> Djot 27: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 26 -> Djot 28: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 27 -> Djot 29: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-- Source 28 -> Djot 30: pair/merge outlines or matrix highlights missing; restore the specific highlighted cells and progressive emphasis.
-
-### lect12e-evol_time
-
-Cleared after paired/rendered verification: source 2, 4.
-
-- Source 5 -> Djot 7: source geometry, labels, or spatial grouping unresolved; figure/text allocation or readable fit unresolved; rework the native layout/figure and compare with the original.
-
-## Capacity and typography
-
-Capacity diagnostics are advisory; every mixed-readability failure has an explicit marker.
-Other small-font advisories remain where recorded below. Source wording was retained.
-The source image-area audit is stored in each import report; flagged shrinkage was visually
-compared using the source map, and unresolved figure size/relationships remain marked.
-
-| Deck / Djot | Slot | Cause | Required / floor pt | Review outcome |
-| --- | --- | --- | --- | --- |
-| lect12a-2026_announcements / 4 | caption | paragraph/list | 15.25 / 18.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12a-2026_announcements / 43 | left | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12a-2026_announcements / 43 | bottom-right | paragraph/list | 18.5 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12a-2026_announcements / 44 | body | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12b-gene_trees / 9 | right | paragraph/list | 19.0 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12b-gene_trees / 10 | right | paragraph/list | 18.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12b-gene_trees / 13 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 14 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 15 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 16 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 17 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 18 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 21 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 22 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 25 | top-right | paragraph/list | 14.5 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12b-gene_trees / 26 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12b-gene_trees / 35 | right | paragraph/list | 17.5 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect12c-more_gene_trees / 11 | top-right | table | 16.5 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 12 | top-right | table | 16.5 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 27 | left | paragraph/list | 19.75 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 40 | right | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 47 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 48 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 49 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 50 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 51 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 52 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 53 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12c-more_gene_trees / 54 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
-| lect12d-gene_tree_activity / 5 | body | paragraph/list | 18.0 / 20.0 | Retain replacement marker. |
-| lect12e-evol_time / 7 | body | mixed-readability | 14.0 / 20.0 | Retain replacement marker. |
-
-Typography audit summary: {'runt': 5, 'title-wrap': 2}. Skipped coverage: {'special-layout-titles': 11, 'hidden-slides': 17, 'math-or-explicit-break-paragraphs': 12}.
-Existing wrapped titles were retained; possible shorter wording below is a review suggestion only.
-No instructor-authored title was shortened solely to silence an audit warning.
-
-| Deck / Djot | Finding | Review or possible shorter title |
-| --- | --- | --- |
-| lect12a-2026_announcements / 10 | runt in left, paragraph 4 | Existing wording retained; advisory line fit. |
-| lect12b-gene_trees / 31 | runt in left, paragraph 4 | Existing wording retained; advisory line fit. |
-| lect12b-gene_trees / 32 | runt in left, paragraph 2 | Existing wording retained; advisory line fit. |
-| lect12c-more_gene_trees / 8 | Title wraps | Use the Lower Matrix |
-| lect12c-more_gene_trees / 22 | runt in left-1, paragraph 1 | Existing wording retained; advisory line fit. |
-| lect12c-more_gene_trees / 23 | runt in left-1, paragraph 1 | Existing wording retained; advisory line fit. |
-| lect12e-evol_time / 6 | Title wraps | Substitution Rates in Mammalian Genes |
+- Source 14 -> Djot 16: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 20 -> Djot 22: readable fit unresolved. Rework the native layout/figure and compare with the original before clearing.
+- Source 26 -> Djot 28: figure/text readability reduced in conversion. Rework the native layout/figure and compare with the original before clearing.
 
 ## Validation and limits
 
-- Strict native Djot lint passed for all 17 expanded masters; final per-folder logs are
-  `_temp/lect12_13_1x/lect*_final_lint.log`. All-format builds produced editable ODP and real
-  LibreOffice PDFs outside the sandbox. Capacity and typography commands ran for all folders.
-- `final_artifacts.json` records authored/hidden/page/marker counts and selectable text totals.
-  Every hidden flag matches the authored source; every visible replacement slide has its PDF
-  watermark. Source-slide order and original hidden flags reconcile with the source map.
-- Base suite: 4,043 passed, 3 failed, 87 errors. The failures/errors come from existing
-  Biotechnology LECT10 working-tree conflicts/malformed section content and a duplicate left
-  slot in `set5_cancer.djot:503`. Those pre-existing edits were not changed. This is not a
-  clean full-suite result. Log: `_temp/lect12_13_1x/pytest.log`.
-- Attended Impress click playback, classroom/Zoom testing, remote historical spreadsheet
-  access, and independent scientific fact-checks were not performed. Static PDF review
-  does not certify animation behavior. Source reveals remain marked where not preserved.
-- Extracted media/import reports and generated ODP/PDF are ignored by Git. They are present
-  in this checkout; a source-only Git handoff does not contain all teaching media.
+- Strict native lint passed for all five expanded masters: 320 slides, 165 image occurrences.
+- Scoped Markdown-link, cover-contract, ASCII, line-limit, and whitespace checks pass for the
+  changed guidance and new LECT11 files. No permanent tests or application code were added.
+- All-format builds passed outside the sandbox. Verified native ODP authored/hidden counts
+  against parsed Djot, reconciled every PDF page count, and checked visible replacement text
+  for every marked slide. Exported PDFs retain selectable text on the covers and teaching prose.
+- Capacity and typography audits ran. Source-located evidence is in
+  `_temp/lect11/final_capacity.log` and `_temp/lect11/final_audit.json`.
+  Mixed-readability failures all have explicit Djot markers. Other below-20-pt capacity
+  advisories remain, including small reference text; no claim of uniform classroom readability.
+- The base suite ran: 4,041 passed, 3 failed, 87 errors. All failures/errors point to existing
+  Biotechnology Lecture 10 working-tree edits: malformed section/subsection content and a
+  duplicate left slot in `set5_cancer.djot:503`. Those files were already modified at session
+  start and were not changed here. This is not a clean full-suite result.
+- No attended Impress click playback, classroom/Zoom test, or independent scientific fact-check
+  was performed. Original animation/reveal limitations remain explicit replacement reasons.
+- Local extracted images, import reports, and ODP/PDF are ignored by Git. They remain available
+  in this checkout; a source-only Git handoff does not include all teaching media.
+
+## Remaining audit findings
+
+Typography audit: 3 runts, 6 wrapped titles, 1 long-URL warning. The long FDA URL
+on marked B45 remains complete and clickable but exceeds its text region at 12 pt.
+The marker retains this unresolved fit; no shortened address was substituted.
+Skipped typography coverage: 18 hidden slides, 11 special-layout titles, 2 math/explicit-break
+paragraphs, and 1 final-paragraph runt exemption.
+
+| Deck | Djot slide | Typography finding |
+| --- | --- | --- |
+| lect11a-2026_announcements | 11 | runt |
+| lect11b-polyploidy | 21 | title-wrap |
+| lect11b-polyploidy | 22 | title-wrap |
+| lect11b-polyploidy | 45 | url-too-wide |
+| lect11b-polyploidy | 45 | runt |
+| lect11c-sex_dosage | 6 | title-wrap |
+| lect11c-sex_dosage | 45 | title-wrap |
+| lect11c-sex_dosage | 64 | title-wrap |
+| lect11d-chromo_alter_1-deletions | 9 | title-wrap |
+| lect11e-chromo_alter_2-duplications | 20 | runt |
+
+All capacity diagnostics follow; rows retain the source slot and measured size rather than
+suggesting unapproved prose changes or slide splits. Mixed-readability rows retain explicit
+replacement markers. Small source/reference text can remain below the advisory 20 pt floor.
+
+| Deck | Djot slide | Slot | Concern | Required pt |
+| --- | --- | --- | --- | --- |
+| lect11a-2026_announcements | 5 | caption | paragraph/list | 15.25 |
+| lect11a-2026_announcements | 44 | left | paragraph/list | 19.75 |
+| lect11a-2026_announcements | 44 | bottom-right | paragraph/list | 18.5 |
+| lect11a-2026_announcements | 45 | body | paragraph/list | 19.75 |
+| lect11b-polyploidy | 10 | body | mixed-readability | 20.0 |
+| lect11b-polyploidy | 12 | right | paragraph/list | 17.0 |
+| lect11b-polyploidy | 25 | body | mixed-readability | 12.0 |
+| lect11b-polyploidy | 32 | body | mixed-readability | 15.0 |
+| lect11b-polyploidy | 33 | body | mixed-readability | 20.0 |
+| lect11b-polyploidy | 34 | body | mixed-readability | 20.0 |
+| lect11b-polyploidy | 35 | body | mixed-readability | 14.5 |
+| lect11b-polyploidy | 36 | body | mixed-readability | 12.5 |
+| lect11b-polyploidy | 38 | body | mixed-readability | 12.0 |
+| lect11b-polyploidy | 40 | body | mixed-readability | 16.0 |
+| lect11b-polyploidy | 43 | body | paragraph/list | 18.5 |
+| lect11b-polyploidy | 45 | body | mixed-readability | 9.5 |
+| lect11c-sex_dosage | 6 | body | mixed-readability | 20.0 |
+| lect11c-sex_dosage | 7 | left | paragraph/list | 15.5 |
+| lect11c-sex_dosage | 12 | left | paragraph/list | 17.0 |
+| lect11c-sex_dosage | 18 | body | mixed-readability | 15.5 |
+| lect11c-sex_dosage | 29 | body | mixed-readability | 15.0 |
+| lect11c-sex_dosage | 34 | right | paragraph/list | 14.75 |
+| lect11c-sex_dosage | 36 | right | paragraph/list | 15.5 |
+| lect11c-sex_dosage | 39 | body | paragraph/list | 18.0 |
+| lect11c-sex_dosage | 46 | right | paragraph/list | 18.0 |
+| lect11c-sex_dosage | 47 | body | paragraph/list | 7.25 |
+| lect11c-sex_dosage | 48 | left | paragraph/list | 14.0 |
+| lect11c-sex_dosage | 48 | right | mixed-readability | 20.0 |
+| lect11c-sex_dosage | 51 | body | paragraph/list | 18.5 |
+| lect11c-sex_dosage | 52 | body | paragraph/list | 17.25 |
+| lect11c-sex_dosage | 56 | body | paragraph/list | 16.25 |
+| lect11c-sex_dosage | 57 | body | paragraph/list | 18.5 |
+| lect11c-sex_dosage | 58 | body | paragraph/list | 17.25 |
+| lect11c-sex_dosage | 59 | body | paragraph/list | 18.5 |
+| lect11c-sex_dosage | 60 | body | paragraph/list | 17.25 |
+| lect11c-sex_dosage | 62 | body | paragraph/list | 17.25 |
+| lect11d-chromo_alter_1-deletions | 15 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 33 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 35 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 36 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 37 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 38 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 39 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 40 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 41 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 42 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 67 | body | paragraph/list | 18.5 |
+| lect11d-chromo_alter_1-deletions | 92 | body | paragraph/list | 18.5 |
+| lect11d-chromo_alter_1-deletions | 93 | body | paragraph/list | 10.25 |
+| lect11d-chromo_alter_1-deletions | 94 | body | paragraph/list | 17.0 |
+| lect11d-chromo_alter_1-deletions | 95 | body | paragraph/list | 9.75 |
+| lect11d-chromo_alter_1-deletions | 101 | body | mixed-readability | 20.0 |
+| lect11d-chromo_alter_1-deletions | 110 | body | mixed-readability | 20.0 |
+| lect11e-chromo_alter_2-duplications | 16 | body | mixed-readability | 20.0 |
+| lect11e-chromo_alter_2-duplications | 20 | left | paragraph/list | 19.0 |
+| lect11e-chromo_alter_2-duplications | 22 | body | mixed-readability | 20.0 |
+| lect11e-chromo_alter_2-duplications | 27 | left | paragraph/list | 19.0 |
+| lect11e-chromo_alter_2-duplications | 28 | top-left | paragraph/list | 14.5 |
+| lect11e-chromo_alter_2-duplications | 33 | left | paragraph/list | 19.75 |
+| lect11e-chromo_alter_2-duplications | 35 | left | paragraph/list | 18.0 |
+
+The global whitespace/conflict check also reports pre-existing conflict markers in the same
+Biotechnology Lecture 10 edits. The changed announcement guidance and new LECT11 sources
+are checked separately; those unrelated conflicts were preserved.
 
 ## Conversion checklist
 
-Copied from the repository conversion checklist. Checked review items can retain documented
-replacement outcomes. N/A and unperformed checks are annotated explicitly.
+The checklist below is copied from the repository conversion guide. Checked items mean the
+check was performed; unresolved outcomes are recorded above. N/A and unperformed items are
+annotated rather than implied successful.
 
 ### Inventory the inputs
 
@@ -411,10 +409,10 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 - [x] Preview the StVC refresh with
   `source source_me.sh && python3 -m slide_lib.refresh_podcast DECK.djot`.
   Inspect the selected episode before applying `--write`.
-- [ ] November 9 episode selected; refresh nearer the future lecture date. Confirm the latest published regular StVC episode available on the lecture date, excluding
+- [x] Confirm the latest published regular StVC episode available on the lecture date, excluding
   specials, and use it as the default. Record its number; if another episode is more appropriate,
   select it and document why.
-- [x] Snapshot identity/links checked; browser playback untested. Verify the saved StVC episode number/title, video URL, thumbnail, and playable game/tool
+- [x] Verify the saved StVC episode number/title, video URL, thumbnail, and playable game/tool
   URL all refer to the selected episode. Open both links and inspect the downloaded image.
 - [x] Inspect the rendered StVC slide: confirm three caption lines, visible clickable video
   and game/tool URLs, and placement immediately after the YouTube channel slide.
@@ -424,7 +422,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
 
 ### Repair individual slides
 
-- [ ] Visible pages compared; hidden content checked as text/XML only. Compare every source slide with its rendered conversion, including slides without importer
+- [x] Compare every source slide with its rendered conversion, including slides without importer
   warnings. Record missing text, labels, objects, emphasis, and changed reading order by slide.
 - [x] Inspect the content underneath existing replacement watermarks using separate diagnostic
   copies. Reassess the actual failure rather than inheriting an old import warning. Keep diagnostic
@@ -438,13 +436,13 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   colors in rainbow order, with matching colored step cross-references.
 - [x] Remove textbook figure-number artifacts from titles, captions, citations, and editable
   diagram labels. Keep meaningful explanatory captions and all diagram content.
-- [x] Wrapped titles retained; shorter wording proposed above for review. Inspect every rendered title for single-line fit, following the preference in
+- [x] Existing wrapped titles retained and audited; no unapproved rewrites. Inspect every rendered title for single-line fit, following the preference in
   [HUMAN_GUIDANCE.md](../../../docs/HUMAN_GUIDANCE.md). Flag wrapping titles and record proposed shorter
   wording for review; permission to rewrite titles remains separate from checking their length.
 - [x] For textbook diagrams assembled from artwork and positioned labels, compare label placement,
   arrows, and diagram relationships with the source. Record whether a labeled image reconstruction
   is a suitable repair; retain the replacement marker until the rendered result is verified.
-- [ ] N/A: no new labeled-image reconstruction. Where suitable, use one quality-90 WebP inside SVG with live overlapping labels. Keep titles,
+- [ ] N/A: no new labeled-image reconstruction attempted. Where suitable, use one quality-90 WebP inside SVG with live overlapping labels. Keep titles,
   captions, surrounding prose, and native tables outside the asset. Verify the LibreOffice render
   and review any source reveals separately; a static figure does not certify animation fidelity.
 - [x] Preserve source vector figures as vectors with live labels. Restore static diagram highlights
@@ -452,7 +450,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   opaque masks. Verify both masked and unmasked regions against the source.
 - [x] Check each figure's identity against the source render, including orientation and cropping;
   a plausible diagram or matching subject is insufficient evidence that it is the right asset.
-- [x] Static-mask losses retained as replacement tasks; no new click masks authored. Distinguish static masks from actual reveal targets using the source ODP. Use an image-relative
+- [ ] N/A: no new native mask conversion attempted. Distinguish static masks from actual reveal targets using the source ODP. Use an image-relative
   native cover for an explicitly intended click-to-remove image mask; check bounds against the final
   displayed image. Test native targets/order and record unperformed click playback separately.
 - [x] Confirm local headings and all other content share region sizing, and subsection backgrounds
@@ -473,7 +471,7 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   steps with the source. Rebuild representable tables as native tables and inspect their PDF.
 - [x] Inspect rendered equations and genetic notation against the source: fractions, chi-square,
   allele superscripts, generation subscripts, and H~0~. Correct misplaced or baseline characters.
-- [ ] Static states/source animation inventory checked; attended playback unperformed. Compare source animation targets/order with the converted reveals. Inspect final PDF states
+- [ ] Playback unperformed; affected slides retain markers. Compare source animation targets/order with the converted reveals. Inspect final PDF states
   and test click playback in Impress for affected slides, or explicitly record playback as untested.
 - [x] For each unresolved slide, add or retain `@replaceme` and record its source number, specific
   missing feature, and next action. When readable sizing cannot fit, retain the source slide with
@@ -503,3 +501,4 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   classroom readiness when replacement slides remain.
 - [x] Add a concise conversion/review entry to [CHANGELOG.md](../../../docs/CHANGELOG.md), naming the lecture
   and resulting artifacts; report the review and output paths to the instructor.
+

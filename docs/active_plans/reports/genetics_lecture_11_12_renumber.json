@@ -1,0 +1,1943 @@
+{
+  "description": "Lecture bundle swap; announcements retained in calendar weeks",
+  "files": [
+    {
+      "before": "genetics/LECT11/djot/LECT11_REVIEW.md",
+      "after": "genetics/LECT12/djot/LECT12_REVIEW.md",
+      "sha256_before": "35213266a704aded5a9b3ccf1915c6c8aaa35d77d8ce6f2b055534a3d6ddaf70",
+      "sha256_after": "fc5ae9cb24754df76e99e2bca6fdd79dbf963301da9875f9988b479797b1bc3c"
+    },
+    {
+      "before": "genetics/LECT11/djot/LECT11_SOURCE_MAP.md",
+      "after": "genetics/LECT12/djot/LECT12_SOURCE_MAP.md",
+      "sha256_before": "cbda7264d3ad8f2cc8aba1c0af7e5df95815e0208359bb8fbd6db2b3bc9378a1",
+      "sha256_after": "a5f5ff76b444677626ba5350f6aa2afc8f4dbfbf24edbe05eac8e80aef174589"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect09a-2026_announcements/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect09a-2026_announcements/import_report.json",
+      "sha256_before": "6039639ab9701a8956dc6be334df67bead72cd6a51e4720811a7f8a1eae27135",
+      "sha256_after": "6039639ab9701a8956dc6be334df67bead72cd6a51e4720811a7f8a1eae27135"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11a-2025_announcements/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect12a-2025_announcements/import_report.json",
+      "sha256_before": "17939f261fbf236a3d521fafc1c85c951ea9765ec00090e0a55272a926753563",
+      "sha256_after": "17939f261fbf236a3d521fafc1c85c951ea9765ec00090e0a55272a926753563"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/auto_allopolyploid_comparison.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/auto_allopolyploid_comparison.drawn.svg",
+      "sha256_before": "fffb14d5fc005666d1de9d517880a2b5c599f9678078ddf6b97b24746672214e",
+      "sha256_after": "fffb14d5fc005666d1de9d517880a2b5c599f9678078ddf6b97b24746672214e"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/colchicine_chromosome_doubling.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/colchicine_chromosome_doubling.drawn.svg",
+      "sha256_before": "e2614c55029834013cb42ba9a6f32d7d8a0b1eae43f0ca6996f8505899198d55",
+      "sha256_after": "e2614c55029834013cb42ba9a6f32d7d8a0b1eae43f0ca6996f8505899198d55"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_001.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_001.png",
+      "sha256_before": "a3d6d95ec5b18a02dc7295560205c332f068ea3417b649c9734d5ad373a4b039",
+      "sha256_after": "a3d6d95ec5b18a02dc7295560205c332f068ea3417b649c9734d5ad373a4b039"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_002.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_002.png",
+      "sha256_before": "824aad6256c1c5c94620f46aa359682032df0540009e5cc260f73beb2487e311",
+      "sha256_after": "824aad6256c1c5c94620f46aa359682032df0540009e5cc260f73beb2487e311"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_003.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_003.png",
+      "sha256_before": "8cd69d208049f14785fe310549d43859291eb566b5925daf46e0dc9f3348decc",
+      "sha256_after": "8cd69d208049f14785fe310549d43859291eb566b5925daf46e0dc9f3348decc"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_004.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_004.png",
+      "sha256_before": "f55fbc64052c606a3250fa6658cae60d4898477ba725ddba3b8d4647b34f4ea0",
+      "sha256_after": "f55fbc64052c606a3250fa6658cae60d4898477ba725ddba3b8d4647b34f4ea0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_005.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_005.png",
+      "sha256_before": "b79665b3b808943e82e45c83867945bbff15c7e92a73b0aac5ed05c5024528f4",
+      "sha256_after": "b79665b3b808943e82e45c83867945bbff15c7e92a73b0aac5ed05c5024528f4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_006.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_006.png",
+      "sha256_before": "bc7fa8a18fc1141620667c3989899bbc4a5406d8b69f945051e493ec807ea207",
+      "sha256_after": "bc7fa8a18fc1141620667c3989899bbc4a5406d8b69f945051e493ec807ea207"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_007.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_007.png",
+      "sha256_before": "abc9913ab40f36a05618d17f89b9e601cacfea1a708ad82dc54d85bf3535806d",
+      "sha256_after": "abc9913ab40f36a05618d17f89b9e601cacfea1a708ad82dc54d85bf3535806d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_008.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_008.png",
+      "sha256_before": "30bf91f89c39056fc388f381de8dd676aa4650fcede55c7ed2366f600d5f7c41",
+      "sha256_after": "30bf91f89c39056fc388f381de8dd676aa4650fcede55c7ed2366f600d5f7c41"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_009.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_009.png",
+      "sha256_before": "2400656e2ba028272dc201d0d12617d60402937b21188d01ad3c5a66996d7447",
+      "sha256_after": "2400656e2ba028272dc201d0d12617d60402937b21188d01ad3c5a66996d7447"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_010.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_010.png",
+      "sha256_before": "0b47d48e9ffd54335faafff2ebfa8a8ae561afa66ec7020dc5a49ad3d60f127c",
+      "sha256_after": "0b47d48e9ffd54335faafff2ebfa8a8ae561afa66ec7020dc5a49ad3d60f127c"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_011.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_011.png",
+      "sha256_before": "71dcd9f76d1859ba39c9a68551c258eba42101321c3a207912cd12b8f7801da9",
+      "sha256_after": "71dcd9f76d1859ba39c9a68551c258eba42101321c3a207912cd12b8f7801da9"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_012.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_012.png",
+      "sha256_before": "2bb4a8c389e59733b43c7282f1d138e58b0d2beded90df28029a53ee3f0143fe",
+      "sha256_after": "2bb4a8c389e59733b43c7282f1d138e58b0d2beded90df28029a53ee3f0143fe"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_013.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_013.png",
+      "sha256_before": "69a3ae70c98617765b8ec76f387dcaf3015b2112b118a42ff955720c4be911b9",
+      "sha256_after": "69a3ae70c98617765b8ec76f387dcaf3015b2112b118a42ff955720c4be911b9"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_014.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_014.png",
+      "sha256_before": "092f709ea65d6141d86da2388faf610e5bb19d52f03237514f50da21dc01cd78",
+      "sha256_after": "092f709ea65d6141d86da2388faf610e5bb19d52f03237514f50da21dc01cd78"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_015.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_015.jpg",
+      "sha256_before": "65388741b2817bae9456d26a31c850986f2363dd32152be6a97f9d5f01b97206",
+      "sha256_after": "65388741b2817bae9456d26a31c850986f2363dd32152be6a97f9d5f01b97206"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_016.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_016.png",
+      "sha256_before": "b1f59658088a8ae51fdd7580ecea8c3b9fad41c2c345e14903b0edccfde39fa0",
+      "sha256_after": "b1f59658088a8ae51fdd7580ecea8c3b9fad41c2c345e14903b0edccfde39fa0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_017.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_017.png",
+      "sha256_before": "1179dbcf7baf3b104935225e94f5a876dbf0b8e83d4247af0b37a58b6c35fbf3",
+      "sha256_after": "1179dbcf7baf3b104935225e94f5a876dbf0b8e83d4247af0b37a58b6c35fbf3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_018.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_018.png",
+      "sha256_before": "22b95646783add0671afb0cd7e36d3fa710d0408a31ee7fbd0ee7f66ba176bef",
+      "sha256_after": "22b95646783add0671afb0cd7e36d3fa710d0408a31ee7fbd0ee7f66ba176bef"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_019.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_019.png",
+      "sha256_before": "97b32509633581f0d5c6ffce8341d6aeac0c34395512715a55b480ca07a4155b",
+      "sha256_after": "97b32509633581f0d5c6ffce8341d6aeac0c34395512715a55b480ca07a4155b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_020.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_020.jpg",
+      "sha256_before": "98987af0f0b364cf105f23805bbe629404df65a7ab1ea72a2764127984c46d05",
+      "sha256_after": "98987af0f0b364cf105f23805bbe629404df65a7ab1ea72a2764127984c46d05"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_021.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_021.png",
+      "sha256_before": "c1c990031cb3ce9aa9f5de82bdd26371161512ced9a3a5ec320f2e50f94c4d68",
+      "sha256_after": "c1c990031cb3ce9aa9f5de82bdd26371161512ced9a3a5ec320f2e50f94c4d68"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_022.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_022.jpg",
+      "sha256_before": "ddc717d7d3c97168b5dd3668762e4779687c3f0f0725375a4505bea8a719bd33",
+      "sha256_after": "ddc717d7d3c97168b5dd3668762e4779687c3f0f0725375a4505bea8a719bd33"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_023.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_023.jpg",
+      "sha256_before": "592f37204fd26404cf6b30db6a7a25aaf7f0027e7eca4b0837549ef06d99d21b",
+      "sha256_after": "592f37204fd26404cf6b30db6a7a25aaf7f0027e7eca4b0837549ef06d99d21b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_024.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_024.jpg",
+      "sha256_before": "26aa3193aeebe71da8fefef1af1cad0c2bf05dca68d7a0ed926f83d1b7bc3d7f",
+      "sha256_after": "26aa3193aeebe71da8fefef1af1cad0c2bf05dca68d7a0ed926f83d1b7bc3d7f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_025.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_025.png",
+      "sha256_before": "f84a468a0ddb5b8f41b43f7cf4d50d2df6e4b87faea64f62916ac6dc17983ffa",
+      "sha256_after": "f84a468a0ddb5b8f41b43f7cf4d50d2df6e4b87faea64f62916ac6dc17983ffa"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_026.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_026.png",
+      "sha256_before": "d022b2ec5e9636f826461e438847616367fe2205c029b1e1a224ae778b1a9e70",
+      "sha256_after": "d022b2ec5e9636f826461e438847616367fe2205c029b1e1a224ae778b1a9e70"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_027.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_027.png",
+      "sha256_before": "5cb8d3f52a63ce321f23409e9854d224e3a47949d4e8133c5df16b27729754cf",
+      "sha256_after": "5cb8d3f52a63ce321f23409e9854d224e3a47949d4e8133c5df16b27729754cf"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_028.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_028.png",
+      "sha256_before": "4dcb2a1980c798d91ac22b0aacb284b79e4082e232669fc71bfa9cc9741e42ec",
+      "sha256_after": "4dcb2a1980c798d91ac22b0aacb284b79e4082e232669fc71bfa9cc9741e42ec"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_029.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_029.jpg",
+      "sha256_before": "ba6f4fb9c31cd3b283ee85ce27502f56106f4fd5866205dd651c5b779c80f85a",
+      "sha256_after": "ba6f4fb9c31cd3b283ee85ce27502f56106f4fd5866205dd651c5b779c80f85a"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_030.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_030.jpg",
+      "sha256_before": "20740f715f49220a880a6d225a8f243248a2534a518e01a8ae82ac02879150b8",
+      "sha256_after": "20740f715f49220a880a6d225a8f243248a2534a518e01a8ae82ac02879150b8"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_031.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_031.png",
+      "sha256_before": "1f6c1c4ca6e8d2db563e5765c8f93bf16fd88c04b34968bfc7e5888495a4077f",
+      "sha256_after": "1f6c1c4ca6e8d2db563e5765c8f93bf16fd88c04b34968bfc7e5888495a4077f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_032.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_032.png",
+      "sha256_before": "1ef769d10f0ad580655727feab3e292f4cbe5210bc511dec98da4db9f791824d",
+      "sha256_after": "1ef769d10f0ad580655727feab3e292f4cbe5210bc511dec98da4db9f791824d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_033.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_033.png",
+      "sha256_before": "4b559159ee3f271d09977271e2910bc4138316b5ddfdb51ea8db55c0f6002ac9",
+      "sha256_after": "4b559159ee3f271d09977271e2910bc4138316b5ddfdb51ea8db55c0f6002ac9"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/image_034.png",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/image_034.png",
+      "sha256_before": "f0f137bc9b62584f9c517a81cc639e53f8dceee32e2156c52544acaa7cc15785",
+      "sha256_after": "f0f137bc9b62584f9c517a81cc639e53f8dceee32e2156c52544acaa7cc15785"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/import_report.json",
+      "sha256_before": "26102839d27beed2908f256f3b060b8bf150455d696ac36cec833a5d37b36439",
+      "sha256_after": "26102839d27beed2908f256f3b060b8bf150455d696ac36cec833a5d37b36439"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/polyploidization_adults.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/polyploidization_adults.drawn.svg",
+      "sha256_before": "e30968e10dd698cafcca945882297c76f1c7aed9158146faf266522d8207e5b7",
+      "sha256_after": "e30968e10dd698cafcca945882297c76f1c7aed9158146faf266522d8207e5b7"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/polyploidization_explanations.quote.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/polyploidization_explanations.quote.svg",
+      "sha256_before": "eea4bb766ef88118dd3f1311224519a8299e6243093dfe0bec5e6ec705e5c348",
+      "sha256_after": "eea4bb766ef88118dd3f1311224519a8299e6243093dfe0bec5e6ec705e5c348"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/polyploidization_gametes.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/polyploidization_gametes.drawn.svg",
+      "sha256_before": "fd7fe1587b9d21e081f2501299c7d8e008e0d265d472faaf085787c4aa459913",
+      "sha256_after": "fd7fe1587b9d21e081f2501299c7d8e008e0d265d472faaf085787c4aa459913"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/polyploidization_zygotes.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/polyploidization_zygotes.drawn.svg",
+      "sha256_before": "f71402fbeaa003ee48737e1a0bcfd0083de65b2e1fa133a70f490bbcf032045d",
+      "sha256_after": "f71402fbeaa003ee48737e1a0bcfd0083de65b2e1fa133a70f490bbcf032045d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/strawberry_polyploid.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/strawberry_polyploid.drawn.svg",
+      "sha256_before": "40ef2a58d96d7ba1b4218d8563a1756b93c2621cfde075a22ccb9930a14f0ab5",
+      "sha256_after": "40ef2a58d96d7ba1b4218d8563a1756b93c2621cfde075a22ccb9930a14f0ab5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg",
+      "sha256_before": "07ff0d877887c0f86071e72dcf0be2911a767df290d9fe22b943bf536b3cf840",
+      "sha256_after": "07ff0d877887c0f86071e72dcf0be2911a767df290d9fe22b943bf536b3cf840"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/dosage_compensation_summary.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/dosage_compensation_summary.drawn.svg",
+      "sha256_before": "e7f650dafe166546cb59d1de5e1575d893932936ff88e961f77c9134484368d5",
+      "sha256_after": "e7f650dafe166546cb59d1de5e1575d893932936ff88e961f77c9134484368d5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_001.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_001.jpg",
+      "sha256_before": "50c6b3eb4cb04f158303aad0d1b6d9bd726f61b232f15be90fd8738569fea5d5",
+      "sha256_after": "50c6b3eb4cb04f158303aad0d1b6d9bd726f61b232f15be90fd8738569fea5d5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_002.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_002.png",
+      "sha256_before": "a9768ae017f7666b542f4869a96e32288704179c48db967baed96ff3ea5644e4",
+      "sha256_after": "a9768ae017f7666b542f4869a96e32288704179c48db967baed96ff3ea5644e4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_003.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_003.png",
+      "sha256_before": "64d7d09bc8d17807577759ec884f6f2350266137a9853bb2f30f22e32573958b",
+      "sha256_after": "64d7d09bc8d17807577759ec884f6f2350266137a9853bb2f30f22e32573958b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_004.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_004.png",
+      "sha256_before": "7b4a859cd178a5bdcf37b640c16dd4bbc74f22bfa33e97f2d717799e2d7cb89f",
+      "sha256_after": "7b4a859cd178a5bdcf37b640c16dd4bbc74f22bfa33e97f2d717799e2d7cb89f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_005.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_005.png",
+      "sha256_before": "0214e93a7021c99b87416dd0cffbd4348eb527ae279d83bea24c286b88807989",
+      "sha256_after": "0214e93a7021c99b87416dd0cffbd4348eb527ae279d83bea24c286b88807989"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_006.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_006.png",
+      "sha256_before": "6d5580be7f574a7c2dbe3336cf890399db85854fdfd990d54152373d65b37656",
+      "sha256_after": "6d5580be7f574a7c2dbe3336cf890399db85854fdfd990d54152373d65b37656"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_007.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_007.png",
+      "sha256_before": "9c46e8f10d5878af47f28997d751eadb64b8115d540c07c688b9d406228f2683",
+      "sha256_after": "9c46e8f10d5878af47f28997d751eadb64b8115d540c07c688b9d406228f2683"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_008.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_008.png",
+      "sha256_before": "069bc05a789506f2bf29a15e692fa04cadb68ea8098ad53a355f1067e9774092",
+      "sha256_after": "069bc05a789506f2bf29a15e692fa04cadb68ea8098ad53a355f1067e9774092"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_009.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_009.jpg",
+      "sha256_before": "61e194443c9aea0d07c6aaafa786f30b3d3ff95e12f9e7aa4390d211d85444f3",
+      "sha256_after": "61e194443c9aea0d07c6aaafa786f30b3d3ff95e12f9e7aa4390d211d85444f3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_010.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_010.png",
+      "sha256_before": "b16750c7ddc7212f7c7b96b2aeeb5fbc552089f5a813c5f8e055c264bebb6b47",
+      "sha256_after": "b16750c7ddc7212f7c7b96b2aeeb5fbc552089f5a813c5f8e055c264bebb6b47"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_011.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_011.png",
+      "sha256_before": "0dded1395fb0150bcda74fac65c6604e6a1d3460fc1572daed162daa09894232",
+      "sha256_after": "0dded1395fb0150bcda74fac65c6604e6a1d3460fc1572daed162daa09894232"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_012.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_012.png",
+      "sha256_before": "aa4011773f02279d7b3c7bbc9451bf290acdf2fe47e09077dceb0a03cf4ee133",
+      "sha256_after": "aa4011773f02279d7b3c7bbc9451bf290acdf2fe47e09077dceb0a03cf4ee133"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_013.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_013.png",
+      "sha256_before": "950b0bfc66fef3eb700eb5e4fbdb7064387013dbb7492ff1c9ecf18c2582eefd",
+      "sha256_after": "950b0bfc66fef3eb700eb5e4fbdb7064387013dbb7492ff1c9ecf18c2582eefd"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_014.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_014.jpg",
+      "sha256_before": "86fe1ad16d513ee2c13a0a932247523c6dd3093b71da1cab931af63230dee728",
+      "sha256_after": "86fe1ad16d513ee2c13a0a932247523c6dd3093b71da1cab931af63230dee728"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_015.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_015.jpg",
+      "sha256_before": "293c732c69f60be8b4e89e82002cc7a82976f11f30989ddaab8bdf74c794d7ad",
+      "sha256_after": "293c732c69f60be8b4e89e82002cc7a82976f11f30989ddaab8bdf74c794d7ad"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_016.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_016.png",
+      "sha256_before": "c7986a5dd952c972752ef95b38677f205218cd808ccd1f9bb522e330c53e36f7",
+      "sha256_after": "c7986a5dd952c972752ef95b38677f205218cd808ccd1f9bb522e330c53e36f7"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_017.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_017.png",
+      "sha256_before": "cd0611478bd56394add7f50f15e116ae8110f96ad91ed00dff34104abdbbedb0",
+      "sha256_after": "cd0611478bd56394add7f50f15e116ae8110f96ad91ed00dff34104abdbbedb0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_018.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_018.png",
+      "sha256_before": "3902615ff397d1b2c671ee87011f10262ce01f7e8bd46bc26bf6b074b5a94ca5",
+      "sha256_after": "3902615ff397d1b2c671ee87011f10262ce01f7e8bd46bc26bf6b074b5a94ca5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_019.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_019.png",
+      "sha256_before": "255cd46882b3ac716571c5e5b5395b8a67eddd0d8dda7f5d451c3ad70dd2736f",
+      "sha256_after": "255cd46882b3ac716571c5e5b5395b8a67eddd0d8dda7f5d451c3ad70dd2736f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_020.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_020.png",
+      "sha256_before": "09f5387f66e68c32f8e86806c5d19428d14de786c5533a55906543b11977b1c0",
+      "sha256_after": "09f5387f66e68c32f8e86806c5d19428d14de786c5533a55906543b11977b1c0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_021.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_021.png",
+      "sha256_before": "b61fe4aaf0343933dbdf9cdec582cb7a73abe8021379e2bc0d57cf14e73306d4",
+      "sha256_after": "b61fe4aaf0343933dbdf9cdec582cb7a73abe8021379e2bc0d57cf14e73306d4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_022.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_022.png",
+      "sha256_before": "02a128d9e38cda7321bbc81a7798427fff4c60b8e7ff283114315531a0389e76",
+      "sha256_after": "02a128d9e38cda7321bbc81a7798427fff4c60b8e7ff283114315531a0389e76"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_023.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_023.png",
+      "sha256_before": "328f9fe5d3101856936a2d312a5fe546b48338b7b8b83c17259d039b0b452fb6",
+      "sha256_after": "328f9fe5d3101856936a2d312a5fe546b48338b7b8b83c17259d039b0b452fb6"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/image_024.png",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/image_024.png",
+      "sha256_before": "69ca08eb829f6ef9974c3f5c58690746e788dd9aa860ac432a1ff6f63a5c6bbd",
+      "sha256_after": "69ca08eb829f6ef9974c3f5c58690746e788dd9aa860ac432a1ff6f63a5c6bbd"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/import_report.json",
+      "sha256_before": "d55198e3b8e072331a3e395d6a7dd7ded2d631f084284e32c94b6383ba264115",
+      "sha256_after": "d55198e3b8e072331a3e395d6a7dd7ded2d631f084284e32c94b6383ba264115"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11c-sex_dosage/pseudoautosomal_crossover_questions.quote.svg",
+      "after": "genetics/LECT12/djot/assets/lect12c-sex_dosage/pseudoautosomal_crossover_questions.quote.svg",
+      "sha256_before": "c0b2b0ee16703c57e7c6338f33bfbe830ce64c6deebb23714d99ad1e991964e7",
+      "sha256_after": "c0b2b0ee16703c57e7c6338f33bfbe830ce64c6deebb23714d99ad1e991964e7"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/array_comparison_workflow.drawn.svg",
+      "sha256_before": "b739fac24f49ab7009298acf2a6dbbffd44dfdfef45ab7559a038c1582663f64",
+      "sha256_after": "b739fac24f49ab7009298acf2a6dbbffd44dfdfef45ab7559a038c1582663f64"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/array_comparison_workflow_toolkit.drawn.svg",
+      "sha256_before": "ba556985bf8a4678d5a1e9fc4f14e7fe0b3847ea5d869bc771d82bc54b8e4ff1",
+      "sha256_after": "ba556985bf8a4678d5a1e9fc4f14e7fe0b3847ea5d869bc771d82bc54b8e4ff1"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/array_trace.evidence.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/array_trace.evidence.png",
+      "sha256_before": "40185e6a58ab90df1099d2f7213366d1ce81d7a181453da5738a99d746c7852f",
+      "sha256_after": "40185e6a58ab90df1099d2f7213366d1ce81d7a181453da5738a99d746c7852f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/chromosome_complements.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/chromosome_complements.drawn.svg",
+      "sha256_before": "40aa12cb0f40cdd69b92804e8d0f11da9f4386f14eabdb6223fa19d3b1c661e0",
+      "sha256_after": "40aa12cb0f40cdd69b92804e8d0f11da9f4386f14eabdb6223fa19d3b1c661e0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/cytological_deletion_intervals.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/cytological_deletion_intervals.drawn.svg",
+      "sha256_before": "e5543b8019fcc0e98e48a8ee1325b40fafa6c08509a6a20a58c7b160711e47dc",
+      "sha256_after": "e5543b8019fcc0e98e48a8ee1325b40fafa6c08509a6a20a58c7b160711e47dc"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/deletion_intervals.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_intervals.drawn.svg",
+      "sha256_before": "13857d91e259763bc72e2c5c0a4f91a63325f94e7f4a2e25c4852f93452bb6a2",
+      "sha256_after": "13857d91e259763bc72e2c5c0a4f91a63325f94e7f4a2e25c4852f93452bb6a2"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/deletion_overview.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_overview.drawn.svg",
+      "sha256_before": "3e634a9c24d0a0b022ff3e7f68a9373524c160442ad829faaf587326b7f06f9d",
+      "sha256_after": "3e634a9c24d0a0b022ff3e7f68a9373524c160442ad829faaf587326b7f06f9d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/deletion_parent.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_parent.drawn.svg",
+      "sha256_before": "d7bbecd414119a7f3f5b901bb9724b0d083b2d7e032cc703650972f4940e93f3",
+      "sha256_after": "d7bbecd414119a7f3f5b901bb9724b0d083b2d7e032cc703650972f4940e93f3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/deletion_progeny.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_progeny.drawn.svg",
+      "sha256_before": "9327433fb0b013d1a111afff28e9c86d7c868b0f080564797524bb2c3d743691",
+      "sha256_after": "9327433fb0b013d1a111afff28e9c86d7c868b0f080564797524bb2c3d743691"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/deletion_testcross_outcomes.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_testcross_outcomes.drawn.svg",
+      "sha256_before": "17b48304c76c3a0fcc56cd7c6bf2576056f89aef86f6c479c8ee9a691f5eac40",
+      "sha256_after": "17b48304c76c3a0fcc56cd7c6bf2576056f89aef86f6c479c8ee9a691f5eac40"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/direct_repeat_loop.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/direct_repeat_loop.drawn.svg",
+      "sha256_before": "a89789fbadcda9f71bd8bb412580be8cd957024fe44db08e8e1bcc7bca48dcbc",
+      "sha256_after": "a89789fbadcda9f71bd8bb412580be8cd957024fe44db08e8e1bcc7bca48dcbc"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/duplication_overview.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/duplication_overview.drawn.svg",
+      "sha256_before": "cef940686b44dd426b4614bdb72642a546db00f1b8cd6bcf48af9bcc8b555fc9",
+      "sha256_after": "cef940686b44dd426b4614bdb72642a546db00f1b8cd6bcf48af9bcc8b555fc9"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_001.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_001.png",
+      "sha256_before": "bcbd0cf76052b8cb4e447bc1c30d6940c2f1b401a0e2ca2650aeb482a14d8219",
+      "sha256_after": "bcbd0cf76052b8cb4e447bc1c30d6940c2f1b401a0e2ca2650aeb482a14d8219"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_002.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_002.png",
+      "sha256_before": "81460977e454e9a8b782a22f88a29a96a8c04d0fbde0b10b5d400b7e269519f1",
+      "sha256_after": "81460977e454e9a8b782a22f88a29a96a8c04d0fbde0b10b5d400b7e269519f1"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_003.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_003.png",
+      "sha256_before": "be5c16ed22f0fc57ed5f6952d7f05f8001eb3677553c42e98ae1835fab6acb0b",
+      "sha256_after": "be5c16ed22f0fc57ed5f6952d7f05f8001eb3677553c42e98ae1835fab6acb0b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_004.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_004.png",
+      "sha256_before": "f7f0627ace9607637e23a68a1d1a3d7f3166987c6a58cfc26b9b4188eb5d44ce",
+      "sha256_after": "f7f0627ace9607637e23a68a1d1a3d7f3166987c6a58cfc26b9b4188eb5d44ce"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_005.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_005.png",
+      "sha256_before": "8c5b45f618b4fb9f5a7fc21677bddca2b3f082268179efacf8ba0bada6c757fa",
+      "sha256_after": "8c5b45f618b4fb9f5a7fc21677bddca2b3f082268179efacf8ba0bada6c757fa"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_006.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_006.png",
+      "sha256_before": "8ef7947e59e0d180556bffb743e6c95ef2ea646aafed63f35cf264c092f6c946",
+      "sha256_after": "8ef7947e59e0d180556bffb743e6c95ef2ea646aafed63f35cf264c092f6c946"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_007.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_007.png",
+      "sha256_before": "f08cda3d9026f5137f0a6339de734400f2e85b5606aa2ebeda0a45874e58fd06",
+      "sha256_after": "f08cda3d9026f5137f0a6339de734400f2e85b5606aa2ebeda0a45874e58fd06"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_008.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_008.png",
+      "sha256_before": "8f564700cadfcf726cb0b8ea4a8f76c3c540cf84d93b3ad3bfc176801fe8f079",
+      "sha256_after": "8f564700cadfcf726cb0b8ea4a8f76c3c540cf84d93b3ad3bfc176801fe8f079"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_009.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_009.png",
+      "sha256_before": "c285db7a357b7abcbf3c796bc4c3ce1d74566b29b39676045a790a956474e7d4",
+      "sha256_after": "c285db7a357b7abcbf3c796bc4c3ce1d74566b29b39676045a790a956474e7d4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_010.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_010.png",
+      "sha256_before": "ad2561c528391ea6c59e570585ac6b76aea5692eefeab845724c5fdcb4a0c170",
+      "sha256_after": "ad2561c528391ea6c59e570585ac6b76aea5692eefeab845724c5fdcb4a0c170"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_011.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_011.png",
+      "sha256_before": "1b624bbfd2fbb5e1551cf22ec132366de0334ec8a08e19c766918aef2963a32c",
+      "sha256_after": "1b624bbfd2fbb5e1551cf22ec132366de0334ec8a08e19c766918aef2963a32c"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_012.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_012.png",
+      "sha256_before": "62adc2837e5cbaa64789b10932b28e23faeeaaac09d0131a87ba9b015294a652",
+      "sha256_after": "62adc2837e5cbaa64789b10932b28e23faeeaaac09d0131a87ba9b015294a652"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_013.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_013.png",
+      "sha256_before": "864d36b0f92c78cd805e57d71411d748e12f88c2c37c3859493f9a0026da6c5a",
+      "sha256_after": "864d36b0f92c78cd805e57d71411d748e12f88c2c37c3859493f9a0026da6c5a"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_014.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_014.png",
+      "sha256_before": "18c17217b1d165a63bd53e7b43983f3700c4e2eceb579a2be8a19a70e4036f1d",
+      "sha256_after": "18c17217b1d165a63bd53e7b43983f3700c4e2eceb579a2be8a19a70e4036f1d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_015.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_015.png",
+      "sha256_before": "45874c7a550b58000e9c73f16057989bb87c74dd59b88920ea08518fef7ce467",
+      "sha256_after": "45874c7a550b58000e9c73f16057989bb87c74dd59b88920ea08518fef7ce467"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_016.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_016.png",
+      "sha256_before": "72434a6bd3fd32bf4409d3dd6efe63d983af2d19edbefecf148cb029e7c78238",
+      "sha256_after": "72434a6bd3fd32bf4409d3dd6efe63d983af2d19edbefecf148cb029e7c78238"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_017.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_017.png",
+      "sha256_before": "a5b1130ba906636c640d4fbc27421811f7a654117c53496ea08f5f68121c249d",
+      "sha256_after": "a5b1130ba906636c640d4fbc27421811f7a654117c53496ea08f5f68121c249d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_018.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_018.png",
+      "sha256_before": "d61e7f1b1eeb0c81b3cbb06844a1f29d01441f15b15a640feb9f2a8096fd8f96",
+      "sha256_after": "d61e7f1b1eeb0c81b3cbb06844a1f29d01441f15b15a640feb9f2a8096fd8f96"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_019.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_019.png",
+      "sha256_before": "b2d20b0acf88ab5cc008609236858fb6bc7bf95432ed0a12b55664974f919d46",
+      "sha256_after": "b2d20b0acf88ab5cc008609236858fb6bc7bf95432ed0a12b55664974f919d46"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_020.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_020.png",
+      "sha256_before": "5a59135e9f065869ef05da9a995f7c4f71deeac5d704b4b3fb2f172ad51d4251",
+      "sha256_after": "5a59135e9f065869ef05da9a995f7c4f71deeac5d704b4b3fb2f172ad51d4251"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_021.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_021.png",
+      "sha256_before": "efc3c840edc14f4076ebdaf9152556a2bb7be2ec4b355596585fc1c86120e467",
+      "sha256_after": "efc3c840edc14f4076ebdaf9152556a2bb7be2ec4b355596585fc1c86120e467"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_022.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_022.png",
+      "sha256_before": "9d708af1bef23dabdbd63cb7aea005667a2c5f2e91468fd188861be2fdbd41e5",
+      "sha256_after": "9d708af1bef23dabdbd63cb7aea005667a2c5f2e91468fd188861be2fdbd41e5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/image_023.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/image_023.png",
+      "sha256_before": "eba36c028f784e691fa2014d35a12d1dc2a4ff240390e01ac568d60dcda07157",
+      "sha256_after": "eba36c028f784e691fa2014d35a12d1dc2a4ff240390e01ac568d60dcda07157"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/import_report.json",
+      "sha256_before": "860c1b31a03ae21e465043acd0d94e62a9a69e116bd30c7d875950ee7f06c8dc",
+      "sha256_after": "860c1b31a03ae21e465043acd0d94e62a9a69e116bd30c7d875950ee7f06c8dc"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/inversion_overview.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/inversion_overview.drawn.svg",
+      "sha256_before": "23c73ab6bd4fa387956b33dc2c8b19615b9ec9cbddbcc38e7b4dd7e3bf012ab5",
+      "sha256_after": "23c73ab6bd4fa387956b33dc2c8b19615b9ec9cbddbcc38e7b4dd7e3bf012ab5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/mutant_tester.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/mutant_tester.drawn.svg",
+      "sha256_before": "7ca181aca274c52bebaf89e723d78fa4ba29afb62d4ead2d5a115ba81ddbba69",
+      "sha256_after": "7ca181aca274c52bebaf89e723d78fa4ba29afb62d4ead2d5a115ba81ddbba69"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/polytene_bands.evidence.png",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/polytene_bands.evidence.png",
+      "sha256_before": "441f3a0fd354f2ea86ff19c92466a82ddb9cc9faff6ff7d855b5f60d58564aa4",
+      "sha256_after": "441f3a0fd354f2ea86ff19c92466a82ddb9cc9faff6ff7d855b5f60d58564aa4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/polytene_chromocenters.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/polytene_chromocenters.drawn.svg",
+      "sha256_before": "e3a46afd7fdaefcb41a69e27dba4f28ad59fbb7ec2476c1021074a4504198be8",
+      "sha256_after": "e3a46afd7fdaefcb41a69e27dba4f28ad59fbb7ec2476c1021074a4504198be8"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11d-chromo_alter_1-deletions/translocation_overview.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/translocation_overview.drawn.svg",
+      "sha256_before": "40c5c1c49304faac0e71cc96aa31ab3c1c627cd273061b35ceec280e55b70ee1",
+      "sha256_after": "40c5c1c49304faac0e71cc96aa31ab3c1c627cd273061b35ceec280e55b70ee1"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/cag_repeat_tract.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/cag_repeat_tract.drawn.svg",
+      "sha256_before": "e269bc2992899e1266ceff64d4ec8dd75c12c870504b2002936da14b3f4860b2",
+      "sha256_after": "e269bc2992899e1266ceff64d4ec8dd75c12c870504b2002936da14b3f4860b2"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/copy_number_interval.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/copy_number_interval.drawn.svg",
+      "sha256_before": "6652f7c99f40f7f9852aa14e243ef22efd3bde7acb3046c058dc5028429c5231",
+      "sha256_after": "6652f7c99f40f7f9852aa14e243ef22efd3bde7acb3046c058dc5028429c5231"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/duplication_overview.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/duplication_overview.drawn.svg",
+      "sha256_before": "cef940686b44dd426b4614bdb72642a546db00f1b8cd6bcf48af9bcc8b555fc9",
+      "sha256_after": "cef940686b44dd426b4614bdb72642a546db00f1b8cd6bcf48af9bcc8b555fc9"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_001.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_001.png",
+      "sha256_before": "81460977e454e9a8b782a22f88a29a96a8c04d0fbde0b10b5d400b7e269519f1",
+      "sha256_after": "81460977e454e9a8b782a22f88a29a96a8c04d0fbde0b10b5d400b7e269519f1"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_002.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_002.png",
+      "sha256_before": "04b8d93ea2e82e900e8792d881be7926b9234b338e5fafa39cb730bf74570edb",
+      "sha256_after": "04b8d93ea2e82e900e8792d881be7926b9234b338e5fafa39cb730bf74570edb"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_003.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_003.png",
+      "sha256_before": "10bd369293a0ddbd3920f67e9ab885c271a48afd42a3fe0ddc4e8ff86e00c61b",
+      "sha256_after": "10bd369293a0ddbd3920f67e9ab885c271a48afd42a3fe0ddc4e8ff86e00c61b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_004.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_004.png",
+      "sha256_before": "ef0952297305ec1739edde5099d70f4d304e40d59f2c636cf3999df304459d95",
+      "sha256_after": "ef0952297305ec1739edde5099d70f4d304e40d59f2c636cf3999df304459d95"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_005.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_005.png",
+      "sha256_before": "f3947338409927b0852891f3a5c86c9b449b5c0fc08f0a3453ed67fc54a798cf",
+      "sha256_after": "f3947338409927b0852891f3a5c86c9b449b5c0fc08f0a3453ed67fc54a798cf"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_006.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_006.jpg",
+      "sha256_before": "e594bd6deaeee73363be8e8727abadf70ecbfdd74689ff32257417381a28de19",
+      "sha256_after": "e594bd6deaeee73363be8e8727abadf70ecbfdd74689ff32257417381a28de19"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_007.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_007.png",
+      "sha256_before": "0c7a6b6bb4dc4cd90fe4c7a566d06601677dc9eb617ec3070767f9055c754985",
+      "sha256_after": "0c7a6b6bb4dc4cd90fe4c7a566d06601677dc9eb617ec3070767f9055c754985"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_008.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_008.png",
+      "sha256_before": "486519b1698e1b998ad690ed1e131a5ce5148e4ab349193b1e5d970c8691083b",
+      "sha256_after": "486519b1698e1b998ad690ed1e131a5ce5148e4ab349193b1e5d970c8691083b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_009.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_009.png",
+      "sha256_before": "a589327c48e5411389116466cb1f48f8fd547f202a9103d6ccb3f0f8ec39c39c",
+      "sha256_after": "a589327c48e5411389116466cb1f48f8fd547f202a9103d6ccb3f0f8ec39c39c"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_010.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_010.jpg",
+      "sha256_before": "9ff523389ad12966557e9973bbb9aab856667b384e1f41bfca7d9e4abbca76e0",
+      "sha256_after": "9ff523389ad12966557e9973bbb9aab856667b384e1f41bfca7d9e4abbca76e0"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_011.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_011.svg",
+      "sha256_before": "f951cc8a70418802e1cbd62f78f174e9295c9f3ab27713d13562d2ecf391e21c",
+      "sha256_after": "f951cc8a70418802e1cbd62f78f174e9295c9f3ab27713d13562d2ecf391e21c"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_012.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_012.png",
+      "sha256_before": "606d23c10919108bb1b2cf1411eb3e2807aafcc7701750b5448a4262bb974cd3",
+      "sha256_after": "606d23c10919108bb1b2cf1411eb3e2807aafcc7701750b5448a4262bb974cd3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_013.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_013.png",
+      "sha256_before": "6e798063e2f6c05e2bbe1b776beadb5f9a1c69c80de611d2c654cc993b63de6f",
+      "sha256_after": "6e798063e2f6c05e2bbe1b776beadb5f9a1c69c80de611d2c654cc993b63de6f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_014.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_014.png",
+      "sha256_before": "316c59d67537335edf7245bf2b06541f0dbd1aa4a15839d6b4deab7045f3ad80",
+      "sha256_after": "316c59d67537335edf7245bf2b06541f0dbd1aa4a15839d6b4deab7045f3ad80"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_015.jpg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_015.jpg",
+      "sha256_before": "adccd9989497c7bd3e8d3de35be774cf4c2dd6ac4c93463d94928d3e07e3e117",
+      "sha256_after": "adccd9989497c7bd3e8d3de35be774cf4c2dd6ac4c93463d94928d3e07e3e117"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_016.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_016.png",
+      "sha256_before": "2b8aa3f0b2e74104414a35144767a9fd0c0e2b28b5d67d38ea4684142c0f8d6d",
+      "sha256_after": "2b8aa3f0b2e74104414a35144767a9fd0c0e2b28b5d67d38ea4684142c0f8d6d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_017.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_017.png",
+      "sha256_before": "7d5766fc23222fa4f2c3388fa2d202a9e8bf5a5d9f25bfe7885c0a4296a83a0b",
+      "sha256_after": "7d5766fc23222fa4f2c3388fa2d202a9e8bf5a5d9f25bfe7885c0a4296a83a0b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_018.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_018.png",
+      "sha256_before": "51f1b9cfffaa18a88dc8b5fb319b301966c2f221754c38df2b10ea4a1bef8eef",
+      "sha256_after": "51f1b9cfffaa18a88dc8b5fb319b301966c2f221754c38df2b10ea4a1bef8eef"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_019.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_019.png",
+      "sha256_before": "d0d8e7c2ed62147b3d75eefc5752b9e8562f4d6b0e9af54d335eb1076bbc8266",
+      "sha256_after": "d0d8e7c2ed62147b3d75eefc5752b9e8562f4d6b0e9af54d335eb1076bbc8266"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_020.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_020.png",
+      "sha256_before": "e3e9850e64b1d1ea5713880bd598163f4e4561e1008a66d73c473a2a2f2a814f",
+      "sha256_after": "e3e9850e64b1d1ea5713880bd598163f4e4561e1008a66d73c473a2a2f2a814f"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_021.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_021.png",
+      "sha256_before": "e4073d69422f0ff6f22731a8834b1ff544b82db1aecbb3a1c5c4b572c998a5cf",
+      "sha256_after": "e4073d69422f0ff6f22731a8834b1ff544b82db1aecbb3a1c5c4b572c998a5cf"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_022.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_022.png",
+      "sha256_before": "92f310ae5f5f1459c8734f11e3bec6d544315f6b1b4e2b1b6d6c940d4b698adb",
+      "sha256_after": "92f310ae5f5f1459c8734f11e3bec6d544315f6b1b4e2b1b6d6c940d4b698adb"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_023.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_023.png",
+      "sha256_before": "2e08d465c28a48bf833d2df6370852564535d8afcfea6ccb38d1ab14941a4111",
+      "sha256_after": "2e08d465c28a48bf833d2df6370852564535d8afcfea6ccb38d1ab14941a4111"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_024.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_024.png",
+      "sha256_before": "18027a696ec008e59e08d96c941aefacaf5adb31248ed41ee6a0ce3d988ffe22",
+      "sha256_after": "18027a696ec008e59e08d96c941aefacaf5adb31248ed41ee6a0ce3d988ffe22"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_025.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_025.png",
+      "sha256_before": "aeae317082fa23f7786322798c9416ad9c13bbfad95e746ca9c60ea3e611632d",
+      "sha256_after": "aeae317082fa23f7786322798c9416ad9c13bbfad95e746ca9c60ea3e611632d"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_026.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_026.png",
+      "sha256_before": "9595d5e1d0e2b2ae331f04b4d42273ed6030c89ffbf0acea40a844dc977fe50a",
+      "sha256_after": "9595d5e1d0e2b2ae331f04b4d42273ed6030c89ffbf0acea40a844dc977fe50a"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/image_027.png",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/image_027.png",
+      "sha256_before": "cf0d07886cd54079320abc15bf2949eff5f929db95352e379377d2c5dc467ed3",
+      "sha256_after": "cf0d07886cd54079320abc15bf2949eff5f929db95352e379377d2c5dc467ed3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/import_report.json",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/import_report.json",
+      "sha256_before": "31af22047996e089fb30572365fe79d26bba12b3554901d78d4b36280d65d75a",
+      "sha256_after": "31af22047996e089fb30572365fe79d26bba12b3554901d78d4b36280d65d75a"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/opsin_arrays.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/opsin_arrays.drawn.svg",
+      "sha256_before": "32b0fb9613350bc9a4e9af07131694662f40b6e94d55d70b5897465747dae767",
+      "sha256_after": "32b0fb9613350bc9a4e9af07131694662f40b6e94d55d70b5897465747dae767"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/opsin_hybrid_vision_outcomes.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/opsin_hybrid_vision_outcomes.drawn.svg",
+      "sha256_before": "04c5b2b2da41fd98a56b894a012c4f7fd9413082296feacd40c45a1dd4faca81",
+      "sha256_after": "04c5b2b2da41fd98a56b894a012c4f7fd9413082296feacd40c45a1dd4faca81"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/opsin_unequal_crossover.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/opsin_unequal_crossover.drawn.svg",
+      "sha256_before": "e7a3b020871c23161abde94a75e312cd0343d21f3d63c19bb9f496ab66b4b17b",
+      "sha256_after": "e7a3b020871c23161abde94a75e312cd0343d21f3d63c19bb9f496ab66b4b17b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/opsin_unequal_recombination.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/opsin_unequal_recombination.drawn.svg",
+      "sha256_before": "64ab8f5491f69dc5eca951ca1feca7abf3240c7752808dbb19031b34e651035a",
+      "sha256_after": "64ab8f5491f69dc5eca951ca1feca7abf3240c7752808dbb19031b34e651035a"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/repeat_flanked_xyz_dosage.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/repeat_flanked_xyz_dosage.drawn.svg",
+      "sha256_before": "6235269a41f7274024d3a5e4e0aa5dc9551e3284b643b0714ece8dc9562f05dd",
+      "sha256_after": "6235269a41f7274024d3a5e4e0aa5dc9551e3284b643b0714ece8dc9562f05dd"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/lect11e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg",
+      "sha256_before": "5ae1152a35752da3f76266635dd5c9e372c066018d0edcb9ed201cb4472a00d3",
+      "sha256_after": "5ae1152a35752da3f76266635dd5c9e372c066018d0edcb9ed201cb4472a00d3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/calico_crosses.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/calico_crosses.drawn.svg",
+      "sha256_before": "7a97949cabc9f01062f027d1621789a7f8fdeb45592bbd10e6fb028de527d2db",
+      "sha256_after": "7a97949cabc9f01062f027d1621789a7f8fdeb45592bbd10e6fb028de527d2db"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/calico_x_lineages.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/calico_x_lineages.drawn.svg",
+      "sha256_before": "b677786fc20f8e5ee8696ec4f0f82abe425c65799775a9eb6c832d2f470f8488",
+      "sha256_after": "b677786fc20f8e5ee8696ec4f0f82abe425c65799775a9eb6c832d2f470f8488"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_18.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_18.drawn.svg",
+      "sha256_before": "c4045137735df318ef3069f45bd8efd2a1f2e6c96811d23e81cbf6e1f6e2f084",
+      "sha256_after": "c4045137735df318ef3069f45bd8efd2a1f2e6c96811d23e81cbf6e1f6e2f084"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_18_36.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_18_36.drawn.svg",
+      "sha256_before": "e4bd3a61730f2e4c480a5016ec69bfb566a98002428d8e5bbfa60e8aa9ab8f11",
+      "sha256_after": "e4bd3a61730f2e4c480a5016ec69bfb566a98002428d8e5bbfa60e8aa9ab8f11"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_36_54.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_36_54.drawn.svg",
+      "sha256_before": "0a068f7ca35761f2514b3822b2aff9a73fb58afbfde2bac1ab3b786ddc8d2388",
+      "sha256_after": "0a068f7ca35761f2514b3822b2aff9a73fb58afbfde2bac1ab3b786ddc8d2388"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_54_72.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_54_72.drawn.svg",
+      "sha256_before": "0126dfb78035966bea86b5b3af7f197a63bac90a50aa45d64c0618e5e04dc101",
+      "sha256_after": "0126dfb78035966bea86b5b3af7f197a63bac90a50aa45d64c0618e5e04dc101"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_72_90.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_72_90.drawn.svg",
+      "sha256_before": "ea8c32fff784715776d176e86a7f838c1354a2b5ee33fe67c1176277b4ffefbb",
+      "sha256_after": "ea8c32fff784715776d176e86a7f838c1354a2b5ee33fe67c1176277b4ffefbb"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/chrysanthemum_monoploid.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_monoploid.drawn.svg",
+      "sha256_before": "f1413420abcec855a96230ffdc3d20aaac418e4171633da6951684c82245d9c2",
+      "sha256_after": "f1413420abcec855a96230ffdc3d20aaac418e4171633da6951684c82245d9c2"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/flies_dosage.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/flies_dosage.drawn.svg",
+      "sha256_before": "aa75e38760e85ff4650d30fa579558e97fa21e1588fd162c9a566c0e92496e64",
+      "sha256_after": "aa75e38760e85ff4650d30fa579558e97fa21e1588fd162c9a566c0e92496e64"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/mammals_dosage.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/mammals_dosage.drawn.svg",
+      "sha256_before": "06e2129c207d4fa88371881d2c7ee0db46a1cb21ef5c0ecb7d8920a45d4a4bde",
+      "sha256_after": "06e2129c207d4fa88371881d2c7ee0db46a1cb21ef5c0ecb7d8920a45d4a4bde"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/original_calico_specimen.jpg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/original_calico_specimen.jpg",
+      "sha256_before": "b8347803b15c7510d0950d9b4a81acc4d742230eb4edda979d833679e353a399",
+      "sha256_after": "b8347803b15c7510d0950d9b4a81acc4d742230eb4edda979d833679e353a399"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/ploidy_sets.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/ploidy_sets.drawn.svg",
+      "sha256_before": "26c4b2377b4ddd12aaf9b79df173bc17472ee13a4068e5e69b894f44f76b2743",
+      "sha256_after": "26c4b2377b4ddd12aaf9b79df173bc17472ee13a4068e5e69b894f44f76b2743"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/polyploid_crop_specimens.png",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/polyploid_crop_specimens.png",
+      "sha256_before": "a29fa954f12fd72dc43b0ff3fe65b3f960d0d8cd00cc967ec11f205b44deb1f3",
+      "sha256_after": "a29fa954f12fd72dc43b0ff3fe65b3f960d0d8cd00cc967ec11f205b44deb1f3"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/pseudoautosomal_crossover.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/pseudoautosomal_crossover.drawn.svg",
+      "sha256_before": "15b43045bd4700928b7f0d4af4a64256d12c143a43fff4d10125b14163db49b2",
+      "sha256_after": "15b43045bd4700928b7f0d4af4a64256d12c143a43fff4d10125b14163db49b2"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/sxl_signals.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/sxl_signals.drawn.svg",
+      "sha256_before": "3d8dd9bae7531943790913da9ac3dbacc359ef914b69ee6e553b59a3e4b098b5",
+      "sha256_after": "3d8dd9bae7531943790913da9ac3dbacc359ef914b69ee6e553b59a3e4b098b5"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/worms_dosage.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/worms_dosage.drawn.svg",
+      "sha256_before": "9e4cb746806d97b33f567ba947d4e33773c9792a4ea4d33f576b4b84a22b09e6",
+      "sha256_after": "9e4cb746806d97b33f567ba947d4e33773c9792a4ea4d33f576b4b84a22b09e6"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/x_activity.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/x_activity.drawn.svg",
+      "sha256_before": "66ad7f2fb6e2179c4930b99a184ae75eb98dd482b077b7433c85b2284ac37ac4",
+      "sha256_after": "66ad7f2fb6e2179c4930b99a184ae75eb98dd482b077b7433c85b2284ac37ac4"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/visual_renewal/x_inactivation_lineages.drawn.svg",
+      "after": "genetics/LECT12/djot/assets/visual_renewal/x_inactivation_lineages.drawn.svg",
+      "sha256_before": "393432e812806934cd6641094a789fa18e4849f5cd2c47b3fe80bd8355d78c1b",
+      "sha256_after": "393432e812806934cd6641094a789fa18e4849f5cd2c47b3fe80bd8355d78c1b"
+    },
+    {
+      "before": "genetics/LECT11/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png",
+      "after": "genetics/LECT12/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png",
+      "sha256_before": "ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186",
+      "sha256_after": "ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+      "after": "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+      "sha256_before": "9e8f5c0b56210edf95c4c5cb5732deaeb1b27cf649c6de695dfbdd17604bc8d7",
+      "sha256_after": "ccaf8bfbaf4a62de9cdbc9b69ca54a1ebb280fc8f4bb8d19d4155cce671cdb69"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11b-polyploidy.djot",
+      "after": "genetics/LECT12/djot/lect12b-polyploidy.djot",
+      "sha256_before": "bb2cf5447367128d8255215266a9a080677d5fb26e7d6f07960310d995695c76",
+      "sha256_after": "01a70b241cbd9253dec7b584b8a8faf23d72807e9edf49690f1f72efbb836181"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11c-sex_dosage.djot",
+      "after": "genetics/LECT12/djot/lect12c-sex_dosage.djot",
+      "sha256_before": "17ab46d1487df38406600fba73cefc8486a750a79281fa88f96b7b2263807237",
+      "sha256_after": "9b2f41768ab40056a3cad68dbf1137cc5e9cdaa5bfbd151164ba02fcb015b7c5"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11c_sex_chromosome_aneuploidy.djot",
+      "after": "genetics/LECT12/djot/lect12c_sex_chromosome_aneuploidy.djot",
+      "sha256_before": "ec41c7f8c81c911bcae7e0433720ee04234eaf6555ac7e73b1e0d2fd58bc720a",
+      "sha256_after": "3f8f5550759c026dc115199701f0e85fa0ffa33e0e97c51bda6661402a8fb84d"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11c_sex_determination.djot",
+      "after": "genetics/LECT12/djot/lect12c_sex_determination.djot",
+      "sha256_before": "10f7eca4a12ea57bc7cc346b72bdcb59fa037b77e3ea64fb0e92d5be12fd38e5",
+      "sha256_after": "0935727ae03c38fe9aa97207a1f9a0bc58fdfb2a06e126735e43839498d5bf3b"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11c_sex_quiz.djot",
+      "after": "genetics/LECT12/djot/lect12c_sex_quiz.djot",
+      "sha256_before": "e06744d6d02f61aa930702bbc43979cd9fe0cb0e4bda2b23a2b82ff18d401212",
+      "sha256_after": "ce62be64d3f77e3ca1a24630303ccb3c5202c02df38a68d34f83549eecb0692f"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11d-chromo_alter_1-deletions.djot",
+      "after": "genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot",
+      "sha256_before": "1078ca17a19ee13c159ce4bdfce87aa3c3cd91db0754a0829df3425de7e37486",
+      "sha256_after": "b0725286f58d2fc9c81fe4b693d1138ddfa42f27c7665c0bbc5d968a2b38bb60"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11d_deletion_extra_problems.djot",
+      "after": "genetics/LECT12/djot/lect12d_deletion_extra_problems.djot",
+      "sha256_before": "04ceb91f5a04a119eece40b4f880f88643b9cb9e7bda45d6fc9faf3e96ce1663",
+      "sha256_after": "128e09befe78dc390202317fc025f0df92aee34301f9b62f178c78495cfafc3a"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11d_deletion_four_genes.djot",
+      "after": "genetics/LECT12/djot/lect12d_deletion_four_genes.djot",
+      "sha256_before": "b32fac41546727cdcde07233a28d3a17defee6b108356003f6770d737ffe4b74",
+      "sha256_after": "b32fac41546727cdcde07233a28d3a17defee6b108356003f6770d737ffe4b74"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11d_deletion_mechanisms.djot",
+      "after": "genetics/LECT12/djot/lect12d_deletion_mechanisms.djot",
+      "sha256_before": "ee4606b5aaa1c4ec1469e8e5d488baae6af8734bac07aaa57fcbf37192711c01",
+      "sha256_after": "6b31b5c0739c05c6811d9407aa8000e52f3bea51f601c8d661a82a00afcf071e"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11d_deletion_six_genes.djot",
+      "after": "genetics/LECT12/djot/lect12d_deletion_six_genes.djot",
+      "sha256_before": "f6c3bc0e203a8d4b07d6f83ee0d4ef537d885896f99113a428b16eb96f4a8a8c",
+      "sha256_after": "f6c3bc0e203a8d4b07d6f83ee0d4ef537d885896f99113a428b16eb96f4a8a8c"
+    },
+    {
+      "before": "genetics/LECT11/djot/lect11e-chromo_alter_2-duplications.djot",
+      "after": "genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot",
+      "sha256_before": "ab439f95f0e8911ca888a4070450440d47c821b51ab1f34398914c81f4647ef2",
+      "sha256_after": "ccb6cda22f951faea5597c55a6a7075517a0f0e7df99c163817afa1017a64625"
+    },
+    {
+      "before": "genetics/LECT11/lect09a-2026_announcements.odp",
+      "after": "genetics/LECT12/lect09a-2026_announcements.odp",
+      "sha256_before": "199d4cc595a4c142cb45e483337604489817c41b5accff74de05a2902dc3638a",
+      "sha256_after": "199d4cc595a4c142cb45e483337604489817c41b5accff74de05a2902dc3638a"
+    },
+    {
+      "before": "genetics/LECT11/lect09a-2026_announcements.pdf",
+      "after": "genetics/LECT12/lect09a-2026_announcements.pdf",
+      "sha256_before": "9add43f4eb50fc7f2a471e5ad893ffab3a7c53c2bc9ebbb0eb335755a0dc875a",
+      "sha256_after": "9add43f4eb50fc7f2a471e5ad893ffab3a7c53c2bc9ebbb0eb335755a0dc875a"
+    },
+    {
+      "before": "genetics/LECT11/lect11a-2025_announcements.odp",
+      "after": "genetics/LECT12/lect12a-2025_announcements.odp",
+      "sha256_before": "d72f8c97dbe2d6c57b38f3ba87fac2152255d1d0c61c4384e6818239b92e856d",
+      "sha256_after": "d72f8c97dbe2d6c57b38f3ba87fac2152255d1d0c61c4384e6818239b92e856d"
+    },
+    {
+      "before": "genetics/LECT11/lect11a-2025_announcements.pdf",
+      "after": "genetics/LECT12/lect12a-2025_announcements.pdf",
+      "sha256_before": "cd8936c70fda5c6cfbeb71a07de2798f51843194277e300de900d7aa07647d7c",
+      "sha256_after": "cd8936c70fda5c6cfbeb71a07de2798f51843194277e300de900d7aa07647d7c"
+    },
+    {
+      "before": "genetics/LECT11/lect11b-polyploidy.odp",
+      "after": "genetics/LECT12/lect12b-polyploidy.odp",
+      "sha256_before": "91e720e3a2fcad1de016026ca0b0ab3dd2fa5fef0ccc4a29a76742cf0bc8d3ad",
+      "sha256_after": "91e720e3a2fcad1de016026ca0b0ab3dd2fa5fef0ccc4a29a76742cf0bc8d3ad"
+    },
+    {
+      "before": "genetics/LECT11/lect11b-polyploidy.pdf",
+      "after": "genetics/LECT12/lect12b-polyploidy.pdf",
+      "sha256_before": "d98166ce88469cea151adf55eacc04da3a5d5fd638fd664df775191829ce1981",
+      "sha256_after": "d98166ce88469cea151adf55eacc04da3a5d5fd638fd664df775191829ce1981"
+    },
+    {
+      "before": "genetics/LECT11/lect11c-sex_dosage.odp",
+      "after": "genetics/LECT12/lect12c-sex_dosage.odp",
+      "sha256_before": "261f0566b1e6edb9474a04eb44e75efcfc68a3cb76c939171e4783a6db6ea223",
+      "sha256_after": "261f0566b1e6edb9474a04eb44e75efcfc68a3cb76c939171e4783a6db6ea223"
+    },
+    {
+      "before": "genetics/LECT11/lect11c-sex_dosage.pdf",
+      "after": "genetics/LECT12/lect12c-sex_dosage.pdf",
+      "sha256_before": "da61a2d6d2af954ed296ea12a399f9c0af67909741e50065bceaf1988c466274",
+      "sha256_after": "da61a2d6d2af954ed296ea12a399f9c0af67909741e50065bceaf1988c466274"
+    },
+    {
+      "before": "genetics/LECT11/lect11d-chromo_alter_1-deletions.odp",
+      "after": "genetics/LECT12/lect12d-chromo_alter_1-deletions.odp",
+      "sha256_before": "42ee3c2c014614505f8209bdace4e1f7dc8955f2bbc46a79d389378a9f1df1ec",
+      "sha256_after": "42ee3c2c014614505f8209bdace4e1f7dc8955f2bbc46a79d389378a9f1df1ec"
+    },
+    {
+      "before": "genetics/LECT11/lect11d-chromo_alter_1-deletions.pdf",
+      "after": "genetics/LECT12/lect12d-chromo_alter_1-deletions.pdf",
+      "sha256_before": "c329ddfe6dcb034aa0b75d8122e4bc54db31cbbe7841acc7bb6d9af6a5517e22",
+      "sha256_after": "c329ddfe6dcb034aa0b75d8122e4bc54db31cbbe7841acc7bb6d9af6a5517e22"
+    },
+    {
+      "before": "genetics/LECT11/lect11d-deletion_guide.odt",
+      "after": "genetics/LECT12/lect12d-deletion_guide.odt",
+      "sha256_before": "a0ad6338345f882deec933ca3908e3ce4123d9ec9b7b006e3765dea60fe4e693",
+      "sha256_after": "a0ad6338345f882deec933ca3908e3ce4123d9ec9b7b006e3765dea60fe4e693"
+    },
+    {
+      "before": "genetics/LECT11/lect11d-deletion_guide.pdf",
+      "after": "genetics/LECT12/lect12d-deletion_guide.pdf",
+      "sha256_before": "e6751a687f606c8c63c878faf8291e3ec4c063123a5d1e6f33fa3efd0162a919",
+      "sha256_after": "e6751a687f606c8c63c878faf8291e3ec4c063123a5d1e6f33fa3efd0162a919"
+    },
+    {
+      "before": "genetics/LECT11/lect11e-chromo_alter_2-duplications.odp",
+      "after": "genetics/LECT12/lect12e-chromo_alter_2-duplications.odp",
+      "sha256_before": "7de92eba48e1c543ac2048f1518bdfefea7c77f4e1184ecc91494dbcf843ce6a",
+      "sha256_after": "7de92eba48e1c543ac2048f1518bdfefea7c77f4e1184ecc91494dbcf843ce6a"
+    },
+    {
+      "before": "genetics/LECT11/lect11e-chromo_alter_2-duplications.pdf",
+      "after": "genetics/LECT12/lect12e-chromo_alter_2-duplications.pdf",
+      "sha256_before": "459aa3748130d4ff696813575268d76c99cd956cd995772eb65804891db7aa88",
+      "sha256_after": "459aa3748130d4ff696813575268d76c99cd956cd995772eb65804891db7aa88"
+    },
+    {
+      "before": "genetics/LECT12/djot/LECT12_REVIEW.md",
+      "after": "genetics/LECT11/djot/LECT11_REVIEW.md",
+      "sha256_before": "a62e8d4f467134595cfc009a55a47d9919018fa267d7df181d5e3bf77e843993",
+      "sha256_after": "f6d0e1bc1ca3558266dca3454c04cc76a5ccece15bb6236ff1250424edab2bb4"
+    },
+    {
+      "before": "genetics/LECT12/djot/LECT12_SOURCE_MAP.md",
+      "after": "genetics/LECT11/djot/LECT11_SOURCE_MAP.md",
+      "sha256_before": "d3c8ca41d91f74fe858eca703f37c4b9bd911a4456c0937574807e920adb59b6",
+      "sha256_after": "78cdc35703b2f0ae63240fb74461952f60bcc1cb35c69bc19b3773e8831677cf"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12a-2025_announcements/import_report.json",
+      "after": "genetics/LECT11/djot/assets/lect11a-2025_announcements/import_report.json",
+      "sha256_before": "895b5f5217d6219eeebabdd052c20953f7de40026f4d9d8270059be504372faa",
+      "sha256_after": "895b5f5217d6219eeebabdd052c20953f7de40026f4d9d8270059be504372faa"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_001.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_001.png",
+      "sha256_before": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694",
+      "sha256_after": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_002.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_002.png",
+      "sha256_before": "2e5c87fedd68b792f4e31f17be5b111b4c7ea72680dbf53806f25e6dcb14541f",
+      "sha256_after": "2e5c87fedd68b792f4e31f17be5b111b4c7ea72680dbf53806f25e6dcb14541f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_003.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_003.png",
+      "sha256_before": "88ade59063fdfd685e4330fa837f1d8d40013131bd612cb9ea5fadc96e4a442d",
+      "sha256_after": "88ade59063fdfd685e4330fa837f1d8d40013131bd612cb9ea5fadc96e4a442d"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_004.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_004.png",
+      "sha256_before": "0ecdf8a1f885bb11f2ea1888086d210c83ac470862e68fbc7b8f197c45d9c0ea",
+      "sha256_after": "0ecdf8a1f885bb11f2ea1888086d210c83ac470862e68fbc7b8f197c45d9c0ea"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_005.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_005.png",
+      "sha256_before": "e446dfe03c332f4ad92495f8a2771ed772e9f059f7527a5f6d078b9ef70cfb76",
+      "sha256_after": "e446dfe03c332f4ad92495f8a2771ed772e9f059f7527a5f6d078b9ef70cfb76"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_006.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_006.png",
+      "sha256_before": "ead4107664e8119dd1b99d429d5c1d1113833080be800c98eafd12893419706c",
+      "sha256_after": "ead4107664e8119dd1b99d429d5c1d1113833080be800c98eafd12893419706c"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_007.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_007.png",
+      "sha256_before": "28e817858077f1bf9f55ea66aa4082114f4e7466c7d04a46e2620d8f1769ff55",
+      "sha256_after": "28e817858077f1bf9f55ea66aa4082114f4e7466c7d04a46e2620d8f1769ff55"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_008.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_008.svg",
+      "sha256_before": "2a959abce58d874113b9c6b89dd70fb9b5fd8d99872348b348631962f3c4afea",
+      "sha256_after": "2a959abce58d874113b9c6b89dd70fb9b5fd8d99872348b348631962f3c4afea"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_009.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_009.svg",
+      "sha256_before": "31fa61944016c518f12e7d0ec87e2cac2dd3a4f2c16b468ed77bc1be39c21b8e",
+      "sha256_after": "31fa61944016c518f12e7d0ec87e2cac2dd3a4f2c16b468ed77bc1be39c21b8e"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_010.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_010.svg",
+      "sha256_before": "fd6f755c3a70b26c51d7b8ebf0623b479d7b7fa043d1bd2626785db279037b3c",
+      "sha256_after": "fd6f755c3a70b26c51d7b8ebf0623b479d7b7fa043d1bd2626785db279037b3c"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_011.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_011.svg",
+      "sha256_before": "69d732495182bf2bf5d1ee44e7b38b3f6dac1a708fd219d6090b52022845b32f",
+      "sha256_after": "69d732495182bf2bf5d1ee44e7b38b3f6dac1a708fd219d6090b52022845b32f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_012.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_012.svg",
+      "sha256_before": "6c607cc985fe53f7bc3b84b7f1cd23dc073c90222a722b771842e97a3a38d0d1",
+      "sha256_after": "6c607cc985fe53f7bc3b84b7f1cd23dc073c90222a722b771842e97a3a38d0d1"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_013.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_013.png",
+      "sha256_before": "9916248d7f867d65b08ee1d13ebb06b5140e68be1201babd3512ece23565c3f7",
+      "sha256_after": "9916248d7f867d65b08ee1d13ebb06b5140e68be1201babd3512ece23565c3f7"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_014.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_014.png",
+      "sha256_before": "35dfde37e1b41e6bc1e9b01a0b22dec7dd2c5ad3f9bcc023fdf46bf0b12aa1d5",
+      "sha256_after": "35dfde37e1b41e6bc1e9b01a0b22dec7dd2c5ad3f9bcc023fdf46bf0b12aa1d5"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_015.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_015.png",
+      "sha256_before": "157bfd216ff08cfbf7ecb9d9b2bd396eadec2806098805cd7a1cc76924a85e7c",
+      "sha256_after": "157bfd216ff08cfbf7ecb9d9b2bd396eadec2806098805cd7a1cc76924a85e7c"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_016.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_016.png",
+      "sha256_before": "09aa429db07fa4c858197d70a66f8846daad45101d392300871e1e36a365a215",
+      "sha256_after": "09aa429db07fa4c858197d70a66f8846daad45101d392300871e1e36a365a215"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_017.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_017.png",
+      "sha256_before": "c24dd77dc0e3962343f244b84e564b82c66d5c04b587e1c636be835d00d5c16f",
+      "sha256_after": "c24dd77dc0e3962343f244b84e564b82c66d5c04b587e1c636be835d00d5c16f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_018.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_018.png",
+      "sha256_before": "42332af7bf15e932da4a7ef64cbf25f6dadb6229d07bc96236117b3520015a7a",
+      "sha256_after": "42332af7bf15e932da4a7ef64cbf25f6dadb6229d07bc96236117b3520015a7a"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_019.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_019.png",
+      "sha256_before": "5fa50d183748b3e20be5bc190de8f4697ca2f7060fbb26ab4a34a9816f456233",
+      "sha256_after": "5fa50d183748b3e20be5bc190de8f4697ca2f7060fbb26ab4a34a9816f456233"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_020.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_020.png",
+      "sha256_before": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9",
+      "sha256_after": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_021.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_021.png",
+      "sha256_before": "a06c19cfb559911540301c9caab9399ef2760e032bc9f01b29e61a7b9993290f",
+      "sha256_after": "a06c19cfb559911540301c9caab9399ef2760e032bc9f01b29e61a7b9993290f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_022.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_022.png",
+      "sha256_before": "3f8dd5a3333b69644a3425935580b174a1afcceb874ce55afdef1f1fc70c75f7",
+      "sha256_after": "3f8dd5a3333b69644a3425935580b174a1afcceb874ce55afdef1f1fc70c75f7"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_023.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_023.png",
+      "sha256_before": "9fb995c47f62c43d9c9657420dde30bd4a4226ca211fcc136c06c115810a10d5",
+      "sha256_after": "9fb995c47f62c43d9c9657420dde30bd4a4226ca211fcc136c06c115810a10d5"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_024.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_024.png",
+      "sha256_before": "66cb23be3b81381e30435c909da601c6262e293f1482b0f43a8ec75c22292a43",
+      "sha256_after": "66cb23be3b81381e30435c909da601c6262e293f1482b0f43a8ec75c22292a43"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_025.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_025.png",
+      "sha256_before": "7875f7ba855cb5c5acb02ff87b53f8c201b8c0dff1e2d27aa9689af673b0d51f",
+      "sha256_after": "7875f7ba855cb5c5acb02ff87b53f8c201b8c0dff1e2d27aa9689af673b0d51f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_026.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_026.png",
+      "sha256_before": "a58c9e8dc73ceed01d22bc97155681c18311a364c6fa84910d432cc89ecda9e2",
+      "sha256_after": "a58c9e8dc73ceed01d22bc97155681c18311a364c6fa84910d432cc89ecda9e2"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_027.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_027.svg",
+      "sha256_before": "58445874068cd77c8ba60f5a17ae44efedb1af6d01fc54b229b5fa13f0e21591",
+      "sha256_after": "58445874068cd77c8ba60f5a17ae44efedb1af6d01fc54b229b5fa13f0e21591"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_028.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_028.svg",
+      "sha256_before": "8f4ccc3e1a3f153552d8de87a3ce55bd74915992accab7dfbef24bef098af80d",
+      "sha256_after": "8f4ccc3e1a3f153552d8de87a3ce55bd74915992accab7dfbef24bef098af80d"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_029.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_029.svg",
+      "sha256_before": "59f22a54dced3baa0b4fb40e99c7c75258120e544da52f6b23a19d73b2f3783b",
+      "sha256_after": "59f22a54dced3baa0b4fb40e99c7c75258120e544da52f6b23a19d73b2f3783b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_030.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_030.svg",
+      "sha256_before": "4c2ce7e65256739ba8bc6527a5dfa28e8cd1ea2efa261187c43078c836b571f5",
+      "sha256_after": "4c2ce7e65256739ba8bc6527a5dfa28e8cd1ea2efa261187c43078c836b571f5"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_031.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_031.svg",
+      "sha256_before": "7f84fa18b130212ab2befc00fca680c189be1a8aff7a1e5d07e1d95f0865f321",
+      "sha256_after": "7f84fa18b130212ab2befc00fca680c189be1a8aff7a1e5d07e1d95f0865f321"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_032.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_032.svg",
+      "sha256_before": "921169b84cc8ade3b4eda30d855b4d91f969cbbec63860d23b6b19a44d52e343",
+      "sha256_after": "921169b84cc8ade3b4eda30d855b4d91f969cbbec63860d23b6b19a44d52e343"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_033.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_033.svg",
+      "sha256_before": "22d9b358a6e0492dee80ebf95c522818344f35b0bcce7938e950524e90899e02",
+      "sha256_after": "22d9b358a6e0492dee80ebf95c522818344f35b0bcce7938e950524e90899e02"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_034.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_034.svg",
+      "sha256_before": "a02535d4f12d9fdfbe5a3f3d992b48f351b2fe89d8d28c775c3116216c29ae33",
+      "sha256_after": "a02535d4f12d9fdfbe5a3f3d992b48f351b2fe89d8d28c775c3116216c29ae33"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_035.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_035.svg",
+      "sha256_before": "544a92fe16c491b4388f3946e7edce23d832e63ce83b4ec790fe0f0f38111043",
+      "sha256_after": "544a92fe16c491b4388f3946e7edce23d832e63ce83b4ec790fe0f0f38111043"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_036.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_036.svg",
+      "sha256_before": "10cc9c99f70ddf5c31b6aa0f42a470c07de4fb49a9e0298e18033af01213e1eb",
+      "sha256_after": "10cc9c99f70ddf5c31b6aa0f42a470c07de4fb49a9e0298e18033af01213e1eb"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_037.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_037.svg",
+      "sha256_before": "fe00a9cea42dc44f225ae23b5c25648cd89d4c7a5d3fd3bab76d4476af75df64",
+      "sha256_after": "fe00a9cea42dc44f225ae23b5c25648cd89d4c7a5d3fd3bab76d4476af75df64"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_038.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_038.svg",
+      "sha256_before": "eb5506cf0ab7c8dab21b9a81841dc27b0c45e8aea3504b2cd06e54c44988162d",
+      "sha256_after": "eb5506cf0ab7c8dab21b9a81841dc27b0c45e8aea3504b2cd06e54c44988162d"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_039.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_039.svg",
+      "sha256_before": "79d4a79927558c353b65e5c65759351ea22201c45acb712132c1a0322d5c00d8",
+      "sha256_after": "79d4a79927558c353b65e5c65759351ea22201c45acb712132c1a0322d5c00d8"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_040.png",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_040.png",
+      "sha256_before": "39af682c0396dd1ef4ec72839143fc576069255838757503045b522b18232bbe",
+      "sha256_after": "39af682c0396dd1ef4ec72839143fc576069255838757503045b522b18232bbe"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_041.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_041.svg",
+      "sha256_before": "a8161dc10e92783da6b551f26d2ec284456a460891370d122bf9926ea6b80598",
+      "sha256_after": "a8161dc10e92783da6b551f26d2ec284456a460891370d122bf9926ea6b80598"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_042.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_042.svg",
+      "sha256_before": "243d4faba2219c6df872262eb4503f3f896f6d27f1c201c8ff38cbde19501cab",
+      "sha256_after": "243d4faba2219c6df872262eb4503f3f896f6d27f1c201c8ff38cbde19501cab"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_043.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_043.svg",
+      "sha256_before": "be4498524fa741054227f2957dc1391c0c76dcacc2a326e415acbb18250bee83",
+      "sha256_after": "be4498524fa741054227f2957dc1391c0c76dcacc2a326e415acbb18250bee83"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_044.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_044.svg",
+      "sha256_before": "01f935c22db1ecfc779e844b68301615f6f6f1075b65bead6be68cac9afa11eb",
+      "sha256_after": "01f935c22db1ecfc779e844b68301615f6f6f1075b65bead6be68cac9afa11eb"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/image_045.svg",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/image_045.svg",
+      "sha256_before": "fb52ef22b2a53eac0a8eab27a6d70110d33c86913866a95b3aa14f8dae379349",
+      "sha256_after": "fb52ef22b2a53eac0a8eab27a6d70110d33c86913866a95b3aa14f8dae379349"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12b-gene_trees/import_report.json",
+      "after": "genetics/LECT11/djot/assets/lect11b-gene_trees/import_report.json",
+      "sha256_before": "8a774d1e2425d7ff2809e3679c6648923aaff5b92da0ace4b768e551c6354c52",
+      "sha256_after": "8a774d1e2425d7ff2809e3679c6648923aaff5b92da0ace4b768e551c6354c52"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_001.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_001.svg",
+      "sha256_before": "f23d291935eef024aa842ef57d6748fd94aae1b44698b0ecfb27de1af5516b55",
+      "sha256_after": "f23d291935eef024aa842ef57d6748fd94aae1b44698b0ecfb27de1af5516b55"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_002.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_002.png",
+      "sha256_before": "3415ed6b10961327cea9d81253f4fe5cffd096ca5edde016dd3ddc8f79a46046",
+      "sha256_after": "3415ed6b10961327cea9d81253f4fe5cffd096ca5edde016dd3ddc8f79a46046"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_003.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_003.svg",
+      "sha256_before": "e8c37aac10cd0f5a53da605ad3ac84c2896563d9f5ffa566d476a17782a6d002",
+      "sha256_after": "e8c37aac10cd0f5a53da605ad3ac84c2896563d9f5ffa566d476a17782a6d002"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_004.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_004.svg",
+      "sha256_before": "72e3cb78f58c2a1fa9c55bf11fd6aed260cfc9ea3ff26e7e6336acf80fb273db",
+      "sha256_after": "72e3cb78f58c2a1fa9c55bf11fd6aed260cfc9ea3ff26e7e6336acf80fb273db"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_005.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_005.svg",
+      "sha256_before": "0f37308390fa171d3f1adeeda72bb5813f11125a87a5b4b2735be8f8fd80cb1e",
+      "sha256_after": "0f37308390fa171d3f1adeeda72bb5813f11125a87a5b4b2735be8f8fd80cb1e"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_006.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_006.svg",
+      "sha256_before": "1698cd3f593909ddd3faf643f2cec2897246faedf67147d3c1b539f4826d2555",
+      "sha256_after": "1698cd3f593909ddd3faf643f2cec2897246faedf67147d3c1b539f4826d2555"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_007.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_007.svg",
+      "sha256_before": "6b965e39425a92dd0f1557291669ab986637aa47d4acac3a2679ffe631f7fbfd",
+      "sha256_after": "6b965e39425a92dd0f1557291669ab986637aa47d4acac3a2679ffe631f7fbfd"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_008.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_008.svg",
+      "sha256_before": "61a03c732d9ade02d17affe3e0067e41fdd67f34c7ff2bc5be90529457e75e65",
+      "sha256_after": "61a03c732d9ade02d17affe3e0067e41fdd67f34c7ff2bc5be90529457e75e65"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_009.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_009.svg",
+      "sha256_before": "bdaa0248483cc9f6b24742765be5ae01ce6965f6269116ab43fcba27b186defd",
+      "sha256_after": "bdaa0248483cc9f6b24742765be5ae01ce6965f6269116ab43fcba27b186defd"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_010.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_010.svg",
+      "sha256_before": "fbd2cda29248f9601f1758865a0b13f3c33175e9cd555522275d6dc731a1a326",
+      "sha256_after": "fbd2cda29248f9601f1758865a0b13f3c33175e9cd555522275d6dc731a1a326"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_011.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_011.svg",
+      "sha256_before": "ba8b31dc9eed21133785ae5dccfbaeee545efb1d3a3a328b926e95934b37d567",
+      "sha256_after": "ba8b31dc9eed21133785ae5dccfbaeee545efb1d3a3a328b926e95934b37d567"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_012.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_012.svg",
+      "sha256_before": "8c7ca62496ecf17f2570d7d2631ac9a8d589f11430e60563f5a923483c765ef0",
+      "sha256_after": "8c7ca62496ecf17f2570d7d2631ac9a8d589f11430e60563f5a923483c765ef0"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_013.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_013.svg",
+      "sha256_before": "d2188bcd32a5c365a37dcff44544e1def2c6fab2bc8259f2073d709096080ff7",
+      "sha256_after": "d2188bcd32a5c365a37dcff44544e1def2c6fab2bc8259f2073d709096080ff7"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_014.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_014.svg",
+      "sha256_before": "c7edb3b6c9a01c8e92ac7f8507e653cf5bd83d36dbb63643ebe3a0ecf174263f",
+      "sha256_after": "c7edb3b6c9a01c8e92ac7f8507e653cf5bd83d36dbb63643ebe3a0ecf174263f"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_015.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_015.svg",
+      "sha256_before": "9568b11c423e8d11a8944fb9aa64afefc8dcb985f5636deb4d195fdcf47e483b",
+      "sha256_after": "9568b11c423e8d11a8944fb9aa64afefc8dcb985f5636deb4d195fdcf47e483b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_016.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_016.svg",
+      "sha256_before": "e5b4faafbe4a4b6a28f530711c46232aeefdc2e14b2f6fb4a82cfc582bbe7de0",
+      "sha256_after": "e5b4faafbe4a4b6a28f530711c46232aeefdc2e14b2f6fb4a82cfc582bbe7de0"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_017.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_017.svg",
+      "sha256_before": "2fae537bb2072e74e112d8a25bbccb593605eb7de8950f502e7ab1dca269c7a8",
+      "sha256_after": "2fae537bb2072e74e112d8a25bbccb593605eb7de8950f502e7ab1dca269c7a8"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_018.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_018.svg",
+      "sha256_before": "6f90b0480e8c9bc52210617ba1bed887b5444ca38fdc6ac68f24c777e2aeb13b",
+      "sha256_after": "6f90b0480e8c9bc52210617ba1bed887b5444ca38fdc6ac68f24c777e2aeb13b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_019.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_019.svg",
+      "sha256_before": "a3d28578ecad5ed373ed506397cdc020a3848064e5b8be7e2f2bd12ed50f7b11",
+      "sha256_after": "a3d28578ecad5ed373ed506397cdc020a3848064e5b8be7e2f2bd12ed50f7b11"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_020.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_020.svg",
+      "sha256_before": "65ad26d8239ac5c9ab327723f7a7b3f7ca87ee62322875517ff6a801bfe6d73b",
+      "sha256_after": "65ad26d8239ac5c9ab327723f7a7b3f7ca87ee62322875517ff6a801bfe6d73b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_021.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_021.png",
+      "sha256_before": "e881001e92fe7875c708e1e37f3661c8e4a1446281f195829ca1daf052551b26",
+      "sha256_after": "e881001e92fe7875c708e1e37f3661c8e4a1446281f195829ca1daf052551b26"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_022.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_022.svg",
+      "sha256_before": "8b142a646e07d0bf564325130c2fd9526735802a0a9fe2b2c57af21e2465d0e3",
+      "sha256_after": "8b142a646e07d0bf564325130c2fd9526735802a0a9fe2b2c57af21e2465d0e3"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_023.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_023.svg",
+      "sha256_before": "413d5aae202234ba19a7f239a0891e2424226943279fc5e6fa98bc19e37049a7",
+      "sha256_after": "413d5aae202234ba19a7f239a0891e2424226943279fc5e6fa98bc19e37049a7"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_024.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_024.svg",
+      "sha256_before": "6f2295a6c969f69351aa2c51d2f65bbb941d8517523fc459c2406ee5211ec36b",
+      "sha256_after": "6f2295a6c969f69351aa2c51d2f65bbb941d8517523fc459c2406ee5211ec36b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_025.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_025.svg",
+      "sha256_before": "7babda9a669466046431ab9a1fe8d24ea6a657aceaa85da9fcfd203f73a595e3",
+      "sha256_after": "7babda9a669466046431ab9a1fe8d24ea6a657aceaa85da9fcfd203f73a595e3"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_026.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_026.svg",
+      "sha256_before": "42efbda1f10e9edff7b6e51caaa46b4b2fcfad2fd94b6b69bc8a9e2f234ac805",
+      "sha256_after": "42efbda1f10e9edff7b6e51caaa46b4b2fcfad2fd94b6b69bc8a9e2f234ac805"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_027.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_027.svg",
+      "sha256_before": "2a2f4c4cb39293543aac94dbc4d983f4e69c48f672d5a7bfadd1bef7c1e69dd2",
+      "sha256_after": "2a2f4c4cb39293543aac94dbc4d983f4e69c48f672d5a7bfadd1bef7c1e69dd2"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_028.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_028.svg",
+      "sha256_before": "ff6a47c039f7e5b5dd4b1858af4345adb462ff41d396cf47808b96fbf93f3b83",
+      "sha256_after": "ff6a47c039f7e5b5dd4b1858af4345adb462ff41d396cf47808b96fbf93f3b83"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_029.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_029.svg",
+      "sha256_before": "f9b69747ed885ead191498ddfed985fd69752ea192dacf11773b3c6b592210fe",
+      "sha256_after": "f9b69747ed885ead191498ddfed985fd69752ea192dacf11773b3c6b592210fe"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_030.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_030.svg",
+      "sha256_before": "2d06e329b23bbfe8fab340579f32364a54357238afa19bfd59f4d7391a98a5cf",
+      "sha256_after": "2d06e329b23bbfe8fab340579f32364a54357238afa19bfd59f4d7391a98a5cf"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_031.jpg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_031.jpg",
+      "sha256_before": "45aa51085745cf90f4eb41811aee2a7c4dbd16df637ea9485c24f30214ab577b",
+      "sha256_after": "45aa51085745cf90f4eb41811aee2a7c4dbd16df637ea9485c24f30214ab577b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_032.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_032.png",
+      "sha256_before": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9",
+      "sha256_after": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_033.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_033.png",
+      "sha256_before": "8a5718ae08a0b0b8fe058d9b439a6ac3520dbe359e7e2d9b11bb511e739aa526",
+      "sha256_after": "8a5718ae08a0b0b8fe058d9b439a6ac3520dbe359e7e2d9b11bb511e739aa526"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_034.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_034.png",
+      "sha256_before": "c00b0fa0b70f53acfbc68751de4bf2ac243844b9b85471465d2848de0c69343c",
+      "sha256_after": "c00b0fa0b70f53acfbc68751de4bf2ac243844b9b85471465d2848de0c69343c"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_035.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_035.svg",
+      "sha256_before": "2d4d0841fab76493e423b478999ecba2146fe4f0fe6a1271041d097cc83daad0",
+      "sha256_after": "2d4d0841fab76493e423b478999ecba2146fe4f0fe6a1271041d097cc83daad0"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_036.svg",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_036.svg",
+      "sha256_before": "6a1aa248dbe531afc451dbb1bcdec60d80be6180e4f975e1dfac64656ad8a9b5",
+      "sha256_after": "6a1aa248dbe531afc451dbb1bcdec60d80be6180e4f975e1dfac64656ad8a9b5"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/image_037.png",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/image_037.png",
+      "sha256_before": "354b9b3745897ac6d77ff0fbacb39225962637163d0e8f73584833b95e9bc036",
+      "sha256_after": "354b9b3745897ac6d77ff0fbacb39225962637163d0e8f73584833b95e9bc036"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12c-more_gene_trees/import_report.json",
+      "after": "genetics/LECT11/djot/assets/lect11c-more_gene_trees/import_report.json",
+      "sha256_before": "721222d233c9e8cac64ecbc6635c54f6fbb4e30096eb6863c1415b240894138b",
+      "sha256_after": "721222d233c9e8cac64ecbc6635c54f6fbb4e30096eb6863c1415b240894138b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_001.png",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_001.png",
+      "sha256_before": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694",
+      "sha256_after": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_002.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_002.svg",
+      "sha256_before": "4ce4df366b62f15991813f74ca52150900f69a5a1a8a3b66de18131d30cefbea",
+      "sha256_after": "4ce4df366b62f15991813f74ca52150900f69a5a1a8a3b66de18131d30cefbea"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_003.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_003.svg",
+      "sha256_before": "0b8e4a7f1e33ca0572b0586ea2b01a5969d001aa9e61022781a4748434d733f4",
+      "sha256_after": "0b8e4a7f1e33ca0572b0586ea2b01a5969d001aa9e61022781a4748434d733f4"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_004.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_004.svg",
+      "sha256_before": "8e993aa9fe14a5ba4e7c9c5638cb69ad94237280e28d7b0443008858e57f6109",
+      "sha256_after": "8e993aa9fe14a5ba4e7c9c5638cb69ad94237280e28d7b0443008858e57f6109"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_005.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_005.svg",
+      "sha256_before": "cc45afa16ff8140f839ed2ed4db27b65491599e123d0bb1141620d01b273017e",
+      "sha256_after": "cc45afa16ff8140f839ed2ed4db27b65491599e123d0bb1141620d01b273017e"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_006.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_006.svg",
+      "sha256_before": "96583e4edeade378cc8d646af4b7de7253e4e3cbd87a6bce86013455420c5c87",
+      "sha256_after": "96583e4edeade378cc8d646af4b7de7253e4e3cbd87a6bce86013455420c5c87"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/image_007.svg",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/image_007.svg",
+      "sha256_before": "1b3a304afa1adcf42d73048217bd9ff975679b94d47e8898018f3086fb90cdd2",
+      "sha256_after": "1b3a304afa1adcf42d73048217bd9ff975679b94d47e8898018f3086fb90cdd2"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12d-gene_tree_activity/import_report.json",
+      "after": "genetics/LECT11/djot/assets/lect11d-gene_tree_activity/import_report.json",
+      "sha256_before": "b55bbacbe83aa8c358979285df945dfce16b5012598d3f492beb39991961a0ea",
+      "sha256_after": "b55bbacbe83aa8c358979285df945dfce16b5012598d3f492beb39991961a0ea"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_001.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_001.png",
+      "sha256_before": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694",
+      "sha256_after": "92c41bdb187a48f30531296d091a53a69d12810d03138da248401234d5770694"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_002.jpg",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_002.jpg",
+      "sha256_before": "45aa51085745cf90f4eb41811aee2a7c4dbd16df637ea9485c24f30214ab577b",
+      "sha256_after": "45aa51085745cf90f4eb41811aee2a7c4dbd16df637ea9485c24f30214ab577b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_003.jpg",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_003.jpg",
+      "sha256_before": "c29d8fcf4e9f4615e197e693a8a970b3911f17a4c70047dff3f06ee22b0dd843",
+      "sha256_after": "c29d8fcf4e9f4615e197e693a8a970b3911f17a4c70047dff3f06ee22b0dd843"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_004.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_004.png",
+      "sha256_before": "853bf5f58aa8f68c729144a0ddc4d053908afbeb53a8e1106198cffb39c575b7",
+      "sha256_after": "853bf5f58aa8f68c729144a0ddc4d053908afbeb53a8e1106198cffb39c575b7"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_005.svg",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_005.svg",
+      "sha256_before": "c7e327bab578c14970f04b5bc47019a795a3c27efe7f7389e43c94089f53c7ca",
+      "sha256_after": "c7e327bab578c14970f04b5bc47019a795a3c27efe7f7389e43c94089f53c7ca"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_006.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_006.png",
+      "sha256_before": "0fcd192d44eb53b368cd92d8090b30f470168ca0f3d115a942856621c79f714b",
+      "sha256_after": "0fcd192d44eb53b368cd92d8090b30f470168ca0f3d115a942856621c79f714b"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_007.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_007.png",
+      "sha256_before": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9",
+      "sha256_after": "db6813312b8a5b114a8f6faef111e9ba77f1a80959ca84c5c02e77cf3a5503f9"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_008.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_008.png",
+      "sha256_before": "d12e04374d6786058f159007362ea509ba927f27e70f5bed47e200b9614c2659",
+      "sha256_after": "d12e04374d6786058f159007362ea509ba927f27e70f5bed47e200b9614c2659"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_009.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_009.png",
+      "sha256_before": "f0818470b87d422d36898770ba8f54f3c4faeea0b99f0a36d67813467577e421",
+      "sha256_after": "f0818470b87d422d36898770ba8f54f3c4faeea0b99f0a36d67813467577e421"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_010.png",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_010.png",
+      "sha256_before": "2955b72d097dc1936be6055bbe3402e8601e44deab930d2833fe58e83071b071",
+      "sha256_after": "2955b72d097dc1936be6055bbe3402e8601e44deab930d2833fe58e83071b071"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/image_011.jpg",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/image_011.jpg",
+      "sha256_before": "60de47b5f22729336aaad4f7654b4213fdca5e16af79f0b168e662285f5fc41e",
+      "sha256_after": "60de47b5f22729336aaad4f7654b4213fdca5e16af79f0b168e662285f5fc41e"
+    },
+    {
+      "before": "genetics/LECT12/djot/assets/lect12e-evol_time/import_report.json",
+      "after": "genetics/LECT11/djot/assets/lect11e-evol_time/import_report.json",
+      "sha256_before": "c9195f4736c8ee2b84b976a9224150c5889858fa31198e190487d62eb947c922",
+      "sha256_after": "c9195f4736c8ee2b84b976a9224150c5889858fa31198e190487d62eb947c922"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+      "after": "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+      "sha256_before": "f39fbb008eef80f9450b1f62f464f6c61291159fbd57f3ea409029581e065f4a",
+      "sha256_after": "ff6e8021e86a41388bc44eef23d0bcb81d63da62992621668a87e3d455ea7a8c"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12b-gene_trees.djot",
+      "after": "genetics/LECT11/djot/lect11b-gene_trees.djot",
+      "sha256_before": "5bc905ee35dd784674c6a3458d55e9bb9ccb77e6c424a1c8573456c5a8b197e8",
+      "sha256_after": "01d0f94880907b73c6406113494d572664c3851d6c5e3adbd5aeb98aa9db08f6"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12b_gene_trees_part_01.djot",
+      "after": "genetics/LECT11/djot/lect11b_gene_trees_part_01.djot",
+      "sha256_before": "1ca74a5fff6433aa440ffdc49fb5ae996136bdc34ac549d01511e7f8a92eb5c0",
+      "sha256_after": "4ceaf00c6dbb274f1b7d6d5fde8ef2b3f6b427d9bacbfa70408171492049e4d6"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12b_gene_trees_part_02.djot",
+      "after": "genetics/LECT11/djot/lect11b_gene_trees_part_02.djot",
+      "sha256_before": "6828b0881606128e86826d16b1f53b5d056ee70dfa2f8580d03185562dbecf71",
+      "sha256_after": "c4de9532771ef360cd0680e3272717f282ee08b49137d4fc03a8dedec9c8d428"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12c-more_gene_trees.djot",
+      "after": "genetics/LECT11/djot/lect11c-more_gene_trees.djot",
+      "sha256_before": "5c6af3574d22cebf3d2266b3810e641d41fe69b6b9760fc268d8e485333d094e",
+      "sha256_after": "161e6293fc0ce9617e785bfbad3b22b4bfb6d653bf229b1eca834c55ca541afd"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12c_more_gene_trees_part_01.djot",
+      "after": "genetics/LECT11/djot/lect11c_more_gene_trees_part_01.djot",
+      "sha256_before": "30548987db2667b63e383a8c387787c071d84b0b5ead54a82c3eb024daad12c5",
+      "sha256_after": "2eab97e230e35cc68903719411a125a7c8654bcda28fe7a16a4deca820398a62"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12c_more_gene_trees_part_02.djot",
+      "after": "genetics/LECT11/djot/lect11c_more_gene_trees_part_02.djot",
+      "sha256_before": "b848944d6986167e634e2a5d013b037795d2ff827eef59ca0267bb489abf8290",
+      "sha256_after": "df6b06ba56b9de2da5458b52491c66ec5c91893d3eca7bd78fdc49d3fe796215"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12d-gene_tree_activity.djot",
+      "after": "genetics/LECT11/djot/lect11d-gene_tree_activity.djot",
+      "sha256_before": "a9ba4b815b350d4429da8b41d24c295bb81940563d80f41ccb6781fe369563a0",
+      "sha256_after": "029da26aed31d98d7bce67b2ff58d99bf8657769b71067eb28979f3d54749e7c"
+    },
+    {
+      "before": "genetics/LECT12/djot/lect12e-evol_time.djot",
+      "after": "genetics/LECT11/djot/lect11e-evol_time.djot",
+      "sha256_before": "83436dbaad0d98a8e81faecf65a043e8c62870e79ee190102b4f2b58857efe29",
+      "sha256_after": "a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e"
+    },
+    {
+      "before": "genetics/LECT12/lect12a-2025_announcements.odp",
+      "after": "genetics/LECT11/lect11a-2025_announcements.odp",
+      "sha256_before": "fbffc491715ad15de9d9d55bde36e7ea8c59d68a392e58e682da8799e85032a3",
+      "sha256_after": "fbffc491715ad15de9d9d55bde36e7ea8c59d68a392e58e682da8799e85032a3"
+    },
+    {
+      "before": "genetics/LECT12/lect12a-2025_announcements.pdf",
+      "after": "genetics/LECT11/lect11a-2025_announcements.pdf",
+      "sha256_before": "f1f4cc6f263a4fe5b434632e01bf391c5c9a63d09751f6066ba78859eccdb958",
+      "sha256_after": "f1f4cc6f263a4fe5b434632e01bf391c5c9a63d09751f6066ba78859eccdb958"
+    },
+    {
+      "before": "genetics/LECT12/lect12b-gene_trees.odp",
+      "after": "genetics/LECT11/lect11b-gene_trees.odp",
+      "sha256_before": "e9c047cae5185f94e140f90236fcb6d66334103a2dfd2faf47ba84d7cb799c27",
+      "sha256_after": "e9c047cae5185f94e140f90236fcb6d66334103a2dfd2faf47ba84d7cb799c27"
+    },
+    {
+      "before": "genetics/LECT12/lect12b-gene_trees.pdf",
+      "after": "genetics/LECT11/lect11b-gene_trees.pdf",
+      "sha256_before": "f75fb7d7fdb3fd7186dcdbff83fbb053ac660433bb1046f0b50c2343858e0c47",
+      "sha256_after": "f75fb7d7fdb3fd7186dcdbff83fbb053ac660433bb1046f0b50c2343858e0c47"
+    },
+    {
+      "before": "genetics/LECT12/lect12c-more_gene_trees.odp",
+      "after": "genetics/LECT11/lect11c-more_gene_trees.odp",
+      "sha256_before": "fd2f1b4af1af5ed09dc9bdb7c329fe24a71d56be900a18b47fd33e303fef5026",
+      "sha256_after": "fd2f1b4af1af5ed09dc9bdb7c329fe24a71d56be900a18b47fd33e303fef5026"
+    },
+    {
+      "before": "genetics/LECT12/lect12c-more_gene_trees.pdf",
+      "after": "genetics/LECT11/lect11c-more_gene_trees.pdf",
+      "sha256_before": "d6fdaaf043bf11b438a600ed17076597794ae1893376c4bf44977fa089a201b9",
+      "sha256_after": "d6fdaaf043bf11b438a600ed17076597794ae1893376c4bf44977fa089a201b9"
+    },
+    {
+      "before": "genetics/LECT12/lect12d-gene_tree_activity.odp",
+      "after": "genetics/LECT11/lect11d-gene_tree_activity.odp",
+      "sha256_before": "ec0059f73dafb3c5ee560869857eff7f123947dcb7ebdb488a709b30417631eb",
+      "sha256_after": "ec0059f73dafb3c5ee560869857eff7f123947dcb7ebdb488a709b30417631eb"
+    },
+    {
+      "before": "genetics/LECT12/lect12d-gene_tree_activity.pdf",
+      "after": "genetics/LECT11/lect11d-gene_tree_activity.pdf",
+      "sha256_before": "ee4bed3a1d4b549ac7cc2c82d895369dd972731c24e196557ebe7ee675cbcf6d",
+      "sha256_after": "ee4bed3a1d4b549ac7cc2c82d895369dd972731c24e196557ebe7ee675cbcf6d"
+    },
+    {
+      "before": "genetics/LECT12/lect12e-evol_time.odp",
+      "after": "genetics/LECT11/lect11e-evol_time.odp",
+      "sha256_before": "12bdc763d70412d759f00b8dfe737db013778d447f196b286db813aa85e48626",
+      "sha256_after": "12bdc763d70412d759f00b8dfe737db013778d447f196b286db813aa85e48626"
+    },
+    {
+      "before": "genetics/LECT12/lect12e-evol_time.pdf",
+      "after": "genetics/LECT11/lect11e-evol_time.pdf",
+      "sha256_before": "90642b89a8f3bb606c2206d7ac52f96ff129588454448076eb874c7ce61f57e6",
+      "sha256_after": "90642b89a8f3bb606c2206d7ac52f96ff129588454448076eb874c7ce61f57e6"
+    }
+  ]
+}

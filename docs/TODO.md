@@ -2,30 +2,14 @@
 
 Extended-Djot is the repository's sole authored deck source. [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md)
 defines its current authoring contract; [PIPELINE.md](PIPELINE.md) records the source-to-native
-boundary.
+boundary. Completed work is recorded in
+[archive/DONE_TODO.md](archive/DONE_TODO.md).
 
-- [ ] add a today is "national ice cream day" slide before the ice breaker, we will need a possible day for all 366
-calendar days to pull from ideally with an image like I have used for Nov 11 singles day.
-- [ ] clear out completed todo items to another file, this TODO file is hard to parse
+- [ ] Add a "Today is National Ice Cream Day" slide before the icebreaker. Cover all 366
+  calendar days, ideally with an image like the November 11 Singles Day slide.
 
-## Completed implementation boundary
+## Playback verification
 
-- [x] Publish one normative syntax reference for the supported Djot presentation surface.
-- [x] Route canonical `.djot` source through the native export pipeline.
-- [x] Generate and one-time accept the eight-deck Djot corpus on short layout names, including
-  strict validation, bounded-region review, asset integrity, and independent private regeneration.
-- [x] Run the native-layout Djot E2E through editable ODP and LibreOffice-derived PDF.
-
-## Verification and evidence
-
-- [x] Complete one-time native acceptance, then remove its disposable runners after proof: strict
-  lint, `build_slides.sh genetics`, two explicit native E2Es, and eight sequential matching
-  ODP/PDF exports with editable text/direct images and the Lecture 02e native table.
-- [x] Build the bounded ODF/SMIL reveal model; the dated
-  [wp_a1_animation_fidelity.md](archive/wp_a1_animation_fidelity.md) records the
-  earlier OOXML design context.
-- [x] Record native ODP package semantics, headless LibreOffice open/save preservation, and
-  ODP-derived PDF final-state evidence.
 - [ ] Attend and record Impress playback for object and top-level-list reveals.
 
 ## Compatibility and future language work
@@ -35,8 +19,6 @@ calendar days to pull from ideally with an image like I have used for Nov 11 sin
 - [ ] Independently check the Lecture 03C claims identified in
   [lect03c_topic_source_check.md](active_plans/reports/lect03c_topic_source_check.md).
 - [ ] Complete the remaining formatter and editor-rule lanes of the strict-Djot compatibility suite.
-- [x] Document authoring through [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md),
-  [USAGE.md](USAGE.md), and [COOKBOOK.md](COOKBOOK.md).
 - [ ] Add native editable mappings for currently source-located unsupported content only when a
   teaching need and an acceptance path are defined.
 
@@ -51,8 +33,8 @@ calendar days to pull from ideally with an image like I have used for Nov 11 sin
 - [ ] Extend the existing Biology Problems Question tree library with the smallest self-contained,
   editable SVG output needed by Djot decks. This is deferred from
   [genetics_visual_renewal_plan.md](active_plans/active/genetics_visual_renewal_plan.md);
-  all current gene-tree/phylogeny content, including cross-lecture great-ape examples, is excluded
-  from that illustration delivery. Family pedigrees are not part of this deferral.
+  the separate cross-lecture great-ape examples remain excluded from that illustration delivery.
+  The Lecture 11 refresh supplies its own fixed teaching examples; it does not implement this API. Family pedigrees are not part of this deferral.
 - Reuse tree models, rotations, taxa labels and topology from
   `~/nsh/PROBLEMS/biology-problems/problems/inheritance-problems/phylogenetic_trees/`.
   Existing question generators are `gene_tree_choice_plus.py` and `gene_tree_matches_plus.py`;
@@ -67,15 +49,3 @@ calendar days to pull from ideally with an image like I have used for Nov 11 sin
 - Suggested implementation owner: the Biology Problems repository, whose existing backlog is
   `~/nsh/PROBLEMS/biology-problems/docs/TODO.md`; Djot integration proof belongs here. That external
   backlog has not been edited by this task.
-
-## Stable exclusions
-
-- [x] Keep Biotechnology source folders inside their lecture folders and delete obsolete duplicates.
-- [x] Keep copyrighted assets local and ignored while validating their real paths with Djot lint.
-- [x] Split large import and measurement modules into cohesive responsibilities.
-- [x] Keep one canonical Djot source for each maintained deck.
-- [x] Keep slide geometry in the layout registry rather than infer it from source order or images.
-- [x] Keep source-only lint separate from native E2E and attended visual checks.
-- [x] Use explicit layout directives and native Djot blocks for normal slide structure.
-- [x] Keep permanent pytest fast, deterministic, offline, and behavior-focused; record corpus,
-  rendering, and attended Office checks as one-time acceptance evidence.

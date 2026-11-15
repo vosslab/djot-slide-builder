@@ -1,322 +1,314 @@
 # Lecture 11 source map
 
-Conversion reviewed November 9, 2026. Source numbers refer to the original ODP order,
-including hidden slides. Djot numbers refer to the expanded master deck, including hidden
-slides and additions. PDF numbers omit hidden slides. No source content slide was split.
+## Current deck map
 
-## Announcements
-
-The canonical deck is `lect11a-2026_announcements.djot`. Announcements combine annual sources;
-a one-to-one slide map is inapplicable to this weekly update. The current-year Lecture 10
-Djot supplies the latest shared formatting and course details, superseding the supplied
-Lecture 09 starter. The prior-year Lecture 11 supplies the Group Quiz 4 cue and topic agenda.
-
-| Input | Use in the current deck |
+| Master | Current content |
 | --- | --- |
-| Supplied lect09a-2026_announcements.odp, 1-52 | Current-year starter; current Lecture 10 Djot supersedes it. |
-| Prior-year lect11a-2025_announcements.odp, 1 | Current title/date; November 11 holiday graphics omitted. |
-| Prior-year 2-3 | Hidden Group Quiz 4 at A2; detailed B-E agenda at A3 (PDF 2). |
-| Prior-year 4-5 | Hidden icebreaker alternatives; catalog modify-an-animal selected at A6. |
-| Prior-year 6-25 | Current shared informational and course-content groups, A7-24. |
-| Prior-year 26-30 | Current hidden exam group, A25-30; historical final-homework deadline omitted. |
-| Prior-year 31-34 | Current shared quiz group, A31-34, retained as preparation for Quiz 4 on December 1. |
-| Prior-year 35 | Historical exam-corrections deadline not carried into 2026 without a current source. |
-| Prior-year 36-44 | Current schedule/homework, A22 and A35-39; first-week groups hidden. |
-| Prior-year 45-48 | General announcements and current 2027 course information, A40-47. |
-| Prior-year 49-61 | Hidden historical seasonal/reference material; current evaluation/club groups retained hidden, A48-54. |
-| Prior-year 62 | THE END at A55. |
+| [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | November 17 agenda, deadlines, selected film and upcoming dates |
+| [lect11b-gene_trees.djot](lect11b-gene_trees.djot) | Reading trees, rotation, distances, four-gene example and methods |
+| [lect11c-more_gene_trees.djot](lect11c-more_gene_trees.djot) | Guided five-gene UPGMA and weighted cluster updates |
+| [lect11d-gene_tree_activity.djot](lect11d-gene_tree_activity.djot) | Existing six-gene worksheet and complete answer walkthrough |
+| [lect11e-evol_time.djot](lect11e-evol_time.djot) | Preserved Evolutionary Time content and inherited limitations |
 
-A4 adds the November 24 no-class lookahead. A5 is a hidden November 9 weather snapshot.
-A8-9 use the shared YouTube slide and verified regular StVC episode 37. A has 55 authored
-slides, 18 hidden slides, and 37 PDF pages. The November 10 agenda update corrects Quiz 4 to
-December 1 and hides its premature opening card. See the review for the schedule/topic mismatch.
+Current A/B/C/D/E PDF page counts are 34/36/34/32/19; A has 56 authored ODP slides,
+including hidden slides. B-D include generated four-, five-, and six-gene step fragments, respectively. The rows below
+are historical conversion evidence, not a slide-by-slide map of the replacement B-D decks or
+current announcements. See [LECT11_REVIEW.md](LECT11_REVIEW.md) for current status.
 
-## lect11b-polyploidy
+## Historical conversion map
 
-Original: `lect11b-polyploidy.odp`; import report: `assets/lect11b-polyploidy/import_report.json`.
+Historical source map: this bundle became LECT11 on November 14, 2026. Original names
+and slide numbers below describe the source conversion.
 
-Added slides: 2, 3, 48.
+Reviewed November 9, 2026. Original numbers include hidden slides. Djot numbers refer to
+the expanded master including additions and hidden slides. PDF pages omit hidden slides.
+All content slides remain one-to-one and in their original order; none was split.
 
-| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 1 | 1 | no | no | Lecture 11B / Polyploidy in Plants / Chapter 9 / Dr. Neil Voss / November 17, 2026 |
-| 2 | - | 4 | - | yes | no | 2019 - These slides are a hot mess!!! move to lecture 9 |
-| 3 | 2 | 5 | 4 | no | no | (untitled) |
-| 4 | 3 | 6 | 5 | no | no | (untitled) |
-| 5 | 4 | 7 | 6 | no | no | (untitled) |
-| 6 | 5 | 8 | 7 | no | no | (untitled) |
-| 7 | 6 | 9 | 8 | no | no | (untitled) |
-| 8 | 7 | 10 | 9 | no | yes | Polyploidy |
-| 9 | 8 | 11 | 10 | no | no | Polyploidy |
-| 10 | 9 | 12 | 11 | no | no | Polyploid |
-| 11 | 10 | 13 | 12 | no | no | Monoploid vs. Haploid |
-| 12 | 11 | 14 | 13 | no | yes | (untitled) |
-| 13 | 12 | 15 | 14 | no | no | (untitled) |
-| 14 | 13 | 16 | 15 | no | no | (untitled) |
-| 15 | 14 | 17 | 16 | no | no | Important Crops are Polyploids |
-| 16 | 15 | 18 | 17 | no | no | (untitled) |
-| 17 | 16 | 19 | 18 | no | no | Why do humans make polyploid plants? Humans have been doing so since ancient times. |
-| 18 | 17 | 20 | 19 | no | no | Polyploids are bigger!!! |
-| 19 | 18 | 21 | 20 | no | no | Which of the following food products are likely GMO? |
-| 20 | 19 | 22 | 21 | no | no | Which of the following food products are likely GMO? |
-| 21 | 20 | 23 | 22 | no | no | How do we get seedless plants? like watermelon or bananas? |
-| 22 | 21 | 24 | 23 | no | no | (untitled) |
-| 23 | 22 | 25 | 24 | no | yes | (untitled) |
-| 24 | 23 | 26 | 25 | no | no | Sexual vs. Asexual Polyploidization |
-| 25 | 24 | 27 | 26 | no | no | (untitled) |
-| 26 | 25 | 28 | 27 | no | no | (untitled) |
-| 27 | 26 | 29 | 28 | no | yes | (untitled) |
-| 28 | 27 | 30 | 29 | no | no | Autoploidy and Alloploidy |
-| 29 | 28 | 31 | 30 | no | no | Types of Polyploids |
-| 30 | 29 | 32 | 31 | no | yes | (untitled) |
-| 31 | 30 | 33 | 32 | no | yes | Hybridization Between Species |
-| 32 | 31 | 34 | 33 | no | yes | Hybridization Between Species |
-| 33 | 32 | 35 | 34 | no | yes | (untitled) |
-| 34 | 33 | 36 | 35 | no | yes | (untitled) |
-| 35 | 34 | 37 | 36 | no | no | (untitled) |
-| 36 | 35 | 38 | 37 | no | yes | (untitled) |
-| 37 | 36 | 39 | 38 | no | yes | (untitled) |
-| 38 | 37 | 40 | 39 | no | yes | (untitled) |
-| 39 | 38 | 41 | 40 | no | no | Monoploid systems |
-| 40 | 39 | 42 | 41 | no | no | Polyploidy in Animals |
-| 41 | 40 | 43 | 42 | no | no | Polyploidy is Not Tolerated in Animals |
-| 42 | 41 | 44 | 43 | no | no | (untitled) |
-| 43 | 42 | 45 | 44 | no | yes | AquAdvantage Salmon |
-| 44 | 43 | 46 | 45 | no | no | (untitled) |
-| 45 | 44 | 47 | 46 | no | no | (untitled) |
-| 46 | 45 | 49 | 48 | no | no | THE END |
+See [LECT11_REVIEW.md](LECT11_REVIEW.md) for source roles, repairs, and limitations.
 
-## lect11c-sex_dosage
+## lect12a-2026_announcements
 
-Original: `lect11c-sex_dosage.odp`; import report: `assets/lect11c-sex_dosage/import_report.json`.
+Weekly announcement update: current-year Lecture 11A supplies shared course material;
+prior-year lect12A supplies useful week-specific cues. One-to-one annual mapping is inapplicable.
+The review records changed visibility and dated replacements. Complete current inventory:
 
-Added slides: 2, 66.
+| Djot | PDF | Hidden | Title or layout |
+| --- | --- | --- | --- |
+| 1 | 1 | no | Lecture 12A / Announcements / Dr. Neil Voss / December 1, 2026 |
+| 2 | 2 | no | Today's Agenda |
+| 3 | 3 | no | Next Week: Dec 08, 2026 |
+| 4 | - | yes | big-image |
+| 5 | 4 | no | Breakout Room Chat |
+| 6 | 5 | no | Informational Slides |
+| 7 | 6 | no | big-image |
+| 8 | 7 | no | big-image |
+| 9 | 8 | no | Discord Server |
+| 10 | 9 | no | Office Hours |
+| 11 | 10 | no | Ways to Contact Dr. Voss |
+| 12 | 11 | no | Message the Instructor Anonymously |
+| 13 | 12 | no | Course Content |
+| 14 | 13 | no | New, Free OER Textbook |
+| 15 | 14 | no | Syllabus Links |
+| 16 | 15 | no | PREVIEW Slides |
+| 17 | 16 | no | Grading and Assessment |
+| 18 | 17 | no | Assignments, Quizzes, and Exams |
+| 19 | 18 | no | Graded vs Total Percentage |
+| 20 | 19 | no | Exam/Quiz |
+| 21 | 20 | no | Exam and Quiz Schedule |
+| 22 | 21 | no | Don't Panic |
+| 23 | 22 | no | Illness Policy |
+| 24 | - | yes | Exam |
+| 25 | - | yes | Midterm reference: October 13 |
+| 26 | - | yes | In-Person Exam Rules |
+| 27 | - | yes | What to Bring to the Exam |
+| 28 | - | yes | Reviewing Old Quiz Questions |
+| 29 | - | yes | BB Assignments for Mid-Term Exam |
+| 30 | 23 | no | Quiz |
+| 31 | 24 | no | Quiz System Information |
+| 32 | 25 | no | Missing Group Quizzes |
+| 33 | 26 | no | Low Quiz Grades |
+| 34 | 27 | no | Weekly Assignments |
+| 35 | - | yes | Student Profile |
+| 36 | - | yes | Discord Server |
+| 37 | - | yes | Homework Due Dates (Part 1) |
+| 38 | 28 | no | Homework Due Dates (Part 2) |
+| 39 | 29 | no | General Announcements |
+| 40 | 30 | no | Spring Registration |
+| 41 | 31 | no | Spring 2027 Registration |
+| 42 | 32 | no | Dr. Voss Upcoming Courses |
+| 43 | 33 | no | Biochemistry Lecture |
+| 44 | 34 | no | Biochemistry Lab |
+| 45 | 35 | no | Cellular and Molecular Biology |
+| 46 | 36 | no | Biology and Ethics in Film |
+| 47 | - | yes | Course Evaluations |
+| 48 | - | yes | Course Evaluations |
+| 49 | - | yes | Course Evaluations |
+| 50 | - | yes | Final Exam Extra Time |
+| 51 | - | yes | Final Exam Extra Time |
+| 52 | - | yes | Schaumburg Natural Science Club |
+| 53 | - | yes | Schaumburg Natural Science Club |
+| 54 | 37 | no | THE END |
 
-| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 1 | 1 | no | no | Lecture 11C / Sex Dosage / Chapter 9 / Dr. Neil Voss / November 17, 2026 |
-| 2 | 2 | 3 | 3 | no | no | Review of Sex Determination in Drosophila |
-| 3 | 3 | 4 | 4 | no | no | Drosophila Sex determination |
-| 4 | 4 | 5 | 5 | no | yes | Drosophila Sex determination |
-| 5 | 5 | 6 | 6 | no | yes | Genetic control of sex determination in Drosophila |
-| 6 | 6 | 7 | 7 | no | yes | Sex determination |
-| 7 | 7 | 8 | 8 | no | no | Dosage Compensation |
-| 8 | 8 | 9 | 9 | no | no | Dosage Compensation |
-| 9 | 9 | 10 | 10 | no | no | C. elegans = nematode worms |
-| 10 | 10 | 11 | 11 | no | no | Drosophila = fruit fly |
-| 11 | 11 | 12 | 12 | no | no | X Inactivation in Mammals |
-| 12 | 12 | 13 | 13 | no | no | X inactivation |
-| 13 | 13 | 14 | 14 | no | no | (untitled) |
-| 14 | 14 | 15 | 15 | no | no | X-inactivation |
-| 15 | 15 | 16 | 16 | no | no | Mosaicism |
-| 16 | 16 | 17 | 17 | no | no | Calico Cat |
-| 17 | 17 | 18 | 18 | no | yes | (untitled) |
-| 18 | 18 | 19 | 19 | no | no | Calico Cat |
-| 19 | 19 | 20 | 20 | no | no | Summary of Dosage Compensation |
-| 20 | 20 | 21 | 21 | no | no | Sex-Determining Region on the Y chromosome (SRY) for Mammals |
-| 21 | 21 | 22 | 22 | no | no | Sex Chromosomes |
-| 22 | 22 | 23 | 23 | no | no | Pseudoautosomal Region |
-| 23 | 23 | 24 | 24 | no | no | (untitled) |
-| 24 | 24 | 25 | 25 | no | no | (untitled) |
-| 25 | 25 | 26 | 26 | no | no | (untitled) |
-| 26 | 26 | 27 | 27 | no | no | Sex-determining Region on the Y |
-| 27 | 27 | 28 | 28 | no | no | SRY |
-| 28 | 28 | 29 | 29 | no | yes | (untitled) |
-| 29 | 29 | 30 | 30 | no | yes | (untitled) |
-| 30 | 30 | 31 | 31 | no | no | Aneuploidy of Sex Chromosomes |
-| 31 | 31 | 32 | 32 | no | no | (untitled) |
-| 32 | 32 | 33 | 33 | no | no | Aneuploidy of Sex Chromosomes |
-| 33 | 33 | 34 | 34 | no | no | Female Sex Abnormalities &#8211; 45,X0 |
-| 34 | 34 | 35 | 35 | no | no | Female Sex Abnormalities &#8211; 47,XXX |
-| 35 | 35 | 36 | 36 | no | no | Male Sex Abnormalities &#8211; 47,XXY |
-| 36 | 36 | 37 | 37 | no | no | Male Sex Abnormalities &#8211; 47,XYY |
-| 37 | 37 | 38 | 38 | no | no | Richard Speck |
-| 38 | 38 | 39 | 39 | no | no | XYY and Violent Crimes |
-| 39 | 39 | 40 | 40 | no | no | Male Sex Abnormalities &#8211; 48, XXYY |
-| 40 | 40 | 41 | 41 | no | no | (untitled) |
-| 41 | 41 | 42 | 42 | no | yes | (untitled) |
-| 42 | 42 | 43 | 43 | no | no | (untitled) |
-| 43 | 43 | 44 | 44 | no | no | (untitled) |
-| 44 | 44 | 45 | 45 | no | yes | Summary of Sex Determination in Fruit Flies |
-| 45 | 45 | 46 | 46 | no | yes | Sex determination |
-| 46 | 46 | 47 | 47 | no | yes | Sex determination |
-| 47 | 47 | 48 | 48 | no | yes | Note on Nomenclature |
-| 48 | 48 | 49 | 49 | no | no | Sex Quiz |
-| 49 | 49 | 50 | 50 | no | yes | (untitled) |
-| 50 | 50 | 51 | 51 | no | yes | (untitled) |
-| 51 | 51 | 52 | 52 | no | yes | (untitled) |
-| 52 | 52 | 53 | 53 | no | yes | (untitled) |
-| 53 | 53 | 54 | 54 | no | yes | (untitled) |
-| 54 | 54 | 55 | 55 | no | yes | (untitled) |
-| 55 | 55 | 56 | 56 | no | yes | (untitled) |
-| 56 | 56 | 57 | 57 | no | yes | (untitled) |
-| 57 | 57 | 58 | 58 | no | yes | (untitled) |
-| 58 | 58 | 59 | 59 | no | yes | (untitled) |
-| 59 | 59 | 60 | 60 | no | yes | (untitled) |
-| 60 | 60 | 61 | 61 | no | yes | (untitled) |
-| 61 | 61 | 62 | 62 | no | yes | (untitled) |
-| 62 | 62 | 63 | 63 | no | yes | (untitled) |
-| 63 | 63 | 64 | 64 | no | no | Summary of Sex Determination in Fruit Flies and Humans |
-| 64 | 64 | 65 | 65 | no | yes | Larger Summary with ZW |
-| 65 | 65 | 67 | 67 | no | no | THE END |
+## lect12b-gene_trees
 
-## lect11d-chromo_alter_1-deletions
+Original: `lect12b-gene_trees.odp`. Import report: `assets/lect12b-gene_trees/import_report.json`.
 
-Original: `lect11d-chromo_alter_1-deletions.odp`; import report: `assets/lect11d-chromo_alter_1-deletions/import_report.json`.
+Added slides:
 
-Added slides: 2, 96, 111, 112.
+- Djot 2: Learning Objectives.
+- Djot 3: Gene Trees.
+- Djot 76: Key Takeaways.
 
 | Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 1 | 1 | no | no | Lecture 11D / Chromosome Alterations: Deletions / Chapter 9 / Dr. Neil Voss / November 17, 2026 |
-| 2 | 2 | 3 | 3 | no | no | Alterations of Chromosome Structure |
-| 3 | 3 | 4 | 4 | no | no | Alterations of Chromosome Structure |
-| 4 | 4 | 5 | 5 | no | no | Deletion |
-| 5 | 5 | 6 | 6 | no | no | Duplication |
-| 6 | 6 | 7 | 7 | no | no | Inversion |
-| 7 | 7 | 8 | 8 | no | no | Translocation |
-| 8 | 8 | 9 | 9 | no | no | Human Disorders Due to Chromosomal Alterations |
-| 9 | 9 | 10 | 10 | no | no | (untitled) |
-| 10 | 10 | 11 | 11 | no | no | Deletions |
-| 11 | 11 | 12 | 12 | no | no | Deletion Detection in Humans |
-| 12 | 12 | 13 | 13 | no | no | Disorders Caused by Deletions |
-| 13 | 13 | 14 | 14 | no | no | Deletions: how do they happen? |
-| 14 | 14 | 15 | 15 | no | yes | Deletions |
-| 15 | 15 | 16 | 16 | no | no | (untitled) |
-| 16 | 16 | 17 | 17 | no | no | Deletion Detection in Drosophila |
-| 17 | 17 | 18 | 18 | no | no | Deletion Mutant with wildtype Phenotype |
-| 18 | 18 | 19 | 19 | no | no | Test-cross |
-| 19 | 19 | 20 | 20 | no | yes | (untitled) |
-| 20 | 20 | 21 | 21 | no | no | Deletions |
-| 21 | 21 | 22 | 22 | no | no | Using Polytene Chromosomes to Find Deleted Regions |
-| 22 | 22 | 23 | 23 | no | no | Drosophila chromosomes |
-| 23 | 23 | 24 | 24 | no | no | Polytene Chromosomes |
-| 24 | 24 | 25 | 25 | no | no | Polytene Chromosomes |
-| 25 | 25 | 26 | 26 | no | no | Deletion Mapping |
-| 26 | 26 | 27 | 27 | no | no | Deletion Mapping |
-| 27 | 27 | 28 | 28 | no | no | (untitled) |
-| 28 | 28 | 29 | 29 | no | no | Deletion Mapping |
-| 29 | 29 | 30 | 30 | no | yes | Deletion Mapping |
-| 30 | 30 | 31 | 31 | no | yes | Deletion Mapping |
-| 31 | 31 | 32 | 32 | no | yes | Deletion Mapping |
-| 32 | 32 | 33 | 33 | no | yes | Deletion Mapping |
-| 33 | 33 | 34 | 34 | no | yes | Deletion Mapping |
-| 34 | 34 | 35 | 35 | no | yes | Deletion Mapping |
-| 35 | 35 | 36 | 36 | no | yes | Deletion Mapping |
-| 36 | 36 | 37 | 37 | no | yes | Deletion Mapping |
-| 37 | 37 | 38 | 38 | no | yes | Deletion Mapping |
-| 38 | 38 | 39 | 39 | no | yes | Deletion Mapping |
-| 39 | 39 | 40 | 40 | no | yes | Deletion Mapping |
-| 40 | 40 | 41 | 41 | no | yes | Deletion Mapping |
-| 41 | 41 | 42 | 42 | no | yes | Deletion Mapping |
-| 42 | 42 | 43 | 43 | no | no | Deletion Mapping |
-| 43 | 43 | 44 | 44 | no | no | Deletion Quiz Questions |
-| 44 | 44 | 45 | 45 | no | no | Deletion Quiz Question #1 four genes |
-| 45 | 45 | 46 | 46 | no | no | Deletion Quiz Question |
-| 46 | 46 | 47 | 47 | no | no | Deletion Quiz Question |
-| 47 | 47 | 48 | 48 | no | no | Deletion Quiz Question |
-| 48 | 48 | 49 | 49 | no | no | Deletion Quiz Question |
-| 49 | 49 | 50 | 50 | no | no | Deletion Quiz Question |
-| 50 | 50 | 51 | 51 | no | no | Deletion Quiz Question |
-| 51 | 51 | 52 | 52 | no | no | Deletion Quiz Question |
-| 52 | 52 | 53 | 53 | no | no | Deletion Quiz Question |
-| 53 | 53 | 54 | 54 | no | no | Deletion Quiz Question |
-| 54 | 54 | 55 | 55 | no | no | Deletion Quiz Question |
-| 55 | 55 | 56 | 56 | no | no | Deletion Quiz Question |
-| 56 | 56 | 57 | 57 | no | no | Deletion Quiz Question |
-| 57 | 57 | 58 | 58 | no | no | Deletion Quiz Question |
-| 58 | 58 | 59 | 59 | no | no | Deletion Quiz Question |
-| 59 | 59 | 60 | 60 | no | no | Check Your Answer |
-| 60 | 60 | 61 | 61 | no | no | Deletion Quiz Question |
-| 61 | 61 | 62 | 62 | no | no | Deletion Quiz Question |
-| 62 | 62 | 63 | 63 | no | no | Deletion Quiz Question |
-| 63 | 63 | 64 | 64 | no | no | Deletion Quiz Question |
-| 64 | 64 | 65 | 65 | no | no | Deletion Quiz Question #2 six genes |
-| 65 | 65 | 66 | 66 | no | no | Deletion Quiz Question |
-| 66 | 66 | 67 | 67 | no | no | Deletion Quiz Question |
-| 67 | 67 | 68 | 68 | no | no | Deletion Quiz Question |
-| 68 | 68 | 69 | 69 | no | no | Deletion Quiz Question |
-| 69 | 69 | 70 | 70 | no | no | Deletion Quiz Question |
-| 70 | 70 | 71 | 71 | no | no | Deletion Quiz Question |
-| 71 | 71 | 72 | 72 | no | no | Deletion Quiz Question |
-| 72 | 72 | 73 | 73 | no | no | Deletion Quiz Question |
-| 73 | 73 | 74 | 74 | no | no | Deletion Quiz Question |
-| 74 | 74 | 75 | 75 | no | no | Deletion Quiz Question |
-| 75 | 75 | 76 | 76 | no | no | Deletion Quiz Question |
-| 76 | 76 | 77 | 77 | no | no | Deletion Quiz Question |
-| 77 | 77 | 78 | 78 | no | no | Deletion Quiz Question |
-| 78 | 78 | 79 | 79 | no | no | Deletion Quiz Question |
-| 79 | 79 | 80 | 80 | no | no | Deletion Quiz Question |
-| 80 | 80 | 81 | 81 | no | no | Deletion Quiz Question |
-| 81 | 81 | 82 | 82 | no | no | Deletion Quiz Question |
-| 82 | 82 | 83 | 83 | no | no | Check Your Answer |
-| 83 | 83 | 84 | 84 | no | no | Deletion Quiz Question |
-| 84 | 84 | 85 | 85 | no | no | Deletion Quiz Question |
-| 85 | 85 | 86 | 86 | no | no | Deletion Quiz Question |
-| 86 | 86 | 87 | 87 | no | no | Deletion Quiz Question |
-| 87 | 87 | 88 | 88 | no | no | Deletion Quiz Question |
-| 88 | 88 | 89 | 89 | no | no | Deletion Quiz Question |
-| 89 | 89 | 90 | 90 | no | no | Deletion Quiz Question |
-| 90 | 90 | 91 | 91 | no | no | Blackboard Assignment |
-| 91 | 91 | 92 | 92 | no | yes | Challenge Yourself |
-| 92 | 92 | 93 | 93 | no | yes | Really Challenge Yourself |
-| 93 | 93 | 94 | 94 | no | no | Answer to Challenge Yourself |
-| 94 | 94 | 95 | 95 | no | yes | Answer to Really Challenge Yourself |
-| 95 | 95 | 97 | 97 | no | no | THE END |
-| 96 | 96 | 98 | 98 | no | no | Extra Book Problems |
-| 97 | 97 | 99 | 99 | no | no | 8.14 |
-| 98 | 98 | 100 | 100 | no | no | (untitled) |
-| 99 | 99 | 101 | 101 | no | yes | (untitled) |
-| 100 | 100 | 102 | 102 | no | no | (untitled) |
-| 101 | 101 | 103 | 103 | no | no | (untitled) |
-| 102 | 102 | 104 | 104 | no | no | 8.15 |
-| 103 | 103 | 105 | 105 | no | no | (untitled) |
-| 104 | 104 | 106 | 106 | no | no | (untitled) |
-| 105 | 105 | 107 | 107 | no | no | (untitled) |
-| 106 | 106 | 108 | 108 | no | no | 8.16 |
-| 107 | 107 | 109 | 109 | no | no | (untitled) |
-| 108 | 108 | 110 | 110 | no | yes | (untitled) |
-
-## lect11e-chromo_alter_2-duplications
-
-Original: `lect11e-chromo_alter_2-duplications.odp`; import report: `assets/lect11e-chromo_alter_2-duplications/import_report.json`.
-
-Added slides: 2, 3, 36.
-
-| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 1 | 1 | no | no | Lecture 11E / Chromosome Abnormalities: Duplications / Chapter 9 / Dr. Neil Voss / November 17, 2026 |
-| 2 | 2 | 4 | 4 | no | no | Alterations of Chromosome Structure |
-| 3 | 3 | 5 | 5 | no | no | Duplications |
-| 4 | 4 | 6 | 6 | no | no | Duplication |
-| 5 | 5 | 7 | 7 | no | no | Unequal Crossing Over |
-| 6 | 6 | 8 | 8 | no | no | (untitled) |
-| 7 | 7 | 9 | 9 | no | no | Duplications and Color blindness |
-| 8 | 8 | 10 | 10 | no | no | Pigment genes in the X chromosome |
-| 9 | 9 | 11 | 11 | no | no | Unequal Crossing Over |
-| 10 | 10 | 12 | 12 | no | no | (untitled) |
-| 11 | 11 | 13 | 13 | no | no | (untitled) |
-| 12 | 12 | 14 | 14 | no | no | Green and Red Opsins |
-| 13 | 13 | 15 | 15 | no | no | (untitled) |
+| 1 | 1 | 1 | 1 | no | no | Lecture 12B / Gene Trees / Chapter 11 / Dr. Neil Voss / December 1, 2026 |
+| 2 | 2 | 4 | 4 | no | no | Anniversary of &#8220;On the Origin of Species&#8221; |
+| 3 | 3 | 5 | 5 | no | no | Why do we want to study molecular evolution? |
+| 4 | 4 | 6 | 6 | no | no | Why Evolution Matters |
+| 5 | 5 | 7 | 7 | no | no | Why Evolution Matters |
+| 6 | 6 | 8 | 8 | no | no | Gene Trees |
+| 7 | 7 | 9 | 9 | no | no | Unraveling Gene Trees |
+| 8 | 8 | 10 | 10 | no | no | Interpreting Gene Trees |
+| 9 | 9 | 11 | 11 | no | no | Can You Interpret This!?! |
+| 10 | 10 | 12 | 12 | no | yes | (untitled) |
+| 11 | 11 | 13 | 13 | no | yes | (untitled) |
+| 12 | 12 | 14 | 14 | no | yes | (untitled) |
+| 13 | 13 | 15 | 15 | no | yes | (untitled) |
 | 14 | 14 | 16 | 16 | no | yes | (untitled) |
-| 15 | 15 | 17 | 17 | no | no | Tetrachromats |
-| 16 | 16 | 18 | 18 | no | no | Tetrachromats |
-| 17 | 17 | 19 | 19 | no | no | Human Tetrachromats |
-| 18 | 18 | 20 | 20 | no | no | Tetrachromats |
+| 15 | 15 | 17 | 17 | no | yes | (untitled) |
+| 16 | 16 | 18 | 18 | no | yes | (untitled) |
+| 17 | 17 | 19 | 19 | no | no | (untitled) |
+| 18 | 18 | 20 | 20 | no | no | Reading a Gene Tree |
+| 19 | 19 | 21 | 21 | no | yes | Understanding Branch Points |
+| 20 | 20 | 22 | 22 | no | yes | Tracing Common Ancestors |
+| 21 | 21 | 23 | 23 | no | no | Different Forms, Same Gene Tree |
+| 22 | 22 | 24 | 24 | no | no | Rotating Branches in Trees |
+| 23 | 23 | 25 | 25 | no | no | Trees, trees, and trees, oh my |
+| 24 | 24 | 26 | 26 | no | yes | Polytomy in Gene Trees |
+| 25 | 25 | 27 | 27 | no | no | Constructing a Gene Tree from Sequences |
+| 26 | 26 | 28 | 28 | no | no | Alignment of Hemoglobin sequences |
+| 27 | 27 | 29 | 29 | no | yes | Alignment of Hemoglobin sequences |
+| 28 | 28 | 30 | 30 | no | no | Gene Tree Methods |
+| 29 | 29 | 31 | 31 | no | no | Distance-Based Methods |
+| 30 | 30 | 32 | 32 | no | no | Understanding Distance Matrices |
+| 31 | 31 | 33 | 33 | no | no | UPGMA Distance Method |
+| 32 | 32 | 34 | 34 | no | no | Neighbor-Joining Distance Method |
+| 33 | 33 | 35 | 35 | no | no | Character-Based Methods |
+| 34 | 34 | 36 | 36 | no | no | The Parsimony Method |
+| 35 | 35 | 37 | 37 | no | no | Parsimony Example |
+| 36 | 36 | 38 | 38 | no | no | Maximum Likelihood in Phylogenetics |
+| 37 | 37 | 39 | 39 | no | no | Bayesian Inference in Phylogenetics |
+| 38 | 38 | 40 | 40 | no | no | Simple Example of Gene Tree by Distance Method |
+| 39 | 39 | 41 | 41 | no | no | UPGMA Simple Example Part 1: Create Distance Matrix |
+| 40 | 40 | 42 | 42 | no | no | Step 1: Get the sequences |
+| 41 | 41 | 43 | 43 | no | no | Step 2: Use Abbreviations |
+| 42 | 42 | 44 | 44 | no | yes | Step 2: Align the Sequences |
+| 43 | 43 | 45 | 45 | no | yes | Step 3: Convert to Dots |
+| 44 | 44 | 46 | 46 | no | yes | Step 4: Setup Distance Table |
+| 45 | 45 | 47 | 47 | no | yes | Step 5: Cancel Out the Diagonal |
+| 46 | 46 | 48 | 48 | no | yes | Step 6: Figure Out Distances |
+| 47 | 47 | 49 | 49 | no | yes | Step 6: Figure Out Distances |
+| 48 | 48 | 50 | 50 | no | yes | Step 6: Figure Out Distances |
+| 49 | 49 | 51 | 51 | no | yes | Step 6: Figure Out Distances |
+| 50 | 50 | 52 | 52 | no | yes | Step 6: Figure Out Distances |
+| 51 | 51 | 53 | 53 | no | yes | Step 6: Figure Out Distances |
+| 52 | 52 | 54 | 54 | no | yes | Step 6: Figure Out Distances |
+| 53 | 53 | 55 | 55 | no | yes | Step 6: Figure Out Distances |
+| 54 | 54 | 56 | 56 | no | no | UPGMA Simple Example Part 2: Create Gene Tree |
+| 55 | 55 | 57 | 57 | no | yes | Step 1: Ignore the top half |
+| 56 | 56 | 58 | 58 | no | yes | Step 1: Ignore the top half |
+| 57 | 57 | 59 | 59 | no | yes | Step 2: Find Smallest Value |
+| 58 | 58 | 60 | 60 | no | yes | Step 2: Find Smallest Value |
+| 59 | 59 | 61 | 61 | no | yes | Step 2: Create Gene Tree |
+| 60 | 60 | 62 | 62 | no | yes | Step 2: Merge N.Wh. and S.Wh. |
+| 61 | 61 | 63 | 63 | no | yes | Step 2: Merge N.Wh. and S.Wh. |
+| 62 | 62 | 64 | 64 | no | yes | Step 3: Find Next Smallest |
+| 63 | 63 | 65 | 65 | no | yes | Step 3: Find Next Smallest |
+| 64 | 64 | 66 | 66 | no | yes | DONE!!! |
+| 65 | 65 | 67 | 67 | no | no | 17.22 From Gene Tree to Distance Matrix |
+| 66 | 66 | 68 | 68 | no | no | (untitled) |
+| 67 | 67 | 69 | 69 | no | yes | (untitled) |
+| 68 | 68 | 70 | 70 | no | yes | (untitled) |
+| 69 | 69 | 71 | 71 | no | yes | (untitled) |
+| 70 | 70 | 72 | 72 | no | yes | (untitled) |
+| 71 | 71 | 73 | 73 | no | yes | (untitled) |
+| 72 | 72 | 74 | 74 | no | yes | (untitled) |
+| 73 | 73 | 75 | 75 | no | no | More Information |
+| 74 | 74 | 77 | 77 | no | no | THE END |
+
+## lect12c-more_gene_trees
+
+Original: `lect12c-more_gene_trees.odp`. Import report: `assets/lect12c-more_gene_trees/import_report.json`.
+
+Added slides:
+
+- Djot 2: Learning Objectives.
+- Djot 42: Key Takeaways.
+- Djot 55: Key Takeaways.
+- Djot 56: THE END.
+
+| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | no | no | Lecture 12C / More Gene Trees / Chapter 11 / Dr. Neil Voss / December 1, 2026 |
+| 2 | 2 | 3 | 3 | no | no | Full Example |
+| 3 | 3 | 4 | 4 | no | yes | Another Example |
+| 4 | 4 | 5 | 5 | no | no | Another Example |
+| 5 | 5 | 6 | 6 | no | yes | Properties of a distance matrix |
+| 6 | 6 | 7 | 7 | no | yes | Properties of a distance matrix |
+| 7 | 7 | 8 | 8 | no | yes | We&#8217;ll just ignore the top half to avoid confusion |
+| 8 | 8 | 9 | 9 | no | yes | Find smallest value |
+| 9 | 9 | 10 | 10 | no | yes | Merge &#8216;a&#8217; and &#8216;b&#8217; columns |
+| 10 | 10 | 11 | 11 | no | yes | Merge &#8216;a&#8217; and &#8216;b&#8217; columns |
+| 11 | 11 | 12 | 12 | no | yes | Merge &#8216;a&#8217; and &#8216;b&#8217; columns |
+| 12 | 12 | 13 | 13 | no | yes | Merge &#8216;a&#8217; and &#8216;b&#8217; columns |
+| 13 | 13 | 14 | 14 | no | yes | Find new lowest value |
+| 14 | 14 | 15 | 15 | no | yes | Merge &#8216;(a,b)&#8217; and &#8216;e&#8217; |
+| 15 | 15 | 16 | 16 | no | yes | Merge &#8216;(a,b)&#8217; and &#8216;e&#8217; |
+| 16 | 16 | 17 | 17 | no | yes | Merge &#8216;(a,b)&#8217; and &#8216;e&#8217; |
+| 17 | 17 | 18 | 18 | no | yes | Merge &#8216;(a,b)&#8217; and &#8216;e&#8217; |
+| 18 | 18 | 19 | 19 | no | yes | Find new lowest value |
+| 19 | 19 | 20 | 20 | no | yes | Find new lowest value |
+| 20 | 20 | 21 | 21 | no | yes | Merge &#8216;c&#8217; and &#8216;d&#8217; |
+| 21 | 21 | 22 | 22 | no | yes | Merge &#8216;c&#8217; and &#8216;d&#8217; |
+| 22 | 22 | 23 | 23 | no | yes | Merge &#8216;c&#8217; and &#8216;d&#8217; |
+| 23 | 23 | 24 | 24 | no | yes | Merge &#8216;c&#8217; and &#8216;d&#8217; |
+| 24 | 24 | 25 | 25 | no | yes | Take the final distance |
+| 25 | 25 | 26 | 26 | no | no | Summarize Merges |
+| 26 | 26 | 27 | 27 | no | yes | Draw the gene tree |
+| 27 | 27 | 28 | 28 | no | no | (untitled) |
+| 28 | 28 | 29 | 29 | no | no | Hartl Question 17.27 |
+| 29 | 29 | 30 | 30 | no | yes | Question 17.27 |
+| 30 | 30 | 31 | 31 | no | yes | Question 17.27 |
+| 31 | 31 | 32 | 32 | no | yes | Question 17.27 |
+| 32 | 32 | 33 | 33 | no | yes | Question 17.27 |
+| 33 | 33 | 34 | 34 | no | yes | Question 17.27 |
+| 34 | 34 | 35 | 35 | no | yes | Question 17.27 |
+| 35 | 35 | 36 | 36 | no | yes | Question 17.27 |
+| 36 | 36 | 37 | 37 | no | yes | Question 17.27 |
+| 37 | 37 | 38 | 38 | no | yes | Question 17.27 |
+| 38 | 38 | 39 | 39 | no | yes | Question 17.27 |
+| 39 | 39 | 40 | 40 | no | yes | Question 17.27 |
+| 40 | 40 | 41 | 41 | no | yes | (untitled) |
+| 41 | 41 | 43 | 43 | no | no | THE END |
+| 42 | 42 | 44 | 44 | no | no | Former Textbook Example of Gene Tree by Distance Method |
+| 43 | 43 | 45 | 45 | no | no | Gene Trees by Distance Method |
+| 44 | 44 | 46 | 46 | no | yes | Distance Matrix |
+| 45 | 45 | 47 | 47 | no | yes | Neighbor Joining |
+| 46 | 46 | 48 | 48 | no | yes | Neighbor Joining |
+| 47 | 47 | 49 | 49 | no | yes | Neighbor Joining |
+| 48 | 48 | 50 | 50 | no | yes | Neighbor Joining |
+| 49 | 49 | 51 | 51 | no | yes | Neighbor Joining |
+| 50 | 50 | 52 | 52 | no | yes | Neighbor Joining |
+| 51 | 51 | 53 | 53 | no | yes | Neighbor Joining |
+| 52 | 52 | 54 | 54 | no | yes | Neighbor Joining |
+
+## lect12d-gene_tree_activity
+
+Original: `lect12d-gene_tree_activity.odp`. Import report: `assets/lect12d-gene_tree_activity/import_report.json`.
+
+Added slides:
+
+- Djot 2: Learning Objectives.
+- Djot 3: Gene Tree Group Activity.
+- Djot 31: Key Takeaways.
+
+| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | no | no | Lecture 12D / Gene Tree Group Activity / Chapter 11 / Dr. Neil Voss / December 1, 2026 |
+| 2 | 2 | 4 | 4 | no | no | 2025 Gene Tree Group Activity |
+| 3 | 3 | 5 | 5 | no | yes | 2024 Gene Tree Group Activity |
+| 4 | 4 | 6 | 6 | no | no | 2023 Gene Tree Group Activity |
+| 5 | 5 | 7 | 7 | no | no | 2021 Gene Tree Group Activity |
+| 6 | 6 | 8 | 8 | no | no | Gene Tree Handout |
+| 7 | 7 | 9 | 9 | no | no | (untitled) |
+| 8 | 8 | 10 | 10 | no | yes | (untitled) |
+| 9 | 9 | 11 | 11 | no | yes | (untitled) |
+| 10 | 10 | 12 | 12 | no | yes | (untitled) |
+| 11 | 11 | 13 | 13 | no | no | (untitled) |
+| 12 | 12 | 14 | 14 | no | yes | (untitled) |
+| 13 | 13 | 15 | 15 | no | yes | (untitled) |
+| 14 | 14 | 16 | 16 | no | yes | (untitled) |
+| 15 | 15 | 17 | 17 | no | no | (untitled) |
+| 16 | 16 | 18 | 18 | no | yes | (untitled) |
+| 17 | 17 | 19 | 19 | no | yes | (untitled) |
+| 18 | 18 | 20 | 20 | no | yes | (untitled) |
 | 19 | 19 | 21 | 21 | no | no | (untitled) |
 | 20 | 20 | 22 | 22 | no | yes | (untitled) |
-| 21 | 21 | 23 | 23 | no | no | Mantis Shrimp, kings of vision |
-| 22 | 22 | 24 | 24 | no | no | Mantis Shrimp have 16 cones!! |
-| 23 | 23 | 25 | 25 | no | no | Copy Number Variations (CNVs) and disease |
-| 24 | 24 | 26 | 26 | no | no | Copy Number Variation (CNV) |
-| 25 | 25 | 27 | 27 | no | no | Gene Dosage |
-| 26 | 26 | 28 | 28 | no | yes | Huntington&#8217;s disease |
-| 27 | 27 | 29 | 29 | no | no | Autism and Schizophrenia |
-| 28 | 28 | 30 | 30 | no | no | (untitled) |
-| 29 | 29 | 31 | 31 | no | no | Gene Dosage |
-| 30 | 30 | 32 | 32 | no | no | (untitled) |
-| 31 | 31 | 33 | 33 | no | no | Dup15q Alliance |
-| 32 | 32 | 34 | 34 | no | no | 22q Family Foundation |
-| 33 | 33 | 35 | 35 | no | no | 1p36 Deletion Support & Awareness |
-| 34 | 34 | 37 | 37 | no | no | THE END |
+| 21 | 21 | 23 | 23 | no | yes | (untitled) |
+| 22 | 22 | 24 | 24 | no | yes | (untitled) |
+| 23 | 23 | 25 | 25 | no | no | (untitled) |
+| 24 | 24 | 26 | 26 | no | yes | (untitled) |
+| 25 | 25 | 27 | 27 | no | yes | (untitled) |
+| 26 | 26 | 28 | 28 | no | yes | (untitled) |
+| 27 | 27 | 29 | 29 | no | yes | (untitled) |
+| 28 | 28 | 30 | 30 | no | yes | (untitled) |
+| 29 | 29 | 32 | 32 | no | no | THE END |
 
+## lect12e-evol_time
+
+Original: `lect12e-evol_time.odp`. Import report: `assets/lect12e-evol_time/import_report.json`.
+
+Added slides:
+
+- Djot 2: Learning Objectives.
+- Djot 3: Evolutionary Time.
+- Djot 18: Key Takeaways.
+
+| Source ODP | Source PDF | Djot | New PDF | Hidden | Replace | Title |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | no | no | Lecture 12E / Evolutionary Time / Chapter 11 / Dr. Neil Voss / December 1, 2026 |
+| 2 | 2 | 4 | 4 | no | no | (untitled) |
+| 3 | 3 | 5 | 5 | no | no | Molecular Clocks and Evolutionary Time |
+| 4 | 4 | 6 | 6 | no | no | Rates of nucleotide substitution in mammalian genes |
+| 5 | 5 | 7 | 7 | no | yes | (untitled) |
+| 6 | 6 | 8 | 8 | no | no | Rapid Reproduction |
+| 7 | 7 | 9 | 9 | no | no | Rates of DNA Evolution |
+| 8 | 8 | 10 | 10 | no | no | Rate of Protein Evolution |
+| 9 | 9 | 11 | 11 | no | no | Molecular Clock |
+| 10 | 10 | 12 | 12 | no | no | Homologous Genes |
+| 11 | 11 | 13 | 13 | no | no | Homologous Genes |
+| 12 | 12 | 14 | 14 | no | no | Origin of New Species |
+| 13 | 13 | 15 | 15 | no | no | (untitled) |
+| 14 | 14 | 16 | 16 | no | no | (untitled) |
+| 15 | 15 | 17 | 17 | no | no | (untitled) |
+| 16 | 16 | 19 | 19 | no | no | THE END |

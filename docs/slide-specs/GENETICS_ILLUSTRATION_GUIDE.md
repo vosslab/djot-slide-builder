@@ -80,7 +80,7 @@ Cell depth supports recognition while chromosome ancestry and pairings remain th
 focus. Fine anatomy labels need the large lecture view. This example passes actual-source
 contextual and canonical ODP/PDF review; delivery evidence remains in the progress ledger.
 
-[colchicine_chromosome_doubling.drawn.svg](../../genetics/LECT11/djot/assets/lect11b-polyploidy/colchicine_chromosome_doubling.drawn.svg)
+[colchicine_chromosome_doubling.drawn.svg](../../genetics/LECT12/djot/assets/lect12b-polyploidy/colchicine_chromosome_doubling.drawn.svg)
 uses four rounded cells and two clear branches to compare three replicated chromosomes with
 3 + 3 untreated singles and six treated singles. Joined sisters in the parent and separate
 single chromosomes in the outcomes make counts visible. Color, length and shape preserve
@@ -149,7 +149,7 @@ Canonical full-root delivery status remains in the progress ledger.
 
 ## Botanical stage construction
 
-[strawberry_polyploid.drawn.svg](../../genetics/LECT11/djot/assets/lect11b-polyploidy/strawberry_polyploid.drawn.svg)
+[strawberry_polyploid.drawn.svg](../../genetics/LECT12/djot/assets/lect12b-polyploidy/strawberry_polyploid.drawn.svg)
 uses organic plant, root and fruit contours with a glass culture vessel to explain the source
 stage process. Open branch/merge routes retain the two `2n` circles, A-D stages and fruit
 comparison without letting surface detail compete with their relationships. Source labels
@@ -191,11 +191,11 @@ to both arms. It is never a floating dot or an exchange seam.
   independently of hue. Empty regions can depict an unlabeled arm before a centromere;
   they are not genes. Separate homolog rods remain separate, never joined as sisters.
 
-The recipe's four LECT11 overview candidates preserve deletion `ABCDE|FGH -> ABCE|FGH`,
+The recipe's four LECT12 overview candidates preserve deletion `ABCDE|FGH -> ABCE|FGH`,
 duplication `ABCDE|FGH -> ABCBCDE|FGH`, inversion `ABCDE|FGH -> ADCBE|FGH`, and reciprocal
 translocation `ABCDE|FGH + MNOPQ|R -> MNOCDE|FGH + ABPQ|R`; `|` denotes the centromere.
 Each uses single chromatids and depicts no discarded fragments. These are a bounded
-pilot, not evidence that every LECT11 chromosome family has been migrated.
+pilot, not evidence that every LECT12 chromosome family has been migrated.
 
 The reusable model API in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
 adds requested colors and sizes, variable segment lengths, rounded-X identical sisters,

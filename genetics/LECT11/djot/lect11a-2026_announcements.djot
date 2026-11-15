@@ -21,35 +21,20 @@ hidden: true
 
 @body
 
+- Today: No Quiz
 - Icebreaker and Announcements
-- Chapter 9: Chromosomal Disorders
-  - Polyploidy
-  - Sex Dosage
-  - Deletions
-  - Duplications
-- Closing Remarks
-
-=== layout: one-panel
-
-# Next Week: Nov 24, 2026
-
-@body
-
-- Thanksgiving break starts Tuesday: no class on November 24.
-- Our next class is December 1, with Group Quiz 4.
-- Homework assignments 11 and 12 are due December 8.
-- Quiz 5 would also be December 8 if retained.
-
-@citation
-
-https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
+- Gene Trees
+- Gene Tree Group Activity
+- Evolutionary Time
+- Movie Night
+- Homework 09 and 10 due today
 
 === layout: big-image
 hidden: true
 
 @image
 
-![Five Day Outlook](assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
+![Five Day Outlook](repo:genetics/LECT12/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
 
 @caption
 
@@ -70,6 +55,21 @@ NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
 - Choose a farm animal, pet, or wild species.
 - Explain the useful trait and one possible tradeoff.
 - If no one is talking, please be the first to speak.
+
+=== layout: one-panel
+
+# Next Week: Nov 24, 2026
+
+@body
+
+- Thanksgiving break starts Tuesday: no class on November 24.
+- Our next class is December 1: Chromosome Abnormalities, Part 2, and Group Quiz 4.
+- Quiz 5 and Homework 11 and 12 are due December 8.
+- Final exam: December 15.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === include: repo:evergreen/youtube_channel.djot
 
@@ -142,7 +142,7 @@ hidden: true
 - Check Blackboard for assignment availability and submission times
 
 === include: repo:genetics/evergreen/quiz_guidance.djot
-hidden: false
+hidden: true
 
 === layout: subsection
 
@@ -198,6 +198,19 @@ hidden: true
 === layout: section
 
 # General Announcements
+
+=== layout: movie-panel
+
+# Movie Night: The Animal Kingdom (2023)
+
+@body
+
+- Class selection: *The Animal Kingdom (2023)*
+- Tuesday, November 17
+
+@poster
+
+![The Animal Kingdom (2023) movie poster](repo:genetics/LECT10/djot/assets/movie_choices/image_004.jpg)
 
 === include: repo:evergreen/spring_registration.djot
 hidden: false

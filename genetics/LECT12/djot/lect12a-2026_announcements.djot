@@ -18,32 +18,19 @@ color-theme: genetics
 
 - Group Quiz 4
 - Icebreaker and Announcements
-- Chapter 11:
-  - Gene Trees
-  - Gene Tree Handout Activity
-  - Evolutionary Time
+- Chromosome Abnormalities, Part 2
+  - Polyploidy
+  - Sex Dosage
+  - Deletions and Duplications
+  - Translocations
 - Closing Remarks
-
-=== layout: one-panel
-
-# Next Week: Dec 08, 2026
-
-@body
-
-- Quiz 5, if retained, is due before class; group quiz during class.
-- Homework assignments 11 and 12 are due December 8.
-- The cumulative final exam is December 15.
-
-@citation
-
-https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === layout: big-image
 hidden: true
 
 @image
 
-![Five Day Outlook](repo:genetics/LECT11/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
+![Five Day Outlook](repo:genetics/LECT12/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
 
 @caption
 
@@ -62,6 +49,21 @@ NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
 - State your name, major, and post-grad plans
 - What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
   - Dr. Voss\:
+
+=== layout: one-panel
+
+# Next Week: Dec 08, 2026
+
+@body
+
+- Quiz 5 is due before class; group quiz during class.
+- Population Genetics: allele frequencies, Hardy-Weinberg, and inbreeding.
+- Homework assignments 11 and 12 are due December 8.
+- The cumulative final exam is December 15.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === include: repo:evergreen/youtube_channel.djot
 

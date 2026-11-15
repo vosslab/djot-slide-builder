@@ -1,0 +1,93 @@
+{
+  "four_gene_intro": {
+    "labels": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "tip_order": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "pairs": {
+      "ab": 18,
+      "ac": 6,
+      "ad": 18,
+      "bc": 18,
+      "bd": 10,
+      "cd": 18
+    },
+    "provenance": "Hand-selected ultrametric distances on a relabeled BPQ 4balanced topology; not random generator output.",
+    "input_is_ultrametric": true
+  },
+  "five_gene_weighted": {
+    "labels": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "tip_order": [
+      "a",
+      "c",
+      "e",
+      "b",
+      "d"
+    ],
+    "pairs": {
+      "ab": 18,
+      "ac": 4,
+      "ad": 22,
+      "ae": 6,
+      "bc": 20,
+      "bd": 12,
+      "be": 22,
+      "cd": 24,
+      "ce": 10,
+      "de": 26
+    },
+    "provenance": "Hand-selected nonultrametric distances on a relabeled BPQ 3comb+pair1 topology. BPQ map_taxon_distances and add_distance_pair_shifts inspired the construction; these values were chosen explicitly, not emitted by that random generator.",
+    "input_is_ultrametric": false
+  },
+  "six_gene_worksheet": {
+    "labels": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "tip_order": [
+      "a",
+      "c",
+      "b",
+      "e",
+      "d",
+      "f"
+    ],
+    "pairs": {
+      "ab": 12,
+      "ac": 4,
+      "ad": 15,
+      "ae": 9,
+      "af": 18,
+      "bc": 10,
+      "bd": 13,
+      "be": 6,
+      "bf": 15,
+      "cd": 13,
+      "ce": 9,
+      "cf": 14,
+      "de": 11,
+      "df": 8,
+      "ef": 13
+    },
+    "provenance": "Unchanged existing worksheet image_002.svg, originally genetics/LECT12/djot/assets/lect12d-gene_tree_activity/, migrated to LECT11 during this task. XML text read independently agrees with all 15 specified pairs.",
+    "input_is_ultrametric": false
+  }
+}

@@ -1,0 +1,108 @@
+deck,page,readability,organization,hierarchy,space,effectiveness,total,concern,reason
+11A,1,4,4,4,4,4,20,no concern,Clear dated cover
+11A,2,4,4,4,4,4,20,no concern,Clear agenda
+11A,3,4,4,4,4,4,20,no concern,Direct discussion prompt
+11A,4,4,4,4,4,4,20,no concern,Clear schedule
+11A,5,4,4,4,4,4,20,no concern,Clear section divider
+11A,6,4,4,4,4,4,20,no concern,Large image and direct link
+11A,7,4,4,4,4,4,20,no concern,Image and links are clear
+11A,8,4,4,4,4,4,20,no concern,QR code and contact instructions
+11A,9,4,4,4,4,4,20,no concern,Office hours and illustration
+11A,10,4,4,4,4,4,20,no concern,Dense contact details remain readable
+11A,11,4,4,4,4,4,20,no concern,Large reassurance and form illustration
+11A,12,4,4,4,4,4,20,no concern,Clear section divider
+11A,13,4,4,4,4,4,20,no concern,Textbook image supports explanation
+11A,14,3,4,4,3,3,17,minor concern,Links are legible but long
+11A,15,4,4,4,4,4,20,no concern,Clear preview instructions
+11A,16,4,4,4,4,4,20,no concern,Clear section divider
+11A,17,4,4,4,4,4,20,no concern,Clear assessment hierarchy
+11A,18,3,4,4,3,3,17,minor concern,Two column comparison is somewhat dense
+11A,19,4,4,4,4,4,20,no concern,Clear section divider
+11A,20,4,4,4,4,4,20,no concern,Upcoming dates stand out
+11A,21,4,4,4,4,4,20,no concern,Dense inherited instructions
+11A,22,4,4,4,4,4,20,no concern,Clear policy and direct voice
+11A,23,4,4,4,4,4,20,no concern,Clear section divider
+11A,24,4,4,4,4,4,20,no concern,Assignment dates and reminders are clear
+11A,25,4,4,4,4,4,20,no concern,Clear section divider
+11A,26,4,4,4,4,4,20,no concern,Film and date clearly identified
+11A,27,4,4,4,4,4,20,no concern,Clear section divider
+11A,28,3,4,4,3,3,17,minor concern,Registration link is small
+11A,29,4,4,4,4,4,20,no concern,Course list is clear
+11A,30,3,4,4,3,3,17,minor concern,Course information is dense
+11A,31,3,4,4,3,3,17,minor concern,Course information is dense
+11A,32,4,4,4,4,4,20,no concern,Course information is clear
+11A,33,3,4,4,3,3,17,minor concern,Two columns are somewhat dense
+11A,34,4,4,4,4,4,20,no concern,Clear ending
+11B,1,4,4,4,4,4,20,no concern,Clear dated cover
+11B,2,4,4,4,4,4,20,no concern,Objectives are direct and legible
+11B,3,4,4,4,4,4,20,no concern,Clear section divider
+11B,4,4,4,4,4,4,20,no concern,Clear definition and context
+11B,5,4,4,4,4,4,20,no concern,Definitions are clearly grouped
+11B,6,4,4,4,4,4,20,no concern,Tree and question are clear
+11B,7,4,4,4,4,4,20,no concern,Answer stays beside same tree
+11B,8,4,4,4,4,4,20,no concern,Side-by-side rotations invite comparison
+11B,9,4,4,4,4,4,20,no concern,Explanation follows the prediction
+11B,10,4,4,4,4,4,20,no concern,Definitions and distinction are clear
+11B,11,4,4,4,4,4,20,no concern,Scale and path question are visible
+11B,12,4,4,4,4,4,20,no concern,Path answers follow the question
+11B,13,4,4,4,4,4,20,no concern,Clear section divider
+11B,14,4,4,4,4,4,20,no concern,Matrix terms clearly defined
+11B,15,4,4,4,4,4,20,no concern,Clear matrix reading rule
+11B,16,3,4,4,3,3,17,minor concern,Procedure is somewhat dense but legible
+11B,17,4,4,4,4,4,20,no concern,Clear section divider
+11B,18,4,4,4,4,4,20,no concern,Example and task are introduced
+11B,19,3,4,4,3,4,18,minor concern,Matrix and prediction clearly shown; tree labels are relatively small
+11B,20,3,4,4,3,4,18,minor concern,Highlighted minimum and answer are visible; tree labels are relatively small
+11B,21,4,4,4,4,4,20,no concern,Prediction prompt is clear
+11B,22,4,4,4,4,4,20,no concern,Averages follow the prompt
+11B,23,3,4,4,3,4,18,minor concern,Reduced matrix and scaled partial tree; tree labels are relatively small
+11B,24,3,4,4,3,4,18,minor concern,Next merge and height are shown; tree labels are relatively small
+11B,25,4,4,4,4,4,20,no concern,Prediction prompt is clear
+11B,26,4,4,4,4,4,20,no concern,Average follows the prompt
+11B,27,3,4,4,3,4,18,minor concern,Two partial trees show proportional heights; tree labels are relatively small
+11B,28,3,4,4,3,4,18,minor concern,Final merge values are clear; tree labels are relatively small
+11B,29,4,4,4,4,4,20,no concern,Path prediction precedes answer
+11B,30,4,4,4,4,4,20,no concern,Completed tree and heights are clear
+11B,31,4,4,4,4,4,20,no concern,Branch table is large and readable
+11B,32,4,4,4,4,4,20,no concern,Path check and model limit are clear
+11B,33,4,4,4,4,4,20,no concern,Clear section divider
+11B,34,4,4,4,4,4,20,no concern,Methods and assumptions are concise
+11B,35,4,4,4,4,4,20,no concern,Takeaways are clearly grouped
+11B,36,4,4,4,4,4,20,no concern,Clear ending
+12A,1,4,4,4,4,4,20,no concern,Clear dated cover
+12A,2,4,4,4,4,4,20,no concern,Clear agenda
+12A,3,4,4,4,4,4,20,no concern,Direct discussion prompt
+12A,4,4,4,4,4,4,20,no concern,Clear schedule
+12A,5,4,4,4,4,4,20,no concern,Clear section divider
+12A,6,4,4,4,4,4,20,no concern,Large image and direct link
+12A,7,4,4,4,4,4,20,no concern,Image and links are clear
+12A,8,4,4,4,4,4,20,no concern,QR code and contact instructions
+12A,9,4,4,4,4,4,20,no concern,Office hours and illustration
+12A,10,4,4,4,4,4,20,no concern,Dense contact details remain readable
+12A,11,4,4,4,4,4,20,no concern,Large reassurance and form illustration
+12A,12,4,4,4,4,4,20,no concern,Clear section divider
+12A,13,4,4,4,4,4,20,no concern,Textbook image supports explanation
+12A,14,3,4,4,3,3,17,minor concern,Links are legible but long
+12A,15,4,4,4,4,4,20,no concern,Clear preview instructions
+12A,16,4,4,4,4,4,20,no concern,Clear section divider
+12A,17,4,4,4,4,4,20,no concern,Clear assessment hierarchy
+12A,18,3,4,4,3,3,17,minor concern,Two column comparison is somewhat dense
+12A,19,4,4,4,4,4,20,no concern,Clear section divider
+12A,20,4,4,4,4,4,20,no concern,Upcoming quiz dates stand out
+12A,21,4,4,4,4,4,20,no concern,Dense inherited instructions
+12A,22,4,4,4,4,4,20,no concern,Clear policy and direct voice
+12A,23,4,4,4,4,4,20,no concern,Clear quiz divider
+12A,24,3,4,4,3,3,17,minor concern,Two-column quiz information is dense
+12A,25,3,4,4,3,3,17,minor concern,Policy is readable with substantial text
+12A,26,4,4,4,4,4,20,no concern,Dense repeated explanation
+12A,27,4,4,4,4,4,20,no concern,Clear assignment divider
+12A,28,4,4,4,4,4,20,no concern,Upcoming assignment dates stand out
+12A,29,4,4,4,4,4,20,no concern,Clear section divider
+12A,30,4,4,4,4,4,20,no concern,Clear section divider
+12A,31,3,4,4,3,3,17,minor concern,Registration link is small
+12A,32,4,4,4,4,4,20,no concern,Course list is clear
+12A,33,3,4,4,3,3,17,minor concern,Course information is dense
+12A,34,3,4,4,3,3,17,minor concern,Course information is dense
+12A,35,4,4,4,4,4,20,no concern,Course information is clear
+12A,36,3,4,4,3,3,17,minor concern,Two columns are somewhat dense
+12A,37,4,4,4,4,4,20,no concern,Clear ending

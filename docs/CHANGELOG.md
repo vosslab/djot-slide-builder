@@ -2,6 +2,13 @@
 
 ### Fixes and Maintenance
 
+- Clear completed items from TODO and roadmap documents into
+  [archive/DONE_TODO.md](archive/DONE_TODO.md), retaining open work and current SVG toolkit links.
+
+- Refresh Genetics Lecture 11 gene-tree teaching examples and move chromosome topics to
+  Lecture 12. Native exports and independent specification, quality, and integration reviews pass. See [GENETICS_GENE_TREE_REFRESH_REPORT.md](GENETICS_GENE_TREE_REFRESH_REPORT.md).
+
+
 - Complete the SVG toolkit aesthetic upgrade and document its visual direction and anchor-based
   composition. Code, standalone art, 32 native proof pages and integration passed review; scoped
   cleanup is complete. See [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md).

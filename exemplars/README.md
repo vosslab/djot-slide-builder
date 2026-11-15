@@ -420,7 +420,7 @@ the canonical 14-page [table_styles.djot](table_styles.djot) remains the full de
 Source key (archive paths preserve identity if course folders move):
 
 - **A:** [lect08f-three_point_testcross_bpw.djot](../genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot); `genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot`.
-- **B:** [lect12c_more_gene_trees_part_01.djot](../genetics/LECT12/djot/lect12c_more_gene_trees_part_01.djot); `genetics/LECT12/djot/lect12c_more_gene_trees_part_01.djot`.
+- **B:** [lect12c_more_gene_trees_part_01.djot.txt](../docs/archive/genetics_gene_tree_svg/sources/original/lect12c_more_gene_trees_part_01.djot.txt); `docs/archive/genetics_gene_tree_svg/sources/original/lect12c_more_gene_trees_part_01.djot.txt`.
 
 ### Context for interpreting data
 

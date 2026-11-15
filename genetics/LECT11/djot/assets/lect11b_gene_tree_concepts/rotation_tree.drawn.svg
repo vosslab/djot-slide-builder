@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+<title>Rotated gene tree</title><desc>The same rooted tree, with the two branches rotated at the root and the w x node. Original teaching diagram for Genetics Lecture 11B.</desc>
+<g fill="none" stroke="#34304c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M 100 230 H 220 M 220 110 V 350 M 220 110 H 380 M 380 55 V 165 M 380 55 H 580 M 380 165 H 580 M 220 350 H 380 M 380 295 V 405 M 380 295 H 580 M 380 405 H 580"/></g>
+<g fill="#20202a" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="40"><text x="600" y="68">y</text><text x="600" y="178">z</text><text x="600" y="308">x</text><text x="600" y="418">w</text></g></svg>

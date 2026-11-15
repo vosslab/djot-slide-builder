@@ -21,6 +21,9 @@ Keep useful technical terms, humor, and deliberate emphasis. Match the amount of
 
 - Preserve existing instructor wording during conversion, including useful informal phrasing.
 - Write new material plainly; name the particular mechanism, comparison, prediction, or task.
+- **Recorded instructor preference:** Use a simple English voice. Many international students
+  know the biology but find fancy English idioms difficult. Keep biological terms precise;
+  use familiar words and short, direct sentences around them.
 - Write concise statements, phrases, and labels when developing new teaching material.
 - Keep complete questions, problem assumptions, and needed study-reference explanations readable.
 - Put newly written spoken elaboration and transitions in `@notes`.
