@@ -2,6 +2,10 @@
 
 ### Fixes and Maintenance
 
+- Remove the obsolete Lecture 11 deletion-mechanisms copy left after chromosome topics moved
+  to Lecture 12. It duplicated the renumbered Lecture 12 source but referenced moved assets,
+  causing `./build_slides.sh genetics/LECT11/` to fail on a missing figure.
+
 - Clear completed items from TODO and roadmap documents into
   [archive/DONE_TODO.md](archive/DONE_TODO.md), retaining open work and current SVG toolkit links.
 
@@ -20,6 +24,10 @@
 - Prune duplicate and implementation-specific tests, removing 32 test definitions and two modules.
 
 ### Developer Tests and Notes
+
+- Rebuild all five Genetics Lecture 11 decks as ODP/PDF after removing the obsolete source;
+  Lecture 11/12 structure and image checks pass. Base suite: 7,926 pass, 76 failures in
+  unrelated hygiene checks; automatic text-fixer side effects were verified and undone.
 
 - Complete six audit passes and the retained 476-case test lane. Record remaining coverage gaps
   and limits in [svg_toolkit_post_aesthetic_audit.md](active_plans/audits/svg_toolkit_post_aesthetic_audit.md).
