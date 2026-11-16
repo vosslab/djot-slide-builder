@@ -1,0 +1,13 @@
+{
+  "pages": 70,
+  "figures": 68,
+  "embedded_image_sha_matches": 68,
+  "native_review_ids": 68,
+  "notes": 69,
+  "contact_sheets": 8,
+  "pdf_sha256": "bf76250aa82be6b5fb3e656e7abd7652054608da96fbe89d539763f1df75264d",
+  "odp_sha256": "77925d4a6d0dc808413c13fcb7c447ece13f797a319de33dece3465b9f331c5d",
+  "visual_review": "All 70 pages inspected in contact sheets; dense examples also inspected at full size.",
+  "known_issue": "C21: TEM region appears blank in the current native export; original artwork unchanged.",
+  "approval": "Corpus collection awaiting instructor critique; inclusion is not approval."
+}

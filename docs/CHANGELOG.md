@@ -1,3 +1,31 @@
+## 2026-11-16
+
+### Additions and New Features
+
+- Inventory `_temp/` and prepare a compact rescue under `prototype/temp_cleanup/`: 12 browsable
+  SVG samples, the unique Biotechnology drawing generator, final evidence receipts, three PDF
+  snapshots, and a local-only source/reference archive. Original scratch remains intact pending
+  the removal decision; see the rescue index for the keep list and cleanup recommendation.
+
+- Add `prototype/chromosome_review.djot`: one 70-slide corpus collection with 68 current figures
+  from 24 Genetics decks across 10 lecture folders. Stable C01-C68 labels, source-slide captions,
+  speaker-note prompts, source hashes, and a feedback CSV support instructor critique.
+
+### Behavior or Interface Changes
+
+- Reserve `exemplars/` for instructor-approved models. Keep corpus collections awaiting critique
+  in `prototype/`, with the reviewed PDF and ODP beside their sources.
+
+### Developer Tests and Notes
+
+- Verify all 1,496 archived source hashes, ZIP integrity, and all ten regenerated Biotechnology
+  drawings. Parse 121 current decks and 2,949 image placements with no scratch input dependencies
+  or missing images; match all 519 extracted Biotechnology images to original slide-file members.
+
+- Build the prototype through the native ODP/PDF workflow; verify 70 exported pages, all 68 native
+  review labels, unchanged source hashes, and exact embedded image bytes. Inspect rendered pages;
+  this is collection validation, not approval of the artwork's style or science.
+
 ## 2026-11-15
 
 ### Completed

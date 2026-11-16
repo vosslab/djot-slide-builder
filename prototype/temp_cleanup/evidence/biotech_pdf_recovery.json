@@ -1,0 +1,20 @@
+[
+  {
+    "stem": "lect11a-2026_biotech_announcements",
+    "odp_sha256": "e9d5c8db6f370bc9d505b9538a05139bf3f03f0561ddabda173497c6d53ab20b",
+    "pdf_sha256": "f1746fbf9889f23cf17072622bc9fb180ccfe064c73d92de1dc88af3847a6ac6",
+    "backup": "_temp/biotech_lect11/refinements/final_exports/lect11a-2026_biotech_announcements.pdf"
+  },
+  {
+    "stem": "lect11b-2026_group_project",
+    "odp_sha256": "93d5229b13c2de4d24b04e703464d2908b05ab0f1047efbe7e3f2c4b8386f0af",
+    "pdf_sha256": "3e19c4ec9acc9a36dfc365ccf77b46154ebbe1cec332ed003f39ce1b1bd80f93",
+    "backup": "_temp/biotech_lect11/refinements/final_exports/lect11b-2026_group_project.pdf"
+  },
+  {
+    "stem": "lect11c-set_6_regulation_of_biotechnology",
+    "odp_sha256": "f4ca22d23aa11ab258899836168c2006633cd77a22ee46b5d39b4d516b820ed2",
+    "pdf_sha256": "fa8d302c24dd0c84ed41c802dbc124c6c944be7ef2386826a67aebc562ed8f2b",
+    "backup": "_temp/biotech_lect11/refinements/final_exports/lect11c-set_6_regulation_of_biotechnology.pdf"
+  }
+]

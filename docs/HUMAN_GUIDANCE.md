@@ -1,5 +1,9 @@
 # Human guidance
 
+- Reserve `exemplars/` for pre-approved best examples that agents should model. Put corpus
+  collections awaiting instructor critique in `prototype/`, outside the growing `_temp/` folder;
+  inclusion does not imply approval.
+
 - Keep authoritative color, voice, and pedagogy specifications together in `docs/slide-specs/`;
   other documentation should cross-link to them. Consolidate my established preferences without
   reinterpreting them; BPQ guidance and research supply supplementary ideas.

@@ -1,5 +1,9 @@
 # Chromosome migration progress
 
+November 16 scratch preservation: the [rescue index](../../../prototype/temp_cleanup/README.md)
+locates final receipts and the source-history archive. `_temp/` paths below remain original
+provenance paths; archived acceptance does not imply that output files are currently present.
+
 Status: COMPLETE, 2026-11-15. The
 [archived plan](../../archive/chromosome_theme_migration_plan.md) and independent integration
 receipt close the migration.

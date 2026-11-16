@@ -1,5 +1,10 @@
 # LECT11 preparation and review
 
+November 16, 2026: useful scratch sources, reference papers, validation receipts, and PDF backups
+were preserved through the [rescue index](../../../prototype/temp_cleanup/README.md).
+Historical `_temp/` paths below identify the original evidence locations. Recovered PDFs are
+dated snapshots; the output directories were empty when the rescue was prepared.
+
 Teaching date: November 12, 2026. Three decks: announcements, group guidance, and expanded Set 6. The instructor requested all LECT11 material, the Set 4/5 expansion method, judgment about changing weekly project emphasis, and no work on genetics SVGs.
 
 ## Artifacts

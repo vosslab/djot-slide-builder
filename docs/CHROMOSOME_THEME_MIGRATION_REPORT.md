@@ -1,5 +1,10 @@
 # Chromosome theme migration report
 
+Scratch evidence was preserved on November 16, 2026; see the
+[rescue index](../prototype/temp_cleanup/README.md). Historical `_temp/` paths below identify
+the original locations, retained inside the source archive. Archived acceptance records the
+original validation; it does not imply that generated output files are still present.
+
 Status: COMPLETE, 2026-11-15. Source promotions, contextual native gates, focused checks, live
 reconciliation, and independent integration acceptance pass. The
 [archived plan](archive/chromosome_theme_migration_plan.md) records the approved delivery;

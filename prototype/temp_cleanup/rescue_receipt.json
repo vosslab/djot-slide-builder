@@ -1,0 +1,141 @@
+{
+  "archive": "LOCAL_ONLY/temp_source_history_2026_11_16.zip",
+  "archive_sha256": "7a643bc1ff9baafd449990b6125f83f2ea59965cbd8933f989b6f6043362c7ba",
+  "archive_bytes": 25560358,
+  "archived_source_files": 1496,
+  "archived_source_bytes": 83964879,
+  "archived_scratch_only_svgs": 401,
+  "gallery_samples": [
+    {
+      "id": "S01",
+      "title": "Plain rod",
+      "kind": "Small toolkit demo",
+      "source": "_temp/plain.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/plain_rod.svg",
+      "sha256": "15bf24150df97174f21d1ad0fef3ac8f4de012b9dcc1a6e214f62664ee0b892a"
+    },
+    {
+      "id": "S02",
+      "title": "Replicated chromosome",
+      "kind": "Small toolkit demo",
+      "source": "_temp/portrait.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/replicated_chromosome.svg",
+      "sha256": "eb1cd3ce90eb560c9d612774bc6edc1a17b79921a90fb805e7666ce76a9e6134"
+    },
+    {
+      "id": "S03",
+      "title": "Curved chromatid",
+      "kind": "Small toolkit demo",
+      "source": "_temp/curved.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/curved_chromatid.svg",
+      "sha256": "b3aff4e8a7c8ebdc89bc598e30aa6ce4bb65d791ee0df1999bea6ba37ecae5e5"
+    },
+    {
+      "id": "S04",
+      "title": "Chromosome geometry sampler",
+      "kind": "Toolkit experiment",
+      "source": "_temp/chromosome_migration/shared/representative.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/shared_geometry.svg",
+      "sha256": "f13685275c74abde91b926e239f87192daad2c5881b4e3c91007cf5a1c3e3043"
+    },
+    {
+      "id": "S05",
+      "title": "Curves, rings, and internal cuts",
+      "kind": "Verification specimen sheet",
+      "source": "_temp/chromosome_migration/reviews/shared_spec/specimens.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/geometry_specimens.svg",
+      "sha256": "9138056c46348fe96f40a90f201fd17bddd7e8cf0954bcf25c53313e37044251"
+    },
+    {
+      "id": "S06",
+      "title": "Geometry edge cases",
+      "kind": "Verification specimen sheet",
+      "source": "_temp/chromosome_migration/reviews/shared_quality/quality_specimens.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/geometry_edge_cases.svg",
+      "sha256": "89bc566b9671c8e1ee36b563d6ccb88f2899d7ba033dc374bc50f2972c6915b4"
+    },
+    {
+      "id": "S07",
+      "title": "Older centromere styles",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect0910/baseline/genetics/LECT10/djot/assets/lect10b-karyotypes/centromere_positions.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_centromere_positions.svg",
+      "sha256": "b18d302231dfac099d603536fac908f51a0c194f8b4f6e87270e55c489d8a9e6"
+    },
+    {
+      "id": "S08",
+      "title": "Older single crossover",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect0813/baseline/lect08b-chap8-linked_genes/single_crossover.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_crossover.svg",
+      "sha256": "98de8b48d569f7195d4c51203e16ff4af214e88cc6ba286e893bd9b25901110b"
+    },
+    {
+      "id": "S09",
+      "title": "Older inversion loop",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect0813/baseline/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_inversion.svg",
+      "sha256": "1658c672814b700e4ce8efc65eae86a97d59ee9fb279f0041612cef0feff79d4"
+    },
+    {
+      "id": "S10",
+      "title": "Older Philadelphia chromosome",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect0813/baseline/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_philadelphia.svg",
+      "sha256": "acc05f2b1fac9c25df9e042494d5aed125ccc9efdd3e00920e21b0ee14a92ce8"
+    },
+    {
+      "id": "S11",
+      "title": "Older gamete product layout",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect0813/baseline/lect13d-meiosis_translocation/gamete-products.drawn.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_gamete_products.svg",
+      "sha256": "622492b5cc73ff509e150802e87fce96e28444bd2deeb3af10ee053cc8b8b9df"
+    },
+    {
+      "id": "S12",
+      "title": "Older dosage summary",
+      "kind": "Historical baseline; not current artwork",
+      "source": "_temp/chromosome_migration/lect12c/summary.before.svg",
+      "saved": "prototype/temp_cleanup/svg_samples/older_dosage_summary.svg",
+      "sha256": "e7f650dafe166546cb59d1de5e1575d893932936ff88e961f77c9134484368d5"
+    }
+  ],
+  "recovered_exports": [
+    {
+      "source": "_temp/biotech_lect11/refinements/final_exports/lect11a-2026_biotech_announcements.pdf",
+      "saved": "prototype/temp_cleanup/recovered_exports/lect11a-2026_biotech_announcements.pdf",
+      "sha256": "f1746fbf9889f23cf17072622bc9fb180ccfe064c73d92de1dc88af3847a6ac6"
+    },
+    {
+      "source": "_temp/biotech_lect11/refinements/final_exports/lect11b-2026_group_project.pdf",
+      "saved": "prototype/temp_cleanup/recovered_exports/lect11b-2026_group_project.pdf",
+      "sha256": "3e19c4ec9acc9a36dfc365ccf77b46154ebbe1cec332ed003f39ce1b1bd80f93"
+    },
+    {
+      "source": "_temp/biotech_lect11/refinements/final_exports/lect11c-set_6_regulation_of_biotechnology.pdf",
+      "saved": "prototype/temp_cleanup/recovered_exports/lect11c-set_6_regulation_of_biotechnology.pdf",
+      "sha256": "fa8d302c24dd0c84ed41c802dbc124c6c944be7ef2386826a67aebc562ed8f2b"
+    }
+  ],
+  "biotech_generator_output_matches": {
+    "agency_map.drawn.svg": true,
+    "bioequivalence.drawn.svg": true,
+    "bt_crop.drawn.svg": true,
+    "containment.drawn.svg": true,
+    "dna_cdna.drawn.svg": true,
+    "lot_control.drawn.svg": true,
+    "pfas_fate.drawn.svg": true,
+    "seed_saving.drawn.svg": true,
+    "three_permissions.drawn.svg": true,
+    "trial_path.drawn.svg": true
+  },
+  "output_directories_empty_at_audit": true,
+  "deletion_performed": false,
+  "archived_reference_pdfs": 4,
+  "original_scratch_files_verified_unchanged": 11127,
+  "retained_bytes_at_audit": 32814013,
+  "estimated_net_logical_bytes_reclaimable": 1124913831
+}

@@ -1,0 +1,317 @@
+{
+  "original_component_occurrences": 100,
+  "current_direct_image_nodes": 54,
+  "expanded_component_occurrences": 100,
+  "exact_frame_and_asset_multiset_equal": true,
+  "live_asset_files": 50,
+  "unchanged_canonical_components": 40,
+  "new_compositions": 10,
+  "expansion_by_composition": {
+    "lect13d_p1_gametes.drawn.svg": [
+      "normal_y_translocated_2_subset.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_x_normal_y_subset.drawn.svg",
+      "translocated_x_normal_y_subset.drawn.svg",
+      "normal_y_translocated_2_subset.drawn.svg",
+      "translocated_2_normal_2_subset.drawn.svg",
+      "translocated_2_normal_2_subset.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg"
+    ],
+    "lect13d_p1_surviving_gametes.drawn.svg": [
+      "normal_chromosome_2_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg"
+    ],
+    "lect13d_p1_parent_reference.drawn.svg": [
+      "ruby_translocation_chromosome_set.drawn.svg",
+      "reciprocal_translocation_gamete_products.drawn.svg"
+    ],
+    "lect13d_p1_numbered_complement_spindle.drawn.svg": [
+      "translocation-heterozygote.drawn.svg",
+      "pairing-spindle.drawn.svg"
+    ],
+    "lect13d_p1_numbered_ruby.drawn.svg": [
+      "ruby-male.drawn.svg"
+    ],
+    "lect13d_p1_gametes_missing.drawn.svg": [
+      "normal_y_translocated_2_subset.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_x_normal_y_subset.drawn.svg",
+      "translocated_x_normal_y_subset.drawn.svg",
+      "normal_y_translocated_2_subset.drawn.svg",
+      "translocated_2_normal_2_subset.drawn.svg",
+      "translocated_2_normal_2_subset.drawn.svg",
+      "translocated_x_chromosome_strip.drawn.svg",
+      "translocated_2_chromosome_strip.drawn.svg",
+      "normal_chromosome_2_strip.drawn.svg",
+      "normal_y_chromosome_strip.drawn.svg"
+    ],
+    "lect13d_p2_gametes_46.drawn.svg": [
+      "reciprocal_translocation_gamete_products.drawn.svg"
+    ],
+    "lect13d_p2_gametes_47.drawn.svg": [
+      "reciprocal_translocation_gamete_products.drawn.svg"
+    ],
+    "lect13d_p2_gametes_48.drawn.svg": [
+      "reciprocal_translocation_gamete_products.drawn.svg"
+    ],
+    "lect13d_p2_robertsonian_footer.drawn.svg": [
+      "robertsonian_gamete_products.drawn.svg"
+    ]
+  },
+  "per_frame": [
+    {
+      "slide": 4,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 5,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 6,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 7,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 9,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 10,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 11,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 12,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 13,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 14,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 15,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 16,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 17,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 18,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 19,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 20,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 21,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 22,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 23,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 24,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 25,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 26,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 27,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 29,
+      "original_and_expanded_components": 2,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 30,
+      "original_and_expanded_components": 2,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 31,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 32,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 34,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 35,
+      "original_and_expanded_components": 2,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 36,
+      "original_and_expanded_components": 2,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 38,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 39,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 40,
+      "original_and_expanded_components": 2,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 41,
+      "original_and_expanded_components": 20,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 42,
+      "original_and_expanded_components": 20,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 43,
+      "original_and_expanded_components": 10,
+      "live_image_nodes": 2
+    },
+    {
+      "slide": 44,
+      "original_and_expanded_components": 4,
+      "live_image_nodes": 4
+    },
+    {
+      "slide": 48,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 49,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 50,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 54,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 55,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 58,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 59,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    },
+    {
+      "slide": 60,
+      "original_and_expanded_components": 1,
+      "live_image_nodes": 1
+    }
+  ],
+  "source_native_bars_restored": {
+    "48": 4,
+    "49": 16,
+    "50": 16
+  },
+  "source_binding_manifest_sha256": "5c02613b89c97f7d65b2887110ad50062f9bd87ebfe8302ba28f15426a02a6b6"
+}
