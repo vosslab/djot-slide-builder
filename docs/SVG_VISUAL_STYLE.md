@@ -97,6 +97,42 @@ These are drawing conventions for the existing schematic toolkit. They do not au
 anatomical claims, content inference, automatic organelle counts, or changed biological states.
 Check the owning lecture and source facts whenever a visual alteration could change meaning.
 
+## Chromosome family authority
+
+This section defines the shared schematic chromosome appearance across all courses. The
+current specimen is [chromosome_tool_v2.drawn.svg](slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg).
+Use the shared [chromosomes.py](../svg_tools/chromosomes.py) body tools for production rods and
+rounded-X sisters. Course recipes supply models, positions, labels and relationships; they
+must not define their own chromosome silhouettes. Use `render_chromosome_layout()` or
+`chromosome_part()` for new straight forms and `chromosome_path_part()` for authored curved
+chromatids. Historical pale-collar APIs remain compatible,
+but their saved examples are not the appearance authority for new artwork.
+
+- Draw single chromatids as continuous rounded rods. Replicated chromosomes have two joined
+  sisters in a rounded-X form. Separate homologs remain separate objects, with source-specific
+  lengths, allele labels and ancestry. An X is not a generic replacement for every chromosome.
+- Use the shared charcoal outline (`#344651`), rounded caps and joins, common live Atkinson
+  Hyperlegible Next labels, and a hollow purple centromere marker over the neck. Centromere
+  placement comes from the source; omitting a marker does not establish a biological absence.
+  The marker is a diagram convention, not an extra swollen region or a molecular mechanism.
+- Carry semantic colors, loci, source band fills and segment identity through rearrangements.
+  Homolog or parental colors need not match a course accent hue. Optional decorative texture
+  may be hidden; actual source bands and measured intervals must remain intact.
+- Keep a common longitudinal scale in physical before/after comparisons: a deletion shortens
+  the product and a duplication lengthens it. An aligned evidence track may retain a reference
+  gap to expose missing material; label that alignment and do not present the gap as chromosome
+  material. Source joins, cut pointers and gaps retain their distinct meanings.
+- Preserve the subject being taught: chromosome photographs, measured cytoband maps, molecular
+  tracks and sequence evidence keep their own scientific conventions. Apply shared labels and
+  supporting line style where appropriate without replacing them with decorative rods. Internal
+  map crops have cut ends, not new telomeres. Gene tracks use the separate gene-track helpers.
+
+The [GENETICS_ILLUSTRATION_GUIDE.md](slide-specs/GENETICS_ILLUSTRATION_GUIDE.md#chromosome-language)
+records scientific distinctions and source-backed examples; [svg_tools/README.md](../svg_tools/README.md#chromosome-drawing-tool)
+records callable APIs and scratch regeneration commands. Review each recipe's rendered figure
+and actual slide export. A shared helper or regenerated specimen alone does not establish course
+migration or native export acceptance; those claims need the owning course's delivery evidence.
+
 ## DNA and scale boundary
 
 Retain the original Genetics LECT02 `b_dna_helix.drawn.svg` unchanged. It is an existing
@@ -147,3 +183,6 @@ Paths below are relative to the corresponding skill's `references/` directory un
 The CSS reference informs visual craft only. This toolkit produces static SVG rather than
 interactive CSS; browser effects, animation, filters, and a new cascade system are outside
 the requested scope.
+
+Current course receipts, deliberate retains and open native gates are recorded in the dated
+[chromosome migration report](CHROMOSOME_THEME_MIGRATION_REPORT.md).

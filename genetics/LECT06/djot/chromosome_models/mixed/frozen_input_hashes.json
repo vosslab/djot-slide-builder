@@ -1,0 +1,20 @@
+{
+  "crossovers/sources/crossovers_chiasmata.svg": "530274f854e7d0eb5f0af420a11056798c8450acf759205b2bdbb9713c6d0927",
+  "intro/sources/before_body_mask.png": "f3f8ac44a322391cfe8e46faadc0aeefe605517947d11b79646cb2d9d27877d8",
+  "intro/sources/before_cleaned.png": "4cfcb7edd47b46a4ac4898111b33cb1ca414eaaf205e9f066e2474615ca15e55",
+  "intro/sources/chromatid_separation.svg": "759513c111854f1592dddccdcc7dec2f0b68c84042c882680056ee34ab85237b",
+  "intro/sources/chromosome_before_replication.svg": "4d5817ddea21aa490889593e8a16917ab97a28878d479a8603d04ec5a43fbe22",
+  "intro/sources/chromosome_replication.svg": "d70481c3febd67d410e42e76ccbfdf76dc5936e7035544f87a7f9bd0fe358d19",
+  "intro/sources/replication_body_mask.png": "169e0a3e9b5a19cc292031a9b8b4ca6a7a770965f448177e918ea64dc836d5cd",
+  "intro/sources/replication_cleaned.png": "8b792546a750d1f655a823186626161ad8c8e46d02aa550dd7f9ef59677fb742",
+  "intro/sources/separation_body_mask.png": "d4dd1269fb3248f01e34fcb70792627fd6a21583ce65294f5c98f37a97690aff",
+  "intro/sources/separation_cleaned.png": "d0ecc600411a8686b40171f09a4958200e0a55ea87322e43ccd3a85037792933",
+  "overview/sources/body_cleanup.png": "4f261928077b5f642bf56baf84e6fb34be55b2566b49aadc91d2df6a8292ea57",
+  "overview/sources/body_mask.png": "b1a5b6707be0a0b181134b886992904b9f20a251e6700e03455791a60bbdc6d7",
+  "overview/sources/meiosis_overview.svg": "a9da8a88cd94a4d3dcdccc14e27033e9f3df8d568fe753ed77d62fc188c4cf2f",
+  "overview/sources/original_artwork.png": "38c0dcbb31f3ec8711415286903288aca4b0f2f57e7dcf183cdbafc57f717a89",
+  "recombination/sources/body_mask.png": "fd7a4f6fbdf17521bd9cd6dc20fa753f349cf6b454c9e6d3680c83597af49564",
+  "recombination/sources/cleaned_artwork.png": "9c051d34df2a4582eaed890440dfe9c488db04c97d3a6034f5e0f5e2815d966d",
+  "recombination/sources/recombinant_chromosomes.svg": "0b65737531b36ec3a922dcd8d5c3e1dd8612ab037a73260c0c03d5c724940cc9",
+  "recombination/sources/recombinant_chromosomes_review.svg": "73d7e182c26e7b5ddbe48aab8d90ad6b59929672980e31a8c31f76fbbe588da6"
+}

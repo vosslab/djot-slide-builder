@@ -254,35 +254,16 @@ What would be the sex of an XXY human? And why?
 - [*higher X/A ratio*]{color=red}
 
 === layout: two-panels
-@replaceme
 
 # *Note on Nomenclature*
 
 @left
 
-- normal drosophila females are 8,XX
-  - 8 chromosomes total and 2 X chromosomes
-    - 2,2,3,3,4,4,X,X
-- XX\:AAA
-  - this drosophila would be 11,XX
-    - 11 chromosomes total and 2 X chromosomes
-      - 2,2,2,3,3,3,4,4,4,X,X
-  - AAA means that the organism is triploid, 3n, three copies of every chromosome
-    - so in drosophila\:
-      - 3 copies of chromosome 2
-      - 3 copies of chromosome 3
-      - 3 copies of chromosome 4
-  - but they would only have two X chromosomes
+normal drosophila females are 8,XX: 8 chromosomes total and 2 X chromosomes: 2,2,3,3,4,4,X,X XX\:AAA: this drosophila would be 11,XX: 11 chromosomes total and 2 X chromosomes: 2,2,2,3,3,3,4,4,4,X,X AAA means that the organism is triploid, 3n, three copies of every chromosome: so in drosophila\: 3 copies of chromosome 2; 3 copies of chromosome 3; 3 copies of chromosome 4
 
 @right
 
-![Slide image 22](assets/visual_renewal/ploidy_sets.drawn.svg)
+![Slide image 22](assets/visual_renewal/ploidy_sets_nomenclature.drawn.svg)
 
-- A
-
-- AA
-
-- AAA
-
-- `AAAA`
+- but they would only have two X chromosomes
 

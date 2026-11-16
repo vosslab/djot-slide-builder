@@ -1,63 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1469" height="1021" viewBox="0 0 1469 1021" role="img" aria-labelledby="title description">
 <title id="title">Unlinked genes: parental and nonparental ditypes</title><desc id="description">Two alternative arrangements without crossing over. Each row has two homologous pairs, four replicated chromosomes and eight chromatids. The upper ascus contains AB, AB, ab, ab; the lower contains Ab, Ab, aB, aB. Each ascus contains four unordered spores. Schematic, not measured.</desc>
-<rect width="1469" height="1021" fill="white"/>
+<rect width="1469" height="1021" fill="white" />
 <g fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif">
-<text x="42" y="60" font-size="43" text-anchor="start" >(A) No crossing over</text>
+<text x="42" y="60" font-size="43" text-anchor="start">(A) No crossing over</text>
 <g id="pd-arrangement">
 <g id="pd-pair-one-A" transform="translate(52 213)">
-<g id="pd-pair-one-A-sister-1">
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
-<g id="pd-pair-one-A-sister-3">
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
-<ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3"/>
+<g id="pd-pair-one-A-sister-1" data-chromatid="true"><g id="pd-pair-one-A-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-one-A-sister-1-body-region-0" data-source-label="pd-pair-one-A-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#287f86" /><circle cx="405.0" cy="-43.0" r="14.0" fill="#287f86" /></g></g><text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
+<g id="pd-pair-one-A-sister-3" data-chromatid="true"><g id="pd-pair-one-A-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-one-A-sister-3-body-region-0" data-source-label="pd-pair-one-A-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#287f86" /><circle cx="405.0" cy="43.0" r="14.0" fill="#287f86" /></g></g><text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
+<ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3" />
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="pd-pair-two-B" transform="translate(550 213)">
-<g id="pd-pair-two-B-sister-1">
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
-<g id="pd-pair-two-B-sister-3">
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
-<ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3"/>
+<g id="pd-pair-two-B-sister-1" data-chromatid="true"><g id="pd-pair-two-B-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-two-B-sister-1-body-region-0" data-source-label="pd-pair-two-B-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#526d9f" /><circle cx="318.0" cy="-43.0" r="14.0" fill="#526d9f" /></g></g><text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
+<g id="pd-pair-two-B-sister-3" data-chromatid="true"><g id="pd-pair-two-B-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-two-B-sister-3-body-region-0" data-source-label="pd-pair-two-B-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#526d9f" /><circle cx="318.0" cy="43.0" r="14.0" fill="#526d9f" /></g></g><text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
+<ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3" />
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="pd-pair-one-a" transform="translate(52 390)">
-<g id="pd-pair-one-a-sister-1">
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
-<g id="pd-pair-one-a-sister-3">
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
-<ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3"/>
+<g id="pd-pair-one-a-sister-1" data-chromatid="true"><g id="pd-pair-one-a-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-one-a-sister-1-body-region-0" data-source-label="pd-pair-one-a-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#9dc8c4" /><circle cx="405.0" cy="-43.0" r="14.0" fill="#9dc8c4" /></g></g><text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
+<g id="pd-pair-one-a-sister-3" data-chromatid="true"><g id="pd-pair-one-a-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-one-a-sister-3-body-region-0" data-source-label="pd-pair-one-a-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#9dc8c4" /><circle cx="405.0" cy="43.0" r="14.0" fill="#9dc8c4" /></g></g><text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
+<ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3" />
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="pd-pair-two-b" transform="translate(550 390)">
-<g id="pd-pair-two-b-sister-1">
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
-<g id="pd-pair-two-b-sister-3">
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
-<ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3"/>
+<g id="pd-pair-two-b-sister-1" data-chromatid="true"><g id="pd-pair-two-b-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-two-b-sister-1-body-region-0" data-source-label="pd-pair-two-b-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#a9badd" /><circle cx="318.0" cy="-43.0" r="14.0" fill="#a9badd" /></g></g><text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
+<g id="pd-pair-two-b-sister-3" data-chromatid="true"><g id="pd-pair-two-b-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="pd-pair-two-b-sister-3-body-region-0" data-source-label="pd-pair-two-b-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#a9badd" /><circle cx="318.0" cy="43.0" r="14.0" fill="#a9badd" /></g></g><text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
+<ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3" />
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="pd-outcome-arrow"><path d="M 932 300 H 1018" fill="none" stroke="#263b48" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M 1012 291 L 1031 300 L 1012 309" fill="#263b48" stroke="#263b48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
@@ -85,63 +54,31 @@
 <text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">ab</text>
 </g>
 </g>
-<text x="1230" y="502" font-size="34" text-anchor="middle" >Parental ditype tetrad</text>
+<text x="1230" y="502" font-size="34" text-anchor="middle">Parental ditype tetrad</text>
 </g>
 <g id="npd-arrangement">
 <g id="npd-pair-one-A" transform="translate(52 688)">
-<g id="npd-pair-one-A-sister-1">
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
-<g id="npd-pair-one-A-sister-3">
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
-<ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3"/>
+<g id="npd-pair-one-A-sister-1" data-chromatid="true"><g id="npd-pair-one-A-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-one-A-sister-1-body-region-0" data-source-label="npd-pair-one-A-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#287f86" /><circle cx="405.0" cy="-43.0" r="14.0" fill="#287f86" /></g></g><text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
+<g id="npd-pair-one-A-sister-3" data-chromatid="true"><g id="npd-pair-one-A-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-one-A-sister-3-body-region-0" data-source-label="npd-pair-one-A-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#287f86" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#287f86" /><circle cx="405.0" cy="43.0" r="14.0" fill="#287f86" /></g></g><text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">A</text>
+<ellipse cx="100" cy="0" rx="17" ry="22" fill="#287f86" stroke="#263b48" stroke-width="3" />
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="npd-pair-two-b" transform="translate(550 688)">
-<g id="npd-pair-two-b-sister-1">
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
-<g id="npd-pair-two-b-sister-3">
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
-<ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3"/>
+<g id="npd-pair-two-b-sister-1" data-chromatid="true"><g id="npd-pair-two-b-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-two-b-sister-1-body-region-0" data-source-label="npd-pair-two-b-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#a9badd" /><circle cx="318.0" cy="-43.0" r="14.0" fill="#a9badd" /></g></g><text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
+<g id="npd-pair-two-b-sister-3" data-chromatid="true"><g id="npd-pair-two-b-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-two-b-sister-3-body-region-0" data-source-label="npd-pair-two-b-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#a9badd" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#a9badd" /><circle cx="318.0" cy="43.0" r="14.0" fill="#a9badd" /></g></g><text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">b</text>
+<ellipse cx="124" cy="0" rx="17" ry="22" fill="#a9badd" stroke="#263b48" stroke-width="3" />
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="npd-pair-one-a" transform="translate(52 865)">
-<g id="npd-pair-one-a-sister-1">
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
-<g id="npd-pair-one-a-sister-3">
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
-<ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3"/>
+<g id="npd-pair-one-a-sister-1" data-chromatid="true"><g id="npd-pair-one-a-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-one-a-sister-1-body-region-0" data-source-label="npd-pair-one-a-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 60.0,-33.0 100.0,0.0 C 166.0,-61.0 314.0,-34.0 405.0,-43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#9dc8c4" /><circle cx="405.0" cy="-43.0" r="14.0" fill="#9dc8c4" /></g></g><text x="392" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
+<g id="npd-pair-one-a-sister-3" data-chromatid="true"><g id="npd-pair-one-a-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-one-a-sister-3-body-region-0" data-source-label="npd-pair-one-a-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 60.0,33.0 100.0,0.0 C 166.0,61.0 314.0,34.0 405.0,43.0" fill="none" stroke="#9dc8c4" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#9dc8c4" /><circle cx="405.0" cy="43.0" r="14.0" fill="#9dc8c4" /></g></g><text x="392" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#263b48">a</text>
+<ellipse cx="100" cy="0" rx="17" ry="22" fill="#9dc8c4" stroke="#263b48" stroke-width="3" />
 <path d="M 94 -12 Q 89 0 94 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="npd-pair-two-B" transform="translate(550 865)">
-<g id="npd-pair-two-B-sister-1">
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
-<g id="npd-pair-two-B-sister-3">
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#263b48" stroke-width="33" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-</g>
-<text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
-<ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3"/>
+<g id="npd-pair-two-B-sister-1" data-chromatid="true"><g id="npd-pair-two-B-sister-1-body"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-two-B-sister-1-body-region-0" data-source-label="npd-pair-two-B-sister-1"><path d="M 0.0,-39.0 C 45.0,-43.0 84.0,-33.0 124.0,0.0 C 190.0,-61.0 227.0,-34.0 318.0,-43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="-39.0" r="14.0" fill="#526d9f" /><circle cx="318.0" cy="-43.0" r="14.0" fill="#526d9f" /></g></g><text x="305" y="-28" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
+<g id="npd-pair-two-B-sister-3" data-chromatid="true"><g id="npd-pair-two-B-sister-3-body"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#344651" stroke-width="28.98" stroke-linecap="round" stroke-linejoin="round" /><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" /><g id="npd-pair-two-B-sister-3-body-region-0" data-source-label="npd-pair-two-B-sister-3"><path d="M 0.0,39.0 C 45.0,43.0 84.0,33.0 124.0,0.0 C 190.0,61.0 227.0,34.0 318.0,43.0" fill="none" stroke="#526d9f" stroke-width="28" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="0.0" cy="39.0" r="14.0" fill="#526d9f" /><circle cx="318.0" cy="43.0" r="14.0" fill="#526d9f" /></g></g><text x="305" y="58" font-size="45" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif" fill="#ffffff">B</text>
+<ellipse cx="124" cy="0" rx="17" ry="22" fill="#526d9f" stroke="#263b48" stroke-width="3" />
 <path d="M 118 -12 Q 113 0 118 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
 <g id="npd-outcome-arrow"><path d="M 932 775 H 1018" fill="none" stroke="#263b48" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M 1012 766 L 1031 775 L 1012 784" fill="#263b48" stroke="#263b48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
@@ -169,11 +106,11 @@
 <text x="0" y="15" font-size="47" text-anchor="middle" font-style="italic" font-family="Atkinson Hyperlegible Next, sans-serif">aB</text>
 </g>
 </g>
-<text x="1230" y="977" font-size="34" text-anchor="middle" >Nonparental ditype tetrad</text>
+<text x="1230" y="977" font-size="34" text-anchor="middle">Nonparental ditype tetrad</text>
 </g>
-<text x="1040" y="106" font-size="34" text-anchor="start" >Ascospore</text>
-<path d="M 1120 118 L 1159 185" fill="none" stroke="#263b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="ascospore-leader"/>
-<text x="1379" y="106" font-size="34" text-anchor="middle" >Ascus</text>
-<path d="M 1379 118 L 1366 206" fill="none" stroke="#263b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="ascus-leader"/>
+<text x="1040" y="106" font-size="34" text-anchor="start">Ascospore</text>
+<path d="M 1120 118 L 1159 185" fill="none" stroke="#263b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="ascospore-leader" />
+<text x="1379" y="106" font-size="34" text-anchor="middle">Ascus</text>
+<path d="M 1379 118 L 1366 206" fill="none" stroke="#263b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="ascus-leader" />
 </g>
 </svg>

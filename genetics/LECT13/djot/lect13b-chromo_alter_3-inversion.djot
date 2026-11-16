@@ -100,12 +100,11 @@ color-theme: genetics
 - If there is no crossing over within the inversion loop, then the homologous chromosomes disjoin without problems.
 
 === layout: one-panel
-@replaceme
 
 
 @body
 
-![Slide image 6](assets/lect13b-chromo_alter_3-inversion/image_006.png)
+![Slide image 6](assets/lect13b-chromo_alter_3-inversion/image_006_replacement.svg)
 
 === layout: section
 
@@ -129,7 +128,6 @@ color-theme: genetics
 ![Slide image 8](assets/lect13b-chromo_alter_3-inversion/paracentric_inversion_homozygote.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Paracentric (*_beside_*) Inversion*
 
@@ -145,7 +143,6 @@ color-theme: genetics
 # Pericentric Inversion
 
 === layout: one-panel
-@replaceme
 
 # *Pericentric (*_around_*) Inversion*
 
@@ -212,7 +209,6 @@ color-theme: genetics
 - e b C D E - acentric
 
 === layout: stacked-panels
-@replaceme
 
 
 @top
@@ -223,15 +219,16 @@ color-theme: genetics
 
 ![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_017.png)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 
-@body
+@left
 
 ![Slide image 17](assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
 ![Slide image 17](assets/lect13b-chromo_alter_3-inversion/image_017.png)
+
+@right
 
 - \[cen\] A B c D E
 - e b C d a \[cen\] or \[cen\] a d C b e
@@ -242,7 +239,7 @@ color-theme: genetics
 
 @body
 
-![Slide image 18](assets/lect13b-chromo_alter_3-inversion/image_018.png)
+![Slide image 18](assets/lect13b-chromo_alter_3-inversion/inversion_problem_829_exercise.svg)
 
 === layout: one-panel
 
@@ -254,7 +251,6 @@ color-theme: genetics
 - [How can we get the genotype\: A B c D E?]{color=red}
 
 === layout: one-panel
-@replaceme
 
 
 @body
@@ -345,7 +341,6 @@ color-theme: genetics
 ![Slide image 21](assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 
 @body
@@ -413,24 +408,28 @@ color-theme: genetics
   - [White males]{color=gray} are aggressive, provide little parental care, and are promiscuous, whereas [tan males]{color=#E8A202} are monogamous and invest highly in rearing their nestlings
   - [White females]{color=gray} are more aggressive and solicit more copulations from their mates than do [tan females]{color=#E8A202}
 
-=== layout: one-panel
+=== layout: two-panels
 
 # *How Four Sexes*
 
-@body
+@left
 
 ![Slide image 28](assets/lect13b-chromo_alter_3-inversion/sparrow-supergene.drawn.svg)
+
+@right
 
 - An ancient mutation inverted a large section of chromosome 2, creating a supergene.
 - Reduced effective genetic exchange lets the two versions diverge and accumulate mutations.
 - Their divergence is thought to resemble the evolution of mammalian XY and bird ZW sex chromosomes.
 
-=== layout: one-panel
+=== layout: two-panels
 
 
-@body
+@left
 
 ![Slide image 29](assets/lect13b-chromo_alter_3-inversion/sparrow-offspring.drawn.svg)
+
+@right
 
 - Males mate with females; white-stripes almost always mate with tan-stripes (disassortative mating).
 - On average, half the offspring inherit the inverted chromosome 2: half tan-striped and half white-striped.

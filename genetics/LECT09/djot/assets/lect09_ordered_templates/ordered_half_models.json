@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ordered-half-1",
+    "color": "#076DAD",
+    "length": 225,
+    "thickness": 5,
+    "transform": "translate(245 77.5)"
+  },
+  {
+    "id": "ordered-half-2",
+    "color": "#076DAD",
+    "length": 225,
+    "thickness": 5,
+    "transform": "translate(245 139.5)"
+  },
+  {
+    "id": "ordered-half-3",
+    "color": "#B74300",
+    "length": 225,
+    "thickness": 5,
+    "transform": "translate(245 201.5)"
+  },
+  {
+    "id": "ordered-half-4",
+    "color": "#B74300",
+    "length": 225,
+    "thickness": 5,
+    "transform": "translate(245 263.5)"
+  }
+]

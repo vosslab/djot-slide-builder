@@ -156,7 +156,6 @@ Prophase I and metaphase I.
 Crossovers, chiasmata, and the Holliday junction.
 
 === layout: two-panels
-@replaceme
 
 # Stages of Prophase I
 
@@ -336,7 +335,7 @@ Meiosis I separates homologs; meiosis II separates sister chromatids.
 
 @body
 
-![Slide image 20](assets/lect06c-meiosis/image_020.jpg)
+![Slide image 20](assets/lect06c-meiosis/image_020.normal.svg)
 
 
 === layout: multiple-choice
@@ -446,28 +445,33 @@ AB, ab, Ab, and aB each occur with probability 2/8 = 1/4.
 ![Slide image 23](assets/lect06c-meiosis/image_023.png)
 
 
-=== layout: one-panel
-@replaceme
+=== layout: one-plus-two-panels
 
 # Independent Assortment produces many different combinations
 
-@body
+@top-right
 
 ![Slide image 24](assets/lect06c-meiosis/image_024.png)
 
 ![Slide image 25](assets/lect06c-meiosis/image_025.png)
 
+@bottom-right
+
 ![Slide image 26](assets/lect06c-meiosis/wheat_genomes.drawn.svg)
+
+@left
 
 - Chickens have 39 pairs of chromosomes
   - 2&#x00B3;&#x2079; = 550 billion combinations.
 - The Adder's tongue fern has 630 pairs of chromosomes
   - 2&#x2076;&#x00B3;&#x2070; = 4.5 x 10&#x00B9;&#x2078;&#x2079; combinations
-  - That is 4.5 duosexagintillion
-    - [https\://www.olsenhome.com/bignumbers/](https://www.olsenhome.com/bignumbers/)
 - Bread wheat is hexaploid and has six sets of its 7 chromosomes
   - 6&#x2077; = 279,936 combinations
 
+
+@citation
+
+Adder’s tongue fern: That is 4.5 duosexagintillion [https\://www.olsenhome.com/bignumbers/](https://www.olsenhome.com/bignumbers/)
 
 === layout: section
 

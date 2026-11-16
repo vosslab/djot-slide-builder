@@ -1,0 +1,354 @@
+[
+  {
+    "id": "prophase-unit0-sister0",
+    "transform": "translate(244 206) rotate(35)",
+    "bounds": [
+      -7.766004146188567,
+      4.971649863609382,
+      -39.5,
+      40.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "prophase-unit0-sister1",
+    "transform": "translate(252 206) rotate(35)",
+    "bounds": [
+      -2.9657453878187967,
+      11.868605393112745,
+      -39.5,
+      40.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "prophase-unit1-sister0",
+    "transform": "translate(288 202) rotate(-6)",
+    "bounds": [
+      -7.766004146188567,
+      4.971649863609382,
+      -20.5,
+      21.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "prophase-unit1-sister1",
+    "transform": "translate(296 202) rotate(-6)",
+    "bounds": [
+      -2.9657453878187967,
+      11.868605393112745,
+      -20.5,
+      21.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "prophase-unit2-sister0",
+    "transform": "translate(249 253) rotate(44)",
+    "bounds": [
+      -7.766004146188567,
+      4.971649863609382,
+      -20.0,
+      21.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "prophase-unit2-sister1",
+    "transform": "translate(257 253) rotate(44)",
+    "bounds": [
+      -2.9657453878187967,
+      11.868605393112745,
+      -20.0,
+      21.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "prophase-unit3-sister0",
+    "transform": "translate(307 239) rotate(10)",
+    "bounds": [
+      -7.766004146188567,
+      4.971649863609382,
+      -37.0,
+      38.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "prophase-unit3-sister1",
+    "transform": "translate(315 239) rotate(10)",
+    "bounds": [
+      -2.9657453878187967,
+      11.868605393112745,
+      -37.0,
+      38.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "metaphase-unit0-sister0",
+    "transform": "translate(450 229) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -33.5,
+      34.6
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "metaphase-unit0-sister1",
+    "transform": "translate(450 239) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -33.5,
+      34.6
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "metaphase-unit1-sister0",
+    "transform": "translate(493 208) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -39.5,
+      40.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "metaphase-unit1-sister1",
+    "transform": "translate(493 218) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -39.5,
+      40.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "metaphase-unit2-sister0",
+    "transform": "translate(553 215) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -19.5,
+      20.6
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "metaphase-unit2-sister1",
+    "transform": "translate(553 225) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -19.5,
+      20.6
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "metaphase-unit3-sister0",
+    "transform": "translate(591 224) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -20.5,
+      21.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "metaphase-unit3-sister1",
+    "transform": "translate(591 234) rotate(90)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -20.5,
+      21.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "anaphase-single0",
+    "transform": "translate(714 155) rotate(0)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      25.0
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "anaphase-single1",
+    "transform": "translate(740 151) rotate(0)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      43.400000000000006
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "anaphase-single2",
+    "transform": "translate(777 154) rotate(0)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      41.800000000000004
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "anaphase-single3",
+    "transform": "translate(803 158) rotate(0)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      25.8
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "anaphase-single4",
+    "transform": "translate(711 286) rotate(180)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      41.800000000000004
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "anaphase-single5",
+    "transform": "translate(739 294) rotate(180)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      25.8
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "anaphase-single6",
+    "transform": "translate(779 286) rotate(180)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      25.0
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "anaphase-single7",
+    "transform": "translate(805 288) rotate(180)",
+    "bounds": [
+      -11.583002505883107,
+      13.991639300201234,
+      0.0,
+      43.400000000000006
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "telophase-single0",
+    "transform": "translate(921 142) rotate(45)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -15.0,
+      16.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "telophase-single1",
+    "transform": "translate(966 131) rotate(100)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -15.5,
+      16.6
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "telophase-single2",
+    "transform": "translate(938 169) rotate(30)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -24.0,
+      25.1
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "telophase-single3",
+    "transform": "translate(972 161) rotate(-15)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -22.0,
+      23.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "telophase-single4",
+    "transform": "translate(925 283) rotate(-35)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -15.0,
+      16.1
+    ],
+    "fill": "url(#pink)"
+  },
+  {
+    "id": "telophase-single5",
+    "transform": "translate(968 280) rotate(-65)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -22.0,
+      23.1
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "telophase-single6",
+    "transform": "translate(935 314) rotate(45)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -15.5,
+      16.6
+    ],
+    "fill": "url(#green)"
+  },
+  {
+    "id": "telophase-single7",
+    "transform": "translate(971 312) rotate(65)",
+    "bounds": [
+      -4.736273578451181,
+      8.213598146956505,
+      -24.0,
+      25.1
+    ],
+    "fill": "url(#pink)"
+  }
+]

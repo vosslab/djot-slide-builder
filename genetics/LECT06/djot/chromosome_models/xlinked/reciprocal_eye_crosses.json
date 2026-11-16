@@ -1,0 +1,581 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06e-x_linked_genes_2/reciprocal_eye_crosses.drawn.svg",
+  "placements": [
+    {
+      "group": "A-P-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 172 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-P-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 204 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-P-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M307 172 H454",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-P-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M454 204 H307 L346 236",
+      "thickness": 13.0
+    },
+    {
+      "group": "A-F1-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 319 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F1-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 351 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F1-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M307 319 H454",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F1-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M454 351 H307 L346 383",
+      "thickness": 13.0
+    },
+    {
+      "group": "A-F2-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 618 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 650 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M307 618 H454",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M454 650 H307 L346 682",
+      "thickness": 13.0
+    },
+    {
+      "group": "A-F2-3-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 781 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-3-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M57 813 H204",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-4-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M307 781 H454",
+      "thickness": 16.0
+    },
+    {
+      "group": "A-F2-4-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M454 813 H307 L346 845",
+      "thickness": 13.0
+    },
+    {
+      "group": "B-P-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 172 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-P-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 204 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-P-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M829 172 H976",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-P-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M976 204 H829 L868 236",
+      "thickness": 13.0
+    },
+    {
+      "group": "B-F1-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 319 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F1-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 351 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F1-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M829 319 H976",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F1-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M976 351 H829 L868 383",
+      "thickness": 13.0
+    },
+    {
+      "group": "B-F2-1-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 618 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-1-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 650 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-2-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M829 618 H976",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-2-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M976 650 H829 L868 682",
+      "thickness": 13.0
+    },
+    {
+      "group": "B-F2-3-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 781 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-3-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M579 813 H726",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-4-chromosome-1",
+      "model": {
+        "segments": [
+          [
+            "#78a8bf",
+            0.001
+          ],
+          [
+            "#78a8bf",
+            146.999
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M829 781 H976",
+      "thickness": 16.0
+    },
+    {
+      "group": "B-F2-4-chromosome-2",
+      "model": {
+        "segments": [
+          [
+            "#bd8f98",
+            147.0
+          ],
+          [
+            "#bd8f98",
+            50.44799302251775
+          ]
+        ],
+        "centromere": 1
+      },
+      "path": "M976 813 H829 L868 845",
+      "thickness": 13.0
+    }
+  ]
+}

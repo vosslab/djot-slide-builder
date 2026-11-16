@@ -1,5 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="600" viewBox="0 0 650 600" role="img" aria-labelledby="title desc"><title id="title">X and Y pair at a pseudoautosomal region</title><desc id="desc">An original schematic shows a crossover between homologous tips of X and Y. Chromosome sizes and the highlighted region are schematic.</desc><rect width="650" height="600" fill="white"/>
-<g id="chromosomes" stroke="#40584A" stroke-width="3"><rect x="145" y="100" width="65" height="415" rx="25" fill="#CFE9BB"/><rect x="385" y="100" width="65" height="275" rx="25" fill="#CFE9BB"/><rect x="145" y="100" width="65" height="70" rx="25" fill="#E8D8EC"/><rect x="385" y="100" width="65" height="70" rx="25" fill="#E8D8EC"/></g>
-<g id="crossover" stroke="#823A70" stroke-width="4" fill="none"><path d="M175 127 C265 127 325 155 420 155 M175 155 C265 155 325 127 420 127"/></g>
-<g font-family="Atkinson Hyperlegible Next" font-size="32" fill="#222"><text x="177" y="65" text-anchor="middle">X</text><text x="417" y="65" text-anchor="middle">Y</text><text x="325" y="565" text-anchor="middle" font-size="25">Crossover between pseudoautosomal regions</text></g>
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="600" viewBox="0 0 650 600" role="img" aria-labelledby="title desc">
+  <title id="title">X and Y pair at a pseudoautosomal region</title>
+  <desc id="desc">An original schematic shows a crossover between homologous tips of X and Y. Chromosome sizes and the highlighted region are schematic.</desc>
+  <rect width="650" height="600" fill="white" />
+  <g id="chromosomes">
+    <g data-lect12c-chromosome="true" transform="translate(145 100)">
+      <g id="par-chromosome-0-body">
+        <defs>
+          <clipPath id="par-chromosome-0-body-clip">
+            <path d="M 19.825 0 H 160.63400000000001 Q 170.15 32.5 179.66600000000003 0 H 395.175 Q 415 0 415 32.5 Q 415 65 395.175 65L 395.175 65 H 179.66600000000003 Q 170.15 32.5 160.63400000000001 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#par-chromosome-0-body-clip)">
+          <path d="M 19.825 0 H 160.63400000000001 Q 170.15 32.5 179.66600000000003 0 H 395.175 Q 415 0 415 32.5 Q 415 65 395.175 65L 395.175 65 H 179.66600000000003 Q 170.15 32.5 160.63400000000001 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" fill="#E8D8EC" />
+          <rect x="179.666" y="0" width="235.334" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          <g id="par-chromosome-0-body-region-0">
+            <rect x="19.825" y="0" width="60.10183132530121" height="65" fill="#E8D8EC" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="par-chromosome-0-body-region-1">
+            <rect x="79.92683132530121" y="0" width="80.70716867469878" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="par-chromosome-0-body-region-2">
+            <rect x="179.666" y="0" width="215.50900000000004" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 19.825 0 H 160.63400000000001 Q 170.15 32.5 179.66600000000003 0 H 395.175 Q 415 0 415 32.5 Q 415 65 395.175 65L 395.175 65 H 179.66600000000003 Q 170.15 32.5 160.63400000000001 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="1.38775" />
+        <ellipse id="par-chromosome-0-body-centromere" cx="170.15" cy="32.5" rx="17.55" ry="32.5" fill="none" stroke="#72508C" stroke-width="1.78425" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(385 100)">
+      <g id="par-chromosome-1-body">
+        <defs>
+          <clipPath id="par-chromosome-1-body-clip">
+            <path d="M 19.825 0 H 93.49999999999999 Q 101.74999999999999 32.5 109.99999999999999 0 H 255.175 Q 275 0 275 32.5 Q 275 65 255.175 65L 255.175 65 H 109.99999999999999 Q 101.74999999999999 32.5 93.49999999999999 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#par-chromosome-1-body-clip)">
+          <path d="M 19.825 0 H 93.49999999999999 Q 101.74999999999999 32.5 109.99999999999999 0 H 255.175 Q 275 0 275 32.5 Q 275 65 255.175 65L 255.175 65 H 109.99999999999999 Q 101.74999999999999 32.5 93.49999999999999 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" fill="#E8D8EC" />
+          <rect x="109.99999999999999" y="0" width="165.0" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          <g id="par-chromosome-1-body-region-0">
+            <rect x="19.825" y="0" width="55.70727272727272" height="65" fill="#E8D8EC" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="par-chromosome-1-body-region-1">
+            <rect x="75.53227272727273" y="0" width="17.967727272727263" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="par-chromosome-1-body-region-2">
+            <rect x="109.99999999999999" y="0" width="145.175" height="65" fill="#CFE9BB" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 19.825 0 H 93.49999999999999 Q 101.74999999999999 32.5 109.99999999999999 0 H 255.175 Q 275 0 275 32.5 Q 275 65 255.175 65L 255.175 65 H 109.99999999999999 Q 101.74999999999999 32.5 93.49999999999999 65 H 19.825 Q 0 65 0 32.5 Q 0 0 19.825 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 12.675) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="1.38775" />
+        <ellipse id="par-chromosome-1-body-centromere" cx="101.74999999999999" cy="32.5" rx="17.55" ry="32.5" fill="none" stroke="#72508C" stroke-width="1.78425" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <g id="crossover" stroke="#823A70" stroke-width="4" fill="none">
+    <path d="M175 127 C265 127 325 155 420 155 M175 155 C265 155 325 127 420 127" />
+  </g>
+  <g font-family="Atkinson Hyperlegible Next" font-size="32" fill="#222">
+    <text x="177" y="65" text-anchor="middle">X</text>
+    <text x="417" y="65" text-anchor="middle">Y</text>
+    <text x="325" y="565" text-anchor="middle" font-size="25">Crossover between pseudoautosomal regions</text>
+  </g>
 </svg>

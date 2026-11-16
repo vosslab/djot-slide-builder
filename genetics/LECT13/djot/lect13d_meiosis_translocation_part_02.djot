@@ -1,170 +1,26 @@
 === layout: one-panel
-@replaceme
 
+# Possible gametes
 
 @body
 
-- Possible gametes
-
-![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 12
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- [1]{color=#FF00FF}
-- 2
-- 3
-- [4]{color=#FF00FF}
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_gametes_46.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
+# Possible gametes
 
 @body
 
-- Possible gametes
-
-![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 12
-
-- 12
-
-- 4
-
-- 4
-
-- 4
-
-- 12
-
-- 12
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 4
-
-- 12
-
-- [1]{color=#FF00FF}
-- 2
-- 3
-- [4]{color=#FF00FF}
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_gametes_47.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
+# Possible gametes
 
 @body
 
-- Possible gametes
-
-![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 12
-
-- 12
-
-- 4
-
-- 4
-
-- 4
-
-- [25% normal]{color=green}
-
-- 12
-
-- 12
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 12
-
-- 4
-
-- 4
-
-- 4
-
-- 12
-
-- 50% really bad
-
-- [25% balanced translocation]{color=#CC00CC}
-
-- [1]{color=#FF00FF}
-- 2
-- 3
-- [4]{color=#FF00FF}
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_gametes_48.drawn.svg)
 
 === layout: one-panel
 @replaceme
@@ -265,24 +121,24 @@
 - Important in human genetics
   - risk factor in Down syndrome when chromosome 21 is involved.
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
-# *The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes*
-
-@body
-
-![Slide image 19](assets/lect13d-meiosis_translocation/human_chromosome_2_fusion.drawn.svg)
-
-- A chromosome with two functional centromeres cannot persist for very long.
-- The centromere in the long arm became inactivated.
-- No obvious indication of the inactivated centromere remains.
-
-- Genetically unstable
+@left
 
 - Chimpanzee
 - Gorilla &#8211; have
 - 48 chromosomes
+
+![Slide image 19](assets/lect13d-meiosis_translocation/human_chromosome_2_fusion.drawn.svg)
+
+@right
+
+*The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes*
+
+- A chromosome with two functional centromeres cannot persist for very long.
+  - Genetically unstable
+- The centromere in the long arm became inactivated.
+- No obvious indication of the inactivated centromere remains.
 
 === layout: one-panel
 @replaceme
@@ -320,13 +176,14 @@
 
 ![Slide image 22](assets/lect13d-meiosis_translocation/robertsonian_gamete_products.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 
-@body
+@left
 
-![Slide image 22](assets/lect13d-meiosis_translocation/robertsonian_gamete_products.drawn.svg)
+![Slide image 22](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_robertsonian_footer.drawn.svg)
+
+@right
 
 - [Adjacent gametes]{color=blue} have missing portions and duplicate portions of the chromosomes
 - [Alternate gametes]{color=#800080} have exactly 100% of the genome; but the chromosomes might be scrambled

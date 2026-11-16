@@ -1,0 +1,69 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06c-meiosis/assortment_alignment_a.drawn.svg",
+  "placements": [
+    {
+      "group": "alignment-a-A",
+      "parts": [
+        {
+          "path": "M213.25,188.15 Q226.75,230 213.25,271.85",
+          "color": "#008873",
+          "width": 9.450000000000001
+        },
+        {
+          "path": "M226.75,188.15 Q213.25,230 226.75,271.85",
+          "color": "#008873",
+          "width": 9.450000000000001
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "alignment-a-B",
+      "parts": [
+        {
+          "path": "M393.25,204.35 Q406.75,230 393.25,255.65",
+          "color": "#D85A25",
+          "width": 9.450000000000001
+        },
+        {
+          "path": "M406.75,204.35 Q393.25,230 406.75,255.65",
+          "color": "#D85A25",
+          "width": 9.450000000000001
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "alignment-a-a",
+      "parts": [
+        {
+          "path": "M213.25,293.15 Q226.75,335 213.25,376.85",
+          "color": "#087EA4",
+          "width": 9.450000000000001
+        },
+        {
+          "path": "M226.75,293.15 Q213.25,335 226.75,376.85",
+          "color": "#087EA4",
+          "width": 9.450000000000001
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "alignment-a-b",
+      "parts": [
+        {
+          "path": "M393.25,309.35 Q406.75,335 393.25,360.65",
+          "color": "#A32C50",
+          "width": 9.450000000000001
+        },
+        {
+          "path": "M406.75,309.35 Q393.25,335 406.75,360.65",
+          "color": "#A32C50",
+          "width": 9.450000000000001
+        }
+      ],
+      "centromere": true
+    }
+  ]
+}

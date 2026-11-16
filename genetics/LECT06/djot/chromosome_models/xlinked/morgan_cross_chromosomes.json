@@ -1,0 +1,327 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06d-x_linked_genes_1/morgan_cross_chromosomes.drawn.svg",
+  "placements": [
+    {
+      "group": "morgan-chromosome-12",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-13",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-14",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-15",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    },
+    {
+      "group": "morgan-chromosome-18",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-20",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    },
+    {
+      "group": "morgan-chromosome-22",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-24",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-25",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-27",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-28",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    },
+    {
+      "group": "morgan-chromosome-31",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-33",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    },
+    {
+      "group": "morgan-chromosome-35",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-37",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-39",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-40",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-42",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-43",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    },
+    {
+      "group": "morgan-chromosome-45",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-46",
+      "model": {
+        "segments": [
+          [
+            "#C43D42",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-48",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            73
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 2 0 H 75",
+      "thickness": 16
+    },
+    {
+      "group": "morgan-chromosome-49",
+      "model": {
+        "segments": [
+          [
+            "#247FA9",
+            1
+          ]
+        ],
+        "centromere": null
+      },
+      "path": "M 0 0 C 24 -4 49 -4 72 0 C 88 3 82 18 65 18",
+      "thickness": 14
+    }
+  ]
+}

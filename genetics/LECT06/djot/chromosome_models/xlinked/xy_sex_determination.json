@@ -1,0 +1,833 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06d-x_linked_genes_1/xy_sex_determination.drawn.svg",
+  "placements": [
+    {
+      "group": "female-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "female-blue-1",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "female-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "female-green-1",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "female-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "female-sex-1",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-blue-1",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-green-1",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "male-sex-1",
+      "model": {
+        "segments": [
+          [
+            "#c58aab",
+            2.73
+          ],
+          [
+            "#c58aab",
+            18.27
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 21,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-1-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-1-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-1-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-X-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-X-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-X-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-2-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-2-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "egg-2-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-Y-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-Y-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "sperm-Y-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#c58aab",
+            2.73
+          ],
+          [
+            "#c58aab",
+            18.27
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 21,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-blue-1",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-green-1",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XX-sex-1",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-blue-0",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-blue-1",
+      "model": {
+        "segments": [
+          [
+            "#1389bb",
+            20.16
+          ],
+          [
+            "#1389bb",
+            21.84
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 42,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-green-0",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-green-1",
+      "model": {
+        "segments": [
+          [
+            "#168e69",
+            19.6
+          ],
+          [
+            "#168e69",
+            20.4
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 40,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-sex-0",
+      "model": {
+        "segments": [
+          [
+            "#b5d1e0",
+            3.77
+          ],
+          [
+            "#b5d1e0",
+            25.23
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 29,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    },
+    {
+      "group": "progeny-XY-sex-1",
+      "model": {
+        "segments": [
+          [
+            "#c58aab",
+            2.73
+          ],
+          [
+            "#c58aab",
+            18.27
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 21,
+      "orientation": "vertical",
+      "translate": [
+        -6.557377049180328,
+        0
+      ],
+      "thickness": 13.114754098360656
+    }
+  ]
+}

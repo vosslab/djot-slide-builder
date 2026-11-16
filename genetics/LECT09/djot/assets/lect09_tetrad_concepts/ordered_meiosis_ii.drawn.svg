@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ascii'?>
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="figure-title figure-description">
   <title id="figure-title">Allele segregation at meiosis I and meiosis II</title>
   <desc id="figure-description">After meiosis I, homologous centromeres are separated but sister chromatids remain joined. Without a crossover the homologs carry AA and aa. With a crossover each carries A and a. Meiosis II separates sister centromeres, giving AAaa or AaAa ordered products. Mitosis follows.</desc>
@@ -22,38 +22,50 @@
     <text x="900" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Second-Division Segregation</text>
     <text x="300" y="83" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Homologous centromeres separate</text>
     <g id="fds-MI-green" data-alleles="AA">
-      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M182 199 C177 230 187 243 182 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="fds-MI-green-chromatid-1" data-role="chromatid" data-centerline="M 179.0,116.0 C 175.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 188.0,180.0 182.0,199.0 C 177.0,230.0 187.0,243.0 182.0,260.0" data-product="A">
+        <path d="M 179.0,116.0 C 175.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 188.0,180.0 182.0,199.0 C 177.0,230.0 187.0,243.0 182.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 179.0,116.0 C 175.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 188.0,180.0 182.0,199.0 C 177.0,230.0 187.0,243.0 182.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MI-green-chromatid-1-region-0" data-source-label="A">
+          <path d="M 179.0,116.0 C 175.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 188.0,180.0 182.0,199.0 C 177.0,230.0 187.0,243.0 182.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="179.0" cy="116.0" r="7.0" fill="#347A40" />
+        <circle cx="182.0" cy="260.0" r="7.0" fill="#347A40" />
+      </g>
       <text x="182" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
-      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M228 199 C223 230 233 243 228 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="fds-MI-green-chromatid-2" data-role="chromatid" data-centerline="M 225.0,116.0 C 221.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 234.0,180.0 228.0,199.0 C 223.0,230.0 233.0,243.0 228.0,260.0" data-product="A">
+        <path d="M 225.0,116.0 C 221.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 234.0,180.0 228.0,199.0 C 223.0,230.0 233.0,243.0 228.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 225.0,116.0 C 221.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 234.0,180.0 228.0,199.0 C 223.0,230.0 233.0,243.0 228.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MI-green-chromatid-2-region-0" data-source-label="A">
+          <path d="M 225.0,116.0 C 221.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 234.0,180.0 228.0,199.0 C 223.0,230.0 233.0,243.0 228.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="225.0" cy="116.0" r="7.0" fill="#347A40" />
+        <circle cx="228.0" cy="260.0" r="7.0" fill="#347A40" />
+      </g>
       <text x="228" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
-      <circle cx="205" cy="151" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <ellipse id="fds-MI-green-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(205 151) rotate(90)" data-role="centromere" />
     </g>
     <g id="fds-MI-purple" data-alleles="aa">
-      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M372 199 C367 230 377 243 372 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="fds-MI-purple-chromatid-1" data-role="chromatid" data-centerline="M 369.0,116.0 C 365.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 378.0,180.0 372.0,199.0 C 367.0,230.0 377.0,243.0 372.0,260.0" data-product="a">
+        <path d="M 369.0,116.0 C 365.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 378.0,180.0 372.0,199.0 C 367.0,230.0 377.0,243.0 372.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 369.0,116.0 C 365.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 378.0,180.0 372.0,199.0 C 367.0,230.0 377.0,243.0 372.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MI-purple-chromatid-1-region-0" data-source-label="a">
+          <path d="M 369.0,116.0 C 365.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 378.0,180.0 372.0,199.0 C 367.0,230.0 377.0,243.0 372.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="369.0" cy="116.0" r="7.0" fill="#7D438D" />
+        <circle cx="372.0" cy="260.0" r="7.0" fill="#7D438D" />
+      </g>
       <text x="372" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
-      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M418 199 C413 230 423 243 418 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="fds-MI-purple-chromatid-2" data-role="chromatid" data-centerline="M 415.0,116.0 C 411.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 424.0,180.0 418.0,199.0 C 413.0,230.0 423.0,243.0 418.0,260.0" data-product="a">
+        <path d="M 415.0,116.0 C 411.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 424.0,180.0 418.0,199.0 C 413.0,230.0 423.0,243.0 418.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 415.0,116.0 C 411.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 424.0,180.0 418.0,199.0 C 413.0,230.0 423.0,243.0 418.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MI-purple-chromatid-2-region-0" data-source-label="a">
+          <path d="M 415.0,116.0 C 411.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 424.0,180.0 418.0,199.0 C 413.0,230.0 423.0,243.0 418.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="415.0" cy="116.0" r="7.0" fill="#7D438D" />
+        <circle cx="418.0" cy="260.0" r="7.0" fill="#7D438D" />
+      </g>
       <text x="418" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
-      <circle cx="395" cy="151" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <ellipse id="fds-MI-purple-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(395 151) rotate(90)" data-role="centromere" />
     </g>
     <path d="M226 151 L374 151" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
     <text x="300" y="332" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">A and a separated</text>
@@ -61,43 +73,55 @@
     <text x="321" y="382" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Meiosis II</text>
     <text x="300" y="433" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
     <g id="fds-MII-product-1" data-allele="A" data-centromere-ancestry="green">
-      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M140 542 C136 584 144 596 140 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="140" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-MII-product-1-chromatid-1" data-role="chromatid" data-centerline="M 137.0,466.0 C 132.0,488.0 145.0,482.0 140.0,500.0 C 137.0,515.0 144.0,528.0 140.0,542.0 C 136.0,584.0 144.0,596.0 140.0,608.0" data-product="A">
+        <path d="M 137.0,466.0 C 132.0,488.0 145.0,482.0 140.0,500.0 C 137.0,515.0 144.0,528.0 140.0,542.0 C 136.0,584.0 144.0,596.0 140.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 137.0,466.0 C 132.0,488.0 145.0,482.0 140.0,500.0 C 137.0,515.0 144.0,528.0 140.0,542.0 C 136.0,584.0 144.0,596.0 140.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MII-product-1-chromatid-1-region-0" data-source-label="A">
+          <path d="M 137.0,466.0 C 132.0,488.0 145.0,482.0 140.0,500.0 C 137.0,515.0 144.0,528.0 140.0,542.0 C 136.0,584.0 144.0,596.0 140.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="137.0" cy="466.0" r="7.0" fill="#347A40" />
+        <circle cx="140.0" cy="608.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="fds-MII-product-1-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(140 500) rotate(90)" data-role="centromere" />
       <text x="140" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="fds-MII-product-2" data-allele="A" data-centromere-ancestry="green">
-      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M250 542 C246 584 254 596 250 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="250" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-MII-product-2-chromatid-1" data-role="chromatid" data-centerline="M 247.0,466.0 C 242.0,488.0 255.0,482.0 250.0,500.0 C 247.0,515.0 254.0,528.0 250.0,542.0 C 246.0,584.0 254.0,596.0 250.0,608.0" data-product="A">
+        <path d="M 247.0,466.0 C 242.0,488.0 255.0,482.0 250.0,500.0 C 247.0,515.0 254.0,528.0 250.0,542.0 C 246.0,584.0 254.0,596.0 250.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 247.0,466.0 C 242.0,488.0 255.0,482.0 250.0,500.0 C 247.0,515.0 254.0,528.0 250.0,542.0 C 246.0,584.0 254.0,596.0 250.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MII-product-2-chromatid-1-region-0" data-source-label="A">
+          <path d="M 247.0,466.0 C 242.0,488.0 255.0,482.0 250.0,500.0 C 247.0,515.0 254.0,528.0 250.0,542.0 C 246.0,584.0 254.0,596.0 250.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="247.0" cy="466.0" r="7.0" fill="#347A40" />
+        <circle cx="250.0" cy="608.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="fds-MII-product-2-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(250 500) rotate(90)" data-role="centromere" />
       <text x="250" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="fds-MII-product-3" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M360 542 C356 584 364 596 360 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="360" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-MII-product-3-chromatid-1" data-role="chromatid" data-centerline="M 357.0,466.0 C 352.0,488.0 365.0,482.0 360.0,500.0 C 357.0,515.0 364.0,528.0 360.0,542.0 C 356.0,584.0 364.0,596.0 360.0,608.0" data-product="a">
+        <path d="M 357.0,466.0 C 352.0,488.0 365.0,482.0 360.0,500.0 C 357.0,515.0 364.0,528.0 360.0,542.0 C 356.0,584.0 364.0,596.0 360.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 357.0,466.0 C 352.0,488.0 365.0,482.0 360.0,500.0 C 357.0,515.0 364.0,528.0 360.0,542.0 C 356.0,584.0 364.0,596.0 360.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MII-product-3-chromatid-1-region-0" data-source-label="a">
+          <path d="M 357.0,466.0 C 352.0,488.0 365.0,482.0 360.0,500.0 C 357.0,515.0 364.0,528.0 360.0,542.0 C 356.0,584.0 364.0,596.0 360.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="357.0" cy="466.0" r="7.0" fill="#7D438D" />
+        <circle cx="360.0" cy="608.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="fds-MII-product-3-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(360 500) rotate(90)" data-role="centromere" />
       <text x="360" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <g id="fds-MII-product-4" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M470 542 C466 584 474 596 470 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="470" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-MII-product-4-chromatid-1" data-role="chromatid" data-centerline="M 467.0,466.0 C 462.0,488.0 475.0,482.0 470.0,500.0 C 467.0,515.0 474.0,528.0 470.0,542.0 C 466.0,584.0 474.0,596.0 470.0,608.0" data-product="a">
+        <path d="M 467.0,466.0 C 462.0,488.0 475.0,482.0 470.0,500.0 C 467.0,515.0 474.0,528.0 470.0,542.0 C 466.0,584.0 474.0,596.0 470.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 467.0,466.0 C 462.0,488.0 475.0,482.0 470.0,500.0 C 467.0,515.0 474.0,528.0 470.0,542.0 C 466.0,584.0 474.0,596.0 470.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-MII-product-4-chromatid-1-region-0" data-source-label="a">
+          <path d="M 467.0,466.0 C 462.0,488.0 475.0,482.0 470.0,500.0 C 467.0,515.0 474.0,528.0 470.0,542.0 C 466.0,584.0 474.0,596.0 470.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="467.0" cy="466.0" r="7.0" fill="#7D438D" />
+        <circle cx="470.0" cy="608.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="fds-MII-product-4-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(470 500) rotate(90)" data-role="centromere" />
       <text x="470" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <path d="M157 500 L233 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
@@ -106,38 +130,56 @@
     <text x="321" y="713" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Mitosis</text>
     <text x="900" y="83" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Homologous centromeres separate</text>
     <g id="sds-MI-green" data-alleles="Aa">
-      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M782 199 C777 230 787 243 782 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="sds-MI-green-chromatid-1" data-role="chromatid" data-centerline="M 779.0,116.0 C 775.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 788.0,180.0 782.0,199.0 C 777.0,230.0 787.0,243.0 782.0,260.0" data-product="A">
+        <path d="M 779.0,116.0 C 775.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 788.0,180.0 782.0,199.0 C 777.0,230.0 787.0,243.0 782.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 779.0,116.0 C 775.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 788.0,180.0 782.0,199.0 C 777.0,230.0 787.0,243.0 782.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MI-green-chromatid-1-region-0" data-source-label="A">
+          <path d="M 779.0,116.0 C 775.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 788.0,180.0 782.0,199.0 C 777.0,230.0 787.0,243.0 782.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="779.0" cy="116.0" r="7.0" fill="#347A40" />
+        <circle cx="782.0" cy="260.0" r="7.0" fill="#347A40" />
+      </g>
       <text x="782" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
-      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M828 199 C823 230 833 243 828 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="sds-MI-green-chromatid-2" data-role="chromatid" data-centerline="M 825.0,116.0 C 821.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 834.0,180.0 828.0,199.0 C 823.0,230.0 833.0,243.0 828.0,260.0" data-product="a">
+        <path d="M 825.0,116.0 C 821.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 834.0,180.0 828.0,199.0 C 823.0,230.0 833.0,243.0 828.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 825.0,116.0 C 821.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 834.0,180.0 828.0,199.0 C 823.0,230.0 833.0,243.0 828.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MI-green-chromatid-2-region-0" data-source-label="A">
+          <path d="M 825.0,116.0 C 821.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 834.0,180.0 828.0,199.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-MI-green-chromatid-2-region-1" data-source-label="a">
+          <path d="M 827.9999999840766,199.00000009872423 C 823.000000021231,230.00000002760032 832.9999999946923,243.00000001804636 828.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="825.0" cy="116.0" r="7.0" fill="#347A40" />
+        <circle cx="828.0" cy="260.0" r="7.0" fill="#7D438D" />
+      </g>
       <text x="828" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
-      <circle cx="805" cy="151" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <ellipse id="sds-MI-green-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(805 151) rotate(90)" data-role="centromere" />
     </g>
     <g id="sds-MI-purple" data-alleles="Aa">
-      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M972 199 C967 230 977 243 972 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="sds-MI-purple-chromatid-1" data-role="chromatid" data-centerline="M 969.0,116.0 C 965.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 978.0,180.0 972.0,199.0 C 967.0,230.0 977.0,243.0 972.0,260.0" data-product="A">
+        <path d="M 969.0,116.0 C 965.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 978.0,180.0 972.0,199.0 C 967.0,230.0 977.0,243.0 972.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 969.0,116.0 C 965.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 978.0,180.0 972.0,199.0 C 967.0,230.0 977.0,243.0 972.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MI-purple-chromatid-1-region-0" data-source-label="a">
+          <path d="M 969.0,116.0 C 965.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 978.0,180.0 972.0,199.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-MI-purple-chromatid-1-region-1" data-source-label="A">
+          <path d="M 971.9999999840766,199.00000009872423 C 967.000000021231,230.00000002760032 976.9999999946923,243.00000001804636 972.0,260.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="969.0" cy="116.0" r="7.0" fill="#7D438D" />
+        <circle cx="972.0" cy="260.0" r="7.0" fill="#347A40" />
+      </g>
       <text x="972" y="292" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
-      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M1018 199 C1013 230 1023 243 1018 260" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
+      <g id="sds-MI-purple-chromatid-2" data-role="chromatid" data-centerline="M 1015.0,116.0 C 1011.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 1024.0,180.0 1018.0,199.0 C 1013.0,230.0 1023.0,243.0 1018.0,260.0" data-product="a">
+        <path d="M 1015.0,116.0 C 1011.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 1024.0,180.0 1018.0,199.0 C 1013.0,230.0 1023.0,243.0 1018.0,260.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 1015.0,116.0 C 1011.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 1024.0,180.0 1018.0,199.0 C 1013.0,230.0 1023.0,243.0 1018.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MI-purple-chromatid-2-region-0" data-source-label="a">
+          <path d="M 1015.0,116.0 C 1011.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 1024.0,180.0 1018.0,199.0 C 1013.0,230.0 1023.0,243.0 1018.0,260.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="1015.0" cy="116.0" r="7.0" fill="#7D438D" />
+        <circle cx="1018.0" cy="260.0" r="7.0" fill="#7D438D" />
+      </g>
       <text x="1018" y="292" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
-      <circle cx="995" cy="151" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <ellipse id="sds-MI-purple-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(995 151) rotate(90)" data-role="centromere" />
     </g>
     <path d="M826 151 L974 151" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
     <text x="900" y="332" font-size="24" text-anchor="middle" fill="#213547" font-weight="bold">A and a not yet separated</text>
@@ -145,43 +187,61 @@
     <text x="921" y="382" font-size="24" text-anchor="start" fill="#213547" font-weight="normal">Meiosis II</text>
     <text x="900" y="433" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
     <g id="sds-MII-product-1" data-allele="A" data-centromere-ancestry="green">
-      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M740 542 C736 584 744 596 740 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="740" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-MII-product-1-chromatid-1" data-role="chromatid" data-centerline="M 737.0,466.0 C 732.0,488.0 745.0,482.0 740.0,500.0 C 737.0,515.0 744.0,528.0 740.0,542.0 C 736.0,584.0 744.0,596.0 740.0,608.0" data-product="A">
+        <path d="M 737.0,466.0 C 732.0,488.0 745.0,482.0 740.0,500.0 C 737.0,515.0 744.0,528.0 740.0,542.0 C 736.0,584.0 744.0,596.0 740.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 737.0,466.0 C 732.0,488.0 745.0,482.0 740.0,500.0 C 737.0,515.0 744.0,528.0 740.0,542.0 C 736.0,584.0 744.0,596.0 740.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MII-product-1-chromatid-1-region-0" data-source-label="A">
+          <path d="M 737.0,466.0 C 732.0,488.0 745.0,482.0 740.0,500.0 C 737.0,515.0 744.0,528.0 740.0,542.0 C 736.0,584.0 744.0,596.0 740.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="737.0" cy="466.0" r="7.0" fill="#347A40" />
+        <circle cx="740.0" cy="608.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="sds-MII-product-1-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(740 500) rotate(90)" data-role="centromere" />
       <text x="740" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="sds-MII-product-2" data-allele="a" data-centromere-ancestry="green">
-      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M850 542 C846 584 854 596 850 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="850" cy="500" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-MII-product-2-chromatid-1" data-role="chromatid" data-centerline="M 847.0,466.0 C 842.0,488.0 855.0,482.0 850.0,500.0 C 847.0,515.0 854.0,528.0 850.0,542.0 C 846.0,584.0 854.0,596.0 850.0,608.0" data-product="a">
+        <path d="M 847.0,466.0 C 842.0,488.0 855.0,482.0 850.0,500.0 C 847.0,515.0 854.0,528.0 850.0,542.0 C 846.0,584.0 854.0,596.0 850.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 847.0,466.0 C 842.0,488.0 855.0,482.0 850.0,500.0 C 847.0,515.0 854.0,528.0 850.0,542.0 C 846.0,584.0 854.0,596.0 850.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MII-product-2-chromatid-1-region-0" data-source-label="A">
+          <path d="M 847.0,466.0 C 842.0,488.0 855.0,482.0 850.0,500.0 C 847.0,515.0 854.0,528.0 850.0,542.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-MII-product-2-chromatid-1-region-1" data-source-label="a">
+          <path d="M 849.9999999905192,542.0000000995501 C 846.0000000126413,584.0000000189618 853.9999999968396,596.000000009481 850.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="847.0" cy="466.0" r="7.0" fill="#347A40" />
+        <circle cx="850.0" cy="608.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="sds-MII-product-2-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(850 500) rotate(90)" data-role="centromere" />
       <text x="850" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <g id="sds-MII-product-3" data-allele="A" data-centromere-ancestry="purple">
-      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M960 542 C956 584 964 596 960 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="960" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-MII-product-3-chromatid-1" data-role="chromatid" data-centerline="M 957.0,466.0 C 952.0,488.0 965.0,482.0 960.0,500.0 C 957.0,515.0 964.0,528.0 960.0,542.0 C 956.0,584.0 964.0,596.0 960.0,608.0" data-product="A">
+        <path d="M 957.0,466.0 C 952.0,488.0 965.0,482.0 960.0,500.0 C 957.0,515.0 964.0,528.0 960.0,542.0 C 956.0,584.0 964.0,596.0 960.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 957.0,466.0 C 952.0,488.0 965.0,482.0 960.0,500.0 C 957.0,515.0 964.0,528.0 960.0,542.0 C 956.0,584.0 964.0,596.0 960.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MII-product-3-chromatid-1-region-0" data-source-label="a">
+          <path d="M 957.0,466.0 C 952.0,488.0 965.0,482.0 960.0,500.0 C 957.0,515.0 964.0,528.0 960.0,542.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-MII-product-3-chromatid-1-region-1" data-source-label="A">
+          <path d="M 959.9999999905189,542.0000000995501 C 956.0000000126411,584.0000000189618 963.9999999968397,596.000000009481 960.0,608.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="957.0" cy="466.0" r="7.0" fill="#7D438D" />
+        <circle cx="960.0" cy="608.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="sds-MII-product-3-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(960 500) rotate(90)" data-role="centromere" />
       <text x="960" y="639" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="sds-MII-product-4" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M1070 542 C1066 584 1074 596 1070 608" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="1070" cy="500" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-MII-product-4-chromatid-1" data-role="chromatid" data-centerline="M 1067.0,466.0 C 1062.0,488.0 1075.0,482.0 1070.0,500.0 C 1067.0,515.0 1074.0,528.0 1070.0,542.0 C 1066.0,584.0 1074.0,596.0 1070.0,608.0" data-product="a">
+        <path d="M 1067.0,466.0 C 1062.0,488.0 1075.0,482.0 1070.0,500.0 C 1067.0,515.0 1074.0,528.0 1070.0,542.0 C 1066.0,584.0 1074.0,596.0 1070.0,608.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 1067.0,466.0 C 1062.0,488.0 1075.0,482.0 1070.0,500.0 C 1067.0,515.0 1074.0,528.0 1070.0,542.0 C 1066.0,584.0 1074.0,596.0 1070.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-MII-product-4-chromatid-1-region-0" data-source-label="a">
+          <path d="M 1067.0,466.0 C 1062.0,488.0 1075.0,482.0 1070.0,500.0 C 1067.0,515.0 1074.0,528.0 1070.0,542.0 C 1066.0,584.0 1074.0,596.0 1070.0,608.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="1067.0" cy="466.0" r="7.0" fill="#7D438D" />
+        <circle cx="1070.0" cy="608.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="sds-MII-product-4-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(1070 500) rotate(90)" data-role="centromere" />
       <text x="1070" y="639" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <path d="M757 500 L833 500" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />

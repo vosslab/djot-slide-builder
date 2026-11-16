@@ -31,7 +31,7 @@
 
 @body
 
-![Slide image 1](assets/lect13d-meiosis_translocation/translocation_overview.drawn.svg)
+![Slide image 1](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocation_overview.drawn.svg)
 
 A translocation moves a segment from one chromosome to a nonhomologous chromosome.
 
@@ -41,24 +41,25 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 @body
 
-![Slide image 2](assets/lect13d-meiosis_translocation/translocation-complements.drawn.svg)
+![Slide image 2](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocation-complements.drawn.svg)
 
 - (A) Two pairs of non-homologous chromosomes in a diploid organism.
 - (B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.
 - (C) Homozygous reciprocal translocation.
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Translocations*
 
-@body
+@left
 
 - [(A) Two pairs of non-homologous chromosomes in a diploid organism.]{color=#CCCCCC}
 - [(B) Heterozygous reciprocal translocation, in which two non-homologous chromosomes (the two at the top) have interchanged terminal segments.]{color=#CC00CC}
 - [(C) Homozygous reciprocal translocation.]{color=#CCCCCC}
 
-![Slide image 3](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
+@right
+
+![Slide image 3](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
 - Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
 
@@ -68,7 +69,7 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 @body
 
-![Slide image 3](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
+![Slide image 3](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
 
 - Is this section, we want to look at the strange meiosis patterns of two non-homologous chromosomes
 
@@ -77,181 +78,164 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 # Separation of Translocated Chromosomes During Cell Division
 
 === layout: one-panel
-@replaceme
 
 # *Original Chromosomes*
 
 @body
 
-![Pairing stage 7](assets/lect13d-meiosis_translocation/pairing-stage-07.drawn.svg)
+![Pairing stage 7](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-07.drawn.svg)
 
 - original blue homologous chromosomes
 
 - original red homologous chromosomes
 
 === layout: one-panel
-@replaceme
 
 # *Translocation Event*
 
 @body
 
-![Pairing stage 8](assets/lect13d-meiosis_translocation/pairing-stage-08.drawn.svg)
+![Pairing stage 8](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-08.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Translocation Event*
 
 @body
 
-![Pairing stage 9](assets/lect13d-meiosis_translocation/pairing-stage-09.drawn.svg)
+![Pairing stage 9](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-09.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Translocation Event*
 
 @body
 
-![Pairing stage 10](assets/lect13d-meiosis_translocation/pairing-stage-10.drawn.svg)
+![Pairing stage 10](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-10.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Duplicate DNA to Form Sister Chromatids*
 
 @body
 
-![Pairing stage 11](assets/lect13d-meiosis_translocation/pairing-stage-11.drawn.svg)
+![Pairing stage 11](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-11.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 12](assets/lect13d-meiosis_translocation/pairing-stage-12.drawn.svg)
+![Pairing stage 12](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-12.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 13](assets/lect13d-meiosis_translocation/pairing-stage-13.drawn.svg)
+![Pairing stage 13](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-13.drawn.svg)
 
 - Several homologous pairing combinations are possible
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 14](assets/lect13d-meiosis_translocation/pairing-stage-14.drawn.svg)
+![Pairing stage 14](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-14.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 15](assets/lect13d-meiosis_translocation/pairing-stage-15.drawn.svg)
+![Pairing stage 15](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-15.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 16](assets/lect13d-meiosis_translocation/pairing-stage-16.drawn.svg)
+![Pairing stage 16](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-16.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 17](assets/lect13d-meiosis_translocation/pairing-stage-17.drawn.svg)
+![Pairing stage 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-17.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 18](assets/lect13d-meiosis_translocation/pairing-stage-18.drawn.svg)
+![Pairing stage 18](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-18.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 19](assets/lect13d-meiosis_translocation/pairing-stage-19.drawn.svg)
+![Pairing stage 19](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-19.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 20](assets/lect13d-meiosis_translocation/pairing-stage-20.drawn.svg)
+![Pairing stage 20](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-20.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 21](assets/lect13d-meiosis_translocation/pairing-stage-21.drawn.svg)
+![Pairing stage 21](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-21.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 22](assets/lect13d-meiosis_translocation/pairing-stage-22.drawn.svg)
+![Pairing stage 22](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-22.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 23](assets/lect13d-meiosis_translocation/pairing-stage-23.drawn.svg)
+![Pairing stage 23](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-23.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Time for Cell Division*
 
 @body
 
-![Pairing stage 24](assets/lect13d-meiosis_translocation/pairing-stage-24.drawn.svg)
+![Pairing stage 24](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-24.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Time for Cell Division*
 
-@body
+@left
 
-![Pairing stage 25](assets/lect13d-meiosis_translocation/pairing-stage-25.drawn.svg)
+![Pairing stage 25](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-stage-25.drawn.svg)
+
+@right
 
 - All homologous regions are paired creating a complex four-way chromosome junction
 
@@ -265,31 +249,7 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 # Spindle Binding during Cell Division
 
-=== layout: one-panel
-@replaceme
-
-# *Three Forms of Meiosis for Translocation Heterozygote*
-
-@body
-
-- chromosomes\:
-  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
-  - 2\: normal with [blue centromere]{color=#0066FF}
-  - 3\: normal with [red centromere]{color=red}
-  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
-- Is this scenario 1 is pairing with both 2 and 3, but during cell division it can only go with one of the two.
-
-![Slide image 4](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
-
-![Slide image 5](assets/lect13d-meiosis_translocation/pairing-spindle.drawn.svg)
-
-- [4]{color=#FF00FF}
-- [1]{color=#FF00FF}
-- 2
-- 3
-
 === layout: two-panels
-@replaceme
 
 # *Three Forms of Meiosis for Translocation Heterozygote*
 
@@ -300,44 +260,56 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
   - 2\: normal with [blue centromere]{color=#0066FF}
   - 3\: normal with [red centromere]{color=red}
   - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
-- Adjacent-1
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-- Adjacent-2
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-- Alternate
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+- Is this scenario 1 is pairing with both 2 and 3, but during cell division it can only go with one of the two.
 
 @right
 
-![Slide image 5](assets/lect13d-meiosis_translocation/translocation-heterozygote.drawn.svg)
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_numbered_complement_spindle.drawn.svg)
 
-![Slide image 5](assets/lect13d-meiosis_translocation/pairing-spindle.drawn.svg)
+=== layout: two-panels
 
-- [4]{color=#FF00FF}
-- [1]{color=#FF00FF}
-- 2
-- 3
+# *Three Forms of Meiosis for Translocation Heterozygote*
+
+@left
+
+chromosomes\:
+
+[1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+
+2\: normal with [blue centromere]{color=#0066FF}
+
+3\: normal with [red centromere]{color=red}
+
+[4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+
+| Adjacent-1 | [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF} |
+| Adjacent-2 | [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF} |
+| Alternate | [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3 |
+
+@right
+
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_numbered_complement_spindle.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # *Three Forms of Meiosis for Translocation Heterozygote*
 
 @body
 
-![Slide image 6](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
+![Slide image 6](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Three Forms of Meiosis for Translocation Heterozygote*
 
-@body
+@left
 
-![Slide image 6](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
+![Slide image 6](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - Spindles bind to closest centromeres
 - 1+2 and 3+4 stay together
+
+@right
 
 - Alternate
   - left binds to 1+4
@@ -351,64 +323,63 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 # Determine the Possible Gametes
 
-=== layout: one-plus-two-panels
-@replaceme
+=== layout: four-panels
 
-# *Rules of the Three Forms*
+@top-left
 
-@left
+*Rules of the Three Forms*
 
-- Numbers are arbitrary, but we'll stick with them to avoid confusion.
-- Setup\:
-  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
-  - 2\: normal with [blue centromere]{color=#0066FF}
-  - 3\: normal with [red centromere]{color=red}
-  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
-- Adjacent-1
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-- Adjacent-2
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-- Alternate
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
+Setup\: [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
+
+2\: normal with [blue centromere]{color=#0066FF}
+
+3\: normal with [red centromere]{color=red}
+
+[4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
 
 @top-right
 
-- Non-pairing\:
-  - 1 does not share DNA with 4
-  - 2 does not share DNA with 3
-- Pairing\:
-  - 1 pairs with 2 and 3
-  - 2 pairs with 1 and 4
-  - 3 pairs with 1 and 4
-  - 4 pairs with 2 and 3
+Non-pairing\: 1 does not share DNA with 4; 2 does not share DNA with 3
+
+Pairing\: 1 pairs with 2 and 3; 2 pairs with 1 and 4; 3 pairs with 1 and 4; 4 pairs with 2 and 3
+
+@bottom-left
+
+Numbers are arbitrary, but we'll stick with them to avoid confusion.
+
+| Adjacent-1 | [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF} |
+| Adjacent-2 | [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF} |
+| Alternate | [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3 |
 
 @bottom-right
 
-![Slide image 7](assets/lect13d-meiosis_translocation/pairing-flat.drawn.svg)
+![Slide image 7](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/pairing-flat.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Each Form produces only two different gametes*
 
-@body
+@left
 
-![Slide image 8](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
+![Slide image 8](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
-![Slide image 8](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
+@right
+
+![Slide image 8](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - 50% are alternate
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Each Form produces only two different gametes*
 
-@body
+@left
 
-![Slide image 8](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
+![Slide image 8](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
-![Slide image 8](assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
+@right
+
+![Slide image 8](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/segregation-three-forms.drawn.svg)
 
 - unbalanced
 
@@ -431,56 +402,58 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 @top
 
-![Slide image 9](assets/lect13d-meiosis_translocation/image_009.png)
+![Slide image 9](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/image_009.png)
 
 @bottom
 
-![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
+![Slide image 10](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: four-panels
 
-# *Rules of the Three Forms*
+@top-left
 
-@body
+*Rules of the Three Forms*
 
-- Old Setup\:
-  - [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
-  - 2\: normal with [blue centromere]{color=#0066FF}
-  - 3\: normal with [red centromere]{color=red}
-  - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
-- New Setup\:
-  - [1\: X-2]{color=#FF00FF} with [red-like centromere]{color=red}
-  - 2\: 2 with [blue centromere]{color=#0066FF}
-  - 3\: Y with [red centromere]{color=red}
-  - [4\: 2-X]{color=#FF00FF} with [blue centromere]{color=#0066FF}
-- Double check pairing system &#8594;
+Old Setup\: [1\: transl.]{color=#FF00FF} with [red]{color=red} [centromere]{color=red}
 
-- Non-pairing\:
-  - 1 does not share DNA with 4
-  - 2 does not share DNA with 3
-- Pairing\:
-  - 1 pairs with 2 and 3
-  - 2 pairs with 1 and 4
-  - 3 pairs with 1 and 4
-  - 4 pairs with 2 and 3
+2\: normal with [blue centromere]{color=#0066FF}
 
-![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
+3\: normal with [red centromere]{color=red}
 
-- [1]{color=#FF00FF}
-- 3
-- [4]{color=#FF00FF}
-- 2
+[4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
 
-=== layout: one-panel
-@replaceme
+@top-right
+
+New Setup\: [1\: X-2]{color=#FF00FF} with [red-like centromere]{color=red}
+
+2\: 2 with [blue centromere]{color=#0066FF}
+
+3\: Y with [red centromere]{color=red}
+
+[4\: 2-X]{color=#FF00FF} with [blue centromere]{color=#0066FF}
+
+@bottom-left
+
+Double check pairing system &#8594;
+
+Non-pairing\: 1 does not share DNA with 4; 2 does not share DNA with 3
+
+Pairing\: 1 pairs with 2 and 3; 2 pairs with 1 and 4; 3 pairs with 1 and 4; 4 pairs with 2 and 3
+
+@bottom-right
+
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_numbered_ruby.drawn.svg)
+
+=== layout: two-panels
 
 
-@body
+@left
 
-![Slide image 10](assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
+![Slide image 10](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/ruby-male.drawn.svg)
 
-![Slide image 10](assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
+@right
+
+![Slide image 10](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/gamete-products.drawn.svg)
 
 - [1]{color=#FF00FF}
 - 3
@@ -489,153 +462,66 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 - 50% are alternate
 
-=== layout: four-panels
-@replaceme
+=== layout: one-panel
 
+@body
 
-@top-left
+Possible gametes
 
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_parent_reference.drawn.svg)
 
-![Slide image 10](assets/lect13d-meiosis_translocation/ruby_translocation_chromosome_set.drawn.svg)
+| Adjacent-1 (25%) | Adjacent-2 (25%) | Alternate (50%) |
+| --- | --- | --- |
+| [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3 |
 
-- Possible gametes
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_gametes.drawn.svg)
 
-![Slide image 15](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
+=== layout: one-panel
 
-![Slide image 11](assets/lect13d-meiosis_translocation/normal_y_translocated_2_subset.drawn.svg)
+@body
 
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
+Possible gametes
 
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_parent_reference.drawn.svg)
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
+| Adjacent-1 (25%) | Adjacent-2 (25%) | Alternate (50%) |
+| --- | --- | --- |
+| [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3 |
+| missing genetic info | missing genetic info | |
 
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_gametes_missing.drawn.svg)
 
-@top-right
+=== layout: one-panel
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
+@body
 
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
+Possible gametes
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_parent_reference.drawn.svg)
 
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
+| Adjacent-1 (25%) | Adjacent-2 (25%) | Alternate (50%) |
+| --- | --- | --- |
+| [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF} | [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3 |
+| aborted zygotes | aborted zygotes | |
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
+![Source-associated chromosome components](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_surviving_gametes.drawn.svg)
 
-![Slide image 16](assets/lect13d-meiosis_translocation/translocated_x_normal_y_subset.drawn.svg)
+=== layout: one-panel
 
 
-@bottom-left
+@body
 
-![Slide image 16](assets/lect13d-meiosis_translocation/translocated_x_normal_y_subset.drawn.svg)
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
 
-![Slide image 11](assets/lect13d-meiosis_translocation/normal_y_translocated_2_subset.drawn.svg)
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_normal_2_subset.drawn.svg)
+- 50% wildtype non-ruby, non-dumpy females
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_normal_2_subset.drawn.svg)
+- 50% ruby, dumpy males
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
 
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-
-@bottom-right
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- [1]{color=#FF00FF}
-- 3
-- [4]{color=#FF00FF}
-- 2
-
-=== layout: four-panels
-@replaceme
-
-
-@top-left
-
-
-![Slide image 17](assets/lect13d-meiosis_translocation/ruby_translocation_chromosome_set.drawn.svg)
-
-- Possible gametes
-
-![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_translocated_2_subset.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-
-@top-right
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_normal_y_subset.drawn.svg)
-
-
-@bottom-left
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_normal_y_subset.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_translocated_2_subset.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_normal_2_subset.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_normal_2_subset.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-
-@bottom-right
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- missing genetic info
-
-- missing genetic info
-
-- [1]{color=#FF00FF}
-- 3
-- [4]{color=#FF00FF}
-- 2
+![Slide image 17](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
 
 === layout: two-panels
 @replaceme
@@ -643,79 +529,11 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 @left
 
-
-![Slide image 17](assets/lect13d-meiosis_translocation/ruby_translocation_chromosome_set.drawn.svg)
-
-- Possible gametes
-
-![Slide image 17](assets/lect13d-meiosis_translocation/reciprocal_translocation_gamete_products.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-
-@right
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-- Adjacent-1 (25%)
-  - [1]{color=#FF00FF} + 2 &#8596; 3 + [4]{color=#FF00FF}
-
-- Adjacent-2 (25%)
-  - [1]{color=#FF00FF} + 3 &#8596; 2 + [4]{color=#FF00FF}
-
-- Alternate (50%)
-  - [1]{color=#FF00FF} + [4]{color=#FF00FF} &#8596; 2 + 3
-
-- aborted
-- zygotes
-
-- aborted
-- zygotes
-
-- [1]{color=#FF00FF}
-- 3
-- [4]{color=#FF00FF}
-- 2
-
-=== layout: one-panel
-@replaceme
-
-
-@body
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_chromosome_2_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
-
-- 50% wildtype non-ruby, non-dumpy females
-
-- 50% ruby, dumpy males
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_x_chromosome_strip.drawn.svg)
-
-![Slide image 17](assets/lect13d-meiosis_translocation/translocated_2_chromosome_strip.drawn.svg)
-
-=== layout: one-panel
-@replaceme
-
-
-@body
-
 - A phenotypically normal prospective couple seeks genetic counseling because the man knows that he has a translocation of a portion of his chromosome 4 that has been exchanged with a portion of his chromosome 12.
 - Although his translocation is balanced, he and his wife want to know the probability that his sperm will be abnormal.
   - Assume that all gametes produce viable sperm, even if genetic material is missing
+@right
+
 - What is your prognosis regarding his sperm?
   - A. None will carry the translocation.
   - B. 1/4 will be wildtype, 1/4 will have translocated chromosomes, and 1/2 will have both wildtype and translocated chromosomes.
@@ -734,12 +552,12 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 - 12
 
-=== layout: one-panel
+=== layout: two-panels
 @replaceme
 
 # *Rules of the Three Forms*
 
-@body
+@left
 
 - Situation\:
   - translocation of a portion of his chromosome 4 that has been exchanged with a portion of his chromosome 12.
@@ -750,6 +568,8 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
   - 3\: normal with [red centromere]{color=red}
   - [4\: transl.]{color=#FF00FF} with [blue centromere]{color=#0066FF}
 - Double check pairing system &#8594;
+
+@right
 
 - Non-pairing\:
   - 1 does not share DNA with 4
@@ -770,12 +590,12 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 - 4
 
-=== layout: one-panel
+=== layout: two-panels
 @replaceme
 
 # *Rules of the Three Forms*
 
-@body
+@left
 
 - Setup\:
   - [1\: 4-12]{color=#FF00FF} with [red centromere]{color=red}
@@ -783,6 +603,8 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
   - 3\: normal 12 with [red centromere]{color=red}
   - [4\: 12-4]{color=#FF00FF} with [blue centromere]{color=#0066FF}
 - Double check pairing system &#8594;
+
+@right
 
 - Non-pairing\:
   - 1 does not share DNA with 4

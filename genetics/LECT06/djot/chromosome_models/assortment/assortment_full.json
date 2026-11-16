@@ -1,0 +1,437 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06c-meiosis/assortment_full.drawn.svg",
+  "placements": [
+    {
+      "group": "trees-p1-MI-A",
+      "parts": [
+        {
+          "path": "M292,118.0 Q304,139 292,160.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M306,118.0 Q294,139 306,160.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MI-B",
+      "parts": [
+        {
+          "path": "M292,182.0 Q304,196 292,210.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M306,182.0 Q294,196 306,210.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MI-a",
+      "parts": [
+        {
+          "path": "M334,118.0 Q346,139 334,160.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M348,118.0 Q336,139 348,160.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MI-b",
+      "parts": [
+        {
+          "path": "M334,182.0 Q346,196 334,210.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M348,182.0 Q336,196 348,210.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MII-0-A",
+      "parts": [
+        {
+          "path": "M174.5,314.0 Q186.5,342 174.5,370.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M188.5,314.0 Q176.5,342 188.5,370.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MII-0-B",
+      "parts": [
+        {
+          "path": "M201.5,324.0 Q213.5,342 201.5,360.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M215.5,324.0 Q203.5,342 215.5,360.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-gamete-0-0-A",
+      "parts": [
+        {
+          "path": "M122.5,500.0 L122.5,556.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-0-0-B",
+      "parts": [
+        {
+          "path": "M149.5,510.0 L149.5,546.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-0-1-A",
+      "parts": [
+        {
+          "path": "M240.5,500.0 L240.5,556.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-0-1-B",
+      "parts": [
+        {
+          "path": "M267.5,510.0 L267.5,546.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-MII-1-a",
+      "parts": [
+        {
+          "path": "M424.5,314.0 Q436.5,342 424.5,370.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M438.5,314.0 Q426.5,342 438.5,370.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-MII-1-b",
+      "parts": [
+        {
+          "path": "M451.5,324.0 Q463.5,342 451.5,360.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M465.5,324.0 Q453.5,342 465.5,360.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p1-gamete-1-0-a",
+      "parts": [
+        {
+          "path": "M372.5,500.0 L372.5,556.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-1-0-b",
+      "parts": [
+        {
+          "path": "M399.5,510.0 L399.5,546.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-1-1-a",
+      "parts": [
+        {
+          "path": "M490.5,500.0 L490.5,556.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p1-gamete-1-1-b",
+      "parts": [
+        {
+          "path": "M517.5,510.0 L517.5,546.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-MI-A",
+      "parts": [
+        {
+          "path": "M1052,118.0 Q1064,139 1052,160.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M1066,118.0 Q1054,139 1066,160.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MI-b",
+      "parts": [
+        {
+          "path": "M1052,182.0 Q1064,196 1052,210.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M1066,182.0 Q1054,196 1066,210.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MI-a",
+      "parts": [
+        {
+          "path": "M1094,118.0 Q1106,139 1094,160.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M1108,118.0 Q1096,139 1108,160.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MI-B",
+      "parts": [
+        {
+          "path": "M1094,182.0 Q1106,196 1094,210.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M1108,182.0 Q1096,196 1108,210.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MII-0-A",
+      "parts": [
+        {
+          "path": "M934.5,314.0 Q946.5,342 934.5,370.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M948.5,314.0 Q936.5,342 948.5,370.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MII-0-b",
+      "parts": [
+        {
+          "path": "M961.5,324.0 Q973.5,342 961.5,360.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M975.5,324.0 Q963.5,342 975.5,360.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-gamete-0-0-A",
+      "parts": [
+        {
+          "path": "M882.5,500.0 L882.5,556.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-0-0-b",
+      "parts": [
+        {
+          "path": "M909.5,510.0 L909.5,546.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-0-1-A",
+      "parts": [
+        {
+          "path": "M1000.5,500.0 L1000.5,556.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-0-1-b",
+      "parts": [
+        {
+          "path": "M1027.5,510.0 L1027.5,546.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-MII-1-a",
+      "parts": [
+        {
+          "path": "M1184.5,314.0 Q1196.5,342 1184.5,370.0",
+          "color": "#BB2637",
+          "width": 6.0
+        },
+        {
+          "path": "M1198.5,314.0 Q1186.5,342 1198.5,370.0",
+          "color": "#BB2637",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-MII-1-B",
+      "parts": [
+        {
+          "path": "M1211.5,324.0 Q1223.5,342 1211.5,360.0",
+          "color": "#087EA4",
+          "width": 6.0
+        },
+        {
+          "path": "M1225.5,324.0 Q1213.5,342 1225.5,360.0",
+          "color": "#087EA4",
+          "width": 6.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "trees-p2-gamete-1-0-a",
+      "parts": [
+        {
+          "path": "M1132.5,500.0 L1132.5,556.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-1-0-B",
+      "parts": [
+        {
+          "path": "M1159.5,510.0 L1159.5,546.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-1-1-a",
+      "parts": [
+        {
+          "path": "M1250.5,500.0 L1250.5,556.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "trees-p2-gamete-1-1-B",
+      "parts": [
+        {
+          "path": "M1277.5,510.0 L1277.5,546.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    }
+  ]
+}

@@ -66,7 +66,6 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 - (C) Homozygous reciprocal translocation.
 
 === layout: two-panels
-@replaceme
 
 # *Semi-sterility*
 
@@ -95,29 +94,19 @@ A translocation moves a segment from one chromosome to a nonhomologous chromosom
 
 - Certain cancers, including chronic myelogenous leukemia (CML), are caused by translocations of chromosomes
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 
-@body
+@left
 
 ![Slide image 7](assets/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg)
 
-- *Normal chromosome 9*
+*Normal chromosome 9*; *Normal chromosome 22*; *Reciprocal translocation*; *Translocated chromosome 9*; *Translocated chromosome 22 (Philadelphia chromosome)*
 
-- *Normal chromosome 22*
+@right
 
-- *Reciprocal translocation*
-
-- *Translocated chromosome 9*
-
-- *Translocated chromosome 22 (Philadelphia chromosome)*
-
-- The cancerous cells in nearly all Chronic myelogenous leukemia (CML) patients contain\:
-  - an abnormally short [chromosome 22]{color=purple}, the so-called Philadelphia chromosome, and
-  - an abnormally long chromosome 9.
-- These altered chromosomes result from the reciprocal translocation shown here,
-  - which presumably occurred in a single white blood cell precursor undergoing mitosis and was then passed along to all descendant cells.
+- The cancerous cells in nearly all Chronic myelogenous leukemia (CML) patients contain\: an abnormally short [chromosome 22]{color=purple}, the so-called Philadelphia chromosome, and an abnormally long chromosome 9.
+- These altered chromosomes result from the reciprocal translocation shown here, which presumably occurred in a single white blood cell precursor undergoing mitosis and was then passed along to all descendant cells.
 
 === layout: one-panel
 

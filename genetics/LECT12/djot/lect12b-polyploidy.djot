@@ -79,14 +79,15 @@ hidden: true
 
 ![Slide image 6](assets/visual_renewal/chrysanthemum_72_90.drawn.svg)
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
 # *Polyploidy*
 
-@body
+@left
 
 ![Slide image 7](assets/lect12b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg)
+
+@right
 
 - Polyploidy is the presence of extra sets of chromosomes due to accidents during cell division
 - Polyploidy is much more common in plants than in animals
@@ -342,153 +343,51 @@ hidden: true
   - A combination of chromosome sets from different species.
   - Allopolyploid plant species are much more numerous than autopolyploids.
 
-=== layout: one-panel
-@replaceme
+=== layout: two-panels
 
+@left
 
-@body
+![Slide image 20](assets/lect12b-polyploidy/autopolyploid_division.drawn.svg)
 
-![Slide image 20](assets/lect12b-polyploidy/image_020.jpg)
+@right
 
-- *Cell*
-- *division*
-- *error*
-
-- *Tetraploid cell*
-- *4**_n_*
-
-- *2**_n_* *=* *_6_*
-
-- *2**_n_*
-
-- *2**_n_*
-
-- *Meiosis*
-
-- *New species*
-- *(4**_n_**)*
-
-- *Gametes produced*
-- *by tetraploids*
-
-- *Autopolyploid speciation*
-
-![Slide image 21](assets/lect12b-polyploidy/image_021.png)
+![Slide image 21](assets/lect12b-polyploidy/autopolyploid_single.drawn.svg)
 
 - An [*autopolyploid*]{underline=true} is an individual with more than two chromosome sets, derived from a single species
 
 === layout: one-panel
-@replaceme
 
 # Hybridization Between Species
 
 @body
 
-![Slide image 22](assets/lect12b-polyploidy/image_022.jpg)
-
-- *Species A*
-- *2**_n_* *= 6*
-
-- *Normal gamete*
-- *_n_* *= 3*
-
-- *Normal gamete*
-- *_n_* *= 2*
-
-- *Species B*
-- *2**_n_* *= 4*
+![Slide image 22](assets/lect12b-polyploidy/hybridization_22.drawn.svg)
 
 === layout: one-panel
-@replaceme
 
 # Hybridization Between Species
 
 @body
 
-![Slide image 23](assets/lect12b-polyploidy/image_023.jpg)
-
-- *Species A*
-- *2**_n_* *= 6*
-
-- *Normal gamete*
-- *_n_* *= 3*
-
-- *Normal gamete*
-- *_n_* *= 2*
-
-- *Species B*
-- *2**_n_* *= 4*
-
-- *Sterile hybrid with*
-- *5 chromosomes*
+![Slide image 23](assets/lect12b-polyploidy/hybridization_23.drawn.svg)
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
-![Slide image 24](assets/lect12b-polyploidy/image_024.jpg)
+![Slide image 24](assets/lect12b-polyploidy/hybridization_24.drawn.svg)
 
-- *Species A*
-- *2**_n_* *= 6*
+=== layout: two-panels
 
-- *Normal gamete*
-- *_n_* *= 3*
+@left
 
-- *Normal gamete*
-- *_n_* *= 2*
+![Slide image 24](assets/lect12b-polyploidy/hybridization_24.drawn.svg)
 
-- *Species B*
-- *2**_n_* *= 4*
-
-- *Sterile hybrid with*
-- *5 chromosomes*
-
-- *Mitotic or meiotic error*
-- *doubles the chromosome*
-- *number.*
-
-- *New species\:*
-- *viable, fertile hybrid*
-- *(allopolyploid)*
-- *2**_n_* *= 10*
-
-=== layout: one-panel
-@replaceme
-
-
-@body
-
-![Slide image 24](assets/lect12b-polyploidy/image_024.jpg)
-
-- *Species A*
-- *2**_n_* *= 6*
-
-- *Normal gamete*
-- *_n_* *= 3*
-
-- *Normal gamete*
-- *_n_* *= 2*
-
-- *Species B*
-- *2**_n_* *= 4*
-
-- *Sterile hybrid with*
-- *5 chromosomes*
-
-- *Mitotic or meiotic error*
-- *doubles the chromosome*
-- *number.*
-
-- *New species\:*
-- *viable, fertile hybrid*
-- *(allopolyploid)*
-- *2**_n_* *= 10*
+@right
 
 - An [*allopolyploid*]{underline=true} is a species with multiple sets of chromosomes derived from different species
 
-![Slide image 25](assets/lect12b-polyploidy/image_025.png)
+![Slide image 25](assets/lect12b-polyploidy/allopolyploid_single.drawn.svg)
 
 === layout: one-panel
 

@@ -1,0 +1,693 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06c-meiosis/mendel_chromosome_basis.drawn.svg",
+  "placements": [
+    {
+      "group": "ana-1-0-0",
+      "parts": [
+        {
+          "path": "M256.0,459.0 Q266.0,490 256.0,521.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M266.0,459.0 Q256.0,490 266.0,521.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-1-0-1",
+      "parts": [
+        {
+          "path": "M284.0,471.0 Q294.0,490 284.0,509.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M294.0,471.0 Q284.0,490 294.0,509.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-1-1-0",
+      "parts": [
+        {
+          "path": "M406.0,459.0 Q416.0,490 406.0,521.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M416.0,459.0 Q406.0,490 416.0,521.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-1-1-1",
+      "parts": [
+        {
+          "path": "M434.0,471.0 Q444.0,490 434.0,509.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M444.0,471.0 Q434.0,490 444.0,509.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-2-0-0",
+      "parts": [
+        {
+          "path": "M1056.0,459.0 Q1066.0,490 1056.0,521.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1066.0,459.0 Q1056.0,490 1066.0,521.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-2-0-1",
+      "parts": [
+        {
+          "path": "M1084.0,471.0 Q1094.0,490 1084.0,509.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1094.0,471.0 Q1084.0,490 1094.0,509.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-2-1-0",
+      "parts": [
+        {
+          "path": "M1206.0,459.0 Q1216.0,490 1206.0,521.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1216.0,459.0 Q1206.0,490 1216.0,521.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "ana-2-1-1",
+      "parts": [
+        {
+          "path": "M1234.0,471.0 Q1244.0,490 1234.0,509.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1244.0,471.0 Q1234.0,490 1244.0,509.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-10",
+      "parts": [
+        {
+          "path": "M303.0,94.0 Q313.0,125 303.0,156.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M313.0,94.0 Q303.0,125 313.0,156.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-11",
+      "parts": [
+        {
+          "path": "M331.0,94.0 Q341.0,125 331.0,156.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M341.0,94.0 Q331.0,125 341.0,156.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-12",
+      "parts": [
+        {
+          "path": "M359.0,106.0 Q369.0,125 359.0,144.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M369.0,106.0 Q359.0,125 369.0,144.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-13",
+      "parts": [
+        {
+          "path": "M387.0,106.0 Q397.0,125 387.0,144.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M397.0,106.0 Q387.0,125 397.0,144.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-10",
+      "parts": [
+        {
+          "path": "M303.0,274.0 Q313.0,305 303.0,336.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M313.0,274.0 Q303.0,305 313.0,336.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-11",
+      "parts": [
+        {
+          "path": "M331.0,286.0 Q341.0,305 331.0,324.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M341.0,286.0 Q331.0,305 341.0,324.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-12",
+      "parts": [
+        {
+          "path": "M359.0,274.0 Q369.0,305 359.0,336.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M369.0,274.0 Q359.0,305 369.0,336.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-13",
+      "parts": [
+        {
+          "path": "M387.0,286.0 Q397.0,305 387.0,324.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M397.0,286.0 Q387.0,305 397.0,324.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-1-00",
+      "parts": [
+        {
+          "path": "M196.0,634.0 Q206.0,665 196.0,696.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M206.0,634.0 Q196.0,665 206.0,696.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-1-01",
+      "parts": [
+        {
+          "path": "M224.0,646.0 Q234.0,665 224.0,684.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M234.0,646.0 Q224.0,665 234.0,684.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "gamete-1-0-00",
+      "parts": [
+        {
+          "path": "M139.0,819.0 Q139.0,850 139.0,881.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-0-01",
+      "parts": [
+        {
+          "path": "M167.0,831.0 Q167.0,850 167.0,869.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-0-10",
+      "parts": [
+        {
+          "path": "M263.0,819.0 Q263.0,850 263.0,881.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-0-11",
+      "parts": [
+        {
+          "path": "M291.0,831.0 Q291.0,850 291.0,869.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "mii-1-10",
+      "parts": [
+        {
+          "path": "M466.0,634.0 Q476.0,665 466.0,696.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M476.0,634.0 Q466.0,665 476.0,696.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-1-11",
+      "parts": [
+        {
+          "path": "M494.0,646.0 Q504.0,665 494.0,684.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M504.0,646.0 Q494.0,665 504.0,684.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "gamete-1-1-00",
+      "parts": [
+        {
+          "path": "M409.0,819.0 Q409.0,850 409.0,881.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-1-01",
+      "parts": [
+        {
+          "path": "M437.0,831.0 Q437.0,850 437.0,869.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-1-10",
+      "parts": [
+        {
+          "path": "M533.0,819.0 Q533.0,850 533.0,881.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-1-1-11",
+      "parts": [
+        {
+          "path": "M561.0,831.0 Q561.0,850 561.0,869.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "f1-20",
+      "parts": [
+        {
+          "path": "M1103.0,94.0 Q1113.0,125 1103.0,156.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1113.0,94.0 Q1103.0,125 1113.0,156.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-21",
+      "parts": [
+        {
+          "path": "M1131.0,94.0 Q1141.0,125 1131.0,156.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1141.0,94.0 Q1131.0,125 1141.0,156.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-22",
+      "parts": [
+        {
+          "path": "M1159.0,106.0 Q1169.0,125 1159.0,144.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1169.0,106.0 Q1159.0,125 1169.0,144.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "f1-23",
+      "parts": [
+        {
+          "path": "M1187.0,106.0 Q1197.0,125 1187.0,144.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1197.0,106.0 Q1187.0,125 1197.0,144.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-20",
+      "parts": [
+        {
+          "path": "M1103.0,274.0 Q1113.0,305 1103.0,336.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1113.0,274.0 Q1103.0,305 1113.0,336.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-21",
+      "parts": [
+        {
+          "path": "M1131.0,286.0 Q1141.0,305 1131.0,324.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1141.0,286.0 Q1131.0,305 1141.0,324.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-22",
+      "parts": [
+        {
+          "path": "M1159.0,274.0 Q1169.0,305 1159.0,336.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1169.0,274.0 Q1159.0,305 1169.0,336.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mi-23",
+      "parts": [
+        {
+          "path": "M1187.0,286.0 Q1197.0,305 1187.0,324.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1197.0,286.0 Q1187.0,305 1197.0,324.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-2-00",
+      "parts": [
+        {
+          "path": "M996.0,634.0 Q1006.0,665 996.0,696.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1006.0,634.0 Q996.0,665 1006.0,696.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-2-01",
+      "parts": [
+        {
+          "path": "M1024.0,646.0 Q1034.0,665 1024.0,684.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1034.0,646.0 Q1024.0,665 1034.0,684.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "gamete-2-0-00",
+      "parts": [
+        {
+          "path": "M939.0,819.0 Q939.0,850 939.0,881.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-0-01",
+      "parts": [
+        {
+          "path": "M967.0,831.0 Q967.0,850 967.0,869.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-0-10",
+      "parts": [
+        {
+          "path": "M1063.0,819.0 Q1063.0,850 1063.0,881.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-0-11",
+      "parts": [
+        {
+          "path": "M1091.0,831.0 Q1091.0,850 1091.0,869.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "mii-2-10",
+      "parts": [
+        {
+          "path": "M1266.0,634.0 Q1276.0,665 1266.0,696.0",
+          "color": "#BB2637",
+          "width": 7.0
+        },
+        {
+          "path": "M1276.0,634.0 Q1266.0,665 1276.0,696.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "mii-2-11",
+      "parts": [
+        {
+          "path": "M1294.0,646.0 Q1304.0,665 1294.0,684.0",
+          "color": "#087EA4",
+          "width": 7.0
+        },
+        {
+          "path": "M1304.0,646.0 Q1294.0,665 1304.0,684.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "gamete-2-1-00",
+      "parts": [
+        {
+          "path": "M1209.0,819.0 Q1209.0,850 1209.0,881.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-1-01",
+      "parts": [
+        {
+          "path": "M1237.0,831.0 Q1237.0,850 1237.0,869.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-1-10",
+      "parts": [
+        {
+          "path": "M1333.0,819.0 Q1333.0,850 1333.0,881.0",
+          "color": "#BB2637",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    },
+    {
+      "group": "gamete-2-1-11",
+      "parts": [
+        {
+          "path": "M1361.0,831.0 Q1361.0,850 1361.0,869.0",
+          "color": "#087EA4",
+          "width": 7.0
+        }
+      ],
+      "centromere": false
+    }
+  ]
+}

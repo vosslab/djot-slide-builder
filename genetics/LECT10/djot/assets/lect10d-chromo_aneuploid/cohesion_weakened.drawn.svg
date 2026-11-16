@@ -2,10 +2,7 @@
 <title id="title">cohesion weakened</title>
 <desc id="desc">Two sister chromatids, blue, held by one orange cohesin ring, with loosened arms.</desc>
 <g transform="translate(320 0) rotate(90)">
-<g id="sister-chromatids" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="round">
-<path d="M 46 24 C 42 85 60 123 85 157 C 59 192 43 235 46 296"/>
-<path d="M 154 24 C 158 85 140 123 115 157 C 141 192 157 235 154 296"/>
-</g>
+<g id="sister-chromatids"><g id="cohesion_weakened-sister-1"><path d="M 46.0,24.0 C 42.0,85.0 60.0,123.0 85.0,157.0 C 59.0,192.0 43.0,235.0 46.0,296.0" fill="none" stroke="#344651" stroke-width="23.805" stroke-linecap="round" stroke-linejoin="round" /><path d="M 46.0,24.0 C 42.0,85.0 60.0,123.0 85.0,157.0 C 59.0,192.0 43.0,235.0 46.0,296.0" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" /><g id="cohesion_weakened-sister-1-region-0" data-source-label=""><path d="M 46.0,24.0 C 42.0,85.0 60.0,123.0 85.0,157.0 C 59.0,192.0 43.0,235.0 46.0,296.0" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="46.0" cy="24.0" r="11.5" fill="#24578F" /><circle cx="46.0" cy="296.0" r="11.5" fill="#24578F" /></g><g id="cohesion_weakened-sister-2"><path d="M 154.0,24.0 C 158.0,85.0 140.0,123.0 115.0,157.0 C 141.0,192.0 157.0,235.0 154.0,296.0" fill="none" stroke="#344651" stroke-width="23.805" stroke-linecap="round" stroke-linejoin="round" /><path d="M 154.0,24.0 C 158.0,85.0 140.0,123.0 115.0,157.0 C 141.0,192.0 157.0,235.0 154.0,296.0" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" /><g id="cohesion_weakened-sister-2-region-0" data-source-label=""><path d="M 154.0,24.0 C 158.0,85.0 140.0,123.0 115.0,157.0 C 141.0,192.0 157.0,235.0 154.0,296.0" fill="none" stroke="#24578F" stroke-width="23" stroke-linecap="butt" stroke-linejoin="round" /></g><circle cx="154.0" cy="24.0" r="11.5" fill="#24578F" /><circle cx="154.0" cy="296.0" r="11.5" fill="#24578F" /></g></g>
 <g id="cohesin" fill="none" stroke="#935D00" stroke-width="7">
 <ellipse cx="100" cy="157" rx="41" ry="12"/>
 </g>

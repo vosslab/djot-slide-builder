@@ -1,0 +1,1282 @@
+{
+  "source": "mitosis.jpg",
+  "source_sha256": "1f42c15937330d7a9c149f6349a680f7d18bde77778e10ee8d3b11e7b6539960",
+  "source_dimensions": [
+    1037,
+    1311
+  ],
+  "source_chromosomes": 48,
+  "source_chromatids": 64,
+  "colors": {
+    "teal": "#009180",
+    "red": "#DB5C3B",
+    "purple": "#AE5566",
+    "blue": "#417392",
+    "lightblue": "#A4BCCF",
+    "mini_blue": "#228BBE"
+  },
+  "color_method": "Median RGB sampled along large source chromosome centerlines; the thumbnail blue is sampled independently. Colors identify source bodies, not course theme.",
+  "preserved_conventions": [
+    "Interphase molecular DNA threads remain original pixels.",
+    "The eight telophase miniature rods lack a source-localized centromere; neither a neck nor a marker is invented.",
+    "Blue sisters are dark/light only in enlarged source views; miniature blue remains the original single blue convention."
+  ],
+  "objects": [
+    {
+      "id": "prophase-blue",
+      "stage": "prophase",
+      "identity": "blue",
+      "centromere": [
+        608,
+        160
+      ],
+      "path_join": [
+        608,
+        160
+      ],
+      "thickness": 10,
+      "colors": [
+        "blue",
+        "lightblue"
+      ],
+      "paths": [
+        [
+          "M535 152 C561 152 593 149 608 160",
+          "C622 149 652 153 680 152"
+        ],
+        [
+          "M536 170 C563 170 594 172 608 160",
+          "C624 170 653 169 680 170"
+        ]
+      ],
+      "source_mask_pixels": 3825,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "prophase-purple",
+      "stage": "prophase",
+      "identity": "purple",
+      "centromere": [
+        526,
+        202
+      ],
+      "path_join": [
+        526,
+        202
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple",
+        "purple"
+      ],
+      "paths": [
+        [
+          "M496 194 Q514 195 526 202",
+          "Q547 192 605 195"
+        ],
+        [
+          "M496 212 Q515 211 526 202",
+          "Q546 213 604 213"
+        ]
+      ],
+      "source_mask_pixels": 2665,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "prophase-teal",
+      "stage": "prophase",
+      "identity": "teal",
+      "centromere": [
+        548,
+        255
+      ],
+      "path_join": [
+        548,
+        255
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal",
+        "teal"
+      ],
+      "paths": [
+        [
+          "M478 257 Q515 244 548 255",
+          "Q574 240 623 263"
+        ],
+        [
+          "M478 276 Q514 264 548 255",
+          "Q578 268 618 280"
+        ]
+      ],
+      "source_mask_pixels": 4177,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "prophase-red",
+      "stage": "prophase",
+      "identity": "red",
+      "centromere": [
+        631,
+        309
+      ],
+      "path_join": [
+        631,
+        309
+      ],
+      "thickness": 10,
+      "colors": [
+        "red",
+        "red"
+      ],
+      "paths": [
+        [
+          "M551 313 Q600 297 631 309",
+          "Q646 299 660 305"
+        ],
+        [
+          "M555 329 Q600 315 631 309",
+          "Q647 312 658 319"
+        ]
+      ],
+      "source_mask_pixels": 3172,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "metaphase-teal",
+      "stage": "metaphase",
+      "identity": "teal",
+      "centromere": [
+        665,
+        521
+      ],
+      "path_join": [
+        665,
+        521
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal",
+        "teal"
+      ],
+      "paths": [
+        [
+          "M597 502 C621 502 633 503 665 521",
+          "Q696 521 732 553"
+        ],
+        [
+          "M595 519 C617 518 649 531 665 521",
+          "Q692 537 721 566"
+        ]
+      ],
+      "source_mask_pixels": 4381,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "metaphase-red",
+      "stage": "metaphase",
+      "identity": "red",
+      "centromere": [
+        765,
+        535
+      ],
+      "path_join": [
+        765,
+        535
+      ],
+      "thickness": 10,
+      "colors": [
+        "red",
+        "red"
+      ],
+      "paths": [
+        [
+          "M697 492 Q743 508 765 535",
+          "Q783 538 789 549"
+        ],
+        [
+          "M691 507 Q735 522 765 535",
+          "Q781 550 781 559"
+        ]
+      ],
+      "source_mask_pixels": 3057,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "metaphase-purple",
+      "stage": "metaphase",
+      "identity": "purple",
+      "centromere": [
+        786,
+        588
+      ],
+      "path_join": [
+        786,
+        588
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple",
+        "purple"
+      ],
+      "paths": [
+        [
+          "M766 568 Q780 575 786 588",
+          "Q811 591 861 618"
+        ],
+        [
+          "M756 584 Q771 592 786 588",
+          "Q800 606 852 633"
+        ]
+      ],
+      "source_mask_pixels": 2937,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "metaphase-blue",
+      "stage": "metaphase",
+      "identity": "blue",
+      "centromere": [
+        881,
+        605
+      ],
+      "path_join": [
+        881,
+        605
+      ],
+      "thickness": 10,
+      "colors": [
+        "blue",
+        "lightblue"
+      ],
+      "paths": [
+        [
+          "M828 554 Q865 578 881 605",
+          "Q907 612 945 641"
+        ],
+        [
+          "M819 570 Q851 594 881 605",
+          "Q902 625 934 655"
+        ]
+      ],
+      "source_mask_pixels": 4079,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-left-teal",
+      "stage": "anaphase-left",
+      "identity": "teal",
+      "centromere": [
+        641,
+        995
+      ],
+      "path_join": [
+        641,
+        995
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M670 918 C660 950 646 960 641 995",
+          "C649 984 689 968 712 961"
+        ]
+      ],
+      "source_mask_pixels": 2394,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-right-teal",
+      "stage": "anaphase-right",
+      "identity": "teal",
+      "centromere": [
+        761,
+        868
+      ],
+      "path_join": [
+        761,
+        868
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M695 898 Q724 875 761 868",
+          "Q764 893 733 938"
+        ]
+      ],
+      "source_mask_pixels": 2353,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-left-red",
+      "stage": "anaphase-left",
+      "identity": "red",
+      "centromere": [
+        695,
+        1055
+      ],
+      "path_join": [
+        695,
+        1055
+      ],
+      "thickness": 10,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M723 980 Q711 1023 695 1055",
+          "Q715 1047 725 1048"
+        ]
+      ],
+      "source_mask_pixels": 1586,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-right-red",
+      "stage": "anaphase-right",
+      "identity": "red",
+      "centromere": [
+        815,
+        932
+      ],
+      "path_join": [
+        815,
+        932
+      ],
+      "thickness": 10,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M743 967 Q783 938 815 932",
+          "Q821 945 809 964"
+        ]
+      ],
+      "source_mask_pixels": 1647,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-left-purple",
+      "stage": "anaphase-left",
+      "identity": "purple",
+      "centromere": [
+        727,
+        1094
+      ],
+      "path_join": [
+        727,
+        1094
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M735 1064 Q727 1078 727 1094",
+          "Q748 1092 793 1050"
+        ]
+      ],
+      "source_mask_pixels": 1569,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-right-purple",
+      "stage": "anaphase-right",
+      "identity": "purple",
+      "centromere": [
+        851,
+        982
+      ],
+      "path_join": [
+        851,
+        982
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M821 992 Q837 984 851 982",
+          "Q855 1000 810 1049"
+        ]
+      ],
+      "source_mask_pixels": 1571,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-left-lightblue",
+      "stage": "anaphase-left",
+      "identity": "lightblue",
+      "centromere": [
+        792,
+        1148
+      ],
+      "path_join": [
+        792,
+        1148
+      ],
+      "thickness": 10,
+      "colors": [
+        "lightblue"
+      ],
+      "paths": [
+        [
+          "M821 1081 Q804 1115 792 1148",
+          "Q804 1152 861 1126"
+        ]
+      ],
+      "source_mask_pixels": 2025,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "anaphase-right-blue",
+      "stage": "anaphase-right",
+      "identity": "blue",
+      "centromere": [
+        909,
+        1027
+      ],
+      "path_join": [
+        909,
+        1027
+      ],
+      "thickness": 10,
+      "colors": [
+        "blue"
+      ],
+      "paths": [
+        [
+          "M842 1057 Q887 1029 909 1027",
+          "Q915 1052 898 1098"
+        ]
+      ],
+      "source_mask_pixels": 2259,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-left-teal",
+      "stage": "telophase-left",
+      "identity": "teal",
+      "centromere": [
+        45,
+        1157
+      ],
+      "path_join": [
+        45,
+        1157
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M96 1110 Q78 1132 45 1157",
+          "C39 1178 47 1217 41 1231"
+        ]
+      ],
+      "source_mask_pixels": 2163,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-left-purple",
+      "stage": "telophase-left",
+      "identity": "purple",
+      "centromere": [
+        163,
+        1132
+      ],
+      "path_join": [
+        163,
+        1132
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M134 1127 Q150 1128 163 1132",
+          "Q184 1143 222 1188"
+        ]
+      ],
+      "source_mask_pixels": 1416,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-left-red",
+      "stage": "telophase-left",
+      "identity": "red",
+      "centromere": [
+        89,
+        1244
+      ],
+      "path_join": [
+        89,
+        1244
+      ],
+      "thickness": 10,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M86 1164 Q91 1208 89 1244",
+          "Q97 1265 92 1274"
+        ]
+      ],
+      "source_mask_pixels": 1669,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-left-lightblue",
+      "stage": "telophase-left",
+      "identity": "lightblue",
+      "centromere": [
+        140,
+        1214
+      ],
+      "path_join": [
+        140,
+        1214
+      ],
+      "thickness": 10,
+      "colors": [
+        "lightblue"
+      ],
+      "paths": [
+        [
+          "M118 1144 Q126 1199 140 1214",
+          "Q150 1232 195 1263"
+        ]
+      ],
+      "source_mask_pixels": 1916,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-right-teal",
+      "stage": "telophase-right",
+      "identity": "teal",
+      "centromere": [
+        359,
+        1133
+      ],
+      "path_join": [
+        359,
+        1133
+      ],
+      "thickness": 10,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M298 1171 Q330 1141 359 1133",
+          "Q388 1120 433 1133"
+        ]
+      ],
+      "source_mask_pixels": 2220,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-right-purple",
+      "stage": "telophase-right",
+      "identity": "purple",
+      "centromere": [
+        331,
+        1216
+      ],
+      "path_join": [
+        331,
+        1216
+      ],
+      "thickness": 10,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M315 1187 Q327 1203 331 1216",
+          "Q348 1239 370 1285"
+        ]
+      ],
+      "source_mask_pixels": 1447,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-right-red",
+      "stage": "telophase-right",
+      "identity": "red",
+      "centromere": [
+        462,
+        1196
+      ],
+      "path_join": [
+        462,
+        1196
+      ],
+      "thickness": 10,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M383 1179 Q440 1180 462 1196",
+          "Q479 1206 484 1221"
+        ]
+      ],
+      "source_mask_pixels": 1754,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "telophase-right-blue",
+      "stage": "telophase-right",
+      "identity": "blue",
+      "centromere": [
+        396,
+        1235
+      ],
+      "path_join": [
+        396,
+        1235
+      ],
+      "thickness": 10,
+      "colors": [
+        "blue"
+      ],
+      "paths": [
+        [
+          "M346 1182 Q374 1225 396 1235",
+          "Q415 1250 461 1266"
+        ]
+      ],
+      "source_mask_pixels": 2092,
+      "centromere_evidence": "visible source centromere marker"
+    },
+    {
+      "id": "mini-prophase-blue",
+      "stage": "mini-prophase",
+      "identity": "blue",
+      "centromere": [
+        347,
+        392
+      ],
+      "path_join": [
+        347,
+        392
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue",
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M333 390 Q342 389 347 392",
+          "Q352 389 360 390"
+        ],
+        [
+          "M333 394 Q342 394 347 392",
+          "Q352 393 360 393"
+        ]
+      ],
+      "source_mask_pixels": 208,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-prophase-purple",
+      "stage": "mini-prophase",
+      "identity": "purple",
+      "centromere": [
+        331,
+        399
+      ],
+      "path_join": [
+        331,
+        399
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple",
+        "purple"
+      ],
+      "paths": [
+        [
+          "M326 397 Q329 397 331 399",
+          "Q337 397 346 398"
+        ],
+        [
+          "M326 401 Q329 401 331 399",
+          "Q337 401 346 401"
+        ]
+      ],
+      "source_mask_pixels": 137,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-prophase-teal",
+      "stage": "mini-prophase",
+      "identity": "teal",
+      "centromere": [
+        336,
+        409
+      ],
+      "path_join": [
+        336,
+        409
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal",
+        "teal"
+      ],
+      "paths": [
+        [
+          "M323 409 Q329 406 336 409",
+          "Q342 406 349 411"
+        ],
+        [
+          "M323 413 Q330 410 336 409",
+          "Q344 412 349 414"
+        ]
+      ],
+      "source_mask_pixels": 230,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-prophase-red",
+      "stage": "mini-prophase",
+      "identity": "red",
+      "centromere": [
+        350,
+        419
+      ],
+      "path_join": [
+        350,
+        419
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red",
+        "red"
+      ],
+      "paths": [
+        [
+          "M337 420 Q344 417 350 419",
+          "Q354 417 356 419"
+        ],
+        [
+          "M337 423 Q344 420 350 419",
+          "Q354 419 356 421"
+        ]
+      ],
+      "source_mask_pixels": 188,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-metaphase-teal",
+      "stage": "mini-metaphase",
+      "identity": "teal",
+      "centromere": [
+        438,
+        598
+      ],
+      "path_join": [
+        438,
+        598
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal",
+        "teal"
+      ],
+      "paths": [
+        [
+          "M424 594 Q431 593 438 598",
+          "Q447 598 452 603"
+        ],
+        [
+          "M424 597 Q431 596 438 598",
+          "Q444 601 450 606"
+        ]
+      ],
+      "source_mask_pixels": 254,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-metaphase-red",
+      "stage": "mini-metaphase",
+      "identity": "red",
+      "centromere": [
+        458,
+        600
+      ],
+      "path_join": [
+        458,
+        600
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red",
+        "red"
+      ],
+      "paths": [
+        [
+          "M443 592 Q455 596 458 600",
+          "Q461 601 462 603"
+        ],
+        [
+          "M442 595 Q452 599 458 600",
+          "Q459 602 460 605"
+        ]
+      ],
+      "source_mask_pixels": 184,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-metaphase-purple",
+      "stage": "mini-metaphase",
+      "identity": "purple",
+      "centromere": [
+        459,
+        610
+      ],
+      "path_join": [
+        459,
+        610
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple",
+        "purple"
+      ],
+      "paths": [
+        [
+          "M454 606 Q457 608 459 610",
+          "Q466 610 473 615"
+        ],
+        [
+          "M452 609 Q456 611 459 610",
+          "Q465 615 471 618"
+        ]
+      ],
+      "source_mask_pixels": 173,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-metaphase-blue",
+      "stage": "mini-metaphase",
+      "identity": "blue",
+      "centromere": [
+        477,
+        613
+      ],
+      "path_join": [
+        477,
+        613
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue",
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M467 604 Q474 608 477 613",
+          "Q482 614 488 619"
+        ],
+        [
+          "M465 607 Q473 613 477 613",
+          "Q481 617 486 622"
+        ]
+      ],
+      "source_mask_pixels": 252,
+      "centromere_evidence": "visible sister junction"
+    },
+    {
+      "id": "mini-anaphase-left-teal",
+      "stage": "mini-anaphase-left",
+      "identity": "teal",
+      "centromere": [
+        448,
+        827
+      ],
+      "path_join": [
+        448,
+        827
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M453 814 Q451 820 448 827",
+          "Q455 825 462 823"
+        ]
+      ],
+      "source_mask_pixels": 176,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-right-teal",
+      "stage": "mini-anaphase-right",
+      "identity": "teal",
+      "centromere": [
+        475,
+        802
+      ],
+      "path_join": [
+        475,
+        802
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M461 808 Q468 802 475 802",
+          "Q475 808 469 816"
+        ]
+      ],
+      "source_mask_pixels": 184,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-left-red",
+      "stage": "mini-anaphase-left",
+      "identity": "red",
+      "centromere": [
+        459,
+        842
+      ],
+      "path_join": [
+        459,
+        842
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M465 827 Q463 836 459 842",
+          "Q463 841 466 841"
+        ]
+      ],
+      "source_mask_pixels": 129,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-right-red",
+      "stage": "mini-anaphase-right",
+      "identity": "red",
+      "centromere": [
+        486,
+        815
+      ],
+      "path_join": [
+        486,
+        815
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M472 822 Q480 815 486 815",
+          "Q487 819 484 822"
+        ]
+      ],
+      "source_mask_pixels": 127,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-left-purple",
+      "stage": "mini-anaphase-left",
+      "identity": "purple",
+      "centromere": [
+        466,
+        851
+      ],
+      "path_join": [
+        466,
+        851
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M467 844 Q465 849 466 851",
+          "Q470 851 479 842"
+        ]
+      ],
+      "source_mask_pixels": 125,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-right-purple",
+      "stage": "mini-anaphase-right",
+      "identity": "purple",
+      "centromere": [
+        493,
+        826
+      ],
+      "path_join": [
+        493,
+        826
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M487 828 Q490 826 493 826",
+          "Q493 831 485 839"
+        ]
+      ],
+      "source_mask_pixels": 124,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-left-blue",
+      "stage": "mini-anaphase-left",
+      "identity": "blue",
+      "centromere": [
+        478,
+        861
+      ],
+      "path_join": [
+        478,
+        861
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M485 847 Q480 856 478 861",
+          "Q483 863 493 857"
+        ]
+      ],
+      "source_mask_pixels": 184,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-anaphase-right-blue",
+      "stage": "mini-anaphase-right",
+      "identity": "blue",
+      "centromere": [
+        505,
+        835
+      ],
+      "path_join": [
+        505,
+        835
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M492 841 Q501 834 505 835",
+          "Q506 841 503 849"
+        ]
+      ],
+      "source_mask_pixels": 184,
+      "centromere_evidence": "leading spindle-attached apex"
+    },
+    {
+      "id": "mini-telophase-left-teal",
+      "stage": "mini-telophase-left",
+      "identity": "teal",
+      "centromere": null,
+      "path_join": [
+        93,
+        914
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M105 906 Q101 910 93 914",
+          "Q92 923 93 930"
+        ]
+      ],
+      "source_mask_pixels": 170,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-left-purple",
+      "stage": "mini-telophase-left",
+      "identity": "purple",
+      "centromere": null,
+      "path_join": [
+        119,
+        908
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M113 907 Q117 907 119 908",
+          "Q126 911 131 919"
+        ]
+      ],
+      "source_mask_pixels": 67,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-left-red",
+      "stage": "mini-telophase-left",
+      "identity": "red",
+      "centromere": null,
+      "path_join": [
+        100,
+        926
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M106 917 Q104 923 100 926",
+          "L99 931"
+        ]
+      ],
+      "source_mask_pixels": 114,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-left-blue",
+      "stage": "mini-telophase-left",
+      "identity": "blue",
+      "centromere": null,
+      "path_join": [
+        115,
+        931
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M113 914 Q111 925 115 931",
+          "Q117 937 121 942"
+        ]
+      ],
+      "source_mask_pixels": 153,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-right-teal",
+      "stage": "mini-telophase-right",
+      "identity": "teal",
+      "centromere": null,
+      "path_join": [
+        252,
+        966
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "teal"
+      ],
+      "paths": [
+        [
+          "M239 974 Q245 968 252 966",
+          "Q257 964 266 967"
+        ]
+      ],
+      "source_mask_pixels": 177,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-right-purple",
+      "stage": "mini-telophase-right",
+      "identity": "purple",
+      "centromere": null,
+      "path_join": [
+        247,
+        986
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "purple"
+      ],
+      "paths": [
+        [
+          "M242 978 Q245 982 247 986",
+          "Q250 991 253 997"
+        ]
+      ],
+      "source_mask_pixels": 88,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-right-red",
+      "stage": "mini-telophase-right",
+      "identity": "red",
+      "centromere": null,
+      "path_join": [
+        268,
+        972
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "red"
+      ],
+      "paths": [
+        [
+          "M256 971 Q264 970 268 972",
+          "L271 974"
+        ]
+      ],
+      "source_mask_pixels": 105,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    },
+    {
+      "id": "mini-telophase-right-blue",
+      "stage": "mini-telophase-right",
+      "identity": "blue",
+      "centromere": null,
+      "path_join": [
+        260,
+        988
+      ],
+      "thickness": 1.7,
+      "colors": [
+        "mini_blue"
+      ],
+      "paths": [
+        [
+          "M251 976 Q255 984 260 988",
+          "Q265 991 274 993"
+        ]
+      ],
+      "source_mask_pixels": 161,
+      "centromere_evidence": "not localized in source miniature; no neck or marker added"
+    }
+  ]
+}

@@ -163,46 +163,51 @@ uses a continuous funnel. Related line weights and restrained shading keep the d
 coherent while their different silhouettes preserve botanical identity. Both pass actual-source
 ODP/PDF contextual review; canonical delivery status remains in the progress ledger.
 
-## Chromosome language: straight single chromatids
+## Chromosome language
 
-The [editable specimen](illustration_examples/chromosome_language.drawn.svg) establishes
-a native-SVG adaptation of the BPQ chromosome visual vocabulary. Use the small
-[chromosome helper and recipe](../../svg_tools/README.md#single-chromatid-chromosomes)
-for repeated straight rods: one continuous outlined silhouette with rounded neutral
-ends, ordered colored regions, a pale outlined centromere collar, and explicit white
-zigzag joins. The collar narrows the silhouette slightly while remaining attached
-to both arms. It is never a floating dot or an exchange seam.
+Follow the all-course chromosome authority in
+[SVG_VISUAL_STYLE.md](../SVG_VISUAL_STYLE.md#chromosome-family-authority). The current
+[chromosome_tool_v2.drawn.svg](illustration_examples/chromosome_tool_v2.drawn.svg) supplies
+the shared rounded rod, rounded-X sister and hollow purple centromere appearance. Author
+production chromosome bodies through shared tools; course recipes own their placement,
+labels, source relationships and interpretation. See [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
+for current `render_chromosome_layout()`, `chromosome_part()` and curved
+`chromosome_path_part()` examples.
 
-- Gene letters carry order and identity; colored regions carry the source's emphasis
-  or segment ancestry. Carry colors with exchanged segments. Keep the same region
-  pitch across a comparison so deletion shortens and duplication lengthens the rod.
-- The two terminal caps are illustrative end treatments, not labeled regions or
-  extra genes. A collar represents a source-established centromere locus. Omitting
-  the collar is explicit, never an inferred claim about an unknown centromere.
-- White zigzags mark explicitly authored joins. Red cut pointers belong at actual
-  source break boundaries, using the helper's returned coordinates. They are not
-  centromeres. Source captions and slide titles remain native Djot.
-- Restrained irregular banding suggests chromosome material; it is decorative,
-  never a measured G-band pattern. Equal letter spacing is also schematic.
-- Use flat live Atkinson Hyperlegible Next labels. Judge gene order, contrast and
-  collar/join distinction at the actual smallest image placement, not just enlarged art.
-- For source alleles such as `a+` and `b-`, opt in to the helper's `allele_labels=True`:
-  live italic lowercase letters and raised plus/minus signs preserve genotype identity
-  independently of hue. Empty regions can depict an unlabeled arm before a centromere;
-  they are not genes. Separate homolog rods remain separate, never joined as sisters.
+- Single chromatids, replicated sisters and separate homologs remain biologically distinct.
+  Joined sisters repeat one model; independently supplied homologs can differ in alleles or
+  structure and must remain separate objects. Preserve source chromosome and ploidy counts.
+- Gene letters carry order and identity; source colors carry segment emphasis or ancestry.
+  Carry these colors with exchanged segments, independently of the course theme. Empty arm
+  material and terminal caps are not additional genes.
+- At a common longitudinal scale, physical deletion shortens a rod and duplication lengthens
+  it. An aligned evidence diagram can retain a labeled reference gap to show what is missing;
+  the gap is not remaining chromosome material. Preserve each source's comparison convention.
+- White zigzags identify explicitly authored joins, not centromeres. Cut pointers use returned
+  source boundaries. A centromere marker identifies the source-established locus; its shape is
+  schematic. Omission is an authoring choice, not evidence that the chromosome lacks one.
+- Decorative irregular bands are optional texture. Actual source bands, cytoband coordinates,
+  measured maps, photographs, molecular tracks and aligned sequence evidence keep their source
+  meaning. Do not replace these with decorative bands or infer measured distances from equal
+  letter spacing. Internal crops end in flat cuts, not newly invented telomeres.
+- Keep labels live, readable and upright. Use `allele_labels=True` for supported source alleles
+  such as `a+` and `b-`: italic gene letters and raised signs preserve identity independently
+  of hue. Inspect gene order, contrast, joins and centromeres at the smallest actual placement.
 
-The recipe's four LECT12 overview candidates preserve deletion `ABCDE|FGH -> ABCE|FGH`,
-duplication `ABCDE|FGH -> ABCBCDE|FGH`, inversion `ABCDE|FGH -> ADCBE|FGH`, and reciprocal
-translocation `ABCDE|FGH + MNOPQ|R -> MNOCDE|FGH + ABPQ|R`; `|` denotes the centromere.
-Each uses single chromatids and depicts no discarded fragments. These are a bounded
-pilot, not evidence that every LECT12 chromosome family has been migrated.
+The saved [chromosome_language.drawn.svg](illustration_examples/chromosome_language.drawn.svg)
+and `chromosome_svg()` API record the historical BPQ-inspired pale-collar vocabulary. They
+remain compatibility references, not the current appearance specification. Their four LECT12
+examples retain deletion `ABCDE|FGH -> ABCE|FGH`, duplication
+`ABCDE|FGH -> ABCBCDE|FGH`, inversion `ABCDE|FGH -> ADCBE|FGH`, and reciprocal translocation
+`ABCDE|FGH + MNOPQ|R -> MNOCDE|FGH + ABPQ|R`; `|` denotes the centromere. They depict single
+chromatids and no discarded fragments. Saved examples do not establish migration of course assets.
 
 The reusable model API in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
 adds requested colors and sizes, variable segment lengths, rounded-X identical sisters,
 portrait orientation and a hollow purple centromere marker over a short neck. The oval
 is a diagram convention, not swollen chromosome material. Short internal marker text remains
 available; returned segment anchors and marker bounds support external annotations while
-text stays upright. The legacy narrow collar remains pale and filled. Keep one common
+text stays upright. Pale filled collars belong to the historical compatibility API. Keep one common
 length scale across internal deletions and reciprocal right-tail exchanges so shortening
 stays visible. These bounded operations are not a general rearrangement simulator.
 
@@ -257,7 +262,7 @@ The rendering command is in [README.md](../../svg_tools/README.md#chromosome-dra
 No instructor, classroom, print or native slide/export acceptance is established.
 
 Curved pairing and crossover forms, ploidy-count scenes, sex-chromosome pairing and other
-source-specific maps still require their own checks and construction. The new specimen
+source-specific maps require source-specific composition and review using shared body tools. The new specimen
 makes no course restoration or migration claim; actual course integration and export
 evidence belong to the progress ledger.
 
@@ -365,3 +370,6 @@ Historical scratch evidence removed 2026-11-13 was recorded under:
 Those records contained construction passages, source checks and the seven-page export receipt.
 The [durable renewal report](../ILLUSTRATION_RENEWAL_REPORT.md) supersedes their summary.
 The durable examples and guidance above remain usable without those local files.
+
+Current course receipts, deliberate retains and open native gates are recorded in the dated
+[chromosome migration report](../CHROMOSOME_THEME_MIGRATION_REPORT.md).

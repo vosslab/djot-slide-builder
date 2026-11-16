@@ -1,0 +1,862 @@
+{
+  "segments": [
+    {
+      "d": "M75 280 L212.5 280",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 280 L350 280",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M75 300 L212.5 300",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 300 L350 300",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M75 455 L212.5 455",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 455 L350 455",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M75 475 L212.5 475",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 475 L350 475",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 240 L585.0 240",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 240 L710 240",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 260 L585.0 260",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 260 L710 260",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 495 L585.0 495",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 495 L710 495",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 515 L585.0 515",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 515 L710 515",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 220 L932.5 220",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 220 L1060 220",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 201 L1290.0 201",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 201 L1430 201",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 246 L1290.0 246",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 246 L1430 246",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 300 L932.5 300",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 300 L1060 300",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 281 L1290.0 281",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 281 L1430 281",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 326 L1290.0 326",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 326 L1430 326",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 455 L932.5 455",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 455 L1060 455",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 436 L1290.0 436",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 436 L1430 436",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 481 L1290.0 481",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 481 L1430 481",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 535 L932.5 535",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 535 L1060 535",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 516 L1290.0 516",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 516 L1430 516",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 561 L1290.0 561",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 561 L1430 561",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M75 845 L212.5 845",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 845 L350 845",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M75 1040 L212.5 1040",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M212.5 1040 L350 1040",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "data-exchange-segment": "true",
+      "d": "M75 865 H165 L225 942.5",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    },
+    {
+      "data-exchange-segment": "true",
+      "d": "M225 942.5 L285 1020 H350",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    },
+    {
+      "data-exchange-segment": "true",
+      "d": "M75 1020 H165 L225 942.5",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    },
+    {
+      "data-exchange-segment": "true",
+      "d": "M225 942.5 L285 865 H350",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    },
+    {
+      "d": "M460 805 L585.0 805",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 805 L710 805",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 825 L585.0 825",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 825 L710 825",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 1060 L585.0 1060",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 1060 L710 1060",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M460 1080 L585.0 1080",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M585.0 1080 L710 1080",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 785 L932.5 785",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 785 L1060 785",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 766 L1290.0 766",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 766 L1430 766",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 811 L1290.0 811",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 811 L1430 811",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 865 L932.5 865",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 865 L1060 865",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 846 L1290.0 846",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 846 L1430 846",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 891 L1290.0 891",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 891 L1430 891",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 1020 L932.5 1020",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 1020 L1060 1020",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 1001 L1290.0 1001",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 1001 L1430 1001",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 1046 L1290.0 1046",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 1046 L1430 1046",
+      "fill": "none",
+      "stroke": "#7e292c",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M805 1100 L932.5 1100",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M932.5 1100 L1060 1100",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 1081 L1290.0 1081",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 1081 L1430 1081",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1150 1126 L1290.0 1126",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    },
+    {
+      "d": "M1290.0 1126 L1430 1126",
+      "fill": "none",
+      "stroke": "#e76531",
+      "stroke-width": "8",
+      "stroke-linecap": "round"
+    }
+  ],
+  "markers": [
+    {
+      "cx": "75",
+      "cy": "290",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "75",
+      "cy": "465",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "460",
+      "cy": "250",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "460",
+      "cy": "505",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "220",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "201",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "246",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "300",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "281",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "326",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "455",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "436",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "481",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "535",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "516",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "561",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "75",
+      "cy": "855",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "75",
+      "cy": "1030",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "460",
+      "cy": "815",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "460",
+      "cy": "1070",
+      "rx": "16",
+      "ry": "20.0",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "785",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "766",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "811",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "865",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "846",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "891",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#7e292c",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "1020",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "1001",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "1046",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "805",
+      "cy": "1100",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "1081",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    },
+    {
+      "cx": "1150",
+      "cy": "1126",
+      "rx": "10",
+      "ry": "12.5",
+      "fill": "#e76531",
+      "stroke": "#663d2d",
+      "stroke-width": "1.5"
+    }
+  ]
+}

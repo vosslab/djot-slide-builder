@@ -1,0 +1,133 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06c-meiosis/fly_chromosome_pairs.drawn.svg",
+  "placements": [
+    {
+      "group": "fly-pair-0-0",
+      "parts": [
+        {
+          "path": "M74,130 Q101,210.0 74,290",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M98,130 Q71,210.0 98,290",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-0-1",
+      "parts": [
+        {
+          "path": "M122,130 Q149,210.0 122,290",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M146,130 Q119,210.0 146,290",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-1-0",
+      "parts": [
+        {
+          "path": "M264,130 Q291,225.0 264,320",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M288,130 Q261,225.0 288,320",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-1-1",
+      "parts": [
+        {
+          "path": "M312,130 Q339,225.0 312,320",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M336,130 Q309,225.0 336,320",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-2-0",
+      "parts": [
+        {
+          "path": "M454,130 Q481,152.5 454,175",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M478,130 Q451,152.5 478,175",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-2-1",
+      "parts": [
+        {
+          "path": "M502,130 Q529,152.5 502,175",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M526,130 Q499,152.5 526,175",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-3-0",
+      "parts": [
+        {
+          "path": "M644,130 Q671,210.0 644,290",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M668,130 Q641,210.0 668,290",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "fly-pair-3-1",
+      "parts": [
+        {
+          "path": "M692,130 Q719,180.0 692,230",
+          "color": "#343A45",
+          "width": 12.0
+        },
+        {
+          "path": "M716,130 Q689,180.0 716,230",
+          "color": "#343A45",
+          "width": 12.0
+        }
+      ],
+      "centromere": true
+    }
+  ]
+}

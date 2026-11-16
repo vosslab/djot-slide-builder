@@ -142,13 +142,15 @@ Answer\: C
 
 ![Slide image 3](assets/lect02c-genome_sizes/image_003.png)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # The proposed mechanism for the creation of the long human chromosome 2 by fusion of two shorter chromosomes
 
-@body
+@left
 
-![Slide image 4](assets/lect02c-genome_sizes/image_004.jpg)
+![Slide image 4](assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg)
+
+@right
 
 - Genetically unstable
 

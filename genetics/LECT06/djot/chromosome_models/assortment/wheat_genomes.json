@@ -1,0 +1,677 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06c-meiosis/wheat_genomes.drawn.svg",
+  "placements": [
+    {
+      "group": "wheat-A-1-1",
+      "parts": [
+        {
+          "path": "M250,117 Q268,155 250,193",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M270,117 Q252,155 270,193",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-1-2",
+      "parts": [
+        {
+          "path": "M290,117 Q308,155 290,193",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M310,117 Q292,155 310,193",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-2-1",
+      "parts": [
+        {
+          "path": "M415,117 Q433,155 415,193",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M435,117 Q417,155 435,193",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-2-2",
+      "parts": [
+        {
+          "path": "M455,117 Q473,155 455,193",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M475,117 Q457,155 475,193",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-3-1",
+      "parts": [
+        {
+          "path": "M580,117 Q598,155 580,193",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M600,117 Q582,155 600,193",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-3-2",
+      "parts": [
+        {
+          "path": "M620,117 Q638,155 620,193",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M640,117 Q622,155 640,193",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-4-1",
+      "parts": [
+        {
+          "path": "M745,117 Q763,155 745,193",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M765,117 Q747,155 765,193",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-4-2",
+      "parts": [
+        {
+          "path": "M785,117 Q803,155 785,193",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M805,117 Q787,155 805,193",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-5-1",
+      "parts": [
+        {
+          "path": "M910,117 Q928,155 910,193",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M930,117 Q912,155 930,193",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-5-2",
+      "parts": [
+        {
+          "path": "M950,117 Q968,155 950,193",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M970,117 Q952,155 970,193",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-6-1",
+      "parts": [
+        {
+          "path": "M1075,117 Q1093,155 1075,193",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1095,117 Q1077,155 1095,193",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-6-2",
+      "parts": [
+        {
+          "path": "M1115,117 Q1133,155 1115,193",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1135,117 Q1117,155 1135,193",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-7-1",
+      "parts": [
+        {
+          "path": "M1240,117 Q1258,155 1240,193",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1260,117 Q1242,155 1260,193",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-A-7-2",
+      "parts": [
+        {
+          "path": "M1280,117 Q1298,155 1280,193",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1300,117 Q1282,155 1300,193",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-1-1",
+      "parts": [
+        {
+          "path": "M250,282 Q268,320 250,358",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M270,282 Q252,320 270,358",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-1-2",
+      "parts": [
+        {
+          "path": "M290,282 Q308,320 290,358",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M310,282 Q292,320 310,358",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-2-1",
+      "parts": [
+        {
+          "path": "M415,282 Q433,320 415,358",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M435,282 Q417,320 435,358",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-2-2",
+      "parts": [
+        {
+          "path": "M455,282 Q473,320 455,358",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M475,282 Q457,320 475,358",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-3-1",
+      "parts": [
+        {
+          "path": "M580,282 Q598,320 580,358",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M600,282 Q582,320 600,358",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-3-2",
+      "parts": [
+        {
+          "path": "M620,282 Q638,320 620,358",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M640,282 Q622,320 640,358",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-4-1",
+      "parts": [
+        {
+          "path": "M745,282 Q763,320 745,358",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M765,282 Q747,320 765,358",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-4-2",
+      "parts": [
+        {
+          "path": "M785,282 Q803,320 785,358",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M805,282 Q787,320 805,358",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-5-1",
+      "parts": [
+        {
+          "path": "M910,282 Q928,320 910,358",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M930,282 Q912,320 930,358",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-5-2",
+      "parts": [
+        {
+          "path": "M950,282 Q968,320 950,358",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M970,282 Q952,320 970,358",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-6-1",
+      "parts": [
+        {
+          "path": "M1075,282 Q1093,320 1075,358",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1095,282 Q1077,320 1095,358",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-6-2",
+      "parts": [
+        {
+          "path": "M1115,282 Q1133,320 1115,358",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1135,282 Q1117,320 1135,358",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-7-1",
+      "parts": [
+        {
+          "path": "M1240,282 Q1258,320 1240,358",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1260,282 Q1242,320 1260,358",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-B-7-2",
+      "parts": [
+        {
+          "path": "M1280,282 Q1298,320 1280,358",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1300,282 Q1282,320 1300,358",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-1-1",
+      "parts": [
+        {
+          "path": "M250,447 Q268,485 250,523",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M270,447 Q252,485 270,523",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-1-2",
+      "parts": [
+        {
+          "path": "M290,447 Q308,485 290,523",
+          "color": "#605D78",
+          "width": 9.0
+        },
+        {
+          "path": "M310,447 Q292,485 310,523",
+          "color": "#605D78",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-2-1",
+      "parts": [
+        {
+          "path": "M415,447 Q433,485 415,523",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M435,447 Q417,485 435,523",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-2-2",
+      "parts": [
+        {
+          "path": "M455,447 Q473,485 455,523",
+          "color": "#466878",
+          "width": 9.0
+        },
+        {
+          "path": "M475,447 Q457,485 475,523",
+          "color": "#466878",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-3-1",
+      "parts": [
+        {
+          "path": "M580,447 Q598,485 580,523",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M600,447 Q582,485 600,523",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-3-2",
+      "parts": [
+        {
+          "path": "M620,447 Q638,485 620,523",
+          "color": "#287B6D",
+          "width": 9.0
+        },
+        {
+          "path": "M640,447 Q622,485 640,523",
+          "color": "#287B6D",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-4-1",
+      "parts": [
+        {
+          "path": "M745,447 Q763,485 745,523",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M765,447 Q747,485 765,523",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-4-2",
+      "parts": [
+        {
+          "path": "M785,447 Q803,485 785,523",
+          "color": "#657E27",
+          "width": 9.0
+        },
+        {
+          "path": "M805,447 Q787,485 805,523",
+          "color": "#657E27",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-5-1",
+      "parts": [
+        {
+          "path": "M910,447 Q928,485 910,523",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M930,447 Q912,485 930,523",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-5-2",
+      "parts": [
+        {
+          "path": "M950,447 Q968,485 950,523",
+          "color": "#C18B13",
+          "width": 9.0
+        },
+        {
+          "path": "M970,447 Q952,485 970,523",
+          "color": "#C18B13",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-6-1",
+      "parts": [
+        {
+          "path": "M1075,447 Q1093,485 1075,523",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1095,447 Q1077,485 1095,523",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-6-2",
+      "parts": [
+        {
+          "path": "M1115,447 Q1133,485 1115,523",
+          "color": "#BE632B",
+          "width": 9.0
+        },
+        {
+          "path": "M1135,447 Q1117,485 1135,523",
+          "color": "#BE632B",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-7-1",
+      "parts": [
+        {
+          "path": "M1240,447 Q1258,485 1240,523",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1260,447 Q1242,485 1260,523",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    },
+    {
+      "group": "wheat-D-7-2",
+      "parts": [
+        {
+          "path": "M1280,447 Q1298,485 1280,523",
+          "color": "#A8383C",
+          "width": 9.0
+        },
+        {
+          "path": "M1300,447 Q1282,485 1300,523",
+          "color": "#A8383C",
+          "width": 9.0
+        }
+      ],
+      "centromere": true
+    }
+  ]
+}

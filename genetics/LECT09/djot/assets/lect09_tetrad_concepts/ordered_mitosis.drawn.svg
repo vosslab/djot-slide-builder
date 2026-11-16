@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ascii'?>
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" role="img" aria-labelledby="figure-title figure-description">
   <title id="figure-title">Mitosis makes eight ordered spores</title>
   <desc id="figure-description">Each of four meiotic products gives two adjacent genetically identical spores. Two FDS octads are AAAAaaaa and aaaaAAAA. Four SDS octads are AAaaAAaa, aaAAAAaa, aaAAaaAA and AAaaaaAA, in source order. Branches explicitly connect each of four products to its two spores in every alternative. Alternative product orders arise during meiosis, not mitosis.</desc>
@@ -22,43 +22,55 @@
     <text x="900" y="40" font-size="28" text-anchor="middle" fill="#213547" font-weight="bold">Second-Division Segregation</text>
     <text x="300" y="81" font-size="22" text-anchor="middle" fill="#213547" font-weight="normal">Centromeres split and separate</text>
     <g id="fds-meiotic-product-1" data-allele="A" data-centromere-ancestry="green">
-      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M140 168 C136 173 144 185 140 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="140" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-meiotic-product-1-chromatid-1" data-role="chromatid" data-centerline="M 137.0,103.0 C 132.0,125.0 145.0,108.0 140.0,126.0 C 137.0,141.0 144.0,154.0 140.0,168.0 C 136.0,173.0 144.0,185.0 140.0,197.0" data-product="A">
+        <path d="M 137.0,103.0 C 132.0,125.0 145.0,108.0 140.0,126.0 C 137.0,141.0 144.0,154.0 140.0,168.0 C 136.0,173.0 144.0,185.0 140.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 137.0,103.0 C 132.0,125.0 145.0,108.0 140.0,126.0 C 137.0,141.0 144.0,154.0 140.0,168.0 C 136.0,173.0 144.0,185.0 140.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-meiotic-product-1-chromatid-1-region-0" data-source-label="A">
+          <path d="M 137.0,103.0 C 132.0,125.0 145.0,108.0 140.0,126.0 C 137.0,141.0 144.0,154.0 140.0,168.0 C 136.0,173.0 144.0,185.0 140.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="137.0" cy="103.0" r="7.0" fill="#347A40" />
+        <circle cx="140.0" cy="197.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="fds-meiotic-product-1-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(140 126) rotate(90)" data-role="centromere" />
       <text x="140" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="fds-meiotic-product-2" data-allele="A" data-centromere-ancestry="green">
-      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M250 168 C246 173 254 185 250 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="250" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-meiotic-product-2-chromatid-1" data-role="chromatid" data-centerline="M 247.0,103.0 C 242.0,125.0 255.0,108.0 250.0,126.0 C 247.0,141.0 254.0,154.0 250.0,168.0 C 246.0,173.0 254.0,185.0 250.0,197.0" data-product="A">
+        <path d="M 247.0,103.0 C 242.0,125.0 255.0,108.0 250.0,126.0 C 247.0,141.0 254.0,154.0 250.0,168.0 C 246.0,173.0 254.0,185.0 250.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 247.0,103.0 C 242.0,125.0 255.0,108.0 250.0,126.0 C 247.0,141.0 254.0,154.0 250.0,168.0 C 246.0,173.0 254.0,185.0 250.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-meiotic-product-2-chromatid-1-region-0" data-source-label="A">
+          <path d="M 247.0,103.0 C 242.0,125.0 255.0,108.0 250.0,126.0 C 247.0,141.0 254.0,154.0 250.0,168.0 C 246.0,173.0 254.0,185.0 250.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="247.0" cy="103.0" r="7.0" fill="#347A40" />
+        <circle cx="250.0" cy="197.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="fds-meiotic-product-2-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(250 126) rotate(90)" data-role="centromere" />
       <text x="250" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="fds-meiotic-product-3" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M360 168 C356 173 364 185 360 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="360" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-meiotic-product-3-chromatid-1" data-role="chromatid" data-centerline="M 357.0,103.0 C 352.0,125.0 365.0,108.0 360.0,126.0 C 357.0,141.0 364.0,154.0 360.0,168.0 C 356.0,173.0 364.0,185.0 360.0,197.0" data-product="a">
+        <path d="M 357.0,103.0 C 352.0,125.0 365.0,108.0 360.0,126.0 C 357.0,141.0 364.0,154.0 360.0,168.0 C 356.0,173.0 364.0,185.0 360.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 357.0,103.0 C 352.0,125.0 365.0,108.0 360.0,126.0 C 357.0,141.0 364.0,154.0 360.0,168.0 C 356.0,173.0 364.0,185.0 360.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-meiotic-product-3-chromatid-1-region-0" data-source-label="a">
+          <path d="M 357.0,103.0 C 352.0,125.0 365.0,108.0 360.0,126.0 C 357.0,141.0 364.0,154.0 360.0,168.0 C 356.0,173.0 364.0,185.0 360.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="357.0" cy="103.0" r="7.0" fill="#7D438D" />
+        <circle cx="360.0" cy="197.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="fds-meiotic-product-3-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(360 126) rotate(90)" data-role="centromere" />
       <text x="360" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <g id="fds-meiotic-product-4" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M470 168 C466 173 474 185 470 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="470" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="fds-meiotic-product-4-chromatid-1" data-role="chromatid" data-centerline="M 467.0,103.0 C 462.0,125.0 475.0,108.0 470.0,126.0 C 467.0,141.0 474.0,154.0 470.0,168.0 C 466.0,173.0 474.0,185.0 470.0,197.0" data-product="a">
+        <path d="M 467.0,103.0 C 462.0,125.0 475.0,108.0 470.0,126.0 C 467.0,141.0 474.0,154.0 470.0,168.0 C 466.0,173.0 474.0,185.0 470.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 467.0,103.0 C 462.0,125.0 475.0,108.0 470.0,126.0 C 467.0,141.0 474.0,154.0 470.0,168.0 C 466.0,173.0 474.0,185.0 470.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="fds-meiotic-product-4-chromatid-1-region-0" data-source-label="a">
+          <path d="M 467.0,103.0 C 462.0,125.0 475.0,108.0 470.0,126.0 C 467.0,141.0 474.0,154.0 470.0,168.0 C 466.0,173.0 474.0,185.0 470.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="467.0" cy="103.0" r="7.0" fill="#7D438D" />
+        <circle cx="470.0" cy="197.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="fds-meiotic-product-4-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(470 126) rotate(90)" data-role="centromere" />
       <text x="470" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <path d="M157 126 L233 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />
@@ -210,43 +222,61 @@
     <text x="795" y="81" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
     <text x="1015" y="81" font-size="21" text-anchor="middle" fill="#213547" font-weight="normal">A and a separated</text>
     <g id="sds-meiotic-product-1" data-allele="A" data-centromere-ancestry="green">
-      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M740 168 C736 173 744 185 740 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="740" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-meiotic-product-1-chromatid-1" data-role="chromatid" data-centerline="M 737.0,103.0 C 732.0,125.0 745.0,108.0 740.0,126.0 C 737.0,141.0 744.0,154.0 740.0,168.0 C 736.0,173.0 744.0,185.0 740.0,197.0" data-product="A">
+        <path d="M 737.0,103.0 C 732.0,125.0 745.0,108.0 740.0,126.0 C 737.0,141.0 744.0,154.0 740.0,168.0 C 736.0,173.0 744.0,185.0 740.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 737.0,103.0 C 732.0,125.0 745.0,108.0 740.0,126.0 C 737.0,141.0 744.0,154.0 740.0,168.0 C 736.0,173.0 744.0,185.0 740.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-meiotic-product-1-chromatid-1-region-0" data-source-label="A">
+          <path d="M 737.0,103.0 C 732.0,125.0 745.0,108.0 740.0,126.0 C 737.0,141.0 744.0,154.0 740.0,168.0 C 736.0,173.0 744.0,185.0 740.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="737.0" cy="103.0" r="7.0" fill="#347A40" />
+        <circle cx="740.0" cy="197.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="sds-meiotic-product-1-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(740 126) rotate(90)" data-role="centromere" />
       <text x="740" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="sds-meiotic-product-2" data-allele="a" data-centromere-ancestry="green">
-      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M850 168 C846 173 854 185 850 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="850" cy="126" r="10" fill="#347A40" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-meiotic-product-2-chromatid-1" data-role="chromatid" data-centerline="M 847.0,103.0 C 842.0,125.0 855.0,108.0 850.0,126.0 C 847.0,141.0 854.0,154.0 850.0,168.0 C 846.0,173.0 854.0,185.0 850.0,197.0" data-product="a">
+        <path d="M 847.0,103.0 C 842.0,125.0 855.0,108.0 850.0,126.0 C 847.0,141.0 854.0,154.0 850.0,168.0 C 846.0,173.0 854.0,185.0 850.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 847.0,103.0 C 842.0,125.0 855.0,108.0 850.0,126.0 C 847.0,141.0 854.0,154.0 850.0,168.0 C 846.0,173.0 854.0,185.0 850.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-meiotic-product-2-chromatid-1-region-0" data-source-label="A">
+          <path d="M 847.0,103.0 C 842.0,125.0 855.0,108.0 850.0,126.0 C 847.0,141.0 854.0,154.0 850.0,168.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-meiotic-product-2-chromatid-1-region-1" data-source-label="a">
+          <path d="M 849.99999993753,168.0000000780876 C 846.0000000832933,173.00000012494007 853.9999999791767,185.00000006247004 850.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="847.0" cy="103.0" r="7.0" fill="#347A40" />
+        <circle cx="850.0" cy="197.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="sds-meiotic-product-2-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(850 126) rotate(90)" data-role="centromere" />
       <text x="850" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <g id="sds-meiotic-product-3" data-allele="A" data-centromere-ancestry="purple">
-      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M960 168 C956 173 964 185 960 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="960" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-meiotic-product-3-chromatid-1" data-role="chromatid" data-centerline="M 957.0,103.0 C 952.0,125.0 965.0,108.0 960.0,126.0 C 957.0,141.0 964.0,154.0 960.0,168.0 C 956.0,173.0 964.0,185.0 960.0,197.0" data-product="A">
+        <path d="M 957.0,103.0 C 952.0,125.0 965.0,108.0 960.0,126.0 C 957.0,141.0 964.0,154.0 960.0,168.0 C 956.0,173.0 964.0,185.0 960.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 957.0,103.0 C 952.0,125.0 965.0,108.0 960.0,126.0 C 957.0,141.0 964.0,154.0 960.0,168.0 C 956.0,173.0 964.0,185.0 960.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-meiotic-product-3-chromatid-1-region-0" data-source-label="a">
+          <path d="M 957.0,103.0 C 952.0,125.0 965.0,108.0 960.0,126.0 C 957.0,141.0 964.0,154.0 960.0,168.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <g id="sds-meiotic-product-3-chromatid-1-region-1" data-source-label="A">
+          <path d="M 959.99999993753,168.0000000780876 C 956.0000000832933,173.00000012494007 963.9999999791767,185.00000006247004 960.0,197.0" fill="none" stroke="#347A40" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="957.0" cy="103.0" r="7.0" fill="#7D438D" />
+        <circle cx="960.0" cy="197.0" r="7.0" fill="#347A40" />
+      </g>
+      <ellipse id="sds-meiotic-product-3-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(960 126) rotate(90)" data-role="centromere" />
       <text x="960" y="228" font-size="29" text-anchor="middle" fill="#347A40" font-weight="bold">A</text>
     </g>
     <g id="sds-meiotic-product-4" data-allele="a" data-centromere-ancestry="purple">
-      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#213547" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <path d="M1070 168 C1066 173 1074 185 1070 197" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" transform="translate(-2,0)" />
-      <circle cx="1070" cy="126" r="10" fill="#7D438D" stroke="#E8F0E8" stroke-width="2" />
+      <g id="sds-meiotic-product-4-chromatid-1" data-role="chromatid" data-centerline="M 1067.0,103.0 C 1062.0,125.0 1075.0,108.0 1070.0,126.0 C 1067.0,141.0 1074.0,154.0 1070.0,168.0 C 1066.0,173.0 1074.0,185.0 1070.0,197.0" data-product="a">
+        <path d="M 1067.0,103.0 C 1062.0,125.0 1075.0,108.0 1070.0,126.0 C 1067.0,141.0 1074.0,154.0 1070.0,168.0 C 1066.0,173.0 1074.0,185.0 1070.0,197.0" fill="none" stroke="#344651" stroke-width="14.49" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 1067.0,103.0 C 1062.0,125.0 1075.0,108.0 1070.0,126.0 C 1067.0,141.0 1074.0,154.0 1070.0,168.0 C 1066.0,173.0 1074.0,185.0 1070.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="sds-meiotic-product-4-chromatid-1-region-0" data-source-label="a">
+          <path d="M 1067.0,103.0 C 1062.0,125.0 1075.0,108.0 1070.0,126.0 C 1067.0,141.0 1074.0,154.0 1070.0,168.0 C 1066.0,173.0 1074.0,185.0 1070.0,197.0" fill="none" stroke="#7D438D" stroke-width="14" stroke-linecap="butt" stroke-linejoin="round" />
+        </g>
+        <circle cx="1067.0" cy="103.0" r="7.0" fill="#7D438D" />
+        <circle cx="1070.0" cy="197.0" r="7.0" fill="#7D438D" />
+      </g>
+      <ellipse id="sds-meiotic-product-4-marker-1-centromere" cx="0" cy="0" rx="6.19672131147541" ry="11.475409836065573" fill="none" stroke="#72508C" stroke-width="0.63" transform="translate(1070 126) rotate(90)" data-role="centromere" />
       <text x="1070" y="228" font-size="29" text-anchor="middle" fill="#7D438D" font-weight="bold">a</text>
     </g>
     <path d="M757 126 L833 126" fill="none" stroke="#526879" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#back-arrow)" marker-end="url(#arrow)" />

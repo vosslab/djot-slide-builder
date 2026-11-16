@@ -1,0 +1,204 @@
+{
+  "no_crossover.drawn.svg": {
+    "svg": "<svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"670\" viewBox=\"0 0 640 670\" role=\"img\"><svg:title>no crossover</svg:title><svg:desc>a b / + + homologs. Four chromatids; one nonsister exchange yields a b, a +, + b, + +, whereas absence of exchange yields two a b and two + +. Original LECT08B schematic.</svg:desc><svg:g font-family=\"Atkinson Hyperlegible Next, sans-serif\" fill=\"#20262C\"><svg:g id=\"stage-0\" transform=\"translate(0,0)\"><svg:text x=\"30\" y=\"28\" font-size=\"28\" text-anchor=\"start\">(A) No crossing over</svg:text><path data-shared-part=\"0\" /><svg:text x=\"180\" y=\"65\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"65\" font-size=\"25\" text-anchor=\"start\">b</svg:text><path data-shared-part=\"1\" /><svg:text x=\"180\" y=\"125\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"125\" font-size=\"25\" text-anchor=\"start\">b</svg:text><path data-shared-part=\"2\" /><svg:text x=\"180\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><path data-shared-part=\"3\" /><svg:text x=\"180\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:path d=\"M110 80 V 140\" fill=\"none\" stroke=\"#007DA8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:circle cx=\"110\" cy=\"110\" r=\"12\" fill=\"#007DA8\" stroke=\"white\" stroke-width=\"2\" data-source-centromere=\"true\" /><svg:path d=\"M110 200 V 260\" fill=\"none\" stroke=\"#4D9250\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:circle cx=\"110\" cy=\"230\" r=\"12\" fill=\"#4D9250\" stroke=\"white\" stroke-width=\"2\" data-source-centromere=\"true\" /></svg:g><svg:g id=\"stage-2\" transform=\"translate(0,335)\"><svg:text x=\"30\" y=\"28\" font-size=\"28\" text-anchor=\"start\">Products after meiosis</svg:text><path data-shared-part=\"4\" /><svg:text x=\"180\" y=\"65\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"65\" font-size=\"25\" text-anchor=\"start\">b</svg:text><path data-shared-part=\"5\" /><svg:text x=\"180\" y=\"125\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"125\" font-size=\"25\" text-anchor=\"start\">b</svg:text><path data-shared-part=\"6\" /><svg:text x=\"180\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><path data-shared-part=\"7\" /><svg:text x=\"180\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"470\" y=\"87\" font-size=\"22\" text-anchor=\"start\">parental</svg:text><svg:text x=\"470\" y=\"147\" font-size=\"22\" text-anchor=\"start\">parental</svg:text><svg:text x=\"470\" y=\"207\" font-size=\"22\" text-anchor=\"start\">parental</svg:text><svg:text x=\"470\" y=\"267\" font-size=\"22\" text-anchor=\"start\">parental</svg:text></svg:g></svg:g></svg:svg>",
+    "parts": [
+      {
+        "path": "M 75.0,80.0 L 150.0,80.0 L 285.0,80.0 L 430.0,80.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,140.0 L 150.0,140.0 L 285.0,140.0 L 430.0,140.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,200.0 L 150.0,200.0 L 285.0,200.0 L 430.0,200.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,260.0 L 150.0,260.0 L 285.0,260.0 L 430.0,260.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,80.0 L 150.0,80.0 L 285.0,80.0 L 430.0,80.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,140.0 L 150.0,140.0 L 285.0,140.0 L 430.0,140.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,200.0 L 150.0,200.0 L 285.0,200.0 L 430.0,200.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,260.0 L 150.0,260.0 L 285.0,260.0 L 430.0,260.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      }
+    ]
+  },
+  "single_crossover.drawn.svg": {
+    "svg": "<svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"670\" viewBox=\"0 0 640 670\" role=\"img\"><svg:title>single crossover</svg:title><svg:desc>a b / + + homologs. Four chromatids; one nonsister exchange yields a b, a +, + b, + +, whereas absence of exchange yields two a b and two + +. Original LECT08B schematic.</svg:desc><svg:g font-family=\"Atkinson Hyperlegible Next, sans-serif\" fill=\"#20262C\"><svg:g id=\"stage-0\" transform=\"translate(0,0)\"><svg:text x=\"30\" y=\"28\" font-size=\"28\" text-anchor=\"start\">(B) Crossing over</svg:text><path data-shared-part=\"0\" /><svg:text x=\"180\" y=\"65\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"65\" font-size=\"25\" text-anchor=\"start\">b</svg:text><svg:path d=\"M 75 140 L 150 140 L 230 140 C 255 140 270 155 285 170\" fill=\"none\" stroke=\"white\" stroke-width=\"21\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:path d=\"M 285 170 C 300 185 315 200 340 200 H 430\" fill=\"none\" stroke=\"white\" stroke-width=\"21\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path data-shared-part=\"1\" /><svg:text x=\"180\" y=\"125\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:path d=\"M 75 200 L 150 200 L 230 200 C 255 200 270 185 285 170\" fill=\"none\" stroke=\"white\" stroke-width=\"21\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:path d=\"M 285 170 C 300 155 315 140 340 140 H 430\" fill=\"none\" stroke=\"white\" stroke-width=\"21\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path data-shared-part=\"2\" /><svg:text x=\"180\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"125\" font-size=\"25\" text-anchor=\"start\">b</svg:text><path data-shared-part=\"3\" /><svg:text x=\"180\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"460\" y=\"161\" font-size=\"22\" text-anchor=\"start\">exchange</svg:text><svg:path d=\"M 455 154 H 332 L 305 168\" fill=\"none\" stroke=\"#20262C\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:path d=\"M 110 80 V 140\" fill=\"none\" stroke=\"#007DA8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:circle cx=\"110\" cy=\"110\" r=\"12\" fill=\"#007DA8\" stroke=\"white\" stroke-width=\"2\" data-source-centromere=\"true\" /><svg:path d=\"M 110 200 V 260\" fill=\"none\" stroke=\"#4D9250\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><svg:circle cx=\"110\" cy=\"230\" r=\"12\" fill=\"#4D9250\" stroke=\"white\" stroke-width=\"2\" data-source-centromere=\"true\" /></svg:g><svg:g id=\"stage-2\" transform=\"translate(0,335)\"><svg:text x=\"30\" y=\"28\" font-size=\"28\" text-anchor=\"start\">Products after meiosis</svg:text><svg:rect x=\"45\" y=\"45\" width=\"405\" height=\"55\" rx=\"27\" fill=\"#F5F7F8\" stroke=\"#AAB2B8\" stroke-width=\"2\" /><path data-shared-part=\"4\" /><svg:text x=\"180\" y=\"65\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"65\" font-size=\"25\" text-anchor=\"start\">b</svg:text><svg:text x=\"470\" y=\"87\" font-size=\"22\" text-anchor=\"start\">parental</svg:text><svg:rect x=\"45\" y=\"105\" width=\"405\" height=\"55\" rx=\"27\" fill=\"#F5F7F8\" stroke=\"#AAB2B8\" stroke-width=\"2\" /><path data-shared-part=\"5\" /><svg:text x=\"180\" y=\"125\" font-size=\"25\" text-anchor=\"start\">a</svg:text><svg:text x=\"395\" y=\"125\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"470\" y=\"147\" font-size=\"22\" text-anchor=\"start\">recombinant</svg:text><svg:rect x=\"45\" y=\"165\" width=\"405\" height=\"55\" rx=\"27\" fill=\"#F5F7F8\" stroke=\"#AAB2B8\" stroke-width=\"2\" /><path data-shared-part=\"6\" /><svg:text x=\"180\" y=\"185\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"185\" font-size=\"25\" text-anchor=\"start\">b</svg:text><svg:text x=\"470\" y=\"207\" font-size=\"22\" text-anchor=\"start\">recombinant</svg:text><svg:rect x=\"45\" y=\"225\" width=\"405\" height=\"55\" rx=\"27\" fill=\"#F5F7F8\" stroke=\"#AAB2B8\" stroke-width=\"2\" /><path data-shared-part=\"7\" /><svg:text x=\"180\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"395\" y=\"245\" font-size=\"25\" text-anchor=\"start\">+</svg:text><svg:text x=\"470\" y=\"267\" font-size=\"22\" text-anchor=\"start\">parental</svg:text></svg:g></svg:g></svg:svg>",
+    "parts": [
+      {
+        "path": "M 75.0,80.0 L 150.0,80.0 L 285.0,80.0 L 430.0,80.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,140.0 L 150.0,140.0 L 230.0,140.0 C 255.0,140.0 270.0,155.0 285.0,170.0 C 300.0,185.0 315.0,200.0 340.0,200.0 L 430.0,200.0",
+        "colors": [
+          "#007DA8",
+          "#4D9250"
+        ],
+        "lengths": [
+          219.61976025521037,
+          154.61976025521037
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,200.0 L 150.0,200.0 L 230.0,200.0 C 255.0,200.0 270.0,185.0 285.0,170.0 C 300.0,155.0 315.0,140.0 340.0,140.0 L 430.0,140.0",
+        "colors": [
+          "#4D9250",
+          "#007DA8"
+        ],
+        "lengths": [
+          219.61976025521037,
+          154.61976025521037
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,260.0 L 150.0,260.0 L 285.0,260.0 L 430.0,260.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": false
+      },
+      {
+        "path": "M 75.0,80.0 L 150.0,80.0 L 285.0,80.0 L 430.0,80.0",
+        "colors": [
+          "#007DA8",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,140.0 L 150.0,140.0 L 285.0,140.0 L 430.0,140.0",
+        "colors": [
+          "#007DA8",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,200.0 L 150.0,200.0 L 285.0,200.0 L 430.0,200.0",
+        "colors": [
+          "#4D9250",
+          "#007DA8"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      },
+      {
+        "path": "M 75.0,260.0 L 150.0,260.0 L 285.0,260.0 L 430.0,260.0",
+        "colors": [
+          "#4D9250",
+          "#4D9250"
+        ],
+        "lengths": [
+          210.0,
+          145.0
+        ],
+        "product": true
+      }
+    ]
+  }
+}

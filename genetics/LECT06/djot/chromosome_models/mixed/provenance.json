@@ -1,0 +1,58 @@
+[
+  {
+    "family": "intro",
+    "source": "intro/sources/chromosome_before_replication.svg",
+    "source_sha256": "4d5817ddea21aa490889593e8a16917ab97a28878d479a8603d04ec5a43fbe22",
+    "candidate": "intro/chromosome_before_replication.svg",
+    "target_asset": "assets/lect06b-intro_cells/chromosome_before_replication.svg",
+    "candidate_sha256": "f5d04bb49ae2c6889fcfe67b8c543830666d85fb35101f27bc2a9c09b39468b9"
+  },
+  {
+    "family": "intro",
+    "source": "intro/sources/chromosome_replication.svg",
+    "source_sha256": "d70481c3febd67d410e42e76ccbfdf76dc5936e7035544f87a7f9bd0fe358d19",
+    "candidate": "intro/chromosome_replication.svg",
+    "target_asset": "assets/lect06b-intro_cells/chromosome_replication.svg",
+    "candidate_sha256": "638a1cd4cae9ad98d8a287417575bf50d425031a1d52dd265e99302ed4e42f36"
+  },
+  {
+    "family": "intro",
+    "source": "intro/sources/chromatid_separation.svg",
+    "source_sha256": "759513c111854f1592dddccdcc7dec2f0b68c84042c882680056ee34ab85237b",
+    "candidate": "intro/chromatid_separation.svg",
+    "target_asset": "assets/lect06b-intro_cells/chromatid_separation.svg",
+    "candidate_sha256": "f71735d9ebc7844c4e9b4e45c2d58415d740b2b32e148ceed806f2dc5d73a0d8"
+  },
+  {
+    "family": "overview",
+    "source": "overview/sources/meiosis_overview.svg",
+    "source_sha256": "a9da8a88cd94a4d3dcdccc14e27033e9f3df8d568fe753ed77d62fc188c4cf2f",
+    "candidate": "overview/meiosis_overview.svg",
+    "target_asset": "assets/lect06c-meiosis/meiosis_overview.svg",
+    "candidate_sha256": "7cc20e1c77f5cc9cd1a520a1295a92941b667aab0047cdc43a29c5b16175b609"
+  },
+  {
+    "family": "crossovers",
+    "source": "crossovers/sources/crossovers_chiasmata.svg",
+    "source_sha256": "530274f854e7d0eb5f0af420a11056798c8450acf759205b2bdbb9713c6d0927",
+    "candidate": "crossovers/crossovers_chiasmata.svg",
+    "target_asset": "assets/lect06c-meiosis/crossovers_chiasmata.svg",
+    "candidate_sha256": "9d4d800481ef0e9a34199e7961103e6776fee803fa270d2c0588a6c0b8a214ea"
+  },
+  {
+    "family": "recombination",
+    "source": "recombination/sources/recombinant_chromosomes.svg",
+    "source_sha256": "0b65737531b36ec3a922dcd8d5c3e1dd8612ab037a73260c0c03d5c724940cc9",
+    "candidate": "recombination/generated/recombinant_chromosomes.svg",
+    "target_asset": "assets/lect06c-meiosis/recombinant_chromosomes.svg",
+    "candidate_sha256": "ae3bbc7d5347c7c6965c5892d3b895b6936c78b293aaa5c370b25442455483ad"
+  },
+  {
+    "family": "recombination",
+    "source": "recombination/sources/recombinant_chromosomes_review.svg",
+    "source_sha256": "73d7e182c26e7b5ddbe48aab8d90ad6b59929672980e31a8c31f76fbbe588da6",
+    "candidate": "recombination/generated/recombinant_chromosomes_review.svg",
+    "target_asset": "assets/lect06c-meiosis/recombinant_chromosomes_review.svg",
+    "candidate_sha256": "254e6964bd739167b224e4d316bee913e601e5cc891fbe2e65d3d4755624cc74"
+  }
+]

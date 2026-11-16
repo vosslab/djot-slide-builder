@@ -1,0 +1,82 @@
+[
+  {
+    "id": "pd-pair-one-A-sister-1",
+    "path": "M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43",
+    "color": "#287f86"
+  },
+  {
+    "id": "pd-pair-one-A-sister-3",
+    "path": "M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43",
+    "color": "#287f86"
+  },
+  {
+    "id": "pd-pair-two-B-sister-1",
+    "path": "M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43",
+    "color": "#526d9f"
+  },
+  {
+    "id": "pd-pair-two-B-sister-3",
+    "path": "M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43",
+    "color": "#526d9f"
+  },
+  {
+    "id": "pd-pair-one-a-sister-1",
+    "path": "M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43",
+    "color": "#9dc8c4"
+  },
+  {
+    "id": "pd-pair-one-a-sister-3",
+    "path": "M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43",
+    "color": "#9dc8c4"
+  },
+  {
+    "id": "pd-pair-two-b-sister-1",
+    "path": "M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43",
+    "color": "#a9badd"
+  },
+  {
+    "id": "pd-pair-two-b-sister-3",
+    "path": "M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43",
+    "color": "#a9badd"
+  },
+  {
+    "id": "npd-pair-one-A-sister-1",
+    "path": "M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43",
+    "color": "#287f86"
+  },
+  {
+    "id": "npd-pair-one-A-sister-3",
+    "path": "M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43",
+    "color": "#287f86"
+  },
+  {
+    "id": "npd-pair-two-b-sister-1",
+    "path": "M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43",
+    "color": "#a9badd"
+  },
+  {
+    "id": "npd-pair-two-b-sister-3",
+    "path": "M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43",
+    "color": "#a9badd"
+  },
+  {
+    "id": "npd-pair-one-a-sister-1",
+    "path": "M 0 -39 C 45 -43 60 -33 100 0 C 166 -61 314 -34 405 -43",
+    "color": "#9dc8c4"
+  },
+  {
+    "id": "npd-pair-one-a-sister-3",
+    "path": "M 0 39 C 45 43 60 33 100 0 C 166 61 314 34 405 43",
+    "color": "#9dc8c4"
+  },
+  {
+    "id": "npd-pair-two-B-sister-1",
+    "path": "M 0 -39 C 45 -43 84 -33 124 0 C 190 -61 227 -34 318 -43",
+    "color": "#526d9f"
+  },
+  {
+    "id": "npd-pair-two-B-sister-3",
+    "path": "M 0 39 C 45 43 84 33 124 0 C 190 61 227 34 318 43",
+    "color": "#526d9f"
+  }
+]

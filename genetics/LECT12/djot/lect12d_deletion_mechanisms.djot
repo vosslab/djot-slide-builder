@@ -132,7 +132,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @right
 
-![Slide image 6](assets/lect12d-chromo_alter_1-deletions/image_006.png)
+![Slide image 6](assets/lect12d-chromo_alter_1-deletions/chromosome5_mixed.svg)
 
 ![Slide image 7](assets/lect12d-chromo_alter_1-deletions/image_007.png)
 
@@ -192,16 +192,12 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 ![Slide image 10](assets/lect12d-chromo_alter_1-deletions/mutant_tester.drawn.svg)
 
 === layout: one-panel
-@replaceme
-
 
 @body
 
 ![Slide image 11](assets/lect12d-chromo_alter_1-deletions/deletion_testcross_outcomes.drawn.svg)
 
-- _1x2_
-- _Punnett_
-- _square_
+- _1x2 Punnett square_
 
 === layout: two-panels
 
@@ -226,7 +222,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @body
 
-![Slide image 13](assets/lect12d-chromo_alter_1-deletions/image_013.png)
+![Slide image 13](assets/lect12d-chromo_alter_1-deletions/drosophila_quantitative_map.drawn.svg)
 
 ![Slide image 14](assets/lect12d-chromo_alter_1-deletions/chromosome_complements.drawn.svg)
 
@@ -236,7 +232,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @left
 
-![Slide image 15](assets/lect12d-chromo_alter_1-deletions/image_015.png)
+![Slide image 15](assets/lect12d-chromo_alter_1-deletions/polytene_mixed.svg)
 
 @right
 
@@ -250,7 +246,7 @@ One possible result of chromosomal breakage is for a fragment to join a non-homo
 
 @body
 
-![Slide image 15](assets/lect12d-chromo_alter_1-deletions/image_015.png)
+![Slide image 15](assets/lect12d-chromo_alter_1-deletions/polytene_mixed.svg)
 
 === layout: one-panel
 

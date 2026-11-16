@@ -1,0 +1,1993 @@
+{
+  "assets/lect13b-chromo_alter_3-inversion/inversion_overview.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"980\" height=\"340\" viewBox=\"0 0 980 340\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">Inversion: gene order before and after</title><desc id=\"desc\">Original schematic from LECT11D overview. Before ABCDEFGH; after ADCBEFGH. Centromeres remain between E/F and Q/R.</desc><rect width=\"980\" height=\"340\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\" fill=\"#242334\"><text x=\"35\" y=\"42\" font-size=\"29\" fill=\"#935D00\">Inversion</text><g id=\"before-0\"><text x=\"35\" y=\"119\" font-size=\"24\">Before</text><g data-shared-part=\"0\" /><text x=\"214.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">A</text><text x=\"277.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">B</text><text x=\"340.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">C</text><text x=\"403.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">D</text><text x=\"466.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">E</text><text x=\"559.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">F</text><text x=\"622.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">G</text><text x=\"685.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">H</text></g><path d=\"M 500 168 V 202 M 487 189 L 500 202 L 513 189\" fill=\"none\" stroke=\"#935D00\" stroke-width=\"4\" /><g id=\"after-0\"><text x=\"35\" y=\"269\" font-size=\"24\">After</text><g data-shared-part=\"1\" /><text x=\"214.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">A</text><text x=\"277.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">D</text><text x=\"340.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">C</text><text x=\"403.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">B</text><text x=\"466.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">E</text><text x=\"559.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">F</text><text x=\"622.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">G</text><text x=\"685.5\" y=\"271\" text-anchor=\"middle\" font-size=\"29\">H</text></g><text x=\"35\" y=\"325\" font-size=\"18\">\u25cf Centromere * schematic gene order</text></g></svg>",
+    "parts": [
+      {
+        "path": "M211.0 111.0 H689.0",
+        "thickness": 52,
+        "segments": [
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            77.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            1.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            78.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ]
+        ],
+        "centromere_after": 5,
+        "cut_ends": false
+      },
+      {
+        "path": "M211.0 261.0 H689.0",
+        "thickness": 52,
+        "segments": [
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            77.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            1.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            78.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ]
+        ],
+        "centromere_after": 5,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13c-chromo_alter_4-translocation/translocation_overview.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"980\" height=\"580\" viewBox=\"0 0 980 580\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">Translocation: gene order before and after</title><desc id=\"desc\">Original schematic from LECT11D overview. Before ABCDEFGH and MNOPQR; after MNOCDEFGH and ABPQR. Centromeres remain between E/F and Q/R.</desc><rect width=\"980\" height=\"580\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\" fill=\"#242334\"><text x=\"35\" y=\"42\" font-size=\"29\" fill=\"#0067CC\">Translocation</text><g id=\"before-0\"><text x=\"35\" y=\"119\" font-size=\"24\">Before</text><g data-shared-part=\"0\" /><text x=\"214.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">A</text><text x=\"277.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">B</text><text x=\"340.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">C</text><text x=\"403.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">D</text><text x=\"466.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">E</text><text x=\"559.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">F</text><text x=\"622.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">G</text><text x=\"685.5\" y=\"121\" text-anchor=\"middle\" font-size=\"29\">H</text></g><g id=\"before-1\"><text x=\"35\" y=\"199\" font-size=\"24\">Before</text><g data-shared-part=\"1\" /><text x=\"214.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">M</text><text x=\"277.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">N</text><text x=\"340.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">O</text><text x=\"403.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">P</text><text x=\"466.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">Q</text><text x=\"559.5\" y=\"201\" text-anchor=\"middle\" font-size=\"29\">R</text></g><path d=\"M 500 268 V 302 M 487 289 L 500 302 L 513 289\" fill=\"none\" stroke=\"#0067CC\" stroke-width=\"4\" /><g id=\"after-0\"><text x=\"35\" y=\"369\" font-size=\"24\">After</text><g data-shared-part=\"2\" /><text x=\"214.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">M</text><text x=\"277.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">N</text><text x=\"340.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">O</text><text x=\"403.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">C</text><text x=\"466.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">D</text><text x=\"529.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">E</text><text x=\"622.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">F</text><text x=\"685.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">G</text><text x=\"748.5\" y=\"371\" text-anchor=\"middle\" font-size=\"29\">H</text></g><g id=\"after-1\"><text x=\"35\" y=\"459\" font-size=\"24\">After</text><g data-shared-part=\"3\" /><text x=\"214.5\" y=\"461\" text-anchor=\"middle\" font-size=\"29\">A</text><text x=\"277.5\" y=\"461\" text-anchor=\"middle\" font-size=\"29\">B</text><text x=\"340.5\" y=\"461\" text-anchor=\"middle\" font-size=\"29\">P</text><text x=\"403.5\" y=\"461\" text-anchor=\"middle\" font-size=\"29\">Q</text><text x=\"496.5\" y=\"461\" text-anchor=\"middle\" font-size=\"29\">R</text></g><text x=\"35\" y=\"565\" font-size=\"18\">\u25cf Centromere * schematic gene order</text></g></svg>",
+    "parts": [
+      {
+        "path": "M211.0 111.0 H689.0",
+        "thickness": 46,
+        "segments": [
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            77.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            1.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            78.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ]
+        ],
+        "centromere_after": 5,
+        "cut_ends": false
+      },
+      {
+        "path": "M211.0 191.0 H563.0",
+        "thickness": 46,
+        "segments": [
+          [
+            "",
+            "#BDE4EE",
+            35.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            77.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            1.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            50.0
+          ]
+        ],
+        "centromere_after": 5,
+        "cut_ends": false
+      },
+      {
+        "path": "M211.0 361.0 H752.0",
+        "thickness": 46,
+        "segments": [
+          [
+            "",
+            "#BDE4EE",
+            35.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            77.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            1.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            78.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ]
+        ],
+        "centromere_after": 6,
+        "cut_ends": false
+      },
+      {
+        "path": "M211.0 451.0 H500.0",
+        "thickness": 46,
+        "segments": [
+          [
+            "",
+            "#D6C9F0",
+            35.0
+          ],
+          [
+            "",
+            "#D6C9F0",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            63.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            77.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            1.0
+          ],
+          [
+            "",
+            "#BDE4EE",
+            50.0
+          ]
+        ],
+        "centromere_after": 4,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13c-chromo_alter_4-translocation/translocation-complements.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1020\" height=\"315\" viewBox=\"0 0 1020 315\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">translocation-complements</title><desc id=\"desc\">Normal, heterozygous and homozygous translocation complements: four unreplicated chromosomes per panel, two homolog pairs. Exchanged terminal regions preserved from source image002. Original teaching schematic, not to scale.</desc><rect width=\"1020\" height=\"315\" fill=\"white\" /><text x=\"20\" y=\"40\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"25\" fill=\"#263747\">A: Normal</text><g data-shared-part=\"0\" /><g data-shared-part=\"1\" /><g data-shared-part=\"2\" /><g data-shared-part=\"3\" /><text x=\"360\" y=\"40\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"25\" fill=\"#263747\">B: Heterozygous</text><g data-shared-part=\"4\" /><g data-shared-part=\"5\" /><g data-shared-part=\"6\" /><g data-shared-part=\"7\" /><text x=\"700\" y=\"40\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"25\" fill=\"#263747\">C: Homozygous</text><g data-shared-part=\"8\" /><g data-shared-part=\"9\" /><g data-shared-part=\"10\" /><g data-shared-part=\"11\" /></svg>",
+    "parts": [
+      {
+        "path": "M35.0 90.0 H295.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.2
+          ],
+          [
+            "",
+            "#246ab2",
+            111.8
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 145.0 H295.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.2
+          ],
+          [
+            "",
+            "#bd333b",
+            111.8
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 200.0 H295.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.2
+          ],
+          [
+            "",
+            "#246ab2",
+            111.8
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 255.0 H295.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.2
+          ],
+          [
+            "",
+            "#bd333b",
+            111.8
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M375.0 90.0 H635.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.19999999999999
+          ],
+          [
+            "",
+            "#246ab2",
+            111.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M375.0 145.0 H635.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.19999999999999
+          ],
+          [
+            "",
+            "#bd333b",
+            111.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M375.0 200.0 H635.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.19999999999999
+          ],
+          [
+            "",
+            "#246ab2",
+            111.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M375.0 255.0 H635.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.19999999999999
+          ],
+          [
+            "",
+            "#bd333b",
+            111.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M715.0 90.0 H975.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.200000000000045
+          ],
+          [
+            "",
+            "#246ab2",
+            111.79999999999995
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M715.0 145.0 H975.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.200000000000045
+          ],
+          [
+            "",
+            "#bd333b",
+            111.79999999999995
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M715.0 200.0 H975.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            57.200000000000045
+          ],
+          [
+            "",
+            "#246ab2",
+            111.79999999999995
+          ],
+          [
+            "",
+            "#bd333b",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M715.0 255.0 H975.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            57.200000000000045
+          ],
+          [
+            "",
+            "#bd333b",
+            111.79999999999995
+          ],
+          [
+            "",
+            "#246ab2",
+            91.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13c-chromo_alter_4-translocation/translocation-heterozygote.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"480\" height=\"265\" viewBox=\"0 0 480 265\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">translocation-heterozygote</title><desc id=\"desc\">Two translocated and two normal chromosomes; exact image003 complement. Original teaching schematic, not to scale.</desc><rect width=\"480\" height=\"265\" fill=\"white\" /><g data-shared-part=\"0\" /><g data-shared-part=\"1\" /><g data-shared-part=\"2\" /><g data-shared-part=\"3\" /></svg>",
+    "parts": [
+      {
+        "path": "M35.0 45.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            88.0
+          ],
+          [
+            "",
+            "#246ab2",
+            172.0
+          ],
+          [
+            "",
+            "#bd333b",
+            140.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 105.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            88.0
+          ],
+          [
+            "",
+            "#bd333b",
+            172.0
+          ],
+          [
+            "",
+            "#246ab2",
+            140.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 165.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            88.0
+          ],
+          [
+            "",
+            "#246ab2",
+            172.0
+          ],
+          [
+            "",
+            "#246ab2",
+            140.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M35.0 225.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            88.0
+          ],
+          [
+            "",
+            "#bd333b",
+            172.0
+          ],
+          [
+            "",
+            "#bd333b",
+            140.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13c-chromo_alter_4-translocation/balanced-four-gametes.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"480\" height=\"465\" viewBox=\"0 0 480 465\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">balanced-four-gametes</title><desc id=\"desc\">Four alternate-segregation gametes from source image004. Two balanced carriers, two normal; each two chromosomes. Original teaching schematic, not to scale.</desc><rect width=\"480\" height=\"465\" fill=\"white\" /><rect x=\"12\" y=\"15\" width=\"456\" height=\"98\" rx=\"30\" fill=\"#eff3f6\" stroke=\"#bcc6ce\" /><g data-shared-part=\"0\" /><g data-shared-part=\"1\" /><rect x=\"12\" y=\"125\" width=\"456\" height=\"98\" rx=\"30\" fill=\"#eff3f6\" stroke=\"#bcc6ce\" /><g data-shared-part=\"2\" /><g data-shared-part=\"3\" /><rect x=\"12\" y=\"235\" width=\"456\" height=\"98\" rx=\"30\" fill=\"#eff3f6\" stroke=\"#bcc6ce\" /><g data-shared-part=\"4\" /><g data-shared-part=\"5\" /><rect x=\"12\" y=\"345\" width=\"456\" height=\"98\" rx=\"30\" fill=\"#eff3f6\" stroke=\"#bcc6ce\" /><g data-shared-part=\"6\" /><g data-shared-part=\"7\" /></svg>",
+    "parts": [
+      {
+        "path": "M45.0 45.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            167.7
+          ],
+          [
+            "",
+            "#bd333b",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 85.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            167.7
+          ],
+          [
+            "",
+            "#246ab2",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 155.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            167.7
+          ],
+          [
+            "",
+            "#bd333b",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 195.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            167.7
+          ],
+          [
+            "",
+            "#246ab2",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 265.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            167.7
+          ],
+          [
+            "",
+            "#246ab2",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 305.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            167.7
+          ],
+          [
+            "",
+            "#bd333b",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 375.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#246ab2",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#246ab2",
+            167.7
+          ],
+          [
+            "",
+            "#246ab2",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M45.0 415.0 H435.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#bd333b",
+            85.80000000000001
+          ],
+          [
+            "",
+            "#bd333b",
+            167.7
+          ],
+          [
+            "",
+            "#bd333b",
+            136.5
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1080\" height=\"310\" viewBox=\"0 0 1080 310\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">philadelphia-chromosome</title><desc id=\"desc\">Reciprocal exchange between chromosomes9 and22. Derivative9 longer, Philadelphia derivative22 shorter. Terminal portions exchanged; schematic lengths. Original teaching schematic, not to scale.</desc><rect width=\"1080\" height=\"310\" fill=\"white\" /><text x=\"55\" y=\"35\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"30\" fill=\"#263747\">Normal</text><text x=\"55\" y=\"96\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"28\" fill=\"#263747\">9</text><text x=\"55\" y=\"226\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"28\" fill=\"#263747\">22</text><g data-shared-part=\"0\" /><g data-shared-part=\"1\" /><path d=\"M500 130 V200\" stroke=\"#405467\" stroke-width=\"3\" /><text x=\"570\" y=\"35\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"30\" fill=\"#263747\">Translocated</text><text x=\"570\" y=\"96\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"28\" fill=\"#263747\">9</text><text x=\"570\" y=\"226\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"28\" fill=\"#263747\">22</text><g data-shared-part=\"2\" /><g data-shared-part=\"3\" /><text x=\"620\" y=\"270\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"23\" fill=\"#263747\">Philadelphia chromosome</text><text x=\"402\" y=\"158\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"21\" fill=\"#263747\">exchange</text></svg>",
+    "parts": [
+      {
+        "path": "M105.0 90.0 H415.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#9d90c2",
+            68.19999999999999
+          ],
+          [
+            "",
+            "#9d90c2",
+            216.8
+          ],
+          [
+            "",
+            "#9d90c2",
+            25.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M105.0 220.0 H260.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#74396b",
+            34.099999999999994
+          ],
+          [
+            "",
+            "#74396b",
+            45.900000000000006
+          ],
+          [
+            "",
+            "#74396b",
+            75.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M620.0 90.0 H980.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#9d90c2",
+            79.20000000000005
+          ],
+          [
+            "",
+            "#9d90c2",
+            205.79999999999995
+          ],
+          [
+            "",
+            "#74396b",
+            75.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M620.0 220.0 H725.0",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#74396b",
+            23.100000000000023
+          ],
+          [
+            "",
+            "#74396b",
+            56.89999999999998
+          ],
+          [
+            "",
+            "#9d90c2",
+            25.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1000\" height=\"570\" viewBox=\"0 0 1000 570\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">inversion double crossover problem</title><desc id=\"desc\">Four chromatids. Normal order cen A B C D E. Inverted homolog is shown reversed as e b c d a cen, corresponding to cen a d c b e. First crossover between B and C; second crossover requested between C and D.</desc><rect width=\"1000\" height=\"570\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\"><text x=\"35\" y=\"40\" font-size=\"30\" text-anchor=\"start\" fill=\"#172A3A\">Pairing in the inverted region</text><g data-shared-part=\"0\" /><rect x=\"198\" y=\"97\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"215\" y=\"124\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">A</text><rect x=\"303\" y=\"97\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"320\" y=\"124\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">B</text><rect x=\"408\" y=\"97\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"425\" y=\"124\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">C</text><rect x=\"513\" y=\"97\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"530\" y=\"124\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">D</text><rect x=\"618\" y=\"97\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"635\" y=\"124\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">E</text><g data-shared-part=\"1\" /><rect x=\"198\" y=\"177\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"215\" y=\"204\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">A</text><rect x=\"303\" y=\"177\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"320\" y=\"204\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">B</text><rect x=\"408\" y=\"177\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"425\" y=\"204\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">C</text><rect x=\"513\" y=\"177\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"530\" y=\"204\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">D</text><rect x=\"618\" y=\"177\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#176BA0\" stroke-width=\"2\" /><text x=\"635\" y=\"204\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">E</text><g data-shared-part=\"2\" /><rect x=\"198\" y=\"257\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"215\" y=\"284\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">e</text><rect x=\"303\" y=\"257\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"320\" y=\"284\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">b</text><rect x=\"408\" y=\"257\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"425\" y=\"284\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">c</text><rect x=\"513\" y=\"257\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"530\" y=\"284\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">d</text><rect x=\"618\" y=\"257\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"635\" y=\"284\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">a</text><g data-shared-part=\"3\" /><rect x=\"198\" y=\"337\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"215\" y=\"364\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">e</text><rect x=\"303\" y=\"337\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"320\" y=\"364\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">b</text><rect x=\"408\" y=\"337\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"425\" y=\"364\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">c</text><rect x=\"513\" y=\"337\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"530\" y=\"364\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">d</text><rect x=\"618\" y=\"337\" width=\"34\" height=\"36\" rx=\"5\" fill=\"white\" stroke=\"#B15C12\" stroke-width=\"2\" /><text x=\"635\" y=\"364\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">a</text><path d=\"M365 220 L400 260 M400 220 L365 260\" fill=\"none\" stroke=\"#AC233F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><text x=\"35\" y=\"485\" font-size=\"27\" text-anchor=\"start\" fill=\"#172A3A\">First crossover: between B/b and C/c</text><text x=\"35\" y=\"530\" font-size=\"25\" text-anchor=\"start\" fill=\"#172A3A\">Only the inverted region is shown paired; ends are unpaired.</text></g></svg>",
+    "parts": [
+      {
+        "path": "M88 115 H657",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            22.0
+          ],
+          [
+            "",
+            "#176BA0",
+            547.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M88 195 H657",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            22.0
+          ],
+          [
+            "",
+            "#176BA0",
+            547.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M193 275 H762",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            547.0
+          ],
+          [
+            "",
+            "#B15C12",
+            22.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M193 355 H762",
+        "thickness": 14,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            547.0
+          ],
+          [
+            "",
+            "#B15C12",
+            22.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/inversion-problem-829.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"900\" height=\"290\" viewBox=\"0 0 900 290\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">Inversion heterozygote</title><desc id=\"desc\">Source problem 8.29: one chromosome has gene order A D C B E; its homolog has a b c d e. Centromeres lie before A and a. The D C B interval is inverted. Original schematic; not to scale.</desc><rect width=\"900\" height=\"290\" fill=\"white\" /><g id=\"homolog-ADCBE\"><g data-shared-part=\"0\" /><text x=\"235\" y=\"93\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">A</text><rect x=\"317\" y=\"58\" width=\"96\" height=\"44\" rx=\"5\" fill=\"#ad465c\" /><text x=\"365\" y=\"93\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"white\">D</text><rect x=\"447\" y=\"58\" width=\"96\" height=\"44\" rx=\"5\" fill=\"#ad465c\" /><text x=\"495\" y=\"93\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"white\">C</text><rect x=\"577\" y=\"58\" width=\"96\" height=\"44\" rx=\"5\" fill=\"#ad465c\" /><text x=\"625\" y=\"93\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"white\">B</text><text x=\"755\" y=\"93\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">E</text></g><g id=\"homolog-abcde\"><g data-shared-part=\"1\" /><text x=\"235\" y=\"223\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">a</text><text x=\"365\" y=\"223\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">b</text><text x=\"495\" y=\"223\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">c</text><text x=\"625\" y=\"223\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">d</text><text x=\"755\" y=\"223\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-style=\"italic\" font-size=\"38\" fill=\"#142332\">e</text></g></svg>",
+    "parts": [
+      {
+        "path": "M40 80 H845",
+        "thickness": 32,
+        "segments": [
+          [
+            "",
+            "#5d94c3",
+            115.0
+          ],
+          [
+            "",
+            "#5d94c3",
+            690.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M40 210 H845",
+        "thickness": 32,
+        "segments": [
+          [
+            "",
+            "#5d94c3",
+            115.0
+          ],
+          [
+            "",
+            "#5d94c3",
+            690.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/sparrow-supergene.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1100\" height=\"440\" viewBox=\"0 0 1100 440\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">sparrow supergene</title><desc id=\"desc\">Schematic chromosome-2 homologs. Opposed chevrons identify an inversion, not complete absence of all recombination.</desc><rect width=\"1100\" height=\"440\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\"><text x=\"45\" y=\"45\" font-size=\"31\" text-anchor=\"start\" fill=\"#172A3A\">A large chromosome-2 segment is inverted</text><g data-shared-part=\"0\" /><rect x=\"184\" y=\"115\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M188 128 L198 135 L208 128\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M188 153 L198 160 L208 153\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M188 178 L198 185 L208 178\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"1\" /><rect x=\"259\" y=\"115\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M263 142 L273 135 L283 142\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M263 167 L273 160 L283 167\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M263 192 L273 185 L283 192\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><text x=\"236\" y=\"320\" font-size=\"28\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2m</text><text x=\"425\" y=\"115\" font-size=\"27\" text-anchor=\"start\" fill=\"#172A3A\">Standard orientation</text><text x=\"775\" y=\"115\" font-size=\"27\" text-anchor=\"start\" fill=\"#172A3A\">Inverted orientation</text><g data-shared-part=\"2\" /><rect x=\"534\" y=\"170\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M538 183 L548 190 L558 183\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M538 208 L548 215 L558 208\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M538 233 L548 240 L558 233\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"3\" /><rect x=\"894\" y=\"170\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M898 197 L908 190 L918 197\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M898 222 L908 215 L918 222\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M898 247 L908 240 L918 247\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M595 230 H830\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><text x=\"710\" y=\"210\" font-size=\"25\" text-anchor=\"middle\" fill=\"#172A3A\">Inversion</text><text x=\"50\" y=\"390\" font-size=\"29\" text-anchor=\"start\" fill=\"#172A3A\">The linked region forms a supergene.</text></g></svg>",
+    "parts": [
+      {
+        "path": "M198.0 118.0 V252.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M273.0 118.0 V252.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            100.0
+          ],
+          [
+            "",
+            "#176BA0",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M548.0 173.0 V307.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M908.0 173.0 V307.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            100.0
+          ],
+          [
+            "",
+            "#176BA0",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/sparrow-offspring.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1100\" height=\"660\" viewBox=\"0 0 1100 660\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">sparrow offspring</title><desc id=\"desc\">Opposite-sex, opposite-morph parental cross. Four equally likely model offspring: two standard homozygotes and two inversion heterozygotes; 50 percent inherit the inversion.</desc><rect width=\"1100\" height=\"660\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\"><text x=\"35\" y=\"45\" font-size=\"32\" text-anchor=\"start\" fill=\"#172A3A\">White-stripe \u00d7 tan-stripe</text><g data-shared-part=\"0\" /><rect x=\"229\" y=\"105\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M233 118 L243 125 L253 118\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M233 143 L243 150 L253 143\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M233 168 L243 175 L253 168\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"1\" /><rect x=\"294\" y=\"105\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M298 132 L308 125 L318 132\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M298 157 L308 150 L318 157\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M298 182 L308 175 L318 182\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"2\" /><rect x=\"764\" y=\"105\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M768 118 L778 125 L788 118\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M768 143 L778 150 L788 143\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M768 168 L778 175 L788 168\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"3\" /><rect x=\"829\" y=\"105\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M833 118 L843 125 L853 118\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M833 143 L843 150 L853 143\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M833 168 L843 175 L853 168\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><text x=\"275\" y=\"305\" font-size=\"28\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2m</text><text x=\"800\" y=\"305\" font-size=\"28\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2</text><text x=\"550\" y=\"200\" font-size=\"55\" text-anchor=\"middle\" fill=\"#172A3A\">\u00d7</text><path d=\"M550 325 V365\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><polygon points=\"540,355 560,355 550,375\" fill=\"#172A3A\" /><g data-shared-part=\"4\" /><rect x=\"114\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M118 438 L128 445 L138 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M118 463 L128 470 L138 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M118 488 L128 495 L138 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"5\" /><rect x=\"179\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M183 438 L193 445 L203 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M183 463 L193 470 L203 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M183 488 L193 495 L203 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"6\" /><rect x=\"354\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M358 438 L368 445 L378 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M358 463 L368 470 L378 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M358 488 L368 495 L378 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"7\" /><rect x=\"419\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M423 438 L433 445 L443 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M423 463 L433 470 L443 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M423 488 L433 495 L443 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"8\" /><rect x=\"624\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M628 438 L638 445 L648 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M628 463 L638 470 L648 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M628 488 L638 495 L648 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"9\" /><rect x=\"689\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M693 452 L703 445 L713 452\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M693 477 L703 470 L713 477\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M693 502 L703 495 L713 502\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"10\" /><rect x=\"864\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M868 438 L878 445 L888 438\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M868 463 L878 470 L888 463\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M868 488 L878 495 L888 488\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><g data-shared-part=\"11\" /><rect x=\"929\" y=\"425\" width=\"28\" height=\"85\" rx=\"5\" fill=\"white\" fill-opacity=\"0.65\" /><path d=\"M933 452 L943 445 L953 452\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M933 477 L943 470 L953 477\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M933 502 L943 495 L953 502\" fill=\"none\" stroke=\"#172A3A\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><text x=\"160\" y=\"625\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2</text><text x=\"400\" y=\"625\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2</text><text x=\"670\" y=\"625\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2m</text><text x=\"910\" y=\"625\" font-size=\"27\" text-anchor=\"middle\" fill=\"#172A3A\">2 / 2m</text></g></svg>",
+    "parts": [
+      {
+        "path": "M243.0 108.0 V242.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M308.0 108.0 V242.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            100.0
+          ],
+          [
+            "",
+            "#176BA0",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M778.0 108.0 V242.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M843.0 108.0 V242.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M128.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M193.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M368.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M433.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M638.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M703.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            100.0
+          ],
+          [
+            "",
+            "#176BA0",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M878.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#B15C12",
+            100.0
+          ],
+          [
+            "",
+            "#B15C12",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M943.0 428.0 V562.0",
+        "thickness": 36.0,
+        "segments": [
+          [
+            "",
+            "#176BA0",
+            100.0
+          ],
+          [
+            "",
+            "#176BA0",
+            34.0
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/sparrow_morph_comparison.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1260\" height=\"508\" viewBox=\"0 0 1260 508\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">White- and tan-stripe sparrow comparison</title><desc id=\"desc\">Two sparrow morphs, their source behavioral lists, both sex symbols per morph, and paired replicated chromosome2 forms.</desc><rect width=\"1260\" height=\"508\" fill=\"#f3efe3\" /><g id=\"head-white\" data-morph=\"white\" transform=\"translate(180,-5) scale(1.1)\">\n<path class=\"head-silhouette\" d=\"M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z\" fill=\"#dddccf\" stroke=\"#555b50\" stroke-width=\"2.3\" stroke-linejoin=\"round\" />\n<path d=\"M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z\" fill=\"#292f2d\" />\n<path class=\"crown-stripe\" d=\"M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z\" fill=\"#f5f3e5\" />\n<path class=\"eyebrow-stripe\" d=\"M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z\" fill=\"#f5f3e5\" />\n<path d=\"M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z\" fill=\"#a7b1a8\" />\n<path d=\"M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z\" fill=\"#f3f1df\" />\n<path d=\"M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z\" fill=\"#292f2d\" opacity=\"0.82\" />\n<path class=\"yellow-lores\" d=\"M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z\" fill=\"#d9c340\" />\n<path class=\"upper-bill\" d=\"M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z\" fill=\"#788e89\" stroke=\"#465a57\" stroke-width=\"2\" /><path class=\"lower-bill\" d=\"M 180 111 L 224 108 C 209 117 194 123 182 117 Z\" fill=\"#a0ada2\" stroke=\"#465a57\" stroke-width=\"2\" /><path d=\"M 184 91 Q 198 94 211 103\" stroke=\"#b9c8b8\" stroke-width=\"2.8\" fill=\"none\" stroke-linecap=\"round\" />\n<ellipse cx=\"138\" cy=\"88\" rx=\"14\" ry=\"15\" fill=\"#e4dac0\" /><circle class=\"iris\" cx=\"139\" cy=\"88\" r=\"10.7\" fill=\"#805330\" stroke=\"#3c3b2f\" stroke-width=\"2\" /><circle class=\"pupil\" cx=\"139\" cy=\"88\" r=\"6.5\" fill=\"#172421\" /><circle cx=\"136\" cy=\"84\" r=\"2.6\" fill=\"#f9f6e8\" />\n<path d=\"M 70 49 l 8 -6\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 88 39 l 9 -5\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 107 33 l 9 -2\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 140 34 l 8 4\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 61 91 l 11 -8\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 78 79 l 11 -6\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 101 67 l 12 -4\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 57 119 l 11 -4\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 72 111 l 10 -4\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 90 102 l 9 -4\" stroke=\"#f5f3e5\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 60 156 l -2 15\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 76 159 l -1 18\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 92 165 l 2 16\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 112 167 l 3 16\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 132 162 l 2 19\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 151 153 l 2 19\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n</g>\n<g id=\"head-tan\" data-morph=\"tan\" transform=\"translate(1080,-5) scale(-1.1,1.1)\">\n<path class=\"head-silhouette\" d=\"M 7 192 C 18 169 32 162 37 139 C 40 121 37 97 44 74 C 54 38 84 20 120 18 C 155 13 181 31 190 57 C 197 74 187 91 191 108 C 197 130 184 155 179 175 L 204 192 Z\" fill=\"#d2c2a2\" stroke=\"#555b50\" stroke-width=\"2.3\" stroke-linejoin=\"round\" />\n<path d=\"M 40 128 C 39 86 42 62 66 40 C 94 13 146 9 173 34 C 186 45 192 61 191 75 C 161 68 126 67 98 89 C 71 111 57 136 40 143 Z\" fill=\"#493f30\" />\n<path class=\"crown-stripe\" d=\"M 64 48 C 85 20 115 17 136 22 C 151 27 169 37 178 50 C 160 42 146 36 126 35 C 103 33 86 40 64 48 Z\" fill=\"#c7ab78\" />\n<path class=\"eyebrow-stripe\" d=\"M 45 100 C 65 72 90 53 120 48 C 143 44 164 50 184 65 L 185 78 C 161 67 139 63 115 70 C 84 79 65 96 45 113 Z\" fill=\"#c7ab78\" />\n<path d=\"M 46 121 C 67 113 85 90 111 81 C 139 72 164 82 180 100 C 170 118 150 135 122 143 C 88 148 61 135 46 144 Z\" fill=\"#b9aa8b\" />\n<path d=\"M 47 137 C 70 132 88 137 107 148 C 126 160 154 149 176 124 C 180 144 167 164 173 184 L 184 192 L 43 192 C 48 176 48 156 47 137 Z\" fill=\"#f3f1df\" />\n<path d=\"M 50 126 C 77 125 88 139 106 142 C 125 146 146 137 159 123 C 144 144 130 155 111 155 C 89 154 75 140 50 138 Z\" fill=\"#493f30\" opacity=\"0.82\" />\n<path class=\"yellow-lores\" d=\"M 150 65 C 160 59 174 64 186 75 L 180 89 C 169 79 161 78 151 79 Z\" fill=\"#d9c340\" />\n<path class=\"upper-bill\" d=\"M 178 87 C 191 83 207 95 224 108 L 180 111 C 176 104 176 95 178 87 Z\" fill=\"#788e89\" stroke=\"#465a57\" stroke-width=\"2\" /><path class=\"lower-bill\" d=\"M 180 111 L 224 108 C 209 117 194 123 182 117 Z\" fill=\"#a0ada2\" stroke=\"#465a57\" stroke-width=\"2\" /><path d=\"M 184 91 Q 198 94 211 103\" stroke=\"#b9c8b8\" stroke-width=\"2.8\" fill=\"none\" stroke-linecap=\"round\" />\n<ellipse cx=\"138\" cy=\"88\" rx=\"14\" ry=\"15\" fill=\"#e4dac0\" /><circle class=\"iris\" cx=\"139\" cy=\"88\" r=\"10.7\" fill=\"#805330\" stroke=\"#3c3b2f\" stroke-width=\"2\" /><circle class=\"pupil\" cx=\"139\" cy=\"88\" r=\"6.5\" fill=\"#172421\" /><circle cx=\"136\" cy=\"84\" r=\"2.6\" fill=\"#f9f6e8\" />\n<path d=\"M 70 49 l 8 -6\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 88 39 l 9 -5\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 107 33 l 9 -2\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 140 34 l 8 4\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 61 91 l 11 -8\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 78 79 l 11 -6\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 101 67 l 12 -4\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 57 119 l 11 -4\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 72 111 l 10 -4\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 90 102 l 9 -4\" stroke=\"#c7ab78\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.65\" />\n<path d=\"M 60 156 l -2 15\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 76 159 l -1 18\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 92 165 l 2 16\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 112 167 l 3 16\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 132 162 l 2 19\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n<path d=\"M 151 153 l 2 19\" stroke=\"#c9cabb\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" />\n</g>\n<g font-family=\"Atkinson Hyperlegible Next\" fill=\"#292a27\" font-size=\"31\"><text id=\"sex-white\" x=\"310\" y=\"249\" font-size=\"48\" text-anchor=\"middle\" fill=\"#81939a\">\u2640 \u2642</text><text id=\"sex-tan\" x=\"950\" y=\"249\" font-size=\"48\" text-anchor=\"middle\" fill=\"#a88e76\">\u2640 \u2642</text><text id=\"chromosome-label\" x=\"630\" y=\"280\" font-size=\"34\" font-weight=\"700\" text-anchor=\"middle\">Chromosome 2</text><text id=\"morph-heading-0\" x=\"60\" y=\"306\" fill=\"#81939a\" font-weight=\"700\" font-size=\"33\">White stripe</text><text id=\"behavior-0-0\" x=\"47\" y=\"351\">\u2022 Promiscuous</text><text id=\"behavior-0-1\" x=\"47\" y=\"399\">\u2022 Poor parental care</text><text id=\"behavior-0-2\" x=\"47\" y=\"447\">\u2022 Aggressive</text><text id=\"behavior-0-3\" x=\"47\" y=\"495\">\u2022 Tuneful</text><text id=\"morph-heading-1\" x=\"930\" y=\"306\" fill=\"#a88e76\" font-weight=\"700\" font-size=\"33\">Tan stripe</text><text id=\"behavior-1-0\" x=\"917\" y=\"351\">\u2022 Monogamous</text><text id=\"behavior-1-1\" x=\"917\" y=\"399\">\u2022 Good parental care</text><text id=\"behavior-1-2\" x=\"917\" y=\"447\">\u2022 Protective</text><text id=\"behavior-1-3\" x=\"917\" y=\"495\">\u2022 Poor at singing</text><text id=\"left-pair-label\" x=\"435\" y=\"333\" fill=\"#b69e87\" font-style=\"italic\" font-size=\"40\" text-anchor=\"middle\"><tspan>2 / </tspan><tspan fill=\"#81939a\" font-weight=\"700\">2</tspan></text><text id=\"right-pair-label\" x=\"820\" y=\"333\" fill=\"#b69e87\" font-style=\"italic\" font-size=\"40\" text-anchor=\"middle\">2 / 2</text></g><path id=\"dotted-leaders\" d=\"M390 269 H500 M760 269 H875\" fill=\"none\" stroke=\"#626459\" stroke-width=\"2.5\" stroke-dasharray=\"2 6\" /><g id=\"chromosome-1\" fill=\"none\" stroke=\"#b69e87\" stroke-width=\"11\" stroke-linecap=\"round\"><g data-shared-part=\"0\" /><g data-shared-part=\"1\" /><g data-shared-part=\"2\" /></g><g id=\"chromosome-2\" fill=\"none\" stroke=\"#9cafb4\" stroke-width=\"11\" stroke-linecap=\"round\"><g data-shared-part=\"3\" /><g data-shared-part=\"4\" /><g data-shared-part=\"5\" /></g><g id=\"blue-arm-blocks\" stroke=\"#637e87\" stroke-width=\"11\" stroke-linecap=\"butt\"><path d=\"M448 365 V398\" /><path d=\"M472 365 V398\" /></g><g id=\"chromosome-3\" fill=\"none\" stroke=\"#b69e87\" stroke-width=\"11\" stroke-linecap=\"round\"><g data-shared-part=\"6\" /><g data-shared-part=\"7\" /><g data-shared-part=\"8\" /></g><g id=\"chromosome-4\" fill=\"none\" stroke=\"#b69e87\" stroke-width=\"11\" stroke-linecap=\"round\"><g data-shared-part=\"9\" /><g data-shared-part=\"10\" /><g data-shared-part=\"11\" /></g></svg>",
+    "parts": [
+      {
+        "path": "M398 355 V424 C398 447 422 456 422 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M422 355 V424 C422 447 398 456 398 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M404.0 450 H416.0",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            6
+          ],
+          [
+            "",
+            "#b69e87",
+            6
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M448 355 V424 C448 447 472 456 472 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#9cafb4",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M472 355 V424 C472 447 448 456 448 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#9cafb4",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M454.0 450 H466.0",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#9cafb4",
+            6
+          ],
+          [
+            "",
+            "#9cafb4",
+            6
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M783 355 V424 C783 447 807 456 807 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M807 355 V424 C807 447 783 456 783 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M789.0 450 H801.0",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            6
+          ],
+          [
+            "",
+            "#b69e87",
+            6
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M833 355 V424 C833 447 857 456 857 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M857 355 V424 C857 447 833 456 833 478 V495",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M839.0 450 H851.0",
+        "thickness": 11,
+        "segments": [
+          [
+            "",
+            "#b69e87",
+            6
+          ],
+          [
+            "",
+            "#b69e87",
+            6
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/inversion_gene_order_comparison.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"895\" viewBox=\"0 0 1200 895\" font-family=\"Atkinson Hyperlegible Next\" fill=\"#293e43\"><title>Inversion gene-order comparison</title><desc>Three schematic six-region chromosomes compare normal, pericentric and paracentric orders; highlighted blue regions indicate the source inversion intervals.</desc><rect width=\"1200\" height=\"895\" fill=\"white\" /><rect x=\"20\" y=\"20\" width=\"1160\" height=\"94\" rx=\"12\" fill=\"#f8d7b4\" /><text x=\"600\" y=\"80\" text-anchor=\"middle\" font-size=\"44\" font-weight=\"700\">Pericentric and Paracentric Inversions</text><g data-order=\"ABCDEF\"><text x=\"600\" y=\"187\" text-anchor=\"middle\" font-size=\"42\">Normal chromosome</text><g data-shared-part=\"0\" /><text data-gene=\"A\" x=\"150\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">A</text><text data-gene=\"B\" x=\"330\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">B</text><text data-gene=\"C\" x=\"510\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">C</text><text data-gene=\"D\" x=\"690\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">D</text><text data-gene=\"E\" x=\"870\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">E</text><text data-gene=\"F\" x=\"1050\" y=\"295\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">F</text></g><g data-order=\"ABDCEF\"><text x=\"600\" y=\"421\" text-anchor=\"middle\" font-size=\"42\">Pericentric inversion</text><g data-shared-part=\"1\" /><text data-gene=\"A\" x=\"150\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">A</text><text data-gene=\"B\" x=\"330\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">B</text><text data-gene=\"D\" x=\"510\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">D</text><text data-gene=\"C\" x=\"690\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">C</text><text data-gene=\"E\" x=\"870\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">E</text><text data-gene=\"F\" x=\"1050\" y=\"529\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">F</text></g><g data-order=\"ABCDFE\"><text x=\"600\" y=\"655\" text-anchor=\"middle\" font-size=\"42\">Paracentric inversion</text><g data-shared-part=\"2\" /><text data-gene=\"A\" x=\"150\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">A</text><text data-gene=\"B\" x=\"330\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">B</text><text data-gene=\"C\" x=\"510\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">C</text><text data-gene=\"D\" x=\"690\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">D</text><text data-gene=\"F\" x=\"870\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">F</text><text data-gene=\"E\" x=\"1050\" y=\"763\" text-anchor=\"middle\" font-size=\"43\" font-weight=\"700\">E</text></g><path d=\"M617 785 L684 844\" fill=\"none\" stroke=\"#293e43\" stroke-width=\"3\" /><text x=\"699\" y=\"856\" font-size=\"37\">centromere</text></svg>",
+    "parts": [
+      {
+        "path": "M105 280.0 H1095",
+        "thickness": 90,
+        "segments": [
+          [
+            "",
+            "#d7dddf",
+            135
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            135
+          ]
+        ],
+        "centromere_after": 3,
+        "cut_ends": false
+      },
+      {
+        "path": "M105 514.0 H1095",
+        "thickness": 90,
+        "segments": [
+          [
+            "",
+            "#d7dddf",
+            135
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#a3cfdf",
+            180
+          ],
+          [
+            "",
+            "#a3cfdf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            135
+          ]
+        ],
+        "centromere_after": 3,
+        "cut_ends": false
+      },
+      {
+        "path": "M105 748.0 H1095",
+        "thickness": 90,
+        "segments": [
+          [
+            "",
+            "#d7dddf",
+            135
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#d7dddf",
+            180
+          ],
+          [
+            "",
+            "#a3cfdf",
+            180
+          ],
+          [
+            "",
+            "#a3cfdf",
+            135
+          ]
+        ],
+        "centromere_after": 3,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1100\" height=\"420\" viewBox=\"0 0 1100 420\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">position effect chromosomes</title><desc id=\"desc\">Normal and inverted X chromosomes retain w+. Inversion moves the locus beside heterochromatin; a small heterochromatic segment moves into euchromatin. Break sites and centromere retained from source.</desc><rect width=\"1100\" height=\"420\" fill=\"white\" /><g font-family=\"Atkinson Hyperlegible Next\"><text x=\"35\" y=\"55\" font-size=\"29\" text-anchor=\"start\" fill=\"#172A3A\">Normal X chromosome</text><g data-shared-part=\"0\" /><rect x=\"160\" y=\"88\" width=\"65\" height=\"44\" fill=\"#812F46\" rx=\"4\" /><text x=\"192\" y=\"119\" font-size=\"27\" text-anchor=\"middle\" fill=\"white\">w+</text><path d=\"M150 68 V83\" fill=\"none\" stroke=\"#AC233F\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><polygon points=\"143,78 157,78 150,90\" fill=\"#AC233F\" /><path d=\"M700 68 V83\" fill=\"none\" stroke=\"#AC233F\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><polygon points=\"693,78 707,78 700,90\" fill=\"#AC233F\" /><text x=\"150\" y=\"168\" font-size=\"24\" text-anchor=\"start\" fill=\"#172A3A\">Breakpoints bracket the inverted segment</text><text x=\"770\" y=\"168\" font-size=\"23\" text-anchor=\"start\" fill=\"#172A3A\">Heterochromatin</text><text x=\"35\" y=\"245\" font-size=\"29\" text-anchor=\"start\" fill=\"#172A3A\">Inverted X chromosome</text><g data-shared-part=\"1\" /><rect x=\"635\" y=\"278\" width=\"65\" height=\"44\" fill=\"#812F46\" rx=\"4\" /><text x=\"667\" y=\"309\" font-size=\"27\" text-anchor=\"middle\" fill=\"white\">w+</text><path d=\"M150 258 V273\" fill=\"none\" stroke=\"#AC233F\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><polygon points=\"143,268 157,268 150,280\" fill=\"#AC233F\" /><path d=\"M700 258 V273\" fill=\"none\" stroke=\"#AC233F\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><polygon points=\"693,268 707,268 700,280\" fill=\"#AC233F\" /><text x=\"150\" y=\"358\" font-size=\"24\" text-anchor=\"start\" fill=\"#172A3A\">w+ is now beside heterochromatin</text><text x=\"770\" y=\"358\" font-size=\"23\" text-anchor=\"start\" fill=\"#172A3A\">Heterochromatin</text></g></svg>",
+    "parts": [
+      {
+        "path": "M65 110 H1000",
+        "thickness": 26,
+        "segments": [
+          [
+            "",
+            "#338B7B",
+            645
+          ],
+          [
+            "",
+            "#B15C12",
+            225
+          ],
+          [
+            "",
+            "#B15C12",
+            65
+          ]
+        ],
+        "centromere_after": 2,
+        "cut_ends": false
+      },
+      {
+        "path": "M65 300 H1000",
+        "thickness": 26,
+        "segments": [
+          [
+            "",
+            "#338B7B",
+            35
+          ],
+          [
+            "",
+            "#B15C12",
+            45
+          ],
+          [
+            "",
+            "#338B7B",
+            555
+          ],
+          [
+            "",
+            "#B15C12",
+            235
+          ],
+          [
+            "",
+            "#B15C12",
+            65
+          ]
+        ],
+        "centromere_after": 4,
+        "cut_ends": false
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/paracentric_inversion_homozygote.drawn.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1600\" height=\"1250\" viewBox=\"0 0 1600 1250\" font-family=\"Atkinson Hyperlegible Next\" fill=\"#273c40\"><title>Paracentric inversion and homozygous comparison</title><desc>Four replicated chromosome units preserve the source gene orders, orientation labels and centromeres outside the inverted interval.</desc><rect width=\"1600\" height=\"1250\" fill=\"white\" /><text xml:space=\"preserve\" x=\"800\" y=\"76\" text-anchor=\"middle\" font-size=\"49\"><tspan fill=\"#2550a0\">Paracentric inversions</tspan><tspan> do NOT involve</tspan></text><text x=\"800\" y=\"138\" text-anchor=\"middle\" font-size=\"49\" fill=\"#273c40\">the centromere</text><g data-chromosome=\"ABCDEFG\" id=\"chromosome-0\"><g data-sister=\"0\"><g data-shared-part=\"0\" /><rect data-gene-block=\"A\" x=\"115\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"455\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"795\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"289.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-sister=\"1\"><g data-shared-part=\"1\" /><rect data-gene-block=\"A\" x=\"115\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"455\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"795\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"325.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-shared-part=\"2\" /><text x=\"140\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">A</text><text x=\"250\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">B</text><text x=\"480\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">C</text><text x=\"650\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">D</text><text x=\"820\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">E</text><text x=\"955\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">F</text><text x=\"1060\" y=\"272\" text-anchor=\"middle\" font-size=\"35\" fill=\"#273c40\">G</text></g><g data-chromosome=\"ABEDCFG\" id=\"chromosome-1\"><g data-sister=\"0\"><g data-shared-part=\"3\" /><rect data-gene-block=\"A\" x=\"115\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"419.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-sister=\"1\"><g data-shared-part=\"4\" /><rect data-gene-block=\"A\" x=\"115\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"455.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-shared-part=\"5\" /><rect data-inversion-box=\"true\" x=\"438\" y=\"412\" width=\"425\" height=\"112\" fill=\"none\" stroke=\"#617078\" stroke-width=\"3\" /><text data-rotated-gene=\"E\" x=\"480\" y=\"503\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 480 503)\" font-size=\"35\" font-weight=\"700\">E</text><text data-rotated-gene=\"D\" x=\"650\" y=\"503\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 650 503)\" font-size=\"35\" font-weight=\"700\">D</text><text data-rotated-gene=\"C\" x=\"820\" y=\"503\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 820 503)\" font-size=\"35\" font-weight=\"700\">C</text></g><text x=\"1170\" y=\"334\" text-anchor=\"start\" font-size=\"31\" fill=\"#2550a0\">wild type chromosome</text><text x=\"1170\" y=\"464\" text-anchor=\"start\" font-size=\"31\" fill=\"#2550a0\">inverted chromosome</text><text x=\"1055\" y=\"612\" text-anchor=\"middle\" font-size=\"34\" fill=\"#273c40\">fig. 8.12</text><text x=\"800\" y=\"761\" text-anchor=\"middle\" font-size=\"39\" fill=\"#2550a0\">A paracentric inversion poses no problems</text><text x=\"800\" y=\"811\" text-anchor=\"middle\" font-size=\"39\" fill=\"#2550a0\">if homozygous, but...</text><g data-chromosome=\"ABEDCFG\" id=\"chromosome-2\"><g data-sister=\"0\"><g data-shared-part=\"6\" /><rect data-gene-block=\"A\" x=\"115\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"925.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-sister=\"1\"><g data-shared-part=\"7\" /><rect data-gene-block=\"A\" x=\"115\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"961.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-shared-part=\"8\" /><rect data-inversion-box=\"true\" x=\"438\" y=\"918\" width=\"425\" height=\"112\" fill=\"none\" stroke=\"#617078\" stroke-width=\"3\" /><text data-rotated-gene=\"E\" x=\"480\" y=\"1009\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 480 1009)\" font-size=\"35\" font-weight=\"700\">E</text><text data-rotated-gene=\"D\" x=\"650\" y=\"1009\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 650 1009)\" font-size=\"35\" font-weight=\"700\">D</text><text data-rotated-gene=\"C\" x=\"820\" y=\"1009\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 820 1009)\" font-size=\"35\" font-weight=\"700\">C</text></g><g data-chromosome=\"ABEDCFG\" id=\"chromosome-3\"><g data-sister=\"0\"><g data-shared-part=\"9\" /><rect data-gene-block=\"A\" x=\"115\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"1092.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-sister=\"1\"><g data-shared-part=\"10\" /><rect data-gene-block=\"A\" x=\"115\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#db263b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"B\" x=\"225\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#ef9225\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"E\" x=\"455\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#2879b7\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"D\" x=\"625\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#168149\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"C\" x=\"795\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#f1d930\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"F\" x=\"930\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#79419b\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /><rect data-gene-block=\"G\" x=\"1035\" y=\"1128.5\" width=\"50\" height=\"25\" rx=\"3\" fill=\"#60656a\" stroke=\"#eff4e7\" stroke-width=\"1.5\" /></g><g data-shared-part=\"11\" /><rect data-inversion-box=\"true\" x=\"438\" y=\"1085\" width=\"425\" height=\"112\" fill=\"none\" stroke=\"#617078\" stroke-width=\"3\" /><text data-rotated-gene=\"E\" x=\"480\" y=\"1176\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 480 1176)\" font-size=\"35\" font-weight=\"700\">E</text><text data-rotated-gene=\"D\" x=\"650\" y=\"1176\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 650 1176)\" font-size=\"35\" font-weight=\"700\">D</text><text data-rotated-gene=\"C\" x=\"820\" y=\"1176\" text-anchor=\"middle\" dominant-baseline=\"middle\" transform=\"rotate(180 820 1176)\" font-size=\"35\" font-weight=\"700\">C</text></g></svg>",
+    "parts": [
+      {
+        "path": "M91 302 H288 C318 302 323 320 343 320 S374 302 401 302 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M91 338 H288 C318 338 323 320 343 320 S374 338 401 338 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M330.0 320.0 H356.0",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            13
+          ],
+          [
+            "",
+            "#78a596",
+            13
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M91 432 H288 C318 432 323 450 343 450 S374 432 401 432 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M91 468 H288 C318 468 323 450 343 450 S374 468 401 468 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M330.0 450.0 H356.0",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            13
+          ],
+          [
+            "",
+            "#78a596",
+            13
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M91 938 H288 C318 938 323 956 343 956 S374 938 401 938 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M91 974 H288 C318 974 323 956 343 956 S374 974 401 974 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M330.0 956.0 H356.0",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            13
+          ],
+          [
+            "",
+            "#78a596",
+            13
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      },
+      {
+        "path": "M91 1105 H288 C318 1105 323 1123 343 1123 S374 1105 401 1105 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M91 1141 H288 C318 1141 323 1123 343 1123 S374 1141 401 1141 H1110",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            1
+          ]
+        ],
+        "centromere_after": null,
+        "cut_ends": false
+      },
+      {
+        "path": "M330.0 1123.0 H356.0",
+        "thickness": 25,
+        "segments": [
+          [
+            "",
+            "#78a596",
+            13
+          ],
+          [
+            "",
+            "#78a596",
+            13
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": true
+      }
+    ]
+  },
+  "assets/lect13b-chromo_alter_3-inversion/inversion_problem_829_exercise.svg": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 829 497\" width=\"829\" height=\"497\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">Exercise 8.29</title><desc id=\"desc\">Original source exercise prose above a shared-family reconstruction of its two homologs: A D C B E and a b c d e. The D C B interval is inverted.</desc><rect width=\"829\" height=\"497\" fill=\"white\" /><image x=\"0\" y=\"0\" width=\"829\" height=\"347\" href=\"local-image:lect13bc_inversion_exercise_source.png\" /><g data-shared-part=\"0\" /><text x=\"354\" y=\"398\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">A</text><text x=\"418\" y=\"398\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">D</text><text x=\"475\" y=\"398\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">C</text><text x=\"533\" y=\"398\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">B</text><text x=\"593\" y=\"398\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">E</text><g data-shared-part=\"1\" /><text x=\"354\" y=\"476\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">a</text><text x=\"418\" y=\"476\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">b</text><text x=\"475\" y=\"476\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">c</text><text x=\"533\" y=\"476\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">d</text><text x=\"593\" y=\"476\" text-anchor=\"middle\" font-family=\"Atkinson Hyperlegible Next\" font-size=\"29\" font-style=\"italic\" fill=\"#1B151B\">e</text></svg>",
+    "parts": [
+      {
+        "path": "M216 389 H614",
+        "thickness": 27,
+        "segments": [
+          [
+            "",
+            "#6696CF",
+            91.5
+          ],
+          [
+            "",
+            "#6696CF",
+            76.5
+          ],
+          [
+            "",
+            "#A85265",
+            177
+          ],
+          [
+            "",
+            "#6696CF",
+            53
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      },
+      {
+        "path": "M216 467 H614",
+        "thickness": 27,
+        "segments": [
+          [
+            "",
+            "#6696CF",
+            91.5
+          ],
+          [
+            "",
+            "#6696CF",
+            76.5
+          ],
+          [
+            "",
+            "#6696CF",
+            177
+          ],
+          [
+            "",
+            "#6696CF",
+            53
+          ]
+        ],
+        "centromere_after": 1,
+        "cut_ends": false
+      }
+    ]
+  }
+}

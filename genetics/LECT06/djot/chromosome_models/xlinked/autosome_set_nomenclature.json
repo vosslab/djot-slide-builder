@@ -1,0 +1,74 @@
+{
+  "target": "genetics/LECT06/djot/assets/lect06e-x_linked_genes_2/autosome_set_nomenclature.drawn.svg",
+  "placements": [
+    {
+      "group": "chromosome-red",
+      "model": {
+        "segments": [
+          [
+            "#D76866",
+            49
+          ],
+          [
+            "#D76866",
+            28
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 77,
+      "orientation": "vertical",
+      "translate": [
+        -6.065573770491803,
+        0
+      ],
+      "thickness": 12.131147540983607
+    },
+    {
+      "group": "chromosome-purple",
+      "model": {
+        "segments": [
+          [
+            "#9571C2",
+            28
+          ],
+          [
+            "#9571C2",
+            67
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 95,
+      "orientation": "vertical",
+      "translate": [
+        -6.065573770491803,
+        0
+      ],
+      "thickness": 12.131147540983607
+    },
+    {
+      "group": "chromosome-yellow",
+      "model": {
+        "segments": [
+          [
+            "#E6BD46",
+            30.5
+          ],
+          [
+            "#E6BD46",
+            31.5
+          ]
+        ],
+        "centromere": 1
+      },
+      "length": 62,
+      "orientation": "vertical",
+      "translate": [
+        -6.065573770491803,
+        0
+      ],
+      "thickness": 12.131147540983607
+    }
+  ]
+}

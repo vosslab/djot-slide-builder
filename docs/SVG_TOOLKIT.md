@@ -133,8 +133,9 @@ not follow a course accent hue. Use semantic colors consistently across related 
   `flower(size=..., color=..., petals=5)` is a generic radial wildflower, not pea anatomy.
   Place and count individual parts explicitly.
 - `chromosomes.Segment`, `Chromosome`, `render_chromosome_layout`, `chromosome_part`,
-  `delete_segments`, `reciprocal_translocation`, and `read_cytobands` support chromosome
-  models. `gene_tracks.gene_track_part` adapts exon/intron tracks; `gene_feature_part`,
+  `chromosome_path_part` (authored curved single chromatids), `centromere_part`
+  (a source-known locus only), `delete_segments`,
+  `reciprocal_translocation`, and `read_cytobands` support chromosome models. `gene_tracks.gene_track_part` adapts exon/intron tracks; `gene_feature_part`,
   `landmark_part`, and `operon_part` compose supplied directions and offsets. The detailed
   [chromosome and gene-track reference](../svg_tools/README.md#chromosome-drawing-tool)
   documents sizes, boundaries, source maps and rearrangement limits.
@@ -151,3 +152,7 @@ not follow a course accent hue. Use semantic colors consistently across related 
 All these tools produce deterministic static artwork from authored inputs. They do not supply an
 embedded AI service or infer a diagram's scientific content. Inspect output in the final slide as
 well as standalone renders; native ODP/PDF export can expose different font or placement behavior.
+
+For chromosome output, use `drawing.write_svg()` to retain normal SVG/xlink namespaces
+through XML composition and native import. The [migration report](CHROMOSOME_THEME_MIGRATION_REPORT.md)
+records current course acceptance separately from toolkit examples.

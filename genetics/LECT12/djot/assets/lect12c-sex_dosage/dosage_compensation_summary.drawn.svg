@@ -10,30 +10,105 @@
     <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
     <g id="worms-group-1">
       <g data-chromosome="X">
-        <rect x="39" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(39.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-1" data-lect12c-input="39,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-1-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-1-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-1-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-1-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="X">
-        <rect x="87" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 96 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(87.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-2" data-lect12c-input="87,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-2-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-2-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-2-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-2-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
     </g>
     <g id="worms-group-2">
       <g data-chromosome="X">
-        <rect x="274" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 283 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(274.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-3" data-lect12c-input="274,110,34,320,#bd86c9">
+          <g id="dosage_compensation_summary-drawn-chromosome-3-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-3-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-3-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-3-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="X">
-        <rect x="322" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 331 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(322.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-4" data-lect12c-input="322,110,34,320,#bd86c9">
+          <g id="dosage_compensation_summary-drawn-chromosome-4-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-4-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-4-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-4-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
     </g>
     <g id="worms-group-3">
       <g data-chromosome="X">
-        <rect x="501" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 510 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(501.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-5" data-lect12c-input="501,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-5-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-5-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-5-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-5-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XO</text>
     </g>
@@ -47,34 +122,124 @@
     <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
     <g id="flies-group-1">
       <g data-chromosome="X">
-        <rect x="39" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(39.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-6" data-lect12c-input="39,110,34,320,#bd86c9">
+          <g id="dosage_compensation_summary-drawn-chromosome-6-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-6-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-6-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-6-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="Y">
-        <rect x="87" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
-        <path d="M 96 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(87.0 262.0)" id="dosage_compensation_summary-drawn-chromosome-7" data-lect12c-input="87,262,34,168,#b6bcc1">
+          <g id="dosage_compensation_summary-drawn-chromosome-7-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-7-body-clip">
+                <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-7-body-clip)">
+              <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="13.44" y="0" width="154.56" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-7-body-region-0">
+                <rect x="13.44" y="0" width="141.12" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
     </g>
     <g id="flies-group-2">
       <g data-chromosome="X">
-        <rect x="274" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 283 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(274.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-8" data-lect12c-input="274,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-8-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-8-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-8-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-8-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="Y">
-        <rect x="322" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
-        <path d="M 331 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(322.0 262.0)" id="dosage_compensation_summary-drawn-chromosome-9" data-lect12c-input="322,262,34,168,#b6bcc1">
+          <g id="dosage_compensation_summary-drawn-chromosome-9-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-9-body-clip">
+                <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-9-body-clip)">
+              <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="13.44" y="0" width="154.56" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-9-body-region-0">
+                <rect x="13.44" y="0" width="141.12" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
     </g>
     <g id="flies-group-3">
       <g data-chromosome="X">
-        <rect x="477" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 486 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(477.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-10" data-lect12c-input="477,110,34,320,#bd86c9">
+          <g id="dosage_compensation_summary-drawn-chromosome-10-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-10-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-10-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-10-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="X">
-        <rect x="525" y="110" width="34" height="320" rx="17" fill="#bd86c9" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 534 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(525.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-11" data-lect12c-input="525,110,34,320,#bd86c9">
+          <g id="dosage_compensation_summary-drawn-chromosome-11-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-11-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-11-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-11-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#bd86c9" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
     </g>
@@ -88,12 +253,42 @@
     <text x="424" y="295" font-size="66" text-anchor="middle">=</text>
     <g id="mammals-group-1">
       <g data-chromosome="X">
-        <rect x="39" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 48 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(39.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-12" data-lect12c-input="39,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-12-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-12-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-12-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-12-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="X">
-        <rect x="87" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 96 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(87.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-13" data-lect12c-input="87,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-13-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-13-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-13-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-13-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="80" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
     </g>
@@ -101,19 +296,64 @@
       <ellipse cx="291" cy="405" rx="19" ry="25" fill="#e1cfe6" stroke="#9e80aa" stroke-width="2.5" data-chromosome="Xi" />
       <path d="M 282 400 Q 300 389 300 404 Q 282 419 284 408" fill="none" stroke="#b99cc3" stroke-width="2" />
       <g data-chromosome="X">
-        <rect x="322" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 331 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(322.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-14" data-lect12c-input="322,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-14-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-14-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-14-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-14-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="315" y="489" font-size="47" font-weight="600" text-anchor="middle">XX</text>
     </g>
     <g id="mammals-group-3">
       <g data-chromosome="X">
-        <rect x="477" y="110" width="34" height="320" rx="17" fill="#8a238f" stroke="#63466b" stroke-width="2.5" />
-        <path d="M 486 131 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(477.0 110.0)" id="dosage_compensation_summary-drawn-chromosome-15" data-lect12c-input="477,110,34,320,#8a238f">
+          <g id="dosage_compensation_summary-drawn-chromosome-15-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-15-body-clip">
+                <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-15-body-clip)">
+              <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="17.0" y="0" width="303.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-15-body-region-0">
+                <rect x="17.0" y="0" width="286.0" height="34.0" fill="#8a238f" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 17.0 0 H 303.0 Q 320.0 0 320.0 17.0 Q 320.0 34.0 303.0 34.0L 303.0 34.0 H 17.0 Q 0 34.0 0 17.0 Q 0 0 17.0 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <g data-chromosome="Y">
-        <rect x="525" y="262" width="34" height="168" rx="17" fill="#b6bcc1" stroke="#757c82" stroke-width="2.5" />
-        <path d="M 534 283 V 409" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" />
+        <g data-lect12c-chromosome="true" transform="translate(525.0 262.0)" id="dosage_compensation_summary-drawn-chromosome-16" data-lect12c-input="525,262,34,168,#b6bcc1">
+          <g id="dosage_compensation_summary-drawn-chromosome-16-body">
+            <defs>
+              <clipPath id="dosage_compensation_summary-drawn-chromosome-16-body-clip">
+                <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" transform="matrix(0 1 1 0 0 0) " />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#dosage_compensation_summary-drawn-chromosome-16-body-clip)">
+              <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <rect x="13.44" y="0" width="154.56" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              <g id="dosage_compensation_summary-drawn-chromosome-16-body-region-0">
+                <rect x="13.44" y="0" width="141.12" height="34.0" fill="#b6bcc1" transform="matrix(0 1 1 0 0 0) " />
+              </g>
+            </g>
+            <path d="M 13.44 0 H 154.56 Q 168.0 0 168.0 17.0 Q 168.0 34.0 154.56 34.0L 154.56 34.0 H 13.44 Q 0 34.0 0 17.0 Q 0 0 13.44 0 Z" fill="none" stroke="#344651" stroke-width="1.1900000000000002" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
       </g>
       <text x="518" y="489" font-size="47" font-weight="600" text-anchor="middle">XY</text>
     </g>

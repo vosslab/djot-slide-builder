@@ -1,21 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="550" viewBox="0 0 600 550" role="img" aria-labelledby="title desc"><title id="title">Orange and black fur alleles in X-inactivation lineages</title><desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc><rect width="600" height="550" fill="white"/>
-<g id="early-embryo"><ellipse cx="300" cy="90" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M283 63 V117" stroke="#DA8A35" stroke-width="9" stroke-linecap="round"/>
-<path d="M317 63 V117" stroke="#29292D" stroke-width="9" stroke-linecap="round"/>
-</g>
-<text x="300" y="30" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early embryo: both X alleles</text>
-<path d="M300 135 L145 275" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="adult-population-0"><ellipse cx="145" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="128" cy="320" r="12" fill="#DA8A35"/>
-<path d="M162 293 V347" stroke="#29292D" stroke-width="9" stroke-linecap="round"/>
-</g>
-<text x="145" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Black fur</text>
-<path d="M300 135 L455 275" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="adult-population-1"><ellipse cx="455" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M438 293 V347" stroke="#DA8A35" stroke-width="9" stroke-linecap="round"/>
-<circle cx="472" cy="320" r="12" fill="#29292D"/>
-</g>
-<text x="455" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Orange fur</text>
-<text x="300" y="480" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Line: active X; circle: inactive X</text>
-<text x="300" y="525" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Two cell populations in the adult cat</text>
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="550" viewBox="0 0 600 550" role="img" aria-labelledby="title desc">
+  <title id="title">Orange and black fur alleles in X-inactivation lineages</title>
+  <desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc>
+  <rect width="600" height="550" fill="white" />
+  <g id="early-embryo">
+    <ellipse cx="300" cy="90" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(278.0 63.0)" id="calico_x_lineages-drawn-chromosome-1" data-lect12c-input="278.0,63.0,10,54.0,#DA8A35">
+      <g id="calico_x_lineages-drawn-chromosome-1-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-1-body-clip">
+            <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-1-body-clip)">
+          <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#DA8A35" />
+          <rect x="28.464" y="0" width="25.536" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          <g id="calico_x_lineages-drawn-chromosome-1-body-region-0">
+            <rect x="3.05" y="0" width="22.485999999999997" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-1-body-region-1">
+            <rect x="28.464" y="0" width="22.486" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="calico_x_lineages-drawn-chromosome-1-body-centromere" cx="27.0" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(312.0 63.0)" id="calico_x_lineages-drawn-chromosome-2" data-lect12c-input="312.0,63.0,10,54.0,#29292D">
+      <g id="calico_x_lineages-drawn-chromosome-2-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-2-body-clip">
+            <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-2-body-clip)">
+          <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#29292D" />
+          <rect x="28.464" y="0" width="25.536" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          <g id="calico_x_lineages-drawn-chromosome-2-body-region-0">
+            <rect x="3.05" y="0" width="22.485999999999997" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-2-body-region-1">
+            <rect x="28.464" y="0" width="22.486" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="calico_x_lineages-drawn-chromosome-2-body-centromere" cx="27.0" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <text x="300" y="30" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early embryo: both X alleles</text>
+  <path d="M300 135 L145 275" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="adult-population-0">
+    <ellipse cx="145" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="128" cy="320" r="12" fill="#DA8A35" />
+    <g data-lect12c-chromosome="true" transform="translate(157.0 293.0)" id="calico_x_lineages-drawn-chromosome-3" data-lect12c-input="157.0,293.0,10,54.0,#29292D">
+      <g id="calico_x_lineages-drawn-chromosome-3-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-3-body-clip">
+            <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-3-body-clip)">
+          <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#29292D" />
+          <rect x="28.464" y="0" width="25.536" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          <g id="calico_x_lineages-drawn-chromosome-3-body-region-0">
+            <rect x="3.05" y="0" width="22.485999999999997" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-3-body-region-1">
+            <rect x="28.464" y="0" width="22.486" height="10.0" fill="#29292D" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="calico_x_lineages-drawn-chromosome-3-body-centromere" cx="27.0" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <text x="145" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Black fur</text>
+  <path d="M300 135 L455 275" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="adult-population-1">
+    <ellipse cx="455" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(433.0 293.0)" id="calico_x_lineages-drawn-chromosome-4" data-lect12c-input="433.0,293.0,10,54.0,#DA8A35">
+      <g id="calico_x_lineages-drawn-chromosome-4-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-4-body-clip">
+            <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-4-body-clip)">
+          <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#DA8A35" />
+          <rect x="28.464" y="0" width="25.536" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          <g id="calico_x_lineages-drawn-chromosome-4-body-region-0">
+            <rect x="3.05" y="0" width="22.485999999999997" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-4-body-region-1">
+            <rect x="28.464" y="0" width="22.486" height="10.0" fill="#DA8A35" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 25.536 Q 27.0 5.0 28.464000000000002 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 28.464000000000002 Q 27.0 5.0 25.536 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="calico_x_lineages-drawn-chromosome-4-body-centromere" cx="27.0" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="472" cy="320" r="12" fill="#29292D" />
+  </g>
+  <text x="455" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Orange fur</text>
+  <text x="300" y="480" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Line: active X; circle: inactive X</text>
+  <text x="300" y="525" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Two cell populations in the adult cat</text>
 </svg>

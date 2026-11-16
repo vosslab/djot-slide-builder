@@ -74,8 +74,11 @@ accuracy or exported-slide acceptance.
 ## Chromosome drawing tool
 
 Use [chromosomes.py](chromosomes.py) for schematic segments, colors, sizes, rounded-X sisters
-and source-backed named cytobands.
-The returned fragment is editable static SVG; wrap it with `drawing.write_svg()`:
+and source-backed named cytobands. Follow the all-course chromosome authority in
+[SVG_VISUAL_STYLE.md](../docs/SVG_VISUAL_STYLE.md#chromosome-family-authority): shared charcoal
+outlines, rounded ends, live labels and hollow purple centromeres over the neck. Production
+recipes compose shared bodies rather than defining silhouettes. Segment colors retain source
+identity independently of course accent hues. Use the current layout API for editable static SVG:
 
 ```python
 import pathlib
@@ -85,25 +88,25 @@ import svg_tools.chromosomes
 
 pathlib.Path("_temp").mkdir(exist_ok=True)
 rod = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment("", "#00775F"),))
-fragment, width, boundaries = svg_tools.chromosomes.render_chromosome(
-	"plain", rod, width=300, height=50, bands=False,
+layout = svg_tools.chromosomes.render_chromosome_layout(
+	"plain", rod, length=300, thickness=50, bands=False,
 )
-svg_tools.drawing.write_svg("_temp/plain.drawn.svg", width + 20, 70, "Plain chromosome",
-	"A schematic single chromatid.", f'<g transform="translate(10 10)">{fragment}</g>')
+svg_tools.drawing.write_svg("_temp/plain.drawn.svg", layout.width + 20, layout.height + 20,
+	"Plain chromosome", "A schematic single chromatid.",
+	f'<g transform="translate(10 10)">{layout.svg}</g>')
 ```
 
 `Segment(label, color, length=64, band=0)` takes a six-digit hex fill, positive finite
 schematic length and decorative band index 0-4. `Chromosome(segments, centromere_after=None)`
 keeps their order. Colors, lengths and bands follow segment identity through transformations;
-bands are not a measured cytological map. Use document-unique XML-safe fragment names.
+bands are not a measured cytological map.
 
-`render_chromosome(name, chromosome, *, width=None, height=62, bands=True, sisters=False,
-junctions=(), allele_labels=False)` returns `(fragment, width, boundaries)`. Width covers the
-whole outline; height covers the whole sister pair when requested. Strokes need additional
-margins, as above. Boundaries are indexed by the number of preceding segments; at the
-centromere the coordinate is the collar center. Short live Atkinson Hyperlegible Next labels
-work best. Font-size fitting is approximate: inspect actual font rendering at the intended
-placement, and enlarge the drawing or shorten labels when necessary.
+Use document-unique XML-safe names and short live Atkinson Hyperlegible Next labels. Font-size
+fitting is approximate: inspect the intended placement, then enlarge the drawing or revise
+label placement when necessary. `chromosome_part()` accepts the same options as the layout
+API below and returns an `SvgPart` with conservative painted bounds and `start`, `end`,
+`center`, `boundary_N` and, when present, `centromere` anchors. Compose it with the standard
+part transforms; the recipe owns biological annotations and connector meanings.
 
 Continue the example with a known centromere after segment two:
 
@@ -112,11 +115,11 @@ parent = svg_tools.chromosomes.Chromosome(tuple(
 	svg_tools.chromosomes.Segment(letter, "#8356A8", length, band)
 	for letter, length, band in zip("ABCDE", (70, 90, 60, 80, 100), (0, 1, 2, 3, 4))
 ), centromere_after=2)
-sisters, sister_width, cuts = svg_tools.chromosomes.render_chromosome(
-	"sisters", parent, height=100, sisters=True,
+sisters = svg_tools.chromosomes.chromosome_part(
+	"sisters", parent, thickness=100, sisters=True,
 )
 shorter = svg_tools.chromosomes.delete_segments(parent, 3, 4)
-deleted, deleted_width, cuts = svg_tools.chromosomes.render_chromosome(
+deleted = svg_tools.chromosomes.chromosome_part(
 	"deleted", shorter, junctions=(3,),
 )
 other = svg_tools.chromosomes.Chromosome(tuple(
@@ -145,7 +148,7 @@ The broad hollow purple oval marks a short real neck without hiding the underlyi
 it is a diagram convention, not swollen chromosome material. Short internal
 `marker_label` text remains available; `marker_label=None` omits its text only. Optional
 `marker_size=(along_axis, across_axis)` must fit the envelope; marker settings require a
-centromere. The legacy narrow collar remains pale and filled.
+centromere. Pale filled collars belong to the historical compatibility API below.
 
 The result contains `svg`, `width`, `height`, `boundaries`, `segments`, `centromere` and
 `marker_bounds`. Boundary and centromere coordinates are `(x, y)` in the fragment's final
@@ -161,9 +164,47 @@ equals the resulting centromere boundary, omit `junctions` there. Reciprocal tra
 exchanges right tails only, requiring `c < cut < n` on both known-centromere inputs. Neither
 operation changes its inputs. This is not a general rearrangement simulator.
 
-Render before/after models at natural width with equal heights and one common enclosing scale.
-Independently stretching products to the same width would conceal a deletion. Explicit width
-is useful for standalone placement. Recipes own cut arrows, join annotations and biological labels.
+Render physical before/after models with `length=None`, equal thickness and one common
+enclosing scale. Independently stretching products to the same length would conceal a deletion.
+An aligned evidence track may retain a labeled reference gap; that gap is not chromosome
+material. Explicit length is useful for standalone placement. Recipes own cut arrows, join annotations and biological labels.
+
+### Curved chromatid bodies
+
+Use `chromosomes.chromosome_path_part(name, chromosome, path_d, *, thickness=28,
+closed=False, cut_ends=False, labels=True)` for a single authored curved chromatid. It returns
+an `SvgPart` with the same charcoal outline, rounded ends and, for a known centromere, a
+hollow purple marker over a neck. Segment lengths give relative arc spans along one continuous
+centerline; source colors follow the segments. This helper adds no decorative bands.
+
+```python
+curved = svg_tools.chromosomes.chromosome_path_part(
+	"curved", parent, "M 30 90 C 120 10 210 170 300 90", thickness=28,
+)
+svg_tools.drawing.write_svg("_temp/curved.drawn.svg", 340, 190,
+	"Curved chromatid", "One schematic chromatid with source-ordered segments.", curved.fragment)
+```
+
+Anchors include `boundary_N`, `segment_N` midpoints and `center`, plus `start`/`end` on open
+paths and `centromere` when present. Keep labels upright and inspect their clearance along
+bends. `cut_ends=True` makes flat ends for internal fragments. `closed=True` requires a closed
+path and an acentric model; it omits terminal caps and `start`/`end` anchors and cannot combine
+with `cut_ends`. Open/closed path geometry must agree with the flag. Recipes own the bends,
+spacing, crossing order, pairing and biological claims; the helper does not infer crossover
+mechanisms or turn separate homologs into sisters. Use the straight layout API for rounded-X
+sisters and source cytoband maps.
+
+### Source-known centromeres and final SVG output
+
+`chromosomes.centromere_part(name, *, thickness=62)` returns the shared hollow purple
+marker centered at the origin, with `center`, `left`, `right`, `top` and `bottom` anchors.
+Its axis is horizontal; rotate/translate it to the source-known locus. Bounds include stroke.
+Use `centromere_after=None` when the source supplies no locus or neck; do not invent one.
+
+Write completed artifacts with `drawing.write_svg()`. XML fragment composition must preserve
+the normal SVG and xlink namespaces; a prefixed root alone can import incorrectly in
+LibreOffice. See the dated [course migration report](../docs/CHROMOSOME_THEME_MIGRATION_REPORT.md)
+for accepted native receipts and remaining gates.
 
 ### Named cytobands
 
@@ -284,6 +325,17 @@ genomic spans do not establish exact physical arm ratios.
 
 ## Single-chromatid chromosomes
 
+This section documents historical compatibility APIs and saved pale-collar examples. New
+production figures use `render_chromosome_layout()` or `chromosome_part()` above for the
+current shared appearance. Existing callers remain supported.
+
+`render_chromosome(name, chromosome, *, width=None, height=62, bands=True, sisters=False,
+junctions=(), allele_labels=False)` returns `(fragment, width, boundaries)`. Width covers the
+whole outline; height covers the whole sister pair when requested. Add stroke margins.
+Boundaries are indexed by the number of preceding segments; at the centromere the coordinate
+is the collar center. This legacy entry uses a pale narrow collar rather than the current
+hollow purple marker.
+
 `chromosomes.chromosome_svg(name, genes, *, centromere_after=None, junctions=(),
 pitch=64, height=62, allele_labels=False)` returns `(fragment, width, boundaries)`. Give each fragment a
 document-unique XML-safe `name`, and supply ordered `(label, "#RRGGBB")` pairs.
@@ -309,10 +361,9 @@ Ordinary labels are never automatically reinterpreted. The specimen includes bot
 
 The helper adapts the established BPQ HTML/CSS chromosome vocabulary into native
 SVG: continuous outlined rods, terminal treatment, pale collars and explicit joins.
-This compatibility entry draws straight single chromatids; use `render_chromosome()` above
-for joined sisters, or `render_chromosome_layout()` for portrait orientation and named-band
-anchors. Curved pairing diagrams and internal telomere distractors need separate
-source-specific construction.
+`chromosome_svg()` draws straight single chromatids. Use the current layout or part API for
+new rods, joined sisters, portrait orientation and named-band anchors. Source-specific
+pairing, exchange and telomere relationships remain the recipe's responsibility.
 
 The durable recipe is [chromosome_examples.py](chromosome_examples.py). From the
 repository root, run Python 3.12 directly (no bootstrap or Git invocation):

@@ -6,6 +6,8 @@ import pathlib
 import dataclasses
 import xml.etree.ElementTree
 
+import svgpathtools
+
 import svg_tools.parts
 
 
@@ -503,6 +505,28 @@ def _render(name: str, chromosome: Chromosome, *, width: float | None = None,
 
 
 #============================================
+def centromere_part(name: str, *, thickness: float = 62) -> svg_tools.parts.SvgPart:
+	"""Hollow marker centered at the origin; thickness is the adjacent chromatid width.
+
+	The chromosome's axis is horizontal. Cardinal anchors lie on the ellipse,
+	while bounds include its stroke. Rotate and translate to place the marker.
+	"""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	if not _positive(thickness):
+		raise ValueError('Supply a finite positive thickness')
+	rx, ry, stroke = thickness*.54/.61/2, thickness/.61/2, thickness*.045
+	marker = xml.etree.ElementTree.Element('ellipse', {'id': f'{name}-centromere',
+		'cx': '0', 'cy': '0', 'rx': str(rx), 'ry': str(ry),
+		'fill': 'none', 'stroke': '#72508C', 'stroke-width': str(stroke)})
+	fragment = xml.etree.ElementTree.tostring(marker, encoding='ascii').decode('ascii')
+	margin = stroke/2
+	return svg_tools.parts.SvgPart(fragment, (-rx-margin, -ry-margin, rx+margin, ry+margin),
+		{'center': (0, 0), 'left': (-rx, 0), 'right': (rx, 0),
+			'top': (0, -ry), 'bottom': (0, ry)})
+
+
+#============================================
 def chromosome_part(name: str, chromosome: Chromosome, *,
 	length: float | None = None, thickness: float = 62,
 	orientation: str = 'horizontal', bands: bool = True, sisters: bool = False,
@@ -523,4 +547,155 @@ def chromosome_part(name: str, chromosome: Chromosome, *,
 	if layout.centromere is not None:
 		anchors['centromere'] = layout.centromere
 	part = svg_tools.parts.SvgPart(layout.svg, bounds, anchors)
+	return part
+
+
+#============================================
+def _neck_envelope(path: svgpathtools.Path, thickness: float,
+	centromere_distance: float, cut_ends: bool) -> str:
+	"""Offset a sampled centerline only where a short centromere neck needs varying width."""
+	length = path.length()
+	count = max(24, math.ceil(length / (thickness * .08)))
+	distances = {length * index/count for index in range(count+1)}
+	neck = min(thickness * .45, centromere_distance, length-centromere_distance)
+	distances.update(centromere_distance + neck * step/12 for step in range(-12, 13))
+	sides = [[], []]
+	for distance in sorted(distances):
+		parameter = path.ilength(distance) if 0 < distance < length else (0.0 if distance <= 0 else 1.0)
+		center = path.point(parameter)
+		normal = path.unit_tangent(parameter) * 1j
+		ratio = min(1.0, abs(distance-centromere_distance)/neck)
+		radius = thickness/2 * (.40 + .60*(.5-.5*math.cos(math.pi*ratio)))
+		for side, sign in zip(sides, (1, -1)):
+			side.append(center + sign*normal*radius)
+	def coordinates(point: complex) -> str:
+		return f'{point.real} {point.imag}'
+	outline = 'M ' + coordinates(sides[0][0])
+	outline += ''.join(' L ' + coordinates(point) for point in sides[0][1:])
+	if cut_ends:
+		outline += ' L ' + coordinates(sides[1][-1])
+	else:
+		outline += f' A {thickness/2} {thickness/2} 0 0 0 ' + coordinates(sides[1][-1])
+	outline += ''.join(' L ' + coordinates(point) for point in reversed(sides[1][:-1]))
+	if not cut_ends:
+		outline += f' A {thickness/2} {thickness/2} 0 0 0 ' + coordinates(sides[0][0])
+	outline += ' Z'
+	return outline
+
+
+#============================================
+def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
+	thickness: float = 28, closed: bool = False, cut_ends: bool = False,
+	labels: bool = True) -> svg_tools.parts.SvgPart:
+	"""Paint ordered regions along one authored continuous chromatid centerline.
+
+	Lengths give relative arc spans. Closed acentric rings have neither terminal caps
+	nor start/end anchors. Open internal fragments use cut_ends=True. Labels stay
+	upright, and source-boundary and segment-midpoint anchors follow the path.
+	The caller supplies biologically meaningful bends, spacing and crossing order.
+	"""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	if not isinstance(chromosome, Chromosome) or not _positive(thickness):
+		raise ValueError('Supply a Chromosome and finite positive thickness')
+	if closed and (cut_ends or chromosome.centromere_after is not None):
+		raise ValueError('Closed acentric rings have no cut ends or centromere')
+	path = svgpathtools.parse_path(path_d)
+	if not path or not path.iscontinuous():
+		raise ValueError('Supply one continuous nonempty centerline')
+	control_points = [point for segment in path for point in
+		((segment.start, segment.end, segment.radius, segment.center)
+		if isinstance(segment, svgpathtools.Arc) else segment.bpoints())]
+	if any(not math.isfinite(value) for point in control_points
+		for value in (point.real, point.imag)):
+		raise ValueError('Path coordinates must be finite')
+	if any(segment.length() <= 0 for segment in path):
+		raise ValueError('Centerline segments must have positive length')
+	if path.isclosed() != closed:
+		raise ValueError('Path closure must match the closed setting')
+	length = path.length()
+	if not _positive(length):
+		raise ValueError('Centerline length must be finite and positive')
+	if closed:
+		area = path.area(chord_length=length/256)
+		if not math.isfinite(area) or area == 0:
+			raise ValueError('A ring must enclose nonzero finite area')
+	lengths = [segment.length for segment in chromosome.segments]
+	distances = [0.0]
+	for segment_length in lengths:
+		distances.append(distances[-1] + segment_length/sum(lengths)*length)
+	distances[-1] = length
+	if not all(a < b for a, b in zip(distances, distances[1:])):
+		raise ValueError('Geometry must retain distinct segment boundaries')
+	parameters = [path.ilength(distance) if 0 < distance < length else
+		(0.0 if distance == 0 else 1.0) for distance in distances]
+	def point(parameter: float) -> tuple[float, float]:
+		position = path.start if parameter == 0 else path.end if parameter == 1 else path.point(parameter)
+		return (position.real, position.imag)
+	anchors = {f'boundary_{index}': point(parameter)
+		for index, parameter in enumerate(parameters)}
+	if not closed:
+		anchors['start'], anchors['end'] = point(0), point(1)
+	group = xml.etree.ElementTree.Element('g', {'id': name})
+	path_text = path.d() + (' Z' if closed else '')
+	stroke = thickness * .035
+	linecap = 'butt' if cut_ends or closed else 'round'
+	center_index = chromosome.centromere_after
+	paint = group
+	if center_index is not None:
+		envelope = _neck_envelope(path, thickness, distances[center_index], cut_ends)
+		defs = xml.etree.ElementTree.SubElement(group, 'defs')
+		clip = xml.etree.ElementTree.SubElement(defs, 'clipPath', {'id': f'{name}-clip'})
+		xml.etree.ElementTree.SubElement(clip, 'path', {'d': envelope})
+		xml.etree.ElementTree.SubElement(group, 'path', {'d': envelope,
+			'fill': chromosome.segments[0].color, 'stroke': '#344651',
+			'stroke-width': str(stroke), 'stroke-linejoin': 'round'})
+		paint = xml.etree.ElementTree.SubElement(group, 'g', {'clip-path': f'url(#{name}-clip)'})
+	else:
+		xml.etree.ElementTree.SubElement(group, 'path', {'d': path_text, 'fill': 'none',
+			'stroke': '#344651', 'stroke-width': str(thickness+stroke),
+			'stroke-linecap': linecap, 'stroke-linejoin': 'round'})
+		xml.etree.ElementTree.SubElement(group, 'path', {'d': path_text, 'fill': 'none',
+			'stroke': chromosome.segments[0].color, 'stroke-width': str(thickness),
+			'stroke-linecap': linecap, 'stroke-linejoin': 'round'})
+	for index, segment in enumerate(chromosome.segments):
+		region = xml.etree.ElementTree.SubElement(paint, 'g', {
+			'id': f'{name}-region-{index}', 'data-source-label': segment.label})
+		portion = path.cropped(parameters[index], parameters[index+1])
+		xml.etree.ElementTree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
+			'stroke': segment.color, 'stroke-width': str(thickness),
+			'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
+		middle = path.ilength((distances[index]+distances[index+1])/2)
+		anchors[f'segment_{index}'] = point(middle)
+	if not closed and not cut_ends:
+		for parameter, segment in ((0.0, chromosome.segments[0]), (1.0, chromosome.segments[-1])):
+			x, y = point(parameter)
+			xml.etree.ElementTree.SubElement(paint, 'circle', {'cx': str(x), 'cy': str(y),
+				'r': str(thickness/2), 'fill': segment.color})
+	if center_index is not None:
+		cx, cy = anchors[f'boundary_{center_index}']
+		anchors['centromere'] = (cx, cy)
+		tangent = path.unit_tangent(parameters[center_index])
+		angle = math.degrees(math.atan2(tangent.imag, tangent.real))
+		xml.etree.ElementTree.SubElement(group, 'ellipse', {'id': f'{name}-centromere',
+			'cx': str(cx), 'cy': str(cy), 'rx': str(thickness*.54/.61/2),
+			'ry': str(thickness/.61/2), 'transform': f'rotate({angle} {cx} {cy})',
+			'fill': 'none', 'stroke': '#72508C', 'stroke-width': str(thickness*.045)})
+	if labels:
+		for index, segment in enumerate(chromosome.segments):
+			x, y = anchors[f'segment_{index}']
+			size = min(thickness*.59,
+				(distances[index+1]-distances[index])*.82/max(1, len(segment.label))/.65)
+			xml.etree.ElementTree.SubElement(group, 'text', {'x': str(x), 'y': str(y+size*.34),
+				'font-family': 'Atkinson Hyperlegible Next', 'font-size': str(size),
+				'font-weight': '600', 'text-anchor': 'middle', 'fill': _label_color(segment.color)}).text = segment.label
+	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
+	xmin, xmax, ymin, ymax = path.bbox()
+	margin = thickness/2 + stroke
+	if center_index is not None:
+		margin = thickness/.61/2 + thickness*.045
+	anchors['center'] = ((xmin+xmax)/2, (ymin+ymax)/2)
+	bounds = svg_tools.parts.include_text_bounds(fragment,
+		(xmin-margin, ymin-margin, xmax+margin, ymax+margin))
+	part = svg_tools.parts.SvgPart(fragment, bounds, anchors)
 	return part

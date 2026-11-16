@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""Compose frozen accepted LECT13D components with source-backed associations."""
+
+import argparse
+import hashlib
+import json
+import pathlib
+import typing
+import xml.etree.ElementTree as ET
+
+import svg_tools.parts
+import svg_tools.svg_import
+
+
+#============================================
+def compose(name: str, specification: dict[str, typing.Any],
+		components: dict[str, typing.Any]) -> str:
+	"""Place each original component occurrence without changing its geometry."""
+	parts: dict[str, svg_tools.parts.SvgPart] = {}
+	for index, placement in enumerate(specification['parts']):
+		component = components[placement['asset']]
+		markup = component['svg']
+		if hashlib.sha256(markup.encode()).hexdigest() != component['sha256']:
+			raise ValueError(f"Frozen component hash differs: {placement['asset']}")
+		part = svg_tools.svg_import.import_svg(markup, name=f'occurrence_{index}', size=placement['width'])
+		parts[f'occurrence_{index}'] = svg_tools.parts.transform(part, x=placement['x'], y=placement['y'])
+	group = svg_tools.parts.group(parts)
+	width, height = specification['size']
+	if group.bounds[0] < 0 or group.bounds[1] < 0 or group.bounds[2] > width or group.bounds[3] > height:
+		raise ValueError(f'Composition bounds exceed viewport: {name}: {group.bounds}')
+	root = ET.Element('svg', {'xmlns':'http://www.w3.org/2000/svg', 'width':str(width),
+		'height':str(height), 'viewBox':f'0 0 {width} {height}', 'role':'img', 'aria-labelledby':'title description'})
+	ET.SubElement(root, 'title', {'id':'title'}).text = name.replace('_', ' ')
+	ET.SubElement(root, 'desc', {'id':'description'}).text = specification['description']
+	root.append(ET.fromstring(group.fragment))
+	for index, cross in enumerate(specification['crosses']):
+		x, y, half = cross['x'], cross['y'], cross['size'] / 2
+		path = f'M {x-half} {y-half} L {x+half} {y+half} M {x-half} {y+half} L {x+half} {y-half}'
+		marker = ET.SubElement(root, 'g', {'id':f'source-rejection-cross-{index}'})
+		for color, weight in (('#344651', 23), ('#F47777', 16)):
+			ET.SubElement(marker, 'path', {'d':path, 'stroke':color, 'stroke-width':str(weight), 'fill':'none'})
+	for index, label in enumerate(specification['labels']):
+		ET.SubElement(root, 'text', {'id':f'source-label-{index}', 'x':str(label['x']),
+			'y':str(label['y']), 'fill':label['color'], 'font-size':str(label['size']),
+			'font-family':'Atkinson Hyperlegible Next'}).text = label['text']
+	# LibreOffice needs SVG elements under the default namespace, without ns0 prefixes.
+	for element in root.iter():
+		if isinstance(element.tag, str):
+			element.tag = element.tag.removeprefix('{http://www.w3.org/2000/svg}')
+		for attribute in tuple(element.attrib):
+			if attribute.startswith('{http://www.w3.org/1999/xlink}'):
+				root.set('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+				element.set('xlink:' + attribute.split('}', 1)[1], element.attrib.pop(attribute))
+	result = ET.tostring(root, encoding='unicode')
+	svg_tools.svg_import.import_svg(result, name='validated_composition')
+	return result + '\n'
+
+
+#============================================
+def main() -> None:
+	"""Write the reviewed compositions beside the original deck illustrations."""
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output', type=pathlib.Path,
+		default=pathlib.Path(__file__).resolve().parent / 'assets/lect13d-meiosis_translocation')
+	args = parser.parse_args()
+	data_path = pathlib.Path(__file__).with_name('lect13d_p1_composition_data.json')
+	data: dict[str, typing.Any] = json.loads(data_path.read_text())
+	args.output.mkdir(parents=True, exist_ok=True)
+	for name, specification in data['figures'].items():
+		(args.output / f'{name}.drawn.svg').write_text(compose(name, specification, data['components']))
+
+
+if __name__ == '__main__':
+	main()

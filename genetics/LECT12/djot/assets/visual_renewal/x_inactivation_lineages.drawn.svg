@@ -1,92 +1,553 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc"><title id="title">Random X inactivation is inherited within cell lineages</title><desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc><rect width="1200" height="660" fill="white"/>
-<g id="zygote"><ellipse cx="700" cy="65" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M683 38 V92" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<path d="M717 38 V92" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<text x="180" y="70" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Zygote</text>
-<path d="M700 110 L400 177" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="early-0"><ellipse cx="400" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M383 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<path d="M417 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M400 264 L400 337" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="inactivated-0"><ellipse cx="400" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="383" cy="380" r="12" fill="#B74300"/>
-<path d="M417 353 V407" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M400 425 L350 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-0-0"><ellipse cx="350" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="333" cy="540" r="12" fill="#B74300"/>
-<path d="M367 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M400 425 L450 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-0-1"><ellipse cx="450" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="433" cy="540" r="12" fill="#B74300"/>
-<path d="M467 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M700 110 L600 177" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="early-1"><ellipse cx="600" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M583 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<path d="M617 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M600 264 L600 337" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="inactivated-1"><ellipse cx="600" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M583 353 V407" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="617" cy="380" r="12" fill="#076DAD"/>
-</g>
-<path d="M600 425 L550 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-1-0"><ellipse cx="550" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M533 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="567" cy="540" r="12" fill="#076DAD"/>
-</g>
-<path d="M600 425 L650 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-1-1"><ellipse cx="650" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M633 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="667" cy="540" r="12" fill="#076DAD"/>
-</g>
-<path d="M700 110 L800 177" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="early-2"><ellipse cx="800" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M783 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<path d="M817 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M800 264 L800 337" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="inactivated-2"><ellipse cx="800" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="783" cy="380" r="12" fill="#B74300"/>
-<path d="M817 353 V407" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M800 425 L750 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-2-0"><ellipse cx="750" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="733" cy="540" r="12" fill="#B74300"/>
-<path d="M767 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M800 425 L850 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-2-1"><ellipse cx="850" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<circle cx="833" cy="540" r="12" fill="#B74300"/>
-<path d="M867 513 V567" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M700 110 L1000 177" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="early-3"><ellipse cx="1000" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M983 193 V247" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<path d="M1017 193 V247" stroke="#076DAD" stroke-width="9" stroke-linecap="round"/>
-</g>
-<path d="M1000 264 L1000 337" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="inactivated-3"><ellipse cx="1000" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M983 353 V407" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="1017" cy="380" r="12" fill="#076DAD"/>
-</g>
-<path d="M1000 425 L950 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-3-0"><ellipse cx="950" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M933 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="967" cy="540" r="12" fill="#076DAD"/>
-</g>
-<path d="M1000 425 L1050 497" stroke="#647681" stroke-width="2" fill="none"/>
-<g id="descendant-3-1"><ellipse cx="1050" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2"/>
-<path d="M1033 513 V567" stroke="#B74300" stroke-width="9" stroke-linecap="round"/>
-<circle cx="1067" cy="540" r="12" fill="#076DAD"/>
-</g>
-<text x="180" y="215" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early cleavage</text>
-<text x="180" y="245" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="middle" fill="#222">Both X chromosomes active</text>
-<text x="180" y="375" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Random X inactivation</text>
-<text x="180" y="540" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Somatic descendants</text>
-<text x="700" y="635" font-family="Atkinson Hyperlegible Next" font-size="26" text-anchor="middle" fill="#222">Line: active X    *    Compact circle: inactive X</text>
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Random X inactivation is inherited within cell lineages</title>
+  <desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc>
+  <rect width="1200" height="660" fill="white" />
+  <g id="zygote">
+    <ellipse cx="700" cy="65" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(678.0 38.0)" id="x_inactivation_lineages-drawn-chromosome-1" data-lect12c-input="678.0,38.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-1-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-1-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-1-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-1-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-1-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-1-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(712.0 38.0)" id="x_inactivation_lineages-drawn-chromosome-2" data-lect12c-input="712.0,38.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-2-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-2-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-2-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-2-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-2-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-2-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <text x="180" y="70" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Zygote</text>
+  <path d="M700 110 L400 177" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="early-0">
+    <ellipse cx="400" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(378.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-3" data-lect12c-input="378.0,193.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-3-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-3-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-3-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-3-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-3-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-3-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(412.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-4" data-lect12c-input="412.0,193.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-4-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-4-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-4-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-4-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-4-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-4-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M400 264 L400 337" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="inactivated-0">
+    <ellipse cx="400" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="383" cy="380" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(412.0 353.0)" id="x_inactivation_lineages-drawn-chromosome-5" data-lect12c-input="412.0,353.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-5-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-5-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-5-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-5-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-5-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-5-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M400 425 L350 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-0-0">
+    <ellipse cx="350" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="333" cy="540" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(362.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-6" data-lect12c-input="362.0,513.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-6-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-6-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-6-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-6-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-6-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-6-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M400 425 L450 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-0-1">
+    <ellipse cx="450" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="433" cy="540" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(462.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-7" data-lect12c-input="462.0,513.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-7-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-7-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-7-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-7-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-7-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-7-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M700 110 L600 177" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="early-1">
+    <ellipse cx="600" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(578.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-8" data-lect12c-input="578.0,193.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-8-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-8-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-8-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-8-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-8-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-8-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(612.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-9" data-lect12c-input="612.0,193.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-9-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-9-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-9-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-9-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-9-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-9-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M600 264 L600 337" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="inactivated-1">
+    <ellipse cx="600" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(578.0 353.0)" id="x_inactivation_lineages-drawn-chromosome-10" data-lect12c-input="578.0,353.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-10-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-10-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-10-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-10-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-10-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-10-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="617" cy="380" r="12" fill="#076DAD" />
+  </g>
+  <path d="M600 425 L550 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-1-0">
+    <ellipse cx="550" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(528.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-11" data-lect12c-input="528.0,513.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-11-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-11-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-11-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-11-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-11-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-11-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="567" cy="540" r="12" fill="#076DAD" />
+  </g>
+  <path d="M600 425 L650 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-1-1">
+    <ellipse cx="650" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(628.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-12" data-lect12c-input="628.0,513.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-12-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-12-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-12-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-12-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-12-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-12-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="667" cy="540" r="12" fill="#076DAD" />
+  </g>
+  <path d="M700 110 L800 177" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="early-2">
+    <ellipse cx="800" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(778.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-13" data-lect12c-input="778.0,193.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-13-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-13-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-13-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-13-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-13-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-13-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(812.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-14" data-lect12c-input="812.0,193.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-14-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-14-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-14-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-14-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-14-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-14-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M800 264 L800 337" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="inactivated-2">
+    <ellipse cx="800" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="783" cy="380" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(812.0 353.0)" id="x_inactivation_lineages-drawn-chromosome-15" data-lect12c-input="812.0,353.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-15-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-15-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-15-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-15-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-15-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-15-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M800 425 L750 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-2-0">
+    <ellipse cx="750" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="733" cy="540" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(762.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-16" data-lect12c-input="762.0,513.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-16-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-16-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-16-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-16-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-16-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-16-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M800 425 L850 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-2-1">
+    <ellipse cx="850" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="833" cy="540" r="12" fill="#B74300" />
+    <g data-lect12c-chromosome="true" transform="translate(862.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-17" data-lect12c-input="862.0,513.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-17-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-17-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-17-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-17-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-17-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-17-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M700 110 L1000 177" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="early-3">
+    <ellipse cx="1000" cy="220" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(978.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-18" data-lect12c-input="978.0,193.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-18-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-18-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-18-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-18-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-18-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-18-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(1012.0 193.0)" id="x_inactivation_lineages-drawn-chromosome-19" data-lect12c-input="1012.0,193.0,10,54.0,#076DAD">
+      <g id="x_inactivation_lineages-drawn-chromosome-19-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-19-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-19-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#076DAD" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-19-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-19-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#076DAD" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-19-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+  </g>
+  <path d="M1000 264 L1000 337" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="inactivated-3">
+    <ellipse cx="1000" cy="380" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(978.0 353.0)" id="x_inactivation_lineages-drawn-chromosome-20" data-lect12c-input="978.0,353.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-20-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-20-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-20-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-20-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-20-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-20-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="1017" cy="380" r="12" fill="#076DAD" />
+  </g>
+  <path d="M1000 425 L950 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-3-0">
+    <ellipse cx="950" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(928.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-21" data-lect12c-input="928.0,513.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-21-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-21-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-21-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-21-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-21-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-21-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="967" cy="540" r="12" fill="#076DAD" />
+  </g>
+  <path d="M1000 425 L1050 497" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="descendant-3-1">
+    <ellipse cx="1050" cy="540" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(1028.0 513.0)" id="x_inactivation_lineages-drawn-chromosome-22" data-lect12c-input="1028.0,513.0,10,54.0,#B74300">
+      <g id="x_inactivation_lineages-drawn-chromosome-22-body">
+        <defs>
+          <clipPath id="x_inactivation_lineages-drawn-chromosome-22-body-clip">
+            <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#x_inactivation_lineages-drawn-chromosome-22-body-clip)">
+          <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="#B74300" />
+          <rect x="16.583999999999996" y="0" width="37.416000000000004" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          <g id="x_inactivation_lineages-drawn-chromosome-22-body-region-0">
+            <rect x="3.05" y="0" width="10.605999999999996" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+          <g id="x_inactivation_lineages-drawn-chromosome-22-body-region-1">
+            <rect x="16.583999999999996" y="0" width="34.366" height="10.0" fill="#B74300" transform="matrix(0 1 1 0 0 0) " />
+          </g>
+        </g>
+        <path d="M 3.05 0 H 13.655999999999995 Q 15.119999999999996 5.0 16.583999999999996 0 H 50.95 Q 54.0 0 54.0 5.0 Q 54.0 10.0 50.95 10.0L 50.95 10.0 H 16.583999999999996 Q 15.119999999999996 5.0 13.655999999999995 10.0 H 3.05 Q 0 10.0 0 5.0 Q 0 0 3.05 0 Z" transform="matrix(0 1 1 0 0 0) translate(0 1.9500000000000002) scale(1 0.61)" fill="none" stroke="#344651" stroke-width="0.2135" />
+        <ellipse id="x_inactivation_lineages-drawn-chromosome-22-body-centromere" cx="15.119999999999996" cy="5.0" rx="2.7" ry="5.0" fill="none" stroke="#72508C" stroke-width="0.27449999999999997" transform="matrix(0 1 1 0 0 0) " />
+      </g>
+    </g>
+    <circle cx="1067" cy="540" r="12" fill="#076DAD" />
+  </g>
+  <text x="180" y="215" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early cleavage</text>
+  <text x="180" y="245" font-family="Atkinson Hyperlegible Next" font-size="20" text-anchor="middle" fill="#222">Both X chromosomes active</text>
+  <text x="180" y="375" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Random X inactivation</text>
+  <text x="180" y="540" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Somatic descendants</text>
+  <text x="700" y="635" font-family="Atkinson Hyperlegible Next" font-size="26" text-anchor="middle" fill="#222">Line: active X    *    Compact circle: inactive X</text>
 </svg>

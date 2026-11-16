@@ -1,0 +1,2290 @@
+{
+  "method": "native_export.discover_decks -> djot_sources.load_sources -> djot_parser.parse_deck(expand_course_links=False) -> typed Image placements; all image extensions included",
+  "decks": [
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT01/djot/lect01a-course_intro.djot",
+      "sources": [
+        "genetics/LECT01/djot/lect01a-course_intro.djot"
+      ],
+      "slides": 31
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT01/djot/lect01b-genetic_disorders.djot",
+      "sources": [
+        "genetics/LECT01/djot/lect01b-genetic_disorders.djot"
+      ],
+      "slides": 23
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT02/djot/lect02b-genes_dogma.djot",
+      "sources": [
+        "genetics/LECT02/djot/lect02b-genes_dogma.djot"
+      ],
+      "slides": 51
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT02/djot/lect02c-genome_sizes.djot",
+      "sources": [
+        "genetics/LECT02/djot/lect02c-genome_sizes.djot"
+      ],
+      "slides": 59
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT02/djot/lect02d-dna_structure_overview.djot",
+      "sources": [
+        "genetics/LECT02/djot/lect02d-dna_structure_overview.djot"
+      ],
+      "slides": 47
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT02/djot/lect02e-restriction_enzymes.djot",
+      "sources": [
+        "genetics/LECT02/djot/lect02e-restriction_enzymes.djot"
+      ],
+      "slides": 62
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT02/djot/lect02f-dna_electrophoresis.djot",
+      "sources": [
+        "genetics/LECT02/djot/lect02f-dna_electrophoresis.djot"
+      ],
+      "slides": 27
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03a-2026_announcements.djot"
+      ],
+      "slides": 67
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03b-blood_hla_typing.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03b-blood_hla_typing.djot"
+      ],
+      "slides": 44
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03c-fingerprinting.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03c-fingerprinting.djot"
+      ],
+      "slides": 51
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03d-genotyping_1.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03d-genotyping_1.djot"
+      ],
+      "slides": 52
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03e-genotyping_2.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03e-genotyping_2.djot"
+      ],
+      "slides": 28
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot"
+      ],
+      "slides": 24
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT03/djot/lect03g-chap2_challenges.djot",
+      "sources": [
+        "genetics/LECT03/djot/lect03g-chap2_challenges.djot"
+      ],
+      "slides": 11
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04a-2026_announcements.djot"
+      ],
+      "slides": 66
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04b-mendel_history.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04b-mendel_history.djot"
+      ],
+      "slides": 29
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04c-two_principles.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04c-two_principles.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04d-cross_experiments.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04d-cross_experiments.djot"
+      ],
+      "slides": 19
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04e-segregation.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04e-segregation.djot"
+      ],
+      "slides": 12
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04f-punnett_squares.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04f-punnett_squares.djot"
+      ],
+      "slides": 47
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04g-indep_assort.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04g-indep_assort.djot"
+      ],
+      "slides": 53
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04h-indep_assort_problems.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04h-indep_assort_problems.djot"
+      ],
+      "slides": 37
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT04/djot/lect04i-big_crossover_problem.djot",
+      "sources": [
+        "genetics/LECT04/djot/lect04i-big_crossover_problem.djot"
+      ],
+      "slides": 22
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05a-2026_announcements.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05b-unknown_genotype_problems.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05b-unknown_genotype_problems.djot"
+      ],
+      "slides": 18
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05c-pedigree.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05c-pedigree.djot"
+      ],
+      "slides": 51
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05d-probability_concepts.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05d-probability_concepts.djot"
+      ],
+      "slides": 34
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05d-v2-probability_concepts.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05d-v2-probability_concepts.djot"
+      ],
+      "slides": 44
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05e-probability_problems.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05e-probability_problems.djot"
+      ],
+      "slides": 38
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05f-degrees_of_dominance.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05f-degrees_of_dominance.djot"
+      ],
+      "slides": 55
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05g-more_probability_problems.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05g-more_probability_problems.djot"
+      ],
+      "slides": 21
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT05/djot/lect05h-epistasis.djot",
+      "sources": [
+        "genetics/LECT05/djot/lect05h-epistasis.djot"
+      ],
+      "slides": 89
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT06/djot/lect06a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT06/djot/lect06a-2026_announcements.djot"
+      ],
+      "slides": 37
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT06/djot/lect06b-intro_cells.djot",
+      "sources": [
+        "genetics/LECT06/djot/lect06b-intro_cells.djot"
+      ],
+      "slides": 24
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT06/djot/lect06c-meiosis.djot",
+      "sources": [
+        "genetics/LECT06/djot/lect06c-meiosis.djot"
+      ],
+      "slides": 53
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT06/djot/lect06d-x_linked_genes_1.djot",
+      "sources": [
+        "genetics/LECT06/djot/lect06d-x_linked_genes_1.djot"
+      ],
+      "slides": 62
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT06/djot/lect06e-x_linked_genes_2.djot",
+      "sources": [
+        "genetics/LECT06/djot/lect06e-x_linked_genes_2.djot"
+      ],
+      "slides": 28
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT07/djot/lect07a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT07/djot/lect07a-2026_announcements.djot"
+      ],
+      "slides": 38
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT07/djot/lect07a2-genetic_probability.djot",
+      "sources": [
+        "genetics/LECT07/djot/lect07a2-genetic_probability.djot"
+      ],
+      "slides": 8
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT07/djot/lect07b-prob_of_progeny.djot",
+      "sources": [
+        "genetics/LECT07/djot/lect07b-prob_of_progeny.djot",
+        "genetics/LECT07/djot/youtube_zero_factorial.djot"
+      ],
+      "slides": 51
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT07/djot/lect07c-prob_of_progeny_2.djot",
+      "sources": [
+        "genetics/LECT07/djot/lect07c-prob_of_progeny_2.djot"
+      ],
+      "slides": 38
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT07/djot/lect07d-chi_square.djot",
+      "sources": [
+        "genetics/LECT07/djot/lect07d-chi_square.djot",
+        "genetics/LECT07/djot/youtube_chi_squared_test.djot"
+      ],
+      "slides": 62
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 46
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08b-chap8-linked_genes.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08b-chap8-linked_genes.djot"
+      ],
+      "slides": 46
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08c-gene_mapping.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08c-gene_mapping.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot"
+      ],
+      "slides": 50
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08d-3_point_testcross_voss.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08d-3_point_testcross_voss.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot"
+      ],
+      "slides": 50
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08e-linked_gene_chi_square.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08e-linked_gene_chi_square.djot"
+      ],
+      "slides": 28
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot",
+      "sources": [
+        "genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot",
+        "genetics/evergreen/three_point_testcross_steps.djot"
+      ],
+      "slides": 49
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "evergreen/spring_registration.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 55
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09b-crossover_interference.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09b-crossover_interference.djot",
+        "genetics/LECT09/djot/lect09b1-interference_worked_example.djot",
+        "genetics/LECT09/djot/interference_steps.djot",
+        "genetics/LECT09/djot/interference_steps.djot",
+        "genetics/LECT09/djot/interference_steps.djot",
+        "genetics/LECT09/djot/lect09b2-interference_practice.djot",
+        "genetics/LECT09/djot/interference_steps.djot"
+      ],
+      "slides": 50
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09c-mitotic_crossover.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09c-mitotic_crossover.djot"
+      ],
+      "slides": 19
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot"
+      ],
+      "slides": 17
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot"
+      ],
+      "slides": 34
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09f-two_gene_tetrad_mapping.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09f-two_gene_tetrad_mapping.djot",
+        "genetics/LECT09/djot/lect09f1-two_gene_linked.djot",
+        "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+        "genetics/LECT09/djot/lect09f2-two_gene_unlinked.djot",
+        "genetics/LECT09/djot/unordered_tetrad_steps.djot"
+      ],
+      "slides": 25
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09g-three_gene_tetrad_mapping.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09g-three_gene_tetrad_mapping.djot",
+        "genetics/LECT09/djot/lect09g1-three_gene_mapping.djot",
+        "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+        "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+        "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+        "genetics/LECT09/djot/lect09g2-gene_order.djot"
+      ],
+      "slides": 43
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot",
+      "sources": [
+        "genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot",
+        "genetics/LECT09/djot/lect09h1-ordered_centromere.djot",
+        "genetics/LECT09/djot/ordered_tetrad_steps.djot",
+        "genetics/LECT09/djot/ordered_tetrad_steps.djot"
+      ],
+      "slides": 31
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT10/djot/lect10a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT10/djot/lect10a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "evergreen/spring_registration.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 67
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT10/djot/lect10b-karyotypes.djot",
+      "sources": [
+        "genetics/LECT10/djot/lect10b-karyotypes.djot"
+      ],
+      "slides": 55
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT10/djot/lect10c-chromo_nomenclature.djot",
+      "sources": [
+        "genetics/LECT10/djot/lect10c-chromo_nomenclature.djot"
+      ],
+      "slides": 30
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT10/djot/lect10d-chromo_aneuploid.djot",
+      "sources": [
+        "genetics/LECT10/djot/lect10d-chromo_aneuploid.djot"
+      ],
+      "slides": 70
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "evergreen/spring_registration.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 56
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT11/djot/lect11b-gene_trees.djot",
+      "sources": [
+        "genetics/LECT11/djot/lect11b-gene_trees.djot",
+        "genetics/LECT11/djot/gene_tree_four_steps.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT11/djot/lect11c-more_gene_trees.djot",
+      "sources": [
+        "genetics/LECT11/djot/lect11c-more_gene_trees.djot",
+        "genetics/LECT11/djot/gene_tree_five_steps.djot"
+      ],
+      "slides": 34
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT11/djot/lect11d-gene_tree_activity.djot",
+      "sources": [
+        "genetics/LECT11/djot/lect11d-gene_tree_activity.djot",
+        "genetics/LECT11/djot/gene_tree_six_steps.djot"
+      ],
+      "slides": 32
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT11/djot/lect11e-evol_time.djot",
+      "sources": [
+        "genetics/LECT11/djot/lect11e-evol_time.djot"
+      ],
+      "slides": 19
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "evergreen/spring_registration.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 54
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT12/djot/lect12b-polyploidy.djot",
+      "sources": [
+        "genetics/LECT12/djot/lect12b-polyploidy.djot"
+      ],
+      "slides": 49
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT12/djot/lect12c-sex_dosage.djot",
+      "sources": [
+        "genetics/LECT12/djot/lect12c-sex_dosage.djot",
+        "genetics/LECT12/djot/lect12c_sex_determination.djot",
+        "genetics/LECT12/djot/lect12c_sex_chromosome_aneuploidy.djot",
+        "genetics/LECT12/djot/lect12c_sex_quiz.djot"
+      ],
+      "slides": 69
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot",
+      "sources": [
+        "genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot",
+        "genetics/LECT12/djot/lect12d_deletion_mechanisms.djot",
+        "genetics/LECT12/djot/lect12d_deletion_four_genes.djot",
+        "genetics/LECT12/djot/lect12d_deletion_six_genes.djot",
+        "genetics/LECT12/djot/lect12d_deletion_extra_problems.djot"
+      ],
+      "slides": 112
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot",
+      "sources": [
+        "genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot"
+      ],
+      "slides": 37
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT13/djot/lect13a-2026_announcements.djot",
+      "sources": [
+        "genetics/LECT13/djot/lect13a-2026_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "genetics/evergreen/course_information.djot",
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot",
+        "genetics/evergreen/assessment_policies.djot",
+        "genetics/evergreen/exam_guidance.djot",
+        "genetics/evergreen/quiz_guidance.djot",
+        "genetics/evergreen/first_week_assignments.djot",
+        "evergreen/spring_registration.djot",
+        "genetics/evergreen/course_evaluations.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 55
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot",
+      "sources": [
+        "genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot"
+      ],
+      "slides": 48
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT13/djot/lect13c-chromo_alter_4-translocation.djot",
+      "sources": [
+        "genetics/LECT13/djot/lect13c-chromo_alter_4-translocation.djot"
+      ],
+      "slides": 31
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT13/djot/lect13d-meiosis_translocation.djot",
+      "sources": [
+        "genetics/LECT13/djot/lect13d-meiosis_translocation.djot",
+        "genetics/LECT13/djot/lect13d_meiosis_translocation_part_01.djot",
+        "genetics/LECT13/djot/lect13d_meiosis_translocation_part_02.djot"
+      ],
+      "slides": 62
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT14/djot/lect14a-agenda.djot",
+      "sources": [
+        "genetics/LECT14/djot/lect14a-agenda.djot"
+      ],
+      "slides": 1
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT14/djot/lect14b-allele_freq.djot",
+      "sources": [
+        "genetics/LECT14/djot/lect14b-allele_freq.djot"
+      ],
+      "slides": 31
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT14/djot/lect14c-hardy_weinberg_1.djot",
+      "sources": [
+        "genetics/LECT14/djot/lect14c-hardy_weinberg_1.djot",
+        "genetics/LECT14/djot/lect14c_hardy_weinberg_1_part_01.djot",
+        "genetics/LECT14/djot/lect14c_hardy_weinberg_1_part_02.djot"
+      ],
+      "slides": 64
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT14/djot/lect14d-hardy_weinberg_conditions.djot",
+      "sources": [
+        "genetics/LECT14/djot/lect14d-hardy_weinberg_conditions.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT14/djot/lect14e-hardy_weinberg_chi_square.djot",
+      "sources": [
+        "genetics/LECT14/djot/lect14e-hardy_weinberg_chi_square.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT15/djot/lect15a-agenda.djot",
+      "sources": [
+        "genetics/LECT15/djot/lect15a-agenda.djot"
+      ],
+      "slides": 1
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT15/djot/lect15b-genetic_evolution.djot",
+      "sources": [
+        "genetics/LECT15/djot/lect15b-genetic_evolution.djot"
+      ],
+      "slides": 22
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT15/djot/lect15c-natural_selection.djot",
+      "sources": [
+        "genetics/LECT15/djot/lect15c-natural_selection.djot",
+        "genetics/LECT15/djot/lect15c_natural_selection_part_01.djot",
+        "genetics/LECT15/djot/lect15c_natural_selection_part_02.djot"
+      ],
+      "slides": 77
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT15/djot/lect15d-genetic_drift.djot",
+      "sources": [
+        "genetics/LECT15/djot/lect15d-genetic_drift.djot"
+      ],
+      "slides": 35
+    },
+    {
+      "course": "genetics",
+      "deck": "genetics/LECT15/djot/lect15e-inbreeding.djot",
+      "sources": [
+        "genetics/LECT15/djot/lect15e-inbreeding.djot"
+      ],
+      "slides": 61
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT03/djot/lect03a-2026_announcements.djot",
+      "sources": [
+        "biotech/LECT03/djot/lect03a-2026_announcements.djot"
+      ],
+      "slides": 40
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT03/djot/lect03b-individual_project.djot",
+      "sources": [
+        "biotech/LECT03/djot/lect03b-individual_project.djot"
+      ],
+      "slides": 40
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT03/djot/lect03c-talking_points_set_2.djot",
+      "sources": [
+        "biotech/LECT03/djot/lect03c-talking_points_set_2.djot"
+      ],
+      "slides": 106
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT04/djot/lect04a-2026_announcements.djot",
+      "sources": [
+        "biotech/LECT04/djot/lect04a-2026_announcements.djot"
+      ],
+      "slides": 19
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT04/djot/lect04b-individual_project.djot",
+      "sources": [
+        "biotech/LECT04/djot/lect04b-individual_project.djot"
+      ],
+      "slides": 50
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT04/djot/lect04c-talking_points_set_3.djot",
+      "sources": [
+        "biotech/LECT04/djot/lect04c-talking_points_set_3.djot",
+        "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+        "biotech/LECT04/djot/lect04d-talking_points_set_3_recombinant_proteins.djot",
+        "biotech/LECT04/djot/lect04e-talking_points_set_3_structural_biology.djot",
+        "biotech/LECT04/djot/lect04f-talking_points_set_3_protein_engineering.djot"
+      ],
+      "slides": 390
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot",
+      "sources": [
+        "biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot"
+      ],
+      "slides": 39
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT05/djot/lect05b-individual_project.djot",
+      "sources": [
+        "biotech/LECT05/djot/lect05b-individual_project.djot"
+      ],
+      "slides": 52
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT05/djot/lect05c-theranos.djot",
+      "sources": [
+        "biotech/LECT05/djot/lect05c-theranos.djot"
+      ],
+      "slides": 37
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot",
+      "sources": [
+        "biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot"
+      ],
+      "slides": 39
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT06/djot/lect06b-individual_project.djot",
+      "sources": [
+        "biotech/LECT06/djot/lect06b-individual_project.djot"
+      ],
+      "slides": 52
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT06/djot/lect06c-set_4_tp_chapter_12_16_material.djot",
+      "sources": [
+        "biotech/LECT06/djot/lect06c-set_4_tp_chapter_12_16_material.djot",
+        "biotech/LECT06/djot/set4_opening.djot",
+        "biotech/LECT06/djot/set4_chapter_12.djot",
+        "biotech/LECT06/djot/set4_chapter_13.djot",
+        "biotech/LECT06/djot/set4_chapter_14.djot",
+        "biotech/LECT06/djot/set4_chapter_15.djot",
+        "biotech/LECT06/djot/set4_chapter_16.djot",
+        "biotech/LECT06/djot/set4_summary.djot"
+      ],
+      "slides": 281
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT06/djot/lect06d-business_plan.djot",
+      "sources": [
+        "biotech/LECT06/djot/lect06d-business_plan.djot",
+        "biotech/LECT06/djot/business_opening.djot",
+        "biotech/LECT06/djot/business_summary_writing.djot",
+        "biotech/LECT06/djot/business_market.djot",
+        "biotech/LECT06/djot/business_milestones.djot",
+        "biotech/LECT06/djot/business_document_design.djot",
+        "biotech/LECT06/djot/business_closing.djot"
+      ],
+      "slides": 57
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT07/djot/lect07a-2026_biotech_announcements.djot",
+      "sources": [
+        "biotech/LECT07/djot/lect07a-2026_biotech_announcements.djot"
+      ],
+      "slides": 36
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT07/djot/lect07b-individual_project.djot",
+      "sources": [
+        "biotech/LECT07/djot/lect07b-individual_project.djot",
+        "biotech/LECT07/djot/lect07b1-three_ideas.djot",
+        "biotech/LECT07/djot/lect07b2-one_great_idea.djot",
+        "biotech/LECT07/djot/lect07b3-shark_tank.djot",
+        "biotech/LECT07/djot/lect07b4-executive_summary.djot"
+      ],
+      "slides": 39
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT10/djot/lect10a-2026_biotech_announcements.djot",
+      "sources": [
+        "biotech/LECT10/djot/lect10a-2026_biotech_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "biotech/evergreen/course_information.djot",
+        "evergreen/ways_to_contact.djot",
+        "biotech/evergreen/zoom_guidance.djot",
+        "evergreen/spring_registration.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 47
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT10/djot/lect10b-2026_group_project.djot",
+      "sources": [
+        "biotech/LECT10/djot/lect10b-2026_group_project.djot",
+        "biotech/LECT10/djot/group_project_opening.djot",
+        "biotech/LECT10/djot/group_project_collaboration.djot",
+        "biotech/LECT10/djot/group_vision_report_link.djot",
+        "biotech/LECT10/djot/group_project_presentation_preview.djot",
+        "biotech/LECT10/djot/group_project_presentation.djot",
+        "biotech/LECT10/djot/group_project_details.djot",
+        "biotech/LECT10/djot/group_project_closing.djot"
+      ],
+      "slides": 42
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT10/djot/lect10c-set_5_medicinal_biotechnology.djot",
+      "sources": [
+        "biotech/LECT10/djot/lect10c-set_5_medicinal_biotechnology.djot",
+        "biotech/LECT10/djot/set5_opening.djot",
+        "biotech/LECT10/djot/set5_gene_therapy.djot",
+        "biotech/LECT10/djot/set5_gene_therapy_01_04.djot",
+        "biotech/LECT10/djot/set5_gene_therapy_05_08.djot",
+        "biotech/LECT10/djot/set5_gene_therapy_09_12.djot",
+        "biotech/LECT10/djot/set5_genome_editing.djot",
+        "biotech/LECT10/djot/set5_stem_cells.djot",
+        "biotech/LECT10/djot/set5_cancer.djot",
+        "biotech/LECT10/djot/set5_summary.djot"
+      ],
+      "slides": 244
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT11/djot/lect11a-2026_biotech_announcements.djot",
+      "sources": [
+        "biotech/LECT11/djot/lect11a-2026_biotech_announcements.djot",
+        "evergreen/youtube_channel.djot",
+        "biotech/evergreen/course_information.djot",
+        "evergreen/ways_to_contact.djot",
+        "biotech/evergreen/zoom_guidance.djot",
+        "evergreen/spring_registration.djot",
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 49
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT11/djot/lect11b-2026_group_project.djot",
+      "sources": [
+        "biotech/LECT11/djot/lect11b-2026_group_project.djot",
+        "biotech/LECT11/djot/group_project_opening.djot",
+        "biotech/LECT11/djot/group_project_collaboration.djot",
+        "biotech/LECT11/djot/group_project_tonight.djot",
+        "biotech/LECT11/djot/group_project_presentation.djot",
+        "biotech/LECT11/djot/group_project_details.djot",
+        "biotech/LECT11/djot/group_project_closing.djot"
+      ],
+      "slides": 45
+    },
+    {
+      "course": "biotech",
+      "deck": "biotech/LECT11/djot/lect11c-set_6_regulation_of_biotechnology.djot",
+      "sources": [
+        "biotech/LECT11/djot/lect11c-set_6_regulation_of_biotechnology.djot",
+        "biotech/LECT11/djot/set6_opening.djot",
+        "biotech/LECT11/djot/set6_part1.djot",
+        "biotech/LECT11/djot/set6_part1_opening.djot",
+        "biotech/LECT11/djot/set6_part1_01_04.djot",
+        "biotech/LECT11/djot/set6_part1_05_07.djot",
+        "biotech/LECT11/djot/set6_part2.djot",
+        "biotech/LECT11/djot/set6_part2_opening.djot",
+        "biotech/LECT11/djot/set6_part2_08_11.djot",
+        "biotech/LECT11/djot/set6_part2_12_14.djot",
+        "biotech/LECT11/djot/set6_part3.djot",
+        "biotech/LECT11/djot/set6_part3_opening.djot",
+        "biotech/LECT11/djot/set6_part3_15_18.djot",
+        "biotech/LECT11/djot/set6_part3_19_21.djot",
+        "biotech/LECT11/djot/set6_part3_22_25.djot",
+        "biotech/LECT11/djot/set6_part4.djot",
+        "biotech/LECT11/djot/set6_part4_opening.djot",
+        "biotech/LECT11/djot/set6_part4_26_29.djot",
+        "biotech/LECT11/djot/set6_part4_30_32.djot",
+        "biotech/LECT11/djot/set6_part4_33_35.djot",
+        "biotech/LECT11/djot/set6_part4_36_38.djot",
+        "biotech/LECT11/djot/set6_summary.djot"
+      ],
+      "slides": 274
+    },
+    {
+      "course": "biostats",
+      "deck": "biostats/LECT08/djot/lect08a-2026_biostats_announcements.djot",
+      "sources": [
+        "biostats/LECT08/djot/lect08a-2026_biostats_announcements.djot"
+      ],
+      "slides": 32
+    },
+    {
+      "course": "evergreen",
+      "deck": "evergreen/instructor_contact.djot",
+      "sources": [
+        "evergreen/instructor_contact.djot",
+        "evergreen/ways_to_contact.djot"
+      ],
+      "slides": 4
+    },
+    {
+      "course": "evergreen",
+      "deck": "evergreen/natural_science_club.djot",
+      "sources": [
+        "evergreen/natural_science_club.djot"
+      ],
+      "slides": 2
+    },
+    {
+      "course": "evergreen",
+      "deck": "evergreen/spring_registration.djot",
+      "sources": [
+        "evergreen/spring_registration.djot"
+      ],
+      "slides": 7
+    },
+    {
+      "course": "evergreen",
+      "deck": "evergreen/youtube_channel.djot",
+      "sources": [
+        "evergreen/youtube_channel.djot"
+      ],
+      "slides": 2
+    }
+  ],
+  "errors": [],
+  "placement_count": 2895,
+  "asset_count": 1699,
+  "by_course": {
+    "genetics": {
+      "unclassified_raster": 756,
+      "no_chromosome_signal": 541,
+      "candidate_review": 467
+    },
+    "biotech": {
+      "unclassified_raster": 973,
+      "no_chromosome_signal": 136,
+      "candidate_review": 1
+    },
+    "biostats": {
+      "unclassified_raster": 5,
+      "no_chromosome_signal": 10
+    },
+    "evergreen": {
+      "unclassified_raster": 5,
+      "no_chromosome_signal": 1
+    }
+  },
+  "lect12": {
+    "unclassified_raster": 53,
+    "no_chromosome_signal": 24,
+    "candidate_review": 75
+  },
+  "classification_progress": {
+    "classified_placements": 2895,
+    "by_status": {
+      "retained_family_classified": 2498,
+      "source_changed_native_receipt_available": 166,
+      "retained_source_exception": 17,
+      "source_changed_final_native_gate_open": 135,
+      "retained": 21,
+      "retained_inspected": 21,
+      "retained_out_of_scope": 11,
+      "retained_evidence": 3,
+      "preserved": 23
+    }
+  },
+  "classification_evidence": [
+    "_temp/chromosome_migration/lect12c/classifications.json",
+    "_temp/chromosome_inventory/lect12_00.webp",
+    "_temp/chromosome_inventory/lect12_01.webp",
+    "_temp/chromosome_migration/genetics_survey/classifications.json",
+    "_temp/chromosome_migration/lect12e/inventory.json",
+    "_temp/chromosome_migration/othercourses_survey/asset_classifications.json",
+    "_temp/chromosome_migration/genetics_survey/classification_corrections.json",
+    "_temp/chromosome_migration/lect12b/asset_classifications.json",
+    "_temp/chromosome_migration/lect12d/asset_decisions.json",
+    "_temp/chromosome_migration/e_source_fix/handoff.md"
+  ],
+  "current_by_course": {
+    "genetics": {
+      "placements": 1764,
+      "unique_assets": 1223,
+      "status_placements": {
+        "retained_family_classified": 1373,
+        "candidate_to_migrate": 248,
+        "migrated_pending_native": 20,
+        "retained": 21,
+        "retained_inspected": 21,
+        "migrated_shared_renderer_standalone_reviewed": 7,
+        "migrated_svg_reviewed_pending_native": 32,
+        "retained_out_of_scope": 11,
+        "retained_evidence": 3,
+        "migrated_standalone_checks_pass_pending_independent_review_and_slide_export": 4,
+        "preserved": 23,
+        "migrated_pending_fresh_spec_quality_native": 1
+      }
+    },
+    "biotech": {
+      "placements": 1110,
+      "unique_assets": 463,
+      "status_placements": {
+        "retained_family_classified": 1108,
+        "candidate_to_migrate": 2
+      }
+    },
+    "biostats": {
+      "placements": 15,
+      "unique_assets": 15,
+      "status_placements": {
+        "retained_family_classified": 15
+      }
+    },
+    "evergreen": {
+      "placements": 6,
+      "unique_assets": 6,
+      "status_placements": {
+        "retained_family_classified": 6
+      }
+    }
+  },
+  "current_source_coverage": {
+    "method": "Fresh typed native parser; exact SHA-256 reads. Baseline records remain separate where LECT13D composition groups source strips; frozen semantic receipt expands direct canvases to the original components.",
+    "decks": [
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT01/djot/lect01a-course_intro.djot",
+        "sources": [
+          "genetics/LECT01/djot/lect01a-course_intro.djot"
+        ],
+        "slides": 31
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT01/djot/lect01b-genetic_disorders.djot",
+        "sources": [
+          "genetics/LECT01/djot/lect01b-genetic_disorders.djot"
+        ],
+        "slides": 23
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT02/djot/lect02b-genes_dogma.djot",
+        "sources": [
+          "genetics/LECT02/djot/lect02b-genes_dogma.djot"
+        ],
+        "slides": 51
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT02/djot/lect02c-genome_sizes.djot",
+        "sources": [
+          "genetics/LECT02/djot/lect02c-genome_sizes.djot"
+        ],
+        "slides": 59
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT02/djot/lect02d-dna_structure_overview.djot",
+        "sources": [
+          "genetics/LECT02/djot/lect02d-dna_structure_overview.djot"
+        ],
+        "slides": 47
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT02/djot/lect02e-restriction_enzymes.djot",
+        "sources": [
+          "genetics/LECT02/djot/lect02e-restriction_enzymes.djot"
+        ],
+        "slides": 62
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT02/djot/lect02f-dna_electrophoresis.djot",
+        "sources": [
+          "genetics/LECT02/djot/lect02f-dna_electrophoresis.djot"
+        ],
+        "slides": 27
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03a-2026_announcements.djot"
+        ],
+        "slides": 67
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03b-blood_hla_typing.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03b-blood_hla_typing.djot"
+        ],
+        "slides": 44
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03c-fingerprinting.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03c-fingerprinting.djot"
+        ],
+        "slides": 51
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03d-genotyping_1.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03d-genotyping_1.djot"
+        ],
+        "slides": 52
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03e-genotyping_2.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03e-genotyping_2.djot"
+        ],
+        "slides": 28
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03f-whole_genome_analysis.djot"
+        ],
+        "slides": 24
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT03/djot/lect03g-chap2_challenges.djot",
+        "sources": [
+          "genetics/LECT03/djot/lect03g-chap2_challenges.djot"
+        ],
+        "slides": 11
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04a-2026_announcements.djot"
+        ],
+        "slides": 66
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04b-mendel_history.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04b-mendel_history.djot"
+        ],
+        "slides": 29
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04c-two_principles.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04c-two_principles.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04d-cross_experiments.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04d-cross_experiments.djot"
+        ],
+        "slides": 19
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04e-segregation.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04e-segregation.djot"
+        ],
+        "slides": 12
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04f-punnett_squares.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04f-punnett_squares.djot"
+        ],
+        "slides": 47
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04g-indep_assort.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04g-indep_assort.djot"
+        ],
+        "slides": 53
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04h-indep_assort_problems.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04h-indep_assort_problems.djot"
+        ],
+        "slides": 37
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT04/djot/lect04i-big_crossover_problem.djot",
+        "sources": [
+          "genetics/LECT04/djot/lect04i-big_crossover_problem.djot"
+        ],
+        "slides": 22
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05a-2026_announcements.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05b-unknown_genotype_problems.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05b-unknown_genotype_problems.djot"
+        ],
+        "slides": 18
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05c-pedigree.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05c-pedigree.djot"
+        ],
+        "slides": 51
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05d-probability_concepts.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05d-probability_concepts.djot"
+        ],
+        "slides": 34
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05d-v2-probability_concepts.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05d-v2-probability_concepts.djot"
+        ],
+        "slides": 44
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05e-probability_problems.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05e-probability_problems.djot"
+        ],
+        "slides": 38
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05f-degrees_of_dominance.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05f-degrees_of_dominance.djot"
+        ],
+        "slides": 55
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05g-more_probability_problems.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05g-more_probability_problems.djot"
+        ],
+        "slides": 21
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT05/djot/lect05h-epistasis.djot",
+        "sources": [
+          "genetics/LECT05/djot/lect05h-epistasis.djot"
+        ],
+        "slides": 89
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT06/djot/lect06a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT06/djot/lect06a-2026_announcements.djot"
+        ],
+        "slides": 37
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT06/djot/lect06b-intro_cells.djot",
+        "sources": [
+          "genetics/LECT06/djot/lect06b-intro_cells.djot"
+        ],
+        "slides": 24
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT06/djot/lect06c-meiosis.djot",
+        "sources": [
+          "genetics/LECT06/djot/lect06c-meiosis.djot"
+        ],
+        "slides": 53
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT06/djot/lect06d-x_linked_genes_1.djot",
+        "sources": [
+          "genetics/LECT06/djot/lect06d-x_linked_genes_1.djot"
+        ],
+        "slides": 62
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT06/djot/lect06e-x_linked_genes_2.djot",
+        "sources": [
+          "genetics/LECT06/djot/lect06e-x_linked_genes_2.djot"
+        ],
+        "slides": 28
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT07/djot/lect07a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT07/djot/lect07a-2026_announcements.djot"
+        ],
+        "slides": 38
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT07/djot/lect07a2-genetic_probability.djot",
+        "sources": [
+          "genetics/LECT07/djot/lect07a2-genetic_probability.djot"
+        ],
+        "slides": 8
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT07/djot/lect07b-prob_of_progeny.djot",
+        "sources": [
+          "genetics/LECT07/djot/lect07b-prob_of_progeny.djot",
+          "genetics/LECT07/djot/youtube_zero_factorial.djot"
+        ],
+        "slides": 51
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT07/djot/lect07c-prob_of_progeny_2.djot",
+        "sources": [
+          "genetics/LECT07/djot/lect07c-prob_of_progeny_2.djot"
+        ],
+        "slides": 38
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT07/djot/lect07d-chi_square.djot",
+        "sources": [
+          "genetics/LECT07/djot/lect07d-chi_square.djot",
+          "genetics/LECT07/djot/youtube_chi_squared_test.djot"
+        ],
+        "slides": 62
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 46
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08b-chap8-linked_genes.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08b-chap8-linked_genes.djot"
+        ],
+        "slides": 46
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08c-gene_mapping.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08c-gene_mapping.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot"
+        ],
+        "slides": 50
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08d-3_point_testcross_voss.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08d-3_point_testcross_voss.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot"
+        ],
+        "slides": 50
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08e-linked_gene_chi_square.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08e-linked_gene_chi_square.djot"
+        ],
+        "slides": 28
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot",
+        "sources": [
+          "genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot",
+          "genetics/evergreen/three_point_testcross_steps.djot"
+        ],
+        "slides": 49
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "evergreen/spring_registration.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 55
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09b-crossover_interference.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09b-crossover_interference.djot",
+          "genetics/LECT09/djot/lect09b1-interference_worked_example.djot",
+          "genetics/LECT09/djot/interference_steps.djot",
+          "genetics/LECT09/djot/interference_steps.djot",
+          "genetics/LECT09/djot/interference_steps.djot",
+          "genetics/LECT09/djot/lect09b2-interference_practice.djot",
+          "genetics/LECT09/djot/interference_steps.djot"
+        ],
+        "slides": 50
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09c-mitotic_crossover.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09c-mitotic_crossover.djot"
+        ],
+        "slides": 19
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot"
+        ],
+        "slides": 17
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot"
+        ],
+        "slides": 34
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09f-two_gene_tetrad_mapping.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09f-two_gene_tetrad_mapping.djot",
+          "genetics/LECT09/djot/lect09f1-two_gene_linked.djot",
+          "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+          "genetics/LECT09/djot/lect09f2-two_gene_unlinked.djot",
+          "genetics/LECT09/djot/unordered_tetrad_steps.djot"
+        ],
+        "slides": 25
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09g-three_gene_tetrad_mapping.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09g-three_gene_tetrad_mapping.djot",
+          "genetics/LECT09/djot/lect09g1-three_gene_mapping.djot",
+          "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+          "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+          "genetics/LECT09/djot/unordered_tetrad_steps.djot",
+          "genetics/LECT09/djot/lect09g2-gene_order.djot"
+        ],
+        "slides": 43
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot",
+        "sources": [
+          "genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot",
+          "genetics/LECT09/djot/lect09h1-ordered_centromere.djot",
+          "genetics/LECT09/djot/ordered_tetrad_steps.djot",
+          "genetics/LECT09/djot/ordered_tetrad_steps.djot"
+        ],
+        "slides": 31
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT10/djot/lect10a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT10/djot/lect10a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "evergreen/spring_registration.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 67
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT10/djot/lect10b-karyotypes.djot",
+        "sources": [
+          "genetics/LECT10/djot/lect10b-karyotypes.djot"
+        ],
+        "slides": 55
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT10/djot/lect10c-chromo_nomenclature.djot",
+        "sources": [
+          "genetics/LECT10/djot/lect10c-chromo_nomenclature.djot"
+        ],
+        "slides": 30
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT10/djot/lect10d-chromo_aneuploid.djot",
+        "sources": [
+          "genetics/LECT10/djot/lect10d-chromo_aneuploid.djot"
+        ],
+        "slides": 70
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT11/djot/lect11a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "evergreen/spring_registration.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 56
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT11/djot/lect11b-gene_trees.djot",
+        "sources": [
+          "genetics/LECT11/djot/lect11b-gene_trees.djot",
+          "genetics/LECT11/djot/gene_tree_four_steps.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT11/djot/lect11c-more_gene_trees.djot",
+        "sources": [
+          "genetics/LECT11/djot/lect11c-more_gene_trees.djot",
+          "genetics/LECT11/djot/gene_tree_five_steps.djot"
+        ],
+        "slides": 34
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT11/djot/lect11d-gene_tree_activity.djot",
+        "sources": [
+          "genetics/LECT11/djot/lect11d-gene_tree_activity.djot",
+          "genetics/LECT11/djot/gene_tree_six_steps.djot"
+        ],
+        "slides": 32
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT11/djot/lect11e-evol_time.djot",
+        "sources": [
+          "genetics/LECT11/djot/lect11e-evol_time.djot"
+        ],
+        "slides": 19
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT12/djot/lect12a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "evergreen/spring_registration.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 54
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT12/djot/lect12b-polyploidy.djot",
+        "sources": [
+          "genetics/LECT12/djot/lect12b-polyploidy.djot"
+        ],
+        "slides": 49
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT12/djot/lect12c-sex_dosage.djot",
+        "sources": [
+          "genetics/LECT12/djot/lect12c-sex_dosage.djot",
+          "genetics/LECT12/djot/lect12c_sex_determination.djot",
+          "genetics/LECT12/djot/lect12c_sex_chromosome_aneuploidy.djot",
+          "genetics/LECT12/djot/lect12c_sex_quiz.djot"
+        ],
+        "slides": 69
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot",
+        "sources": [
+          "genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot",
+          "genetics/LECT12/djot/lect12d_deletion_mechanisms.djot",
+          "genetics/LECT12/djot/lect12d_deletion_four_genes.djot",
+          "genetics/LECT12/djot/lect12d_deletion_six_genes.djot",
+          "genetics/LECT12/djot/lect12d_deletion_extra_problems.djot"
+        ],
+        "slides": 112
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot",
+        "sources": [
+          "genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot"
+        ],
+        "slides": 37
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT13/djot/lect13a-2026_announcements.djot",
+        "sources": [
+          "genetics/LECT13/djot/lect13a-2026_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "genetics/evergreen/course_information.djot",
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot",
+          "genetics/evergreen/assessment_policies.djot",
+          "genetics/evergreen/exam_guidance.djot",
+          "genetics/evergreen/quiz_guidance.djot",
+          "genetics/evergreen/first_week_assignments.djot",
+          "evergreen/spring_registration.djot",
+          "genetics/evergreen/course_evaluations.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 55
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot",
+        "sources": [
+          "genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot"
+        ],
+        "slides": 48
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT13/djot/lect13c-chromo_alter_4-translocation.djot",
+        "sources": [
+          "genetics/LECT13/djot/lect13c-chromo_alter_4-translocation.djot"
+        ],
+        "slides": 31
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT13/djot/lect13d-meiosis_translocation.djot",
+        "sources": [
+          "genetics/LECT13/djot/lect13d-meiosis_translocation.djot",
+          "genetics/LECT13/djot/lect13d_meiosis_translocation_part_01.djot",
+          "genetics/LECT13/djot/lect13d_meiosis_translocation_part_02.djot"
+        ],
+        "slides": 62
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT14/djot/lect14a-agenda.djot",
+        "sources": [
+          "genetics/LECT14/djot/lect14a-agenda.djot"
+        ],
+        "slides": 1
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT14/djot/lect14b-allele_freq.djot",
+        "sources": [
+          "genetics/LECT14/djot/lect14b-allele_freq.djot"
+        ],
+        "slides": 31
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT14/djot/lect14c-hardy_weinberg_1.djot",
+        "sources": [
+          "genetics/LECT14/djot/lect14c-hardy_weinberg_1.djot",
+          "genetics/LECT14/djot/lect14c_hardy_weinberg_1_part_01.djot",
+          "genetics/LECT14/djot/lect14c_hardy_weinberg_1_part_02.djot"
+        ],
+        "slides": 64
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT14/djot/lect14d-hardy_weinberg_conditions.djot",
+        "sources": [
+          "genetics/LECT14/djot/lect14d-hardy_weinberg_conditions.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT14/djot/lect14e-hardy_weinberg_chi_square.djot",
+        "sources": [
+          "genetics/LECT14/djot/lect14e-hardy_weinberg_chi_square.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT15/djot/lect15a-agenda.djot",
+        "sources": [
+          "genetics/LECT15/djot/lect15a-agenda.djot"
+        ],
+        "slides": 1
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT15/djot/lect15b-genetic_evolution.djot",
+        "sources": [
+          "genetics/LECT15/djot/lect15b-genetic_evolution.djot"
+        ],
+        "slides": 22
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT15/djot/lect15c-natural_selection.djot",
+        "sources": [
+          "genetics/LECT15/djot/lect15c-natural_selection.djot",
+          "genetics/LECT15/djot/lect15c_natural_selection_part_01.djot",
+          "genetics/LECT15/djot/lect15c_natural_selection_part_02.djot"
+        ],
+        "slides": 77
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT15/djot/lect15d-genetic_drift.djot",
+        "sources": [
+          "genetics/LECT15/djot/lect15d-genetic_drift.djot"
+        ],
+        "slides": 35
+      },
+      {
+        "course": "genetics",
+        "deck": "genetics/LECT15/djot/lect15e-inbreeding.djot",
+        "sources": [
+          "genetics/LECT15/djot/lect15e-inbreeding.djot"
+        ],
+        "slides": 61
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT03/djot/lect03a-2026_announcements.djot",
+        "sources": [
+          "biotech/LECT03/djot/lect03a-2026_announcements.djot"
+        ],
+        "slides": 40
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT03/djot/lect03b-individual_project.djot",
+        "sources": [
+          "biotech/LECT03/djot/lect03b-individual_project.djot"
+        ],
+        "slides": 40
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT03/djot/lect03c-talking_points_set_2.djot",
+        "sources": [
+          "biotech/LECT03/djot/lect03c-talking_points_set_2.djot"
+        ],
+        "slides": 106
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT04/djot/lect04a-2026_announcements.djot",
+        "sources": [
+          "biotech/LECT04/djot/lect04a-2026_announcements.djot"
+        ],
+        "slides": 19
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT04/djot/lect04b-individual_project.djot",
+        "sources": [
+          "biotech/LECT04/djot/lect04b-individual_project.djot"
+        ],
+        "slides": 50
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT04/djot/lect04c-talking_points_set_3.djot",
+        "sources": [
+          "biotech/LECT04/djot/lect04c-talking_points_set_3.djot",
+          "biotech/LECT04/djot/lect04c-talking_points_set_3-proteomics.djot",
+          "biotech/LECT04/djot/lect04d-talking_points_set_3_recombinant_proteins.djot",
+          "biotech/LECT04/djot/lect04e-talking_points_set_3_structural_biology.djot",
+          "biotech/LECT04/djot/lect04f-talking_points_set_3_protein_engineering.djot"
+        ],
+        "slides": 390
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot",
+        "sources": [
+          "biotech/LECT05/djot/lect05a-2026_biotech_announcements.djot"
+        ],
+        "slides": 39
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT05/djot/lect05b-individual_project.djot",
+        "sources": [
+          "biotech/LECT05/djot/lect05b-individual_project.djot"
+        ],
+        "slides": 52
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT05/djot/lect05c-theranos.djot",
+        "sources": [
+          "biotech/LECT05/djot/lect05c-theranos.djot"
+        ],
+        "slides": 37
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot",
+        "sources": [
+          "biotech/LECT06/djot/lect06a-2026_biotech_announcements.djot"
+        ],
+        "slides": 39
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT06/djot/lect06b-individual_project.djot",
+        "sources": [
+          "biotech/LECT06/djot/lect06b-individual_project.djot"
+        ],
+        "slides": 52
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT06/djot/lect06c-set_4_tp_chapter_12_16_material.djot",
+        "sources": [
+          "biotech/LECT06/djot/lect06c-set_4_tp_chapter_12_16_material.djot",
+          "biotech/LECT06/djot/set4_opening.djot",
+          "biotech/LECT06/djot/set4_chapter_12.djot",
+          "biotech/LECT06/djot/set4_chapter_13.djot",
+          "biotech/LECT06/djot/set4_chapter_14.djot",
+          "biotech/LECT06/djot/set4_chapter_15.djot",
+          "biotech/LECT06/djot/set4_chapter_16.djot",
+          "biotech/LECT06/djot/set4_summary.djot"
+        ],
+        "slides": 281
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT06/djot/lect06d-business_plan.djot",
+        "sources": [
+          "biotech/LECT06/djot/lect06d-business_plan.djot",
+          "biotech/LECT06/djot/business_opening.djot",
+          "biotech/LECT06/djot/business_summary_writing.djot",
+          "biotech/LECT06/djot/business_market.djot",
+          "biotech/LECT06/djot/business_milestones.djot",
+          "biotech/LECT06/djot/business_document_design.djot",
+          "biotech/LECT06/djot/business_closing.djot"
+        ],
+        "slides": 57
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT07/djot/lect07a-2026_biotech_announcements.djot",
+        "sources": [
+          "biotech/LECT07/djot/lect07a-2026_biotech_announcements.djot"
+        ],
+        "slides": 36
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT07/djot/lect07b-individual_project.djot",
+        "sources": [
+          "biotech/LECT07/djot/lect07b-individual_project.djot",
+          "biotech/LECT07/djot/lect07b1-three_ideas.djot",
+          "biotech/LECT07/djot/lect07b2-one_great_idea.djot",
+          "biotech/LECT07/djot/lect07b3-shark_tank.djot",
+          "biotech/LECT07/djot/lect07b4-executive_summary.djot"
+        ],
+        "slides": 39
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT10/djot/lect10a-2026_biotech_announcements.djot",
+        "sources": [
+          "biotech/LECT10/djot/lect10a-2026_biotech_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "biotech/evergreen/course_information.djot",
+          "evergreen/ways_to_contact.djot",
+          "biotech/evergreen/zoom_guidance.djot",
+          "evergreen/spring_registration.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 47
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT10/djot/lect10b-2026_group_project.djot",
+        "sources": [
+          "biotech/LECT10/djot/lect10b-2026_group_project.djot",
+          "biotech/LECT10/djot/group_project_opening.djot",
+          "biotech/LECT10/djot/group_project_collaboration.djot",
+          "biotech/LECT10/djot/group_vision_report_link.djot",
+          "biotech/LECT10/djot/group_project_presentation_preview.djot",
+          "biotech/LECT10/djot/group_project_presentation.djot",
+          "biotech/LECT10/djot/group_project_details.djot",
+          "biotech/LECT10/djot/group_project_closing.djot"
+        ],
+        "slides": 42
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT10/djot/lect10c-set_5_medicinal_biotechnology.djot",
+        "sources": [
+          "biotech/LECT10/djot/lect10c-set_5_medicinal_biotechnology.djot",
+          "biotech/LECT10/djot/set5_opening.djot",
+          "biotech/LECT10/djot/set5_gene_therapy.djot",
+          "biotech/LECT10/djot/set5_gene_therapy_01_04.djot",
+          "biotech/LECT10/djot/set5_gene_therapy_05_08.djot",
+          "biotech/LECT10/djot/set5_gene_therapy_09_12.djot",
+          "biotech/LECT10/djot/set5_genome_editing.djot",
+          "biotech/LECT10/djot/set5_stem_cells.djot",
+          "biotech/LECT10/djot/set5_cancer.djot",
+          "biotech/LECT10/djot/set5_summary.djot"
+        ],
+        "slides": 244
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT11/djot/lect11a-2026_biotech_announcements.djot",
+        "sources": [
+          "biotech/LECT11/djot/lect11a-2026_biotech_announcements.djot",
+          "evergreen/youtube_channel.djot",
+          "biotech/evergreen/course_information.djot",
+          "evergreen/ways_to_contact.djot",
+          "biotech/evergreen/zoom_guidance.djot",
+          "evergreen/spring_registration.djot",
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 49
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT11/djot/lect11b-2026_group_project.djot",
+        "sources": [
+          "biotech/LECT11/djot/lect11b-2026_group_project.djot",
+          "biotech/LECT11/djot/group_project_opening.djot",
+          "biotech/LECT11/djot/group_project_collaboration.djot",
+          "biotech/LECT11/djot/group_project_tonight.djot",
+          "biotech/LECT11/djot/group_project_presentation.djot",
+          "biotech/LECT11/djot/group_project_details.djot",
+          "biotech/LECT11/djot/group_project_closing.djot"
+        ],
+        "slides": 45
+      },
+      {
+        "course": "biotech",
+        "deck": "biotech/LECT11/djot/lect11c-set_6_regulation_of_biotechnology.djot",
+        "sources": [
+          "biotech/LECT11/djot/lect11c-set_6_regulation_of_biotechnology.djot",
+          "biotech/LECT11/djot/set6_opening.djot",
+          "biotech/LECT11/djot/set6_part1.djot",
+          "biotech/LECT11/djot/set6_part1_opening.djot",
+          "biotech/LECT11/djot/set6_part1_01_04.djot",
+          "biotech/LECT11/djot/set6_part1_05_07.djot",
+          "biotech/LECT11/djot/set6_part2.djot",
+          "biotech/LECT11/djot/set6_part2_opening.djot",
+          "biotech/LECT11/djot/set6_part2_08_11.djot",
+          "biotech/LECT11/djot/set6_part2_12_14.djot",
+          "biotech/LECT11/djot/set6_part3.djot",
+          "biotech/LECT11/djot/set6_part3_opening.djot",
+          "biotech/LECT11/djot/set6_part3_15_18.djot",
+          "biotech/LECT11/djot/set6_part3_19_21.djot",
+          "biotech/LECT11/djot/set6_part3_22_25.djot",
+          "biotech/LECT11/djot/set6_part4.djot",
+          "biotech/LECT11/djot/set6_part4_opening.djot",
+          "biotech/LECT11/djot/set6_part4_26_29.djot",
+          "biotech/LECT11/djot/set6_part4_30_32.djot",
+          "biotech/LECT11/djot/set6_part4_33_35.djot",
+          "biotech/LECT11/djot/set6_part4_36_38.djot",
+          "biotech/LECT11/djot/set6_summary.djot"
+        ],
+        "slides": 274
+      },
+      {
+        "course": "biostats",
+        "deck": "biostats/LECT08/djot/lect08a-2026_biostats_announcements.djot",
+        "sources": [
+          "biostats/LECT08/djot/lect08a-2026_biostats_announcements.djot"
+        ],
+        "slides": 32
+      },
+      {
+        "course": "evergreen",
+        "deck": "evergreen/instructor_contact.djot",
+        "sources": [
+          "evergreen/instructor_contact.djot",
+          "evergreen/ways_to_contact.djot"
+        ],
+        "slides": 4
+      },
+      {
+        "course": "evergreen",
+        "deck": "evergreen/natural_science_club.djot",
+        "sources": [
+          "evergreen/natural_science_club.djot"
+        ],
+        "slides": 2
+      },
+      {
+        "course": "evergreen",
+        "deck": "evergreen/spring_registration.djot",
+        "sources": [
+          "evergreen/spring_registration.djot"
+        ],
+        "slides": 7
+      },
+      {
+        "course": "evergreen",
+        "deck": "evergreen/youtube_channel.djot",
+        "sources": [
+          "evergreen/youtube_channel.djot"
+        ],
+        "slides": 2
+      }
+    ],
+    "deck_count": 110,
+    "baseline_placement_count": 2895,
+    "placement_count": 2849,
+    "asset_count": 1704,
+    "errors": [],
+    "grouped_source_sections": {
+      "genetics/LECT13/djot/lect13d-meiosis_translocation.djot|genetics/LECT13/djot/lect13d_meiosis_translocation_part_01.djot": {
+        "baseline_occurrences": 93,
+        "current_direct_occurrences": 47,
+        "semantic_receipt": "_temp/chromosome_migration/lect0813/lect13d_grouping_reconciliation.json"
+      }
+    },
+    "by_course": {
+      "genetics": {
+        "placements": 1718,
+        "assets": 1228
+      },
+      "biotech": {
+        "placements": 1110,
+        "assets": 463
+      },
+      "biostats": {
+        "placements": 15,
+        "assets": 15
+      },
+      "evergreen": {
+        "placements": 6,
+        "assets": 6
+      }
+    }
+  },
+  "native_acceptance_snapshot": {
+    "status": "COMPLETE: native and independent integration acceptance pass",
+    "m4_accepted_masters": 22,
+    "m4_changed_pages": 177,
+    "authority": "_temp/chromosome_migration/native_m4/combined_acceptance.json",
+    "scope": "Only actually reviewed changed pages at receipt-bound source/output hashes; deck receipt on a row does not imply every placement was visually reviewed.",
+    "lect12_current_authorities": [
+      "_temp/chromosome_migration/native_repaired/verification.json",
+      "_temp/chromosome_migration/native_de/verification.json"
+    ],
+    "integration_receipt": "_temp/chromosome_migration/reviews/final_integration/REPORT.md",
+    "open_gates": []
+  },
+  "production_lect06_final35": {
+    "receipt": "_temp/chromosome_migration/lect06/production_all35.json",
+    "native_receipt": "_temp/chromosome_migration/lect06/native_combined36.json",
+    "science": "PASS",
+    "quality": "PASS",
+    "production_assets": 35,
+    "native_B_C": "pending",
+    "native_D_E": "accepted"
+  }
+}

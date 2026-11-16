@@ -1,0 +1,2378 @@
+{
+  "ordered_before_meiosis": {
+    "source": "genetics/LECT09/djot/assets/lect09_tetrad_concepts/ordered_before_meiosis.drawn.svg",
+    "sha256": "45ba47fd2790a20534a6a8c0b87b632fb19a840b0fb4be5261c3eff7e2243b34",
+    "viewBox": "0 0 1200 500",
+    "labels": {
+      "First-Division Segregation": 1,
+      "Second-Division Segregation": 1,
+      "Homologous centromeres": 1,
+      "of parental chromosomes": 1,
+      "A": 4,
+      "a": 4,
+      "No crossover": 1,
+      "between gene and centromere occurs": 2,
+      "Meiosis I": 2,
+      "One exchange between": 1,
+      "two nonsister chromatids": 1,
+      "Single crossover": 1
+    },
+    "ids": [
+      "figure-title",
+      "figure-description",
+      "provenance",
+      "arrow",
+      "back-arrow",
+      "ascus-wall",
+      "fds-green-homolog",
+      "fds-purple-homolog",
+      "sds-paired-homologs-one-crossover"
+    ],
+    "data": {
+      "figure-title": {},
+      "figure-description": {},
+      "provenance": {},
+      "arrow": {},
+      "back-arrow": {},
+      "ascus-wall": {},
+      "fds-green-homolog": {
+        "data-alleles": "AA"
+      },
+      "fds-purple-homolog": {
+        "data-alleles": "aa"
+      },
+      "sds-paired-homologs-one-crossover": {}
+    },
+    "text_nodes": [
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">First-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Second-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"84\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Homologous centromeres</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"111\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">of parental chromosomes</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"212\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"258\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"342\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"388\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"397\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">No crossover</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"424\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">between gene and centromere occurs</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"319\" y=\"467\" font-size=\"23\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Meiosis I</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"812\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"858\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"942\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"988\" y=\"348\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"91\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">One exchange between</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"118\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">two nonsister chromatids</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"397\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Single crossover</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"424\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">between gene and centromere occurs</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"919\" y=\"467\" font-size=\"23\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Meiosis I</text>\n  "
+    ],
+    "arrows": [
+      {
+        "d": "M300 444 L300 479",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M900 444 L900 479",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      }
+    ],
+    "groups": [
+      {
+        "id": "fds-green-homolog",
+        "bodies": [
+          {
+            "id": "fds-green-homolog-chromatid-1",
+            "pieces": [
+              {
+                "path": "M209 140 C205 160 235 171 235 186 C235 204 218 215 212 234",
+                "color": "#347A40"
+              },
+              {
+                "path": "M212 234 C207 286 217 299 212 316",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 209.0,140.0 C 205.0,160.0 235.0,171.0 235.0,186.0 C 235.0,204.0 218.0,215.0 212.0,234.0 C 207.0,286.0 217.0,299.0 212.0,316.0",
+            "start": [
+              209.0,
+              140.0
+            ],
+            "end": [
+              212.0,
+              316.0
+            ]
+          },
+          {
+            "id": "fds-green-homolog-chromatid-2",
+            "pieces": [
+              {
+                "path": "M255 140 C251 160 235 171 235 186 C235 204 264 215 258 234",
+                "color": "#347A40"
+              },
+              {
+                "path": "M258 234 C253 286 263 299 258 316",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 255.0,140.0 C 251.0,160.0 235.0,171.0 235.0,186.0 C 235.0,204.0 264.0,215.0 258.0,234.0 C 253.0,286.0 263.0,299.0 258.0,316.0",
+            "start": [
+              255.0,
+              140.0
+            ],
+            "end": [
+              258.0,
+              316.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-green-homolog-marker-1",
+            "center": [
+              235.0,
+              186.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-purple-homolog",
+        "bodies": [
+          {
+            "id": "fds-purple-homolog-chromatid-1",
+            "pieces": [
+              {
+                "path": "M339 140 C335 160 365 171 365 186 C365 204 348 215 342 234",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M342 234 C337 286 347 299 342 316",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 339.0,140.0 C 335.0,160.0 365.0,171.0 365.0,186.0 C 365.0,204.0 348.0,215.0 342.0,234.0 C 337.0,286.0 347.0,299.0 342.0,316.0",
+            "start": [
+              339.0,
+              140.0
+            ],
+            "end": [
+              342.0,
+              316.0
+            ]
+          },
+          {
+            "id": "fds-purple-homolog-chromatid-2",
+            "pieces": [
+              {
+                "path": "M385 140 C381 160 365 171 365 186 C365 204 394 215 388 234",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M388 234 C383 286 393 299 388 316",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 385.0,140.0 C 381.0,160.0 365.0,171.0 365.0,186.0 C 365.0,204.0 394.0,215.0 388.0,234.0 C 383.0,286.0 393.0,299.0 388.0,316.0",
+            "start": [
+              385.0,
+              140.0
+            ],
+            "end": [
+              388.0,
+              316.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-purple-homolog-marker-1",
+            "center": [
+              365.0,
+              186.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-paired-homologs-one-crossover",
+        "bodies": [
+          {
+            "id": "sds-paired-homologs-one-crossover-chromatid-1",
+            "pieces": [
+              {
+                "path": "M809 140 C805 158 835 171 835 186 C835 207 817 222 812 240 C808 266 816 292 812 316",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 809.0,140.0 C 805.0,158.0 835.0,171.0 835.0,186.0 C 835.0,207.0 817.0,222.0 812.0,240.0 C 808.0,266.0 816.0,292.0 812.0,316.0",
+            "start": [
+              809.0,
+              140.0
+            ],
+            "end": [
+              812.0,
+              316.0
+            ]
+          },
+          {
+            "id": "sds-paired-homologs-one-crossover-chromatid-2",
+            "pieces": [
+              {
+                "path": "M985 140 C981 158 965 171 965 186 C965 207 993 222 988 240 C984 266 992 292 988 316",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 985.0,140.0 C 981.0,158.0 965.0,171.0 965.0,186.0 C 965.0,207.0 993.0,222.0 988.0,240.0 C 984.0,266.0 992.0,292.0 988.0,316.0",
+            "start": [
+              985.0,
+              140.0
+            ],
+            "end": [
+              988.0,
+              316.0
+            ]
+          },
+          {
+            "id": "sds-paired-homologs-one-crossover-chromatid-3",
+            "pieces": [
+              {
+                "path": "M855 140 C852 162 835 171 835 186 C835 210 852 220 858 240 C866 252 883 264 900 270",
+                "color": "#347A40"
+              },
+              {
+                "path": "M900 270 C917 277 938 289 942 316",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 855.0,140.0 C 852.0,162.0 835.0,171.0 835.0,186.0 C 835.0,210.0 852.0,220.0 858.0,240.0 C 866.0,252.0 883.0,264.0 900.0,270.0 C 917.0,277.0 938.0,289.0 942.0,316.0",
+            "start": [
+              855.0,
+              140.0
+            ],
+            "end": [
+              942.0,
+              316.0
+            ]
+          },
+          {
+            "id": "sds-paired-homologs-one-crossover-chromatid-4",
+            "pieces": [
+              {
+                "path": "M945 140 C948 162 965 171 965 186 C965 210 948 220 942 240 C934 252 917 264 900 270",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M900 270 C883 277 862 289 858 316",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 945.0,140.0 C 948.0,162.0 965.0,171.0 965.0,186.0 C 965.0,210.0 948.0,220.0 942.0,240.0 C 934.0,252.0 917.0,264.0 900.0,270.0 C 883.0,277.0 862.0,289.0 858.0,316.0",
+            "start": [
+              945.0,
+              140.0
+            ],
+            "end": [
+              858.0,
+              316.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-paired-homologs-one-crossover-marker-1",
+            "center": [
+              835.0,
+              186.0
+            ]
+          },
+          {
+            "id": "sds-paired-homologs-one-crossover-marker-2",
+            "center": [
+              965.0,
+              186.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ordered_meiosis_ii": {
+    "source": "genetics/LECT09/djot/assets/lect09_tetrad_concepts/ordered_meiosis_ii.drawn.svg",
+    "sha256": "f260f49de9293425fd750b9ea827970bc4bb6626e34c4ee8ab846876e6a84fd4",
+    "viewBox": "0 0 1200 750",
+    "labels": {
+      "First-Division Segregation": 1,
+      "Second-Division Segregation": 1,
+      "Homologous centromeres separate": 2,
+      "A": 8,
+      "a": 8,
+      "A and a separated": 3,
+      "Meiosis II": 2,
+      "Centromeres split and separate": 2,
+      "Mitosis": 2,
+      "A and a not yet separated": 1
+    },
+    "ids": [
+      "figure-title",
+      "figure-description",
+      "provenance",
+      "arrow",
+      "back-arrow",
+      "ascus-wall",
+      "fds-MI-green",
+      "fds-MI-purple",
+      "fds-MII-product-1",
+      "fds-MII-product-2",
+      "fds-MII-product-3",
+      "fds-MII-product-4",
+      "sds-MI-green",
+      "sds-MI-purple",
+      "sds-MII-product-1",
+      "sds-MII-product-2",
+      "sds-MII-product-3",
+      "sds-MII-product-4"
+    ],
+    "data": {
+      "figure-title": {},
+      "figure-description": {},
+      "provenance": {},
+      "arrow": {},
+      "back-arrow": {},
+      "ascus-wall": {},
+      "fds-MI-green": {
+        "data-alleles": "AA"
+      },
+      "fds-MI-purple": {
+        "data-alleles": "aa"
+      },
+      "fds-MII-product-1": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "fds-MII-product-2": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "fds-MII-product-3": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      },
+      "fds-MII-product-4": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      },
+      "sds-MI-green": {
+        "data-alleles": "Aa"
+      },
+      "sds-MI-purple": {
+        "data-alleles": "Aa"
+      },
+      "sds-MII-product-1": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "sds-MII-product-2": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "green"
+      },
+      "sds-MII-product-3": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "purple"
+      },
+      "sds-MII-product-4": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      }
+    },
+    "text_nodes": [
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">First-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Second-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"83\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Homologous centromeres separate</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"182\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"228\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"372\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"418\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"332\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">A and a separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"321\" y=\"382\" font-size=\"24\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Meiosis II</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"433\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Centromeres split and separate</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"140\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"250\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"360\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"470\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"321\" y=\"713\" font-size=\"24\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Mitosis</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"83\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Homologous centromeres separate</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"782\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"828\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"972\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1018\" y=\"292\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"332\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">A and a not yet separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"921\" y=\"382\" font-size=\"24\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Meiosis II</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"433\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Centromeres split and separate</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"740\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"850\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"960\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1070\" y=\"639\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"795\" y=\"674\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">A and a separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1015\" y=\"674\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">A and a separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"921\" y=\"713\" font-size=\"24\" text-anchor=\"start\" fill=\"#213547\" font-weight=\"normal\">Mitosis</text>\n  "
+    ],
+    "arrows": [
+      {
+        "d": "M226 151 L374 151",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M300 351 L300 397",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M157 500 L233 500",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M377 500 L453 500",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M300 684 L300 727",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M826 151 L974 151",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M900 351 L900 397",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M757 500 L833 500",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M977 500 L1053 500",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M900 684 L900 727",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      }
+    ],
+    "groups": [
+      {
+        "id": "fds-MI-green",
+        "bodies": [
+          {
+            "id": "fds-MI-green-chromatid-1",
+            "pieces": [
+              {
+                "path": "M179 116 C175 136 205 136 205 151 C205 169 188 180 182 199",
+                "color": "#347A40"
+              },
+              {
+                "path": "M182 199 C177 230 187 243 182 260",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 179.0,116.0 C 175.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 188.0,180.0 182.0,199.0 C 177.0,230.0 187.0,243.0 182.0,260.0",
+            "start": [
+              179.0,
+              116.0
+            ],
+            "end": [
+              182.0,
+              260.0
+            ]
+          },
+          {
+            "id": "fds-MI-green-chromatid-2",
+            "pieces": [
+              {
+                "path": "M225 116 C221 136 205 136 205 151 C205 169 234 180 228 199",
+                "color": "#347A40"
+              },
+              {
+                "path": "M228 199 C223 230 233 243 228 260",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 225.0,116.0 C 221.0,136.0 205.0,136.0 205.0,151.0 C 205.0,169.0 234.0,180.0 228.0,199.0 C 223.0,230.0 233.0,243.0 228.0,260.0",
+            "start": [
+              225.0,
+              116.0
+            ],
+            "end": [
+              228.0,
+              260.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MI-green-marker-1",
+            "center": [
+              205.0,
+              151.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-MI-purple",
+        "bodies": [
+          {
+            "id": "fds-MI-purple-chromatid-1",
+            "pieces": [
+              {
+                "path": "M369 116 C365 136 395 136 395 151 C395 169 378 180 372 199",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M372 199 C367 230 377 243 372 260",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 369.0,116.0 C 365.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 378.0,180.0 372.0,199.0 C 367.0,230.0 377.0,243.0 372.0,260.0",
+            "start": [
+              369.0,
+              116.0
+            ],
+            "end": [
+              372.0,
+              260.0
+            ]
+          },
+          {
+            "id": "fds-MI-purple-chromatid-2",
+            "pieces": [
+              {
+                "path": "M415 116 C411 136 395 136 395 151 C395 169 424 180 418 199",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M418 199 C413 230 423 243 418 260",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 415.0,116.0 C 411.0,136.0 395.0,136.0 395.0,151.0 C 395.0,169.0 424.0,180.0 418.0,199.0 C 413.0,230.0 423.0,243.0 418.0,260.0",
+            "start": [
+              415.0,
+              116.0
+            ],
+            "end": [
+              418.0,
+              260.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MI-purple-marker-1",
+            "center": [
+              395.0,
+              151.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-MII-product-1",
+        "bodies": [
+          {
+            "id": "fds-MII-product-1-chromatid-1",
+            "pieces": [
+              {
+                "path": "M137 466 C132 488 145 482 140 500 C137 515 144 528 140 542",
+                "color": "#347A40"
+              },
+              {
+                "path": "M140 542 C136 584 144 596 140 608",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 137.0,466.0 C 132.0,488.0 145.0,482.0 140.0,500.0 C 137.0,515.0 144.0,528.0 140.0,542.0 C 136.0,584.0 144.0,596.0 140.0,608.0",
+            "start": [
+              137.0,
+              466.0
+            ],
+            "end": [
+              140.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MII-product-1-marker-1",
+            "center": [
+              140.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-MII-product-2",
+        "bodies": [
+          {
+            "id": "fds-MII-product-2-chromatid-1",
+            "pieces": [
+              {
+                "path": "M247 466 C242 488 255 482 250 500 C247 515 254 528 250 542",
+                "color": "#347A40"
+              },
+              {
+                "path": "M250 542 C246 584 254 596 250 608",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 247.0,466.0 C 242.0,488.0 255.0,482.0 250.0,500.0 C 247.0,515.0 254.0,528.0 250.0,542.0 C 246.0,584.0 254.0,596.0 250.0,608.0",
+            "start": [
+              247.0,
+              466.0
+            ],
+            "end": [
+              250.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MII-product-2-marker-1",
+            "center": [
+              250.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-MII-product-3",
+        "bodies": [
+          {
+            "id": "fds-MII-product-3-chromatid-1",
+            "pieces": [
+              {
+                "path": "M357 466 C352 488 365 482 360 500 C357 515 364 528 360 542",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M360 542 C356 584 364 596 360 608",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 357.0,466.0 C 352.0,488.0 365.0,482.0 360.0,500.0 C 357.0,515.0 364.0,528.0 360.0,542.0 C 356.0,584.0 364.0,596.0 360.0,608.0",
+            "start": [
+              357.0,
+              466.0
+            ],
+            "end": [
+              360.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MII-product-3-marker-1",
+            "center": [
+              360.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-MII-product-4",
+        "bodies": [
+          {
+            "id": "fds-MII-product-4-chromatid-1",
+            "pieces": [
+              {
+                "path": "M467 466 C462 488 475 482 470 500 C467 515 474 528 470 542",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M470 542 C466 584 474 596 470 608",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 467.0,466.0 C 462.0,488.0 475.0,482.0 470.0,500.0 C 467.0,515.0 474.0,528.0 470.0,542.0 C 466.0,584.0 474.0,596.0 470.0,608.0",
+            "start": [
+              467.0,
+              466.0
+            ],
+            "end": [
+              470.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-MII-product-4-marker-1",
+            "center": [
+              470.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MI-green",
+        "bodies": [
+          {
+            "id": "sds-MI-green-chromatid-1",
+            "pieces": [
+              {
+                "path": "M779 116 C775 136 805 136 805 151 C805 169 788 180 782 199",
+                "color": "#347A40"
+              },
+              {
+                "path": "M782 199 C777 230 787 243 782 260",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 779.0,116.0 C 775.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 788.0,180.0 782.0,199.0 C 777.0,230.0 787.0,243.0 782.0,260.0",
+            "start": [
+              779.0,
+              116.0
+            ],
+            "end": [
+              782.0,
+              260.0
+            ]
+          },
+          {
+            "id": "sds-MI-green-chromatid-2",
+            "pieces": [
+              {
+                "path": "M825 116 C821 136 805 136 805 151 C805 169 834 180 828 199",
+                "color": "#347A40"
+              },
+              {
+                "path": "M828 199 C823 230 833 243 828 260",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 825.0,116.0 C 821.0,136.0 805.0,136.0 805.0,151.0 C 805.0,169.0 834.0,180.0 828.0,199.0 C 823.0,230.0 833.0,243.0 828.0,260.0",
+            "start": [
+              825.0,
+              116.0
+            ],
+            "end": [
+              828.0,
+              260.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MI-green-marker-1",
+            "center": [
+              805.0,
+              151.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MI-purple",
+        "bodies": [
+          {
+            "id": "sds-MI-purple-chromatid-1",
+            "pieces": [
+              {
+                "path": "M969 116 C965 136 995 136 995 151 C995 169 978 180 972 199",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M972 199 C967 230 977 243 972 260",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 969.0,116.0 C 965.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 978.0,180.0 972.0,199.0 C 967.0,230.0 977.0,243.0 972.0,260.0",
+            "start": [
+              969.0,
+              116.0
+            ],
+            "end": [
+              972.0,
+              260.0
+            ]
+          },
+          {
+            "id": "sds-MI-purple-chromatid-2",
+            "pieces": [
+              {
+                "path": "M1015 116 C1011 136 995 136 995 151 C995 169 1024 180 1018 199",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M1018 199 C1013 230 1023 243 1018 260",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 1015.0,116.0 C 1011.0,136.0 995.0,136.0 995.0,151.0 C 995.0,169.0 1024.0,180.0 1018.0,199.0 C 1013.0,230.0 1023.0,243.0 1018.0,260.0",
+            "start": [
+              1015.0,
+              116.0
+            ],
+            "end": [
+              1018.0,
+              260.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MI-purple-marker-1",
+            "center": [
+              995.0,
+              151.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MII-product-1",
+        "bodies": [
+          {
+            "id": "sds-MII-product-1-chromatid-1",
+            "pieces": [
+              {
+                "path": "M737 466 C732 488 745 482 740 500 C737 515 744 528 740 542",
+                "color": "#347A40"
+              },
+              {
+                "path": "M740 542 C736 584 744 596 740 608",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 737.0,466.0 C 732.0,488.0 745.0,482.0 740.0,500.0 C 737.0,515.0 744.0,528.0 740.0,542.0 C 736.0,584.0 744.0,596.0 740.0,608.0",
+            "start": [
+              737.0,
+              466.0
+            ],
+            "end": [
+              740.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MII-product-1-marker-1",
+            "center": [
+              740.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MII-product-2",
+        "bodies": [
+          {
+            "id": "sds-MII-product-2-chromatid-1",
+            "pieces": [
+              {
+                "path": "M847 466 C842 488 855 482 850 500 C847 515 854 528 850 542",
+                "color": "#347A40"
+              },
+              {
+                "path": "M850 542 C846 584 854 596 850 608",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 847.0,466.0 C 842.0,488.0 855.0,482.0 850.0,500.0 C 847.0,515.0 854.0,528.0 850.0,542.0 C 846.0,584.0 854.0,596.0 850.0,608.0",
+            "start": [
+              847.0,
+              466.0
+            ],
+            "end": [
+              850.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MII-product-2-marker-1",
+            "center": [
+              850.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MII-product-3",
+        "bodies": [
+          {
+            "id": "sds-MII-product-3-chromatid-1",
+            "pieces": [
+              {
+                "path": "M957 466 C952 488 965 482 960 500 C957 515 964 528 960 542",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M960 542 C956 584 964 596 960 608",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 957.0,466.0 C 952.0,488.0 965.0,482.0 960.0,500.0 C 957.0,515.0 964.0,528.0 960.0,542.0 C 956.0,584.0 964.0,596.0 960.0,608.0",
+            "start": [
+              957.0,
+              466.0
+            ],
+            "end": [
+              960.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MII-product-3-marker-1",
+            "center": [
+              960.0,
+              500.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-MII-product-4",
+        "bodies": [
+          {
+            "id": "sds-MII-product-4-chromatid-1",
+            "pieces": [
+              {
+                "path": "M1067 466 C1062 488 1075 482 1070 500 C1067 515 1074 528 1070 542",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M1070 542 C1066 584 1074 596 1070 608",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 1067.0,466.0 C 1062.0,488.0 1075.0,482.0 1070.0,500.0 C 1067.0,515.0 1074.0,528.0 1070.0,542.0 C 1066.0,584.0 1074.0,596.0 1070.0,608.0",
+            "start": [
+              1067.0,
+              466.0
+            ],
+            "end": [
+              1070.0,
+              608.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-MII-product-4-marker-1",
+            "center": [
+              1070.0,
+              500.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ordered_mitosis": {
+    "source": "genetics/LECT09/djot/assets/lect09_tetrad_concepts/ordered_mitosis.drawn.svg",
+    "sha256": "992c1245719a2b7b3a4cb31baab98c5939f9be9f7a51e277baae3afb6f168c46",
+    "viewBox": "0 0 1200 940",
+    "labels": {
+      "First-Division Segregation": 1,
+      "Second-Division Segregation": 1,
+      "Centromeres split and separate": 1,
+      "A": 36,
+      "a": 36,
+      "Mitosis": 2,
+      "or": 4,
+      "Possible spore patterns": 2,
+      "with first-division segregation": 1,
+      "A and a separated": 2,
+      "with second-division segregation": 1,
+      "Each branch gives an adjacent pair.": 1,
+      "Alternative product orders arise": 1,
+      "during meiosis; mitosis keeps the order.": 1
+    },
+    "ids": [
+      "figure-title",
+      "figure-description",
+      "provenance",
+      "arrow",
+      "back-arrow",
+      "ascus-wall",
+      "fds-meiotic-product-1",
+      "fds-meiotic-product-2",
+      "fds-meiotic-product-3",
+      "fds-meiotic-product-4",
+      "fds-octad-1",
+      "fds-octad-1-product-1-duplication",
+      "fds-octad-1-product-2-duplication",
+      "fds-octad-1-product-3-duplication",
+      "fds-octad-1-product-4-duplication",
+      "fds-octad-1-spore-1",
+      "fds-octad-1-spore-2",
+      "fds-octad-1-spore-3",
+      "fds-octad-1-spore-4",
+      "fds-octad-1-spore-5",
+      "fds-octad-1-spore-6",
+      "fds-octad-1-spore-7",
+      "fds-octad-1-spore-8",
+      "fds-octad-2",
+      "fds-octad-2-product-1-duplication",
+      "fds-octad-2-product-2-duplication",
+      "fds-octad-2-product-3-duplication",
+      "fds-octad-2-product-4-duplication",
+      "fds-octad-2-spore-1",
+      "fds-octad-2-spore-2",
+      "fds-octad-2-spore-3",
+      "fds-octad-2-spore-4",
+      "fds-octad-2-spore-5",
+      "fds-octad-2-spore-6",
+      "fds-octad-2-spore-7",
+      "fds-octad-2-spore-8",
+      "sds-meiotic-product-1",
+      "sds-meiotic-product-2",
+      "sds-meiotic-product-3",
+      "sds-meiotic-product-4",
+      "sds-octad-1",
+      "sds-octad-1-product-1-duplication",
+      "sds-octad-1-product-2-duplication",
+      "sds-octad-1-product-3-duplication",
+      "sds-octad-1-product-4-duplication",
+      "sds-octad-1-spore-1",
+      "sds-octad-1-spore-2",
+      "sds-octad-1-spore-3",
+      "sds-octad-1-spore-4",
+      "sds-octad-1-spore-5",
+      "sds-octad-1-spore-6",
+      "sds-octad-1-spore-7",
+      "sds-octad-1-spore-8",
+      "sds-octad-2",
+      "sds-octad-2-product-1-duplication",
+      "sds-octad-2-product-2-duplication",
+      "sds-octad-2-product-3-duplication",
+      "sds-octad-2-product-4-duplication",
+      "sds-octad-2-spore-1",
+      "sds-octad-2-spore-2",
+      "sds-octad-2-spore-3",
+      "sds-octad-2-spore-4",
+      "sds-octad-2-spore-5",
+      "sds-octad-2-spore-6",
+      "sds-octad-2-spore-7",
+      "sds-octad-2-spore-8",
+      "sds-octad-3",
+      "sds-octad-3-product-1-duplication",
+      "sds-octad-3-product-2-duplication",
+      "sds-octad-3-product-3-duplication",
+      "sds-octad-3-product-4-duplication",
+      "sds-octad-3-spore-1",
+      "sds-octad-3-spore-2",
+      "sds-octad-3-spore-3",
+      "sds-octad-3-spore-4",
+      "sds-octad-3-spore-5",
+      "sds-octad-3-spore-6",
+      "sds-octad-3-spore-7",
+      "sds-octad-3-spore-8",
+      "sds-octad-4",
+      "sds-octad-4-product-1-duplication",
+      "sds-octad-4-product-2-duplication",
+      "sds-octad-4-product-3-duplication",
+      "sds-octad-4-product-4-duplication",
+      "sds-octad-4-spore-1",
+      "sds-octad-4-spore-2",
+      "sds-octad-4-spore-3",
+      "sds-octad-4-spore-4",
+      "sds-octad-4-spore-5",
+      "sds-octad-4-spore-6",
+      "sds-octad-4-spore-7",
+      "sds-octad-4-spore-8"
+    ],
+    "data": {
+      "figure-title": {},
+      "figure-description": {},
+      "provenance": {},
+      "arrow": {},
+      "back-arrow": {},
+      "ascus-wall": {},
+      "fds-meiotic-product-1": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "fds-meiotic-product-2": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "fds-meiotic-product-3": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      },
+      "fds-meiotic-product-4": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      },
+      "fds-octad-1": {
+        "data-octad": "AAAAaaaa",
+        "data-products": "AAaa"
+      },
+      "fds-octad-1-product-1-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "fds-octad-1-product-2-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "fds-octad-1-product-3-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "fds-octad-1-product-4-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "fds-octad-1-spore-1": {
+        "data-allele": "A"
+      },
+      "fds-octad-1-spore-2": {
+        "data-allele": "A"
+      },
+      "fds-octad-1-spore-3": {
+        "data-allele": "A"
+      },
+      "fds-octad-1-spore-4": {
+        "data-allele": "A"
+      },
+      "fds-octad-1-spore-5": {
+        "data-allele": "a"
+      },
+      "fds-octad-1-spore-6": {
+        "data-allele": "a"
+      },
+      "fds-octad-1-spore-7": {
+        "data-allele": "a"
+      },
+      "fds-octad-1-spore-8": {
+        "data-allele": "a"
+      },
+      "fds-octad-2": {
+        "data-octad": "aaaaAAAA",
+        "data-products": "aaAA"
+      },
+      "fds-octad-2-product-1-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "fds-octad-2-product-2-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "fds-octad-2-product-3-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "fds-octad-2-product-4-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "fds-octad-2-spore-1": {
+        "data-allele": "a"
+      },
+      "fds-octad-2-spore-2": {
+        "data-allele": "a"
+      },
+      "fds-octad-2-spore-3": {
+        "data-allele": "a"
+      },
+      "fds-octad-2-spore-4": {
+        "data-allele": "a"
+      },
+      "fds-octad-2-spore-5": {
+        "data-allele": "A"
+      },
+      "fds-octad-2-spore-6": {
+        "data-allele": "A"
+      },
+      "fds-octad-2-spore-7": {
+        "data-allele": "A"
+      },
+      "fds-octad-2-spore-8": {
+        "data-allele": "A"
+      },
+      "sds-meiotic-product-1": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "green"
+      },
+      "sds-meiotic-product-2": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "green"
+      },
+      "sds-meiotic-product-3": {
+        "data-allele": "A",
+        "data-centromere-ancestry": "purple"
+      },
+      "sds-meiotic-product-4": {
+        "data-allele": "a",
+        "data-centromere-ancestry": "purple"
+      },
+      "sds-octad-1": {
+        "data-octad": "AAaaAAaa",
+        "data-products": "AaAa"
+      },
+      "sds-octad-1-product-1-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-1-product-2-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-1-product-3-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-1-product-4-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-1-spore-1": {
+        "data-allele": "A"
+      },
+      "sds-octad-1-spore-2": {
+        "data-allele": "A"
+      },
+      "sds-octad-1-spore-3": {
+        "data-allele": "a"
+      },
+      "sds-octad-1-spore-4": {
+        "data-allele": "a"
+      },
+      "sds-octad-1-spore-5": {
+        "data-allele": "A"
+      },
+      "sds-octad-1-spore-6": {
+        "data-allele": "A"
+      },
+      "sds-octad-1-spore-7": {
+        "data-allele": "a"
+      },
+      "sds-octad-1-spore-8": {
+        "data-allele": "a"
+      },
+      "sds-octad-2": {
+        "data-octad": "aaAAAAaa",
+        "data-products": "aAAa"
+      },
+      "sds-octad-2-product-1-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-2-product-2-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-2-product-3-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-2-product-4-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-2-spore-1": {
+        "data-allele": "a"
+      },
+      "sds-octad-2-spore-2": {
+        "data-allele": "a"
+      },
+      "sds-octad-2-spore-3": {
+        "data-allele": "A"
+      },
+      "sds-octad-2-spore-4": {
+        "data-allele": "A"
+      },
+      "sds-octad-2-spore-5": {
+        "data-allele": "A"
+      },
+      "sds-octad-2-spore-6": {
+        "data-allele": "A"
+      },
+      "sds-octad-2-spore-7": {
+        "data-allele": "a"
+      },
+      "sds-octad-2-spore-8": {
+        "data-allele": "a"
+      },
+      "sds-octad-3": {
+        "data-octad": "aaAAaaAA",
+        "data-products": "aAaA"
+      },
+      "sds-octad-3-product-1-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-3-product-2-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-3-product-3-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-3-product-4-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-3-spore-1": {
+        "data-allele": "a"
+      },
+      "sds-octad-3-spore-2": {
+        "data-allele": "a"
+      },
+      "sds-octad-3-spore-3": {
+        "data-allele": "A"
+      },
+      "sds-octad-3-spore-4": {
+        "data-allele": "A"
+      },
+      "sds-octad-3-spore-5": {
+        "data-allele": "a"
+      },
+      "sds-octad-3-spore-6": {
+        "data-allele": "a"
+      },
+      "sds-octad-3-spore-7": {
+        "data-allele": "A"
+      },
+      "sds-octad-3-spore-8": {
+        "data-allele": "A"
+      },
+      "sds-octad-4": {
+        "data-octad": "AAaaaaAA",
+        "data-products": "AaaA"
+      },
+      "sds-octad-4-product-1-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-4-product-2-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-4-product-3-duplication": {
+        "data-parent": "a",
+        "data-daughters": "aa"
+      },
+      "sds-octad-4-product-4-duplication": {
+        "data-parent": "A",
+        "data-daughters": "AA"
+      },
+      "sds-octad-4-spore-1": {
+        "data-allele": "A"
+      },
+      "sds-octad-4-spore-2": {
+        "data-allele": "A"
+      },
+      "sds-octad-4-spore-3": {
+        "data-allele": "a"
+      },
+      "sds-octad-4-spore-4": {
+        "data-allele": "a"
+      },
+      "sds-octad-4-spore-5": {
+        "data-allele": "a"
+      },
+      "sds-octad-4-spore-6": {
+        "data-allele": "a"
+      },
+      "sds-octad-4-spore-7": {
+        "data-allele": "A"
+      },
+      "sds-octad-4-spore-8": {
+        "data-allele": "A"
+      }
+    },
+    "text_nodes": [
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">First-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"900\" y=\"40\" font-size=\"28\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Second-Division Segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"300\" y=\"81\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Centromeres split and separate</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"140\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"250\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"360\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"470\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"266\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Mitosis</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"117\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"163\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"227\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"273\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"337\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"383\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"447\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"493\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"403\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">or</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"140\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"250\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"360\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"470\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"117\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"163\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"227\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"273\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"337\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"383\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"447\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"493\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"642\" font-size=\"25\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Possible spore patterns</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"674\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">with first-division segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"795\" y=\"81\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">A and a separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1015\" y=\"81\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">A and a separated</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"740\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"850\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"960\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1070\" y=\"228\" font-size=\"29\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"266\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Mitosis</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"717\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"763\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"827\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"873\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"937\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"983\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1047\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1093\" y=\"343\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"403\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">or</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"740\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"850\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"960\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1070\" y=\"415\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"717\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"763\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"827\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"873\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"937\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"983\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1047\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1093\" y=\"503\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"563\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">or</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"740\" y=\"575\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"850\" y=\"575\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"960\" y=\"575\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1070\" y=\"575\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"717\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"763\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"827\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"873\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"937\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"983\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1047\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1093\" y=\"663\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"723\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">or</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"740\" y=\"735\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"850\" y=\"735\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"960\" y=\"735\" font-size=\"28\" text-anchor=\"middle\" fill=\"#7D438D\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1070\" y=\"735\" font-size=\"28\" text-anchor=\"middle\" fill=\"#347A40\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"717\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"763\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"827\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"873\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"937\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"983\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">a</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1047\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"1093\" y=\"823\" font-size=\"29\" text-anchor=\"middle\" fill=\"white\" font-weight=\"bold\">A</text>\n      ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"887\" font-size=\"24\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"bold\">Possible spore patterns</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"905\" y=\"915\" font-size=\"23\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">with second-division segregation</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"754\" font-size=\"22\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Each branch gives an adjacent pair.</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"786\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">Alternative product orders arise</text>\n    ",
+      "<text xmlns=\"http://www.w3.org/2000/svg\" x=\"305\" y=\"814\" font-size=\"21\" text-anchor=\"middle\" fill=\"#213547\" font-weight=\"normal\">during meiosis; mitosis keeps the order.</text>\n  "
+    ],
+    "arrows": [
+      {
+        "d": "M157 126 L233 126",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M377 126 L453 126",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M140 276 L117 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M140 276 L163 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M250 276 L227 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M250 276 L273 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M360 276 L337 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M360 276 L383 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M470 276 L447 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M470 276 L493 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M140 436 L117 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M140 436 L163 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M250 436 L227 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M250 436 L273 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M360 436 L337 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M360 436 L383 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M470 436 L447 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M470 436 L493 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M80 653 H42 V334 H64 M42 494 H64",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M42 334 L64 334",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M757 126 L833 126",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M977 126 L1053 126",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-start": "url(#back-arrow)",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 276 L717 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 276 L763 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 276 L827 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 276 L873 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 276 L937 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 276 L983 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 276 L1047 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 276 L1093 297",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 436 L717 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 436 L763 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 436 L827 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 436 L873 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 436 L937 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 436 L983 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 436 L1047 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 436 L1093 457",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 596 L717 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 596 L763 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 596 L827 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 596 L873 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 596 L937 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 596 L983 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 596 L1047 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 596 L1093 617",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 756 L717 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M740 756 L763 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 756 L827 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M850 756 L873 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 756 L937 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M960 756 L983 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 756 L1047 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M1070 756 L1093 777",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M665 895 H635 V334 H664 M635 494 H664 M635 654 H664 M635 814 H664",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "1.8",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M635 334 L664 334",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M635 494 L664 494",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      },
+      {
+        "d": "M635 654 L664 654",
+        "fill": "none",
+        "stroke": "#526879",
+        "stroke-width": "2.3",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "marker-end": "url(#arrow)"
+      }
+    ],
+    "groups": [
+      {
+        "id": "fds-meiotic-product-1",
+        "bodies": [
+          {
+            "id": "fds-meiotic-product-1-chromatid-1",
+            "pieces": [
+              {
+                "path": "M137 103 C132 125 145 108 140 126 C137 141 144 154 140 168",
+                "color": "#347A40"
+              },
+              {
+                "path": "M140 168 C136 173 144 185 140 197",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 137.0,103.0 C 132.0,125.0 145.0,108.0 140.0,126.0 C 137.0,141.0 144.0,154.0 140.0,168.0 C 136.0,173.0 144.0,185.0 140.0,197.0",
+            "start": [
+              137.0,
+              103.0
+            ],
+            "end": [
+              140.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-meiotic-product-1-marker-1",
+            "center": [
+              140.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-meiotic-product-2",
+        "bodies": [
+          {
+            "id": "fds-meiotic-product-2-chromatid-1",
+            "pieces": [
+              {
+                "path": "M247 103 C242 125 255 108 250 126 C247 141 254 154 250 168",
+                "color": "#347A40"
+              },
+              {
+                "path": "M250 168 C246 173 254 185 250 197",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 247.0,103.0 C 242.0,125.0 255.0,108.0 250.0,126.0 C 247.0,141.0 254.0,154.0 250.0,168.0 C 246.0,173.0 254.0,185.0 250.0,197.0",
+            "start": [
+              247.0,
+              103.0
+            ],
+            "end": [
+              250.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-meiotic-product-2-marker-1",
+            "center": [
+              250.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-meiotic-product-3",
+        "bodies": [
+          {
+            "id": "fds-meiotic-product-3-chromatid-1",
+            "pieces": [
+              {
+                "path": "M357 103 C352 125 365 108 360 126 C357 141 364 154 360 168",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M360 168 C356 173 364 185 360 197",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 357.0,103.0 C 352.0,125.0 365.0,108.0 360.0,126.0 C 357.0,141.0 364.0,154.0 360.0,168.0 C 356.0,173.0 364.0,185.0 360.0,197.0",
+            "start": [
+              357.0,
+              103.0
+            ],
+            "end": [
+              360.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-meiotic-product-3-marker-1",
+            "center": [
+              360.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fds-meiotic-product-4",
+        "bodies": [
+          {
+            "id": "fds-meiotic-product-4-chromatid-1",
+            "pieces": [
+              {
+                "path": "M467 103 C462 125 475 108 470 126 C467 141 474 154 470 168",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M470 168 C466 173 474 185 470 197",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 467.0,103.0 C 462.0,125.0 475.0,108.0 470.0,126.0 C 467.0,141.0 474.0,154.0 470.0,168.0 C 466.0,173.0 474.0,185.0 470.0,197.0",
+            "start": [
+              467.0,
+              103.0
+            ],
+            "end": [
+              470.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "fds-meiotic-product-4-marker-1",
+            "center": [
+              470.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-meiotic-product-1",
+        "bodies": [
+          {
+            "id": "sds-meiotic-product-1-chromatid-1",
+            "pieces": [
+              {
+                "path": "M737 103 C732 125 745 108 740 126 C737 141 744 154 740 168",
+                "color": "#347A40"
+              },
+              {
+                "path": "M740 168 C736 173 744 185 740 197",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 737.0,103.0 C 732.0,125.0 745.0,108.0 740.0,126.0 C 737.0,141.0 744.0,154.0 740.0,168.0 C 736.0,173.0 744.0,185.0 740.0,197.0",
+            "start": [
+              737.0,
+              103.0
+            ],
+            "end": [
+              740.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-meiotic-product-1-marker-1",
+            "center": [
+              740.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-meiotic-product-2",
+        "bodies": [
+          {
+            "id": "sds-meiotic-product-2-chromatid-1",
+            "pieces": [
+              {
+                "path": "M847 103 C842 125 855 108 850 126 C847 141 854 154 850 168",
+                "color": "#347A40"
+              },
+              {
+                "path": "M850 168 C846 173 854 185 850 197",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 847.0,103.0 C 842.0,125.0 855.0,108.0 850.0,126.0 C 847.0,141.0 854.0,154.0 850.0,168.0 C 846.0,173.0 854.0,185.0 850.0,197.0",
+            "start": [
+              847.0,
+              103.0
+            ],
+            "end": [
+              850.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-meiotic-product-2-marker-1",
+            "center": [
+              850.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-meiotic-product-3",
+        "bodies": [
+          {
+            "id": "sds-meiotic-product-3-chromatid-1",
+            "pieces": [
+              {
+                "path": "M957 103 C952 125 965 108 960 126 C957 141 964 154 960 168",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M960 168 C956 173 964 185 960 197",
+                "color": "#347A40"
+              }
+            ],
+            "path": "M 957.0,103.0 C 952.0,125.0 965.0,108.0 960.0,126.0 C 957.0,141.0 964.0,154.0 960.0,168.0 C 956.0,173.0 964.0,185.0 960.0,197.0",
+            "start": [
+              957.0,
+              103.0
+            ],
+            "end": [
+              960.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-meiotic-product-3-marker-1",
+            "center": [
+              960.0,
+              126.0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sds-meiotic-product-4",
+        "bodies": [
+          {
+            "id": "sds-meiotic-product-4-chromatid-1",
+            "pieces": [
+              {
+                "path": "M1067 103 C1062 125 1075 108 1070 126 C1067 141 1074 154 1070 168",
+                "color": "#7D438D"
+              },
+              {
+                "path": "M1070 168 C1066 173 1074 185 1070 197",
+                "color": "#7D438D"
+              }
+            ],
+            "path": "M 1067.0,103.0 C 1062.0,125.0 1075.0,108.0 1070.0,126.0 C 1067.0,141.0 1074.0,154.0 1070.0,168.0 C 1066.0,173.0 1074.0,185.0 1070.0,197.0",
+            "start": [
+              1067.0,
+              103.0
+            ],
+            "end": [
+              1070.0,
+              197.0
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "id": "sds-meiotic-product-4-marker-1",
+            "center": [
+              1070.0,
+              126.0
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

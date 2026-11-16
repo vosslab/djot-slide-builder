@@ -1,0 +1,277 @@
+{
+  "svg": "<svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1124.3900260925292 603.8359985351562\" role=\"img\" aria-labelledby=\"title desc\">\n  <svg:title id=\"title\">Meiosis produces parental and reciprocal recombinant products</svg:title>\n  <svg:desc id=\"desc\">Eight cells show two contacts between the same nonsister chromatids, segregation of homologs and sisters, and four products: red, blue-red-blue, red-blue-red, and blue.</svg:desc>\n  <svg:defs>\n    <svg:radialGradient id=\"cell-fill\" cx=\".32\" cy=\".25\" r=\".8\">\n      <svg:stop offset=\"0\" stop-color=\"#fff0cb\" />\n      <svg:stop offset=\".7\" stop-color=\"#f7cd87\" />\n      <svg:stop offset=\"1\" stop-color=\"#e9b66e\" />\n    </svg:radialGradient>\n    <svg:linearGradient id=\"ancestry-R\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <svg:stop offset=\"0\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"1\" stop-color=\"#e93b38\" />\n    </svg:linearGradient>\n    <svg:linearGradient id=\"ancestry-B\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <svg:stop offset=\"0\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"1\" stop-color=\"#149dc8\" />\n    </svg:linearGradient>\n    <svg:linearGradient id=\"ancestry-BRB\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <svg:stop offset=\"0\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"0.24\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"0.24\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"0.76\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"0.76\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"1\" stop-color=\"#149dc8\" />\n    </svg:linearGradient>\n    <svg:linearGradient id=\"ancestry-RBR\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <svg:stop offset=\"0\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"0.24\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"0.24\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"0.76\" stop-color=\"#149dc8\" />\n      <svg:stop offset=\"0.76\" stop-color=\"#e93b38\" />\n      <svg:stop offset=\"1\" stop-color=\"#e93b38\" />\n    </svg:linearGradient>\n  </svg:defs>\n  <svg:g id=\"synapsis\" transform=\"translate(110 302)\">\n    <svg:ellipse id=\"synapsis-cell\" cx=\"0\" cy=\"0\" rx=\"104\" ry=\"91\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:path id=\"synapsis-guide-0\" d=\"M0 -74 V-51\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:path id=\"synapsis-guide-1\" d=\"M0 51 V74\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:g id=\"initial-red-parent\">\n      <path data-shared-part=\"0\" /></svg:g>\n    <svg:g id=\"initial-blue-parent\">\n      <path data-shared-part=\"1\" /></svg:g>\n    <svg:g id=\"initial-blue-exchanging\">\n      <path data-shared-part=\"2\" /></svg:g>\n    <svg:g id=\"initial-red-exchanging\">\n      <path data-shared-part=\"3\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"homologs\" transform=\"translate(440 302)\">\n    <svg:ellipse id=\"homologs-cell\" cx=\"0\" cy=\"0\" rx=\"104\" ry=\"91\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:path id=\"homologs-guide-0\" d=\"M0 -74 V-51\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:path id=\"homologs-guide-1\" d=\"M0 51 V74\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:g id=\"red-paired-unit\" transform=\"translate(0 -40)\">\n      <svg:g id=\"red-sister-1\">\n        <path data-shared-part=\"4\" /></svg:g>\n      <svg:g id=\"red-sister-2\">\n        <path data-shared-part=\"5\" /></svg:g>\n    </svg:g>\n    <svg:g id=\"blue-paired-unit\" transform=\"translate(0 40)\">\n      <svg:g id=\"blue-sister-1\">\n        <path data-shared-part=\"6\" /></svg:g>\n      <svg:g id=\"blue-sister-2\">\n        <path data-shared-part=\"7\" /></svg:g>\n    </svg:g>\n  </svg:g>\n  <svg:g id=\"upper-daughter\" transform=\"translate(730 160)\">\n    <svg:ellipse id=\"upper-daughter-cell\" cx=\"0\" cy=\"0\" rx=\"104\" ry=\"91\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:path id=\"upper-daughter-guide-0\" d=\"M0 -74 V-51\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:path id=\"upper-daughter-guide-1\" d=\"M0 51 V74\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:g id=\"upper-daughter-single-1\">\n      <path data-shared-part=\"8\" /></svg:g>\n    <svg:g id=\"upper-daughter-single-2\">\n      <path data-shared-part=\"9\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"lower-daughter\" transform=\"translate(730 445)\">\n    <svg:ellipse id=\"lower-daughter-cell\" cx=\"0\" cy=\"0\" rx=\"104\" ry=\"91\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:path id=\"lower-daughter-guide-0\" d=\"M0 -74 V-51\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:path id=\"lower-daughter-guide-1\" d=\"M0 51 V74\" fill=\"none\" stroke=\"#b58e5c\" stroke-width=\"1.8\" />\n    <svg:g id=\"lower-daughter-single-1\">\n      <path data-shared-part=\"10\" /></svg:g>\n    <svg:g id=\"lower-daughter-single-2\">\n      <path data-shared-part=\"11\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"product-1\" transform=\"translate(1020 70)\">\n    <svg:ellipse id=\"product-1-cell\" cx=\"0\" cy=\"0\" rx=\"76\" ry=\"64\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:g id=\"final-1\">\n      <path data-shared-part=\"12\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"product-2\" transform=\"translate(1020 222)\">\n    <svg:ellipse id=\"product-2-cell\" cx=\"0\" cy=\"0\" rx=\"76\" ry=\"64\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:g id=\"final-2\">\n      <path data-shared-part=\"13\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"product-3\" transform=\"translate(1020 382)\">\n    <svg:ellipse id=\"product-3-cell\" cx=\"0\" cy=\"0\" rx=\"76\" ry=\"64\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:g id=\"final-3\">\n      <path data-shared-part=\"14\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"product-4\" transform=\"translate(1020 534)\">\n    <svg:ellipse id=\"product-4-cell\" cx=\"0\" cy=\"0\" rx=\"76\" ry=\"64\" fill=\"url(#cell-fill)\" stroke=\"#c9a46d\" stroke-width=\"2\" />\n    <svg:g id=\"final-4\">\n      <path data-shared-part=\"15\" /></svg:g>\n  </svg:g>\n  <svg:g id=\"process-arrows\" fill=\"none\" stroke=\"#303638\" stroke-width=\"2.3\" stroke-linejoin=\"round\">\n    <svg:g id=\"process-arrow-1\">\n      <svg:path id=\"arrow-1-shaft\" d=\"M217 302 L331 302\" />\n      <svg:path id=\"arrow-1-head\" d=\"M331.0000 302.0000 L319.0000 297.5000 L322.0000 302.0000 L319.0000 306.5000 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-2\">\n      <svg:path id=\"arrow-2-shaft\" d=\"M537 257 L631 208\" />\n      <svg:path id=\"arrow-2-head\" d=\"M631.0000 208.0000 L618.2789 209.5565 L623.0192 212.1602 L622.4391 217.5373 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-3\">\n      <svg:path id=\"arrow-3-shaft\" d=\"M537 347 L631 397\" />\n      <svg:path id=\"arrow-3-head\" d=\"M631.0000 397.0000 L622.5188 387.3917 L623.0541 392.7735 L618.2923 395.3376 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-4\">\n      <svg:path id=\"arrow-4-shaft\" d=\"M830 129 L941 91\" />\n      <svg:path id=\"arrow-4-head\" d=\"M941.0000 91.0000 L928.1894 90.6292 L932.4851 93.9150 L931.1044 99.1441 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-5\">\n      <svg:path id=\"arrow-5-shaft\" d=\"M830 190 L941 205\" />\n      <svg:path id=\"arrow-5-head\" d=\"M941.0000 205.0000 L929.7107 198.9335 L932.0811 203.7947 L928.5055 207.8525 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-6\">\n      <svg:path id=\"arrow-6-shaft\" d=\"M830 414 L941 399\" />\n      <svg:path id=\"arrow-6-head\" d=\"M941.0000 399.0000 L928.5055 396.1475 L932.0811 400.2053 L929.7107 405.0665 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n    <svg:g id=\"process-arrow-7\">\n      <svg:path id=\"arrow-7-shaft\" d=\"M830 477 L941 515\" />\n      <svg:path id=\"arrow-7-head\" d=\"M941.0000 515.0000 L931.1044 506.8559 L932.4851 512.0850 L928.1894 515.3708 Z\" fill=\"#303638\" stroke=\"none\" />\n    </svg:g>\n  </svg:g>\n</svg:svg>",
+  "parts": [
+    {
+      "path": "M-73 -35 C-43 -35 -42 -12 0 -12 C42 -12 43 -35 73 -35",
+      "regions": [
+        [
+          "#e93b38",
+          0.5
+        ],
+        [
+          "#e93b38",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-73 35 C-43 35 -42 12 0 12 C42 12 43 35 73 35",
+      "regions": [
+        [
+          "#149dc8",
+          0.5
+        ],
+        [
+          "#149dc8",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-73 -21 C-43 -21 -42 12 0 12 C42 12 43 -21 73 -21",
+      "regions": [
+        [
+          "#149dc8",
+          0.5
+        ],
+        [
+          "#149dc8",
+          0.5
+        ]
+      ],
+      "center": 1
+    },
+    {
+      "path": "M-73 21 C-43 21 -42 -12 0 -12 C42 -12 43 21 73 21",
+      "regions": [
+        [
+          "#e93b38",
+          0.5
+        ],
+        [
+          "#e93b38",
+          0.5
+        ]
+      ],
+      "center": 1
+    },
+    {
+      "path": "M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14",
+      "regions": [
+        [
+          "#e93b38",
+          0.5
+        ],
+        [
+          "#e93b38",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14",
+      "regions": [
+        [
+          "#149dc8",
+          0.23804788526112136
+        ],
+        [
+          "#e93b38",
+          0.26195211473887864
+        ],
+        [
+          "#e93b38",
+          0.2619521147388786
+        ],
+        [
+          "#149dc8",
+          0.23804788526112142
+        ]
+      ],
+      "center": 2
+    },
+    {
+      "path": "M-62 -14 C-35 -14 -20 0 0 0 C20 0 35 -14 62 -14",
+      "regions": [
+        [
+          "#e93b38",
+          0.23804788526112136
+        ],
+        [
+          "#149dc8",
+          0.26195211473887864
+        ],
+        [
+          "#149dc8",
+          0.2619521147388786
+        ],
+        [
+          "#e93b38",
+          0.23804788526112142
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-62 14 C-35 14 -20 0 0 0 C20 0 35 14 62 14",
+      "regions": [
+        [
+          "#149dc8",
+          0.5
+        ],
+        [
+          "#149dc8",
+          0.5
+        ]
+      ],
+      "center": 1
+    },
+    {
+      "path": "M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30",
+      "regions": [
+        [
+          "#e93b38",
+          0.5
+        ],
+        [
+          "#e93b38",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30",
+      "regions": [
+        [
+          "#149dc8",
+          0.23876886646488926
+        ],
+        [
+          "#e93b38",
+          0.26123113353511074
+        ],
+        [
+          "#e93b38",
+          0.26123113353511074
+        ],
+        [
+          "#149dc8",
+          0.23876886646488926
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-62 -30 C-30 -30 -18 -22 0 -22 C18 -22 30 -30 62 -30",
+      "regions": [
+        [
+          "#e93b38",
+          0.23876886646488926
+        ],
+        [
+          "#149dc8",
+          0.26123113353511074
+        ],
+        [
+          "#149dc8",
+          0.26123113353511074
+        ],
+        [
+          "#e93b38",
+          0.23876886646488926
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-62 30 C-30 30 -18 22 0 22 C18 22 30 30 62 30",
+      "regions": [
+        [
+          "#149dc8",
+          0.5
+        ],
+        [
+          "#149dc8",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0",
+      "regions": [
+        [
+          "#e93b38",
+          0.5
+        ],
+        [
+          "#e93b38",
+          0.5
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0",
+      "regions": [
+        [
+          "#149dc8",
+          0.23987624240172928
+        ],
+        [
+          "#e93b38",
+          0.2601237575982707
+        ],
+        [
+          "#e93b38",
+          0.26012375759827067
+        ],
+        [
+          "#149dc8",
+          0.23987624240172933
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0",
+      "regions": [
+        [
+          "#e93b38",
+          0.23987624240172928
+        ],
+        [
+          "#149dc8",
+          0.2601237575982707
+        ],
+        [
+          "#149dc8",
+          0.26012375759827067
+        ],
+        [
+          "#e93b38",
+          0.23987624240172933
+        ]
+      ],
+      "center": null
+    },
+    {
+      "path": "M-52 0 C-24 0 -15 2 0 2 C15 2 24 0 52 0",
+      "regions": [
+        [
+          "#149dc8",
+          0.5
+        ],
+        [
+          "#149dc8",
+          0.5
+        ]
+      ],
+      "center": null
+    }
+  ]
+}
