@@ -98,3 +98,15 @@ deck does not depend on a sibling checkout or silently change its colors.
 Choose text and background colors for their actual role and check the rendered result.
 Perceptual separation does not by itself guarantee readable text contrast.
 See [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) for the instructor's presentation requirements.
+
+## Upcoming-course promotions
+
+Use these course identities for titles, course-summary entries, and selected teaching
+labels. Keep ordinary explanatory text dark and retain the red tentative-assignment warning.
+
+| Course | Accent |
+| --- | --- |
+| Biochemistry Lecture | `#6B638F` |
+| Biochemistry Lab | `#C9211E` |
+| Cellular and Molecular Biology | `#24578F` |
+| Biology and Ethics in Film | `#45405C` |

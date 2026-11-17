@@ -1,0 +1,243 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11C
+
+## Building a Tree by UPGMA
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Explain how aligned sequences provide information for building a gene tree.
+- Compare distance-based and character-based methods.
+- Build a UPGMA tree from a sequence distance matrix.
+- Calculate cluster distances, node heights, and branch lengths.
+
+=== layout: section
+
+# Constructing a Gene Tree from Sequences
+
+=== layout: one-panel
+
+# Alignment of Hemoglobin Sequences
+
+@body
+
+![Original hemoglobin sequence alignment across species](assets/lect11b_restored/image_020.webp)
+
+- `.`: exact match with the reference sequence
+- `-`: gap or missing amino acid
+- `A-Z`: amino acid difference
+
+=== layout: section
+
+# Gene Tree Methods
+
+=== layout: two-panels
+
+# *Distance-Based Methods*
+
+@left
+
+- Distance-based methods rely on genetic distance calculations between sequences.
+- Simple and efficient, ideal for large datasets with many species.
+- UPGMA and Neighbor-Joining are common examples.
+- Effective for providing a general view of phylogenetic relationships.
+
+@right
+
+![Slide image 21](assets/lect11b_restored/image_021.webp)
+
+=== layout: two-panels
+
+# *Understanding Distance Matrices*
+
+@left
+
+- Distance matrix\: A table showing genetic distances between pairs of sequences.
+- Essential in distance-based phylogenetic methods like UPGMA and Neighbor-Joining.
+- Provides a simplified, quantifiable view of genetic relationships.
+
+@right
+
+![Slide image 22](assets/lect11b_restored/image_022.webp)
+
+=== layout: two-panels
+
+# *UPGMA Distance Method*
+
+@left
+
+- UPGMA\: [*Unweighted Pair Group Method with Arithmetic Mean.*]{underline=true}
+- Constructs tree by grouping sequences based on minimum distance.
+- Assumes a molecular clock\: constant rate of evolution across all lineages.
+- Useful for simple, quick phylogenetic analysis with less complexity.
+- [https\://en.wikipedia.org/wiki/UPGMA](https://en.wikipedia.org/wiki/UPGMA)
+
+@right
+
+![Slide image 23](assets/lect11b_restored/image_023.webp)
+
+=== layout: two-panels
+
+# *Neighbor-Joining Distance Method*
+
+@left
+
+![Slide image 24](assets/lect11b_restored/image_024.webp)
+
+@right
+
+- Neighbor-Joining\: A bottom-up clustering method for tree construction.
+- Does not assume a constant rate of evolution, unlike UPGMA.
+- Iteratively groups closest pair of sequences, recalculates distances.
+- Preferred for its accuracy in more complex phylogenetic analyses.
+- Requires more math equations than UPGMA.
+
+=== layout: two-panels
+
+# *Character-Based Methods*
+
+@left
+
+- Analyze specific genetic characters or sequences.
+- Include methods like [Maximum Parsimony]{color=#007A00} and [Maximum Likelihood]{color=#007A00}.
+- Focus on evolutionary changes in genes or morphological features.
+- Provide detailed insights, suitable for various data complexities.
+
+@right
+
+- Character-based methods analyze specific genetic or morphological characters.
+- Distance-based methods calculate overall genetic distances between sequences.
+- Character-based (e.g., Maximum Parsimony, Maximum Likelihood) offer detailed insights.
+- Distance-based (e.g., UPGMA, Neighbor-Joining) are efficient for large datasets.
+- Choice depends on data complexity and desired level of detail in analysis.
+
+=== layout: one-panel
+
+# *The Parsimony Method*
+
+@body
+
+- Seeks the simplest explanation with the fewest evolutionary changes.
+- Ideal for datasets where evolutionary events are relatively infrequent.
+- Minimizes assumptions about evolutionary rates and patterns.
+- Balances between simplicity and explanatory power in tree construction.
+
+=== layout: one-panel
+
+# Parsimony Example
+
+@body
+
+![Original colored comparison of two trees and their substitution events](assets/lect11b_restored/image_025.webp)
+
+- Both trees can explain the sequences [AAG, AAA, GGA, AGA]{color=#007A00}.
+- Parsimony prefers fewer changes: [3 red substitutions rather than 4]{color=red}.
+
+=== layout: one-panel
+
+# *Maximum Likelihood in Phylogenetics*
+
+@body
+
+- Evaluates probability of observed data under different tree hypotheses.
+- Utilizes statistical models to estimate tree likelihood.
+- Suitable for complex datasets requiring detailed evolutionary models.
+- Computationally intensive, offering nuanced understanding of relationships.
+
+=== layout: two-panels
+
+# *Bayesian Inference in Phylogenetics*
+
+@left
+
+![Slide image 26](assets/lect11b_restored/image_026.webp)
+
+@right
+
+- Bayesian methods incorporate prior knowledge with observed data.
+- They estimate the posterior probability of trees using statistical models.
+- Highly flexible and can incorporate various types of evolutionary models.
+- Provides a probabilistic framework for tree estimation and hypothesis testing.
+
+=== layout: section
+
+# From Distances to a Tree
+
+=== layout: definitions
+
+# Distance Matrix
+
+@body
+
+- [*Sequence distance*]{underline=true}: a number summarizing differences between two sequences.
+- [*Distance matrix*]{underline=true}: a table of the pairwise distances among sequences.
+- [*Diagonal*]{underline=true}: entries comparing each sequence with itself. Values match on both sides.
+- [*Cluster*]{underline=true}: a group of sequences joined during tree construction.
+
+=== layout: one-panel
+
+# We'll Ignore the Top Half to Avoid Confusion
+
+@body
+
+- The two halves of a distance matrix repeat the same pairwise distances.
+- Use the lower half and skip the diagonal when finding the smallest value.
+- A small distance means similar sequences, using the chosen distance measure.
+
+=== layout: one-panel
+
+# Building a Tree by UPGMA
+
+@body
+
+- Find the smallest distance and join those sequences or clusters.
+- The new node height is half that distance, measured from the tips.
+- Each new branch length = new height - child node height. Tips have height zero.
+- For each new cluster distance, average all original pairs across the two groups.
+- Repeat until one tree remains. UPGMA assumes a constant rate of change across lineages.
+
+=== include: lect11c_rhino_steps.djot
+
+=== layout: section
+
+# Four Sequences: Work It Out
+
+=== layout: one-panel
+
+# Four Gene Sequences
+
+@body
+
+- a, b, c, and d label four gene sequences.
+- The matrix entries are illustrative distances in arbitrary units, not years.
+- A cluster label such as ac means the sequences a and c joined together.
+- For each step, predict the next join and node height before looking at the answer.
+
+=== include: lect11c_four_steps.djot
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- A sequence alignment lets us compare the same positions across sequences.
+- Different tree-building methods use different models and assumptions.
+- A symmetric distance matrix lists each pair twice; read one half.
+- UPGMA joins clusters using average distances and assumes a constant rate across lineages.
+
+=== layout: theend
+
+# THE END

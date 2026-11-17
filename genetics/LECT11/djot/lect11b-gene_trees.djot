@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 11B
 
-## Gene Trees
+## Interpreting Gene Trees
 
 ## Chapter 11
 
@@ -21,112 +21,296 @@ color-theme: genetics
 - Read ancestry and clades from a rooted gene tree.
 - Recognize rotations that preserve relationships.
 - Find pairwise distances along branches of a tree.
-- Build a tree from a sequence distance matrix.
+- Recognize unresolved relationships in a polytomy.
+
+=== layout: two-panels
+
+# *Anniversary of &#8220;On the Origin of Species&#8221;*
+
+@left
+
+- [*Published Nov. 24, 1859*]{color=red}
+- This notebook sketch shows Darwin&#8217;s realization that species share common ancestors and diversify over time
+- parallels modern gene trees, which trace genetic divergence
+
+@right
+
+![Slide image 2](assets/lect11b_restored/image_002.webp)
 
 === layout: section
 
-# Reading Gene Trees
+# Why do we want to study molecular evolution?
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- How do new diseases emerge in a populations?
+- Why do disease persist in all living organisms?
+- What causes the diseases?
+- Why do pest under control resurge in high frequency?
+- Of course, evolutionary history
+
+@right
+
+![Slide image 3](assets/lect11b_restored/image_003.webp)
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- Understanding evolution is crucial for grasping the complexities of biological diversity.
+- Evolution explains the mechanisms behind biodiversity and species adaptation.
+- It underpins genetic and phenotypic changes across diverse species.
+- Studying evolution is key to comprehending the intricate history of life on Earth.
+
+@right
+
+![Slide image 4](assets/lect11b_restored/image_004.webp)
+
+=== layout: section
+
+# Gene Trees
+
+=== layout: two-panels
+
+# *Unraveling Gene Trees*
+
+@left
+
+![Slide image 5](assets/lect11b_restored/image_005.webp)
+
+@right
+
+- Gene trees are visual representations that map genetic lineage and evolutionary relationships.
+- They differ from species trees by focusing on the evolutionary path of specific genes.
+- Essential tools in molecular genetics for tracing gene evolution across species.
+- Provide insights into how genetic variations contribute to evolutionary processes.
+
+=== layout: two-panels
+
+# Interpreting Gene Trees
+
+@left
+
+![Original annotated branches, tips, and nodes](assets/lect11b_restored/image_006.webp)
+
+@right
+
+- Branches connect sequences to inferred common ancestors.
+- Tips show the sequences being compared.
+- Branching order shows relationships; branch lengths represent time only when a time scale is given.
 
 === layout: one-panel
 
-# What Is a Gene Tree?
+# *Can You Interpret This!?!*
 
 @body
 
-- A gene tree is a hypothesis about the ancestry of gene sequences.
-- Tips are the sequences being compared. Branches connect them to inferred ancestors.
-- A gene tree may differ from the history of the species carrying those sequences.
+![Slide image 7](assets/lect11b_restored/image_007.webp)
 
-=== layout: definitions
+=== layout: one-panel
 
-# Parts of a Rooted Tree
+# Primate Gene Tree
 
 @body
 
-- [*Tip*]{underline=true}: a sequence included in the comparison.
-- [*Node*]{underline=true}: a branching point representing an inferred common ancestor.
-- [*Branch*]{underline=true}: a connection between nodes or between a node and a tip.
-- [*Root*]{underline=true}: the common ancestor of all sequences shown.
-- [*Clade*]{underline=true}: an ancestor and all its descendants shown on the tree.
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
 === layout: two-panels
 
-# Can You Read This Tree?
+# Which pair of species are the most closely related?
 
 @left
 
-![Rooted tree of four sequences](assets/lect11b_gene_tree_concepts/reading_tree.drawn.svg)
+- A. gorilla and human
+- B. gibbon and gorilla
+- C. bonobo and gorilla
+- D. bonobo and human
 
 @right
 
-- Which sequence shares a more recent common ancestor with w: x or y?
-- Is the group containing w and x a clade?
-- Follow the branches back to the nodes.
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
 === layout: two-panels
 
-# Read the Shared Nodes
+# Which pair of species are the most closely related?
 
 @left
 
-![Rooted tree of four sequences](assets/lect11b_gene_tree_concepts/reading_tree.drawn.svg)
+- A. Bornean orangutan and Sumatran orangutan
+- B. bonobo and chimpanzee
+- C. human and gorilla
+- D. gibbon and gorilla
 
 @right
 
-- w and x share a more recent common ancestor than w and y.
-- w and x form a clade: their shared node has only those two descendants.
-- The root connects both pairs of sequences.
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
-=== layout: image-comparison
+=== layout: two-panels
 
-# Same Tree or Different Tree?
+# How many millions of years separate the gorilla and bonobo?
 
-@top-left
+@left
 
-![First tree](assets/lect11b_gene_tree_concepts/reading_tree.drawn.svg)
+- A. 2 million
+- B. 5 million
+- C. 7 million
+- D. 15 million
+- E. 21 million
 
-@top-right
+@right
 
-![Second tree](assets/lect11b_gene_tree_concepts/rotation_tree.drawn.svg)
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
-@bottom-left
+=== layout: two-panels
 
-Compare the shared nodes, not the vertical order of the tips.
+# Which pair of species are the most closely related?
 
-@bottom-right
+@left
 
-Did the relationships change? Which sequences form clades?
+- A. gorilla and human (7)
+- B. gibbon and gorilla (21)
+- C. bonobo and gorilla (7)
+- [D. bonobo and human (5)]{color=red}
 
-=== layout: image-comparison
+@right
 
-# Rotating Branches
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
-@top-left
+=== layout: two-panels
 
-![First tree](assets/lect11b_gene_tree_concepts/reading_tree.drawn.svg)
+# Which pair of species are the most closely related?
 
-@top-right
+@left
 
-![Rotated tree](assets/lect11b_gene_tree_concepts/rotation_tree.drawn.svg)
+- A. Bornean orangutan and Sumatran orangutan (3)
+- [B. bonobo and chimpanzee (2)]{color=red}
+- C. human and gorilla (7)
+- D. gibbon and gorilla (21)
 
-@bottom-left
+@right
 
-Both trees contain the w-x clade and the y-z clade.
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
 
-@bottom-right
+=== layout: two-panels
 
-Rotating branches around a node changes the drawing, not ancestry.
+# How many millions of years separate the gorilla and bonobo?
 
-=== layout: definitions
+@left
 
-# Topology and Distance
+- A. 2 million
+- B. 5 million
+- [C. 7 million]{color=red}
+- D. 15 million
+- E. 21 million
+
+@right
+
+![Original primate tree with divergence-time scale](assets/lect11b_restored/primate_tree.webp)
+
+=== layout: one-panel
+
 
 @body
 
-- [*Topology*]{underline=true}: the branching relationships of a tree.
-- [*Branch length*]{underline=true}: on a scaled tree, the length represents the stated amount of change.
-- [*Pairwise distance*]{underline=true}: the sum of branch lengths on the path connecting two tips.
-- [*Unscaled tree*]{underline=true}: a tree whose drawn branch lengths need not encode distance.
+![Slide image 13](assets/lect11b_restored/image_013.webp)
+
+=== layout: section
+
+# Reading a Gene Tree
+
+=== layout: two-panels
+
+# Understanding Branch Points
+
+@left
+
+![Original annotated branch points and evolutionary paths](assets/lect11b_restored/image_014.webp)
+
+@right
+
+- [*Branches*]{color=#355269 underline=true} show evolutionary paths.
+- A [*branch point*]{color=#355269 underline=true} represents a common ancestor.
+- Follow the branches to identify each ancestor's descendants.
+
+@citation
+
+https://en.wikipedia.org/wiki/Phylogenetic_tree
+
+=== layout: two-panels
+
+# Tracing Common Ancestors
+
+@left
+
+- [Closeness depends on the most recent common ancestor.]{color=#55215B}
+- [Walk backward along branches to where the lines meet.]{color=#55215B}
+- [A and B share a more recent ancestor than B and C.]{color=#55215B}
+
+@right
+
+![Original hand-annotated most recent common ancestor diagram](assets/lect11b_restored/image_015.webp)
+
+@citation
+
+https://en.wikipedia.org/wiki/Most_recent_common_ancestor
+
+=== layout: one-panel
+
+# Different Forms, Same Gene Tree
+
+@body
+
+![Original Khan Academy comparison of three equivalent tree forms](assets/lect11b_restored/image_016.webp)
+
+- The same relationships among A, B, C, D, and E appear in all three drawings.
+- Branch orientation does not change ancestry.
+
+@citation
+
+https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees
+
+=== layout: one-panel
+
+# *Rotating Branches in Trees*
+
+@body
+
+![Slide image 17](assets/lect11b_restored/image_017.webp)
+
+=== layout: one-panel
+
+# Trees, Trees, and Trees, Oh My
+
+@body
+
+![Original comparison of equivalent rotations of the same four-species tree](assets/lect11b_restored/image_018.webp)
+
+- [Rotate around a branch point: the relationships stay the same.]{color=#8D281E}
+- [All four drawings show the same ancestry.]{color=#8D281E}
+
+=== layout: two-panels
+
+# Polytomy in Gene Trees
+
+@left
+
+![Original annotated polytomy diagram](assets/lect11b_restored/image_019.webp)
+
+@right
+
+- [*Polytomy*]{color=#784B04 underline=true}: a node with three or more branches.
+- It can show insufficient information to resolve the branching order.
+- Do not assume a resolved pair within that group.
+
+@citation
+
+https://en.wikipedia.org/wiki/Polytomy
 
 === layout: two-panels
 
@@ -134,13 +318,13 @@ Rotating branches around a node changes the drawing, not ancestry.
 
 @left
 
-![Scaled tree of three sequences](assets/lect11b_gene_tree_concepts/metric_tree.drawn.svg)
+![Original scaled four-sequence tree](assets/lect11b_restored/image_027.webp)
 
 @right
 
-- p, q, and r are gene sequences. The scale is in arbitrary distance units.
-- Horizontal branch lengths represent distance; vertical connectors only join branches.
-- What is the distance from p to q? From p to r?
+- Follow the branches between tips.
+- Numbers label branch lengths; add every branch along the path.
+- What are the distances a-c, a-d, and a-b?
 
 === layout: two-panels
 
@@ -148,82 +332,13 @@ Rotating branches around a node changes the drawing, not ancestry.
 
 @left
 
-![Scaled tree of three sequences](assets/lect11b_gene_tree_concepts/metric_tree.drawn.svg)
+![Original scaled four-sequence tree](assets/lect11b_restored/image_027.webp)
 
 @right
 
-- p to q: 2 + 2 = 4 distance units.
-- p to r: 2 + 3 + 5 = 10 distance units.
-- Trace the entire path between tips, even when it passes through the root.
-
-=== layout: section
-
-# From Distances to a Tree
-
-=== layout: definitions
-
-# Distance Matrix
-
-@body
-
-- [*Sequence distance*]{underline=true}: a number summarizing differences between two sequences.
-- [*Distance matrix*]{underline=true}: a table of the pairwise distances among sequences.
-- [*Diagonal*]{underline=true}: entries comparing each sequence with itself. Values match on both sides.
-- [*Cluster*]{underline=true}: a group of sequences joined during tree construction.
-
-=== layout: one-panel
-
-# We'll Ignore the Top Half to Avoid Confusion
-
-@body
-
-- The two halves of a distance matrix repeat the same pairwise distances.
-- Use the lower half and skip the diagonal when finding the smallest value.
-- A small distance means similar sequences, using the chosen distance measure.
-
-=== layout: one-panel
-
-# Building a Tree by UPGMA
-
-@body
-
-- Find the smallest distance and join those sequences or clusters.
-- The new node height is half that distance, measured from the tips.
-- Each new branch length = new height - child node height. Tips have height zero.
-- For each new cluster distance, average all original pairs across the two groups.
-- Repeat until one tree remains. UPGMA assumes a constant rate of change across lineages.
-
-=== layout: section
-
-# Four Sequences: Work It Out
-
-=== layout: one-panel
-
-# Four Gene Sequences
-
-@body
-
-- a, b, c, and d label four gene sequences.
-- The matrix entries are illustrative distances in arbitrary units, not years.
-- A cluster label such as ac means the sequences a and c joined together.
-- For each step, predict the next join and node height before looking at the answer.
-
-=== include: gene_tree_four_steps.djot
-
-=== layout: section
-
-# Choosing a Method
-
-=== layout: one-panel
-
-# Different Ways to Build Trees
-
-@body
-
-- UPGMA groups the closest clusters using average distances and assumes a constant rate.
-- Neighbor-joining uses distances without requiring the same constant-rate assumption.
-- Other approaches use sequence sites directly; different assumptions can lead to different trees.
-- A tree is a hypothesis based on data. The ancestors are inferred, not observed.
+- a to c: 3.2 + 3.2 = 6.4
+- a to d: 3.2 + 3.1 + 6.3 = 12.6
+- a to b: 3.2 + 3.1 + 2.4 + 8.7 = 17.4
 
 === layout: bookend
 
@@ -231,10 +346,10 @@ Rotating branches around a node changes the drawing, not ancestry.
 
 @body
 
-- Shared nodes tell you ancestry; rotations preserve those relationships.
-- A scaled tree gives a pairwise distance by adding branches along the path.
-- A symmetric matrix gives the same pair twice; use one half to find a minimum.
-- UPGMA joins clusters using average distances and a constant-rate assumption.
+- Shared nodes tell you ancestry and which sequences are most closely related.
+- Rotating branches preserves relationships.
+- A polytomy leaves some branching relationships unresolved.
+- On a scaled tree, add the branches along a path to find the pairwise distance.
 
 === layout: theend
 

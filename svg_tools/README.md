@@ -114,6 +114,12 @@ For a locus supplied in source drawing coordinates,
 known chromosome centerline. Associate the locus with its chromosome explicitly;
 choosing the nearest chromosome in a crossing can attach it to the wrong chromatid.
 
+`chromosome_surface.smooth_centerline(path)` supplies the same tangent-continuous centerline
+used automatically by chromosome bodies and `Surface.path`. Recipes that derive band lengths,
+centromeres, or gene positions from geometry use this final path for those calculations.
+Already tangent-continuous paths retain their exact geometry. Keep enough space around bends
+for the selected thickness; smoothing a join cannot repair an overly tight authored turn.
+
 The shared surface follows BPQ's paint order: base colors, irregular texture, translucent
 sheen, inset light/shadow, outline, and labels. Reference dimensions scale from a 30-unit
 chromatid height. Straight surfaces use SVG gradients; curved surfaces sample the same

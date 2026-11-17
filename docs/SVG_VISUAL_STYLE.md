@@ -124,9 +124,12 @@ geometry. Choose the surface treatment from the represented condensation state.
   cubic shoulders with an inflection for arms emerging from a centromere; retain authored
   loops and crossings where they communicate the biological process.
 - A curved chromatid follows its authored centerline with one configurable, constant thickness.
-  The recipe controls bends and crossing order; it must supply curves with enough radius for
-  the chosen width. Join adjacent curves smoothly, with bend radii larger than half the
-  chromatid thickness. Fusion arms meet at one shared centromere anchor.
+  The shared renderer supplies continuous tangent direction at joins (G1, or C1 under
+  arc-length parameterization), preserving authored join coordinates and already smooth paths.
+  Prefer gradual curvature changes where practical. The recipe controls bends and crossing
+  order and supplies enough room: bend radii exceed half the chromatid thickness. Genuine
+  reversals and closed paths with sharp seams need authored curves. Fusion arms meet at one
+  shared centromere anchor. Rectangular centromeres and terminal shapes keep their own edges.
 - Carry semantic colors, loci, source band fills and segment identity through rearrangements.
   Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
   Homolog or parental colors need not match a course accent hue. Optional decorative texture
@@ -138,6 +141,9 @@ geometry. Choose the surface treatment from the represented condensation state.
   their loci. Whole-chromosome numbers, arm names and genotype summaries stay outside.
   BPQ texture, ancestry colors, gene regions, heterochromatin and cytogenetic staining have
   different meanings; preserve those distinctions and each source's meaningful spacing.
+- C28 is the instructor-approved reference for independently curved chromatids, integrated
+  allele regions, restrained banding, and crossing depth. Preserve that geometry when changing
+  shared tools. Its white zigzags mark exchanges between homologs during ordinary crossing over.
 - Use compact chromosome forms, including Barr bodies, to show condensation without implying
   lost material. A deleted interval is absent chromosome material, not recolored material.
 - Keep a common longitudinal scale in physical before/after comparisons: a deletion shortens

@@ -6,6 +6,7 @@ Run from the repository root: python3 genetics/LECT06/djot/make_chromosome_xlink
 
 import json
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
@@ -46,14 +47,14 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 		output = (repository_root / data['target'] if output_root is None else
 			output_root / 'assets' / data['target'].split('/assets/', 1)[1])
 		output.parent.mkdir(parents=True, exist_ok=True)
-		output.write_text(ET.tostring(root, encoding='unicode') + '\n',
-			encoding='utf-8')
+		output.write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=False) + b'\n')
 
 
 #============================================
 def main() -> None:
-	module_directory = pathlib.Path(__file__).resolve().parent
-	generate(module_directory / 'chromosome_models' / 'xlinked', module_directory.parents[2])
+	repository = pathlib.Path(subprocess.check_output(
+		['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+	generate(repository / 'genetics/LECT06/djot/chromosome_models/xlinked', repository)
 
 
 if __name__ == '__main__':

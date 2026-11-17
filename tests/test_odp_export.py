@@ -239,8 +239,9 @@ def test_linked_text_nests_destination_inside_its_styled_span(literal: bool, res
 	style = next(element for element in root.findall(f".//{{{exporter.STYLE_NS}}}style")
 		if element.attrib[f"{{{exporter.STYLE_NS}}}name"] == name)
 	properties = style.find(f"{{{exporter.STYLE_NS}}}text-properties")
-	expected_size = resolved_size if resolved_size is not None else paragraph.typography.selected_size_pt - (2 if literal else 0)
-	assert float(properties.attrib[f"{{{exporter.FO_NS}}}font-size"].removesuffix("pt")) == expected_size
+	expected_size = resolved_size if resolved_size is not None else slide_lib.presentation_theme.inline_size_pt(
+		paragraph.typography.selected_size_pt, literal)
+	assert float(properties.attrib[f"{{{exporter.FO_NS}}}font-size"].removesuffix("pt")) == pytest.approx(expected_size)
 	assert properties.attrib[f"{{{exporter.FO_NS}}}font-family"] == family
 
 

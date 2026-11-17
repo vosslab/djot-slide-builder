@@ -224,7 +224,7 @@
       "C58"
     ],
     "source": "prototype/chromosome_review_part_02.djot",
-    "generator": "prototype/regenerate_chromosome_review.py",
+    "generator": "prototype/make_chromosome_review.py",
     "change": "Move four explanation lines and their separator out of the SVG; preserve every diagram label and geometry; crop the unused prose area to1460x590. Native Djot owns the full explanation.",
     "native_layout": "one-panel without a separate title; diagram, explanation and review/source identification retain their authored order.",
     "paragraph_preserved_exactly": true,
@@ -388,7 +388,7 @@
       "C36"
     ],
     "independent_code_and_native_visual_reviews": "passed after correcting final callout to former inactive site",
-    "canonical_generator": "devel/render_human_chromosome_2_fusion.py"
+    "canonical_generator": "genetics/LECT10/djot/human_chromosome_2_fusion_recipe.py"
   },
   "render_timestamp_followup": {
     "label": "rendered on Tue, Nov 17, 2026 at 9:53:10 AM CST",

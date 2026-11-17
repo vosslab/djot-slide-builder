@@ -1,0 +1,63 @@
+=== layout: two-panels
+
+# *Discord Server*
+
+@left
+
+- I created a Discord Server called Neil Voss Lab.
+  - Discord is the quickest way to reach me.
+- Join the server: {{course_url:discord}}
+  - It is available as a mobile app, a desktop app, and a website.
+  - Be sure to connect to my server rather than creating your own server.
+
+@right
+
+![Slide image 2](repo:evergreen/assets/image_002.png)
+
+![Slide image 3](repo:evergreen/assets/image_003.png)
+
+=== layout: two-panels
+
+# *Office Hours*
+
+@left
+
+[*Wed 2:30-3:30pm*]{color=#007A00}
+
+[*Thu 12:30-1:30pm*]{color=#007A00}
+
+Also available by appointment.
+
+- Office: SCH 600E, Schaumburg
+- [Join office hours on Zoom]({{course_url:office_hours}})
+
+@right
+
+![Office Hours reminder note](repo:evergreen/assets/office_hours.drawn.svg)
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
+
+=== include: repo:evergreen/ways_to_contact.djot
+
+=== layout: two-panels
+
+# Message the Instructor Anonymously
+
+@left
+
+- Google Form to send me an anonymous message.
+- I took great care\
+  to make sure it is\
+  completely anonymous.
+- Form goes directly to my email.
+
+@right
+
+![Anonymous Form](repo:evergreen/assets/anonymous_form.png)
+
+@citation
+
+https://forms.gle/gZ8nx28q9YDwSy8g7
+

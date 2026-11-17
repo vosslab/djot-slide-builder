@@ -1,0 +1,249 @@
+=== layout: section
+
+# Start Simple: Three Rhinos
+
+=== layout: one-panel
+
+# Step 1: Get the Sequences
+
+@body
+
+- Northern white rhinoceros: N.Wh.
+- Southern white rhinoceros: S.Wh.
+- Black rhinoceros: Blk.R
+
+![Rhino example](assets/lect11c_rhino/aligned.drawn.svg)
+
+Use these example protein fragments to count amino acid differences.
+
+=== layout: one-panel
+
+# Step 2: Align the Sequences
+
+@body
+
+![Rhino example](assets/lect11c_rhino/aligned.drawn.svg)
+
+Compare letters in the same column. Each fragment has 30 amino acids.
+
+=== layout: one-panel
+
+# Step 3: Replace Matches With Dots
+
+@body
+
+![Rhino example](assets/lect11c_rhino/dots.drawn.svg)
+
+A dot matches the northern-white reference. A letter marks a difference from that reference.
+
+=== layout: one-panel
+
+# Step 4: Set Up the Distance Matrix
+
+@body
+
+{table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. | 0 | ? | ? |
+| S.Wh. | ? | 0 | ? |
+| Blk.R | ? | ? | 0 |
+
+
+Three sequences need four rows and four columns, including labels.
+
+The diagonal is zero: each sequence matches itself.
+
+=== layout: one-panel
+
+# Count Differences: The White Rhinos
+
+@body
+
+![Rhino example](assets/lect11c_rhino/dots.drawn.svg)
+
+How many positions differ between N.Wh. and S.Wh.?
+
+=== layout: one-panel
+
+# The White Rhinos Differ at Four Positions
+
+@body
+
+![Rhino example](assets/lect11c_rhino/white_pair.drawn.svg)
+
+Four differences: Q, D, N, and Q in S.Wh.
+
+{table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. | 0 | 4 | ? |
+| S.Wh. | 4 | 0 | ? |
+| Blk.R | ? | ? | 0 |
+
+
+=== layout: one-panel
+
+# Compare Northern White and Black Rhinos
+
+@body
+
+![Rhino example](assets/lect11c_rhino/north_black.drawn.svg)
+
+Twelve positions differ. Enter 12 in both matching cells.
+
+{table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. | 0 | 4 | 12 |
+| S.Wh. | 4 | 0 | ? |
+| Blk.R | 12 | ? | 0 |
+
+
+=== layout: one-panel
+
+# Compare Southern White and Black Rhinos
+
+@body
+
+![Rhino example](assets/lect11c_rhino/dots.drawn.svg)
+
+Dots refer to N.Wh. Compare S.Wh. directly with Blk.R.
+
+How many positions differ between these two sequences?
+
+=== layout: one-panel
+
+# Southern White and Black Rhinos Differ at Eight Positions
+
+@body
+
+![Rhino example](assets/lect11c_rhino/south_black.drawn.svg)
+
+Eight positions differ. The completed matrix is symmetric.
+
+{table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. | 0 | 4 | 12 |
+| S.Wh. | 4 | 0 | 8 |
+| Blk.R | 12 | 8 | 0 |
+
+
+=== layout: section
+
+# Three Rhinos: Build the Tree
+
+=== layout: two-panels
+
+# Step 1: Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. |  |  |  |
+| S.Wh. | 4 |  |  |
+| Blk.R | 12 | 8 |  |
+
+Read the lower half. Which pair joins first?
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_0.drawn.svg)
+
+=== layout: two-panels
+
+# Step 2: Join the White Rhinos
+
+@left
+
+{table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. |  |  |  |
+| S.Wh. | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |  |
+| Blk.R | 12 | 8 |  |
+
+Distance 4 gives node height 4 / 2 = 2. Each tip branch has length 2.
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_1.drawn.svg)
+
+=== layout: two-panels
+
+# Step 3: Update the Cluster Distance
+
+@left
+
+{table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
+|  | N.Wh. | S.Wh. | Blk.R |
+| --- | --- | --- | --- |
+| N.Wh. |  |  |  |
+| S.Wh. | 4 |  |  |
+| Blk.R | 12 | 8 |  |
+
+What is the distance from the white-rhino cluster to Blk.R.?
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_1.drawn.svg)
+
+=== layout: two-panels
+
+# Average 12 and 8 to Get 10
+
+@left
+
+{table-style=matrix-lower table-group=rhino-two padding="3pt 2pt" font-size=22pt}
+| | White | Blk.R |
+| --- | --- | --- |
+| White | | |
+| Blk.R | 10 | |
+
+White = N.Wh. and S.Wh.
+
+(12 + 8) / 2 = 10. Each original sequence gets equal weight.
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_1.drawn.svg)
+
+=== layout: two-panels
+
+# Step 4: Join the Final Clusters
+
+@left
+
+{table-style=matrix-lower table-group=rhino-two padding="3pt 2pt" font-size=22pt}
+| | White | Blk.R |
+| --- | --- | --- |
+| White | | |
+| Blk.R | 10 | |
+
+The root height is 10 / 2 = 5.
+
+The white-rhino branch is 5 - 2 = 3; the black-rhino branch is 5 - 0 = 5.
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_2.drawn.svg)
+
+=== layout: two-panels
+
+# The Three-Rhino Tree Is Complete
+
+@left
+
+- Each white-rhino tip branch has length 2.
+- The white-rhino cluster joins the root with a branch of length 3.
+- The black-rhino branch has length 5.
+- Every root-to-tip path has length 5.
+- The fitted white-to-black path is 10; the original inputs were 12 and 8.
+
+@right
+
+![Rhino example](assets/lect11c_rhino/tree_2.drawn.svg)
+

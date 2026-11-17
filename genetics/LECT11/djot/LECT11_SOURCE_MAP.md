@@ -2,18 +2,21 @@
 
 ## Current deck map
 
-| Master | Current content |
-| --- | --- |
-| [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | November 17 agenda, deadlines, selected film and upcoming dates |
-| [lect11b-gene_trees.djot](lect11b-gene_trees.djot) | Reading trees, rotation, distances, four-gene example and methods |
-| [lect11c-more_gene_trees.djot](lect11c-more_gene_trees.djot) | Guided five-gene UPGMA and weighted cluster updates |
-| [lect11d-gene_tree_activity.djot](lect11d-gene_tree_activity.djot) | Existing six-gene worksheet and complete answer walkthrough |
-| [lect11e-evol_time.djot](lect11e-evol_time.djot) | Preserved Evolutionary Time content and inherited limitations |
+| Master | Current content | PDF pages |
+| --- | --- | --- |
+| [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | Announcements and movie | 36 |
+| [lect11b-gene_trees.djot](lect11b-gene_trees.djot) | Interpreting gene trees: ancestry, rotations, polytomies, branch distances | 29 |
+| [lect11c-building_a_tree_upgma.djot](lect11c-building_a_tree_upgma.djot) | Tree construction methods and four-sequence UPGMA example | 36 |
+| [lect11d-more_gene_trees.djot](lect11d-more_gene_trees.djot) | Guided five-gene UPGMA and weighted cluster updates | 34 |
+| [lect11e-gene_tree_activity.djot](lect11e-gene_tree_activity.djot) | Six-gene group worksheet and answer walkthrough | 32 |
+| [lect11f-evol_time.djot](lect11f-evol_time.djot) | Evolutionary Time; preserved source limitations | 19 |
 
-Current A/B/C/D/E PDF page counts are 34/36/34/32/19; A has 56 authored ODP slides,
-including hidden slides. B-D include generated four-, five-, and six-gene step fragments, respectively. The rows below
-are historical conversion evidence, not a slide-by-slide map of the replacement B-D decks or
-current announcements. See [LECT11_REVIEW.md](LECT11_REVIEW.md) for current status.
+Each master has matching ODP/PDF stems under `output/odp/` and `output/pdf/`.
+A has 57 authored slides including hidden slides. B is interpretation only; C contains
+all construction material moved from B and uses the colored local
+`lect11c_four_steps.djot` fragment. D/E keep their five-/six-gene fragments and fixed
+matrix sizes. The November 17 split supersedes earlier B-E letters and page counts.
+Historical conversion evidence follows; original ODP/PDF sources were not renamed.
 
 ## Historical conversion map
 

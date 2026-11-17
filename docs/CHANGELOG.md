@@ -2,6 +2,65 @@
 
 ### Behavior or Interface Changes
 
+- Split Genetics 11B interpretation from new 11C tree construction and four-sequence
+  UPGMA. Shift the five-gene example, group activity, and evolutionary time to D/E/F.
+
+- Update Genetics 11A to StVC 39, Red Dead Cell Counter, with its current thumbnail,
+  video link, and primary tool link.
+
+- Keep Genetics 11C/11D distance matrices at matching dimensions for each row/column
+  count, using fixed 22 pt cell text and equal-width grid/answer borders.
+
+- Restore Genetics 11B's original illustrated conceptual sequence, including Khan
+  Academy tree rotations, annotated ancestry diagrams, primate questions, alignments,
+  and methods figures. Retain its checked four-sequence example with colored clades.
+
+- Make condensed chromosome centerlines tangent-continuous in the shared renderer, preserving
+  already smooth paths such as C28. Align source bands, centromeres, gene regions and crossing
+  gutters with the final spine. Smooth C18 and C30, and widen C57's two too-tight approaches.
+- Record C28 as an instructor-approved curved-chromosome reference and add the existing four
+  white zigzags at its crossover-source boundaries, preserving its geometry and allele products.
+
+- Present LECT11 movie-advisory content ratings in an editable two-column table.
+
+- Apply course-identity colors to shared upcoming-course titles, summary entries, and
+  key labels: biochemistry purple, lab red, cellular biology blue, and film dark purple.
+
+- Restore LECT11 movie-score highlighting and add tomato/popcorn ratings. Follow the
+  movie overview with an editable IMDb Parents Guide content-advisory slide.
+
+- Restore the original red extension-policy emphasis on LECT11 Illness Policy.
+
+- Mark LECT11 Quiz 4 dark red because it is at the next class meeting; define schedule
+  emphasis by next class rather than next calendar week across breaks.
+
+- Format LECT11 anonymous-message instructions as three bullets, retaining the original
+  wording, form image, and URL.
+
+- Automatically size visible URLs at 80% of surrounding text, retaining condensed type
+  and the 12 pt floor. Put LECT11 syllabus URLs on bullets below plain labels, and outline
+  its next-class topics, quiz, and homework status separately.
+
+- Pair each LECT11 syllabus-link label with its complete URL in one bullet. Verify
+  condensed PDF fonts, independent URL sizing, and all four clickable destinations.
+
+- Give LECT11 Office Hours compact weekday/time labels and bold green schedule text
+  ahead of the room and Zoom details, preserving its illustration and links.
+
+- Group Genetics LECT11 agenda content under Chapter 11 and require chapter/unit
+  grouping in the agenda preparation guidance. Focus its lookahead on the next class
+  after Thanksgiving break, omitting later December deadlines from that slide. Keep
+  homework off the agenda while retaining the moved-quiz status reminder.
+
+- Require the manager to check the whole course semester for icebreaker reuse, including
+  reworded repeats. Use a visible REPLACEME prompt and `@replaceme` when freshness cannot
+  be established. Replace Genetics LECT11's repeated animal-modification question with
+  an animal-roommate movie tie-in.
+
+- Standardize illustration definitions with `_recipe.py` and `_recipes.py`, and asset
+  orchestration with `make_`. Move five lecture-owned generators from `devel/` into their
+  lectures, updating callers and current documentation while preserving asset destinations.
+  Use the shared SVG document and text writers for LECT10B's chromosome-form recipe.
 - Replace `lucide-static` with Font Awesome Free for general SVG icons. Read individual solid
   SVG assets during figure generation, retain their attribution comments, and remove the
   stroke-width option and repeated full-license metadata. Update the icon example and guides.
@@ -42,6 +101,8 @@
 
 ### Fixes and Maintenance
 
+- Keep regenerated chromosome SVGs ASCII through character references and retain LF inventory
+  line endings, preserving artwork and avoiding serialization-only rebuild differences.
 - Replace unsafe XML parsing calls with the existing safe parser while retaining XML builders
   and serialization. Correct annotations, indentation, executable modes, generator entrypoints,
   source character references, and broken documentation links. Align the frozen meiosis-input
@@ -64,6 +125,11 @@
 
 ### Developer Tests and Notes
 
+- Illustration naming and ownership: 24 source moves, 9,285 passing base-suite tests, and a
+  successful prototype rebuild. Check 1,304 SVG hashes and all seven mixed LECT06 outputs;
+  preserve original lecture artwork. C35 renders identically after adopting the shared writer
+  and passes the focused native ODP/PDF check. Retain the reciprocal-cross SVG's content while
+  encoding its symbols as character references. LECT04's PNG conversion was not rerun.
 - Font Awesome migration: 9,281 base-suite tests pass; npm reports no known vulnerabilities.
   Export the 18-slide toolkit showcase and inspect its icon page, verifying that the current
   icon SVG is embedded unchanged. The four-icon SVG falls from 15,827 to 4,060 bytes.

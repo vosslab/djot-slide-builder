@@ -23,23 +23,23 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 @body
 
-- [Spring 2027]{color=blue}
-  - BCHM 355/455: Biochemistry Lecture
-  - BCHM 356/456: Biochemistry Lab
-  - BIOL 301: Cellular and Molecular Biology ([teaching tentative]{color=red})
-- [Summer 2027]{color=purple}
-  - BIOL 383/483: Biology and Ethics in Film
+- *Spring 2027*
+  - [*BCHM 355/455: Biochemistry Lecture*]{color=#6B638F}
+  - [*BCHM 356/456: Biochemistry Lab*]{color=#C9211E}
+  - [*BIOL 301: Cellular and Molecular Biology*]{color=#24578F} ([teaching tentative]{color=red})
+- *Summer 2027*
+  - [*BIOL 383/483: Biology and Ethics in Film*]{color=#45405C}
 
 === layout: one-plus-two-panels
 
-# Biochemistry Lecture
+# [Biochemistry Lecture]{color=#6B638F}
 
 @left
 
-- [*Structure explains function*]{color=blue}
+- [*Structure explains function*]{color=#6B638F}
   - We go into great detail on protein structure, enzyme function, and other macromolecules.
   - Protein purification, separation methods, and enzyme kinetics.
-- [*Protein-structure assignments*]{color=blue}
+- [*Protein-structure assignments*]{color=#6B638F}
   - Make images in UCSF Chimera and explain what they show.
   - Connect a molecule's structure with what it does.
 
@@ -49,7 +49,7 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 @bottom-right
 
-BCHM 355-20 / 455-20, [Spring 2027]{color=blue}; 3 credits\
+BCHM 355-20 / 455-20, [Spring 2027]{color=#6B638F}; 3 credits\
 Thursdays, 2:00-4:30 p.m.; SCH 612\
 January 19-May 10 (Session 1)\
 CRNs: 355 = 24780; 455 = 24781
@@ -60,56 +60,56 @@ Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/9
 
 === layout: one-panel
 
-# Biochemistry Lab
+# [Biochemistry Lab]{color=#C9211E}
 
 @body
 
-- BCHM 356-20 / 456-20, [Spring 2027]{color=blue}; 3 credits
+- BCHM 356-20 / 456-20, [Spring 2027]{color=#C9211E}; 3 credits
   - Tuesdays, 10:00 a.m.-1:55 p.m.; SCH 550
   - Face-to-face, Schaumburg; January 19-May 10 (Session 1)
-- [*Less structured and more independent study-like*]{color=blue}
+- [*Less structured and more independent study-like*]{color=#C9211E}
   - Enzyme assays and kinetics: measure reaction rates and interpret the data.
   - Isolation and analysis of biological macromolecules.
   - Explore protein sequence, structure, and folding using molecular software and databases.
-- [*Experimental design and analysis*]{color=blue}
+- [*Experimental design and analysis*]{color=#C9211E}
   - Data collection, graphs, and interpretation are part of the lab work.
 
 === layout: one-panel
 
-# Cellular and Molecular Biology
+# [Cellular and Molecular Biology]{color=#24578F}
 
 @body
 
-- BIOL 301, [Spring 2027]{color=blue}
+- BIOL 301, [Spring 2027]{color=#24578F}
   - [My teaching assignment is not confirmed yet.]{color=red}
-- [*The chemistry of life*]{color=blue}
+- [*The chemistry of life*]{color=#24578F}
   - Biological molecules and how they work in cells.
   - Cell structure, membranes, transport, and communication.
   - Cellular energy: respiration and photosynthesis.
   - DNA, gene expression, and regulation.
-- [*Lecture, laboratory, and discussion*]{color=blue}
+- [*Lecture, laboratory, and discussion*]{color=#24578F}
 
 === layout: two-panels
 
-# Biology and Ethics in Film
+# [Biology and Ethics in Film]{color=#45405C}
 
 @left
 
-- BIOL 383-20 / 483-20, [Summer 2027]{color=purple}; 3 credits
+- BIOL 383-20 / 483-20, [Summer 2027]{color=#45405C}; 3 credits
   - Tuesdays/Thursdays, 6-9 p.m., over Zoom
   - July 6-August 9 (Session D)
   - CRNs: BIOL 383 = 32156; BIOL 483 = 32157
 
-- [*Example movie schedules*]{color=purple}
+- [*Example movie schedules*]{color=#45405C}
   - [Spring 2022](https://docs.google.com/spreadsheets/d/1a2F5pshoAtGjknMw3oUXjmI4SEjpVIvc1xiNHdJsD6Q/edit)
   - [Summer 2024](https://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit)
   - [Summer 2026](https://docs.google.com/spreadsheets/d/1O5rjL8j6IocYQdYKjUiwwuhyOEoRfpEuqCcYse3VF8c/edit)
 
 @right
 
-- [*Watch a feature film, then discuss*]{color=purple}
+- [*Watch a feature film, then discuss*]{color=#45405C}
   - Explore its biology, science, and ethical questions.
   - Give quick post-film "hot takes" and make a group movie-review podcast.
-- [*Weekly journal prompts*]{color=purple}
+- [*Weekly journal prompts*]{color=#45405C}
   - Make a case, include your opinions, and think critically.
   - Most of the grade is a weekly writing prompt; getting it done is key.

@@ -86,7 +86,7 @@ def _locus_patch(parent: ET.Element, *, name: str, number: int, gene: str,
 	path: svgpathtools.Path, thickness: float, source_center: complex) -> None:
 	"""Paint a small semantic gene region swept inside one known chromatid."""
 	surface = svg_tools.chromosome_surface.Surface(path, thickness)
-	center = svg_tools.chromosome_surface.nearest_distance(path, source_center)
+	center = svg_tools.chromosome_surface.nearest_distance(surface.path, source_center)
 	half_length = min(12, surface.length/12)
 	half_width = thickness/2 - 1.4
 	ET.SubElement(parent, f'{{{NS}}}path', {
@@ -146,10 +146,14 @@ def render_source(name: str, source: dict) -> ET.Element:
 				continue
 			index = int(child.get('data-shared-part'))
 			data = source['parts'][index]
+			path = svg_tools.chromosome_surface.smooth_centerline(svgpathtools.parse_path(data['path']))
 			model = chromosomes.Chromosome((chromosomes.Segment('', data['color']),))
-			part = chromosomes.chromosome_path_part(f'lect13b-{name}-{index}', model, data['path'],
+			part = chromosomes.chromosome_path_part(f'lect13b-{name}-{index}', model, path.d(),
 				thickness=data['thickness'], cut_ends=data['cut'], labels=False)
 			position = list(parent).index(child)
+			# The crossing gutter must follow the same spine as its chromosome body.
+			if position and parent[position-1].tag == f'{{{NS}}}path' and parent[position-1].get('stroke') == 'white':
+				parent[position-1].set('d', path.d())
 			parent.remove(child)
 			replacement = DET.fromstring(part.fragment)
 			replacement.set('stroke', 'none')

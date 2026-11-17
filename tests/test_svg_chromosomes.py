@@ -97,15 +97,45 @@ def test_bent_surface_keeps_normal_width_at_different_sizes() -> None:
 			assert abs(surface.point(distance, width/2)-surface.point(distance, -width/2)) == pytest.approx(width)
 
 
-def test_hard_corner_keeps_each_straight_arm_normal_and_outline_offsets() -> None:
-	"""C62-style corners retain both perpendicular surface offsets, not a long wedge."""
+def test_corner_centerline_becomes_tangent_continuous() -> None:
+	"""A bent body has one smooth tangent and preserves its authored endpoints."""
 	import svgpathtools
-	from svg_tools.chromosome_surface import Surface
+	from svg_tools.chromosome_surface import Surface, smooth_centerline
 	path = svgpathtools.parse_path('M233 460 L233 307 L80 307')
+	smooth = smooth_centerline(path)
+	assert smooth.start == path.start and smooth.end == path.end
+	assert smooth[0].end == path[0].end
+	assert smooth[0].unit_tangent(1) == pytest.approx(smooth[1].unit_tangent(0))
 	surface = Surface(path, 10)
-	for distance, tangent in ((76.5, -1j), (229.5, -1)):
-		upper = surface.point(distance, 5)
-		lower = surface.point(distance, -5)
-		offset = upper-lower
-		assert abs(offset) == pytest.approx(10)
-		assert (offset/tangent).real == pytest.approx(0, abs=1e-10)
+	for distance in (surface.length*.2, surface.length*.5, surface.length*.8):
+		assert abs(surface.point(distance, 5)-surface.point(distance, -5)) == pytest.approx(10)
+
+
+def test_smooth_centerline_keeps_authored_tangent_cubics_unchanged() -> None:
+	"""C28-style curves remain exactly as their recipe authored them."""
+	import svgpathtools
+	from svg_tools.chromosome_surface import smooth_centerline
+	path = svgpathtools.parse_path('M0 0 C30 0 60 40 90 40 C120 40 150 0 180 0')
+	assert smooth_centerline(path) is path
+
+
+def test_smooth_centerline_corrects_an_arc_corner() -> None:
+	"""Inversion-loop arc joins retain their source coordinate and one tangent."""
+	import svgpathtools
+	from svg_tools.chromosome_surface import smooth_centerline
+	path = svgpathtools.parse_path('M0 0 L40 0 A40 40 0 0 1 80 40')
+	smooth = smooth_centerline(path)
+	assert smooth.start == path.start and smooth.end == path.end
+	assert any(segment.end == 40 for segment in smooth)
+	assert all(first.unit_tangent(1) == pytest.approx(second.unit_tangent(0))
+		for first, second in zip(smooth, smooth[1:]))
+
+
+def test_smooth_centerline_merges_collinear_subdivisions_before_bending() -> None:
+	"""Dense source bands cannot turn one visible karyotype elbow into many."""
+	import svgpathtools
+	from svg_tools.chromosome_surface import smooth_centerline
+	path = svgpathtools.parse_path('M0 0 L0 20 L0 40 L0 60 L30 90')
+	smooth = smooth_centerline(path)
+	assert len(smooth) == 2 and smooth[0].end == 60j
+	assert smooth[0].unit_tangent(1) == pytest.approx(smooth[1].unit_tangent(0))

@@ -9,6 +9,7 @@ import defusedxml.ElementTree as DET
 import svgpathtools
 
 import svg_tools.chromosomes
+import svg_tools.chromosome_surface
 
 
 ASSETS = ('m_checkpoint_stop', 'm_checkpoint_go', 'mitosis_interphase_prophase',
@@ -73,18 +74,8 @@ def source_centromere_fraction(group: xml.Element, path_d: str) -> float:
 	if ellipse is None:
 		return .5
 	marker = complex(float(ellipse.attrib['cx']), float(ellipse.attrib['cy']))
-	path = svgpathtools.parse_path(path_d)
-	completed = 0.0
-	for segment in path:
-		if abs(segment.end-marker) < 1e-6:
-			return completed + segment.length()/path.length()
-		if abs(segment.start-marker) < 1e-6:
-			return completed
-		completed += segment.length()/path.length()
-	# Source figures use an ellipse at a join.  Retain a safe deterministic
-	# fallback for a future source whose marker lies within a curved segment.
-	closest = min(range(1001), key=lambda point: abs(path.point(point/1000)-marker))
-	return max(.001, min(.999, closest/1000))
+	path = svg_tools.chromosome_surface.smooth_centerline(svgpathtools.parse_path(path_d))
+	return max(.001, min(.999, svg_tools.chromosome_surface.nearest_distance(path, marker)/path.length()))
 
 
 def svg_fragment(fragment: str) -> xml.Element:

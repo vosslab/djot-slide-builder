@@ -20,14 +20,21 @@ lecture's current-year announcements, checking dates and relevance against the c
 2. Today's Agenda: topics and activities in the current content decks.
 3. Weather: saved NWS Chicago stories, one slide per published option.
 4. Icebreaker: fun content-related prompt, with concrete examples and suggestions.
-5. Next Week: dated lookahead, mainly work due and what happens in class the following week.
+5. Next Week: dated lookahead to the next week of class; use Next Class when a break intervenes.
 
 Keep this opening before the first section divider. Choose a fun question tangentially related
-to some aspect of the week's content. Compare the previous two lectures' prompts and examples,
-then choose a different premise and type of response. Select or adapt a prompt from
+to some aspect of the week's content. Check all earlier icebreakers in the same course and semester, including source decks
+when Djot is unavailable. Never repeat a prompt or reword the same question. The manager
+is responsible for this check; recent-lecture checks alone are insufficient. Select or adapt a prompt from
 [../../evergreen/icebreakers.yaml](../../evergreen/icebreakers.yaml), write one for the topic, or
 use the instructor's explicit choice. The popular-culture question is a fallback for weeks
-without a topic idea. Use **Icebreaker** as the title for face-to-face classes, including Genetics.
+without a topic idea, only if it has not already been used that semester. If the manager
+cannot find a fresh prompt or establish that it is unused, put `@replaceme` on the slide
+and `REPLACEME: choose an unused icebreaker for this semester.` in `@prompt`. Keep the
+placeholder visible; do not substitute a repeat. Retained hidden alternatives are not
+evidence of classroom use; resolve uncertain use conservatively with the placeholder.
+Record the chosen prompt and the semester sources checked in the lecture review.
+Use **Icebreaker** as the title for face-to-face classes, including Genetics.
 Use `layout: prompt` with `@prompt` for the main question and `@examples` for participation cues,
 concrete examples, and suggestions. The layout supplies a dark red question and dark gray supporting
 text inside an ultra light course-color rounded card; write plain text in both slots.
@@ -35,6 +42,9 @@ Present examples as sample responses, and use
 instructor answers when supplied. The catalog's body fragments contain both required slots.
 See [QUESTION_LAYOUTS.md](QUESTION_LAYOUTS.md#open-prompts-and-icebreakers) for the format.
 Use the current course schedule for the lookahead's dates, deadlines, and events.
+Keep a relevant break/no-class reminder, then outline the next class meeting
+with separate topics, quiz, and homework-due bullets. Omit deadlines and exam dates
+from later weeks.
 
 ## Today's agenda
 
@@ -44,8 +54,11 @@ Put mechanisms, comparisons, and worked details on the teaching slides.
 
 - Preserve the instructor's voice and recognizable topic names. Start with the original agenda;
   use the current deck titles to update its coverage.
-- Group short topic labels under a chapter or unit when that matches the original agenda.
+- Group content topics and their activities under the appropriate chapter or unit.
+  Keep chapter labels as parent bullets and brief topic labels as nested bullets.
 - Include the day's group activity, quiz, vote, or movie selection when scheduled.
+- Keep homework deadlines on their dedicated slides, off the agenda. Retain a quiz-status
+  reminder when the quiz has moved from the previous schedule.
 - Follow the current content and teaching order when topics move between lectures. Use the course
   schedule for dated activities and assessments, and record conflicts between numbered content
   bundles and calendar weeks in the lecture review.
@@ -145,7 +158,8 @@ relevance against the schedule. Retain reusable groups hidden when they are not 
 visibility controlled in the weekly master. Update dated references before showing them again.
 
 On the assessment schedule, keep one abbreviated `item: date` per line. Past assessments are
-light gray, next-week assessments dark red, and later assessments black. Keep the list and
+light gray, assessments at the next class meeting dark red, and later assessments black.
+Use the next class meeting across breaks, rather than the next calendar week. Keep the list and
 positions stable; change status colors rather than adding completion labels.
 
 ### General Announcements
@@ -163,7 +177,7 @@ this is a menu of relevant groups, not a list to display every week.
 
 For movie selection, use a Movie Night subsection within General Announcements. Bring the supplied
 `movie-slide-maker` ODP choices into the deck using `movie-panel`. Preserve the movie wording,
-ratings, and posters. Follow the individual choices with a vote recap showing their titles and
+ratings, popcorn/tomato marks, score highlighting, source emphasis, and posters. Follow the individual choices with a vote recap showing their titles and
 posters together. See [DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md#movie-choices) for the slots.
 
 Registration includes the reminder/links, a summary of upcoming teaching, and one slide per

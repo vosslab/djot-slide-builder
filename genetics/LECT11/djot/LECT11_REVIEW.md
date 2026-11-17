@@ -2,11 +2,50 @@
 
 The November 14, 2026 refresh replaces B-D with new teaching sequences; the historical
 conversion counts, markers, and one-to-one mappings below do not describe those decks now.
-The November 17 announcements have the corrected agenda and dates. E retains its original
+The November 17 announcements have the corrected agenda and dates. The November 17
+11B restoration below supersedes the November 14 conceptual rewrite for that deck. F (formerly E) retains its original
 content and its unresolved source-5/Djot-7 substitution figure, including the replacement
 marker and detached labels. See [GENETICS_GENE_TREE_REFRESH_REPORT.md](../../../docs/GENETICS_GENE_TREE_REFRESH_REPORT.md)
-for current sources, accepted reviews, and preserved-deck limitations. Current A/B/C/D/E
-PDF page counts are 34/36/34/32/19; A retains 56 authored ODP slides including hidden slides.
+for current sources, accepted reviews, and preserved-deck limitations. Current A/B/C/D/E/F
+PDF page counts are 36/29/36/34/32/19; A retains 57 authored ODP slides including hidden slides.
+
+## November 17 classroom updates
+
+- Refresh and show the November 17 NWS Chicago five-day outlook (PDF 3).
+- Add *The Animal Kingdom* to the agenda (PDF 2).
+- Replace the short movie announcement with the plot, ratings, details, review, and poster
+  imported from `movie-slide-maker/the_animal_kingdom_2023.odp`. Text remains editable.
+  The former PDF 26 is now PDF 27 because the weather slide is visible.
+- Confirm that LECT08 used the exact animal-modification icebreaker; retain the question
+  pending the instructor's choice of a replacement.
+- Rebuild A only, pass strict native Djot lint, and visually inspect the agenda, weather,
+  and movie PDF pages. Movie body text fits at 16.75 pt, below the preferred 20 pt floor;
+  preserve the supplied movie wording. No attended Impress playback check.
+
+## November 17 evergreen audit
+
+- Read every included shared/course fragment, including hidden exam, quiz, first-week,
+  evaluation, and club groups. Compare office hours and assessments with the current
+  instructor-information and Genetics grading syllabus pages; verify the textbook destination.
+- Refresh StVC to regular Episode 39, published November 12, using the current playlist feed
+  and thumbnail. Skip Special Episode 38. Episode 39 supplies no project URL, so retain only
+  its verified video link. The refresh helper refuses that missing project link; update the
+  lecture source directly without changing shared tooling.
+- Align LECT11 assessment overview, interruption recovery, quiz counts/timing, and optional
+  group scoring with the current syllabus. Use lecture-local copies of the three affected
+  fragments to keep other lectures and shared evergreen sources untouched.
+- Registrar confirms Spring 2027 registration began October 30, with all listed student
+  groups eligible by November 13. Retain the accurate start date and current course listings
+  supplied November 5 and preserved in `evergreen/UPCOMING_COURSES_SOURCES.md`.
+- Preserve the recorded Quiz 4 move to December 1 despite the older public schedule showing
+  November 17. Keep first-week signup, exam/quiz guidance, evaluations, and club hidden.
+  No public current evaluation window was verified; do not claim evaluations are open.
+- Strict native lint and the LECT11A ODP/PDF build pass (56 authored / 35 visible).
+  Visually inspect the nineteen visible evergreen/informational pages. Existing small-font
+  advisories remain; no attended Impress playback or authenticated portal check.
+- Sources: https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
+  and https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
+  and https://www.roosevelt.edu/current-students/academics/register-classes
 
 ## Historical conversion review
 
@@ -516,3 +555,250 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   classroom readiness when replacement slides remain.
 - [x] Add a concise conversion/review entry to [CHANGELOG.md](../../../docs/CHANGELOG.md), naming the lecture
   and resulting artifacts; report the review and output paths to the instructor.
+
+## November 17 StVC selection correction
+
+Use Episode 36, *Bad Cell Day - Two Drugs, One Keyboard*, at the instructor's request
+for variety; Episode 39 is not ready for this announcement. Save Episode 36's own
+thumbnail, video link, and published Bad Cell Day project link. This explicit selection
+overrides the latest-regular-episode rule and the Episode 39 audit entry above.
+Rebuild only LECT11A and visually inspect PDF 8.
+
+## November 17 icebreaker correction
+
+Replace the repeated LECT08 animal-modification prompt with "Which animal would make
+the worst roommate, and why?" Use the native prompt layout and face-to-face Icebreaker title.
+Check available Genetics LECT01-10 Djot sources, including hidden alternatives, for matching
+wording and premise. No animal-roommate prompt appears in those sources; LECT02 has no
+announcement Djot in this checkout. Earlier available questions concern outdoor activities,
+popular culture, pets, animal modification, robot chores, and food classification.
+The new whole-semester non-repetition rule and REPLACEME fallback are recorded in human
+guidance, the announcement guide, and the reusable prompt catalog.
+
+## November 17 agenda chapter grouping
+
+Group Gene Trees, Gene Tree Group Activity, and Evolutionary Time under Chapter 11,
+as requested. Match LECT10's blue chapter label and nested topic bullets.
+Keep Movie Night and homework as separate agenda items.
+
+## November 17 next-class lookahead
+
+Title the lookahead Next Class: December 1, 2026. Retain the November 24 Thanksgiving
+break reminder and December 1 class/Group Quiz 4 reminder. Remove December 8 and 15
+items from this slide; their dedicated schedule/due-date slides retain those dates.
+
+## Original ODP agenda comparison
+
+Use the instructor's `genetics/**/lect??a*.odp` files as agenda references; ARTIFACTS
+was a reference to another repository. Read every matching ODP's agenda text and list
+nesting, and visually inspect existing LECT10/LECT11 2025 PDF page 2.
+
+- LECT03 2026 authored slide 2 groups activities/topics under Chapter 1 and Chapter 2.
+- LECT08 2025 authored slide 4 and LECT10 2025 authored slide 3 use chapter parent
+  bullets with short nested topic labels; LECT10 includes Chapter 8 and Chapter 9.
+- LECT11 2025 authored slide 3 groups chromosome topics under Chapter 9; its alternative
+  movie agenda on authored slide 4 groups GATTACA and runtime under Feature Film.
+  Only the movie agenda appears in its saved PDF, on page 2.
+- LECT12/13 2025 similarly group chromosome topics by chapter. Other 2026 agendas
+  sometimes use flat topic lists or a named unit instead of a chapter number.
+- Current LECT11 matches the chapter/topic hierarchy and concise labels. Its explicit
+  No Quiz and homework reminders add logistics compared with the older agendas, which
+  usually end with Closing Remarks. Current LECT11's movie title is on one line; the
+  old movie agenda uses a separate parent heading and indented movie/runtime details.
+
+No further agenda changes are made by this comparison.
+
+## November 17 office-hours hierarchy
+
+Apply the requested humanizer pass and the instructor's explicit format,
+"Wed 2:30-3:30pm". Put Wednesday and Thursday schedules first in bold office-hours
+green; place appointment, room, and a labeled clickable Zoom link below. Keep the
+existing note illustration. Use a LECT11-local instructor-contact fragment so other
+lectures remain unchanged. Preserve actual meeting times and destinations.
+
+## November 17 agenda logistics correction
+
+Remove the homework reminder from the agenda; retain "Today: No Quiz" because the quiz
+moved from the earlier schedule. Homework dates remain on their dedicated slides.
+
+## November 17 syllabus URL review
+
+The exported ODP and PDF already use IBM Plex Sans Condensed for literal syllabus
+URLs, starting 2 pt below ordinary text and shrinking long addresses independently.
+Correct the source grouping: each label and its URL are now one bullet with an explicit
+line break, rather than eight equal-level bullets. Keep all four complete addresses.
+Rebuild LECT11A, pass strict native lint, inspect PDF 15, and inspect PDF font spans
+and hyperlink targets: four intact URLs use IBMPlexSansCond at 26, 25.5, 19.5, and
+26 pt, with four clickable link annotations. Additional intended URL formatting is
+pending instructor clarification; do not claim that an unspecified rule was verified.
+
+## November 17 URL size and lookahead outline
+
+The instructor clarified that syllabus labels should be flat text and URLs should be
+bullets. Update that source and reduce automatic URL sizing from a 2 pt reduction to
+80% of surrounding text, retaining condensed type, independent fitting, and the 12 pt
+floor. The shared helper affects future builds; rebuild only LECT11 for this task.
+
+Outline the next class by topics, quiz, and homework. Keep the Thanksgiving reminder,
+Chromosome Abnormalities Part 2, Group Quiz 4, and no homework due December 1. Dedicated
+homework slides show November 17 and December 8 deadlines; do not bring those later
+deadlines back into the lookahead. Original LECT08 2025's no-class notice mentions an
+assignment; the announcement guide also calls for work due at the next meeting.
+
+Verification: strict native lint, pyflakes, and the full base suite pass (9,285 tests).
+The export test now checks the shared URL-size policy with float tolerance instead of
+assuming the retired 2 pt reduction. Rebuild LECT11A and visually inspect PDF 5 and 15.
+Syllabus URLs render in condensed type at 22/22/19.5/22 pt with four clickable targets.
+Existing capacity advisories remain on weather, contacts, movie, and course-promotion
+slides; no live Impress playback check.
+
+## November 17 anonymous-message bullets
+
+Use three bullets for the original anonymous-message wording, matching the textbook
+slide's text/image structure. Retain the form image and full citation URL.
+
+## November 17 quiz-schedule color correction
+
+Make Quiz 4: Dec 01 dark red (#990000): it is at the next class meeting after the
+Thanksgiving break. Next-class timing determines the color, not the next calendar week.
+
+## November 17 illness-policy source emphasis
+
+Compare the original LECT11 2025 ODP authored slide 26 and PDF page 18. Restore
+its #C9211E emphasis on "If you are sick, let me know. I will provide an extension."
+Keep the four original bullets and wording. LECT10 2025 authored slide 25 confirms
+the same emphasis. Limit the repair to the LECT11-local assessment fragment.
+
+## November 17 movie character and content advisory
+
+Render the restored `movie-slide-maker/the_animal_kingdom_2023.odp` using the repo's
+LibreOffice exporter. Its single visible movie page has a highlighted bold IMDb 6.7,
+13k votes, and a green Metacritic 69 mark. It contains no Rotten Tomatoes row.
+Restore the IMDb highlight with native Djot highlighting and retain the source plot,
+review, metadata, and poster. Add tomato/trophy and popcorn marks with live verified
+RT scores, 83% critics / 76% audience, from https://www.rottentomatoes.com/m/the_animal_kingdom
+(retrieved November 17). The older LECT10 snapshot has audience 75%; use today's value
+for this added row. Highlight color follows the native Djot highlight treatment rather
+than an exact new gold-color style; the source header is red and the course header blue.
+
+Add a second movie slide immediately afterward with all five categories/severities from
+the instructor-supplied IMDb Parents Guide excerpt and concise content examples.
+Omit transient vote counts. Keep the advisory native/editable; do not insert a screenshot.
+
+Movie delivery verification: strict native lint and 341 documentation checks pass.
+Build yields 57 authored / 36 visible slides. Visually inspect overview PDF 27 and
+advisory PDF 28 against the rendered source. Rating marks and IMDb highlighting are
+visible; text remains native. Preserve the original poster/plot/review. The overview
+fits at 15.75 pt and the advisory's details at 17 pt, below the preferred 20 pt floor;
+no clipping is visible. No live Impress playback check.
+
+## November 17 upcoming-course colors
+
+Update the shared spring-registration fragment's four promotion slides and summary
+with the requested course identities: Biochemistry Lecture #6B638F, Biochemistry Lab
+#C9211E, Cellular and Molecular Biology #24578F, and Biology and Ethics in Film #45405C.
+Apply color to titles, summary course names, semester labels, and selected teaching
+labels; keep ordinary prose dark and BIOL 301's tentative assignment red. Existing
+course-palette colors supply the shades; the darker biochemistry shade identifies film.
+Rebuild only LECT11; other consumers receive the shared change on their next build.
+
+Course-color verification: strict native lint and 341 documentation checks pass.
+Rebuild LECT11A and visually inspect PDF 31-35 (summary plus four course slides);
+colors, tentative warning, and course content remain legible with no clipping.
+
+## November 17 content-advisory table
+
+Replace the five content-rating bullets with a native two-column Content/Rating table.
+Preserve all categories, severity colors, and the adjacent content examples and citation.
+
+## November 17 original 11B content recovery
+
+The instructor rejected the loss of original illustrations and the flat replacement trees.
+Recover 35 original conceptual slides (original 2-37 except duplicate 27), with native
+text, original embedded figures, and reviewed layouts. Current 11B has 61 visible pages.
+
+- Restore Darwin's notebook, evolutionary examples/finches, the illustrated gene-tree
+  overview, primate trees, three question/answer pairs, and the original annotated
+  branch-point/MRCA/polytomy diagrams.
+- Restore the Khan Academy equivalent-tree figure (original 21 -> current PDF 22),
+  the hand-annotated rotation figure (original 22 -> current 23), and the four equivalent
+  drawings (original 23 -> current 24). Retain the original citation.
+- Restore the hemoglobin alignment, illustrated distance matrix/UPGMA/neighbor-joining
+  pages, colored parsimony example, and likelihood/Bayesian methods material.
+- Replace the new p/q/r concept tree with the original scaled four-sequence tree and
+  native questions/explicit branch-sum answers (PDF 26-27).
+- Keep the checked four-sequence UPGMA worked example (PDF 45-59); the original
+  rhinoceros walkthrough is not reintroduced. Preserve every matrix value, height,
+  question/answer step, and branch geometry in this retained example.
+- Color only 11B's tree copies: a/c clade purple #A719DB, b/d teal #00775F, connecting
+  root branches dark purple #45405C. Keep labels bold and branches slightly heavier.
+  Use the local `lect11c_four_steps.djot` fragment so C/D and the shared recipe stay intact.
+- Recover embedded image components at original pixel dimensions as quality-90 WebP;
+  keep text/choices/citations native, rather than inserting full-slide screenshots.
+
+Verification: strict native lint passes. A geometry comparison confirms all four tree
+SVG copies preserve coordinates, paths, text, heights, and distances; only paint and
+weight change. All 61 exported PDF pages are visually inspected as contact sheets,
+with the restored figures visible and no clipping. Only original-slide 7/current 8
+and character-methods/current 35 retain sub-20 pt capacity advisories. High-resolution
+review targets PDF 22-24, 26-27, 37, and 57. Live Impress playback remains untested.
+Original sources are `genetics/LECT11/lect11b-gene_trees.odp` and its saved PDF.
+
+Final recovery checks: pyflakes and 344 focused checks pass. The local four-sequence
+fragment matches its checked predecessor exactly after normalizing only asset paths.
+An ODP/PDF text comparison caught a stale LibreOffice export of PDF 27; export the
+final ODP from a fresh temporary filename and replace the final PDF. Confirm the final
+PDF contains the explicit 3.2 + 3.1 + 2.4 + 8.7 = 17.4 branch sum. Reinspect the final
+PDF 27; both delivered artifacts now match. Temporary evidence is in
+`_temp/lect11b_recovery_final/` and `_temp/lect11b_*`.
+
+## November 17: stable 11C and 11D matrix sizes
+
+The repeated distance matrices now use fixed 22 pt cell text. Answer borders keep
+the grid thickness of 0.5 pt, preventing highlighted cells from changing row heights.
+The recipe and five/six-sequence fragments agree; 11B was not regenerated.
+Both ODP/PDF pairs were rebuilt. Exact ODP frame positions, dimensions, row heights,
+and column widths match across every repeated matrix shape in each deck (27 matrices
+total), and matching shapes also have the same dimensions across C and D.
+Rendered question/answer/new-distance sequences and final matrices were inspected;
+11D initial prompts remain above 20 pt with no build capacity advisories.
+Strict native lint and four table-layout tests pass. Evidence and geometry assertions:
+`_temp/lect11cd_table_review/`. Live Impress playback was not checked.
+
+## November 17: StVC episode 39 now ready
+
+Instructor requested switching from episode 36 to the updated episode 39. The live
+YouTube playlist feed identifies `Iyz6WX2r8Rg` as Red Dead Cell Counter - Count the
+Red Dots. Its explicit Project line points to `https://vosslab.github.io/red-dead-cell-counter/`;
+the secondary Plaque Attack link is not the featured destination. The normal refresh
+helper rejects the two Pages links, so select the requested episode and explicit
+Project line using its existing slide/thumbnail helpers. Save the current 1280 x 720
+thumbnail as WebP and label the destination Try the Tool.
+
+Final check: the first thumbnail download returned an old video frame; a timestamped
+request retrieved the new COUNT THE RED DOTS artwork. Replace the local WebP and rebuild.
+Strict native lint passes (57 authored slides); PDF remains 36 pages, episode on page 8.
+The final rendered slide, video hyperlink, primary tool URL, and updated artwork were
+checked. The caption fits at 17 pt (below the preferred 18 pt); no clipping observed.
+Live Impress playback was not checked. Evidence: `_temp/lect11a_stvc39/`.
+
+## November 17: split interpretation from construction
+
+11B now focuses on interpreting gene trees (29 slides). Move the sequence alignment,
+methods overview, distance-matrix definitions, and colored four-sequence UPGMA example
+into new 11C, Building a Tree by UPGMA (36 slides). Keep the original instructional
+slide blocks in order, and give each deck its own objectives, takeaways, and ending.
+Old C/D/E become D/E/F (34/32/19 slides); their content differs only in cover letters.
+The local four-sequence fragment is now `lect11c_four_steps.djot` and uses fixed 22 pt
+matrix text with 0.5 pt answer borders, matching the five-/six-sequence table fix.
+Assets retain their source names. Original source ODPs/PDFs remain unchanged.
+Old generated output names were moved to `_temp/lect11_split_before/` to prevent
+teaching from stale, ambiguously numbered decks. All five current decks were rebuilt.
+Instruction-block preservation and cover-only renumbering assertions pass; strict
+native lint passes for 150 slides. Existing Evolutionary Time source-5/Djot-7 figure
+limitation remains in F. Live Impress playback was not checked.
+
+Final split verification: 341 documentation/link checks pass. The complete B/C PDF
+contact sheets were visually inspected, and all five cover letters/page counts were
+checked. Matrix geometry assertions pass across C/D/E. Temporary rendered evidence:
+`_temp/lect11_split_review/`.

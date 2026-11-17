@@ -6,6 +6,10 @@ before clearing `_temp/`, including a browsable SVG sample gallery and a compact
 These collections sample existing course material for review. Inclusion does not establish an
 approved style. `exemplars/` is reserved for instructor-approved models that agents should follow.
 
+C28 is an instructor-approved reference within this collection: smooth independent chromatids,
+embedded allele regions, subtle banding, and clear crossing depth. Its four white zigzags mark
+the exchanges between homologs; the figure illustrates meiotic crossing over.
+
 ## Chromosome corpus collection
 
 The local review exports are `output/pdf/chromosome_review.pdf` and
@@ -55,7 +59,7 @@ changes. This command gives every source recipe an explicit prototype output pat
 lecture assets.
 
 ```bash
-source source_me.sh && python3 prototype/regenerate_chromosome_review.py
+source source_me.sh && python3 prototype/make_chromosome_review.py
 ```
 
 ```bash
@@ -63,8 +67,7 @@ source source_me.sh && python3 deck_tools.py build prototype/chromosome_review.d
 ```
 
 The build command writes `output/odp/chromosome_review.odp` and
-`output/pdf/chromosome_review.pdf`. The reviewed copies linked above are kept beside the
-prototype source. On the agent host, commands that invoke LibreOffice run outside the sandbox,
+`output/pdf/chromosome_review.pdf`. On the agent host, commands that invoke LibreOffice run outside the sandbox,
 as specified in `AGENTS.md`.
 
 The BPQ layer revision follows the requests archived in

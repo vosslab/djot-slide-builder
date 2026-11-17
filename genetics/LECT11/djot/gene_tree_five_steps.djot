@@ -4,7 +4,7 @@
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e |
 | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |
@@ -25,12 +25,12 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e |
 | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |
 | b | 18 |  |  |  |  |
-| c | [4]{background-color=#FFF1B8 border="1pt solid #222222"} | 20 |  |  |  |
+| c | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 20 |  |  |  |
 | d | 22 | 12 | 24 |  |  |
 | e | 6 | 22 | 10 | 26 |  |
 
@@ -46,7 +46,7 @@ a + c: distance 4; height 2. Branches: a 2; c 2.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-5 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e |
 | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |
@@ -77,7 +77,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
@@ -97,13 +97,13 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
 | b | 19 |  |  |  |
 | d | 23 | 12 |  |  |
-| e | [8]{background-color=#FFF1B8 border="1pt solid #222222"} | 22 | 26 |  |
+| e | [8]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 22 | 26 |  |
 
 ac + e: distance 8; height 4. Branches: ac 2; e 4.
 
@@ -117,7 +117,7 @@ ac + e: distance 8; height 4. Branches: ac 2; e 4.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
@@ -135,7 +135,7 @@ Join ac and e. What are the distances from ace to b, d? Count each gene equally.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
@@ -168,7 +168,7 @@ Weight each gene equally: (2 x 19 + 1 x 22) / 3 = 20. The unweighted cluster ave
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt" font-size=22pt}
 |  | ace | b | d |
 | --- | --- | --- | --- |
 | ace |  |  |  |
@@ -187,12 +187,12 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt" font-size=22pt}
 |  | ace | b | d |
 | --- | --- | --- | --- |
 | ace |  |  |  |
 | b | 20 |  |  |
-| d | 24 | [12]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| d | 24 | [12]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
 
 b + d: distance 12; height 6. Branches: b 6; d 6.
 
@@ -206,7 +206,7 @@ b + d: distance 12; height 6. Branches: b 6; d 6.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-3 padding="3pt 2pt" font-size=22pt}
 |  | ace | b | d |
 | --- | --- | --- | --- |
 | ace |  |  |  |
@@ -233,7 +233,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-2 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-2 padding="3pt 2pt" font-size=22pt}
 |  | ace | bd |
 | --- | --- | --- |
 | ace |  |  |
@@ -251,11 +251,11 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-five-2 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-five-2 padding="3pt 2pt" font-size=22pt}
 |  | ace | bd |
 | --- | --- | --- |
 | ace |  |  |
-| bd | [22]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| bd | [22]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
 
 ace + bd: distance 22; height 11. Branches: ace 7; bd 5.
 

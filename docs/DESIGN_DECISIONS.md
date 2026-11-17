@@ -346,10 +346,10 @@ text flow layouts made the teaching sequence unreadable, while one large figure 
 the progressive construction and phenotype cues.
 
 **Consequence.** The generated HTML provenance and PNG figures live beside their canonical Djot
-sources under the lecture asset folders. `devel/render_genetics_lect04_tables.py` can regenerate
+sources under the lecture asset folders. `genetics/LECT04/djot/render_tables.py` can regenerate
 the figures, but normal ODP/PDF builds consume only the checked-in PNG component images.
 
-**Owner.** `devel/render_genetics_lect04_tables.py` and the Lecture 04 Djot asset directories.
+**Owner.** `genetics/LECT04/djot/render_tables.py` and the Lecture 04 Djot asset directories.
 
 ### Recurring recording visual
 

@@ -236,11 +236,11 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 ## Exam and quiz schedule
 
 - On the quiz/exam dates slide, show past assessments in light gray, future assessments in
-  black, and next week's assessments in dark red.
+  black, and assessments at the next class meeting in dark red.
 - Exam and quiz schedule text is fixed: one "item: date" per line, using abbreviated month and
   day, such as "Quiz 1: Sept 22". Change only status colors; do not add "completed", descriptions, combined assessments, or mixed bolding. Put a long schedule URL in `@citation`; reserve `@notes` for presentation note cards used while lecturing.
 - Think of the exam and quizzes page as a progress bar: keep the list and positions stable,
-  with colors showing completed, next-week, and future assessments.
+  with colors showing completed, next-class, and future assessments.
 
 - Show the quiz-guidance slides when a quiz falls in the current lecture week or the following
   week; hide the group otherwise. Use the current lecture date and course schedule to decide.
@@ -547,7 +547,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   mapping from ordinary, monospace, and condensed text to installed or bundled font faces.
 - LibreOffice must display the real font family names, not renamed Djot-prefixed families.  - Show the URLs being clicked so their destinations can be inspected for spam or security
   concerns. Render visible URLs in the backend's narrow/condensed font; retain helpful context beside the address rather than hiding it behind a descriptive link label.
-- ALL visible URLs use the condensed font. Start 2 pt below surrounding text, then allow
+- ALL visible URLs use the condensed font and visibly smaller type, then allow
   independent shrinking down to 12 pt to avoid wrapping. Keep ordinary text at its own size; preserve the complete visible URL and clickable destination, including explicit links with a different target. Move an intact URL to the next
   line when necessary; flag addresses still too wide at 12 pt. Check rendered slides for awkward URL splits.
 - Prefer pollen/ovule labels for plant examples and sperm/egg labels for animal examples.  - Add colorful plant emoji to Lecture 05D v2 to make the plant examples more visually interesting.  - Explicitly label longer slides intended
@@ -874,6 +874,14 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - Judge by whether a passerby would stop, look, and try a game; layout organization alone
   does not meet the brief. Inspect Letter-size rendering and verify QR functionality.
 
+## Illustration script organization
+
+- C28 is exemplary; the only addition I want is our white zigzag for joined chromosome material.
+  I am considering a differentiability requirement because C18, C30, and C57 have awkward corners.
+- Use consistent recipe names for slide-specific SVG illustration scripts.
+- Keep lecture-specific artwork code with its lecture; keep shared drawing tools in `svg_tools/`
+  and repository development utilities in `devel/`.
+
 ## General icons
 
 - For general icons, I prefer Font Awesome.
@@ -885,3 +893,41 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - Do not allow vulnerable xmldom 0.9.10: require `@xmldom/xmldom >=0.9.12` across the
   dependency tree, not only in the current resolved lockfile (November 3, 2026).
+
+- NEVER repeat an icebreaker in the same course semester, including reworded repeats.
+  The manager must check the whole semester. If no fresh prompt can be found or verified,
+  I would rather have a visible REPLACEME placeholder with `@replaceme` than a repeat.
+
+- Agenda content must be grouped under its chapter. Genetics LECT11 groups Gene Trees,
+  Gene Tree Group Activity, and Evolutionary Time under Chapter 11.
+
+- "Next Week" means the next week of class. Keep a relevant break/no-class reminder,
+  then focus on the next class meeting; omit later deadlines and exam dates.
+
+- Use the original `genetics/**/lect??a*.odp` agenda slides as references for grouping
+  and wording. ARTIFACTS was a folder in another repository.
+
+- Use compact weekday/time labels such as "Wed 2:30-3:30pm" on Office Hours.
+  Make the days and times stand out above the room and Zoom details.
+
+- Keep homework off the agenda. Retain a quiz-status reminder when a quiz has moved
+  from the previous schedule, as with LECT11's "Today: No Quiz".
+
+- On Syllabus Links, keep the content labels flat and put the URLs on bullets.
+  URLs should automatically be condensed and clearly smaller than ordinary text.
+- Use an outline on the next-class slide: topics, quiz, and homework due at that meeting.
+  Keep the break reminder and omit deadlines from later weeks.
+
+- On Exam and Quiz Schedule, make an assessment red when it is at the next class
+  meeting, including across breaks. LECT11 Quiz 4 on December 1 is red.
+
+- Movie-slide conversion must preserve its character: popcorn/tomato rating marks,
+  score highlighting, and source formatting, alongside the movie text and poster.
+
+- Upcoming-course slides use course colors: Biochemistry Lecture purple, Biochemistry
+  Lab red, Cellular and Molecular Biology blue like Genetics, and Biology and Ethics
+  in Film a slightly darker purple than Biochemistry Lecture.
+
+- Preserve original instructional images and visual character during slide conversion,
+  especially annotated tree rotations and Khan Academy figures. Plain replacement
+  trees must not reduce teaching quality; restore original content when time is limited.

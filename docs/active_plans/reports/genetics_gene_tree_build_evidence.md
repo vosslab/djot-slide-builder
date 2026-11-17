@@ -12,7 +12,7 @@ reviewed artifacts. The generator rebuilds the fixed illustrative data and SVG f
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B genetics/LECT11/djot/gene_tree_examples.py
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot --format all
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT12/djot --format all
-PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11c-more_gene_trees.djot --format all
+PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11d-more_gene_trees.djot --format all
 PYTHONPATH="$PWD:$PWD/tests" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_table_styles.py tests/test_layout_tables.py tests/test_gene_tree_examples.py -q
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot genetics/LECT12/djot
 ```
@@ -52,9 +52,9 @@ ab93baaa4b76d8c055bf6b79e2bd086c297b47c8c291e431a13533b04b58e059  genetics/LECT1
 751f42746ec8dccfffc22bf91be0e82791e712255be39a9f42d71b42faa89513  genetics/LECT11/djot/gene_tree_six_steps.djot
 d5b62fc5a12ae66011ec76c393a53529484e430f52f6ffe71442212a6ae579bb  genetics/LECT11/djot/lect11a-2026_announcements.djot
 7386d89db228b3a4e944a8b2a0ed1d212f21e2f148f99d496f875810c8dbcb57  genetics/LECT11/djot/lect11b-gene_trees.djot
-240115879f9def321ce1b49108c1d23dc5dbb7f8c31d284e52471a5a1683ed03  genetics/LECT11/djot/lect11c-more_gene_trees.djot
-836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11d-gene_tree_activity.djot
-a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11e-evol_time.djot
+240115879f9def321ce1b49108c1d23dc5dbb7f8c31d284e52471a5a1683ed03  genetics/LECT11/djot/lect11d-more_gene_trees.djot
+836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11e-gene_tree_activity.djot
+a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11f-evol_time.djot
 dd51af0fca4f020e251be6b1aa5ffacd4b9dba9b76b83f5934a0f9ea43abc47b  genetics/LECT12/djot/lect12a-2026_announcements.djot
 01a70b241cbd9253dec7b584b8a8faf23d72807e9edf49690f1f72efbb836181  genetics/LECT12/djot/lect12b-polyploidy.djot
 9b2f41768ab40056a3cad68dbf1137cc5e9cdaa5bfbd151164ba02fcb015b7c5  genetics/LECT12/djot/lect12c-sex_dosage.djot

@@ -292,7 +292,7 @@ Author (2026). _Article title._ https://example.org/article
 ```
 
 Citations appear as editable condensed text in the bottom margin. Ordinary text starts at 14 pt;
-visible URLs start 2 pt smaller and fit independently with a 12 pt floor.
+visible URLs start at 80% of surrounding text size and fit independently with a 12 pt floor.
 Normal layout slots retain their full space.
 Longer citations fit the margin by reducing type; capacity reports flag sizes below 12 pt.
 On dark section/closing slides, a white footer strip keeps the citation readable. Reference-only

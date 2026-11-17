@@ -105,7 +105,7 @@ Keep essential diagram labels and captions readable at the intended viewing size
 at classroom distance or its normal Zoom display size, not only enlarged on the author's screen.
 
 Show complete clickable destinations as visible URLs, with helpful context alongside them.
-URLs start 2 pt below surrounding text and can shrink independently down to 12 pt. Move an intact
+URLs start at 80% of surrounding text size and can shrink independently down to 12 pt. Move an intact
 URL to the next line when needed; flag one still too wide. Preserve the full address and target,
 including an explicit link whose display differs from its target. Do not insert spaces, hide
 the address behind "Read online," or force ordinary prose to shrink with it.

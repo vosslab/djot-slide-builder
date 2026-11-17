@@ -69,6 +69,8 @@ def main() -> None:
 	output = args.output_root / 'lect09e-tetrad_visuals'
 	for name, strands in paths.items():
 		root = DET.parse(TEMPLATES / (name + '.svg')).getroot()
+		if name == 'four_strand_dco_to_npd':
+			root.find(f'{{{NS}}}desc').text += ' White zigzags mark exchanges between homologs.'
 		viewport = next(e for e in root if e.tag == f'{{{NS}}}g')
 		scene = ET.Element('g', {'id':'chromosome-scene'})
 		viewport.insert(0, scene)
@@ -80,7 +82,8 @@ def main() -> None:
 			model = svg_tools.chromosomes.Chromosome(
 				chromatid_segments(curve, before, left, right, alleles))
 			part = svg_tools.chromosomes.chromosome_path_part(
-				f'chromatid-{i+1}', model, path, thickness=34, labels=True)
+				f'chromatid-{i+1}', model, path, thickness=34, labels=True,
+				junctions=(3,) if name == 'four_strand_dco_to_npd' else ())
 			group = ET.SubElement(scene, 'g', {'id': f'strand-{i+1}', 'data-chromatid':'true', 'data-product': ('AB','Ab','aB','ab')[i] if name == 'sco_to_tt' else (('AB','AB','ab','ab')[i] if name == 'nco_to_pd' else ('Ab','Ab','aB','aB')[i])})
 			group.append(DET.fromstring(part.fragment))
 		for i, y in enumerate((100, 260), start=1):

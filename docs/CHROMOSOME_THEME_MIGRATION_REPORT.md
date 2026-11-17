@@ -102,20 +102,20 @@ Production recipes and their sibling authored inputs are the regeneration source
 proofs are evidence, not runtime dependencies. Current recipe commands include:
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/make_polyploidy_chromosomes.py
+source source_me.sh && python3 genetics/LECT12/djot/make_polyploidy_chromosomes.py
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/lect12c_chromosome_recipes.py
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/render_lect12d_chromosomes.py
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/render_lect12e_chromosomes.py
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/lect12d_chromosome_recipes.py
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/lect12e_chromosome_recipes.py
 ```
 
 Other production entry points include the LECT06 `make_chromosome_*.py` scripts, LECT08
-`chromosome_recipes/*_recipe.py`, LECT10 `regenerate_lect10b.py` and `lect10_count_recipe.py`,
+`chromosome_recipes/*_recipe.py`, LECT10 `make_lect10b_figures.py` and `lect10_chromosome_recipes.py`,
 and LECT13 `lect13bc_chromosome_recipes.py`, `lect13b_loop_chromosome_recipes.py` and
 `lect13d_chromosome_recipes.py`. For example:
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT08/djot/chromosome_recipes/b31_recipe.py
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT10/djot/regenerate_lect10b.py
+source source_me.sh && python3 genetics/LECT08/djot/chromosome_recipes/b31_recipe.py
+source source_me.sh && python3 genetics/LECT10/djot/make_lect10b_figures.py
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT13/djot/lect13bc_chromosome_recipes.py
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT13/djot/lect13b_loop_chromosome_recipes.py
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT13/djot/lect13d_chromosome_recipes.py

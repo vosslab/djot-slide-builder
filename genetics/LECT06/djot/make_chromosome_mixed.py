@@ -3,19 +3,22 @@
 
 import pathlib
 import runpy
+import subprocess
 
 
 def main() -> None:
 	"""Write only owning assets; templates and cleanup layers remain immutable."""
-	deck = pathlib.Path(__file__).resolve().parent
+	root = pathlib.Path(subprocess.check_output(
+		['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+	deck = root / 'genetics/LECT06/djot'
 	models = deck / 'chromosome_models/mixed'
-	for family, asset_folder in (
-		('intro', 'lect06b-intro_cells'),
-		('overview', 'lect06c-meiosis'),
-		('crossovers', 'lect06c-meiosis'),
-		('recombination', 'lect06c-meiosis'),
+	for recipe_path, asset_folder in (
+		('intro/intro_recipes.py', 'lect06b-intro_cells'),
+		('overview/overview_recipe.py', 'lect06c-meiosis'),
+		('crossovers/crossovers_recipe.py', 'lect06c-meiosis'),
+		('recombination/recombination_recipes.py', 'lect06c-meiosis'),
 	):
-		recipe = runpy.run_path(str(models / family / 'recipe.py'))
+		recipe = runpy.run_path(str(models / recipe_path))
 		recipe['build'](deck / 'assets' / asset_folder)
 
 

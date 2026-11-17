@@ -38,7 +38,7 @@ def integrate_loci(root: ET.Element, source: dict) -> None:
 		center_x, center_y = float(card.get('x'))+17, float(card.get('y'))+18
 		# These four rods are straight, but retaining the centerline calculation keeps
 		# the locus construction identical to curved chromatids.
-		center = svg_tools.chromosome_surface.nearest_distance(path, complex(center_x, center_y))
+		center = svg_tools.chromosome_surface.nearest_distance(surface.path, complex(center_x, center_y))
 		half_width = data['thickness']/2 - 1.1
 		parent.remove(card)
 		parent.remove(label)

@@ -12,7 +12,8 @@ own `evergreen/` folder; single-lecture content and dated snapshots stay with th
   including Genetics. Use `layout: prompt` and copy the entry's body fragment below the title;
   its `@prompt` and `@examples` slots inherit dark red question and dark gray supporting text inside
   an ultra light course-color rounded card.
-  Compare the previous two lectures for variety. New options cover food classification, look-alike
+  Check the whole course semester; never repeat a prompt or reword the same question.
+  If freshness cannot be established, use a visible REPLACEME prompt and `@replaceme`. New options cover food classification, look-alike
   mix-ups, missing pairs, unhelpful directions, group traditions, and movie perspectives.
   Source paths identify prompt provenance.
 - [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.

@@ -1,0 +1,104 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11E
+
+## Gene Tree Group Activity
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Build a gene tree from the worksheet distance matrix.
+- Update cluster distances after each merge.
+- Calculate node heights and branch lengths.
+- Explain how the tree summarizes the distances.
+
+=== layout: section
+
+# Gene Tree Group Activity
+
+=== layout: one-panel
+
+# Work With Your Group
+
+@body
+
+- Use your existing six-gene worksheet and its distance matrix.
+- Try each step on your worksheet before the answer appears.
+- Compare your calculations and tree with your group.
+- Explain any differences before moving to the next step.
+
+=== layout: one-panel
+
+# At Each Step
+
+@body
+
+1. Find the smallest distance and join those clusters.
+2. Calculate the new node height: distance / 2.
+3. Update the matrix using the original gene-pair distances.
+4. Draw branches: parent height - child height.
+5. Repeat until all six genes are in one tree.
+
+@notes
+
+Pause for group discussion before showing each answer.
+
+=== layout: subsection
+
+# Worksheet Walkthrough
+
+=== include: gene_tree_six_steps.djot
+
+=== layout: two-panels
+
+# Check Your Tree
+
+@left
+
+- What is the fitted tree distance from a to c?
+- What is the fitted tree distance from a to b?
+- Why can the a-to-b answer differ from the worksheet value of 12?
+
+@right
+
+![Completed metric gene tree](assets/lect11_gene_tree_examples/six_5.svg)
+
+=== layout: two-panels
+
+# Check Your Tree: Answers
+
+@left
+
+- a to c: 2 + 2 = 4, matching the original distance.
+- a to b: 2 + 3 + 2 + 3 = 10; the original distance is 12.
+- The tree fits cluster averages; it does not preserve every original pairwise distance.
+
+@right
+
+![Completed metric gene tree](assets/lect11_gene_tree_examples/six_5.svg)
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Join the closest clusters and update the matrix after each merge.
+- Use half the join distance for the new node height.
+- Subtract child height from parent height for each branch.
+- Compare distances along tree paths with the original distances.
+
+=== layout: theend
+
+# THE END

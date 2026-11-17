@@ -11,6 +11,7 @@ import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes
+import svg_tools.chromosome_surface
 import svg_tools.drawing
 
 
@@ -36,15 +37,17 @@ def chromosome_overlay(ledger: dict) -> str:
 		fragments = []
 		markers = []
 		for index, (sections, color_key) in enumerate(zip(chromosome['paths'], chromosome['colors'])):
-			path = svgpathtools.parse_path(' '.join(sections))
+			path = svg_tools.chromosome_surface.smooth_centerline(
+				svgpathtools.parse_path(' '.join(sections)))
 			first_arm = svgpathtools.parse_path(sections[0])
-			if abs(first_arm.end - complex(*chromosome['path_join'])) >= .001:
+			join = complex(*chromosome['path_join'])
+			if abs(first_arm.end - join) >= .001:
 				raise ValueError('Path join differs from measured source: ' + chromosome['id'])
 			color = ledger['colors'][color_key]
 			if chromosome['centromere'] is None:
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color),))
 			else:
-				first_length = first_arm.length()
+				first_length = svg_tools.chromosome_surface.nearest_distance(path, join)
 				model = svg_tools.chromosomes.Chromosome((
 					svg_tools.chromosomes.Segment('', color, first_length),
 					svg_tools.chromosomes.Segment('', color, path.length() - first_length)),

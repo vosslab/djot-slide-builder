@@ -481,7 +481,7 @@ import warning. Figures already repaired are identified in the relevant finding.
 
 ### lect12c-more_gene_trees
 
-[lect11c-more_gene_trees.djot](../../genetics/LECT11/djot/lect11c-more_gene_trees.djot)
+[lect11d-more_gene_trees.djot](../../genetics/LECT11/djot/lect11d-more_gene_trees.djot)
 
 | Source | Djot | Primary repair | Finding |
 | ---: | ---: | --- | --- |
@@ -531,7 +531,7 @@ import warning. Figures already repaired are identified in the relevant finding.
 
 ### lect12d-gene_tree_activity
 
-[lect11d-gene_tree_activity.djot](../../genetics/LECT11/djot/lect11d-gene_tree_activity.djot)
+[lect11e-gene_tree_activity.djot](../../genetics/LECT11/djot/lect11e-gene_tree_activity.djot)
 
 | Source | Djot | Primary repair | Finding |
 | ---: | ---: | --- | --- |
@@ -556,7 +556,7 @@ import warning. Figures already repaired are identified in the relevant finding.
 
 ### lect12e-evol_time
 
-[lect11e-evol_time.djot](../../genetics/LECT11/djot/lect11e-evol_time.djot)
+[lect11f-evol_time.djot](../../genetics/LECT11/djot/lect11f-evol_time.djot)
 
 | Source | Djot | Primary repair | Finding |
 | ---: | ---: | --- | --- |

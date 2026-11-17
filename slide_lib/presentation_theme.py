@@ -423,8 +423,8 @@ def odf_font_face_name(family: str, bold: bool = False, italic: bool = False) ->
 
 #============================================
 def inline_size_pt(paragraph_size_pt: float, literal_url: bool) -> float:
-	"""Start visible URLs two points smaller without crossing their separate floor."""
-	size = max(URL_FLOOR_SIZE_PT, paragraph_size_pt - 2.0) if literal_url else paragraph_size_pt
+	"""Keep visible URLs at 80% of surrounding text, above their separate floor."""
+	size = max(URL_FLOOR_SIZE_PT, paragraph_size_pt * 0.8) if literal_url else paragraph_size_pt
 	if size <= 0:
 		raise ThemeError("inline font size must remain positive")
 	return size

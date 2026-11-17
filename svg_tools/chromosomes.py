@@ -421,6 +421,7 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 		raise ValueError('Centerline segments must have positive length')
 	if path.isclosed() != closed:
 		raise ValueError('Path closure must match the closed setting')
+	path = svg_tools.chromosome_surface.smooth_centerline(path)
 	length = path.length()
 	if not _positive(length):
 		raise ValueError('Centerline length must be finite and positive')

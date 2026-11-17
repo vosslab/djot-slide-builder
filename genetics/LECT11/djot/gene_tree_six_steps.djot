@@ -4,7 +4,7 @@
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e | f |
 | --- | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |  |
@@ -26,12 +26,12 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e | f |
 | --- | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |  |
 | b | 12 |  |  |  |  |  |
-| c | [4]{background-color=#FFF1B8 border="1pt solid #222222"} | 10 |  |  |  |  |
+| c | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 10 |  |  |  |  |
 | d | 15 | 13 | 13 |  |  |  |
 | e | 9 | 6 | 9 | 11 |  |  |
 | f | 18 | 15 | 14 | 8 | 13 |  |
@@ -48,7 +48,7 @@ a + c: distance 4; height 2. Branches: a 2; c 2.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
 |  | a | b | c | d | e | f |
 | --- | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |  |
@@ -81,7 +81,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |  |
@@ -102,13 +102,13 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |  |
 | b | 11 |  |  |  |  |
 | d | 14 | 13 |  |  |  |
-| e | 9 | [6]{background-color=#FFF1B8 border="1pt solid #222222"} | 11 |  |  |
+| e | 9 | [6]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 11 |  |  |
 | f | 16 | 15 | 8 | 13 |  |
 
 b + e: distance 6; height 3. Branches: b 3; e 3.
@@ -123,7 +123,7 @@ b + e: distance 6; height 3. Branches: b 3; e 3.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
 |  | ac | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |  |
@@ -154,7 +154,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | d | f |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
@@ -174,13 +174,13 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | d | f |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
 | be | 10 |  |  |  |
 | d | 14 | 12 |  |  |
-| f | 16 | 14 | [8]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| f | 16 | 14 | [8]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
 
 d + f: distance 8; height 4. Branches: d 4; f 4.
 
@@ -194,7 +194,7 @@ d + f: distance 8; height 4. Branches: d 4; f 4.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | d | f |
 | --- | --- | --- | --- | --- |
 | ac |  |  |  |  |
@@ -223,7 +223,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | df |
 | --- | --- | --- | --- |
 | ac |  |  |  |
@@ -242,11 +242,11 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | df |
 | --- | --- | --- | --- |
 | ac |  |  |  |
-| be | [10]{background-color=#FFF1B8 border="1pt solid #222222"} |  |  |
+| be | [10]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |  |
 | df | 15 | 13 |  |
 
 ac + be: distance 10; height 5. Branches: ac 3; be 2.
@@ -261,7 +261,7 @@ ac + be: distance 10; height 5. Branches: ac 3; be 2.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
 |  | ac | be | df |
 | --- | --- | --- | --- |
 | ac |  |  |  |
@@ -288,7 +288,7 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt" font-size=22pt}
 |  | abce | df |
 | --- | --- | --- |
 | abce |  |  |
@@ -306,11 +306,11 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt"}
+{table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt" font-size=22pt}
 |  | abce | df |
 | --- | --- | --- |
 | abce |  |  |
-| df | [14]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| df | [14]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
 
 abce + df: distance 14; height 7. Branches: abce 2; df 3.
 

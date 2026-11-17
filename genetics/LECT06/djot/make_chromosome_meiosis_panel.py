@@ -7,7 +7,9 @@ import json
 import pathlib
 import defusedxml.ElementTree as DET
 
+import svgpathtools
 import svg_tools.chromosomes
+import svg_tools.chromosome_surface
 
 DIRECTORY = pathlib.Path(__file__).resolve().parent
 SOURCES = DIRECTORY / 'chromosome_models' / 'meiosis_panel'
@@ -32,11 +34,15 @@ def render() -> str:
 		raise ValueError('Only the 136 source-localized centromeres receive markers')
 	fragments: list[str] = []
 	for record in records:
+		path = svg_tools.chromosome_surface.smooth_centerline(
+			svgpathtools.parse_path(record['path_d']))
+		boundaries = [svg_tools.chromosome_surface.nearest_distance(path, complex(*point))
+			for point in record['points']]
 		centromeres = () if record['center'] is None else (
 			svg_tools.chromosomes.Centromere(record['center']),)
-		model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, length)
-			for color, length in record['segments']), centromeres)
-		part = svg_tools.chromosomes.chromosome_path_part(record['name'], model, record['path_d'],
+		model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, end-start)
+			for (color, _), start, end in zip(record['segments'], boundaries, boundaries[1:])), centromeres)
+		part = svg_tools.chromosomes.chromosome_path_part(record['name'], model, path.d(),
 			thickness=record['width'], labels=False)
 		fragments.append(part.fragment)
 	background = data_uri(SOURCES / 'background.png')

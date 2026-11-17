@@ -23,7 +23,7 @@ pdftotext output/pdf/<deck>.pdf _temp/gene_tree_plain_english/<deck>.txt
 
 ```sh
 PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_table_styles.py tests/test_layout_tables.py tests/test_gene_tree_examples.py -q
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-gene_trees.djot genetics/LECT11/djot/lect11c-more_gene_trees.djot genetics/LECT11/djot/lect11d-gene_tree_activity.djot
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-gene_trees.djot genetics/LECT11/djot/lect11d-more_gene_trees.djot genetics/LECT11/djot/lect11e-gene_tree_activity.djot
 ```
 
 The [C slide 32 correction](genetics_gene_tree_plain_english_summary_fix.md) supersedes the initial C hashes below; B and D remain accepted.

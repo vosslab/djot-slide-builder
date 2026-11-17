@@ -23,49 +23,55 @@ hidden: true
 
 - Today: No Quiz
 - Icebreaker and Announcements
-- Gene Trees
-- Gene Tree Group Activity
-- Evolutionary Time
-- Movie Night
-- Homework 09 and 10 due today
+- [*Chapter 11:*]{color=#24578F}
+  - Gene Trees
+  - Gene Tree Group Activity
+  - Evolutionary Time
+- Movie Night: *The Animal Kingdom*
 
 === layout: big-image
-hidden: true
 
 @image
 
-![Five Day Outlook](repo:genetics/LECT12/djot/assets/weather_story/chicago_ee7a2c11f0bfa7348b09269e6a83b71108e71472ebf1ed4017cd9c726c230186.png)
+![Five Day Outlook](assets/weather_story/chicago_90148e4d3d317843de7aa02872c8a6044594b4745a8c54131b890d7ac3eade31.webp)
 
 @caption
 
-Dry and mild conditions will persist through Tuesday&#46; Areawide chances for rainfall return on Wednesday before cooler temperatures arrive for the latter half of the week and lake effect showers develop and move into portions of northwestern Indiana and possibly northeastern Illinois&#46;
+Above normal temperatures for mid November are expected through Saturday with a cold front expected to move across the area Saturday night&#44; bringing the next chance for showers&#46;
 
 @citation
 
-NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
+NWS Chicago, retrieved Nov 17, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: prompt
+
+# Icebreaker
+
+@prompt
+
+Which animal would make the worst roommate, and why?
+
+@examples
+
+State your name, major, and post-grad plans.
+
+- Think about noise, food, space, or daily habits.
+- Examples: a woodpecker at sunrise, or an octopus opening every cupboard.
+- Give your animal and one reason. No biology expertise needed!
 
 === layout: one-panel
 
-# Breakout Room Chat
-
-@body
-
-- State your name, major, and post-grad plans
-- [You can genetically modify one animal. What would you change?]{color=red}
-- Choose a farm animal, pet, or wild species.
-- Explain the useful trait and one possible tradeoff.
-- If no one is talking, please be the first to speak.
-
-=== layout: one-panel
-
-# Next Week: Nov 24, 2026
+# Next Class: December 1, 2026
 
 @body
 
 - Thanksgiving break starts Tuesday: no class on November 24.
-- Our next class is December 1: Chromosome Abnormalities, Part 2, and Group Quiz 4.
-- Quiz 5 and Homework 11 and 12 are due December 8.
-- Final exam: December 15.
+- [*Topics*]{color=#24578F}
+  - Chromosome Abnormalities, Part 2
+- [*Quiz*]{color=#990000}
+  - Group Quiz 4
+- *Homework*
+  - No homework due
 
 @citation
 
@@ -77,15 +83,15 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 @image
 
-![Stump the Vibe Coder &#35;37&#58; Bad Cell Day](repo:genetics/LECT10/djot/assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
+![StVC 39&#58; Red Dead Cell Counter &#8212; Count the Red Dots &#124; Stump the Vibe Coder Episode 39](assets/stump_the_vibe_coder/Iyz6WX2r8Rg.webp)
 
 @caption
 
-Stump the Vibe Coder &#35;37&#58; Bad Cell Day\
-Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
-Play the Game: https://vosslab.github.io/bad-cell-day/
+Stump the Vibe Coder &#35;39&#58; Red Dead Cell Counter &#8212; Count the Red Dots\
+Watch the Video: [https://www.youtube.com/watch?v=Iyz6WX2r8Rg](https://www.youtube.com/watch?v=Iyz6WX2r8Rg)\
+Try the Tool: https://vosslab.github.io/red-dead-cell-counter/
 
-=== include: repo:genetics/evergreen/course_information.djot
+=== include: lect11_course_information.djot
 
 === layout: subsection
 
@@ -101,11 +107,11 @@ Play the Game: https://vosslab.github.io/bad-cell-day/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Dec 01]{color=#000000}
+- [Quiz 4: Dec 01]{color=#990000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 
-=== include: repo:genetics/evergreen/assessment_policies.djot
+=== include: lect11_assessment_policies.djot
 
 === layout: subsection
 hidden: true
@@ -141,7 +147,7 @@ hidden: true
 - Assignment 6 is due Oct 13
 - Check Blackboard for assignment availability and submission times
 
-=== include: repo:genetics/evergreen/quiz_guidance.djot
+=== include: lect11_quiz_guidance.djot
 hidden: true
 
 === layout: subsection
@@ -201,16 +207,53 @@ hidden: true
 
 === layout: movie-panel
 
-# Movie Night: The Animal Kingdom (2023)
+# *The Animal Kingdom (2023)*
 
 @body
 
-- Class selection: *The Animal Kingdom (2023)*
-- Tuesday, November 17
+- In a world hit by a wave of mutations transforming humans into animals, Fran&#231;ois does everything he can to save his wife. As some of the creatures disappear into a nearby forest, he and their son &#201;mile embark on a quest that will change their lives forever.
+  - IMDb&#160;{=*6.7*=},&#160;13k&#160;votes | Metacritic\:&#160;&#129001;&#160;69
+  - RT&#160;critics\:&#160;&#127813;&#127942;&#160;83% | RT&#160;audience\:&#160;&#127871;&#160;76%
+- Genre\: Adventure, Drama, Science Fiction
+- Director\: Thomas Cailley
+- Run time\: 127 min
+- Original language\: French
+- Review Summary\: The Animal Kingdom's talented cast anchors its more fantastical elements in human emotion, helping offset a superficial treatment of thought-provoking themes.
 
 @poster
 
-![The Animal Kingdom (2023) movie poster](repo:genetics/LECT10/djot/assets/movie_choices/image_004.jpg)
+![The Animal Kingdom (2023) movie poster](assets/the_animal_kingdom_2023/poster.webp)
+
+=== layout: two-panels
+
+# The Animal Kingdom (2023): Content Advisory
+
+@left
+
+## IMDb Parents Guide
+
+{table-style=comparison}
+| Content | Rating |
+| --- | --- |
+| Sex & Nudity | [*Mild*]{color=#007A00} |
+| Violence & Gore | [*Moderate*]{color=#B74300} |
+| Profanity | [*Mild*]{color=#007A00} |
+| Alcohol, Drugs & Smoking | [*Mild*]{color=#007A00} |
+| Frightening & Intense Scenes | [*Moderate*]{color=#B74300} |
+
+@right
+
+## What to expect
+
+- Two characters kiss and undress each other.
+- A claw is torn off; stitches are pulled from skin; some blood is shown or licked.
+- A character's bird mutation and attempted surgery involve blood and scars.
+- A character is shot; a wound is briefly shown without blood.
+- Tobacco use.
+
+@citation
+
+Source: IMDb Parents Guide (user-contributed ratings).
 
 === include: repo:evergreen/spring_registration.djot
 hidden: false

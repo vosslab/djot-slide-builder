@@ -13,6 +13,81 @@ TEXTURE_STOPS = ((5, 7, 8), (18, 21, 22), (29, 30, 31),
 	(46, 48, 49), (59, 62, 63))
 
 
+#============================================
+def smooth_centerline(path: svgpathtools.Path) -> svgpathtools.Path:
+	"""Return one tangent-continuous centerline without moving its joins.
+
+	Collinear line subdivisions carry source intervals, not visible elbows, so they
+	combine before the cubic join construction. Existing tangent paths are returned
+	unchanged to preserve authored cubic geometry exactly.
+	"""
+	if len(path) < 2:
+		return path
+	joins = list(zip(path, path[1:]))
+	if path.isclosed():
+		joins.append((path[-1], path[0]))
+	if all(abs(first.unit_tangent(1)-second.unit_tangent(0)) < 1e-9
+		for first, second in joins):
+		return path
+	if path.isclosed():
+		raise ValueError('A non-tangent closed centerline needs an authored curve')
+	segments = []
+	for segment in path:
+		if (segments and isinstance(segments[-1], svgpathtools.Line)
+			and isinstance(segment, svgpathtools.Line)
+			and abs(segments[-1].unit_tangent(1)-segment.unit_tangent(0)) < 1e-9):
+			segments[-1] = svgpathtools.Line(segments[-1].start, segment.end)
+		else:
+			segments.append(segment)
+	joins = [(index, first, second) for index, (first, second) in
+		enumerate(zip(segments, segments[1:]))
+		if abs(first.unit_tangent(1)-second.unit_tangent(0)) >= 1e-9]
+	if not joins:
+		return svgpathtools.Path(*segments)
+	corner_segments = {join[0] for join in joins} | {join[0]+1 for join in joins}
+	expanded = []
+	for index, segment in enumerate(segments):
+		if isinstance(segment, svgpathtools.Arc) and index in corner_segments:
+			expanded.extend(segment.as_cubic_curves(max(1, math.ceil(abs(segment.delta)/45))))
+		else:
+			expanded.append(segment)
+	segments = expanded
+	joins = [(index, first, second) for index, (first, second) in
+		enumerate(zip(segments, segments[1:]))
+		if abs(first.unit_tangent(1)-second.unit_tangent(0)) >= 1e-9]
+	for _, first, second in joins:
+		if not isinstance(first, (svgpathtools.Line, svgpathtools.QuadraticBezier,
+			svgpathtools.CubicBezier)) or not isinstance(second, (svgpathtools.Line,
+			svgpathtools.QuadraticBezier, svgpathtools.CubicBezier)):
+			raise ValueError('A centerline corner needs an authored curve')
+		if abs(first.unit_tangent(1)+second.unit_tangent(0)) < 1e-9:
+			raise ValueError('A reversing centerline needs an authored curve')
+	def cubic(segment: object) -> svgpathtools.CubicBezier:
+		if isinstance(segment, svgpathtools.CubicBezier):
+			return segment
+		if isinstance(segment, svgpathtools.QuadraticBezier):
+			return svgpathtools.CubicBezier(segment.start,
+				segment.start+2*(segment.control-segment.start)/3,
+				segment.end+2*(segment.control-segment.end)/3, segment.end)
+		return svgpathtools.CubicBezier(segment.start,
+			segment.start+(segment.end-segment.start)/3,
+			segment.start+2*(segment.end-segment.start)/3, segment.end)
+	corner_segments = {join[0] for join in joins} | {join[0]+1 for join in joins}
+	result = [cubic(segment) if index in corner_segments else segment
+		for index, segment in enumerate(segments)]
+	for index, first, second in joins:
+		tangent = first.unit_tangent(1)+second.unit_tangent(0)
+		tangent /= abs(tangent)
+		previous, following = result[index], result[index+1]
+		previous_handle = abs(previous.end-previous.control2)
+		following_handle = abs(following.control1-following.start)
+		result[index] = svgpathtools.CubicBezier(previous.start, previous.control1,
+			previous.end-previous_handle*tangent, previous.end)
+		result[index+1] = svgpathtools.CubicBezier(following.start,
+			following.start+following_handle*tangent, following.control2, following.end)
+	return svgpathtools.Path(*result)
+
+
 def nearest_distance(path: svgpathtools.Path, point: complex) -> float:
 	"""Locate a source locus on its known centerline, measured by arc length."""
 	length = path.length()
@@ -37,29 +112,22 @@ class Surface:
 	"""Sample only the bent surface; straight chromosomes retain exact coordinates."""
 
 	def __init__(self, path: svgpathtools.Path, thickness: float) -> None:
-		self.path = path
+		self.path = smooth_centerline(path)
 		self.width = thickness
 		self.scale = thickness / REFERENCE_HEIGHT
-		self.length = path.length()
-		self.straight = len(path) == 1 and isinstance(path[0], svgpathtools.Line)
+		self.length = self.path.length()
+		self.straight = len(self.path) == 1 and isinstance(self.path[0], svgpathtools.Line)
 		self.positions = []
 		self.normals = []
 		self.distances = []
 		distance = 0
-		for segment in path:
+		for segment in self.path:
 			count = 1 if isinstance(segment, svgpathtools.Line) else max(16,
 				math.ceil(segment.length() / (thickness / 12)))
 			for index in range(count + 1):
 				position = segment.point(index / count)
 				normal = segment.unit_tangent(index / count) * 1j
 				if self.positions and abs(position-self.positions[-1]) < 1e-10:
-					# Keep both sides of a genuine corner.  They share a centerline
-					# position and distance, but their surface offsets are different.
-					if abs(normal-self.normals[-1]) < 1e-10:
-						continue
-					self.positions.append(position)
-					self.normals.append(normal)
-					self.distances.append(distance)
 					continue
 				if self.positions:
 					distance += abs(position-self.positions[-1])
@@ -70,18 +138,7 @@ class Surface:
 		edges = [[position + side * thickness/2 * normal
 			for position, normal in zip(self.positions, self.normals)] for side in (-1, 1)]
 		keep = {0, len(self.positions)-1}
-		# Simplification must not bridge a hard join.  Otherwise it may discard
-		# one normal and interpolate that turn down an entire straight chromosome arm.
-		corners = [index for index in range(1, len(self.positions))
-			if abs(self.positions[index]-self.positions[index-1]) < 1e-10]
-		for corner in corners:
-			keep.update((corner-1, corner))
-		spans = []
-		first = 0
-		for corner in corners:
-			spans.append((first, corner-1))
-			first = corner
-		spans.append((first, len(self.positions)-1))
+		spans = [(0, len(self.positions)-1)]
 		while spans:
 			first, last = spans.pop()
 			if last-first < 2:

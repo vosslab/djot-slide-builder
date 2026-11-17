@@ -1,6 +1,6 @@
 # SVG toolkit capability catalogue
 
-Use `svg_tools` to author editable, static SVG illustrations for slides. Start with the
+Use `svg_tools` to author static SVG illustrations for slides. Start with the
 [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp), its
 [Djot showcase](../exemplars/svg_toolkit.djot), and the [cookbook](SVG_TOOLKIT_COOKBOOK.md)
 for complete compositions. Follow the [visual style guide](SVG_VISUAL_STYLE.md) for locally authored
@@ -34,21 +34,39 @@ parts, not a layout engine: the author supplies geometry, labels, data and relat
 Run an example from the repository root, substituting a module name from the table:
 
 ```sh
-/opt/homebrew/bin/python3.12 -B -m svg_tools.examples.placement
+source source_me.sh && python3 -m svg_tools.examples.placement
 ```
 
 Component examples write SVGs under `_temp/` by default.
 Lecture pilot recipes can default to durable lecture assets, including [seed_cross](../svg_tools/examples/seed_cross.py),
 [yeast_mating](../svg_tools/examples/yeast_mating.py), and [western_detection](../svg_tools/examples/western_detection.py).
 Check each source for its default and optional output path or directory before running it; supply an
-alternative output to avoid overwriting an asset. For direct scripts outside the repository root,
-make the repository importable with `PYTHONPATH` pointing to that root. The gallery builder is
+alternative output to avoid overwriting an asset. Run direct scripts through the same repository
+bootstrap. The gallery builder is
 [build_gallery.py](../svg_tools/examples/build_gallery.py).
 
 For pedigrees, crosses, gels, trees and related generators, check the existing BPQ capabilities;
 Virtual Lab already supplies equipment artwork. The [reuse survey](SVG_TOOL_ROADMAP.md#reuse-before-building)
 records their paths and limits. The [pedigree guide](slide-specs/GENETICS_ILLUSTRATION_GUIDE.md#pedigrees-reuse-the-bpq-native-svg-renderer)
 describes its authoring and provenance requirements.
+
+## Name and place recipes
+
+Keep lecture-specific artwork code with its lecture, normally under `genetics/LECTxx/djot/`
+or the corresponding course directory. Shared drawing functionality belongs in `svg_tools/`;
+repository maintenance utilities belong in `devel/`.
+
+- `<subject>_recipe.py` defines one illustration, such as
+  [hla_region_recipe.py](../genetics/LECT03/djot/hla_region_recipe.py).
+- `<subject>_recipes.py` defines a related collection, such as
+  [meiosis_assortment_recipes.py](../genetics/LECT02/djot/meiosis_assortment_recipes.py).
+- `make_<subject>.py` generates or updates assets, often by running recipes; see
+  [make_lect10b_figures.py](../genetics/LECT10/djot/make_lect10b_figures.py).
+- `render_` identifies conversion to a particular output format, such as
+  [render_tables.py](../genetics/LECT04/djot/render_tables.py), which converts HTML tables to PNG.
+
+General build utilities and toolkit example modules retain their existing names. A recipe's
+filename is separate from its output asset names; keep existing slide URLs when renaming code.
 
 ## Compose parts
 

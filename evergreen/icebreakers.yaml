@@ -1,9 +1,10 @@
 usage: Reusable prompt-layout Djot icebreakers. Choose a fun prompt tangentially related to the week's
-  content, or write one for that topic. Compare the previous two lectures' prompts and examples,
-  then choose a different premise and type of response. Start with layout prompt and the Icebreaker
+  content, or write one for that topic. The manager must check all earlier prompts in the same course and semester; never
+  repeat a prompt or reword the same question. If no fresh prompt can be found or verified,
+  use a visible REPLACEME prompt with the slide's @replaceme marker. Start with layout prompt and the Icebreaker
   title, then copy the body fragment containing the required prompt and examples slots. The layout
   supplies dark red question text and dark gray supporting text automatically. Use popular-culture as
-  a fallback for weeks without a topic idea.
+  a fallback only if it is unused in that course and semester.
   Source references identify the original prompts; examples and formatting may be adapted.
 icebreakers:
 - id: outdoor-activities
