@@ -33,6 +33,46 @@ class SpecialtySlideComponents:
 	surface: slide_lib.layout_primitives.SlideSurface = slide_lib.layout_primitives.SlideSurface()
 
 
+def add_render_timestamp(page: slide_lib.layout_model.LayoutSlide, rendered_on: str,
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		session: slide_lib.layout_measurement.MeasurementSession) -> slide_lib.layout_model.LayoutSlide:
+	"""Add quiet native metadata without consuming an authored layout slot."""
+	palette = slide_lib.presentation_theme.course_color_theme(theme.color_theme_name)
+	role = page.surface.background_role
+	background = {
+		slide_lib.layout_primitives.StyleRole.SECTION: palette.dark_color,
+		slide_lib.layout_primitives.StyleRole.SUBSECTION: palette.medium_color,
+		slide_lib.layout_primitives.StyleRole.SUBSUBSECTION: palette.light_color,
+		slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT: palette.ultra_light_color,
+	}.get(role, WHITE)
+	foreground = palette.ultra_light_color if role in (
+		slide_lib.layout_primitives.StyleRole.SECTION,
+		slide_lib.layout_primitives.StyleRole.SUBSECTION) else FOREGROUND
+	# Blend against the known surface so native text needs no new opacity mechanism.
+	channels = [round(int(foreground[index:index+2],16)*.55
+		+ int(background[index:index+2],16)*.45) for index in (0,2,4)]
+	color = ''.join(f'{channel:02X}' for channel in channels)
+	y = 680 if any(item.object_id == "citation" for item in page.objects) else 754
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(60, y, 1160, 42)
+	paragraph = slide_lib.native_model.Paragraph(page.identity.source,
+		(slide_lib.native_model.Text(rendered_on),))
+	content = slide_lib.layout_object_builders.text_content((paragraph,),
+		CAPTION_FLOOR_SIZE_PT, CAPTION_FLOOR_SIZE_PT,
+		slide_lib.layout_primitives.StyleRole.MUTED, color, rectangle.width, theme, session=session)
+	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
+		properties=dataclasses.replace(paragraph.properties,
+			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))
+		for paragraph in content.paragraphs))
+	item = slide_lib.layout_model.LayoutObject("render-timestamp",
+		slide_lib.layout_primitives.PresentationRole.CONTENT,
+		slide_lib.layout_primitives.StyleRole.MUTED, rectangle,
+		slide_lib.layout_primitives.ObjectLayer.FOREGROUND,
+		max((item.z_index for item in page.objects),default=-1)+1,
+		max((item.reading_order for item in page.objects),default=-1)+1,
+		content, _frame_text())
+	return dataclasses.replace(page, objects=(*page.objects, item))
+
+
 def title_slide_decorations(theme: slide_lib.presentation_theme.PresentationTheme
 		) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
 	"""Frame title-slide metadata with restrained theme-derived native shapes."""

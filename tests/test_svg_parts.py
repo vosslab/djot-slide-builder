@@ -27,7 +27,7 @@ def test_text_bounds_include_measured_oversized_label() -> None:
 
 #============================================
 def test_text_bounds_allow_for_scientific_fallback_glyphs(monkeypatch) -> None:
-	label = 'α′漢'
+	label = '&alpha;′漢'
 	fragment = f"<g><text x='0' y='0' font-size='20'>{label}</text></g>"
 	bounds = svg_tools.parts.include_text_bounds(fragment, (0, 0, 0, 0))
 	monkeypatch.setattr(svg_tools.parts, '_font_characters', lambda path: set(map(ord, label)))

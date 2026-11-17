@@ -54,7 +54,7 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 					thickness=width, across=span)
 				group.append(ET.fromstring(svg_tools.parts.transform(marker,x=cx,y=cy,rotation=angle).fragment))
 		output=output_directory/(data_file.stem+'.drawn.svg'); output.write_text(ET.tostring(root,encoding='unicode')+'\n')
-	
+
 		print(output.name)
 
 

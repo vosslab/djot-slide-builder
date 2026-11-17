@@ -20,7 +20,8 @@ import slide_lib.presentation_theme
 
 
 def compile_layout_deck(deck: slide_lib.native_model.Deck,
-		theme: slide_lib.presentation_theme.PresentationTheme) -> slide_lib.compilation_result.CompilationResult:
+		theme: slide_lib.presentation_theme.PresentationTheme,
+		rendered_on: str | None = None) -> slide_lib.compilation_result.CompilationResult:
 	"""Compile every authored slide once and retain each page's hidden state."""
 	if not any(not source.hidden for source in deck.slides):
 		raise ValueError(f"{deck.path}:1: deck has no visible slides")
@@ -64,6 +65,13 @@ def compile_layout_deck(deck: slide_lib.native_model.Deck,
 			f"slide-{index + 1}-note-{note_index}", note_index and note.text or note.text)
 			for note_index, note in enumerate(page.notes))
 		slides.append(dataclasses.replace(page, identity=identity, notes=notes, hidden=source.hidden))
+	if rendered_on is not None:
+		last_end = next((index for index in reversed(range(len(slides)))
+			if slides[index].layout.layout_name == "theend" and not slides[index].hidden), None)
+		for index, page in enumerate(slides):
+			if index == 0 or index == last_end:
+				slides[index] = slide_lib.layout_specialty_builders.add_render_timestamp(
+					page, rendered_on, theme, session)
 	plan = slide_lib.layout_model.LayoutDeck(
 		slide_lib.layout_model.DeckIdentity(deck.path.stem, deck.path),
 		slide_lib.layout_primitives.LogicalCanvas(),

@@ -11,7 +11,7 @@ not measurements or images of particular cells. No Servier geometry was used.
 
 ## Checks and proof
 
-- `PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_svg_cells.py tests/test_svg_organelles.py` — 3 passed.
+- `PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_svg_cells.py tests/test_svg_organelles.py` - 3 passed.
 - Generated `svg_tools/examples/cells.py`, `organelles.py`, and `yeast_mating.py`
   with `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B`; yeast used
   `--output-dir _temp/svg_aesthetic/cells`.
@@ -31,6 +31,6 @@ not measurements or images of particular cells. No Servier geometry was used.
   describes the connected network; [Compartmentalization of Cells](https://www.ncbi.nlm.nih.gov/books/NBK26907/)
   describes Golgi cisternal stacks.
 - The local `svg-creator-expert` corpus informed construction: *A Handbook of
-  Biological Illustration*, lines 278–294 (clarity and line hierarchy), and
-  *Mastering SVG*, lines 635–687 (viewport and coordinate conventions).
+  Biological Illustration*, lines 278-294 (clarity and line hierarchy), and
+  *Mastering SVG*, lines 635-687 (viewport and coordinate conventions).
   Paths are under `/Users/vosslab/.codex/skills/experts/svg-creator-expert/references/local-only/`.

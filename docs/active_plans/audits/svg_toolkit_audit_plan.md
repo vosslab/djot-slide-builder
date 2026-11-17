@@ -2,7 +2,7 @@
 
 ## Finding
 
-- **Low — The plan's self-contained output promise is ambiguous.** `docs/active_plans/active/svg_toolkit_plan.md:54`-55 says output stays self-contained, but `docs/active_plans/active/svg_toolkit_progress.md:51` records that live fonts are deliberately unembedded and must be installed. A reader relying on the plan alone could expect identical typography on another machine without font setup. The implementation report correctly discloses the dependency (`docs/SVG_TOOLKIT_IMPLEMENTATION_REPORT.md:5`). Clarify the plan's wording to say that SVG geometry and resources are contained while the named fonts require installation, consistent with the settled decision. No font embedding mechanism is needed.
+- **Low - The plan's self-contained output promise is ambiguous.** `docs/active_plans/active/svg_toolkit_plan.md:54`-55 says output stays self-contained, but `docs/active_plans/active/svg_toolkit_progress.md:51` records that live fonts are deliberately unembedded and must be installed. A reader relying on the plan alone could expect identical typography on another machine without font setup. The implementation report correctly discloses the dependency (`docs/SVG_TOOLKIT_IMPLEMENTATION_REPORT.md:5`). Clarify the plan's wording to say that SVG geometry and resources are contained while the named fonts require installation, consistent with the settled decision. No font embedding mechanism is needed.
 
 ## Assessment and limits
 

@@ -1,5 +1,9 @@
 # Human guidance
 
+- Add the rendering date and time to slide 1 and the final THE END slide as a caption.
+  Include seconds and the time zone, and blend the text into the background more than ordinary
+  captions so I can tell whether the deck has been updated (November 17, 2026).
+
 - By "fully formed" I mean condensed chromosomes. Uncondensed, stringy DNA in early
   prophase should use simple paths without the full BPQ polish. Keep SVG files smaller
   (November 17, 2026).

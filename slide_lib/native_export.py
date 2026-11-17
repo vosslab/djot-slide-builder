@@ -3,6 +3,7 @@
 # Standard Library
 import collections.abc
 import dataclasses
+import datetime
 import os
 import pathlib
 import tempfile
@@ -97,7 +98,10 @@ def compile_deck(deck: slide_lib.native_model.Deck) -> tuple[slide_lib.compilati
 		slide_lib.presentation_theme.PresentationTheme]:
 	"""Compile one semantic deck once against the authoritative OTP theme."""
 	theme = slide_lib.presentation_theme.default_theme(deck.color_theme)
-	compilation = slide_lib.layout_engine.compile_layout_deck(deck, theme)
+	now = datetime.datetime.now().astimezone()
+	rendered_on = (f"rendered on {now:%a, %b} {now.day}, {now:%Y} at "
+		f"{now.hour % 12 or 12}:{now:%M:%S %p %Z}")
+	compilation = slide_lib.layout_engine.compile_layout_deck(deck, theme, rendered_on=rendered_on)
 	return compilation, theme
 
 

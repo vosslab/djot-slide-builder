@@ -209,6 +209,24 @@ def test_reader_extracts_direct_text_list_links_table_image_notes_and_visibility
 
 
 #============================================
+def test_reader_ignores_renderer_owned_timestamp_frame(tmp_path: pathlib.Path) -> None:
+	"""A generated timestamp must not become authored source on ODP reimport."""
+	timestamp = ('<draw:frame draw:name="render-timestamp" svg:x="1cm" svg:y="1cm" '
+		'svg:width="10cm" svg:height="3cm"><draw:text-box><text:p>'
+		'rendered on Tue, Nov 17, 2026 at 8:10:23 AM CST</text:p></draw:text-box></draw:frame>')
+	body = timestamp + frame('<draw:text-box><text:p>Keep this authored.</text:p></draw:text-box>',
+		y="5cm")
+	input_path = write_odp(tmp_path, CONTENT_PREFIX + page("source", body) + CONTENT_SUFFIX)
+	assets_dir = tmp_path / "assets"
+	assets_dir.mkdir()
+	presentation = odp_reader.read_presentation(input_path, assets_dir,
+		pathlib.PurePosixPath("assets/deck"))
+	data = presentation.slides[0].data
+	assert [run.text for _, runs in data.text_blocks[0].lines for run in runs] == ["Keep this authored."]
+	assert len(data.text_blocks) == len(presentation.slides[0].positioned_text) == 1
+
+
+#============================================
 def test_page_evidence_keeps_section_positive_case_and_near_miss(tmp_path: pathlib.Path) -> None:
 	"""Physical source indices retain exact layout and placeholder evidence."""
 	section = page("section", frame('<draw:text-box><text:p>Unit two</text:p></draw:text-box>',

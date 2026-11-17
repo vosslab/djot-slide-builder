@@ -2,7 +2,7 @@
 
 ## Finding
 
-- **Low — unreferenced CairoSVG dependency.** `pip_requirements.txt:8` installs `cairosvg` for local SVG drawing recipes, but a repository-wide case-insensitive search found no live Python import or command invoking it. The only code reference is the archived, reference-only `docs/archive/genetics_gene_tree_svg/reference_only/cd/draw_trials.py.txt:4`; its README identifies it as historical. Every installation therefore carries a dependency with no current consumer. Remove the requirement if replaying that archived reference is not a supported installation workflow. The archive itself can remain intact.
+- **Low - unreferenced CairoSVG dependency.** `pip_requirements.txt:8` installs `cairosvg` for local SVG drawing recipes, but a repository-wide case-insensitive search found no live Python import or command invoking it. The only code reference is the archived, reference-only `docs/archive/genetics_gene_tree_svg/reference_only/cd/draw_trials.py.txt:4`; its README identifies it as historical. Every installation therefore carries a dependency with no current consumer. Remove the requirement if replaying that archived reference is not a supported installation workflow. The archive itself can remain intact.
 
 ## Areas checked
 

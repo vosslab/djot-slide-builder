@@ -339,6 +339,8 @@ def read_page_objects(
 	while stack:
 		element, z_order = stack.pop()
 		if element.tag == odp_geometry.qname("draw", "frame"):
+			if element.get(odp_geometry.qname("draw", "name")) == "render-timestamp":
+				continue
 			ordinal = next_object()
 			read_frame(element, source_index, page_width, page_height, archive, member_names,
 				manifest_targets, assets_dir, djot_root, known_images, accumulator, media_budget,

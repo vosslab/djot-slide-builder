@@ -59,6 +59,11 @@ Use `build --format all`, `build --format odp`, or `build --format pdf`; `all` i
 Folder selection is recursive and includes `.djot` source only. In a copied checkout without Git
 metadata, run commands from the top-level folder containing `build_slides.sh` and `slide_lib/`.
 
+Each build adds a subdued rendering timestamp to slide 1 and the last visible `theend` slide,
+when present. Both show the same local date, time with seconds, and time-zone abbreviation.
+The caption-sized text remains selectable in ODP/PDF and updates when you rebuild the Djot source.
+It is generated automatically; no `@caption` or date text needs to be added to the source.
+
 ## Build the table demonstration
 
 The maintained [../exemplars/table_styles.djot](../exemplars/table_styles.djot) demonstrates the

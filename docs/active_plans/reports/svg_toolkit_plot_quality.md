@@ -4,9 +4,9 @@
 
 The current gallery SVG contains 41 live `text` elements, all declaring `Atkinson Hyperlegible Next`, and zero `image` elements. The focused raster-artist test confirms that image elements are rejected. `fc-match` resolves the intended installed family; the white-background `PANGOCAIRO_BACKEND=fc` render shows ordinary labels and titles, including tick labels, without evident clipping or overlap. At 720 pixels high (955 pixels wide), the full four-plot gallery is readable on the inspected image, though tick labels are relatively small for remote viewing and a smaller placement should use larger labels or fewer plots. This is an image-scale assessment, not a classroom or Zoom usability test.
 
-Validation: `MPLCONFIGDIR="$PWD/_temp/mplconfig" PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest -q tests/test_svg_icons.py tests/test_svg_plots.py` — **15 passed**. Regenerated `_temp/plots.svg` using the example and rendered with `rsvg-convert` on white, then encoded WebP at quality 90:
+Validation: `MPLCONFIGDIR="$PWD/_temp/mplconfig" PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest -q tests/test_svg_icons.py tests/test_svg_plots.py` - **15 passed**. Regenerated `_temp/plots.svg` using the example and rendered with `rsvg-convert` on white, then encoded WebP at quality 90:
 
-- `_temp/svg_toolkit/plot_quality/plots.webp` (1300 × 980)
-- `_temp/svg_toolkit/plot_quality/plots_slide.webp` (955 × 720)
+- `_temp/svg_toolkit/plot_quality/plots.webp` (1300 x 980)
+- `_temp/svg_toolkit/plot_quality/plots_slide.webp` (955 x 720)
 
 No LibreOffice, ODP, or PDF export was run; this does not establish cross-renderer font fidelity or validate all Matplotlib artist types. SVG import intentionally rejects unsupported content, including raster artists.

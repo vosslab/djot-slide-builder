@@ -186,7 +186,7 @@
         "cell": "One shared connected cell envelope",
         "nuclei": [
           "a",
-          "α"
+          "&alpha;"
         ],
         "count": 2
       }
@@ -214,10 +214,10 @@
         }
       ],
       "source_facts": {
-        "stage": "3 New a/α cell",
+        "stage": "3 New a/&alpha; cell",
         "cell": "One shared connected cell envelope",
         "nuclei": [
-          "a/α"
+          "a/&alpha;"
         ],
         "count": 1
       }

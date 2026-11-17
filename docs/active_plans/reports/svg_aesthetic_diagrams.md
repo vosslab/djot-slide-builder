@@ -13,7 +13,7 @@ reviewed unchanged; its chromosome geometry and spacing remain intact.
 
 ## Checks
 
-`PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_svg_annotations.py tests/test_svg_text.py tests/test_svg_text_extract.py tests/test_svg_icons.py -q` — 21 passed.
+`PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_svg_annotations.py tests/test_svg_text.py tests/test_svg_text_extract.py tests/test_svg_icons.py -q` - 21 passed.
 
 Each of `annotations`, `text_labels`, `styled_text`, `icons`, `svg_composition`, and `placement`
 was generated using `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.NAME`.

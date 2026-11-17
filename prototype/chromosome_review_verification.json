@@ -6,8 +6,8 @@
   "native_review_ids": 68,
   "notes": 69,
   "contact_sheets": 5,
-  "pdf_sha256": "770981c30386e35820971f096c78a938e6d0c0ac639fe5d3543aafa6ebc00856",
-  "odp_sha256": "b56a86b67d37261316cf60b1ae136253f049d0508b4ade7bde9ace5b5cdb2a6f",
+  "pdf_sha256": "13aefc2e5b2a4b91735f9050a153cfba9d64be05ebbd4afa110afed247f8332a",
+  "odp_sha256": "df8a773ee94b350aa013e0dd1fb58db713489ccac416066b78f1afcf4e813589",
   "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material.",
   "known_issue": "C21: TEM region appears blank in the current native export; original artwork unchanged.",
   "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
@@ -390,5 +390,62 @@
     ],
     "independent_code_and_native_visual_reviews": "passed after correcting final callout to former inactive site",
     "canonical_generator": "devel/render_human_chromosome_2_fusion.py"
+  },
+  "render_timestamp_followup": {
+    "label": "rendered on Tue, Nov 17, 2026 at 8:45:52 AM CST",
+    "native_pages_stamped": [
+      1
+    ],
+    "other_slide_text_unchanged": 69,
+    "prototype_svg_files_unchanged": 67,
+    "native_theme_checks": {
+      "genetics": {
+        "label": "rendered on Tue, Nov 17, 2026 at 8:42:36 AM CST",
+        "native_text_present": [
+          1,
+          0,
+          1
+        ],
+        "text_bounds_inside_page": true,
+        "same_timestamp_on_both_pages": true
+      },
+      "biostatistics": {
+        "label": "rendered on Tue, Nov 17, 2026 at 8:42:36 AM CST",
+        "native_text_present": [
+          1,
+          0,
+          1
+        ],
+        "text_bounds_inside_page": true,
+        "same_timestamp_on_both_pages": true
+      },
+      "biochemistry": {
+        "label": "rendered on Tue, Nov 17, 2026 at 8:42:36 AM CST",
+        "native_text_present": [
+          1,
+          0,
+          1
+        ],
+        "text_bounds_inside_page": true,
+        "same_timestamp_on_both_pages": true
+      },
+      "biotechnology": {
+        "label": "rendered on Tue, Nov 17, 2026 at 8:42:36 AM CST",
+        "native_text_present": [
+          1,
+          0,
+          1
+        ],
+        "text_bounds_inside_page": true,
+        "same_timestamp_on_both_pages": true
+      }
+    },
+    "layout_export_theme_tests_passed": 115,
+    "focused_import_tests_passed": 34,
+    "public_odp_import_omits_generated_timestamp": true,
+    "native_pages_visually_inspected": [
+      "prototype slide1",
+      "covers and THE END in all4 course themes"
+    ]
   }
 }

@@ -532,7 +532,7 @@ No selection 173 implementation, full-suite, classroom or print acceptance is cl
 **COMPLETE, November 12, 2026; fresh independent integration review PASS; broader goal ACTIVE.**
 Exactly six source005 URLs at local24-29 now use pollen_survival_question.quote.svg;
 every other consumer byte is exact. Decision170-OCR joins only Sup-/pose and genera-/tion;
-all 81 question tokens, punctuation, six italic spans and both F₂ subscripts are preserved.
+all 81 question tokens, punctuation, six italic spans and both F&#x2082; subscripts are preserved.
 No answer or native A/a prose change. Root accepted source, both standalone proofs and all
 six baseline/candidate pages; fresh independent specification and quality reviews PASS.
 Actual guarded full38/focused6 compilation matches every accepted candidate model/plan,
@@ -540,7 +540,7 @@ empty diagnostics, every raw ODP member byte and ZIP order. No LibreOffice repla
 Target displayed rectangles and fitted ODP frames change inside identical allocations;
 all native and neighboring objects remain exact. Accepted PDF retains native word counts
 [0,28,27,28,10,52] and exact boxes; each page adds 81 question tokens after legitimate
-F₂ extraction-fragment joining. All six pages have zero changed pixels outside the union
+F&#x2082; extraction-fragment joining. All six pages have zero changed pixels outside the union
 of old/new target display rectangles expanded3px. No global pixel-identity claim.
 Art8/protected7, baseline71/protected98, candidate59 and prior167 opaque closure remain
 intact; only the historical live consumer hash changes, with all frozen bytes preserved.
@@ -587,7 +587,7 @@ Next170 READY for exact OCR quote-card creation: source05E005 has six references
 local24-29. Proposed559x290 fits the limiting559x297 allocation; preliminary23px
 Atkinson Hyperlegible Next regular measurement gives nine lines/234px plus padding.
 Decision170-OCR authorizes only Sup-/pose to Suppose and genera-/tion to generation;
-all other words/errors/punctuation/case, F₂ and italic roles stay exact. Final italic/
+all other words/errors/punctuation/case, F&#x2082; and italic roles stay exact. Final italic/
 subscript shaping and all-neighbor candidate preservation remain future checks.
 Assessment170 seal and all nine named members preserved; no170 artwork started.
 Biotechnology LECT11 excluded. Skipped full-deck export, full suite, classroom and print checks.

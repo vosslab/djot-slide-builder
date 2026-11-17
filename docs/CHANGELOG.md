@@ -2,6 +2,9 @@
 
 ### Behavior or Interface Changes
 
+- Stamp slide 1 and the last visible THE END slide with the same local rendering date
+  and time on each native build. Use subdued, selectable caption-sized text on light
+  and dark backgrounds; ODP and its exported PDF share the timestamp automatically.
 - Unify C03/C36 with C03's banded chromosome-fusion construction. Concatenate the
   ancestral material into one dicentric body, remove internal telomere caps, and
   preserve its full length and bands through centromere inactivation. Retire the

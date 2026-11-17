@@ -1,6 +1,6 @@
 # Organelle quality review
 
-**QUALITY PASS** — M15 ER refinement, reviewed against the current rendered `_temp/svg_toolkit/organelles/organelles.webp`, `svg_tools/cells.py`, the organelle example, and its focused test.
+**QUALITY PASS** - M15 ER refinement, reviewed against the current rendered `_temp/svg_toolkit/organelles/organelles.webp`, `svg_tools/cells.py`, the organelle example, and its focused test.
 
 The ER now reads as a connected, perforated membrane network: its six light openings are enclosed by a continuous lavender body. It is visibly distinct from the separate, curved Golgi cisternae in both the gallery and composed cell. In the cell proof the ER meets the nucleus at its left edge, consistent with the example's alignment of the ER right and nucleus left anchors. This is a highly simplified schematic of ER continuity, not a detailed depiction of nuclear-envelope membrane topology or rough versus smooth ER.
 
