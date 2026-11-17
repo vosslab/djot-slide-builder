@@ -38,6 +38,29 @@ def test_curved_chromatid_keeps_width_and_source_order() -> None:
 	assert part.anchors['centromere'] == part.anchors['centromere_0']
 
 
+def test_internal_gene_labels_retain_regions_without_decorative_texture() -> None:
+	"""Gene regions and their labels remain legible when a recipe suppresses BPQ texture."""
+	model = chromosomes.Chromosome((
+		chromosomes.Segment('A', '#F3D788', 1),
+		chromosomes.Segment('', '#D9C9EF', 1),
+		chromosomes.Segment('b', '#00775F', 1),
+	))
+	part = chromosomes.chromosome_path_part('loci', model,
+		'M0 0 C45 -25 75 25 120 0', thickness=24, texture=False)
+	root = xml.etree.ElementTree.fromstring(part.fragment)
+	body = root.find('./g[@data-layer="body"]')
+	assert body.find('./g[@data-layer="texture"]') is None
+	regions = root.findall('.//g[@data-source-label]')
+	assert [node.find('./path').get('stroke') for node in regions] == ['#F3D788', '#D9C9EF', '#00775F']
+	labels = {node.text: node for node in root.findall('./text')}
+	assert set(labels) == {'A', 'b'}
+	assert all(node.get('stroke') == 'none' for node in labels.values())
+	assert all(node.get('fill') == chromosomes._label_color(model.segments[index].color)
+		for index, node in ((0, labels['A']), (2, labels['b'])))
+	assert float(labels['A'].get('x')) == pytest.approx(part.anchors['segment_0'][0])
+	assert float(labels['b'].get('x')) == pytest.approx(part.anchors['segment_2'][0])
+
+
 def test_independent_sisters_and_compaction_keep_models() -> None:
 	first = chromosomes.Chromosome((chromosomes.Segment('A', '#D9C9EF'),
 		chromosomes.Segment('B', '#C1E7EE')), (chromosomes.Centromere(1),))
@@ -131,5 +154,5 @@ def test_long_curved_chromosome_stays_compact_and_follows_its_centerline() -> No
 			assert abs(surface.point(distance, side*width/2)-expected) < width*.02
 	model = chromosomes.Chromosome((chromosomes.Segment('', '#087faf'),))
 	part = chromosomes.chromosome_path_part('long_curve', model, drawing,
-		thickness=width, labels=False, bands=False)
+		thickness=width, labels=False, texture=False)
 	assert len(part.fragment.encode('ascii')) < 500_000

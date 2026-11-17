@@ -1,23 +1,22 @@
 {
-  "pages": 70,
+  "pages": 71,
   "figures": 68,
   "source_hashes_match": 68,
-  "prototype_asset_references": 67,
+  "prototype_asset_references": 68,
   "native_review_ids": 68,
-  "notes": 69,
+  "notes": 70,
   "contact_sheets": 5,
-  "pdf_sha256": "13aefc2e5b2a4b91735f9050a153cfba9d64be05ebbd4afa110afed247f8332a",
-  "odp_sha256": "df8a773ee94b350aa013e0dd1fb58db713489ccac416066b78f1afcf4e813589",
-  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material.",
-  "known_issue": "C21: TEM region appears blank in the current native export; original artwork unchanged.",
+  "pdf_sha256": "767d0e1e498f549f3ec47f78edac778c6d5fc35f273a5b07e862d85d6e9db632",
+  "odp_sha256": "9fba9c1fa2851c164702c9aea2bf694365cb95b36b5795a0d1d3691ac4a3a004",
+  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material. Native-text follow-up: inspected C13/C21/C25/C55 overview/C55 loop/C56/C59 after moving prose outside SVG. Both C55 panels are full-size; C21 now reuses C13 and its micrograph renders. Checked 12 pt condensed timestamp below THE END outline.",
+  "known_issue": null,
   "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
   "preserved_evidence_ids": [
     "C04",
     "C51"
   ],
   "focused_tests_passed": 21,
-  "lecture_svg_files_unchanged": 1049,
-  "prototype_originals_verified_in_odp": 67,
+  "prototype_originals_verified_in_odp": 68,
   "bpq_reference": "translocationlib.py body layers at height 30; dimensions scale with chromatid thickness.",
   "bpq_straight_body_comparison": {
     "browser": "Chromium",
@@ -392,7 +391,7 @@
     "canonical_generator": "devel/render_human_chromosome_2_fusion.py"
   },
   "render_timestamp_followup": {
-    "label": "rendered on Tue, Nov 17, 2026 at 8:45:52 AM CST",
+    "label": "rendered on Tue, Nov 17, 2026 at 9:21:42 AM CST",
     "native_pages_stamped": [
       1
     ],
@@ -446,6 +445,123 @@
     "native_pages_visually_inspected": [
       "prototype slide1",
       "covers and THE END in all4 course themes"
-    ]
+    ],
+    "font": "IBM Plex Sans Condensed",
+    "font_size_pt": 12,
+    "theend_outline_clearance_verified": true,
+    "font_reduction_native_preview": "Genetics cover and THE END at12pt; current prototype slide1"
+  },
+  "native_text_separation_followup": {
+    "C13": {
+      "removed_svg_text": [
+        "I",
+        "Nonsister chromatids",
+        "held together",
+        "during synapsis",
+        "Synapsis and",
+        "crossing over",
+        "Movement to",
+        "the metaphase",
+        "plate",
+        "Breakdown of",
+        "proteins holding",
+        "sister chromatid",
+        "arms together"
+      ],
+      "native_text": "Recombinant Chromosomes Nonsister chromatids held together during synapsis: Synapsis   and crossing   over Movement to the metaphase I plate Breakdown of proteins holding sister chromatid arms together C13 | Recombinant chromosomes  - LECT06C, source slide 20 | Replication and division",
+      "body_geometry_preserved": true,
+      "images": 1
+    },
+    "C21": {
+      "removed_svg_text": [
+        "I",
+        "Nonsister chromatids",
+        "held together",
+        "during synapsis",
+        "Synapsis and",
+        "crossing over",
+        "Movement to",
+        "the metaphase",
+        "plate",
+        "Breakdown of",
+        "proteins holding",
+        "sister chromatid",
+        "arms together"
+      ],
+      "native_text": "Chromatid Comparison Nonsister chromatids held together during synapsis: Synapsis   and crossing   over Movement to the metaphase I plate Breakdown of proteins holding sister chromatid arms together C21 | Same source figure as C13  - LECT08B, source slide 34 | Mixed schematic and evidence",
+      "body_geometry_preserved": false,
+      "images": 1,
+      "reuses_c13_working_diagram": true,
+      "source_tem_label_retained": true
+    },
+    "C25": {
+      "removed_svg_text": [
+        "and reunion",
+        "Genetic markers are distal",
+        "to the site of breakage",
+        "\"Twin spot\""
+      ],
+      "native_text": "Twin spot.  Genetic markers are distal to the site of breakage and reunion. C25 | Mitotic recombination  - LECT09C, source slide 6 | Linkage and tetrads",
+      "body_geometry_preserved": true,
+      "images": 1
+    },
+    "C55": {
+      "removed_svg_text": [
+        "Gene-for-gene attraction in chromosome pairing (synapsis)",
+        "The gene-for-gene pairing causes either the inversion chromosome",
+        "or the wildtype chromosome to form a loop in the region in which",
+        "the inversion chromosome has the inversion."
+      ],
+      "native_text": "Gene- for- gene   attraction   in   chromosome pairing   (synapsis) C55 | Inversion synapsis: overview  - LECT13B, source slide 8 | Inversions The gene-for-gene pairing causes either the inversion chromosome or the wildtype chromosome to form a loop in the region in which the inversion chromosome has the inversion. C55 | Inversion synapsis: loop  - LECT13B, source slide 8 | Inversions",
+      "body_geometry_preserved": true,
+      "images": 2
+    },
+    "C56": {
+      "removed_svg_text": [
+        "When the centromere is not included in the inverted region, one of the crossover products",
+        "is a dicentric chromosome, and the reciprocal product is an acentric chromosome.",
+        "Among the two chromatids not involved in the crossover, one carries the inversion and",
+        "the other the normal gene sequence."
+      ],
+      "native_text": "When the centromere is not included in the inverted region, one of the crossover products is a dicentric chromosome, and the reciprocal product is an acentric chromosome. Among the two chromatids not involved in the crossover, one carries the inversion and the other the normal gene sequence. C56 | Paracentric anaphase  - LECT13B, source slide 14 | Inversions",
+      "body_geometry_preserved": true,
+      "images": 1
+    },
+    "C59": {
+      "removed_svg_text": [
+        "First crossover: between B/b and C/c",
+        "Only the inverted region is shown paired; ends are unpaired."
+      ],
+      "native_text": "First crossover: between B/b and C/c. Only the inverted region is shown paired; ends are unpaired. C59 | Inversion double-crossover problem  - LECT13B, source slide 22 | Inversions",
+      "body_geometry_preserved": true,
+      "images": 1
+    },
+    "unchanged_original_review_source_files": 68,
+    "untouched_review_ids": 61,
+    "current_replacement_svg_references": 68,
+    "capacity_diagnostics": 0,
+    "pages": 71,
+    "native_review_ids": 68,
+    "native_image_references": 69,
+    "c55_pages": [
+      56,
+      57
+    ],
+    "native_pages_visually_inspected": [
+      "C13",
+      "C21",
+      "C25",
+      "C55 overview",
+      "C55 loop",
+      "C56",
+      "C59"
+    ],
+    "independent_native_visual_review": "accepted",
+    "focused_layout_export_tests_passed": 42,
+    "strict_native_lint_passed": true,
+    "full_regeneration_passed": true,
+    "current_svg_references_embedded_by_exact_hash": 68,
+    "focused_svg_tests_passed": 21,
+    "pyflakes_passed": true
   }
 }

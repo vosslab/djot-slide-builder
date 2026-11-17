@@ -38,7 +38,7 @@ def rod(name: str, x: float, y: float, width: float, length: float,
 		model = svg_tools.chromosomes.Chromosome(segments,
 			centromeres=(svg_tools.chromosomes.Centromere(boundary),))
 	part = svg_tools.chromosomes.chromosome_part(f'{name}-body', model, length=length,
-		thickness=width, orientation='vertical', bands=False, labels=False)
+		thickness=width, orientation='vertical', texture=False, labels=False)
 	group = ET.Element(f'{{{NS}}}g', {'data-lect12c-chromosome': 'true',
 		'transform': f'translate({x} {y})'})
 	group.append(ET.fromstring(part.fragment))

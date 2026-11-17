@@ -234,7 +234,7 @@ def opsin_arrays() -> None:
 	model = svg_tools.chromosomes.Chromosome(regions,
 		centromeres=(svg_tools.chromosomes.Centromere(boundaries.index(619)),))
 	part = svg_tools.chromosomes.chromosome_part('opsin-source-x', model,
-		thickness=42, bands=False, labels=False)
+		thickness=42, texture=False, labels=False)
 	body = f'<g transform="translate(280 30)">{part.fragment}</g>'
 	body += svg_tools.drawing.text(250, 61, 'X', size=29,
 		color='#242334', anchor='middle', font='Atkinson Hyperlegible Next')

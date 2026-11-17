@@ -41,7 +41,7 @@ def nucleus_with_genotype(name: str, x: float, y: float, genotype: str) -> str:
 		parts.append(svg_tools.chromosomes.chromosome_path_part(
 			f'{name}-{chromosome_name}-{index}', model,
 			f'M {center_x} {y-16} V {y+10}', thickness=7,
-			labels=False, bands=False).fragment)
+			labels=False, texture=False).fragment)
 	return (f'<g id="{name}">{placed.fragment}{"".join(parts)}'
 		f'<text x="{x}" y="{y+25}" text-anchor="middle" font-family="{FONT}" '
 		f'font-size="14" font-weight="600" fill="#FFFFFF">{genotype}</text></g>')

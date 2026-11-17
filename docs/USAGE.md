@@ -61,7 +61,7 @@ metadata, run commands from the top-level folder containing `build_slides.sh` an
 
 Each build adds a subdued rendering timestamp to slide 1 and the last visible `theend` slide,
 when present. Both show the same local date, time with seconds, and time-zone abbreviation.
-The caption-sized text remains selectable in ODP/PDF and updates when you rebuild the Djot source.
+The small IBM Plex Sans Condensed text remains selectable in ODP/PDF and updates when you rebuild the source.
 It is generated automatically; no `@caption` or date text needs to be added to the source.
 
 ## Build the table demonstration

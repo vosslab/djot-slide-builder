@@ -56,8 +56,11 @@ def test_render_timestamp_marks_cover_and_final_visible_closer(tmp_path: pathlib
 	assert [index for index, _ in stamps] == [0, 3]
 	assert all(isinstance(item.content, slide_lib.layout_content.TextContent)
 		for _, item in stamps)
-	assert all(item.content.paragraphs[0].typography.selected_size_pt == 18.0
+	assert all(item.content.paragraphs[0].typography.selected_size_pt < 18.0
 		for _, item in stamps)
+	assert all(run.style.font_family == "IBM Plex Sans Condensed"
+		for _, item in stamps for run in item.content.paragraphs[0].inlines
+		if isinstance(run, slide_lib.layout_content.TextRun))
 	lines = ["".join(run.text for run in item.content.paragraphs[0].inlines
 		if isinstance(run, slide_lib.layout_content.TextRun)) for _, item in stamps]
 	assert lines == ["rendered on Tue, Nov 17, 2026 at 8:10:23 AM CST"] * 2

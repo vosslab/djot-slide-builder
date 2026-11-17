@@ -558,17 +558,39 @@ Change:
 
 Reason:
 
-=== layout: big-image
+=== layout: one-panel
 
-@image
+@body
 
-![Inversion synapsis](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg)
+![Inversion synapsis overview](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg)
 
-@caption
+Gene-for-gene attraction in chromosome pairing (synapsis)
 
-*C55 | Inversion synapsis*
+@citation
 
-LECT13B, source slide 8 | Inversions
+*C55 | Inversion synapsis: overview* - LECT13B, source slide 8 | Inversions
+
+@notes
+
+Review ID: C55.
+
+Source deck: genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot
+
+Source definition: genetics/LECT13/djot/lect13b-chromo_alter_3-inversion.djot:78
+
+Original figure: genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg
+
+=== layout: one-panel
+
+@body
+
+![Inversion synapsis loop](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis-loop.drawn.svg)
+
+The gene-for-gene pairing causes either the inversion chromosome or the wildtype chromosome to form a loop in the region in which the inversion chromosome has the inversion.
+
+@citation
+
+*C55 | Inversion synapsis: loop* - LECT13B, source slide 8 | Inversions
 
 @notes
 
@@ -586,17 +608,17 @@ Change:
 
 Reason:
 
-=== layout: big-image
+=== layout: one-panel
 
-@image
+@body
 
 ![Paracentric anaphase](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/paracentric-anaphase.drawn.svg)
 
-@caption
+When the centromere is not included in the inverted region, one of the crossover products is a dicentric chromosome, and the reciprocal product is an acentric chromosome. Among the two chromatids not involved in the crossover, one carries the inversion and the other the normal gene sequence.
 
-*C56 | Paracentric anaphase*
+@citation
 
-LECT13B, source slide 14 | Inversions
+*C56 | Paracentric anaphase* - LECT13B, source slide 14 | Inversions
 
 @notes
 
@@ -668,17 +690,17 @@ Change:
 
 Reason:
 
-=== layout: big-image
+=== layout: one-panel
 
-@image
+@body
 
 ![Inversion double-crossover problem](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
-@caption
+First crossover: between B/b and C/c. Only the inverted region is shown paired; ends are unpaired.
 
-*C59 | Inversion double-crossover problem*
+@citation
 
-LECT13B, source slide 22 | Inversions
+*C59 | Inversion double-crossover problem* - LECT13B, source slide 22 | Inversions
 
 @notes
 

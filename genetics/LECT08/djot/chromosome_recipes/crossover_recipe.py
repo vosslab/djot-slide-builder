@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild crossover chromatids while preserving labels and source centromere marks."""
+"""Rebuild crossover chromatids with embedded allele loci and source centromere marks."""
 # Standard Library
 import argparse
 import json
@@ -7,6 +7,53 @@ import pathlib
 import xml.etree.ElementTree
 # local repo modules
 import svg_tools.chromosomes
+
+
+LOCUS_FILL = '#F3D788'
+LOCUS_LENGTH = 40
+
+
+#============================================
+def allele_model(item: dict, alleles: tuple[str, str]) -> svg_tools.chromosomes.Chromosome:
+	"""Split each chromatid into structural color runs and two labeled gene regions."""
+	colors = item['colors']
+	lengths = item['lengths']
+	total = sum(lengths)
+	locus_centers = (105, total-35)
+	color_ends = []
+	distance = 0
+	for color, length in zip(colors, lengths):
+		distance += length
+		color_ends.append((distance, color))
+	boundaries = {0, total}
+	boundaries.update(end for end, _ in color_ends)
+	if item['product']:
+		boundaries.add(35)
+	for center in locus_centers:
+		boundaries.update((center-LOCUS_LENGTH/2, center+LOCUS_LENGTH/2))
+	boundaries = sorted(boundaries)
+	segments = []
+	for left, right in zip(boundaries, boundaries[1:]):
+		middle = (left+right)/2
+		label = ''
+		color = next(color for end, color in color_ends if middle <= end)
+		for center, allele in zip(locus_centers, alleles):
+			if center-LOCUS_LENGTH/2 <= middle <= center+LOCUS_LENGTH/2:
+				label = allele
+				color = LOCUS_FILL
+		segments.append(svg_tools.chromosomes.Segment(label, color, right-left))
+	centromeres = (svg_tools.chromosomes.Centromere(boundaries.index(35)),) if item['product'] else ()
+	return svg_tools.chromosomes.Chromosome(tuple(segments), centromeres=centromeres)
+
+
+#============================================
+def remove_legacy_alleles(root: xml.etree.ElementTree.Element) -> None:
+	"""Delete source labels replaced by the locus regions within each chromatid."""
+	for parent in root.iter():
+		for child in list(parent):
+			if (child.tag.endswith('text') and child.get('font-size') == '25'
+				and child.get('x') in ('180', '395')):
+				parent.remove(child)
 
 
 
@@ -28,6 +75,10 @@ def main() -> None:
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	for name, source in json.loads((HERE / 'crossover_sources.json').read_text()).items():
 		root = xml.etree.ElementTree.fromstring(source['svg'])
+		remove_legacy_alleles(root)
+		allele_rows = ((('a', 'b'), ('a', 'b'), ('+', '+'), ('+', '+')) * 2
+			if name == 'no_crossover.drawn.svg' else
+			(('a', 'b'), ('a', '+'), ('+', 'b'), ('+', '+')) * 2)
 		for parent in root.iter():
 			for child in list(parent):
 				if child.get('data-source-centromere') == 'true':
@@ -43,12 +94,9 @@ def main() -> None:
 					continue
 				index = int(child.get('data-shared-part'))
 				item = source['parts'][index]
-				colors, lengths = item['colors'], item['lengths']
-				if item['product']:
-					model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', colors[0], 35), svg_tools.chromosomes.Segment('', colors[0], lengths[0]-35), svg_tools.chromosomes.Segment('', colors[1], lengths[1])), centromeres=(svg_tools.chromosomes.Centromere(1),))
-				else:
-					model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, length) for color, length in zip(colors, lengths)))
-				part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model, item['path'], thickness=14, labels=False)
+				model = allele_model(item, allele_rows[index])
+				part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model,
+					item['path'], thickness=28, labels=True, texture=False)
 				parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
 				parent.remove(child)
 		for node in root.iter():

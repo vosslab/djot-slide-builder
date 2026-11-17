@@ -140,7 +140,7 @@ def build(output_dir: pathlib.Path) -> None:
 		chromatids = tuple((model(color,end,start), path)
 			for (start,end),path in zip((first,second),centerlines))
 		fragment = chromosomes.sister_chromatid_parts(name,chromatids,
-			thickness=width,bands=False,labels=False).fragment
+			thickness=width,texture=False,labels=False).fragment
 		fragments.append(f'<g transform="translate({x} {y})">{fragment}</g>')
 	patch_data = (BASE/'sources/body_cleanup.png').read_bytes()
 	overlay = ET.Element(f'{{{SVG}}}g', {'id':'shared-chromosome-migration',

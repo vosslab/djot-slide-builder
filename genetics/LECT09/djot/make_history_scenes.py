@@ -27,6 +27,39 @@ paths = {
 	('M 95 220 C 160 220 175 250 210 250 C 270 250 300 220 350 185 C 400 150 430 150 590 150', OCHRE, BROWN),
 	('M 95 310 C 160 310 175 270 210 270 C 255 270 270 310 320 310 C 410 310 410 185 455 185 C 500 185 500 60 590 60', OCHRE, BROWN)],
 }
+
+
+def distance_at_x(curve, x: float) -> float:
+	"""Return the arc distance of one known locus on a left-to-right chromatid."""
+	low, high = 0., 1.
+	for _ in range(40):
+		middle = (low + high) / 2
+		if curve.point(middle).real < x:
+			low = middle
+		else:
+			high = middle
+	distance = curve.length(0, (low + high) / 2)
+	return distance
+
+
+def chromatid_segments(curve, crossover: float, proximal: str, distal: str,
+	alleles: tuple[str, str]) -> tuple:
+	"""Place the two established loci as contrasting, labelled chromosome regions."""
+	markers = []
+	for x, allele in zip((275., 550.), alleles):
+		center = distance_at_x(curve, x)
+		markers.append((center-18, center+18, allele))
+	boundaries = sorted({0., crossover, curve.length(),
+		*(value for marker in markers for value in marker[:2])})
+	regions = []
+	for start, end in zip(boundaries, boundaries[1:]):
+		label = next((marker[2] for marker in markers
+			if start == marker[0] and end == marker[1]), '')
+		color = '#F3D788' if label else (proximal if (start+end)/2 < crossover else distal)
+		regions.append(svg_tools.chromosomes.Segment(label, color, end-start))
+	return tuple(regions)
+
+
 def main() -> None:
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument('--output-root', type=pathlib.Path, default=OUTPUT.parent)
@@ -40,12 +73,12 @@ def main() -> None:
 		for i, (path, left, right) in enumerate(strands):
 			curve = svgpathtools.parse_path(path)
 			cross_x = 455 if name == 'four_strand_dco_to_npd' and i in (0, 3) else 350
-			pieces = list(curve)
-			cross = next((j+1 for j, piece in enumerate(pieces) if abs(piece.end.real-cross_x) < .01), None)
-			before = sum(piece.length() for piece in pieces[:cross]) if cross else curve.length()/2
-			after = curve.length()-before
-			model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('proximal', left, before), svg_tools.chromosomes.Segment('distal', right, after)))
-			part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{i+1}', model, path, thickness=34, labels=False)
+			before = distance_at_x(curve, float(cross_x))
+			alleles = ('A' if left == BROWN else 'a', 'B' if right == BROWN else 'b')
+			model = svg_tools.chromosomes.Chromosome(
+				chromatid_segments(curve, before, left, right, alleles))
+			part = svg_tools.chromosomes.chromosome_path_part(
+				f'chromatid-{i+1}', model, path, thickness=34, labels=True)
 			group = ET.SubElement(scene, 'g', {'id': f'strand-{i+1}', 'data-chromatid':'true', 'data-product': ('AB','Ab','aB','ab')[i] if name == 'sco_to_tt' else (('AB','AB','ab','ab')[i] if name == 'nco_to_pd' else ('Ab','Ab','aB','aB')[i])})
 			group.append(ET.fromstring(part.fragment))
 		for i, y in enumerate((100, 260), start=1):
@@ -55,19 +88,6 @@ def main() -> None:
 		if name == 'four_strand_dco_to_npd':
 			title = ET.SubElement(scene, f'{{{NS}}}text', {'x':'50', 'y':'28', 'font-family':'Atkinson Hyperlegible Next', 'font-size':'25', 'fill':'#172B3A'})
 			title.text = '4-strand double crossing over'
-		# Alleles on the source chromosome illustration, separate from the retained ascus labels.
-		def y_at_x(path: str, x: float) -> float:
-			curve = svgpathtools.parse_path(path)
-			low, high = 0., 1.
-			for _ in range(40):
-				mid = (low + high) / 2
-				if curve.point(mid).real < x: low = mid
-				else: high = mid
-			return curve.point((low + high) / 2).imag
-		for x, ys, letters in [(275,[y_at_x(p, 275) for p, _, _ in strands],['A','A','a','a']), (550,[60,150,220,310],['B','B','b','b'])]:
-			for y, letter in zip(ys, letters):
-				t = ET.SubElement(scene, f'{{{NS}}}text', {'x':str(x),'y':str(y+9),'text-anchor':'middle','font-family':'Atkinson Hyperlegible Next','font-size':'35','font-style':'italic','fill':'white','data-allele':'true'})
-				t.text = letter
 		output.mkdir(parents=True, exist_ok=True)
 		out = output / (name + '.svg')
 		ET.ElementTree(root).write(out, encoding='utf-8', xml_declaration=True)

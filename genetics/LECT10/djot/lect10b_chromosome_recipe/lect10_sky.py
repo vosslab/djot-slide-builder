@@ -19,7 +19,7 @@ def main(destination: pathlib.Path) -> None:
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, x, y, length, width, angle, color in MARKS:
 		layout = svg_tools.chromosomes.render_chromosome_layout('sky-' + name, svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color),)),
-			length=length, thickness=width, bands=False, labels=False)
+			length=length, thickness=width, texture=False, labels=False)
 		node = slots['slide-mark-' + name]
 		node.set('transform', f'translate({x} {y}) rotate({angle}) translate({-length/2} {-width/2})')
 		node.append(xml.etree.ElementTree.fromstring(layout.svg))

@@ -7,7 +7,7 @@ import svgpathtools
 
 import svg_tools.chromosomes
 import svg_tools.parts
-import genetics.LECT06.djot.make_chromosome_meiosis
+import svg_tools.chromosome_surface
 
 
 #============================================
@@ -129,6 +129,10 @@ def test_curved_centromere_and_rejected_topology() -> None:
 def test_source_projection_measures_distance_from_start() -> None:
 	"""Source-region projection preserves left/right ancestry and endpoint caps."""
 	path = svgpathtools.parse_path("M0 0 L1000 0")
-	project = genetics.LECT06.djot.make_chromosome_meiosis.nearest_distance
+	project = svg_tools.chromosome_surface.nearest_distance
 	for distance in (0, 200, 800, 1000):
 		assert project(path, complex(distance, 0)) == pytest.approx(distance, abs=.001)
+	for drawing in ('M0 0 C0 160 60 0 140 0', 'M100 0 A100 100 0 0 1 0 100'):
+		path = svgpathtools.parse_path(drawing)
+		point = path.point(.7)
+		assert project(path, point) == pytest.approx(path.length(0, .7), abs=.001)

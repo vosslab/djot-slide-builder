@@ -29,7 +29,7 @@ def chromosome(spec: dict) -> str:
 			centromeres=(Centromere(1),))
 		thickness = spec['thickness'] / (2.2 if spec.get('sisters', False) else 1)
 		part = chromosome_part(name, model, length=spec['length'], thickness=thickness,
-			orientation=spec.get('orientation', 'vertical'), bands=False,
+			orientation=spec.get('orientation', 'vertical'), texture=False,
 			sisters=spec.get('sisters', False), labels=False)
 	return '<g data-chromosome="' + name + '" data-sisters="' + str(spec.get('sisters', False)).lower() + '" transform="' + spec.get('transform', '') + '">' + part.fragment + '</g>'
 

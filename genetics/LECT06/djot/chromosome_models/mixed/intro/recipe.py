@@ -27,7 +27,7 @@ def chromosome(name: str, x: float, y: float, length: float, sisters: bool = Fal
 		svg_tools.chromosomes.Segment('', '#8A7BC4', 42),
 	), centromeres=(svg_tools.chromosomes.Centromere(1),))
 	part = svg_tools.chromosomes.chromosome_part(name, model, length=length,
-		thickness=18, orientation='vertical', bands=False, sisters=sisters, labels=False)
+		thickness=18, orientation='vertical', texture=False, sisters=sisters, labels=False)
 	return svg_tools.parts.transform(part, x=x, y=y).fragment
 
 

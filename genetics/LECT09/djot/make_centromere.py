@@ -27,7 +27,7 @@ def chromosome_body() -> ET.Element:
 	), centromeres=(svg_tools.chromosomes.Centromere(1),))
 	layout = svg_tools.chromosomes.render_chromosome_layout(
 		'centromere-drawn', model, length=190, thickness=27, orientation='vertical',
-		sisters=True, bands=False, labels=False)
+		sisters=True, texture=False, labels=False)
 	return ET.fromstring(layout.svg)
 
 

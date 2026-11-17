@@ -2,8 +2,18 @@
 
 ### Behavior or Interface Changes
 
+- Standardize chromosome loci around colored gene regions and upright, contrast-aware
+  labels. Replace floating recipe labels where the chromosome has room, while retaining
+  readable external labels for dense diagrams and whole-chromosome identifiers.
+  Rename the shared decorative `bands` switch to `texture`; explicit biological bands,
+  ancestry colors and gene intervals remain independent. Remove C01's local text-outline fix.
+- Move C13/C21's numbered explanations and C25/C56/C59's bottom prose into native
+  Djot text. Split C55 into two SVG panels with native captions; reuse C13's working
+  diagram for the duplicate C21, restoring its micrograph and cell backdrop.
+- Reduce rendering timestamps to 12 pt IBM Plex Sans Condensed and place them below
+  the THE END outline with more clearance. Retain subdued, readable theme colors.
 - Stamp slide 1 and the last visible THE END slide with the same local rendering date
-  and time on each native build. Use subdued, selectable caption-sized text on light
+  and time on each native build. Use subdued, selectable text on light
   and dark backgrounds; ODP and its exported PDF share the timestamp automatically.
 - Unify C03/C36 with C03's banded chromosome-fusion construction. Concatenate the
   ancestral material into one dicentric body, remove internal telomere caps, and

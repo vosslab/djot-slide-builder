@@ -18,6 +18,8 @@ import genetics.LECT13.djot.lect13d_p2_compositions
 
 import build_chromosome_replacements
 import generate_chromosome_review_assets
+import review_division_composition
+import review_inversion_composition
 
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -105,6 +107,8 @@ def main() -> None:
 
 	# The remaining p2 compositions currently provide a function rather than an output option.
 	genetics.LECT13.djot.lect13d_p2_compositions.render(ASSETS / 'assets/lect13d-meiosis_translocation')
+	review_division_composition.separate_division_prose()
+	review_inversion_composition.separate_inversion_prose()
 	separate_c58_prose()
 	refresh_inventory()
 

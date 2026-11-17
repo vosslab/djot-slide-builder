@@ -49,17 +49,23 @@ def add_render_timestamp(page: slide_lib.layout_model.LayoutSlide, rendered_on: 
 		slide_lib.layout_primitives.StyleRole.SECTION,
 		slide_lib.layout_primitives.StyleRole.SUBSECTION) else FOREGROUND
 	# Blend against the known surface so native text needs no new opacity mechanism.
-	channels = [round(int(foreground[index:index+2],16)*.55
-		+ int(background[index:index+2],16)*.45) for index in (0,2,4)]
+	channels = [round(int(foreground[index:index+2],16)*.75
+		+ int(background[index:index+2],16)*.25) for index in (0,2,4)]
 	color = ''.join(f'{channel:02X}' for channel in channels)
-	y = 680 if any(item.object_id == "citation" for item in page.objects) else 754
-	rectangle = slide_lib.layout_primitives.LogicalRectangle(60, y, 1160, 42)
+	y = 680 if any(item.object_id == "citation" for item in page.objects) else 766
+	rectangle = slide_lib.layout_primitives.LogicalRectangle(60, y, 1160, 30)
 	paragraph = slide_lib.native_model.Paragraph(page.identity.source,
 		(slide_lib.native_model.Text(rendered_on),))
 	content = slide_lib.layout_object_builders.text_content((paragraph,),
-		CAPTION_FLOOR_SIZE_PT, CAPTION_FLOOR_SIZE_PT,
+		12.0, 12.0,
 		slide_lib.layout_primitives.StyleRole.MUTED, color, rectangle.width, theme, session=session)
 	content = dataclasses.replace(content, paragraphs=tuple(dataclasses.replace(paragraph,
+		typography=dataclasses.replace(paragraph.typography,
+			font_family=slide_lib.presentation_theme.NARROW_FONT_FAMILY),
+		inlines=tuple(dataclasses.replace(run, style=dataclasses.replace(run.style,
+			font_family=slide_lib.presentation_theme.NARROW_FONT_FAMILY))
+			if isinstance(run, slide_lib.layout_content.TextRun) else run
+			for run in paragraph.inlines),
 		properties=dataclasses.replace(paragraph.properties,
 			horizontal_alignment=slide_lib.layout_primitives.HorizontalAlignment.CENTER))
 		for paragraph in content.paragraphs))

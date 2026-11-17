@@ -378,15 +378,69 @@ CHROMOSOME_COMPLEMENTS_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width
 
 DIRECT_REPEAT_LOOP_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title description">\n<title id="title">Direct-repeat recombination</title>\n<desc id="description">Two parallel ribbons contain directly oriented purple and blue repeat copies enclosing A B ... Y Z. The ribbons fold together, bringing the purple repeat above the blue repeat at one black exchange X. Both open paths pass through A B ... Y Z; the outgoing flanks cross over the right bend without joining it. Recombination produces paired deletion ribbons with a purple-then-blue junction and a separate paired ring retaining A B ... Y Z with a blue-then-purple junction across its top. The source does not identify the molecular or replication state of the paired ribbons. Continuation chevrons are not chromosome termini; no centromere position or length scale is asserted.</desc>\n<g font-family="Atkinson Hyperlegible Next" fill="#20252b" font-size="24">\n\n<g id="initial">\n<text id="repeat-callout-1" x="330" y="36" font-size="25" text-anchor="middle">Repeated DNA sequences with</text>\n<text id="repeat-callout-2" x="330" y="65" font-size="25" text-anchor="middle">same (direct) orientation.</text>\n<path id="repeat-leader-purple" d="M205 77 L180 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<path id="repeat-leader-blue" d="M460 77 L485 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<g id="initial-1">\n<text id="initial-1-gene-A" x="239" y="125" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-1-gene-B" x="270" y="125" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-1-gene-dotdotdot" x="330" y="125" font-size="23" text-anchor="middle">...</text>\n<text id="initial-1-gene-Y" x="394" y="125" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-1-gene-Z" x="426" y="125" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<g id="initial-2">\n<text id="initial-2-gene-A" x="239" y="160" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-2-gene-B" x="270" y="160" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-2-gene-dotdotdot" x="330" y="160" font-size="23" text-anchor="middle">...</text>\n<text id="initial-2-gene-Y" x="394" y="160" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-2-gene-Z" x="426" y="160" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n</g>\n<path id="initial-to-folded" d="M300 186 L300 232 M307.0 217.0 L300 232 L293.0 217.0" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="folded">\n<path id="overpass-clearance" d="M280 367 H510 V438 H280 Z" fill="white" stroke="none" stroke-width="0" />\n<path id="exchange-X" d="M264 338 L285 359 M285 338 L264 359" fill="none" stroke="#000000" stroke-width="3" />\n<text id="folded-1-gene-A" x="359" y="289" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-1-gene-B" x="421" y="327" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-1-gene-dotdotdot" x="300" y="555" font-size="22" text-anchor="middle">...</text>\n<text id="folded-1-gene-Y" x="210" y="542" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-1-gene-Z" x="176" y="484" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="folded-2-gene-A" x="340" y="322" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-2-gene-B" x="389" y="348" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-2-gene-dotdotdot" x="300" y="520" font-size="22" text-anchor="middle">...</text>\n<text id="folded-2-gene-Y" x="238" y="515" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-2-gene-Z" x="211" y="479" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<path id="folded-to-deletion" d="M545 338 L650 252 M633.9600936697965 256.08918144844415 L650 252 L642.8310386498448 266.91998636594485" fill="none" stroke="#30363d" stroke-width="2.7" />\n<path id="folded-to-ring" d="M545 484 L658 461 M641.9052287869613 457.13239872790126 L658 461 L644.6975328443957 470.8511099666013" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="deletion">\n<text id="deletion-label" x="820" y="303" font-size="27" text-anchor="middle">Deletion</text>\n</g>\n<g id="ring">\n<text id="ring-1-gene-A" x="882.27" y="380.74" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-1-gene-B" x="918.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-1-gene-dotdotdot" x="810.0" y="569.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-1-gene-Y" x="702.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-1-gene-Z" x="737.73" y="380.74" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-2-gene-A" x="858.85" y="406.75" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-2-gene-B" x="883.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-2-gene-dotdotdot" x="810.0" y="534.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-2-gene-Y" x="737.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-2-gene-Z" x="761.15" y="406.75" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-label" x="810" y="603" font-size="24" text-anchor="middle">Acentric ring fragment (lost)</text>\n</g></g></svg>'
 
+def _repeat_loci(parent: ET.Element, prefix: str) -> tuple[tuple[str, complex], ...]:
+	"""Read the source's named gene centers for one known chromosome path."""
+	loci = []
+	for text in parent.findall(NS+'text'):
+		if text.get('id', '').startswith(prefix) and text.text != '...':
+			y = float(text.get('y'))-float(text.get('font-size'))*.34
+			loci.append((text.text, complex(float(text.get('x')), y)))
+	return tuple(loci)
+
+
+def _replace_repeat_loci(parent: ET.Element, prefix: str) -> None:
+	"""Keep ellipses as sequence shorthand while shared bodies draw gene letters."""
+	for text in list(parent.findall(NS+'text')):
+		if text.get('id', '').startswith(prefix) and text.text != '...':
+			parent.remove(text)
+		elif text.get('id', '').startswith(prefix):
+			parent.remove(text)
+			parent.append(text)
+
+
+def _repeat_segments(regions: list[tuple[str, float]], path: svgpathtools.Path,
+	thickness: float, loci: tuple[tuple[str, complex], ...]) -> tuple[Segment, ...]:
+	"""Add fixed-width gold gene intervals at this path's source-known loci."""
+	path_length = path.length()
+	region_length = sum(length for _, length in regions)
+	boundaries = [0.0]
+	for _, length in regions:
+		boundaries.append(boundaries[-1]+length/region_length*path_length)
+	located = []
+	for label, point in loci:
+		distance = svg_tools.chromosome_surface.nearest_distance(path, point)
+		located.append((label, distance))
+	width = thickness*.8
+	edges = [*boundaries]
+	for _, distance in located:
+		edges.extend((max(0, distance-width/2), min(path_length, distance+width/2)))
+	edges = sorted(set(edges))
+	segments = []
+	for start, end in zip(edges, edges[1:]):
+		middle = (start+end)/2
+		label = next((value for value, distance in located
+			if distance-width/2 <= middle <= distance+width/2), '')
+		color = '#F3D788'
+		if not label:
+			for index, (region_color, _) in enumerate(regions):
+				if middle <= boundaries[index+1]:
+					color = region_color
+					break
+		segments.append(Segment(label, color, end-start))
+	return tuple(segments)
+
+
 def path_body(
 	parent: ET.Element, name: str, regions: list[tuple[str, float]], path: str,
 	thickness: float = 28, closed: bool = False, cut: bool = False,
+	loci: tuple[tuple[str, complex], ...] = (),
 ) -> None:
-	# Source colors and intervals remain ordered through each bend.
-	model = Chromosome(tuple(Segment('', color, length)
-		for color, length in regions))
+	"""Paint source-ordered material and optional source-positioned gene intervals."""
+	centerline = svgpathtools.parse_path(path)
+	model = Chromosome(_repeat_segments(regions, centerline, thickness, loci) if loci else
+		tuple(Segment('', color, length) for color, length in regions))
 	part = chromosome_path_part(name, model, path, thickness=thickness,
-		closed=closed, cut_ends=cut, labels=False)
+		closed=closed, cut_ends=cut, labels=bool(loci))
 	parent.append(ET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
 
 def write_svg(root: ET.Element, path: Path) -> None:
@@ -500,12 +554,16 @@ def render_repeat_loop() -> None:
 	initial=root.find('.//'+NS+'g[@id="initial"]')
 	for i,y in [(1,117),(2,152)]:
 		g=initial.find(NS+'g[@id="initial-'+str(i)+'"]')
-		path_body(g,'shared-initial-'+str(i),[(neutral,105),(purple,70),(brown,235),(blue,70),(neutral,90)],f'M40 {y} H610',28,cut=True)
-		# Keep editable allele labels on top of the shared body.
-		for text in list(g.findall(NS+'text')):g.remove(text);g.append(text)
+		prefix='initial-'+str(i)+'-gene-'
+		loci=_repeat_loci(g,prefix)
+		path_body(g,'shared-initial-'+str(i),[(neutral,105),(purple,70),(brown,235),(blue,70),(neutral,90)],f'M40 {y} H610',28,cut=True,loci=loci)
+		_replace_repeat_loci(g,prefix)
 	fold=root.find('.//'+NS+'g[@id="folded"]')
 	for i,path in [(1,'M310 278 H330 C400 278 450 325 450 420 C450 510 390 548 300 548 C200 548 175 520 175 475 C175 420 200 385 240 385'),(2,'M310 313 H330 C365 313 415 340 415 420 C415 485 375 513 300 513 C230 513 210 500 210 475 C210 445 225 420 240 420')]:
-		path_body(fold,'shared-fold-'+str(i),[(brown,1)],path,28,cut=True)
+		prefix='folded-'+str(i)+'-gene-'
+		loci=_repeat_loci(fold,prefix)
+		path_body(fold,'shared-fold-'+str(i),[(brown,1)],path,28,cut=True,loci=loci)
+		_replace_repeat_loci(fold,prefix)
 	# Outgoing paths are drawn over the bends, preserving the source overpass topology.
 	for i,y in [(1,278),(2,313)]:
 		path_body(fold,'shared-fold-in-'+str(i),[(neutral,175),(purple,70)],f'M65 {y} H310',28,cut=True)
@@ -523,7 +581,10 @@ def render_repeat_loop() -> None:
 		# Source order starts at the junction, purple then intervening DNA then blue.
 		circ=2*math.pi*radius; repeat=.40*radius
 		path=f'M810 {453-radius} A{radius} {radius} 0 1 1 810 {453+radius} A{radius} {radius} 0 1 1 810 {453-radius} Z'
-		path_body(ring,'shared-ring-'+str(i),[(purple,repeat),(brown,circ-2*repeat),(blue,repeat)],path,28,True)
+		prefix='ring-'+str(i)+'-gene-'
+		loci=_repeat_loci(ring,prefix)
+		path_body(ring,'shared-ring-'+str(i),[(purple,repeat),(brown,circ-2*repeat),(blue,repeat)],path,28,True,loci=loci)
+		_replace_repeat_loci(ring,prefix)
 	for el in list(ring.findall(NS+'text')):ring.remove(el);ring.append(el)
 	for i,y,xs in [(1,117,[40,610]),(2,152,[40,610]),(1,278,[65]),(2,313,[65]),(1,385,[500]),(2,420,[500]),(1,220,[690,950]),(2,255,[690,950])]:
 		for x in xs:

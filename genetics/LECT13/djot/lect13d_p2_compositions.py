@@ -71,7 +71,7 @@ def chromosome(name: str, source: Model) -> svg_tools.parts.SvgPart:
 	model = svg_tools.chromosomes.Chromosome(segments, (
 		svg_tools.chromosomes.Centromere(source['centromere_after']),))
 	parts = {'body': svg_tools.chromosomes.chromosome_part(name, model,
-		thickness=42, bands=False, labels=False, sisters=False)}
+		thickness=42, texture=False, labels=False, sisters=False)}
 	x = 0.0
 	for index, segment in enumerate(segments):
 		if segment.label:

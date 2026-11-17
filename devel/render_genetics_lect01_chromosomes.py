@@ -5,7 +5,6 @@ Gene blocks are schematic; their widths and identities stay constant during tran
 """
 
 import pathlib
-import xml.etree.ElementTree as ET
 
 import svg_tools.chromosomes as chromosomes
 import svg_tools.drawing as drawing
@@ -36,11 +35,7 @@ def panel(name: str, title: str, explanation: str, products: tuple) -> str:
 				color=INK, anchor='end')
 			part = chromosomes.chromosome_part(f'{name}-{state}-{index}', model,
 				thickness=40, labels=True)
-			placed = ET.fromstring(parts.transform(part, x=x, y=y).fragment)
-			# LibreOffice paints text strokes over fills; plain letters stay readable.
-			for label in placed.iter('text'):
-				label.set('stroke', 'none')
-			body += ET.tostring(placed, encoding='unicode')
+			body += parts.transform(part, x=x, y=y).fragment
 	body += '<path d="M 572 182 H 696" fill="none" stroke="#243746" stroke-width="5" marker-end="url(#process-head)"/>'
 	body += drawing.text(32, 308, explanation, size=25, color=INK, anchor='start')
 	return body

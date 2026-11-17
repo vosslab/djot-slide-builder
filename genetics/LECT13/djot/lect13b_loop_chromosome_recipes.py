@@ -9,7 +9,9 @@ import math
 import pathlib
 import xml.etree.ElementTree as ET
 
+import svgpathtools
 import svg_tools.chromosomes as chromosomes
+import svg_tools.chromosome_surface
 import svg_tools.parts
 
 
@@ -78,6 +80,74 @@ def replace_sister_markers(name: str,
 
 
 #============================================
+def _path_position(path: svgpathtools.Path, target: complex) -> float:
+	"""Project one authored label onto its explicitly associated centerline."""
+	best = min((abs(path.point(index/400)-target), index/400) for index in range(401))[1]
+	left, right = max(0, best-.01), min(1, best+.01)
+	for _ in range(16):
+		first, second = (2*left+right)/3, (left+2*right)/3
+		if abs(path.point(first)-target) <= abs(path.point(second)-target):
+			right = second
+		else:
+			left = first
+	return path.length(0, (left+right)/2)
+
+
+#============================================
+def _locus_patch(parent: ET.Element, *, name: str, number: int, gene: str,
+	path: svgpathtools.Path, thickness: float, source_center: complex) -> None:
+	"""Paint a small semantic gene region swept inside one known chromatid."""
+	surface = svg_tools.chromosome_surface.Surface(path, thickness)
+	center = _path_position(path, source_center)
+	half_length = min(12, surface.length/12)
+	half_width = thickness/2 - 1.4
+	ET.SubElement(parent, f'{{{NS}}}path', {
+		'id': f'{name}-gene-{number}', 'class': 'gene-locus', 'data-gene': gene,
+		'd': surface.ribbon(max(0, center-half_length), min(surface.length, center+half_length),
+			-half_width, half_width), 'fill': '#F3D788', 'stroke': '#8B631B',
+		'stroke-width': '.8', 'stroke-linejoin': 'round',
+	})
+	point = surface.point(center, 0)
+	text = ET.SubElement(parent, f'{{{NS}}}text', {
+		'class': 'gene-label', 'x': f'{point.real:.3f}', 'y': f'{point.imag+5:.3f}',
+		'font-size': '15', 'text-anchor': 'middle', 'font-weight': 'bold',
+		'font-style': 'italic', 'fill': '#172B3A',
+	})
+	text.text = gene
+
+
+#============================================
+def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
+	"""Replace cards with patches on their authored, fixed chromosome paths."""
+	stage_a = [0]*4 + [1]*4 + [2]*4 + [4]*4
+	stage_b = {
+		'paracentric-anaphase': [6]*4 + [7]*4 + [8, 8, 9, 9] + [10, 10, 11, 11],
+		'pericentric-anaphase': [6]*4 + [7, 7, 8, 8] + [9]*4 + [10, 10, 11, 11],
+	}
+	for parent in root.iter():
+		cards = []
+		children = list(parent)
+		for index, card in enumerate(children[:-1]):
+			label = children[index+1]
+			if (card.tag == f'{{{NS}}}rect' and label.tag == f'{{{NS}}}text'
+				and card.get('width') == '28' and card.get('height') == '35'
+				and card.get('fill') == 'white' and label.get('font-style') == 'italic'):
+				cards.append((card, label))
+		if not cards:
+			continue
+		part_numbers = stage_a if parent.get('id') == 'stage-a-pairing' or name == 'pericentric-pairing' else stage_b[name]
+		if len(cards) != len(part_numbers):
+			raise ValueError(f'{name} locus mapping has {len(cards)} labels, expected {len(part_numbers)}')
+		for number, ((card, label), part_number) in enumerate(zip(cards, part_numbers)):
+			parent.remove(card)
+			parent.remove(label)
+			data = source['parts'][part_number]
+			_locus_patch(parent, name=name, number=number, gene=label.text or '',
+				path=svgpathtools.parse_path(data['path']), thickness=data['thickness'],
+				source_center=complex(float(card.get('x'))+14, float(card.get('y'))+17.5))
+
+
+#============================================
 def render_source(name: str, source: dict) -> ET.Element:
 	"""Build one source-preserving composition from its shell and body data."""
 	root = ET.fromstring(source['svg'])
@@ -95,6 +165,8 @@ def render_source(name: str, source: dict) -> ET.Element:
 			replacement = ET.fromstring(part.fragment)
 			replacement.set('stroke', 'none')
 			parent.insert(position, replacement)
+	if name in ('paracentric-anaphase', 'pericentric-pairing', 'pericentric-anaphase'):
+		integrate_loci(root, name, source)
 	markers = replace_markers(root, name)
 	if name in ('paracentric-anaphase', 'pericentric-anaphase'):
 		replace_sister_markers(name, markers, (

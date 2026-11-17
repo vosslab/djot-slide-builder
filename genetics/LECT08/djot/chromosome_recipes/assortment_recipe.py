@@ -41,7 +41,7 @@ def main() -> None:
 				width = 7
 				part = svg_tools.chromosomes.chromosome_part(f'chromosome-{index}', model,
 					length=item['bottom']-item['top'], thickness=width,
-					orientation='vertical', sisters=item['paired'], bands=False, labels=False)
+					orientation='vertical', sisters=item['paired'], texture=False, labels=False)
 				group = xml.etree.ElementTree.Element('g', {'transform': f"translate({item['x']-width*(1.1 if item['paired'] else .5)} {item['top']})"})
 				group.append(xml.etree.ElementTree.fromstring(part.fragment))
 				parent.insert(list(parent).index(child), group)

@@ -89,7 +89,7 @@ import svg_tools.chromosomes
 pathlib.Path("_temp").mkdir(exist_ok=True)
 rod = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment("", "#00775F"),))
 layout = svg_tools.chromosomes.render_chromosome_layout(
-	"plain", rod, length=300, thickness=50, bands=False,
+	"plain", rod, length=300, thickness=50, texture=False,
 )
 svg_tools.drawing.write_svg("_temp/plain.drawn.svg", layout.width + 20, layout.height + 20,
 	"Plain chromosome", "A schematic single chromatid.",
@@ -100,6 +100,14 @@ svg_tools.drawing.write_svg("_temp/plain.drawn.svg", layout.width + 20, layout.h
 schematic length. `Chromosome(segments, centromeres=())` keeps region order and accepts
 `Centromere(after, active=True, label=None)` sites, including terminal sites. Biological
 bands are explicit colored segments; the optional BPQ surface texture is decorative.
+
+For discrete genes, use short labeled segments at their actual loci, with unlabeled
+segments for the intervening chromosome material. Labels stay upright inside their
+colored regions and use a contrasting fill without a text outline. Preserve unequal
+spacing when it carries information. Dense diagrams can retain external labels with
+a visible connection to their loci; chromosome numbers and arm names identify whole
+structures rather than gene regions. C53 is the review reference for colored gene
+blocks; C01/C47 show schematic gene-order labels.
 
 The shared surface follows BPQ's paint order: base colors, irregular texture, translucent
 sheen, inset light/shadow, outline, and labels. Reference dimensions scale from a 30-unit
@@ -188,7 +196,7 @@ model, records = svg_tools.chromosomes.read_cytobands(
 )
 banded = svg_tools.chromosomes.render_chromosome_layout(
 	"chr7", model, length=700, thickness=100, orientation="vertical",
-	bands=False, labels=False,
+	texture=False, labels=False,
 )
 selected = next(record for record in records if record.segment.label == "q31.2")
 anchors = tuple(anchor for anchor in banded.segments if anchor.segment is selected.segment)
@@ -199,8 +207,10 @@ The centromere is a large pale rectangle placed at the source-known boundary; it
 and does not establish genomic length. Keep dense map labels outside and inspect clearance at
 the actual placement size.
 
-`bands=False` suppresses decorative texture; the source stain fills remain. Decorative band
-modes and caller colors do not have to use the source stain palette. `labels=False`
+`texture=False` suppresses decorative BPQ stripes; the source stain fills and body
+depth remain. Texture does not represent cytogenetic staining, heterochromatin,
+chromosome ancestry, or gene identity. Those meanings belong to explicit colored regions.
+`labels=False`
 suppresses dense internal band names. Use selected anchors for external labels such as
 `CFTR: 7q31.2`. Match records to anchors by Segment identity (`is`), including after deletion
 or exchange; original source addresses and coordinates stay with their segments. Keep the

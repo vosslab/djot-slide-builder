@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 import svgpathtools
 
 import svg_tools.chromosomes
+import svg_tools.chromosome_surface
 
 
 DIRECTORY = pathlib.Path(__file__).resolve().parent
@@ -31,25 +32,6 @@ def centerline(paths: list[ET.Element]) -> svgpathtools.Path:
 	return svgpathtools.Path(*first, *second)
 
 
-def nearest_distance(path: svgpathtools.Path, point: complex) -> float:
-	"""Locate a source point on its source centerline without imposing new ratios."""
-	length = path.length()
-	if abs(path.start-point) < 1e-9:
-		return 0.0
-	if abs(path.end-point) < 1e-9:
-		return length
-	best = min(range(1001), key=lambda index: abs(path.point(index/1000)-point))
-	low, high = max(0, best-2)/1000, min(1000, best+2)/1000
-	for _ in range(24):
-		left = low+(high-low)/3
-		right = high-(high-low)/3
-		if abs(path.point(left)-point) < abs(path.point(right)-point):
-			high = right
-		else:
-			low = left
-	return path.length(0, (low+high)/2)
-
-
 def replace_group(group: ET.Element, parent: ET.Element) -> bool:
 	"""Replace one explicitly marked source chromatid without changing its group."""
 	paths = [node for node in group if node.tag == NAMESPACE+'path' and node.attrib.get('stroke')]
@@ -68,24 +50,25 @@ def replace_group(group: ET.Element, parent: ET.Element) -> bool:
 		line = svgpathtools.Path(*(segment for _, curve in body for segment in curve))
 		markers = [complex(float(node.attrib['cx']), float(node.attrib['cy']))
 			for node in parent if node.tag == NAMESPACE+'circle']
-		marker = min(markers, key=lambda point: abs(line.point(line.ilength(nearest_distance(line, point)))-point))
+		marker = min(markers, key=lambda point: abs(line.point(line.ilength(
+			svg_tools.chromosome_surface.nearest_distance(line, point)))-point))
 	else:
 		line = centerline([path for path, _ in body])
 	first = body[0][1]
 	second = body[1][1] if len(body) == 2 else None
 	center = first.length() if second is not None else line.length()/2
 	if circle is None:
-		center = nearest_distance(line, marker)
+		center = svg_tools.chromosome_surface.nearest_distance(line, marker)
 	else:
 		if second is None or abs(first[0].start-marker) > .01 or abs(second[0].start-marker) > .01:
-			center = nearest_distance(line, marker)
+			center = svg_tools.chromosome_surface.nearest_distance(line, marker)
 	base = body[0][0].attrib['stroke']
 	overlays = []
 	for path, overlay in parsed:
 		if circle is not None and (path, overlay) in body:
 			continue
-		start = nearest_distance(line, overlay[0].start)
-		end = nearest_distance(line, overlay[-1].end)
+		start = svg_tools.chromosome_surface.nearest_distance(line, overlay[0].start)
+		end = svg_tools.chromosome_surface.nearest_distance(line, overlay[-1].end)
 		overlays.append((min(start, end), max(start, end), path.attrib['stroke']))
 	breaks = {0.0, center, line.length()}
 	for start, end, _ in overlays:

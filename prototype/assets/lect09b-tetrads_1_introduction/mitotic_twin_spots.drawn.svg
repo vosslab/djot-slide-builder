@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="826" height="456" viewBox="0 0 826 456" role="img" aria-labelledby="figure-title figure-desc">
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="826" height="430" viewBox="0 0 826 430" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Mitotic twin-spot outcomes</title>
 <desc id="figure-desc">Two replicated homologs carry aB and Ab in trans. The inner nonsisters exchange distal material at one breakpoint proximal to both loci. The two rows are alternative daughter-cell pairs: two heterozygotes, or homozygous aa and homozygous bb twin spots. Colors encode chromosome ancestry; positions and shapes are schematic.</desc>
 <rect width="826" height="456" fill="white" />
@@ -20,11 +20,6 @@
 <text x="24" y="104" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="start">and reunion</text>
 <path d="M 139,112 L 151,213" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <circle cx="151" cy="224" r="12" fill="none" stroke="#213547" stroke-width="1.4" stroke-dasharray="3 3" />
-<rect x="16" y="337" width="251" height="96" rx="9" fill="#edf4f8" stroke="#9fb5c1" stroke-width="1.3" />
-<text x="141.5" y="362" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">Genetic markers are distal</text>
-<text x="141.5" y="387" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">to the site of breakage</text>
-<text x="141.5" y="412" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">and reunion</text>
-<path d="M 213,337 L 234,296" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 270,193 Q 291,168 319,137" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 306,142 L 319,137 L 317,151" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 270,261 Q 291,285 319,312" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
@@ -78,6 +73,4 @@
 </g>
 <text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Homozygous <tspan font-style="italic">bb</tspan></text>
 </g>
-<text x="574" y="448" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle">"Twin spot"</text>
-<path d="M 563,427 L 520,408 M 585,427 L 628,408" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

@@ -13,6 +13,26 @@ TEXTURE_STOPS = ((5, 7, 8), (18, 21, 22), (29, 30, 31),
 	(46, 48, 49), (59, 62, 63))
 
 
+def nearest_distance(path: svgpathtools.Path, point: complex) -> float:
+	"""Locate a source locus on its known centerline, measured by arc length."""
+	length = path.length()
+	if abs(path.start-point) < 1e-9:
+		return 0.0
+	if abs(path.end-point) < 1e-9:
+		return length
+	best = min(range(1001), key=lambda index: abs(path.point(index/1000)-point))
+	low, high = max(0, best-2)/1000, min(1000, best+2)/1000
+	for _ in range(24):
+		left = low+(high-low)/3
+		right = high-(high-low)/3
+		if abs(path.point(left)-point) < abs(path.point(right)-point):
+			high = right
+		else:
+			low = left
+	distance = path.length(0, (low+high)/2)
+	return distance
+
+
 class Surface:
 	"""Sample only the bent surface; straight chromosomes retain exact coordinates."""
 

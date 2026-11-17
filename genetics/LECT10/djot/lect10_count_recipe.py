@@ -25,7 +25,7 @@ def main(destination: pathlib.Path) -> None:
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, fraction), svg_tools.chromosomes.Segment('', color, 1-fraction)),
 					(svg_tools.chromosomes.Centromere(1),))
 				part = svg_tools.chromosomes.chromosome_part(ident, model, length=length, thickness=thickness,
-					orientation='vertical', bands=False, labels=False)
+					orientation='vertical', texture=False, labels=False)
 				template = template.replace('@@' + ident + '@@',
 					'<g transform="translate(%s %s)">%s</g>' % (x-11, y, part.fragment))
 		elif name.startswith('trisomic_'):
@@ -42,7 +42,7 @@ def main(destination: pathlib.Path) -> None:
 				else:
 					model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, span) for color, span in segments),
 						(svg_tools.chromosomes.Centromere(detail),))
-					part = svg_tools.chromosomes.chromosome_part(ident, model, length=144, thickness=10, bands=False, labels=False)
+					part = svg_tools.chromosomes.chromosome_part(ident, model, length=144, thickness=10, texture=False, labels=False)
 					replacement = '<g transform="%s translate(-72 -5)">%s</g>' % (geometry, part.fragment)
 				template = template.replace('@@' + ident + '@@', replacement)
 		elif name == 'down_syndrome_forms':
@@ -50,14 +50,14 @@ def main(destination: pathlib.Path) -> None:
 				model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, span) for color, span in segments),
 					(() if centromere is None else (svg_tools.chromosomes.Centromere(centromere),)))
 				part = svg_tools.chromosomes.chromosome_part(ident, model, length=length, thickness=thickness,
-					orientation='vertical', bands=False, labels=False)
+					orientation='vertical', texture=False, labels=False)
 				template = template.replace('@@' + ident + '@@', part.fragment)
 		elif name.startswith('nondisjunction_'):
 			for ident, color, length, thickness, paired in MODELS[name]:
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color), svg_tools.chromosomes.Segment('', color)),
 					(svg_tools.chromosomes.Centromere(1),))
 				part = svg_tools.chromosomes.chromosome_part(ident, model, length=length, thickness=thickness/(2.2 if paired else 1),
-					orientation='vertical', bands=False, labels=False, sisters=paired)
+					orientation='vertical', texture=False, labels=False, sisters=paired)
 				template = template.replace('@@' + ident + '@@', part.fragment)
 		elif name == 'meiosis_ii_nondisjunction_lineage':
 			for ident, transform, length, thickness, paired in MODELS[name]:
@@ -71,7 +71,7 @@ def main(destination: pathlib.Path) -> None:
 					inner = part.fragment
 				else:
 					part = svg_tools.chromosomes.chromosome_part(ident, model, length=length, thickness=thickness/(2.2 if paired else 1),
-						orientation='vertical', bands=False, labels=False, sisters=paired)
+						orientation='vertical', texture=False, labels=False, sisters=paired)
 					inner = '<g transform="translate(%s %s)">%s</g>' % (-thickness/2, -length/2, part.fragment)
 				template = template.replace('@@' + ident + '@@',
 					'<g transform="%s">%s</g>' % (transform, inner))

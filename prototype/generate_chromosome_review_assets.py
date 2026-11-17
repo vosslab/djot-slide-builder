@@ -25,7 +25,7 @@ def staining() -> None:
 			for color in colors), (chromosomes.Centromere(5),))
 		part = chromosomes.sister_chromatid_parts(f'band-{column}',
 			((model, 'M 0 0 L 0 254'), (model, 'M 34 0 L 34 254')),
-			thickness=24, labels=False, bands=False)
+			thickness=24, labels=False, texture=False)
 		fragments.append(f'<g transform="translate({88 + column * 165} 36)">{part.fragment}</g>')
 	svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="522" height="369" viewBox="0 0 522 369" role="img" aria-labelledby="title desc">
 <title id="title">Chromosome banding comparison</title>

@@ -193,7 +193,7 @@ def reciprocal_translocation(left: Chromosome, left_cut: int,
 #============================================
 def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 	length: float | None = None, thickness: float = 62,
-	orientation: str = 'horizontal', bands: bool = True, sisters: bool = False,
+	orientation: str = 'horizontal', texture: bool = True, sisters: bool = False,
 	junctions: tuple[int, ...] = (), allele_labels: bool = False, labels: bool = True,
 	marker_size: tuple[float, float] | None = None) -> ChromosomeLayout:
 	"""Lay out straight chromatids with the same path geometry used for bends."""
@@ -219,14 +219,14 @@ def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 		else:
 			width = thickness*2.2
 		part = sister_chromatid_parts(name, paths, thickness=body, labels=labels,
-			marker_size=marker_size, bands=bands, junctions=junctions,
+			marker_size=marker_size, texture=texture, junctions=junctions,
 			allele_labels=allele_labels)
 		first, second = (part.anchors.get('sister0.centromere'),
 			part.anchors.get('sister1.centromere'))
 		center = None if first is None else ((first[0]+second[0])/2, (first[1]+second[1])/2)
 	else:
 		part = chromosome_path_part(name, chromosome, path(thickness/2), thickness=thickness,
-			labels=labels, bands=bands, junctions=junctions, allele_labels=allele_labels,
+			labels=labels, texture=texture, junctions=junctions, allele_labels=allele_labels,
 			marker_size=marker_size)
 		center = part.anchors.get('centromere')
 	prefix = 'sister0.' if sisters else ''
@@ -290,7 +290,7 @@ def centromere_part(name: str, *, thickness: float = 62, active: bool = True,
 #============================================
 def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], ...], *,
 	thickness: float = 28, labels: bool = False,
-	marker_size: tuple[float, float] | None = None, bands: bool = True,
+	marker_size: tuple[float, float] | None = None, texture: bool = True,
 	junctions: tuple[int, ...] = (), allele_labels: bool = False) -> svg_tools.parts.SvgPart:
 	"""Assemble independent sister chromatids and join their corresponding centromeres."""
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
@@ -302,7 +302,7 @@ def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], 
 		for chromosome, _ in chromatids):
 		raise ValueError('Sisters need corresponding centromere sites')
 	parts = {f'sister{index}': chromosome_path_part(f'{name}-sister-{index}', chromosome,
-		path_d, thickness=thickness, labels=labels, marker_size=marker_size, bands=bands,
+		path_d, thickness=thickness, labels=labels, marker_size=marker_size, texture=texture,
 		junctions=junctions, allele_labels=allele_labels)
 		for index, (chromosome, path_d) in enumerate(chromatids)}
 	for key, part in list(parts.items()):
@@ -360,12 +360,12 @@ def condensed_chromosome_part(name: str, chromosome: Chromosome, *, radius: floa
 #============================================
 def chromosome_part(name: str, chromosome: Chromosome, *,
 	length: float | None = None, thickness: float = 62,
-	orientation: str = 'horizontal', bands: bool = True, sisters: bool = False,
+	orientation: str = 'horizontal', texture: bool = True, sisters: bool = False,
 	junctions: tuple[int, ...] = (), allele_labels: bool = False, labels: bool = True,
 	marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
 	"""Render a local part with start, end, center, boundary_N and centromere anchors."""
 	layout = render_chromosome_layout(name, chromosome, length=length, thickness=thickness,
-		orientation=orientation, bands=bands, sisters=sisters, junctions=junctions,
+		orientation=orientation, texture=texture, sisters=sisters, junctions=junctions,
 		allele_labels=allele_labels, labels=labels, marker_size=marker_size)
 	bounds = layout.bounds
 	anchors = {f'boundary_{index}': point for index, point in enumerate(layout.boundaries)}
@@ -382,7 +382,7 @@ def chromosome_part(name: str, chromosome: Chromosome, *,
 #============================================
 def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 	thickness: float = 28, closed: bool = False, cut_ends: bool = False,
-	labels: bool = True, bands: bool = True, junctions: tuple[int, ...] = (),
+	labels: bool = True, texture: bool = True, junctions: tuple[int, ...] = (),
 	allele_labels: bool = False, marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
 	"""Paint ordered regions along one authored continuous chromatid centerline.
 
@@ -479,7 +479,7 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 			left += (marker_size[0] if marker_size else thickness*32/30)/2
 		if right > left:
 			texture_spans.append((left, right))
-	surface.paint(paint, name, texture=bands and bool(texture_spans), texture_spans=texture_spans)
+	surface.paint(paint, name, texture=texture and bool(texture_spans), texture_spans=texture_spans)
 	if not closed and not cut_ends:
 		cap_length = min(thickness*8/30, length/4)
 		for left, right in ((0, cap_length), (length-cap_length, length)):
@@ -514,6 +514,8 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 		group.append(marker)
 	if labels:
 		for index, segment in enumerate(chromosome.segments):
+			if not segment.label:
+				continue
 			left, right = distances[index:index+2]
 			clearance = (marker_size[0] if marker_size else thickness*32/30)/2
 			if any(site.after == index for site in chromosome.centromeres):
@@ -527,8 +529,8 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 			size = min(thickness*.5, (right-left)*.82/max(1, len(segment.label))/.65)
 			text = xml.etree.ElementTree.SubElement(group, 'text', {'x': str(x), 'y': str(y+size*.34),
 				'font-family': 'monospace', 'font-size': str(size),
-				'font-weight': 'bold', 'text-anchor': 'middle', 'fill': '#000000',
-				'stroke': '#FFFFFF', 'stroke-width': str(thickness/30), 'paint-order': 'stroke'})
+				'font-weight': 'bold', 'text-anchor': 'middle', 'fill': _label_color(segment.color),
+				'stroke': 'none'})
 			if allele_labels and segment.label:
 				xml.etree.ElementTree.SubElement(text, 'tspan', {'font-style': 'italic'}).text = segment.label[0]
 				xml.etree.ElementTree.SubElement(text, 'tspan', {'dy': str(-size*.22),

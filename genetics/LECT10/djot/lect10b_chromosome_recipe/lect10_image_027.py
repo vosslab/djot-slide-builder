@@ -11,7 +11,7 @@ def main(destination: pathlib.Path) -> None:
 	rod = svg_tools.chromosomes.chromosome_path_part('haploid', model,
 		'M 20 31 Q 34 48 34 78 Q 32 103 20 128', thickness=17, labels=False)
 	sisters = svg_tools.chromosomes.render_chromosome_layout('diploid', model, length=112, thickness=17,
-		orientation='vertical', bands=False, sisters=True, labels=False)
+		orientation='vertical', texture=False, sisters=True, labels=False)
 	svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="182" height="179" viewBox="0 0 182 179" role="img" aria-labelledby="title desc">
 <title id="title">Chromosome forms</title>
 <desc id="desc">The original labels accompany one chromatid and a joined pair of sister chromatids.</desc>

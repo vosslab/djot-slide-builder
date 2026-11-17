@@ -160,7 +160,7 @@ def make_tool_specimen(path: pathlib.Path) -> None:
 	body += label(64, 185, "01  Shape and replication", 30)
 	plain = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment("", "#72B9A5"),))
 	layout = svg_tools.chromosomes.render_chromosome_layout("tool-plain", plain,
-		length=520, thickness=52, bands=False)
+		length=520, thickness=52, texture=False)
 	body += label(80, 232, "Plain color | requested width and height")
 	body += place(layout.svg, 80, 252)
 	segments = tuple(svg_tools.chromosomes.Segment(letter, PURPLE, length)
@@ -267,11 +267,11 @@ def make_tool_v2_specimen(path: pathlib.Path) -> None:
 		pathlib.Path(__file__).parent / "data/chr7_hg38_cytobands.tsv")
 	rod_width = 64
 	whole = svg_tools.chromosomes.render_chromosome_layout("v2-chr7", model,
-		length=520, thickness=rod_width, orientation="vertical", bands=False,
+		length=520, thickness=rod_width, orientation="vertical", texture=False,
 		labels=False, marker_size=(38, 100))
 	sisters = svg_tools.chromosomes.render_chromosome_layout("v2-sisters", model,
 		length=520, thickness=rod_width, orientation="vertical", sisters=True,
-		bands=False, labels=False, marker_size=(38, 100))
+		texture=False, labels=False, marker_size=(38, 100))
 	if whole.centromere is None:
 		raise ValueError("Chromosome 7 requires a centromere")
 
@@ -366,7 +366,7 @@ def make_banded_chromosomes_1_3(path: pathlib.Path) -> None:
 		top = 565 - length
 		x = 112 + (number - 1) * 233
 		layout = svg_tools.chromosomes.render_chromosome_layout(f'chr{number}', model, length=length,
-			thickness=47, orientation='vertical', bands=False, labels=False, marker_size=(16, 44))
+			thickness=47, orientation='vertical', texture=False, labels=False, marker_size=(16, 44))
 		svg.append(f'<g transform="translate({x-23.5} {top})">{layout.svg}</g>')
 		center = top + layout.centromere[1]
 		for arm, words in zip(('p', 'q'), labels[number]):

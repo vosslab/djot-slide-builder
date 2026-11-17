@@ -30,7 +30,7 @@ def main(kind: str, destination: pathlib.Path) -> None:
 	metaphase = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', fraction), svg_tools.chromosomes.Segment('', '#4c9ec7', 1-fraction)),
 		(svg_tools.chromosomes.Centromere(1),))
 	rendered = svg_tools.chromosomes.render_chromosome_layout('metaphase-v2', metaphase, length=bottom-top,
-		thickness=26, orientation='vertical', sisters=True, bands=False, labels=False)
+		thickness=26, orientation='vertical', sisters=True, texture=False, labels=False)
 	body = xml.etree.ElementTree.fromstring(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
 	left = svg_tools.chromosomes.chromosome_path_part('left-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)

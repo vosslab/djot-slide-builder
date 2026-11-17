@@ -131,6 +131,13 @@ geometry. Choose the surface treatment from the represented condensation state.
   Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
   Homolog or parental colors need not match a course accent hue. Optional decorative texture
   may be hidden; actual source bands and measured intervals must remain intact.
+- Model discrete genes as labeled colored intervals at their actual loci. Use C53's embedded
+  gene blocks where they fit; C01/C47's lettered regions suit schematic gene-order diagrams.
+  Keep text upright and choose ink from the region's fill, without white text-outline halos.
+  External labels suit dense crossings and small chromosomes when they connect visibly to
+  their loci. Whole-chromosome numbers, arm names and genotype summaries stay outside.
+  BPQ texture, ancestry colors, gene regions, heterochromatin and cytogenetic staining have
+  different meanings; preserve those distinctions and each source's meaningful spacing.
 - Use compact chromosome forms, including Barr bodies, to show condensation without implying
   lost material. A deleted interval is absent chromosome material, not recolored material.
 - Keep a common longitudinal scale in physical before/after comparisons: a deletion shortens

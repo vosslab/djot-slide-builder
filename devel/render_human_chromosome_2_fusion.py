@@ -42,7 +42,7 @@ def rod(name: str, x: float, top: float, material: chromosomes.Chromosome) -> st
 	"""Place a chromosome without rescaling its material length."""
 	bottom = top + sum(segment.length for segment in material.segments)
 	part = chromosomes.chromosome_path_part(name,material,f'M {x} {top} V {bottom}',
-		thickness=27,labels=False,bands=False)
+		thickness=27,labels=False,texture=False)
 	return part.fragment
 
 

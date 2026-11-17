@@ -13,6 +13,27 @@ import svg_tools.parts
 
 
 #============================================
+def compact_locus_cards(root: ET.Element) -> None:
+	"""Keep the inversion exercise's genes as small colored chromosome regions."""
+	for parent in root.iter():
+		children = list(parent)
+		for index, card in enumerate(children[:-1]):
+			label = children[index+1]
+			if (not card.tag.endswith('rect') or not label.tag.endswith('text')
+				or card.get('width') != '34' or card.get('height') != '36'
+				or card.get('fill') != 'white'):
+				continue
+			center_x = float(card.get('x')) + 17
+			center_y = float(card.get('y')) + 18
+			card.attrib.update({
+				'class': 'gene-locus', 'data-gene': label.text, 'x': str(center_x-12),
+				'y': str(center_y-12), 'width': '24', 'height': '24', 'rx': '4',
+				'fill': '#F3D788', 'stroke-width': '1.5',
+			})
+			label.attrib.update({'y': str(center_y+6), 'font-size': '18', 'fill': '#172B3A'})
+
+
+#============================================
 def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	"""Keep authored text/composition and replace source-data chromosome placeholders."""
 	sources = json.loads(source_path.read_text())
@@ -21,6 +42,8 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 		(source_path.parent / image_name).read_bytes()).decode('ascii')
 	for relative, source in sources.items():
 		root = ET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
+		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
+			compact_locus_cards(root)
 		markers = {}
 		for parent in list(root.iter()):
 			for child in list(parent):

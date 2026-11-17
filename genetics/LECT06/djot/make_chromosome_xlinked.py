@@ -36,7 +36,7 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 				part = svg_tools.chromosomes.chromosome_part(
 					item['group'] + '-shared', chromosome, length=item['length'],
 					orientation=item['orientation'], thickness=item['thickness'],
-					bands=False, labels=False)
+					texture=False, labels=False)
 			element = xml.etree.ElementTree.fromstring(part.fragment)
 			if 'translate' in item:
 				element.set('transform', 'translate(' +

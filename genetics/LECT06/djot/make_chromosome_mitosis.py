@@ -37,7 +37,7 @@ def chromosome(name: str, chromatids: int, path_d: str | None,
 		return svg_tools.chromosomes.chromosome_path_part(name, model, path_d,
 			thickness=thickness, labels=False).fragment
 	part = svg_tools.chromosomes.chromosome_part(name, model, length=length,
-		thickness=thickness/2.2, orientation='horizontal', sisters=True, bands=False, labels=False)
+		thickness=thickness/2.2, orientation='horizontal', sisters=True, texture=False, labels=False)
 	return f'<g transform="translate({-length/2} {-thickness/2})">' + part.fragment + '</g>'
 
 

@@ -30,7 +30,7 @@ def build_body(model: dict) -> ET.Element:
 	))
 	layout = svg_tools.chromosomes.render_chromosome_layout(
 		model['id'], chromosome, length=model['length'], thickness=model['thickness'],
-		bands=False, labels=False,
+		texture=False, labels=False,
 	)
 	wrapper = '<g xmlns="' + NS + '">' + layout.svg + '</g>'
 	element = list(ET.fromstring(wrapper))[0]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the map-unit meioses and their source chromosome paths."""
+"""Rebuild the map-unit trace with attached allele-locus blocks."""
 # Standard Library
 import argparse
 import json
@@ -7,6 +7,27 @@ import pathlib
 import xml.etree.ElementTree
 # local repo modules
 import svg_tools.chromosomes
+
+
+LOCUS_FILL = '#F3D788'
+
+
+#============================================
+def attach_allele_loci(root: xml.etree.ElementTree.Element) -> None:
+	"""Place the six supplied allele blocks directly on their thin source chromatids."""
+	positions = {('146', '126'): '169', ('566', '126'): '169', ('986', '126'): '169',
+		('146', '286'): '329', ('566', '286'): '329', ('986', '286'): '329'}
+	text_positions = {('180', '173'): '208', ('600', '173'): '208', ('1020', '173'): '208',
+		('180', '333'): '368', ('600', '333'): '368', ('1020', '333'): '368'}
+	for node in root.iter():
+		if node.tag.endswith('rect') and (node.get('x'), node.get('y')) in positions:
+			node.set('y', positions[(node.get('x'), node.get('y'))])
+			node.set('fill', LOCUS_FILL)
+			node.set('stroke', '#344651')
+			node.set('rx', '8')
+		elif node.tag.endswith('text') and (node.get('x'), node.get('y')) in text_positions:
+			node.set('y', text_positions[(node.get('x'), node.get('y'))])
+			node.set('fill', '#172B3A')
 
 
 #============================================
@@ -27,6 +48,7 @@ def main() -> None:
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	source=json.loads((HERE/'exchanges_sources.json').read_text())
 	root=xml.etree.ElementTree.fromstring(source['svg'])
+	attach_allele_loci(root)
 	for parent in root.iter():
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:

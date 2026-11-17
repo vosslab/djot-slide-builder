@@ -41,7 +41,7 @@ def cell(stage: int, x: float, locus: str) -> str:
 		svg_tools.chromosomes.Segment('', '#F2D16F', 49),
 	))
 	rod = svg_tools.chromosomes.chromosome_part(f'stage-{stage}-chromosome', model,
-		length=65, thickness=11, orientation='vertical', bands=False, labels=False)
+		length=65, thickness=11, orientation='vertical', texture=False, labels=False)
 	return (f'<g id="stage-{stage}" transform="translate({x} 198)">'
 		f'<g id="stage-{stage}-cell">{envelope}</g>'
 		f'<g id="stage-{stage}-nucleus">{nucleus}</g>'

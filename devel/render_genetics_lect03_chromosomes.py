@@ -24,7 +24,7 @@ def build(root: ET.Element, item: dict) -> None:
 		('#D95358', boundaries[4]-boundaries[3]),
 		('#B6D8C8', boundaries[5]-boundaries[4]))),
 		(chromosomes.Centromere(1),))
-	part = chromosomes.chromosome_part('hla-chromosome-6', model, length=end-start, thickness=thickness, bands=False, labels=False)
+	part = chromosomes.chromosome_part('hla-chromosome-6', model, length=end-start, thickness=thickness, texture=False, labels=False)
 	part = parts.transform(part, start, 85)
 	next(e for e in root.iter() if e.get('data-slot')=='chromosome-6').append(ET.fromstring(part.fragment))
 

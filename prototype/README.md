@@ -11,7 +11,7 @@ approved style. `exemplars/` is reserved for instructor-approved models that age
 [Open the PDF](chromosome_review.pdf) or
 [open the editable presentation](chromosome_review.odp).
 
-The single 70-slide deck contains 68 current figures from 24 source decks across
+The single 71-slide deck contains 68 current figures from 24 source decks across
 Genetics LECT01, LECT02, LECT03, LECT04, LECT06, LECT08, LECT09, LECT10, LECT12, and LECT13.
 It samples simple rods and replicated sisters, division scenes, crossover and tetrad diagrams,
 centromere positions and movement, ploidy and dosage, inversions, and translocations. Empirical
@@ -31,7 +31,11 @@ C03/C36 use one shared fusion figure based on C03. The ancestral material forms 
 dicentric chromosome with two outer telomeres. Its length and bands remain identical through
 centromere inactivation and the final stage; removing the inactive collar leaves the body intact.
 
-C21 flags an existing rendering issue: its TEM area appears blank in the exported view.
+C13/C21 reuse the same crossing-over figure from two lectures, including its original TEM label.
+The working C13 construction restores C21's cell backdrop and micrograph. Their 1-3 markers stay
+in the image, while the matching explanations are native slide text. C25/C56/C59 likewise keep
+their bottom explanations outside the SVG. C55 uses two independent SVGs on consecutive slides
+so the overview and loop remain large; its index entry points to the first slide.
 
 Critique by ID, for example: "C12: keep the body shape; change the centromere and label size."
 The [sister_chromatid_survey.md](sister_chromatid_survey.md) records the survey using C16 as
