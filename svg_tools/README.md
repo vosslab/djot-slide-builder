@@ -109,6 +109,11 @@ a visible connection to their loci; chromosome numbers and arm names identify wh
 structures rather than gene regions. C53 is the review reference for colored gene
 blocks; C01/C47 show schematic gene-order labels.
 
+For a locus supplied in source drawing coordinates,
+`chromosome_surface.nearest_distance(path, point)` measures its arc distance on the
+known chromosome centerline. Associate the locus with its chromosome explicitly;
+choosing the nearest chromosome in a crossing can attach it to the wrong chromatid.
+
 The shared surface follows BPQ's paint order: base colors, irregular texture, translucent
 sheen, inset light/shadow, outline, and labels. Reference dimensions scale from a 30-unit
 chromatid height. Straight surfaces use SVG gradients; curved surfaces sample the same
