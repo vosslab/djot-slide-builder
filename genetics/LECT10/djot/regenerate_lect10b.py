@@ -2,8 +2,9 @@
 """Regenerate the LECT10B chromosome figures from adjacent models and templates."""
 import argparse
 import pathlib
+import subprocess
+import sys
 
-import devel.render_human_chromosome_2_fusion
 import lect10b_chromosome_recipe.lect10_centromere_positions
 import lect10b_chromosome_recipe.lect10_image_027
 import lect10b_chromosome_recipe.lect10_karyotype
@@ -13,13 +14,13 @@ import lect10b_chromosome_recipe.lect10_sky
 
 
 def main(deck: pathlib.Path) -> None:
+	"""Regenerate LECT10B figures under the requested deck directory."""
 	folder = deck / 'assets' / 'lect10b-karyotypes'
 	jobs = [
 		(lect10b_chromosome_recipe.lect10_image_027.main, folder / 'image_027.normal.svg'),
 		(lect10b_chromosome_recipe.lect10_sky.main, folder / 'sky_probe_mixture_workflow.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_centromere_positions.main, folder / 'centromere_positions.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_mitosis.main, folder / 'mitosis_karyotype_stages.drawn.svg'),
-		(devel.render_human_chromosome_2_fusion.main, deck / 'assets' / 'visual_renewal' / 'human_chromosome_2_fusion.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_karyotype.main, deck / 'assets' / 'lect10_repaired_figures' / 'karyotype_preparation.svg'),
 	]
 	for make, destination in jobs:
@@ -27,6 +28,9 @@ def main(deck: pathlib.Path) -> None:
 		make(destination)
 	for kind in ('metacentric', 'submetacentric', 'acrocentric'):
 		lect10b_chromosome_recipe.lect10_movement.main(kind, folder / (kind + '_movement.drawn.svg'))
+	path = deck / 'assets' / 'visual_renewal' / 'human_chromosome_2_fusion.drawn.svg'
+	path.parent.mkdir(parents=True, exist_ok=True)
+	subprocess.run((sys.executable, 'devel/render_human_chromosome_2_fusion.py', str(path)), check=True)
 
 
 if __name__ == '__main__':

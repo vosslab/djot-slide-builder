@@ -5,7 +5,7 @@ Source facts are retained below; source illustrations are schematic, not measure
 Nonchromosome labels, connectors, background and figure dimensions remain source-authored.
 """
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 import svg_tools.chromosomes as chromosomes
 import svg_tools.parts as parts
 

@@ -1,6 +1,6 @@
 # New signaling trial
 
-This independent trial builds a student-facing receptor/kinase signaling slide using the public toolkit. The source is [build.py](build.py); the generated illustration is [new_signaling_trial.drawn.svg](new_signaling_trial.drawn.svg); the native slide source is [new_signaling_trial.djot](new_signaling_trial.djot); [new_signaling_trial.odp](new_signaling_trial.odp) is the generated native deck; and [new_signaling_trial.webp](new_signaling_trial.webp) is a white-background, quality-90 preview of the illustration; [new_signaling_trial_native.webp](new_signaling_trial_native.webp) previews the PDF page at 1600 pixels wide.
+This independent trial builds a student-facing receptor/kinase signaling slide using the public toolkit. The source is [build.py](build.py); the generated illustration is [new_signaling_trial.drawn.svg](new_signaling_trial.drawn.svg); the native slide source is [new_signaling_trial.djot](new_signaling_trial.djot); local `output/odp/new_signaling_trial.odp` is the generated native deck; and [new_signaling_trial.webp](new_signaling_trial.webp) is a white-background, quality-90 preview of the illustration; [new_signaling_trial_native.webp](new_signaling_trial_native.webp) previews the PDF page at 1600 pixels wide.
 
 ## References and APIs
 

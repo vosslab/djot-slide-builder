@@ -6,7 +6,7 @@ import base64
 import hashlib
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 
 import svgpathtools
 import svg_tools.chromosomes
@@ -46,7 +46,7 @@ def chromosome_overlay(ledger: dict) -> str:
 				first_length = first_arm.length()
 				model = svg_tools.chromosomes.Chromosome((
 					svg_tools.chromosomes.Segment('', color, first_length),
-					 svg_tools.chromosomes.Segment('', color, path.length() - first_length)),
+					svg_tools.chromosomes.Segment('', color, path.length() - first_length)),
 					centromeres=(svg_tools.chromosomes.Centromere(1),))
 			name = f"{chromosome['id']}-chromatid-{index + 1}"
 			part = svg_tools.chromosomes.chromosome_path_part(name, model, path.d(),
@@ -55,13 +55,13 @@ def chromosome_overlay(ledger: dict) -> str:
 				position = complex(*part.anchors['centromere'])
 				if abs(position - complex(*chromosome['centromere'])) >= .001:
 					raise ValueError('Shared renderer moved a source centromere: ' + name)
-			fragment = xml.etree.ElementTree.fromstring(part.fragment)
+			fragment = ET.fromstring(part.fragment)
 			marker = fragment.find(f".//*[@id='{name}-centromere-0']")
 			if marker is not None:
 				fragment.remove(marker)
 				if index == 0:
-					markers.append(xml.etree.ElementTree.tostring(marker, encoding='unicode'))
-			fragments.append(xml.etree.ElementTree.tostring(fragment, encoding='unicode'))
+					markers.append(ET.tostring(marker, encoding='unicode'))
+			fragments.append(ET.tostring(fragment, encoding='unicode'))
 		state = 'replicated' if len(chromosome['paths']) == 2 else 'single-chromatid'
 		group = f'<g id="{chromosome["id"]}" data-state="{state}">'
 		# The single sister-pair marker stays above both shared-renderer bodies.

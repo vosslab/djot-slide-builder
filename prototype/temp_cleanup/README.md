@@ -12,7 +12,7 @@ images, caches, and test fixtures. You do not need to sort 11,000 loose files ma
   [view their one-page preview](svg_gallery.webp). Open any sample to edit the original SVG.
   S01-S06 are small demos/specimen sheets; S07-S12 show earlier chromosome styles. They are
   unapproved prototypes and historical drafts, not exemplars.
-- [Source-history archive](../../LOCAL_ONLY/temp_source_history_2026_11_16.zip): roughly 25 MB,
+- Local `../../LOCAL_ONLY/temp_source_history_2026_11_16.zip` source-history archive: roughly 25 MB,
   containing one verified copy of 1,496 scratch-only source files, including **all 401 unique
   scratch-only SVG variants**, plus four downloaded reference PDFs. This preserves the long tail
   without leaving another loose-file tree. The archive stays in the existing ignored
@@ -32,11 +32,11 @@ present source still produces identical exports.
 
 | Saved PDF | Pages |
 | --- | ---: |
-| [Biotechnology 11A announcements](recovered_exports/lect11a-2026_biotech_announcements.pdf) | 41 |
-| [Biotechnology 11B group project](recovered_exports/lect11b-2026_group_project.pdf) | 28 |
-| [Biotechnology 11C Set 6](recovered_exports/lect11c-set_6_regulation_of_biotechnology.pdf) | 308 |
+| Local `recovered_exports/lect11a-2026_biotech_announcements.pdf` | 41 |
+| Local `recovered_exports/lect11b-2026_group_project.pdf` | 28 |
+| Local `recovered_exports/lect11c-set_6_regulation_of_biotechnology.pdf` | 308 |
 
-The new [chromosome corpus collection](../chromosome_review.pdf) is already safe in `prototype/`.
+The new chromosome corpus collection is already safe in `prototype/` as local `../chromosome_review.pdf`.
 
 ## What can go
 

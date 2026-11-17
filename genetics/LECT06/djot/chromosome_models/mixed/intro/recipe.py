@@ -1,7 +1,7 @@
 """Create source-preserving hybrid replacements for the LECT06 introduction panels."""
 
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 import base64
 
 import svg_tools.chromosomes
@@ -10,8 +10,8 @@ import svg_tools.parts
 
 SOURCE_DIR = pathlib.Path(__file__).resolve().parent / 'sources'
 SVG = 'http://www.w3.org/2000/svg'
-xml.etree.ElementTree.register_namespace('', SVG)
-xml.etree.ElementTree.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
+ET.register_namespace('', SVG)
+ET.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
 
 SOURCES = {
 	'before': SOURCE_DIR / 'chromosome_before_replication.svg',
@@ -45,7 +45,7 @@ def panel_bodies(key: str) -> str:
 
 
 #============================================
-def replace_old_body_pixels(root: xml.etree.ElementTree.Element, key: str) -> None:
+def replace_old_body_pixels(root: ET.Element, key: str) -> None:
 	"""Use the reviewed frozen pixel layer; source preservation is checked by the package."""
 	image = next(element for element in root.iter() if element.attrib.get('id') == 'artwork-1')
 	data = (SOURCE_DIR / f'{key}_cleaned.png').read_bytes()
@@ -56,11 +56,11 @@ def replace_old_body_pixels(root: xml.etree.ElementTree.Element, key: str) -> No
 #============================================
 def write_panel(key: str, output_dir: pathlib.Path) -> None:
 	"""Insert shared chromosome bodies beneath existing leaders and labels."""
-	tree = xml.etree.ElementTree.parse(SOURCES[key])
+	tree = ET.parse(SOURCES[key])
 	root = tree.getroot()
 	replace_old_body_pixels(root, key)
 	canvas = next(element for element in root if element.tag == '{' + SVG + '}g')
-	replacement = xml.etree.ElementTree.fromstring(
+	replacement = ET.fromstring(
 		'<g xmlns="http://www.w3.org/2000/svg" id="shared-chromosome-bodies">'
 		+ panel_bodies(key) + '</g>')
 	# Source artwork stays exact; existing leader lines and labels remain above the new bodies.

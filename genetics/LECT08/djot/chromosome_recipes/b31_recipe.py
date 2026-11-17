@@ -4,7 +4,7 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree
 # local repo modules
 import svg_tools.chromosomes
 
@@ -29,31 +29,31 @@ def main() -> None:
 	source_path = HERE / 'b31_sources.json'
 	source=json.loads(source_path.read_text())
 	image_name = 'b31_micrograph_source.svg'
-	image_source = xml.etree.ElementTree.fromstring((source_path.parent / image_name).read_bytes())
+	image_source = defusedxml.ElementTree.fromstring((source_path.parent / image_name).read_bytes())
 	image_uri = next(node for node in image_source if node.tag.endswith('image')).attrib['href']
-	root=xml.etree.ElementTree.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
+	root=defusedxml.ElementTree.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
 	original=next(n for n in root if n.tag.endswith('image'))
-	layer=xml.etree.ElementTree.Element('g')
+	layer=defusedxml.ElementTree.Element('g')
 	# Source art occupies 987 by 937 pixels in the positioned SVG image.
 	layer.set('transform','translate(150.49099731445312 14.948984146118164) scale(0.4990932228743324 0.499335117)')
 	for patch in source['patches']:
 		for path, color in patch['spans']:
-			xml.etree.ElementTree.SubElement(layer,'path',{'d':path,'fill':color})
+			defusedxml.ElementTree.SubElement(layer,'path',{'d':path,'fill':color})
 	blue='#149dc8'
 	red='#e93b38'
 	# Centerlines follow the source's stage, homolog order and reciprocal products.
 	paths=[
-	 ('M464 43 V135',[blue],False),('M472 43 V135',[blue],False),('M482 43 V135',[red],False),('M489 43 V135',[red],False),
-	 ('M459 240 C475 255 454 315 445 343',[blue],True),('M469 240 C485 250 484 260 472 275 C470 290 462 325 457 343',[blue],False),
-	 ('M491 240 C475 250 476 260 488 275 C490 290 498 325 504 343',[red],True),('M500 240 C486 260 503 316 512 343',[red],False),
-	 ('M433 456 C435 474 455 507 460 524',[blue],True),('M457 456 C455 474 437 507 434 524',[red,blue,red],False),
-	 ('M495 456 C497 474 514 507 518 524',[blue,red,blue],True),('M518 456 C515 474 496 507 492 524',[red],False),
-	 ('M333 632 C330 646 320 659 329 674 S338 693 333 700',[blue],True),
-	 ('M380 632 C382 648 393 660 384 674 S375 693 380 700',[red,blue,red],True),
-	 ('M568 632 C565 648 554 660 563 674 S572 693 567 700',[blue,red,blue],True),
-	 ('M620 632 C623 648 634 660 625 674 S616 693 620 700',[red],True),
-	 ('M288 807 V871',[blue],True),('M412 807 V871',[red,blue,red],True),
-	 ('M542 807 V871',[blue,red,blue],True),('M663 807 V871',[red],True)]
+		('M464 43 V135',[blue],False),('M472 43 V135',[blue],False),('M482 43 V135',[red],False),('M489 43 V135',[red],False),
+		('M459 240 C475 255 454 315 445 343',[blue],True),('M469 240 C485 250 484 260 472 275 C470 290 462 325 457 343',[blue],False),
+		('M491 240 C475 250 476 260 488 275 C490 290 498 325 504 343',[red],True),('M500 240 C486 260 503 316 512 343',[red],False),
+		('M433 456 C435 474 455 507 460 524',[blue],True),('M457 456 C455 474 437 507 434 524',[red,blue,red],False),
+		('M495 456 C497 474 514 507 518 524',[blue,red,blue],True),('M518 456 C515 474 496 507 492 524',[red],False),
+		('M333 632 C330 646 320 659 329 674 S338 693 333 700',[blue],True),
+		('M380 632 C382 648 393 660 384 674 S375 693 380 700',[red,blue,red],True),
+		('M568 632 C565 648 554 660 563 674 S572 693 567 700',[blue,red,blue],True),
+		('M620 632 C623 648 634 660 625 674 S616 693 620 700',[red],True),
+		('M288 807 V871',[blue],True),('M412 807 V871',[red,blue,red],True),
+		('M542 807 V871',[blue,red,blue],True),('M663 807 V871',[red],True)]
 	markers=[]
 	for i,(d,colors,marker) in enumerate(paths):
 		if len(colors)==1:
@@ -68,7 +68,7 @@ def main() -> None:
 		sites = () if center is None else (svg_tools.chromosomes.Centromere(center),)
 		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',c,n) for c,n in regions),sites)
 		part=svg_tools.chromosomes.chromosome_path_part(f'b31-chromatid-{i}',model,d,thickness=7 if i<4 else 9 if i<12 else 12,labels=False)
-		fragment=xml.etree.ElementTree.fromstring(part.fragment)
+		fragment=defusedxml.ElementTree.fromstring(part.fragment)
 		for node in list(fragment):
 			if node.get('id','').startswith(f'b31-chromatid-{i}-centromere-'):
 				fragment.remove(node)
@@ -83,7 +83,7 @@ def main() -> None:
 	root.set('xmlns','http://www.w3.org/2000/svg')
 	out=(OUTPUT / 'b31_labeled.svg' if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS['b31_labeled.svg'])
 	out.parent.mkdir(parents=True, exist_ok=True)
-	out.write_bytes(xml.etree.ElementTree.tostring(root,encoding='utf-8',xml_declaration=True))
+	out.write_bytes(defusedxml.ElementTree.tostring(root,encoding='utf-8',xml_declaration=True))
 
 
 if __name__ == "__main__":

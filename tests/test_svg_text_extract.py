@@ -1,12 +1,14 @@
 """Read real SVG files without claiming to recognize outlined text."""
 
+import pathlib
+
 import pytest
 import defusedxml.common
 
 import svg_tools.text
 
 
-def test_extract_live_text_and_report_candidates(tmp_path):
+def test_extract_live_text_and_report_candidates(tmp_path: pathlib.Path) -> None:
 	path = tmp_path / 'figure.svg'
 	path.write_text('<svg xmlns="http://www.w3.org/2000/svg"><text id="gene" x="4" y="5">'
 		'BRCA<tspan>1</tspan></text><image/><path d="M0 0"/></svg>')

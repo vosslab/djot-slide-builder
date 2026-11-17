@@ -157,19 +157,19 @@ Resources: (1) https://en.wikipedia.org/wiki/Biologics_Control_Act  (2) https://
 #1 The Biologics Control Act of 1902
                             Why the U.S. Began Regulating Vaccines!
 
-⚠️ 1. Trigger Event
+[Warning] 1. Trigger Event
 1901 Antitoxin Contamination Disaster
 Diphtheria antitoxin from "Jim the Horse" became contaminated with tetanus.
 Several children died after receiving the serum.
 Created national outrage -> demanded federal oversight.
 
-🧪 2. What the Act Did
+[Experiment] 2. What the Act Did
 Required federal licenses for all vaccine/serum manufacturers.
 Mandated inspections of production facilities.
 Required accurate labeling (purity, expiration, manufacturer info).
 Allowed the government to suspend or revoke unsafe manufacturing licenses.
 
-🏛️3. Impact & Legacy
+[Government]3. Impact & Legacy
 Enforced by the Hygienic Laboratory (future NIH).
 First U.S. law requiring pre-approval of biologics before public use.
 Inspired the 1906 Pure Food & Drug Act -> foundation of modern FDA.
@@ -755,26 +755,26 @@ Resources: https://www.ifixit.com/News/84491/california-right-to-repair-signed-i
 Definition & Purpose:
 The Right to Repair movement supports people's ability to fix their own devices and equipment without manufacturer restrictions.
 Main Goals:
-♻️Reduce e-waste and promote sustainability
-💰Lower repair costs and extend product life
-🔓Protect user rights to access parts, manuals, and tools
+[Recycle]Reduce e-waste and promote sustainability
+[Cost]Lower repair costs and extend product life
+[Access]Protect user rights to access parts, manuals, and tools
 
- 🤝 iFixit's and its Role:
+ [Collaboration] iFixit's and its Role:
 iFixit is an online repair community and company that provides free repair guides, tools, and parts to help people fix their own electronic and technical devices.
 ->Advocates for repair legislation and public awareness
 ->Promotes sustainable reuse in tech and biotech settings
 
 Biotech Conflicts:
 
-⚠️Equipment needs precise calibration for reliable data
-⚠️Risk of contamination or non-compliance with FDA/ISO standards
-⚠️Can be balanced through certified repairs and modular designs
+[Warning]Equipment needs precise calibration for reliable data
+[Warning]Risk of contamination or non-compliance with FDA/ISO standards
+[Warning]Can be balanced through certified repairs and modular designs
 
-🚫Opposition from Companies:
+[Stop]Opposition from Companies:
 -Apple limits manuals and parts, citing safety and security
 -John Deere restricts software access for tractors
 -Companies claim it protects IP and product quality
-⚖️Arguments Against the Law:
+[Balance]Arguments Against the Law:
 -Safety, security, and IP concerns
 -Fear of poor-quality or unsafe repairs
 -Possible financial impact on manufacturers

@@ -1,10 +1,10 @@
 """Regenerate the source SKY workflow with shared chromosome marks."""
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 import svg_tools.chromosomes
 
 NS = 'http://www.w3.org/2000/svg'
-xml.etree.ElementTree.register_namespace('', NS)
+ET.register_namespace('', NS)
 HERE = pathlib.Path(__file__).resolve().parent
 # Source slide marks: center, major and minor diameters, angle and color.
 MARKS = [
@@ -15,12 +15,12 @@ MARKS = [
 	('orange',667,554,18,10,0,'#ed8c2b')]
 
 def main(destination: pathlib.Path) -> None:
-	root = xml.etree.ElementTree.parse(HERE / 'templates' / 'sky_probe_mixture_workflow.drawn.svg').getroot()
+	root = ET.parse(HERE / 'templates' / 'sky_probe_mixture_workflow.drawn.svg').getroot()
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, x, y, length, width, angle, color in MARKS:
 		layout = svg_tools.chromosomes.render_chromosome_layout('sky-' + name, svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color),)),
 			length=length, thickness=width, texture=False, labels=False)
 		node = slots['slide-mark-' + name]
 		node.set('transform', f'translate({x} {y}) rotate({angle}) translate({-length/2} {-width/2})')
-		node.append(xml.etree.ElementTree.fromstring(layout.svg))
-	xml.etree.ElementTree.ElementTree(root).write(destination, encoding='unicode')
+		node.append(ET.fromstring(layout.svg))
+	ET.ElementTree(root).write(destination, encoding='unicode')

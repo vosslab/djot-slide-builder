@@ -36,7 +36,7 @@ def nearest_distance(path: svgpathtools.Path, point: complex) -> float:
 class Surface:
 	"""Sample only the bent surface; straight chromosomes retain exact coordinates."""
 
-	def __init__(self, path, thickness):
+	def __init__(self, path: svgpathtools.Path, thickness: float) -> None:
 		self.path = path
 		self.width = thickness
 		self.scale = thickness / REFERENCE_HEIGHT
@@ -103,7 +103,7 @@ class Surface:
 		self.distances = [self.distances[index] for index in indices]
 		self.distances = [value * self.length / distance for value in self.distances]
 
-	def point(self, along, across):
+	def point(self, along: float, across: float) -> complex:
 		index = min(len(self.distances)-2, max(0,
 			bisect.bisect_right(self.distances, along)-1))
 		fraction = (along-self.distances[index]) / (self.distances[index+1]-self.distances[index])
@@ -111,25 +111,25 @@ class Surface:
 		normal = self.normals[index] * (1-fraction) + self.normals[index+1] * fraction
 		return position + normal / abs(normal) * across
 
-	def _offset(self, index, across):
+	def _offset(self, index: int, across: float) -> complex:
 		normal = self.normals[index]
 		return self.positions[index] + normal / abs(normal) * across
 
 	@staticmethod
-	def _points_polygon(points):
+	def _points_polygon(points: list[complex]) -> str:
 		return 'M ' + ' L '.join(f'{point.real:.4f},{point.imag:.4f}' for point in points) + ' Z'
 
-	def polygon(self, coordinates):
+	def polygon(self, coordinates: list[tuple[float, float]]) -> str:
 		return self._points_polygon([self.point(along, across) for along, across in coordinates])
 
-	def ribbon(self, start, end, top, bottom):
+	def ribbon(self, start: float, end: float, top: float, bottom: float) -> str:
 		indices = [index for index, distance in enumerate(self.distances) if start < distance < end]
 		points = [self.point(start, top)] + [self._offset(index, top) for index in indices] + [
 			self.point(end, top), self.point(end, bottom)] + [
 			self._offset(index, bottom) for index in reversed(indices)] + [self.point(start, bottom)]
 		return self._points_polygon(points)
 
-	def envelope(self, closed=False, cut=False):
+	def envelope(self, closed: bool = False, cut: bool = False) -> str:
 		half = self.width / 2
 		if closed or cut:
 			return self.ribbon(0, self.length, -half, half)
@@ -148,7 +148,8 @@ class Surface:
 				cy+radius*math.sin(math.radians(start+i*90/8))) for i in range(9))
 		return self._points_polygon(points)
 
-	def paint(self, parent, name, *, texture=True, texture_spans=None):
+	def paint(self, parent: ET.Element, name: str, *, texture: bool = True,
+		texture_spans: tuple[tuple[float, float], ...] | None = None) -> None:
 		"""Background texture, foreground sheen, then zero-blur inset shadows."""
 		half = self.width/2
 		if texture:

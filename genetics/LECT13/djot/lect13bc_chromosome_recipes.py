@@ -6,31 +6,52 @@ import base64
 import json
 import math
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
+import svgpathtools
+import subprocess
 import svg_tools.chromosomes
+import svg_tools.chromosome_surface
 import svg_tools.parts
 
 
 #============================================
-def compact_locus_cards(root: ET.Element) -> None:
-	"""Keep the inversion exercise's genes as small colored chromosome regions."""
+def integrate_loci(root: ET.Element, source: dict) -> None:
+	"""Replace exercise cards with small regions swept inside their fixed rods."""
+	cards = []
 	for parent in root.iter():
 		children = list(parent)
 		for index, card in enumerate(children[:-1]):
 			label = children[index+1]
-			if (not card.tag.endswith('rect') or not label.tag.endswith('text')
-				or card.get('width') != '34' or card.get('height') != '36'
-				or card.get('fill') != 'white'):
-				continue
-			center_x = float(card.get('x')) + 17
-			center_y = float(card.get('y')) + 18
-			card.attrib.update({
-				'class': 'gene-locus', 'data-gene': label.text, 'x': str(center_x-12),
-				'y': str(center_y-12), 'width': '24', 'height': '24', 'rx': '4',
-				'fill': '#F3D788', 'stroke-width': '1.5',
-			})
-			label.attrib.update({'y': str(center_y+6), 'font-size': '18', 'fill': '#172B3A'})
+			if (card.tag.endswith('rect') and label.tag.endswith('text')
+				and card.get('width') == '34' and card.get('height') == '36'
+				and card.get('fill') == 'white'):
+				cards.append((parent, card, label))
+	if len(cards) != 20:
+		raise ValueError(f'Expected 20 fixed inversion loci, found {len(cards)}')
+	for number, (parent, card, label) in enumerate(cards):
+		part_number = number // 5
+		data = source['parts'][part_number]
+		path = svgpathtools.parse_path(data['path'])
+		surface = svg_tools.chromosome_surface.Surface(path, data['thickness'])
+		center_x, center_y = float(card.get('x'))+17, float(card.get('y'))+18
+		# These four rods are straight, but retaining the centerline calculation keeps
+		# the locus construction identical to curved chromatids.
+		center = svg_tools.chromosome_surface.nearest_distance(path, complex(center_x, center_y))
+		half_width = data['thickness']/2 - 1.1
+		parent.remove(card)
+		parent.remove(label)
+		ET.SubElement(parent, 'path', {
+			'id': f'inversion-double-crossover-gene-{number}', 'class': 'gene-locus',
+			'data-gene': label.text or '',
+			'd': surface.ribbon(center-12, center+12, -half_width, half_width),
+			'fill': '#F3D788', 'stroke': '#8B631B', 'stroke-width': '.7',
+		})
+		point = surface.point(center, 0)
+		text = ET.SubElement(parent, 'text', {'class': 'gene-label',
+			'x': f'{point.real:.3f}', 'y': f'{point.imag+5:.3f}', 'font-size': '15',
+			'text-anchor': 'middle', 'font-weight': 'bold', 'fill': '#172B3A'})
+		text.text = label.text
 
 
 #============================================
@@ -43,7 +64,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	for relative, source in sources.items():
 		root = ET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
-			compact_locus_cards(root)
+			integrate_loci(root, source)
 		markers = {}
 		for parent in list(root.iter()):
 			for child in list(parent):
@@ -94,10 +115,11 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 
 #============================================
 def main() -> None:
+	here = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT13/djot'
 	parser = argparse.ArgumentParser(description=__doc__)
-	parser.add_argument('--output-root', type=pathlib.Path, default=pathlib.Path(__file__).parent)
+	parser.add_argument('--output-root', type=pathlib.Path, default=here)
 	args = parser.parse_args()
-	generate(pathlib.Path(__file__).with_name('lect13bc_chromosome_sources.json'), args.output_root)
+	generate(here / 'lect13bc_chromosome_sources.json', args.output_root)
 
 
 if __name__ == '__main__':

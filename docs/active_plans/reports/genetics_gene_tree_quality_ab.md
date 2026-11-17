@@ -10,9 +10,9 @@ I also viewed three existing rendered samples per preserved deck: 11E pages 1, 5
 
 | Reviewed PDF | Pages | SHA-256 |
 | --- | ---: | --- |
-| [11A](../../../output/pdf/lect11a-2026_announcements.pdf) | 34 | `b72ec23ece5c6ec0d77ec560d468776002f248c0dd035e05db9acc54c2154909` |
-| [11B](../../../output/pdf/lect11b-gene_trees.pdf) | 36 | `e13e33fbc4dbf3a44552a017426b4478be8b0b33a66f22ce050ea956cafa2717` |
-| [12A](../../../output/pdf/lect12a-2026_announcements.pdf) | 37 | `de11397858992a03bb3936f34b07c0131fd2d468bcada5de6a24c1d15b24b6f6` |
+| 11A (`output/pdf/lect11a-2026_announcements.pdf`) | 34 | `b72ec23ece5c6ec0d77ec560d468776002f248c0dd035e05db9acc54c2154909` |
+| 11B (`output/pdf/lect11b-gene_trees.pdf`) | 36 | `e13e33fbc4dbf3a44552a017426b4478be8b0b33a66f22ce050ea956cafa2717` |
+| 12A (`output/pdf/lect12a-2026_announcements.pdf`) | 37 | `de11397858992a03bb3936f34b07c0131fd2d468bcada5de6a24c1d15b24b6f6` |
 
 ## Requirement mapping and observations
 

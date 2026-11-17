@@ -262,7 +262,7 @@ The current specimen is
 Generate a scratch copy from the repository root:
 
 ```bash
-/opt/homebrew/bin/python3.12 -B -c 'import pathlib; import svg_tools.chromosome_examples; svg_tools.chromosome_examples.make_tool_v2_specimen(pathlib.Path("_temp/chromosome_tool_v2.drawn.svg"))'
+source source_me.sh && python3 -c 'import pathlib; import svg_tools.chromosome_examples; svg_tools.chromosome_examples.make_tool_v2_specimen(pathlib.Path("_temp/chromosome_tool_v2.drawn.svg"))'
 PANGOCAIRO_BACKEND=fc rsvg-convert -w 1440 _temp/chromosome_tool_v2.drawn.svg -o _temp/chromosome_tool_v2.png
 ```
 
@@ -296,7 +296,7 @@ The `make_banded_chromosomes_1_3(path)` recipe uses the three hg38 source TSVs
 Regenerate to a scratch path from the repository root:
 
 ```sh
-/opt/homebrew/bin/python3.12 -B -c 'import pathlib; import svg_tools.chromosome_examples as e; e.make_banded_chromosomes_1_3(pathlib.Path("_temp/banded_chromosomes_1_3.drawn.svg"))'
+source source_me.sh && python3 -c 'import pathlib; import svg_tools.chromosome_examples as e; e.make_banded_chromosomes_1_3(pathlib.Path("_temp/banded_chromosomes_1_3.drawn.svg"))'
 ```
 
 The 187 true intervals share one genomic scale; 46 band labels, 16 region numbers, six arm
@@ -310,10 +310,10 @@ subtle terminal treatment, rectangular centromeres, segment colors, bands, and e
 Recipes own pairing, exchange, layering, telomere relationships, and all biological claims.
 
 The durable recipe is [chromosome_examples.py](chromosome_examples.py). From the
-repository root, run Python 3.12 directly (no bootstrap or Git invocation):
+repository root, use the repository bootstrap:
 
 ```bash
-/opt/homebrew/bin/python3.12 -B -m svg_tools.chromosome_examples
+source source_me.sh && python3 -m svg_tools.chromosome_examples
 ```
 
 The module writes its specimen without overwriting course assets. All chromosome geometry comes
@@ -324,7 +324,7 @@ for the scientific meanings and review boundary.
 ## Example
 
 Save this as `_temp/draw_example.py` and run it from the repository root with
-`PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B _temp/draw_example.py`:
+`source source_me.sh && python3 _temp/draw_example.py`:
 
 ```python
 import pathlib
@@ -351,6 +351,6 @@ Review actual renders at the intended display sizes. Follow
 [the SVG diagram contract](../docs/slide-specs/SVG_DIAGRAMS.md) for labels, provenance,
 `.drawn.svg` eligibility, and slide integration. The deterministic fixer for existing non-ASCII
 source files is `tests/fix_ascii_compliance.py`; for SVG it preserves symbols using numeric XML
-references. Run `PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B tests/fix_ascii_compliance.py -i PATH.svg`.
+references. Run `source source_me.sh && python3 tests/fix_ascii_compliance.py -i PATH.svg`.
 
 The drawing helpers are original to this project and use its MIT license.

@@ -8,8 +8,8 @@ approved style. `exemplars/` is reserved for instructor-approved models that age
 
 ## Chromosome corpus collection
 
-[Open the PDF](chromosome_review.pdf) or
-[open the editable presentation](chromosome_review.odp).
+The local review exports are `output/pdf/chromosome_review.pdf` and
+`output/odp/chromosome_review.odp`.
 
 The single 71-slide deck contains 68 current figures from 24 source decks across
 Genetics LECT01, LECT02, LECT03, LECT04, LECT06, LECT08, LECT09, LECT10, LECT12, and LECT13.
@@ -40,6 +40,9 @@ so the overview and loop remain large; its index entry points to the first slide
 Critique by ID, for example: "C12: keep the body shape; change the centromere and label size."
 The [sister_chromatid_survey.md](sister_chromatid_survey.md) records the survey using C16 as
 the reference, including corrections to short pairs and sister-centromere connections.
+The [chromosome_label_survey.md](chromosome_label_survey.md) records gene-label and banding
+decisions, using C53 and C01/C47 as references. Colored loci follow the chromosome geometry;
+external labels remain where they improve readability.
 Compare body shape, sister spacing, centromere treatment, outlines, ancestry colors, labels, and
 amount of detail. Use the editable speaker notes or the optional
 [feedback sheet](chromosome_feedback.csv) to record what to keep, change, and why.
@@ -52,11 +55,11 @@ changes. This command gives every source recipe an explicit prototype output pat
 lecture assets.
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B prototype/regenerate_chromosome_review.py
+source source_me.sh && python3 prototype/regenerate_chromosome_review.py
 ```
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py build prototype/chromosome_review.djot --format all
+source source_me.sh && python3 deck_tools.py build prototype/chromosome_review.djot --format all
 ```
 
 The build command writes `output/odp/chromosome_review.odp` and

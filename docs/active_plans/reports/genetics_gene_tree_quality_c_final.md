@@ -1,6 +1,6 @@
 # Gene-tree C: final visual quality review
 
-**PASS**, November 14, 2026. This fresh standalone classroom-quality review follows the [source specification delta PASS](genetics_gene_tree_spec_delta.md) and supersedes the C failure in the earlier [C/D quality review](genetics_gene_tree_quality_cd.md). D's earlier pass is outside this review. No production files were changed.
+**PASS**, November 14, 2026. This fresh standalone classroom-quality review follows the [source specification delta PASS](genetics_gene_tree_spec_delta.md) and supersedes the C failure in the earlier [C and D quality review](genetics_gene_tree_quality_cd.md). D's earlier pass is outside this review. No production files were changed.
 
 Individually viewed all 34 current 1200-pixel-wide page images, `_temp/gene_tree_refresh/native/lect11c/001.webp` through `034.webp`, using the image viewer, in teaching order. The reviewed PDF is `output/pdf/lect11c-more_gene_trees.pdf`, SHA-256 `d5e0dd36e0f2abf106e7d612572faa4a754881f75e2553a79b9784fcaeb068d6`. The durable overview is [lect11c.webp](../../slide-specs/illustration_examples/gene_tree_lecture/lect11c.webp); it was not substituted for individual page inspection. Read AGENTS, the voice and pedagogy guides, the visual rubric, the specification delta, and the earlier review. This is a visual and teaching-use review, not a repeat independent mathematical proof.
 

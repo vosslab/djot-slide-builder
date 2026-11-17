@@ -2,7 +2,8 @@
 
 from copy import deepcopy
 from pathlib import Path
-import xml.etree.ElementTree as ET
+import subprocess
+import defusedxml.ElementTree as ET
 
 
 SVG = '{http://www.w3.org/2000/svg}'
@@ -53,7 +54,9 @@ def _split_c55(path: Path) -> None:
 
 def separate_inversion_prose() -> None:
 	"""Apply the fixed C55, C56, and C59 review compositions after recipes run."""
-	assets = Path(__file__).resolve().parent / 'chromosome_assets/assets/lect13b-chromo_alter_3-inversion'
+	root = Path(subprocess.check_output(
+		['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+	assets = root / 'prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion'
 
 	_split_c55(assets / 'inversion-synapsis.drawn.svg')
 

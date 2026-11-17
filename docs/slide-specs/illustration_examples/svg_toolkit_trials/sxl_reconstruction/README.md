@@ -28,7 +28,7 @@ The build command was run outside the sandbox per repository LibreOffice instruc
 
 - [build.py](build.py), [sxl_reconstruction_trial.drawn.svg](sxl_reconstruction_trial.drawn.svg), and [sxl_reconstruction_trial.djot](sxl_reconstruction_trial.djot)
 - [sxl_reconstruction_trial.webp](sxl_reconstruction_trial.webp) (white background, quality 90)
-- [sxl_reconstruction_trial.odp](sxl_reconstruction_trial.odp) and [sxl_reconstruction_trial.pdf](sxl_reconstruction_trial.pdf)
+- Local `output/odp/sxl_reconstruction_trial.odp` and `output/pdf/sxl_reconstruction_trial.pdf`
 - [sxl_reconstruction_trial_native.webp](sxl_reconstruction_trial_native.webp) is the PDF page at 1600 pixels wide, white background and quality 90.
 
 The first independent reconstruction failed source fidelity because the gene names were upright. After a small styled-box API and documentation fix, this fresh repeat was authored independently without hints or API edits during the repeat.

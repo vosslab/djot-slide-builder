@@ -2,7 +2,7 @@
 """Rebuild the centromere teaching figure from its template and chromosome model."""
 import argparse
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes
 

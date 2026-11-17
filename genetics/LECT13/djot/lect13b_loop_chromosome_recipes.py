@@ -7,15 +7,16 @@ import copy
 import json
 import math
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svgpathtools
+import subprocess
 import svg_tools.chromosomes as chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.parts
 
 
-HERE = pathlib.Path(__file__).parent
+HERE = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT13/djot'
 NS = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', NS)
 
@@ -80,25 +81,11 @@ def replace_sister_markers(name: str,
 
 
 #============================================
-def _path_position(path: svgpathtools.Path, target: complex) -> float:
-	"""Project one authored label onto its explicitly associated centerline."""
-	best = min((abs(path.point(index/400)-target), index/400) for index in range(401))[1]
-	left, right = max(0, best-.01), min(1, best+.01)
-	for _ in range(16):
-		first, second = (2*left+right)/3, (left+2*right)/3
-		if abs(path.point(first)-target) <= abs(path.point(second)-target):
-			right = second
-		else:
-			left = first
-	return path.length(0, (left+right)/2)
-
-
-#============================================
 def _locus_patch(parent: ET.Element, *, name: str, number: int, gene: str,
 	path: svgpathtools.Path, thickness: float, source_center: complex) -> None:
 	"""Paint a small semantic gene region swept inside one known chromatid."""
 	surface = svg_tools.chromosome_surface.Surface(path, thickness)
-	center = _path_position(path, source_center)
+	center = svg_tools.chromosome_surface.nearest_distance(path, source_center)
 	half_length = min(12, surface.length/12)
 	half_width = thickness/2 - 1.4
 	ET.SubElement(parent, f'{{{NS}}}path', {
@@ -142,7 +129,8 @@ def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
 			parent.remove(card)
 			parent.remove(label)
 			data = source['parts'][part_number]
-			_locus_patch(parent, name=name, number=number, gene=label.text or '',
+			_locus_patch(parent, name=f'{name}-part-{part_number}', number=number,
+				gene=label.text,
 				path=svgpathtools.parse_path(data['path']), thickness=data['thickness'],
 				source_center=complex(float(card.get('x'))+14, float(card.get('y'))+17.5))
 

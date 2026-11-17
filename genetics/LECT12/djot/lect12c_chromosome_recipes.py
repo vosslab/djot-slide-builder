@@ -7,7 +7,7 @@ expression bars, and the source-backed gene distribution map retain their own fo
 
 import re
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes
 

@@ -7,7 +7,7 @@ supersedes the earlier C failure. This is not approval of every inherited chromo
 
 ## Resolved documentation finding
 
-The initial integration verdict failed because [exemplars/README.md:423](../../../exemplars/README.md#L423)
+The initial integration verdict failed because [README.md](../../../exemplars/README.md#L423), line 423,
 linked and named a retired C fragment. The label, link, and displayed path now identify the
 [archived original](../../archive/genetics_gene_tree_svg/sources/original/lect12c_more_gene_trees_part_01.djot.txt),
 which preserves the historical 2025 matrix's identity. The target exists, and a fresh check found
@@ -18,7 +18,7 @@ documentation fix. The mechanism link in `docs/SVG_TOOL_ROADMAP.md` resolved in 
 
 - The [approved plan](../active/genetics_gene_tree_refresh_plan.md), fresh
   [specification review](genetics_gene_tree_spec_review.md), [C delta](genetics_gene_tree_spec_delta.md),
-  [A/B quality review](genetics_gene_tree_quality_ab.md), [C/D quality review](genetics_gene_tree_quality_cd.md)
+  [A and B quality review](genetics_gene_tree_quality_ab.md), [C and D quality review](genetics_gene_tree_quality_cd.md)
   and [final C quality review](genetics_gene_tree_quality_c_final.md) cover the calendar, agenda,
   instructional sequence, mathematical content and visual acceptance. The individual quality reviews
   inspected all 173 current pages of 11A-D and 12A; their hashes match current PDFs below. Remaining

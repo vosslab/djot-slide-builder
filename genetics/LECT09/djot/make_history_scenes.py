@@ -2,11 +2,12 @@
 """Rebuild three crossover scenes; preserve the source's native ascus and labels."""
 import argparse
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
+import subprocess
 import svg_tools.chromosomes
 import svgpathtools
 
-BASE = pathlib.Path(__file__).resolve().parent
+BASE = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT09/djot'
 TEMPLATES = BASE / 'assets/lect09_history_scene_templates'
 OUTPUT = BASE / 'assets/lect09e-tetrad_visuals'
 NS = 'http://www.w3.org/2000/svg'
@@ -29,7 +30,7 @@ paths = {
 }
 
 
-def distance_at_x(curve, x: float) -> float:
+def distance_at_x(curve: svgpathtools.Path, x: float) -> float:
 	"""Return the arc distance of one known locus on a left-to-right chromatid."""
 	low, high = 0., 1.
 	for _ in range(40):
@@ -42,8 +43,8 @@ def distance_at_x(curve, x: float) -> float:
 	return distance
 
 
-def chromatid_segments(curve, crossover: float, proximal: str, distal: str,
-	alleles: tuple[str, str]) -> tuple:
+def chromatid_segments(curve: svgpathtools.Path, crossover: float, proximal: str, distal: str,
+	alleles: tuple[str, str]) -> tuple[svg_tools.chromosomes.Segment, ...]:
 	"""Place the two established loci as contrasting, labelled chromosome regions."""
 	markers = []
 	for x, allele in zip((275., 550.), alleles):

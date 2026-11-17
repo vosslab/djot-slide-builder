@@ -4,7 +4,7 @@
 # Standard Library
 import json
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 # local repo modules
 import svg_tools.chromosomes

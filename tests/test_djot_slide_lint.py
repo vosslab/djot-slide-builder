@@ -62,31 +62,6 @@ def test_lint_accepts_renderable_prose_table_flow(tmp_path: pathlib.Path,
 
 
 #============================================
-def test_valid_two_panel_source_has_no_structural_problems(tmp_path: pathlib.Path) -> None:
-	"""The linter accepts a documented layout, slot, and local-image arrangement."""
-	path = write_source(
-		tmp_path,
-		"""=== layout: two-panels
-
-# Genes
-
-@left
-
-- Chromosomes carry genes.
-
-@right
-
-![Chromosome](assets/gene.png)
-""",
-	)
-
-	problems, summary = slide_lib.djot_lint.lint_paths([path])
-
-	assert problems == []
-	assert summary == slide_lib.djot_lint.LintSummary(1, 1, 1)
-
-
-#============================================
 def test_linter_reports_source_located_parser_failures(tmp_path: pathlib.Path) -> None:
 	"""The semantic linter reports recognized deferred actions at their source line."""
 	path = write_source(

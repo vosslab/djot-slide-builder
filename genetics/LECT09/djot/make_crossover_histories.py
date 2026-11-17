@@ -2,7 +2,7 @@
 """Reconstruct all six source panels using four continuous product chromatids each."""
 import copy
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svgpathtools
 import svg_tools.chromosomes

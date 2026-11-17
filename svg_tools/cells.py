@@ -7,6 +7,8 @@ caller; these silhouettes do not imply a cell-cycle stage or organelle count.
 import math
 import xml.etree.ElementTree
 
+import defusedxml.ElementTree
+
 import svg_tools.parts
 import svg_tools._style
 
@@ -44,7 +46,7 @@ def cell_envelope(*, kind: str, width: float, height: float, color: str,
 def nucleus(*, width: float, height: float, color: str) -> svg_tools.parts.SvgPart:
 	"""Draw a nucleus without automatically adding nucleoli or chromosomes."""
 	part = _oval(width, height, color)
-	group = xml.etree.ElementTree.fromstring(part.fragment)
+	group = defusedxml.ElementTree.fromstring(part.fragment)
 	group.insert(1, xml.etree.ElementTree.Element('ellipse', {
 		'cx': '0', 'cy': '0', 'rx': str(.435 * width), 'ry': str(.435 * height),
 		'fill': 'none', 'stroke-width': str(.5 * float(group.attrib['stroke-width']))}))
@@ -63,7 +65,7 @@ def _oval(width: float, height: float, color: str) -> svg_tools.parts.SvgPart:
 	part = _shape('M 0 -0.48 C 0.265 -0.48 0.48 -0.265 0.48 0 C 0.48 0.265 0.265 0.48 0 0.48 C -0.265 0.48 -0.48 0.265 -0.48 0 C -0.48 -0.265 -0.265 -0.48 0 -0.48 Z',
 		width, height, color, {'center': (0, 0), 'top': (0, -.48), 'bottom': (0, .48),
 			'left': (-.48, 0), 'right': (.48, 0)})
-	group = xml.etree.ElementTree.fromstring(part.fragment)
+	group = defusedxml.ElementTree.fromstring(part.fragment)
 	group.remove(group[0])
 	group.insert(0, xml.etree.ElementTree.Element('ellipse', {'cx': '0', 'cy': '0',
 		'rx': str(.48 * width), 'ry': str(.48 * height), 'fill': color}))

@@ -51,7 +51,7 @@ def include_text_bounds(fragment: str, bounds: tuple[float, float, float, float]
 	"""
 	xmin, ymin, xmax, ymax = bounds
 	font_dir = pathlib.Path(__file__).resolve().parent.parent / 'assets/fonts/atkinson_hyperlegible_next'
-	for text in xml.etree.ElementTree.fromstring(fragment).iter('text'):
+	for text in defusedxml.ElementTree.fromstring(fragment).iter('text'):
 		x, y = float(text.attrib['x']), float(text.attrib['y'])
 		size = float(text.attrib['font-size'])
 		weight = 'Bold' if text.attrib.get('font-weight') == '600' else 'Regular'

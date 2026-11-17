@@ -2,7 +2,7 @@
 """Rebuild the three ordered-tetrad diagrams from durable layout/geometry inputs."""
 import json
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svgpathtools
 import svg_tools.chromosomes

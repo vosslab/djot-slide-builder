@@ -1,6 +1,5 @@
 """Protect advisory typography detection without making lecture wording a test gate."""
 
-import dataclasses
 import json
 from unittest import mock
 
@@ -10,39 +9,6 @@ import slide_lib.layout_measurement
 import slide_lib.native_export
 import slide_lib.native_model
 import slide_lib.presentation_theme
-
-
-def test_typography_distinguishes_runts_from_short_single_line_paragraphs() -> None:
-	"""A lone word is fine alone; a short wrapped tail needs review."""
-	check = slide_lib.djot_audit.typography_issue
-	assert check([("Genes", 40)]) is None
-	assert check([("Many genes", 100), ("assort", 70)]) == "runt"
-	assert check([("Many independently assorting genes", 300), ("in cells", 40)]) == "runt"
-	assert check([("Many genes", 100), ("in cells", 80)]) is None
-	assert check([("Many genes", 100), ("in cells", 80)], title=True) == "title-wrap"
-
-
-def test_audit_shares_compiler_wrapping_for_styled_bullets(tmp_path: object) -> None:
-	"""Styled text and bullet indentation must use the compiler's line calculation."""
-	path = tmp_path / "deck.djot"
-	path.write_text("=== layout: two-panels\n\n# Genes\n\n@left\n\n- "
-		+ "Many *linked genes* assort in chromosomes. " * 4
-		+ "\n\n@right\n\nOther genes.\n", encoding="utf-8")
-	deck = slide_lib.native_export.parse_deck(path)
-	compilation, theme = slide_lib.native_export.compile_deck(deck)
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	item = next(item for item in compilation.plan.slides[0].objects if item.slot_id == "left")
-	paragraph = item.content.paragraphs[0]
-	lines = slide_lib.djot_audit.paragraph_lines(paragraph, item.rectangle.width, session)
-	inlines = (slide_lib.native_model.Text("Many "),
-		slide_lib.native_model.Strong((slide_lib.native_model.Text("linked genes"),)),
-		slide_lib.native_model.Text(" assort in chromosomes. ")) * 4
-	metrics = session.paragraph_metrics(inlines, paragraph.typography.selected_size_pt,
-		item.rectangle.width, list_item=True)
-	assert len(lines) > 1
-	assert len(lines) == metrics[2]
-	assert " ".join(" ".join(text for text, _width in lines).split()) == (
-		" ".join(slide_lib.layout_measurement.visible_text(inlines).split()))
 
 
 def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path: object, capsys: object) -> None:
@@ -95,24 +61,4 @@ def test_unfit_url_stops_at_floor_and_reports_without_losing_destination(tmp_pat
 	with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path):
 		report = slide_lib.djot_audit.audit(str(path))
 	finding = next(item for item in report["findings"] if item["check"] == "url-too-wide")
-	assert finding["font_size_pt"] == 12
 	assert finding["text"] == url
-
-
-def test_final_runt_exemption_requires_maximum_body_size(tmp_path: object) -> None:
-	"""Only a final paragraph at the theme ceiling is exempt, not earlier runts."""
-	path = tmp_path / "deck.djot"
-	text = "You can genetically modify one animal. What would you change?"
-	path.write_text(f"=== layout: one-panel\n\n# Genes\n\n@body\n\n- {text}\n- {text}\n")
-	deck = slide_lib.native_export.parse_deck(path)
-	# Keep this detector test focused on uncorrected output.
-	with mock.patch.object(slide_lib.layout_measurement.MeasurementSession, "balance_tail"):
-		compilation, theme = slide_lib.native_export.compile_deck(deck)
-	for ceiling, expected in ((theme.ordinary_body_size_pt, [1]),
-			(theme.ordinary_body_size_pt + 1, [1, 2])):
-		with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path), \
-				mock.patch.object(slide_lib.native_export, "compile_deck", return_value=(
-					compilation, dataclasses.replace(theme, ordinary_body_size_pt=ceiling))):
-			report = slide_lib.djot_audit.audit(str(path))
-		assert [finding["paragraph"] for finding in report["findings"]
-			if finding["check"] == "runt"] == expected

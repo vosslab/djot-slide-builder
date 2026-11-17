@@ -4,13 +4,13 @@ Reviewed the M5 text and M6 import implementations, their focused tests, and the
 
 ## M5: styled text and extraction
 
-**Visual result: PASS.** The [styled text render](../../../_temp/svg_toolkit/text_import_quality/styled_text.webp) is readable: the gene name is bold and italic, the subscript is visible, and the remaining text returns to its normal style. The XML preserves editable text and explicit run styles. Extraction reports literal text-element positions and explicitly identifies raster and outlined labels as unavailable. Blank lines count toward the height overflow check.
+**Visual result: PASS.** The local `../../../_temp/svg_toolkit/text_import_quality/styled_text.webp` render is readable: the gene name is bold and italic, the subscript is visible, and the remaining text returns to its normal style. The XML preserves editable text and explicit run styles. Extraction reports literal text-element positions and explicitly identifies raster and outlined labels as unavailable. Blank lines count toward the height overflow check.
 
 **Wrapping edge case: needs a contract decision.** At size 20, `wrapped_text` with `TextRun('a b')` and width 12 raises width overflow: the individual words measure approximately 10.50 and 11.32, but the preserved trailing space makes the first line approximately 16.10. This is consistent with treating every preserved space as occupying line width, but means an ordinary word wrap may fail even when each word fits. Clarify whether whitespace must survive unchanged at line boundaries before calling this an implementation defect.
 
 ## M6: SVG import
 
-**Visual result: FAIL for the example.** The [composition render](../../../_temp/svg_toolkit/text_import_quality/svg_composition.webp) retains both patterned imports and their live labels, but dark diagonal stripes pass directly through the dark labels, making them difficult to read. Give the labels a clear background or otherwise increase local contrast in the example, then render it again.
+**Visual result: FAIL for the example.** The local `../../../_temp/svg_toolkit/text_import_quality/svg_composition.webp` render retains both patterned imports and their live labels, but dark diagonal stripes pass directly through the dark labels, making them difficult to read. Give the labels a clear background or otherwise increase local contrast in the example, then render it again.
 
 The implementation preserves a positive clipped viewBox viewport, root presentation, definitions, live text, and local references in the reviewed paths. IDs and href, URL, and accessibility references are namespaced again when grouped. Parsing uses defused XML and the importer rejects unsupported active or external resources. The scoped Matplotlib universal stylesheet handling is not a general CSS editor; ordinary installed fonts remain unembedded by design.
 

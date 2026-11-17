@@ -1,7 +1,7 @@
 """Preserve molecular evidence and redraw four condensed chromatids at two chiasmata."""
 
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes as chromosomes
 

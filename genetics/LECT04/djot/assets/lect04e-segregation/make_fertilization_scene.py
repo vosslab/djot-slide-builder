@@ -35,7 +35,7 @@ def nucleus_with_genotype(name: str, x: float, y: float, genotype: str) -> str:
 	for index, chromosome_name in enumerate(genotype):
 		model = svg_tools.chromosomes.Chromosome(
 			(svg_tools.chromosomes.Segment(chromosome_name, colors[chromosome_name], 1),
-			 svg_tools.chromosomes.Segment(chromosome_name, colors[chromosome_name], 1)),
+			svg_tools.chromosomes.Segment(chromosome_name, colors[chromosome_name], 1)),
 			(svg_tools.chromosomes.Centromere(1),))
 		center_x = x + (index - (len(genotype)-1)/2)*spacing
 		parts.append(svg_tools.chromosomes.chromosome_path_part(

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate four later meiosis stage figures from frozen source templates."""
-import math
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svgpathtools
 

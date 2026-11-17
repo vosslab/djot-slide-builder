@@ -6,11 +6,8 @@ import hashlib
 import pathlib
 import subprocess
 import sys
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
-import devel.render_genetics_lect01_chromosomes
-import devel.render_genetics_lect02_chromosomes
-import devel.render_genetics_lect03_chromosomes
 import genetics.LECT06.djot.make_chromosome_xlinked
 import genetics.LECT06.djot.chromosome_models.mixed.intro.recipe
 import genetics.LECT06.djot.chromosome_models.mixed.recombination.recipe
@@ -22,14 +19,15 @@ import review_division_composition
 import review_inversion_composition
 
 
-ROOT = pathlib.Path(__file__).resolve().parent
-REPOSITORY = ROOT.parent
+REPOSITORY = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+ROOT = REPOSITORY / 'prototype'
 ASSETS = ROOT / 'chromosome_assets'
 
 
 def run(*arguments: str) -> None:
 	"""Run one source-backed recipe with an explicit prototype destination."""
-	subprocess.run((sys.executable, '-B', *arguments), cwd=REPOSITORY, check=True)
+	subprocess.run((sys.executable, *arguments), cwd=REPOSITORY, check=True)
 
 
 def refresh_inventory() -> None:
@@ -67,10 +65,10 @@ def separate_c58_prose() -> None:
 
 def main() -> None:
 	"""Rebuild the review corpus from source recipes in the prototype tree only."""
-	# Recipes without command-line output roots expose a narrow build function.
-	devel.render_genetics_lect01_chromosomes.main(ASSETS)
-	devel.render_genetics_lect02_chromosomes.main(ASSETS)
-	devel.render_genetics_lect03_chromosomes.main(ASSETS)
+	# Development scripts receive the prototype root on their command line.
+	run('devel/render_genetics_lect01_chromosomes.py', str(ASSETS))
+	run('devel/render_genetics_lect02_chromosomes.py', str(ASSETS))
+	run('devel/render_genetics_lect03_chromosomes.py', str(ASSETS))
 	genetics.LECT06.djot.chromosome_models.mixed.intro.recipe.build(ROOT / 'assets/lect06b-intro_cells')
 	genetics.LECT06.djot.chromosome_models.mixed.recombination.recipe.build(ROOT / 'assets/lect06c-meiosis')
 	genetics.LECT06.djot.make_chromosome_xlinked.generate(REPOSITORY / 'genetics/LECT06/djot/chromosome_models/xlinked',

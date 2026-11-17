@@ -4,8 +4,9 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 # local repo modules
+import subprocess
 import svg_tools.chromosomes
 
 
@@ -47,7 +48,7 @@ def allele_model(item: dict, alleles: tuple[str, str]) -> svg_tools.chromosomes.
 
 
 #============================================
-def remove_legacy_alleles(root: xml.etree.ElementTree.Element) -> None:
+def remove_legacy_alleles(root: ET.Element) -> None:
 	"""Delete source labels replaced by the locus regions within each chromatid."""
 	for parent in root.iter():
 		for child in list(parent):
@@ -69,12 +70,12 @@ def parse_args() -> argparse.Namespace:
 #============================================
 def main() -> None:
 	"""Regenerate the source compositions."""
-	HERE = pathlib.Path(__file__).resolve().parent
+	HERE = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT08/djot/chromosome_recipes'
 	args = parse_args()
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	for name, source in json.loads((HERE / 'crossover_sources.json').read_text()).items():
-		root = xml.etree.ElementTree.fromstring(source['svg'])
+		root = ET.fromstring(source['svg'])
 		remove_legacy_alleles(root)
 		allele_rows = ((('a', 'b'), ('a', 'b'), ('+', '+'), ('+', '+')) * 2
 			if name == 'no_crossover.drawn.svg' else
@@ -85,7 +86,7 @@ def main() -> None:
 					x, y = float(child.get('cx')), float(child.get('cy'))
 					marker_model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#777777', 10), svg_tools.chromosomes.Segment('', '#777777', 10)), centromeres=(svg_tools.chromosomes.Centromere(1),))
 					marker_part = svg_tools.chromosomes.chromosome_path_part(f'marker-{parent.get("id")}-{int(y)}', marker_model, f'M{x-10} {y} H{x+10}', thickness=14, labels=False)
-					marker = next(n for n in xml.etree.ElementTree.fromstring(marker_part.fragment).iter()
+					marker = next(n for n in ET.fromstring(marker_part.fragment).iter()
 						if '-centromere-' in n.get('id', ''))
 					parent.insert(list(parent).index(child), marker)
 					parent.remove(child)
@@ -97,7 +98,7 @@ def main() -> None:
 				model = allele_model(item, allele_rows[index])
 				part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model,
 					item['path'], thickness=28, labels=True, texture=False)
-				parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
+				parent.insert(list(parent).index(child), ET.fromstring(part.fragment))
 				parent.remove(child)
 		for node in root.iter():
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
@@ -105,7 +106,7 @@ def main() -> None:
 		root.set('xmlns', 'http://www.w3.org/2000/svg')
 		output = (OUTPUT / DESTINATIONS[name] if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
 		output.parent.mkdir(parents=True, exist_ok=True)
-		output.write_bytes(xml.etree.ElementTree.tostring(root, encoding='utf-8', xml_declaration=True))
+		output.write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ Run from the repository root: python3 genetics/LECT06/djot/make_chromosome_xlink
 
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree
 
 import svg_tools.chromosomes
 
@@ -15,10 +15,10 @@ import svg_tools.chromosomes
 def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 	output_root: pathlib.Path | None = None) -> None:
 	"""Paint shared chromosome bodies into explicit source-preserving template groups."""
-	xml.etree.ElementTree.register_namespace('', 'http://www.w3.org/2000/svg')
+	defusedxml.ElementTree.register_namespace('', 'http://www.w3.org/2000/svg')
 	for model_path in sorted(data_directory.glob('*.json')):
 		data = json.loads(model_path.read_text(encoding='utf-8'))
-		root = xml.etree.ElementTree.parse(model_path.with_suffix('.template.svg')).getroot()
+		root = defusedxml.ElementTree.parse(model_path.with_suffix('.template.svg')).getroot()
 		groups = {element.attrib['id']: element for element in root.iter()
 			if 'id' in element.attrib}
 		for item in data['placements']:
@@ -37,7 +37,7 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 					item['group'] + '-shared', chromosome, length=item['length'],
 					orientation=item['orientation'], thickness=item['thickness'],
 					texture=False, labels=False)
-			element = xml.etree.ElementTree.fromstring(part.fragment)
+			element = defusedxml.ElementTree.fromstring(part.fragment)
 			if 'translate' in item:
 				element.set('transform', 'translate(' +
 					' '.join(str(value) for value in item['translate']) + ')')
@@ -45,7 +45,7 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 		output = (repository_root / data['target'] if output_root is None else
 			output_root / 'assets' / data['target'].split('/assets/', 1)[1])
 		output.parent.mkdir(parents=True, exist_ok=True)
-		output.write_text(xml.etree.ElementTree.tostring(root, encoding='unicode') + '\n',
+		output.write_text(defusedxml.ElementTree.tostring(root, encoding='unicode') + '\n',
 			encoding='utf-8')
 
 

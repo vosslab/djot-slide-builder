@@ -4,7 +4,7 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 # local repo modules
 import svg_tools.chromosomes
 
@@ -26,7 +26,7 @@ def main() -> None:
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	source = json.loads((HERE / 'meiosis_sources.json').read_text())
-	root = xml.etree.ElementTree.fromstring(source['svg'])
+	root = ET.fromstring(source['svg'])
 	for parent in root.iter():
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:
@@ -38,7 +38,7 @@ def main() -> None:
 			else:
 				regions = (svg_tools.chromosomes.Segment('', colors[0], 86), svg_tools.chromosomes.Segment('', colors[0], 50.22), svg_tools.chromosomes.Segment('', colors[1], 35.78))
 			part = svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}', svg_tools.chromosomes.Chromosome(regions, centromeres=(svg_tools.chromosomes.Centromere(1),)), 'M-86 0 H86', thickness=12, labels=False)
-			parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
+			parent.insert(list(parent).index(child), ET.fromstring(part.fragment))
 			parent.remove(child)
 	for node in root.iter():
 		if node.tag.startswith('{http://www.w3.org/2000/svg}'):
@@ -46,7 +46,7 @@ def main() -> None:
 	root.set('xmlns', 'http://www.w3.org/2000/svg')
 	output = (OUTPUT / 'morgan_meiosis_testcross.drawn.svg' if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS['morgan_meiosis_testcross.drawn.svg'])
 	output.parent.mkdir(parents=True, exist_ok=True)
-	output.write_bytes(xml.etree.ElementTree.tostring(root, encoding='utf-8', xml_declaration=True))
+	output.write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
 
 
 if __name__ == "__main__":

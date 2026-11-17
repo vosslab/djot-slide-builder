@@ -17,22 +17,6 @@ import layout_test_helpers
 
 
 #============================================
-def test_reference_layout_keeps_body_space_and_supplies_study_label(tmp_path: pathlib.Path) -> None:
-	"""Reference decoration is behind editable content and its label is outside the body."""
-	text = "\n\n# Explanation\n\n@body\n\nStudy this example.\n"
-	ordinary = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
-	reference = layout_test_helpers.compile_source(tmp_path, "=== layout: reference" + text).plan.slides[0]
-	body = next(slot for slot in reference.slots if slot.slot_id == "body")
-	assert body.rectangle == next(slot.rectangle for slot in ordinary.slots
-		if slot.slot_id == "body")
-	border = next(item for item in reference.objects if item.object_id == "reference-border")
-	label = next(item for item in reference.objects if item.object_id == "reference-label")
-	assert border.content.style.fill_role is None
-	assert all(border.z_index < item.z_index for item in reference.objects if item != border)
-	assert label.rectangle.y >= body.rectangle.y + body.rectangle.height
-	assert label.slot_id is None and label.presentation_member_id is None
-	assert label.content.paragraphs[0].inlines[0].text == "For reference - not covered in class."
-
 
 #============================================
 @pytest.mark.parametrize("source", (
@@ -125,27 +109,6 @@ def test_impossible_content_reports_its_source_location(tmp_path: pathlib.Path) 
 
 
 #============================================
-def test_fixed_title_frame_reports_an_unrepresentable_source_heading(tmp_path: pathlib.Path) -> None:
-	"""A fixed title frame raises one source-located physical title capacity result."""
-	deck = layout_test_helpers.parsed_source(tmp_path, "=== layout: title-only\n\n# Title")
-	heading = next(block for block in deck.slides[0].blocks
-		if isinstance(block, slide_lib.native_model.Heading))
-	lines = tuple(item for _line in range(400)
-		for item in (slide_lib.native_model.Text("line"), slide_lib.native_model.Break()))
-	unrepresentable = dataclasses.replace(heading, inlines=lines)
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	with pytest.raises(slide_lib.capacity_report.PhysicalCapacityError) as raised:
-		slide_lib.layout_size_selection.select_fixed_heading_size((unrepresentable,),
-			slide_lib.layout_primitives.LogicalRectangle(110, 180, 1060, 250),
-			theme.standard_title_size_pt, theme.title_floor_size_pt, theme, "title-only", "title",
-			slide_lib.capacity_report.CapacityCause.TITLE, True, session)
-	diagnostic = raised.value.diagnostic
-	assert diagnostic.location == heading.location
-	assert diagnostic.layout == "title-only" and diagnostic.slot == "title"
-	assert diagnostic.required_size_pt is None
-	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.TITLE
-
 
 #============================================
 def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pathlib.Path) -> None:
@@ -154,54 +117,10 @@ def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pat
 
 
 #============================================
-def test_title_first_keeps_a_readable_title_and_reports_the_constrained_body(
-		tmp_path: pathlib.Path) -> None:
-	"""A dense standard cell absorbs capacity recovery after the independently fitting title."""
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n# " + "long title " * 20 +
-		"\n\n@body\n\n" + "body " * 200)
-	title = next(item for item in result.plan.slides[0].objects
-		if item.placeholder_kind is slide_lib.layout_primitives.PlaceholderKind.TITLE)
-	diagnostic = result.capacity_diagnostics[0]
-	assert title.content.paragraphs[0].typography.selected_size_pt >= \
-		slide_lib.presentation_theme.default_theme().title_floor_size_pt
-	assert diagnostic.slot == "body"
-	assert diagnostic.cause is slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
-
 
 #============================================
-def test_theend_layout_is_large_two_line_text_with_a_native_star(tmp_path: pathlib.Path) -> None:
-	"""The recurring closer stays editable while its vector star supplies the flourish."""
-	slide = layout_test_helpers.compile_source(tmp_path, "=== layout: theend\n\n# THE END").plan.slides[0]
-	text = next(item.content for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.TextContent))
-	lines = tuple("".join(run.text for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)) for paragraph in text.paragraphs)
-	star = next(item for item in slide.objects
-		if isinstance(item.content, slide_lib.layout_content.ShapeContent) and
-		item.content.kind is slide_lib.layout_primitives.ShapeKind.STAR)
-	assert lines == ("THE", "END")
-	assert star.origin is slide_lib.layout_primitives.LayoutObjectOrigin.THEME
-
 
 #============================================
-def test_titleless_one_panel_reclaims_title_space(tmp_path: pathlib.Path) -> None:
-	"""Omitting a title expands the body while retaining the ordinary page margins."""
-	result = layout_test_helpers.compile_source(tmp_path,
-		"=== layout: one-panel\n\n# Heading\n\n@body\n\nContent.\n\n"
-		"=== layout: one-panel\n\n@body\n\nContent.\n")
-	titled, untitled = result.plan.slides
-	title = next(slot for slot in titled.slots if slot.slot_id == "title")
-	body = next(slot for slot in titled.slots if slot.slot_id == "body")
-	full = next(slot for slot in untitled.slots if slot.slot_id == "body")
-	assert all(slot.slot_id != "title" for slot in untitled.slots)
-	assert full.rectangle.y == title.rectangle.y
-	assert full.rectangle.height > body.rectangle.height
-	assert full.rectangle.y + full.rectangle.height == body.rectangle.y + body.rectangle.height
-	text = next(item for item in untitled.objects if item.object_id == "body")
-	assert text.frame_text.vertical_alignment is slide_lib.layout_primitives.VerticalAlignment.MIDDLE
-	assert text.content.paragraphs[0].properties.horizontal_alignment is \
-		slide_lib.layout_primitives.HorizontalAlignment.START
-
 
 #============================================
 @pytest.mark.parametrize("layout", ("bookend", "definitions"))

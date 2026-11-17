@@ -4,7 +4,7 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 
 # local repo modules
 import svg_tools.chromosomes
@@ -30,7 +30,7 @@ def main() -> None:
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	sources = json.loads((HERE / 'cis_sources.json').read_text())
 	for name, source in sources.items():
-		root = xml.etree.ElementTree.fromstring(source['svg'])
+		root = ET.fromstring(source['svg'])
 		for parent in root.iter():
 			for child in list(parent):
 				if 'data-shared-part' not in child.attrib:
@@ -51,7 +51,7 @@ def main() -> None:
 					parent.remove(node)
 				part = svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}', model, item['path'],
 											thickness=40, labels=False)
-				parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
+				parent.insert(list(parent).index(child), ET.fromstring(part.fragment))
 				parent.remove(child)
 		for node in root.iter():
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
@@ -59,7 +59,7 @@ def main() -> None:
 		root.set('xmlns', 'http://www.w3.org/2000/svg')
 		output = (OUTPUT / DESTINATIONS[name] if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
 		output.parent.mkdir(parents=True, exist_ok=True)
-		output.write_bytes(xml.etree.ElementTree.tostring(root, encoding='utf-8', xml_declaration=True))
+		output.write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
 
 
 if __name__ == "__main__":

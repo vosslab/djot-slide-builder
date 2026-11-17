@@ -2,7 +2,7 @@
 """Regenerate five early meiosis and homolog/sister figures from frozen sources."""
 import argparse
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes
 

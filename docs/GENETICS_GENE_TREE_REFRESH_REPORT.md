@@ -25,18 +25,18 @@ Each output stem below has an editable `.odp` in `output/odp/` and a `.pdf` in `
 All ten decks were exported with LibreOffice outside the sandbox. Current sources and historical
 source maps are linked from the two reviews.
 
-| Deck | Canonical master | Current ODP and PDF |
+| Deck | Canonical master | Local ODP and PDF paths |
 | --- | --- | --- |
-| 11A | [lect11a-2026_announcements.djot](../genetics/LECT11/djot/lect11a-2026_announcements.djot) | [lect11a-2026_announcements.odp](../output/odp/lect11a-2026_announcements.odp), [lect11a-2026_announcements.pdf](../output/pdf/lect11a-2026_announcements.pdf) |
-| 11B | [lect11b-gene_trees.djot](../genetics/LECT11/djot/lect11b-gene_trees.djot) | [lect11b-gene_trees.odp](../output/odp/lect11b-gene_trees.odp), [lect11b-gene_trees.pdf](../output/pdf/lect11b-gene_trees.pdf) |
-| 11C | [lect11c-more_gene_trees.djot](../genetics/LECT11/djot/lect11c-more_gene_trees.djot) | [lect11c-more_gene_trees.odp](../output/odp/lect11c-more_gene_trees.odp), [lect11c-more_gene_trees.pdf](../output/pdf/lect11c-more_gene_trees.pdf) |
-| 11D | [lect11d-gene_tree_activity.djot](../genetics/LECT11/djot/lect11d-gene_tree_activity.djot) | [lect11d-gene_tree_activity.odp](../output/odp/lect11d-gene_tree_activity.odp), [lect11d-gene_tree_activity.pdf](../output/pdf/lect11d-gene_tree_activity.pdf) |
-| 11E | [lect11e-evol_time.djot](../genetics/LECT11/djot/lect11e-evol_time.djot) | [lect11e-evol_time.odp](../output/odp/lect11e-evol_time.odp), [lect11e-evol_time.pdf](../output/pdf/lect11e-evol_time.pdf) |
-| 12A | [lect12a-2026_announcements.djot](../genetics/LECT12/djot/lect12a-2026_announcements.djot) | [lect12a-2026_announcements.odp](../output/odp/lect12a-2026_announcements.odp), [lect12a-2026_announcements.pdf](../output/pdf/lect12a-2026_announcements.pdf) |
-| 12B | [lect12b-polyploidy.djot](../genetics/LECT12/djot/lect12b-polyploidy.djot) | [lect12b-polyploidy.odp](../output/odp/lect12b-polyploidy.odp), [lect12b-polyploidy.pdf](../output/pdf/lect12b-polyploidy.pdf) |
-| 12C | [lect12c-sex_dosage.djot](../genetics/LECT12/djot/lect12c-sex_dosage.djot) | [lect12c-sex_dosage.odp](../output/odp/lect12c-sex_dosage.odp), [lect12c-sex_dosage.pdf](../output/pdf/lect12c-sex_dosage.pdf) |
-| 12D | [lect12d-chromo_alter_1-deletions.djot](../genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot) | [lect12d-chromo_alter_1-deletions.odp](../output/odp/lect12d-chromo_alter_1-deletions.odp), [lect12d-chromo_alter_1-deletions.pdf](../output/pdf/lect12d-chromo_alter_1-deletions.pdf) |
-| 12E | [lect12e-chromo_alter_2-duplications.djot](../genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot) | [lect12e-chromo_alter_2-duplications.odp](../output/odp/lect12e-chromo_alter_2-duplications.odp), [lect12e-chromo_alter_2-duplications.pdf](../output/pdf/lect12e-chromo_alter_2-duplications.pdf) |
+| 11A | [lect11a-2026_announcements.djot](../genetics/LECT11/djot/lect11a-2026_announcements.djot) | `output/odp/lect11a-2026_announcements.odp`, `output/pdf/lect11a-2026_announcements.pdf` |
+| 11B | [lect11b-gene_trees.djot](../genetics/LECT11/djot/lect11b-gene_trees.djot) | `output/odp/lect11b-gene_trees.odp`, `output/pdf/lect11b-gene_trees.pdf` |
+| 11C | [lect11c-more_gene_trees.djot](../genetics/LECT11/djot/lect11c-more_gene_trees.djot) | `output/odp/lect11c-more_gene_trees.odp`, `output/pdf/lect11c-more_gene_trees.pdf` |
+| 11D | [lect11d-gene_tree_activity.djot](../genetics/LECT11/djot/lect11d-gene_tree_activity.djot) | `output/odp/lect11d-gene_tree_activity.odp`, `output/pdf/lect11d-gene_tree_activity.pdf` |
+| 11E | [lect11e-evol_time.djot](../genetics/LECT11/djot/lect11e-evol_time.djot) | `output/odp/lect11e-evol_time.odp`, `output/pdf/lect11e-evol_time.pdf` |
+| 12A | [lect12a-2026_announcements.djot](../genetics/LECT12/djot/lect12a-2026_announcements.djot) | `output/odp/lect12a-2026_announcements.odp`, `output/pdf/lect12a-2026_announcements.pdf` |
+| 12B | [lect12b-polyploidy.djot](../genetics/LECT12/djot/lect12b-polyploidy.djot) | `output/odp/lect12b-polyploidy.odp`, `output/pdf/lect12b-polyploidy.pdf` |
+| 12C | [lect12c-sex_dosage.djot](../genetics/LECT12/djot/lect12c-sex_dosage.djot) | `output/odp/lect12c-sex_dosage.odp`, `output/pdf/lect12c-sex_dosage.pdf` |
+| 12D | [lect12d-chromo_alter_1-deletions.djot](../genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot) | `output/odp/lect12d-chromo_alter_1-deletions.odp`, `output/pdf/lect12d-chromo_alter_1-deletions.pdf` |
+| 12E | [lect12e-chromo_alter_2-duplications.djot](../genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot) | `output/odp/lect12e-chromo_alter_2-duplications.odp`, `output/pdf/lect12e-chromo_alter_2-duplications.pdf` |
 
 The generated [gene_tree_four_steps.djot](../genetics/LECT11/djot/gene_tree_four_steps.djot),
 [gene_tree_five_steps.djot](../genetics/LECT11/djot/gene_tree_five_steps.djot), and
@@ -85,8 +85,8 @@ The counts and build evidence below describe the earlier refresh before the B/C/
 
 - Fresh [specification](active_plans/reports/genetics_gene_tree_spec_review.md),
   [C delta](active_plans/reports/genetics_gene_tree_spec_delta.md),
-  [A/B quality](active_plans/reports/genetics_gene_tree_quality_ab.md),
-  [C/D quality](active_plans/reports/genetics_gene_tree_quality_cd.md),
+  [A and B quality](active_plans/reports/genetics_gene_tree_quality_ab.md),
+  [C and D quality](active_plans/reports/genetics_gene_tree_quality_cd.md),
   [final C quality](active_plans/reports/genetics_gene_tree_quality_c_final.md), and
   [integration](active_plans/reports/genetics_gene_tree_integration.md) reviews pass. The initial
   C finding is historical and was fixed and independently reviewed again. The initial sequencing

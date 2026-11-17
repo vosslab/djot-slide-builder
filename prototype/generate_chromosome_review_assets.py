@@ -2,11 +2,13 @@
 """Generate prototype-only chromosome review assets from shared geometry."""
 
 import pathlib
+import subprocess
 
 import svg_tools.chromosomes as chromosomes
 
 
-ROOT = pathlib.Path(__file__).resolve().parent
+ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'prototype'
 
 
 def staining() -> None:

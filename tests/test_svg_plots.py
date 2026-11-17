@@ -1,7 +1,6 @@
 """Behavior checks for vector plot import and scoped styling."""
 
-import xml.etree.ElementTree as ET
-
+import defusedxml.ElementTree
 import matplotlib
 import pytest
 from matplotlib.figure import Figure
@@ -10,7 +9,7 @@ from svg_tools.plots import figure_to_part, plot_style
 
 
 #============================================
-def test_plot_import_preserves_data_and_live_labels():
+def test_plot_import_preserves_data_and_live_labels() -> None:
 	before = matplotlib.rcParams['font.family'][:]
 	values = [2, 5, 3]
 	with plot_style():
@@ -24,7 +23,7 @@ def test_plot_import_preserves_data_and_live_labels():
 		assert title.get_fontproperties() == original
 	assert matplotlib.rcParams['font.family'] == before
 	assert list(line.get_ydata()) == values == [2, 5, 3]
-	root = ET.fromstring(part.fragment)
+	root = defusedxml.ElementTree.fromstring(part.fragment)
 	texts = list(root.iter('{http://www.w3.org/2000/svg}text'))
 	assert any('Measured response' == text.text for text in texts)
 	assert any('Dose' == text.text for text in texts)
@@ -33,7 +32,7 @@ def test_plot_import_preserves_data_and_live_labels():
 
 
 #============================================
-def test_plot_import_rejects_raster_artists():
+def test_plot_import_rejects_raster_artists() -> None:
 	with plot_style():
 		figure = Figure()
 		figure.subplots().imshow([[1, 2], [3, 4]])

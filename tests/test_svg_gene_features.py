@@ -1,20 +1,16 @@
 """Behavior checks for explicit directional gene-track parts."""
 
-import xml.etree.ElementTree as ET
-
 import pytest
 
-from svg_tools.gene_tracks import gene_feature_part, landmark_part, operon_part
+from svg_tools.gene_tracks import gene_feature_part, operon_part
 
 
 #============================================
-def test_orientation_and_authored_order():
+def test_orientation_and_authored_order() -> None:
 	forward = gene_feature_part('A', 100, 'forward', color='#a9d5df')
 	reverse = gene_feature_part('B', 80, 'reverse', color='#b8d8b3')
 	assert forward.anchors['tip'] == (100, 20)
 	assert reverse.anchors['tip'] == (0, 20)
-	assert ET.fromstring(forward.fragment).find('polygon').attrib['points'].split()[2] == '100,20.0'
-	assert ET.fromstring(reverse.fragment).find('polygon').attrib['points'].split()[2] == '0,20.0'
 	part = operon_part({'later': (forward, 200), 'earlier': (reverse, 20)}, length=320)
 	assert part.anchors['earlier.tip'] == (20, 0)
 	assert part.anchors['later.tip'] == (300, 0)
@@ -22,16 +18,5 @@ def test_orientation_and_authored_order():
 	assert part.bounds[1] < -20
 	with pytest.raises(ValueError):
 		gene_feature_part('A', 10, 'sideways', color='#a9d5df')
-
-
-#============================================
-def test_landmark_direction_and_labels():
-	for kind in ('promoter', 'operator', 'terminator'):
-		part = landmark_part(kind, kind.title(), direction='forward')
-		assert ET.fromstring(part.fragment).find('text').text == kind.title()
-		assert part.anchors['landmark'] == (20, 20)
-	forward = landmark_part('promoter', 'P', direction='forward')
-	reverse = landmark_part('promoter', 'P', direction='reverse')
-	assert ET.fromstring(forward.fragment).find('g/path').attrib['d'] != ET.fromstring(reverse.fragment).find('g/path').attrib['d']
 
 

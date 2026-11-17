@@ -5,16 +5,15 @@ import argparse
 import hashlib
 import json
 import pathlib
-import typing
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.parts
 import svg_tools.svg_import
 
 
 #============================================
-def compose(name: str, specification: dict[str, typing.Any],
-		components: dict[str, typing.Any], component_dir: pathlib.Path | None = None) -> str:
+def compose(name: str, specification: dict,
+		components: dict, component_dir: pathlib.Path | None = None) -> str:
 	"""Place each original component occurrence without changing its geometry."""
 	parts: dict[str, svg_tools.parts.SvgPart] = {}
 	for index, placement in enumerate(specification['parts']):
@@ -70,7 +69,7 @@ def main() -> None:
 		help='Use shared-geometry component SVGs instead of frozen source bodies.')
 	args = parser.parse_args()
 	data_path = pathlib.Path(__file__).with_name('lect13d_p1_composition_data.json')
-	data: dict[str, typing.Any] = json.loads(data_path.read_text())
+	data: dict = json.loads(data_path.read_text())
 	args.output.mkdir(parents=True, exist_ok=True)
 	for name, specification in data['figures'].items():
 		(args.output / f'{name}.drawn.svg').write_text(

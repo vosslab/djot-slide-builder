@@ -6,7 +6,7 @@ import math
 import svgpathtools
 import svg_tools.parts
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 import svg_tools.chromosomes
 
 NS='{http://www.w3.org/2000/svg}'

@@ -5097,7 +5097,7 @@ review also accepts the minor return-arrow contact as nonblocking; no polishing 
 
 | Accepted drawing | Canonical consumer | Visible gain |
 | --- | --- | --- |
-| Chromosome complements | [lect11d_deletion_mechanisms.djot](../../../genetics/LECT11/djot/lect11d_deletion_mechanisms.djot), slide 23 | Aligned XX/XY complements with separate, countable shapes. |
+| Chromosome complements | [lect12d_deletion_mechanisms.djot](../../../genetics/LECT12/djot/lect12d_deletion_mechanisms.djot), slide 23 | Aligned XX/XY complements with separate, countable shapes. |
 | Folded hemoglobin | [lect02b-genes_dogma.djot](../../../genetics/LECT02/djot/lect02b-genes_dogma.djot), slide 44 | Recognizable folded subunits contrasted with a continuous clump. |
 | CCR5 receptors | [lect14b-allele_freq.djot](../../../genetics/LECT14/djot/lect14b-allele_freq.djot), slide 10 | Three recognizable virus/membrane/receptor scenes with R5 HIV-1 scope inside the artwork. |
 | Corn life cycle | [lect06c-meiosis.djot](../../../genetics/LECT06/djot/lect06c-meiosis.djot), slide 43 | Recognizable maize anatomy, two reproductive tracks and a closed developmental cycle. |
@@ -5383,7 +5383,7 @@ separate.
   No new clipping, cropped label or import defect is reported. Export receipt:
   `_temp/genetics_division_export/REVIEW.md`. LibreOffice ownership is released.
 - **INTEGRATED:** seven exact accepted SVGs and eight image-URL substitutions in
-  [lect11e-chromo_alter_2-duplications.djot](../../../genetics/LECT11/djot/lect11e-chromo_alter_2-duplications.djot)
+  [lect12e-chromo_alter_2-duplications.djot](../../../genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot)
   and [lect06c-meiosis.djot](../../../genetics/LECT06/djot/lect06c-meiosis.djot).
   Reversing those URLs restores both original source byte streams. All 98 preexisting assets
   remain byte-identical; words, alt text, layout directives, reveal markers and sequence are

@@ -6,7 +6,7 @@ import svg_tools._style
 
 
 #============================================
-def test_scaled_path_preserves_subpaths_and_closure():
+def test_scaled_path_preserves_subpaths_and_closure() -> None:
 	path = 'M 0 0 C .5 0 1 .5 1 1 C .5 1 0 .5 0 0 Z M .2 .2 H .4 V .4 Z'
 	result = svg_tools._style.scaled_path(path, 200, 50)
 	assert result.count('Z') == 2

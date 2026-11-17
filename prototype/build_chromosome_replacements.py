@@ -3,6 +3,7 @@
 
 import pathlib
 import shutil
+import subprocess
 
 from genetics.LECT12.djot import lect12c_chromosome_recipes
 from genetics.LECT12.djot import make_polyploidy_chromosomes
@@ -10,7 +11,8 @@ from genetics.LECT12.djot import render_lect12d_chromosomes
 from genetics.LECT12.djot import render_lect12e_chromosomes
 
 
-ROOT = pathlib.Path(__file__).resolve().parent
+ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'prototype'
 LECT12 = ROOT.parent / 'genetics' / 'LECT12' / 'djot'
 ASSETS = ROOT / 'chromosome_assets' / 'assets'
 

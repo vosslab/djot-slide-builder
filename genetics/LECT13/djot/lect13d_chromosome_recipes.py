@@ -4,7 +4,7 @@ import argparse
 import json
 import pathlib
 import re
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes as chrom
 
@@ -13,10 +13,10 @@ SOURCES = json.loads((HERE / 'lect13d_chromosome_shells.json').read_text())
 NS = '{http://www.w3.org/2000/svg}'
 ET.register_namespace('', 'http://www.w3.org/2000/svg')
 NAMES = ('normal_y_chromosome_strip', 'normal_chromosome_2_strip',
-		 'translocated_x_chromosome_strip', 'translocated_2_chromosome_strip',
-		 'normal_y_translocated_2_subset', 'translocated_x_normal_y_subset',
-		 'translocated_2_normal_2_subset', 'ruby_translocation_chromosome_set',
-		 'reciprocal_translocation_gamete_products')
+		'translocated_x_chromosome_strip', 'translocated_2_chromosome_strip',
+		'normal_y_translocated_2_subset', 'translocated_x_normal_y_subset',
+		'translocated_2_normal_2_subset', 'ruby_translocation_chromosome_set',
+		'reciprocal_translocation_gamete_products')
 COLORS = {'slate': '#7895a2', 'blue': '#367cb7', 'red': '#df5146'}
 
 def marker(name: str, x: float, y: float, thickness: float, angle: float) -> ET.Element:
@@ -162,7 +162,7 @@ def gametes() -> None:
 		left = float(re.match(r'M(-?[\d.]+)', arms[0].get('d')).group(1))
 		right = float(re.match(r'M(-?[\d.]+)', arms[1].get('d')).group(1))
 		model = chrom.Chromosome((chrom.Segment('', arms[0].get('fill'), -left),
-								  chrom.Segment('', arms[1].get('fill'), right)), (chrom.Centromere(1),))
+									chrom.Segment('', arms[1].get('fill'), right)), (chrom.Centromere(1),))
 		part = chrom.chromosome_path_part(f'robertsonian-gamete-{count}', model,
 					f'M {left} 0 L {right} 0', thickness=18, labels=False)
 		count += 1

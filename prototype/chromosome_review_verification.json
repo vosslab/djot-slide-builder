@@ -6,9 +6,9 @@
   "native_review_ids": 68,
   "notes": 70,
   "contact_sheets": 5,
-  "pdf_sha256": "767d0e1e498f549f3ec47f78edac778c6d5fc35f273a5b07e862d85d6e9db632",
-  "odp_sha256": "9fba9c1fa2851c164702c9aea2bf694365cb95b36b5795a0d1d3691ac4a3a004",
-  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material. Native-text follow-up: inspected C13/C21/C25/C55 overview/C55 loop/C56/C59 after moving prose outside SVG. Both C55 panels are full-size; C21 now reuses C13 and its micrograph renders. Checked 12 pt condensed timestamp below THE END outline.",
+  "pdf_sha256": "dfbc51c679adff366e636d8f4583d96ce1bb2e07a8b560a79f3ebcd6ba6e8f64",
+  "odp_sha256": "d1111ec0727b73a0857157b07fc21fb6d281353b73f1790b4ae8cc88785fd0b4",
+  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material. Native-text follow-up: inspected C13/C21/C25/C55 overview/C55 loop/C56/C59 after moving prose outside SVG. Both C55 panels are full-size; C21 now reuses C13 and its micrograph renders. Checked 12 pt condensed timestamp below THE END outline. Gene-label follow-up: reviewed embedded loci in C01/C22/C24/C28/C47/C48/C56-C59, preserving source labels and banding references. Independent path tracing confirms C28 products Ab/Ab/aB/aB.",
   "known_issue": null,
   "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
   "preserved_evidence_ids": [
@@ -391,7 +391,7 @@
     "canonical_generator": "devel/render_human_chromosome_2_fusion.py"
   },
   "render_timestamp_followup": {
-    "label": "rendered on Tue, Nov 17, 2026 at 9:21:42 AM CST",
+    "label": "rendered on Tue, Nov 17, 2026 at 9:53:10 AM CST",
     "native_pages_stamped": [
       1
     ],
@@ -563,5 +563,70 @@
     "current_svg_references_embedded_by_exact_hash": 68,
     "focused_svg_tests_passed": 21,
     "pyflakes_passed": true
+  },
+  "gene_label_followup": {
+    "changed_review_ids": [
+      "C01",
+      "C22",
+      "C24",
+      "C28",
+      "C47",
+      "C48",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "label_tokens_preserved": [
+      "C22",
+      "C24",
+      "C28",
+      "C48",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "original_lecture_svgs_unchanged": 1040,
+    "native_pdf_pages": 71,
+    "native_odp_pages": 71,
+    "current_svg_references_embedded_by_exact_hash": 68,
+    "capacity_diagnostics": 0,
+    "c28_continuous_chromatid_products": [
+      "Ab",
+      "Ab",
+      "aB",
+      "aB"
+    ],
+    "c28_independent_path_trace_review": "accepted",
+    "independent_native_visual_review": "accepted for all remaining changed figures",
+    "focused_svg_tests_passed": 22,
+    "pyflakes": "passed",
+    "strict_native_lint": "passed",
+    "native_review_ids": [
+      "C01",
+      "C03",
+      "C18",
+      "C20",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C65"
+    ],
+    "full_repository_suite_run": false
   }
 }

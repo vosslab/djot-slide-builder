@@ -37,6 +37,25 @@
   Regenerate the chromosome review prototype without changing lecture artwork.
   C11 falls from 72.6 MiB to 5.5 KiB; the 67 review SVGs fall from 337.8 to 57.7 MiB.
 
+### Fixes and Maintenance
+
+- Align SVG runtime guidance with the master repository rules: use the Python bootstrap,
+  `pyflakes` and focused pytest checks. Use Git-derived roots in the chromosome review
+  scripts and the revised labeling recipes. Keep task briefs positive and specific.
+- Correct the C24 prototype destination so the review uses the regenerated locus diagram.
+
+### Decisions and Failures
+
+- Two explicit bytecode-compilation commands created eight `.pyc` files despite the
+  environment's import-cache suppression. Validation now uses the documented bootstrap,
+  `pyflakes` and focused tests; the cache scan is clean.
+
+### Developer Tests and Notes
+
+- Chromosome labels: 22 focused SVG tests, source-label preservation, continuous-chromatid
+  product tracing, SVG references, native slide export and visual review. Original lecture
+  SVGs remain unchanged; 71 review slides retain native explanations and the build timestamp.
+
 ## 2026-11-16
 
 ### Additions and New Features

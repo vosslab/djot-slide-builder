@@ -48,15 +48,19 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
 - Implement queued messages and finish their requests. Do not depend on feedback questions;
   I may never see them. Use the recorded guidance and available evidence to complete the work.
 
-- "I would prefer to handle all git commands myself, stick to SVG and drawing." Agents run no
-  Git commands, directly or through helpers; `source_me.sh` invokes `git rev-parse`, so use
-  configured Python 3.12 directly and Git-free checks for SVG work.
+- Use `source source_me.sh && python3 ...` for Python commands, including SVG work.
+  Follow [REPO_STYLE.md](REPO_STYLE.md) as the master repository guidance, including its
+  root-discovery convention (November 17, 2026).
 
 - Retain tests enforcing Djot syntax and authoring guidelines even when their exact assertions
   would otherwise look fragile. Tests must not force implementation to stay in monolithic files.
 
 - Keep bytecode caches visible to detect agent mistakes; do not add a `__pycache__` ignore rule.
   Honor the bootstrapped Python environment when running checks.
+- Use `pyflakes` and focused pytest checks in the bootstrapped environment; keep validation
+  bytecode-free (November 17, 2026).
+- Phrase task briefs positively, naming the actions and tools needed for the work. Positive
+  instructions plus omission of irrelevant tools work best for small models (November 17, 2026).
 
 - Keep source provenance portable instead of embedding machine-specific absolute paths.
 

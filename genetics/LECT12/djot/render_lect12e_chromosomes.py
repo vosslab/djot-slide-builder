@@ -17,32 +17,32 @@ import svg_tools.drawing
 ASSETS = pathlib.Path(__file__).parent / 'assets/lect12e-chromo_alter_2-duplications'
 
 CROSSOVER_PATHS = [('M32 130 C85 130 84 165 108 165 S150 130 185 130 L295 130', '#287caf', 108),
- ('M32 200 C85 200 84 165 108 165 S150 200 185 200 L295 200', '#287caf', 108),
- ('M32 285 C85 285 84 320 108 320 S150 285 185 285 L295 285', '#6076b2', 108),
- ('M32 355 C85 355 84 320 108 320 S150 355 185 355 L295 355', '#6076b2', 108),
- ('M442 130 C495 130 494 165 518 165 S560 130 595 130 L705 130', '#287caf', 518),
- ('M442 200 C495 200 494 165 518 165 S560 200 595 200 L705 200', '#287caf', 518),
- ('M404 285 C457 285 456 320 480 320 S522 285 557 285 L667 285', '#6076b2', 480),
- ('M404 355 C457 355 456 320 480 320 S522 355 557 355 L667 355', '#6076b2', 480),
- ('M817 130 C858 130 858 165 884 165 S928 130 963 130 L1100 130', '#287caf', 884),
- ('M817 355 C858 355 858 320 884 320 S928 355 963 355 L1100 355', '#6076b2', 884),
- ('M817 200 C858 200 858 165 884 165 C930 165 948 213 976 213 C1005 213 1010 285 1040 285 L1100 '
-  '285',
-  '#287caf',
-  884),
- ('M975 213 C1005 213 1010 285 1040 285', '#ae702c', None),
- ('M817 285 C858 285 858 320 884 320 C929 320 939 282 962 282 C996 282 1005 213 1030 213 L1100 213',
-  '#6076b2',
-  884),
- ('M942 298 C951 286 955 282 962 282 C996 282 1005 213 1030 213 L1055 213', '#ae702c', None),
- ('M1058 285 L1100 285', '#6076b2', None),
- ('M1068 213 L1100 213', '#287caf', None),
- ('M1245 100 Q1280 97 1315 100 L1481 100', '#287caf', 1300),
- ('M1245 190 Q1280 187 1315 190 L1443 190', '#287caf', 1300),
- ('M1413 190 L1443 190', '#6076b2', None),
- ('M1245 280 Q1280 277 1315 280 L1519 280', '#6076b2', 1300),
- ('M1489 280 L1519 280', '#287caf', None),
- ('M1245 370 Q1280 367 1315 370 L1481 370', '#6076b2', 1300)]
+	('M32 200 C85 200 84 165 108 165 S150 200 185 200 L295 200', '#287caf', 108),
+	('M32 285 C85 285 84 320 108 320 S150 285 185 285 L295 285', '#6076b2', 108),
+	('M32 355 C85 355 84 320 108 320 S150 355 185 355 L295 355', '#6076b2', 108),
+	('M442 130 C495 130 494 165 518 165 S560 130 595 130 L705 130', '#287caf', 518),
+	('M442 200 C495 200 494 165 518 165 S560 200 595 200 L705 200', '#287caf', 518),
+	('M404 285 C457 285 456 320 480 320 S522 285 557 285 L667 285', '#6076b2', 480),
+	('M404 355 C457 355 456 320 480 320 S522 355 557 355 L667 355', '#6076b2', 480),
+	('M817 130 C858 130 858 165 884 165 S928 130 963 130 L1100 130', '#287caf', 884),
+	('M817 355 C858 355 858 320 884 320 S928 355 963 355 L1100 355', '#6076b2', 884),
+	('M817 200 C858 200 858 165 884 165 C930 165 948 213 976 213 C1005 213 1010 285 1040 285 L1100 '
+		'285',
+		'#287caf',
+		884),
+	('M975 213 C1005 213 1010 285 1040 285', '#ae702c', None),
+	('M817 285 C858 285 858 320 884 320 C929 320 939 282 962 282 C996 282 1005 213 1030 213 L1100 213',
+		'#6076b2',
+		884),
+	('M942 298 C951 286 955 282 962 282 C996 282 1005 213 1030 213 L1055 213', '#ae702c', None),
+	('M1058 285 L1100 285', '#6076b2', None),
+	('M1068 213 L1100 213', '#287caf', None),
+	('M1245 100 Q1280 97 1315 100 L1481 100', '#287caf', 1300),
+	('M1245 190 Q1280 187 1315 190 L1443 190', '#287caf', 1300),
+	('M1413 190 L1443 190', '#6076b2', None),
+	('M1245 280 Q1280 277 1315 280 L1519 280', '#6076b2', 1300),
+	('M1489 280 L1519 280', '#287caf', None),
+	('M1245 370 Q1280 367 1315 370 L1481 370', '#6076b2', 1300)]
 
 CROSSOVER_TEMPLATE = '''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="460" viewBox="0 0 1600 460" role="img" aria-labelledby="title description">
 <title id="title">Unequal crossing over expands or contracts a tandem duplication</title>
@@ -51,10 +51,10 @@ CROSSOVER_TEMPLATE = '''<svg xmlns="http://www.w3.org/2000/svg" width="1600" hei
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect width="1600" height="460" fill="white"/>
 <g font-family="Atkinson Hyperlegible Next">
-<text x="22" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(A)  Normal pairing</text>
-<text x="410" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(B)  Mispairing</text>
-<text x="800" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(C)  Unequal crossing over</text>
-<text x="1230" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(D)  Result of crossover</text>
+<text x="22" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(A)		Normal pairing</text>
+<text x="410" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(B)		Mispairing</text>
+<text x="800" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(C)		Unequal crossing over</text>
+<text x="1230" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(D)		Result of crossover</text>
 <g id="normal-pairing">
 <path d="M32 130 C85 130 84 165 108 165 S150 130 185 130 L295 130" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_0<rect x="187" y="117" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="117" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><path d="M32 200 C85 200 84 165 108 165 S150 200 185 200 L295 200" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_1<rect x="187" y="187" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="187" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/>
 <path d="M32 285 C85 285 84 320 108 320 S150 285 185 285 L295 285" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_2<rect x="187" y="272" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="272" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><path d="M32 355 C85 355 84 320 108 320 S150 355 185 355 L295 355" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_3<rect x="187" y="342" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="342" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/>

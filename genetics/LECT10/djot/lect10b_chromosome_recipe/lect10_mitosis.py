@@ -2,15 +2,15 @@
 import json
 import pathlib
 import re
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 import svg_tools.chromosomes
 
 NS='http://www.w3.org/2000/svg'
-xml.etree.ElementTree.register_namespace('',NS)
+ET.register_namespace('',NS)
 HERE=pathlib.Path(__file__).resolve().parent
 
 def main(destination: pathlib.Path) -> None:
-	root=xml.etree.ElementTree.parse(HERE/'templates'/'mitosis_karyotype_stages.drawn.svg').getroot()
+	root=ET.parse(HERE/'templates'/'mitosis_karyotype_stages.drawn.svg').getroot()
 	slots={n.get('id'):n for n in root.iter()}
 	records=json.loads((HERE/'mitosis_models.json').read_text())
 	for record in records:
@@ -40,5 +40,5 @@ def main(destination: pathlib.Path) -> None:
 		model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color,lengths[0]),svg_tools.chromosomes.Segment('',color,lengths[1])),
 			(svg_tools.chromosomes.Centromere(1),))
 		part=svg_tools.chromosomes.chromosome_path_part(name+'-v2',model,path,thickness=thickness,labels=False)
-		slot.append(xml.etree.ElementTree.fromstring(part.fragment))
-	xml.etree.ElementTree.ElementTree(root).write(destination,encoding='unicode')
+		slot.append(ET.fromstring(part.fragment))
+	ET.ElementTree(root).write(destination,encoding='unicode')

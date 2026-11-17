@@ -15,7 +15,7 @@ original evidence boundaries. Open tasks remain in those active documents.
   lint, `build_slides.sh genetics`, two explicit native E2Es, and eight sequential matching
   ODP/PDF exports with editable text/direct images and the Lecture 02e native table.
 - [x] Build the bounded ODF/SMIL reveal model; the dated
-  [wp_a1_animation_fidelity.md](../archive/wp_a1_animation_fidelity.md) records the
+  [wp_a1_animation_fidelity.md](wp_a1_animation_fidelity.md) records the
   earlier OOXML design context.
 - [x] Record native ODP package semantics, headless LibreOffice open/save preservation, and
   ODP-derived PDF final-state evidence.
@@ -196,9 +196,9 @@ Do not import an entire slide converter or browser scene engine to draw a few pa
 including zero gaps, with width, height and returned exon offsets. Extend this existing helper
 rather than create a parallel DNA tool. Future oriented features, promoter and operator
 landmarks, and composition of an operon from supplied parts address the unmet teaching target.
-Biological order, direction and labels remain in the recipe. The archive includes an
-[enhancer/promoter illustration](../archive/genetics_gene_tree_svg/artwork/phy_e_enhancer_losses.drawn.svg),
-which is historical artwork, not a current tool. No native operon component was confirmed in
+Biological order, direction and labels remain in the recipe. The archive includes
+[phy_e_enhancer_losses.drawn.svg](genetics_gene_tree_svg/artwork/phy_e_enhancer_losses.drawn.svg),
+historical artwork rather than a current tool. No native operon component was confirmed in
 the inspected sources; validate a future extension against a concrete teaching example.
 
 ##### Later candidates

@@ -3,7 +3,7 @@
 import argparse
 import pathlib
 import re
-import xml.etree.ElementTree as xml
+import defusedxml.ElementTree as xml
 
 import svgpathtools
 

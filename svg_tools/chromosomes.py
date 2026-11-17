@@ -6,6 +6,7 @@ import pathlib
 import dataclasses
 import xml.etree.ElementTree
 
+import defusedxml.ElementTree
 import svgpathtools
 
 import svg_tools.parts
@@ -242,7 +243,8 @@ def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 
 
 #============================================
-def _centromere_element(name, along, across, thickness, active, label):
+def _centromere_element(name: str, along: float, across: float, thickness: float,
+	active: bool, label: str | None) -> xml.etree.ElementTree.Element:
 	"""The BPQ collar overlays continuing body color; belts add transverse overhang."""
 	scale = thickness/30
 	group = xml.etree.ElementTree.Element('g', {'id': name, 'data-layer': 'centromere'})
@@ -306,7 +308,7 @@ def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], 
 		junctions=junctions, allele_labels=allele_labels)
 		for index, (chromosome, path_d) in enumerate(chromatids)}
 	for key, part in list(parts.items()):
-		root = xml.etree.ElementTree.fromstring(part.fragment)
+		root = defusedxml.ElementTree.fromstring(part.fragment)
 		for child in list(root):
 			if child.get('data-layer') == 'centromere':
 				root.remove(child)

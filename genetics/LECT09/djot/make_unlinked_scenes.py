@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reconstruct the two raster scenes without changing their native surroundings."""
 import pathlib
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 import svgpathtools
 import svg_tools.chromosomes as chromosomes

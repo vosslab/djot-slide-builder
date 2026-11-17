@@ -1,7 +1,8 @@
 """Prototype-only crops that keep division explanations as native Djot text."""
 
 from pathlib import Path
-import xml.etree.ElementTree as ET
+import subprocess
+import defusedxml.ElementTree as ET
 
 
 SVG = '{http://www.w3.org/2000/svg}'
@@ -46,7 +47,9 @@ def _crop_c25(path: Path) -> None:
 
 def separate_division_prose() -> None:
 	"""Move the fixed C13, C21, and C25 prose into their Djot slides."""
-	assets = Path(__file__).resolve().parent / 'assets'
+	root = Path(subprocess.check_output(
+		['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+	assets = root / 'prototype/assets'
 	c13 = assets / 'lect06c-meiosis/recombinant_chromosomes.svg'
 	_crop_c13(c13)
 	(assets / 'lect08b-chap8-linked_genes/b31_labeled.svg').write_bytes(c13.read_bytes())

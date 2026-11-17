@@ -162,8 +162,8 @@
 </g>
 <text id="panel-b" x="8" y="550" font-family="Atkinson Hyperlegible Next" font-size="27" font-weight="700" text-anchor="start" fill="#202529">b</text>
 <g id="hybridization-description">
-<text id="hybridization-description-0" x="170" y="548" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">Hybridisation at 37°C</text>
-<text id="hybridization-description-1" x="170" y="575" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">for 24–72 hours</text>
+<text id="hybridization-description-0" x="170" y="548" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">Hybridisation at 37&#176;C</text>
+<text id="hybridization-description-1" x="170" y="575" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">for 24&#8211;72 hours</text>
 </g>
 <g id="slide-description">
 <text id="slide-description-0" x="961" y="548" font-family="Atkinson Hyperlegible Next" font-size="24" font-weight="400" text-anchor="middle" fill="#202529">Metaphase chromosome</text>

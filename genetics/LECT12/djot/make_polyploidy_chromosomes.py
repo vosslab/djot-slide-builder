@@ -8,7 +8,7 @@ that differ from adjacent native ploidy notation; no extra bodies are inferred.
 """
 
 from pathlib import Path
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 
 from svg_tools.chromosomes import Centromere, Chromosome, Segment, chromosome_part, chromosome_path_part
 

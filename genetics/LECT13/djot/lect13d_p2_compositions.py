@@ -4,8 +4,7 @@
 import hashlib
 import json
 import pathlib
-import typing
-import xml.etree.ElementTree
+import defusedxml.ElementTree as ET
 
 import svg_tools.chromosomes
 import svg_tools.drawing
@@ -14,57 +13,8 @@ import svg_tools.svg_import
 import svg_tools.text
 
 
-class Model(typing.TypedDict):
-	segments: list[list[str | float]]
-	centromere_after: int
-	source_styles: list[str]
-
-
-class Column(typing.TypedDict):
-	name: str
-	equation: list[str]
-	pairs: list[list[str]]
-
-
-class Footer(typing.TypedDict):
-	association: str
-	original_text: str
-	lines: list[str]
-	center: int
-	font_size: int
-
-
-class Robertsonian(typing.TypedDict):
-	reference: str
-	reference_svg: str
-	reference_sha256: str
-	clip_bounds: list[int]
-	footers: list[Footer]
-
-
-class RejectionCross(typing.TypedDict):
-	source_pdf_points: list[list[float]]
-	source_pdf_bounds: list[float]
-	source_fill: str
-	source_fill_opacity: float
-	source_stroke: str
-	source_stroke_width: float
-	target_bounds: list[float]
-	target_id: str
-
-
-class SourceData(typing.TypedDict):
-	reference: str
-	reference_svg: str
-	reference_sha256: str
-	models: dict[str, Model]
-	columns: list[Column]
-	robertsonian: Robertsonian
-	rejection_cross: RejectionCross
-
-
 #============================================
-def chromosome(name: str, source: Model) -> svg_tools.parts.SvgPart:
+def chromosome(name: str, source: dict) -> svg_tools.parts.SvgPart:
 	"""Keep source segment lengths, colors, labels, and established centromeres."""
 	segments = tuple(svg_tools.chromosomes.Segment(str(label), str(color), float(length) * 48)
 		for label, color, length in source['segments'])
@@ -103,13 +53,13 @@ def equation(tokens: list[str], center: float, y: float) -> svg_tools.parts.SvgP
 
 
 #============================================
-def robertsonian_footer(source: Robertsonian,
+def robertsonian_footer(source: dict,
 	output_directory: pathlib.Path) -> pathlib.Path:
 	"""Reuse the shared-geometry Robertsonian product sheet with its source labels."""
 	shared = output_directory / 'robertsonian_gamete_products.drawn.svg'
 	if not shared.is_file():
 		raise ValueError('Generate shared Robertsonian gamete products before this composition')
-	root = xml.etree.ElementTree.parse(shared).getroot()
+	root = ET.parse(shared).getroot()
 	root.set('data-chromosome-review', 'C68')
 	for element in root:
 		if element.tag.endswith('title'):
@@ -118,39 +68,39 @@ def robertsonian_footer(source: Robertsonian,
 			element.text = ('Shared-geometry Robertsonian gamete products with all source '
 				'outcomes, probabilities, and explanatory labels retained.')
 	path = output_directory / 'lect13d_p2_robertsonian_footer.drawn.svg'
-	xml.etree.ElementTree.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
 	return path
 
 
 #============================================
 def normalize_namespace(path: pathlib.Path) -> None:
 	"""Avoid LibreOffice's blank-import bug with prefixed SVG element names."""
-	root = xml.etree.ElementTree.parse(path).getroot()
+	root = ET.parse(path).getroot()
 	for element in root.iter():
 		if element.tag.startswith('{http://www.w3.org/2000/svg}'):
 			element.tag = element.tag.split('}', 1)[1]
 	root.set('xmlns', 'http://www.w3.org/2000/svg')
-	markup = xml.etree.ElementTree.tostring(root, encoding='ascii', xml_declaration=True)
+	markup = ET.tostring(root, encoding='ascii', xml_declaration=True)
 	if any(not e.tag.startswith('{http://www.w3.org/2000/svg}')
-		for e in xml.etree.ElementTree.fromstring(markup).iter()):
+		for e in ET.fromstring(markup).iter()):
 		raise ValueError('A composition element lost its SVG namespace')
 	path.write_bytes(markup)
 
 
 #============================================
-def rejection_cross(source: RejectionCross) -> str:
+def rejection_cross(source: dict) -> str:
 	"""Reflow the one original shared rejection polygon behind adjacent products."""
 	left, top, right, bottom = source['source_pdf_bounds']
 	x1, y1, x2, y2 = source['target_bounds']
 	points = ' '.join(f'{x1 + (x-left)*(x2-x1)/(right-left):.6f},'
 		f'{y1 + (y-top)*(y2-y1)/(bottom-top):.6f}' for x, y in source['source_pdf_points'])
-	polygon = xml.etree.ElementTree.Element('polygon', {
+	polygon = ET.Element('polygon', {
 		'id': source['target_id'], 'points': points, 'fill': source['source_fill'],
 		'fill-opacity': str(source['source_fill_opacity']), 'stroke': source['source_stroke'],
 		'stroke-width': str(source['source_stroke_width'] * (x2-x1)/(right-left)),
 		'stroke-linejoin': 'round',
 	})
-	fragment = xml.etree.ElementTree.tostring(polygon, encoding='unicode')
+	fragment = ET.tostring(polygon, encoding='unicode')
 	return fragment
 
 
@@ -158,7 +108,7 @@ def rejection_cross(source: RejectionCross) -> str:
 def render(output_directory: pathlib.Path) -> list[pathlib.Path]:
 	"""Write only the four new compositions; verify both frozen reference inputs."""
 	base = pathlib.Path(__file__).resolve().parent
-	source: SourceData = json.loads((base / 'lect13d_p2_sources.json').read_text())
+	source: dict = json.loads((base / 'lect13d_p2_sources.json').read_text())
 	reference_bytes = source['reference_svg'].encode('utf-8')
 	if hashlib.sha256(reference_bytes).hexdigest() != source['reference_sha256']:
 		raise ValueError('The reviewed reference component changed; review before regenerating')
