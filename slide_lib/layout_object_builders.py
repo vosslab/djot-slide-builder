@@ -89,7 +89,8 @@ def text_content(blocks: tuple[slide_lib.native_model.Block, ...], size: float, 
 		paragraph_color = _authored_text_color(attributes, color, theme.accent_color)
 		paragraphs.append(slide_lib.layout_content.TextParagraph(
 			_fragment_runs(resolved_runs(inlines, paragraph_color, theme.accent_color, bold),
-				size, available, theme, session),
+				size, available, theme, session,
+				force_wrap=role is slide_lib.layout_primitives.StyleRole.ANSWER),
 			typography, properties, True, metadata,
 			slide_lib.layout_measurement.paragraph_height(
 				inlines, size, width, theme, level, listed, bold, session=session)))
@@ -178,6 +179,7 @@ def resolved_runs(inlines: tuple[slide_lib.native_model.Inline, ...], color: str
 def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], size: float,
 		width: float, theme: slide_lib.presentation_theme.PresentationTheme,
 		session: slide_lib.layout_measurement.MeasurementSession | None = None,
+		force_wrap: bool = False,
 		) -> tuple[slide_lib.layout_content.InlineContent, ...]:
 	"""Emit exact-width, grapheme-safe break markers retained by native adapters."""
 	if inlines and all(isinstance(run, slide_lib.layout_content.TextRun)
@@ -187,7 +189,7 @@ def _fragment_runs(inlines: tuple[slide_lib.layout_content.InlineContent, ...], 
 			for run in inlines)
 		lines, _widths = measure.wrap_tokens(tokens, size, max(width, 1.0))
 		ordinary, _widths = measure.wrap_tokens(tokens, size, max(width, 1.0), balance=False)
-		if lines != ordinary:
+		if lines != ordinary or (force_wrap and len(lines) > 1):
 			balanced = []
 			for number, line in enumerate(lines):
 				if number:

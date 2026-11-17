@@ -13,15 +13,15 @@
       "d"
     ],
     "pairs": {
-      "ab": 18,
+      "ab": 16,
       "ac": 6,
       "ad": 18,
-      "bc": 18,
+      "bc": 20,
       "bd": 10,
-      "cd": 18
+      "cd": 22
     },
-    "provenance": "Hand-selected ultrametric distances on a relabeled BPQ 4balanced topology; not random generator output.",
-    "input_is_ultrametric": true
+    "provenance": "Hand-selected nonultrametric teaching distances. Cross-cluster values 16, 20, 18, and 22 illustrate averaging while retaining the ac and bd join order.",
+    "input_is_ultrametric": false
   },
   "five_gene_weighted": {
     "labels": [

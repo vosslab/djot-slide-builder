@@ -5,14 +5,14 @@
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
-|  | a | b | c | d | e | f |
+| [ ]{text-align=center} | [a]{text-align=center} | [b]{text-align=center} | [c]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- | --- |
-| a |  |  |  |  |  |  |
-| b | 12 |  |  |  |  |  |
-| c | 4 | 10 |  |  |  |  |
-| d | 15 | 13 | 13 |  |  |  |
-| e | 9 | 6 | 9 | 11 |  |  |
-| f | 18 | 15 | 14 | 8 | 13 |  |
+| [a]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [c]{text-align=center} | [4]{text-align=center} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [15]{text-align=center} | [13]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center} | [9]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [18]{text-align=center} | [15]{text-align=center} | [14]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -27,14 +27,14 @@ Which clusters join? What are the new height and branch lengths?
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
-|  | a | b | c | d | e | f |
+| [ ]{text-align=center} | [a]{text-align=center} | [b]{text-align=center} | [c]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- | --- |
-| a |  |  |  |  |  |  |
-| b | 12 |  |  |  |  |  |
-| c | [4]{color=#D40000 background-color=#FFB8B8 border="0.5pt solid #D40000"} | 10 |  |  |  |  |
-| d | 15 | 13 | 13 |  |  |  |
-| e | 9 | 6 | 9 | 11 |  |  |
-| f | 18 | 15 | 14 | 8 | 13 |  |
+| [a]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [c]{text-align=center} | [4]{text-align=center color=#D40000 background-color=#FFB8B8 border="0.5pt solid #D40000"} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [15]{text-align=center} | [13]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center} | [9]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [18]{text-align=center} | [15]{text-align=center} | [14]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 a + c: distance 4; height 2. Branches: a 2; c 2.
 
@@ -49,14 +49,14 @@ a + c: distance 4; height 2. Branches: a 2; c 2.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-6 padding="3pt 2pt" font-size=22pt}
-|  | a | b | c | d | e | f |
+| [ ]{text-align=center} | [a]{text-align=center} | [b]{text-align=center} | [c]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- | --- |
-| a |  |  |  |  |  |  |
-| b | 12 |  |  |  |  |  |
-| c | 4 | 10 |  |  |  |  |
-| d | 15 | 13 | 13 |  |  |  |
-| e | 9 | 6 | 9 | 11 |  |  |
-| f | 18 | 15 | 14 | 8 | 13 |  |
+| [a]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [c]{text-align=center} | [4]{text-align=center} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [15]{text-align=center} | [13]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center} | [9]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [18]{text-align=center} | [15]{text-align=center} | [14]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 @right
 
@@ -86,13 +86,13 @@ Average the original distances between genes in the two clusters.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | b | d | e | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [b]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |  |
-| b | 11 |  |  |  |  |
-| d | 14 | 13 |  |  |  |
-| e | 9 | 6 | 11 |  |  |
-| f | 16 | 15 | 8 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [15]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -107,13 +107,13 @@ Which clusters join? What are the new height and branch lengths?
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | b | d | e | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [b]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |  |
-| b | 11 |  |  |  |  |
-| d | 14 | 13 |  |  |  |
-| e | 9 | [6]{color=#6C6C00 background-color=#FFFFB8 border="0.5pt solid #6C6C00"} | 11 |  |  |
-| f | 16 | 15 | 8 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center color=#6C6C00 background-color=#FFFFB8 border="0.5pt solid #6C6C00"} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [15]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 b + e: distance 6; height 3. Branches: b 3; e 3.
 
@@ -128,13 +128,13 @@ b + e: distance 6; height 3. Branches: b 3; e 3.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-5 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | b | d | e | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [b]{text-align=center} | [d]{text-align=center} | [e]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |  |
-| b | 11 |  |  |  |  |
-| d | 14 | 13 |  |  |  |
-| e | 9 | 6 | 11 |  |  |
-| f | 16 | 15 | 8 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [e]{text-align=center} | [9]{text-align=center} | [6]{text-align=center} | [11]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [15]{text-align=center} | [8]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 @right
 
@@ -159,12 +159,12 @@ Average the original distances between genes in the two clusters.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | d | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [d]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |
-| [be]{color=#6C6C00} | 10 |  |  |  |
-| d | 14 | 12 |  |  |
-| f | 16 | 14 | 8 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [14]{text-align=center} | [8]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -179,12 +179,12 @@ Which clusters join? What are the new height and branch lengths?
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | d | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [d]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |
-| [be]{color=#6C6C00} | 10 |  |  |  |
-| d | 14 | 12 |  |  |
-| f | 16 | 14 | [8]{color=#00775F background-color=#B8FFF0 border="0.5pt solid #00775F"} |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [14]{text-align=center} | [8]{text-align=center color=#00775F background-color=#B8FFF0 border="0.5pt solid #00775F"} | [ ]{text-align=center} |
 
 d + f: distance 8; height 4. Branches: d 4; f 4.
 
@@ -199,12 +199,12 @@ d + f: distance 8; height 4. Branches: d 4; f 4.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-4 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | d | f |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [d]{text-align=center} | [f]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |  |
-| [be]{color=#6C6C00} | 10 |  |  |  |
-| d | 14 | 12 |  |  |
-| f | 16 | 14 | 8 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [14]{text-align=center} | [12]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [f]{text-align=center} | [16]{text-align=center} | [14]{text-align=center} | [8]{text-align=center} | [ ]{text-align=center} |
 
 @right
 
@@ -232,11 +232,11 @@ Average the original distances between genes in the two clusters.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | [df]{color=#00775F} |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [df]{text-align=center color=#00775F} |
 | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |
-| [be]{color=#6C6C00} | 10 |  |  |
-| [df]{color=#00775F} | 15 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [df]{text-align=center color=#00775F} | [15]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -251,11 +251,11 @@ Which clusters join? What are the new height and branch lengths?
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | [df]{color=#00775F} |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [df]{text-align=center color=#00775F} |
 | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |
-| [be]{color=#6C6C00} | [10]{color=#0067CC background-color=#B8DCFF border="0.5pt solid #0067CC"} |  |  |
-| [df]{color=#00775F} | 15 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center color=#0067CC background-color=#B8DCFF border="0.5pt solid #0067CC"} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [df]{text-align=center color=#00775F} | [15]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 ac + be: distance 10; height 5. Branches: ac 3; be 2.
 
@@ -270,11 +270,11 @@ ac + be: distance 10; height 5. Branches: ac 3; be 2.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-3 padding="3pt 2pt" font-size=22pt}
-|  | [ac]{color=#D40000} | [be]{color=#6C6C00} | [df]{color=#00775F} |
+| [ ]{text-align=center} | [ac]{text-align=center color=#D40000} | [be]{text-align=center color=#6C6C00} | [df]{text-align=center color=#00775F} |
 | --- | --- | --- | --- |
-| [ac]{color=#D40000} |  |  |  |
-| [be]{color=#6C6C00} | 10 |  |  |
-| [df]{color=#00775F} | 15 | 13 |  |
+| [ac]{text-align=center color=#D40000} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [be]{text-align=center color=#6C6C00} | [10]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [df]{text-align=center color=#00775F} | [15]{text-align=center} | [13]{text-align=center} | [ ]{text-align=center} |
 
 @right
 
@@ -297,10 +297,10 @@ Average the original distances between genes in the two clusters.
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt" font-size=22pt}
-|  | [abce]{color=#0067CC} | [df]{color=#00775F} |
+| [ ]{text-align=center} | [abce]{text-align=center color=#0067CC} | [df]{text-align=center color=#00775F} |
 | --- | --- | --- |
-| [abce]{color=#0067CC} |  |  |
-| [df]{color=#00775F} | 14 |  |
+| [abce]{text-align=center color=#0067CC} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [df]{text-align=center color=#00775F} | [14]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -315,10 +315,10 @@ Which clusters join? What are the new height and branch lengths?
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six-2 padding="3pt 2pt" font-size=22pt}
-|  | [abce]{color=#0067CC} | [df]{color=#00775F} |
+| [ ]{text-align=center} | [abce]{text-align=center color=#0067CC} | [df]{text-align=center color=#00775F} |
 | --- | --- | --- |
-| [abce]{color=#0067CC} |  |  |
-| [df]{color=#00775F} | [14]{color=#CC0066 background-color=#FFB8DC border="0.5pt solid #CC0066"} |  |
+| [abce]{text-align=center color=#0067CC} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [df]{text-align=center color=#00775F} | [14]{text-align=center color=#CC0066 background-color=#FFB8DC border="0.5pt solid #CC0066"} | [ ]{text-align=center} |
 
 abce + df: distance 14; height 7. Branches: abce 2; df 3.
 
@@ -360,11 +360,11 @@ Review the Completed Tree
 
 | Node | Height | Branches to Children |
 | --- | --- | --- |
-| [ac]{color=#D40000} | 2 | a: 2; c: 2 |
-| [be]{color=#6C6C00} | 3 | b: 3; e: 3 |
-| [df]{color=#00775F} | 4 | d: 4; f: 4 |
-| [abce]{color=#0067CC} | 5 | ac: 3; be: 2 |
-| [abcdef]{color=#CC0066} | 7 | abce: 2; df: 3 |
+| [ac]{color=#D40000} | [2]{text-align=center} | a: 2; c: 2 |
+| [be]{color=#6C6C00} | [3]{text-align=center} | b: 3; e: 3 |
+| [df]{color=#00775F} | [4]{text-align=center} | d: 4; f: 4 |
+| [abce]{color=#0067CC} | [5]{text-align=center} | ac: 3; be: 2 |
+| [abcdef]{color=#CC0066} | [7]{text-align=center} | abce: 2; df: 3 |
 
 === layout: one-panel
 

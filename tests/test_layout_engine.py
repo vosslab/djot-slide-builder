@@ -144,3 +144,25 @@ def test_definitions_reject_missing_term_boundaries(tmp_path: pathlib.Path) -> N
 	"""Malformed entries must identify how to supply a term rather than silently look ordinary."""
 	with pytest.raises(ValueError, match="Term: explanation"):
 		layout_test_helpers.compile_source(tmp_path, "=== layout: definitions\n@body\n- No term separator\n")
+
+
+#============================================
+def test_multiple_choice_keeps_figure_and_choices_visible_before_answer(tmp_path: pathlib.Path) -> None:
+	"""A diagram question keeps readable context while revealing only its wrapped answer."""
+	(tmp_path / "tree.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" '
+		'width="1126" height="757"><path d="M20 20V700H1100"/></svg>')
+	result = layout_test_helpers.compile_source(tmp_path,
+		"=== layout: multiple-choice\n@question\n![Tree](tree.svg)\n\nWhich pair shares the youngest ancestor?\n\n"
+		"- A. Gorilla and human\n- B. Gibbon and gorilla\n- C. Bonobo and gorilla\n- D. Bonobo and human\n\n"
+		"@answer\n\nD. Bonobo and human: shared ancestor 5 million years ago.\n")
+	page = result.plan.slides[0]
+	image = next(item for item in page.objects if item.object_id == "question-image")
+	answer = next(item for item in page.objects if item.object_id == "answer")
+	assert image.rectangle.height > 300
+	assert answer.reveal_targets and all(not item.reveal_targets for item in page.objects if item is not answer)
+	choices = [item for item in page.objects if item.object_id.startswith("question-choices-")]
+	assert sum(len(item.content.paragraphs) for item in choices) == 4
+	assert all(paragraph.typography.selected_size_pt >= 20 for item in choices
+		for paragraph in item.content.paragraphs)
+	assert any(isinstance(run, slide_lib.layout_content.LineBreak)
+		for paragraph in answer.content.text.paragraphs for run in paragraph.inlines)

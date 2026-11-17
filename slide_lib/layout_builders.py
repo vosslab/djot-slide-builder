@@ -589,6 +589,14 @@ def _multiple_choice_question(deck: slide_lib.native_model.Deck,
 	column_gap = 42.0
 	adaptive_result = slide_lib.multiple_choice_layout.select_adaptive_choice_geometry(parts,
 		answer_items, answer, rectangle, image_height, content_gap, column_gap, theme, session)
+	if parts.image is not None:
+		# Enlarge the figure when the question and answer still meet the body-size floor.
+		larger_height = min(rectangle.width * height / width, rectangle.height * .50)
+		larger_result = slide_lib.multiple_choice_layout.select_adaptive_choice_geometry(parts,
+			answer_items, answer, rectangle, larger_height, content_gap, column_gap, theme, session)
+		if larger_result.selection is not None and min(larger_result.selection.question_size_pt,
+				larger_result.selection.answer_size_pt) >= theme.body_floor_size_pt:
+			image_height, adaptive_result = larger_height, larger_result
 	if adaptive_result.selection is None:
 		raise slide_lib.multiple_choice_layout.physical_capacity_error(question, answer,
 			adaptive_result.answer_has_serializer_fit, theme)

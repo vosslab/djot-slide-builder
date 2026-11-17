@@ -1,16 +1,20 @@
+=== layout: subsection
+
+# First Join
+
 === layout: two-panels
 
 # Find the Smallest Distance
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt"}
-|  | a | b | c | d |
+{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [a]{text-align=center} | [b]{text-align=center} | [c]{text-align=center} | [d]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| a |  |  |  |  |
-| b | 18 |  |  |  |
-| c | 6 | 18 |  |  |
-| d | 18 | 10 | 18 |  |
+| [a]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [16]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [c]{text-align=center} | [6]{text-align=center} | [20]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [18]{text-align=center} | [10]{text-align=center} | [22]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -24,13 +28,13 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt"}
-|  | a | b | c | d |
+{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [a]{text-align=center background-color=#F0B8FF} | [b]{text-align=center} | [c]{text-align=center background-color=#F0B8FF} | [d]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| a |  |  |  |  |
-| b | 18 |  |  |  |
-| c | [6]{background-color=#FFF1B8 border="1pt solid #222222"} | 18 |  |  |
-| d | 18 | 10 | 18 |  |
+| [a]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center} | [16]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center} |
+| [c]{text-align=center background-color=#F0B8FF} | [6]{text-align=center background-color=#FFF1B8 border="0.5pt solid #222222"} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center} | [18]{text-align=center color=#0067CC background-color=#B8DCFF} | [10]{text-align=center} | [22]{text-align=center color=#0067CC background-color=#B8DCFF} | [ ]{text-align=center} |
 
 a + c: distance 6; height 3. Branches: a 3; c 3.
 
@@ -44,28 +48,44 @@ a + c: distance 6; height 3. Branches: a 3; c 3.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt"}
-|  | a | b | c | d |
+{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [a]{text-align=center background-color=#F0B8FF} | [b]{text-align=center} | [c]{text-align=center background-color=#F0B8FF} | [d]{text-align=center} |
 | --- | --- | --- | --- | --- |
-| a |  |  |  |  |
-| b | 18 |  |  |  |
-| c | 6 | 18 |  |  |
-| d | 18 | 10 | 18 |  |
+| [a]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center} | [16]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center} |
+| [c]{text-align=center background-color=#F0B8FF} | [6]{text-align=center background-color=#F0B8FF} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center} | [18]{text-align=center color=#0067CC background-color=#B8DCFF} | [10]{text-align=center} | [22]{text-align=center color=#0067CC background-color=#B8DCFF} | [ ]{text-align=center} |
 
 @right
 
 Join a and c. What are the distances from ac to b, d? Count each gene equally.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Update the Distances
 
-@body
+@left
+
+{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [a]{text-align=center background-color=#F0B8FF} | [b]{text-align=center} | [c]{text-align=center background-color=#F0B8FF} | [d]{text-align=center} |
+| --- | --- | --- | --- | --- |
+| [a]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center} | [16]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center} |
+| [c]{text-align=center background-color=#F0B8FF} | [6]{text-align=center background-color=#F0B8FF} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center} | [18]{text-align=center color=#0067CC background-color=#B8DCFF} | [10]{text-align=center} | [22]{text-align=center color=#0067CC background-color=#B8DCFF} | [ ]{text-align=center} |
+
+@right
+
+Purple bands mark the genes being merged. Same-colored cells feed one average.
 
 Average the original distances between genes in the two clusters.
 
-- ac to b: (18 + 18) / 2 = 18
-- ac to d: (18 + 18) / 2 = 18
+- [ac to b: (16 + 20) / 2 = 18]{color=#00775F}
+- [ac to d: (18 + 22) / 2 = 20]{color=#0067CC}
+
+=== layout: subsection
+
+# Update and Repeat
 
 === layout: two-panels
 
@@ -73,12 +93,12 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt"}
-|  | ac | b | d |
+{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [ac]{text-align=center} | [b]{text-align=center} | [d]{text-align=center} |
 | --- | --- | --- | --- |
-| ac |  |  |  |
-| b | 18 |  |  |
-| d | 18 | 10 |  |
+| [ac]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [b]{text-align=center} | [18]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [d]{text-align=center} | [20]{text-align=center} | [10]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -92,12 +112,12 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt"}
-|  | ac | b | d |
+{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [ac]{text-align=center} | [b]{text-align=center background-color=#F0B8FF} | [d]{text-align=center background-color=#F0B8FF} |
 | --- | --- | --- | --- |
-| ac |  |  |  |
-| b | 18 |  |  |
-| d | 18 | [10]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| [ac]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center background-color=#F0B8FF} | [18]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center background-color=#F0B8FF} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [10]{text-align=center background-color=#FFF1B8 border="0.5pt solid #222222"} | [ ]{text-align=center background-color=#F0B8FF} |
 
 b + d: distance 10; height 5. Branches: b 5; d 5.
 
@@ -111,26 +131,38 @@ b + d: distance 10; height 5. Branches: b 5; d 5.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt"}
-|  | ac | b | d |
+{table-style=matrix-lower table-group=gene-tree-four-3 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [ac]{text-align=center} | [b]{text-align=center background-color=#F0B8FF} | [d]{text-align=center background-color=#F0B8FF} |
 | --- | --- | --- | --- |
-| ac |  |  |  |
-| b | 18 |  |  |
-| d | 18 | 10 |  |
+| [ac]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center background-color=#F0B8FF} | [18]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center background-color=#F0B8FF} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [10]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
 
 @right
 
 Join b and d. What are the distances from bd to ac? Count each gene equally.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # Update the Distances
 
-@body
+@left
+
+{table-style=matrix-lower table-group=gene-tree-four-4 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [a]{text-align=center} | [b]{text-align=center background-color=#F0B8FF} | [c]{text-align=center} | [d]{text-align=center background-color=#F0B8FF} |
+| --- | --- | --- | --- | --- |
+| [a]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} |
+| [b]{text-align=center background-color=#F0B8FF} | [16]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [c]{text-align=center} | [6]{text-align=center} | [20]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center} | [ ]{text-align=center background-color=#F0B8FF} |
+| [d]{text-align=center background-color=#F0B8FF} | [18]{text-align=center color=#00775F background-color=#B8FFF0} | [10]{text-align=center background-color=#F0B8FF} | [22]{text-align=center color=#00775F background-color=#B8FFF0} | [ ]{text-align=center background-color=#F0B8FF} |
+
+@right
+
+Purple bands mark the genes being merged. Same-colored cells feed one average.
 
 Average the original distances between genes in the two clusters.
 
-- bd to ac: (18 + 18 + 18 + 18) / 4 = 18
+- [bd to ac: (16 + 20 + 18 + 22) / 4 = 19]{color=#00775F}
 
 === layout: two-panels
 
@@ -138,11 +170,11 @@ Average the original distances between genes in the two clusters.
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-2 padding="3pt 2pt"}
-|  | ac | bd |
+{table-style=matrix-lower table-group=gene-tree-four-2 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [ac]{text-align=center} | [bd]{text-align=center} |
 | --- | --- | --- |
-| ac |  |  |
-| bd | 18 |  |
+| [ac]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [bd]{text-align=center} | [19]{text-align=center} | [ ]{text-align=center} |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -156,17 +188,21 @@ Which clusters join? What are the new height and branch lengths?
 
 @left
 
-{table-style=matrix-lower table-group=gene-tree-four-2 padding="3pt 2pt"}
-|  | ac | bd |
+{table-style=matrix-lower table-group=gene-tree-four-2 padding="3pt 2pt" font-size=22pt}
+| [ ]{text-align=center} | [ac]{text-align=center background-color=#F0B8FF} | [bd]{text-align=center background-color=#F0B8FF} |
 | --- | --- | --- |
-| ac |  |  |
-| bd | [18]{background-color=#FFF1B8 border="1pt solid #222222"} |  |
+| [ac]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} | [ ]{text-align=center background-color=#F0B8FF} |
+| [bd]{text-align=center background-color=#F0B8FF} | [19]{text-align=center background-color=#FFF1B8 border="0.5pt solid #222222"} | [ ]{text-align=center background-color=#F0B8FF} |
 
-ac + bd: distance 18; height 9. Branches: ac 6; bd 4.
+ac + bd: distance 19; height 19/2. Branches: ac 13/2; bd 9/2.
 
 @right
 
 ![Gene tree](assets/lect11_gene_tree_examples/four_3.svg)
+
+=== layout: subsection
+
+# Check the Finished Tree
 
 === layout: two-panels
 
@@ -198,9 +234,9 @@ Review the Completed Tree
 
 | Node | Height | Branches to Children |
 | --- | --- | --- |
-| ac | 3 | a: 3; c: 3 |
-| bd | 5 | b: 5; d: 5 |
-| abcd | 9 | ac: 6; bd: 4 |
+| ac | [3]{text-align=center} | a: 3; c: 3 |
+| bd | [5]{text-align=center} | b: 5; d: 5 |
+| abcd | [19/2]{text-align=center} | ac: 13/2; bd: 9/2 |
 
 === layout: one-panel
 
@@ -208,11 +244,11 @@ Review the Completed Tree
 
 @body
 
-The tree reproduces all input distances.
+The tree uses cluster averages. Some distances along the tree differ from the original matrix.
 
 These are example distances, not measurements or years.
 
-Every root-to-tip path equals 9 distance units.
+Every root-to-tip path equals 19/2 distance units.
 
 Equal path lengths follow the constant-rate model used to build the tree.
 

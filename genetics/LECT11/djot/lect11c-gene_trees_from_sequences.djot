@@ -22,10 +22,6 @@ color-theme: genetics
 - Distinguish distance-based methods from character-based methods.
 - Compare the questions and assumptions used by common tree-building methods.
 
-=== layout: section
-
-# Constructing a Gene Tree from Sequences
-
 === layout: one-panel
 
 # Alignment of Hemoglobin Sequences

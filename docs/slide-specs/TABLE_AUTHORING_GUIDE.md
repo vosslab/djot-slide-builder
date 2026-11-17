@@ -231,3 +231,9 @@ demonstration when it becomes a supported treatment.
   states. Lint establishes source validity; it does not establish readable classroom layout.
 - In Impress, select the table and click inside a cell to edit text; use the table's handles to
   resize it. Keep lasting changes in Djot and rebuild.
+
+## Genetics distance matrices
+
+Center numeric values, question marks, and axis labels consistently in LECT11 distance
+matrices, including highlighted cells. Use whole-cell `text-align=center` overrides so
+mixed unknown/numeric columns do not switch alignment as answers appear.

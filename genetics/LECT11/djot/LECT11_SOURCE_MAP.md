@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | Announcements and movie | 36 |
 | [lect11b-interpreting_gene_trees.djot](lect11b-interpreting_gene_trees.djot) | Interpreting gene trees, with three primate question/answer reveals | 27 |
-| [lect11c-gene_trees_from_sequences.djot](lect11c-gene_trees_from_sequences.djot) | Sequence alignments and distance-based versus character-based methods | 18 |
+| [lect11c-gene_trees_from_sequences.djot](lect11c-gene_trees_from_sequences.djot) | Sequence alignments and distance-based versus character-based methods | 17 |
 | [lect11d-upgma_three_and_four_sequences.djot](lect11d-upgma_three_and_four_sequences.djot) | From distances to a tree: three-rhino and four-sequence UPGMA | 45 |
 | [lect11e-upgma_weighted_averages.djot](lect11e-upgma_weighted_averages.djot) | Five-sequence UPGMA and weighted cluster updates | 38 |
 | [lect11f-upgma_class_activity.djot](lect11f-upgma_class_activity.djot) | Six-gene class problem and complete answers | 37 |
@@ -17,7 +17,8 @@ Each master has matching ODP/PDF stems under `output/odp/` and `output/pdf/`.
 A has 57 authored slides including hidden slides. B is interpretation only. C introduces
 sequence alignments and tree-building methods; D begins at "From Distances to a Tree" and
 includes both the rhino and four-sequence examples. The local `lect11c_rhino_steps.djot` and
-`lect11c_four_steps.djot` fragment filenames remain stable; D includes them. E is the five-gene
+`lect11c_four_steps.djot` fragment filenames remain stable; D includes them. The latter is a
+wrapper around the canonical generated `gene_tree_four_steps.djot`. E is the five-gene
 example. F and G separate the class and extension six-gene problems. H is the molecular-clock
 lesson, with its [teaching guide](LECT11H_TEACHING_GUIDE.md).
 

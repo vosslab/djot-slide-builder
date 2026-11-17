@@ -65,7 +65,7 @@ display order is shuffled so colors do not reveal the correct order. Keep each r
 identical and match step cross-references to its own method's colors. Preserve meaningful source
 colors when converting existing material unless recoloring is requested.
 
-## Genetics 11E merge stages
+## Genetics 11F/11G merge stages
 
 Use five evenly spaced standard-palette colors for the five joins, restarting the
 same sequence for the extension problem. Match the stage label, selected matrix
@@ -135,3 +135,10 @@ labels. Keep ordinary explanatory text dark and retain the red tentative-assignm
 | Biochemistry Lab | `#C9211E` |
 | Cellular and Molecular Biology | `#24578F` |
 | Biology and Ethics in Film | `#45405C` |
+
+### Genetics distance-matrix teaching cues
+
+In 11D/11E, purple row/column bands identify genes or clusters being merged. Each
+new distance uses one shared cell fill and text color across the original pairs and the
+matching calculation: teal #00775F/#B8FFF0, blue #0067CC/#B8DCFF, orange #B74300/#FFD2B8,
+and purple #A719DB/#F0B8FF. Distance-matrix labels and values are centered.

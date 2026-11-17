@@ -135,3 +135,12 @@ five-sequence weighting, the class worksheet, the extension worksheet, and molec
 The current [Lecture 11 source map](../genetics/LECT11/djot/LECT11_SOURCE_MAP.md) supersedes
 earlier deck letters and counts in this historical report. All example fragments, data,
 figures, and printable handouts are unchanged.
+
+## Current matrix-teaching refinements
+
+11C is now 17 pages after removing its misplaced construction divider. D/E restore colored
+merge bands and link source-pair colors with each average. The four-gene inputs are
+ab=16, ac=6, ad=18, bc=20, bd=10, cd=22; its final average is 19 and root height is 9.5.
+Earlier claims about an ultrametric four-gene example are historical. Distance-matrix cells
+are explicitly centered across LECT11. 11B uses the actual Q&A layout with separately revealed
+answer shapes and always-visible choices. See the current review for checks and limitations.

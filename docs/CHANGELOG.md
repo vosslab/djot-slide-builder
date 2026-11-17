@@ -1,5 +1,11 @@
 ## 2026-11-17
 
+- Use actual Q&A slides for Genetics 11B with visible choices and a separate answer popup.
+  Keep component diagrams larger when readable text still fits; wrap answer text explicitly.
+- Remove the misplaced construction divider from 11C; restore colored merge bands and
+  matching original-pair averaging cues in 11D/11E. Use varied distances in the four-gene
+  example and center distance-matrix cells throughout LECT11.
+
 ### Additions and New Features
 
 - Establish [CHROMOSOME_GENE_LABELS.md](CHROMOSOME_GENE_LABELS.md) as the chromosome

@@ -47,11 +47,11 @@ A dot matches the northern-white reference. A letter marks a difference from tha
 @body
 
 {table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{text-align=center} | [S.Wh.]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. | 0 | ? | ? |
-| S.Wh. | ? | 0 | ? |
-| Blk.R | ? | ? | 0 |
+| [N.Wh.]{text-align=center} | [0]{text-align=center} | [?]{text-align=center} | [?]{text-align=center} |
+| [S.Wh.]{text-align=center} | [?]{text-align=center} | [0]{text-align=center} | [?]{text-align=center} |
+| [Blk.R]{text-align=center} | [?]{text-align=center} | [?]{text-align=center} | [0]{text-align=center} |
 
 
 Three sequences need four rows and four columns, including labels.
@@ -79,11 +79,11 @@ How many positions differ between N.Wh. and S.Wh.?
 Four differences: Q, D, N, and Q in S.Wh.
 
 {table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{text-align=center} | [S.Wh.]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. | 0 | 4 | ? |
-| S.Wh. | 4 | 0 | ? |
-| Blk.R | ? | ? | 0 |
+| [N.Wh.]{text-align=center} | [0]{text-align=center} | [4]{text-align=center} | [?]{text-align=center} |
+| [S.Wh.]{text-align=center} | [4]{text-align=center} | [0]{text-align=center} | [?]{text-align=center} |
+| [Blk.R]{text-align=center} | [?]{text-align=center} | [?]{text-align=center} | [0]{text-align=center} |
 
 
 === layout: one-panel
@@ -97,11 +97,11 @@ Four differences: Q, D, N, and Q in S.Wh.
 Twelve positions differ. Enter 12 in both matching cells.
 
 {table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{text-align=center} | [S.Wh.]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. | 0 | 4 | 12 |
-| S.Wh. | 4 | 0 | ? |
-| Blk.R | 12 | ? | 0 |
+| [N.Wh.]{text-align=center} | [0]{text-align=center} | [4]{text-align=center} | [12]{text-align=center} |
+| [S.Wh.]{text-align=center} | [4]{text-align=center} | [0]{text-align=center} | [?]{text-align=center} |
+| [Blk.R]{text-align=center} | [12]{text-align=center} | [?]{text-align=center} | [0]{text-align=center} |
 
 
 === layout: one-panel
@@ -127,11 +127,11 @@ How many positions differ between these two sequences?
 Eight positions differ. The completed matrix is symmetric.
 
 {table-style=comparison border="0.5pt solid #C5CBD2" table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{text-align=center} | [S.Wh.]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. | 0 | 4 | 12 |
-| S.Wh. | 4 | 0 | 8 |
-| Blk.R | 12 | 8 | 0 |
+| [N.Wh.]{text-align=center} | [0]{text-align=center} | [4]{text-align=center} | [12]{text-align=center} |
+| [S.Wh.]{text-align=center} | [4]{text-align=center} | [0]{text-align=center} | [8]{text-align=center} |
+| [Blk.R]{text-align=center} | [12]{text-align=center} | [8]{text-align=center} | [0]{text-align=center} |
 
 
 === layout: subsection
@@ -145,11 +145,11 @@ Eight positions differ. The completed matrix is symmetric.
 @left
 
 {table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{text-align=center} | [S.Wh.]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. |  |  |  |
-| S.Wh. | 4 |  |  |
-| Blk.R | 12 | 8 |  |
+| [N.Wh.]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [S.Wh.]{text-align=center} | [4]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [Blk.R]{text-align=center} | [12]{text-align=center} | [8]{text-align=center} | [ ]{text-align=center} |
 
 Read the lower half. Which pair joins first?
 
@@ -164,17 +164,19 @@ Read the lower half. Which pair joins first?
 @left
 
 {table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{background-color=#F0B8FF text-align=center} | [S.Wh.]{background-color=#F0B8FF text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. |  |  |  |
-| S.Wh. | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |  |
-| Blk.R | 12 | 8 |  |
+| [N.Wh.]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} |
+| [S.Wh.]{background-color=#F0B8FF text-align=center} | [4]{border="0.5pt solid #222222"       background-color=#FFF1B8 text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} |
+| [Blk.R]{text-align=center} | [12]{background-color=#B8FFF0 color=#00775F text-align=center} | [8]{background-color=#B8FFF0 color=#00775F text-align=center} | [ ]{text-align=center} |
 
 Distance 4 gives node height 4 / 2 = 2. Each tip branch has length 2.
 
 @right
 
 ![Rhino example](assets/lect11c_rhino/tree_1.drawn.svg)
+
+
 
 === layout: two-panels
 
@@ -183,17 +185,19 @@ Distance 4 gives node height 4 / 2 = 2. Each tip branch has length 2.
 @left
 
 {table-style=matrix-lower table-group=rhino-three padding="3pt 2pt" font-size=22pt}
-|  | N.Wh. | S.Wh. | Blk.R |
+| [ ]{text-align=center} | [N.Wh.]{background-color=#F0B8FF text-align=center} | [S.Wh.]{background-color=#F0B8FF text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- | --- |
-| N.Wh. |  |  |  |
-| S.Wh. | 4 |  |  |
-| Blk.R | 12 | 8 |  |
+| [N.Wh.]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} |
+| [S.Wh.]{background-color=#F0B8FF text-align=center} | [4]{background-color=#FFF1B8 text-align=center} | [ ]{background-color=#F0B8FF text-align=center} | [ ]{background-color=#F0B8FF text-align=center} |
+| [Blk.R]{text-align=center} | [12]{background-color=#B8FFF0 color=#00775F text-align=center} | [8]{background-color=#B8FFF0 color=#00775F text-align=center} | [ ]{text-align=center} |
 
 What is the distance from the white-rhino cluster to Blk.R.?
 
 @right
 
 ![Rhino example](assets/lect11c_rhino/tree_1.drawn.svg)
+
+
 
 === layout: two-panels
 
@@ -202,14 +206,14 @@ What is the distance from the white-rhino cluster to Blk.R.?
 @left
 
 {table-style=matrix-lower table-group=rhino-two padding="3pt 2pt" font-size=22pt}
-| | White | Blk.R |
+| [ ]{text-align=center} | [White]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- |
-| White | | |
-| Blk.R | 10 | |
+| [White]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [Blk.R]{text-align=center} | [10]{text-align=center} | [ ]{text-align=center} |
 
 White = N.Wh. and S.Wh.
 
-(12 + 8) / 2 = 10. Each original sequence gets equal weight.
+[(12 + 8) / 2 = 10.]{color=#00775F} Each original sequence gets equal weight.
 
 @right
 
@@ -222,10 +226,10 @@ White = N.Wh. and S.Wh.
 @left
 
 {table-style=matrix-lower table-group=rhino-two padding="3pt 2pt" font-size=22pt}
-| | White | Blk.R |
+| [ ]{text-align=center} | [White]{text-align=center} | [Blk.R]{text-align=center} |
 | --- | --- | --- |
-| White | | |
-| Blk.R | 10 | |
+| [White]{text-align=center} | [ ]{text-align=center} | [ ]{text-align=center} |
+| [Blk.R]{text-align=center} | [10]{text-align=center} | [ ]{text-align=center} |
 
 The root height is 10 / 2 = 5.
 

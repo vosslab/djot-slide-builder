@@ -69,3 +69,7 @@ in the available left or right region with its bounded on-click appear reveal. T
 rounded light-gray rectangle with dark-red outline and editable text. Plain `@answer` text inherits
 bold dark-red answer styling automatically. Use that default for ordinary answer feedback.
 The layout supplies the answer's reveal automatically.
+
+Component figures can use up to 50 percent of the question area when the question and
+answer remain at the body-size floor. Dense questions retain the smaller figure allocation.
+Answer-shape text receives explicit measured line breaks so Impress keeps it inside the popup.
