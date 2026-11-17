@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Anaphase, Telophase and Cytokinesis</title><desc id="figure-desc">Anaphase has twelve daughter chromosomes, six moving to each pole with centromeres leading and arms trailing. Telophase has two emerging animal daughter cells joined at a cleavage furrow, with reforming envelopes, nucleoli and decondensing chromatin. Original unmeasured animal-cell schematics after lecture 06B source figures. Purple denotes chromosomes; yellow denotes microtubules and centrosomes. Counts of chromatin loops and spindle fibers are illustrative.</desc>
-<rect width="1200" height="760" fill="white" />
 <path d="M560,390 H625 M613,382 L625,390 L613,398" fill="none" stroke="#758994" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <text x="280" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">
 <tspan x="280" dy="0">Anaphase</tspan>

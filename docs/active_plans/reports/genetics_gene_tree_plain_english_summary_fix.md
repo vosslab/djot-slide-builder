@@ -2,6 +2,10 @@
 
 The five bullets on slide 32 were shortened to clarify the cluster join, average, branch length, equal root-to-tip paths, and rate assumption. The new render fits within the frame with clear spacing; the manager also inspected and accepted it. No other source content was changed. The rebuilt PDF has 34 pages, and strict native lint passed (34 slides, 10 images).
 
+Historical naming note: this November 14 record calls the source Lecture 11C. Its current source
+path is `genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot`; the output names below are
+the original build artifacts.
+
 Before rebuilding, the prior PDF and page renders were saved under `_temp/gene_tree_plain_english/summary_before/`. All pages were rendered again at 1200 pixels wide, and the C contact sheet was refreshed. Extracted PDF text differs only on page 32. Pixel comparison found page 25 identical; the other 32 unchanged-content pages have small pixel differences confined to their title text (including the centered divider and end titles), consistent with rendering variation. They are therefore not pixel-identical; the page 1 before/after renders were visually compared and show the same layout and text. No body-region pixel differences occurred outside page 32.
 
 Commands:

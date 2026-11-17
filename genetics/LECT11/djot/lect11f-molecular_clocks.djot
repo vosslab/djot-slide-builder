@@ -194,7 +194,7 @@ Use this example before discussing codon positions. Third-position changes are o
 
 - A *synonymous substitution* leaves the encoded amino acid unchanged.
 - A *nonsynonymous substitution* changes the encoded amino acid.
-- Compare DNA codons: GAA → GAG still encodes glutamate; GAA → GAC encodes aspartate.
+- Compare DNA codons: GAA -> GAG still encodes glutamate; GAA -> GAC encodes aspartate.
 
 === layout: one-panel
 
@@ -419,7 +419,7 @@ The numbers are invented for instruction. We approximate differences as substitu
 Teaching example: two present-day orthologous sequences differ at 20 of 1,000 aligned DNA sites.
 
 - Observed difference fraction = 20 / 1,000 = 0.020.
-- For this low-divergence example, use d ≈ 0.020 substitutions per site.
+- For this low-divergence example, use d ~ 0.020 substitutions per site.
 - Independent evidence gives a split time of 5 million years. Assume gene divergence coincides with this split.
 
 === layout: one-panel
@@ -434,7 +434,7 @@ The denominator has a two because the pairwise distance covers two branches. Poi
 
 Both lineages have changed for 5 million years.
 
-- Combined branch time = 2 × 5 = 10 million years.
+- Combined branch time = 2 x 5 = 10 million years.
 - Per-lineage rate r = 0.020 / 10 = 0.002 substitutions per site per million years.
 - Equivalently, r = d / (2t).
 
@@ -465,8 +465,8 @@ Use the forward check to make the answer tangible. Dividing by r alone would giv
 @body
 
 - t = d / (2r)
-- t = 0.032 / (2 × 0.002) = 8 million years.
-- Each branch contributes 0.002 × 8 = 0.016 substitutions per site.
+- t = 0.032 / (2 x 0.002) = 8 million years.
+- Each branch contributes 0.002 x 8 = 0.016 substitutions per site.
 - Together: 0.016 + 0.016 = 0.032.
 
 === layout: two-panels
@@ -491,7 +491,7 @@ Historical example assumptions:
 
 Expected replacements across both branches:
 
-147 × 1.23 × 0.080 × 2 ≈ 29
+147 x 1.23 x 0.080 x 2 ~ 29
 
 === layout: section
 

@@ -2,6 +2,10 @@
 
 The B, C, and D masters were freshly built in sequence on 2026-11-14. All three builds succeeded; PDF page counts are 36, 34, and 32, respectively. Source-level specification review is recorded separately in [the specification report](genetics_gene_tree_plain_english_spec.md). See the completed [quality](genetics_gene_tree_plain_english_quality.md) and [integration](genetics_gene_tree_plain_english_integration.md) reviews.
 
+Historical naming note: this November 14 report uses its then-current B/C/D artifact labels.
+The five-sequence and class-activity sources are now Lectures 11D and 11F; the artifact names
+and recorded hashes intentionally retain their original labels.
+
 ## Checks
 
 - Focused tests: 47 passed. Strict native lint: 3 sources, 102 slides, 40 images; passed. Capacity command completed without warnings for each master. Build logs contained no capacity, replacement, or error warnings.
@@ -23,7 +27,7 @@ pdftotext output/pdf/<deck>.pdf _temp/gene_tree_plain_english/<deck>.txt
 
 ```sh
 PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_table_styles.py tests/test_layout_tables.py tests/test_gene_tree_examples.py -q
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot genetics/LECT11/djot/lect11e-upgma_group_activity.djot
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot genetics/LECT11/djot/lect11f-upgma_class_activity.djot
 ```
 
 The [C slide 32 correction](genetics_gene_tree_plain_english_summary_fix.md) supersedes the initial C hashes below; B and D remain accepted.

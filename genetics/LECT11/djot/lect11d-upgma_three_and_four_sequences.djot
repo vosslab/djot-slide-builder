@@ -1,0 +1,96 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11D
+
+## From Distances to a Tree: Three- and Four-Sequence Examples
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Read one half of a symmetric distance matrix.
+- Build a UPGMA tree from sequence distances.
+- Calculate cluster distances, node heights, and branch lengths.
+- Check fitted tree distances against the original matrix.
+
+=== layout: section
+
+# From Distances to a Tree
+
+=== layout: definitions
+
+# Distance Matrix
+
+@body
+
+- [*Sequence distance*]{underline=true}: a number summarizing differences between two sequences.
+- [*Distance matrix*]{underline=true}: a table of the pairwise distances among sequences.
+- [*Diagonal*]{underline=true}: entries comparing each sequence with itself. Values match on both sides.
+- [*Cluster*]{underline=true}: a group of sequences joined during tree construction.
+
+=== layout: one-panel
+
+# We'll Ignore the Top Half to Avoid Confusion
+
+@body
+
+- The two halves of a distance matrix repeat the same pairwise distances.
+- Use the lower half and skip the diagonal when finding the smallest value.
+- A small distance means similar sequences, using the chosen distance measure.
+
+=== layout: one-panel
+
+# Building a Tree by UPGMA
+
+@body
+
+- Find the smallest distance and join those sequences or clusters.
+- The new node height is half that distance, measured from the tips.
+- Each new branch length = new height - child node height. Tips have height zero.
+- For each new cluster distance, average all original pairs across the two groups.
+- Repeat until one tree remains. UPGMA assumes a constant rate of change across lineages.
+
+=== include: lect11c_rhino_steps.djot
+
+=== layout: section
+
+# Four Sequences: Work It Out
+
+=== layout: one-panel
+
+# Four Gene Sequences
+
+@body
+
+- a, b, c, and d label four gene sequences.
+- The matrix entries are illustrative distances in arbitrary units, not years.
+- A cluster label such as ac means the sequences a and c joined together.
+- For each step, predict the next join and node height before looking at the answer.
+
+=== include: lect11c_four_steps.djot
+
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- A symmetric distance matrix lists each pair twice; read one half.
+- UPGMA joins the closest clusters using average distances.
+- A new node height is half the join distance; subtract child height for each branch.
+- UPGMA assumes a constant rate across lineages. Its tree summarizes the original distances.
+
+=== layout: theend
+
+# THE END

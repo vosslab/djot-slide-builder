@@ -5,12 +5,17 @@ import argparse
 import hashlib
 import json
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
+import svg_tools.drawing
 import svg_tools.parts
 import svg_tools.svg_import
 
+
+HERE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT13/djot'
 
 #============================================
 def compose(name: str, specification: dict,
@@ -26,8 +31,14 @@ def compose(name: str, specification: dict,
 			markup = component['svg']
 			if hashlib.sha256(markup.encode()).hexdigest() != component['sha256']:
 				raise ValueError(f"Frozen component hash differs: {placement['asset']}")
+		component_root = DET.fromstring(markup)
+		svg_tools.drawing.remove_canvas_background(component_root)
+		markup = ET.tostring(component_root, encoding='unicode')
 		part = svg_tools.svg_import.import_svg(markup, name=f'occurrence_{index}', size=placement['width'])
-		parts[f'occurrence_{index}'] = svg_tools.parts.transform(part, x=placement['x'], y=placement['y'])
+		viewbox = [float(value) for value in DET.fromstring(markup).attrib['viewBox'].split()]
+		# Keep source centers fixed when a strip gains room for its centromere collar.
+		y = placement['y'] + viewbox[1]*placement['width']/viewbox[2]
+		parts[f'occurrence_{index}'] = svg_tools.parts.transform(part, x=placement['x'], y=y)
 	group = svg_tools.parts.group(parts)
 	width, height = specification['size']
 	if group.bounds[0] < 0 or group.bounds[1] < 0 or group.bounds[2] > width or group.bounds[3] > height:
@@ -65,11 +76,11 @@ def main() -> None:
 	"""Write the reviewed compositions beside the original deck illustrations."""
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument('--output', type=pathlib.Path,
-		default=pathlib.Path(__file__).resolve().parent / 'assets/lect13d-meiosis_translocation')
+		default=HERE / 'assets/lect13d-meiosis_translocation')
 	parser.add_argument('--components-dir', type=pathlib.Path,
 		help='Use shared-geometry component SVGs instead of frozen source bodies.')
 	args = parser.parse_args()
-	data_path = pathlib.Path(__file__).with_name('lect13d_p1_composition_data.json')
+	data_path = HERE / 'lect13d_p1_composition_data.json'
 	data: dict = json.loads(data_path.read_text())
 	args.output.mkdir(parents=True, exist_ok=True)
 	for name, specification in data['figures'].items():

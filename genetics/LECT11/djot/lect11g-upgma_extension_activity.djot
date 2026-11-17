@@ -1,0 +1,98 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11G
+
+## UPGMA Practice: Extension Problem
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Build a second six-gene UPGMA tree independently.
+- Update distances using all original pairs across clusters.
+- Keep fractional cluster averages until the final calculation.
+- Check node heights and every branch length.
+
+=== layout: subsection
+
+# Plan Your Steps
+
+=== layout: one-panel
+
+# At Each Step
+
+@body
+
+1. Find the smallest distance and join those clusters.
+2. Calculate the new node height: distance / 2.
+3. Update the matrix using the original gene-pair distances.
+4. Draw branches: parent height - child height.
+5. Repeat until all six genes are in one tree.
+
+@notes
+
+Pause for group discussion before showing each answer.
+
+=== layout: one-panel
+
+# Follow the Join Colors
+
+@body
+
+- [*Join 1*]{color=#D40000}
+- [*Join 2*]{color=#6C6C00}
+- [*Join 3*]{color=#00775F}
+- [*Join 4*]{color=#0067CC}
+- [*Join 5*]{color=#CC0066}
+
+New branches use the current join color. Earlier branches keep their colors.
+
+
+
+=== layout: section
+
+# Extension Problem: Second Handout
+
+=== layout: one-panel
+
+# Ready for Another Tree?
+
+@body
+
+- Work on the second handout after you finish the class example.
+- It uses the same six labels with different distances.
+- Check your sheet: a-b is 11 and d-f is 6.
+- Build the tree and label every branch length.
+- Try it before looking at the following answers.
+
+=== layout: subsection
+
+# Extension Problem: Answers
+
+=== include: gene_tree_six_extension_steps.djot
+
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Join the closest clusters and update the matrix after each merge.
+- Use half the join distance for the new node height.
+- Subtract child height from parent height for each branch.
+- Compare distances along tree paths with the original distances.
+
+=== layout: theend
+
+# THE END

@@ -4,6 +4,7 @@
 import hashlib
 import json
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
@@ -13,6 +14,9 @@ import svg_tools.parts
 import svg_tools.svg_import
 import svg_tools.text
 
+
+HERE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT13/djot'
 
 #============================================
 def chromosome(name: str, source: dict) -> svg_tools.parts.SvgPart:
@@ -69,6 +73,7 @@ def robertsonian_footer(source: dict,
 			element.text = ('Shared-geometry Robertsonian gamete products with all source '
 				'outcomes, probabilities, and explanatory labels retained.')
 	path = output_directory / 'lect13d_p2_robertsonian_footer.drawn.svg'
+	svg_tools.drawing.remove_canvas_background(root)
 	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
 	return path
 
@@ -108,8 +113,7 @@ def rejection_cross(source: dict) -> str:
 #============================================
 def render(output_directory: pathlib.Path) -> list[pathlib.Path]:
 	"""Write only the four new compositions; verify both frozen reference inputs."""
-	base = pathlib.Path(__file__).resolve().parent
-	source: dict = json.loads((base / 'lect13d_p2_sources.json').read_text())
+	source: dict = json.loads((HERE / 'lect13d_p2_sources.json').read_text())
 	reference_bytes = source['reference_svg'].encode('utf-8')
 	if hashlib.sha256(reference_bytes).hexdigest() != source['reference_sha256']:
 		raise ValueError('The reviewed reference component changed; review before regenerating')
@@ -163,7 +167,7 @@ def render(output_directory: pathlib.Path) -> list[pathlib.Path]:
 
 #============================================
 def main() -> None:
-	render(pathlib.Path(__file__).resolve().parent / 'assets/lect13d-meiosis_translocation')
+	render(HERE / 'assets/lect13d-meiosis_translocation')
 
 
 if __name__ == '__main__':

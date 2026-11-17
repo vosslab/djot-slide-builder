@@ -18,6 +18,7 @@ import make_chromosome_replacements
 import chromosome_staining_recipe
 import review_division_composition
 import review_inversion_composition
+import review_translocation_composition
 
 
 REPOSITORY = pathlib.Path(subprocess.check_output(
@@ -108,6 +109,7 @@ def main() -> None:
 	genetics.LECT13.djot.lect13d_p2_composition_recipes.render(ASSETS / 'assets/lect13d-meiosis_translocation')
 	review_division_composition.separate_division_prose()
 	review_inversion_composition.separate_inversion_prose()
+	review_translocation_composition.make_gamete_details()
 	separate_c58_prose()
 	refresh_inventory()
 

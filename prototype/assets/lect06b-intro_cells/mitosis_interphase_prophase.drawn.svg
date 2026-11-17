@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">G2 of Interphase and Prophase</title><desc id="figure-desc">G2 has an intact nucleus, nucleolus, uncondensed duplicated chromatin and two centrosomes. Prophase has six duplicated chromosomes and an early spindle outside the nuclear envelope. Original unmeasured animal-cell schematics after lecture 06B source figures. Purple denotes chromosomes; yellow denotes microtubules and centrosomes. Counts of chromatin loops and spindle fibers are illustrative.</desc>
-<rect width="1200" height="760" fill="white" />
 <path d="M560,390 H625 M613,382 L625,390 L613,398" fill="none" stroke="#758994" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
 <text x="151" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" font-weight="700" fill="#213547">G<tspan dy="8" font-size="23">2</tspan><tspan dy="-8" font-size="34"> of Interphase</tspan></text>
 <text x="900" y="53" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="34" fill="#213547" text-anchor="middle" font-weight="700">

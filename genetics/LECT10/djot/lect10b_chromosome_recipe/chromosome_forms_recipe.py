@@ -13,7 +13,7 @@ def main(destination: pathlib.Path) -> None:
 		'M 20 31 Q 34 48 34 78 Q 32 103 20 128', thickness=17, labels=False)
 	sisters = svg_tools.chromosomes.render_chromosome_layout('diploid', model, length=112, thickness=17,
 		orientation='vertical', texture=False, sisters=True, labels=False)
-	body = '<rect width="182" height="179" fill="#ffffff"/>'
+	body = ''
 	body += rod.fragment
 	body += f'<g transform="translate(92 24)">{sisters.svg}</g>'
 	body += svg_tools.drawing.text(9, 157, 'haploid', size=11, color='#111111', anchor='start')

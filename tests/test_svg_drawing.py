@@ -64,6 +64,32 @@ def test_foreign_namespace_does_not_collide_with_xlink(
 
 
 #============================================
+def test_write_svg_removes_only_full_canvas_white_backgrounds(tmp_path: pathlib.Path) -> None:
+	"""Keep white cells and definitions while clearing inherited viewport backgrounds."""
+	output = tmp_path / "transparent.svg"
+	body = (
+		'<rect width="100" height="80" fill="white"/>'
+		'<rect x="4" y="5" width="20" height="12" rx="3" fill="white"/>'
+		'<defs><clipPath id="cell-clip"><rect width="20" height="12"/></clipPath>'
+		'<mask id="opaque"><svg viewBox="0 0 20 10">'
+		'<rect width="100%" height="100%" fill="white"/></svg></mask></defs>'
+		'<svg viewBox="0 0 20 10"><rect width="100%" height="100%" fill="#fff"/>'
+		'<rect x="2" y="2" width="8" height="4" rx="2" fill="white"/></svg>')
+	svg_tools.drawing.write_svg(output, 100, 80, "Title", "Description", body)
+	root = defusedxml.ElementTree.parse(output).getroot()
+	ns = {"s": "http://www.w3.org/2000/svg"}
+	direct_rectangles = root.findall("s:rect", ns)
+	assert len(direct_rectangles) == 1
+	assert direct_rectangles[0].get("rx") == "3"
+	assert root.find("s:defs/s:clipPath/s:rect", ns) is not None
+	assert root.find("s:defs/s:mask/s:svg/s:rect", ns) is not None
+	nested = root.find("s:svg", ns)
+	assert nested is not None
+	assert len(nested.findall("s:rect", ns)) == 1
+	assert nested.find("s:rect", ns).get("rx") == "2"
+
+
+#============================================
 def test_scientific_labels_survive_and_invalid_xml_preserves_file(tmp_path: pathlib.Path) -> None:
 	"""Fix serialization if labels change or malformed XML overwrites a usable drawing."""
 	output = tmp_path / "labels.drawn.svg"

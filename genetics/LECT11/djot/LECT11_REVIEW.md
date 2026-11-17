@@ -981,3 +981,63 @@ pass. Visually review all changed teaching pages and both completed trees after 
 ODP/PDF rebuild. Print handouts remain unchanged. Evidence and assertions:
 `_temp/lect11e_stage_colors_review/`, `_temp/check_lect11e_stage_colors.py`.
 Live Impress playback untested.
+
+## 11F teaching expansion, November 17
+
+Rebuilt the former 19-page evolutionary-time sequence as 49 bite-size teaching slides.
+The central message is that sequence differences need a calibrated rate to become a time
+estimate. Four sections follow gene choice, sequence change, calibration, and interpretation.
+All nine substantive original figures remain, including a repaired Adh map; the former
+replacement marker is resolved. Added 41 speaking notes, early definitions, paired questions
+and answers, a two-lineage diagram, a numerical calibration and dating example, and a formula
+reference. Corrected the inherited ortholog/paralog definitions and mutation/rate claims.
+The beta-globin numbers are explicitly historical teaching assumptions.
+
+See [LECT11H_TEACHING_GUIDE.md](LECT11H_TEACHING_GUIDE.md) for the teaching route, cognitive
+walkthrough, scientific corrections, sources, and evidence limits. Strict native lint and
+343 focused checks passed. All 49 pages were rendered and reviewed, arithmetic recomputed,
+source-image bytes preserved, new diagram contrast measured, and no out-of-page words found.
+No student study or attended playback was performed. This supersedes the earlier 11F
+figure-placeholder limitation.
+
+## 11A Episode 39 thumbnail refresh, November 17
+
+Downloaded the updated 1280 x 720 YouTube thumbnail for `Iyz6WX2r8Rg` using a
+cache-busting request. The revised image gives the hosts Western clothing and hats.
+Replaced the local WebP and rebuilt the 11A ODP/PDF; the episode title and links remain.
+
+## 11B primate question/answer pairs and orange tree, November 17
+
+Former PDF slides 13-18 are now three paired questions with native on-click answer reveals,
+on current slides 13-15. Kept the two-column layout because the standard multiple-choice
+layout limits its top figure to 30 percent of content height. The existing diagram frame
+is exactly unchanged on all three questions (12.228125 x 8.220862 cm). Each answer includes
+a short explanation. The PDF shows the complete answers for studying. Total deck: 27 pages.
+
+Replaced all 52 saturated-blue tree paint attributes with palette dark orange #B74300
+(5.50:1 against white). SVG geometry, labels, time scale, and positions are unchanged.
+The introductory tree uses the same orange asset. Strict native lint passes; exported
+question pages were visually inspected, and all three reveal objects are present in ODP.
+Live click-through in Impress was not tested.
+
+## Second deck split, November 17
+
+Split former 11C at "From Distances to a Tree": current 11C covers sequences and methods
+(18 pages), and current 11D contains the complete three-rhino and four-sequence construction
+examples (45 pages). Former 11D becomes 11E (38 pages). Split former 11E into current
+11F class activity (37 pages) and 11G extension activity (35 pages); each has its own
+objectives, procedure, five-color key, complete answers, summary, and end. Former 11F
+becomes 11H (49 pages). The molecular-clock teaching guide is now LECT11H_TEACHING_GUIDE.md.
+
+All moved teaching pages were compared against the pre-split exports. Matrices, tree
+figures, source assets, and handouts retain their geometry or byte hashes. The H source
+is identical to the prior F source except its cover letter; its new export reflects
+pre-existing ASCII arrow/multiplication/approximation spellings already in the source.
+Current links and source map are updated. Old generated filenames were backed up under
+_temp/lect11_second_split_before and removed from the output folders. Original archived
+lecture-root sources and printable handout filenames remain unchanged.
+
+Strict native lint passes for all six decks (222 slides). 343 focused link/guidance
+checks pass. Covers, summaries, and split boundaries were visually reviewed; all moved
+teaching text and table/image-frame geometry were checked. The existing 17.5 pt advisory
+on Character-Based Methods remains in C. No attended Impress playback was performed.

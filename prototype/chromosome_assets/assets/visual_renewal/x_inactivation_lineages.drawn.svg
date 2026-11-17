@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='ascii'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1067" height="644" viewBox="44 9 1067 644" role="img" aria-labelledby="title desc">
   <title id="title">Random X inactivation is inherited within cell lineages</title>
   <desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc>
-  <rect width="1200" height="660" fill="white" />
   <g id="zygote">
     <ellipse cx="700" cy="65" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
     <g data-lect12c-chromosome="true" transform="translate(678.0 38.0)" id="x_inactivation_lineages-drawn-chromosome-1" data-lect12c-input="678.0,38.0,10,54.0,#B74300">

@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='ascii'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="600" viewBox="0 0 650 600" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="532" height="554" viewBox="59 29 532 554" role="img" aria-labelledby="title desc">
   <title id="title">X and Y pair at a pseudoautosomal region</title>
   <desc id="desc">An original schematic shows a crossover between homologous tips of X and Y. Chromosome sizes and the highlighted region are schematic.</desc>
-  <rect width="650" height="600" fill="white" />
   <g id="chromosomes">
     <g data-lect12c-chromosome="true" transform="translate(145 100)">
       <g id="par-chromosome-0-body">

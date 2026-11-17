@@ -6,6 +6,7 @@ import defusedxml.ElementTree as DET
 import svgpathtools
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 
 NS = 'http://www.w3.org/2000/svg'
 XLINK = 'http://www.w3.org/1999/xlink'
@@ -63,4 +64,5 @@ def main(destination: pathlib.Path) -> None:
 		part=svg_tools.chromosomes.chromosome_path_part('schematic-sister-'+str(i),model,path.d(),thickness=8,labels=False)
 		overlay.append(DET.fromstring(part.fragment))
 	parent.insert(list(parent).index(image)+1,overlay)
+	svg_tools.drawing.remove_canvas_background(root)
 	ET.ElementTree(root).write(destination, encoding='ascii', xml_declaration=False)

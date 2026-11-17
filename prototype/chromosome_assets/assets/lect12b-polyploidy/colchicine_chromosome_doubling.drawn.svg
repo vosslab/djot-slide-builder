@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1208" height="834" viewBox="0 0 1208 834" role="img" aria-labelledby="figure-title figure-description">
   <title id="figure-title">Colchicine and chromosome doubling</title>
   <desc id="figure-description">Simplified, unscaled cell-division comparison. A monoploid metaphase cell has three replicated chromosomes: one long blue, one short red, and one intermediate green, each with two sisters joined at a shared centromere. Without colchicine, two monoploid cells each contain one single chromosome of each type. With colchicine, one diploid cell contains six separate single chromosomes, two of each type. The source's five identifying labels are retained.</desc>
-  <rect width="1208" height="834" fill="#ffffff" />
   <g id="source-label" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="38" text-anchor="middle">
     <text x="615" y="46"><tspan x="615">Metaphase in mitosis</tspan><tspan x="615" dy="46">in a monoploid cell</tspan></text>
   </g>

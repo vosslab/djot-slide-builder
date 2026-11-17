@@ -28,6 +28,15 @@ def test_plot_import_preserves_data_and_live_labels() -> None:
 	assert any('Measured response' == text.text for text in texts)
 	assert any('Dose' == text.text for text in texts)
 	assert all('Atkinson Hyperlegible Next' in text.get('style', '') for text in texts)
+	backing_patches = [
+		path
+		for group in root.iter('{http://www.w3.org/2000/svg}g')
+		if group.get('id', '').endswith(('-patch_1', '-patch_2'))
+		for path in group.findall('{http://www.w3.org/2000/svg}path')
+	]
+	assert len(backing_patches) == 2
+	assert all('fill: none' in path.get('style', '') for path in backing_patches)
+	assert '#ffffff' not in part.fragment.lower()
 	assert part.bounds[2] == 300
 
 

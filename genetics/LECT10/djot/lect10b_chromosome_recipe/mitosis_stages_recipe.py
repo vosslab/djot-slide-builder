@@ -2,15 +2,18 @@
 import json
 import pathlib
 import re
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 import svgpathtools
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 
 NS='http://www.w3.org/2000/svg'
 ET.register_namespace('',NS)
-HERE=pathlib.Path(__file__).resolve().parent
+HERE=pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT10/djot/lect10b_chromosome_recipe'
 
 def main(destination: pathlib.Path) -> None:
 	root=DET.parse(HERE/'templates'/'mitosis_karyotype_stages.drawn.svg').getroot()
@@ -47,4 +50,5 @@ def main(destination: pathlib.Path) -> None:
 			(svg_tools.chromosomes.Centromere(1),))
 		part=svg_tools.chromosomes.chromosome_path_part(name+'-v2',model,curve.d(),thickness=thickness,labels=False)
 		slot.append(DET.fromstring(part.fragment))
+	svg_tools.drawing.remove_canvas_background(root)
 	ET.ElementTree(root).write(destination,encoding='unicode')

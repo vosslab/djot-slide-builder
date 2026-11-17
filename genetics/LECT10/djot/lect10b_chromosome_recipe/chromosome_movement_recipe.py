@@ -1,15 +1,18 @@
 """Replace chromosome bodies in the immutable source compositions for LECT10."""
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 import svgpathtools
 
 NS = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', NS)
-HERE = pathlib.Path(__file__).resolve().parent
+HERE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT10/djot/lect10b_chromosome_recipe'
 
 # Source centerlines run from the long arm, through the pole-facing centromere,
 # to the shorter arm.  The two cubic segments meet at the original attachment.
@@ -53,4 +56,5 @@ def main(kind: str, destination: pathlib.Path) -> None:
 				parent.insert(index, replacements[name])
 			elif name in remove:
 				parent.remove(child)
+	svg_tools.drawing.remove_canvas_background(root)
 	ET.ElementTree(root).write(destination, encoding='unicode', xml_declaration=False)

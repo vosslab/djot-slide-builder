@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 380 1000 500" role="img" aria-labelledby="title description">
 <title id="title">Homologous chromosome pairing with an inversion</title><desc id="description">Two chromosome ribbons show reversed gene-for-gene attraction within an inverted interval, then a physical pairing loop. This overview does not depict four chromatids or crossing over.</desc>
 <metadata>Original editable schematic, created 2026-11-10. Source facts: genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/image_003.png; original ODP slides 6, 10, 12, 14, 16. Geometry newly composed, not traced. Unmeasured. Source labels and stage/copy counts preserved.</metadata>
-<rect width="1000" height="1090" fill="white" /><g font-family="Atkinson Hyperlegible Next">
+<g font-family="Atkinson Hyperlegible Next">
 <defs><linearGradient id="wildtype-blue-direction"><stop offset="0" stop-color="#237EB3" /><stop offset="1" stop-color="#DCEBF5" /></linearGradient><linearGradient id="inverted-blue-direction"><stop offset="0" stop-color="#DCEBF5" /><stop offset="1" stop-color="#237EB3" /></linearGradient></defs>
 <path d="M 500,393 V 443 M 488,431 L 500,445 L 512,431" fill="none" stroke="#213547" stroke-width="2.5" />
 <g id="paired-wildtype-proximal" fill="none" stroke-linecap="round" stroke-linejoin="round">

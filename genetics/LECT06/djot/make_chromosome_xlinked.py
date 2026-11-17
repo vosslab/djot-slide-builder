@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 #============================================
@@ -47,6 +48,7 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
 		output = (repository_root / data['target'] if output_root is None else
 			output_root / 'assets' / data['target'].split('/assets/', 1)[1])
 		output.parent.mkdir(parents=True, exist_ok=True)
+		svg_tools.drawing.remove_canvas_background(root)
 		output.write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=False) + b'\n')
 
 

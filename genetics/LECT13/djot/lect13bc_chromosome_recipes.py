@@ -13,6 +13,7 @@ import svgpathtools
 import subprocess
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 import svg_tools.parts
 
 
@@ -120,6 +121,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 					rotation=math.degrees(math.atan2(y2-y1, x2-x1))-90).fragment))
 		path = output_root / relative
 		path.parent.mkdir(parents=True, exist_ok=True)
+		svg_tools.drawing.remove_canvas_background(root)
 		for node in root.iter():
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
 				node.tag = node.tag.split('}', 1)[1]

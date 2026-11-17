@@ -87,7 +87,11 @@ other origins. Consult their examples and anchors rather than assuming all origi
   `name.anchor`; group names are XML-safe identifiers without dots.
 - `drawing.write_svg(path, width, height, title, description, body)` wraps trusted fragment
   markup in a complete SVG. Provide positive dimensions and a canvas that includes the painted
-  bounds and margins. XML is checked before writing; this is not a sanitizer.
+  bounds and a small margin. It removes plain white viewport rectangles so the slide background
+  remains visible. XML is checked before writing; this is not a sanitizer.
+- `drawing.remove_canvas_background(root)` applies the same cleanup to legacy SVG trees before
+  serialization or an authored viewport crop. Local white structures and panels retain their fills.
+  Fit crops to actual content; the helper does not infer drawing bounds or rearrange a figure.
 
 For a one-off feature, author a trusted SVG fragment and construct `SvgPart(fragment, bounds,
 anchors)` directly. Supply bounds that cover its stroke and text and meaningful anchors; then
@@ -167,7 +171,8 @@ not follow a course accent hue. Use semantic colors consistently across related 
   their width and preserves the original aspect ratio. Slides carry only the selected icons.
 - `plots.plot_style(course='genetics')` scopes Matplotlib styling; `figure_to_part(figure,
   name=..., size=None)` imports the caller's vector figure without closing it or changing its
-  data. Supply the values and axes yourself; inspect labels and any clipping.
+  data. Export uses a transparent, content-fitted canvas with a small margin. Supply the values
+  and axes yourself; inspect labels and any clipping.
 
 All these tools produce deterministic static artwork from authored inputs. They do not supply an
 embedded AI service or infer a diagram's scientific content. Inspect output in the final slide as

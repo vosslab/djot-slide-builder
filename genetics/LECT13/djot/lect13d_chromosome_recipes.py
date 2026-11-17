@@ -10,6 +10,7 @@ import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chrom
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 
 HERE = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT13/djot'
@@ -22,6 +23,11 @@ NAMES = ('normal_y_chromosome_strip', 'normal_chromosome_2_strip',
 		'translocated_2_normal_2_subset', 'ruby_translocation_chromosome_set',
 		'reciprocal_translocation_gamete_products')
 COLORS = {'slate': '#7895a2', 'blue': '#367cb7', 'red': '#df5146'}
+
+def write_svg(root: ET.Element, path: pathlib.Path) -> None:
+	"""Write a source-derived SVG after removing only its canvas backdrop."""
+	svg_tools.drawing.remove_canvas_background(root)
+	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
 
 def marker(name: str, x: float, y: float, thickness: float, angle: float) -> ET.Element:
 	"""Place the common structural marker without inventing chromosome material."""
@@ -89,7 +95,7 @@ def pairing() -> None:
 			group.insert(insert, DET.fromstring(part.fragment))
 			for node in paths + ellipses:
 				group.remove(node)
-		ET.ElementTree(root).write(OUT / name, encoding='ascii', xml_declaration=True)
+		write_svg(root, OUT / name)
 
 
 def color(value: str) -> str:
@@ -101,9 +107,7 @@ def ruby() -> None:
 	for name in NAMES:
 		root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 		# Neighboring strip canvases overlap; transparent backgrounds preserve their collars.
-		background = root.find(NS + "rect[@fill='white']")
-		if background is not None:
-			root.remove(background)
+		svg_tools.drawing.remove_canvas_background(root)
 		parents = {child: parent for parent in root.iter() for child in parent}
 		for group in list(root.iter()):
 			gid = group.get('id', '')
@@ -149,7 +153,11 @@ def ruby() -> None:
 				gene = chrom.Segment(label, '#F3D788', 36)
 				group.append(DET.fromstring(chrom.gene_locus_part(
 					f'{name}-{row_name}-gene', surface, center, gene).fragment))
-		ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
+		if name.endswith('_strip') or name.endswith('_subset'):
+			width, height = float(root.get('width')), float(root.get('height'))
+			root.set('height', str(height+10))
+			root.set('viewBox', f'0 -5 {width} {height+10}')
+		write_svg(root, OUT / f'{name}.drawn.svg')
 
 	for source_name, count in (('ruby-male', 4), ('gamete-products', 24)):
 		convert_line_products(source_name, count)
@@ -173,7 +181,7 @@ def convert_line_products(source_name: str, count: int) -> None:
 		root.insert(position, DET.fromstring(part.fragment))
 		for node in paths + [circle]:
 			root.remove(node)
-	ET.ElementTree(root).write(OUT / f'{source_name}.drawn.svg', encoding='ascii', xml_declaration=True)
+	write_svg(root, OUT / f'{source_name}.drawn.svg')
 
 
 def gametes() -> None:
@@ -196,7 +204,7 @@ def gametes() -> None:
 		group.append(DET.fromstring(part.fragment))
 	if count != 18:
 		raise ValueError(f'Expected 18 chromosomes, found {count}')
-	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
+	write_svg(root, OUT / f'{name}.drawn.svg')
 
 
 def metaphase() -> None:
@@ -232,7 +240,7 @@ def metaphase() -> None:
 		count += len(sisters)
 	if count != 18:
 		raise ValueError(f'Expected 18 sister chromatids, found {count}')
-	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
+	write_svg(root, OUT / f'{name}.drawn.svg')
 
 
 def fusion() -> None:
@@ -260,7 +268,7 @@ def fusion() -> None:
 				model, path, thickness=50, labels=False)
 			group.append(DET.fromstring(part.fragment))
 		group.append(marker(f'fusion-{group.attrib["id"]}', cx, cy, 50, 90))
-	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
+	write_svg(root, OUT / f'{name}.drawn.svg')
 
 
 def human_fusion() -> None:
@@ -281,7 +289,7 @@ def human_fusion() -> None:
 		for index, circle in enumerate(circles):
 			cx, cy = float(circle.get('cx')), float(circle.get('cy'))
 			group.append(marker(f'human2-{group.attrib["id"]}-center-{index}', cx, cy, width, 90))
-	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
+	write_svg(root, OUT / f'{name}.drawn.svg')
 
 
 def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
@@ -315,6 +323,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
 				node.tag = node.tag.split('}', 1)[1]
 		root.attrib['xmlns'] = 'http://www.w3.org/2000/svg'
+		svg_tools.drawing.remove_canvas_background(root)
 		path.write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
 
 

@@ -15,12 +15,15 @@ the exchanges between homologs; the figure illustrates meiotic crossing over.
 The local review exports are `output/pdf/chromosome_review.pdf` and
 `output/odp/chromosome_review.odp`.
 
-The single 71-slide deck contains 68 current figures from 24 source decks across
+The single 73-slide deck contains 68 current figures from 24 source decks across
 Genetics LECT01, LECT02, LECT03, LECT04, LECT06, LECT08, LECT09, LECT10, LECT12, and LECT13.
 It samples simple rods and replicated sisters, division scenes, crossover and tetrad diagrams,
 centromere positions and movement, ploidy and dosage, inversions, and translocations. Empirical
 photos, measured maps, and mixed figures are labeled separately so their purpose remains clear.
 This is a broad sample, not an exhaustive image inventory or a ranking of preferred artwork.
+
+SVG canvases are transparent so the slide theme shows through. C31/C44-C46 use tighter
+inspected viewports; white structures, panels and source image content retain their fills.
 
 Each figure has a stable ID, **C01-C68**, and its original deck and slide number. Source numbers
 follow expanded source/ODP order, including hidden slides. Original paths and snapshot hashes are
@@ -40,6 +43,8 @@ The working C13 construction restores C21's cell backdrop and micrograph. Their 
 in the image, while the matching explanations are native slide text. C25/C56/C59 likewise keep
 their bottom explanations outside the SVG. C55 uses two independent SVGs on consecutive slides
 so the overview and loop remain large; its index entry points to the first slide.
+C63 keeps its three-column overview and adds two enlarged detail slides so the source
+gene names remain readable. These views use the same chromosome components and positions.
 
 Critique by ID, for example: "C12: keep the body shape; change the centromere and label size."
 The [sister_chromatid_survey.md](sister_chromatid_survey.md) records the survey using C16 as

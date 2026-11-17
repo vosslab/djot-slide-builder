@@ -9,8 +9,13 @@ import pathlib
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
+import subprocess
+import svg_tools.drawing
 
 NS='{http://www.w3.org/2000/svg}'
+REPOSITORY_ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+DIRECTORY = REPOSITORY_ROOT / 'genetics/LECT06/djot'
 
 
 def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> None:
@@ -54,6 +59,7 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 				marker = svg_tools.chromosomes.centromere_part(item['group']+'-belt-'+str(start),
 					thickness=width, across=span)
 				group.append(DET.fromstring(svg_tools.parts.transform(marker,x=cx,y=cy,rotation=angle).fragment))
+		svg_tools.drawing.remove_canvas_background(root)
 		output=output_directory/(data_file.stem+'.drawn.svg'); output.write_text(ET.tostring(root,encoding='unicode')+'\n')
 
 		print(output.name)
@@ -62,10 +68,9 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 def main() -> None:
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument('--output-root', type=pathlib.Path,
-		default=pathlib.Path(__file__).resolve().parent / 'assets')
+		default=DIRECTORY / 'assets')
 	args = parser.parse_args()
-	directory = pathlib.Path(__file__).resolve().parent
-	generate(directory / "chromosome_models" / "assortment", args.output_root / "lect06c-meiosis")
+	generate(DIRECTORY / "chromosome_models" / "assortment", args.output_root / "lect06c-meiosis")
 
 
 if __name__ == "__main__":

@@ -5,6 +5,9 @@ question-completeness repair. D: PASS.** The combined C/D quality checkpoint rem
 This is an independent review of the exported teaching sequence, not a repeated source-only check.
 All 66 pages were viewed individually at 1200 pixels wide. No production files were changed.
 
+Historical naming note: C and D identify the November 14 exported artifacts. The C source is now
+`genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot` after the Lecture 11 renumbering.
+
 ## Interpretation and scope
 
 The acceptance question is whether students can use the visible examples to reason through UPGMA,

@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="complement-title complement-desc">
 		<title id="complement-title">Drosophila chromosome complements</title>
 		<desc id="complement-desc">Two Drosophila chromosome complements, XX on the left and XY on the right. Both contain two copies each of chromosomes 2, 3 and 4: four long bent autosomes and two small dot chromosomes. The lower pair contains two X rods on the left, and one X rod and one hooked Y on the right. Each complement contains eight separate chromosomes. Aligned positions support comparison; they do not depict pairing or a cell-cycle phase. Schematic, not to scale.</desc>
-		<rect width="1200" height="620" fill="#FFFFFF" />
 		<g id="complement-guides" fill="none" stroke="#D7E0E5" stroke-width="2">
 				<path d="M600 22 V568" />
 				<path d="M56 350 H544 M656 350 H1144" />

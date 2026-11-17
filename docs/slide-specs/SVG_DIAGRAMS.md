@@ -11,6 +11,9 @@ Do not convert a complete slide into a bitmap to preserve its layout.
 
 - Store SVGs beside the deck's other local assets. Include a title, description, and source slide.
 - Supply positive absolute width/height or a finite, positive-size `viewBox`.
+- Use a transparent canvas so the slide background shows through. Crop unused outer space while
+  keeping labels, strokes and arrowheads clear of the viewport edge. Preserve white fills that
+  belong to biological structures, annotation panels or embedded source images.
 - Embed PNG/JPEG component artwork with data URIs. Preserve transparency and source geometry.
 - Keep labels as text, with explicit coordinates, fonts, sizes, and subscript positioning.
 - Apply the font roles in [HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md): Atkinson Hyperlegible Next for

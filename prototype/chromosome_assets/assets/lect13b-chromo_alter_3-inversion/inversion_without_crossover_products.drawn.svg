@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1320" height="600" viewBox="0 0 1320 600">
 <title>Replicated homologs without crossing over</title>
 <desc>Two joined sister pairs retain their gene orders. Upper orange and ochre sisters carry a c b d; lower green and blue sisters carry a b c d. All gene patches lie to the right of the rounded shared centromeric region.</desc>
-<rect width="1320" height="600" fill="white" />
 <g id="homolog-1" transform="translate(0 0)">
 <path d="M 115 85 L 255 91" fill="none" stroke="#ed792e" stroke-width="47" stroke-linecap="round" />
 <path d="M 115 123 L 255 129" fill="none" stroke="#be913e" stroke-width="47" stroke-linecap="round" />

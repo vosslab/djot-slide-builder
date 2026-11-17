@@ -58,8 +58,9 @@ A small highlight is optional. Flat explanatory boxes, gene tracks, and data plo
 need highlights. Biological state must not depend on a decorative shine, shadow, or hue alone.
 
 Avoid broad cast shadows, glossy spots, gradients that disguise anatomy, and texture added
-only to make a blank area busy. Keep a transparent SVG background when the composition
-allows it; gallery previews can use white. Inspect fine edges on the intended slide surface.
+only to make a blank area busy. Use a transparent SVG canvas so the natural slide background
+shows through. White cells, gene regions, callout panels and photographic content retain
+their own fills. Inspect fine edges on the intended slide surface.
 
 ### Text and composition
 
@@ -74,6 +75,11 @@ label is ambiguous. Keep title and caption text native in Djot; an SVG is one il
 with its associated object labels. Preserve existing teaching content while adjusting the
 layout. Review the whole figure at its actual slide placement; a readable standalone image
 can become unreadable in a small panel.
+
+Fit the SVG viewport closely around its visible content, including labels, stroke widths
+and arrowheads, with a small clear margin. Use the assembled parts' painted bounds or an
+inspected crop in the owning recipe. Preserve meaningful space inside a diagram, such as
+branching lineages. A crop changes the viewport rather than the biological geometry or scale.
 
 ## Family-specific recognition
 

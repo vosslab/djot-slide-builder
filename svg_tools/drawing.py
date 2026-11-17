@@ -115,6 +115,62 @@ def line(x1: float, y1: float, x2: float, y2: float, *, color: str,
 
 
 #============================================
+def remove_canvas_background(root: xml.etree.ElementTree.Element) -> None:
+	"""Remove unstyled white rectangles that only cover an SVG viewport."""
+	def local_name(name: str) -> str:
+		return name.rsplit("}", 1)[-1]
+
+	def number(value: str | None, default: float | None = None) -> float | None:
+		if value is None:
+			return default
+		try:
+			parsed = float(value)
+		except ValueError:
+			return None
+		return parsed if math.isfinite(parsed) else None
+
+	def view_box(element: xml.etree.ElementTree.Element) -> tuple[float, float, float, float] | None:
+		values = element.get("viewBox", "").replace(",", " ").split()
+		if len(values) != 4:
+			return None
+		parsed = tuple(number(value) for value in values)
+		if any(value is None for value in parsed):
+			return None
+		left, top, width, height = parsed
+		if width <= 0 or height <= 0:
+			return None
+		return left, top, width, height
+
+	def matches_span(value: str | None, size: float) -> bool:
+		return value == "100%" or number(value) == size
+
+	containers = [root]
+	for svg in containers:
+		# Only rendered containers carry canvas backgrounds; definitions retain their paint.
+		containers.extend(child for child in svg if isinstance(child.tag, str)
+			and local_name(child.tag) in {"svg", "g", "a", "switch"})
+		if not isinstance(svg.tag, str) or local_name(svg.tag) != "svg":
+			continue
+		viewport = view_box(svg)
+		if viewport is None:
+			continue
+		left, top, width, height = viewport
+		for child in list(svg):
+			if not isinstance(child.tag, str) or local_name(child.tag) != "rect":
+				continue
+			if child.get("fill", "").lower() not in {"white", "#fff", "#ffffff"}:
+				continue
+			if child.get("stroke", "none") not in {"", "none"}:
+				continue
+			if set(child.attrib) - {"x", "y", "width", "height", "fill", "stroke"}:
+				continue
+			if (number(child.get("x"), 0) == left and number(child.get("y"), 0) == top
+					and matches_span(child.get("width"), width)
+					and matches_span(child.get("height"), height)):
+				svg.remove(child)
+
+
+#============================================
 def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	description: str, body: str) -> None:
 	"""Write a complete SVG after validating XML; the parent folder must exist."""
@@ -128,6 +184,7 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 		"xmlns": "http://www.w3.org/2000/svg", "width": str(width), "height": str(height),
 		"viewBox": f"0 0 {width} {height}", "role": "img", "aria-labelledby": "title desc",
 	})
+	remove_canvas_background(root)
 	label = xml.etree.ElementTree.Element("title", {"id": "title"})
 	label.text = title
 	root.insert(0, label)

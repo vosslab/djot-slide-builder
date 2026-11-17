@@ -5,18 +5,25 @@
 | Master | Current content | PDF pages |
 | --- | --- | --- |
 | [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | Announcements and movie | 36 |
-| [lect11b-interpreting_gene_trees.djot](lect11b-interpreting_gene_trees.djot) | Interpreting gene trees: defined terms, ancestry, rotations, polytomies, branch distances | 30 |
-| [lect11c-building_gene_trees.djot](lect11c-building_gene_trees.djot) | Tree construction methods, three-rhino introduction, and four-sequence UPGMA | 59 |
-| [lect11d-upgma_weighted_averages.djot](lect11d-upgma_weighted_averages.djot) | Guided five-gene UPGMA and weighted cluster updates | 38 |
-| [lect11e-upgma_group_activity.djot](lect11e-upgma_group_activity.djot) | Six-gene class and extension worksheets with colored merge-stage walkthroughs | 65 |
-| [lect11f-molecular_clocks.djot](lect11f-molecular_clocks.djot) | Evolutionary Time; preserved source limitations | 19 |
+| [lect11b-interpreting_gene_trees.djot](lect11b-interpreting_gene_trees.djot) | Interpreting gene trees, with three primate question/answer reveals | 27 |
+| [lect11c-gene_trees_from_sequences.djot](lect11c-gene_trees_from_sequences.djot) | Sequence alignments and distance-based versus character-based methods | 18 |
+| [lect11d-upgma_three_and_four_sequences.djot](lect11d-upgma_three_and_four_sequences.djot) | From distances to a tree: three-rhino and four-sequence UPGMA | 45 |
+| [lect11e-upgma_weighted_averages.djot](lect11e-upgma_weighted_averages.djot) | Five-sequence UPGMA and weighted cluster updates | 38 |
+| [lect11f-upgma_class_activity.djot](lect11f-upgma_class_activity.djot) | Six-gene class problem and complete answers | 37 |
+| [lect11g-upgma_extension_activity.djot](lect11g-upgma_extension_activity.djot) | Six-gene extension problem and complete answers | 35 |
+| [lect11h-molecular_clocks.djot](lect11h-molecular_clocks.djot) | Molecular clocks, calibration, worked dating, and gene/species ancestry | 49 |
 
 Each master has matching ODP/PDF stems under `output/odp/` and `output/pdf/`.
-A has 57 authored slides including hidden slides. B is interpretation only; C contains
-all construction material moved from B and uses the colored local
-`lect11c_four_steps.djot` fragment. D/E keep their five-/six-gene fragments and fixed
-matrix sizes. The November 17 split supersedes earlier B-E letters and page counts.
-Historical conversion evidence follows; original ODP/PDF sources were not renamed.
+A has 57 authored slides including hidden slides. B is interpretation only. C introduces
+sequence alignments and tree-building methods; D begins at "From Distances to a Tree" and
+includes both the rhino and four-sequence examples. The local `lect11c_rhino_steps.djot` and
+`lect11c_four_steps.djot` fragment filenames remain stable; D includes them. E is the five-gene
+example. F and G separate the class and extension six-gene problems. H is the molecular-clock
+lesson, with its [teaching guide](LECT11H_TEACHING_GUIDE.md).
+
+The second November 17 split supersedes all earlier C-H letters and counts. Asset directories,
+recipe fragments, original source ODP/PDF files, and printable handout filenames remain stable.
+Replaced generated decks are backed up under `_temp/lect11_second_split_before/`.
 
 ## Printable group-activity handouts
 
@@ -27,15 +34,14 @@ Original separate PDFs remain `lect11e-gene_tree_handout.pdf` and
 `lect11e-gene_tree_extension_handout.pdf` under `output/pdf/`.
 Both are unchanged copies of the archived student handouts, with all 15 distances
 checked independently. Editable ODG copies are in `genetics/LECT11/` with matching stems.
-11E includes the complete class walkthrough through PDF 35; the extension begins at
-PDF 36 and its worked answers are PDF 39-63. The previous claim that `_2` was merely
+11F includes the complete class walkthrough and tree-check answers through PDF 35.
+11G is the separate extension deck; its worked answers are PDF 9-33. The previous claim that `_2` was merely
 an alternate worksheet is superseded: it is the extension problem.
 
 ## Historical conversion map
 
 Historical source map: this bundle became LECT11 on November 14, 2026. Original names
 and slide numbers below describe the source conversion.
-
 Reviewed November 9, 2026. Original numbers include hidden slides. Djot numbers refer to
 the expanded master including additions and hidden slides. PDF pages omit hidden slides.
 All content slides remain one-to-one and in their original order; none was split.

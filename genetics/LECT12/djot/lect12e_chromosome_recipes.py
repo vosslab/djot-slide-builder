@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild LECT12E chromosome schematics with the shared v2 chromosome family.
 
-Run from the repository root with PYTHONPATH="$PWD" python3 this_file.py.
+Run with source source_me.sh && python3 genetics/LECT12/djot/lect12e_chromosome_recipes.py.
 Crossover source centerlines, all repeat blocks, labels, overlap order and
 reciprocal ancestry tails are retained from the original instructor schematic.
 Unmeasured chromosome lengths; molecular gene tracks and empirical assets stay separate.
@@ -9,12 +9,18 @@ Unmeasured chromosome lengths; molecular gene tracks and empirical assets stay s
 
 import pathlib
 import string
+import subprocess
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes
 import svg_tools.drawing
 
-ASSETS = pathlib.Path(__file__).parent / 'assets/lect12e-chromo_alter_2-duplications'
+REPO_ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+ASSETS = REPO_ROOT / 'genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications'
+ET.register_namespace('', 'http://www.w3.org/2000/svg')
 
 CROSSOVER_PATHS = [('M32 130 C85 130 84 165 108 165 S150 130 185 130 L295 130', '#287caf', 108),
 	('M32 200 C85 200 84 165 108 165 S150 200 185 200 L295 200', '#287caf', 108),
@@ -147,7 +153,10 @@ def crossover() -> None:
 			path_d, thickness=25, labels=False)
 		replacements[f'chromatid_{index}'] = part.fragment
 	result = string.Template(CROSSOVER_TEMPLATE).substitute(replacements)
-	(ASSETS / 'unequal_tandem_crossover.drawn.svg').write_text(result)
+	root = DET.fromstring(result)
+	svg_tools.drawing.remove_canvas_background(root)
+	(ASSETS / 'unequal_tandem_crossover.drawn.svg').write_bytes(
+		ET.tostring(root, encoding='ascii', xml_declaration=True))
 
 
 #============================================

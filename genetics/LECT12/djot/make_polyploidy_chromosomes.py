@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """Regenerate LECT12B schematic chromosomes with the shared v2 renderer.
 
-Run from the repository root: PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B genetics/LECT12/djot/make_polyploidy_chromosomes.py
+Run with source source_me.sh && python3 genetics/LECT12/djot/make_polyploidy_chromosomes.py.
 Source cell outlines, connectors and labels are fixed local composition data.
 Counts and reveal states follow the source, including illustrative body counts
 that differ from adjacent native ploidy notation; no extra bodies are inferred.
 """
 
 from pathlib import Path
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 from svg_tools.chromosomes import Centromere, Chromosome, Segment, chromosome_part, chromosome_path_part
+import svg_tools.drawing
 
 NS = "{http://www.w3.org/2000/svg}"
 ET.register_namespace("", NS[1:-1])
 ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
-BASE = Path(__file__).resolve().parent
+REPO_ROOT = Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+BASE = REPO_ROOT / 'genetics/LECT12/djot'
 
 
 def chromosome(spec: dict) -> str:
@@ -666,12 +670,12 @@ def main() -> None:
 			if "data-recipe-slot" in element.attrib:
 				index = int(element.attrib.pop("data-recipe-slot"))
 				element.append(DET.fromstring(chromosome(specs[index])))
+		svg_tools.drawing.remove_canvas_background(root)
 		data = ET.tostring(root, encoding="ascii", xml_declaration=True)
 		(BASE / relative).write_bytes(data)
 		if relative == 'assets/visual_renewal/ploidy_sets.drawn.svg':
 			root.set('height', '760')
 			root.set('viewBox', '0 0 780 760')
-			root.find(NS + 'rect').set('height', '760')
 			for element in root:
 				if element.get('id') in ('sets-3', 'sets-4'):
 					element.set('transform', 'translate(0 80)')
@@ -718,6 +722,7 @@ def scene(relative: str, width: float, height: float, title: str, description: s
 	content: str) -> None:
 	text = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">{description}</desc><defs><marker id="process-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11Z" fill="{INK}"/></marker></defs><rect width="{width}" height="{height}" fill="white"/>' + content + '</svg>'
 	root = DET.fromstring(text)
+	svg_tools.drawing.remove_canvas_background(root)
 	(BASE/'assets/lect12b-polyploidy'/relative).write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
 
 

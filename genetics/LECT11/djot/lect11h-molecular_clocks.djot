@@ -1,0 +1,693 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11H
+
+## Molecular Clocks and Evolutionary Time
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Choose gene copies that address a species comparison.
+- Explain why sequence regions change at different rates.
+- Use a calibrated rate to estimate time since divergence.
+- Explain why a gene history may differ from a species history.
+
+=== layout: one-panel
+
+# Sequence Differences Need a Rate to Become Time
+
+@notes
+
+Open with the distinction students already know: the UPGMA trees had distance units. We never gave those units a value in years. Today we add that missing information.
+
+@body
+
+- Our trees show relationships and sequence distances.
+- A distance tells us how much change separates two sequences.
+- To estimate elapsed time, we also need a substitution rate.
+
+=== layout: one-panel
+
+# The Plan for Estimating Time
+
+@notes
+
+Keep returning to this order. Gene choice and rate choice are part of the calculation, not extra topics after it.
+
+@body
+
+1. Choose the gene copies to compare.
+2. Understand how their sequences change.
+3. Calibrate the rate with independent time evidence.
+4. Estimate time and check the assumptions.
+
+=== layout: section
+
+# 1. Choose the Gene Copies
+
+=== layout: one-panel
+
+# Related Genes Can Have Different Histories
+
+@notes
+
+Homology is about shared ancestry. Similar function can be useful evidence, but it does not define the relationship. Introduce speciation as the splitting of an ancestral species into descendant species.
+
+@body
+
+- *Homologous genes* descend from a common ancestral gene.
+- Speciation separates copies into descendant species.
+- Gene duplication produces additional copies within a lineage.
+
+=== layout: one-panel
+
+# Name the Event That Separated the Copies
+
+@notes
+
+Orthologs often retain similar functions, but that is not the definition. Paralogs can retain similar functions or change. They can also occur in different species if duplication happened before those species split.
+
+@body
+
+- *Orthologs*: gene copies separated by speciation.
+- *Paralogs*: gene copies separated by gene duplication.
+- Both are homologs. Their names describe ancestry, not a required function.
+
+=== layout: big-image
+
+@notes
+
+Start at the early globin gene at the bottom. Follow duplication into alpha and beta. Then follow one copy through the species splits. Do not start by naming every tip.
+
+@image
+
+![Globin gene family: duplication followed by speciation](assets/lect11e-evol_time/image_009.png)
+
+@caption
+
+Globin Genes Show Both Events
+
+=== layout: two-panels
+
+# Which Pair Would You Compare?
+
+@notes
+
+Let students choose and explain the event at the common ancestor before advancing.
+
+@left
+
+![Globin family for choosing comparable gene copies](assets/lect11e-evol_time/image_009.png)
+
+@right
+
+To compare mouse and chick species histories, which pair is the better starting point?
+
+- Mouse alpha and chick alpha
+- Mouse alpha and chick beta
+
+=== layout: two-panels
+
+# Compare Copies Separated by Speciation
+
+@notes
+
+Point to the duplication node for the second pair. Its older history would add change from before the mouse-chick split.
+
+@left
+
+![Globin family showing alpha orthologs and alpha-beta paralogs](assets/lect11e-evol_time/image_009.png)
+
+@right
+
+- Mouse alpha and chick alpha are orthologs.
+- Mouse alpha and chick beta are paralogs.
+- The second pair traces back to the duplication, which predates the species split.
+
+=== layout: big-image
+
+@notes
+
+A1 and A2 are orthologs; B1 and B2 are orthologs. An A copy and a B copy are paralogs. Different species alone does not make two genes orthologs.
+
+@image
+
+![Gene duplication within a species tree](assets/lect11e-evol_time/image_010.png)
+
+@caption
+
+Trace a Copy Through the Species Split
+
+=== layout: big-image
+
+@notes
+
+The ancestral copy is active in two tissues. After duplication, each copy loses different regulatory elements. Together the two copies retain the ancestral expression pattern.
+
+@image
+
+![Subfunctionalization after gene duplication](assets/lect11e-evol_time/image_011.jpg)
+
+@caption
+
+After duplication, one copy works in tissue 1; the other works in tissue 2. This division of ancestral functions is *subfunctionalization*.
+
+=== layout: section
+
+# 2. Understand the Rate of Change
+
+=== layout: one-panel
+
+# A New Mutation Is Only the First Step
+
+@notes
+
+For the simple population picture, describe a substitution as a new variant becoming fixed in the population. Distinguish a newly observed mutation from the changes retained in an evolutionary comparison.
+
+@body
+
+- A *mutation* is a new DNA sequence change.
+- It may disappear, remain variable, or spread through a population.
+- A *substitution* is a sequence replacement that becomes established along an evolutionary lineage.
+
+=== layout: one-panel
+
+# Many DNA Changes Leave the Protein Unchanged
+
+@notes
+
+Use this example before discussing codon positions. Third-position changes are often synonymous, but not always. The amino acid outcome defines the term.
+
+@body
+
+- A *synonymous substitution* leaves the encoded amino acid unchanged.
+- A *nonsynonymous substitution* changes the encoded amino acid.
+- Compare DNA codons: GAA -> GAG still encodes glutamate; GAA -> GAC encodes aspartate.
+
+=== layout: big-image
+
+@notes
+
+Read the gene map first. Dark blocks are exons; pale blocks are introns. Orange marks are variable nucleotide positions. The red insertion arrows and gray deletion arrow are different kinds of changes. This figure compares variation among fruit flies, not a calibrated substitution rate.
+
+@image
+
+![Variation across the fruit-fly Adh gene](assets/lect11e-evol_time/adh_labeled.svg)
+
+@caption
+
+The Adh Gene Contains More DNA Variation Than Protein Variation
+
+=== layout: one-panel
+
+# Read the Adh Counts
+
+@notes
+
+These are source-figure counts. The variants are within a sample of flies; do not call all 43 fixed substitutions. Connect the exon result to the codon example on the previous slide.
+
+@body
+
+- The comparison contains 43 variable nucleotide sites, plus insertions and deletions.
+- Eighteen variable sites lie in the four exons.
+- Only one of those exon variants changes an amino acid, at site 1,490.
+- DNA differences can accumulate while the protein sequence stays similar.
+
+=== layout: one-panel
+
+# Selection Helps Explain Different Rates
+
+@notes
+
+Mutation produces variation. Selection affects which changes persist. A slowly changing protein does not imply that its DNA never mutates.
+
+@body
+
+- *Functional constraint* means that a sequence must retain features needed for its function.
+- Harmful changes are often removed by natural selection.
+- Sites with fewer functional constraints can often retain changes faster.
+
+=== layout: big-image
+
+@notes
+
+First locate the vertical scale: substitutions per site per billion years. It is a logarithmic scale. Then compare synonymous and nonsynonymous sites. Point out the spread rather than presenting every region as having one universal rate.
+
+@image
+
+![Rates of nucleotide substitution among mammalian sequence regions](assets/lect11e-evol_time/image_003.jpg)
+
+@caption
+
+Read the Substitution-Rate Figure
+
+=== layout: two-panels
+
+# Use the Figure to Make One Comparison
+
+@notes
+
+Ask for the direction first, then the explanation. Pause before advancing.
+
+@left
+
+![Synonymous and nonsynonymous substitution rates](assets/lect11e-evol_time/image_003.jpg)
+
+@right
+
+- Which tends to change faster: synonymous or nonsynonymous sites?
+- How could selection produce this difference?
+
+=== layout: two-panels
+
+# Protein Changes Often Face Stronger Constraints
+
+@notes
+
+Synonymous does not mean always neutral. The figure shows a general pattern, not a guarantee for every site.
+
+@left
+
+![Observed variation in substitution rates](assets/lect11e-evol_time/image_003.jpg)
+
+@right
+
+- Synonymous sites generally have higher substitution rates in this figure.
+- Many amino acid changes interfere with protein function and are removed.
+- A *pseudogene* is a gene copy that has lost its original function. Reduced constraint can allow faster change.
+
+=== layout: two-panels
+
+# Generation Time Can Affect Change per Year
+
+@notes
+
+This inherited graph concerns mutation rate, not substitution rate. Keep that distinction explicit. Some RNA viruses have high mutation rates; bacteria often have low per-base mutation rates. Do not use one mutation rate for all genes or organisms.
+
+@left
+
+![Mutation rate and genome size across organism groups](assets/lect11e-evol_time/image_006.png)
+
+@right
+
+- More generations per year can create more opportunities for mutation.
+- Rates also depend on replication, repair, selection, and the sequence region.
+- A rate per generation must be converted before we use it per year.
+
+=== layout: one-panel
+
+# A Protein Alignment Shows the Retained Differences
+
+@notes
+
+Read one mouse difference aloud, then compare the baboon row. The picture is a short part of beta globin, not the entire chain. Amino acid sequences can be more conserved than their underlying DNA.
+
+@body
+
+![Beta-globin amino acid alignment with the human sequence as reference](assets/lect11e-evol_time/image_007.png)
+
+- A dot matches the human amino acid above it.
+- A letter marks a different amino acid; a dash marks an alignment gap.
+
+=== layout: one-panel
+
+# Rates Need Explicit Units
+
+@notes
+
+Use the historical beta-globin example next. Its 1.23 rate is per lineage. A billion years is 1,000 million years. Emphasize the units before multiplying numbers.
+
+@body
+
+- A rate states how much change occurs per site per unit of time.
+- For example: 1.23 amino acid replacements per site per billion years.
+- Multiplying by sequence length gives replacements across the sequence.
+- DNA and protein rates use different kinds of sites.
+
+=== layout: section
+
+# 3. Calibrate the Clock
+
+=== layout: big-image
+
+@notes
+
+Start with the axes, not the protein names. The x-axis is time since divergence. The y-axis is estimated amino acid substitutions per 100 residues, not simply percent different. More than 100 is possible because a site can change more than once. This is a historical teaching plot, not a current table of exact divergence dates.
+
+@image
+
+![Historical protein molecular-clock plot](assets/lect11e-evol_time/image_008.png)
+
+@caption
+
+Different Proteins Can Change at Different Rates
+
+=== layout: two-panels
+
+# Read One Line at a Time
+
+@notes
+
+Ask them to trace cytochrome c from left to right, then compare hemoglobin at the same x-coordinate.
+
+@left
+
+![Protein-specific slopes on a molecular-clock plot](assets/lect11e-evol_time/image_008.png)
+
+@right
+
+- For one protein, greater elapsed time is associated with more substitutions.
+- At the same time, different proteins can show different amounts of change.
+- The slope is a rate. Each protein needs its own calibration.
+
+=== layout: one-panel
+
+# A Molecular Clock Is a Rate Model
+
+@notes
+
+A clock does not mean a mutation happens on schedule. It is a model for expected accumulated change. We will use an equal-rate example before discussing unequal rates.
+
+@body
+
+- A *molecular clock* links accumulated substitutions to elapsed time.
+- A *strict clock* assumes the same average rate across the compared branches.
+- Individual mutations still occur randomly. The rate describes an average.
+
+=== layout: one-panel
+
+# Calibration Supplies the Time Scale
+
+@notes
+
+Fossils often establish minimum ages. Other evidence includes dated ancient sequences and samples collected at known times. Keep the main example as a simplified known-time calibration, not a claim that fossil ages are exact.
+
+@body
+
+- *Calibration* uses independent time evidence to estimate or constrain a rate.
+- A fossil can constrain the age of a lineage. It usually does not give the exact species-split date.
+- Once we estimate a rate, we can use it for other suitable comparisons.
+
+=== layout: big-image
+
+@notes
+
+Point from the common ancestor to A, then return to the ancestor and trace B. Both branches have existed for the same elapsed time. The A-to-B distance includes both branches. This is the same path-sum logic used in the UPGMA activity.
+
+@image
+
+![Two branches accumulate substitutions after a split](assets/lect11e-evol_time/clock_two_lineages.drawn.svg)
+
+@caption
+
+Two Descendant Lineages Accumulate Change
+
+=== layout: one-panel
+
+# A Worked Calibration: Find the Distance
+
+@notes
+
+The numbers are invented for instruction. We approximate differences as substitutions here; later we explain repeated changes. Keep the same example for the next two steps.
+
+@body
+
+Teaching example: two present-day orthologous sequences differ at 20 of 1,000 aligned DNA sites.
+
+- Observed difference fraction = 20 / 1,000 = 0.020.
+- For this low-divergence example, use d ~ 0.020 substitutions per site.
+- Independent evidence gives a split time of 5 million years. Assume gene divergence coincides with this split.
+
+=== layout: one-panel
+
+# A Worked Calibration: Find the Rate
+
+@notes
+
+The denominator has a two because the pairwise distance covers two branches. Point back to the two-lineage figure if anyone uses 0.004 as the per-lineage rate.
+
+@body
+
+Both lineages have changed for 5 million years.
+
+- Combined branch time = 2 x 5 = 10 million years.
+- Per-lineage rate r = 0.020 / 10 = 0.002 substitutions per site per million years.
+- Equivalently, r = d / (2t).
+
+=== layout: one-panel
+
+# Use the Rate for a New Pair
+
+@notes
+
+Leave the answer for the next slide. Ask students to identify what each symbol measures before doing arithmetic.
+
+@body
+
+Another pair of orthologous sequences has d = 0.032 substitutions per site. Assume the same per-lineage rate, r = 0.002 per million years.
+
+Estimate their time since divergence.
+
+Use d = 2rt.
+
+=== layout: one-panel
+
+# The Estimated Split Was 8 Million Years Ago
+
+@notes
+
+Use the forward check to make the answer tangible. Dividing by r alone would give 16 million years, because it would assign the two-branch distance to just one branch.
+
+@body
+
+- t = d / (2r)
+- t = 0.032 / (2 x 0.002) = 8 million years.
+- Each branch contributes 0.002 x 8 = 0.016 substitutions per site.
+- Together: 0.016 + 0.016 = 0.032.
+
+=== layout: two-panels
+
+# Return to Beta Globin
+
+@notes
+
+This is the inherited protein-rate example with its assumptions made explicit. Treat 80 million years as the historical example value, not a newly verified mouse-human divergence date.
+
+@left
+
+![Beta-globin sequence comparison](assets/lect11e-evol_time/image_007.png)
+
+@right
+
+Historical example assumptions:
+
+- 147 amino acid sites
+- 1.23 replacements per site per billion years, per lineage
+- 80 million years since divergence
+
+Expected replacements across both branches:
+
+147 x 1.23 x 0.080 x 2 ~ 29
+
+=== layout: section
+
+# 4. Check What the Estimate Means
+
+=== layout: one-panel
+
+# The Same Distance Can Come from Different Times
+
+@notes
+
+This returns to the opening message. Have students explain why the slower rate needs more time. The time estimate depends on the rate and its calibration.
+
+@body
+
+Suppose d = 0.032 substitutions per site.
+
+- With r = 0.002 per site per million years, t = 8 million years.
+- With r = 0.001 per site per million years, t = 16 million years.
+- Sequence distance alone cannot determine calendar time.
+
+=== layout: one-panel
+
+# A Site Can Change More Than Once
+
+@notes
+
+This also explains why the historical protein graph can exceed 100 substitutions per 100 residues. Our 20/1000 example was a low-divergence approximation.
+
+@body
+
+- An ancestral A can change to G, then back to A.
+- The present-day match hides two substitutions on that branch.
+- At larger distances, observed differences undercount substitutions.
+- Substitution models help estimate changes that we cannot see directly.
+
+=== layout: one-panel
+
+# Real Rates Can Differ among Branches
+
+@notes
+
+Do not imply relaxed clocks remove all uncertainty. They replace the equal-rate assumption with a model for rate variation. No software procedure is required today.
+
+@body
+
+- Lineages can differ in generation time, mutation processes, and selection.
+- A strict clock may fit poorly.
+- *Relaxed-clock models* allow rates to vary among branches.
+- Date estimates should include uncertainty from the data, calibration, and model.
+
+=== layout: one-panel
+
+# A Gene History Is Not Always a Species History
+
+@notes
+
+Define an allele as a sequence variant at a locus. A population can carry more than one allele. This prepares students for the original figure, which previously appeared without enough setup.
+
+@body
+
+- A species tree follows population splits.
+- A gene tree follows ancestry at a particular locus.
+- Different alleles can already exist before a species split.
+- Their later inheritance and loss can give a different branching pattern.
+
+=== layout: big-image
+
+@notes
+
+Read top to bottom. First there is A1. A2 arises before the species splits, so the ancestral population carries both. Follow the wide shaded species branches separately from the allele lines. Species 2 and 3 split last, but species 1 and 2 retain A2 while species 3 retains A1.
+
+@image
+
+![Ancestral allele sorting within a species tree](assets/lect11e-evol_time/image_002.jpg)
+
+@caption
+
+Ancestral Alleles Can Survive Multiple Splits
+
+=== layout: two-panels
+
+# Separate the Two Histories
+
+@notes
+
+Let students point to the broad branches for the first answer and the allele labels for the second. Pause before advancing.
+
+@left
+
+![Species branching and retained ancestral alleles](assets/lect11e-evol_time/image_002.jpg)
+
+@right
+
+- Which species share the most recent species split?
+- Which two species retain the A2 allele in this example?
+- Do those answers have to match?
+
+=== layout: two-panels
+
+# Older Allele Variation Explains the Mismatch
+
+@notes
+
+Keep the explanation local to the picture. This is one reason for discordance; it is not the only reason.
+
+@left
+
+![Allele sorting can produce discordant gene and species histories](assets/lect11e-evol_time/image_002.jpg)
+
+@right
+
+- Species 2 and 3 share the most recent species split.
+- Species 1 and 2 retain A2.
+- Ancestral variation persisted across the splits and sorted differently among descendants. This process is *incomplete lineage sorting*.
+
+=== layout: one-panel
+
+# A Gene Date May Predate a Species Split
+
+@notes
+
+Connect the two cautions: ortholog choice avoids dating an older duplication, but even orthologous copies can have a common ancestor older than the species split. Do not equate every gene-node date with the date a species formed.
+
+@body
+
+- Two sampled gene copies can share an ancestor in an older ancestral population.
+- Their gene common ancestor can therefore be older than the species split.
+- Species-history analyses use multiple loci and models that account for these differences.
+
+=== layout: one-panel
+
+# Explain the Result, Not Just the Number
+
+@notes
+
+Use this as a final verbal check. Give students time to explain in words. The following slide provides a study answer.
+
+@body
+
+A comparison gives d = 0.032 substitutions per site and uses r = 0.002 per lineage per million years.
+
+- What time does the simple clock estimate?
+- Name one assumption behind the estimate.
+- Why might the gene date differ from the species-split date?
+
+=== layout: one-panel
+
+# A Complete Answer Includes the Assumptions
+
+@notes
+
+Listen for the distinction between sequence distance, rate, and time. A student who only says eight has finished the arithmetic but not the interpretation.
+
+@body
+
+- The simple clock estimates 8 million years: t = d / (2r).
+- It assumes the stated rate applies to both branches and that the distance estimates substitutions adequately.
+- The gene copies can trace back to an ancestor older than the species split.
+- Calibration and rate uncertainty also affect the date.
+
+=== layout: one-panel
+
+# Molecular Clock Reference
+
+@notes
+
+This slide is the reusable calculation reference. Gene ancestry and species ancestry need separate interpretation. Some sources define a combined two-lineage rate; that convention absorbs the factor of two. Always read the rate definition.
+
+@body
+
+- d = 2rt; therefore t = d / (2r) and r = d / (2t).
+- d: pairwise substitutions per site.
+- r: substitutions per site per time unit, for one lineage.
+- t: elapsed time since the shared gene ancestor.
+- Use comparable gene copies, a calibrated rate, and consistent units. The simple formula assumes equal average rates on the two branches.
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Sequence differences need a calibrated rate to become a time estimate.
+- Compare gene copies with the history you want to study.
+- Different sequences and lineages can change at different rates.
+- Two branches contribute to a present-day pairwise distance.
+- A gene common ancestor and a species split can have different dates.
+
+=== layout: theend
+
+# THE END

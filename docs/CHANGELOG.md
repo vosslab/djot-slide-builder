@@ -8,6 +8,15 @@
 
 ### Behavior or Interface Changes
 
+- Give C31 irregular, matching sister-chromatid bands in C36's purple/pale-yellow palette.
+  Preserve reversed G/R patterns and pericentromeric C-bands; identify the colors and widths
+  as schematic in the prototype's native caption.
+
+- Default SVG canvases to transparency through the shared writer and inherited recipe trees,
+  preserving white structures, panels, and definition paint. Remove 40 canvas rectangles from
+  the chromosome review and tighten C31/C44-C46 around their visible content. Export vector
+  plots with transparent, content-fitted canvases and a small margin.
+
 - Color-code each merge stage in Genetics 11E across headings, selected matrix cells,
   cluster labels, and tree branches, retaining previous stages in the growing trees.
 
@@ -15,6 +24,20 @@
   centered ink and multi-letter allele superscripts. Embed C25/C26/C60/C63 loci while
   preserving chromosome identities, genotypes, source positions and C25's schematic distal
   locus order. Reuse the same helper in the inversion recipes and regenerate the prototype.
+- Widen C60/C63's schematic rods for readable internal symbols. Keep C63 strip backgrounds
+  transparent and pad their viewports so neighboring components preserve full centromere
+  collars. Add two C63 detail views alongside the dense three-column overview.
+
+- Split Genetics 11C into sequence/method concepts and distance-to-tree construction.
+  Separate the class and extension activity into their own decks, and renumber C-H
+  with distinct titles, objectives, summaries, and updated artifact links.
+
+- Pair Genetics 11B primate questions with on-click answers while preserving diagram size;
+  restore a saturated orange tree using the course palette.
+
+- Expand Genetics 11F into a 49-slide explanation of gene choice, substitution rates,
+  calibrated clocks, and gene versus species dates. Preserve the original figures, repair
+  the Adh map, correct inherited definitions, and add worked steps and speaking notes.
 
 - Give Genetics 11B-F distinct topic-based cover titles and matching canonical
   filenames, including Five Sequences and Weighted Averages for the former More Gene Trees.
@@ -166,6 +189,24 @@
   `pyflakes` and focused tests; the cache scan is clean.
 
 ### Developer Tests and Notes
+
+- C31 banding: 18 focused chromosome tests and pyflakes pass. Inspect the updated native
+  PDF slide 32, verify its SVG is embedded unchanged, and compare all review/source asset
+  hashes to confirm that only C31 artwork changed. The base suite was not rerun for this
+  recipe-only styling change.
+
+- SVG transparency: 24 focused checks pass. All 70 review SVGs render with transparent
+  space, and foreground comparison permits only 40 canvas removals and the four authored
+  crops. Preserve all 68 original lecture SVGs, verify all 70 current inputs in the native
+  ODP, and inspect C31/C44-C46 in the exported PDF. Base suite: 9,398 passes, with the two
+  existing LECT11 fragment-cover and review-document-length failures remaining.
+
+- Gene labeling: 22 focused SVG tests pass. Verify all C25/C26/C60/C63 alleles, C28/C53's
+  preserved geometry, unchanged original chromosome lecture outputs, and all 70 current SVG
+  inputs embedded in the 73-slide native review. C63's two detail views partition the same
+  overview components without changing their content; both pass final native slide inspection.
+  Base suite: 9,401 passes and two separate
+  LECT11 failures (the unused four-step fragment cover and the overlong review document).
 
 - Chromosome smoothness: 17 focused geometry tests pass. Verify 835 regenerated body
   centerlines, C28's unchanged geometry apart from its new joins, C30's 15 band heights,

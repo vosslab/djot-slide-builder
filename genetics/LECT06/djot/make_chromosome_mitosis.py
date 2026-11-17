@@ -3,6 +3,7 @@
 import argparse
 import pathlib
 import re
+import subprocess
 import xml.etree.ElementTree as xml
 import defusedxml.ElementTree as DET
 
@@ -10,11 +11,14 @@ import svgpathtools
 
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 
 
 ASSETS = ('m_checkpoint_stop', 'm_checkpoint_go', 'mitosis_interphase_prophase',
 	'mitosis_prometaphase_metaphase', 'mitosis_anaphase_telophase')
-DIRECTORY = pathlib.Path(__file__).resolve().parent
+REPOSITORY_ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+DIRECTORY = REPOSITORY_ROOT / 'genetics/LECT06/djot'
 OUT = DIRECTORY / 'assets' / 'lect06b-intro_cells'
 TEMPLATES = DIRECTORY / 'chromosome_models' / 'mitosis'
 SVG = '{http://www.w3.org/2000/svg}'
@@ -137,6 +141,7 @@ def main(output_root: pathlib.Path | None = None) -> None:
 	for stem in ASSETS:
 		root = DET.parse(TEMPLATES / (stem + '.drawn.svg')).getroot()
 		manifest[stem] = replace_groups(root)
+		svg_tools.drawing.remove_canvas_background(root)
 		output = output_dir / (stem + '.drawn.svg')
 		xml.ElementTree(root).write(output, encoding='unicode')
 

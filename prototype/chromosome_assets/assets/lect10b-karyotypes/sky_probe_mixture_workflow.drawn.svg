@@ -2,7 +2,6 @@
 <title id="title">SKY probe mixture workflow</title>
 <desc id="desc">Six representative flow-sorted chromosome tubes feed six labeled probe tubes, followed by a mixed probe tube and hybridization on a metaphase preparation slide. The mixed colors are schematic, not measured quantities.</desc>
 <defs><clipPath id="tube-interior"><path d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" /></clipPath><linearGradient id="tube-glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffffff" /><stop offset=".55" stop-color="#edf2f4" /><stop offset="1" stop-color="#dfe6eb" /></linearGradient><linearGradient id="slide-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9fcfd" /><stop offset="1" stop-color="#e6f0f4" /></linearGradient></defs>
-<rect width="1158" height="614" fill="white" />
 <text id="panel-a" x="190" y="43" font-family="Atkinson Hyperlegible Next" font-size="27" font-weight="700" text-anchor="start" fill="#202529">a</text>
 <g id="tube-source-0" transform="translate(300 67)">
 <path id="tube-body-source-0" d="M-18 0 C-18 43 -12 83 0 96 C12 83 18 43 18 0 Z" fill="url(#tube-glass)" stroke="#747982" stroke-width="2.4" />

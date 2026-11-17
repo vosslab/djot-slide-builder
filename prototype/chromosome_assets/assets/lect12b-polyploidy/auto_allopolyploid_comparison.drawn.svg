@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2119" height="1485" viewBox="0 0 1200 840.962718263" role="img" aria-labelledby="figure-title figure-description">
 <title id="figure-title">Autopolyploidy and allopolyploidy</title>
 <desc id="figure-description">Conceptual, unscaled comparison. Each diploid parent has four single chromosomes: two long blue rods and two short red rods. Dark colors identify species A; light colors identify species B. The autotetraploid contains two complete diploid A genomes, eight rods. The allotetraploid contains one complete diploid A genome and one complete diploid B genome, eight rods. Rods are unreplicated chromosomes; their narrowed waists represent centromeres.</desc>
-<rect width="1200" height="840.962718263" fill="#ffffff" />
 <path d="M 534,38 V 801" stroke="#e4e9eb" stroke-width="1.5" />
 <g id="labels" fill="#263b48" font-family="Atkinson Hyperlegible Next, sans-serif">
   <text id="auto-heading" x="255" y="46" text-anchor="middle" font-size="32" font-weight="bold">Autopolyploidy</text>

@@ -57,7 +57,7 @@ def box(x: float, y: float, w: float, h: float, lines: list[str], size: float = 
 
 
 def main(path: pathlib.Path) -> None:
-	body='<rect width="1125" height="613" fill="white"/>'
+	body=''
 	body+='<defs><marker id="process-head" markerUnits="userSpaceOnUse" markerWidth="17" markerHeight="13" refX="16" refY="6.5" orient="auto"><path d="M1 1L16 6.5L1 12" fill="none" stroke="#344651" stroke-width="2"/></marker></defs>'
 	body+=rod('ancestor-top',242,114,model(RUNS[0],(260,)))
 	body+=rod('ancestor-bottom',291,270,model(RUNS[1],(295,)))

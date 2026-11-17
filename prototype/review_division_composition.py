@@ -5,6 +5,8 @@ import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
+import svg_tools.drawing
+
 
 SVG = '{http://www.w3.org/2000/svg}'
 ET.register_namespace('', 'http://www.w3.org/2000/svg')
@@ -38,8 +40,9 @@ def _crop_c13(path: Path) -> None:
 
 def _crop_c25(path: Path) -> None:
 	root = DET.parse(path).getroot()
+	svg_tools.drawing.remove_canvas_background(root)
 	nodes = list(root)
-	for index in (9, 10, 11, 12, 13, 23, 24):
+	for index in (8, 9, 10, 11, 12, 22, 23):
 		root.remove(nodes[index])
 	root.set('height', '430')
 	root.set('viewBox', '0 0 826 430')

@@ -14,6 +14,7 @@ import svgpathtools
 import subprocess
 import svg_tools.chromosomes as chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 import svg_tools.parts
 
 
@@ -210,10 +211,12 @@ def main() -> None:
 		root = render_source(name, source)
 		if name == 'inversion_loop_without_crossover':
 			loop = root
+		svg_tools.drawing.remove_canvas_background(root)
 		(out / (name + '.drawn.svg')).write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
 	if loop is None:
 		raise ValueError('Missing inversion loop source')
 	root = image_006(loop, sources['image_006'])
+	svg_tools.drawing.remove_canvas_background(root)
 	(out / 'image_006_replacement.svg').write_bytes(
 		ET.tostring(root, encoding='ascii', xml_declaration=True))
 

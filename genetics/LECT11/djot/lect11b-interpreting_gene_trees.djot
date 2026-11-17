@@ -137,11 +137,15 @@ color-theme: genetics
 
 @body
 
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+![Original primate tree with saturated orange branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
 
 === layout: two-panels
 
 # Which pair of species are the most closely related?
+
+@notes
+
+Ask for the answer and the shared ancestor that supports it. Click to reveal the answer while keeping the tree visible.
 
 @left
 
@@ -150,13 +154,21 @@ color-theme: genetics
 - C. bonobo and gorilla
 - D. bonobo and human
 
+=> appear
+[*Answer: D. Bonobo and human.*\
+Their shared ancestor is 5 million years old, the most recent among these choices.]{color=#D40000}
+
 @right
 
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+![Original primate tree with saturated orange branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
 
 === layout: two-panels
 
 # Which pair of species are the most closely related?
+
+@notes
+
+Ask for the answer and the shared ancestor that supports it. Click to reveal the answer while keeping the tree visible.
 
 @left
 
@@ -165,13 +177,21 @@ color-theme: genetics
 - C. human and gorilla
 - D. gibbon and gorilla
 
+=> appear
+[*Answer: B. Bonobo and chimpanzee.*\
+Their shared ancestor is 2 million years old; the orangutan pair shares an ancestor 3 million years ago.]{color=#D40000}
+
 @right
 
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+![Original primate tree with saturated orange branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
 
 === layout: two-panels
 
 # When Did Gorillas and Bonobos Share Their Most Recent Common Ancestor?
+
+@notes
+
+Ask for the answer and the shared ancestor that supports it. Click to reveal the answer while keeping the tree visible.
 
 @left
 
@@ -181,55 +201,13 @@ color-theme: genetics
 - D. 15 million
 - E. 21 million
 
-@right
-
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
-
-=== layout: two-panels
-
-# Which pair of species are the most closely related?
-
-@left
-
-- A. gorilla and human (7)
-- B. gibbon and gorilla (21)
-- C. bonobo and gorilla (7)
-- [D. bonobo and human (5)]{color=red}
+=> appear
+[*Answer: C. 7 million years ago.*\
+Trace the gorilla and bonobo branches back to the node where they meet.]{color=#D40000}
 
 @right
 
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
-
-=== layout: two-panels
-
-# Which pair of species are the most closely related?
-
-@left
-
-- A. Bornean orangutan and Sumatran orangutan (3)
-- [B. bonobo and chimpanzee (2)]{color=red}
-- C. human and gorilla (7)
-- D. gibbon and gorilla (21)
-
-@right
-
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
-
-=== layout: two-panels
-
-# When Did Gorillas and Bonobos Share Their Most Recent Common Ancestor?
-
-@left
-
-- A. 2 million
-- B. 5 million
-- [C. 7 million]{color=red}
-- D. 15 million
-- E. 21 million
-
-@right
-
-![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+![Original primate tree with saturated orange branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
 
 === layout: one-panel
 

@@ -4,6 +4,10 @@ Final closeout, November 14, 2026. The integration review has the authoritative 
 hashes and native object inventory. These are current hashes captured before scratch cleanup;
 the earlier temporary inventory predates the final C repair and is superseded.
 
+Historical naming note: the November 14 C/D/F source labels below predate the later Lecture 11
+split and renumbering. The current five-sequence, class-activity, and clock sources are 11D,
+11F, and 11H, respectively; artifact names and hashes retain their original record.
+
 From the repository root, the actual build commands below invoked LibreOffice outside the
 sandbox. Rebuilding all outputs changes the binary hashes; the recorded hashes identify the
 reviewed artifacts. The generator rebuilds the fixed illustrative data and SVG fragments.
@@ -53,8 +57,8 @@ ab93baaa4b76d8c055bf6b79e2bd086c297b47c8c291e431a13533b04b58e059  genetics/LECT1
 d5b62fc5a12ae66011ec76c393a53529484e430f52f6ffe71442212a6ae579bb  genetics/LECT11/djot/lect11a-2026_announcements.djot
 7386d89db228b3a4e944a8b2a0ed1d212f21e2f148f99d496f875810c8dbcb57  genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot
 240115879f9def321ce1b49108c1d23dc5dbb7f8c31d284e52471a5a1683ed03  genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot
-836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11e-upgma_group_activity.djot
-a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11f-molecular_clocks.djot
+836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11f-upgma_class_activity.djot
+a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11h-molecular_clocks.djot
 dd51af0fca4f020e251be6b1aa5ffacd4b9dba9b76b83f5934a0f9ea43abc47b  genetics/LECT12/djot/lect12a-2026_announcements.djot
 01a70b241cbd9253dec7b584b8a8faf23d72807e9edf49690f1f72efbb836181  genetics/LECT12/djot/lect12b-polyploidy.djot
 9b2f41768ab40056a3cad68dbf1137cc5e9cdaa5bfbd151164ba02fcb015b7c5  genetics/LECT12/djot/lect12c-sex_dosage.djot

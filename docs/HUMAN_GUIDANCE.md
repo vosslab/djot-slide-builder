@@ -1,5 +1,8 @@
 # Human guidance
 
+- I prefer SVGs without a canvas background so the natural slide background shows through.
+  Use tighter crops, including C44, rather than unnecessary outer padding (November 17, 2026).
+
 - For chromosome gene labels, C53 does it best, with C01/C47 second best. Use consistent
   locus placement and distinguish gene regions from chromosome banding and colored sections
   (November 17, 2026).

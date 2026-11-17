@@ -1,22 +1,33 @@
 #!/usr/bin/env python3
 """Refresh LECT12C chromosomes while retaining authored labels and diagram geometry.
 
-Run from the repository root with PYTHONPATH set to that root. Condensed Barr bodies,
+Run with source source_me.sh && python3 genetics/LECT12/djot/lect12c_chromosome_recipes.py.
+Condensed Barr bodies,
 expression bars, and the source-backed gene distribution map retain their own forms.
 """
 
 import re
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
-ROOT = pathlib.Path(__file__).parent / 'assets'
+REPO_ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+ROOT = REPO_ROOT / 'genetics/LECT12/djot/assets'
 NS = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', NS)
 
+# C44-C46 keep a measured 12-unit clear edge around the visible teaching content.
+CANVAS_CROPS = {
+	'x_inactivation_lineages.drawn.svg': ('44 9 1067 644', '1067', '644'),
+	'calico_x_lineages.drawn.svg': ('80 1 455 541', '455', '541'),
+	'pseudoautosomal_crossover.drawn.svg': ('59 29 532 554', '532', '554'),
+}
 
 #============================================
 def rod(name: str, x: float, y: float, width: float, length: float,
@@ -174,6 +185,12 @@ def refresh(path: pathlib.Path) -> None:
 				group.append(replacement)
 	if path.name == 'x_inactivation_lineages.drawn.svg':
 		replace_barr_bodies(root, name)
+	svg_tools.drawing.remove_canvas_background(root)
+	crop = CANVAS_CROPS.get(path.name)
+	if crop is not None:
+		root.set('viewBox', crop[0])
+		root.set('width', crop[1])
+		root.set('height', crop[2])
 	ET.indent(tree, space='  ')
 	tree.write(path, encoding='ascii', xml_declaration=True)
 

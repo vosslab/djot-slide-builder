@@ -36,10 +36,12 @@ source maps are linked from the two reviews.
 | --- | --- | --- |
 | 11A | [lect11a-2026_announcements.djot](../genetics/LECT11/djot/lect11a-2026_announcements.djot) | `output/odp/lect11a-2026_announcements.odp`, `output/pdf/lect11a-2026_announcements.pdf` |
 | 11B | [lect11b-interpreting_gene_trees.djot](../genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot) | `output/odp/lect11b-interpreting_gene_trees.odp`, `output/pdf/lect11b-interpreting_gene_trees.pdf` |
-| 11C | [lect11c-building_gene_trees.djot](../genetics/LECT11/djot/lect11c-building_gene_trees.djot) | `output/odp/lect11c-building_gene_trees.odp`, `output/pdf/lect11c-building_gene_trees.pdf` |
-| 11D | [lect11d-upgma_weighted_averages.djot](../genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot) | `output/odp/lect11d-upgma_weighted_averages.odp`, `output/pdf/lect11d-upgma_weighted_averages.pdf` |
-| 11E | [lect11e-upgma_group_activity.djot](../genetics/LECT11/djot/lect11e-upgma_group_activity.djot) | `output/odp/lect11e-upgma_group_activity.odp`, `output/pdf/lect11e-upgma_group_activity.pdf` |
-| 11F | [lect11f-molecular_clocks.djot](../genetics/LECT11/djot/lect11f-molecular_clocks.djot) | `output/odp/lect11f-molecular_clocks.odp`, `output/pdf/lect11f-molecular_clocks.pdf` |
+| 11C | [lect11c-gene_trees_from_sequences.djot](../genetics/LECT11/djot/lect11c-gene_trees_from_sequences.djot) | `output/odp/lect11c-gene_trees_from_sequences.odp`, `output/pdf/lect11c-gene_trees_from_sequences.pdf` |
+| 11D | [lect11d-upgma_three_and_four_sequences.djot](../genetics/LECT11/djot/lect11d-upgma_three_and_four_sequences.djot) | `output/odp/lect11d-upgma_three_and_four_sequences.odp`, `output/pdf/lect11d-upgma_three_and_four_sequences.pdf` |
+| 11E | [lect11e-upgma_weighted_averages.djot](../genetics/LECT11/djot/lect11e-upgma_weighted_averages.djot) | `output/odp/lect11e-upgma_weighted_averages.odp`, `output/pdf/lect11e-upgma_weighted_averages.pdf` |
+| 11F | [lect11f-upgma_class_activity.djot](../genetics/LECT11/djot/lect11f-upgma_class_activity.djot) | `output/odp/lect11f-upgma_class_activity.odp`, `output/pdf/lect11f-upgma_class_activity.pdf` |
+| 11G | [lect11g-upgma_extension_activity.djot](../genetics/LECT11/djot/lect11g-upgma_extension_activity.djot) | `output/odp/lect11g-upgma_extension_activity.odp`, `output/pdf/lect11g-upgma_extension_activity.pdf` |
+| 11H | [lect11h-molecular_clocks.djot](../genetics/LECT11/djot/lect11h-molecular_clocks.djot) | `output/odp/lect11h-molecular_clocks.odp`, `output/pdf/lect11h-molecular_clocks.pdf` |
 | 12A | [lect12a-2026_announcements.djot](../genetics/LECT12/djot/lect12a-2026_announcements.djot) | `output/odp/lect12a-2026_announcements.odp`, `output/pdf/lect12a-2026_announcements.pdf` |
 | 12B | [lect12b-polyploidy.djot](../genetics/LECT12/djot/lect12b-polyploidy.djot) | `output/odp/lect12b-polyploidy.odp`, `output/pdf/lect12b-polyploidy.pdf` |
 | 12C | [lect12c-sex_dosage.djot](../genetics/LECT12/djot/lect12c-sex_dosage.djot) | `output/odp/lect12c-sex_dosage.odp`, `output/pdf/lect12c-sex_dosage.pdf` |
@@ -126,3 +128,10 @@ The counts and build evidence below describe the earlier refresh before the B/C/
   as classroom-ready. Some inherited announcement evergreen font advisories remain.
 - Interactive Impress, live Zoom, classroom use, and the full base suite including Git-dependent
   hygiene were not checked.
+## Second November 17 split
+
+Current C-H now separate sequence/method concepts, three-/four-sequence construction,
+five-sequence weighting, the class worksheet, the extension worksheet, and molecular clocks.
+The current [Lecture 11 source map](../genetics/LECT11/djot/LECT11_SOURCE_MAP.md) supersedes
+earlier deck letters and counts in this historical report. All example fragments, data,
+figures, and printable handouts are unchanged.

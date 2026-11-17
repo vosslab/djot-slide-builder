@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Build the LECT04 gamete-to-zygote scene as locally authored editable SVG.
+"""Build the LECT04 gamete-to-zygote scene as locally authored SVG.
 
 The source is a watermarked stock raster.  This recipe preserves its teaching
 composition but does not copy pixels or geometry from that source.
 """
 
 import pathlib
+import subprocess
 import sys
 
 import svg_tools.cells
@@ -16,7 +17,9 @@ import svg_tools.parts
 
 INK = '#344651'
 FONT = 'Atkinson Hyperlegible Next'
-OUT = pathlib.Path(__file__).with_name('fertilization_scene.drawn.svg')
+OUT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / (
+	'genetics/LECT04/djot/assets/lect04e-segregation/fertilization_scene.drawn.svg')
 
 
 #============================================
@@ -70,8 +73,7 @@ def sperm() -> str:
 #============================================
 def main(output: pathlib.Path = OUT) -> None:
 	"""Write one source-preserving, stand-alone figure at the source aspect ratio."""
-	body = '<rect width="800" height="311" fill="#FFFFFF"/>'
-	body += text(151, 30, 'Egg', 26)
+	body = text(151, 30, 'Egg', 26)
 	body += text(319, 85, 'Sperm', 26)
 	body += text(647, 30, 'Zygote', 26)
 	body += cell('egg', 151, 159, 178, 178, '#f6c955', 'XX')

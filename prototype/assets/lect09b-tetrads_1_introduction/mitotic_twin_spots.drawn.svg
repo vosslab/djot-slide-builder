@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="826" height="430" viewBox="0 0 826 430" role="img" aria-labelledby="figure-title figure-desc">
   <title id="figure-title">Mitotic twin-spot outcomes</title>
   <desc id="figure-desc">Two replicated homologs carry aB and Ab in trans. The inner nonsisters exchange distal material at one breakpoint proximal to both loci. The two rows are alternative daughter-cell pairs: two heterozygotes, or homozygous aa and homozygous bb twin spots. Colors encode chromosome ancestry; positions and shapes are schematic.</desc>
-  <rect width="826" height="456" fill="white" />
   <text x="568" y="27" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="22" text-anchor="middle">Daughter cells</text>
   <g id="input-four-chromatids">
     <g id="input-blue-unchanged" data-allele="aB" data-proximal="blue" data-distal="blue">

@@ -4,6 +4,7 @@ import contextlib
 import io
 import pathlib
 import collections.abc
+import subprocess
 
 import matplotlib
 import matplotlib.figure
@@ -40,7 +41,8 @@ def figure_to_part(figure: matplotlib.figure.Figure, *, name: str, size: float |
 
 	Raster artists are rejected by the SVG importer. The caller owns the figure.
 	"""
-	font_dir = pathlib.Path(__file__).resolve().parent.parent / 'assets/fonts/atkinson_hyperlegible_next'
+	font_dir = pathlib.Path(subprocess.check_output(
+		['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'assets/fonts/atkinson_hyperlegible_next'
 	original = []
 	try:
 		for text in figure.findobj(match=matplotlib.text.Text):
@@ -55,7 +57,14 @@ def figure_to_part(figure: matplotlib.figure.Figure, *, name: str, size: float |
 			text.set_fontproperties(properties)
 		with matplotlib.rc_context({'svg.fonttype': 'none', 'svg.hashsalt': 'djot_slide_builder'}):
 			output = io.BytesIO()
-			figure.savefig(output, format='svg', metadata={'Date': None})
+			figure.savefig(
+				output,
+				format='svg',
+				metadata={'Date': None},
+				transparent=True,
+				bbox_inches='tight',
+				pad_inches=.05,
+			)
 		return svg_tools.svg_import.import_svg(output.getvalue(), name=name, size=size)
 	finally:
 		for text, properties in original:

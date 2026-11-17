@@ -41,7 +41,7 @@ The official convention and shared rendering pipeline are in
 | C54 | Preserve molecular opsin gene tracks and their magnification callout. |
 | C56-C59 | Use the shared locus adapter for gold regions and measured labels swept inside assigned rods/curves; preserve all alleles and source order. |
 | C60 | Embed `w+` at both source positions, separate from heterochromatin and the inversion breakpoints. |
-| C63 | Build embedded `rb+`, `dp+` and `dp` gene regions in the reusable components before composition; retain translocated ancestry colors and chromosome identifiers. |
+| C63 | Build embedded `rb+`, `dp+` and `dp` gene regions in reusable components; retain ancestry colors and chromosome identifiers. Keep the overview plus two enlarged detail views for readable gene names. |
 | C65 | Retain chromosome-number labels as chromosome identifiers. |
 
 The numerical positions in the recipes remain schematic unless their source explicitly

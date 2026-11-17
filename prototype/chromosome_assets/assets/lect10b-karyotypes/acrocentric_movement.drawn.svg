@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="480" viewBox="0 0 1500 480" role="img" aria-labelledby="figure-title figure-desc">
   <title id="figure-title">Acrocentric chromosome movement</title>
   <desc id="figure-desc">Two sequential views of one cell, schematic and not measured to scale. At metaphase, one replicated acrocentric chromosome has two continuous sister chromatids joined at their paired centromeric units. Opposite poles attach to the outward-facing unit of each sister. At anaphase, two single daughter chromosomes separate in the same cell: their centromeres lead toward opposite poles, and their long upper arms and very short lower tips trail toward the middle; the lower tips remain visible beyond the centromeres, distinguishing acrocentric from telocentric chromosomes.</desc>
-  <rect width="1500" height="480" fill="#ffffff" />
   <g font-family="Atkinson Hyperlegible Next" fill="#243b4b">
     <g id="cell-outlines" fill="#f7fafb" stroke="#b3c3cb" stroke-width="2.5">
       <path d="M 35 220 C 35 119 125 62 278 62 C 432 62 565 112 565 220 C 565 324 443 379 296 379 C 143 379 35 326 35 220 Z" />

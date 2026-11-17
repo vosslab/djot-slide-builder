@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 BASE = pathlib.Path(subprocess.check_output(
@@ -113,6 +114,7 @@ def build(name: str, model: dict) -> bytes:
 				replace(parent, slot, body_part(model))
 			elif marker_id:
 				replace(parent, slot, marker_part(marker_id, markers[marker_id]['thickness']))
+	svg_tools.drawing.remove_canvas_background(root)
 	data = ET.tostring(root, encoding='ascii', xml_declaration=True)
 	return data
 

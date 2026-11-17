@@ -54,8 +54,7 @@ def main(output_root: pathlib.Path) -> None:
 	reciprocal = chromosomes.reciprocal_translocation(donor, 6, recipient, 4)
 	body = ('<defs><marker id="process-head" markerUnits="userSpaceOnUse" '
 		'markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto">'
-		'<path d="M 0 0 L 16 8 L 0 16 Z" fill="#243746"/></marker></defs>'
-		'<rect width="1240" height="690" fill="#FFFFFF"/>')
+		'<path d="M 0 0 L 16 8 L 0 16 Z" fill="#243746"/></marker></defs>')
 	body += '<g id="insertion">' + panel('insertion', 'Insertional translocation',
 		'An internal segment (E-F) moves to another chromosome.', insertion) + '</g>'
 	body += '<g id="reciprocal" transform="translate(0 346)">' + panel('reciprocal',

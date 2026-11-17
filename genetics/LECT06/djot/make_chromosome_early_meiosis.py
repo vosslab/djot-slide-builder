@@ -2,12 +2,16 @@
 """Regenerate five early meiosis and homolog/sister figures from frozen sources."""
 import argparse
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
+import svg_tools.drawing
 
-DIRECTORY = pathlib.Path(__file__).resolve().parent
+REPOSITORY_ROOT = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
+DIRECTORY = REPOSITORY_ROOT / 'genetics/LECT06/djot'
 SOURCE = DIRECTORY / 'chromosome_models' / 'early_meiosis'
 OUTPUT = DIRECTORY / 'assets' / 'lect06c-meiosis'
 NAMES = ('meiosis_interphase', 'prophase_leptotene_zygotene',
@@ -63,6 +67,7 @@ def main() -> None:
 				for circle in group.findall(NS + 'circle'):
 					circle.set('fill', 'none')
 					circle.set('stroke', '#72508C')
+		svg_tools.drawing.remove_canvas_background(root)
 		output = output_dir / (name + '.drawn.svg')
 		output.write_text(ET.tostring(root, encoding='unicode') + '\n')
 

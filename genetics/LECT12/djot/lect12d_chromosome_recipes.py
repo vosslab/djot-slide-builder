@@ -16,6 +16,7 @@ import defusedxml.ElementTree as DET
 # Local repo modules
 import svgpathtools
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 from svg_tools.chromosomes import (
 	Centromere, Chromosome, Segment, chromosome_path_part, render_chromosome_layout,
 )
@@ -446,6 +447,7 @@ def path_body(
 	parent.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
 
 def write_svg(root: ET.Element, path: Path) -> None:
+	svg_tools.drawing.remove_canvas_background(root)
 	body=ET.tostring(root,encoding='unicode').encode('ascii','xmlcharrefreplace').decode('ascii')
 	path.write_text('<?xml version="1.0" encoding="UTF-8"?>\n'+body,encoding='ascii')
 

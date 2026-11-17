@@ -1,12 +1,15 @@
 """Source chromosome positions and labels, with shared chromosome bodies."""
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 NS = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', NS)
-HERE = pathlib.Path(__file__).resolve().parent
+HERE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT10/djot/lect10b_chromosome_recipe'
 # Group transforms in the template supply x positions; these are absolute y values.
 CENTERS = {'acrocentric':140, 'submetacentric':210, 'metacentric':247}
 
@@ -38,4 +41,5 @@ def main(destination: pathlib.Path) -> None:
 	slot.append(DET.fromstring(left.fragment)); slot.append(DET.fromstring(right.fragment))
 	marker_group = ET.SubElement(slot, f'{{{NS}}}g', {'transform':'translate(0 96) rotate(90)'})
 	marker_group.append(DET.fromstring(marker.fragment))
+	svg_tools.drawing.remove_canvas_background(root)
 	ET.ElementTree(root).write(destination,encoding='unicode')
