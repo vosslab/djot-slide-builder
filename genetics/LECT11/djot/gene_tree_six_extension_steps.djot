@@ -1,6 +1,6 @@
 === layout: two-panels
 
-# Find the Smallest Distance
+# [Join 1]{color=#D40000}: Find the Smallest Distance
 
 @left
 
@@ -22,7 +22,7 @@ Which clusters join? What are the new height and branch lengths?
 
 === layout: two-panels
 
-# Join the Closest Clusters
+# [Join 1]{color=#D40000}: Join the Closest Clusters
 
 @left
 
@@ -31,7 +31,7 @@ Which clusters join? What are the new height and branch lengths?
 | --- | --- | --- | --- | --- | --- | --- |
 | a |  |  |  |  |  |  |
 | b | 11 |  |  |  |  |  |
-| c | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 9 |  |  |  |  |
+| c | [4]{color=#D40000 background-color=#FFB8B8 border="0.5pt solid #D40000"} | 9 |  |  |  |  |
 | d | 12 | 9 | 10 |  |  |  |
 | e | 7 | 12 | 9 | 15 |  |  |
 | f | 14 | 11 | 12 | 6 | 13 |  |
@@ -44,7 +44,7 @@ a + c: distance 4; height 2. Branches: a 2; c 2.
 
 === layout: two-panels
 
-# Find the New Distances
+# [Join 1]{color=#D40000}: Find the New Distances
 
 @left
 
@@ -64,7 +64,7 @@ Join a and c. What are the distances from ac to b, d, e, f? Count each gene equa
 
 === layout: one-panel
 
-# Update the Distances
+# [Join 1]{color=#D40000}: Update the Distances
 
 @body
 
@@ -81,14 +81,14 @@ Average the original distances between genes in the two clusters.
 
 === layout: two-panels
 
-# Find the Smallest Distance
+# [Join 2]{color=#6C6C00}: Find the Smallest Distance
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | d | e | f |
+|  | [ac]{color=#D40000} | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |  |
 | b | 10 |  |  |  |  |
 | d | 11 | 9 |  |  |  |
 | e | 8 | 12 | 15 |  |  |
@@ -102,18 +102,18 @@ Which clusters join? What are the new height and branch lengths?
 
 === layout: two-panels
 
-# Join the Closest Clusters
+# [Join 2]{color=#6C6C00}: Join the Closest Clusters
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | d | e | f |
+|  | [ac]{color=#D40000} | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |  |
 | b | 10 |  |  |  |  |
 | d | 11 | 9 |  |  |  |
 | e | 8 | 12 | 15 |  |  |
-| f | 13 | 11 | [6]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 13 |  |
+| f | 13 | 11 | [6]{color=#6C6C00 background-color=#FFFFB8 border="0.5pt solid #6C6C00"} | 13 |  |
 
 d + f: distance 6; height 3. Branches: d 3; f 3.
 
@@ -123,14 +123,14 @@ d + f: distance 6; height 3. Branches: d 3; f 3.
 
 === layout: two-panels
 
-# Find the New Distances
+# [Join 2]{color=#6C6C00}: Find the New Distances
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | d | e | f |
+|  | [ac]{color=#D40000} | b | d | e | f |
 | --- | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |  |
 | b | 10 |  |  |  |  |
 | d | 11 | 9 |  |  |  |
 | e | 8 | 12 | 15 |  |  |
@@ -142,7 +142,7 @@ Join d and f. What are the distances from df to ac, b, e? Count each gene equall
 
 === layout: one-panel
 
-# Update the Distances
+# [Join 2]{color=#6C6C00}: Update the Distances
 
 @body
 
@@ -154,16 +154,16 @@ Average the original distances between genes in the two clusters.
 
 === layout: two-panels
 
-# Find the Smallest Distance
+# [Join 3]{color=#00775F}: Find the Smallest Distance
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | df | e |
+|  | [ac]{color=#D40000} | b | [df]{color=#6C6C00} | e |
 | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |
 | b | 10 |  |  |  |
-| df | 12 | 10 |  |  |
+| [df]{color=#6C6C00} | 12 | 10 |  |  |
 | e | 8 | 12 | 14 |  |
 
 Which clusters join? What are the new height and branch lengths?
@@ -174,17 +174,17 @@ Which clusters join? What are the new height and branch lengths?
 
 === layout: two-panels
 
-# Join the Closest Clusters
+# [Join 3]{color=#00775F}: Join the Closest Clusters
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | df | e |
+|  | [ac]{color=#D40000} | b | [df]{color=#6C6C00} | e |
 | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |
 | b | 10 |  |  |  |
-| df | 12 | 10 |  |  |
-| e | [8]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 12 | 14 |  |
+| [df]{color=#6C6C00} | 12 | 10 |  |  |
+| e | [8]{color=#00775F background-color=#B8FFF0 border="0.5pt solid #00775F"} | 12 | 14 |  |
 
 ac + e: distance 8; height 4. Branches: ac 2; e 4.
 
@@ -194,16 +194,16 @@ ac + e: distance 8; height 4. Branches: ac 2; e 4.
 
 === layout: two-panels
 
-# Find the New Distances
+# [Join 3]{color=#00775F}: Find the New Distances
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
-|  | ac | b | df | e |
+|  | [ac]{color=#D40000} | b | [df]{color=#6C6C00} | e |
 | --- | --- | --- | --- | --- |
-| ac |  |  |  |  |
+| [ac]{color=#D40000} |  |  |  |  |
 | b | 10 |  |  |  |
-| df | 12 | 10 |  |  |
+| [df]{color=#6C6C00} | 12 | 10 |  |  |
 | e | 8 | 12 | 14 |  |
 
 @right
@@ -212,7 +212,7 @@ Join ac and e. What are the distances from ace to b, df? Count each gene equally
 
 === layout: one-panel
 
-# Update the Distances
+# [Join 3]{color=#00775F}: Update the Distances
 
 @body
 
@@ -227,16 +227,16 @@ Average the original distances between genes in the two clusters.
 
 === layout: two-panels
 
-# Find the Smallest Distance
+# [Join 4]{color=#0067CC}: Find the Smallest Distance
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
-|  | ace | b | df |
+|  | [ace]{color=#00775F} | b | [df]{color=#6C6C00} |
 | --- | --- | --- | --- |
-| ace |  |  |  |
+| [ace]{color=#00775F} |  |  |  |
 | b | 32/3 |  |  |
-| df | 38/3 | 10 |  |
+| [df]{color=#6C6C00} | 38/3 | 10 |  |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -246,16 +246,16 @@ Which clusters join? What are the new height and branch lengths?
 
 === layout: two-panels
 
-# Join the Closest Clusters
+# [Join 4]{color=#0067CC}: Join the Closest Clusters
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
-|  | ace | b | df |
+|  | [ace]{color=#00775F} | b | [df]{color=#6C6C00} |
 | --- | --- | --- | --- |
-| ace |  |  |  |
+| [ace]{color=#00775F} |  |  |  |
 | b | 32/3 |  |  |
-| df | 38/3 | [10]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
+| [df]{color=#6C6C00} | 38/3 | [10]{color=#0067CC background-color=#B8DCFF border="0.5pt solid #0067CC"} |  |
 
 b + df: distance 10; height 5. Branches: b 5; df 2.
 
@@ -265,16 +265,16 @@ b + df: distance 10; height 5. Branches: b 5; df 2.
 
 === layout: two-panels
 
-# Find the New Distances
+# [Join 4]{color=#0067CC}: Find the New Distances
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
-|  | ace | b | df |
+|  | [ace]{color=#00775F} | b | [df]{color=#6C6C00} |
 | --- | --- | --- | --- |
-| ace |  |  |  |
+| [ace]{color=#00775F} |  |  |  |
 | b | 32/3 |  |  |
-| df | 38/3 | 10 |  |
+| [df]{color=#6C6C00} | 38/3 | 10 |  |
 
 @right
 
@@ -282,7 +282,7 @@ Join b and df. What are the distances from bdf to ace? Count each gene equally.
 
 === layout: one-panel
 
-# Update the Distances
+# [Join 4]{color=#0067CC}: Update the Distances
 
 @body
 
@@ -292,15 +292,15 @@ Average the original distances between genes in the two clusters.
 
 === layout: two-panels
 
-# Find the Smallest Distance
+# [Join 5]{color=#CC0066}: Find the Smallest Distance
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-2 padding="3pt 2pt" font-size=22pt}
-|  | ace | bdf |
+|  | [ace]{color=#00775F} | [bdf]{color=#0067CC} |
 | --- | --- | --- |
-| ace |  |  |
-| bdf | 12 |  |
+| [ace]{color=#00775F} |  |  |
+| [bdf]{color=#0067CC} | 12 |  |
 
 Which clusters join? What are the new height and branch lengths?
 
@@ -310,15 +310,15 @@ Which clusters join? What are the new height and branch lengths?
 
 === layout: two-panels
 
-# Join the Closest Clusters
+# [Join 5]{color=#CC0066}: Join the Closest Clusters
 
 @left
 
 {table-style=matrix-lower table-group=gene-tree-six_extension-2 padding="3pt 2pt" font-size=22pt}
-|  | ace | bdf |
+|  | [ace]{color=#00775F} | [bdf]{color=#0067CC} |
 | --- | --- | --- |
-| ace |  |  |
-| bdf | [12]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
+| [ace]{color=#00775F} |  |  |
+| [bdf]{color=#0067CC} | [12]{color=#CC0066 background-color=#FFB8DC border="0.5pt solid #CC0066"} |  |
 
 ace + bdf: distance 12; height 6. Branches: ace 2; bdf 1.
 
@@ -360,11 +360,11 @@ Review the Completed Tree
 
 | Node | Height | Branches to Children |
 | --- | --- | --- |
-| ac | 2 | a: 2; c: 2 |
-| df | 3 | d: 3; f: 3 |
-| ace | 4 | ac: 2; e: 4 |
-| bdf | 5 | b: 5; df: 2 |
-| abcdef | 6 | ace: 2; bdf: 1 |
+| [ac]{color=#D40000} | 2 | a: 2; c: 2 |
+| [df]{color=#6C6C00} | 3 | d: 3; f: 3 |
+| [ace]{color=#00775F} | 4 | ac: 2; e: 4 |
+| [bdf]{color=#0067CC} | 5 | b: 5; df: 2 |
+| [abcdef]{color=#CC0066} | 6 | ace: 2; bdf: 1 |
 
 === layout: one-panel
 

@@ -39,9 +39,11 @@ def _gene_runs(label: str) -> list[svg_tools.text.TextRun]:
 	"""Keep gene symbols together while raising a terminal allele sign."""
 	match = re.fullmatch(r'(.+)([+-])', label)
 	if match:
-		return [svg_tools.text.TextRun(match.group(1), bold=True, italic=True),
+		runs = [svg_tools.text.TextRun(match.group(1), bold=True, italic=True),
 			svg_tools.text.TextRun(match.group(2), bold=True, script='super')]
-	return [svg_tools.text.TextRun(label, bold=True)]
+	else:
+		runs = [svg_tools.text.TextRun(label, bold=True)]
+	return runs
 
 
 #============================================
@@ -56,12 +58,13 @@ def _gene_label_part(label: str, size: float, color: str) -> svg_tools.parts.Svg
 		root.append(span)
 	root.remove(line)
 	fragment = xml.etree.ElementTree.tostring(root, encoding='ascii', xml_declaration=False).decode('ascii')
-	return dataclasses.replace(part, fragment=fragment)
+	part = dataclasses.replace(part, fragment=fragment)
+	return part
 
 
 #============================================
 def _append_gene_label(parent: xml.etree.ElementTree.Element, x: float, y: float,
-	label: str, size: float, color: str) -> svg_tools.parts.SvgPart:
+	label: str, size: float, color: str) -> tuple[float, float, float, float]:
 	"""Center measured label ink over one chromosome point."""
 	part = _gene_label_part(label, size, color)
 	shift_x, shift_y = x-part.anchors['center'][0], y-part.anchors['center'][1]
@@ -74,7 +77,7 @@ def _append_gene_label(parent: xml.etree.ElementTree.Element, x: float, y: float
 	parent.append(root)
 	xmin, ymin, xmax, ymax = part.bounds
 	bounds = (xmin+shift_x, ymin+shift_y, xmax+shift_x, ymax+shift_y)
-	return dataclasses.replace(part, bounds=bounds)
+	return bounds
 
 
 #============================================
@@ -90,7 +93,8 @@ def _label_size(label: str, surface: svg_tools.chromosome_surface.Surface,
 	across = [point.real*normal.real+point.imag*normal.imag for point in corners]
 	along_per_unit = (max(along)-min(along))/100
 	across_per_unit = (max(across)-min(across))/100
-	return min(surface.width*.52, length*.82/along_per_unit, width*.82/across_per_unit)
+	size = min(surface.width*.52, length*.82/along_per_unit, width*.82/across_per_unit)
+	return size
 
 
 #============================================
@@ -177,17 +181,18 @@ def gene_locus_part(name: str, surface: svg_tools.chromosome_surface.Surface,
 		'stroke-linejoin': 'round', 'class': 'gene-locus'})
 	point = surface.point(center, 0)
 	size = _label_size(gene.label, surface, center, gene.length, inner_width, gene.color)
-	label_part = _append_gene_label(group, point.real, point.imag, gene.label, size, gene.color)
+	label_bounds = _append_gene_label(group, point.real, point.imag, gene.label, size, gene.color)
 	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
 	path = surface.path.cropped(surface.path.ilength(start), surface.path.ilength(end))
 	xmin, xmax, ymin, ymax = path.bbox()
 	margin = inner_width/2+stroke/2
-	bounds = (min(xmin-margin, label_part.bounds[0]), min(ymin-margin, label_part.bounds[1]),
-		max(xmax+margin, label_part.bounds[2]), max(ymax+margin, label_part.bounds[3]))
+	bounds = (min(xmin-margin, label_bounds[0]), min(ymin-margin, label_bounds[1]),
+		max(xmax+margin, label_bounds[2]), max(ymax+margin, label_bounds[3]))
 	start_point, end_point = surface.point(start, 0), surface.point(end, 0)
 	anchors = {'start': (start_point.real, start_point.imag), 'center': (point.real, point.imag),
 		'end': (end_point.real, end_point.imag)}
-	return svg_tools.parts.SvgPart(fragment, bounds, anchors)
+	part = svg_tools.parts.SvgPart(fragment, bounds, anchors)
+	return part
 
 
 @dataclasses.dataclass(frozen=True)
@@ -631,7 +636,7 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 			size = _label_size(segment.label, surface, center, right-left, thickness,
 				segment.color)
 			label_bounds.append(_append_gene_label(group, x, y, segment.label, size,
-				segment.color).bounds)
+				segment.color))
 	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
 	xmin, xmax, ymin, ymax = path.bbox()
 	margin = thickness/2 + stroke

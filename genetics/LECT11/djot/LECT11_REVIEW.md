@@ -7,7 +7,7 @@ The November 17 announcements have the corrected agenda and dates. The November 
 content and its unresolved source-5/Djot-7 substitution figure, including the replacement
 marker and detached labels. See [GENETICS_GENE_TREE_REFRESH_REPORT.md](../../../docs/GENETICS_GENE_TREE_REFRESH_REPORT.md)
 for current sources, accepted reviews, and preserved-deck limitations. Current A/B/C/D/E/F
-PDF page counts are 36/30/59/38/64/19; A retains 57 authored ODP slides including hidden slides.
+PDF page counts are 36/30/59/38/65/19; A retains 57 authored ODP slides including hidden slides.
 
 ## November 17 classroom updates
 
@@ -958,3 +958,26 @@ remain unchanged. Rebuild all five ODP/PDF pairs, verify cover titles and page c
 30/59/38/64/19, and visually inspect the covers. Native lint passes for 210 slides.
 The prior 11C character-methods font advisory and 11F figure marker remain.
 Evidence: `_temp/lect11_names_review/`. Live Impress playback untested.
+
+## November 17: color-code the five joins in 11E
+
+Use the documented five-stage rainbow selection: Red #D40000, Dark yellow #6C6C00,
+Teal #00775F, Navy #0067CC, Pink #CC0066. Numbered colored Join headings repeat across
+each merge's question, answer, and distance updates. Match selected matrix cells and
+new cluster labels to each join. Newly created tree branches, their height labels,
+and joined tip labels receive the join color; previous branches retain their colors.
+Color final node labels in the branch-length summary. Keep ordinary prose neutral.
+Add Follow the Join Colors at PDF 7; the extension restarts the same color sequence.
+11E now has 65 pages; the extension begins PDF 36, answers PDF 39-63.
+
+The existing recipe owns this behavior for the two six-gene examples. Regenerating
+four/five examples with before/after recipe versions gives byte-identical Djot and
+SVG output; those canonical artifacts were not regenerated or rebuilt. The two
+six-gene histories, all numeric values, SVG path geometry, and text positions match
+before/after. Before an answer reveal, the matrix does not highlight the selected
+cell. All 30 native tables preserve exact widths/heights and row/column dimensions
+against the pre-change export. No new capacity advisories. Native lint and pyflakes
+pass. Visually review all changed teaching pages and both completed trees after the
+ODP/PDF rebuild. Print handouts remain unchanged. Evidence and assertions:
+`_temp/lect11e_stage_colors_review/`, `_temp/check_lect11e_stage_colors.py`.
+Live Impress playback untested.

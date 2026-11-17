@@ -3,7 +3,7 @@
 November 17 update: 11B contains interpretation with an early vocabulary slide (30 pages), preserving the
 Khan Academy rotation figures, annotated trees, and branch-distance questions.
 New 11C contains construction methods, the restored three-rhino introduction, and
-the colored four-sequence UPGMA example (59 pages). Former C/D/E are now D/E/F (38/64/19 pages). See
+the colored four-sequence UPGMA example (59 pages). Former C/D/E are now D/E/F (38/65/19 pages). See
 [the current source map](../genetics/LECT11/djot/LECT11_SOURCE_MAP.md).
 The November 14 evidence below describes the earlier deck organization.
 

@@ -62,7 +62,8 @@ def labeled_segments(model: dict) -> tuple:
 				intervals.append(svg_tools.chromosomes.Segment('', region['color'], end-start))
 				break
 			position += region['length']
-	return tuple(intervals)
+	segments = tuple(intervals)
+	return segments
 
 
 def body_part(model: dict) -> ET.Element:

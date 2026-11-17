@@ -65,6 +65,22 @@ display order is shuffled so colors do not reveal the correct order. Keep each r
 identical and match step cross-references to its own method's colors. Preserve meaningful source
 colors when converting existing material unless recoloring is requested.
 
+## Genetics 11E merge stages
+
+Use five evenly spaced standard-palette colors for the five joins, restarting the
+same sequence for the extension problem. Match the stage label, selected matrix
+cell, new cluster label, newly added branches, and node-height label. Earlier branches
+and cluster labels keep their original stage colors. Pale selected-cell fills share
+the stage hue; the numbered Join labels also identify stages without color.
+
+| Join | Text and branch color | Selected-cell fill |
+| --- | --- | --- |
+| 1 | Red `#D40000` | `#FFB8B8` |
+| 2 | Dark yellow `#6C6C00` | `#FFFFB8` |
+| 3 | Teal `#00775F` | `#B8FFF0` |
+| 4 | Navy `#0067CC` | `#B8DCFF` |
+| 5 | Pink `#CC0066` | `#FFB8DC` |
+
 ## Three-point testcross pairs
 
 Reserve green for the two original parental rows and lime green for other offspring with a

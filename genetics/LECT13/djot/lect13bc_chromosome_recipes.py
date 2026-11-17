@@ -75,19 +75,20 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 					continue
 				index = int(child.attrib['data-shared-part'])
 				data = source['parts'][index]
+				thickness = 40 if position_effect_loci else data['thickness']
 				centromeres = () if data['centromere_after'] is None else (
 					svg_tools.chromosomes.Centromere(data['centromere_after']),)
 				model = svg_tools.chromosomes.Chromosome(tuple(
 					svg_tools.chromosomes.Segment(*segment) for segment in data['segments']),
 					centromeres=centromeres)
 				part = svg_tools.chromosomes.chromosome_path_part(f'migrated13bc-chromosome-{index}',
-					model, data['path'], thickness=data['thickness'],
+					model, data['path'], thickness=thickness,
 					cut_ends=data['cut_ends'], labels=False)
 				replacement = DET.fromstring(part.fragment)
 				replacement.attrib['data-source-part'] = str(index)
 				replacement.attrib['stroke'] = 'none'
 				if 'centromere' in part.anchors:
-					markers[index] = (replacement, part.anchors['centromere'], data['thickness'])
+					markers[index] = (replacement, part.anchors['centromere'], thickness)
 				position = list(parent).index(child)
 				parent.remove(child)
 				parent.insert(position, replacement)
@@ -95,7 +96,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 					if index != locus_index:
 						continue
 					surface = svg_tools.chromosome_surface.Surface(
-						svgpathtools.parse_path(data['path']), data['thickness'])
+						svgpathtools.parse_path(data['path']), thickness)
 					center = svg_tools.chromosome_surface.nearest_distance(surface.path, source_center)
 					gene = svg_tools.chromosomes.Segment('w+', '#812F46', 65)
 					locus = svg_tools.chromosomes.gene_locus_part(

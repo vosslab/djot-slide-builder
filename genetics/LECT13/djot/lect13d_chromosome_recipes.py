@@ -100,6 +100,10 @@ def ruby() -> None:
 	OUT.mkdir(parents=True, exist_ok=True)
 	for name in NAMES:
 		root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+		# Neighboring strip canvases overlap; transparent backgrounds preserve their collars.
+		background = root.find(NS + "rect[@fill='white']")
+		if background is not None:
+			root.remove(background)
 		parents = {child: parent for parent in root.iter() for child in parent}
 		for group in list(root.iter()):
 			gid = group.get('id', '')
@@ -124,8 +128,10 @@ def ruby() -> None:
 			model = chrom.Chromosome(tuple(chrom.Segment('', c, b-a)
 					for a, b, c in zip(boundaries, boundaries[1:], colors)), (chrom.Centromere(1),))
 			path = f'M {start} {y+height/2} L {end} {y+height/2}'
+			# These small repeated strips need room for readable two-letter loci.
+			thickness = 40
 			part = chrom.chromosome_path_part(f'{name}-{group.get("id")}', model,
-				path, thickness=height, labels=False)
+				path, thickness=thickness, labels=False)
 			row_id = group.get('id')
 			row_name = row_id.removesuffix('-rod')
 			group.clear()
@@ -137,10 +143,10 @@ def ruby() -> None:
 				label = ''.join(allele.itertext())
 				row.remove(allele)
 				surface = svg_tools.chromosome_surface.Surface(
-					chrom.svgpathtools.parse_path(path), height)
+					chrom.svgpathtools.parse_path(path), thickness)
 				center = svg_tools.chromosome_surface.nearest_distance(
 					surface.path, complex(float(allele.get('x')), y+height/2))
-				gene = chrom.Segment(label, '#F3D788', 46)
+				gene = chrom.Segment(label, '#F3D788', 36)
 				group.append(DET.fromstring(chrom.gene_locus_part(
 					f'{name}-{row_name}-gene', surface, center, gene).fragment))
 		ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)

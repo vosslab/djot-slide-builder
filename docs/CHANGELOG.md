@@ -8,6 +8,9 @@
 
 ### Behavior or Interface Changes
 
+- Color-code each merge stage in Genetics 11E across headings, selected matrix cells,
+  cluster labels, and tree branches, retaining previous stages in the growing trees.
+
 - Route chromosome gene text through measured upright labels with local fit, contrast,
   centered ink and multi-letter allele superscripts. Embed C25/C26/C60/C63 loci while
   preserving chromosome identities, genotypes, source positions and C25's schematic distal

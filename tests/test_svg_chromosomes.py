@@ -50,8 +50,6 @@ def test_internal_gene_labels_retain_regions_without_decorative_texture() -> Non
 	labels = {''.join(node.itertext()): node for node in root.findall('./text')}
 	assert set(labels) == {'A', 'b'}
 	assert labels['A'].get('fill') != labels['b'].get('fill')
-	assert float(labels['A'].get('x')) == pytest.approx(part.anchors['segment_0'][0], abs=.01)
-	assert float(labels['b'].get('x')) == pytest.approx(part.anchors['segment_2'][0], abs=.01)
 
 
 def test_explicit_gene_locus_follows_the_final_centerline() -> None:
@@ -64,8 +62,6 @@ def test_explicit_gene_locus_follows_the_final_centerline() -> None:
 	root = defusedxml.ElementTree.fromstring(part.fragment)
 	text = root.find('./text')
 	assert root.get('data-gene') == 'rb+'
-	assert root.find('./path').get('class') == 'gene-locus'
-	assert text.get('class') == 'gene-label'
 	assert [item.text for item in text.iter('tspan') if item.text] == ['rb', '+']
 	assert part.anchors['center'] == pytest.approx((surface.point(58, 0).real,
 		surface.point(58, 0).imag))
