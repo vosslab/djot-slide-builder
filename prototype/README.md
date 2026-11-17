@@ -22,7 +22,14 @@ Each figure has a stable ID, **C01-C68**, and its original deck and slide number
 follow expanded source/ODP order, including hidden slides. Original paths and snapshot hashes are
 in [chromosome_samples.csv](chromosome_samples.csv); prototype replacement paths and hashes are
 in [chromosome_replacements.csv](chromosome_replacements.csv). The empirical C04 reference and
-the evidence portion of C51 are preserved. Original lecture Djot and generated artwork remain unchanged; shared recipes are updated.
+the source coordinates in C51 are preserved. C51/C52 use BPQ deletion rows: gray retained
+material and thin magenta markers for missing intervals. C51 keeps unequal gene spacing
+and distinct V/VI breakpoints; C52 uses equal gene slots. Original lecture Djot and generated
+artwork remain unchanged; shared recipes are updated.
+
+C03/C36 use one shared fusion figure based on C03. The ancestral material forms a continuous
+dicentric chromosome with two outer telomeres. Its length and bands remain identical through
+centromere inactivation and the final stage; removing the inactive collar leaves the body intact.
 
 C21 flags an existing rendering issue: its TEM area appears blank in the exported view.
 
@@ -58,3 +65,6 @@ The BPQ layer revision follows the requests archived in
 values establish a reference scale, not fixed dimensions for every illustration. Curved surfaces
 use the same layer colors and alpha values mapped around the authored centerline. The review
 prototype is the evaluation environment; the implementation lives in the shared SVG tools.
+Uncondensed chromatin, including stringy DNA in early prophase, retains simple paths.
+BPQ surface layers apply to condensed chromosome bodies; redundant curved-surface coordinates
+are removed to keep the SVGs compact without splitting them into dependent files.

@@ -642,17 +642,15 @@ Change:
 
 Reason:
 
-=== layout: big-image
+=== layout: one-panel
 
-@image
+@body
 
 ![Pericentric anaphase](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg)
 
-@caption
+When the centromere is included in the inversion loop, one of the crossover products is duplicated for a and deficient for d; the other is duplicated for d and deficient for a. Among the two chromatids not involved in the crossover, one carries the inversion and the other is normal.
 
-*C58 | Pericentric anaphase*
-
-LECT13B, source slide 18 | Inversions
+*C58 | Pericentric anaphase* - LECT13B, source slide 18 | Inversions
 
 @notes
 

@@ -12,6 +12,8 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 # Local repo modules
+import svgpathtools
+import svg_tools.chromosome_surface
 from svg_tools.chromosomes import (
 	Centromere, Chromosome, Segment, chromosome_path_part, render_chromosome_layout,
 )
@@ -373,7 +375,6 @@ def render_rods() -> None:
 
 CHROMOSOME_COMPLEMENTS_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="complement-title complement-desc">\n  <title id="complement-title">Drosophila chromosome complements</title>\n  <desc id="complement-desc">Two Drosophila chromosome complements, XX on the left and XY on the right. Both contain two copies each of chromosomes 2, 3 and 4: four long bent autosomes and two small dot chromosomes. The lower pair contains two X rods on the left, and one X rod and one hooked Y on the right. Each complement contains eight separate chromosomes. Aligned positions support comparison; they do not depict pairing or a cell-cycle phase. Schematic, not to scale.</desc>\n  <rect width="1200" height="620" fill="#FFFFFF" />\n  <g id="complement-guides" fill="none" stroke="#D7E0E5" stroke-width="2">\n    <path d="M600 22 V568" />\n    <path d="M56 350 H544 M656 350 H1144" />\n  </g>\n  <g font-family="Atkinson Hyperlegible Next" text-anchor="middle" fill="#213547">\n    <g id="complement-XX">\n      <text x="300" y="67" font-size="48" font-weight="bold">XX</text>\n      <g id="complement-XX-autosomes">\n        <g id="complement-XX-pair-2">\n          <text x="126" y="313" font-size="34">2</text>\n        </g>\n        <g id="complement-XX-pair-3">\n          <text x="316" y="313" font-size="34">3</text>\n        </g>\n        <g id="complement-XX-pair-4">\n          <text x="488" y="313" font-size="34">4</text>\n        </g>\n      </g>\n      <g id="complement-XX-sex-chromosomes">\n        <text x="225" y="561" font-size="34" fill="#086898">X</text>\n        <text x="355" y="561" font-size="34" fill="#086898">X</text>\n      </g>\n    </g>\n    <g id="complement-XY" transform="translate(600,0)">\n      <text x="300" y="67" font-size="48" font-weight="bold">XY</text>\n      <g id="complement-XY-autosomes">\n        <g id="complement-XY-pair-2">\n          <text x="126" y="313" font-size="34">2</text>\n        </g>\n        <g id="complement-XY-pair-3">\n          <text x="316" y="313" font-size="34">3</text>\n        </g>\n        <g id="complement-XY-pair-4">\n          <text x="488" y="313" font-size="34">4</text>\n        </g>\n      </g>\n      <g id="complement-XY-sex-chromosomes">\n        <text x="225" y="561" font-size="34" fill="#086898">X</text>\n        <text x="355" y="561" font-size="34" fill="#417521">Y</text>\n      </g>\n    </g>\n    <text x="600" y="608" font-size="24" fill="#526879">Schematic, not to scale</text>\n  </g>\n</svg>'
 
-DELETION_INTERVALS_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width="870" height="520" viewBox="0 0 870 520" role="img" aria-labelledby="deletion-intervals-title deletion-intervals-desc">\n\t<title id="deletion-intervals-title">Deletion intervals for the source mapping problem</title>\n\t<desc id="deletion-intervals-desc">Five deletion intervals reproduce the source membership across six numbered positions. A solid magenta segment denotes the region deleted, not retained. Del 1 covers 1-3, Del 2 2-3, Del 3 2-4, Del 4 3-5, and Del 5 4-6. Source: Lecture 11D mapping problem, original images 018 and 019. Positions are schematic, not genetic distances.</desc>\n\t<g font-family="Atkinson Hyperlegible Next">\n\t\t<text x="240" y="42" font-size="40" fill="#253342" text-anchor="middle">1</text>\n\t\t<path d="M240 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="345" y="42" font-size="40" fill="#253342" text-anchor="middle">2</text>\n\t\t<path d="M345 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="450" y="42" font-size="40" fill="#253342" text-anchor="middle">3</text>\n\t\t<path d="M450 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="555" y="42" font-size="40" fill="#253342" text-anchor="middle">4</text>\n\t\t<path d="M555 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="660" y="42" font-size="40" fill="#253342" text-anchor="middle">5</text>\n\t\t<path d="M660 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="765" y="42" font-size="40" fill="#253342" text-anchor="middle">6</text>\n\t\t<path d="M765 85 V455" fill="none" stroke="#DFE6EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="135" y="194" font-size="36" fill="#253342" text-anchor="end">Del 1</text>\n\t\t<path id="deletion-1" d="M210 185 H480" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="135" y="256" font-size="36" fill="#253342" text-anchor="end">Del 2</text>\n\t\t<path id="deletion-2" d="M315 247 H480" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="135" y="318" font-size="36" fill="#253342" text-anchor="end">Del 3</text>\n\t\t<path id="deletion-3" d="M315 309 H585" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="135" y="380" font-size="36" fill="#253342" text-anchor="end">Del 4</text>\n\t\t<path id="deletion-4" d="M420 371 H690" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="135" y="442" font-size="36" fill="#253342" text-anchor="end">Del 5</text>\n\t\t<path id="deletion-5" d="M525 433 H795" fill="none" stroke="#CC0066" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />\n\t\t<text x="435" y="505" font-size="32" fill="#CC0066" text-anchor="middle">Magenta segment = deleted region</text>\n\t</g>\n</svg>'
 
 DIRECT_REPEAT_LOOP_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title description">\n<title id="title">Direct-repeat recombination</title>\n<desc id="description">Two parallel ribbons contain directly oriented purple and blue repeat copies enclosing A B ... Y Z. The ribbons fold together, bringing the purple repeat above the blue repeat at one black exchange X. Both open paths pass through A B ... Y Z; the outgoing flanks cross over the right bend without joining it. Recombination produces paired deletion ribbons with a purple-then-blue junction and a separate paired ring retaining A B ... Y Z with a blue-then-purple junction across its top. The source does not identify the molecular or replication state of the paired ribbons. Continuation chevrons are not chromosome termini; no centromere position or length scale is asserted.</desc>\n<g font-family="Atkinson Hyperlegible Next" fill="#20252b" font-size="24">\n\n<g id="initial">\n<text id="repeat-callout-1" x="330" y="36" font-size="25" text-anchor="middle">Repeated DNA sequences with</text>\n<text id="repeat-callout-2" x="330" y="65" font-size="25" text-anchor="middle">same (direct) orientation.</text>\n<path id="repeat-leader-purple" d="M205 77 L180 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<path id="repeat-leader-blue" d="M460 77 L485 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<g id="initial-1">\n<text id="initial-1-gene-A" x="239" y="125" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-1-gene-B" x="270" y="125" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-1-gene-dotdotdot" x="330" y="125" font-size="23" text-anchor="middle">...</text>\n<text id="initial-1-gene-Y" x="394" y="125" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-1-gene-Z" x="426" y="125" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<g id="initial-2">\n<text id="initial-2-gene-A" x="239" y="160" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-2-gene-B" x="270" y="160" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-2-gene-dotdotdot" x="330" y="160" font-size="23" text-anchor="middle">...</text>\n<text id="initial-2-gene-Y" x="394" y="160" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-2-gene-Z" x="426" y="160" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n</g>\n<path id="initial-to-folded" d="M300 186 L300 232 M307.0 217.0 L300 232 L293.0 217.0" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="folded">\n<path id="overpass-clearance" d="M280 367 H510 V438 H280 Z" fill="white" stroke="none" stroke-width="0" />\n<path id="exchange-X" d="M264 338 L285 359 M285 338 L264 359" fill="none" stroke="#000000" stroke-width="3" />\n<text id="folded-1-gene-A" x="359" y="289" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-1-gene-B" x="421" y="327" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-1-gene-dotdotdot" x="300" y="555" font-size="22" text-anchor="middle">...</text>\n<text id="folded-1-gene-Y" x="210" y="542" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-1-gene-Z" x="176" y="484" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="folded-2-gene-A" x="340" y="322" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-2-gene-B" x="389" y="348" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-2-gene-dotdotdot" x="300" y="520" font-size="22" text-anchor="middle">...</text>\n<text id="folded-2-gene-Y" x="238" y="515" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-2-gene-Z" x="211" y="479" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<path id="folded-to-deletion" d="M545 338 L650 252 M633.9600936697965 256.08918144844415 L650 252 L642.8310386498448 266.91998636594485" fill="none" stroke="#30363d" stroke-width="2.7" />\n<path id="folded-to-ring" d="M545 484 L658 461 M641.9052287869613 457.13239872790126 L658 461 L644.6975328443957 470.8511099666013" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="deletion">\n<text id="deletion-label" x="820" y="303" font-size="27" text-anchor="middle">Deletion</text>\n</g>\n<g id="ring">\n<text id="ring-1-gene-A" x="882.27" y="380.74" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-1-gene-B" x="918.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-1-gene-dotdotdot" x="810.0" y="569.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-1-gene-Y" x="702.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-1-gene-Z" x="737.73" y="380.74" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-2-gene-A" x="858.85" y="406.75" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-2-gene-B" x="883.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-2-gene-dotdotdot" x="810.0" y="534.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-2-gene-Y" x="737.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-2-gene-Z" x="761.15" y="406.75" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-label" x="810" y="603" font-size="24" text-anchor="middle">Acentric ring fragment (lost)</text>\n</g></g></svg>'
 
@@ -416,13 +417,82 @@ def render_complements() -> None:
 				path_body(bodies,complement+'-X-'+str(i),[('#086898',1)],f'M{x} 393 C{x-3} 428 {x-3} 471 {x} 512',25)
 	write_scene('chromosome_complements',root)
 
+def deletion_row(root: ET.Element, name: str, y: float, left: float, right: float,
+	interval: tuple[float, float] | None) -> None:
+	"""BPQ evidence row: thick retained DNA and a shallow marker for missing DNA."""
+	group = ET.SubElement(root, NS+'g', {'id': name})
+	shape = {'x': str(left), 'y': str(y-12.5), 'width': str(right-left),
+		'height': '25', 'rx': '5'}
+	defs = ET.SubElement(group, NS+'defs')
+	outer = ET.SubElement(defs, NS+'clipPath', {'id': name+'-outer'})
+	ET.SubElement(outer, NS+'rect', shape)
+	retained = ET.SubElement(defs, NS+'clipPath', {'id': name+'-retained'})
+	spans = ((left, right),) if interval is None else ((left, interval[0]), (interval[1], right))
+	for start, end in spans:
+		ET.SubElement(retained, NS+'rect', {'x': str(start), 'y': str(y-12.5),
+			'width': str(end-start), 'height': '25'})
+	face = ET.SubElement(group, NS+'g', {'clip-path': f'url(#{name}-outer)'})
+	face = ET.SubElement(face, NS+'g', {'clip-path': f'url(#{name}-retained)',
+		'data-layer': 'retained-dna'})
+	ET.SubElement(face, NS+'rect', {**shape, 'fill': '#b8c0c8'})
+	path = svgpathtools.parse_path(f'M {left} {y} H {right}')
+	svg_tools.chromosome_surface.Surface(path, 25).paint(face, name)
+	# Clipping a four-unit stroke keeps the BPQ two-unit border inside retained DNA.
+	ET.SubElement(face, NS+'rect', {**shape, 'fill': 'none', 'stroke': '#161b20',
+		'stroke-width': '4'})
+	if interval is not None:
+		start, end = interval
+		ET.SubElement(face, NS+'path', {'d': f'M{start} {y-12.5} V{y+12.5} M{end} {y-12.5} V{y+12.5}',
+			'fill': 'none', 'stroke': '#161b20', 'stroke-width': '4'})
+		ET.SubElement(group, NS+'rect', {'x': str(start), 'y': str(y-5.5),
+			'width': str(end-start), 'height': '11', 'fill': '#CC0066',
+			'data-layer': 'deleted-interval'})
+
+
 def render_intervals() -> None:
-	root = ET.fromstring(DELETION_INTERVALS_BACKDROP)
-	# Intervals stay at reference coordinates: their magenta marks mean missing DNA.
-	path_body(root,'reference-six-bands',[('#24578F',1)]*6,'M195 88 H810',24)
-	for x in [240,345,450,555,660,765]:
-		ET.SubElement(root,NS+'path',{'d':f'M{x} 76 V100','stroke':'white','stroke-width':'2'})
-	write_scene('deletion_intervals',root)
+	root = scene(870, 520, 'Aligned deletion evidence',
+		'Five deletions aligned to six equally spaced gene positions. Del 1 removes '
+		'genes 1-3; Del 2, 2-3; Del 3, 2-4; Del 4, 3-5; Del 5, 4-6. '
+		'Gray bodies show retained DNA; thin magenta bars mark missing DNA. '
+		'Rows share reference coordinates so deletion widths remain visible. '
+		'Positions are schematic, not genetic distances.')
+	# Equal-width gene slots suit this schematic; C51 keeps its source coordinates instead.
+	positions = (240, 345, 450, 555, 660, 765)
+	for index, x in enumerate(positions, 1):
+		text_at(root, x, 42, str(index), 40, anchor='middle')
+		ET.SubElement(root, NS+'path', {'d': f'M{x} 55 V455', 'stroke': '#DFE6EC',
+			'stroke-width': '1.5'})
+	text_at(root, 135, 98, 'Reference', 23, anchor='end')
+	deletion_row(root, 'reference', 88, 155, 850, None)
+	for index, (first, last) in enumerate(((1, 3), (2, 3), (2, 4), (3, 5), (4, 6)), 1):
+		y = 185 + (index-1)*62
+		text_at(root, 135, y+9, f'Del {index}', 32, anchor='end')
+		interval = (positions[first-1]-52.5, positions[last-1]+52.5)
+		deletion_row(root, f'deletion-{index}', y, 155, 850, interval)
+	text_at(root, 435, 505, 'Gray rods = retained DNA; magenta = deleted interval', 25, anchor='middle')
+	write_scene('deletion_intervals', root)
+
+
+def render_cytological_intervals() -> None:
+	root = scene(930, 540, 'Cytological deletion intervals',
+		'Six deletions I-VI retain the source map\'s relative positions and lengths. '
+		'The zeste, zw2 and white bands retain their unequal spacing and original widths. '
+		'V and VI retain different breakpoint positions and unequal widths. '
+		'Gray bodies show retained DNA; thin magenta bars mark missing DNA. '
+		'This aligned evidence map retains source endpoint relations without asserting finer resolution.')
+	for x, band, gene, role in ((230, '3A3', 'zeste', 'eye-color gene'),
+		(500, '3A9', 'zw2', 'lethal gene'), (800, '3C2', 'white', 'eye-color gene')):
+		ET.SubElement(root, NS+'rect', {'x': str(x-16), 'y': '45', 'width': '32',
+			'height': '300', 'fill': '#E2E7EC'})
+		for y, label, size in ((385, band, 27), (430, gene, 28), (470, role, 23)):
+			text_at(root, x, y, label, size, anchor='middle')
+	intervals = ((150, 784), (214, 816), (246, 816), (246, 835), (484, 540), (511, 650))
+	for index, (label, interval) in enumerate(zip(('I', 'II', 'III', 'IV', 'V', 'VI'), intervals)):
+		y = 80 + index*45
+		text_at(root, 70, y+8, label, 27)
+		deletion_row(root, 'deletion-'+label, y, 125, 885, interval)
+	text_at(root, 465, 520, 'Gray rods = retained DNA; magenta = deleted interval', 25, anchor='middle')
+	write_scene('cytological_deletion_intervals', root)
 
 def render_repeat_loop() -> None:
 	root = ET.fromstring(DIRECT_REPEAT_LOOP_BACKDROP)
@@ -525,12 +595,12 @@ def render_mixed_figures() -> None:
 	ET.SubElement(root,NS+'rect',{'x':'183','y':'42','width':'151','height':'133','fill':'white'})
 	for side in [0,1]:
 		x=207+side*18
-		path_body(root,'inset-2-'+str(side),[('#54798D',1)],f'M{x} 59 L{x+24} 88 L{x} 122',8)
+		path_body(root,'inset-2-'+str(side),[('#54798D',1)],f'M{x} 59 C{x} 70 {x+24} 78 {x+24} 88 C{x+24} 98 {x} 109 {x} 122',8)
 		x=293+side*18
-		path_body(root,'inset-3-'+str(side),[('#54798D',1)],f'M{x} 59 L{x-24} 88 L{x} 122',8)
+		path_body(root,'inset-3-'+str(side),[('#54798D',1)],f'M{x} 59 C{x} 70 {x-24} 78 {x-24} 88 C{x-24} 98 {x} 109 {x} 122',8)
 		path_body(root,'inset-4-'+str(side),[('#54798D',1)],f'M{253+side*10} 88 V89',5)
 	path_body(root,'inset-X',[('#086898',1)],'M246 116 V146',8)
-	path_body(root,'inset-Y',[('#417521',1)],'M262 146 V116 Q271 116 275 124',8)
+	path_body(root,'inset-Y',[('#417521',1)],'M262 146 C262 132 266 120 275 124',8)
 	for x,y,txt in [(188,57,'R'),(188,133,'L'),(321,57,'R'),(321,133,'L'),
 		(209,96,'2'),(295,96,'3'),(253,77,'4'),(242,169,'X'),(258,169,'Y')]:text_at(root,x,y,txt,12)
 	write_svg(root, ASSETS/'polytene_mixed.svg')
@@ -539,6 +609,7 @@ def main() -> None:
 	render_rods()
 	render_complements()
 	render_intervals()
+	render_cytological_intervals()
 	render_repeat_loop()
 	render_quantitative_map()
 	render_mixed_figures()

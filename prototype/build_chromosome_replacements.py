@@ -42,9 +42,6 @@ def main() -> None:
 		shutil.copy2(LECT12 / 'assets' / 'lect12d-chromo_alter_1-deletions' / name,
 			render_lect12d_chromosomes.ASSETS / name)
 	render_lect12d_chromosomes.main()
-	shutil.copy2(LECT12 / 'assets' / 'lect12d-chromo_alter_1-deletions' /
-		'cytological_deletion_intervals.drawn.svg',
-		render_lect12d_chromosomes.ASSETS / 'cytological_deletion_intervals.drawn.svg')
 
 	render_lect12e_chromosomes.ASSETS = ASSETS / 'lect12e-chromo_alter_2-duplications'
 	render_lect12e_chromosomes.ASSETS.mkdir(parents=True, exist_ok=True)

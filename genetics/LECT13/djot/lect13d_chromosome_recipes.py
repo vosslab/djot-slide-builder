@@ -28,7 +28,7 @@ def marker(name: str, x: float, y: float, thickness: float, angle: float) -> ET.
 
 
 def pairing() -> None:
-	"""Retain every source path, paint boundary, sister and source-level centromere."""
+	"""Retain source arms, paint boundaries, sisters and centromeres with smooth bends."""
 	names = [name for name in SOURCES if name.startswith('pairing-') or name == 'segregation-three-forms.drawn.svg']
 	for name in sorted(names):
 		root = ET.fromstring(SOURCES[name])
@@ -49,6 +49,24 @@ def pairing() -> None:
 				curves = [chrom.svgpathtools.parse_path(arm.attrib['d']) for arm in arms]
 				curve = chrom.svgpathtools.Path(*curves[0], *curves[1])
 				lengths = [arm.length() for arm in curves]
+				if name == 'pairing-spindle.drawn.svg':
+					# The source gives each chromatid as two perpendicular line segments.
+					# Keep endpoints and material proportions around a smooth quarter-turn.
+					start, elbow, end = curve.start, curves[0].end, curve.end
+					incoming = (elbow-start) / abs(elbow-start)
+					outgoing = (end-elbow) / abs(end-elbow)
+					radius = 15
+					corner_start = elbow - incoming*radius
+					corner_end = elbow + outgoing*radius
+					control = radius * 0.5522847498
+					curve = chrom.svgpathtools.Path(
+						chrom.svgpathtools.Line(start, corner_start),
+						chrom.svgpathtools.CubicBezier(
+							corner_start, corner_start + incoming*control,
+							corner_end - outgoing*control, corner_end),
+						chrom.svgpathtools.Line(corner_end, end))
+					original_length = sum(lengths)
+					lengths = [curve.length() * length / original_length for length in lengths]
 				# Project the source pair's filled centromere onto each unchanged sister axis.
 				tangent = curve.unit_tangent(0)
 				center_length = ((complex(cx, cy)-curve.start)/tangent).real
@@ -198,16 +216,16 @@ def fusion() -> None:
 	name = 'robertsonian_centromeric_fusion'
 	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	specs = {
-		'blue-input': (152, (('M 152 99 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
-		'red-input': (280, (('M 280 99 C 276 206 294 262 283 326', '#d6533c'),)),
-		'fused-product': (863, (
-			('M 863 99 C 855 212 875 274 864 361 C 854.5 450.5 857 518 863 595', '#377eaf'),
+		'blue-input': (152, 99, (('M 152 99 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
+		'red-input': (280, 99, (('M 280 99 C 276 206 294 262 283 326', '#d6533c'),)),
+		'fused-product': (877, 113, (
+			('M 877 113 C 869 226 889 288 878 375 C 868.5 464.5 871 532 877 609', '#377eaf'),
 			('M 877 113 C 943.5 137.5 1001.5 180.5 1068 222.5', '#d6533c'))),
 	}
 	for group in root.iter(NS + 'g'):
 		if group.get('id') not in specs:
 			continue
-		cx, arms = specs[group.attrib['id']]
+		cx, cy, arms = specs[group.attrib['id']]
 		for node in list(group):
 			group.remove(node)
 		for index, (path, paint) in enumerate(arms):
@@ -216,7 +234,7 @@ def fusion() -> None:
 			part = chrom.chromosome_path_part(f'fusion-{group.attrib["id"]}-arm-{index}',
 				model, path, thickness=50, labels=False)
 			group.append(ET.fromstring(part.fragment))
-		group.append(marker(f'fusion-{group.attrib["id"]}', cx, 99, 50, 90))
+		group.append(marker(f'fusion-{group.attrib["id"]}', cx, cy, 50, 90))
 	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
 
 

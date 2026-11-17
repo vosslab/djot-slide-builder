@@ -106,6 +106,9 @@ Use the shared [chromosomes.py](../svg_tools/chromosomes.py) body tools for prod
 replicated sisters, and curved chromatids. Course recipes supply models, positions, labels and
 relationships; they must not define their own chromosome silhouettes. Use the straight layout
 helpers for rods and sisters, and `chromosome_path_part()` for authored curved chromatids.
+Apply BPQ surface polish to condensed chromosome bodies. Uncondensed chromatin, including
+stringy DNA in early prophase, uses simple constant-width paths that preserve its source
+geometry. Choose the surface treatment from the represented condensation state.
 
 - Draw single chromatids as mostly straight, modestly rounded rods. Replicated chromosomes
   have independently constructed, joined sisters; separate homologs remain separate objects.
@@ -122,7 +125,8 @@ helpers for rods and sisters, and `chromosome_path_part()` for authored curved c
   loops and crossings where they communicate the biological process.
 - A curved chromatid follows its authored centerline with one configurable, constant thickness.
   The recipe controls bends and crossing order; it must supply curves with enough radius for
-  the chosen width.
+  the chosen width. Join adjacent curves smoothly, with bend radii larger than half the
+  chromatid thickness. Fusion arms meet at one shared centromere anchor.
 - Carry semantic colors, loci, source band fills and segment identity through rearrangements.
   Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
   Homolog or parental colors need not match a course accent hue. Optional decorative texture

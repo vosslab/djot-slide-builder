@@ -3,8 +3,8 @@
 import argparse
 import pathlib
 
+import devel.render_human_chromosome_2_fusion
 import lect10b_chromosome_recipe.lect10_centromere_positions
-import lect10b_chromosome_recipe.lect10_fusion
 import lect10b_chromosome_recipe.lect10_image_027
 import lect10b_chromosome_recipe.lect10_karyotype
 import lect10b_chromosome_recipe.lect10_mitosis
@@ -19,7 +19,7 @@ def main(deck: pathlib.Path) -> None:
 		(lect10b_chromosome_recipe.lect10_sky.main, folder / 'sky_probe_mixture_workflow.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_centromere_positions.main, folder / 'centromere_positions.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_mitosis.main, folder / 'mitosis_karyotype_stages.drawn.svg'),
-		(lect10b_chromosome_recipe.lect10_fusion.main, deck / 'assets' / 'visual_renewal' / 'human_chromosome_2_fusion.drawn.svg'),
+		(devel.render_human_chromosome_2_fusion.main, deck / 'assets' / 'visual_renewal' / 'human_chromosome_2_fusion.drawn.svg'),
 		(lect10b_chromosome_recipe.lect10_karyotype.main, deck / 'assets' / 'lect10_repaired_figures' / 'karyotype_preparation.svg'),
 	]
 	for make, destination in jobs:

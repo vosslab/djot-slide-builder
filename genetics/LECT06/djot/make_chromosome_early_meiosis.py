@@ -16,6 +16,7 @@ NS = '{http://www.w3.org/2000/svg}'
 COLORS = {'#087EA4', '#BB2637', '#087faf', '#50a374', '#df8746',
 	'#ab597b', '#188e75', '#1684b4'}
 EXPECTED = (6, 16, 24, 32, 20)
+CONDENSED = ('prophase_diplotene_diakinesis', 'meiosis_homolog_sister_sequence')
 
 
 def main() -> None:
@@ -32,10 +33,14 @@ def main() -> None:
 			for index, node in enumerate(list(parent)):
 				if node.tag != NS + 'path' or node.get('stroke') not in COLORS:
 					continue
+				count += 1
+				# The pachytene source tags its condensed rods with data-chromatid.
+				if name not in CONDENSED and node.get('data-chromatid') is None:
+					continue
 				color = node.get('stroke')
 				width = float(node.get('stroke-width'))
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, 1),))
-				part = svg_tools.chromosomes.chromosome_path_part(f'{name}-chromatid-{count}', model,
+				part = svg_tools.chromosomes.chromosome_path_part(f'{name}-chromatid-{count-1}', model,
 					node.get('d'), thickness=width, labels=False)
 				body = ET.fromstring(part.fragment)
 				if node.get('id'):
@@ -44,7 +49,6 @@ def main() -> None:
 					body.set('data-chromatid', node.get('data-chromatid'))
 				parent.remove(node)
 				parent.insert(index, body)
-				count += 1
 		if count != expected:
 			raise ValueError(f'{name}: expected {expected} source bodies, found {count}')
 		# Retain the source's explicitly located centromeres and chiasma overlays.

@@ -6,6 +6,7 @@ import hashlib
 import pathlib
 import subprocess
 import sys
+import xml.etree.ElementTree as ET
 
 import devel.render_genetics_lect01_chromosomes
 import devel.render_genetics_lect02_chromosomes
@@ -45,6 +46,23 @@ def refresh_inventory() -> None:
 		writer.writerows(rows)
 
 
+def separate_c58_prose() -> None:
+	"""Keep the C58 explanation in its native Djot text block."""
+	path = ASSETS / 'assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg'
+	root = ET.parse(path).getroot()
+	canvas = root.find('{http://www.w3.org/2000/svg}g')
+	# The four explanation lines and their separator belong to the native text block.
+	for node in list(canvas):
+		if (node.tag == '{http://www.w3.org/2000/svg}text'
+			and node.attrib['x'] == '36' and float(node.attrib['y']) >= 600):
+			canvas.remove(node)
+		elif node.get('d') == 'M 30,590 H 1420':
+			canvas.remove(node)
+	root.set('height', '590')
+	root.set('viewBox', '0 0 1460 590')
+	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+
+
 def main() -> None:
 	"""Rebuild the review corpus from source recipes in the prototype tree only."""
 	# Recipes without command-line output roots expose a narrow build function.
@@ -62,7 +80,7 @@ def main() -> None:
 	run('genetics/LECT06/djot/make_chromosome_early_meiosis.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT06/djot/make_chromosome_meiosis_panel.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT06/djot/make_chromosome_assortment.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT02/djot/assets/lect02c-genome_sizes/render_genetics_lect02c_chromosomes.py',
+	run('devel/render_human_chromosome_2_fusion.py',
 		str(ASSETS / 'assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg'))
 	run('genetics/LECT04/djot/assets/lect04e-segregation/make_fertilization_scene.py',
 		str(ASSETS / 'assets/lect04e-segregation/fertilization_scene.drawn.svg'))
@@ -87,6 +105,7 @@ def main() -> None:
 
 	# The remaining p2 compositions currently provide a function rather than an output option.
 	genetics.LECT13.djot.lect13d_p2_compositions.render(ASSETS / 'assets/lect13d-meiosis_translocation')
+	separate_c58_prose()
 	refresh_inventory()
 
 

@@ -1,3 +1,29 @@
+## 2026-11-17
+
+### Behavior or Interface Changes
+
+- Unify C03/C36 with C03's banded chromosome-fusion construction. Concatenate the
+  ancestral material into one dicentric body, remove internal telomere caps, and
+  preserve its full length and bands through centromere inactivation. Retire the
+  separate C36 generator and its outdated circle legend; regenerate only prototype artwork.
+- Correct shared chromosome surfaces at segment joins: retain each arm's tangent
+  instead of rotating the surface along the next arm. Remove C62's tapered wedges,
+  smooth the repeated chromosome shapes in C18/C19/C40/C50, and give C66's fused
+  arms and centromere one common root. Retain BPQ layers, chromosome identities,
+  counts and labels; preserve Drosophila Y material lengths and the C50 micrograph.
+- Move C58's "When the centromere..." explanation from the SVG into native Djot
+  text. Preserve all diagram geometry and labels, crop the unused paragraph area,
+  and retain the separation when regenerating the review prototype.
+- Redraw C51/C52 as BPQ deletion maps: textured gray retained material, narrow
+  magenta deletion markers, and visible breakpoint edges. C52 uses equal gene slots;
+  C51 preserves every original breakpoint and unequal gene spacing, including the
+  distinct V and VI deletion lengths. Generate both in the review prototype.
+- Keep extended chromatin and early synapsis strands as simple paths; reserve BPQ
+  surface polish for condensed chromosomes. Remove redundant surface coordinates
+  from curved chromosome bodies while retaining their shading, bands, and outlines.
+  Regenerate the chromosome review prototype without changing lecture artwork.
+  C11 falls from 72.6 MiB to 5.5 KiB; the 67 review SVGs fall from 337.8 to 57.7 MiB.
+
 ## 2026-11-16
 
 ### Additions and New Features

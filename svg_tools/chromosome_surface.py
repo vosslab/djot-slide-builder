@@ -31,13 +31,56 @@ class Surface:
 				math.ceil(segment.length() / (thickness / 12)))
 			for index in range(count + 1):
 				position = segment.point(index / count)
+				normal = segment.unit_tangent(index / count) * 1j
 				if self.positions and abs(position-self.positions[-1]) < 1e-10:
+					# Keep both sides of a genuine corner.  They share a centerline
+					# position and distance, but their surface offsets are different.
+					if abs(normal-self.normals[-1]) < 1e-10:
+						continue
+					self.positions.append(position)
+					self.normals.append(normal)
+					self.distances.append(distance)
 					continue
 				if self.positions:
 					distance += abs(position-self.positions[-1])
 				self.positions.append(position)
-				self.normals.append(segment.unit_tangent(index / count) * 1j)
+				self.normals.append(normal)
 				self.distances.append(distance)
+		# Keep both surface edges accurate without repeating thousands of nearly collinear points.
+		edges = [[position + side * thickness/2 * normal
+			for position, normal in zip(self.positions, self.normals)] for side in (-1, 1)]
+		keep = {0, len(self.positions)-1}
+		# Simplification must not bridge a hard join.  Otherwise it may discard
+		# one normal and interpolate that turn down an entire straight chromosome arm.
+		corners = [index for index in range(1, len(self.positions))
+			if abs(self.positions[index]-self.positions[index-1]) < 1e-10]
+		for corner in corners:
+			keep.update((corner-1, corner))
+		spans = []
+		first = 0
+		for corner in corners:
+			spans.append((first, corner-1))
+			first = corner
+		spans.append((first, len(self.positions)-1))
+		while spans:
+			first, last = spans.pop()
+			if last-first < 2:
+				continue
+			error, split = 0, first
+			for index in range(first+1, last):
+				fraction = (self.distances[index]-self.distances[first]) / (
+					self.distances[last]-self.distances[first])
+				deviation = max(abs(edge[index] - (edge[first]*(1-fraction) + edge[last]*fraction))
+					for edge in edges)
+				if deviation > error:
+					error, split = deviation, index
+			if error > thickness/120:
+				keep.add(split)
+				spans.extend(((first, split), (split, last)))
+		indices = sorted(keep)
+		self.positions = [self.positions[index] for index in indices]
+		self.normals = [self.normals[index] for index in indices]
+		self.distances = [self.distances[index] for index in indices]
 		self.distances = [value * self.length / distance for value in self.distances]
 
 	def point(self, along, across):
@@ -48,30 +91,42 @@ class Surface:
 		normal = self.normals[index] * (1-fraction) + self.normals[index+1] * fraction
 		return position + normal / abs(normal) * across
 
-	def polygon(self, coordinates):
-		points = [self.point(along, across) for along, across in coordinates]
+	def _offset(self, index, across):
+		normal = self.normals[index]
+		return self.positions[index] + normal / abs(normal) * across
+
+	@staticmethod
+	def _points_polygon(points):
 		return 'M ' + ' L '.join(f'{point.real:.4f},{point.imag:.4f}' for point in points) + ' Z'
 
+	def polygon(self, coordinates):
+		return self._points_polygon([self.point(along, across) for along, across in coordinates])
+
 	def ribbon(self, start, end, top, bottom):
-		samples = [start] + [s for s in self.distances if start < s < end] + [end]
-		return self.polygon([(s, top) for s in samples] + [(s, bottom) for s in reversed(samples)])
+		indices = [index for index, distance in enumerate(self.distances) if start < distance < end]
+		points = [self.point(start, top)] + [self._offset(index, top) for index in indices] + [
+			self.point(end, top), self.point(end, bottom)] + [
+			self._offset(index, bottom) for index in reversed(indices)] + [self.point(start, bottom)]
+		return self._points_polygon(points)
 
 	def envelope(self, closed=False, cut=False):
 		half = self.width / 2
 		if closed or cut:
 			return self.ribbon(0, self.length, -half, half)
 		radius = min(6*self.scale, self.length/2)
-		coordinates = [(s, -half) for s in [radius] +
-			[s for s in self.distances if radius < s < self.length-radius] + [self.length-radius]]
+		indices = [index for index, distance in enumerate(self.distances)
+			if radius < distance < self.length-radius]
+		points = [self.point(radius, -half)] + [self._offset(index, -half) for index in indices] + [
+			self.point(self.length-radius, -half)]
 		for cx, cy, start in ((self.length-radius, -half+radius, -90),
 			(self.length-radius, half-radius, 0)):
-			coordinates.extend((cx+radius*math.cos(math.radians(start+i*90/8)),
+			points.extend(self.point(cx+radius*math.cos(math.radians(start+i*90/8)),
 				cy+radius*math.sin(math.radians(start+i*90/8))) for i in range(9))
-		coordinates.extend((s, half) for s in reversed(self.distances) if radius < s < self.length-radius)
+		points.extend(self._offset(index, half) for index in reversed(indices))
 		for cx, cy, start in ((radius, half-radius, 90), (radius, -half+radius, 180)):
-			coordinates.extend((cx+radius*math.cos(math.radians(start+i*90/8)),
+			points.extend(self.point(cx+radius*math.cos(math.radians(start+i*90/8)),
 				cy+radius*math.sin(math.radians(start+i*90/8))) for i in range(9))
-		return self.polygon(coordinates)
+		return self._points_polygon(points)
 
 	def paint(self, parent, name, *, texture=True, texture_spans=None):
 		"""Background texture, foreground sheen, then zero-blur inset shadows."""

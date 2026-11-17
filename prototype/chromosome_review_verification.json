@@ -6,16 +6,16 @@
   "native_review_ids": 68,
   "notes": 69,
   "contact_sheets": 5,
-  "pdf_sha256": "22c0364fd54b9e244f62f7dd1b596c0142d72cc009d904ad7a345bc1bd4f3af0",
-  "odp_sha256": "934846d970b59247ef0a89521c915a6f18d0135237214b382a3608e109365d85",
-  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors.",
+  "pdf_sha256": "770981c30386e35820971f096c78a938e6d0c0ac639fe5d3543aafa6ebc00856",
+  "odp_sha256": "b56a86b67d37261316cf60b1ae136253f049d0508b4ade7bde9ace5b5cdb2a6f",
+  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material.",
   "known_issue": "C21: TEM region appears blank in the current native export; original artwork unchanged.",
   "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
   "preserved_evidence_ids": [
     "C04",
     "C51"
   ],
-  "focused_tests_passed": 19,
+  "focused_tests_passed": 21,
   "lecture_svg_files_unchanged": 1049,
   "prototype_originals_verified_in_odp": 67,
   "bpq_reference": "translocationlib.py body layers at height 30; dimensions scale with chromatid thickness.",
@@ -26,7 +26,7 @@
     "interior_rgb_mean_absolute_error": 0.5932307692307692,
     "measurement": "Compared actual BPQ HTML with shared SVG surface; excludes 10 columns at each end; no labels or collars in this isolated body comparison."
   },
-  "curve_adaptation": "Centerline normals carry the BPQ layers; curved sheen samples the BPQ alpha function in 48 transverse strips. Straight sheen uses a native SVG gradient.",
+  "curve_adaptation": "Centerline normals carry BPQ layers; curved sheen retains 48 transverse strips. Redundant sampled surface-edge points are removed at a thickness-relative tolerance. Straight sheen uses a native SVG gradient.",
   "c07_c08_followup": "Length 80 units; thickness 18 units per chromatid. Existing replication invariant test passed; C07/C08 native pages visually inspected.",
   "c06_followup": "Removed the extra x coordinate from the vertical path command. All eight chromosome centerlines verified as single 26-unit segments; corrected SVG and native PDF page visually inspected. Bounded source scan found no other matching H/V coordinate mistakes.",
   "c01_followup": "Replaced the custom vertical diagram with shared BPQ horizontal chromosomes: insertional E-F transfer and reciprocal G-H/N-O exchange. Verified rendered gene order, conservation of all blocks, one centromere per chromosome, unique IDs and resolved SVG references. Final native PDF inspected after removing C01 gene-letter strokes for LibreOffice.",
@@ -85,5 +85,310 @@
       "C18"
     ],
     "scope": "Cross-thickness centering; intentional unequal p/q arm lengths retained. User clarification about vertical centering is pending."
+  },
+  "svg_size_followup": {
+    "cause": "BPQ surface layers applied to extended chromatin; redundant coordinates repeated across curved shading strips.",
+    "change": "Keep uncondensed early-prophase chromatin as original simple paths. Simplify both sampled surface edges together while preserving BPQ layers on condensed chromosomes.",
+    "c11_bytes": {
+      "before": 76115751,
+      "after": 5629
+    },
+    "review_svg_bytes": {
+      "before": 354167041,
+      "after": 60537680
+    },
+    "largest_review_svg_bytes": 17159874,
+    "containers": {
+      "odp": {
+        "before_bytes": 120195609,
+        "after_bytes": 18927383
+      },
+      "pdf": {
+        "before_bytes": 109673881,
+        "after_bytes": 50381975
+      }
+    },
+    "focused_tests_passed": 20,
+    "lecture_assets_unchanged": 1049,
+    "native_pages_inspected": [
+      "C11",
+      "C12",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C28",
+      "C55",
+      "C57",
+      "C67"
+    ],
+    "odp_current_svg_hashes_verified": 67,
+    "content_check": "Authored chromosome region centerlines, colors, source identities and text unchanged in tracked review SVGs; C11 simple source paths restored exactly."
+  },
+  "deletion_maps_followup": {
+    "changed_ids": [
+      "C51",
+      "C52"
+    ],
+    "appearance": "BPQ-style textured gray retained material, dark breakpoint edges, 25-unit bodies and 11-unit magenta deletion markers.",
+    "c51_intervals": [
+      [
+        150.0,
+        784.0
+      ],
+      [
+        214.0,
+        816.0
+      ],
+      [
+        246.0,
+        816.0
+      ],
+      [
+        246.0,
+        835.0
+      ],
+      [
+        484.0,
+        540.0
+      ],
+      [
+        511.0,
+        650.0
+      ]
+    ],
+    "c51_gene_bands": [
+      [
+        "214",
+        "32",
+        "45",
+        "300"
+      ],
+      [
+        "484",
+        "32",
+        "45",
+        "300"
+      ],
+      [
+        "784",
+        "32",
+        "45",
+        "300"
+      ]
+    ],
+    "c51_v_vi_widths": [
+      56,
+      139
+    ],
+    "c52_deleted_genes": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    "source_data_check": "C51 all source interval endpoints, gene-band coordinates, gene names and phenotype labels retained exactly. C52 deletion gene membership retained in equal-width slots.",
+    "native_pages_inspected": [
+      "C51",
+      "C52"
+    ],
+    "other_review_svg_hashes_unchanged": 65,
+    "svg_bytes": {
+      "C51": 120334,
+      "C52": 112583
+    },
+    "odp_current_svg_hashes_verified": 67,
+    "verification": "One-off interval, retained-span, ID/reference and original-artwork checks; pyflakes and scoped diff checks. Permanent tests not added for fixed drawing data."
+  },
+  "c58_native_prose_followup": {
+    "changed_ids": [
+      "C58"
+    ],
+    "source": "prototype/chromosome_review_part_02.djot",
+    "generator": "prototype/regenerate_chromosome_review.py",
+    "change": "Move four explanation lines and their separator out of the SVG; preserve every diagram label and geometry; crop the unused prose area to1460x590. Native Djot owns the full explanation.",
+    "native_layout": "one-panel without a separate title; diagram, explanation and review/source identification retain their authored order.",
+    "paragraph_preserved_exactly": true,
+    "native_odp_text_boxes_containing_paragraph": 1,
+    "svg_contains_paragraph": false,
+    "other_review_svg_hashes_unchanged": 66,
+    "native_pages_inspected": [
+      "C58"
+    ],
+    "strict_native_lint_passed": true,
+    "capacity_warnings": 0,
+    "prototype_cleanup_idempotent": true
+  },
+  "bend_geometry_followup": {
+    "requested_ids": [
+      "C18",
+      "C19",
+      "C40",
+      "C50",
+      "C62",
+      "C66"
+    ],
+    "shared_cause": "The sampler discarded the outgoing normal at a shared vertex, then interpolated the turn over the whole following arm.",
+    "shared_fix": "Retain both tangent frames and build the surface from physical offset samples at the join. Keep authored loci and BPQ layers.",
+    "source_changes": "Replace authored hooks/tight turns with smooth curves; round eight quadrivalent elbows; give both Robertsonian arms and their foreground collar one shared root.",
+    "geometry_checks": {
+      "c18_y_length": [
+        246.67742236899267,
+        246.67742236899267
+      ],
+      "c19_y_lengths": [
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772,
+        197.44799302251772
+      ],
+      "c50_photo_sha256": [
+        "45874c7a550b58000e9c73f16057989bb87c74dd59b88920ea08518fef7ce467"
+      ],
+      "C40_minimum_radius_to_half_width": 1.5272895797419845,
+      "C50_minimum_radius_to_half_width": 1.4197721958089509,
+      "C62_minimum_radius_to_half_width": 2.976186033499529,
+      "c66_common_root": [
+        877.0,
+        113.0
+      ],
+      "c66_blue_length": [
+        496.7270733368896,
+        496.7270733368896
+      ],
+      "focused_tests_passed": 21,
+      "changed_ids": [
+        "C40",
+        "C50",
+        "C53",
+        "C55",
+        "C56",
+        "C57",
+        "C58",
+        "C33",
+        "C34",
+        "C35",
+        "C39",
+        "C09",
+        "C10",
+        "C12",
+        "C25",
+        "C62",
+        "C66",
+        "C67",
+        "C27",
+        "C30",
+        "C13",
+        "C18",
+        "C19"
+      ]
+    },
+    "labels_and_body_counts_preserved": true,
+    "all_changed_native_pages_inspected": [
+      "C40",
+      "C50",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C09",
+      "C10",
+      "C12",
+      "C25",
+      "C62",
+      "C66",
+      "C67",
+      "C27",
+      "C30",
+      "C13",
+      "C18",
+      "C19"
+    ],
+    "independent_native_review_ids": [
+      "C18",
+      "C19",
+      "C40",
+      "C50",
+      "C62",
+      "C66"
+    ],
+    "prototype_svg_replacements": 67,
+    "largest_review_svg_bytes": 17159874,
+    "original_lecture_assets_unchanged": 1049,
+    "native_capacity_warnings": 0
+  },
+  "fusion_duplicate_followup": {
+    "changed_ids": [
+      "C36",
+      "C03"
+    ],
+    "shared_figure_bytes_identical": true,
+    "ancestral_lengths": [
+      171.0,
+      263.0
+    ],
+    "fused_lengths": [
+      434.0,
+      434.0,
+      434.0
+    ],
+    "telomere_caps_per_fused_stage": 2,
+    "same_band_positions_all_fused_stages": true,
+    "final_inactive_site_is_regular_material": true,
+    "active_collar_counts": [
+      2,
+      1,
+      1
+    ],
+    "visible_collar_counts": [
+      2,
+      2,
+      1
+    ],
+    "old_circle_legend_removed": true,
+    "original_c03_label_wording_preserved": true,
+    "original_lecture_svg_files_unchanged": 1049,
+    "original_review_assets_unchanged": 68,
+    "focused_svg_tests_passed": 21,
+    "native_pdf_pages": 70,
+    "current_svg_references_embedded_by_exact_hash": 67,
+    "native_figure_areas_pixel_identical": true,
+    "shared_generator_reproduction_identical": true,
+    "native_c58_explanation_preserved": true,
+    "native_pages_inspected": [
+      "C03",
+      "C36"
+    ],
+    "independent_code_and_native_visual_reviews": "passed after correcting final callout to former inactive site",
+    "canonical_generator": "devel/render_human_chromosome_2_fusion.py"
   }
 }

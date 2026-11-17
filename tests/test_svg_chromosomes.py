@@ -95,3 +95,41 @@ def test_bent_surface_keeps_normal_width_at_different_sizes() -> None:
 		for fraction in (.1, .25, .5, .75, .9):
 			distance = surface.length*fraction
 			assert abs(surface.point(distance, width/2)-surface.point(distance, -width/2)) == pytest.approx(width)
+
+
+def test_hard_corner_keeps_each_straight_arm_normal_and_outline_offsets() -> None:
+	"""C62-style corners retain both perpendicular surface offsets, not a long wedge."""
+	import svgpathtools
+	from svg_tools.chromosome_surface import Surface
+	path = svgpathtools.parse_path('M233 460 L233 307 L80 307')
+	surface = Surface(path, 10)
+	for distance, tangent in ((76.5, -1j), (229.5, -1)):
+		upper = surface.point(distance, 5)
+		lower = surface.point(distance, -5)
+		offset = upper-lower
+		assert abs(offset) == pytest.approx(10)
+		assert (offset/tangent).real == pytest.approx(0, abs=1e-10)
+	outline = surface.envelope(cut=True)
+	for point in ('228.0000,307.0000', '233.0000,312.0000',
+		'233.0000,302.0000', '238.0000,307.0000'):
+		assert point in outline
+
+
+def test_long_curved_chromosome_stays_compact_and_follows_its_centerline() -> None:
+	"""Repeated surface coordinates must not turn one thin rod into megabytes of SVG."""
+	import svgpathtools
+	import svg_tools.chromosome_surface
+	drawing = 'M0 0 C300 -120 600 120 900 0'
+	path = svgpathtools.parse_path(drawing)
+	width = 4
+	surface = svg_tools.chromosome_surface.Surface(path, width)
+	for index in range(101):
+		distance = path.length()*index/100
+		parameter = path.ilength(distance)
+		for side in (-1, 1):
+			expected = path.point(parameter) + path.unit_tangent(parameter)*1j*side*width/2
+			assert abs(surface.point(distance, side*width/2)-expected) < width*.02
+	model = chromosomes.Chromosome((chromosomes.Segment('', '#087faf'),))
+	part = chromosomes.chromosome_path_part('long_curve', model, drawing,
+		thickness=width, labels=False, bands=False)
+	assert len(part.fragment.encode('ascii')) < 500_000

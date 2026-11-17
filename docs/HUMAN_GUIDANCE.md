@@ -1,5 +1,9 @@
 # Human guidance
 
+- By "fully formed" I mean condensed chromosomes. Uncondensed, stringy DNA in early
+  prophase should use simple paths without the full BPQ polish. Keep SVG files smaller
+  (November 17, 2026).
+
 - Reserve `exemplars/` for pre-approved best examples that agents should model. Put corpus
   collections awaiting instructor critique in `prototype/`, outside the growing `_temp/` folder;
   inclusion does not imply approval.
