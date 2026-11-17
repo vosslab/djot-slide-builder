@@ -2,7 +2,8 @@
 """Rebuild the ordered-half crossover figure from its layout model."""
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -33,14 +34,14 @@ def build_body(model: dict) -> ET.Element:
 		texture=False, labels=False,
 	)
 	wrapper = '<g xmlns="' + NS + '">' + layout.svg + '</g>'
-	element = list(ET.fromstring(wrapper))[0]
+	element = list(DET.fromstring(wrapper))[0]
 	return element
 
 
 #============================================
 def main() -> None:
 	"""Render all modeled chromosome bodies into the durable figure template."""
-	root = ET.parse(ASSETS / 'ordered_half.svg').getroot()
+	root = DET.parse(ASSETS / 'ordered_half.svg').getroot()
 	models = json.loads((ASSETS / 'ordered_half_models.json').read_text())
 	by_id = {model['id']: model for model in models}
 	for parent in root.iter():

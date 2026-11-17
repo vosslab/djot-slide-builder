@@ -1,4 +1,4 @@
-"""Lucide icons remain editable SVGs with explicit styling and attribution."""
+"""Font Awesome icons retain their vector geometry, color, and attribution."""
 
 import math
 import pathlib
@@ -18,23 +18,21 @@ SVG = '{http://www.w3.org/2000/svg}'
 def test_search_and_real_icon_geometry() -> None:
 	assert 'microscope' in search_icons('MICRO')
 	assert 'dna' in search_icons('dna')
-	assert 'workflow' in search_icons('workflow')
-	part = icon('microscope', size=48, color='#123456', stroke_width=3)
+	assert 'diagram-project' in search_icons('diagram')
+	part = icon('microscope', size=48, color='#123456')
 	root = defusedxml.ElementTree.fromstring(part.fragment)
 	assert root.findall(SVG + 'path')
+	assert '#123456' in part.fragment
 	assert 'currentColor' not in part.fragment
 
 
-def test_export_keeps_vector_and_license(tmp_path: pathlib.Path) -> None:
-	part = icon('search', size=24, color='red')
+def test_export_keeps_vector_and_attribution(tmp_path: pathlib.Path) -> None:
+	part = icon('vial', size=24, color='red')
 	path = tmp_path / 'icon.svg'
-	write_svg(path, 24, 24, 'Search', 'Search icon', group({'search': part}).fragment)
+	write_svg(path, 24, 24, 'Vial', 'Vial icon', group({'vial': part}).fragment)
 	root = defusedxml.ElementTree.parse(path).getroot()
-	assert root.findall('.//' + SVG + 'circle')
-	license_text = root.find('.//' + SVG + 'metadata').text
-	assert 'Lucide Icons and Contributors' in license_text
-	assert 'Copyright (c) 2013-present Cole Bemis' in license_text
-	assert 'Permission is hereby granted' in license_text
+	assert root.findall('.//' + SVG + 'path')
+	assert 'Font Awesome Free' in path.read_text(encoding='utf-8')
 
 
 @pytest.mark.parametrize('name', ['missing-icon-name', '../search', ''])
@@ -65,9 +63,10 @@ def test_missing_dependency(monkeypatch: pytest.MonkeyPatch, tmp_path: pathlib.P
 def test_non_square_viewport_keeps_aspect(
 		monkeypatch: pytest.MonkeyPatch, tmp_path: pathlib.Path) -> None:
 	import svg_tools.icons as icons
-	(tmp_path / 'icons').mkdir()
-	(tmp_path / 'LICENSE').write_text('License')
-	(tmp_path / 'icons' / 'wide.svg').write_text(
-		'<svg viewBox="0 0 20 10" stroke="currentColor" stroke-width="2"><path d="M0 0L20 10"/></svg>')
+	icon_dir = tmp_path / 'svgs/solid'
+	icon_dir.mkdir(parents=True)
+	(tmp_path / 'LICENSE.txt').write_text('License')
+	(icon_dir / 'wide.svg').write_text(
+		'<svg viewBox="0 0 20 10"><!-- Font Awesome Free --><path fill="currentColor" d="M0 0L20 10"/></svg>')
 	monkeypatch.setattr(icons, '_PACKAGE', tmp_path)
 	assert icon('wide', size=40, color='blue').bounds == (0, 0, 40, 20)

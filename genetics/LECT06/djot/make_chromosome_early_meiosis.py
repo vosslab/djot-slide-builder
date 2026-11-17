@@ -2,7 +2,8 @@
 """Regenerate five early meiosis and homolog/sister figures from frozen sources."""
 import argparse
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -27,7 +28,7 @@ def main() -> None:
 	ET.register_namespace('', NS[1:-1])
 	output_dir.mkdir(parents=True, exist_ok=True)
 	for name, expected in zip(NAMES, EXPECTED):
-		root = ET.parse(SOURCE / (name + '.drawn.svg')).getroot()
+		root = DET.parse(SOURCE / (name + '.drawn.svg')).getroot()
 		count = 0
 		for parent in list(root.iter()):
 			for index, node in enumerate(list(parent)):
@@ -42,7 +43,7 @@ def main() -> None:
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, 1),))
 				part = svg_tools.chromosomes.chromosome_path_part(f'{name}-chromatid-{count-1}', model,
 					node.get('d'), thickness=width, labels=False)
-				body = ET.fromstring(part.fragment)
+				body = DET.fromstring(part.fragment)
 				if node.get('id'):
 					body.set('id', node.get('id'))
 				if node.get('data-chromatid'):

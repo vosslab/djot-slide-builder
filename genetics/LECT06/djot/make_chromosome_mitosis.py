@@ -3,7 +3,8 @@
 import argparse
 import pathlib
 import re
-import defusedxml.ElementTree as xml
+import xml.etree.ElementTree as xml
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 
@@ -88,7 +89,7 @@ def source_centromere_fraction(group: xml.Element, path_d: str) -> float:
 
 def svg_fragment(fragment: str) -> xml.Element:
 	"""Parse a shared body fragment as SVG so serialization keeps one namespace."""
-	element = xml.fromstring(fragment)
+	element = DET.fromstring(fragment)
 	for node in element.iter():
 		if isinstance(node.tag, str) and not node.tag.startswith('{'):
 			node.tag = SVG + node.tag
@@ -143,7 +144,7 @@ def main(output_root: pathlib.Path | None = None) -> None:
 	output_dir.mkdir(parents=True, exist_ok=True)
 	manifest = {}
 	for stem in ASSETS:
-		root = xml.parse(TEMPLATES / (stem + '.drawn.svg')).getroot()
+		root = DET.parse(TEMPLATES / (stem + '.drawn.svg')).getroot()
 		manifest[stem] = replace_groups(root)
 		output = output_dir / (stem + '.drawn.svg')
 		xml.ElementTree(root).write(output, encoding='unicode')

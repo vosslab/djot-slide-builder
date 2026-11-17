@@ -2,7 +2,8 @@
 
 import base64
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chromosomes
 
@@ -67,14 +68,14 @@ def build(output_dir: pathlib.Path) -> None:
 	output_dir.mkdir(parents=True, exist_ok=True)
 	for name in ('recombinant_chromosomes','recombinant_chromosomes_review'):
 		source = BASE/'sources'/f'{name}.svg'
-		root = ET.parse(source).getroot()
+		root = DET.parse(source).getroot()
 		clean_bodies(root)
 		canvas = root.find('{'+SVG+'}g')
 		bodies = ET.Element('{'+SVG+'}g',{'id':'shared-source-chromosome-bodies'})
 		for identity,colors,path,thick in source_bodies():
 			part = chromosomes.chromosome_path_part(identity,model(colors),path,
 				thickness=thick,labels=False)
-			bodies.append(ET.fromstring(part.fragment))
+			bodies.append(DET.fromstring(part.fragment))
 		# The source places blue over the upper contact and red over the lower contact.
 		defs = ET.SubElement(bodies,'{'+SVG+'}defs')
 		clip = ET.SubElement(defs,'{'+SVG+'}clipPath',{'id':'upper-synapsis-contact'})
@@ -82,7 +83,7 @@ def build(output_dir: pathlib.Path) -> None:
 		bridge = ET.SubElement(bodies,'{'+SVG+'}g',{'clip-path':'url(#upper-synapsis-contact)',
 			'data-repeat-of':'synapsis-blue-inner'})
 		identity,colors,path,thick = source_bodies()[6]
-		bridge.append(ET.fromstring(chromosomes.chromosome_path_part(identity+'-contact',
+		bridge.append(DET.fromstring(chromosomes.chromosome_path_part(identity+'-contact',
 			model(colors),path,thickness=thick,labels=False).fragment))
 		canvas.insert(1,bodies)
 		root.find('{'+SVG+'}desc').text += (' Shared chromosome bodies preserve the two '

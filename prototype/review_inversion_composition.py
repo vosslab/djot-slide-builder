@@ -3,7 +3,8 @@
 from copy import deepcopy
 from pathlib import Path
 import subprocess
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 
 SVG = '{http://www.w3.org/2000/svg}'
@@ -32,7 +33,7 @@ def _crop(root: ET.Element, width: int, height: int, y: int = 0) -> None:
 
 def _split_c55(path: Path) -> None:
 	"""Split the overview and the loop into two compact, independent panels."""
-	original = ET.parse(path).getroot()
+	original = DET.parse(path).getroot()
 
 	left = deepcopy(original)
 	left_canvas = _canvas(left)
@@ -61,7 +62,7 @@ def separate_inversion_prose() -> None:
 	_split_c55(assets / 'inversion-synapsis.drawn.svg')
 
 	path = assets / 'paracentric-anaphase.drawn.svg'
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	canvas = _canvas(root)
 	_remove_text(canvas, {
 		'When the centromere is not included in the inverted region, one of the crossover products',
@@ -76,7 +77,7 @@ def separate_inversion_prose() -> None:
 	_write(root, path)
 
 	path = assets / 'inversion-double-crossover-problem.drawn.svg'
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	canvas = _canvas(root)
 	_remove_text(canvas, {
 		'First crossover: between B/b and C/c',

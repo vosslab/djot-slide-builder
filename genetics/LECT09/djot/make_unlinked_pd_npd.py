@@ -4,7 +4,8 @@
 # Standard Library
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 # local repo modules
 import svg_tools.chromosomes
@@ -18,7 +19,7 @@ NS = 'http://www.w3.org/2000/svg'
 def main() -> None:
 	"""Render each template slot with the shared chromosome body tool."""
 	ET.register_namespace('', NS)
-	root = ET.parse(DATA / 'unlinked_pd_npd.svg').getroot()
+	root = DET.parse(DATA / 'unlinked_pd_npd.svg').getroot()
 	models = json.loads((DATA / 'unlinked_pd_npd_models.json').read_text())
 	for model in models:
 		group = root.find(".//{%s}g[@id='%s']" % (NS, model['id']))
@@ -29,7 +30,7 @@ def main() -> None:
 			model['id'] + '-body', chromosome, model['path'], thickness=28, labels=False,
 		)
 		group.set('data-chromatid', 'true')
-		group.append(ET.fromstring(part.fragment))
+		group.append(DET.fromstring(part.fragment))
 	OUTPUT.mkdir(parents=True, exist_ok=True)
 	ET.ElementTree(root).write(
 		OUTPUT / 'unlinked_pd_npd.drawn.svg', encoding='utf-8', xml_declaration=True,

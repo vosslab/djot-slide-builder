@@ -8,7 +8,8 @@ that differ from adjacent native ploidy notation; no extra bodies are inferred.
 """
 
 from pathlib import Path
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 from svg_tools.chromosomes import Centromere, Chromosome, Segment, chromosome_part, chromosome_path_part
 
@@ -660,11 +661,11 @@ FIGURES = [
 
 def main() -> None:
 	for relative, template, specs in FIGURES:
-		root = ET.fromstring(template)
+		root = DET.fromstring(template)
 		for element in root.iter():
 			if "data-recipe-slot" in element.attrib:
 				index = int(element.attrib.pop("data-recipe-slot"))
-				element.append(ET.fromstring(chromosome(specs[index])))
+				element.append(DET.fromstring(chromosome(specs[index])))
 		data = ET.tostring(root, encoding="ascii", xml_declaration=True)
 		(BASE / relative).write_bytes(data)
 		if relative == 'assets/visual_renewal/ploidy_sets.drawn.svg':
@@ -716,7 +717,7 @@ def label(x: float, y: float, text: str, size: float = 36, anchor: str = 'middle
 def scene(relative: str, width: float, height: float, title: str, description: str,
 	content: str) -> None:
 	text = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">{description}</desc><defs><marker id="process-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11Z" fill="{INK}"/></marker></defs><rect width="{width}" height="{height}" fill="white"/>' + content + '</svg>'
-	root = ET.fromstring(text)
+	root = DET.fromstring(text)
 	(BASE/'assets/lect12b-polyploidy'/relative).write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
 
 

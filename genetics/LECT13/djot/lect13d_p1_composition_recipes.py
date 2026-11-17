@@ -5,7 +5,8 @@ import argparse
 import hashlib
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.parts
 import svg_tools.svg_import
@@ -35,7 +36,7 @@ def compose(name: str, specification: dict,
 		'height':str(height), 'viewBox':f'0 0 {width} {height}', 'role':'img', 'aria-labelledby':'title description'})
 	ET.SubElement(root, 'title', {'id':'title'}).text = name.replace('_', ' ')
 	ET.SubElement(root, 'desc', {'id':'description'}).text = specification['description']
-	root.append(ET.fromstring(group.fragment))
+	root.append(DET.fromstring(group.fragment))
 	for index, cross in enumerate(specification['crosses']):
 		x, y, half = cross['x'], cross['y'], cross['size'] / 2
 		path = f'M {x-half} {y-half} L {x+half} {y+half} M {x-half} {y+half} L {x+half} {y-half}'

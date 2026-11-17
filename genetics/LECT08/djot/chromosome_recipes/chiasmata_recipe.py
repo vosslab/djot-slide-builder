@@ -4,7 +4,8 @@
 import argparse
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 # local repo modules
 import svg_tools.chromosomes
 
@@ -27,7 +28,7 @@ def main() -> None:
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	source = json.loads((HERE / 'chiasmata_sources.json').read_text())
-	root = ET.fromstring(source['svg'])
+	root = DET.fromstring(source['svg'])
 	markers = {}
 	for parent in root.iter():
 		for child in list(parent):
@@ -38,7 +39,7 @@ def main() -> None:
 			segments = (svg_tools.chromosomes.Segment('', item['color'], item['before']), svg_tools.chromosomes.Segment('', item['color'], item['after']))
 			model = svg_tools.chromosomes.Chromosome(segments, 1 if item['marker'] else None)
 			part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model, item['path'], thickness=23, labels=False)
-			fragment = ET.fromstring(part.fragment)
+			fragment = DET.fromstring(part.fragment)
 			for node in list(fragment):
 				if node.tag == 'ellipse' and node.get('id', '').endswith('-centromere'):
 					if index in (0, 1):

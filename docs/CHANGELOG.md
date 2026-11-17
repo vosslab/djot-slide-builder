@@ -2,6 +2,9 @@
 
 ### Behavior or Interface Changes
 
+- Replace `lucide-static` with Font Awesome Free for general SVG icons. Read individual solid
+  SVG assets during figure generation, retain their attribution comments, and remove the
+  stroke-width option and repeated full-license metadata. Update the icon example and guides.
 - Standardize chromosome loci around colored gene regions and upright, contrast-aware
   labels. Replace floating recipe labels where the chromosome has room, while retaining
   readable external labels for dense diagrams and whole-chromosome identifiers.
@@ -39,10 +42,19 @@
 
 ### Fixes and Maintenance
 
+- Replace unsafe XML parsing calls with the existing safe parser while retaining XML builders
+  and serialization. Correct annotations, indentation, executable modes, generator entrypoints,
+  source character references, and broken documentation links. Align the frozen meiosis-input
+  checksum with its newline-terminated JSON without changing the chromosome records.
 - Align SVG runtime guidance with the master repository rules: use the Python bootstrap,
-  `pyflakes` and focused pytest checks. Use Git-derived roots in the chromosome review
-  scripts and the revised labeling recipes. Keep task briefs positive and specific.
+  `pyflakes` and focused pytest checks. Keep task briefs positive and specific.
 - Correct the C24 prototype destination so the review uses the regenerated locus diagram.
+
+### Removals and Deprecations
+
+- Prune 73 repository-owned test functions and 10 low-value test modules, removing 1,562 lines
+  of artwork snapshots, tuning assertions and duplicate implementation checks. Retain scientific
+  geometry, source preservation, native text, XML safety, fonts, atomic output and authoring checks.
 
 ### Decisions and Failures
 
@@ -52,6 +64,13 @@
 
 ### Developer Tests and Notes
 
+- Font Awesome migration: 9,281 base-suite tests pass; npm reports no known vulnerabilities.
+  Export the 18-slide toolkit showcase and inspect its icon page, verifying that the current
+  icon SVG is embedded unchanged. The four-icon SVG falls from 15,827 to 4,060 bytes.
+- Complete six independent cleanup audit passes: Plan, Test, Style, Docs, Legacy and Comment.
+  Regenerate all 68 chromosome review assets with identical output bytes and preserve all 1,040
+  original lecture SVGs. Restore C53's heading spaces after source indentation cleanup.
+  Keep the ASCII checks active and validation bytecode-free.
 - Chromosome labels: 22 focused SVG tests, source-label preservation, continuous-chromatid
   product tracing, SVG references, native slide export and visual review. Original lecture
   SVGs remain unchanged; 71 review slides retain native explanations and the build timestamp.

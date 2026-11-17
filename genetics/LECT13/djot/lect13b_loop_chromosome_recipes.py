@@ -7,7 +7,8 @@ import copy
 import json
 import math
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import subprocess
@@ -47,7 +48,7 @@ def replace_markers(root: ET.Element, name: str) -> dict[str, tuple[ET.Element, 
 			part = chromosomes.chromosome_path_part(f'lect13b-{name}-marker-{count}', model,
 				f'M {x-thickness/2} {y} L {x+thickness/2} {y}',
 				thickness=thickness, cut_ends=True, labels=False)
-			replacement = ET.fromstring(part.fragment)
+			replacement = DET.fromstring(part.fragment)
 			replacement.set('stroke', 'none')
 			index = list(parent).index(child)
 			parent.remove(child)
@@ -76,7 +77,7 @@ def replace_sister_markers(name: str,
 		angle = math.degrees(math.atan2(y2-y1, x2-x1))-90
 		# Marker coordinates are local to their shared parent.  In the anaphase
 		# figures that parent is the scaled Stage A group, not the document root.
-		first[0].append(ET.fromstring(svg_tools.parts.transform(belt,
+		first[0].append(DET.fromstring(svg_tools.parts.transform(belt,
 			x=(x1+x2)/2, y=(y1+y2)/2, rotation=angle).fragment))
 
 
@@ -138,7 +139,7 @@ def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
 #============================================
 def render_source(name: str, source: dict) -> ET.Element:
 	"""Build one source-preserving composition from its shell and body data."""
-	root = ET.fromstring(source['svg'])
+	root = DET.fromstring(source['svg'])
 	for parent in root.iter():
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:
@@ -150,7 +151,7 @@ def render_source(name: str, source: dict) -> ET.Element:
 				thickness=data['thickness'], cut_ends=data['cut'], labels=False)
 			position = list(parent).index(child)
 			parent.remove(child)
-			replacement = ET.fromstring(part.fragment)
+			replacement = DET.fromstring(part.fragment)
 			replacement.set('stroke', 'none')
 			parent.insert(position, replacement)
 	if name in ('paracentric-anaphase', 'pericentric-pairing', 'pericentric-anaphase'):

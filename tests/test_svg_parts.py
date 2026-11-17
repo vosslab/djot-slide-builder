@@ -14,5 +14,3 @@ def test_part_validates_geometry() -> None:
 		svg_tools.parts.SvgPart('', (0, 0, math.inf, 1), {})
 	with pytest.raises(ValueError):
 		svg_tools.parts.SvgPart('', (0, 0, 1, 1), {'bad': (math.nan, 0)})
-
-

@@ -25,10 +25,11 @@ to edit it. Run the build outside an agent sandbox because PDF output invokes Li
 
 Use the [toolkit catalogue](SVG_TOOLKIT.md), [cookbook](SVG_TOOLKIT_COOKBOOK.md), and
 [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp) to choose and compose parts.
-For SVG work, run Homebrew Python directly from the repository root; set a local plot cache:
+For SVG work, use the repository bootstrap and a local plot cache:
 
 ```bash
-PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.allele_frequencies _temp/allele_frequencies.svg
+source source_me.sh && MPLCONFIGDIR="$PWD/_temp/mplconfig" python3 -m \
+  svg_tools.examples.allele_frequencies _temp/allele_frequencies.svg
 ```
 
 The cookbook explains adding the SVG to a native slide. Check example output paths before running

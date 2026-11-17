@@ -2,7 +2,8 @@
 
 from pathlib import Path
 import subprocess
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 
 SVG = '{http://www.w3.org/2000/svg}'
@@ -22,7 +23,7 @@ def _remove_labels(root: ET.Element, labels: set[str]) -> None:
 
 
 def _crop_c13(path: Path) -> None:
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	_remove_labels(root, {
 		'label-14', 'label-15', 'label-16',
 		'label-17', 'label-18',
@@ -36,7 +37,7 @@ def _crop_c13(path: Path) -> None:
 
 
 def _crop_c25(path: Path) -> None:
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	nodes = list(root)
 	for index in (9, 10, 11, 12, 13, 23, 24):
 		root.remove(nodes[index])

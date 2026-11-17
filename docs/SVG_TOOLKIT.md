@@ -143,8 +143,10 @@ not follow a course accent hue. Use semantic colors consistently across related 
   `size` sets width and bounds are the clipped viewport, not tight paint bounds. Use distinct
   names or `group` for repeated instances. Raster artists and unsupported SVG features are
   rejected; consult [the importer](../svg_tools/svg_import.py) and example for its scope.
-- `icons.search_icons(query)` searches installed Lucide names; `icons.icon(name, size=...,
-  color=..., stroke_width=2)` loads one. Install project npm dependencies for the offline assets.
+- `icons.search_icons(query)` searches installed Font Awesome Free solid icon names;
+  `icons.icon(name, size=..., color=...)` loads one SVG, retaining its attribution comment.
+  Install project npm dependencies for the offline assets. Icons are filled shapes; `size` sets
+  their width and preserves the original aspect ratio. Slides carry only the selected icons.
 - `plots.plot_style(course='genetics')` scopes Matplotlib styling; `figure_to_part(figure,
   name=..., size=None)` imports the caller's vector figure without closing it or changing its
   data. Supply the values and axes yourself; inspect labels and any clipping.

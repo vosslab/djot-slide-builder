@@ -1,4 +1,4 @@
-"""Import static Lucide and Matplotlib SVGs as isolated, clipped parts."""
+"""Import static SVG files as isolated, clipped parts."""
 
 import math
 import re

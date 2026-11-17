@@ -51,10 +51,10 @@ CROSSOVER_TEMPLATE = '''<svg xmlns="http://www.w3.org/2000/svg" width="1600" hei
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#213547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect width="1600" height="460" fill="white"/>
 <g font-family="Atkinson Hyperlegible Next">
-<text x="22" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(A)		Normal pairing</text>
-<text x="410" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(B)		Mispairing</text>
-<text x="800" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(C)		Unequal crossing over</text>
-<text x="1230" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(D)		Result of crossover</text>
+<text x="22" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(A)  Normal pairing</text>
+<text x="410" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(B)  Mispairing</text>
+<text x="800" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(C)  Unequal crossing over</text>
+<text x="1230" y="38" font-size="25" text-anchor="start" fill="#213547" font-weight="bold" >(D)  Result of crossover</text>
 <g id="normal-pairing">
 <path d="M32 130 C85 130 84 165 108 165 S150 130 185 130 L295 130" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_0<rect x="187" y="117" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="117" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><path d="M32 200 C85 200 84 165 108 165 S150 200 185 200 L295 200" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_1<rect x="187" y="187" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="187" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/>
 <path d="M32 285 C85 285 84 320 108 320 S150 285 185 285 L295 285" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_2<rect x="187" y="272" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="272" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><path d="M32 355 C85 355 84 320 108 320 S150 355 185 355 L295 355" fill="none" stroke="white" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>$chromatid_3<rect x="187" y="342" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/><rect x="225" y="342" width="37" height="26" rx="3" fill="#ae702c" stroke="#344651" stroke-width="0.9"/>

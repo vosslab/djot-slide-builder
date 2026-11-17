@@ -4,7 +4,8 @@
 import hashlib
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 import svg_tools.drawing
@@ -59,7 +60,7 @@ def robertsonian_footer(source: dict,
 	shared = output_directory / 'robertsonian_gamete_products.drawn.svg'
 	if not shared.is_file():
 		raise ValueError('Generate shared Robertsonian gamete products before this composition')
-	root = ET.parse(shared).getroot()
+	root = DET.parse(shared).getroot()
 	root.set('data-chromosome-review', 'C68')
 	for element in root:
 		if element.tag.endswith('title'):
@@ -75,14 +76,14 @@ def robertsonian_footer(source: dict,
 #============================================
 def normalize_namespace(path: pathlib.Path) -> None:
 	"""Avoid LibreOffice's blank-import bug with prefixed SVG element names."""
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	for element in root.iter():
 		if element.tag.startswith('{http://www.w3.org/2000/svg}'):
 			element.tag = element.tag.split('}', 1)[1]
 	root.set('xmlns', 'http://www.w3.org/2000/svg')
 	markup = ET.tostring(root, encoding='ascii', xml_declaration=True)
 	if any(not e.tag.startswith('{http://www.w3.org/2000/svg}')
-		for e in ET.fromstring(markup).iter()):
+		for e in DET.fromstring(markup).iter()):
 		raise ValueError('A composition element lost its SVG namespace')
 	path.write_bytes(markup)
 

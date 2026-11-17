@@ -2,7 +2,8 @@
 """Rebuild the three ordered-tetrad diagrams from durable layout/geometry inputs."""
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes
@@ -16,14 +17,14 @@ ET.register_namespace('', NS[1:-1])
 
 
 def fragment(xml: str) -> ET.Element:
-	element = ET.fromstring(xml)
+	element = DET.fromstring(xml)
 	for node in element.iter():
 		node.tag = NS + node.tag
 	return element
 
 
 def build(name: str, contract: dict) -> bytes:
-	root = ET.parse(DATA/f'{name}.svg').getroot()
+	root = DET.parse(DATA/f'{name}.svg').getroot()
 	bodies = {b['id']: b for g in contract['groups'] for b in g['bodies']}
 	markers = {m['id']: m for g in contract['groups'] for m in g['markers']}
 	for parent in list(root.iter()):

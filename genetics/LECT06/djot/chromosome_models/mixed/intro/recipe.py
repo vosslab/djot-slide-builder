@@ -1,7 +1,8 @@
 """Create source-preserving hybrid replacements for the LECT06 introduction panels."""
 
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import base64
 
 import svg_tools.chromosomes
@@ -56,11 +57,11 @@ def replace_old_body_pixels(root: ET.Element, key: str) -> None:
 #============================================
 def write_panel(key: str, output_dir: pathlib.Path) -> None:
 	"""Insert shared chromosome bodies beneath existing leaders and labels."""
-	tree = ET.parse(SOURCES[key])
+	tree = DET.parse(SOURCES[key])
 	root = tree.getroot()
 	replace_old_body_pixels(root, key)
 	canvas = next(element for element in root if element.tag == '{' + SVG + '}g')
-	replacement = ET.fromstring(
+	replacement = DET.fromstring(
 		'<g xmlns="http://www.w3.org/2000/svg" id="shared-chromosome-bodies">'
 		+ panel_bodies(key) + '</g>')
 	# Source artwork stays exact; existing leader lines and labels remain above the new bodies.

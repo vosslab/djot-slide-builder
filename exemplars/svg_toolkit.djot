@@ -64,13 +64,13 @@ Imported patterns and live text can be repeated.
 
 @image
 
-![Lucide icons can be placed beside editable labels.](repo:docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg)
+![Font Awesome icons can be placed beside text labels.](repo:docs/slide-specs/illustration_examples/svg_toolkit/icons.drawn.svg)
 
 @caption
 
 *Icons*
 
-Lucide icons can be placed beside editable labels.
+Font Awesome icons can be placed beside text labels.
 
 === layout: big-image
 

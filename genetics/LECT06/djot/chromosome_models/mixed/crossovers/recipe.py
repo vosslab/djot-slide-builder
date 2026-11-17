@@ -1,7 +1,8 @@
 """Preserve molecular evidence and redraw four condensed chromatids at two chiasmata."""
 
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chromosomes
 
@@ -15,7 +16,7 @@ def build(output_dir: pathlib.Path) -> None:
 	"""Insert four shared centerline bodies below the original molecular inset and labels."""
 	output_dir.mkdir(parents=True, exist_ok=True)
 	source = BASE/'sources/crossovers_chiasmata.svg'
-	root = ET.parse(source).getroot()
+	root = DET.parse(source).getroot()
 	art = root.find('.//{'+SVG+'}g[@id="original-artwork"]')
 	group = ET.Element('{'+SVG+'}g',{'id':'shared-condensed-chromatids',
 		'transform':'translate(105 39) scale(0.415625)'})
@@ -32,7 +33,7 @@ def build(output_dir: pathlib.Path) -> None:
 	for name,color,path in paths:
 		model = chromosomes.Chromosome((chromosomes.Segment('',color),))
 		part = chromosomes.chromosome_path_part(name,model,path,thickness=32,labels=False)
-		group.append(ET.fromstring(part.fragment))
+		group.append(DET.fromstring(part.fragment))
 	# Alternate the existing red chromatid over the first contact to retain the weave.
 	defs = ET.SubElement(group,'{'+SVG+'}defs')
 	clip = ET.SubElement(defs,'{'+SVG+'}clipPath',{'id':'first-contact'})
@@ -42,7 +43,7 @@ def build(output_dir: pathlib.Path) -> None:
 	model = chromosomes.Chromosome((chromosomes.Segment('','#C95642'),))
 	part = chromosomes.chromosome_path_part('red-inner-contact',model,paths[2][2],
 		thickness=32,labels=False)
-	bridge.append(ET.fromstring(part.fragment))
+	bridge.append(DET.fromstring(part.fragment))
 	art.insert(1,group)
 	root.find('{'+SVG+'}desc').text += (' Lower condensed chromatids use shared chromosome paths. '
 		'Four chromatids and two nonsister crossings are retained; the source supplies no '

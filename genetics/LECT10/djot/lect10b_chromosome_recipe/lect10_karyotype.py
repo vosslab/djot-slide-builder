@@ -1,7 +1,8 @@
 """Replace only the embedded schematic; retain the empirical image bytes."""
 import math
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
 
 NS = 'http://www.w3.org/2000/svg'
@@ -21,7 +22,7 @@ CENTERLINES = [((190,55),(301,92),(427,52)), ((190,64),(301,99),(427,61)),
 	((190,169),(301,116),(427,137)), ((190,178),(301,123),(427,146))]
 
 def main(destination: pathlib.Path) -> None:
-	root=ET.parse(HERE/'templates'/'karyotype_preparation.svg').getroot()
+	root=DET.parse(HERE/'templates'/'karyotype_preparation.svg').getroot()
 	parent=next(p for p in root.iter() if any(c.get('id')=='image_6' for c in p))
 	image=next(c for c in parent if c.get('id')=='image_6')
 	overlay=ET.Element(f'{{{NS}}}g',{'id':'chromosome-schematic-replacement'})
@@ -37,6 +38,6 @@ def main(destination: pathlib.Path) -> None:
 			(svg_tools.chromosomes.Centromere(6),))
 		path='M '+' L '.join(f'{x:.4f} {y}' for x,y in pts)
 		part=svg_tools.chromosomes.chromosome_path_part('schematic-sister-'+str(i),model,path,thickness=8,labels=False)
-		overlay.append(ET.fromstring(part.fragment))
+		overlay.append(DET.fromstring(part.fragment))
 	parent.insert(list(parent).index(image)+1,overlay)
 	ET.ElementTree(root).write(destination,encoding='unicode')

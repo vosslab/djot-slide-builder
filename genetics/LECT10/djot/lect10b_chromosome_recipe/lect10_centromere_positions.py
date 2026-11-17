@@ -1,6 +1,7 @@
 """Source chromosome positions and labels, with shared chromosome bodies."""
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
 
 NS = 'http://www.w3.org/2000/svg'
@@ -10,7 +11,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 CENTERS = {'acrocentric':140, 'submetacentric':210, 'metacentric':247}
 
 def main(destination: pathlib.Path) -> None:
-	root = ET.parse(HERE / 'templates' / 'centromere_positions.drawn.svg').getroot()
+	root = DET.parse(HERE / 'templates' / 'centromere_positions.drawn.svg').getroot()
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, center in CENTERS.items():
 		top, length = 84, 326
@@ -23,7 +24,7 @@ def main(destination: pathlib.Path) -> None:
 			for index, model in enumerate(models))
 		layout = svg_tools.chromosomes.sister_chromatid_parts(name, chromatids,
 			thickness=28, labels=False)
-		body = ET.fromstring(layout.fragment)
+		body = DET.fromstring(layout.fragment)
 		slot = slots[name+'-body-slot']; slot.set('transform',f'translate(-65 {top})')
 		slot.append(body)
 	# Rounded caps terminate at y=96; there is no p arm above the marker.
@@ -34,7 +35,7 @@ def main(destination: pathlib.Path) -> None:
 		'M 10 112 C 14 190 42 330 48 394', thickness=30, labels=False)
 	marker = svg_tools.chromosomes.centromere_part('telocentric-terminal-v2', thickness=30, across=65)
 	slot = slots['telocentric-body-slot']
-	slot.append(ET.fromstring(left.fragment)); slot.append(ET.fromstring(right.fragment))
+	slot.append(DET.fromstring(left.fragment)); slot.append(DET.fromstring(right.fragment))
 	marker_group = ET.SubElement(slot, f'{{{NS}}}g', {'transform':'translate(0 96) rotate(90)'})
-	marker_group.append(ET.fromstring(marker.fragment))
+	marker_group.append(DET.fromstring(marker.fragment))
 	ET.ElementTree(root).write(destination,encoding='unicode')

@@ -1,6 +1,7 @@
 """Regenerate the source SKY workflow with shared chromosome marks."""
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
 
 NS = 'http://www.w3.org/2000/svg'
@@ -15,12 +16,12 @@ MARKS = [
 	('orange',667,554,18,10,0,'#ed8c2b')]
 
 def main(destination: pathlib.Path) -> None:
-	root = ET.parse(HERE / 'templates' / 'sky_probe_mixture_workflow.drawn.svg').getroot()
+	root = DET.parse(HERE / 'templates' / 'sky_probe_mixture_workflow.drawn.svg').getroot()
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, x, y, length, width, angle, color in MARKS:
 		layout = svg_tools.chromosomes.render_chromosome_layout('sky-' + name, svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color),)),
 			length=length, thickness=width, texture=False, labels=False)
 		node = slots['slide-mark-' + name]
 		node.set('transform', f'translate({x} {y}) rotate({angle}) translate({-length/2} {-width/2})')
-		node.append(ET.fromstring(layout.svg))
+		node.append(DET.fromstring(layout.svg))
 	ET.ElementTree(root).write(destination, encoding='unicode')

@@ -49,8 +49,7 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
   I may never see them. Use the recorded guidance and available evidence to complete the work.
 
 - Use `source source_me.sh && python3 ...` for Python commands, including SVG work.
-  Follow [REPO_STYLE.md](REPO_STYLE.md) as the master repository guidance, including its
-  root-discovery convention (November 17, 2026).
+  Follow [REPO_STYLE.md](REPO_STYLE.md) as the master repository guidance (November 17, 2026).
 
 - Retain tests enforcing Djot syntax and authoring guidelines even when their exact assertions
   would otherwise look fragile. Tests must not force implementation to stay in monolithic files.
@@ -874,6 +873,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   pale outlined lettering inherited from dark-mode logos. Improve the games' personality and appeal while reducing their footprint.
 - Judge by whether a passerby would stop, look, and try a game; layout organization alone
   does not meet the brief. Inspect Letter-size rendering and verify QR functionality.
+
+## General icons
+
+- For general icons, I prefer Font Awesome.
 
 ## MathJax minimum version
 

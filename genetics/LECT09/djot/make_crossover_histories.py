@@ -2,7 +2,8 @@
 """Reconstruct all six source panels using four continuous product chromatids each."""
 import copy
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes
@@ -73,7 +74,7 @@ def strip_namespace(element: ET.Element) -> ET.Element:
 	return element
 
 def build() -> bytes:
-	source=ET.parse(SOURCE).getroot()
+	source=DET.parse(SOURCE).getroot()
 	root=ET.Element('svg',{'xmlns':NS[1:-1], 'width':source.get('width'), 'height':source.get('height'),
 		'viewBox':source.get('viewBox'), 'role':'img','aria-labelledby':'figure-title figure-description'})
 	node(root,'title',id='figure-title').text='Six Crossover Histories and Their Tetrad Outcomes'
@@ -108,7 +109,7 @@ def build() -> bytes:
 				regions[-1]=(regions[-1][0]-1e-7,regions[-1][1])
 			model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('brown' if color==0 else 'gold',(BROWN,GOLD)[color],length) for length,color in regions))
 			part=svg_tools.chromosomes.chromosome_path_part(f'{pid}-chromatid-{index}',model,whole,thickness=9,labels=False)
-			element=ET.fromstring(part.fragment)
+			element=DET.fromstring(part.fragment)
 			element.set('data-role','chromatid');element.set('data-source-index',str(index))
 			product=('A' if index<2 else 'a')+('B' if regions[-1][1]==0 else 'b')
 			element.set('data-product',product);element.set('data-centerline',whole)
@@ -118,7 +119,7 @@ def build() -> bytes:
 		if pid=='D':
 			middle=geometry[2];geometry.remove(middle);geometry.insert(0,middle)
 		for i,cy in enumerate((10,48)):
-			marker=ET.fromstring(svg_tools.chromosomes.centromere_part(f'{pid}-centromere-{i}',thickness=7).fragment)
+			marker=DET.fromstring(svg_tools.chromosomes.centromere_part(f'{pid}-centromere-{i}',thickness=7).fragment)
 			marker.set('transform',f'translate(30 {cy})'); geometry.append(marker)
 		labels=node(geometry,'g',id=f'{pid}-alleles',font_family='Georgia, serif',font_style='italic',fill='#FFFFFF')
 		for i,ly in enumerate((0,24,38,60)):

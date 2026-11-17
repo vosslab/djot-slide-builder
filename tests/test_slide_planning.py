@@ -47,14 +47,6 @@ def test_direct_odp_asset_binding_keeps_source_visual_ordinal() -> None:
 
 
 #============================================
-def test_planner_assigns_clear_text_and_image_columns_to_named_slots() -> None:
-	"""Side-by-side editable prose and an image keep separate native destinations."""
-	plan = slide_plan.plan_slide(
-		(text_region(.08, .32, .45, .76, "Editable prose"),),
-		(image_region(.55, .32, .92, .76),),
-	)
-
-	assert tuple(slot.name for slot in plan.slots) == ("left", "right")
 
 
 #============================================

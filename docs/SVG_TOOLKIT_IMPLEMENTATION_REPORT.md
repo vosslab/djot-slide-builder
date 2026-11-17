@@ -5,12 +5,14 @@ current visual direction, see the [visual style guide](SVG_VISUAL_STYLE.md); the
 upgrade has separate verification in [SVG_AESTHETIC_UPGRADE_REPORT.md](SVG_AESTHETIC_UPGRADE_REPORT.md)
 and does not inherit acceptance from this report.
 
+General icons now use Font Awesome Free; see [SVG_TOOLKIT.md](SVG_TOOLKIT.md) for the current API.
+
 The SVG toolkit provides reusable Python drawing parts for editable slide illustrations. All 27 planned milestones are complete and accepted in the [final quality and integration review](active_plans/reports/svg_toolkit_final_integration.md). Start with the [capability catalogue](SVG_TOOLKIT.md), [cookbook](SVG_TOOLKIT_COOKBOOK.md), [gallery](slide-specs/illustration_examples/svg_toolkit/index.webp), and [native showcase](../exemplars/svg_toolkit.djot). The [plan and progress ledger](active_plans/active/svg_toolkit_progress.md) record milestone decisions and reviews.
 
 The toolkit uses ordinary functions and `SvgPart` fragments with painted bounds and named anchors. Authors supply coordinates, labels, data, and biological relationships. It covers composition, curved paths, measured and styled text, imported SVG, Lucide icons, annotations, membranes and signaling, cells and organelles, chromosome and gene tracks, binding and detection, phenotypes, and Matplotlib plots. Atkinson Hyperlegible Next is used for normal labels and Mono for aligned sequences; both fonts must be installed. From the repository root, run an example directly:
 
 ```sh
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.placement
+source source_me.sh && python3 -m svg_tools.examples.placement
 ```
 
 The independent author trials provide complete [new signaling](slide-specs/illustration_examples/svg_toolkit_trials/new_signaling/README.md) and [Sxl reconstruction](slide-specs/illustration_examples/svg_toolkit_trials/sxl_reconstruction/README.md) recipes and native slides. Both fresh artifacts passed specification and quality review. The first reconstruction failed to preserve italic gene names; a styled-box API and documentation correction enabled a fresh repeat that passed. See [trial quality](active_plans/reports/svg_toolkit_trials_quality.md) and [repeat specification](active_plans/reports/svg_toolkit_reconstruction_repeat_spec.md). The earlier failure remains historical evidence, not the final verdict.

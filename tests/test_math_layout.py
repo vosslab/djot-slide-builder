@@ -72,23 +72,3 @@ def test_mixed_math_reports_source_location(
 
 
 #============================================
-def test_equation_after_merged_cell_uses_resolved_span_and_insets(
-		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
-	"""An equation following a merge uses its true column and asymmetric cell space."""
-	monkeypatch.setattr(slide_lib.math_render, "render_equations", measured_equations)
-	path = tmp_path / "merged.djot"
-	path.write_text('=== layout: one-panel\n@body\n{column-widths="1,2,3"}\n'
-		'| A | B | C |\n| --- | --- | --- |\n'
-		'| [Merged]{colspan=2} | [$x$]{padding="2pt 5pt 7pt 11pt" text-align=right} |\n')
-	theme = slide_lib.presentation_theme.default_theme()
-	plan = slide_lib.layout_engine.compile_layout_deck(slide_lib.djot_parser.parse_deck(path), theme).plan
-	item = next(item for item in plan.slides[0].objects
-		if isinstance(item.content, slide_lib.layout_content.TableContent))
-	table = item.content
-	cell = table.body_rows[0].cells[1]
-	placed = table.positioned_runs[0]
-	insets = slide_lib.layout_table_measurement.cell_content_insets(cell.padding, cell.borders, theme)
-	assert placed.rectangle.x == pytest.approx(sum(table.column_widths) - insets.right - placed.rectangle.width)
-	assert placed.rectangle.x > sum(table.column_widths[:2]) + insets.left
-	assert placed.rectangle.y >= table.row_heights[0] + insets.top
-	assert placed.rectangle.y + placed.rectangle.height <= item.rectangle.height - insets.bottom

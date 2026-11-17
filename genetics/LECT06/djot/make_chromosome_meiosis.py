@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Regenerate four later meiosis stage figures from frozen source templates."""
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 
@@ -89,7 +90,7 @@ def replace_group(group: ET.Element, parent: ET.Element) -> bool:
 	for node in list(group):
 		if node.tag in (NAMESPACE+'path', NAMESPACE+'circle'):
 			group.remove(node)
-	group.append(ET.fromstring(part.fragment))
+	group.append(DET.fromstring(part.fragment))
 	return True
 
 
@@ -97,7 +98,7 @@ def main() -> None:
 	ET.register_namespace('', NAMESPACE[1:-1])
 	OUTPUT.mkdir(parents=True, exist_ok=True)
 	for name in NAMES:
-		root = ET.parse(TEMPLATES/(name+'.drawn.svg')).getroot()
+		root = DET.parse(TEMPLATES/(name+'.drawn.svg')).getroot()
 		parents = {child: parent for parent in root.iter() for child in parent}
 		replaced = sum(replace_group(group, parents[group]) for group in root.iter(NAMESPACE+'g')
 			if 'sister-' in group.attrib.get('id', '') or

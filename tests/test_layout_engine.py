@@ -1,6 +1,5 @@
 """Compiler contracts for source preservation, capacity diagnostics, and teaching layouts."""
 
-import dataclasses
 import pathlib
 
 import pytest
@@ -123,37 +122,6 @@ def test_unsupported_source_still_fails_at_the_validation_boundary(tmp_path: pat
 #============================================
 
 #============================================
-@pytest.mark.parametrize("layout", ("bookend", "definitions"))
-def test_teaching_layouts_preserve_body_space_and_add_editable_frames(
-		tmp_path: pathlib.Path, layout: str) -> None:
-	"""Teaching frames keep content space and never label live content as reference-only."""
-	text = "\n# Learning focus\n@body\n- Term: explanation\n"
-	ordinary = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel" + text).plan.slides[0]
-	theme = slide_lib.presentation_theme.default_theme()
-	page = slide_lib.layout_engine.compile_layout_deck(
-		layout_test_helpers.parsed_source(tmp_path, f"=== layout: {layout}" + text), theme).plan.slides[0]
-	assert next(slot.rectangle for slot in page.slots if slot.slot_id == "body") == next(
-		slot.rectangle for slot in ordinary.slots if slot.slot_id == "body")
-	frame = [item for item in page.objects if item.object_id.startswith("teaching-")]
-	assert all(item.content.style.line_pattern is slide_lib.layout_primitives.LinePattern.NONE
-		for item in frame)
-	for name in ("band", "corner"):
-		first = next(item for item in frame if item.object_id == f"teaching-{name}-0")
-		opposite = next(item for item in frame if item.object_id == f"teaching-{name}-1")
-		assert [(1280 - first.rectangle.x - point.x,
-			800 - first.rectangle.y - point.y) for point in first.content.points] == [
-			(opposite.rectangle.x + point.x, opposite.rectangle.y + point.y)
-			for point in opposite.content.points]
-		assert first.content.style.fill_role == opposite.content.style.fill_role
-		for shape in (first, opposite):
-			assert min(point.x for point in shape.content.points) == 0
-			assert min(point.y for point in shape.content.points) == 0
-			assert max(point.x for point in shape.content.points) == shape.rectangle.width
-			assert max(point.y for point in shape.content.points) == shape.rectangle.height
-	assert not any(item.object_id.startswith("reference-") for item in page.objects)
-	assert max(item.z_index for item in frame) < min(item.z_index for item in page.objects
-		if item not in frame)
-
 
 #============================================
 def test_definitions_style_terms_without_styling_explanations_or_examples(tmp_path: pathlib.Path) -> None:

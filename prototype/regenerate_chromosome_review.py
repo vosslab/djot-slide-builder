@@ -6,7 +6,8 @@ import hashlib
 import pathlib
 import subprocess
 import sys
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import genetics.LECT06.djot.make_chromosome_xlinked
 import genetics.LECT06.djot.chromosome_models.mixed.intro.recipe
@@ -49,7 +50,7 @@ def refresh_inventory() -> None:
 def separate_c58_prose() -> None:
 	"""Keep the C58 explanation in its native Djot text block."""
 	path = ASSETS / 'assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg'
-	root = ET.parse(path).getroot()
+	root = DET.parse(path).getroot()
 	canvas = root.find('{http://www.w3.org/2000/svg}g')
 	# The four explanation lines and their separator belong to the native text block.
 	for node in list(canvas):

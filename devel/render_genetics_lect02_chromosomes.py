@@ -5,7 +5,8 @@ Source facts are retained below; source illustrations are schematic, not measure
 Nonchromosome labels, connectors, background and figure dimensions remain source-authored.
 """
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes as chromosomes
 import svg_tools.parts as parts
 
@@ -20,12 +21,12 @@ def build(root: ET.Element, item: dict) -> None:
 		part = chromosomes.chromosome_part(fact['id']+'-body', model, length=fact['length'], thickness=thickness, orientation='vertical', sisters=fact['chromatids']==2, texture=False, labels=False)
 		part = parts.transform(part, fact['x']-thickness*(1.1 if fact['chromatids']==2 else .5), fact['y']-fact['length']/2)
 		group = next(e for e in root.iter() if e.get('id') == fact['id'])
-		group.insert(0, ET.fromstring(part.fragment))
+		group.insert(0, DET.fromstring(part.fragment))
 
 
 def main(output_root: pathlib.Path) -> None:
 	for item in FIGURES:
-		root = ET.fromstring(item['template'])
+		root = DET.fromstring(item['template'])
 		build(root, item)
 		for element in root.iter():
 			if not element.tag.startswith('{'):

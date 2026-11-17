@@ -6,7 +6,8 @@ import base64
 import hashlib
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes
@@ -55,7 +56,7 @@ def chromosome_overlay(ledger: dict) -> str:
 				position = complex(*part.anchors['centromere'])
 				if abs(position - complex(*chromosome['centromere'])) >= .001:
 					raise ValueError('Shared renderer moved a source centromere: ' + name)
-			fragment = ET.fromstring(part.fragment)
+			fragment = DET.fromstring(part.fragment)
 			marker = fragment.find(f".//*[@id='{name}-centromere-0']")
 			if marker is not None:
 				fragment.remove(marker)

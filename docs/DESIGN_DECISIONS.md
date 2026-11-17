@@ -758,15 +758,14 @@ snapshots remain with the lecture; this organization does not change their refre
 **Owner.** [../evergreen/README.md](../evergreen/README.md) and
 [../genetics/evergreen/README.md](../genetics/evergreen/README.md).
 
-### Builds without Git
+### Standalone project builds
 
 **Decision.** Native source resolution finds an ancestor containing both `deck_tools.py` and
 `slide_lib`, falling back to the current working directory when no such ancestor exists.
-The launcher and bootstrap retain their separate legacy root-discovery behavior.
 
-**Why.** A copied project folder must build without `.git` metadata.
+**Why.** A copied project folder must build independently.
 
-**Consequence.** Run Git-free builds from the top-level project folder. Traversal and
+**Consequence.** Run builds from the top-level project folder. Traversal and
 symlink-containment checks use the resolved native root as their boundary.
 
 **Owner.** [../slide_lib/djot_sources.py](../slide_lib/djot_sources.py) and [USAGE.md](USAGE.md).

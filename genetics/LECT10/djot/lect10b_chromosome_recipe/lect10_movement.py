@@ -1,6 +1,7 @@
 """Replace chromosome bodies in the immutable source compositions for LECT10."""
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 import svgpathtools
@@ -20,7 +21,7 @@ CENTERLINES = {
 
 def main(kind: str, destination: pathlib.Path) -> None:
 	first, second, top, bottom = CENTERLINES[kind]
-	root = ET.parse(HERE / 'templates' / f'{kind}_movement.drawn.svg').getroot()
+	root = DET.parse(HERE / 'templates' / f'{kind}_movement.drawn.svg').getroot()
 	path = svgpathtools.parse_path(first + ' ' + second)
 	long_len, short_len = (segment.length() for segment in path)
 	daughter = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', long_len), svg_tools.chromosomes.Segment('', '#4c9ec7', short_len)),
@@ -31,12 +32,12 @@ def main(kind: str, destination: pathlib.Path) -> None:
 		(svg_tools.chromosomes.Centromere(1),))
 	rendered = svg_tools.chromosomes.render_chromosome_layout('metaphase-v2', metaphase, length=bottom-top,
 		thickness=26, orientation='vertical', sisters=True, texture=False, labels=False)
-	body = ET.fromstring(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
+	body = DET.fromstring(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
 	left = svg_tools.chromosomes.chromosome_path_part('left-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)
 	right = svg_tools.chromosomes.chromosome_path_part('right-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)
-	daughters = ET.fromstring(f'<g xmlns="{NS}">{left.fragment}<g transform="translate(2200 0) scale(-1 1)">{right.fragment}</g></g>')
+	daughters = DET.fromstring(f'<g xmlns="{NS}">{left.fragment}<g transform="translate(2200 0) scale(-1 1)">{right.fragment}</g></g>')
 	replacements = {'replicated-chromosome': body, 'daughter-chromosomes': daughters}
 	remove = {'sister-join', 'paired-centromeric-units', 'daughter-centromeres'}
 	for parent in root.iter():

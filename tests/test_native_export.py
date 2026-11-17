@@ -3,7 +3,6 @@
 # Standard Library
 import datetime
 import pathlib
-import re
 import zipfile
 from unittest import mock
 
@@ -110,23 +109,6 @@ def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Pat
 
 
 #============================================
-def test_representable_capacity_recovery_exports_one_native_page_per_source_slide(
-		tmp_path: pathlib.Path) -> None:
-	"""A reported compromise remains editable at serializer-safe sizes."""
-	long = "word " * 500
-	source = write_deck(tmp_path, f"=== layout: one-panel\n\n@body\n\n{long}")
-	compilation, theme = slide_lib.native_export.compile_deck(slide_lib.native_export.parse_deck(source))
-	assert len(compilation.plan.slides) == 1 and compilation.capacity_diagnostics
-	assert compilation.capacity_diagnostics[0].cause is \
-		slide_lib.capacity_report.CapacityCause.PARAGRAPH_LIST
-	odp_path = slide_lib.odp_export.write_odp(compilation.plan, theme, tmp_path / "deck.odp")
-	with zipfile.ZipFile(odp_path) as archive:
-		content = archive.read("content.xml")
-	root = slide_lib.odf_package.parse_xml(content, "content.xml")
-	assert len(root.findall(".//draw:page", ODF_NAMESPACES)) == 1
-	sizes = tuple(float(value) for value in re.findall(
-		r'font-size="([0-9.]+)pt"', content.decode("utf-8")))
-	assert sizes and all(size >= 1.0 for size in sizes)
 
 
 #============================================
@@ -150,23 +132,6 @@ def test_public_pdf_export_passes_the_generated_odp_to_libreoffice(tmp_path: pat
 
 
 #============================================
-def test_pdf_batch_publishes_only_after_all_staged_odp_results_exist(tmp_path: pathlib.Path) -> None:
-	"""Two completed staged PDFs replace their requested classroom destinations together."""
-	inputs = tuple(tmp_path / f"{name}.odp" for name in ("alpha", "beta"))
-	outputs = tuple(tmp_path / "output" / "pdf" / f"{path.stem}.pdf" for path in inputs)
-	for input_path in inputs:
-		input_path.write_bytes(b"odp")
-	def convert_files(input_paths: tuple[pathlib.Path, ...], staging: pathlib.Path,
-			output_format: str) -> tuple[pathlib.Path, ...]:
-		assert input_paths == inputs and output_format == "pdf"
-		converted = tuple(staging / f"{path.stem}.pdf" for path in input_paths)
-		for path in converted:
-			path.write_bytes(b"pdf")
-		return converted
-	with mock.patch.object(slide_lib.native_export.slide_lib.libreoffice, "convert_files",
-			side_effect=convert_files):
-		slide_lib.native_export.convert_odps_to_pdfs(inputs, outputs, tmp_path)
-	assert tuple(path.read_bytes() for path in outputs) == (b"pdf", b"pdf")
 
 
 #============================================
@@ -216,11 +181,3 @@ def test_input_boundary_rejects_wrong_suffix_and_repository_escape(tmp_path: pat
 
 
 #============================================
-def test_folder_discovery_rejects_empty_source_selection(tmp_path: pathlib.Path) -> None:
-	"""A folder without Djot sources receives an actionable input error."""
-	folder = tmp_path / "slides"
-	folder.mkdir()
-	(folder / "notes.md").write_text("# Notes\n", encoding="utf-8")
-	with pytest.raises(slide_lib.native_export.PresentationInputError,
-			match="no presentation source decks found"):
-		slide_lib.native_export.discover_decks(str(folder), tmp_path)

@@ -10,7 +10,8 @@ import math
 import base64
 import subprocess
 from pathlib import Path
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 # Local repo modules
 import svgpathtools
@@ -348,7 +349,7 @@ BACKDROPS = {
 
 def render_rods() -> None:
 	for stem, models in MODELS.items():
-		root = ET.fromstring(BACKDROPS[stem])
+		root = DET.fromstring(BACKDROPS[stem])
 		for name, regions, centromere, thickness, joins in models:
 			model = Chromosome(tuple(Segment(label, color, length)
 				for label, color, length in regions),
@@ -356,7 +357,7 @@ def render_rods() -> None:
 			layout = render_chromosome_layout(name, model, thickness=thickness,
 				junctions=joins, allele_labels=any(len(label) > 1 for label, _, _ in regions))
 			placeholder = root.find('.//' + NS + 'g[@data-chromosome="' + name + '"]')
-			placeholder.append(ET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'
+			placeholder.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'
 				+ layout.svg + '</g>'))
 			placeholder.attrib.pop('data-chromosome')
 			parent=next(node for node in root.iter() if placeholder in list(node))
@@ -442,7 +443,7 @@ def path_body(
 		tuple(Segment('', color, length) for color, length in regions))
 	part = chromosome_path_part(name, model, path, thickness=thickness,
 		closed=closed, cut_ends=cut, labels=bool(loci))
-	parent.append(ET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
+	parent.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
 
 def write_svg(root: ET.Element, path: Path) -> None:
 	body=ET.tostring(root,encoding='unicode').encode('ascii','xmlcharrefreplace').decode('ascii')
@@ -452,7 +453,7 @@ def write_scene(stem: str, root: ET.Element) -> None:
 	write_svg(root, ASSETS / (stem+'.drawn.svg'))
 
 def render_complements() -> None:
-	root = ET.fromstring(CHROMOSOME_COMPLEMENTS_BACKDROP)
+	root = DET.fromstring(CHROMOSOME_COMPLEMENTS_BACKDROP)
 	for complement in ['XX','XY']:
 		group = root.find('.//' + NS + 'g[@id="complement-'+complement+'"]')
 		bodies = ET.Element(NS+'g', {'id': 'shared-'+complement})
@@ -550,7 +551,7 @@ def render_cytological_intervals() -> None:
 	write_scene('cytological_deletion_intervals', root)
 
 def render_repeat_loop() -> None:
-	root = ET.fromstring(DIRECT_REPEAT_LOOP_BACKDROP)
+	root = DET.fromstring(DIRECT_REPEAT_LOOP_BACKDROP)
 	neutral,purple,brown,blue = '#a6bac7','#c695d4','#d8b98e','#8dbce0'
 	initial=root.find('.//'+NS+'g[@id="initial"]')
 	for i,y in [(1,117),(2,152)]:

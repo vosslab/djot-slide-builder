@@ -9,7 +9,7 @@
     "background.png": "0c51a3377e8becb3a03ed2ad2cfb21f428ad85891b1133c0964c080f49a6b855",
     "body-mask.png": "72d07b4092fcdb4f97875d3dfe7e5c2ae18381ee9db8ba877b45648641649ca2",
     "foreground-protection.png": "94c91c6f6daaf379395ab63ac441fc606cf63e78be2b14b167bcc6eba3e55807",
-    "chromatids.json": "3c9a812fe7b58f94bbd61aa2e4faeec84105a118a1f8864feb03b2a1c3625043"
+    "chromatids.json": "10cdeb27fd029ae2058333676698c4e23fd8a559e18406fcf5ac16f3a6e5ea3e"
   },
   "renderer": {
     "path": "svg_tools/chromosomes.py",

@@ -4,7 +4,8 @@ import argparse
 import json
 import pathlib
 import re
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chrom
 
@@ -22,7 +23,7 @@ COLORS = {'slate': '#7895a2', 'blue': '#367cb7', 'red': '#df5146'}
 def marker(name: str, x: float, y: float, thickness: float, angle: float) -> ET.Element:
 	"""Place the common structural marker without inventing chromosome material."""
 	part = chrom.centromere_part(name, thickness=thickness)
-	result = ET.fromstring(part.fragment)
+	result = DET.fromstring(part.fragment)
 	result.set('transform', f'translate({x} {y}) rotate({angle})')
 	return result
 
@@ -31,7 +32,7 @@ def pairing() -> None:
 	"""Retain source arms, paint boundaries, sisters and centromeres with smooth bends."""
 	names = [name for name in SOURCES if name.startswith('pairing-') or name == 'segregation-three-forms.drawn.svg']
 	for name in sorted(names):
-		root = ET.fromstring(SOURCES[name])
+		root = DET.fromstring(SOURCES[name])
 		for number, group in enumerate(list(root.iter(NS + 'g'))):
 			ellipses = group.findall(NS + 'ellipse')
 			paths = group.findall(NS + 'path')
@@ -82,7 +83,7 @@ def pairing() -> None:
 			else:
 				part = chrom.chromosome_path_part(f'{name[:-10]}-{number}', *chromatids[0],
 					thickness=thickness, labels=False)
-			group.insert(insert, ET.fromstring(part.fragment))
+			group.insert(insert, DET.fromstring(part.fragment))
 			for node in paths + ellipses:
 				group.remove(node)
 		ET.ElementTree(root).write(OUT / name, encoding='ascii', xml_declaration=True)
@@ -95,7 +96,7 @@ def color(value: str) -> str:
 def ruby() -> None:
 	OUT.mkdir(parents=True, exist_ok=True)
 	for name in NAMES:
-		root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
+		root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 		for group in list(root.iter()):
 			gid = group.get('id', '')
 			if not (gid.endswith('-rod') or (name.startswith('reciprocal_') and gid.startswith('chromosome-') and group.tag == NS + 'g')):
@@ -123,7 +124,7 @@ def ruby() -> None:
 			row_id = group.get('id')
 			group.clear()
 			group.set('id', row_id)
-			group.append(ET.fromstring(part.fragment))
+			group.append(DET.fromstring(part.fragment))
 		ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
 
 	for source_name, count in (('ruby-male', 4), ('gamete-products', 24)):
@@ -131,7 +132,7 @@ def ruby() -> None:
 
 
 def convert_line_products(source_name: str, count: int) -> None:
-	root = ET.fromstring(SOURCES[f'{source_name}.drawn.svg'])
+	root = DET.fromstring(SOURCES[f'{source_name}.drawn.svg'])
 	for index in range(count):
 		paths = [node for node in root if node.tag == NS + 'path'][:2]
 		circle = next(node for node in root if node.tag == NS + 'circle')
@@ -145,7 +146,7 @@ def convert_line_products(source_name: str, count: int) -> None:
 		part = chrom.chromosome_path_part(f'{source_name}-{index}', model,
 			f'M {start} {y} L {end} {y}', thickness=float(paths[0].get('stroke-width')), labels=False)
 		position = list(root).index(paths[0])
-		root.insert(position, ET.fromstring(part.fragment))
+		root.insert(position, DET.fromstring(part.fragment))
 		for node in paths + [circle]:
 			root.remove(node)
 	ET.ElementTree(root).write(OUT / f'{source_name}.drawn.svg', encoding='ascii', xml_declaration=True)
@@ -153,7 +154,7 @@ def convert_line_products(source_name: str, count: int) -> None:
 
 def gametes() -> None:
 	name = 'robertsonian_gamete_products'
-	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	count = 0
 	for group in root.iter(NS + 'g'):
 		if group.get('data-chromosome') is None:
@@ -168,7 +169,7 @@ def gametes() -> None:
 		count += 1
 		for node in list(group):
 			group.remove(node)
-		group.append(ET.fromstring(part.fragment))
+		group.append(DET.fromstring(part.fragment))
 	if count != 18:
 		raise ValueError(f'Expected 18 chromosomes, found {count}')
 	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
@@ -176,7 +177,7 @@ def gametes() -> None:
 
 def metaphase() -> None:
 	name = 'robertsonian_metaphase_orientations'
-	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	count = 0
 	for group in root.iter(NS + 'g'):
 		sisters = [child for child in group if child.get('data-sister') is not None]
@@ -203,7 +204,7 @@ def metaphase() -> None:
 		position = list(group).index(sisters[0])
 		for sister in sisters:
 			group.remove(sister)
-		group.insert(position, ET.fromstring(part.fragment))
+		group.insert(position, DET.fromstring(part.fragment))
 		count += len(sisters)
 	if count != 18:
 		raise ValueError(f'Expected 18 sister chromatids, found {count}')
@@ -214,7 +215,7 @@ def fusion() -> None:
 	"""Use medial arm curves from source contours and retain terminal centromeres."""
 	# shortcut: filled source arms need medial estimates; replace only with measured source centerlines.
 	name = 'robertsonian_centromeric_fusion'
-	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	specs = {
 		'blue-input': (152, 99, (('M 152 99 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
 		'red-input': (280, 99, (('M 280 99 C 276 206 294 262 283 326', '#d6533c'),)),
@@ -233,14 +234,14 @@ def fusion() -> None:
 			model = chrom.Chromosome((chrom.Segment('', paint, curve.length()),))
 			part = chrom.chromosome_path_part(f'fusion-{group.attrib["id"]}-arm-{index}',
 				model, path, thickness=50, labels=False)
-			group.append(ET.fromstring(part.fragment))
+			group.append(DET.fromstring(part.fragment))
 		group.append(marker(f'fusion-{group.attrib["id"]}', cx, cy, 50, 90))
 	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
 
 
 def human_fusion() -> None:
 	name = 'human_chromosome_2_fusion'
-	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	for group in root.iter(NS + 'g'):
 		if group.get('id') not in ('ancestor-a', 'ancestor-b', 'dicentric', 'inactivation', 'human-2'):
 			continue
@@ -252,7 +253,7 @@ def human_fusion() -> None:
 		part = chrom.chromosome_path_part(f'human2-{group.get("id")}-body', model,
 					f'M {x+width/2} {start} L {x+width/2} {end}', thickness=width, labels=False)
 		group.remove(body)
-		group.insert(0, ET.fromstring(part.fragment))
+		group.insert(0, DET.fromstring(part.fragment))
 		for index, circle in enumerate(circles):
 			cx, cy = float(circle.get('cx')), float(circle.get('cy'))
 			group.append(marker(f'human2-{group.attrib["id"]}-center-{index}', cx, cy, width, 90))
@@ -263,7 +264,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	"""Keep authored text/composition and replace source-data chromosome placeholders."""
 	sources = json.loads(source_path.read_text())
 	for relative, source in sources.items():
-		root = ET.fromstring(source['svg'])
+		root = DET.fromstring(source['svg'])
 		for parent in list(root.iter()):
 			for child in list(parent):
 				if 'data-shared-part' not in child.attrib:
@@ -278,7 +279,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				part = chrom.chromosome_path_part(f'migrated13bc-chromosome-{index}',
 					model, data['path'], thickness=data['thickness'],
 					cut_ends=data['cut_ends'], labels=False)
-				replacement = ET.fromstring(part.fragment)
+				replacement = DET.fromstring(part.fragment)
 				replacement.attrib['data-source-part'] = str(index)
 				replacement.attrib['stroke'] = 'none'
 				position = list(parent).index(child)

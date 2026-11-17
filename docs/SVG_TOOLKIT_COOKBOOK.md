@@ -158,7 +158,7 @@ import svg_tools.svg_import
 print(svg_tools.icons.search_icons('microscope'))
 source = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">'
 	'<circle cx="30" cy="30" r="24" fill="#dceef4"/></svg>')
-# icon() loads a bundled icon; import_svg() accepts SVG text or bytes.
+# icon() loads one Font Awesome solid icon; import_svg() accepts SVG text or bytes.
 items = [svg_tools.icons.icon('microscope', size=60, color='#195f82'),
 	svg_tools.svg_import.import_svg(source, name='imported', size=60)]
 items = svg_tools.parts.distribute(svg_tools.parts.align(items, 'top', 20), 'x', 30)

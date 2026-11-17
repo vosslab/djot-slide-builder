@@ -6,7 +6,8 @@ import math
 import svgpathtools
 import svg_tools.parts
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes
 
 NS='{http://www.w3.org/2000/svg}'
@@ -17,7 +18,7 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 	output_directory.mkdir(parents=True, exist_ok=True)
 	directory=data_directory
 	for data_file in sorted(directory.glob('*.json')):
-		data=json.loads(data_file.read_text()); root=ET.parse(data_file.with_suffix('.template.svg')).getroot()
+		data=json.loads(data_file.read_text()); root=DET.parse(data_file.with_suffix('.template.svg')).getroot()
 		groups={e.get('id'):e for e in root.iter() if e.get('id')}
 		for item in data['placements']:
 			markers=[]
@@ -26,7 +27,7 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 				model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',color,length) for color,length in segments),
 					centromeres=(svg_tools.chromosomes.Centromere(1),) if item['centromere'] else ())
 				part=svg_tools.chromosomes.chromosome_path_part(item['group']+'-shared-'+str(i),model,body['path'],thickness=body['width'],labels=False)
-				fragment=ET.fromstring(part.fragment)
+				fragment=DET.fromstring(part.fragment)
 				marker=next((e for e in fragment.iter() if '-centromere-' in e.get('id','')),None)
 				if marker is not None:
 					marker_parent=next(e for e in fragment.iter() if marker in list(e)); marker_parent.remove(marker)
@@ -52,7 +53,7 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 					span = width*1.3
 				marker = svg_tools.chromosomes.centromere_part(item['group']+'-belt-'+str(start),
 					thickness=width, across=span)
-				group.append(ET.fromstring(svg_tools.parts.transform(marker,x=cx,y=cy,rotation=angle).fragment))
+				group.append(DET.fromstring(svg_tools.parts.transform(marker,x=cx,y=cy,rotation=angle).fragment))
 		output=output_directory/(data_file.stem+'.drawn.svg'); output.write_text(ET.tostring(root,encoding='unicode')+'\n')
 
 		print(output.name)

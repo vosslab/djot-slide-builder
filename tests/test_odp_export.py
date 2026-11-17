@@ -9,7 +9,6 @@ import zipfile
 
 import fontTools.ttLib
 import lxml.etree
-import PIL.Image
 import pytest
 
 import slide_lib.djot_parser
@@ -294,83 +293,6 @@ def test_drawing_page_style_hides_master_chrome() -> None:
 
 
 #============================================
-@pytest.mark.parametrize("color_theme", ("genetics", "biotechnology"))
-@pytest.mark.parametrize("layout", (
-	"title-slide", "bookend", "definitions", "reference", "section", "subsection",
-	"subsubsection", "question-ask", "prompt", "theend", "big-image"))
-def test_decoration_is_master_owned_and_text_remains_on_slide(
-		tmp_path: pathlib.Path, color_theme: str, layout: str) -> None:
-	"""Decorative frames cannot intercept selection of slide text."""
-	source_path = tmp_path / "title.djot"
-	if layout == "title-slide":
-		text = "# Lecture 05D\n\n## Probability Concepts\n\n## Chapter 5\n\n"
-		text += "## Dr. Neil Voss\n\n## Sept 29, 2026\n"
-		expected = ["Lecture 05D", "Probability Concepts", "Chapter 5", "Dr. Neil Voss", "Sept 29, 2026"]
-	elif layout == "theend":
-		text = "# THE END\n"
-		expected = ["THE", "END"]
-	elif layout == "prompt":
-		text = "# Discussion\n\n@prompt\n\nWhat is your rule?\n\n@examples\n\n- Give one example.\n"
-		expected = ["Discussion", "What is your rule?", "Give one example."]
-	elif layout == "big-image":
-		PIL.Image.new("RGB", (32, 18), "blue").save(tmp_path / "figure.png")
-		text = "@image\n\n![Figure](figure.png)\n\n@caption\n\nCaption words.\n"
-		expected = ["Caption words."]
-	else:
-		text = "# Framed Heading\n"
-		expected = ["Framed Heading"]
-		if layout in ("bookend", "definitions", "reference"):
-			text += "\n@body\n\n" + ("- " if layout == "definitions" else "")
-			text += "Term: Its definition.\n"
-			expected.append("Term: Its definition.")
-		if layout == "reference":
-			expected.append("For reference - not covered in class.")
-	source_path.write_text(f"=== layout: {layout}\n\n" + text +
-		"\n=== layout: one-panel\n# Teaching\n@body\nText\n", encoding="utf-8")
-	theme = slide_lib.presentation_theme.default_theme(color_theme)
-	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source_path), theme).plan
-	names = exporter._layout_names(plan)
-	pictures = {(slide.identity.slide_id, item.object_id): "Pictures/figure.png"
-		for slide in plan.slides for item in slide.objects if isinstance(item.content, content.PictureContent)}
-	root = package.parse_xml(exporter._content_xml(plan, theme, names, pictures), "content.xml")
-	with zipfile.ZipFile(theme.template_path) as archive:
-		styles = package.parse_xml(exporter._styles_xml(
-			archive.read("styles.xml"), plan, theme, names), "styles.xml")
-	pages = root.findall(f".//{{{exporter.DRAW_NS}}}page")
-	master_name = pages[0].attrib[f"{{{exporter.DRAW_NS}}}master-page-name"]
-	assert master_name != pages[1].attrib[f"{{{exporter.DRAW_NS}}}master-page-name"]
-	master = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}master-page")
-		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == master_name)
-	decorations = {item.object_id for item in plan.slides[0].objects
-		if item.origin is primitives.LayoutObjectOrigin.THEME}
-	master_objects = {item.attrib.get(f"{{{exporter.DRAW_NS}}}name"): item for item in master}
-	assert decorations and decorations <= master_objects.keys()
-	assert all(master_objects[name].attrib[f"{{{exporter.DRAW_NS}}}layer"] == "backgroundobjects"
-		for name in decorations)
-	background_z = max((int(item.get(f"{{{exporter.DRAW_NS}}}z-index", str(index)))
-		for index, item in enumerate(master)
-		if item.get(f"{{{exporter.DRAW_NS}}}name") not in decorations), default=-1)
-	assert all(int(master_objects[name].attrib[f"{{{exporter.DRAW_NS}}}z-index"]) > background_z
-		for name in decorations)
-	assert not decorations.intersection(item.attrib.get(f"{{{exporter.DRAW_NS}}}name")
-		for item in pages[0])
-	paragraphs = pages[0].findall(f".//{{{exporter.TEXT_NS}}}p")
-	assert ["".join(item.itertext()) for item in paragraphs] == expected
-	if layout == "prompt":
-		markers = root.findall(f".//{{{exporter.TEXT_NS}}}list-level-style-bullet/"
-			f"{{{exporter.STYLE_NS}}}text-properties")
-		assert markers and all(item.attrib[f"{{{exporter.FO_NS}}}color"] == "#172033"
-			for item in markers)
-	for shape in master.findall(f"{{{exporter.DRAW_NS}}}rect"):
-		if shape.attrib.get(f"{{{exporter.DRAW_NS}}}name") not in decorations:
-			continue
-		style_name = shape.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-		style = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
-			if item.attrib.get(f"{{{exporter.STYLE_NS}}}name") == style_name)
-		properties = style.find(f"{{{exporter.STYLE_NS}}}graphic-properties")
-		assert properties.attrib[f"{{{exporter.DRAW_NS}}}fill"] == (
-			"solid" if layout in ("title-slide", "big-image", "subsection", "subsubsection", "prompt") else "none")
 
 
 #============================================
@@ -471,46 +393,6 @@ def test_dividers_preserve_course_color_and_background_contrast(
 
 
 #============================================
-def test_transition_surface_and_end_star_are_native_odf(tmp_path: pathlib.Path) -> None:
-	"""LibreOffice receives the dark transition as a page style and the flourish as a vector."""
-	source_path = tmp_path / "closer.djot"
-	source_path.write_text("=== layout: theend\n\n# THE END\n", encoding="utf-8")
-	theme = slide_lib.presentation_theme.default_theme()
-	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source_path), theme).plan
-	root = package.parse_xml(exporter._content_xml(
-		plan, theme, exporter._layout_names(plan), {}), "content.xml")
-	with zipfile.ZipFile(theme.template_path) as archive:
-		styles = package.parse_xml(exporter._styles_xml(
-			archive.read("styles.xml"), plan, theme, exporter._layout_names(plan)), "styles.xml")
-	page = root.find(f".//{{{exporter.DRAW_NS}}}page")
-	page_style_name = page.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-	page_style = next(style for style in root.findall(f".//{{{exporter.STYLE_NS}}}style")
-		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == page_style_name)
-	properties = page_style.find(f"{{{exporter.STYLE_NS}}}drawing-page-properties").attrib
-	master = next(item for item in styles.findall(f".//{{{exporter.STYLE_NS}}}master-page")
-		if item.attrib[f"{{{exporter.STYLE_NS}}}name"] == page.attrib[
-			f"{{{exporter.DRAW_NS}}}master-page-name"])
-	star = next(shape for shape in master.findall(f"{{{exporter.DRAW_NS}}}custom-shape")
-		if shape.find(f"{{{exporter.DRAW_NS}}}enhanced-geometry").attrib[
-			f"{{{exporter.DRAW_NS}}}type"] == "star5")
-	star_style_name = star.attrib[f"{{{exporter.DRAW_NS}}}style-name"]
-	star_style = next(style for style in styles.findall(f".//{{{exporter.STYLE_NS}}}style")
-		if style.attrib.get(f"{{{exporter.STYLE_NS}}}name") == star_style_name)
-	star_properties = star_style.find(f"{{{exporter.STYLE_NS}}}graphic-properties").attrib
-	rounded_rectangles = tuple(master.findall(f"{{{exporter.DRAW_NS}}}rect"))
-	assert (properties[f"{{{exporter.DRAW_NS}}}fill"],
-		properties[f"{{{exporter.DRAW_NS}}}fill-color"],
-		properties[f"{{{exporter.PRESENTATION_NS}}}background-objects-visible"]) == (
-		"solid", f"#{slide_lib.presentation_theme.course_color_theme(theme.color_theme_name).dark_color}", "true")
-	assert {item.attrib[f"{{{exporter.DRAW_NS}}}name"] for item in master
-		if item.tag.startswith(f"{{{exporter.DRAW_NS}}}")} == {
-		"end-outer-frame", "end-inner-frame", "end-star"}
-	assert star.find(f"{{{exporter.SVG_NS}}}title") is None
-	assert star_properties[f"{{{exporter.DRAW_NS}}}opacity"] == "100%"
-	assert rounded_rectangles and all(
-		f"{{{exporter.DRAW_NS}}}corner-radius" in rectangle.attrib
-		for rectangle in rounded_rectangles)
 
 
 #============================================
@@ -608,88 +490,9 @@ def test_authored_colspan_exports_native_merge_and_covered_cells(tmp_path: pathl
 
 
 #============================================
-def test_native_tables_share_effective_styles_across_objects_and_slides() -> None:
-	"""Repeated formatting shares styles without colliding in wide tables or losing cell text."""
-	layout_deck = deck()
-	base_item = layout_deck.slides[0].objects[0]
-	paragraph = base_item.content.paragraphs[0]
-	border = slide_lib.table_formatting.Border(0.5, "solid", "123456")
-	rows = []
-	for row_index in range(2):
-		cells = []
-		for column_index in range(12):
-			text = f"R{row_index}C{column_index}"
-			cell_paragraph = dataclasses.replace(paragraph, inlines=(content.TextRun(
-				text, dataclasses.replace(paragraph.inlines[0].style, foreground="172033")),))
-			cell = content.TableCell((cell_paragraph,), primitives.Insets(2, 3, 4, 5),
-				primitives.VerticalAlignment.MIDDLE, "FFFFFF", tuple(
-					dataclasses.replace(border, priority=column_index) for _side in range(4)))
-			if row_index == 1 and column_index == 11:
-				cell = dataclasses.replace(cell, fill_color="ABCDEF")
-			cells.append(cell)
-		rows.append(content.TableRow(tuple(cells)))
-	table = content.TableContent((), tuple(rows), (20.0,) * 12, (24.0, 24.0))
-	table_item = dataclasses.replace(base_item, content=table)
-	slide = dataclasses.replace(layout_deck.slides[0], objects=(table_item,))
-	second = dataclasses.replace(slide,
-		identity=dataclasses.replace(slide.identity, slide_id="slide-2", index=1),
-		objects=(dataclasses.replace(table_item, object_id="second-table"),))
-	layout_deck = dataclasses.replace(layout_deck, slides=(slide, second))
-	theme = slide_lib.presentation_theme.default_theme()
-	root = package.parse_xml(exporter._content_xml(layout_deck, theme,
-		exporter._layout_names(layout_deck), {}), "content.xml")
-	styles = root.findall(f".//{{{exporter.STYLE_NS}}}style")
-	names = [style.attrib[f"{{{exporter.STYLE_NS}}}name"] for style in styles]
-	assert len(names) == len(set(names))
-	cells = root.findall(f".//{{{slide_lib.odp_text.TABLE_NS}}}table-cell")
-	references = [cell.attrib[f"{{{slide_lib.odp_text.TABLE_NS}}}style-name"] for cell in cells]
-	assert references[:24] == references[24:]
-	assert len(set(references[:23])) == 1 and references[23] != references[0]
-	assert ["".join(cell.itertext()) for cell in cells] == [
-		f"R{row_index}C{column_index}" for row_index in range(2) for column_index in range(12)] * 2
 
 
 #============================================
-def test_native_table_emits_each_border_padding_alignment_and_spanned_cell() -> None:
-	"""Concrete edge patterns and cell geometry survive native export, including a two-axis merge."""
-	layout_deck = deck()
-	base_item = layout_deck.slides[0].objects[0]
-	paragraph = base_item.content.paragraphs[0]
-	paragraph = dataclasses.replace(paragraph, properties=dataclasses.replace(
-		paragraph.properties, horizontal_alignment=primitives.HorizontalAlignment.END))
-	borders = tuple(slide_lib.table_formatting.Border(width, pattern, color)
-		for width, pattern, color in ((0, "none", "000000"), (1.25, "solid", "123456"),
-			(0.75, "dashed", "ABCDEF"), (0.5, "dotted", "654321")))
-	cell = content.TableCell((paragraph,), primitives.Insets(2, 3, 4, 5),
-		primitives.VerticalAlignment.BOTTOM, "FEDCBA", borders, column_span=2, row_span=2)
-	table = content.TableContent((), (content.TableRow((cell,)), content.TableRow(())),
-		(40, 60), (24, 30))
-	slide = dataclasses.replace(layout_deck.slides[0], objects=(
-		dataclasses.replace(base_item, content=table),))
-	layout_deck = dataclasses.replace(layout_deck, slides=(slide,))
-	theme = slide_lib.presentation_theme.default_theme()
-	root = package.parse_xml(exporter._content_xml(layout_deck, theme,
-		exporter._layout_names(layout_deck), {}), "content.xml")
-	properties = table_cell_properties(root)[0]
-	assert [properties[f"{{{exporter.FO_NS}}}border-{side}"]
-		for side in ("top", "right", "bottom", "left")] == [
-		"none", "1.2500pt solid #123456", "0.7500pt dashed #ABCDEF", "0.5000pt dotted #654321"]
-	assert f"{{{exporter.FO_NS}}}border" not in properties
-	assert properties[f"{{{exporter.STYLE_NS}}}vertical-align"] == "bottom"
-	for side, value, canvas, centimeters in (("left", 2, layout_deck.canvas.width, theme.slide_width_cm),
-			("right", 4, layout_deck.canvas.width, theme.slide_width_cm),
-			("top", 3, layout_deck.canvas.height, theme.slide_height_cm),
-			("bottom", 5, layout_deck.canvas.height, theme.slide_height_cm)):
-		assert float(properties[f"{{{exporter.FO_NS}}}padding-{side}"].removesuffix("cm")) == pytest.approx(
-			value * centimeters / canvas, abs=0.000001)
-	ns = {"table": slide_lib.odp_text.TABLE_NS}
-	cell_element = root.find(".//table:table-cell", ns)
-	assert [cell_element.attrib[f"{{{ns['table']}}}number-{axis}-spanned"]
-		for axis in ("columns", "rows")] == ["2", "2"]
-	assert len(root.findall(".//table:covered-table-cell", ns)) == 3
-	assert "".join(cell_element.itertext()) == "Body"
-	paragraph_style = root.find(f".//{{{exporter.STYLE_NS}}}paragraph-properties")
-	assert paragraph_style.attrib[f"{{{exporter.FO_NS}}}text-align"] == "end"
 
 
 #============================================

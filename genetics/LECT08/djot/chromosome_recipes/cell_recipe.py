@@ -4,7 +4,8 @@
 import argparse
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 # local repo modules
 import svg_tools.chromosomes
 
@@ -26,7 +27,7 @@ def main() -> None:
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	source=json.loads((HERE/'cell_sources.json').read_text())
-	root=ET.fromstring(source['svg'])
+	root=DET.fromstring(source['svg'])
 	for parent in root.iter():
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:
@@ -36,7 +37,7 @@ def main() -> None:
 			model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',item['color'],item['center']-item['top']),svg_tools.chromosomes.Segment('',item['color'],item['bottom']-item['center'])),centromeres=(svg_tools.chromosomes.Centromere(1),))
 			path=f"M{item['x']} {item['top']} V{item['bottom']}"
 			part=svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}',model,path,thickness=20,labels=False)
-			parent.insert(list(parent).index(child),ET.fromstring(part.fragment))
+			parent.insert(list(parent).index(child),DET.fromstring(part.fragment))
 			parent.remove(child)
 	for node in root.iter():
 		if node.tag.startswith('{http://www.w3.org/2000/svg}'):

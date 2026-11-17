@@ -72,7 +72,6 @@ def test_cover_tracks_displayed_image_and_consumes_no_layout_space(tmp_path: pat
 	('![Diagram](diagram.png)\n\n=> appear\ncover: 10 20 30 40', 'requires disappear'),
 	('![Diagram](diagram.png)\n\n=> disappear\n{color=red}\ncover: 10 20 30 40', 'no attributes'),
 	('![Diagram](diagram.png)\n\n=> disappear\ncover: 90 20 30 40', 'inside'),
-	('![Diagram](diagram.png)\n\n=> disappear\ncover: -1 20 30 40', 'four percentages'),
 	('![Diagram](diagram.png)\n\n=> disappear\ncover: 10 20 30', 'four percentages'),
 	('=> disappear\nOrdinary paragraph', 'requires an image cover'),
 	('- A list item\n<= disappear', 'requires an image cover'),

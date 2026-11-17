@@ -4,7 +4,8 @@
 import argparse
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 # local repo modules
 import subprocess
 import svg_tools.chromosomes
@@ -75,7 +76,7 @@ def main() -> None:
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	for name, source in json.loads((HERE / 'crossover_sources.json').read_text()).items():
-		root = ET.fromstring(source['svg'])
+		root = DET.fromstring(source['svg'])
 		remove_legacy_alleles(root)
 		allele_rows = ((('a', 'b'), ('a', 'b'), ('+', '+'), ('+', '+')) * 2
 			if name == 'no_crossover.drawn.svg' else
@@ -86,7 +87,7 @@ def main() -> None:
 					x, y = float(child.get('cx')), float(child.get('cy'))
 					marker_model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#777777', 10), svg_tools.chromosomes.Segment('', '#777777', 10)), centromeres=(svg_tools.chromosomes.Centromere(1),))
 					marker_part = svg_tools.chromosomes.chromosome_path_part(f'marker-{parent.get("id")}-{int(y)}', marker_model, f'M{x-10} {y} H{x+10}', thickness=14, labels=False)
-					marker = next(n for n in ET.fromstring(marker_part.fragment).iter()
+					marker = next(n for n in DET.fromstring(marker_part.fragment).iter()
 						if '-centromere-' in n.get('id', ''))
 					parent.insert(list(parent).index(child), marker)
 					parent.remove(child)
@@ -98,7 +99,7 @@ def main() -> None:
 				model = allele_model(item, allele_rows[index])
 				part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model,
 					item['path'], thickness=28, labels=True, texture=False)
-				parent.insert(list(parent).index(child), ET.fromstring(part.fragment))
+				parent.insert(list(parent).index(child), DET.fromstring(part.fragment))
 				parent.remove(child)
 		for node in root.iter():
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):

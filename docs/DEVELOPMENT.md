@@ -119,7 +119,7 @@ offline test suite.
   `py_compile` and `compileall` explicitly write bytecode despite `PYTHONDONTWRITEBYTECODE=1`.
 - Run `tests/test_markdown_links.py` for GitHub-browsable documentation and
   `tests/test_djot_links.py` for locally available slide assets and hyperlinks. Ignored teaching
-  images remain outside Git; source-only checks do not establish rendered layout or playback.
+  images remain local build outputs; source-only checks do not establish rendered layout or playback.
 - Split source modules by responsibility before reaching the 1,000-line limit. The advisory band
   begins at 900 lines. Update callers to the new owners rather than adding re-export facades.
 - Use `devel/` for repository engineering commands. [devel/DEVEL_README.md](../devel/DEVEL_README.md)

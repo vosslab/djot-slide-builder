@@ -5,7 +5,8 @@ Source facts are retained below; source illustrations are schematic, not measure
 Nonchromosome labels, connectors, background and figure dimensions remain source-authored.
 """
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 import svg_tools.chromosomes as chromosomes
 import svg_tools.parts as parts
 
@@ -26,12 +27,12 @@ def build(root: ET.Element, item: dict) -> None:
 		(chromosomes.Centromere(1),))
 	part = chromosomes.chromosome_part('hla-chromosome-6', model, length=end-start, thickness=thickness, texture=False, labels=False)
 	part = parts.transform(part, start, 85)
-	next(e for e in root.iter() if e.get('data-slot')=='chromosome-6').append(ET.fromstring(part.fragment))
+	next(e for e in root.iter() if e.get('data-slot')=='chromosome-6').append(DET.fromstring(part.fragment))
 
 
 def main(output_root: pathlib.Path) -> None:
 	for item in FIGURES:
-		root = ET.fromstring(item['template'])
+		root = DET.fromstring(item['template'])
 		build(root, item)
 		for element in root.iter():
 			if not element.tag.startswith('{'):

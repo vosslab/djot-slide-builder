@@ -2,7 +2,8 @@
 
 import base64
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chromosomes
 
@@ -126,7 +127,7 @@ def geometry() -> tuple[list, list]:
 def build(output_dir: pathlib.Path) -> None:
 	"""Write the overview asset using only frozen source data and shared bodies."""
 	output_dir.mkdir(parents=True, exist_ok=True)
-	root = ET.parse(SOURCE).getroot()
+	root = DET.parse(SOURCE).getroot()
 	group = root.find(f'{{{SVG}}}g')
 	paths, xs = geometry()
 	fragments = []
@@ -148,7 +149,7 @@ def build(output_dir: pathlib.Path) -> None:
 	ET.SubElement(overlay,f'{{{SVG}}}image',{'x':'0','y':'0','width':'1600','height':'747',
 		f'{{{XLINK}}}href':'data:image/png;base64,'+base64.b64encode(patch_data).decode()})
 	for fragment in fragments:
-		overlay.append(ET.fromstring(fragment))
+		overlay.append(DET.fromstring(fragment))
 	group.insert(1,overlay)
 	root.find(f'{{{SVG}}}desc').text += ' Original artwork, stage tree, native labels and callouts are retained. Only schematic chromosome body pixels are locally masked; replacement rods and sisters use the shared chromosome tools.'
 	result = output_dir/'meiosis_overview.svg'

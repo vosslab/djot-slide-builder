@@ -3,7 +3,8 @@
 import argparse
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -40,7 +41,7 @@ def body_part(model: dict) -> ET.Element:
 		thickness = int(thickness)
 	part = svg_tools.chromosomes.chromosome_path_part(
 		model['id'], chromosome, model['path'], thickness=thickness, labels=False)
-	element = namespaced(ET.fromstring(part.fragment))
+	element = namespaced(DET.fromstring(part.fragment))
 	for region, source in zip((node for node in element if node.get('data-source-label') is not None),
 		model['regions']):
 		path = next(node for node in region if node.tag == TAG + 'path')
@@ -51,7 +52,7 @@ def body_part(model: dict) -> ET.Element:
 def marker_part(identifier: str, thickness: float) -> ET.Element:
 	"""Render one hollow centromere marker with the shared tool."""
 	part = svg_tools.chromosomes.centromere_part(identifier, thickness=thickness)
-	element = namespaced(ET.fromstring(part.fragment))
+	element = namespaced(DET.fromstring(part.fragment))
 	return element
 
 
@@ -64,7 +65,7 @@ def replace(parent: ET.Element, old: ET.Element, new: ET.Element) -> None:
 
 def build(name: str, model: dict) -> bytes:
 	"""Fill the body-free template for one output SVG."""
-	root = ET.parse(DATA / name).getroot()
+	root = DET.parse(DATA / name).getroot()
 	bodies = {body['id']: body for body in model['bodies']}
 	markers = {marker['id']: marker for marker in model['markers']}
 	for parent in root.iter():

@@ -2,7 +2,8 @@
 """Regenerate the spore-color segregation illustration."""
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -15,7 +16,7 @@ ET.register_namespace('', NS)
 
 def main() -> None:
 	models = json.loads((DATA / 'models.json').read_text())
-	root = ET.parse(DATA / 'composition.svg').getroot()
+	root = DET.parse(DATA / 'composition.svg').getroot()
 	for parent in list(root.iter()):
 		for slot in list(parent):
 			body = slot.get('data-body-slot')
@@ -27,7 +28,7 @@ def main() -> None:
 					svg_tools.chromosomes.Segment('', model['stroke']),))
 				part = svg_tools.chromosomes.chromosome_path_part(
 					f'chromatid-{index:02d}', chromosome, model['d'], thickness=8, labels=False)
-				element = ET.fromstring(part.fragment)
+				element = DET.fromstring(part.fragment)
 				for key, value in slot.attrib.items():
 					if key.startswith('data-') and key != 'data-body-slot':
 						element.set(key, value)
@@ -35,7 +36,7 @@ def main() -> None:
 				index = int(marker)
 				model = models['markers'][index]
 				part = svg_tools.chromosomes.centromere_part(f'centromere-{index:02d}', thickness=8)
-				element = ET.fromstring(part.fragment)
+				element = DET.fromstring(part.fragment)
 				element.set('transform', f"translate({model['cx']} {model['cy']})")
 			else:
 				continue

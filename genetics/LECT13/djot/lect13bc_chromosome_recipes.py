@@ -6,7 +6,8 @@ import base64
 import json
 import math
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import subprocess
@@ -62,7 +63,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	image_uri = 'data:image/png;base64,' + base64.b64encode(
 		(source_path.parent / image_name).read_bytes()).decode('ascii')
 	for relative, source in sources.items():
-		root = ET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
+		root = DET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
 			integrate_loci(root, source)
 		markers = {}
@@ -80,7 +81,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				part = svg_tools.chromosomes.chromosome_path_part(f'migrated13bc-chromosome-{index}',
 					model, data['path'], thickness=data['thickness'],
 					cut_ends=data['cut_ends'], labels=False)
-				replacement = ET.fromstring(part.fragment)
+				replacement = DET.fromstring(part.fragment)
 				replacement.attrib['data-source-part'] = str(index)
 				replacement.attrib['stroke'] = 'none'
 				if 'centromere' in part.anchors:
@@ -101,7 +102,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				belt = svg_tools.chromosomes.centromere_part(
 					f'migrated13bc-sister-belt-{number}', thickness=thickness,
 					across=math.hypot(x2-x1, y2-y1)+thickness*1.3)
-				root.append(ET.fromstring(svg_tools.parts.transform(belt,
+				root.append(DET.fromstring(svg_tools.parts.transform(belt,
 					x=(x1+x2)/2, y=(y1+y2)/2,
 					rotation=math.degrees(math.atan2(y2-y1, x2-x1))-90).fragment))
 		path = output_root / relative

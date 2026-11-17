@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Reconstruct the two raster scenes without changing their native surroundings."""
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svgpathtools
 import svg_tools.chromosomes as chromosomes
@@ -25,7 +26,7 @@ def add(parent: ET.Element, name: str, **attrs: object) -> ET.Element:
 
 
 def part_node(fragment: str) -> ET.Element:
-	node = ET.fromstring(fragment)
+	node = DET.fromstring(fragment)
 	for item in node.iter():
 		if not item.tag.startswith('{'):
 			item.tag = tag(item.tag)
@@ -181,7 +182,7 @@ def tetratype() -> ET.Element:
 
 def generate(filename: str) -> None:
 	source = BASE/'assets/lect09_unlinked_scene_templates'/filename
-	root = ET.parse(source).getroot()
+	root = DET.parse(source).getroot()
 	slot = next(node for node in root.iter() if node.get('id') == 'native-scene-slot')
 	parent = next(node for node in root.iter() if slot in list(node))
 	index = list(parent).index(slot)

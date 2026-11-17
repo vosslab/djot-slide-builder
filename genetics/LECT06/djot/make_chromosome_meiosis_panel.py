@@ -5,7 +5,7 @@ import base64
 import hashlib
 import json
 import pathlib
-import defusedxml.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -58,7 +58,7 @@ def render() -> str:
 		'<g id="chromosome-bodies" mask="url(#foreground-protection)">'
 		+ ''.join(fragments) + '</g></svg>'
 	)
-	ET.fromstring(svg)
+	DET.fromstring(svg)
 	return svg
 
 

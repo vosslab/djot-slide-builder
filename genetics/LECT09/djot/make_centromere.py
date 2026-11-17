@@ -2,7 +2,8 @@
 """Rebuild the centromere teaching figure from its template and chromosome model."""
 import argparse
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -28,7 +29,7 @@ def chromosome_body() -> ET.Element:
 	layout = svg_tools.chromosomes.render_chromosome_layout(
 		'centromere-drawn', model, length=190, thickness=27, orientation='vertical',
 		sisters=True, texture=False, labels=False)
-	return ET.fromstring(layout.svg)
+	return DET.fromstring(layout.svg)
 
 
 
@@ -39,7 +40,7 @@ def main() -> None:
 	parser.add_argument('--output-root', type=pathlib.Path, default=OUTPUT.parent)
 	args = parser.parse_args()
 	ET.register_namespace('', NS)
-	root = ET.parse(ASSETS / 'centromere.svg').getroot()
+	root = DET.parse(ASSETS / 'centromere.svg').getroot()
 	for parent in root.iter():
 		for node in list(parent):
 			if node.get('data-chromosome-slot'):

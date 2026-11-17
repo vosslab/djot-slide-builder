@@ -7,7 +7,8 @@ expression bars, and the source-backed gene distribution map retain their own fo
 
 import re
 import pathlib
-import defusedxml.ElementTree as ET
+import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
@@ -41,7 +42,7 @@ def rod(name: str, x: float, y: float, width: float, length: float,
 		thickness=width, orientation='vertical', texture=False, labels=False)
 	group = ET.Element(f'{{{NS}}}g', {'data-lect12c-chromosome': 'true',
 		'transform': f'translate({x} {y})'})
-	group.append(ET.fromstring(part.fragment))
+	group.append(DET.fromstring(part.fragment))
 	return group
 
 
@@ -74,7 +75,7 @@ def replace_barr_bodies(root: ET.Element, name: str) -> None:
 				svg_tools.chromosomes.Segment('', child.attrib['fill']),))
 			part = svg_tools.chromosomes.condensed_chromosome_part(
 				f'{name}-barr-{serial}', model, radius=12)
-			replacement = ET.fromstring(part.fragment)
+			replacement = DET.fromstring(part.fragment)
 			replacement.set('transform', f'translate({child.attrib["cx"]} {child.attrib["cy"]})')
 			index = list(parent).index(child)
 			parent.remove(child)
@@ -84,7 +85,7 @@ def replace_barr_bodies(root: ET.Element, name: str) -> None:
 #============================================
 def refresh(path: pathlib.Path) -> None:
 	"""Migrate old primitives or refresh renderer-owned groups idempotently."""
-	tree = ET.parse(path)
+	tree = DET.parse(path)
 	root = tree.getroot()
 	name = path.stem.replace('.', '-')
 	serial = 0
