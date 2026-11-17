@@ -7,7 +7,6 @@ cytobands. Two ancestral rods become one dicentric chromosome; an intermediate
 then marks the long-arm centromere inactive before the final chromosome2.
 """
 import pathlib
-import xml.etree.ElementTree as ET
 import svg_tools.chromosomes as chromosomes
 import svg_tools.drawing as drawing
 
@@ -18,19 +17,17 @@ RUNS = [[[114, 123, 'gold'], [123, 127, 'purple'], [127, 133, 'gold'], [133, 148
 
 
 def rod(name: str, x: float, top: float, bottom: float, centromere: float, runs: list) -> str:
-	start, end = top+13.5, bottom-13.5
+	start, end = top, bottom
 	positions = sorted({start,end,centromere,*[float(a) for a,b,color in runs if start<a<end]})
 	segments = []
 	for a,b in zip(positions,positions[1:]):
 		kind = next(color for lo,hi,color in runs if lo <= (a+b)/2 < hi)
 		segments.append(chromosomes.Segment('',PURPLE if kind=='purple' else GOLD,b-a))
-	model = chromosomes.Chromosome(tuple(segments),positions.index(centromere))
-	part = chromosomes.chromosome_path_part(name,model,f'M {x} {start} V {end}',thickness=27,labels=False)
-	group = ET.fromstring(part.fragment)
-	paint = next(e for e in group if e.get('clip-path'))
-	for a,b,kind in runs:
-		ET.SubElement(paint,'rect',{'x':str(x-13.5),'y':str(a),'width':'27','height':str(b-a),'fill':PURPLE if kind=='purple' else GOLD})
-	return ET.tostring(group,encoding='unicode')
+	model = chromosomes.Chromosome(tuple(segments),
+		(chromosomes.Centromere(positions.index(centromere)),))
+	part = chromosomes.chromosome_path_part(name,model,f'M {x} {start} V {end}',thickness=27,labels=False,bands=False)
+	return part.fragment
+
 
 
 def text(x: float, y: float, lines: list[str], size: float = 24, anchor: str = 'start') -> str:
@@ -60,7 +57,7 @@ def main(path: pathlib.Path) -> None:
 	# Upper source takes precedence in its short overlap, both regions are gold there.
 	fused=sorted(fused)
 	body+=rod('inactivation-body',844,114,533,260,fused)
-	body+='<ellipse cx="844" cy="295" rx="13.5" ry="13.5" fill="white" stroke="#72508C" stroke-width="1.2" stroke-dasharray="3 2"/>'
+	body+='<g transform="translate(844 295) rotate(90)">'+chromosomes.centromere_part('inactive-site',thickness=27,active=False).fragment+'</g>'
 	body+='</g>'
 	body+=rod('human-chromosome-2',978,132,514,278,RUNS[2])
 	for a,b in ((323,548),(614,809),(861,949)):

@@ -2,7 +2,7 @@
 
 @image
 
-![Unreplicated and replicated forms](repo:genetics/LECT10/djot/assets/lect10b-karyotypes/image_027.normal.svg)
+![Unreplicated and replicated forms](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/image_027.normal.svg)
 
 @caption
 
@@ -30,7 +30,7 @@ Reason:
 
 @image
 
-![Human chromosome 2 fusion](repo:genetics/LECT10/djot/assets/visual_renewal/human_chromosome_2_fusion.drawn.svg)
+![Human chromosome 2 fusion](repo:prototype/chromosome_assets/assets/visual_renewal/human_chromosome_2_fusion.drawn.svg)
 
 @caption
 
@@ -58,7 +58,7 @@ Reason:
 
 @image
 
-![Whole-set multiplicity](repo:genetics/LECT10/djot/assets/lect10d-chromo_aneuploid/ploidy_chromosome_multiplicity.drawn.svg)
+![Whole-set multiplicity](repo:prototype/chromosome_assets/assets/lect10d-chromo_aneuploid/ploidy_chromosome_multiplicity.drawn.svg)
 
 @caption
 
@@ -86,7 +86,7 @@ Reason:
 
 @image
 
-![Nondisjunction in meiosis I](repo:genetics/LECT10/djot/assets/lect10_repaired_figures/nondisjunction_meiosis_i.drawn.svg)
+![Nondisjunction in meiosis I](repo:prototype/chromosome_assets/assets/lect10_repaired_figures/nondisjunction_meiosis_i.drawn.svg)
 
 @caption
 
@@ -114,7 +114,7 @@ Reason:
 
 @image
 
-![Cohesion maintained](repo:genetics/LECT10/djot/assets/lect10d-chromo_aneuploid/cohesion_maintained.drawn.svg)
+![Cohesion maintained](repo:prototype/chromosome_assets/assets/lect10d-chromo_aneuploid/cohesion_maintained.drawn.svg)
 
 @caption
 
@@ -142,7 +142,7 @@ Reason:
 
 @image
 
-![Chrysanthemum chromosome sets](repo:genetics/LECT12/djot/assets/visual_renewal/chrysanthemum_18_36.drawn.svg)
+![Chrysanthemum chromosome sets](repo:prototype/chromosome_assets/assets/visual_renewal/chrysanthemum_18_36.drawn.svg)
 
 @caption
 
@@ -170,7 +170,7 @@ Reason:
 
 @image
 
-![Unreduced gametes](repo:genetics/LECT12/djot/assets/lect12b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg)
+![Unreduced gametes](repo:prototype/chromosome_assets/assets/lect12b-polyploidy/unreduced_gamete_tetraploidy.drawn.svg)
 
 @caption
 
@@ -198,7 +198,7 @@ Reason:
 
 @image
 
-![Autopolyploid division](repo:genetics/LECT12/djot/assets/lect12b-polyploidy/autopolyploid_division.drawn.svg)
+![Autopolyploid division](repo:prototype/chromosome_assets/assets/lect12b-polyploidy/autopolyploid_division.drawn.svg)
 
 @caption
 
@@ -226,7 +226,7 @@ Reason:
 
 @image
 
-![Auto- and allopolyploidy](repo:genetics/LECT12/djot/assets/lect12b-polyploidy/auto_allopolyploid_comparison.drawn.svg)
+![Auto- and allopolyploidy](repo:prototype/chromosome_assets/assets/lect12b-polyploidy/auto_allopolyploid_comparison.drawn.svg)
 
 @caption
 
@@ -254,7 +254,7 @@ Reason:
 
 @image
 
-![X-inactivation lineages](repo:genetics/LECT12/djot/assets/visual_renewal/x_inactivation_lineages.drawn.svg)
+![X-inactivation lineages](repo:prototype/chromosome_assets/assets/visual_renewal/x_inactivation_lineages.drawn.svg)
 
 @caption
 
@@ -282,7 +282,7 @@ Reason:
 
 @image
 
-![Calico lineages](repo:genetics/LECT12/djot/assets/visual_renewal/calico_x_lineages.drawn.svg)
+![Calico lineages](repo:prototype/chromosome_assets/assets/visual_renewal/calico_x_lineages.drawn.svg)
 
 @caption
 
@@ -310,7 +310,7 @@ Reason:
 
 @image
 
-![Pseudoautosomal crossover](repo:genetics/LECT12/djot/assets/visual_renewal/pseudoautosomal_crossover.drawn.svg)
+![Pseudoautosomal crossover](repo:prototype/chromosome_assets/assets/visual_renewal/pseudoautosomal_crossover.drawn.svg)
 
 @caption
 
@@ -338,7 +338,7 @@ Reason:
 
 @image
 
-![Deletion overview](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_overview.drawn.svg)
+![Deletion overview](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/deletion_overview.drawn.svg)
 
 @caption
 
@@ -366,7 +366,7 @@ Reason:
 
 @image
 
-![A direct-repeat loop](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/direct_repeat_loop.drawn.svg)
+![A direct-repeat loop](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/direct_repeat_loop.drawn.svg)
 
 @caption
 
@@ -394,7 +394,7 @@ Reason:
 
 @image
 
-![Quantitative chromosome map](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/drosophila_quantitative_map.drawn.svg)
+![Quantitative chromosome map](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/drosophila_quantitative_map.drawn.svg)
 
 @caption
 
@@ -422,7 +422,7 @@ Reason:
 
 @image
 
-![Polytene chromosomes](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/polytene_mixed.svg)
+![Polytene chromosomes](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/polytene_mixed.svg)
 
 @caption
 
@@ -450,7 +450,7 @@ Reason:
 
 @image
 
-![Cytological deletion intervals](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/cytological_deletion_intervals.drawn.svg)
+![Cytological deletion intervals](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/cytological_deletion_intervals.drawn.svg)
 
 @caption
 
@@ -478,7 +478,7 @@ Reason:
 
 @image
 
-![Aligned deletion evidence](repo:genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
+![Aligned deletion evidence](repo:prototype/chromosome_assets/assets/lect12d-chromo_alter_1-deletions/deletion_intervals.drawn.svg)
 
 @caption
 
@@ -506,7 +506,7 @@ Reason:
 
 @image
 
-![Unequal tandem crossover](repo:genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg)
+![Unequal tandem crossover](repo:prototype/chromosome_assets/assets/lect12e-chromo_alter_2-duplications/unequal_tandem_crossover.drawn.svg)
 
 @caption
 
@@ -534,7 +534,7 @@ Reason:
 
 @image
 
-![Opsin arrays in chromosome context](repo:genetics/LECT12/djot/assets/lect12e-chromo_alter_2-duplications/opsin_arrays.drawn.svg)
+![Opsin arrays in chromosome context](repo:prototype/chromosome_assets/assets/lect12e-chromo_alter_2-duplications/opsin_arrays.drawn.svg)
 
 @caption
 
@@ -562,7 +562,7 @@ Reason:
 
 @image
 
-![Inversion synapsis](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg)
+![Inversion synapsis](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-synapsis.drawn.svg)
 
 @caption
 
@@ -590,7 +590,7 @@ Reason:
 
 @image
 
-![Paracentric anaphase](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/paracentric-anaphase.drawn.svg)
+![Paracentric anaphase](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/paracentric-anaphase.drawn.svg)
 
 @caption
 
@@ -618,7 +618,7 @@ Reason:
 
 @image
 
-![Pericentric pairing](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/pericentric-pairing.drawn.svg)
+![Pericentric pairing](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/pericentric-pairing.drawn.svg)
 
 @caption
 
@@ -646,7 +646,7 @@ Reason:
 
 @image
 
-![Pericentric anaphase](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg)
+![Pericentric anaphase](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg)
 
 @caption
 
@@ -674,7 +674,7 @@ Reason:
 
 @image
 
-![Inversion double-crossover problem](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
+![Inversion double-crossover problem](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/inversion-double-crossover-problem.drawn.svg)
 
 @caption
 
@@ -702,7 +702,7 @@ Reason:
 
 @image
 
-![Position-effect chromosomes](repo:genetics/LECT13/djot/assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
+![Position-effect chromosomes](repo:prototype/chromosome_assets/assets/lect13b-chromo_alter_3-inversion/position-effect-chromosomes.drawn.svg)
 
 @caption
 
@@ -730,7 +730,7 @@ Reason:
 
 @image
 
-![Philadelphia chromosome](repo:genetics/LECT13/djot/assets/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg)
+![Philadelphia chromosome](repo:prototype/chromosome_assets/assets/lect13c-chromo_alter_4-translocation/philadelphia-chromosome.drawn.svg)
 
 @caption
 
@@ -758,7 +758,7 @@ Reason:
 
 @image
 
-![Numbered complement and spindle](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_numbered_complement_spindle.drawn.svg)
+![Numbered complement and spindle](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/lect13d_p1_numbered_complement_spindle.drawn.svg)
 
 @caption
 
@@ -786,7 +786,7 @@ Reason:
 
 @image
 
-![Gamete product columns](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p1_gametes.drawn.svg)
+![Gamete product columns](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/lect13d_p1_gametes.drawn.svg)
 
 @caption
 
@@ -814,7 +814,7 @@ Reason:
 
 @image
 
-![A Y-chromosome strip](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
+![A Y-chromosome strip](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/normal_y_chromosome_strip.drawn.svg)
 
 @caption
 
@@ -842,7 +842,7 @@ Reason:
 
 @image
 
-![Numbered adjacent and alternate products](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_gametes_48.drawn.svg)
+![Numbered adjacent and alternate products](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/lect13d_p2_gametes_48.drawn.svg)
 
 @caption
 
@@ -870,7 +870,7 @@ Reason:
 
 @image
 
-![Robertsonian fusion](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/robertsonian_centromeric_fusion.drawn.svg)
+![Robertsonian fusion](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/robertsonian_centromeric_fusion.drawn.svg)
 
 @caption
 
@@ -898,7 +898,7 @@ Reason:
 
 @image
 
-![Robertsonian metaphase orientations](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/robertsonian_metaphase_orientations.drawn.svg)
+![Robertsonian metaphase orientations](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/robertsonian_metaphase_orientations.drawn.svg)
 
 @caption
 
@@ -926,7 +926,7 @@ Reason:
 
 @image
 
-![Robertsonian gamete outcomes](repo:genetics/LECT13/djot/assets/lect13d-meiosis_translocation/lect13d_p2_robertsonian_footer.drawn.svg)
+![Robertsonian gamete outcomes](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/lect13d_p2_robertsonian_footer.drawn.svg)
 
 @caption
 

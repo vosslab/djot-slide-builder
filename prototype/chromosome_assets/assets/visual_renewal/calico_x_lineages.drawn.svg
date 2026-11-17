@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="550" viewBox="0 0 600 550" role="img" aria-labelledby="title desc">
+  <title id="title">Orange and black fur alleles in X-inactivation lineages</title>
+  <desc id="desc">Two X chromosomes in each cell. A line is active; a compact circle is inactive. Each descendant retains its lineage's inactive X.</desc>
+  <rect width="600" height="550" fill="white" />
+  <g id="early-embryo">
+    <ellipse cx="300" cy="90" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(278.0 63.0)" id="calico_x_lineages-drawn-chromosome-1" data-lect12c-input="278.0,63.0,10,54.0,#DA8A35">
+      <g id="calico_x_lineages-drawn-chromosome-1-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-1-body-body-clip">
+            <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-1-body-body-clip)" data-layer="body">
+          <path d="M 5.0,0.0 L 5.0,54.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="calico_x_lineages-drawn-chromosome-1-body-region-0" data-source-label="">
+            <path d="M 5.0,0.0 L 5.0,27.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-1-body-region-1" data-source-label="">
+            <path d="M 5.0,27.0 L 5.0,54.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="calico_x_lineages-drawn-chromosome-1-body-sheen" gradientUnits="userSpaceOnUse" x1="10.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 10.0000,0.0000 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,0.0000 Z" fill="url(#calico_x_lineages-drawn-chromosome-1-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 9.3333,0.0000 L 9.3333,54.0000 L 8.6667,54.0000 L 8.6667,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 1.6667,0.0000 L 1.6667,54.0000 L 0.6667,54.0000 L 0.6667,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 10.0000,0.0000 L 10.0000,2.6667 L 0.0000,2.6667 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,51.3333 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,51.3333 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" fill="none" stroke="#000000" stroke-width="1.3333333333333333" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="calico_x_lineages-drawn-chromosome-1-body-centromere-0" data-layer="centromere" transform="translate(5.0 27.0) rotate(90.0)">
+          <clipPath id="calico_x_lineages-drawn-chromosome-1-body-centromere-0-clip">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" />
+          </clipPath>
+          <g clip-path="url(#calico_x_lineages-drawn-chromosome-1-body-centromere-0-clip)">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="calico_x_lineages-drawn-chromosome-1-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-5.333333333333333" y1="-6.5" x2="-5.333333333333333" y2="6.5">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -5.3333,-6.5000 L 5.3333,-6.5000 L 5.3333,6.5000 L -5.3333,6.5000 Z" fill="url(#calico_x_lineages-drawn-chromosome-1-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -5.3333,-5.6333 L 5.3333,-5.6333 L 5.3333,-4.7667 L -5.3333,-4.7667 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -5.3333,4.3333 L 5.3333,4.3333 L 5.3333,5.6333 L -5.3333,5.6333 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="none" stroke="#40474E" stroke-width="0.6666666666666666" />
+        </g>
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(312.0 63.0)" id="calico_x_lineages-drawn-chromosome-2" data-lect12c-input="312.0,63.0,10,54.0,#29292D">
+      <g id="calico_x_lineages-drawn-chromosome-2-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-2-body-body-clip">
+            <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-2-body-body-clip)" data-layer="body">
+          <path d="M 5.0,0.0 L 5.0,54.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="calico_x_lineages-drawn-chromosome-2-body-region-0" data-source-label="">
+            <path d="M 5.0,0.0 L 5.0,27.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-2-body-region-1" data-source-label="">
+            <path d="M 5.0,27.0 L 5.0,54.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="calico_x_lineages-drawn-chromosome-2-body-sheen" gradientUnits="userSpaceOnUse" x1="10.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 10.0000,0.0000 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,0.0000 Z" fill="url(#calico_x_lineages-drawn-chromosome-2-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 9.3333,0.0000 L 9.3333,54.0000 L 8.6667,54.0000 L 8.6667,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 1.6667,0.0000 L 1.6667,54.0000 L 0.6667,54.0000 L 0.6667,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 10.0000,0.0000 L 10.0000,2.6667 L 0.0000,2.6667 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,51.3333 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,51.3333 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" fill="none" stroke="#000000" stroke-width="1.3333333333333333" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="calico_x_lineages-drawn-chromosome-2-body-centromere-0" data-layer="centromere" transform="translate(5.0 27.0) rotate(90.0)">
+          <clipPath id="calico_x_lineages-drawn-chromosome-2-body-centromere-0-clip">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" />
+          </clipPath>
+          <g clip-path="url(#calico_x_lineages-drawn-chromosome-2-body-centromere-0-clip)">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="calico_x_lineages-drawn-chromosome-2-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-5.333333333333333" y1="-6.5" x2="-5.333333333333333" y2="6.5">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -5.3333,-6.5000 L 5.3333,-6.5000 L 5.3333,6.5000 L -5.3333,6.5000 Z" fill="url(#calico_x_lineages-drawn-chromosome-2-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -5.3333,-5.6333 L 5.3333,-5.6333 L 5.3333,-4.7667 L -5.3333,-4.7667 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -5.3333,4.3333 L 5.3333,4.3333 L 5.3333,5.6333 L -5.3333,5.6333 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="none" stroke="#40474E" stroke-width="0.6666666666666666" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <text x="300" y="30" font-family="Atkinson Hyperlegible Next" font-size="23" text-anchor="middle" fill="#222">Early embryo: both X alleles</text>
+  <path d="M300 135 L145 275" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="adult-population-0">
+    <ellipse cx="145" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <circle cx="128" cy="320" r="12" fill="#DA8A35" />
+    <g data-lect12c-chromosome="true" transform="translate(157.0 293.0)" id="calico_x_lineages-drawn-chromosome-3" data-lect12c-input="157.0,293.0,10,54.0,#29292D">
+      <g id="calico_x_lineages-drawn-chromosome-3-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-3-body-body-clip">
+            <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-3-body-body-clip)" data-layer="body">
+          <path d="M 5.0,0.0 L 5.0,54.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="calico_x_lineages-drawn-chromosome-3-body-region-0" data-source-label="">
+            <path d="M 5.0,0.0 L 5.0,27.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-3-body-region-1" data-source-label="">
+            <path d="M 5.0,27.0 L 5.0,54.0" fill="none" stroke="#29292D" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="calico_x_lineages-drawn-chromosome-3-body-sheen" gradientUnits="userSpaceOnUse" x1="10.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 10.0000,0.0000 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,0.0000 Z" fill="url(#calico_x_lineages-drawn-chromosome-3-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 9.3333,0.0000 L 9.3333,54.0000 L 8.6667,54.0000 L 8.6667,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 1.6667,0.0000 L 1.6667,54.0000 L 0.6667,54.0000 L 0.6667,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 10.0000,0.0000 L 10.0000,2.6667 L 0.0000,2.6667 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,51.3333 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,51.3333 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" fill="none" stroke="#000000" stroke-width="1.3333333333333333" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="calico_x_lineages-drawn-chromosome-3-body-centromere-0" data-layer="centromere" transform="translate(5.0 27.0) rotate(90.0)">
+          <clipPath id="calico_x_lineages-drawn-chromosome-3-body-centromere-0-clip">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" />
+          </clipPath>
+          <g clip-path="url(#calico_x_lineages-drawn-chromosome-3-body-centromere-0-clip)">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="calico_x_lineages-drawn-chromosome-3-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-5.333333333333333" y1="-6.5" x2="-5.333333333333333" y2="6.5">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -5.3333,-6.5000 L 5.3333,-6.5000 L 5.3333,6.5000 L -5.3333,6.5000 Z" fill="url(#calico_x_lineages-drawn-chromosome-3-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -5.3333,-5.6333 L 5.3333,-5.6333 L 5.3333,-4.7667 L -5.3333,-4.7667 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -5.3333,4.3333 L 5.3333,4.3333 L 5.3333,5.6333 L -5.3333,5.6333 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="none" stroke="#40474E" stroke-width="0.6666666666666666" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <text x="145" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Black fur</text>
+  <path d="M300 135 L455 275" stroke="#647681" stroke-width="2" fill="none" />
+  <g id="adult-population-1">
+    <ellipse cx="455" cy="320" rx="48" ry="43" fill="#F3F6F8" stroke="#647681" stroke-width="2" />
+    <g data-lect12c-chromosome="true" transform="translate(433.0 293.0)" id="calico_x_lineages-drawn-chromosome-4" data-lect12c-input="433.0,293.0,10,54.0,#DA8A35">
+      <g id="calico_x_lineages-drawn-chromosome-4-body">
+        <defs>
+          <clipPath id="calico_x_lineages-drawn-chromosome-4-body-body-clip">
+            <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#calico_x_lineages-drawn-chromosome-4-body-body-clip)" data-layer="body">
+          <path d="M 5.0,0.0 L 5.0,54.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="calico_x_lineages-drawn-chromosome-4-body-region-0" data-source-label="">
+            <path d="M 5.0,0.0 L 5.0,27.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="calico_x_lineages-drawn-chromosome-4-body-region-1" data-source-label="">
+            <path d="M 5.0,27.0 L 5.0,54.0" fill="none" stroke="#DA8A35" stroke-width="10.0" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="calico_x_lineages-drawn-chromosome-4-body-sheen" gradientUnits="userSpaceOnUse" x1="10.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 10.0000,0.0000 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,0.0000 Z" fill="url(#calico_x_lineages-drawn-chromosome-4-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 9.3333,0.0000 L 9.3333,54.0000 L 8.6667,54.0000 L 8.6667,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 1.6667,0.0000 L 1.6667,54.0000 L 0.6667,54.0000 L 0.6667,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 10.0000,0.0000 L 10.0000,2.6667 L 0.0000,2.6667 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,51.3333 L 10.0000,54.0000 L 0.0000,54.0000 L 0.0000,51.3333 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 10.0000,2.0000 L 10.0000,52.0000 L 10.0000,52.0000 L 9.9616,52.3902 L 9.8478,52.7654 L 9.6629,53.1111 L 9.4142,53.4142 L 9.1111,53.6629 L 8.7654,53.8478 L 8.3902,53.9616 L 8.0000,54.0000 L 2.0000,54.0000 L 1.6098,53.9616 L 1.2346,53.8478 L 0.8889,53.6629 L 0.5858,53.4142 L 0.3371,53.1111 L 0.1522,52.7654 L 0.0384,52.3902 L 0.0000,52.0000 L 0.0000,2.0000 L 0.0384,1.6098 L 0.1522,1.2346 L 0.3371,0.8889 L 0.5858,0.5858 L 0.8889,0.3371 L 1.2346,0.1522 L 1.6098,0.0384 L 2.0000,0.0000 L 8.0000,0.0000 L 8.3902,0.0384 L 8.7654,0.1522 L 9.1111,0.3371 L 9.4142,0.5858 L 9.6629,0.8889 L 9.8478,1.2346 L 9.9616,1.6098 L 10.0000,2.0000 Z" fill="none" stroke="#000000" stroke-width="1.3333333333333333" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="calico_x_lineages-drawn-chromosome-4-body-centromere-0" data-layer="centromere" transform="translate(5.0 27.0) rotate(90.0)">
+          <clipPath id="calico_x_lineages-drawn-chromosome-4-body-centromere-0-clip">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" />
+          </clipPath>
+          <g clip-path="url(#calico_x_lineages-drawn-chromosome-4-body-centromere-0-clip)">
+            <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="calico_x_lineages-drawn-chromosome-4-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-5.333333333333333" y1="-6.5" x2="-5.333333333333333" y2="6.5">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -5.3333,-6.5000 L 5.3333,-6.5000 L 5.3333,6.5000 L -5.3333,6.5000 Z" fill="url(#calico_x_lineages-drawn-chromosome-4-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -5.3333,-5.6333 L 5.3333,-5.6333 L 5.3333,-4.7667 L -5.3333,-4.7667 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -5.3333,4.3333 L 5.3333,4.3333 L 5.3333,5.6333 L -5.3333,5.6333 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-5.333333333333333" y="-6.5" width="10.666666666666666" height="13.0" rx="1.3333333333333333" fill="none" stroke="#40474E" stroke-width="0.6666666666666666" />
+        </g>
+      </g>
+    </g>
+    <circle cx="472" cy="320" r="12" fill="#29292D" />
+  </g>
+  <text x="455" y="410" font-family="Atkinson Hyperlegible Next" font-size="28" text-anchor="middle" fill="#222">Orange fur</text>
+  <text x="300" y="480" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Line: active X; circle: inactive X</text>
+  <text x="300" y="525" font-family="Atkinson Hyperlegible Next" font-size="24" text-anchor="middle" fill="#222">Two cell populations in the adult cat</text>
+</svg>

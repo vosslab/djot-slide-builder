@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Regenerate five early meiosis and homolog/sister figures from frozen sources."""
+import argparse
 import pathlib
 import xml.etree.ElementTree as ET
 
@@ -18,8 +19,12 @@ EXPECTED = (6, 16, 24, 32, 20)
 
 
 def main() -> None:
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path, default=DIRECTORY / 'assets')
+	args = parser.parse_args()
+	output_dir = args.output_root / 'lect06c-meiosis'
 	ET.register_namespace('', NS[1:-1])
-	OUTPUT.mkdir(parents=True, exist_ok=True)
+	output_dir.mkdir(parents=True, exist_ok=True)
 	for name, expected in zip(NAMES, EXPECTED):
 		root = ET.parse(SOURCE / (name + '.drawn.svg')).getroot()
 		count = 0
@@ -29,7 +34,7 @@ def main() -> None:
 					continue
 				color = node.get('stroke')
 				width = float(node.get('stroke-width'))
-				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, 1),), None)
+				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, 1),))
 				part = svg_tools.chromosomes.chromosome_path_part(f'{name}-chromatid-{count}', model,
 					node.get('d'), thickness=width, labels=False)
 				body = ET.fromstring(part.fragment)
@@ -53,7 +58,7 @@ def main() -> None:
 				for circle in group.findall(NS + 'circle'):
 					circle.set('fill', 'none')
 					circle.set('stroke', '#72508C')
-		output = OUTPUT / (name + '.drawn.svg')
+		output = output_dir / (name + '.drawn.svg')
 		output.write_text(ET.tostring(root, encoding='unicode') + '\n')
 
 		print(name, count)

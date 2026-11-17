@@ -8,6 +8,7 @@ import xml.etree.ElementTree
 
 # local repo modules
 import svg_tools.chromosomes
+import svgpathtools
 
 
 
@@ -36,8 +37,18 @@ def main() -> None:
 					continue
 				index = int(child.get('data-shared-part'))
 				item = source['parts'][index]
-				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', item['color'], item['before']),
-									svg_tools.chromosomes.Segment('', item['color'], item['after'])), 1)
+				curve = svgpathtools.parse_path(item['path'])
+				loci = [node for node in parent if node.get('stroke') == '#FFFFFF']
+				positions = [svgpathtools.parse_path(node.get('d')).start.real-curve.start.real for node in loci]
+				boundaries = sorted({0, item['before'], curve.length(),
+					*(value+offset for value in positions for offset in (-12,12))})
+				segments = tuple(svg_tools.chromosomes.Segment('',
+					'#F3D788' if any(abs((a+b)/2-value)<12 for value in positions) else item['color'], b-a)
+					for a,b in zip(boundaries,boundaries[1:]))
+				model = svg_tools.chromosomes.Chromosome(segments,
+					(svg_tools.chromosomes.Centromere(boundaries.index(item['before'])),))
+				for node in loci:
+					parent.remove(node)
 				part = svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}', model, item['path'],
 											thickness=40, labels=False)
 				parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
@@ -46,7 +57,7 @@ def main() -> None:
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
 				node.tag = node.tag.split('}', 1)[1]
 		root.set('xmlns', 'http://www.w3.org/2000/svg')
-		output = (OUTPUT / name if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
+		output = (OUTPUT / DESTINATIONS[name] if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
 		output.parent.mkdir(parents=True, exist_ok=True)
 		output.write_bytes(xml.etree.ElementTree.tostring(root, encoding='utf-8', xml_declaration=True))
 

@@ -23,15 +23,15 @@ def main(kind: str, destination: pathlib.Path) -> None:
 	root = xml.etree.ElementTree.parse(HERE / 'templates' / f'{kind}_movement.drawn.svg').getroot()
 	path = svgpathtools.parse_path(first + ' ' + second)
 	long_len, short_len = (segment.length() for segment in path)
-	daughter = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', long_len), svg_tools.chromosomes.Segment('', '#4c9ec7', short_len)), 1)
+	daughter = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', long_len), svg_tools.chromosomes.Segment('', '#4c9ec7', short_len)),
+		(svg_tools.chromosomes.Centromere(1),))
 	length = bottom-top
-	body_height = 130 * .26
-	cap, collar = min(body_height*.5, length*.08), min(body_height*.48, length*.06)
-	fraction = (220-top-cap-collar/2)/(length-2*cap-collar)
-	metaphase = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', fraction), svg_tools.chromosomes.Segment('', '#4c9ec7', 1-fraction)), 1)
+	fraction = (220-top)/length
+	metaphase = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7', fraction), svg_tools.chromosomes.Segment('', '#4c9ec7', 1-fraction)),
+		(svg_tools.chromosomes.Centromere(1),))
 	rendered = svg_tools.chromosomes.render_chromosome_layout('metaphase-v2', metaphase, length=bottom-top,
-		thickness=130, orientation='vertical', sisters=True, bands=False, labels=False)
-	body = xml.etree.ElementTree.fromstring(f'<g xmlns="{NS}" transform="translate(235 {top})">{rendered.svg}</g>')
+		thickness=26, orientation='vertical', sisters=True, bands=False, labels=False)
+	body = xml.etree.ElementTree.fromstring(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
 	left = svg_tools.chromosomes.chromosome_path_part('left-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)
 	right = svg_tools.chromosomes.chromosome_path_part('right-daughter-v2', daughter, first + ' ' + second,

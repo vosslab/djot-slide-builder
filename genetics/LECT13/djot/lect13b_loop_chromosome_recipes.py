@@ -5,10 +5,12 @@ import argparse
 import base64
 import copy
 import json
+import math
 import pathlib
 import xml.etree.ElementTree as ET
 
 import svg_tools.chromosomes as chromosomes
+import svg_tools.parts
 
 
 HERE = pathlib.Path(__file__).parent
@@ -17,9 +19,10 @@ ET.register_namespace('', NS)
 
 
 #============================================
-def replace_markers(root: ET.Element, name: str) -> None:
+def replace_markers(root: ET.Element, name: str) -> dict[str, tuple[ET.Element, ET.Element, float, float, float]]:
 	"""Replace source centromere symbols at their recorded positions."""
 	count = 0
+	markers = {}
 	for parent in list(root.iter()):
 		for child in list(parent):
 			ident = child.get('id', '')
@@ -36,7 +39,8 @@ def replace_markers(root: ET.Element, name: str) -> None:
 			else:
 				continue
 			model = chromosomes.Chromosome((chromosomes.Segment('', color),
-				chromosomes.Segment('', color)), 1)
+				chromosomes.Segment('', color)),
+				centromeres=(chromosomes.Centromere(1),))
 			part = chromosomes.chromosome_path_part(f'lect13b-{name}-marker-{count}', model,
 				f'M {x-thickness/2} {y} L {x+thickness/2} {y}',
 				thickness=thickness, cut_ends=True, labels=False)
@@ -45,12 +49,37 @@ def replace_markers(root: ET.Element, name: str) -> None:
 			index = list(parent).index(child)
 			parent.remove(child)
 			parent.insert(index, replacement)
+			markers[ident] = (parent, replacement, x, y, thickness)
 			count += 1
+	return markers
+
+
+#============================================
+def replace_sister_markers(name: str,
+	markers: dict[str, tuple[ET.Element, ET.Element, float, float, float]], pairs: tuple[tuple[str, str], ...]) -> None:
+	"""Replace two source collars with one foreground belt for each known sister pair."""
+	for number, (first_name, second_name) in enumerate(pairs):
+		first = markers[first_name]
+		second = markers[second_name]
+		if first[0] is not second[0]:
+			raise ValueError(f'Sister centromeres do not share a coordinate frame: {first_name}, {second_name}')
+		for parent, replacement, *_ in (first, second):
+			parent.remove(replacement)
+		x1, y1, thickness = first[2:]
+		x2, y2 = second[2:4]
+		span = math.hypot(x2-x1, y2-y1) + thickness*1.3
+		belt = chromosomes.centromere_part(f'lect13b-{name}-sister-belt-{number}',
+			thickness=thickness, across=span)
+		angle = math.degrees(math.atan2(y2-y1, x2-x1))-90
+		# Marker coordinates are local to their shared parent.  In the anaphase
+		# figures that parent is the scaled Stage A group, not the document root.
+		first[0].append(ET.fromstring(svg_tools.parts.transform(belt,
+			x=(x1+x2)/2, y=(y1+y2)/2, rotation=angle).fragment))
 
 
 #============================================
 def render_source(name: str, source: dict) -> ET.Element:
-	"""Build one editable composition from its source shell and body data."""
+	"""Build one source-preserving composition from its shell and body data."""
 	root = ET.fromstring(source['svg'])
 	for parent in root.iter():
 		for child in list(parent):
@@ -58,7 +87,7 @@ def render_source(name: str, source: dict) -> ET.Element:
 				continue
 			index = int(child.get('data-shared-part'))
 			data = source['parts'][index]
-			model = chromosomes.Chromosome((chromosomes.Segment('', data['color']),), None)
+			model = chromosomes.Chromosome((chromosomes.Segment('', data['color']),))
 			part = chromosomes.chromosome_path_part(f'lect13b-{name}-{index}', model, data['path'],
 				thickness=data['thickness'], cut_ends=data['cut'], labels=False)
 			position = list(parent).index(child)
@@ -66,7 +95,23 @@ def render_source(name: str, source: dict) -> ET.Element:
 			replacement = ET.fromstring(part.fragment)
 			replacement.set('stroke', 'none')
 			parent.insert(position, replacement)
-	replace_markers(root, name)
+	markers = replace_markers(root, name)
+	if name in ('paracentric-anaphase', 'pericentric-anaphase'):
+		replace_sister_markers(name, markers, (
+			('paired-orange-centromere', 'paired-ochre-centromere'),
+			('paired-green-centromere', 'paired-blue-centromere'),
+		))
+	if name == 'pericentric-pairing':
+		replace_sister_markers(name, markers, (
+			('orange-centromere', 'ochre-centromere'),
+			('green-centromere', 'blue-centromere'),
+		))
+		# Continuous chromatids establish the crossover order; separate overpass strokes
+		# leave false white breaks at the starts of the lower loop.
+		for parent in root.iter():
+			for child in list(parent):
+				if child.get('id') in ('green-foreground-overpass', 'blue-foreground-overpass'):
+					parent.remove(child)
 	if name == 'inversion_loop_without_crossover':
 		markers = [item for item in root if item.get('id', '').startswith(
 			'lect13b-inversion_loop_without_crossover-marker-')]
@@ -92,7 +137,7 @@ def image_006(body: ET.Element, source: dict) -> ET.Element:
 		'viewBox': '0 0 784 467', 'role': 'img'})
 	ET.SubElement(root, f'{{{NS}}}title').text = 'Inversion loop'
 	ET.SubElement(root, f'{{{NS}}}desc').text = 'Four chromatids pair in an inversion loop without crossing over.'
-	group = ET.SubElement(root, f'{{{NS}}}g', {'transform': 'translate(-55 -55) scale(0.70 0.65)'})
+	group = ET.SubElement(root, f'{{{NS}}}g', {'transform': 'translate(-55 -55) scale(0.70)'})
 	items = list(body)
 	for prefix in ('chromatid-', 'lect13b-inversion_loop_without_crossover-marker-'):
 		group.extend(copy.deepcopy(item) for item in items if item.get('id', '').startswith(prefix))

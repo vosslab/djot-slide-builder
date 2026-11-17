@@ -63,7 +63,7 @@ allows it; gallery previews can use white. Inspect fine edges on the intended sl
 
 ### Text and composition
 
-Use Atkinson Hyperlegible Next for editable labels, and Atkinson Hyperlegible Mono for
+Use Atkinson Hyperlegible Next for labels, and Atkinson Hyperlegible Mono for
 aligned sequences. The fonts are installed renderer dependencies, not embedded live fonts.
 Use the existing text helpers for measurement, wrapping, gene italics, and scripts. Keep
 text horizontal when possible, with a consistent visual hierarchy across related panels.
@@ -100,24 +100,35 @@ Check the owning lecture and source facts whenever a visual alteration could cha
 ## Chromosome family authority
 
 This section defines the shared schematic chromosome appearance across all courses. The
-current specimen is [chromosome_tool_v2.drawn.svg](slide-specs/illustration_examples/chromosome_tool_v2.drawn.svg).
-Use the shared [chromosomes.py](../svg_tools/chromosomes.py) body tools for production rods and
-rounded-X sisters. Course recipes supply models, positions, labels and relationships; they
-must not define their own chromosome silhouettes. Use `render_chromosome_layout()` or
-`chromosome_part()` for new straight forms and `chromosome_path_part()` for authored curved
-chromatids. Historical pale-collar APIs remain compatible,
-but their saved examples are not the appearance authority for new artwork.
+current evaluation deck is [chromosome_review.djot](../prototype/chromosome_review.djot).
+It remains a prototype awaiting instructor critique.
+Use the shared [chromosomes.py](../svg_tools/chromosomes.py) body tools for production rods,
+replicated sisters, and curved chromatids. Course recipes supply models, positions, labels and
+relationships; they must not define their own chromosome silhouettes. Use the straight layout
+helpers for rods and sisters, and `chromosome_path_part()` for authored curved chromatids.
 
-- Draw single chromatids as continuous rounded rods. Replicated chromosomes have two joined
-  sisters in a rounded-X form. Separate homologs remain separate objects, with source-specific
-  lengths, allele labels and ancestry. An X is not a generic replacement for every chromosome.
-- Use the shared charcoal outline (`#344651`), rounded caps and joins, common live Atkinson
-  Hyperlegible Next labels, and a hollow purple centromere marker over the neck. Centromere
-  placement comes from the source; omitting a marker does not establish a biological absence.
-  The marker is a diagram convention, not an extra swollen region or a molecular mechanism.
+- Draw single chromatids as mostly straight, modestly rounded rods. Replicated chromosomes
+  have independently constructed, joined sisters; separate homologs remain separate objects.
+  An X is not a generic replacement for every chromosome.
+- Reproduce BPQ's layer order: base colors, decorative texture, sheen, inset highlights and
+  shadows, outlines, then text. Scale its 30-unit reference dimensions with chromatid width.
+  Body outlines are black; centromere borders are `#40474E`. Gray telomeres share the body's
+  outer contour and have no separate inner outline, sheen, or texture.
+- A centromere is a pale rounded rectangle at the source-known locus, with room for a short
+  label. Paint it in front of the bodies, extending beyond both edges perpendicular to the
+  chromosome. For sisters, one belt spans both bodies; its along-axis width stays modest.
+- Replication preserves each chromatid's length and thickness within a comparison. Prefer
+  cubic shoulders with an inflection for arms emerging from a centromere; retain authored
+  loops and crossings where they communicate the biological process.
+- A curved chromatid follows its authored centerline with one configurable, constant thickness.
+  The recipe controls bends and crossing order; it must supply curves with enough radius for
+  the chosen width.
 - Carry semantic colors, loci, source band fills and segment identity through rearrangements.
+  Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
   Homolog or parental colors need not match a course accent hue. Optional decorative texture
   may be hidden; actual source bands and measured intervals must remain intact.
+- Use compact chromosome forms, including Barr bodies, to show condensation without implying
+  lost material. A deleted interval is absent chromosome material, not recolored material.
 - Keep a common longitudinal scale in physical before/after comparisons: a deletion shortens
   the product and a duplication lengthens it. An aligned evidence track may retain a reference
   gap to expose missing material; label that alignment and do not present the gap as chromosome
@@ -141,10 +152,10 @@ its pitch, diameter, and distances are not quantitative claims. It does not just
 strand connectivity, orientation, handedness, or the feature being taught. The aesthetic
 upgrade does not introduce a new B-DNA model or a measured-pitch claim.
 
-## Editable SVG delivery
+## SVG delivery
 
-Keep existing callable APIs, named anchors, and biological meanings stable. Bounds cover
-all painted geometry, stroke, and labels. New shade planes must fit the source silhouette;
+Keep biological meanings stable while improving shared contracts and updating their callers.
+Bounds cover all painted geometry, stroke, and labels. New shade planes must fit the source silhouette;
 features outside it need deliberate bounds and attachment-point review. Preserve deterministic
 static vector output, unique grouped IDs, live text, and useful accessibility descriptions.
 Use established helpers and installed dependencies; add only mechanics required by actual

@@ -11,7 +11,8 @@ import svg_tools.parts
 #============================================
 def main() -> None:
 	segment = svg_tools.chromosomes.Segment('A', '#A8DADC', 40)
-	model = svg_tools.chromosomes.Chromosome((segment, segment), 1)
+	model = svg_tools.chromosomes.Chromosome((segment, segment),
+		(svg_tools.chromosomes.Centromere(1),))
 	part = svg_tools.chromosomes.chromosome_part('chrom', model, orientation='vertical', labels=False)
 	parts = [svg_tools.parts.transform(part, x=30, y=30),
 		svg_tools.parts.transform(part, x=30, y=30, rotation=15)]

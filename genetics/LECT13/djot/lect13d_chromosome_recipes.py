@@ -2,7 +2,6 @@
 """Regenerate LECT13D chromosome compositions from frozen source data."""
 import argparse
 import json
-import math
 import pathlib
 import re
 import xml.etree.ElementTree as ET
@@ -44,7 +43,7 @@ def pairing() -> None:
 			cx, cy = float(ellipse.attrib['cx']), float(ellipse.attrib['cy'])
 			count = len(paths) // 2
 			insert = list(group).index(paths[0])
-			necks = []
+			chromatids = []
 			for sister in range(count):
 				arms = paths[2*sister:2*sister+2]
 				curves = [chrom.svgpathtools.parse_path(arm.attrib['d']) for arm in arms]
@@ -53,70 +52,22 @@ def pairing() -> None:
 				# Project the source pair's filled centromere onto each unchanged sister axis.
 				tangent = curve.unit_tangent(0)
 				center_length = ((complex(cx, cy)-curve.start)/tangent).real
-				neck = curve.point(curve.ilength(center_length))
-				necks.append(neck)
 				bounds = sorted({0, lengths[0], center_length, curve.length()})
 				segments = tuple(chrom.Segment('', arms[0 if (a+b)/2 < lengths[0] else 1].attrib['stroke'], b-a)
 					for a, b in zip(bounds, bounds[1:]))
-				model = chrom.Chromosome(segments, bounds.index(center_length))
-				part = chrom.chromosome_path_part(f'{name[:-10]}-{number}-sister-{sister}',
-					model, curve.d(), thickness=float(arms[0].attrib['stroke-width']), labels=False)
-				body = ET.fromstring(part.fragment)
-				if count == 2:
-					body.remove(body.find('ellipse'))
-					# Limit the shared neck envelope to its neck; keep distant source bends exact.
-					if len({segment.unit_tangent(0) for segment in curve}) > 1:
-						body = local_neck(body, curve, arms, neck)
-				group.insert(insert+sister, body)
-			# The source marker spans both sisters; its position and orientation carry pairing.
-			first = chrom.svgpathtools.parse_path(paths[0].attrib['d'])
-			tangent = first.unit_tangent(0)
-			angle = math.degrees(math.atan2(tangent.imag, tangent.real))
-			across = float(ellipse.attrib['ry'] if abs(tangent.real) > .5 else ellipse.attrib['rx'])
+				model = chrom.Chromosome(segments, (chrom.Centromere(bounds.index(center_length)),))
+				chromatids.append((model, curve.d()))
+			thickness = float(paths[0].attrib['stroke-width'])
 			if count == 2:
-				# The source filled ellipse joins the sisters; retain that material at neck width.
-				thickness = float(paths[0].attrib['stroke-width']) * .40
-				bridge = chrom.chromosome_path_part(f'{name[:-10]}-{number}-attachment',
-					chrom.Chromosome((chrom.Segment('', ellipse.attrib['fill'], abs(necks[1]-necks[0])),)),
-					f'M {necks[0].real} {necks[0].imag} L {necks[1].real} {necks[1].imag}',
+				part = chrom.sister_chromatid_parts(f'{name[:-10]}-{number}', tuple(chromatids),
 					thickness=thickness, labels=False)
-				group.insert(insert, ET.fromstring(bridge.fragment))
-				group.insert(insert+count+1, marker(f'{name[:-10]}-{number}', cx, cy, across*2*.61, angle))
+			else:
+				part = chrom.chromosome_path_part(f'{name[:-10]}-{number}', *chromatids[0],
+					thickness=thickness, labels=False)
+			group.insert(insert, ET.fromstring(part.fragment))
 			for node in paths + ellipses:
 				group.remove(node)
 		ET.ElementTree(root).write(OUT / name, encoding='ascii', xml_declaration=True)
-
-
-def local_neck(body: ET.Element, curve: chrom.svgpathtools.Path,
-	arms: list[ET.Element], neck: complex) -> ET.Element:
-	"""Compose shared bodies with rectangular clips, preserving every distant bend."""
-	name = body.attrib['id']
-	width = float(arms[0].attrib['stroke-width'])
-	span = width * .45
-	extent = curve.length() + width
-	tangent = curve.unit_tangent(0)
-	angle = math.degrees(math.atan2(tangent.imag, tangent.real))
-	transform = f'translate({neck.real} {neck.imag}) rotate({angle})'
-	result = ET.Element('g', {'id': name})
-	defs = ET.SubElement(result, 'defs')
-	inside = ET.SubElement(defs, 'clipPath', {'id': f'{name}-neck-window'})
-	ET.SubElement(inside, 'rect', {'x': str(-span), 'y': str(-width),
-		'width': str(span*2), 'height': str(width*2), 'transform': transform})
-	outside = ET.SubElement(defs, 'clipPath', {'id': f'{name}-outside-neck'})
-	for start in (-extent, span):
-		ET.SubElement(outside, 'rect', {'x': str(start), 'y': str(-extent),
-			'width': str(extent-span), 'height': str(extent*2), 'transform': transform})
-	model = chrom.Chromosome(tuple(chrom.Segment('', arm.attrib['stroke'],
-		chrom.svgpathtools.parse_path(arm.attrib['d']).length()) for arm in arms))
-	original = chrom.chromosome_path_part(f'{name}-unconstricted', model,
-		curve.d(), thickness=width, labels=False)
-	old_body = ET.fromstring(original.fragment)
-	old_body.set('clip-path', f'url(#{name}-outside-neck)')
-	result.append(old_body)
-	body.set('id', f'{name}-neck')
-	body.set('clip-path', f'url(#{name}-neck-window)')
-	result.append(body)
-	return result
 
 
 def color(value: str) -> str:
@@ -148,7 +99,7 @@ def ruby() -> None:
 			if distal is not None:
 				colors[-1] = color(distal.get('fill'))
 			model = chrom.Chromosome(tuple(chrom.Segment('', c, b-a)
-				for a, b, c in zip(boundaries, boundaries[1:], colors)), 1)
+					for a, b, c in zip(boundaries, boundaries[1:], colors)), (chrom.Centromere(1),))
 			part = chrom.chromosome_path_part(f'{name}-{group.get("id")}', model,
 				f'M {start} {y+height/2} L {end} {y+height/2}', thickness=height, labels=False)
 			row_id = group.get('id')
@@ -172,7 +123,7 @@ def convert_line_products(source_name: str, count: int) -> None:
 		end, center = second[2], float(circle.get('cx'))
 		bounds = sorted({start, center, join, end})
 		model = chrom.Chromosome(tuple(chrom.Segment('', paths[0].get('stroke') if a < join else paths[1].get('stroke'), b-a)
-			for a, b in zip(bounds, bounds[1:])), bounds.index(center))
+			for a, b in zip(bounds, bounds[1:])), (chrom.Centromere(bounds.index(center)),))
 		part = chrom.chromosome_path_part(f'{source_name}-{index}', model,
 			f'M {start} {y} L {end} {y}', thickness=float(paths[0].get('stroke-width')), labels=False)
 		position = list(root).index(paths[0])
@@ -193,7 +144,7 @@ def gametes() -> None:
 		left = float(re.match(r'M(-?[\d.]+)', arms[0].get('d')).group(1))
 		right = float(re.match(r'M(-?[\d.]+)', arms[1].get('d')).group(1))
 		model = chrom.Chromosome((chrom.Segment('', arms[0].get('fill'), -left),
-								  chrom.Segment('', arms[1].get('fill'), right)), 1)
+								  chrom.Segment('', arms[1].get('fill'), right)), (chrom.Centromere(1),))
 		part = chrom.chromosome_path_part(f'robertsonian-gamete-{count}', model,
 					f'M {left} 0 L {right} 0', thickness=18, labels=False)
 		count += 1
@@ -210,27 +161,34 @@ def metaphase() -> None:
 	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	count = 0
 	for group in root.iter(NS + 'g'):
-		if group.get('data-sister') is None:
+		sisters = [child for child in group if child.get('data-sister') is not None]
+		if not sisters:
 			continue
-		arms = group.findall(NS + 'path')
-		if len(arms) == 2:
-			a, b = [chrom.svgpathtools.parse_path(node.get('d')) for node in arms]
-			path = chrom.svgpathtools.Path(*a, *b)
-			lengths = [a.length(), b.length()]
-			colors = [node.get('stroke') for node in arms]
-		else:
-			path = chrom.svgpathtools.parse_path(arms[0].get('d'))
-			lengths = [path[0].length(), sum(segment.length() for segment in path[1:])]
-			colors = [arms[0].get('stroke')] * 2
-		model = chrom.Chromosome(tuple(chrom.Segment('', c, n) for c, n in zip(colors, lengths)), 1)
-		part = chrom.chromosome_path_part(f'robertsonian-metaphase-{count}', model,
-					path.d(), thickness=14, labels=False)
-		count += 1
-		for node in list(group):
-			group.remove(node)
-		group.append(ET.fromstring(part.fragment))
+		if len(sisters) != 2:
+			raise ValueError(f'Expected sister pairs in {name}')
+		chromatids = []
+		for sister in sisters:
+			match = re.fullmatch(r'translate\((-?[\d.]+) (-?[\d.]+)\)', sister.get('transform', ''))
+			if match is None:
+				raise ValueError(f'Expected translated sister in {name}')
+			shift = complex(float(match.group(1)), float(match.group(2)))
+			arms = sister.findall(NS + 'path')
+			if len(arms) not in (1, 2):
+				raise ValueError(f'Unexpected sister arms in {name}')
+			curves = [chrom.svgpathtools.parse_path(arm.get('d')).translated(shift) for arm in arms]
+			path = chrom.svgpathtools.Path(*(segment for curve in curves for segment in curve))
+			model = chrom.Chromosome(tuple(chrom.Segment('', arm.get('stroke'), curve.length())
+				for arm, curve in zip(arms, curves)), (chrom.Centromere(1),))
+			chromatids.append((model, path.d()))
+		part = chrom.sister_chromatid_parts(f'robertsonian-metaphase-{count}', tuple(chromatids),
+			thickness=14, labels=False)
+		position = list(group).index(sisters[0])
+		for sister in sisters:
+			group.remove(sister)
+		group.insert(position, ET.fromstring(part.fragment))
+		count += len(sisters)
 	if count != 18:
-		raise ValueError(f'Expected 18 chromosomes, found {count}')
+		raise ValueError(f'Expected 18 sister chromatids, found {count}')
 	ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
 
 
@@ -240,30 +198,21 @@ def fusion() -> None:
 	name = 'robertsonian_centromeric_fusion'
 	root = ET.fromstring(SOURCES[f'{name}.drawn.svg'])
 	specs = {
-		'blue-input': (152, (('M 151 147 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
-		'red-input': (280, (('M 279 147 C 276 206 294 262 283 326', '#d6533c'),)),
+		'blue-input': (152, (('M 152 99 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
+		'red-input': (280, (('M 280 99 C 276 206 294 262 283 326', '#d6533c'),)),
 		'fused-product': (863, (
-			('M 862 147 C 855 212 875 274 864 361 C 854.5 450.5 857 518 863 595', '#377eaf'),
+			('M 863 99 C 855 212 875 274 864 361 C 854.5 450.5 857 518 863 595', '#377eaf'),
 			('M 877 113 C 943.5 137.5 1001.5 180.5 1068 222.5', '#d6533c'))),
 	}
 	for group in root.iter(NS + 'g'):
 		if group.get('id') not in specs:
 			continue
 		cx, arms = specs[group.attrib['id']]
-		source_center = group.find(NS + 'circle')
 		for node in list(group):
 			group.remove(node)
-		if group.attrib['id'] != 'fused-product':
-			# The source terminal circle supplies the collar, entirely below its center.
-			cy, radius = float(source_center.attrib['cy']), float(source_center.attrib['r'])
-			neck_width = 50 * .40
-			collar = chrom.chromosome_path_part(f'fusion-{group.attrib["id"]}-attachment',
-				chrom.Chromosome((chrom.Segment('', source_center.attrib['fill'], radius-neck_width/2),)),
-				f'M {cx} {cy+neck_width/2} L {cx} {cy+radius}', thickness=neck_width, labels=False)
-			group.append(ET.fromstring(collar.fragment))
 		for index, (path, paint) in enumerate(arms):
 			curve = chrom.svgpathtools.parse_path(path)
-			model = chrom.Chromosome((chrom.Segment('', paint, curve.length()),), None)
+			model = chrom.Chromosome((chrom.Segment('', paint, curve.length()),))
 			part = chrom.chromosome_path_part(f'fusion-{group.attrib["id"]}-arm-{index}',
 				model, path, thickness=50, labels=False)
 			group.append(ET.fromstring(part.fragment))
@@ -281,7 +230,7 @@ def human_fusion() -> None:
 		x, y, width, height = (float(body.get(key)) for key in ('x', 'y', 'width', 'height'))
 		circles = group.findall(NS + 'circle')
 		start, end = y + width/2, y + height-width/2
-		model = chrom.Chromosome((chrom.Segment('', body.get('fill'), end-start),), None)
+		model = chrom.Chromosome((chrom.Segment('', body.get('fill'), end-start),))
 		part = chrom.chromosome_path_part(f'human2-{group.get("id")}-body', model,
 					f'M {x+width/2} {start} L {x+width/2} {end}', thickness=width, labels=False)
 		group.remove(body)
@@ -303,9 +252,11 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 					continue
 				index = int(child.attrib['data-shared-part'])
 				data = source['parts'][index]
+				centromeres = () if data['centromere_after'] is None else (
+					chrom.Centromere(data['centromere_after']),)
 				model = chrom.Chromosome(tuple(
 					chrom.Segment(*segment) for segment in data['segments']),
-					data['centromere_after'])
+					centromeres=centromeres)
 				part = chrom.chromosome_path_part(f'migrated13bc-chromosome-{index}',
 					model, data['path'], thickness=data['thickness'],
 					cut_ends=data['cut_ends'], labels=False)

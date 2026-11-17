@@ -2,6 +2,11 @@
 
 ### Additions and New Features
 
+- Replace the chromosome corpus prototype illustrations with prototype-owned SVGs built from the
+  shared chromosome renderer. The renderer now uses constant-width curved chromatids,
+  independently modeled sisters, local banding, compact Barr-body states, and large rectangular
+  centromeres. Preserve all original lecture artwork and instructional content.
+
 - Inventory `_temp/` and prepare a compact rescue under `prototype/temp_cleanup/`: 12 browsable
   SVG samples, the unique Biotechnology drawing generator, final evidence receipts, three PDF
   snapshots, and a local-only source/reference archive. Original scratch remains intact pending
@@ -13,10 +18,37 @@
 
 ### Behavior or Interface Changes
 
+- Center C18 centromere collars on their chromosome paths by removing obsolete
+  manual marker coordinates from the X-linked figure generator and its source data.
+- Survey all C01-C68 figures for sister-chromatid clarity using C16 as the reference.
+  Correct C17's squat pairs and length drift, separate independent C37 ploidy copies,
+  and join confirmed sisters with foreground belts in C56-C59 and C67. Preserve
+  single homologs, separated products, and genuinely short chromosomes.
+- Redraw C01 with BPQ chromosome bodies, gene letters, and labeled before/after
+  comparisons for insertional and reciprocal translocations. Preserve each gene
+  block's identity and length while replacing the opaque numbered textbook layout.
+- Correct C06's vertical chromosome paths: an extra x coordinate was interpreted as
+  another y position, producing long spikes beneath the nuclei.
+- Lengthen C07/C08 chromosomes from 62 to 80 units, preserving chromatid thickness,
+  replication scale, and centromere label alignment in the review prototype.
+- Reproduce BPQ chromosome surface layers with scalable reference proportions: texture,
+  sheen, inset highlights/shadows, black outlines, and integrated gray telomeres. Extend the
+  same layers around curved centerlines. Foreground centromere belts span paired chromatids.
+- Make chromosome thickness per chromatid, including replication; remove the unused decorative
+  band-index field from `Segment` and update callers. Correct C03 overpainting, C08 scale,
+  C16 cubic shoulders, C20 gene intervals, and C28 belt coverage in the review prototype.
+- Correct five LECT08 prototype generator destinations that left the deck pointing to stale
+  files. Shared renderer changes are evaluated in prototype outputs; lecture artwork is retained.
+
+
 - Reserve `exemplars/` for instructor-approved models. Keep corpus collections awaiting critique
   in `prototype/`, with the reviewed PDF and ODP beside their sources.
 
 ### Developer Tests and Notes
+
+- Verify 68 original source hashes, 67 replacement provenance rows plus the C04 empirical
+  reference, focused shared chromosome tests, Djot lint, and a 70-page native ODP/PDF export.
+  Inspect all PDF contact sheets and full-size C32, C55, and C57 pages.
 
 - Verify all 1,496 archived source hashes, ZIP integrity, and all ten regenerated Biotechnology
   drawings. Parse 121 current decks and 2,949 image placements with no scratch input dependencies

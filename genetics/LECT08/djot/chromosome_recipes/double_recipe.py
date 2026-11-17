@@ -33,7 +33,7 @@ def main() -> None:
 				continue
 			i=int(child.get('data-shared-part'))
 			item=source['parts'][i]
-			model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',color,length) for color,length in item['regions']),item['center'])
+			model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',color,length) for color,length in item['regions']),centromeres=(() if item['center'] is None else (svg_tools.chromosomes.Centromere(item['center']),)))
 			part=svg_tools.chromosomes.chromosome_path_part(f'chromatid-{i}',model,item['path'],thickness=9.5,labels=False)
 			parent.insert(list(parent).index(child),xml.etree.ElementTree.fromstring(part.fragment))
 			parent.remove(child)

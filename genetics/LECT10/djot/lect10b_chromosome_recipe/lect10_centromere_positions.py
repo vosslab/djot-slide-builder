@@ -13,22 +13,26 @@ def main(destination: pathlib.Path) -> None:
 	root = xml.etree.ElementTree.parse(HERE / 'templates' / 'centromere_positions.drawn.svg').getroot()
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, center in CENTERS.items():
-		top, length, thickness = 84, 326, 130
-		body_height = thickness*.26
-		cap, collar = min(body_height*.5,length*.08), min(body_height*.48,length*.06)
-		fraction = (center-top-cap-collar/2)/(length-2*cap-collar)
-		model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('','#4c9ec7',fraction), svg_tools.chromosomes.Segment('','#4c9ec7',1-fraction)),1)
-		layout = svg_tools.chromosomes.render_chromosome_layout(name+'-v2',model,length=length,thickness=thickness,
-			orientation='vertical',sisters=True,bands=False,labels=False)
+		top, length = 84, 326
+		fraction = (center-top) / length
+		models = tuple(svg_tools.chromosomes.Chromosome((
+			svg_tools.chromosomes.Segment('', '#4c9ec7', fraction),
+			svg_tools.chromosomes.Segment('', '#4c9ec7', 1-fraction)),
+			(svg_tools.chromosomes.Centromere(1),)) for _ in range(2))
+		chromatids = tuple((model, f'M {46 + index * 38} 0 L {46 + index * 38} {length}')
+			for index, model in enumerate(models))
+		layout = svg_tools.chromosomes.sister_chromatid_parts(name, chromatids,
+			thickness=28, labels=False)
+		body = xml.etree.ElementTree.fromstring(layout.fragment)
 		slot = slots[name+'-body-slot']; slot.set('transform',f'translate(-65 {top})')
-		slot.append(xml.etree.ElementTree.fromstring(layout.svg))
+		slot.append(body)
 	# Rounded caps terminate at y=96; there is no p arm above the marker.
 	model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#4c9ec7'),))
 	left = svg_tools.chromosomes.chromosome_path_part('telocentric-left-v2', model,
 		'M -10 112 C -14 190 -42 330 -48 394', thickness=30, labels=False)
 	right = svg_tools.chromosomes.chromosome_path_part('telocentric-right-v2', model,
 		'M 10 112 C 14 190 42 330 48 394', thickness=30, labels=False)
-	marker = svg_tools.chromosomes.centromere_part('telocentric-terminal-v2', thickness=30)
+	marker = svg_tools.chromosomes.centromere_part('telocentric-terminal-v2', thickness=30, across=65)
 	slot = slots['telocentric-body-slot']
 	slot.append(xml.etree.ElementTree.fromstring(left.fragment)); slot.append(xml.etree.ElementTree.fromstring(right.fragment))
 	marker_group = xml.etree.ElementTree.SubElement(slot, f'{{{NS}}}g', {'transform':'translate(0 96) rotate(90)'})

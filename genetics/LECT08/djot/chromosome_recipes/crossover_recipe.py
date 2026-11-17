@@ -32,9 +32,10 @@ def main() -> None:
 			for child in list(parent):
 				if child.get('data-source-centromere') == 'true':
 					x, y = float(child.get('cx')), float(child.get('cy'))
-					marker_model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#777777', 10), svg_tools.chromosomes.Segment('', '#777777', 10)), 1)
+					marker_model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', '#777777', 10), svg_tools.chromosomes.Segment('', '#777777', 10)), centromeres=(svg_tools.chromosomes.Centromere(1),))
 					marker_part = svg_tools.chromosomes.chromosome_path_part(f'marker-{parent.get("id")}-{int(y)}', marker_model, f'M{x-10} {y} H{x+10}', thickness=14, labels=False)
-					marker = next(n for n in xml.etree.ElementTree.fromstring(marker_part.fragment) if n.tag == 'ellipse')
+					marker = next(n for n in xml.etree.ElementTree.fromstring(marker_part.fragment).iter()
+						if '-centromere-' in n.get('id', ''))
 					parent.insert(list(parent).index(child), marker)
 					parent.remove(child)
 					continue
@@ -44,7 +45,7 @@ def main() -> None:
 				item = source['parts'][index]
 				colors, lengths = item['colors'], item['lengths']
 				if item['product']:
-					model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', colors[0], 35), svg_tools.chromosomes.Segment('', colors[0], lengths[0]-35), svg_tools.chromosomes.Segment('', colors[1], lengths[1])), 1)
+					model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', colors[0], 35), svg_tools.chromosomes.Segment('', colors[0], lengths[0]-35), svg_tools.chromosomes.Segment('', colors[1], lengths[1])), centromeres=(svg_tools.chromosomes.Centromere(1),))
 				else:
 					model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, length) for color, length in zip(colors, lengths)))
 				part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model, item['path'], thickness=14, labels=False)
@@ -54,7 +55,7 @@ def main() -> None:
 			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
 				node.tag = node.tag.split('}', 1)[1]
 		root.set('xmlns', 'http://www.w3.org/2000/svg')
-		output = (OUTPUT / name if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
+		output = (OUTPUT / DESTINATIONS[name] if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
 		output.parent.mkdir(parents=True, exist_ok=True)
 		output.write_bytes(xml.etree.ElementTree.tostring(root, encoding='utf-8', xml_declaration=True))
 

@@ -31,7 +31,7 @@ def main() -> None:
 		for child in list(parent):
 			if child.get('data-source-centromere') == 'true':
 				x,y=float(child.get('cx')),float(child.get('cy'))
-				model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('','#777777',10),svg_tools.chromosomes.Segment('','#777777',10)),1)
+				model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('','#777777',10),svg_tools.chromosomes.Segment('','#777777',10)),centromeres=(svg_tools.chromosomes.Centromere(1),))
 				part=svg_tools.chromosomes.chromosome_path_part(f'marker-{parent.get("id")}-{int(y)}',model,f'M{x-10} {y} H{x+10}',thickness=12,labels=False)
 				marker=next(n for n in xml.etree.ElementTree.fromstring(part.fragment) if n.tag=='ellipse')
 				parent.insert(list(parent).index(child),marker)

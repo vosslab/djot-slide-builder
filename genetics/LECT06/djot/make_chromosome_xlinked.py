@@ -12,7 +12,8 @@ import svg_tools.chromosomes
 
 
 #============================================
-def generate(data_directory: pathlib.Path, repository_root: pathlib.Path) -> None:
+def generate(data_directory: pathlib.Path, repository_root: pathlib.Path,
+	output_root: pathlib.Path | None = None) -> None:
 	"""Paint shared chromosome bodies into explicit source-preserving template groups."""
 	xml.etree.ElementTree.register_namespace('', 'http://www.w3.org/2000/svg')
 	for model_path in sorted(data_directory.glob('*.json')):
@@ -24,7 +25,9 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path) -> Non
 			model = item['model']
 			chromosome = svg_tools.chromosomes.Chromosome(tuple(
 				svg_tools.chromosomes.Segment('', color, length)
-				for color, length in model['segments']), model['centromere'])
+			for color, length in model['segments']), centromeres=(
+				svg_tools.chromosomes.Centromere(model['centromere']),)
+			if model['centromere'] is not None else ())
 			if 'path' in item:
 				part = svg_tools.chromosomes.chromosome_path_part(
 					item['group'] + '-shared', chromosome, item['path'],
@@ -35,19 +38,12 @@ def generate(data_directory: pathlib.Path, repository_root: pathlib.Path) -> Non
 					orientation=item['orientation'], thickness=item['thickness'],
 					bands=False, labels=False)
 			element = xml.etree.ElementTree.fromstring(part.fragment)
-			if 'marker_center' in item:
-				marker = next(node for node in element.iter()
-					if node.attrib.get('id', '').endswith('-centromere'))
-				x, y = item['marker_center']
-				angle = marker.attrib['transform'].split('(')[1].split()[0]
-				marker.set('cx', str(x))
-				marker.set('cy', str(y))
-				marker.set('transform', f'rotate({angle} {x} {y})')
 			if 'translate' in item:
 				element.set('transform', 'translate(' +
 					' '.join(str(value) for value in item['translate']) + ')')
 			groups[item['group']].insert(0, element)
-		output = repository_root / data['target']
+		output = (repository_root / data['target'] if output_root is None else
+			output_root / 'assets' / data['target'].split('/assets/', 1)[1])
 		output.parent.mkdir(parents=True, exist_ok=True)
 		output.write_text(xml.etree.ElementTree.tostring(root, encoding='unicode') + '\n',
 			encoding='utf-8')

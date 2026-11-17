@@ -11,9 +11,9 @@ import svg_tools.gene_tracks
 
 #============================================
 def test_exon_order_gaps_and_scaled_coordinates() -> None:
-	exons = [svg_tools.chromosomes.Segment(label, color, length, band)
-		for label, color, length, band in (
-			("A", "#FFFFFF", 40, 4), ("B", "#000000", 60, 2), ("C", "#C1E7EE", 80, 1))]
+	exons = [svg_tools.chromosomes.Segment(label, color, length)
+		for label, color, length in (
+			("A", "#FFFFFF", 40), ("B", "#000000", 60), ("C", "#C1E7EE", 80))]
 	for name, gaps, scale in (("dna", [20, 30], 2), ("processed", [0, 0], 1)):
 		natural = sum(exon.length for exon in exons) + sum(gaps)
 		fragment, width, boundaries = svg_tools.gene_tracks.gene_track_svg(

@@ -9,6 +9,7 @@ import pathlib
 import sys
 
 import svg_tools.cells
+import svg_tools.chromosomes
 import svg_tools.drawing
 import svg_tools.parts
 
@@ -25,12 +26,25 @@ def text(x: float, y: float, value: str, size: float) -> str:
 
 #============================================
 def nucleus_with_genotype(name: str, x: float, y: float, genotype: str) -> str:
-	"""Show source genotype letters, rather than asserting chromosome silhouettes."""
+	"""Show the source genotype labels with locally drawn sex chromosomes."""
 	nucleus = svg_tools.cells.nucleus(width=68, height=58, color='#5e8fd6')
 	placed = svg_tools.parts.transform(nucleus, x=x, y=y)
-	return (f'<g id="{name}">{placed.fragment}'
-		f'<text x="{x}" y="{y+10}" text-anchor="middle" font-family="{FONT}" '
-		f'font-size="29" font-weight="600" fill="#FFFFFF">{genotype}</text></g>')
+	colors = {'X': '#E7DDF1', 'Y': '#9CC9D8'}
+	spacing = 14
+	parts = []
+	for index, chromosome_name in enumerate(genotype):
+		model = svg_tools.chromosomes.Chromosome(
+			(svg_tools.chromosomes.Segment(chromosome_name, colors[chromosome_name], 1),
+			 svg_tools.chromosomes.Segment(chromosome_name, colors[chromosome_name], 1)),
+			(svg_tools.chromosomes.Centromere(1),))
+		center_x = x + (index - (len(genotype)-1)/2)*spacing
+		parts.append(svg_tools.chromosomes.chromosome_path_part(
+			f'{name}-{chromosome_name}-{index}', model,
+			f'M {center_x} {y-16} V {y+10}', thickness=7,
+			labels=False, bands=False).fragment)
+	return (f'<g id="{name}">{placed.fragment}{"".join(parts)}'
+		f'<text x="{x}" y="{y+25}" text-anchor="middle" font-family="{FONT}" '
+		f'font-size="14" font-weight="600" fill="#FFFFFF">{genotype}</text></g>')
 
 
 #============================================
@@ -69,7 +83,7 @@ def main(output: pathlib.Path = OUT) -> None:
 	svg_tools.drawing.write_svg(output, 800, 311, 'Egg and sperm form a zygote',
 		'The locally authored teaching diagram preserves the source sequence Egg plus Sperm equals Zygote. '
 		'It depicts one egg nucleus marked XX, one sperm nucleus marked XY, and two zygote nuclei marked XX and XY. '
-		'The X-shaped source marks are retained as live genotype letters, not chromosome drawings.', body)
+		'The source genotype labels are retained as live text, with locally authored chromosome bodies.', body)
 
 
 if __name__ == '__main__':

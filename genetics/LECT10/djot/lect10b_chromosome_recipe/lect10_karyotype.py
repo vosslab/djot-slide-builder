@@ -33,7 +33,8 @@ def main(destination: pathlib.Path) -> None:
 		ys=[BANDS[0][0]]+[b[1] for b in BANDS]
 		pts=[(x_at(y),y) for y in ys]
 		lengths=[math.dist(a,b) for a,b in zip(pts,pts[1:])]
-		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',band[2],length) for band,length in zip(BANDS,lengths)),6)
+		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',band[2],length) for band,length in zip(BANDS,lengths)),
+			(svg_tools.chromosomes.Centromere(6),))
 		path='M '+' L '.join(f'{x:.4f} {y}' for x,y in pts)
 		part=svg_tools.chromosomes.chromosome_path_part('schematic-sister-'+str(i),model,path,thickness=8,labels=False)
 		overlay.append(xml.etree.ElementTree.fromstring(part.fragment))

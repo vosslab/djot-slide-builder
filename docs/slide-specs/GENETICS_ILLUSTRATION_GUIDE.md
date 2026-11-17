@@ -112,7 +112,7 @@ uses connected branching hyphae, conidial chains and curved germ tubes to distin
 mating identities. Open space separates vegetative loops from the nuclear-division sequence.
 The placed
 [neurospora_life_cycle.svg](../../genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/neurospora_life_cycle.svg)
-combines this editable drawing with the exact retained empirical photograph, following
+combines this vector drawing with the exact retained empirical photograph, following
 [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md). Actual-source ODP/PDF review accepts the complete view.
 SVG/ODP retains the source photo pixels; normal PDF export reduces its fine detail, so detailed
 observation uses the retained source, SVG or ODP. Keep loop captions clear of route curves;
@@ -167,16 +167,18 @@ ODP/PDF contextual review; canonical delivery status remains in the progress led
 
 Follow the all-course chromosome authority in
 [SVG_VISUAL_STYLE.md](../SVG_VISUAL_STYLE.md#chromosome-family-authority). The current
-[chromosome_tool_v2.drawn.svg](illustration_examples/chromosome_tool_v2.drawn.svg) supplies
-the shared rounded rod, rounded-X sister and hollow purple centromere appearance. Author
-production chromosome bodies through shared tools; course recipes own their placement,
+[chromosome_tool_v2.drawn.svg](illustration_examples/chromosome_tool_v2.drawn.svg) is a
+historical specimen. The shared appearance uses modestly rounded rods, independently built
+sisters, and large labelable rectangular centromeres. Author production chromosome bodies
+through shared tools; course recipes own their placement,
 labels, source relationships and interpretation. See [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
 for current `render_chromosome_layout()`, `chromosome_part()` and curved
 `chromosome_path_part()` examples.
 
 - Single chromatids, replicated sisters and separate homologs remain biologically distinct.
-  Joined sisters repeat one model; independently supplied homologs can differ in alleles or
-  structure and must remain separate objects. Preserve source chromosome and ploidy counts.
+  Sisters may carry independently supplied content after a recombination event; separately
+  supplied homologs can differ in alleles or structure. Preserve source chromosome and ploidy
+  counts.
 - Gene letters carry order and identity; source colors carry segment emphasis or ancestry.
   Carry these colors with exchanged segments, independently of the course theme. Empty arm
   material and terminal caps are not additional genes.
@@ -186,52 +188,27 @@ for current `render_chromosome_layout()`, `chromosome_part()` and curved
 - White zigzags identify explicitly authored joins, not centromeres. Cut pointers use returned
   source boundaries. A centromere marker identifies the source-established locus; its shape is
   schematic. Omission is an authoring choice, not evidence that the chromosome lacks one.
-- Decorative irregular bands are optional texture. Actual source bands, cytoband coordinates,
+- BPQ irregular surface marks are optional decorative texture. Actual source bands, cytoband coordinates,
   measured maps, photographs, molecular tracks and aligned sequence evidence keep their source
-  meaning. Do not replace these with decorative bands or infer measured distances from equal
-  letter spacing. Internal crops end in flat cuts, not newly invented telomeres.
+  meaning. Multiple displayed band colors or intensities remain distinct from chromatin state.
+  On a curved chromatid, band boundaries follow the local body direction. Do not infer measured
+  distances from equal letter spacing. Internal crops end in flat cuts, not new telomeres.
 - Keep labels live, readable and upright. Use `allele_labels=True` for supported source alleles
   such as `a+` and `b-`: italic gene letters and raised signs preserve identity independently
   of hue. Inspect gene order, contrast, joins and centromeres at the smallest actual placement.
 
-The saved [chromosome_language.drawn.svg](illustration_examples/chromosome_language.drawn.svg)
-and `chromosome_svg()` API record the historical BPQ-inspired pale-collar vocabulary. They
-remain compatibility references, not the current appearance specification. Their four LECT12
-examples retain deletion `ABCDE|FGH -> ABCE|FGH`, duplication
-`ABCDE|FGH -> ABCBCDE|FGH`, inversion `ABCDE|FGH -> ADCBE|FGH`, and reciprocal translocation
-`ABCDE|FGH + MNOPQ|R -> MNOCDE|FGH + ABPQ|R`; `|` denotes the centromere. They depict single
-chromatids and no discarded fragments. Saved examples do not establish migration of course assets.
-
 The reusable model API in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
-adds requested colors and sizes, variable segment lengths, rounded-X identical sisters,
-portrait orientation and a hollow purple centromere marker over a short neck. The oval
-is a diagram convention, not swollen chromosome material. Short internal marker text remains
-available; returned segment anchors and marker bounds support external annotations while
-text stays upright. Pale filled collars belong to the historical compatibility API. Keep one common
-length scale across internal deletions and reciprocal right-tail exchanges so shortening
-stays visible. These bounded operations are not a general rearrangement simulator.
+provides requested colors and sizes, variable segment lengths, independent sisters, portrait
+orientation, source-known centromeres, and curved centerlines with constant configurable width.
+Keep one common length scale across internal deletions and reciprocal right-tail exchanges so
+shortening stays visible. These bounded operations are not a general rearrangement simulator.
 
 The current [chromosome_tool_v2.drawn.svg](illustration_examples/chromosome_tool_v2.drawn.svg)
-is generated by `make_tool_v2_specimen(path)` in
-[chromosome_examples.py](../../svg_tools/chromosome_examples.py). Its single and rounded-X
-sister forms use the same 44-band chr7 model, 520-unit longitudinal scale, 64-unit
-per-chromatid width, source boundaries, rounded ends and hollow 100-by-38 centromere marker.
-Vector brackets preserve the nested q/q3/q31/q31.2 hierarchy. A linked q31 detail reuses
-the whole map at fivefold isotropic scale with flat internal cut ends, so it does not imply
-new chromosome termini. CFTR is labeled `7q31.2`; these are approximate cytoband intervals,
-not precise molecular coordinates. `17q41.3` remains a schematic address exercise, not a real chromosome
-17 map. Source addresses and stain fills follow segment identity through rearrangements.
-Decorative texture and dense internal labels can be hidden without removing actual band fills.
-Decorative band modes and caller colors need not copy the source stain palette; shared geometry
-and outline give the family its visual connection.
-See [chr7_hg38_cytobands.provenance.json](../../svg_tools/data/chr7_hg38_cytobands.provenance.json)
-for the source URL, retrieval date and checksum. In dense source-backed maps, place the
-centromere label outside, attached to a `marker_bounds` edge midpoint. Include stroke when
-checking clearance against neighboring segment endpoints. The README's separate 700-by-100
-API example uses a thin hollow `marker_size=(18, 100)` with `marker_label=None`; the revised
-specimen uses the broad hollow marker in both whole forms. Both source `acen` bands remain
-exposed around its collar gap, although their narrow intervals are subtle at reduced size.
-Marker and collar space are not genomic length.
+is a historical specimen generated by `make_tool_v2_specimen(path)` in
+[chromosome_examples.py](../../svg_tools/chromosome_examples.py). It does not establish the
+current appearance or course migration. Source addresses and stain fills follow segment identity
+through rearrangements. See [chr7_hg38_cytobands.provenance.json](../../svg_tools/data/chr7_hg38_cytobands.provenance.json)
+for the source URL, retrieval date and checksum.
 
 The chromosome 1-3 recipe in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
 uses three source TSVs and portable provenance to render 187 intervals at one genomic scale.
@@ -271,7 +248,7 @@ evidence belong to the progress ledger.
 Author pedigree figures through biology-problems (BPQ), under
 `problems/inheritance-problems/pedigrees/`: `pedigree_lib.family` supplies `Person`,
 `Union`, `Observation` and `Family`; `pedigree_lib.svg_output.render_svg` emits
-editable circles, squares, lines and live text. Use stable person IDs, explicit
+vector circles, squares, lines and text. Use stable person IDs, explicit
 parent/child lists and observed fills; validate the family and observations before
 rendering. Parent roles do not determine the left/right order of drawn spouses.
 
@@ -325,15 +302,15 @@ cylinder/taper geometry. Its cutaway, well placement and label targets remain su
 The fly's curves do not by themselves justify a general organism constructor. Share a part when
 real drawings need the same operation; keep biological assembly and scientific topology local.
 
-## Editable source and review
+## SVG source and review
 
 - The active goal delivers pure vector SVG, with no `<image>` elements or embedded bitmaps.
   Quality-90 WebP previews and retained raster fallbacks are not completed SVG deliverables.
 - Keep original vector art in self-contained `.drawn.svg` files with a stable positive `viewBox`,
   meaningful groups and unique IDs. Reuse small parts only where it makes editing clearer.
-- Preserve live text, a useful `title` and `desc`, and host image alt text. The SVG is the editable
-  artwork; Impress embeds it as one image object. No linked fonts, scripts or raster wrappers
-  belong in these original-drawing examples. Use the installed Atkinson Hyperlegible Next and
+- Preserve live text, a useful `title` and `desc`, and host image alt text. Impress embeds SVG as
+  one image object. No linked fonts, scripts or raster wrappers belong in these original-drawing
+  examples. Use the installed Atkinson Hyperlegible Next and
   Mono font roles by family name, without per-SVG font embedding; follow
   [SVG_DIAGRAMS.md](SVG_DIAGRAMS.md).
 - Keep source ASCII. Use numeric XML character references such as `&#8722;` for a minus sign;

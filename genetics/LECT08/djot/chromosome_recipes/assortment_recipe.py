@@ -36,12 +36,13 @@ def main() -> None:
 				index = int(child.get('data-shared-part'))
 				item = source['parts'][index]
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', item['color'], item['center']-item['top']),
-									svg_tools.chromosomes.Segment('', item['color'], item['bottom']-item['center'])), 1)
-				width = 21 if item['paired'] else 7
+									svg_tools.chromosomes.Segment('', item['color'], item['bottom']-item['center'])),
+									centromeres=(svg_tools.chromosomes.Centromere(1),))
+				width = 7
 				part = svg_tools.chromosomes.chromosome_part(f'chromosome-{index}', model,
 					length=item['bottom']-item['top'], thickness=width,
 					orientation='vertical', sisters=item['paired'], bands=False, labels=False)
-				group = xml.etree.ElementTree.Element('g', {'transform': f"translate({item['x']-width/2} {item['top']})"})
+				group = xml.etree.ElementTree.Element('g', {'transform': f"translate({item['x']-width*(1.1 if item['paired'] else .5)} {item['top']})"})
 				group.append(xml.etree.ElementTree.fromstring(part.fragment))
 				parent.insert(list(parent).index(child), group)
 				parent.remove(child)

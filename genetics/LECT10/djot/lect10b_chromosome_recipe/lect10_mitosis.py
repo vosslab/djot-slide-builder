@@ -37,7 +37,8 @@ def main(destination: pathlib.Path) -> None:
 		else:
 			path=f'M 1 {ymin+3} Q -1 {ymin/2} 0 0 Q 1 {ymax/2} 1 {ymax-3}'
 			lengths=(-ymin,ymax); thickness=7
-		model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color,lengths[0]),svg_tools.chromosomes.Segment('',color,lengths[1])),1)
+		model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',color,lengths[0]),svg_tools.chromosomes.Segment('',color,lengths[1])),
+			(svg_tools.chromosomes.Centromere(1),))
 		part=svg_tools.chromosomes.chromosome_path_part(name+'-v2',model,path,thickness=thickness,labels=False)
 		slot.append(xml.etree.ElementTree.fromstring(part.fragment))
 	xml.etree.ElementTree.ElementTree(root).write(destination,encoding='unicode')

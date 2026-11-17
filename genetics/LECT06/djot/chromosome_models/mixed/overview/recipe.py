@@ -22,7 +22,7 @@ def model(color: str, tip: str | None = None,
 	segments = (chromosomes.Segment('', start_tip or color, 15),
 		chromosomes.Segment('', color, 33), chromosomes.Segment('', color, 37),
 		chromosomes.Segment('', tip or color, 15))
-	return chromosomes.Chromosome(segments, 2)
+	return chromosomes.Chromosome(segments, centromeres=(chromosomes.Centromere(2),))
 
 
 def geometry() -> tuple[list, list]:
@@ -134,16 +134,13 @@ def build(output_dir: pathlib.Path) -> None:
 		part = chromosomes.chromosome_path_part(name,model(color,tip,start_tip),d,thickness=thick,labels=False)
 		fragments.append(part.fragment)
 	for name, x, y, length, thick, color, first, second, orientation in xs:
-		# Each sister retains its own exchange material within the same shared-tool X.
-		copies = [ET.fromstring(chromosomes.chromosome_part(name,model(color,end,start),
-			length=length,thickness=thick,orientation=orientation,sisters=True,
-			bands=False,labels=False).fragment) for start,end in (first,second)]
-		selector = f'g[@clip-path="url(#{name}-sister-1-clip)"]'
-		paint = copies[0].find(selector)
-		position = list(copies[0]).index(paint)
-		copies[0].remove(paint)
-		copies[0].insert(position,copies[1].find(selector))
-		fragment = ET.tostring(copies[0],encoding='unicode')
+		width = thick/2.2
+		centerlines = [f'M 0 {width*(.5+1.2*i)} H {length}' if orientation == 'horizontal'
+			else f'M {width*(.5+1.2*i)} 0 V {length}' for i in range(2)]
+		chromatids = tuple((model(color,end,start), path)
+			for (start,end),path in zip((first,second),centerlines))
+		fragment = chromosomes.sister_chromatid_parts(name,chromatids,
+			thickness=width,bands=False,labels=False).fragment
 		fragments.append(f'<g transform="translate({x} {y})">{fragment}</g>')
 	patch_data = (BASE/'sources/body_cleanup.png').read_bytes()
 	overlay = ET.Element(f'{{{SVG}}}g', {'id':'shared-chromosome-migration',

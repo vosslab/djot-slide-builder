@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Generate retained LECT06 figures using shared chromosome bodies."""
+import argparse
 import json
-import re
+import math
+import svgpathtools
+import svg_tools.parts
 import pathlib
 import xml.etree.ElementTree as ET
 import svg_tools.chromosomes
@@ -20,34 +23,48 @@ def generate(data_directory: pathlib.Path, output_directory: pathlib.Path) -> No
 			markers=[]
 			for i,body in enumerate(item['parts']):
 				segments=body.get('segments') or [[body['color'],1],[body['color'],1]]
-				model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',color,length) for color,length in segments),1 if item['centromere'] else None)
+				model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',color,length) for color,length in segments),
+					centromeres=(svg_tools.chromosomes.Centromere(1),) if item['centromere'] else ())
 				part=svg_tools.chromosomes.chromosome_path_part(item['group']+'-shared-'+str(i),model,body['path'],thickness=body['width'],labels=False)
 				fragment=ET.fromstring(part.fragment)
-				marker=next((e for e in fragment.iter() if e.get('id','').endswith('-centromere')),None)
+				marker=next((e for e in fragment.iter() if '-centromere-' in e.get('id','')),None)
 				if marker is not None:
 					marker_parent=next(e for e in fragment.iter() if marker in list(e)); marker_parent.remove(marker)
-					markers.append(marker)
+					markers.append((part.anchors['centromere'], body['width'], body['path']))
 				groups[item['group']].append(fragment)
 			group=groups[item['group']]
 			pair_size=2 if len(markers) in (2,4) else 1
 			for start in range(0,len(markers),pair_size):
-				pair=markers[start:start+pair_size]; marker=pair[0]
-				for axis in ('cx','cy'):
-					marker.set(axis,str(sum(float(e.get(axis)) for e in pair)/len(pair)))
+				pair=markers[start:start+pair_size]
+				centers = [entry[0] for entry in pair]
+				cx, cy = (sum(point[index] for point in centers)/len(centers) for index in (0, 1))
 				if item.get('marker_centers'):
 					cx,cy=item['marker_centers'][start//pair_size]
-					marker.set('cx',str(cx)); marker.set('cy',str(cy))
-				angle=re.match(r'rotate\(([^ ]+)',marker.get('transform')).group(1)
-				marker.set('transform',f"rotate({angle} {marker.get('cx')} {marker.get('cy')})")
-				group.append(marker)
+				width = max(entry[1] for entry in pair)
+				if len(pair) == 2:
+					dx, dy = centers[1][0]-centers[0][0], centers[1][1]-centers[0][1]
+					angle = math.degrees(math.atan2(dy, dx))-90
+					span = math.hypot(dx,dy)+width*1.3
+				else:
+					path = svgpathtools.parse_path(pair[0][2])
+					tangent = path.unit_tangent(path.ilength(path.length()/2))
+					angle = math.degrees(math.atan2(tangent.imag, tangent.real))
+					span = width*1.3
+				marker = svg_tools.chromosomes.centromere_part(item['group']+'-belt-'+str(start),
+					thickness=width, across=span)
+				group.append(ET.fromstring(svg_tools.parts.transform(marker,x=cx,y=cy,rotation=angle).fragment))
 		output=output_directory/(data_file.stem+'.drawn.svg'); output.write_text(ET.tostring(root,encoding='unicode')+'\n')
 	
 		print(output.name)
 
 
 def main() -> None:
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path,
+		default=pathlib.Path(__file__).resolve().parent / 'assets')
+	args = parser.parse_args()
 	directory = pathlib.Path(__file__).resolve().parent
-	generate(directory / "chromosome_models" / "assortment", directory / "assets" / "lect06c-meiosis")
+	generate(directory / "chromosome_models" / "assortment", args.output_root / "lect06c-meiosis")
 
 
 if __name__ == "__main__":

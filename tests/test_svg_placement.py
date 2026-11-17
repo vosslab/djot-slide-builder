@@ -26,14 +26,17 @@ def test_transform_and_layout() -> None:
 
 def test_group_repeated_chromosome_ids_and_references() -> None:
 	segment = svg_tools.chromosomes.Segment('A', '#FFFFFF', 40)
-	model = svg_tools.chromosomes.Chromosome((segment, segment), 1)
+	model = svg_tools.chromosomes.Chromosome((segment, segment),
+		(svg_tools.chromosomes.Centromere(1),))
 	part = svg_tools.chromosomes.chromosome_part('chrom', model, orientation='vertical')
 	combined = svg_tools.parts.group({'one': part, 'two': svg_tools.parts.transform(part, x=80)})
 	root = xml.etree.ElementTree.fromstring(combined.fragment)
 	ids = [el.attrib['id'] for el in root.iter() if 'id' in el.attrib]
 	assert len(ids) == len(set(ids))
-	clips = [el.attrib['clip-path'][5:-1] for el in root.iter() if 'clip-path' in el.attrib]
-	assert len(clips) == 2 and all(value in ids for value in clips)
+	for element in root.iter():
+		for value in element.attrib.values():
+			if value.startswith('url(#'):
+				assert value[5:-1] in ids
 	assert combined.anchors['two.centromere'][0] == pytest.approx(part.anchors['centromere'][0] + 80)
 
 

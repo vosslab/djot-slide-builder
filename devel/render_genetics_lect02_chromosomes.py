@@ -14,10 +14,11 @@ FIGURES = [{'path': 'genetics/LECT02/djot/assets/lect02b-genes_dogma/meiosis_ass
 
 def build(root: ET.Element, item: dict) -> None:
 	for fact in item['chromosomes']:
-		model = chromosomes.Chromosome((chromosomes.Segment('',fact['color']),)*2, 1)
-		thickness = 22 if fact['chromatids'] == 2 else 11.5
+		model = chromosomes.Chromosome((chromosomes.Segment('',fact['color']),)*2,
+			(chromosomes.Centromere(1),))
+		thickness = 11.5
 		part = chromosomes.chromosome_part(fact['id']+'-body', model, length=fact['length'], thickness=thickness, orientation='vertical', sisters=fact['chromatids']==2, bands=False, labels=False)
-		part = parts.transform(part, fact['x']-thickness/2, fact['y']-fact['length']/2)
+		part = parts.transform(part, fact['x']-thickness*(1.1 if fact['chromatids']==2 else .5), fact['y']-fact['length']/2)
 		group = next(e for e in root.iter() if e.get('id') == fact['id'])
 		group.insert(0, ET.fromstring(part.fragment))
 

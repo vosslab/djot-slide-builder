@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 
 # Local repo modules
 from svg_tools.chromosomes import (
-	Chromosome, Segment, chromosome_path_part, render_chromosome_layout,
+	Centromere, Chromosome, Segment, chromosome_path_part, render_chromosome_layout,
 )
 
 NS = '{http://www.w3.org/2000/svg}'
@@ -347,13 +347,14 @@ def render_rods() -> None:
 	for stem, models in MODELS.items():
 		root = ET.fromstring(BACKDROPS[stem])
 		for name, regions, centromere, thickness, joins in models:
-			model = Chromosome(tuple(Segment(label, color, length, index % 5)
-				for index, (label, color, length) in enumerate(regions)), centromere)
+			model = Chromosome(tuple(Segment(label, color, length)
+				for label, color, length in regions),
+				centromeres=() if centromere is None else (Centromere(centromere),))
 			layout = render_chromosome_layout(name, model, thickness=thickness,
 				junctions=joins, allele_labels=any(len(label) > 1 for label, _, _ in regions))
 			placeholder = root.find('.//' + NS + 'g[@data-chromosome="' + name + '"]')
-			placeholder.append(ET.fromstring('<svg xmlns="http://www.w3.org/2000/svg">'
-				+ layout.svg + '</svg>'))
+			placeholder.append(ET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'
+				+ layout.svg + '</g>'))
 			placeholder.attrib.pop('data-chromosome')
 			parent=next(node for node in root.iter() if placeholder in list(node))
 			red=[node for node in parent if node.get('stroke')=='#BD2929' or node.get('fill')=='#BD2929']
@@ -380,7 +381,9 @@ def path_body(
 	parent: ET.Element, name: str, regions: list[tuple[str, float]], path: str,
 	thickness: float = 28, closed: bool = False, cut: bool = False,
 ) -> None:
-	model = Chromosome(tuple(Segment('', color, length) for color, length in regions))
+	# Source colors and intervals remain ordered through each bend.
+	model = Chromosome(tuple(Segment('', color, length)
+		for color, length in regions))
 	part = chromosome_path_part(name, model, path, thickness=thickness,
 		closed=closed, cut_ends=cut, labels=False)
 	parent.append(ET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))

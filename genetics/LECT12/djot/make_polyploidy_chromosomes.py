@@ -10,7 +10,7 @@ that differ from adjacent native ploidy notation; no extra bodies are inferred.
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from svg_tools.chromosomes import Chromosome, Segment, chromosome_part, chromosome_path_part
+from svg_tools.chromosomes import Centromere, Chromosome, Segment, chromosome_part, chromosome_path_part
 
 NS = "{http://www.w3.org/2000/svg}"
 ET.register_namespace("", NS[1:-1])
@@ -25,12 +25,12 @@ def chromosome(spec: dict) -> str:
 			spec['curve'], thickness=spec['thickness'], labels=False)
 	else:
 		fraction = spec.get('fraction', .5)
-		model = Chromosome((Segment('', color, fraction), Segment('', color, 1-fraction)), 1)
-		thickness = spec['thickness']
+		model = Chromosome((Segment('', color, fraction), Segment('', color, 1-fraction)),
+			centromeres=(Centromere(1),))
+		thickness = spec['thickness'] / (2.2 if spec.get('sisters', False) else 1)
 		part = chromosome_part(name, model, length=spec['length'], thickness=thickness,
 			orientation=spec.get('orientation', 'vertical'), bands=False,
-			sisters=spec.get('sisters', False), labels=False,
-			marker_size=(thickness*.32, thickness*(.43 if spec.get("sisters", False) else 1)), marker_label=None)
+			sisters=spec.get('sisters', False), labels=False)
 	return '<g data-chromosome="' + name + '" data-sisters="' + str(spec.get('sisters', False)).lower() + '" transform="' + spec.get('transform', '') + '">' + part.fragment + '</g>'
 
 

@@ -14,14 +14,18 @@ import svg_tools.svg_import
 
 #============================================
 def compose(name: str, specification: dict[str, typing.Any],
-		components: dict[str, typing.Any]) -> str:
+		components: dict[str, typing.Any], component_dir: pathlib.Path | None = None) -> str:
 	"""Place each original component occurrence without changing its geometry."""
 	parts: dict[str, svg_tools.parts.SvgPart] = {}
 	for index, placement in enumerate(specification['parts']):
 		component = components[placement['asset']]
-		markup = component['svg']
-		if hashlib.sha256(markup.encode()).hexdigest() != component['sha256']:
-			raise ValueError(f"Frozen component hash differs: {placement['asset']}")
+		path = component_dir / placement['asset'] if component_dir else None
+		if path and path.is_file():
+			markup = path.read_text()
+		else:
+			markup = component['svg']
+			if hashlib.sha256(markup.encode()).hexdigest() != component['sha256']:
+				raise ValueError(f"Frozen component hash differs: {placement['asset']}")
 		part = svg_tools.svg_import.import_svg(markup, name=f'occurrence_{index}', size=placement['width'])
 		parts[f'occurrence_{index}'] = svg_tools.parts.transform(part, x=placement['x'], y=placement['y'])
 	group = svg_tools.parts.group(parts)
@@ -62,12 +66,15 @@ def main() -> None:
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument('--output', type=pathlib.Path,
 		default=pathlib.Path(__file__).resolve().parent / 'assets/lect13d-meiosis_translocation')
+	parser.add_argument('--components-dir', type=pathlib.Path,
+		help='Use shared-geometry component SVGs instead of frozen source bodies.')
 	args = parser.parse_args()
 	data_path = pathlib.Path(__file__).with_name('lect13d_p1_composition_data.json')
 	data: dict[str, typing.Any] = json.loads(data_path.read_text())
 	args.output.mkdir(parents=True, exist_ok=True)
 	for name, specification in data['figures'].items():
-		(args.output / f'{name}.drawn.svg').write_text(compose(name, specification, data['components']))
+		(args.output / f'{name}.drawn.svg').write_text(
+			compose(name, specification, data['components'], args.components_dir))
 
 
 if __name__ == '__main__':

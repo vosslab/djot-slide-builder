@@ -19,7 +19,7 @@ Review snapshot: November 16, 2026. Figures are reused unchanged. Source numbers
 
 @image
 
-![Chromosome transfer](repo:genetics/LECT01/djot/assets/lect01b-genetic_disorders/chromosome_transfer_comparison.drawn.svg)
+![Chromosome transfer](repo:prototype/chromosome_assets/genetics/LECT01/djot/assets/lect01b-genetic_disorders/chromosome_transfer_comparison.drawn.svg)
 
 @caption
 
@@ -47,7 +47,7 @@ Reason:
 
 @image
 
-![Meiosis and assortment](repo:genetics/LECT02/djot/assets/lect02b-genes_dogma/meiosis_assortment_i.drawn.svg)
+![Meiosis and assortment](repo:prototype/chromosome_assets/genetics/LECT02/djot/assets/lect02b-genes_dogma/meiosis_assortment_i.drawn.svg)
 
 @caption
 
@@ -75,7 +75,7 @@ Reason:
 
 @image
 
-![Chromosome fusion](repo:genetics/LECT02/djot/assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg)
+![Chromosome fusion](repo:prototype/chromosome_assets/assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg)
 
 @caption
 
@@ -131,7 +131,7 @@ Reason:
 
 @image
 
-![A labeled chromosome region](repo:genetics/LECT03/djot/assets/lect03b-blood_hla_typing/hla_region.drawn.svg)
+![A labeled chromosome region](repo:prototype/chromosome_assets/genetics/LECT03/djot/assets/lect03b-blood_hla_typing/hla_region.drawn.svg)
 
 @caption
 
@@ -159,7 +159,7 @@ Reason:
 
 @image
 
-![Chromosomes in fertilization](repo:genetics/LECT04/djot/assets/lect04e-segregation/fertilization_scene.drawn.svg)
+![Chromosomes in fertilization](repo:prototype/chromosome_assets/assets/lect04e-segregation/fertilization_scene.drawn.svg)
 
 @caption
 
@@ -187,7 +187,7 @@ Reason:
 
 @image
 
-![Before replication](repo:genetics/LECT06/djot/assets/lect06b-intro_cells/chromosome_before_replication.svg)
+![Before replication](repo:prototype/assets/lect06b-intro_cells/chromosome_before_replication.svg)
 
 @caption
 
@@ -215,7 +215,7 @@ Reason:
 
 @image
 
-![Replicated sisters](repo:genetics/LECT06/djot/assets/lect06b-intro_cells/chromosome_replication.svg)
+![Replicated sisters](repo:prototype/assets/lect06b-intro_cells/chromosome_replication.svg)
 
 @caption
 
@@ -243,7 +243,7 @@ Reason:
 
 @image
 
-![Mitosis: a complete panel](repo:genetics/LECT06/djot/assets/lect06b-intro_cells/image_011.normal.svg)
+![Mitosis: a complete panel](repo:prototype/assets/lect06b-intro_cells/image_011.normal.svg)
 
 @caption
 
@@ -271,7 +271,7 @@ Reason:
 
 @image
 
-![Anaphase and telophase](repo:genetics/LECT06/djot/assets/lect06b-intro_cells/mitosis_anaphase_telophase.drawn.svg)
+![Anaphase and telophase](repo:prototype/assets/lect06b-intro_cells/mitosis_anaphase_telophase.drawn.svg)
 
 @caption
 
@@ -299,7 +299,7 @@ Reason:
 
 @image
 
-![Early prophase and pairing](repo:genetics/LECT06/djot/assets/lect06c-meiosis/prophase_leptotene_zygotene.drawn.svg)
+![Early prophase and pairing](repo:prototype/assets/lect06c-meiosis/prophase_leptotene_zygotene.drawn.svg)
 
 @caption
 
@@ -327,7 +327,7 @@ Reason:
 
 @image
 
-![Late prophase and chiasmata](repo:genetics/LECT06/djot/assets/lect06c-meiosis/prophase_diplotene_diakinesis.drawn.svg)
+![Late prophase and chiasmata](repo:prototype/assets/lect06c-meiosis/prophase_diplotene_diakinesis.drawn.svg)
 
 @caption
 
@@ -355,7 +355,7 @@ Reason:
 
 @image
 
-![Recombinant chromosomes](repo:genetics/LECT06/djot/assets/lect06c-meiosis/recombinant_chromosomes.svg)
+![Recombinant chromosomes](repo:prototype/assets/lect06c-meiosis/recombinant_chromosomes.svg)
 
 @caption
 
@@ -383,7 +383,7 @@ Reason:
 
 @image
 
-![Meiosis: a complete panel](repo:genetics/LECT06/djot/assets/lect06c-meiosis/image_020.normal.svg)
+![Meiosis: a complete panel](repo:prototype/assets/lect06c-meiosis/image_020.normal.svg)
 
 @caption
 
@@ -411,7 +411,7 @@ Reason:
 
 @image
 
-![Independent assortment](repo:genetics/LECT06/djot/assets/lect06c-meiosis/assortment_full.drawn.svg)
+![Independent assortment](repo:prototype/assets/lect06c-meiosis/assortment_full.drawn.svg)
 
 @caption
 
@@ -439,7 +439,7 @@ Reason:
 
 @image
 
-![Three ancestral genomes](repo:genetics/LECT06/djot/assets/lect06c-meiosis/wheat_genomes.drawn.svg)
+![Three ancestral genomes](repo:prototype/assets/lect06c-meiosis/wheat_genomes.drawn.svg)
 
 @caption
 
@@ -467,7 +467,7 @@ Reason:
 
 @image
 
-![Mitosis beside meiosis](repo:genetics/LECT06/djot/assets/lect06c-meiosis/mitosis_meiosis_comparison.drawn.svg)
+![Mitosis beside meiosis](repo:prototype/assets/lect06c-meiosis/mitosis_meiosis_comparison.drawn.svg)
 
 @caption
 
@@ -495,7 +495,7 @@ Reason:
 
 @image
 
-![Drosophila complements](repo:genetics/LECT06/djot/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg)
+![Drosophila complements](repo:prototype/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg)
 
 @caption
 
@@ -523,7 +523,7 @@ Reason:
 
 @image
 
-![Reciprocal eye-color crosses](repo:genetics/LECT06/djot/assets/lect06e-x_linked_genes_2/reciprocal_eye_crosses.drawn.svg)
+![Reciprocal eye-color crosses](repo:prototype/assets/lect06e-x_linked_genes_2/reciprocal_eye_crosses.drawn.svg)
 
 @caption
 
@@ -551,7 +551,7 @@ Reason:
 
 @image
 
-![Cis and trans](repo:genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg)
+![Cis and trans](repo:prototype/assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg)
 
 @caption
 
@@ -579,7 +579,7 @@ Reason:
 
 @image
 
-![Chromatid comparison (TEM area blank)](repo:genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b31_labeled.svg)
+![Chromatid comparison (TEM area blank)](repo:prototype/assets/lect08b-chap8-linked_genes/b31_labeled.svg)
 
 @caption
 
@@ -607,7 +607,7 @@ Reason:
 
 @image
 
-![A single crossover](repo:genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/single_crossover.drawn.svg)
+![A single crossover](repo:prototype/assets/lect08b-chap8-linked_genes/single_crossover.drawn.svg)
 
 @caption
 
@@ -635,7 +635,7 @@ Reason:
 
 @image
 
-![Double-crossover meiosis](repo:genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/double_crossover_meiosis.drawn.svg)
+![Double-crossover meiosis](repo:prototype/assets/lect08b-chap8-linked_genes/double_crossover_meiosis.drawn.svg)
 
 @caption
 
@@ -663,7 +663,7 @@ Reason:
 
 @image
 
-![Two exchanges](repo:genetics/LECT08/djot/assets/lect08f-three_point_testcross_bpw/two_exchanges.drawn.svg)
+![Two exchanges](repo:prototype/assets/lect08f-three_point_testcross_bpw/two_exchanges.drawn.svg)
 
 @caption
 
@@ -691,7 +691,7 @@ Reason:
 
 @image
 
-![Mitotic recombination](repo:genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg)
+![Mitotic recombination](repo:prototype/assets/lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg)
 
 @caption
 
@@ -719,7 +719,7 @@ Reason:
 
 @image
 
-![Loss of heterozygosity](repo:genetics/LECT09/djot/assets/lect09c-mitotic_crossover/loh_outcome.drawn.svg)
+![Loss of heterozygosity](repo:prototype/assets/lect09c-mitotic_crossover/loh_outcome.drawn.svg)
 
 @caption
 
@@ -747,7 +747,7 @@ Reason:
 
 @image
 
-![Yeast meiosis](repo:genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_meiosis.drawn.svg)
+![Yeast meiosis](repo:prototype/assets/lect09d-yeast_unordered_tetrads/yeast_meiosis.drawn.svg)
 
 @caption
 
@@ -775,7 +775,7 @@ Reason:
 
 @image
 
-![Four-strand double crossover](repo:genetics/LECT09/djot/assets/lect09e-tetrad_visuals/four_strand_dco_to_npd.svg)
+![Four-strand double crossover](repo:prototype/assets/lect09e-tetrad_visuals/four_strand_dco_to_npd.svg)
 
 @caption
 
@@ -803,7 +803,7 @@ Reason:
 
 @image
 
-![A gene and its centromere](repo:genetics/LECT09/djot/assets/lect09_tetrad_concepts/centromere.drawn.svg)
+![A gene and its centromere](repo:prototype/assets/lect09_tetrad_concepts/centromere.drawn.svg)
 
 @caption
 
@@ -831,7 +831,7 @@ Reason:
 
 @image
 
-![Preparing a karyotype](repo:genetics/LECT10/djot/assets/lect10_repaired_figures/karyotype_preparation.svg)
+![Preparing a karyotype](repo:prototype/chromosome_assets/assets/lect10_repaired_figures/karyotype_preparation.svg)
 
 @caption
 
@@ -859,7 +859,7 @@ Reason:
 
 @image
 
-![Chromosome staining](repo:genetics/LECT10/djot/assets/lect10b-karyotypes/chromosome_staining_comparison.drawn.svg)
+![Chromosome staining](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/chromosome_staining_comparison.drawn.svg)
 
 @caption
 
@@ -887,7 +887,7 @@ Reason:
 
 @image
 
-![Centromere positions](repo:genetics/LECT10/djot/assets/lect10b-karyotypes/centromere_positions.drawn.svg)
+![Centromere positions](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/centromere_positions.drawn.svg)
 
 @caption
 
@@ -915,7 +915,7 @@ Reason:
 
 @image
 
-![Metacentric movement](repo:genetics/LECT10/djot/assets/lect10b-karyotypes/metacentric_movement.drawn.svg)
+![Metacentric movement](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/metacentric_movement.drawn.svg)
 
 @caption
 
@@ -943,7 +943,7 @@ Reason:
 
 @image
 
-![Acrocentric movement](repo:genetics/LECT10/djot/assets/lect10b-karyotypes/acrocentric_movement.drawn.svg)
+![Acrocentric movement](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/acrocentric_movement.drawn.svg)
 
 @caption
 

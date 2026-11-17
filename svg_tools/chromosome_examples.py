@@ -22,6 +22,19 @@ FONT = "Atkinson Hyperlegible Next"
 
 
 #============================================
+def chromosome_layout(name: str, genes: list[tuple[str, str]], *,
+	centromeres: tuple[svg_tools.chromosomes.Centromere, ...] = (),
+	junctions: tuple[int, ...] = (), thickness: float = 62,
+	allele_labels: bool = False) -> svg_tools.chromosomes.ChromosomeLayout:
+	"""Build equal-pitch example regions with the shared layout API."""
+	model = svg_tools.chromosomes.Chromosome(tuple(
+		svg_tools.chromosomes.Segment(label, color, 64)
+		for label, color in genes), centromeres)
+	return svg_tools.chromosomes.render_chromosome_layout(name, model,
+		thickness=thickness, junctions=junctions, allele_labels=allele_labels)
+
+
+#============================================
 def rod(name: str, sequence: str, target: str, base: str, emphasis: str,
 	x: float, y: float, *, cuts: tuple[int, ...] = (),
 	joins: tuple[int, ...] = ()) -> str:
@@ -29,11 +42,11 @@ def rod(name: str, sequence: str, target: str, base: str, emphasis: str,
 	letters = sequence.replace("|", "")
 	centromere = sequence.index("|") if "|" in sequence else None
 	genes = [(letter, emphasis if letter in target else base) for letter in letters]
-	fragment, _, boundaries = svg_tools.chromosomes.chromosome_svg(
-		name, genes, centromere_after=centromere, junctions=joins)
-	body = f'<g transform="translate({x} {y})">{fragment}'
+	centromeres = () if centromere is None else (svg_tools.chromosomes.Centromere(centromere),)
+	layout = chromosome_layout(name, genes, centromeres=centromeres, junctions=joins)
+	body = f'<g transform="translate({x} {y})">{layout.svg}'
 	for index in cuts:
-		position = boundaries[index]
+		position = layout.boundaries[index][0]
 		body += f'<path d="M {position} -32 V -12" stroke="#BD2929" stroke-width="4"/>'
 		body += f'<path d="M {position-7} -15 L {position} -3 L {position+7} -15 Z" fill="#BD2929"/>'
 	body += '</g>'
@@ -79,10 +92,9 @@ def make_overviews(output: pathlib.Path) -> None:
 		("translocation-after-1", "MNOCDE|FGH", [BLUE_TARGET]*3 + [PURPLE]*6, 350, 3),
 		("translocation-after-2", "ABPQ|R", [PURPLE_TARGET]*2 + [BLUE]*3, 460, 2),
 	):
-		fragment, _, _ = svg_tools.chromosomes.chromosome_svg(name,
-			list(zip(sequence.replace("|", ""), colors)),
-			centromere_after=sequence.index("|"), junctions=(join,))
-		body += f'<g transform="translate(218 {y})">{fragment}</g>'
+		layout = chromosome_layout(name, list(zip(sequence.replace("|", ""), colors)),
+			centromeres=(svg_tools.chromosomes.Centromere(sequence.index("|")),), junctions=(join,))
+		body += f'<g transform="translate(218 {y})">{layout.svg}</g>'
 	svg_tools.drawing.write_svg(output / "translocation_overview.drawn.svg", 980, 580,
 		"Reciprocal translocation",
 		"ABCDE, centromere, FGH and MNOPQ, centromere, R exchange terminal AB and MNO. "
@@ -105,15 +117,15 @@ def make_specimen(path: pathlib.Path) -> None:
 	):
 		body += svg_tools.drawing.text(40, y+39, label, size=26, color="#344651",
 			anchor="start", font=FONT)
-		fragment, _, _ = svg_tools.chromosomes.chromosome_svg(name, genes,
-			centromere_after=centromere, junctions=joins)
-		body += f'<g transform="translate(325 {y})">{fragment}</g>'
+		layout = chromosome_layout(name, genes,
+			centromeres=() if centromere is None else (svg_tools.chromosomes.Centromere(centromere),), junctions=joins)
+		body += f'<g transform="translate(325 {y})">{layout.svg}</g>'
 	body += svg_tools.drawing.text(40, 514, "Explicit alleles", size=26,
 		color="#344651", anchor="start", font=FONT)
-	fragment, _, _ = svg_tools.chromosomes.chromosome_svg("alleles",
+	layout = chromosome_layout("alleles",
 		[("", BLUE), ("a+", PURPLE), ("b-", BLUE), ("c+", PURPLE)],
-		centromere_after=1, allele_labels=True)
-	body += f'<g transform="translate(325 475)">{fragment}</g>'
+		centromeres=(svg_tools.chromosomes.Centromere(1),), allele_labels=True)
+	body += f'<g transform="translate(325 475)">{layout.svg}</g>'
 	body += svg_tools.drawing.text(40, 588,
 		"Neutral ends; pale collar; white join. Bands and spacing are schematic.",
 		size=25, color="#344651", anchor="start", font=FONT)
@@ -147,52 +159,56 @@ def make_tool_specimen(path: pathlib.Path) -> None:
 		body += f'<rect x="32" y="{y}" width="1376" height="{height}" rx="22" fill="#FFFFFF"/>'
 	body += label(64, 185, "01  Shape and replication", 30)
 	plain = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment("", "#72B9A5"),))
-	fragment, _, _ = svg_tools.chromosomes.render_chromosome("tool-plain", plain,
-		width=520, height=52, bands=False)
+	layout = svg_tools.chromosomes.render_chromosome_layout("tool-plain", plain,
+		length=520, thickness=52, bands=False)
 	body += label(80, 232, "Plain color | requested width and height")
-	body += place(fragment, 80, 252)
-	segments = tuple(svg_tools.chromosomes.Segment(letter, PURPLE, length, band)
-		for letter, length, band in zip("ABCDE", (72, 94, 60, 86, 108), (0, 2, 4, 1, 3)))
+	body += place(layout.svg, 80, 252)
+	segments = tuple(svg_tools.chromosomes.Segment(letter, PURPLE, length)
+		for letter, length in zip("ABCDE", (72, 94, 60, 86, 108)))
 	unreplicated = svg_tools.chromosomes.Chromosome(segments)
-	fragment, _, _ = svg_tools.chromosomes.render_chromosome("tool-banded", unreplicated,
-		width=520, height=52)
+	layout = svg_tools.chromosomes.render_chromosome_layout("tool-banded", unreplicated,
+		length=520, thickness=52)
 	body += label(780, 232, "Stable bands | unequal segment lengths")
-	body += place(fragment, 780, 252)
-	model = svg_tools.chromosomes.Chromosome(segments, centromere_after=2)
-	fragment, _, _ = svg_tools.chromosomes.render_chromosome("tool-centromere", model,
-		width=520, height=62)
+	body += place(layout.svg, 780, 252)
+	model = svg_tools.chromosomes.Chromosome(segments,
+		(svg_tools.chromosomes.Centromere(2),))
+	layout = svg_tools.chromosomes.render_chromosome_layout("tool-centromere", model,
+		length=520, thickness=62)
 	body += label(80, 362, "One chromatid | centromere after B")
-	body += place(fragment, 80, 388)
-	fragment, _, _ = svg_tools.chromosomes.render_chromosome("tool-sisters", model,
-		width=520, height=100, sisters=True)
+	body += place(layout.svg, 80, 388)
+	layout = svg_tools.chromosomes.render_chromosome_layout("tool-sisters", model,
+		length=520, thickness=40, sisters=True)
 	body += label(780, 362, "Sisters | one shared centromere")
-	body += place(fragment, 780, 380)
+	body += place(layout.svg, 780, 380)
 	body += label(80, 503, "Pale constriction = centromere. Matching sisters carry the same segment pattern.", 24)
 
 	body += label(64, 597, "02  Rearrangements preserve segment identity", 30)
 	body += label(80, 641, "Deletion | remove C", 28)
 	left = svg_tools.chromosomes.Chromosome(tuple(
-		svg_tools.chromosomes.Segment(letter, PURPLE, length, band)
-		for letter, length, band in zip("ABCDEF", (62, 76, 64, 86, 56, 68), (0, 2, 4, 1, 3, 2))), 4)
+		svg_tools.chromosomes.Segment(letter, PURPLE, length)
+		for letter, length in zip("ABCDEF", (62, 76, 64, 86, 56, 68))),
+		(svg_tools.chromosomes.Centromere(4),))
 	deleted = svg_tools.chromosomes.delete_segments(left, 2, 3)
 	for name, chromosome, y, joins, caption in (
 		("tool-delete-before", left, 700, (), "Before"),
 		("tool-delete-after", deleted, 848, (2,), "After: shorter at the same scale"),
 	):
 		body += label(80, y-18, caption, 24)
-		fragment, _, _ = svg_tools.chromosomes.render_chromosome(name, chromosome,
-			height=56, junctions=joins)
-		body += place(fragment, 80, y)
+		layout = svg_tools.chromosomes.render_chromosome_layout(name, chromosome,
+			thickness=56, junctions=joins)
+		body += place(layout.svg, 80, y)
 	body += label(80, 956, "White zigzag = new junction", 24)
 	body += label(80, 994, "Surviving lengths and bands stay fixed.", 24)
 
 	body += label(780, 641, "Reciprocal exchange | distal tails", 28)
 	parent_a = svg_tools.chromosomes.Chromosome(tuple(
-		svg_tools.chromosomes.Segment(letter, PURPLE, length, band)
-		for letter, length, band in zip("ABCDE", (68, 78, 60, 84, 70), (0, 2, 4, 1, 3))), 2)
+		svg_tools.chromosomes.Segment(letter, PURPLE, length)
+		for letter, length in zip("ABCDE", (68, 78, 60, 84, 70))),
+		(svg_tools.chromosomes.Centromere(2),))
 	parent_b = svg_tools.chromosomes.Chromosome(tuple(
-		svg_tools.chromosomes.Segment(letter, BLUE, length, band)
-		for letter, length, band in zip("MNOPQ", (76, 64, 86, 58, 74), (3, 1, 2, 4, 0))), 2)
+		svg_tools.chromosomes.Segment(letter, BLUE, length)
+		for letter, length in zip("MNOPQ", (76, 64, 86, 58, 74))),
+		(svg_tools.chromosomes.Centromere(2),))
 	product_a, product_b = svg_tools.chromosomes.reciprocal_translocation(parent_a, 3, parent_b, 3)
 	for name, chromosome, y, joins, caption in (
 		("tool-parent-a", parent_a, 686, (), "1"),
@@ -201,11 +217,11 @@ def make_tool_specimen(path: pathlib.Path) -> None:
 		("tool-product-b", product_b, 953, (3,), "2'"),
 	):
 		body += label(778, y+35, caption, 24)
-		fragment, _, boundaries = svg_tools.chromosomes.render_chromosome(name, chromosome,
-			height=50, junctions=joins)
-		body += place(fragment, 830, y)
+		layout = svg_tools.chromosomes.render_chromosome_layout(name, chromosome,
+			thickness=50, junctions=joins)
+		body += place(layout.svg, 830, y)
 		if not joins:
-			x = 830 + boundaries[3]
+			x = 830 + layout.boundaries[3][0]
 			body += svg_tools.drawing.line(x, y-8, x, y+58, color="#A3293D", width=3, dash="5 4")
 	body += label(830, 852, "Exchange DE and PQ; colors follow ancestry", 23)
 
@@ -251,10 +267,10 @@ def make_tool_v2_specimen(path: pathlib.Path) -> None:
 		pathlib.Path(__file__).parent / "data/chr7_hg38_cytobands.tsv")
 	rod_width = 64
 	whole = svg_tools.chromosomes.render_chromosome_layout("v2-chr7", model,
-		length=520, thickness=rod_width/.61, orientation="vertical", bands=False,
+		length=520, thickness=rod_width, orientation="vertical", bands=False,
 		labels=False, marker_size=(38, 100))
 	sisters = svg_tools.chromosomes.render_chromosome_layout("v2-sisters", model,
-		length=520, thickness=rod_width/.26, orientation="vertical", sisters=True,
+		length=520, thickness=rod_width, orientation="vertical", sisters=True,
 		bands=False, labels=False, marker_size=(38, 100))
 	if whole.centromere is None:
 		raise ValueError("Chromosome 7 requires a centromere")

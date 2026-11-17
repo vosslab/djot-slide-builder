@@ -65,11 +65,12 @@ def main() -> None:
 		else:
 			regions=[(colors[0],.2),(colors[1],.3),(colors[1],.3),(colors[2],.2)]
 			center=2 if marker else None
-		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',c,n) for c,n in regions),center)
+		sites = () if center is None else (svg_tools.chromosomes.Centromere(center),)
+		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',c,n) for c,n in regions),sites)
 		part=svg_tools.chromosomes.chromosome_path_part(f'b31-chromatid-{i}',model,d,thickness=7 if i<4 else 9 if i<12 else 12,labels=False)
 		fragment=xml.etree.ElementTree.fromstring(part.fragment)
 		for node in list(fragment):
-			if node.tag=='ellipse' and node.get('id','').endswith('-centromere'):
+			if node.get('id','').startswith(f'b31-chromatid-{i}-centromere-'):
 				fragment.remove(node)
 				markers.append(node)
 		layer.append(fragment)

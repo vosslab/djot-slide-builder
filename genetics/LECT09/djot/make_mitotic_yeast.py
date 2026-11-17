@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Rebuild LECT09 mitotic and yeast chromosome diagrams from durable models."""
+import argparse
 import json
 import pathlib
 import xml.etree.ElementTree as ET
@@ -33,7 +34,7 @@ def body_part(model: dict) -> ET.Element:
 	"""Render one explicit centerline model with the shared body tool."""
 	segments = tuple(svg_tools.chromosomes.Segment('', region['color'], region['length'])
 		for region in model['regions'])
-	chromosome = svg_tools.chromosomes.Chromosome(segments, None)
+	chromosome = svg_tools.chromosomes.Chromosome(segments)
 	thickness = float(model['thickness'])
 	if thickness.is_integer():
 		thickness = int(thickness)
@@ -80,9 +81,12 @@ def build(name: str, model: dict) -> bytes:
 
 def main() -> None:
 	"""Write all four durable LECT09 SVG outputs."""
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path, default=OUTPUT)
+	args = parser.parse_args()
 	models = json.loads((DATA / 'models.json').read_text())
 	for name, model in models.items():
-		output = OUTPUT / DESTINATIONS[name] / name
+		output = args.output_root / DESTINATIONS[name] / name
 		output.parent.mkdir(parents=True, exist_ok=True)
 		output.write_bytes(build(name, model))
 

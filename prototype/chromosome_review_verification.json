@@ -1,13 +1,89 @@
 {
   "pages": 70,
   "figures": 68,
-  "embedded_image_sha_matches": 68,
+  "source_hashes_match": 68,
+  "prototype_asset_references": 67,
   "native_review_ids": 68,
   "notes": 69,
-  "contact_sheets": 8,
-  "pdf_sha256": "bf76250aa82be6b5fb3e656e7abd7652054608da96fbe89d539763f1df75264d",
-  "odp_sha256": "77925d4a6d0dc808413c13fcb7c447ece13f797a319de33dece3465b9f331c5d",
-  "visual_review": "All 70 pages inspected in contact sheets; dense examples also inspected at full size.",
+  "contact_sheets": 5,
+  "pdf_sha256": "22c0364fd54b9e244f62f7dd1b596c0142d72cc009d904ad7a345bc1bd4f3af0",
+  "odp_sha256": "934846d970b59247ef0a89521c915a6f18d0135237214b382a3608e109365d85",
+  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors.",
   "known_issue": "C21: TEM region appears blank in the current native export; original artwork unchanged.",
-  "approval": "Corpus collection awaiting instructor critique; inclusion is not approval."
+  "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
+  "preserved_evidence_ids": [
+    "C04",
+    "C51"
+  ],
+  "focused_tests_passed": 19,
+  "lecture_svg_files_unchanged": 1049,
+  "prototype_originals_verified_in_odp": 67,
+  "bpq_reference": "translocationlib.py body layers at height 30; dimensions scale with chromatid thickness.",
+  "bpq_straight_body_comparison": {
+    "browser": "Chromium",
+    "height": 30,
+    "width": 345,
+    "interior_rgb_mean_absolute_error": 0.5932307692307692,
+    "measurement": "Compared actual BPQ HTML with shared SVG surface; excludes 10 columns at each end; no labels or collars in this isolated body comparison."
+  },
+  "curve_adaptation": "Centerline normals carry the BPQ layers; curved sheen samples the BPQ alpha function in 48 transverse strips. Straight sheen uses a native SVG gradient.",
+  "c07_c08_followup": "Length 80 units; thickness 18 units per chromatid. Existing replication invariant test passed; C07/C08 native pages visually inspected.",
+  "c06_followup": "Removed the extra x coordinate from the vertical path command. All eight chromosome centerlines verified as single 26-unit segments; corrected SVG and native PDF page visually inspected. Bounded source scan found no other matching H/V coordinate mistakes.",
+  "c01_followup": "Replaced the custom vertical diagram with shared BPQ horizontal chromosomes: insertional E-F transfer and reciprocal G-H/N-O exchange. Verified rendered gene order, conservation of all blocks, one centromere per chromosome, unique IDs and resolved SVG references. Final native PDF inspected after removing C01 gene-letter strokes for LibreOffice.",
+  "source_svg_templates_changed": [
+    "genetics/LECT06/djot/chromosome_models/assortment/mitosis_meiosis_comparison.template.svg"
+  ],
+  "sister_chromatid_survey": {
+    "report": "prototype/sister_chromatid_survey.md",
+    "figures_reviewed": 68,
+    "reference": "C16, preserved exactly",
+    "changed_ids": [
+      "C17",
+      "C37",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C67"
+    ],
+    "native_pages_inspected": [
+      "C16",
+      "C17",
+      "C37",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C67"
+    ],
+    "c17_chromatids": 90,
+    "c17_lengths": [
+      76,
+      58,
+      40
+    ],
+    "c17_thickness": 6,
+    "c17_length_class_counts": [
+      30,
+      30,
+      30
+    ],
+    "inversion_centromeres": "C56/C58: two Stage A sister belts and four Stage B individual centromeres; C57/C59: two sister belts. Source Stage A transforms are retained.",
+    "c67": "18 source chromatids retained with 9 foreground belts",
+    "focused_tests_passed": 19,
+    "lecture_assets_unchanged": 1049
+  },
+  "centromere_centering_followup": {
+    "fixed_ids": [
+      "C18"
+    ],
+    "direct_body_collar_placements_checked": 486,
+    "maximum_centerline_offset": 1.5793880253852199e-12,
+    "cause": "Drosophila recipe replaced generated anchors with rounded manual marker coordinates.",
+    "change": "Remove the manual marker_center branch and its 16 obsolete data fields; keep the model centromere boundary and tangent.",
+    "native_pages_inspected": [
+      "C18"
+    ],
+    "scope": "Cross-thickness centering; intentional unequal p/q arm lengths retained. User clarification about vertical centering is pending."
+  }
 }

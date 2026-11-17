@@ -141,7 +141,8 @@ def crossover() -> None:
 			regions = (svg_tools.chromosomes.Segment('', color, first_length),
 				svg_tools.chromosomes.Segment('', color, length-first_length))
 			centromere_after = 1
-		model = svg_tools.chromosomes.Chromosome(regions, centromere_after)
+		centromeres = () if centromere_after is None else (svg_tools.chromosomes.Centromere(centromere_after),)
+		model = svg_tools.chromosomes.Chromosome(regions, centromeres=centromeres)
 		part = svg_tools.chromosomes.chromosome_path_part(f'crossover-{index}', model,
 			path_d, thickness=25, labels=False)
 		replacements[f'chromatid_{index}'] = part.fragment
@@ -159,9 +160,10 @@ def overview() -> None:
 		body += svg_tools.drawing.text(48, y+43, stage, size=32,
 			color='#344651', anchor='start', font='Atkinson Hyperlegible Next')
 		regions = tuple(svg_tools.chromosomes.Segment(label,
-			'#B48CDE' if label in 'BC' else '#D9C9EF', 64, i % 5)
-			for i, label in enumerate(sequence.replace('|', '')))
-		model = svg_tools.chromosomes.Chromosome(regions, sequence.index('|'))
+			'#B48CDE' if label in 'BC' else '#D9C9EF', 64)
+			for label in sequence.replace('|', ''))
+		model = svg_tools.chromosomes.Chromosome(regions,
+			centromeres=(svg_tools.chromosomes.Centromere(sequence.index('|')),))
 		layout = svg_tools.chromosomes.render_chromosome_layout('duplication-'+stage.lower(),
 			model, thickness=62, junctions=joins)
 		body += f'<g transform="translate(218 {y})">{layout.svg}'
@@ -194,7 +196,8 @@ def copy_number() -> None:
 			'#D6C9F0' if letter == 'C' else '#E2E2E2', 70.5 if letter == 'C' else 56.5)
 			for letter in sequence[2:])
 		regions[-1] = svg_tools.chromosomes.Segment('E', '#E2E2E2', 34)
-		model = svg_tools.chromosomes.Chromosome(tuple(regions), centromere_after=2)
+		model = svg_tools.chromosomes.Chromosome(tuple(regions),
+			centromeres=(svg_tools.chromosomes.Centromere(2),))
 		length = sum(region.length for region in regions)
 		part = svg_tools.chromosomes.chromosome_path_part('cnv-'+sequence, model,
 			f'M45 22.5 V{22.5+length}', thickness=45)
@@ -229,7 +232,7 @@ def opsin_arrays() -> None:
 		'#776098' if start in purple_starts else '#EDCF90', end-start)
 		for start, end in zip(boundaries, boundaries[1:]))
 	model = svg_tools.chromosomes.Chromosome(regions,
-		centromere_after=boundaries.index(619))
+		centromeres=(svg_tools.chromosomes.Centromere(boundaries.index(619)),))
 	part = svg_tools.chromosomes.chromosome_part('opsin-source-x', model,
 		thickness=42, bands=False, labels=False)
 	body = f'<g transform="translate(280 30)">{part.fragment}</g>'

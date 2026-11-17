@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Regenerate LECT06 mitosis figures with source-preserving shared chromosome bodies."""
+import argparse
 import pathlib
 import re
 import xml.etree.ElementTree as xml
@@ -27,16 +28,16 @@ def chromosome(name: str, chromatids: int, path_d: str | None,
 		segments = (
 			svg_tools.chromosomes.Segment('', '#56529A', centromere_fraction),
 			svg_tools.chromosomes.Segment('', '#56529A', 1-centromere_fraction))
-		model = svg_tools.chromosomes.Chromosome(segments, 1)
+		model = svg_tools.chromosomes.Chromosome(segments, centromeres=(svg_tools.chromosomes.Centromere(1),))
 	else:
 		segments = (svg_tools.chromosomes.Segment('', '#56529A'),
 			svg_tools.chromosomes.Segment('', '#56529A'))
-		model = svg_tools.chromosomes.Chromosome(segments, 1)
+		model = svg_tools.chromosomes.Chromosome(segments, centromeres=(svg_tools.chromosomes.Centromere(1),))
 	if chromatids == 1 and path_d:
 		return svg_tools.chromosomes.chromosome_path_part(name, model, path_d,
 			thickness=thickness, labels=False).fragment
 	part = svg_tools.chromosomes.chromosome_part(name, model, length=length,
-		thickness=thickness, orientation='horizontal', sisters=True, bands=False, labels=False)
+		thickness=thickness/2.2, orientation='horizontal', sisters=True, bands=False, labels=False)
 	return f'<g transform="translate({-length/2} {-thickness/2})">' + part.fragment + '</g>'
 
 
@@ -136,16 +137,19 @@ def replace_groups(root: xml.Element) -> list[dict]:
 	return records
 
 
-def main() -> None:
+def main(output_root: pathlib.Path | None = None) -> None:
 	xml.register_namespace("", SVG[1:-1])
-	OUT.mkdir(parents=True, exist_ok=True)
+	output_dir = OUT if output_root is None else output_root / 'lect06b-intro_cells'
+	output_dir.mkdir(parents=True, exist_ok=True)
 	manifest = {}
 	for stem in ASSETS:
 		root = xml.parse(TEMPLATES / (stem + '.drawn.svg')).getroot()
 		manifest[stem] = replace_groups(root)
-		output = OUT / (stem + '.drawn.svg')
+		output = output_dir / (stem + '.drawn.svg')
 		xml.ElementTree(root).write(output, encoding='unicode')
 
 
 if __name__ == '__main__':
-	main()
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path)
+	main(parser.parse_args().output_root)

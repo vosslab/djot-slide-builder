@@ -40,13 +40,13 @@ def chromatid(parent: ET.Element, name: str, pieces: tuple[str, ...],
 	# Rounded arc weights avoid svgpathtools boundary inversion roundoff (<0.00001 units).
 	model = chromosomes.Chromosome(tuple(chromosomes.Segment(f'{name}-{i}', color,
 		round(path.length(), 5)) for i, (path, color) in enumerate(zip(paths, colors))),
-		centromere_after=1)
+		centromeres=(chromosomes.Centromere(1),))
 	part = chromosomes.chromosome_path_part(name, model, full.d(), thickness=width,
 		labels=False)
 	node = part_node(part.fragment)
 	# A joined sister pair shares one source-centered marker above both sisters.
 	for item in list(node):
-		if item.get('id') == f'{name}-centromere':
+		if item.get('id', '').startswith(f'{name}-centromere-'):
 			node.remove(item)
 	node.set('data-chromatid', name)
 	node.set('data-centerline', full.d())

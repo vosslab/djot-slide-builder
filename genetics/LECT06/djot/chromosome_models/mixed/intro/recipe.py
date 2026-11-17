@@ -25,7 +25,7 @@ def chromosome(name: str, x: float, y: float, length: float, sisters: bool = Fal
 	model = svg_tools.chromosomes.Chromosome((
 		svg_tools.chromosomes.Segment('', '#8A7BC4', 20),
 		svg_tools.chromosomes.Segment('', '#8A7BC4', 42),
-	), centromere_after=1)
+	), centromeres=(svg_tools.chromosomes.Centromere(1),))
 	part = svg_tools.chromosomes.chromosome_part(name, model, length=length,
 		thickness=18, orientation='vertical', bands=False, sisters=sisters, labels=False)
 	return svg_tools.parts.transform(part, x=x, y=y).fragment
@@ -34,12 +34,13 @@ def chromosome(name: str, x: float, y: float, length: float, sisters: bool = Fal
 #============================================
 def panel_bodies(key: str) -> str:
 	"""Place the source states without changing any source layout component."""
-	body = chromosome('shared-single', 333, 69, 62)
+	length = 80
+	body = chromosome('shared-single', 333, 63, length)
 	if key != 'before':
-		body += chromosome('shared-sisters', 334, 229, 62, sisters=True)
+		body += chromosome('shared-sisters', 322, 223, length, sisters=True)
 	if key == 'separation':
-		body += chromosome('shared-daughter-left', 277, 399, 61)
-		body += chromosome('shared-daughter-right', 395, 399, 61)
+		body += chromosome('shared-daughter-left', 277, 393, length)
+		body += chromosome('shared-daughter-right', 395, 393, length)
 	return body
 
 
@@ -54,7 +55,7 @@ def replace_old_body_pixels(root: xml.etree.ElementTree.Element, key: str) -> No
 
 #============================================
 def write_panel(key: str, output_dir: pathlib.Path) -> None:
-	"""Insert editable shared chromosome bodies beneath existing leaders and labels."""
+	"""Insert shared chromosome bodies beneath existing leaders and labels."""
 	tree = xml.etree.ElementTree.parse(SOURCES[key])
 	root = tree.getroot()
 	replace_old_body_pixels(root, key)

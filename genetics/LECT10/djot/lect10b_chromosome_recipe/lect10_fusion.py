@@ -16,10 +16,19 @@ def main(destination: pathlib.Path) -> None:
 	root = xml.etree.ElementTree.parse(HERE / 'templates' / 'human_chromosome_2_fusion.drawn.svg').getroot()
 	slots = {node.get('id'): node for node in root.iter()}
 	for name, x, y, length, centromeres in BODIES:
-
-		# Existing live circles encode two centromeres and active/inactive states.
-		layout = svg_tools.chromosomes.render_chromosome_layout(name+'-v2', svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('','#EBD8A0'),)),
-			length=length, thickness=36, orientation='vertical', bands=False, labels=False)
+		locations = [location-y for location, _ in centromeres]
+		limits = [0, *locations, length]
+		model = svg_tools.chromosomes.Chromosome(
+			tuple(svg_tools.chromosomes.Segment('', '#EBD8A0', stop-start)
+				for start, stop in zip(limits, limits[1:])),
+			tuple(svg_tools.chromosomes.Centromere(index, active == 'active')
+				for index, (_, active) in enumerate(centromeres, 1)))
+		layout = svg_tools.chromosomes.chromosome_path_part(name+'-v2', model,
+			'M 18 0 L 18 ' + str(length), thickness=36, labels=False)
 		slot = slots[name+'-body-slot']; slot.set('transform',f'translate({x} {y})')
-		slot.append(xml.etree.ElementTree.fromstring(layout.svg))
+		slot.append(xml.etree.ElementTree.fromstring(layout.fragment))
+		group = slots[name]
+		for child in list(group):
+			if child.tag == f'{{{NS}}}circle':
+				group.remove(child)
 	xml.etree.ElementTree.ElementTree(root).write(destination,encoding='unicode')

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Compose the frozen meiosis background with measured shared-renderer chromatids."""
+import argparse
 import base64
 import hashlib
 import json
@@ -31,8 +32,10 @@ def render() -> str:
 		raise ValueError('Only the 136 source-localized centromeres receive markers')
 	fragments: list[str] = []
 	for record in records:
+		centromeres = () if record['center'] is None else (
+			svg_tools.chromosomes.Centromere(record['center']),)
 		model = svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('', color, length)
-			for color, length in record['segments']), record['center'])
+			for color, length in record['segments']), centromeres)
 		part = svg_tools.chromosomes.chromosome_path_part(record['name'], model, record['path_d'],
 			thickness=record['width'], labels=False)
 		fragments.append(part.fragment)
@@ -60,8 +63,12 @@ def render() -> str:
 
 
 def main() -> None:
-	OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-	OUTPUT.write_text(render(), encoding='utf-8')
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path, default=OUTPUT.parent.parent)
+	args = parser.parse_args()
+	output = args.output_root / 'lect06c-meiosis' / OUTPUT.name
+	output.parent.mkdir(parents=True, exist_ok=True)
+	output.write_text(render(), encoding='utf-8')
 
 
 if __name__ == '__main__':

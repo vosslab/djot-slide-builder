@@ -19,7 +19,7 @@ def model(colors: tuple[str, str, str]) -> chromosomes.Chromosome:
 	"""Two distal exchange intervals and the source's central centromere."""
 	return chromosomes.Chromosome((chromosomes.Segment('',colors[0],20),
 		chromosomes.Segment('',colors[1],30),chromosomes.Segment('',colors[1],30),
-		chromosomes.Segment('',colors[2],20)),2)
+		chromosomes.Segment('',colors[2],20)), centromeres=(chromosomes.Centromere(2),))
 
 
 def source_bodies() -> tuple:

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='ascii'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="600" viewBox="0 0 650 600" role="img" aria-labelledby="title desc">
+  <title id="title">X and Y pair at a pseudoautosomal region</title>
+  <desc id="desc">An original schematic shows a crossover between homologous tips of X and Y. Chromosome sizes and the highlighted region are schematic.</desc>
+  <rect width="650" height="600" fill="white" />
+  <g id="chromosomes">
+    <g data-lect12c-chromosome="true" transform="translate(145 100)">
+      <g id="par-chromosome-0-body">
+        <defs>
+          <clipPath id="par-chromosome-0-body-body-clip">
+            <path d="M 65.0000,13.0000 L 65.0000,402.0000 L 65.0000,402.0000 L 64.7502,404.5362 L 64.0104,406.9749 L 62.8091,409.2224 L 61.1924,411.1924 L 59.2224,412.8091 L 56.9749,414.0104 L 54.5362,414.7502 L 52.0000,415.0000 L 13.0000,415.0000 L 10.4638,414.7502 L 8.0251,414.0104 L 5.7776,412.8091 L 3.8076,411.1924 L 2.1909,409.2224 L 0.9896,406.9749 L 0.2498,404.5362 L 0.0000,402.0000 L 0.0000,13.0000 L 0.2498,10.4638 L 0.9896,8.0251 L 2.1909,5.7776 L 3.8076,3.8076 L 5.7776,2.1909 L 8.0251,0.9896 L 10.4638,0.2498 L 13.0000,0.0000 L 52.0000,0.0000 L 54.5362,0.2498 L 56.9749,0.9896 L 59.2224,2.1909 L 61.1924,3.8076 L 62.8091,5.7776 L 64.0104,8.0251 L 64.7502,10.4638 L 65.0000,13.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#par-chromosome-0-body-body-clip)" data-layer="body">
+          <path d="M 32.5,0.0 L 32.5,415.0" fill="none" stroke="#E8D8EC" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="par-chromosome-0-body-region-0" data-source-label="">
+            <path d="M 32.5,0.0 L 32.5,70.0" fill="none" stroke="#E8D8EC" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="par-chromosome-0-body-region-1" data-source-label="">
+            <path d="M 32.5,70.0 L 32.5,170.14999999999998" fill="none" stroke="#CFE9BB" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="par-chromosome-0-body-region-2" data-source-label="">
+            <path d="M 32.5,170.14999999999998 L 32.5,415.0" fill="none" stroke="#CFE9BB" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="par-chromosome-0-body-sheen" gradientUnits="userSpaceOnUse" x1="65.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 65.0000,0.0000 L 65.0000,415.0000 L 0.0000,415.0000 L 0.0000,0.0000 Z" fill="url(#par-chromosome-0-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 60.6667,0.0000 L 60.6667,415.0000 L 56.3333,415.0000 L 56.3333,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 10.8333,0.0000 L 10.8333,415.0000 L 4.3333,415.0000 L 4.3333,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 65.0000,0.0000 L 65.0000,17.3333 L 0.0000,17.3333 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 65.0000,397.6667 L 65.0000,415.0000 L 0.0000,415.0000 L 0.0000,397.6667 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 65.0000,13.0000 L 65.0000,402.0000 L 65.0000,402.0000 L 64.7502,404.5362 L 64.0104,406.9749 L 62.8091,409.2224 L 61.1924,411.1924 L 59.2224,412.8091 L 56.9749,414.0104 L 54.5362,414.7502 L 52.0000,415.0000 L 13.0000,415.0000 L 10.4638,414.7502 L 8.0251,414.0104 L 5.7776,412.8091 L 3.8076,411.1924 L 2.1909,409.2224 L 0.9896,406.9749 L 0.2498,404.5362 L 0.0000,402.0000 L 0.0000,13.0000 L 0.2498,10.4638 L 0.9896,8.0251 L 2.1909,5.7776 L 3.8076,3.8076 L 5.7776,2.1909 L 8.0251,0.9896 L 10.4638,0.2498 L 13.0000,0.0000 L 52.0000,0.0000 L 54.5362,0.2498 L 56.9749,0.9896 L 59.2224,2.1909 L 61.1924,3.8076 L 62.8091,5.7776 L 64.0104,8.0251 L 64.7502,10.4638 L 65.0000,13.0000 Z" fill="none" stroke="#000000" stroke-width="8.666666666666666" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="par-chromosome-0-body-centromere-0" data-layer="centromere" transform="translate(32.5 170.14999999999998) rotate(90.0)">
+          <clipPath id="par-chromosome-0-body-centromere-0-clip">
+            <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" />
+          </clipPath>
+          <g clip-path="url(#par-chromosome-0-body-centromere-0-clip)">
+            <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="par-chromosome-0-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-34.666666666666664" y1="-42.25" x2="-34.666666666666664" y2="42.25">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -34.6667,-42.2500 L 34.6667,-42.2500 L 34.6667,42.2500 L -34.6667,42.2500 Z" fill="url(#par-chromosome-0-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -34.6667,-36.6167 L 34.6667,-36.6167 L 34.6667,-30.9833 L -34.6667,-30.9833 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -34.6667,28.1667 L 34.6667,28.1667 L 34.6667,36.6167 L -34.6667,36.6167 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" fill="none" stroke="#40474E" stroke-width="4.333333333333333" />
+        </g>
+      </g>
+    </g>
+    <g data-lect12c-chromosome="true" transform="translate(385 100)">
+      <g id="par-chromosome-1-body">
+        <defs>
+          <clipPath id="par-chromosome-1-body-body-clip">
+            <path d="M 65.0000,13.0000 L 65.0000,262.0000 L 65.0000,262.0000 L 64.7502,264.5362 L 64.0104,266.9749 L 62.8091,269.2224 L 61.1924,271.1924 L 59.2224,272.8091 L 56.9749,274.0104 L 54.5362,274.7502 L 52.0000,275.0000 L 13.0000,275.0000 L 10.4638,274.7502 L 8.0251,274.0104 L 5.7776,272.8091 L 3.8076,271.1924 L 2.1909,269.2224 L 0.9896,266.9749 L 0.2498,264.5362 L 0.0000,262.0000 L 0.0000,13.0000 L 0.2498,10.4638 L 0.9896,8.0251 L 2.1909,5.7776 L 3.8076,3.8076 L 5.7776,2.1909 L 8.0251,0.9896 L 10.4638,0.2498 L 13.0000,0.0000 L 52.0000,0.0000 L 54.5362,0.2498 L 56.9749,0.9896 L 59.2224,2.1909 L 61.1924,3.8076 L 62.8091,5.7776 L 64.0104,8.0251 L 64.7502,10.4638 L 65.0000,13.0000 Z" clip-rule="evenodd" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#par-chromosome-1-body-body-clip)" data-layer="body">
+          <path d="M 32.5,0.0 L 32.5,275.0" fill="none" stroke="#E8D8EC" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          <g id="par-chromosome-1-body-region-0" data-source-label="">
+            <path d="M 32.5,0.0 L 32.5,69.99999999999999" fill="none" stroke="#E8D8EC" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="par-chromosome-1-body-region-1" data-source-label="">
+            <path d="M 32.5,69.99999999999999 L 32.5,101.74999999999999" fill="none" stroke="#CFE9BB" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g id="par-chromosome-1-body-region-2" data-source-label="">
+            <path d="M 32.5,101.74999999999999 L 32.5,275.0" fill="none" stroke="#CFE9BB" stroke-width="65" stroke-linecap="butt" stroke-linejoin="round" />
+          </g>
+          <g data-layer="sheen">
+            <linearGradient id="par-chromosome-1-body-sheen" gradientUnits="userSpaceOnUse" x1="65.0" y1="0.0" x2="0.0" y2="0.0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+              <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+              <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+              <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+            </linearGradient>
+            <path d="M 65.0000,0.0000 L 65.0000,275.0000 L 0.0000,275.0000 L 0.0000,0.0000 Z" fill="url(#par-chromosome-1-body-sheen)" />
+          </g>
+          <g data-layer="inset-shadows">
+            <path d="M 60.6667,0.0000 L 60.6667,275.0000 L 56.3333,275.0000 L 56.3333,0.0000 Z" fill="#FFFFFF" fill-opacity=".55" />
+            <path d="M 10.8333,0.0000 L 10.8333,275.0000 L 4.3333,275.0000 L 4.3333,0.0000 Z" fill="#000000" fill-opacity=".18" />
+          </g>
+          <path d="M 65.0000,0.0000 L 65.0000,17.3333 L 0.0000,17.3333 L 0.0000,0.0000 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 65.0000,257.6667 L 65.0000,275.0000 L 0.0000,275.0000 L 0.0000,257.6667 Z" fill="#888888" data-layer="telomere" />
+          <path d="M 65.0000,13.0000 L 65.0000,262.0000 L 65.0000,262.0000 L 64.7502,264.5362 L 64.0104,266.9749 L 62.8091,269.2224 L 61.1924,271.1924 L 59.2224,272.8091 L 56.9749,274.0104 L 54.5362,274.7502 L 52.0000,275.0000 L 13.0000,275.0000 L 10.4638,274.7502 L 8.0251,274.0104 L 5.7776,272.8091 L 3.8076,271.1924 L 2.1909,269.2224 L 0.9896,266.9749 L 0.2498,264.5362 L 0.0000,262.0000 L 0.0000,13.0000 L 0.2498,10.4638 L 0.9896,8.0251 L 2.1909,5.7776 L 3.8076,3.8076 L 5.7776,2.1909 L 8.0251,0.9896 L 10.4638,0.2498 L 13.0000,0.0000 L 52.0000,0.0000 L 54.5362,0.2498 L 56.9749,0.9896 L 59.2224,2.1909 L 61.1924,3.8076 L 62.8091,5.7776 L 64.0104,8.0251 L 64.7502,10.4638 L 65.0000,13.0000 Z" fill="none" stroke="#000000" stroke-width="8.666666666666666" stroke-linejoin="round" data-layer="outline" />
+        </g>
+        <g id="par-chromosome-1-body-centromere-0" data-layer="centromere" transform="translate(32.5 101.74999999999999) rotate(90.0)">
+          <clipPath id="par-chromosome-1-body-centromere-0-clip">
+            <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" />
+          </clipPath>
+          <g clip-path="url(#par-chromosome-1-body-centromere-0-clip)">
+            <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" fill="#e6eaf0" />
+            <g data-layer="sheen">
+              <linearGradient id="par-chromosome-1-body-centromere-0-sheen" gradientUnits="userSpaceOnUse" x1="-34.666666666666664" y1="-42.25" x2="-34.666666666666664" y2="42.25">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity=".25" />
+                <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0" />
+                <stop offset=".45" stop-color="#000000" stop-opacity="0" />
+                <stop offset="1" stop-color="#000000" stop-opacity=".16" />
+              </linearGradient>
+              <path d="M -34.6667,-42.2500 L 34.6667,-42.2500 L 34.6667,42.2500 L -34.6667,42.2500 Z" fill="url(#par-chromosome-1-body-centromere-0-sheen)" />
+            </g>
+            <g data-layer="inset-shadows">
+              <path d="M -34.6667,-36.6167 L 34.6667,-36.6167 L 34.6667,-30.9833 L -34.6667,-30.9833 Z" fill="#FFFFFF" fill-opacity=".55" />
+              <path d="M -34.6667,28.1667 L 34.6667,28.1667 L 34.6667,36.6167 L -34.6667,36.6167 Z" fill="#000000" fill-opacity=".18" />
+            </g>
+          </g>
+          <rect x="-34.666666666666664" y="-42.25" width="69.33333333333333" height="84.5" rx="8.666666666666666" fill="none" stroke="#40474E" stroke-width="4.333333333333333" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="crossover" stroke="#823A70" stroke-width="4" fill="none">
+    <path d="M175 127 C265 127 325 155 420 155 M175 155 C265 155 325 127 420 127" />
+  </g>
+  <g font-family="Atkinson Hyperlegible Next" font-size="32" fill="#222">
+    <text x="177" y="65" text-anchor="middle">X</text>
+    <text x="417" y="65" text-anchor="middle">Y</text>
+    <text x="325" y="565" text-anchor="middle" font-size="25">Crossover between pseudoautosomal regions</text>
+  </g>
+</svg>

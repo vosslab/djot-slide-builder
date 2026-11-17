@@ -4,7 +4,6 @@
 import hashlib
 import json
 import pathlib
-import re
 import typing
 import xml.etree.ElementTree
 
@@ -69,7 +68,8 @@ def chromosome(name: str, source: Model) -> svg_tools.parts.SvgPart:
 	"""Keep source segment lengths, colors, labels, and established centromeres."""
 	segments = tuple(svg_tools.chromosomes.Segment(str(label), str(color), float(length) * 48)
 		for label, color, length in source['segments'])
-	model = svg_tools.chromosomes.Chromosome(segments, source['centromere_after'])
+	model = svg_tools.chromosomes.Chromosome(segments, (
+		svg_tools.chromosomes.Centromere(source['centromere_after']),))
 	parts = {'body': svg_tools.chromosomes.chromosome_part(name, model,
 		thickness=42, bands=False, labels=False, sisters=False)}
 	x = 0.0
@@ -105,36 +105,20 @@ def equation(tokens: list[str], center: float, y: float) -> svg_tools.parts.SvgP
 #============================================
 def robertsonian_footer(source: Robertsonian,
 	output_directory: pathlib.Path) -> pathlib.Path:
-	"""Clip only the overlapping frozen footer and restore its exact visible words."""
-	markup = source['reference_svg'].encode('utf-8')
-	if hashlib.sha256(markup).hexdigest() != source['reference_sha256']:
-		raise ValueError('The reviewed Robertsonian reference changed')
-	# The trusted hash-locked SVG uses marker elements, which the generic importer rejects.
-	imported = svg_tools.parts.SvgPart(svg_tools.parts.namespace_ids(
-		xml.etree.ElementTree.tostring(xml.etree.ElementTree.fromstring(markup),
-			encoding='unicode'), 'frozen_robertsonian'), (0, 0, 1800, 1190), {})
-	x, y, width, height = source['clip_bounds']
-	clip = f'<defs><clipPath id="body_clip"><rect x="{x}" y="{y}" width="{width}" height="{height}" /></clipPath></defs>'
-	body = clip + '<g clip-path="url(#body_clip)">' + imported.fragment + '</g>'
-	parts = {'frozen_body': svg_tools.parts.SvgPart(body, (x, y, width, height), {})}
-	boxes = '<rect x="70" y="906" width="1090" height="292" rx="8" fill="#dbe6f4" stroke="#4a75a1" stroke-width="2.5" />'
-	boxes += '<rect x="1205" y="906" width="530" height="292" rx="8" fill="#dbe6f4" stroke="#4a75a1" stroke-width="2.5" />'
-	parts['footer_boxes'] = svg_tools.parts.SvgPart(boxes, (68, 904, 1737, 1200), {})
-	for index, footer in enumerate(source['footers']):
-		original = re.findall(r'\w+|[^\w\s]', footer['original_text'])
-		reflowed = re.findall(r'\w+|[^\w\s]', ' '.join(footer['lines']))
-		if original != reflowed:
-			raise ValueError('Footer reflow changed its words or symbols')
-		for line_index, line in enumerate(footer['lines']):
-			parts[f'footer_{index}_{line_index}'] = svg_tools.text.label(footer['center'],
-				970 + line_index * 60, line, size=footer['font_size'], color='#263c40')
-	composite = svg_tools.parts.group(parts)
+	"""Reuse the shared-geometry Robertsonian product sheet with its source labels."""
+	shared = output_directory / 'robertsonian_gamete_products.drawn.svg'
+	if not shared.is_file():
+		raise ValueError('Generate shared Robertsonian gamete products before this composition')
+	root = xml.etree.ElementTree.parse(shared).getroot()
+	root.set('data-chromosome-review', 'C68')
+	for element in root:
+		if element.tag.endswith('title'):
+			element.text = 'Robertsonian gamete outcomes'
+		elif element.tag.endswith('desc'):
+			element.text = ('Shared-geometry Robertsonian gamete products with all source '
+				'outcomes, probabilities, and explanatory labels retained.')
 	path = output_directory / 'lect13d_p2_robertsonian_footer.drawn.svg'
-	svg_tools.drawing.write_svg(path, 1800, 1240, 'Robertsonian gametes with legible source footer',
-		'The unchanged accepted twelve-gamete vector component is clipped at y900, below '
-		'its adjacent-segregation bracket. Its exact footer words are reflowed with the '
-		'same left-two-column and right-one-column associations. Source ODP slides 57 and 58.',
-		'<rect width="1800" height="1240" fill="white" />' + composite.fragment)
+	xml.etree.ElementTree.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
 	return path
 
 

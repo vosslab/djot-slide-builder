@@ -11,7 +11,7 @@ approved style. `exemplars/` is reserved for instructor-approved models that age
 [Open the PDF](chromosome_review.pdf) or
 [open the editable presentation](chromosome_review.odp).
 
-The single 70-slide deck contains 68 unchanged current figures from 24 source decks across
+The single 70-slide deck contains 68 current figures from 24 source decks across
 Genetics LECT01, LECT02, LECT03, LECT04, LECT06, LECT08, LECT09, LECT10, LECT12, and LECT13.
 It samples simple rods and replicated sisters, division scenes, crossover and tetrad diagrams,
 centromere positions and movement, ploidy and dosage, inversions, and translocations. Empirical
@@ -19,19 +19,30 @@ photos, measured maps, and mixed figures are labeled separately so their purpose
 This is a broad sample, not an exhaustive image inventory or a ranking of preferred artwork.
 
 Each figure has a stable ID, **C01-C68**, and its original deck and slide number. Source numbers
-follow expanded source/ODP order, including hidden slides. Full paths and snapshot hashes are in
-[chromosome_samples.csv](chromosome_samples.csv). The original images are referenced directly;
-the exported ODP embeds them. Original lecture sources and artwork remain unchanged.
+follow expanded source/ODP order, including hidden slides. Original paths and snapshot hashes are
+in [chromosome_samples.csv](chromosome_samples.csv); prototype replacement paths and hashes are
+in [chromosome_replacements.csv](chromosome_replacements.csv). The empirical C04 reference and
+the evidence portion of C51 are preserved. Original lecture Djot and generated artwork remain unchanged; shared recipes are updated.
 
 C21 flags an existing rendering issue: its TEM area appears blank in the exported view.
 
 Critique by ID, for example: "C12: keep the body shape; change the centromere and label size."
+The [sister_chromatid_survey.md](sister_chromatid_survey.md) records the survey using C16 as
+the reference, including corrections to short pairs and sister-centromere connections.
 Compare body shape, sister spacing, centromere treatment, outlines, ancestry colors, labels, and
 amount of detail. Use the editable speaker notes or the optional
 [feedback sheet](chromosome_feedback.csv) to record what to keep, change, and why.
 
 [chromosome_review.djot](chromosome_review.djot) is the one build target. Its two included source
-parts keep the editable source files manageable; they export as a single presentation.
+parts keep the source files manageable; they export as a single presentation.
+
+Regenerate the prototype-owned chromosome SVGs before building when shared chromosome geometry
+changes. This command gives every source recipe an explicit prototype output path and never writes
+lecture assets.
+
+```bash
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B prototype/regenerate_chromosome_review.py
+```
 
 ```bash
 PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py build prototype/chromosome_review.djot --format all
@@ -41,3 +52,9 @@ The build command writes `output/odp/chromosome_review.odp` and
 `output/pdf/chromosome_review.pdf`. The reviewed copies linked above are kept beside the
 prototype source. On the agent host, commands that invoke LibreOffice run outside the sandbox,
 as specified in `AGENTS.md`.
+
+The BPQ layer revision follows the requests archived in
+[human_chromosome_requests.md](../docs/archive/human_chromosome_requests.md). Numerical BPQ
+values establish a reference scale, not fixed dimensions for every illustration. Curved surfaces
+use the same layer colors and alpha values mapped around the authored centerline. The review
+prototype is the evaluation environment; the implementation lives in the shared SVG tools.

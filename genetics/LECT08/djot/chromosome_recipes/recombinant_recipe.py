@@ -37,7 +37,7 @@ def main() -> None:
 				regions = (svg_tools.chromosomes.Segment('', colors[0], 86), svg_tools.chromosomes.Segment('', colors[0], 86))
 			else:
 				regions = (svg_tools.chromosomes.Segment('', colors[0], 86), svg_tools.chromosomes.Segment('', colors[0], 50.22), svg_tools.chromosomes.Segment('', colors[1], 35.78))
-			part = svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}', svg_tools.chromosomes.Chromosome(regions, 1), 'M-86 0 H86', thickness=12, labels=False)
+			part = svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}', svg_tools.chromosomes.Chromosome(regions, centromeres=(svg_tools.chromosomes.Centromere(1),)), 'M-86 0 H86', thickness=12, labels=False)
 			parent.insert(list(parent).index(child), xml.etree.ElementTree.fromstring(part.fragment))
 			parent.remove(child)
 	for node in root.iter():

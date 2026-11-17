@@ -13,18 +13,20 @@ import genetics.LECT06.djot.make_chromosome_meiosis
 #============================================
 @pytest.mark.parametrize('thickness', [8, 62, 140])
 def test_terminal_centromere_marker(thickness: float) -> None:
-	"""The standalone marker matches path markers and includes its painted stroke."""
+	"""The standalone labelable rectangle matches path centromere geometry."""
 	c = svg_tools.chromosomes
 	marker = c.centromere_part('terminal', thickness=thickness)
-	element = xml.etree.ElementTree.fromstring(marker.fragment)
-	model = c.Chromosome((c.Segment('p', '#D9C9EF'), c.Segment('q', '#C1E7EE')), 1)
+	element = xml.etree.ElementTree.fromstring(marker.fragment).find('.//rect')
+	model = c.Chromosome((c.Segment('p', '#D9C9EF'), c.Segment('q', '#C1E7EE')),
+		(c.Centromere(1),))
 	internal = c.chromosome_path_part('internal', model, 'M0 0 L200 0',
 		thickness=thickness, labels=False)
-	reference = xml.etree.ElementTree.fromstring(internal.fragment).find('.//ellipse')
-	for attr in ('rx', 'ry', 'fill', 'stroke', 'stroke-width'):
-		assert element.attrib[attr] == reference.attrib[attr]
-	rx, ry = float(element.attrib['rx']), float(element.attrib['ry'])
-	margin = float(element.attrib['stroke-width'])/2
+	reference = xml.etree.ElementTree.fromstring(internal.fragment).find('.//rect')
+	assert element.tag == reference.tag == 'rect'
+	assert float(element.attrib['height']) > thickness
+	assert float(element.attrib['width']) == pytest.approx(thickness*32/30)
+	rx, ry = float(element.attrib['width'])/2, float(element.attrib['height'])/2
+	margin = thickness/30
 	assert marker.bounds == pytest.approx((-rx-margin, -ry-margin, rx+margin, ry+margin))
 	assert marker.anchors == {'center': (0, 0), 'left': (-rx, 0), 'right': (rx, 0),
 		'top': (0, -ry), 'bottom': (0, ry)}
@@ -50,7 +52,7 @@ def test_curved_source_order_anchors_and_bounds() -> None:
 	part = c.chromosome_path_part('curve', model, drawing, thickness=24)
 	xml.etree.ElementTree.fromstring('<svg>' + part.fragment + '</svg>')
 	root = xml.etree.ElementTree.fromstring(part.fragment)
-	regions = root.findall('./g')
+	regions = root.findall('.//g[@data-source-label]')
 	assert [node.attrib['data-source-label'] for node in regions] == ['C', 'A&B', 'B']
 	assert [node.find('path').attrib['stroke'] for node in regions] == [s.color for s in model.segments]
 	assert [node.text for node in root.iter('text')] == ['C', 'A&B', 'B']
@@ -62,8 +64,8 @@ def test_curved_source_order_anchors_and_bounds() -> None:
 	assert part.anchors['start'] == (10, 20) and part.anchors['end'] == (210, 40)
 	boundary = path.point(path.ilength(path.length()/2))
 	assert part.anchors['boundary_1'] == pytest.approx((boundary.real, boundary.imag))
-	assert sum(node.tag == 'circle' for node in root) == 2
-	assert not root.findall('.//ellipse')
+	assert not root.findall('.//circle') and not root.findall('.//ellipse')
+	assert len(root.findall('.//*[@data-layer="telomere"]')) == 2
 	assert svg_tools.parts.include_text_bounds(part.fragment, part.bounds) == part.bounds
 	xmin, xmax, ymin, ymax = path.bbox()
 	assert part.bounds[0] < xmin-12 and part.bounds[2] > xmax+12
@@ -86,29 +88,30 @@ def test_closed_ring_and_flat_internal_ends() -> None:
 	for outline in root.findall('./path'):
 		assert svgpathtools.parse_path(outline.attrib['d']).isclosed()
 		assert outline.attrib['stroke-linecap'] == 'butt'
-	assert [node.attrib['data-source-label'] for node in root.findall('./g')] == ['B', 'P']
-	assert part.bounds == pytest.approx((-74.98, -74.98, 74.98, 74.98))
+	assert [node.attrib['data-source-label'] for node in root.findall('.//g[@data-source-label]')] == ['B', 'P']
+	assert part.bounds[0] < -74 and part.bounds[2] > 74
 	cut = c.chromosome_path_part('cut', model, 'M0 0 L120 0', cut_ends=True)
 	cut_root = xml.etree.ElementTree.fromstring(cut.fragment)
 	assert not cut_root.findall('.//circle')
-	assert all(node.attrib['stroke-linecap'] == 'butt' for node in cut_root.iter('path'))
+	assert not cut_root.findall('.//*[@data-layer="telomere"]')
 	assert cut.anchors['start'] == (0, 0) and cut.anchors['end'] == (120, 0)
 
 
 #============================================
 def test_curved_centromere_and_rejected_topology() -> None:
-	"""The known source locus gets one short neck and hollow purple marker only."""
+	"""Centromere collars follow their source locus without narrowing a curve."""
 	c = svg_tools.chromosomes
 	segments = (c.Segment('A', '#D9C9EF'), c.Segment('B', '#C1E7EE'))
-	model = c.Chromosome(segments, 1)
+	model = c.Chromosome(segments, (c.Centromere(1), c.Centromere(0, active=False)))
 	part = c.chromosome_path_part('neck', model, 'M0 0 Q75 70 150 0', labels=False)
 	root = xml.etree.ElementTree.fromstring(part.fragment)
-	marker = root.find('.//ellipse')
-	assert marker.attrib['fill'] == 'none' and marker.attrib['stroke'] == '#72508C'
+	marker = root.find(".//*[@id='neck-centromere-0']")
+	assert marker.get('data-layer') == 'centromere'
+	inactive = root.find(".//*[@id='neck-centromere-1']")
+	assert inactive.find('.//rect[@stroke-dasharray]') is not None
 	assert part.anchors['centromere'] == pytest.approx((75, 35))
-	assert (float(marker.attrib['cx']), float(marker.attrib['cy'])) == part.anchors['centromere']
-	assert len(root.findall('.//clipPath/path')) == 1
-	assert [node.attrib['data-source-label'] for node in root.findall('./g/g')] == ['A', 'B']
+	assert marker.get('transform').startswith('translate(75.0 35.0)')
+	assert [node.attrib['data-source-label'] for node in root.findall('.//g[@data-source-label]')] == ['A', 'B']
 	for drawing, kwargs in (('', {}), ('M0 0 L10 0 M20 0 L30 0', {}),
 		('M0 0 L0 0', {}), ('M0 0 L100 0 Z', {'closed': True}),
 		('M0 0 L100 0', {'closed': True}), ('M0 0 L100 0', {'thickness': 0})):

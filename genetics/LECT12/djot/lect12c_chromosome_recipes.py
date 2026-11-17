@@ -25,16 +25,9 @@ def rod(name: str, x: float, y: float, width: float, length: float,
 		color = '#888888'
 	if centromere is None:
 		model = svg_tools.chromosomes.Chromosome((
-			svg_tools.chromosomes.Segment('', color, length),), None)
+			svg_tools.chromosomes.Segment('', color, length),))
 	else:
-		probe = svg_tools.chromosomes.render_chromosome_layout(name,
-			svg_tools.chromosomes.Chromosome((
-				svg_tools.chromosomes.Segment('', color, 1),
-				svg_tools.chromosomes.Segment('', color, 1)), 1),
-			length=length, thickness=width, orientation='vertical', bands=False, labels=False)
-		# Renderer caps and collar consume space outside segment weights.
-		span = sum(segment.end[1] - segment.start[1] for segment in probe.segments)
-		upper = length * (.5 + (centromere * length - probe.centromere[1]) / span)
+		upper = length * centromere
 		segments = (svg_tools.chromosomes.Segment('', color, upper),
 			svg_tools.chromosomes.Segment('', color, length - upper))
 		boundary = 1
@@ -42,7 +35,8 @@ def rod(name: str, x: float, y: float, width: float, length: float,
 			segments = (svg_tools.chromosomes.Segment('', tip, 70),
 				svg_tools.chromosomes.Segment('', color, upper - 70), segments[-1])
 			boundary = 2
-		model = svg_tools.chromosomes.Chromosome(segments, boundary)
+		model = svg_tools.chromosomes.Chromosome(segments,
+			centromeres=(svg_tools.chromosomes.Centromere(boundary),))
 	part = svg_tools.chromosomes.chromosome_part(f'{name}-body', model, length=length,
 		thickness=width, orientation='vertical', bands=False, labels=False)
 	group = ET.Element(f'{{{NS}}}g', {'data-lect12c-chromosome': 'true',
@@ -64,6 +58,27 @@ def replace_rect(parent: ET.Element, element: ET.Element, name: str,
 	index = list(parent).index(element)
 	parent.remove(element)
 	parent.insert(index, replacement)
+
+
+#============================================
+def replace_barr_bodies(root: ET.Element, name: str) -> None:
+	"""Render the source's inactive X circles from retained chromosome content."""
+	serial = 0
+	for parent in list(root.iter()):
+		for child in list(parent):
+			if (child.tag != f'{{{NS}}}circle' or child.attrib.get('r') != '12'
+					or child.attrib.get('fill') not in ('#B74300', '#076DAD')):
+				continue
+			serial += 1
+			model = svg_tools.chromosomes.Chromosome((
+				svg_tools.chromosomes.Segment('', child.attrib['fill']),))
+			part = svg_tools.chromosomes.condensed_chromosome_part(
+				f'{name}-barr-{serial}', model, radius=12)
+			replacement = ET.fromstring(part.fragment)
+			replacement.set('transform', f'translate({child.attrib["cx"]} {child.attrib["cy"]})')
+			index = list(parent).index(child)
+			parent.remove(child)
+			parent.insert(index, replacement)
 
 
 #============================================
@@ -156,6 +171,8 @@ def refresh(path: pathlib.Path) -> None:
 					break
 			else:
 				group.append(replacement)
+	if path.name == 'x_inactivation_lineages.drawn.svg':
+		replace_barr_bodies(root, name)
 	ET.indent(tree, space='  ')
 	tree.write(path, encoding='ascii', xml_declaration=True)
 

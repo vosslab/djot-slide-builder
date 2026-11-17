@@ -33,7 +33,7 @@ def main() -> None:
 				continue
 			index=int(child.get('data-shared-part'))
 			item=source['parts'][index]
-			model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',item['color'],item['center']-item['top']),svg_tools.chromosomes.Segment('',item['color'],item['bottom']-item['center'])),1)
+			model=svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('',item['color'],item['center']-item['top']),svg_tools.chromosomes.Segment('',item['color'],item['bottom']-item['center'])),centromeres=(svg_tools.chromosomes.Centromere(1),))
 			path=f"M{item['x']} {item['top']} V{item['bottom']}"
 			part=svg_tools.chromosomes.chromosome_path_part(f'chromosome-{index}',model,path,thickness=20,labels=False)
 			parent.insert(list(parent).index(child),xml.etree.ElementTree.fromstring(part.fragment))

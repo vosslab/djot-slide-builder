@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Compose the frozen mitosis background and measured shared-renderer chromosomes."""
 
+import argparse
 import base64
 import hashlib
 import json
@@ -45,7 +46,8 @@ def chromosome_overlay(ledger: dict) -> str:
 				first_length = first_arm.length()
 				model = svg_tools.chromosomes.Chromosome((
 					svg_tools.chromosomes.Segment('', color, first_length),
-					svg_tools.chromosomes.Segment('', color, path.length() - first_length)), 1)
+					 svg_tools.chromosomes.Segment('', color, path.length() - first_length)),
+					centromeres=(svg_tools.chromosomes.Centromere(1),))
 			name = f"{chromosome['id']}-chromatid-{index + 1}"
 			part = svg_tools.chromosomes.chromosome_path_part(name, model, path.d(),
 				thickness=chromosome['thickness'], labels=False)
@@ -54,7 +56,7 @@ def chromosome_overlay(ledger: dict) -> str:
 				if abs(position - complex(*chromosome['centromere'])) >= .001:
 					raise ValueError('Shared renderer moved a source centromere: ' + name)
 			fragment = xml.etree.ElementTree.fromstring(part.fragment)
-			marker = fragment.find(f".//*[@id='{name}-centromere']")
+			marker = fragment.find(f".//*[@id='{name}-centromere-0']")
 			if marker is not None:
 				fragment.remove(marker)
 				if index == 0:
@@ -70,7 +72,7 @@ def chromosome_overlay(ledger: dict) -> str:
 
 
 #============================================
-def main() -> None:
+def main(output_root: pathlib.Path | None = None) -> None:
 	"""Generate the normal SVG from frozen data without image-processing dependencies."""
 	manifest = json.loads((SOURCES / 'manifest.json').read_text())
 	for name, expected in manifest.items():
@@ -84,8 +86,9 @@ def main() -> None:
 	overlay = chromosome_overlay(ledger)
 	body = embedded_png(SOURCES / 'background.png') + overlay
 	body += embedded_png(SOURCES / 'protected-leaders.png')
-	OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-	svg_tools.drawing.write_svg(OUTPUT, 1037, 1311,
+	output = OUTPUT if output_root is None else output_root / 'lect06b-intro_cells' / OUTPUT.name
+	output.parent.mkdir(parents=True, exist_ok=True)
+	svg_tools.drawing.write_svg(output, 1037, 1311,
 		'Stages of mitosis',
 		'Chromosomes condense in prophase and align at metaphase. '
 		'Sister chromatids separate in anaphase, and two daughter nuclei form in telophase. '
@@ -93,4 +96,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-	main()
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path)
+	main(parser.parse_args().output_root)
