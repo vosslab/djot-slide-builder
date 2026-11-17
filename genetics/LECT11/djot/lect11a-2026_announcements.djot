@@ -49,7 +49,7 @@ NWS Chicago, retrieved Nov 17, 2026: https://www.weather.gov/lot/weatherstory
 
 @prompt
 
-Which animal would make the worst roommate, and why?
+[Which animal would make the worst roommate, and why?]{color=#D40000}
 
 @examples
 
@@ -68,7 +68,7 @@ State your name, major, and post-grad plans.
 - Thanksgiving break starts Tuesday: no class on November 24.
 - [*Topics*]{color=#24578F}
   - Chromosome Abnormalities, Part 2
-- [*Quiz*]{color=#990000}
+- [*Quiz*]{color=#D40000}
   - Group Quiz 4
 - *Homework*
   - No homework due
@@ -107,7 +107,7 @@ Try the Tool: https://vosslab.github.io/red-dead-cell-counter/
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Dec 01]{color=#990000}
+- [Quiz 4: Dec 01]{color=#D40000}
 - [Quiz 5: Dec 08]{color=#000000}
 - [Final exam: Dec 15]{color=#000000}
 
@@ -190,8 +190,8 @@ hidden: true
 | --- | --- |
 | [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
 | [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 09]{color=red} | [Nov 17]{color=red} |
-| [Week 10]{color=red} | [Nov 17]{color=red} |
+| [Week 09]{color=#D40000} | [Nov 17]{color=#D40000} |
+| [Week 10]{color=#D40000} | [Nov 17]{color=#D40000} |
 | [Week 11]{color=#000000} | [Dec 08]{color=#000000} |
 | [Week 12]{color=#000000} | [Dec 08]{color=#000000} |
 | [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
@@ -255,10 +255,10 @@ hidden: true
 
 Source: IMDb Parents Guide (user-contributed ratings).
 
-=== include: repo:evergreen/spring_registration.djot
+=== include: lect11_spring_registration.djot
 hidden: false
 
-=== include: repo:genetics/evergreen/course_evaluations.djot
+=== include: lect11_course_evaluations.djot
 hidden: true
 
 === include: repo:evergreen/natural_science_club.djot

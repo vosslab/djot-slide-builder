@@ -55,7 +55,7 @@ and absence of new capacity/marker defects before changing C to PASS.
   before C9 asks students to find it. This teaches notation rather than explicitly naming the
   closest pair, so it is a minor cue, not equivalent to a full worked answer leak. Replace that
   one example with hypothetical x/y ("If x and y merge, write xy...") during the small fix batch.
-  Source: `genetics/LECT11/djot/lect11d-more_gene_trees.djot:60`.
+  Source: `genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot:60`.
 - **C17, terminology:** the arithmetic and original-gene weighting explanation are correct.
   "Equal average of the two cluster means" would be less likely than "unweighted cluster average"
   to confuse students who remember the U in UPGMA. Optional wording polish only.

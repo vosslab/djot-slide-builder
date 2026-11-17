@@ -11,6 +11,7 @@ import svgpathtools
 
 import svg_tools.parts
 import svg_tools.chromosome_surface
+import svg_tools.text
 
 
 #============================================
@@ -31,6 +32,65 @@ def _label_color(color: str) -> str:
 	if luminance > .179:
 		return "#000000"
 	return "#FFFFFF"
+
+
+#============================================
+def _gene_runs(label: str) -> list[svg_tools.text.TextRun]:
+	"""Keep gene symbols together while raising a terminal allele sign."""
+	match = re.fullmatch(r'(.+)([+-])', label)
+	if match:
+		return [svg_tools.text.TextRun(match.group(1), bold=True, italic=True),
+			svg_tools.text.TextRun(match.group(2), bold=True, script='super')]
+	return [svg_tools.text.TextRun(label, bold=True)]
+
+
+#============================================
+def _gene_label_part(label: str, size: float, color: str) -> svg_tools.parts.SvgPart:
+	"""Make one measured upright label without guessing its baseline offset."""
+	part = svg_tools.text.styled_label(0, 0, _gene_runs(label), size=size,
+		color=_label_color(color), anchor='middle')
+	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root.set('class', 'gene-label')
+	line = next(iter(root))
+	for span in list(line):
+		root.append(span)
+	root.remove(line)
+	fragment = xml.etree.ElementTree.tostring(root, encoding='ascii', xml_declaration=False).decode('ascii')
+	return dataclasses.replace(part, fragment=fragment)
+
+
+#============================================
+def _append_gene_label(parent: xml.etree.ElementTree.Element, x: float, y: float,
+	label: str, size: float, color: str) -> svg_tools.parts.SvgPart:
+	"""Center measured label ink over one chromosome point."""
+	part = _gene_label_part(label, size, color)
+	shift_x, shift_y = x-part.anchors['center'][0], y-part.anchors['center'][1]
+	root = defusedxml.ElementTree.fromstring(part.fragment)
+	for node in root.iter():
+		if node.get('x') is not None:
+			node.set('x', str(float(node.get('x'))+shift_x))
+		if node.get('y') is not None:
+			node.set('y', str(float(node.get('y'))+shift_y))
+	parent.append(root)
+	xmin, ymin, xmax, ymax = part.bounds
+	bounds = (xmin+shift_x, ymin+shift_y, xmax+shift_x, ymax+shift_y)
+	return dataclasses.replace(part, bounds=bounds)
+
+
+#============================================
+def _label_size(label: str, surface: svg_tools.chromosome_surface.Surface,
+	center: float, length: float, width: float, color: str) -> float:
+	"""Fit actual upright ink within a curved locus's tangent and normal spans."""
+	tangent = surface.path.unit_tangent(surface.path.ilength(center))
+	normal = tangent * 1j
+	part = _gene_label_part(label, 100, color)
+	xmin, ymin, xmax, ymax = part.bounds
+	corners = [complex(x, y) for x in (xmin, xmax) for y in (ymin, ymax)]
+	along = [point.real*tangent.real+point.imag*tangent.imag for point in corners]
+	across = [point.real*normal.real+point.imag*normal.imag for point in corners]
+	along_per_unit = (max(along)-min(along))/100
+	across_per_unit = (max(across)-min(across))/100
+	return min(surface.width*.52, length*.82/along_per_unit, width*.82/across_per_unit)
 
 
 #============================================
@@ -87,6 +147,47 @@ class Chromosome:
 				or site.label is not None and not isinstance(site.label, str)
 				for site in self.centromeres)):
 			raise ValueError("Centromere sites must be distinct valid boundaries")
+
+
+#============================================
+def gene_locus_part(name: str, surface: svg_tools.chromosome_surface.Surface,
+	center: float, gene: Segment) -> svg_tools.parts.SvgPart:
+	"""Paint one explicitly located, labeled gene region on a prepared chromatid."""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	if not isinstance(surface, svg_tools.chromosome_surface.Surface):
+		raise ValueError('Gene loci need a prepared chromosome surface')
+	if not isinstance(gene, Segment) or not gene.label:
+		raise ValueError('Gene loci need a labeled Segment')
+	if not isinstance(center, (int, float)) or not math.isfinite(center):
+		raise ValueError('Gene locus center must be finite')
+	start, end = center-gene.length/2, center+gene.length/2
+	if start < 0 or end > surface.length:
+		raise ValueError('Gene locus must fit on its chromosome surface')
+	inset = max(surface.scale, surface.width*.05)
+	if surface.width <= inset*2:
+		raise ValueError('Chromosome surface is too narrow for a gene locus')
+	inner_width = surface.width-inset*2
+	stroke = max(.7, surface.scale*.8)
+	group = xml.etree.ElementTree.Element('g', {'id': name, 'data-layer': 'gene-locus',
+		'data-gene': gene.label})
+	xml.etree.ElementTree.SubElement(group, 'path', {'d': surface.ribbon(start, end,
+		-surface.width/2+inset, surface.width/2-inset), 'fill': gene.color,
+		'stroke': '#344651', 'stroke-width': str(stroke),
+		'stroke-linejoin': 'round', 'class': 'gene-locus'})
+	point = surface.point(center, 0)
+	size = _label_size(gene.label, surface, center, gene.length, inner_width, gene.color)
+	label_part = _append_gene_label(group, point.real, point.imag, gene.label, size, gene.color)
+	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
+	path = surface.path.cropped(surface.path.ilength(start), surface.path.ilength(end))
+	xmin, xmax, ymin, ymax = path.bbox()
+	margin = inner_width/2+stroke/2
+	bounds = (min(xmin-margin, label_part.bounds[0]), min(ymin-margin, label_part.bounds[1]),
+		max(xmax+margin, label_part.bounds[2]), max(ymax+margin, label_part.bounds[3]))
+	start_point, end_point = surface.point(start, 0), surface.point(end, 0)
+	anchors = {'start': (start_point.real, start_point.imag), 'center': (point.real, point.imag),
+		'end': (end_point.real, end_point.imag)}
+	return svg_tools.parts.SvgPart(fragment, bounds, anchors)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -195,7 +296,7 @@ def reciprocal_translocation(left: Chromosome, left_cut: int,
 def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 	length: float | None = None, thickness: float = 62,
 	orientation: str = 'horizontal', texture: bool = True, sisters: bool = False,
-	junctions: tuple[int, ...] = (), allele_labels: bool = False, labels: bool = True,
+	junctions: tuple[int, ...] = (), labels: bool = True,
 	marker_size: tuple[float, float] | None = None) -> ChromosomeLayout:
 	"""Lay out straight chromatids with the same path geometry used for bends."""
 	if (not _positive(thickness) or length is not None and not _positive(length)
@@ -220,14 +321,13 @@ def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 		else:
 			width = thickness*2.2
 		part = sister_chromatid_parts(name, paths, thickness=body, labels=labels,
-			marker_size=marker_size, texture=texture, junctions=junctions,
-			allele_labels=allele_labels)
+			marker_size=marker_size, texture=texture, junctions=junctions)
 		first, second = (part.anchors.get('sister0.centromere'),
 			part.anchors.get('sister1.centromere'))
 		center = None if first is None else ((first[0]+second[0])/2, (first[1]+second[1])/2)
 	else:
 		part = chromosome_path_part(name, chromosome, path(thickness/2), thickness=thickness,
-			labels=labels, texture=texture, junctions=junctions, allele_labels=allele_labels,
+			labels=labels, texture=texture, junctions=junctions,
 			marker_size=marker_size)
 		center = part.anchors.get('centromere')
 	prefix = 'sister0.' if sisters else ''
@@ -293,7 +393,7 @@ def centromere_part(name: str, *, thickness: float = 62, active: bool = True,
 def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], ...], *,
 	thickness: float = 28, labels: bool = False,
 	marker_size: tuple[float, float] | None = None, texture: bool = True,
-	junctions: tuple[int, ...] = (), allele_labels: bool = False) -> svg_tools.parts.SvgPart:
+	junctions: tuple[int, ...] = ()) -> svg_tools.parts.SvgPart:
 	"""Assemble independent sister chromatids and join their corresponding centromeres."""
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
 		raise ValueError('Use an XML-safe unique namespace')
@@ -305,7 +405,7 @@ def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], 
 		raise ValueError('Sisters need corresponding centromere sites')
 	parts = {f'sister{index}': chromosome_path_part(f'{name}-sister-{index}', chromosome,
 		path_d, thickness=thickness, labels=labels, marker_size=marker_size, texture=texture,
-		junctions=junctions, allele_labels=allele_labels)
+		junctions=junctions)
 		for index, (chromosome, path_d) in enumerate(chromatids)}
 	for key, part in list(parts.items()):
 		root = defusedxml.ElementTree.fromstring(part.fragment)
@@ -363,12 +463,12 @@ def condensed_chromosome_part(name: str, chromosome: Chromosome, *, radius: floa
 def chromosome_part(name: str, chromosome: Chromosome, *,
 	length: float | None = None, thickness: float = 62,
 	orientation: str = 'horizontal', texture: bool = True, sisters: bool = False,
-	junctions: tuple[int, ...] = (), allele_labels: bool = False, labels: bool = True,
+	junctions: tuple[int, ...] = (), labels: bool = True,
 	marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
 	"""Render a local part with start, end, center, boundary_N and centromere anchors."""
 	layout = render_chromosome_layout(name, chromosome, length=length, thickness=thickness,
 		orientation=orientation, texture=texture, sisters=sisters, junctions=junctions,
-		allele_labels=allele_labels, labels=labels, marker_size=marker_size)
+		labels=labels, marker_size=marker_size)
 	bounds = layout.bounds
 	anchors = {f'boundary_{index}': point for index, point in enumerate(layout.boundaries)}
 	anchors['start'], anchors['end'] = layout.boundaries[0], layout.boundaries[-1]
@@ -385,7 +485,7 @@ def chromosome_part(name: str, chromosome: Chromosome, *,
 def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 	thickness: float = 28, closed: bool = False, cut_ends: bool = False,
 	labels: bool = True, texture: bool = True, junctions: tuple[int, ...] = (),
-	allele_labels: bool = False, marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
+	marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
 	"""Paint ordered regions along one authored continuous chromatid centerline.
 
 	Lengths give relative arc spans. Closed acentric rings have neither terminal caps
@@ -401,9 +501,6 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 		for index in junctions) or len(set(junctions)) != len(junctions)
 		or any(index == site.after for index in junctions for site in chromosome.centromeres)):
 		raise ValueError('Junctions must be distinct internal non-centromere boundaries')
-	if allele_labels and any(segment.label and not re.fullmatch(r'[a-z][+-]', segment.label)
-		for segment in chromosome.segments):
-		raise ValueError('Allele labels need one lowercase letter and +/- or an empty label')
 	if marker_size is not None and (len(marker_size) != 2 or not all(_positive(value) for value in marker_size)):
 		raise ValueError('Marker size must contain two finite positive lengths')
 	if closed and (cut_ends or chromosome.centromeres):
@@ -446,6 +543,7 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 	if not closed:
 		anchors['start'], anchors['end'] = point(0), point(1)
 	group = xml.etree.ElementTree.Element('g', {'id': name})
+	label_bounds = []
 	path_text = path.d() + (' Z' if closed else '')
 	stroke = thickness * 2/30
 	surface = svg_tools.chromosome_surface.Surface(path, thickness)
@@ -527,19 +625,13 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 				right -= clearance
 			if right <= left:
 				left, right = distances[index:index+2]
-			middle = path.ilength((left+right)/2)
+			center = (left+right)/2
+			middle = path.ilength(center)
 			x, y = point(middle)
-			size = min(thickness*.5, (right-left)*.82/max(1, len(segment.label))/.65)
-			text = xml.etree.ElementTree.SubElement(group, 'text', {'x': str(x), 'y': str(y+size*.34),
-				'font-family': 'monospace', 'font-size': str(size),
-				'font-weight': 'bold', 'text-anchor': 'middle', 'fill': _label_color(segment.color),
-				'stroke': 'none'})
-			if allele_labels and segment.label:
-				xml.etree.ElementTree.SubElement(text, 'tspan', {'font-style': 'italic'}).text = segment.label[0]
-				xml.etree.ElementTree.SubElement(text, 'tspan', {'dy': str(-size*.22),
-					'font-size': str(size*.40)}).text = '+' if segment.label[1] == '+' else '\u2212'
-			else:
-				text.text = segment.label
+			size = _label_size(segment.label, surface, center, right-left, thickness,
+				segment.color)
+			label_bounds.append(_append_gene_label(group, x, y, segment.label, size,
+				segment.color).bounds)
 	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
 	xmin, xmax, ymin, ymax = path.bbox()
 	margin = thickness/2 + stroke
@@ -548,5 +640,8 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 	anchors['center'] = ((xmin+xmax)/2, (ymin+ymax)/2)
 	bounds = svg_tools.parts.include_text_bounds(fragment,
 		(xmin-margin, ymin-margin, xmax+margin, ymax+margin))
+	for label_bounds_item in label_bounds:
+		bounds = (min(bounds[0], label_bounds_item[0]), min(bounds[1], label_bounds_item[1]),
+			max(bounds[2], label_bounds_item[2]), max(bounds[3], label_bounds_item[3]))
 	part = svg_tools.parts.SvgPart(fragment, bounds, anchors)
 	return part

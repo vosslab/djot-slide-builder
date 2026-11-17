@@ -82,29 +82,6 @@ def replace_sister_markers(name: str,
 
 
 #============================================
-def _locus_patch(parent: ET.Element, *, name: str, number: int, gene: str,
-	path: svgpathtools.Path, thickness: float, source_center: complex) -> None:
-	"""Paint a small semantic gene region swept inside one known chromatid."""
-	surface = svg_tools.chromosome_surface.Surface(path, thickness)
-	center = svg_tools.chromosome_surface.nearest_distance(surface.path, source_center)
-	half_length = min(12, surface.length/12)
-	half_width = thickness/2 - 1.4
-	ET.SubElement(parent, f'{{{NS}}}path', {
-		'id': f'{name}-gene-{number}', 'class': 'gene-locus', 'data-gene': gene,
-		'd': surface.ribbon(max(0, center-half_length), min(surface.length, center+half_length),
-			-half_width, half_width), 'fill': '#F3D788', 'stroke': '#8B631B',
-		'stroke-width': '.8', 'stroke-linejoin': 'round',
-	})
-	point = surface.point(center, 0)
-	text = ET.SubElement(parent, f'{{{NS}}}text', {
-		'class': 'gene-label', 'x': f'{point.real:.3f}', 'y': f'{point.imag+5:.3f}',
-		'font-size': '15', 'text-anchor': 'middle', 'font-weight': 'bold',
-		'font-style': 'italic', 'fill': '#172B3A',
-	})
-	text.text = gene
-
-
-#============================================
 def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
 	"""Replace cards with patches on their authored, fixed chromosome paths."""
 	stage_a = [0]*4 + [1]*4 + [2]*4 + [4]*4
@@ -126,14 +103,19 @@ def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
 		part_numbers = stage_a if parent.get('id') == 'stage-a-pairing' or name == 'pericentric-pairing' else stage_b[name]
 		if len(cards) != len(part_numbers):
 			raise ValueError(f'{name} locus mapping has {len(cards)} labels, expected {len(part_numbers)}')
+		surfaces = {number: svg_tools.chromosome_surface.Surface(
+			svgpathtools.parse_path(source['parts'][number]['path']),
+			source['parts'][number]['thickness']) for number in set(part_numbers)}
 		for number, ((card, label), part_number) in enumerate(zip(cards, part_numbers)):
 			parent.remove(card)
 			parent.remove(label)
-			data = source['parts'][part_number]
-			_locus_patch(parent, name=f'{name}-part-{part_number}', number=number,
-				gene=label.text,
-				path=svgpathtools.parse_path(data['path']), thickness=data['thickness'],
-				source_center=complex(float(card.get('x'))+14, float(card.get('y'))+17.5))
+			surface = surfaces[part_number]
+			point = complex(float(card.get('x'))+14, float(card.get('y'))+17.5)
+			center = svg_tools.chromosome_surface.nearest_distance(surface.path, point)
+			gene = chromosomes.Segment(label.text, '#F3D788', min(24, surface.length/6))
+			part = chromosomes.gene_locus_part(
+				f'{name}-part-{part_number}-gene-{number}', surface, center, gene)
+			parent.append(DET.fromstring(part.fragment))
 
 
 #============================================

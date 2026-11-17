@@ -3,13 +3,15 @@
 import argparse
 import json
 import pathlib
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes
 
 
-BASE = pathlib.Path(__file__).resolve().parent
+BASE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT09/djot'
 DATA = BASE / 'assets/mitotic_yeast_templates'
 OUTPUT = BASE / 'assets'
 DESTINATIONS = {
@@ -31,21 +33,54 @@ def namespaced(element: ET.Element) -> ET.Element:
 	return element
 
 
+def labeled_segments(model: dict) -> tuple:
+	"""Split ancestry regions around explicitly modeled gene loci."""
+	regions = model['regions']
+	total = sum(region['length'] for region in regions)
+	loci = model.get('loci', ())
+	boundaries = {0, total}
+	position = 0
+	for region in regions:
+		position += region['length']
+		boundaries.add(position)
+	for locus in loci:
+		center = locus['center'] * total
+		half = locus['length'] / 2
+		if not 0 < center-half < center+half < total:
+			raise ValueError(f"Locus does not fit its chromosome: {model['id']}")
+		boundaries.update((center-half, center+half))
+	intervals = []
+	for start, end in zip(sorted(boundaries), sorted(boundaries)[1:]):
+		middle = (start+end)/2
+		locus = next((item for item in loci if abs(middle-item['center']*total) < item['length']/2), None)
+		if locus:
+			intervals.append(svg_tools.chromosomes.Segment(locus['label'], locus['color'], end-start))
+			continue
+		position = 0
+		for region in regions:
+			if middle < position+region['length']:
+				intervals.append(svg_tools.chromosomes.Segment('', region['color'], end-start))
+				break
+			position += region['length']
+	return tuple(intervals)
+
+
 def body_part(model: dict) -> ET.Element:
 	"""Render one explicit centerline model with the shared body tool."""
-	segments = tuple(svg_tools.chromosomes.Segment('', region['color'], region['length'])
-		for region in model['regions'])
+	segments = labeled_segments(model)
 	chromosome = svg_tools.chromosomes.Chromosome(segments)
 	thickness = float(model['thickness'])
 	if thickness.is_integer():
 		thickness = int(thickness)
 	part = svg_tools.chromosomes.chromosome_path_part(
-		model['id'], chromosome, model['path'], thickness=thickness, labels=False)
+		model['id'], chromosome, model['path'], thickness=thickness,
+		labels=bool(model.get('loci')))
 	element = namespaced(DET.fromstring(part.fragment))
-	for region, source in zip((node for node in element if node.get('data-source-label') is not None),
-		model['regions']):
-		path = next(node for node in region if node.tag == TAG + 'path')
-		path.set('d', source['path'])
+	if not model.get('loci'):
+		for region, source in zip((node for node in element if node.get('data-source-label') is not None),
+			model['regions']):
+			path = next(node for node in region if node.tag == TAG + 'path')
+			path.set('d', source['path'])
 	return element
 
 
@@ -73,10 +108,11 @@ def build(name: str, model: dict) -> bytes:
 			body_id = slot.get('data-body-slot')
 			marker_id = slot.get('data-marker-slot')
 			if body_id:
-				replace(parent, slot, body_part(bodies[body_id]))
+				model = bodies[body_id]
+				replace(parent, slot, body_part(model))
 			elif marker_id:
 				replace(parent, slot, marker_part(marker_id, markers[marker_id]['thickness']))
-	data = ET.tostring(root, encoding='utf-8', xml_declaration=True)
+	data = ET.tostring(root, encoding='ascii', xml_declaration=True)
 	return data
 
 

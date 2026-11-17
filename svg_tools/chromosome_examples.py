@@ -24,14 +24,13 @@ FONT = "Atkinson Hyperlegible Next"
 #============================================
 def chromosome_layout(name: str, genes: list[tuple[str, str]], *,
 	centromeres: tuple[svg_tools.chromosomes.Centromere, ...] = (),
-	junctions: tuple[int, ...] = (), thickness: float = 62,
-	allele_labels: bool = False) -> svg_tools.chromosomes.ChromosomeLayout:
+	junctions: tuple[int, ...] = (), thickness: float = 62) -> svg_tools.chromosomes.ChromosomeLayout:
 	"""Build equal-pitch example regions with the shared layout API."""
 	model = svg_tools.chromosomes.Chromosome(tuple(
 		svg_tools.chromosomes.Segment(label, color, 64)
 		for label, color in genes), centromeres)
 	return svg_tools.chromosomes.render_chromosome_layout(name, model,
-		thickness=thickness, junctions=junctions, allele_labels=allele_labels)
+		thickness=thickness, junctions=junctions)
 
 
 #============================================
@@ -124,7 +123,7 @@ def make_specimen(path: pathlib.Path) -> None:
 		color="#344651", anchor="start", font=FONT)
 	layout = chromosome_layout("alleles",
 		[("", BLUE), ("a+", PURPLE), ("b-", BLUE), ("c+", PURPLE)],
-		centromeres=(svg_tools.chromosomes.Centromere(1),), allele_labels=True)
+		centromeres=(svg_tools.chromosomes.Centromere(1),))
 	body += f'<g transform="translate(325 475)">{layout.svg}</g>'
 	body += svg_tools.drawing.text(40, 588,
 		"Neutral ends; pale collar; white join. Bands and spacing are schematic.",

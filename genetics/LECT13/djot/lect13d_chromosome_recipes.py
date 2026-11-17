@@ -4,12 +4,15 @@ import argparse
 import json
 import pathlib
 import re
+import subprocess
 import xml.etree.ElementTree as ET
 import defusedxml.ElementTree as DET
 
 import svg_tools.chromosomes as chrom
+import svg_tools.chromosome_surface
 
-HERE = pathlib.Path(__file__).resolve().parent
+HERE = pathlib.Path(subprocess.check_output(
+	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT13/djot'
 SOURCES = json.loads((HERE / 'lect13d_chromosome_shells.json').read_text())
 NS = '{http://www.w3.org/2000/svg}'
 ET.register_namespace('', 'http://www.w3.org/2000/svg')
@@ -97,6 +100,7 @@ def ruby() -> None:
 	OUT.mkdir(parents=True, exist_ok=True)
 	for name in NAMES:
 		root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+		parents = {child: parent for parent in root.iter() for child in parent}
 		for group in list(root.iter()):
 			gid = group.get('id', '')
 			if not (gid.endswith('-rod') or (name.startswith('reciprocal_') and gid.startswith('chromosome-') and group.tag == NS + 'g')):
@@ -119,12 +123,26 @@ def ruby() -> None:
 				colors[-1] = color(distal.get('fill'))
 			model = chrom.Chromosome(tuple(chrom.Segment('', c, b-a)
 					for a, b, c in zip(boundaries, boundaries[1:], colors)), (chrom.Centromere(1),))
+			path = f'M {start} {y+height/2} L {end} {y+height/2}'
 			part = chrom.chromosome_path_part(f'{name}-{group.get("id")}', model,
-				f'M {start} {y+height/2} L {end} {y+height/2}', thickness=height, labels=False)
+				path, thickness=height, labels=False)
 			row_id = group.get('id')
+			row_name = row_id.removesuffix('-rod')
 			group.clear()
 			group.set('id', row_id)
 			group.append(DET.fromstring(part.fragment))
+			row = parents[group]
+			allele = row.find(f"{NS}text[@id='{row_name}-allele']")
+			if allele is not None:
+				label = ''.join(allele.itertext())
+				row.remove(allele)
+				surface = svg_tools.chromosome_surface.Surface(
+					chrom.svgpathtools.parse_path(path), height)
+				center = svg_tools.chromosome_surface.nearest_distance(
+					surface.path, complex(float(allele.get('x')), y+height/2))
+				gene = chrom.Segment(label, '#F3D788', 46)
+				group.append(DET.fromstring(chrom.gene_locus_part(
+					f'{name}-{row_name}-gene', surface, center, gene).fragment))
 		ET.ElementTree(root).write(OUT / f'{name}.drawn.svg', encoding='ascii', xml_declaration=True)
 
 	for source_name, count in (('ruby-male', 4), ('gamete-products', 24)):

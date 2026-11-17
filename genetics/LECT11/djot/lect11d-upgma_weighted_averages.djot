@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 11D
 
-## More Gene Trees
+## UPGMA: Five Sequences and Weighted Averages
 
 ## Chapter 11
 
@@ -37,6 +37,10 @@ color-theme: genetics
 - A smaller distance means a closer pair in this example.
 - Read one half of the matrix: each pair appears once.
 - We will build the tree using UPGMA, a distance-based clustering method.
+
+=== layout: subsection
+
+# Plan the Construction
 
 === layout: one-panel
 

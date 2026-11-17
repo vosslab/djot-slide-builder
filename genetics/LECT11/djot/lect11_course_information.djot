@@ -61,13 +61,13 @@ Policies and student resources
 
 @body
 
-- [*Assignments*]{color=red}\: reinforce learning; explore new topics
+- [*Assignments*]{color=#D40000}\: reinforce learning; explore new topics
   - Weekly; 5-15 points; unlimited retakes
   - Collaboration and help encouraged
-- [*Quizzes*]{color=red}\: recent material
+- [*Quizzes*]{color=#D40000}\: recent material
   - Individual\: 20 points; 20-30 minutes
   - Optional group quiz during class
-- [*Exams*]{color=red}\: cumulative midterm and final
+- [*Exams*]{color=#D40000}\: cumulative midterm and final
   - Individual; 100 points total
   - Each part\: 50 points; 75 minutes
 

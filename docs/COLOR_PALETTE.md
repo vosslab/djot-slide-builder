@@ -32,6 +32,15 @@ Names below preserve that source's labels.
 | Magenta | `#C80085` |
 | Pink | `#CC0066` |
 
+## Genetics 11A red consolidation
+
+For Genetics 11A, use the standard Red `#D40000` for every authored red, including
+assessment reminders, the icebreaker, policy emphasis, contact labels, and Biochemistry
+Lab promotions. This overrides the earlier dark-red reminder and icebreaker shades
+and the Lab accent in this lecture. Keep the icebreaker's original typeface and size.
+Local evergreen snapshots apply this lecture-specific consolidation without recoloring
+other decks. Embedded photographs and artwork retain their own colors.
+
 ## Chromosome alteration names
 
 Use full alteration names and these fixed text colors in chromosome-alteration questions.

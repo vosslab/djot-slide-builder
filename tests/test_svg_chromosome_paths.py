@@ -44,7 +44,7 @@ def test_curved_source_order_anchors_and_bounds() -> None:
 	regions = root.findall('.//g[@data-source-label]')
 	assert [node.attrib['data-source-label'] for node in regions] == ['C', 'A&B', 'B']
 	assert [node.find('path').attrib['stroke'] for node in regions] == [s.color for s in model.segments]
-	assert [node.text for node in root.iter('text')] == ['C', 'A&B', 'B']
+	assert [''.join(node.itertext()) for node in root.iter('text')] == ['C', 'A&B', 'B']
 	path = svgpathtools.parse_path(drawing)
 	for region, segment in zip(regions, model.segments):
 		paint = svgpathtools.parse_path(region.find('path').attrib['d'])

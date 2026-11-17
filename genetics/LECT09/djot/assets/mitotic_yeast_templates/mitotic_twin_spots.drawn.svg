@@ -1,83 +1,116 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <svg:svg xmlns:svg="http://www.w3.org/2000/svg" width="826" height="456" viewBox="0 0 826 456" role="img" aria-labelledby="figure-title figure-desc">
-<svg:title id="figure-title">Mitotic twin-spot outcomes</svg:title>
-<svg:desc id="figure-desc">Two replicated homologs carry aB and Ab in trans. The inner nonsisters exchange distal material at one breakpoint proximal to both loci. The two rows are alternative daughter-cell pairs: two heterozygotes, or homozygous aa and homozygous bb twin spots. Colors encode chromosome ancestry; positions and shapes are schematic.</svg:desc>
-<svg:rect width="826" height="456" fill="white" />
-<svg:text x="568" y="27" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="22" text-anchor="middle">Daughter cells</svg:text>
-<svg:g id="input-four-chromatids">
-<svg:g id="input-blue-unchanged" data-allele="aB" data-proximal="blue" data-distal="blue">
-<svg:g data-body-slot="shared-input-blue-unchanged" /></svg:g><svg:g id="input-green-recombinant" data-allele="aB" data-proximal="green" data-distal="blue">
-<svg:g data-body-slot="shared-input-green-recombinant" /></svg:g><svg:g id="input-blue-recombinant" data-allele="Ab" data-proximal="blue" data-distal="green">
-<svg:path d="M 124,207 Q 150,224 178,239" fill="none" stroke="white" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" />
-<svg:g data-body-slot="shared-input-blue-recombinant" /></svg:g><svg:g id="input-green-unchanged" data-allele="Ab" data-proximal="green" data-distal="green">
-<svg:g data-body-slot="shared-input-green-unchanged" /></svg:g>
-<svg:g transform="translate(68 188)"><svg:g data-marker-slot="shared-marker-1" /></svg:g><svg:g transform="translate(68 263)"><svg:g data-marker-slot="shared-marker-2" /></svg:g><svg:text x="226" y="159" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle" font-style="italic">aB</svg:text>
-<svg:text x="226" y="197" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle" font-style="italic">aB</svg:text>
-<svg:text x="226" y="240" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle" font-style="italic">Ab</svg:text>
-<svg:text x="226" y="279" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle" font-style="italic">Ab</svg:text>
-</svg:g>
-<svg:text x="24" y="81" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="start">Site of breakage</svg:text>
-<svg:text x="24" y="104" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="start">and reunion</svg:text>
-<svg:path d="M 139,112 L 151,213" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<svg:circle cx="151" cy="224" r="12" fill="none" stroke="#213547" stroke-width="1.4" stroke-dasharray="3 3" />
-<svg:rect x="16" y="337" width="251" height="96" rx="9" fill="#edf4f8" stroke="#9fb5c1" stroke-width="1.3" />
-<svg:text x="141.5" y="362" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">Genetic markers are distal</svg:text>
-<svg:text x="141.5" y="387" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">to the site of breakage</svg:text>
-<svg:text x="141.5" y="412" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">and reunion</svg:text>
-<svg:path d="M 213,337 L 234,296" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-<svg:path d="M 270,193 Q 291,168 319,137" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
-<svg:path d="M 306,142 L 319,137 L 317,151" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
-<svg:path d="M 270,261 Q 291,285 319,312" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
-<svg:path d="M 306,308 L 319,312 L 316,298" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
-<svg:text x="571" y="236" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" text-anchor="middle">or</svg:text>
-<svg:g id="upper-unchanged-cell" transform="translate(339 45)">
-<svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#f4efe3" stroke="#657987" stroke-width="1.8" />
-<svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#e8e0d0" />
-<svg:g id="upper-unchanged-chromosome-1" data-proximal="blue" data-distal="blue" data-allele="aB">
-<svg:g data-body-slot="shared-upper-unchanged-chromosome-1" /><svg:g transform="translate(65 54)"><svg:g data-marker-slot="shared-marker-3" /></svg:g><svg:text x="202" y="60" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">aB</svg:text>
-</svg:g>
-<svg:g id="upper-unchanged-chromosome-2" data-proximal="green" data-distal="green" data-allele="Ab">
-<svg:g data-body-slot="shared-upper-unchanged-chromosome-2" /><svg:g transform="translate(65 93)"><svg:g data-marker-slot="shared-marker-4" /></svg:g><svg:text x="202" y="99" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">Ab</svg:text>
-</svg:g>
-<svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Heterozygous <svg:tspan font-style="italic">aB/Ab</svg:tspan></svg:text>
-</svg:g>
-<svg:g id="upper-exchanged-cell" transform="translate(586 45)">
-<svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#f4efe3" stroke="#657987" stroke-width="1.8" />
-<svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#e8e0d0" />
-<svg:g id="upper-exchanged-chromosome-1" data-proximal="blue" data-distal="green" data-allele="Ab">
-<svg:g data-body-slot="shared-upper-exchanged-chromosome-1" /><svg:path d="M 107,49 L 107,59" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-<svg:g transform="translate(65 54)"><svg:g data-marker-slot="shared-marker-5" /></svg:g><svg:text x="202" y="60" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">Ab</svg:text>
-</svg:g>
-<svg:g id="upper-exchanged-chromosome-2" data-proximal="green" data-distal="blue" data-allele="aB">
-<svg:g data-body-slot="shared-upper-exchanged-chromosome-2" /><svg:path d="M 107,88 L 107,98" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-<svg:g transform="translate(65 93)"><svg:g data-marker-slot="shared-marker-6" /></svg:g><svg:text x="202" y="99" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">aB</svg:text>
-</svg:g>
-<svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Heterozygous <svg:tspan font-style="italic">aB/Ab</svg:tspan></svg:text>
-</svg:g>
-<svg:g id="lower-aa-cell" transform="translate(339 256)">
-<svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#fbe3e4" stroke="#657987" stroke-width="1.8" />
-<svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#f0ced2" />
-<svg:g id="lower-aa-chromosome-1" data-proximal="blue" data-distal="blue" data-allele="aB">
-<svg:g data-body-slot="shared-lower-aa-chromosome-1" /><svg:g transform="translate(65 54)"><svg:g data-marker-slot="shared-marker-7" /></svg:g><svg:text x="202" y="60" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">aB</svg:text>
-</svg:g>
-<svg:g id="lower-aa-chromosome-2" data-proximal="green" data-distal="blue" data-allele="aB">
-<svg:g data-body-slot="shared-lower-aa-chromosome-2" /><svg:path d="M 107,88 L 107,98" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-<svg:g transform="translate(65 93)"><svg:g data-marker-slot="shared-marker-8" /></svg:g><svg:text x="202" y="99" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">aB</svg:text>
-</svg:g>
-<svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Homozygous <svg:tspan font-style="italic">aa</svg:tspan></svg:text>
-</svg:g>
-<svg:g id="lower-bb-cell" transform="translate(586 256)">
-<svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#fff3ca" stroke="#657987" stroke-width="1.8" />
-<svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#eddfaf" />
-<svg:g id="lower-bb-chromosome-1" data-proximal="blue" data-distal="green" data-allele="Ab">
-<svg:g data-body-slot="shared-lower-bb-chromosome-1" /><svg:path d="M 107,49 L 107,59" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-<svg:g transform="translate(65 54)"><svg:g data-marker-slot="shared-marker-9" /></svg:g><svg:text x="202" y="60" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">Ab</svg:text>
-</svg:g>
-<svg:g id="lower-bb-chromosome-2" data-proximal="green" data-distal="green" data-allele="Ab">
-<svg:g data-body-slot="shared-lower-bb-chromosome-2" /><svg:g transform="translate(65 93)"><svg:g data-marker-slot="shared-marker-10" /></svg:g><svg:text x="202" y="99" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="middle" font-style="italic">Ab</svg:text>
-</svg:g>
-<svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Homozygous <svg:tspan font-style="italic">bb</svg:tspan></svg:text>
-</svg:g>
-<svg:text x="574" y="448" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle">"Twin spot"</svg:text>
-<svg:path d="M 563,427 L 520,408 M 585,427 L 628,408" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  <svg:title id="figure-title">Mitotic twin-spot outcomes</svg:title>
+  <svg:desc id="figure-desc">Two replicated homologs carry aB and Ab in trans. The inner nonsisters exchange distal material at one breakpoint proximal to both loci. The two rows are alternative daughter-cell pairs: two heterozygotes, or homozygous aa and homozygous bb twin spots. Colors encode chromosome ancestry; positions and shapes are schematic.</svg:desc>
+  <svg:rect width="826" height="456" fill="white"/>
+  <svg:text x="568" y="27" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="22" text-anchor="middle">Daughter cells</svg:text>
+  <svg:g id="input-four-chromatids">
+    <svg:g id="input-blue-unchanged" data-allele="aB" data-proximal="blue" data-distal="blue">
+      <svg:g data-body-slot="shared-input-blue-unchanged"/>
+    </svg:g>
+    <svg:g id="input-green-recombinant" data-allele="aB" data-proximal="green" data-distal="blue">
+      <svg:g data-body-slot="shared-input-green-recombinant"/>
+    </svg:g>
+    <svg:g id="input-blue-recombinant" data-allele="Ab" data-proximal="blue" data-distal="green">
+      <svg:path d="M 124,207 Q 150,224 178,239" fill="none" stroke="white" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg:g data-body-slot="shared-input-blue-recombinant"/>
+    </svg:g>
+    <svg:g id="input-green-unchanged" data-allele="Ab" data-proximal="green" data-distal="green">
+      <svg:g data-body-slot="shared-input-green-unchanged"/>
+    </svg:g>
+    <svg:g transform="translate(68 188)">
+      <svg:g data-marker-slot="shared-marker-1"/>
+    </svg:g>
+    <svg:g transform="translate(68 263)">
+      <svg:g data-marker-slot="shared-marker-2"/>
+    </svg:g>
+  </svg:g>
+  <svg:text x="24" y="81" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="start">Site of breakage</svg:text>
+  <svg:text x="24" y="104" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="18" text-anchor="start">and reunion</svg:text>
+  <svg:path d="M 139,112 L 151,213" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:circle cx="151" cy="224" r="12" fill="none" stroke="#213547" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <svg:rect x="16" y="337" width="251" height="96" rx="9" fill="#edf4f8" stroke="#9fb5c1" stroke-width="1.3"/>
+  <svg:text x="141.5" y="362" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">Genetic markers are distal</svg:text>
+  <svg:text x="141.5" y="387" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">to the site of breakage</svg:text>
+  <svg:text x="141.5" y="412" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17" text-anchor="middle">and reunion</svg:text>
+  <svg:path d="M 213,337 L 234,296" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:path d="M 270,193 Q 291,168 319,137" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:path d="M 306,142 L 319,137 L 317,151" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:path d="M 270,261 Q 291,285 319,312" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:path d="M 306,308 L 319,312 L 316,298" fill="none" stroke="#213547" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg:text x="571" y="236" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="23" text-anchor="middle">or</svg:text>
+  <svg:g id="upper-unchanged-cell" transform="translate(339 45)">
+    <svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#f4efe3" stroke="#657987" stroke-width="1.8"/>
+    <svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#e8e0d0"/>
+    <svg:g id="upper-unchanged-chromosome-1" data-proximal="blue" data-distal="blue" data-allele="aB">
+      <svg:g data-body-slot="shared-upper-unchanged-chromosome-1"/>
+      <svg:g transform="translate(65 54)">
+        <svg:g data-marker-slot="shared-marker-3"/>
+      </svg:g>
+    </svg:g>
+    <svg:g id="upper-unchanged-chromosome-2" data-proximal="green" data-distal="green" data-allele="Ab">
+      <svg:g data-body-slot="shared-upper-unchanged-chromosome-2"/>
+      <svg:g transform="translate(65 93)">
+        <svg:g data-marker-slot="shared-marker-4"/>
+      </svg:g>
+    </svg:g>
+    <svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Heterozygous <svg:tspan font-style="italic">aB/Ab</svg:tspan></svg:text>
+  </svg:g>
+  <svg:g id="upper-exchanged-cell" transform="translate(586 45)">
+    <svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#f4efe3" stroke="#657987" stroke-width="1.8"/>
+    <svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#e8e0d0"/>
+    <svg:g id="upper-exchanged-chromosome-1" data-proximal="blue" data-distal="green" data-allele="Ab">
+      <svg:g data-body-slot="shared-upper-exchanged-chromosome-1"/>
+      <svg:path d="M 107,49 L 107,59" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg:g transform="translate(65 54)">
+        <svg:g data-marker-slot="shared-marker-5"/>
+      </svg:g>
+    </svg:g>
+    <svg:g id="upper-exchanged-chromosome-2" data-proximal="green" data-distal="blue" data-allele="aB">
+      <svg:g data-body-slot="shared-upper-exchanged-chromosome-2"/>
+      <svg:path d="M 107,88 L 107,98" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg:g transform="translate(65 93)">
+        <svg:g data-marker-slot="shared-marker-6"/>
+      </svg:g>
+    </svg:g>
+    <svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Heterozygous <svg:tspan font-style="italic">aB/Ab</svg:tspan></svg:text>
+  </svg:g>
+  <svg:g id="lower-aa-cell" transform="translate(339 256)">
+    <svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#fbe3e4" stroke="#657987" stroke-width="1.8"/>
+    <svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#f0ced2"/>
+    <svg:g id="lower-aa-chromosome-1" data-proximal="blue" data-distal="blue" data-allele="aB">
+      <svg:g data-body-slot="shared-lower-aa-chromosome-1"/>
+      <svg:g transform="translate(65 54)">
+        <svg:g data-marker-slot="shared-marker-7"/>
+      </svg:g>
+    </svg:g>
+    <svg:g id="lower-aa-chromosome-2" data-proximal="green" data-distal="blue" data-allele="aB">
+      <svg:g data-body-slot="shared-lower-aa-chromosome-2"/>
+      <svg:path d="M 107,88 L 107,98" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg:g transform="translate(65 93)">
+        <svg:g data-marker-slot="shared-marker-8"/>
+      </svg:g>
+    </svg:g>
+    <svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Homozygous <svg:tspan font-style="italic">aa</svg:tspan></svg:text>
+  </svg:g>
+  <svg:g id="lower-bb-cell" transform="translate(586 256)">
+    <svg:path d="M 7,77 C 8,24 41,2 101,3 C 162,-1 220,15 225,71 C 232,125 209,155 151,157 C 80,164 7,148 7,77 Z" fill="#fff3ca" stroke="#657987" stroke-width="1.8"/>
+    <svg:path d="M 13,105 C 35,145 88,151 150,148 C 188,146 212,132 222,108 C 214,145 193,154 151,155 C 84,161 29,148 13,105 Z" fill="#eddfaf"/>
+    <svg:g id="lower-bb-chromosome-1" data-proximal="blue" data-distal="green" data-allele="Ab">
+      <svg:g data-body-slot="shared-lower-bb-chromosome-1"/>
+      <svg:path d="M 107,49 L 107,59" fill="none" stroke="#f5faf9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg:g transform="translate(65 54)">
+        <svg:g data-marker-slot="shared-marker-9"/>
+      </svg:g>
+    </svg:g>
+    <svg:g id="lower-bb-chromosome-2" data-proximal="green" data-distal="green" data-allele="Ab">
+      <svg:g data-body-slot="shared-lower-bb-chromosome-2"/>
+      <svg:g transform="translate(65 93)">
+        <svg:g data-marker-slot="shared-marker-10"/>
+      </svg:g>
+    </svg:g>
+    <svg:text x="116" y="134" text-anchor="middle" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="17">Homozygous <svg:tspan font-style="italic">bb</svg:tspan></svg:text>
+  </svg:g>
+  <svg:text x="574" y="448" fill="#213547" font-family="Atkinson Hyperlegible Next, sans-serif" font-size="20" text-anchor="middle">"Twin spot"</svg:text>
+  <svg:path d="M 563,427 L 520,408 M 585,427 L 628,408" fill="none" stroke="#213547" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg:svg>

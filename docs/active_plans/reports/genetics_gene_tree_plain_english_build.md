@@ -23,7 +23,7 @@ pdftotext output/pdf/<deck>.pdf _temp/gene_tree_plain_english/<deck>.txt
 
 ```sh
 PYTHONPATH="$PWD:$PWD/tests" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_table_styles.py tests/test_layout_tables.py tests/test_gene_tree_examples.py -q
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-gene_trees.djot genetics/LECT11/djot/lect11d-more_gene_trees.djot genetics/LECT11/djot/lect11e-gene_tree_activity.djot
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot genetics/LECT11/djot/lect11e-upgma_group_activity.djot
 ```
 
 The [C slide 32 correction](genetics_gene_tree_plain_english_summary_fix.md) supersedes the initial C hashes below; B and D remain accepted.
@@ -31,10 +31,10 @@ The [C slide 32 correction](genetics_gene_tree_plain_english_summary_fix.md) sup
 ## SHA-256 (initial build)
 
 ```text
-878f3f73b989eaf10b351b042e647e398bd790548d37e780137d1a6759801503  output/odp/lect11b-gene_trees.odp
+878f3f73b989eaf10b351b042e647e398bd790548d37e780137d1a6759801503  output/odp/lect11b-interpreting_gene_trees.odp
 762c81e7b68162fd085248c2e424c943d89adec3845e712d1fdb0974121d87b5  output/odp/lect11c-more_gene_trees.odp
 d26ba54ac6b89aeaec6ee2b093b5c1122c54e0b34d8f2a603f182998564df9f0  output/odp/lect11d-gene_tree_activity.odp
-06563e7afa2852d509ea34dc0616c1369df1d128e830115e3b46293961273072  output/pdf/lect11b-gene_trees.pdf
+06563e7afa2852d509ea34dc0616c1369df1d128e830115e3b46293961273072  output/pdf/lect11b-interpreting_gene_trees.pdf
 6bad45b5745b1a1766f3217cc3a2debd85129cee589ea072619d799b62e5ee27  output/pdf/lect11c-more_gene_trees.pdf
 10d74e6a3596e6df8b008d67996b6c473e82b884ad53e4534098f5b694f6239c  output/pdf/lect11d-gene_tree_activity.pdf
 cee7b2ed796736dce61690fe67c368f234bc6ee760d248911990e71a8897bf54  docs/slide-specs/illustration_examples/gene_tree_lecture/lect11b.webp

@@ -36,6 +36,10 @@ Compare letters in the same column. Each fragment has 30 amino acids.
 
 A dot matches the northern-white reference. A letter marks a difference from that reference.
 
+=== layout: subsection
+
+# Build the Distance Matrix
+
 === layout: one-panel
 
 # Step 4: Set Up the Distance Matrix
@@ -130,7 +134,7 @@ Eight positions differ. The completed matrix is symmetric.
 | Blk.R | 12 | 8 | 0 |
 
 
-=== layout: section
+=== layout: subsection
 
 # Three Rhinos: Build the Tree
 

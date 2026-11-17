@@ -7,6 +7,7 @@ This folder is sync'ed via Synology Drive, so sometimes weird things happen to f
 On this macOS host, LibreOffice crashes when launched inside the sandbox. Run every command
 that can invoke LibreOffice outside the sandbox (`sandbox_permissions="require_escalated"`),
 using the provided repository scripts. This includes PDF builds/exports and conversion tests.
+Always invoke with ``soffice --headless --norestore --convert-to`
 
 ## Temporary files
 

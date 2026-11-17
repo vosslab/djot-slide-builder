@@ -7,8 +7,8 @@ Before rebuilding, the prior PDF and page renders were saved under `_temp/gene_t
 Commands:
 
 ```sh
-PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11d-more_gene_trees.djot --format all
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11d-more_gene_trees.djot
+PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot --format all
+PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot
 pdftoppm -scale-to 1200 -png output/pdf/lect11c-more_gene_trees.pdf _temp/gene_tree_plain_english/lect11c-more_gene_trees/page
 pdfinfo output/pdf/lect11c-more_gene_trees.pdf
 pdftotext -layout output/pdf/lect11c-more_gene_trees.pdf _temp/gene_tree_plain_english/lect11c-more_gene_trees.txt

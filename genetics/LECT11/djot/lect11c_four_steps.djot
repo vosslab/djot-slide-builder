@@ -1,3 +1,7 @@
+=== layout: subsection
+
+# First Join
+
 === layout: two-panels
 
 # Find the Smallest Distance
@@ -66,6 +70,10 @@ Average the original distances between genes in the two clusters.
 
 - ac to b: (18 + 18) / 2 = 18
 - ac to d: (18 + 18) / 2 = 18
+
+=== layout: subsection
+
+# Update and Repeat
 
 === layout: two-panels
 
@@ -167,6 +175,10 @@ ac + bd: distance 18; height 9. Branches: ac 6; bd 4.
 @right
 
 ![Gene tree](assets/lect11b_restored/four_3.drawn.svg)
+
+=== layout: subsection
+
+# Check the Finished Tree
 
 === layout: two-panels
 

@@ -47,11 +47,30 @@ def test_internal_gene_labels_retain_regions_without_decorative_texture() -> Non
 	root = defusedxml.ElementTree.fromstring(part.fragment)
 	regions = root.findall('.//g[@data-source-label]')
 	assert [node.find('./path').get('stroke') for node in regions] == ['#F3D788', '#D9C9EF', '#00775F']
-	labels = {node.text: node for node in root.findall('./text')}
+	labels = {''.join(node.itertext()): node for node in root.findall('./text')}
 	assert set(labels) == {'A', 'b'}
 	assert labels['A'].get('fill') != labels['b'].get('fill')
-	assert float(labels['A'].get('x')) == pytest.approx(part.anchors['segment_0'][0])
-	assert float(labels['b'].get('x')) == pytest.approx(part.anchors['segment_2'][0])
+	assert float(labels['A'].get('x')) == pytest.approx(part.anchors['segment_0'][0], abs=.01)
+	assert float(labels['b'].get('x')) == pytest.approx(part.anchors['segment_2'][0], abs=.01)
+
+
+def test_explicit_gene_locus_follows_the_final_centerline() -> None:
+	"""Source adapters retain one named locus on the shared, smoothed surface."""
+	import svgpathtools
+	from svg_tools.chromosome_surface import Surface
+	surface = Surface(svgpathtools.parse_path('M40 10 V65 H110'), 26)
+	gene = chromosomes.Segment('rb+', '#F3D788', 24)
+	part = chromosomes.gene_locus_part('rb-locus', surface, 58, gene)
+	root = defusedxml.ElementTree.fromstring(part.fragment)
+	text = root.find('./text')
+	assert root.get('data-gene') == 'rb+'
+	assert root.find('./path').get('class') == 'gene-locus'
+	assert text.get('class') == 'gene-label'
+	assert [item.text for item in text.iter('tspan') if item.text] == ['rb', '+']
+	assert part.anchors['center'] == pytest.approx((surface.point(58, 0).real,
+		surface.point(58, 0).imag))
+	with pytest.raises(ValueError):
+		chromosomes.gene_locus_part('outside', surface, 4, gene)
 
 
 def test_independent_sisters_and_compaction_keep_models() -> None:

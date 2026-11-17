@@ -12,7 +12,7 @@ reviewed artifacts. The generator rebuilds the fixed illustrative data and SVG f
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B genetics/LECT11/djot/gene_tree_examples.py
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot --format all
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT12/djot --format all
-PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11d-more_gene_trees.djot --format all
+PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py build genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot --format all
 PYTHONPATH="$PWD:$PWD/tests" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B -m pytest --noconftest tests/test_table_styles.py tests/test_layout_tables.py tests/test_gene_tree_examples.py -q
 PYTHONPATH="$PWD" MPLCONFIGDIR="$PWD/_temp/mplconfig" /opt/homebrew/bin/python3.12 -B deck_tools.py lint --require-native --native-executable /Users/vosslab/.cargo/bin/jotdown genetics/LECT11/djot genetics/LECT12/djot
 ```
@@ -51,10 +51,10 @@ a9586ffe09a355c513cf7bab009bd58409393463c766acf3617c13f8590804c8  genetics/LECT1
 ab93baaa4b76d8c055bf6b79e2bd086c297b47c8c291e431a13533b04b58e059  genetics/LECT11/djot/gene_tree_four_steps.djot
 751f42746ec8dccfffc22bf91be0e82791e712255be39a9f42d71b42faa89513  genetics/LECT11/djot/gene_tree_six_steps.djot
 d5b62fc5a12ae66011ec76c393a53529484e430f52f6ffe71442212a6ae579bb  genetics/LECT11/djot/lect11a-2026_announcements.djot
-7386d89db228b3a4e944a8b2a0ed1d212f21e2f148f99d496f875810c8dbcb57  genetics/LECT11/djot/lect11b-gene_trees.djot
-240115879f9def321ce1b49108c1d23dc5dbb7f8c31d284e52471a5a1683ed03  genetics/LECT11/djot/lect11d-more_gene_trees.djot
-836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11e-gene_tree_activity.djot
-a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11f-evol_time.djot
+7386d89db228b3a4e944a8b2a0ed1d212f21e2f148f99d496f875810c8dbcb57  genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot
+240115879f9def321ce1b49108c1d23dc5dbb7f8c31d284e52471a5a1683ed03  genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot
+836391e9346422eb00b4c7a280a1fb74d6653df5cf266897fdb4edb22fde7c82  genetics/LECT11/djot/lect11e-upgma_group_activity.djot
+a6ec868cae760bd780346a7b66450953ab650f53062bb9373b097f7ae465137e  genetics/LECT11/djot/lect11f-molecular_clocks.djot
 dd51af0fca4f020e251be6b1aa5ffacd4b9dba9b76b83f5934a0f9ea43abc47b  genetics/LECT12/djot/lect12a-2026_announcements.djot
 01a70b241cbd9253dec7b584b8a8faf23d72807e9edf49690f1f72efbb836181  genetics/LECT12/djot/lect12b-polyploidy.djot
 9b2f41768ab40056a3cad68dbf1137cc5e9cdaa5bfbd151164ba02fcb015b7c5  genetics/LECT12/djot/lect12c-sex_dosage.djot
@@ -68,7 +68,7 @@ b32fac41546727cdcde07233a28d3a17defee6b108356003f6770d737ffe4b74  genetics/LECT1
 f6c3bc0e203a8d4b07d6f83ee0d4ef537d885896f99113a428b16eb96f4a8a8c  genetics/LECT12/djot/lect12d_deletion_six_genes.djot
 ccb6cda22f951faea5597c55a6a7075517a0f0e7df99c163817afa1017a64625  genetics/LECT12/djot/lect12e-chromo_alter_2-duplications.djot
 fe67859d2fdea13848bd89465748cd1c2238a5d2969bbeec1a2e674dfb765984  output/odp/lect11a-2026_announcements.odp
-90eafc39a944b188da83e6d1d7f256134f073c8e0cbb202ee20490cb7bad5b9d  output/odp/lect11b-gene_trees.odp
+90eafc39a944b188da83e6d1d7f256134f073c8e0cbb202ee20490cb7bad5b9d  output/odp/lect11b-interpreting_gene_trees.odp
 e5860d68b9470b1bf3042e62ab340468d4a3ccc044128189dbbd3df1c29aac23  output/odp/lect11c-more_gene_trees.odp
 eb455a3572fb191e552d48d2470986ce6cac18223bf4737104e6aed0f4365b01  output/odp/lect11d-gene_tree_activity.odp
 77e1a3e6b7ecc127cbc4515e0fc7748748867cb5e96847d981dfbc54ca0601ec  output/odp/lect11e-evol_time.odp
@@ -78,7 +78,7 @@ a15898b3c71210fae2391902f1650b45c1963a3a29c5888f774ddf925273d305  output/odp/lec
 472a98cae4b460cff87dae14eda69c3e0b8fc1be8db5cf1e078d0bf93f0e5051  output/odp/lect12d-chromo_alter_1-deletions.odp
 04e6c5bd662830ff96b44e18e3830a5941b8c4f46efba2b24d97494a28cec8ec  output/odp/lect12e-chromo_alter_2-duplications.odp
 b72ec23ece5c6ec0d77ec560d468776002f248c0dd035e05db9acc54c2154909  output/pdf/lect11a-2026_announcements.pdf
-e13e33fbc4dbf3a44552a017426b4478be8b0b33a66f22ce050ea956cafa2717  output/pdf/lect11b-gene_trees.pdf
+e13e33fbc4dbf3a44552a017426b4478be8b0b33a66f22ce050ea956cafa2717  output/pdf/lect11b-interpreting_gene_trees.pdf
 d5e0dd36e0f2abf106e7d612572faa4a754881f75e2553a79b9784fcaeb068d6  output/pdf/lect11c-more_gene_trees.pdf
 606e8b24b39075f8f1bd586f7dd6340fbcc4f4509b3a6c3f9ba493e9ce52d46d  output/pdf/lect11d-gene_tree_activity.pdf
 2e88e420f13f9382442121365ee96a9aefcfc68bde49aeea56d78cee218aa8d3  output/pdf/lect11e-evol_time.pdf

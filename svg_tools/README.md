@@ -101,13 +101,13 @@ schematic length. `Chromosome(segments, centromeres=())` keeps region order and 
 `Centromere(after, active=True, label=None)` sites, including terminal sites. Biological
 bands are explicit colored segments; the optional BPQ surface texture is decorative.
 
-For discrete genes, use short labeled segments at their actual loci, with unlabeled
-segments for the intervening chromosome material. Labels stay upright inside their
-colored regions and use a contrasting fill without a text outline. Preserve unequal
-spacing when it carries information. Dense diagrams can retain external labels with
-a visible connection to their loci; chromosome numbers and arm names identify whole
-structures rather than gene regions. C53 is the review reference for colored gene
-blocks; C01/C47 show schematic gene-order labels.
+For discrete genes, use short labeled segments at their loci, with unlabeled segments
+for intervening material. The shared renderer measures and centers upright text inside
+each region, selects contrasting ink, and formats allele suffixes such as `rb+` or `a-`.
+Source adapters can use `gene_locus_part(name, surface, center, gene)`, where `center` is
+arc distance on the known `Surface` and `gene` is a `Segment` containing its label, fill
+and displayed span. Both routes use the same label renderer. The full convention is
+[CHROMOSOME_GENE_LABELS.md](../docs/CHROMOSOME_GENE_LABELS.md).
 
 For a locus supplied in source drawing coordinates,
 `chromosome_surface.nearest_distance(path, point)` measures its arc distance on the

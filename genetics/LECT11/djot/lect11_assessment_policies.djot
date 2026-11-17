@@ -1,6 +1,6 @@
 === layout: one-panel
 
-# [*Don't Panic*]{color=red}
+# [*Don't Panic*]{color=#D40000}
 
 @body
 
@@ -24,7 +24,7 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
 @body
 
 - Since COVID, I am trying to be more considerate of student illnesses.
-- [If you are sick, let me know. I will provide an extension.]{color=#C9211E}
+- [If you are sick, let me know. I will provide an extension.]{color=#D40000}
 - If a major event interferes (car accident, etc.), again contact me.
 - Communication is always helpful.
 

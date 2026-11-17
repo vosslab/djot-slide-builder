@@ -1,6 +1,42 @@
 ## 2026-11-17
 
+### Additions and New Features
+
+- Establish [CHROMOSOME_GENE_LABELS.md](CHROMOSOME_GENE_LABELS.md) as the chromosome
+  gene-label convention and pipeline. Add one shared source-locus adapter using existing
+  Segment data and final chromosome geometry.
+
 ### Behavior or Interface Changes
+
+- Route chromosome gene text through measured upright labels with local fit, contrast,
+  centered ink and multi-letter allele superscripts. Embed C25/C26/C60/C63 loci while
+  preserving chromosome identities, genotypes, source positions and C25's schematic distal
+  locus order. Reuse the same helper in the inversion recipes and regenerate the prototype.
+
+- Give Genetics 11B-F distinct topic-based cover titles and matching canonical
+  filenames, including Five Sequences and Weighted Averages for the former More Gene Trees.
+
+- Replace muted brown with saturated palette blue in the original Genetics 11B
+  primate tree, preserving its vector geometry, labels, scale, and displayed proportions.
+
+- Use palette Blue #003FFF and Purple #A719DB for Genetics 11B Tree Terms and
+  matching branch-point/MRCA references.
+
+- Consolidate all Genetics 11A native reds to #D40000, including reminders and the
+  icebreaker, preserving its original typeface and 38.75 pt size.
+
+- Include the second gene-tree handout as the early-finisher extension, add its
+  complete UPGMA answers to Genetics 11E, and supply a two-page printable bundle.
+
+- Add subsection dividers at teaching transitions in Genetics 11C/D/E, preserving
+  calculation and question/answer sequences and consistent matrix sizes.
+
+- Simplify Genetics 11B wording, add an early Tree Terms slide, clarify MRCA and
+  polytomy explanations, and defer UPGMA vocabulary to construction deck 11C.
+
+- Restore the three-rhino sequence-to-UPGMA introduction before the four-sequence
+  example in Genetics 11C. Correct one source sequence typo to match its dotted
+  representation and original 4/12/8 distances.
 
 - Split Genetics 11B interpretation from new 11C tree construction and four-sequence
   UPGMA. Shift the five-gene example, group activity, and evolutionary time to D/E/F.
@@ -113,6 +149,9 @@
 
 ### Removals and Deprecations
 
+- Remove the special `allele_labels` option, superseded raw C25/C26 template labels and
+  duplicated LECT13 gene-patch/text construction. Recipes supply locus data to shared tools.
+
 - Prune 73 repository-owned test functions and 10 low-value test modules, removing 1,562 lines
   of artwork snapshots, tuning assertions and duplicate implementation checks. Retain scientific
   geometry, source preservation, native text, XML safety, fonts, atomic output and authoring checks.
@@ -124,6 +163,11 @@
   `pyflakes` and focused tests; the cache scan is clean.
 
 ### Developer Tests and Notes
+
+- Chromosome smoothness: 17 focused geometry tests pass. Verify 835 regenerated body
+  centerlines, C28's unchanged geometry apart from its new joins, C30's 15 band heights,
+  C57's 16 loci, and unchanged original lecture SVGs. Rebuild the 71-slide prototype,
+  verify all 68 current SVG inputs are embedded unchanged, and accept 12 native review pages.
 
 - Illustration naming and ownership: 24 source moves, 9,285 passing base-suite tests, and a
   successful prototype rebuild. Check 1,304 SVG hashes and all seven mixed LECT06 outputs;

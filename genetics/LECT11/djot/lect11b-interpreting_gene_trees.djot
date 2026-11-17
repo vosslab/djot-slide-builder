@@ -1,0 +1,377 @@
+color-theme: genetics
+
+=== layout: title-slide
+
+# Lecture 11B
+
+## Interpreting Gene Trees
+
+## Chapter 11
+
+## Dr. Neil Voss
+
+## November 17, 2026
+
+=== layout: bookend
+
+# Learning Objectives
+
+@body
+
+- Identify which sequences are most closely related.
+- Recognize the same relationships when branches are rotated.
+- Add branch lengths to find the distance between two tips.
+- Recognize when a tree leaves the branching order uncertain.
+
+=== layout: two-panels
+
+# *Anniversary of &#8220;On the Origin of Species&#8221;*
+
+@left
+
+- [*Published Nov. 24, 1859*]{color=red}
+- Darwin used branching lines to show how species could share ancestors.
+- We use branching diagrams to compare the histories of genes and species.
+
+@right
+
+![Slide image 2](assets/lect11b_restored/image_002.webp)
+
+=== layout: section
+
+# What Can Evolution Help Us Explain?
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- How do disease-causing organisms change?
+- Why can pests return after treatment?
+- How do inherited differences become more common in a population?
+- How are different species related?
+
+@right
+
+![Slide image 3](assets/lect11b_restored/image_003.webp)
+
+=== layout: two-panels
+
+# *Why Evolution Matters*
+
+@left
+
+- Related species inherit traits from shared ancestors.
+- Inherited differences can become more or less common over generations.
+- Different finch beaks work well for different foods.
+- Trees help us compare which traits species share.
+
+@right
+
+![Slide image 4](assets/lect11b_restored/image_004.webp)
+
+=== layout: section
+
+# Gene Trees
+
+=== layout: two-panels
+
+# What Does a Gene Tree Show?
+
+@left
+
+![Slide image 5](assets/lect11b_restored/image_005.webp)
+
+@right
+
+- A gene tree estimates relationships among gene sequences.
+- We compare sequences to estimate which share more recent common ancestors.
+- A species tree follows species; a gene tree follows a gene.
+- Their branching patterns can differ.
+
+=== layout: two-panels
+
+# Tree Terms
+
+@left
+
+- [*Tip*]{color=#003FFF underline=true}: an endpoint labeled with a sequence or species.
+- [*Branch*]{color=#003FFF underline=true}: a line connecting an ancestor to its descendants.
+- [*Node (branch point)*]{color=#003FFF underline=true}: a split representing a shared ancestor.
+- [*Root*]{color=#003FFF underline=true}: the oldest ancestor shown. A rooted tree identifies this starting point.
+
+@right
+
+- [*Ancestor*]{color=#A719DB underline=true}: an earlier organism or gene copy from which later ones descend.
+- [*Descendant*]{color=#A719DB underline=true}: an organism or gene copy that comes from an ancestor.
+- [*Clade*]{color=#A719DB underline=true}: an ancestor and all its descendants.
+- [*MRCA*]{color=#A719DB underline=true}: most recent common ancestor of the tips being compared.
+
+=== layout: two-panels
+
+# Interpreting Gene Trees
+
+@left
+
+![Original annotated branches, tips, and nodes](assets/lect11b_restored/image_006.webp)
+
+@right
+
+- Read from the tips toward the root to find shared ancestors.
+- Branching order shows which tips share more recent common ancestors.
+- Our examples label tips with sequences or species.
+- Branch length shows time only when the figure gives a time scale.
+
+=== layout: one-panel
+
+# *Can You Interpret This!?!*
+
+@body
+
+![Slide image 7](assets/lect11b_restored/image_007.webp)
+
+=== layout: one-panel
+
+# Primate Tree
+
+@body
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# Which pair of species are the most closely related?
+
+@left
+
+- A. gorilla and human
+- B. gibbon and gorilla
+- C. bonobo and gorilla
+- D. bonobo and human
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# Which pair of species are the most closely related?
+
+@left
+
+- A. Bornean orangutan and Sumatran orangutan
+- B. bonobo and chimpanzee
+- C. human and gorilla
+- D. gibbon and gorilla
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# When Did Gorillas and Bonobos Share Their Most Recent Common Ancestor?
+
+@left
+
+- A. 2 million
+- B. 5 million
+- C. 7 million
+- D. 15 million
+- E. 21 million
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# Which pair of species are the most closely related?
+
+@left
+
+- A. gorilla and human (7)
+- B. gibbon and gorilla (21)
+- C. bonobo and gorilla (7)
+- [D. bonobo and human (5)]{color=red}
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# Which pair of species are the most closely related?
+
+@left
+
+- A. Bornean orangutan and Sumatran orangutan (3)
+- [B. bonobo and chimpanzee (2)]{color=red}
+- C. human and gorilla (7)
+- D. gibbon and gorilla (21)
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: two-panels
+
+# When Did Gorillas and Bonobos Share Their Most Recent Common Ancestor?
+
+@left
+
+- A. 2 million
+- B. 5 million
+- [C. 7 million]{color=red}
+- D. 15 million
+- E. 21 million
+
+@right
+
+![Original primate tree with saturated blue branches and divergence-time scale](assets/lect11b_restored/primate_tree_saturated.svg)
+
+=== layout: one-panel
+
+
+@body
+
+![Slide image 13](assets/lect11b_restored/image_013.webp)
+
+=== layout: section
+
+# Reading a Gene Tree
+
+=== layout: two-panels
+
+# Understanding Branch Points
+
+@left
+
+![Original annotated branch points and evolutionary paths](assets/lect11b_restored/image_014.webp)
+
+@right
+
+- A branch point represents a shared ancestor.
+- Follow its branches toward the tips to find its descendants.
+- That ancestor and all its descendants form a [*clade*]{color=#003FFF underline=true}.
+
+@citation
+
+https://en.wikipedia.org/wiki/Phylogenetic_tree
+
+=== layout: two-panels
+
+# Tracing Common Ancestors
+
+@left
+
+- [Trace two tips toward the root until their branches meet.]{color=#A719DB}
+- [This is their most recent common ancestor (MRCA).]{color=#A719DB}
+- [A and B share a more recent ancestor than B and C.]{color=#A719DB}
+- [Tips drawn next to each other are not always closest relatives.]{color=#A719DB}
+
+@right
+
+![Original hand-annotated most recent common ancestor diagram](assets/lect11b_restored/image_015.webp)
+
+@citation
+
+https://en.wikipedia.org/wiki/Most_recent_common_ancestor
+
+=== layout: one-panel
+
+# Different Forms, Same Gene Tree
+
+@body
+
+![Original Khan Academy comparison of three equivalent tree forms](assets/lect11b_restored/image_016.webp)
+
+- The same relationships among A, B, C, D, and E appear in all three drawings.
+- Rotating a branch point changes tip positions, but keeps the same shared ancestors.
+
+@citation
+
+https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees
+
+=== layout: one-panel
+
+# *Rotating Branches in Trees*
+
+@body
+
+![Slide image 17](assets/lect11b_restored/image_017.webp)
+
+=== layout: one-panel
+
+# Trees, Trees, and Trees, Oh My
+
+@body
+
+![Original comparison of equivalent rotations of the same four-species tree](assets/lect11b_restored/image_018.webp)
+
+- [Rotate around a branch point: the relationships stay the same.]{color=#8D281E}
+- [All four drawings show the same ancestry.]{color=#8D281E}
+
+=== layout: two-panels
+
+# Polytomy in Gene Trees
+
+@left
+
+![Original annotated polytomy diagram](assets/lect11b_restored/image_019.webp)
+
+@right
+
+- [*Polytomy*]{color=#784B04 underline=true}: a branch point with three or more descendant branches.
+- We may not have enough evidence to tell which split came first.
+- This drawing does not identify a closest pair within that group.
+
+@citation
+
+https://en.wikipedia.org/wiki/Polytomy
+
+=== layout: two-panels
+
+# Find the Distance Between Two Tips
+
+@left
+
+![Original scaled four-sequence tree](assets/lect11b_restored/scaled_tree_interpretation.svg)
+
+@right
+
+- [*Pairwise distance*]{underline=true}: the distance between two tips.
+- Follow the path between them and add every branch length.
+- These numbers label branches; they are not node ages.
+- What are the distances a-c, a-d, and a-b?
+
+=== layout: two-panels
+
+# Add the Branches Along the Path
+
+@left
+
+![Original scaled four-sequence tree](assets/lect11b_restored/scaled_tree_interpretation.svg)
+
+@right
+
+- a to c: 3.2 + 3.2 = 6.4
+- a to d: 3.2 + 3.1 + 6.3 = 12.6
+- a to b: 3.2 + 3.1 + 2.4 + 8.7 = 17.4
+
+=== layout: bookend
+
+# Key Takeaways
+
+@body
+
+- Find shared ancestors by following branches from the tips toward the root.
+- More recent shared ancestors indicate closer relationships.
+- Rotating branches keeps the same relationships.
+- A polytomy can leave the order of splits uncertain.
+- Add branch lengths along a path to find the distance between two tips.
+
+=== layout: theend
+
+# THE END

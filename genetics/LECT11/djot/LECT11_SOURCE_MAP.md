@@ -5,11 +5,11 @@
 | Master | Current content | PDF pages |
 | --- | --- | --- |
 | [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | Announcements and movie | 36 |
-| [lect11b-gene_trees.djot](lect11b-gene_trees.djot) | Interpreting gene trees: ancestry, rotations, polytomies, branch distances | 29 |
-| [lect11c-building_a_tree_upgma.djot](lect11c-building_a_tree_upgma.djot) | Tree construction methods and four-sequence UPGMA example | 36 |
-| [lect11d-more_gene_trees.djot](lect11d-more_gene_trees.djot) | Guided five-gene UPGMA and weighted cluster updates | 34 |
-| [lect11e-gene_tree_activity.djot](lect11e-gene_tree_activity.djot) | Six-gene group worksheet and answer walkthrough | 32 |
-| [lect11f-evol_time.djot](lect11f-evol_time.djot) | Evolutionary Time; preserved source limitations | 19 |
+| [lect11b-interpreting_gene_trees.djot](lect11b-interpreting_gene_trees.djot) | Interpreting gene trees: defined terms, ancestry, rotations, polytomies, branch distances | 30 |
+| [lect11c-building_gene_trees.djot](lect11c-building_gene_trees.djot) | Tree construction methods, three-rhino introduction, and four-sequence UPGMA | 59 |
+| [lect11d-upgma_weighted_averages.djot](lect11d-upgma_weighted_averages.djot) | Guided five-gene UPGMA and weighted cluster updates | 38 |
+| [lect11e-upgma_group_activity.djot](lect11e-upgma_group_activity.djot) | Six-gene class and extension worksheets with both answer walkthroughs | 64 |
+| [lect11f-molecular_clocks.djot](lect11f-molecular_clocks.djot) | Evolutionary Time; preserved source limitations | 19 |
 
 Each master has matching ODP/PDF stems under `output/odp/` and `output/pdf/`.
 A has 57 authored slides including hidden slides. B is interpretation only; C contains
@@ -17,6 +17,19 @@ all construction material moved from B and uses the colored local
 `lect11c_four_steps.djot` fragment. D/E keep their five-/six-gene fragments and fixed
 matrix sizes. The November 17 split supersedes earlier B-E letters and page counts.
 Historical conversion evidence follows; original ODP/PDF sources were not renamed.
+
+## Printable group-activity handouts
+
+Print `output/pdf/lect11e-gene_tree_handouts.pdf`: two US Letter pages, portrait.
+Page 1 is the in-class problem; page 2 is the extension for students who finish early.
+Print single-sided if distributing the extension separately, or duplex as one sheet.
+Original separate PDFs remain `lect11e-gene_tree_handout.pdf` and
+`lect11e-gene_tree_extension_handout.pdf` under `output/pdf/`.
+Both are unchanged copies of the archived student handouts, with all 15 distances
+checked independently. Editable ODG copies are in `genetics/LECT11/` with matching stems.
+11E includes the complete class walkthrough before PDF 35; the extension begins at
+PDF 35 and its worked answers are PDF 38-62. The previous claim that `_2` was merely
+an alternate worksheet is superseded: it is the extension problem.
 
 ## Historical conversion map
 

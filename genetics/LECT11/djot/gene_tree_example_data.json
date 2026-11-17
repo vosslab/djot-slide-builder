@@ -89,5 +89,42 @@
     },
     "provenance": "Unchanged existing worksheet image_002.svg, originally genetics/LECT12/djot/assets/lect12d-gene_tree_activity/, migrated to LECT11 during this task. XML text read independently agrees with all 15 specified pairs.",
     "input_is_ultrametric": false
+  },
+  "six_gene_extension": {
+    "labels": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "tip_order": [
+      "a",
+      "c",
+      "e",
+      "b",
+      "d",
+      "f"
+    ],
+    "pairs": {
+      "ab": 11,
+      "ac": 4,
+      "ad": 12,
+      "ae": 7,
+      "af": 14,
+      "bc": 9,
+      "bd": 9,
+      "be": 12,
+      "bf": 11,
+      "cd": 10,
+      "ce": 9,
+      "cf": 12,
+      "de": 15,
+      "df": 6,
+      "ef": 13
+    },
+    "provenance": "Original second handout lect11c-gene_tree_handout_2.pdf from 2019 SCH Activities; all 15 pairs independently verified from PDF cell positions. Extension problem, not an alternate version of the class problem.",
+    "input_is_ultrametric": false
   }
 }

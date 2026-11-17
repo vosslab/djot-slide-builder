@@ -39,20 +39,12 @@ def integrate_loci(root: ET.Element, source: dict) -> None:
 		# These four rods are straight, but retaining the centerline calculation keeps
 		# the locus construction identical to curved chromatids.
 		center = svg_tools.chromosome_surface.nearest_distance(surface.path, complex(center_x, center_y))
-		half_width = data['thickness']/2 - 1.1
 		parent.remove(card)
 		parent.remove(label)
-		ET.SubElement(parent, 'path', {
-			'id': f'inversion-double-crossover-gene-{number}', 'class': 'gene-locus',
-			'data-gene': label.text or '',
-			'd': surface.ribbon(center-12, center+12, -half_width, half_width),
-			'fill': '#F3D788', 'stroke': '#8B631B', 'stroke-width': '.7',
-		})
-		point = surface.point(center, 0)
-		text = ET.SubElement(parent, 'text', {'class': 'gene-label',
-			'x': f'{point.real:.3f}', 'y': f'{point.imag+5:.3f}', 'font-size': '15',
-			'text-anchor': 'middle', 'font-weight': 'bold', 'fill': '#172B3A'})
-		text.text = label.text
+		gene = svg_tools.chromosomes.Segment(label.text or '', '#F3D788', 24)
+		part = svg_tools.chromosomes.gene_locus_part(
+			f'inversion-double-crossover-gene-{number}', surface, center, gene)
+		parent.append(DET.fromstring(part.fragment))
 
 
 #============================================
@@ -66,6 +58,16 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 		root = DET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
 			integrate_loci(root, source)
+		position_effect_loci = ()
+		if relative.endswith('position-effect-chromosomes.drawn.svg'):
+			position_effect_loci = ((0, complex(192.5, 110)), (1, complex(667.5, 300)))
+			for parent in root.iter():
+				children = list(parent)
+				for card, label in zip(children, children[1:]):
+					if (card.tag.endswith('rect') and label.tag.endswith('text')
+						and card.get('fill') == '#812F46' and label.text == 'w+'):
+						parent.remove(card)
+						parent.remove(label)
 		markers = {}
 		for parent in list(root.iter()):
 			for child in list(parent):
@@ -89,6 +91,16 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				position = list(parent).index(child)
 				parent.remove(child)
 				parent.insert(position, replacement)
+				for locus_index, source_center in position_effect_loci:
+					if index != locus_index:
+						continue
+					surface = svg_tools.chromosome_surface.Surface(
+						svgpathtools.parse_path(data['path']), data['thickness'])
+					center = svg_tools.chromosome_surface.nearest_distance(surface.path, source_center)
+					gene = svg_tools.chromosomes.Segment('w+', '#812F46', 65)
+					locus = svg_tools.chromosomes.gene_locus_part(
+						f'migrated13bc-position-effect-gene-{index}', surface, center, gene)
+					replacement.append(DET.fromstring(locus.fragment))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
 			for number, (first_index, second_index) in enumerate(((0, 1), (2, 3))):
 				first, second = markers[first_index], markers[second_index]

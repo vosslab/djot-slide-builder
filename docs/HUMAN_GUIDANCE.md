@@ -3,6 +3,8 @@
 - For chromosome gene labels, C53 does it best, with C01/C47 second best. Use consistent
   locus placement and distinguish gene regions from chromosome banding and colored sections
   (November 17, 2026).
+- Revisit C25, C26, C60 and C63's gene labels and establish official gene-label guidance
+  and a shared pipeline (November 17, 2026).
 
 - Add the rendering date/time, including seconds and time zone, to slide 1 and the final THE END.
   Use small IBM Plex Sans Condensed type that blends into the background and stays clear of

@@ -12,6 +12,10 @@ import svg_tools.drawing
 HERE = pathlib.Path(__file__).resolve().parent
 ASSETS = HERE / 'assets' / 'lect11_gene_tree_examples'
 
+# Five evenly spaced entries from the documented 14-color procedure palette.
+JOIN_COLORS = ('#D40000', '#6C6C00', '#00775F', '#0067CC', '#CC0066')
+JOIN_FILLS = dict(zip(JOIN_COLORS, ('#FFB8B8', '#FFFFB8', '#B8FFF0', '#B8DCFF', '#FFB8DC'), strict=True))
+
 
 def pair_values(left: str, right: str, pairs: dict) -> list[int]:
 	"""Return all original cross-cluster pair distances."""
@@ -48,20 +52,29 @@ def number(value: fractions.Fraction | int) -> str:
 	return str(value.numerator) if isinstance(value, fractions.Fraction) and value.denominator == 1 else str(value)
 
 
-def matrix(clusters: list[str], pairs: dict, group: str, selected: tuple[str, str] | None) -> str:
+def matrix(clusters: list[str], pairs: dict, group: str, selected: tuple[str, str] | None,
+		cluster_colors: dict[str, str] | None = None) -> str:
 	"""Build an editable native lower triangular distance table."""
 	# Keep repeated matrices stable despite surrounding prompts and answer highlights.
 	line = f'{{table-style=matrix-lower table-group={group} padding="3pt 2pt" font-size=22pt}}\n'
-	line += '|  | ' + ' | '.join(clusters) + ' |\n'
+	def label(cluster: str) -> str:
+		return f'[{cluster}]{{color={cluster_colors[cluster]}}}' \
+			if cluster_colors and cluster in cluster_colors else cluster
+	line += '|  | ' + ' | '.join(label(cluster) for cluster in clusters) + ' |\n'
 	line += '| --- | ' + ' | '.join('---' for _ in clusters) + ' |\n'
 	for i, row in enumerate(clusters):
 		cells = []
 		for j, col in enumerate(clusters):
 			value = number(distance(row, col, pairs)) if j < i else ''
 			if j < i and selected and {row, col} == set(selected):
-				value = f'[{value}]{{background-color=#FFF1B8 border="0.5pt solid #222222"}}'
+				if cluster_colors:
+					color = cluster_colors[''.join(sorted(selected[0] + selected[1]))]
+					value = f'[{value}]{{color={color} background-color={JOIN_FILLS[color]} '
+					value += f'border="0.5pt solid {color}"}}'
+				else:
+					value = f'[{value}]{{background-color=#FFF1B8 border="0.5pt solid #222222"}}'
 			cells.append(value)
-		line += '| ' + row + ' | ' + ' | '.join(cells) + ' |\n'
+		line += '| ' + label(row) + ' | ' + ' | '.join(cells) + ' |\n'
 	return line
 
 
@@ -71,10 +84,13 @@ def tree(data: dict, history: list[dict], count: int, path: pathlib.Path) -> Non
 	root_height = float(history[-1]['height'])
 	scale = 300 / root_height
 	positions = {label: (330.0, 30 + i * 55.0) for i, label in enumerate(order)}
+	stage_colors = JOIN_COLORS if len(data['labels']) == 6 else ()
+	tip_colors = {child: stage_colors[index] for index, step in enumerate(history[:count])
+		for child in (step['left'], step['right']) if len(child) == 1} if stage_colors else {}
 	body = '<g id="tips">'
 	for label in order:
 		x, y = positions[label]
-		body += svg_tools.text.label(x + 12, y + 8, label, size=30, color='#17202A', anchor='start').fragment
+		body += svg_tools.text.label(x + 12, y + 8, label, size=30, color=tip_colors.get(label, '#17202A'), anchor='start').fragment
 	body += '</g>'
 	for index, step in enumerate(history[:count]):
 		left, right = step['left'], step['right']
@@ -82,10 +98,12 @@ def tree(data: dict, history: list[dict], count: int, path: pathlib.Path) -> Non
 		x2, y2 = positions[right]
 		x = 330 - float(step['height']) * scale
 		y = (y1 + y2) / 2
-		body += f'<g id="merge-{index + 1}" stroke="#254B68" stroke-width="3" fill="none">'
+		color = stage_colors[index] if stage_colors else '#254B68'
+		weight = 4 if stage_colors else 3
+		body += f'<g id="merge-{index + 1}" stroke="{color}" stroke-width="{weight}" fill="none">'
 		body += f'<path d="M {x1} {y1} H {x} V {y2} H {x2}"/></g>'
 		body += svg_tools.text.label(x + 7, y + 12, 'h=' + number(step['height']), size=23,
-			color='#17202A', anchor='start').fragment
+			color=color if stage_colors else '#17202A', anchor='start').fragment
 		positions[step['merged']] = (x, y)
 	description = f'{count} completed merges; branch length is proportional to height.'
 	svg_tools.drawing.write_svg(path, 375, 60 + (len(order) - 1) * 55, 'Gene tree', description, body)
@@ -98,19 +116,30 @@ def slide(title: str, left: str, image: str) -> str:
 
 def generate(name: str, data: dict, stem: str) -> None:
 	history = steps(data)
+	cluster_colors = {step['merged']: JOIN_COLORS[index] for index, step in enumerate(history)} \
+		if len(data['labels']) == 6 else None
 	result = ''
+	dividers = {
+		'four': {0: 'First Join', 1: 'Update and Repeat'},
+		'five': {1: 'Weight Clusters by Their Size', 2: 'Complete the Remaining Joins'},
+		'six': {1: 'Update the Matrix and Repeat', 3: 'Join the Remaining Clusters'},
+		'six_extension': {1: 'Update the Matrix and Repeat', 3: 'Join the Remaining Clusters'},
+	}[stem]
 	for index, step in enumerate(history):
+		if index in dividers:
+			result += f'=== layout: subsection\n\n# {dividers[index]}\n\n'
 		image = f'assets/lect11_gene_tree_examples/{stem}_{index}.svg'
 		tree(data, history, index, HERE / image)
 		next_image = f'assets/lect11_gene_tree_examples/{stem}_{index + 1}.svg'
 		tree(data, history, index + 1, HERE / next_image)
 		group = f'gene-tree-{stem}-{len(step["clusters"])}'
-		plain = matrix(step['clusters'], data['pairs'], group, None)
+		plain = matrix(step['clusters'], data['pairs'], group, None, cluster_colors)
 		choice = (step['left'], step['right'])
-		answer = matrix(step['clusters'], data['pairs'], group, choice)
-		result += slide('Find the Smallest Distance', plain + '\nWhich clusters join? '
+		answer = matrix(step['clusters'], data['pairs'], group, choice, cluster_colors)
+		stage = f'[Join {index + 1}]{{color={JOIN_COLORS[index]}}}: ' if cluster_colors else ''
+		result += slide(stage + 'Find the Smallest Distance', plain + '\nWhich clusters join? '
 			'What are the new height and branch lengths?\n', image)
-		result += slide('Join the Closest Clusters', answer + '\n'
+		result += slide(stage + 'Join the Closest Clusters', answer + '\n'
 			+ f'{step["left"]} + {step["right"]}: distance {number(step["distance"])}; '
 			f'height {number(step["height"])}. Branches: {step["left"]} '
 			f'{number(step["branches"][0])}; {step["right"]} {number(step["branches"][1])}.\n', next_image)
@@ -124,14 +153,14 @@ def generate(name: str, data: dict, stem: str) -> None:
 			question = f'Join {step["left"]} and {step["right"]}. '
 			question += f'What are the distances from {step["merged"]} to '
 			question += ', '.join(step['remaining']) + '? Count each gene equally.\n\n'
-			result += '=== layout: two-panels\n\n# Find the New Distances\n\n@left\n\n'
+			result += f'=== layout: two-panels\n\n# {stage}Find the New Distances\n\n@left\n\n'
 			result += plain + '\n@right\n\n' + question
 			if stem == 'five' and step['merged'] == 'ace':
 				result += '=== layout: two-panels\n\n# Count Every Gene Pair\n\n@left\n\n'
 				result += plain + '\n@right\n\n'
 				result += 'Cluster ac contains 2 genes; e contains 1. Their distances to b are 19 and 22.\n\n'
 				result += 'Is the distance from ace to b 20 or 20.5? Why?\n\n'
-			result += '=== layout: one-panel\n\n# Update the Distances\n\n@body\n\n'
+			result += f'=== layout: one-panel\n\n# {stage}Update the Distances\n\n@body\n\n'
 			result += 'Average the original distances between genes in the two clusters.\n\n'
 			result += '\n'.join(lines) + '\n\n'
 			if stem == 'five' and step['merged'] == 'ace':
@@ -140,6 +169,7 @@ def generate(name: str, data: dict, stem: str) -> None:
 	last_image = f'assets/lect11_gene_tree_examples/{stem}_{len(history)}.svg'
 	tree(data, history, len(history), HERE / last_image)
 	question = f'Find the path length from the root to a and from the root to {data["tip_order"][-1]}. How do the lengths compare?\n'
+	result += '=== layout: subsection\n\n# Check the Finished Tree\n\n'
 	result += slide('Compare the Two Paths', question, last_image)
 	result += '=== layout: big-image\n\n@image\n\n![Completed metric gene tree]('
 	result += last_image + ')\n\n@caption\n\nReview the Completed Tree\n\n'
@@ -147,7 +177,9 @@ def generate(name: str, data: dict, stem: str) -> None:
 	result += '| Node | Height | Branches to Children |\n| --- | --- | --- |\n'
 	for step in history:
 		left, right = step['left'], step['right']
-		result += f'| {step["merged"]} | {number(step["height"])} | '
+		node = f'[{step["merged"]}]{{color={cluster_colors[step["merged"]]}}}' \
+			if cluster_colors else step['merged']
+		result += f'| {node} | {number(step["height"])} | '
 		result += f'{left}: {number(step["branches"][0])}; '
 		result += f'{right}: {number(step["branches"][1])} |\n'
 	result += '\n=== layout: one-panel\n\n# Check the Tree Paths\n\n@body\n\n'
@@ -168,7 +200,7 @@ def main() -> None:
 	data = json.loads((HERE / 'gene_tree_example_data.json').read_text())
 	ASSETS.mkdir(parents=True, exist_ok=True)
 	for name, stem in [('four_gene_intro', 'four'), ('five_gene_weighted', 'five'),
-		('six_gene_worksheet', 'six')]:
+		('six_gene_worksheet', 'six'), ('six_gene_extension', 'six_extension')]:
 		generate(name, data[name], stem)
 
 

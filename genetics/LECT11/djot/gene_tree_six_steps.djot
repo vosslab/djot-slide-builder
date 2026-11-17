@@ -75,6 +75,10 @@ Average the original distances between genes in the two clusters.
 - ac to e: (9 + 9) / 2 = 9
 - ac to f: (18 + 14) / 2 = 16
 
+=== layout: subsection
+
+# Update the Matrix and Repeat
+
 === layout: two-panels
 
 # Find the Smallest Distance
@@ -217,6 +221,10 @@ Average the original distances between genes in the two clusters.
 - df to ac: (15 + 13 + 18 + 14) / 4 = 15
 - df to be: (13 + 11 + 15 + 13) / 4 = 13
 
+=== layout: subsection
+
+# Join the Remaining Clusters
+
 === layout: two-panels
 
 # Find the Smallest Distance
@@ -317,6 +325,10 @@ abce + df: distance 14; height 7. Branches: abce 2; df 3.
 @right
 
 ![Gene tree](assets/lect11_gene_tree_examples/six_5.svg)
+
+=== layout: subsection
+
+# Check the Finished Tree
 
 === layout: two-panels
 

@@ -193,9 +193,10 @@ for current `render_chromosome_layout()`, `chromosome_part()` and curved
   meaning. Multiple displayed band colors or intensities remain distinct from chromatin state.
   On a curved chromatid, band boundaries follow the local body direction. Do not infer measured
   distances from equal letter spacing. Internal crops end in flat cuts, not new telomeres.
-- Keep labels live, readable and upright. Use `allele_labels=True` for supported source alleles
-  such as `a+` and `b-`: italic gene letters and raised signs preserve identity independently
-  of hue. Inspect gene order, contrast, joins and centromeres at the smallest actual placement.
+- Follow [CHROMOSOME_GENE_LABELS.md](../CHROMOSOME_GENE_LABELS.md) for shared locus placement
+  and text rendering. Labels stay readable and upright; gene symbols with trailing allele signs
+  such as `rb+` or `b-` use automatic superscripts. Inspect gene order, contrast, joins and
+  centromeres at the smallest actual placement.
 
 The reusable model API in [README.md](../../svg_tools/README.md#chromosome-drawing-tool)
 provides requested colors and sizes, variable segment lengths, independent sisters, portrait

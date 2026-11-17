@@ -134,13 +134,11 @@ geometry. Choose the surface treatment from the represented condensation state.
   Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
   Homolog or parental colors need not match a course accent hue. Optional decorative texture
   may be hidden; actual source bands and measured intervals must remain intact.
-- Model discrete genes as labeled colored intervals at their actual loci. Use C53's embedded
-  gene blocks where they fit; C01/C47's lettered regions suit schematic gene-order diagrams.
-  Keep text upright and choose ink from the region's fill, without white text-outline halos.
-  External labels suit dense crossings and small chromosomes when they connect visibly to
-  their loci. Whole-chromosome numbers, arm names and genotype summaries stay outside.
-  BPQ texture, ancestry colors, gene regions, heterochromatin and cytogenetic staining have
-  different meanings; preserve those distinctions and each source's meaningful spacing.
+- Follow [CHROMOSOME_GENE_LABELS.md](CHROMOSOME_GENE_LABELS.md) for the shared gene-label
+  convention and pipeline. Model genes as labeled colored intervals on their known chromatids;
+  use the shared renderer for upright, measured, contrasting text. Preserve source spacing
+  and distinguish gene regions from ancestry, heterochromatin and cytogenetic staining.
+  Whole-chromosome identifiers and genotype summaries stay outside.
 - C28 is the instructor-approved reference for independently curved chromatids, integrated
   allele regions, restrained banding, and crossing depth. Preserve that geometry when changing
   shared tools. Its white zigzags mark exchanges between homologs during ordinary crossing over.

@@ -71,6 +71,10 @@ Average the original distances between genes in the two clusters.
 - ac to d: (22 + 24) / 2 = 23
 - ac to e: (6 + 10) / 2 = 8
 
+=== layout: subsection
+
+# Weight Clusters by Their Size
+
 === layout: two-panels
 
 # Find the Smallest Distance
@@ -161,6 +165,10 @@ Average the original distances between genes in the two clusters.
 - ace to d: (22 + 24 + 26) / 3 = 24
 
 Weight each gene equally: (2 x 19 + 1 x 22) / 3 = 20. The unweighted cluster average gives 20.5.
+
+=== layout: subsection
+
+# Complete the Remaining Joins
 
 === layout: two-panels
 
@@ -262,6 +270,10 @@ ace + bd: distance 22; height 11. Branches: ace 7; bd 5.
 @right
 
 ![Gene tree](assets/lect11_gene_tree_examples/five_4.svg)
+
+=== layout: subsection
+
+# Check the Finished Tree
 
 === layout: two-panels
 

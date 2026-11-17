@@ -1,9 +1,9 @@
 # Genetics gene tree refresh
 
-November 17 update: 11B contains interpretation only (29 pages), preserving the
+November 17 update: 11B contains interpretation with an early vocabulary slide (30 pages), preserving the
 Khan Academy rotation figures, annotated trees, and branch-distance questions.
-New 11C contains construction methods and the colored four-sequence UPGMA example
-(36 pages). Former C/D/E are now D/E/F (34/32/19 pages). See
+New 11C contains construction methods, the restored three-rhino introduction, and
+the colored four-sequence UPGMA example (59 pages). Former C/D/E are now D/E/F (38/64/19 pages). See
 [the current source map](../genetics/LECT11/djot/LECT11_SOURCE_MAP.md).
 The November 14 evidence below describes the earlier deck organization.
 
@@ -35,11 +35,11 @@ source maps are linked from the two reviews.
 | Deck | Canonical master | Local ODP and PDF paths |
 | --- | --- | --- |
 | 11A | [lect11a-2026_announcements.djot](../genetics/LECT11/djot/lect11a-2026_announcements.djot) | `output/odp/lect11a-2026_announcements.odp`, `output/pdf/lect11a-2026_announcements.pdf` |
-| 11B | [lect11b-gene_trees.djot](../genetics/LECT11/djot/lect11b-gene_trees.djot) | `output/odp/lect11b-gene_trees.odp`, `output/pdf/lect11b-gene_trees.pdf` |
-| 11C | [lect11c-building_a_tree_upgma.djot](../genetics/LECT11/djot/lect11c-building_a_tree_upgma.djot) | `output/odp/lect11c-building_a_tree_upgma.odp`, `output/pdf/lect11c-building_a_tree_upgma.pdf` |
-| 11D | [lect11d-more_gene_trees.djot](../genetics/LECT11/djot/lect11d-more_gene_trees.djot) | `output/odp/lect11d-more_gene_trees.odp`, `output/pdf/lect11d-more_gene_trees.pdf` |
-| 11E | [lect11e-gene_tree_activity.djot](../genetics/LECT11/djot/lect11e-gene_tree_activity.djot) | `output/odp/lect11e-gene_tree_activity.odp`, `output/pdf/lect11e-gene_tree_activity.pdf` |
-| 11F | [lect11f-evol_time.djot](../genetics/LECT11/djot/lect11f-evol_time.djot) | `output/odp/lect11f-evol_time.odp`, `output/pdf/lect11f-evol_time.pdf` |
+| 11B | [lect11b-interpreting_gene_trees.djot](../genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot) | `output/odp/lect11b-interpreting_gene_trees.odp`, `output/pdf/lect11b-interpreting_gene_trees.pdf` |
+| 11C | [lect11c-building_gene_trees.djot](../genetics/LECT11/djot/lect11c-building_gene_trees.djot) | `output/odp/lect11c-building_gene_trees.odp`, `output/pdf/lect11c-building_gene_trees.pdf` |
+| 11D | [lect11d-upgma_weighted_averages.djot](../genetics/LECT11/djot/lect11d-upgma_weighted_averages.djot) | `output/odp/lect11d-upgma_weighted_averages.odp`, `output/pdf/lect11d-upgma_weighted_averages.pdf` |
+| 11E | [lect11e-upgma_group_activity.djot](../genetics/LECT11/djot/lect11e-upgma_group_activity.djot) | `output/odp/lect11e-upgma_group_activity.odp`, `output/pdf/lect11e-upgma_group_activity.pdf` |
+| 11F | [lect11f-molecular_clocks.djot](../genetics/LECT11/djot/lect11f-molecular_clocks.djot) | `output/odp/lect11f-molecular_clocks.odp`, `output/pdf/lect11f-molecular_clocks.pdf` |
 | 12A | [lect12a-2026_announcements.djot](../genetics/LECT12/djot/lect12a-2026_announcements.djot) | `output/odp/lect12a-2026_announcements.odp`, `output/pdf/lect12a-2026_announcements.pdf` |
 | 12B | [lect12b-polyploidy.djot](../genetics/LECT12/djot/lect12b-polyploidy.djot) | `output/odp/lect12b-polyploidy.odp`, `output/pdf/lect12b-polyploidy.pdf` |
 | 12C | [lect12c-sex_dosage.djot](../genetics/LECT12/djot/lect12c-sex_dosage.djot) | `output/odp/lect12c-sex_dosage.odp`, `output/pdf/lect12c-sex_dosage.pdf` |

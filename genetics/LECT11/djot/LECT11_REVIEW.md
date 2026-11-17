@@ -7,7 +7,7 @@ The November 17 announcements have the corrected agenda and dates. The November 
 content and its unresolved source-5/Djot-7 substitution figure, including the replacement
 marker and detached labels. See [GENETICS_GENE_TREE_REFRESH_REPORT.md](../../../docs/GENETICS_GENE_TREE_REFRESH_REPORT.md)
 for current sources, accepted reviews, and preserved-deck limitations. Current A/B/C/D/E/F
-PDF page counts are 36/29/36/34/32/19; A retains 57 authored ODP slides including hidden slides.
+PDF page counts are 36/30/59/38/64/19; A retains 57 authored ODP slides including hidden slides.
 
 ## November 17 classroom updates
 
@@ -802,3 +802,159 @@ Final split verification: 341 documentation/link checks pass. The complete B/C P
 contact sheets were visually inspected, and all five cover letters/page counts were
 checked. Matrix geometry assertions pass across C/D/E. Temporary rendered evidence:
 `_temp/lect11_split_review/`.
+
+## November 17: restore the three-rhino introduction in 11C
+
+The original 11B source retains the rhino example (original PDF 38-64). It was absent
+from the restored current deck. Add a 17-slide editable walkthrough to 11C at PDF
+19-35, before the four-sequence example. Preserve the original northern-white,
+southern-white, and black-rhino teaching example, alignment-to-dots progression,
+pairwise counts 4/12/8, symmetric matrix, first join at height 2, averaged cluster
+distance 10, final root height 5, and branch lengths 2/2/3/5. Alignments and highlighted
+positions use editable SVG text; matrices, questions, explanations, and titles stay
+native. Tree branches retain purple/teal cues. 11C now has 53 PDF pages.
+
+Correct one internal source typo: the southern-white full sequence has C at position
+23 in the original, whereas its dotted version has a match there. Use S at position
+23 to match the original dotted version and 4/12/8 matrix. The unchanged full sequence
+would give 5/12/7. Assertions check all three 30-letter sequences and every pair count.
+These are preserved example fragments; their provenance as empirical rhino sequences
+has not been independently verified. Explain that the fitted white-to-black distance
+is 10, whereas its two inputs are 12 and 8.
+
+Strict native lint passes (53 slides). The rebuilt 17-slide sequence and detailed
+alignment/matrix and final-tree pages were visually inspected. No new capacity warning;
+the prior character-methods slide retains its 17.5 pt advisory. Evidence:
+`_temp/lect11c_rhino_review/` and `_temp/restore_rhino.py`. Live playback untested.
+
+## November 17: printable activity handout recovered
+
+Recover the original `lect11c-gene_tree_handout.pdf` and ODG from the 2019 SCH
+Activities archive. Copy the PDF byte-for-byte to `output/pdf/lect11e-gene_tree_handout.pdf`
+and the editable ODG to `genetics/LECT11/lect11e-gene_tree_handout.odg`. Check all
+15 upper-triangle distances against `six_gene_worksheet` in the current JSON: exact
+match. Visually inspect its one US Letter page: blank update matrices and a large
+tree drawing space. The alternate `_2` worksheet has different numbers and is not
+selected. Print portrait, single-sided, one page per sheet. No physical print test.
+Evidence: `_temp/lect11_handout_review/`.
+
+## November 17: 11B language and vocabulary review
+
+Remove inflated claims (crucial/complexities/underpins/intricate/essential tools/insights)
+and explain the comparisons directly. For example, replace the generic importance
+claims with shared inherited traits, changes over generations, and the finch-beak
+example. Replace Unraveling Gene Trees with What Does a Gene Tree Show? and state
+that gene trees estimate relationships among gene sequences. Preserve the original
+figures, questions, answer values, rotation sequence, and branching examples.
+
+Add Tree Terms at PDF 9, before interpretation exercises: tip, branch, node/branch
+point, root/rooted tree, ancestor, descendant, clade, and expanded MRCA. Keep objectives
+in familiar words. Define polytomy as three or more descendant branches, and define
+pairwise distance at its exercise. Clarify the gorilla/bonobo question as the age of
+their most recent common ancestor. UPGMA stays in 11C. The original scaled-tree image
+also contained an embedded UPGMA question; frame its unchanged image below that heading
+using `scaled_tree_interpretation.svg`. Original image bytes and all branch numbers
+remain unchanged. 11B now has 30 pages. Rebuild ODP/PDF, inspect the full PDF and the
+terms slide, and check no clipping or capacity warnings. Live playback untested.
+Evidence: `_temp/lect11b_language_review/`; pre-edit source is in `_temp/`.
+
+## November 17: subsection dividers for tree construction
+
+Add six subsection slides to 11C, four to 11D, and four to 11E, bringing their PDF
+counts to 59/38/36. Also use subsection styling for the existing rhino tree-building
+divider. New headings mark method families, matrix setup, first joins, repeated
+updates, cluster weighting, remaining joins, and finished-tree checks. Insert only
+between complete teaching sequences; preserve questions with their answer reveals.
+
+All prior teaching-slide blocks remain identical and in order. Update the existing
+recipe so five/six-sequence regenerated fragments exactly match the authored sources.
+Strict native lint passes for 133 slides; pyflakes passes. Rebuild all three ODP/PDF
+pairs and visually review every added/restyled divider. Verify repeated matrix
+widths/heights and row/column geometry within each table family and available width.
+The rhino full-width and two-panel table layouts intentionally use different widths.
+The pre-existing character-methods 17.5 pt advisory remains; no new capacity warnings.
+Evidence: `_temp/lect11_subsections_review/` and `_temp/lect11_subsections_before/`.
+The printable six-gene handout remains unchanged. Live playback untested.
+
+## November 17: second handout is the extension, with its own answers
+
+Instructor clarified that the original second handout keeps early finishers busy.
+Earlier treatment as an alternate worksheet is superseded. Preserve both original
+student PDFs and combine them into `output/pdf/lect11e-gene_tree_handouts.pdf`:
+page 1 class problem, page 2 extension. Separate extension PDF and editable ODG
+copies are also saved under the current 11E stem. The original class PDF had disappeared
+from output between builds; recopy it unchanged before assembling the two-page bundle.
+
+The preserved 2025 original activity ODP/PDF has 29 slides and contains only the
+class matrix answers. A text/matrix inventory of the 2020-2025 activity ODP copies
+found no second-matrix candidates. These checks do not establish absence from every
+historic or merged deck. Add the full extension walkthrough to current 11E rather
+than attributing newly calculated answers to an unverified old answer key.
+
+Add the original second matrix to `six_gene_extension` in the example JSON, checking
+all 15 distances against both printed halves of the original PDF. Reuse the recipe
+with distinct extension assets and table groups. The verified joins/distances are
+ac/4, df/6, ace/8, bdf/10, abcdef/12; heights are 2/3/4/5/6. Retain exact fractions
+32/3 and 38/3 in intermediate matrices. All updated distances weight original genes
+equally. Final branch lengths: ac -> a/c = 2; df -> d/f = 3; ace -> ac/e = 2/4;
+bdf -> b/df = 5/2; root -> ace/bdf = 2/1. Root-to-tip distance is 6.
+
+The original class teaching content is unchanged. Extension section starts PDF 35,
+answers PDF 38-62; 11E now has 64 pages. Native lint and pyflakes pass; rebuild the
+ODP/PDF with no capacity advisories. Visually inspect all extension pages and both
+printable handouts. Evidence: `_temp/lect11_extension_review/` and
+`_temp/lect11_extension_before/`. No live playback or physical print test.
+
+## November 17: consolidate all native 11A reds
+
+Instructor requested one red, #D40000, including next-class reminders and the icebreaker.
+Use explicit colors throughout 11A's source tree, including hidden slides. Localize the
+shared contact-options, spring-registration, and course-evaluation fragments so this
+lecture's consolidation does not recolor other decks. Change only their red attributes.
+Every native red style in the rebuilt ODP is now #D40000 (no #990000, #C9211E, or #7B1E2B).
+Original icebreaker typography is preserved: Atkinson Hyperlegible Next Bold, 38.75 pt,
+matching the pre-change ODP style. The prompt's color wrapper changes only its foreground.
+
+Rebuild the ODP/PDF and export once from a fresh filename to rule out stale formatting.
+A PDF text-extraction check misleadingly reported bold glyphs as black; visual inspection
+shows the bold question is correctly red. This was an extraction issue, not an export
+defect. Native red audit is authoritative for exact values; inspect rendered examples
+for appearance. Evidence: `_temp/lect11a_red_review/`. No live Impress playback test.
+
+## November 17: Tree Terms use the standard emphasis palette
+
+Replace muted #355269 with palette Blue #003FFF and #55215B with palette Purple
+#A719DB on Tree Terms (PDF 9). Apply the same replacements to the existing matching
+branch-point and MRCA references, preserving their associations. Wording, typography,
+slide order, and artwork stay unchanged. Rebuild ODP/PDF and visually check PDF 9.
+Strict native lint passes; 30 slides remain. No live Impress playback test.
+
+## November 17: saturate the existing primate tree
+
+Instructor clarified that the current tree needs more saturation. Reuse the original
+editable SVG recovered as `_temp/assets/lect11b_original_import/image_008.svg`.
+Replace its 52 brown fill/stroke attributes, rgb(80,32,12), with palette Blue #003FFF.
+All path data, text, font attributes, positions, time labels, and topology are identical
+to the original vector source. Set the root viewport to the existing bitmap's 1126 x 757
+proportions so the slide keeps its familiar aspect ratio. Keep the gray time axis.
+Reference the saturated SVG on all seven uses of this tree (PDF 12-18); the other
+primate figures remain unchanged. Original bitmap is preserved. Native lint passes;
+rebuild ODP/PDF and inspect the full tree and a question slide. Live playback untested.
+
+## November 17: distinct deck titles and filenames
+
+Rename the canonical masters and generated outputs to match their teaching roles:
+- 11B Interpreting Gene Trees: `lect11b-interpreting_gene_trees`.
+- 11C Building Gene Trees: Three- and Four-Sequence Examples: `lect11c-building_gene_trees`.
+- 11D UPGMA: Five Sequences and Weighted Averages: `lect11d-upgma_weighted_averages`.
+- 11E UPGMA Practice: Class and Extension Problems: `lect11e-upgma_group_activity`.
+- 11F Molecular Clocks and Evolutionary Time: `lect11f-molecular_clocks`.
+
+Only the cover titles change within the decks; all teaching blocks and included fragments
+remain unchanged. Update Markdown links to canonical sources and generated outputs;
+original archived ODP/PDF and asset names remain intact. Move superseded generated
+filenames into `_temp/lect11_names_before/` to avoid stale duplicates. Handout filenames
+remain unchanged. Rebuild all five ODP/PDF pairs, verify cover titles and page counts
+30/59/38/64/19, and visually inspect the covers. Native lint passes for 210 slides.
+The prior 11C character-methods font advisory and 11F figure marker remain.
+Evidence: `_temp/lect11_names_review/`. Live Impress playback untested.

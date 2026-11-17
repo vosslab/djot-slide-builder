@@ -1,0 +1,382 @@
+=== layout: two-panels
+
+# Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-6 padding="3pt 2pt" font-size=22pt}
+|  | a | b | c | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| a |  |  |  |  |  |  |
+| b | 11 |  |  |  |  |  |
+| c | 4 | 9 |  |  |  |  |
+| d | 12 | 9 | 10 |  |  |  |
+| e | 7 | 12 | 9 | 15 |  |  |
+| f | 14 | 11 | 12 | 6 | 13 |  |
+
+Which clusters join? What are the new height and branch lengths?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_0.svg)
+
+=== layout: two-panels
+
+# Join the Closest Clusters
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-6 padding="3pt 2pt" font-size=22pt}
+|  | a | b | c | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| a |  |  |  |  |  |  |
+| b | 11 |  |  |  |  |  |
+| c | [4]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 9 |  |  |  |  |
+| d | 12 | 9 | 10 |  |  |  |
+| e | 7 | 12 | 9 | 15 |  |  |
+| f | 14 | 11 | 12 | 6 | 13 |  |
+
+a + c: distance 4; height 2. Branches: a 2; c 2.
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_1.svg)
+
+=== layout: two-panels
+
+# Find the New Distances
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-6 padding="3pt 2pt" font-size=22pt}
+|  | a | b | c | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- |
+| a |  |  |  |  |  |  |
+| b | 11 |  |  |  |  |  |
+| c | 4 | 9 |  |  |  |  |
+| d | 12 | 9 | 10 |  |  |  |
+| e | 7 | 12 | 9 | 15 |  |  |
+| f | 14 | 11 | 12 | 6 | 13 |  |
+
+@right
+
+Join a and c. What are the distances from ac to b, d, e, f? Count each gene equally.
+
+=== layout: one-panel
+
+# Update the Distances
+
+@body
+
+Average the original distances between genes in the two clusters.
+
+- ac to b: (11 + 9) / 2 = 10
+- ac to d: (12 + 10) / 2 = 11
+- ac to e: (7 + 9) / 2 = 8
+- ac to f: (14 + 12) / 2 = 13
+
+=== layout: subsection
+
+# Update the Matrix and Repeat
+
+=== layout: two-panels
+
+# Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| ac |  |  |  |  |  |
+| b | 10 |  |  |  |  |
+| d | 11 | 9 |  |  |  |
+| e | 8 | 12 | 15 |  |  |
+| f | 13 | 11 | 6 | 13 |  |
+
+Which clusters join? What are the new height and branch lengths?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_1.svg)
+
+=== layout: two-panels
+
+# Join the Closest Clusters
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| ac |  |  |  |  |  |
+| b | 10 |  |  |  |  |
+| d | 11 | 9 |  |  |  |
+| e | 8 | 12 | 15 |  |  |
+| f | 13 | 11 | [6]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 13 |  |
+
+d + f: distance 6; height 3. Branches: d 3; f 3.
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_2.svg)
+
+=== layout: two-panels
+
+# Find the New Distances
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-5 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | d | e | f |
+| --- | --- | --- | --- | --- | --- |
+| ac |  |  |  |  |  |
+| b | 10 |  |  |  |  |
+| d | 11 | 9 |  |  |  |
+| e | 8 | 12 | 15 |  |  |
+| f | 13 | 11 | 6 | 13 |  |
+
+@right
+
+Join d and f. What are the distances from df to ac, b, e? Count each gene equally.
+
+=== layout: one-panel
+
+# Update the Distances
+
+@body
+
+Average the original distances between genes in the two clusters.
+
+- df to ac: (12 + 10 + 14 + 12) / 4 = 12
+- df to b: (9 + 11) / 2 = 10
+- df to e: (15 + 13) / 2 = 14
+
+=== layout: two-panels
+
+# Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | df | e |
+| --- | --- | --- | --- | --- |
+| ac |  |  |  |  |
+| b | 10 |  |  |  |
+| df | 12 | 10 |  |  |
+| e | 8 | 12 | 14 |  |
+
+Which clusters join? What are the new height and branch lengths?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_2.svg)
+
+=== layout: two-panels
+
+# Join the Closest Clusters
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | df | e |
+| --- | --- | --- | --- | --- |
+| ac |  |  |  |  |
+| b | 10 |  |  |  |
+| df | 12 | 10 |  |  |
+| e | [8]{background-color=#FFF1B8 border="0.5pt solid #222222"} | 12 | 14 |  |
+
+ac + e: distance 8; height 4. Branches: ac 2; e 4.
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_3.svg)
+
+=== layout: two-panels
+
+# Find the New Distances
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-4 padding="3pt 2pt" font-size=22pt}
+|  | ac | b | df | e |
+| --- | --- | --- | --- | --- |
+| ac |  |  |  |  |
+| b | 10 |  |  |  |
+| df | 12 | 10 |  |  |
+| e | 8 | 12 | 14 |  |
+
+@right
+
+Join ac and e. What are the distances from ace to b, df? Count each gene equally.
+
+=== layout: one-panel
+
+# Update the Distances
+
+@body
+
+Average the original distances between genes in the two clusters.
+
+- ace to b: (11 + 9 + 12) / 3 = 32/3
+- ace to df: (12 + 14 + 10 + 12 + 15 + 13) / 6 = 38/3
+
+=== layout: subsection
+
+# Join the Remaining Clusters
+
+=== layout: two-panels
+
+# Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
+|  | ace | b | df |
+| --- | --- | --- | --- |
+| ace |  |  |  |
+| b | 32/3 |  |  |
+| df | 38/3 | 10 |  |
+
+Which clusters join? What are the new height and branch lengths?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_3.svg)
+
+=== layout: two-panels
+
+# Join the Closest Clusters
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
+|  | ace | b | df |
+| --- | --- | --- | --- |
+| ace |  |  |  |
+| b | 32/3 |  |  |
+| df | 38/3 | [10]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
+
+b + df: distance 10; height 5. Branches: b 5; df 2.
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_4.svg)
+
+=== layout: two-panels
+
+# Find the New Distances
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-3 padding="3pt 2pt" font-size=22pt}
+|  | ace | b | df |
+| --- | --- | --- | --- |
+| ace |  |  |  |
+| b | 32/3 |  |  |
+| df | 38/3 | 10 |  |
+
+@right
+
+Join b and df. What are the distances from bdf to ace? Count each gene equally.
+
+=== layout: one-panel
+
+# Update the Distances
+
+@body
+
+Average the original distances between genes in the two clusters.
+
+- bdf to ace: (11 + 9 + 12 + 12 + 10 + 15 + 14 + 12 + 13) / 9 = 12
+
+=== layout: two-panels
+
+# Find the Smallest Distance
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-2 padding="3pt 2pt" font-size=22pt}
+|  | ace | bdf |
+| --- | --- | --- |
+| ace |  |  |
+| bdf | 12 |  |
+
+Which clusters join? What are the new height and branch lengths?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_4.svg)
+
+=== layout: two-panels
+
+# Join the Closest Clusters
+
+@left
+
+{table-style=matrix-lower table-group=gene-tree-six_extension-2 padding="3pt 2pt" font-size=22pt}
+|  | ace | bdf |
+| --- | --- | --- |
+| ace |  |  |
+| bdf | [12]{background-color=#FFF1B8 border="0.5pt solid #222222"} |  |
+
+ace + bdf: distance 12; height 6. Branches: ace 2; bdf 1.
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_5.svg)
+
+=== layout: subsection
+
+# Check the Finished Tree
+
+=== layout: two-panels
+
+# Compare the Two Paths
+
+@left
+
+Find the path length from the root to a and from the root to f. How do the lengths compare?
+
+@right
+
+![Gene tree](assets/lect11_gene_tree_examples/six_extension_5.svg)
+
+=== layout: big-image
+
+@image
+
+![Completed metric gene tree](assets/lect11_gene_tree_examples/six_extension_5.svg)
+
+@caption
+
+Review the Completed Tree
+
+=== layout: one-panel
+
+# Review the Branch Lengths
+
+@body
+
+| Node | Height | Branches to Children |
+| --- | --- | --- |
+| ac | 2 | a: 2; c: 2 |
+| df | 3 | d: 3; f: 3 |
+| ace | 4 | ac: 2; e: 4 |
+| bdf | 5 | b: 5; df: 2 |
+| abcdef | 6 | ace: 2; bdf: 1 |
+
+=== layout: one-panel
+
+# Check the Tree Paths
+
+@body
+
+The tree uses cluster averages. Some distances along the tree differ from the original matrix.
+
+These are example distances, not measurements or years.
+
+Every root-to-tip path equals 6 distance units.
+
+Equal path lengths follow the constant-rate model used to build the tree.
+

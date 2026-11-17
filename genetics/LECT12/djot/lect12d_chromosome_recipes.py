@@ -354,8 +354,7 @@ def render_rods() -> None:
 			model = Chromosome(tuple(Segment(label, color, length)
 				for label, color, length in regions),
 				centromeres=() if centromere is None else (Centromere(centromere),))
-			layout = render_chromosome_layout(name, model, thickness=thickness,
-				junctions=joins, allele_labels=any(len(label) > 1 for label, _, _ in regions))
+			layout = render_chromosome_layout(name, model, thickness=thickness, junctions=joins)
 			placeholder = root.find('.//' + NS + 'g[@data-chromosome="' + name + '"]')
 			placeholder.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'
 				+ layout.svg + '</g>'))

@@ -4,7 +4,8 @@
       {
         "id": "shared-loh-parent-A",
         "path": "M 52.0,245.0 L 197.0,245.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#24578F",
@@ -16,7 +17,8 @@
       {
         "id": "shared-loh-parent-a",
         "path": "M 52.0,302.0 L 197.0,302.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#B74300",
@@ -28,7 +30,8 @@
       {
         "id": "shared-loh-daughter-AA-1",
         "path": "M 448.0,111.0 L 593.0,111.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#24578F",
@@ -40,7 +43,8 @@
       {
         "id": "shared-loh-daughter-AA-2",
         "path": "M 448.0,168.0 L 593.0,168.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#B74300",
@@ -57,7 +61,8 @@
       {
         "id": "shared-loh-daughter-aa-1",
         "path": "M 448.0,371.0 L 593.0,371.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#B74300",
@@ -69,7 +74,8 @@
       {
         "id": "shared-loh-daughter-aa-2",
         "path": "M 448.0,428.0 L 593.0,428.0",
-        "thickness": "17",
+        "thickness": "26",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.862, "length": 25}],
         "regions": [
           {
             "color": "#24578F",
@@ -87,27 +93,27 @@
     "markers": [
       {
         "id": "shared-marker-1",
-        "thickness": 17
+        "thickness": 26
       },
       {
         "id": "shared-marker-2",
-        "thickness": 17
+        "thickness": 26
       },
       {
         "id": "shared-marker-3",
-        "thickness": 17
+        "thickness": 26
       },
       {
         "id": "shared-marker-4",
-        "thickness": 17
+        "thickness": 26
       },
       {
         "id": "shared-marker-5",
-        "thickness": 17
+        "thickness": 26
       },
       {
         "id": "shared-marker-6",
-        "thickness": 17
+        "thickness": 26
       }
     ]
   },
@@ -116,7 +122,9 @@
       {
         "id": "shared-input-blue-unchanged",
         "path": "M 23.0,168.0 C 43.0,164.0 54.0,177.0 68.0,188.0 C 100.0,168.0 134.0,164.0 165.0,168.0 C 196.0,172.0 214.0,167.0 242.0,164.0",
-        "thickness": "13",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -128,7 +136,9 @@
       {
         "id": "shared-input-green-recombinant",
         "path": "M 23.0,244.0 Q 49.0,242.0 68.0,263.0 C 97.0,257.0 121.0,242.0 151.0,224.0 C 184.0,205.0 211.0,203.0 242.0,203.0",
-        "thickness": "13",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -145,7 +155,9 @@
       {
         "id": "shared-input-blue-recombinant",
         "path": "M 23.0,208.0 Q 46.0,211.0 68.0,188.0 C 98.0,191.0 124.0,207.0 151.0,224.0 C 181.0,243.0 211.0,247.0 242.0,246.0",
-        "thickness": "13",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -162,7 +174,9 @@
       {
         "id": "shared-input-green-unchanged",
         "path": "M 23.0,282.0 C 44.0,282.0 53.0,275.0 68.0,263.0 C 99.0,281.0 130.0,286.0 164.0,282.0 C 198.0,278.0 214.0,284.0 242.0,285.0",
-        "thickness": "13",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -174,7 +188,9 @@
       {
         "id": "shared-upper-unchanged-chromosome-1",
         "path": "M 30.0,54.0 Q 70.0,51.0 102.0,54.0 Q 134.0,57.0 184.0,54.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -186,7 +202,9 @@
       {
         "id": "shared-upper-unchanged-chromosome-2",
         "path": "M 30.0,93.0 Q 70.0,90.0 102.0,93.0 Q 134.0,96.0 184.0,93.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -198,7 +216,9 @@
       {
         "id": "shared-upper-exchanged-chromosome-1",
         "path": "M 30.0,54.0 Q 70.0,51.0 102.0,54.0 Q 134.0,57.0 184.0,54.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -215,7 +235,9 @@
       {
         "id": "shared-upper-exchanged-chromosome-2",
         "path": "M 30.0,93.0 Q 70.0,90.0 102.0,93.0 Q 134.0,96.0 184.0,93.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -232,7 +254,9 @@
       {
         "id": "shared-lower-aa-chromosome-1",
         "path": "M 30.0,54.0 Q 70.0,51.0 102.0,54.0 Q 134.0,57.0 184.0,54.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -244,7 +268,9 @@
       {
         "id": "shared-lower-aa-chromosome-2",
         "path": "M 30.0,93.0 Q 70.0,90.0 102.0,93.0 Q 134.0,96.0 184.0,93.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "a", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "B", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -261,7 +287,9 @@
       {
         "id": "shared-lower-bb-chromosome-1",
         "path": "M 30.0,54.0 Q 70.0,51.0 102.0,54.0 Q 134.0,57.0 184.0,54.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#247ca6",
@@ -278,7 +306,9 @@
       {
         "id": "shared-lower-bb-chromosome-2",
         "path": "M 30.0,93.0 Q 70.0,90.0 102.0,93.0 Q 134.0,96.0 184.0,93.0",
-        "thickness": "12",
+        "thickness": "22",
+        "loci": [{"label": "A", "color": "#F3D788", "center": 0.72, "length": 22},
+          {"label": "b", "color": "#F3D788", "center": 0.89, "length": 22}],
         "regions": [
           {
             "color": "#299b80",
@@ -291,43 +321,43 @@
     "markers": [
       {
         "id": "shared-marker-1",
-        "thickness": 13
+        "thickness": 22
       },
       {
         "id": "shared-marker-2",
-        "thickness": 13
+        "thickness": 22
       },
       {
         "id": "shared-marker-3",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-4",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-5",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-6",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-7",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-8",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-9",
-        "thickness": 12
+        "thickness": 22
       },
       {
         "id": "shared-marker-10",
-        "thickness": 12
+        "thickness": 22
       }
     ]
   },

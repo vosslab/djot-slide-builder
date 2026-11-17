@@ -4,7 +4,7 @@ color-theme: genetics
 
 # Lecture 11C
 
-## Building a Tree by UPGMA
+## Building Gene Trees: Three- and Four-Sequence Examples
 
 ## Chapter 11
 
@@ -42,6 +42,10 @@ color-theme: genetics
 === layout: section
 
 # Gene Tree Methods
+
+=== layout: subsection
+
+# Distance-Based Methods
 
 === layout: two-panels
 
@@ -103,6 +107,10 @@ color-theme: genetics
 - Iteratively groups closest pair of sequences, recalculates distances.
 - Preferred for its accuracy in more complex phylogenetic analyses.
 - Requires more math equations than UPGMA.
+
+=== layout: subsection
+
+# Character-Based Methods
 
 === layout: two-panels
 

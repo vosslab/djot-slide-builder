@@ -9,10 +9,10 @@ The build evidence records 47 focused tests, strict native lint on 102 authored 
 ## Final SHA-256
 
 ```text
-878f3f73b989eaf10b351b042e647e398bd790548d37e780137d1a6759801503  output/odp/lect11b-gene_trees.odp
+878f3f73b989eaf10b351b042e647e398bd790548d37e780137d1a6759801503  output/odp/lect11b-interpreting_gene_trees.odp
 217a46ae307b467210f170b070c053718887a454a83a228e33dfe2ab00565771  output/odp/lect11c-more_gene_trees.odp
 d26ba54ac6b89aeaec6ee2b093b5c1122c54e0b34d8f2a603f182998564df9f0  output/odp/lect11d-gene_tree_activity.odp
-06563e7afa2852d509ea34dc0616c1369df1d128e830115e3b46293961273072  output/pdf/lect11b-gene_trees.pdf
+06563e7afa2852d509ea34dc0616c1369df1d128e830115e3b46293961273072  output/pdf/lect11b-interpreting_gene_trees.pdf
 5d96767b1dc9984d23d9064cae6386ea325c64784713edc0876561980d2dbae0  output/pdf/lect11c-more_gene_trees.pdf
 10d74e6a3596e6df8b008d67996b6c473e82b884ad53e4534098f5b694f6239c  output/pdf/lect11d-gene_tree_activity.pdf
 cee7b2ed796736dce61690fe67c368f234bc6ee760d248911990e71a8897bf54  docs/slide-specs/illustration_examples/gene_tree_lecture/lect11b.webp
