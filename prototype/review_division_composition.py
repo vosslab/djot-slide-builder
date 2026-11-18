@@ -50,11 +50,9 @@ def _crop_c25(path: Path) -> None:
 
 
 def separate_division_prose() -> None:
-	"""Move the fixed C13, C21, and C25 prose into their Djot slides."""
+	"""Crop the C13/C21 and C25 artwork for the review deck's native prose."""
 	root = Path(subprocess.check_output(
 		['git', 'rev-parse', '--show-toplevel'], text=True).strip())
 	assets = root / 'prototype/assets'
-	c13 = assets / 'lect06c-meiosis/recombinant_chromosomes.svg'
-	_crop_c13(c13)
-	(assets / 'lect08b-chap8-linked_genes/b31_labeled.svg').write_bytes(c13.read_bytes())
+	_crop_c13(assets / 'lect06c-meiosis/recombinant_chromosomes.svg')
 	_crop_c25(assets / 'lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg')

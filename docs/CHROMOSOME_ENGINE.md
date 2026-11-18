@@ -188,13 +188,16 @@ label text. The key anchors refer to the final shape in SVG coordinates.
 | Gene locus | `gene_w` when `w` is unique on the chromatid. `gene:linked/linked/w` always identifies source, copy, and locus explicitly. Each qualified component is URL-encoded. |
 
 Active sites at the same position each retain an indexed anchor and share one visible collar.
+Adjacent regions with the same color paint as one continuous stroke. Each region retains its
+source identity and boundary anchors.
 
 Sister bodies have `first.` and `second.` anchor prefixes. For example,
 `paired.anchors['first.gene_w']` belongs to the first sister, and `paired.anchors['centromere']`
 marks the midpoint of their shared belt. The unprefixed `start`, `end`, and `center` follow the
 reference pose.
 
-When an internal gene card has too little clearance, the renderer draws a dot at the exact
+Internal gene cards leave one telomere-cap length of body color beside each telomere and
+centromere collar. When a card has too little clearance, the renderer draws a dot at the exact
 locus and leads to an upright external allele label. The leader follows the local normal and
 points outward on sisters. The locus anchor stays on the body. Check spacing among labels and
 neighboring objects when composing the complete figure.

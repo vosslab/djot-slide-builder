@@ -30,7 +30,13 @@ def main() -> None:
 	for relative in ('visual_renewal', 'lect12b-polyploidy'):
 		(ASSETS / relative).mkdir(parents=True, exist_ok=True)
 	make_polyploidy_chromosomes.BASE = ROOT / 'chromosome_assets'
-	make_polyploidy_chromosomes.main()
+	make_polyploidy_chromosomes.main(exclude=(
+		'assets/visual_renewal/chrysanthemum_18.drawn.svg',
+		'assets/visual_renewal/chrysanthemum_36_54.drawn.svg',
+		'assets/visual_renewal/chrysanthemum_54_72.drawn.svg',
+		'assets/visual_renewal/chrysanthemum_72_90.drawn.svg',
+		'assets/visual_renewal/chrysanthemum_monoploid.drawn.svg',
+	))
 	make_polyploidy_chromosomes.make_raster_replacements()
 
 	copy_sex_dosage_sources()

@@ -36,7 +36,8 @@ present source still produces identical exports.
 | Local `recovered_exports/lect11b-2026_group_project.pdf` | 28 |
 | Local `recovered_exports/lect11c-set_6_regulation_of_biotechnology.pdf` | 308 |
 
-The new chromosome corpus collection is already safe in `prototype/` as local `../chromosome_review.pdf`.
+The current chromosome review exports are `output/odp/chromosome_review.odp` and
+`output/pdf/chromosome_review.pdf` at the repository root.
 
 ## What can go
 

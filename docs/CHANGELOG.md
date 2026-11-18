@@ -2,6 +2,10 @@
 
 ### Additions and New Features
 
+- Add a [ten-slide chromosome deck](../prototype/chromosome_engine_mini2.djot) for reviewing
+  chromosome transfers, wheat genomes, crossovers, banding, inversions, and gamete products.
+  The renderer's keyword-only `texture=True` controls the decorative pattern. Setting it to
+  `False` removes the texture and keeps the sheen.
 - Add a [four-slide chromosome deck](../prototype/chromosome_engine_mini.djot) for reviewing
   the Drosophila complements, cis/trans alleles, sister chromatids and Robertsonian fusion.
 - Give C18 BPQ-style centromere collars with pale fills and upright chromosome IDs.
@@ -15,6 +19,15 @@
 
 ### Fixes and Maintenance
 
+- Use one neutral gray and stain-colored labels in C31. Paint consecutive same-color bands
+  as one stroke while retaining their source boundaries.
+- Bring C28 sister chromatids together under their shared centromere collars while preserving
+  both crossover points.
+- Reserve body color between gene cards and centromeres. Refine Mini2 chromosome proportions,
+  telomere alignment, inversion curves, staining colors, and C28 gene-label font fallback.
+- Share the C22 and C23 crossover SVGs and the four-panel C31 staining comparison between
+  both chromosome review decks. Reuse the byte-identical C13 artwork for C21 while keeping
+  each slide's citation, and retire the superseded prototype copies and staining recipe.
 - Restore numeric character references in the ASCII fixer for SVG and XML so cleanup preserves
   scientific labels and existing XML escapes.
 - Guard the shared lxml object model with a pytest that catches `defusedxml` and `xml.etree` imports.

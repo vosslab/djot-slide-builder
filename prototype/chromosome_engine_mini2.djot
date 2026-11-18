@@ -1,0 +1,138 @@
+color-theme: genetics
+
+=== layout: big-image
+
+@image
+
+![Insertional and reciprocal chromosome transfers](repo:prototype/assets/chromosome_engine_mini2/c01.drawn.svg)
+
+@caption
+
+*C01 | Chromosome Transfer*
+
+LECT01B, source slide 8 | Insertional transfer moves a segment one way. Reciprocal transfer swaps segments.
+
+=== layout: big-image
+
+@image
+
+![Bread wheat chromosomes grouped by number and ancestral genome](repo:prototype/assets/chromosome_engine_mini2/c16.drawn.svg)
+
+@caption
+
+*C16 | Three Ancestral Genomes*
+
+LECT06C, source slide 37 | Each of bread wheat's seven groups has two chromosomes from each genome (A, B, and D).
+
+=== layout: big-image
+
+@image
+
+![One nonsister crossover and its four products](repo:prototype/assets/chromosome_engine_mini2/c22.drawn.svg)
+
+@caption
+
+*C22 | A Single Crossover*
+
+LECT08B, source slide 36 | One exchange between the two genes gives two parental and two recombinant chromatids.
+
+=== layout: big-image
+
+@image
+
+![Two exchanges between the same nonsister chromatids](repo:prototype/assets/chromosome_engine_mini2/c23.drawn.svg)
+
+@caption
+
+*C23 | Double-Crossover Meiosis*
+
+LECT08B, source slide 40 | The same two nonsister chromatids exchange segments on both sides of the centromere.
+
+=== layout: big-image
+
+@image
+
+![Two ways to separate chromatids after a mitotic crossover](repo:prototype/assets/chromosome_engine_mini2/c25.drawn.svg)
+
+@caption
+
+*C25 | Mitotic Recombination*
+
+LECT09C, source slide 6 | Twin spots can form when the daughters become homozygous for different recessive alleles.
+
+@speaker-notes
+
+Follow the exchange between the centromere and both genes. In one daughter pair,
+both cells stay heterozygous. In the other pair, one daughter has two _a_ alleles
+and the other has two _b_ alleles. These cells can grow into neighboring twin spots.
+
+=== layout: big-image
+
+@image
+
+![Four participating chromatids produce a nonparental ditype](repo:prototype/assets/chromosome_engine_mini2/c28.drawn.svg)
+
+@caption
+
+*C28 | Four-Strand Double Crossover*
+
+LECT09E, source slide 16 | Both exchanges occur between the two scored loci.
+All four chromatids recombine, giving a nonparental ditype (NPD).
+
+@speaker-notes
+
+Trace both exchanges. The four products contain only the two nonparental allele combinations.
+
+=== layout: big-image
+
+@image
+
+![All chromosome regions compared with separate G-, R-, and C-banding views](repo:prototype/assets/chromosome_engine_mini2/c31.drawn.svg)
+
+@caption
+
+*C31 | Chromosome Staining*
+
+LECT10B, source slide 14 | The reference overlays three separate staining patterns. Colors and widths are schematic.
+
+=== layout: big-image
+
+@image
+
+![Homologous chromosomes pair at matching loci across an inversion loop](repo:prototype/assets/chromosome_engine_mini2/c55.drawn.svg)
+
+@caption
+
+*C55 | Inversion Synapsis*
+
+LECT13B, source slide 8 | A loop lets matching loci pair when one chromosome has an inversion.
+
+=== layout: big-image
+
+@image
+
+![Chromosomes 9 and 22 before and after reciprocal translocation](repo:prototype/assets/chromosome_engine_mini2/c61.drawn.svg)
+
+@caption
+
+*C61 | Philadelphia Chromosome*
+
+LECT13C, source slide 10 | Chromosomes 9 and 22 exchange tips. Derivative 22 is the short Philadelphia chromosome.
+
+=== layout: big-image
+
+@image
+
+![Six gamete products in adjacent-1, adjacent-2, and alternate columns](repo:prototype/assets/chromosome_engine_mini2/c63.drawn.svg)
+
+@caption
+
+*C63 | Gamete Product Columns*
+
+LECT13D, source slide 41 | Alternate segregation produces balanced gametes.
+Adjacent-1 and adjacent-2 produce unbalanced gametes.
+
+@speaker-notes
+
+Trace the two chromosomes in each gamete. Alternate segregation gives balanced
+products. The adjacent patterns give products with a duplication and a deletion.

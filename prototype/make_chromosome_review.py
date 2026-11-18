@@ -13,8 +13,8 @@ import genetics.LECT06.djot.chromosome_models.mixed.intro.intro_recipes
 import genetics.LECT06.djot.chromosome_models.mixed.recombination.recombination_recipes
 import genetics.LECT13.djot.lect13d_p2_composition_recipes
 
+import make_chromosome_engine_mini2
 import make_chromosome_replacements
-import chromosome_staining_recipe
 import review_division_composition
 import review_inversion_composition
 import review_translocation_composition
@@ -87,15 +87,20 @@ def main() -> None:
 		str(ASSETS / 'assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg'))
 	run('genetics/LECT04/djot/assets/lect04e-segregation/make_fertilization_scene.py',
 		str(ASSETS / 'assets/lect04e-segregation/fertilization_scene.drawn.svg'))
-	for recipe in ('cis_recipe.py', 'crossover_recipe.py', 'double_recipe.py', 'exchanges_recipe.py', 'b31_recipe.py'):
+	for recipe in ('cis_recipe.py', 'exchanges_recipe.py'):
 		run('genetics/LECT08/djot/chromosome_recipes/' + recipe, '-o', str(ROOT / 'assets'))
+	# Both review decks use the same recipes and SVGs for crossovers and staining.
+	mini2 = ROOT / 'assets/chromosome_engine_mini2'
+	mini2.mkdir(parents=True, exist_ok=True)
+	make_chromosome_engine_mini2.build_c22(mini2 / 'c22.drawn.svg')
+	make_chromosome_engine_mini2.build_c23(mini2 / 'c23.drawn.svg')
+	make_chromosome_engine_mini2.build_c31(mini2 / 'c31.drawn.svg')
 	run('genetics/LECT09/djot/make_mitotic_yeast.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT09/djot/make_history_scenes.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT09/djot/make_centromere.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT10/djot/make_lect10b_figures.py', '--output-root', str(ASSETS))
 	run('genetics/LECT10/djot/lect10_chromosome_recipes.py', str(ASSETS))
 
-	chromosome_staining_recipe.main()
 	make_chromosome_replacements.main()
 
 	# LECT13 has one output-root convention: the supplied directory owns assets/.

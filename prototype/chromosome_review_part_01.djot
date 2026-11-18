@@ -275,7 +275,7 @@ LECT08B, source slide 14 | Linkage and tetrads
 
 @left
 
-![Chromatid comparison](repo:prototype/assets/lect08b-chap8-linked_genes/b31_labeled.svg)
+![Nonsister chromatids cross over before the homologs separate](repo:prototype/assets/lect06c-meiosis/recombinant_chromosomes.svg)
 
 @right
 
@@ -287,13 +287,13 @@ Nonsister chromatids held together during synapsis:
 
 @citation
 
-*C21 | Same source figure as C13* - LECT08B, source slide 34 | Mixed schematic and evidence
+*C21 | Chromatid comparison* - LECT08B, source slide 34 | Mixed schematic and evidence
 
 === layout: big-image
 
 @image
 
-![A single crossover](repo:prototype/assets/lect08b-chap8-linked_genes/single_crossover.drawn.svg)
+![A single crossover](repo:prototype/assets/chromosome_engine_mini2/c22.drawn.svg)
 
 @caption
 
@@ -305,7 +305,7 @@ LECT08B, source slide 36 | Linkage and tetrads
 
 @image
 
-![Double-crossover meiosis](repo:prototype/assets/lect08b-chap8-linked_genes/double_crossover_meiosis.drawn.svg)
+![Double-crossover meiosis](repo:prototype/assets/chromosome_engine_mini2/c23.drawn.svg)
 
 @caption
 
@@ -401,14 +401,13 @@ LECT10B, source slide 8 | Mixed schematic and evidence
 
 @image
 
-![Chromosome staining](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/chromosome_staining_comparison.drawn.svg)
+![All chromosome regions compared with separate G-, R-, and C-banding views](repo:prototype/assets/chromosome_engine_mini2/c31.drawn.svg)
 
 @caption
 
 *C31 | Chromosome staining*
 
-LECT10B, source slide 14 | Banding reference
-Schematic colors and band widths; purple marks the darker-staining regions.
+LECT10B, source slide 14 | The reference overlays three separate staining patterns. Colors and widths are schematic.
 
 === layout: big-image
 

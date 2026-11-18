@@ -97,7 +97,9 @@ def test_replication_keeps_each_chromatid_length_and_thickness() -> None:
 		root = lxml.etree.fromstring(layout.svg)
 		regions = root.findall('.//g[@data-source-label]')
 		assert len(regions) == (4 if sisters else 2)
-		assert all(float(node.find('path').get('stroke-width')) == 18 for node in regions)
+		strokes = root.findall('.//g[@data-source-label]/path')
+		assert len(strokes) == (2 if sisters else 1)
+		assert all(float(stroke.get('stroke-width')) == 18 for stroke in strokes)
 		for copy in range(2 if sisters else 1):
 			first, last = layout.segments[copy*2:copy*2+2]
 			assert last.end[0]-first.start[0] == pytest.approx(62)

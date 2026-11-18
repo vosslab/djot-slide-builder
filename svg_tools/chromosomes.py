@@ -561,18 +561,28 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 	lxml.etree.SubElement(paint, 'path', {'d': path_text, 'fill': 'none',
 		'stroke': segments[0].color, 'stroke-width': str(thickness),
 		'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
+	# Separate strokes can leave hairlines between identical colors in PDF exports.
+	color_edges = [0, *(index for index in range(1, len(segments))
+		if segments[index-1].color.upper() != segments[index].color.upper()), len(segments)]
+	run_ends = dict(zip(color_edges, color_edges[1:]))
 	for index, segment in enumerate(segments):
 		region = lxml.etree.SubElement(paint, 'g', {
 			'id': f'{name}-region-{index}', 'data-source-label': segment.label})
-		portion = path.cropped(parameters[index], parameters[index+1])
-		lxml.etree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
-			'stroke': segment.color, 'stroke-width': str(thickness),
-			'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
+		if index in run_ends:
+			end_index = run_ends[index]
+			end = parameters[end_index]
+			if surface.straight and end_index < len(segments) and end_index not in junctions:
+				# The next band paints over this overlap at its exact boundary.
+				overlap = min(stroke, (distances[end_index+1]-distances[end_index])/2)
+				end = path.ilength(distances[end_index]+overlap)
+			portion = path.cropped(parameters[index], end)
+			lxml.etree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
+				'stroke': segment.color, 'stroke-width': str(thickness),
+				'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
 		middle = path.ilength((distances[index]+distances[index+1])/2)
 		anchors[f'segment_{index}'] = point(middle)
 	site_distances = {distance for distance, _, _ in sites}
-	texture_edges = sorted({0.0, length, *site_distances,
-		*(distances[i] for i in range(1, len(segments)) if segments[i].color != segments[i-1].color)})
+	texture_edges = sorted(site_distances | {distances[index] for index in color_edges})
 	texture_spans = []
 	cap_length = surface.cap_length
 	collar_half = (marker_size[0] if marker_size else thickness*32/30)/2
@@ -655,7 +665,7 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.Chromatid,
 	surface: svg_tools.chromosome_surface.Surface, palette: dict[tuple[str, str], str], *,
 	sites: tuple[svg_tools.chromosome_topology.ProjectedCentromere, ...],
-	centromere_styles: dict[tuple[str, str], CentromereStyle],
+	centromere_styles: dict[tuple[str, str], CentromereStyle], texture: bool,
 	outward: complex = 0j) -> tuple[svg_tools.parts.SvgPart, list[svg_tools.parts.SvgPart]]:
 	"""Project source features once into the existing BPQ paint and label inputs."""
 	topology = svg_tools.chromosome_topology
@@ -665,7 +675,9 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	material_length = model.length
 	ratio = length/material_length
 	collar_half = width*16/30
-	collar_ink_half = collar_half+surface.scale
+	# Leave a cap-length of body color between the collar and the gene card ink.
+	card_stroke = max(.7, surface.scale*.8)
+	collar_clearance = collar_half + surface.scale + surface.cap_length + card_stroke/2
 	site_distances = [site.position/material_length*length for site in sites]
 	terminal_ends = (model.ends[0] == 'telomere', model.ends[1] == 'telomere')
 	left_cap, right_cap = (surface.cap_length if terminal else 0 for terminal in terminal_ends)
@@ -694,7 +706,7 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 		left = gene_positions[index-1] if index > 0 else -math.inf
 		right = gene_positions[index+1] if index+1 < len(genes) else math.inf
 		clearance = min(position, length-position,
-			*(abs(position-site)-collar_ink_half for site in site_distances),
+			*(abs(position-site)-collar_clearance for site in site_distances),
 			*(abs(position-junction)-mark_half for junction in junction_distances))
 		block_length = min(width*.8, 2*clearance, position-left, right-position)
 		locus_name = f'{name}-gene-{index}'
@@ -719,7 +731,7 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	paint_sites = [(distance, True, centromere_styles.get((site.source_id, site.id)))
 		for distance, site in zip(site_distances, sites)]
 	part = _paint_chromatid(name, segments, surface, distances, paint_sites, terminal_ends=terminal_ends,
-		junctions=junctions, loci=tuple(loci), draw_centromeres=not outward)
+		texture=texture, junctions=junctions, loci=tuple(loci), draw_centromeres=not outward)
 	bounds = part.bounds
 	if not outward:
 		# The rounded rectangle is an inset rectangle plus the corner and stroke radii.
@@ -758,15 +770,17 @@ def _with_external_loci(part: svg_tools.parts.SvgPart,
 #============================================
 def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools.chromosome_topology.SisterPair, *,
 	points: collections.abc.Sequence[tuple[float, float]], width: float = 20,
-	scale: float = 1, palette: dict[tuple[str, str], str],
+	scale: float = 1, palette: dict[tuple[str, str], str], texture: bool = True,
 	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None) -> svg_tools.parts.SvgPart:
 	"""Render source material along a spline, at display length model.length*scale.
 	Anchors include start, end, center (arc midpoint), and active centromere sites.
 	Locus anchors use gene_<locus_id> when unique and always gene:source/copy/locus
 	with URL-encoded components. Pairs qualify child anchors with first. and second.
-	Gene cards leave one cap-length of body color at each telomere. Loci with
-	insufficient room for a card receive a linked external label.
+	Gene cards leave one cap-length of body color at each telomere and beside each
+	centromere collar. Loci with insufficient room receive a linked external label.
 	Centromere styles are keyed by (source_id, site_id), including for shared sister belts.
+	Adjacent regions of the same color share a stroke and retain their boundary anchors.
+	Set texture=False to omit the background pattern while keeping source bands and shading.
 	"""
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
 		raise ValueError('Use an XML-safe unique namespace')
@@ -804,11 +818,11 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 	first_name = f'{name}-first' if paired else name
 	styles = centromere_styles or {}
 	first_part, first_external = _render_topology_chromatid(first_name, first, surface, palette,
-		sites=first_sites, centromere_styles=styles, outward=-offset)
+		sites=first_sites, centromere_styles=styles, texture=texture, outward=-offset)
 	if not paired:
 		return _with_external_loci(first_part, first_external)
 	second_part, second_external = _render_topology_chromatid(f'{name}-second', second, surface,
-		palette, sites=second_sites, centromere_styles=styles, outward=offset)
+		palette, sites=second_sites, centromere_styles=styles, texture=texture, outward=offset)
 	first_sister = svg_tools.parts.transform(first_part, x=-offset.real, y=-offset.imag)
 	second_sister = svg_tools.parts.transform(second_part, x=offset.real, y=offset.imag)
 	belt = _sister_belt_part(f'{name}-belt', first_sister.anchors['centromere'],

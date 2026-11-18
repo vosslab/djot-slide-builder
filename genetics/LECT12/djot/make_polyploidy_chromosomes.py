@@ -663,8 +663,10 @@ FIGURES = [
 ]
 
 
-def main() -> None:
+def main(*, exclude: tuple[str, ...] = ()) -> None:
 	for relative, template, specs in FIGURES:
+		if relative in exclude:
+			continue
 		root = svg_tools._xml.parse(template)
 		for element in root.iter():
 			if "data-recipe-slot" in element.attrib:

@@ -48,6 +48,47 @@ def test_recolor_keeps_geometry_and_source_positioned_features() -> None:
 
 
 #============================================
+@pytest.mark.parametrize('paired', (False, True))
+def test_texture_switch_preserves_source_bands_and_shading(paired: bool) -> None:
+	chromatid = topology.chromosome('A', length=180, centromere=.5, regions=((0, 'body'), (.7, 'band')))
+	model = topology.replicate(chromatid) if paired else chromatid
+	palette = {('A', 'body'): '#3479A8', ('A', 'band'): '#D6533C'}
+	points = ((0, 0), (180, 0))
+	textured = lxml.etree.fromstring(chromosomes.render('bands', model, points=points, palette=palette).fragment)
+	part = chromosomes.render('bands', model, points=points, palette=palette, texture=False)
+	untextured = lxml.etree.fromstring(part.fragment)
+	textures = textured.findall('.//g[@data-layer="texture"]')
+	assert len(textures) == (2 if paired else 1)
+	assert not untextured.findall('.//g[@data-layer="texture"]')
+	for texture in textures:
+		texture.getparent().remove(texture)
+	assert lxml.etree.tostring(untextured) == lxml.etree.tostring(textured)
+	for body in untextured.findall('.//g[@data-layer="body"]'):
+		bands = body.findall('./g[@data-source-label]/path')
+		assert [band.get('stroke') for band in bands] == list(palette.values())
+		assert body.find('./g[@data-layer="sheen"]/path') is not None
+
+
+#============================================
+def test_adjacent_same_color_bands_share_one_stroke() -> None:
+	model = topology.chromosome('A', length=200,
+		regions=((0, 'a'), (.2, 'b'), (.4, 'c'), (.6, 'd'), (.8, 'e')))
+	palette = {('A', band): color for band, color in zip('abcde',
+		('#AAAAAA', '#aaaaaa', '#752499', '#AAAAAA', '#AAAAAA'))}
+	part = chromosomes.render('bands', model, points=((0, 0), (200, 0)), palette=palette)
+	root = lxml.etree.fromstring(part.fragment)
+	regions = root.findall('./g[@data-layer="body"]/g[@data-source-label]')
+	assert [region.get('data-source-label') for region in regions] == [f'A/{band}' for band in 'abcde']
+	strokes = root.findall('./g[@data-layer="body"]/g[@data-source-label]/path')
+	assert [stroke.get('stroke') for stroke in strokes] == ['#AAAAAA', '#752499', '#AAAAAA']
+	paths = [svgpathtools.parse_path(stroke.get('d')) for stroke in strokes]
+	assert [path.start.real for path in paths] == [0, 80, 120]
+	assert paths[-1].end.real == 200
+	assert all(first.end.real > second.start.real for first, second in zip(paths, paths[1:]))
+	assert [part.anchors[f'boundary_{index}'] for index in range(6)] == [(x, 0) for x in range(0, 201, 40)]
+
+
+#============================================
 def test_internal_gene_borders_leave_body_color_at_both_telomeres() -> None:
 	model = topology.chromosome('A', length=100, genes={'a': .16, 'b': .84})
 	part = chromosomes.render('ends', model, points=((0, 0), (100, 0)), width=20,
@@ -61,6 +102,22 @@ def test_internal_gene_borders_leave_body_color_at_both_telomeres() -> None:
 		gap = start-cap[1] if allele == 'a' else cap[0]-end
 		ink_gap = gap - float(card.attrib['stroke-width'])/2
 		assert ink_gap >= cap[1]-cap[0] - 1e-3
+
+
+#============================================
+def test_internal_gene_borders_leave_body_color_beside_the_centromere() -> None:
+	model = topology.chromosome('A', length=200, centromere=.5, genes={'a': .32, 'b': .68})
+	part = chromosomes.render('collar', model, points=((0, 0), (200, 0)), width=30,
+		palette={('A', 'body'): '#3479A8'})
+	root = lxml.etree.fromstring(part.fragment)
+	border = root.find('./g[@data-layer="centromere"]/rect')
+	collar_half = (float(border.attrib['width']) + float(border.attrib['stroke-width']))/2
+	for allele, side in (('a', -1), ('b', 1)):
+		card = root.find(f'./g[@data-gene="{allele}"]/path')
+		start, end, _, _ = svgpathtools.parse_path(card.attrib['d']).bbox()
+		edge = end if side < 0 else start
+		ink_gap = side * (edge - 100) - collar_half - float(card.attrib['stroke-width'])/2
+		assert ink_gap >= 8 - 1e-3
 
 
 #============================================
