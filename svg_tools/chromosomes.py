@@ -24,10 +24,15 @@ _GENE_CARD_COLOR = svg_tools.palette.shade('light_orange', 'light')
 
 
 #============================================
-def _positive(value: float) -> bool:
+def _finite(value: float) -> bool:
 	valid = (isinstance(value, (int, float)) and not isinstance(value, bool)
-		and math.isfinite(value) and value > 0)
+		and math.isfinite(value))
 	return valid
+
+
+#============================================
+def _positive(value: float) -> bool:
+	return _finite(value) and value > 0
 
 
 #============================================
@@ -459,24 +464,9 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 		raise ValueError('Marker size must contain two finite positive lengths')
 	if closed and (cut_ends or chromosome.centromeres):
 		raise ValueError('Closed acentric rings have no cut ends or centromere')
-	path = svgpathtools.parse_path(path_d)
-	if not path or not path.iscontinuous():
-		raise ValueError('Supply one continuous nonempty centerline')
-	control_points = [point for segment in path for point in
-		((segment.start, segment.end, segment.radius, segment.center)
-		if isinstance(segment, svgpathtools.Arc) else segment.bpoints())]
-	if any(not math.isfinite(value) for point in control_points
-		for value in (point.real, point.imag)):
-		raise ValueError('Path coordinates must be finite')
-	if any(segment.length() <= 0 for segment in path):
-		raise ValueError('Centerline segments must have positive length')
-	if path.isclosed() != closed:
-		raise ValueError('Path closure must match the closed setting')
-	path = svg_tools.chromosome_surface.smooth_centerline(path)
-	length = path.length()
-	if not _positive(length):
-		raise ValueError('Centerline length must be finite and positive')
+	path = svg_tools.chromosome_surface.authored_centerline(path_d, closed=closed)
 	if closed:
+		length = path.length()
 		area = path.area(chord_length=length/256)
 		if not math.isfinite(area) or area == 0:
 			raise ValueError('A ring must enclose nonzero finite area')
@@ -509,13 +499,13 @@ def _junction_coords(center: float, surface: svg_tools.chromosome_surface.Surfac
 
 #============================================
 def _junction_clears_collars(surface: svg_tools.chromosome_surface.Surface, distance: float,
-	site_distances: list[float], outward: complex) -> bool:
+	site_distances: list[float], outward: complex, collar_half: float, collar_across: float) -> bool:
 	"""Compare the bent glyph with each collar's stroked rectangle in its own frame."""
 	vertices = [surface.point(*xy) for xy in _junction_coords(distance, surface)]
-	along = surface.width*16/30+surface.scale
-	across = surface.width*.65+abs(outward)+surface.scale
+	along = collar_half+surface.scale
+	across = collar_across+abs(outward)+surface.scale
 	for site in site_distances:
-		parameter = surface.path.ilength(site)
+		parameter = surface.parameter(site)
 		center = surface.path.point(parameter)-outward
 		tangent = surface.path.unit_tangent(parameter)
 		local = [(vertex-center)*tangent.conjugate() for vertex in vertices]
@@ -538,7 +528,7 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 	path, thickness, length = surface.path, surface.width, surface.length
 	if not all(a < b for a, b in zip(distances, distances[1:])):
 		raise ValueError('Geometry must retain distinct segment boundaries')
-	parameters = [path.ilength(distance) if 0 < distance < length else
+	parameters = [surface.parameter(distance) if 0 < distance < length else
 		(0.0 if distance == 0 else 1.0) for distance in distances]
 	def point(parameter: float) -> tuple[float, float]:
 		position = path.start if parameter == 0 else path.end if parameter == 1 else path.point(parameter)
@@ -573,7 +563,7 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 			lxml.etree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
 				'stroke': segment.color, 'stroke-width': str(thickness),
 				'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
-		middle = path.ilength((distances[index]+distances[index+1])/2)
+		middle = surface.parameter((distances[index]+distances[index+1])/2)
 		anchors[f'segment_{index}'] = point(middle)
 	site_distances = {distance for distance, _, _ in sites}
 	texture_edges = sorted(site_distances | {distances[index] for index in color_edges})
@@ -601,15 +591,18 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 		'fill': 'none', 'stroke': '#000000', 'stroke-width': str(2*stroke),
 		'stroke-linejoin': 'round', 'data-layer': 'outline'})
 	for index in junctions:
+		coordinates = _junction_coords(distances[index], surface)
+		if closed:
+			coordinates = [(distance % length, across) for distance, across in coordinates]
 		lxml.etree.SubElement(group, 'path', {'id': f'{name}-join-{index}',
-			'd': surface.polygon(_junction_coords(distances[index], surface)), 'fill': '#FFFFFF'})
+			'd': surface.polygon(coordinates), 'fill': '#FFFFFF'})
 	for locus in loci:
 		group.append(svg_tools._xml.parse(locus.fragment))
 		anchors.update(locus.anchors)
 		label_bounds.append(locus.bounds)
 	painted = set()
 	for site_number, (distance, active, style) in enumerate(sites):
-		parameter = path.ilength(distance)
+		parameter = surface.parameter(distance)
 		cx, cy = point(parameter)
 		anchors[f'centromere_{site_number}'] = (cx, cy)
 		if site_number == 0:
@@ -637,7 +630,7 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 			if right <= left:
 				left, right = distances[index:index+2]
 			center = (left+right)/2
-			middle = path.ilength(center)
+			middle = surface.parameter(center)
 			x, y = point(middle)
 			size = svg_tools.chromosome_loci.label_size(segment.label, surface, center,
 				right-left, thickness, segment.color)
@@ -661,7 +654,9 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	sites: tuple[svg_tools.chromosome_topology.ProjectedCentromere, ...],
 	centromere_styles: dict[tuple[str, str], CentromereStyle], texture: bool,
 	gene_palette: dict[tuple[str, str], str], allow_external_genes: bool,
-	outward: complex = 0j) -> tuple[svg_tools.parts.SvgPart, list[svg_tools.parts.SvgPart]]:
+	outward: complex = 0j, closed: bool = False, draw_centromeres: bool = True,
+	marker_size: tuple[float, float] | None = None,
+	) -> tuple[svg_tools.parts.SvgPart, list[svg_tools.parts.SvgPart]]:
 	"""Project source features once into the existing BPQ paint and label inputs."""
 	topology = svg_tools.chromosome_topology
 	regions = topology.project_regions(model)
@@ -669,7 +664,8 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	length, width = surface.length, surface.width
 	material_length = model.length
 	ratio = length/material_length
-	collar_half = width*16/30
+	collar_half = marker_size[0]/2 if marker_size else width*16/30
+	collar_across = max(marker_size[1]/2, width*.65) if marker_size else width*.65
 	# Leave a cap-length of body color between the collar and the gene card ink.
 	card_stroke = max(.7, surface.scale*.8)
 	collar_clearance = collar_half + surface.scale + surface.cap_length + card_stroke/2
@@ -684,9 +680,13 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	distances = [region.start/material_length*length for region in regions] + [length]
 	joins = set(model.junctions)
 	junctions = tuple(index for index, region in enumerate(regions) if region.start in joins
-		and left_clearance <= distances[index] <= length-right_clearance
-		and _junction_clears_collars(surface, distances[index], site_distances, outward))
+		and (closed or left_clearance <= distances[index] <= length-right_clearance)
+		and _junction_clears_collars(surface, distances[index], site_distances, outward,
+			collar_half, collar_across))
 	junction_distances = [distances[index] for index in junctions]
+	if closed:
+		junction_distances = [distance+turn for distance in junction_distances
+			for turn in (-length, 0, length)]
 	segments = []
 	for region in regions:
 		key = (region.source_id, region.region_id)
@@ -698,9 +698,12 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	locus_ids = [gene.locus_id for gene in genes]
 	loci = []
 	external = []
+	first_neighbor, last_neighbor = -math.inf, math.inf
+	if closed and gene_positions:
+		first_neighbor, last_neighbor = gene_positions[-1]-length, gene_positions[0]+length
 	for index, (gene, position) in enumerate(zip(genes, gene_positions)):
-		left = gene_positions[index-1] if index > 0 else -math.inf
-		right = gene_positions[index+1] if index+1 < len(genes) else math.inf
+		left = gene_positions[index-1] if index > 0 else first_neighbor
+		right = gene_positions[index+1] if index+1 < len(genes) else last_neighbor
 		clearance = min(position, length-position,
 			*(abs(position-site)-collar_clearance for site in site_distances),
 			*(abs(position-junction)-junction_clearance for junction in junction_distances))
@@ -718,11 +721,12 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 			if not allow_external_genes:
 				raise ValueError(f'{name}: gene {gene.allele!r} cannot fit an internal card at '
 					f'material position {gene.position:g}. Increase the display scale or adjust the spacing.')
-			locus = svg_tools.chromosome_loci.external(locus_name, surface, position, gene.allele, outward)
+			direction = -surface.path.unit_tangent(surface.parameter(position))*1j if closed else outward
+			locus = svg_tools.chromosome_loci.external(locus_name, surface, position, gene.allele, direction)
 			layer = external
 		key = '/'.join(urllib.parse.quote(value, safe='')
 			for value in (gene.source_id, gene.copy_id, gene.locus_id))
-		point = surface.path.point(surface.path.ilength(position))
+		point = surface.path.point(surface.parameter(position))
 		anchor = (point.real, point.imag)
 		anchors = {f'gene:{key}': anchor}
 		if locus_ids.count(gene.locus_id) == 1:
@@ -730,23 +734,27 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 		layer.append(dataclasses.replace(locus, anchors=anchors))
 	paint_sites = [(distance, True, centromere_styles.get((site.source_id, site.id)))
 		for distance, site in zip(site_distances, sites)]
-	part = _paint_chromatid(name, segments, surface, distances, paint_sites, terminal_ends=terminal_ends,
-		texture=texture, junctions=junctions, loci=tuple(loci), draw_centromeres=not outward)
+	draw_centromeres = draw_centromeres and not outward
+	part = _paint_chromatid(name, segments, surface, distances, paint_sites, closed=closed,
+		terminal_ends=terminal_ends, texture=texture, junctions=junctions, loci=tuple(loci),
+		draw_centromeres=draw_centromeres, marker_size=marker_size)
 	bounds = part.bounds
-	if not outward:
+	if draw_centromeres:
 		# The rounded rectangle is an inset rectangle plus the corner and stroke radii.
-		radius = 4*surface.scale
-		along, across = collar_half-radius, width*1.3/2-radius
+		radius = min(4*surface.scale, collar_half, collar_across)
+		along, across = collar_half-radius, collar_across-radius
 		margin = radius+surface.scale
 		for index, distance in enumerate(site_distances):
 			x, y = part.anchors[f'centromere_{index}']
-			tangent = surface.path.unit_tangent(surface.path.ilength(distance))
+			tangent = surface.path.unit_tangent(surface.parameter(distance))
 			dx, dy = abs(tangent.real), abs(tangent.imag)
 			half_x = dx*along+dy*across+margin
 			half_y = dy*along+dx*across+margin
 			bounds = svg_tools.parts.union_bounds(bounds, (x-half_x, y-half_y, x+half_x, y+half_y))
-	center = surface.path.point(surface.path.ilength(length/2))
-	anchors = {**part.anchors, 'center': (center.real, center.imag)}
+	anchors = dict(part.anchors)
+	if not closed:
+		center = surface.path.point(surface.parameter(length/2))
+		anchors['center'] = (center.real, center.imag)
 	for locus in external:
 		anchors.update(locus.anchors)
 	part = dataclasses.replace(part, bounds=bounds, anchors=anchors)
@@ -785,6 +793,39 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 	Adjacent regions of the same color share a stroke and retain their boundary anchors.
 	Set texture=False to omit the background pattern while keeping source bands and shading.
 	"""
+	return _render_pose(name, model, points, width=width, scale=scale, palette=palette,
+		texture=texture, centromere_styles=centromere_styles, gene_palette=gene_palette,
+		allow_external_genes=allow_external_genes, curve_sisters=False)
+
+
+#============================================
+def render_sisters(name: str, model: svg_tools.chromosome_topology.SisterPair, *,
+	start: tuple[float, float], end: tuple[float, float], width: float = 20,
+	scale: float = 1, palette: dict[tuple[str, str], str], texture: bool = True,
+	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None,
+	gene_palette: dict[tuple[str, str], str] | None = None,
+	allow_external_genes: bool = False, straight: bool = False) -> svg_tools.parts.SvgPart:
+	"""Draw mirrored sisters with a shared belt along the axis from start toward end.
+
+	Each chromatid's arc length is its material length times scale. The anchor at
+	start stays fixed and the projected end follows from the curve and length.
+	Use straight=True for parallel sister chromatids. Styling and anchors match render().
+	"""
+	if not isinstance(model, svg_tools.chromosome_topology.SisterPair):
+		raise ValueError('Supply a SisterPair')
+	return _render_pose(name, model, (start, end), width=width, scale=scale, palette=palette,
+		texture=texture, centromere_styles=centromere_styles, gene_palette=gene_palette,
+		allow_external_genes=allow_external_genes, curve_sisters=not straight)
+
+
+#============================================
+def _render_pose(name: str,
+	model: svg_tools.chromosome_topology.Chromatid | svg_tools.chromosome_topology.SisterPair,
+	points: collections.abc.Sequence[tuple[float, float]], *, width: float, scale: float,
+	palette: dict[tuple[str, str], str], texture: bool,
+	centromere_styles: dict[tuple[str, str], CentromereStyle] | None,
+	gene_palette: dict[tuple[str, str], str] | None, allow_external_genes: bool,
+	curve_sisters: bool) -> svg_tools.parts.SvgPart:
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
 		raise ValueError('Use an XML-safe unique namespace')
 	if not _positive(width) or not _positive(scale) or not isinstance(palette, dict):
@@ -806,6 +847,7 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 	if path.isclosed():
 		raise ValueError('Chromatid poses require an open centerline')
 	surface = svg_tools.chromosome_surface.Surface(path, width)
+	first_surface = second_surface = surface
 	first_sites = tuple(site for site in topology.project_centromeres(first) if site.active)
 	offset = 0j
 	if paired:
@@ -816,17 +858,22 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 		if ((left.source_id, left.id) != (right.source_id, right.id)
 			or abs(left.position-right.position) > material_tolerance):
 			raise ValueError('Sisters need corresponding active centromeres at the same position')
-		parameter = surface.path.ilength(left.position/first.length*surface.length)
+		waist = left.position/first.length*surface.length
+		parameter = surface.parameter(waist)
 		offset = surface.path.unit_tangent(parameter)*1j*(width*.6)
+		if curve_sisters:
+			first_path, second_path = svg_tools.chromosome_surface.sister_centerlines(path, waist, width)
+			first_surface = svg_tools.chromosome_surface.Surface(first_path, width)
+			second_surface = svg_tools.chromosome_surface.Surface(second_path, width)
 	first_name = f'{name}-first' if paired else name
 	styles = centromere_styles or {}
 	gene_colors = gene_palette or {}
-	first_part, first_external = _render_topology_chromatid(first_name, first, surface, palette,
+	first_part, first_external = _render_topology_chromatid(first_name, first, first_surface, palette,
 		sites=first_sites, centromere_styles=styles, texture=texture, gene_palette=gene_colors,
 		allow_external_genes=allow_external_genes, outward=-offset)
 	if not paired:
 		return _with_external_loci(first_part, first_external)
-	second_part, second_external = _render_topology_chromatid(f'{name}-second', second, surface,
+	second_part, second_external = _render_topology_chromatid(f'{name}-second', second, second_surface,
 		palette, sites=second_sites, centromere_styles=styles, texture=texture, gene_palette=gene_colors,
 		allow_external_genes=allow_external_genes, outward=offset)
 	first_sister = svg_tools.parts.transform(first_part, x=-offset.real, y=-offset.imag)
@@ -835,9 +882,71 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 		second_sister.anchors['centromere'], width, style=styles.get((left.source_id, left.id)))
 	part = svg_tools.parts.group({'first': first_sister, 'second': second_sister, 'belt': belt})
 	anchors = {key: first_part.anchors[key] for key in ('start', 'end', 'center', 'centromere')}
+	if curve_sisters:
+		anchors = {key: tuple((first_coordinate+second_coordinate)/2 for first_coordinate, second_coordinate
+			in zip(point, second_part.anchors[key])) for key, point in anchors.items()}
 	part = dataclasses.replace(part, anchors={**part.anchors, **anchors})
 	external = [svg_tools.parts.transform(locus, x=-offset.real, y=-offset.imag)
 		for locus in first_external]
 	external.extend(svg_tools.parts.transform(locus, x=offset.real, y=offset.imag)
 		for locus in second_external)
+	return _with_external_loci(part, external)
+
+
+#============================================
+def render_path(name: str, model: svg_tools.chromosome_topology.Chromatid,
+	path_d: str, *, width: float = 20, palette: dict[tuple[str, str], str],
+	texture: bool = True,
+	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None,
+	gene_palette: dict[tuple[str, str], str] | None = None,
+	allow_external_genes: bool = False, draw_centromeres: bool = True,
+	marker_size: tuple[float, float] | None = None) -> svg_tools.parts.SvgPart:
+	"""Render one chromatid on an authored open path without rescaling the pose."""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	topology = svg_tools.chromosome_topology
+	if not isinstance(model, topology.Chromatid) or not _positive(width) or not isinstance(palette, dict):
+		raise ValueError('Supply a Chromatid, finite positive width, and a source-region palette')
+	if marker_size is not None and (len(marker_size) != 2 or not all(_positive(value) for value in marker_size)):
+		raise ValueError('Marker size must contain two finite positive lengths')
+	path = svg_tools.chromosome_surface.authored_centerline(path_d, closed=False)
+	surface = svg_tools.chromosome_surface.Surface(path, width)
+	sites = tuple(site for site in topology.project_centromeres(model) if site.active)
+	part, external = _render_topology_chromatid(name, model, surface, palette,
+		sites=sites, centromere_styles=centromere_styles or {}, texture=texture,
+		gene_palette=gene_palette or {}, allow_external_genes=allow_external_genes,
+		draw_centromeres=draw_centromeres, marker_size=marker_size)
+	return _with_external_loci(part, external)
+
+
+#============================================
+def render_ring(name: str, model: svg_tools.chromosome_topology.Chromatid, *,
+	center: tuple[float, float], width: float = 20, scale: float = 1,
+	palette: dict[tuple[str, str], str], texture: bool = True,
+	gene_palette: dict[tuple[str, str], str] | None = None,
+	allow_external_genes: bool = False) -> svg_tools.parts.SvgPart:
+	"""Close an acentric internal fragment clockwise from the top of a circular pose."""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	topology = svg_tools.chromosome_topology
+	if (not isinstance(model, topology.Chromatid) or model.ends != ('break', 'break')
+		or topology.project_centromeres(model)):
+		raise ValueError('A ring requires an acentric fragment with two break ends')
+	if not _positive(width) or not _positive(scale) or not isinstance(palette, dict):
+		raise ValueError('Supply finite positive width and scale and a source-region palette')
+	if not isinstance(center, (tuple, list)) or len(center) != 2 or not all(map(_finite, center)):
+		raise ValueError('Ring center must contain two finite coordinates')
+	length = model.length*scale
+	radius = length/math.tau
+	if not _positive(length) or radius <= width/2:
+		raise ValueError('Ring radius must be finite and greater than half the body width')
+	x, y = center
+	positions = (complex(x, y-radius), complex(x+radius, y), complex(x, y+radius),
+		complex(x-radius, y))
+	path = svgpathtools.Path(*(svgpathtools.Arc(start, complex(radius, radius), 0, False, True, end)
+		for start, end in zip(positions, (*positions[1:], positions[0]))))
+	surface = svg_tools.chromosome_surface.Surface(path, width)
+	part, external = _render_topology_chromatid(name, model, surface, palette,
+		sites=(), centromere_styles={}, texture=texture, gene_palette=gene_palette or {},
+		allow_external_genes=allow_external_genes, closed=True)
 	return _with_external_loci(part, external)

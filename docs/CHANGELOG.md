@@ -13,12 +13,21 @@
 
 ### Behavior or Interface Changes
 
+- Migrate the 73-slide [chromosome review](../prototype/chromosome_review.djot) to shared chromosome
+  models and rendering. Promote seven Mini2 models and generate 68 SVGs for 70 placements. C04
+  continues to use the original local course JPEG. Preserve the source images in mixed figures
+  and keep the recipes and their frozen source components in the prototype.
+- Add `render_sisters()` with gentle mirrored curves for C02, C38, and C67. Use straight sisters
+  in C39 to align with the cohesin drawing. Support independently authored sister paths for C57
+  and a closed path for the excised ring in C48. Existing explicit-path calls keep their geometry.
 - Rename the Djot speaker note directive to `@speaker-notes`. Keep lecture cues in ODP speaker
   notes and move slide development rationale and provenance into `SLIDE_DEVELOPMENT_NOTES.md`
   beside the decks. Document figure-specific choices in Python recipe docstrings.
 
 ### Fixes and Maintenance
 
+- Add native explanations for the C24 crossover, C63 example frequencies, and C68 trisomy 21
+  outcome. Improve map contrast in C49 and the figure layout in C68. Clarify C59's problem cue.
 - Track reviewed image-containing SVGs with the `.image.svg` suffix. Rename the 17 assets
   covered by individual SVG exceptions and update their deck and generator references.
 - Label the centromeres in C23 and C61 to track their origin after exchange. Add one

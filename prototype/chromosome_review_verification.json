@@ -755,5 +755,67 @@
     "mini_pdf_bytes_before_after": [1996068, 1001242],
     "mini_pdf_form_objects_before_after": [3795, 1137],
     "visual_check": "Figure areas on all four mini-deck pages matched pixel for pixel at 2x. Both ODPs embed the four updated SVGs."
+  },
+  "api_migration_2026_11_18": {
+    "pages": 73,
+    "figure_ids": 68,
+    "figure_placements": 71,
+    "svg_placements": 70,
+    "unique_svgs": 68,
+    "shared_artwork": [["C03", "C36"], ["C13", "C21"]],
+    "mini2_promotions": ["C01", "C16", "C25", "C28", "C55", "C61", "C63"],
+    "native_clarifications": ["C24", "C63", "C68"],
+    "speaker_notes": ["C18"],
+    "odf_image_placements_verified_exact": 71,
+    "native_text_and_pdf_selection_verified": true,
+    "lecture_files_verified_unchanged": 1024,
+    "immutable_review_records_verified_unchanged": 2,
+    "frozen_input_files": 10,
+    "frozen_input_directory": "prototype/assets/chromosome_review_sources",
+    "generator_passed_with_tracked_lecture_file_opens_blocked": true,
+    "original_local_jpeg_required_for_export": "C04",
+    "raster_evidence_verified_byte_for_byte": ["C07", "C08", "C09", "C13", "C14", "C21", "C30", "C50"],
+    "scratch_python_hash_seeds": [131, 229, 453],
+    "scratch_svg_and_inventory_bytes_match_canonical": true,
+    "svg_xml_ids_references_fonts_and_inventory_hashes_verified": true,
+    "checks": {
+      "pyflakes_passed": true,
+      "strict_native_lint": {"decks": 3, "slides": 87, "images": 85},
+      "focused_tests_passed": 72,
+      "base_tests_passed": 10233,
+      "base_suite_advisory": "svg_tools/chromosomes.py has 952 lines.",
+      "review_fit_and_capacity_findings": 0
+    },
+    "visual_review": {
+      "initial_coverage": {
+        "visual_01_18": "C01-C18 and cover",
+        "visual_19_35": "C19-C35",
+        "visual_36_53": "C36-C53",
+        "visual_54_68": "C54-C68 and closing page"
+      },
+      "final_pages_reinspected_at_scale": [1, 3, 12, 14, 22, 25, 27, 28, 33, 39, 40, 50, 65, 71, 72],
+      "final_pages_pixel_identical_to_reviewed_render": 58,
+      "final_material_findings": 0,
+      "notes": [
+        "C27 retains small live labels inherited from the source composition.",
+        "C56-C58 show schematic authored pairing loops."
+      ]
+    },
+    "odp": {
+      "path": "output/odp/chromosome_review.odp",
+      "bytes": 17045246,
+      "sha256": "5ab76de87f0a0738df060d39767abca7ad287f906ca93afbb869d3bcd3bae1ca"
+    },
+    "pdf": {
+      "path": "output/pdf/chromosome_review.pdf",
+      "bytes": 25274269,
+      "sha256": "619e4e6d6f82c2b5b31eea80b24c14e28437257062b90f9da886a931171a8a19",
+      "largest_figure_page_owned_objects": {
+        "figure": "C16",
+        "bytes": 2781710,
+        "form_object_bytes": 2430701
+      }
+    },
+    "ledger": "docs/active_plans/workstreams/chromosome_review_api_migration.md"
   }
 }

@@ -62,7 +62,7 @@ def append_label(parent: lxml.etree._Element, x: float, y: float,
 def label_size(label: str, surface: svg_tools.chromosome_surface.Surface,
 	center: float, length: float, width: float, color: str) -> float:
 	"""Fit actual upright ink within a curved locus's tangent and normal spans."""
-	tangent = surface.path.unit_tangent(surface.path.ilength(center))
+	tangent = surface.path.unit_tangent(surface.parameter(center))
 	normal = tangent * 1j
 	part = _gene_label_part(label, 100, color)
 	xmin, ymin, xmax, ymax = part.bounds
@@ -106,10 +106,10 @@ def card(name: str, surface: svg_tools.chromosome_surface.Surface, center: float
 		-surface.width/2+inset, surface.width/2-inset), 'fill': color,
 		'stroke': '#344651', 'stroke-width': str(stroke),
 		'stroke-linejoin': 'round', 'class': 'gene-locus'})
-	point = surface.path.point(surface.path.ilength(center))
+	point = surface.path.point(surface.parameter(center))
 	label_bounds = append_label(group, point.real, point.imag, label, size, color)
 	fragment = lxml.etree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
-	path = surface.path.cropped(surface.path.ilength(start), surface.path.ilength(end))
+	path = surface.path.cropped(surface.parameter(start), surface.parameter(end))
 	xmin, xmax, ymin, ymax = path.bbox()
 	margin = inner_width/2+stroke/2
 	bounds = (min(xmin-margin, label_bounds[0]), min(ymin-margin, label_bounds[1]),
@@ -125,7 +125,7 @@ def card(name: str, surface: svg_tools.chromosome_surface.Surface, center: float
 def external(name: str, surface: svg_tools.chromosome_surface.Surface,
 	position: float, allele: str, outward: complex) -> svg_tools.parts.SvgPart:
 	"""Keep a true locus dot and a readable upright label when a card cannot fit."""
-	parameter = surface.path.ilength(position)
+	parameter = surface.parameter(position)
 	point = surface.path.point(parameter)
 	normal = surface.path.unit_tangent(parameter)*1j
 	if (normal*outward.conjugate()).real < 0:

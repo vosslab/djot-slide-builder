@@ -110,8 +110,10 @@ current evaluation deck is [chromosome_review.djot](../prototype/chromosome_revi
 It remains a prototype awaiting instructor critique.
 Use the shared [chromosomes.py](../svg_tools/chromosomes.py) body tools for production rods,
 replicated sisters, and curved chromatids. Course recipes supply models, positions, labels and
-relationships; they must not define their own chromosome silhouettes. Use the straight layout
-helpers for rods and sisters, and `chromosome_path_part()` for authored curved chromatids.
+relationships; they must not define their own chromosome silhouettes. Use straight layout
+helpers for rods and `render_sisters()` for gently curved sister pairs. Set `straight=True`
+when a measurement or a cohesin diagram calls for parallel sisters. Use the authored-path
+renderers for specific bends, loops, and crossings.
 Apply BPQ surface polish to condensed chromosome bodies. Uncondensed chromatin, including
 stringy DNA in early prophase, uses simple constant-width paths that preserve its source
 geometry. Choose the surface treatment from the represented condensation state.

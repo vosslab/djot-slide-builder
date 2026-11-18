@@ -89,6 +89,71 @@ def centerline(points: collections.abc.Sequence[tuple[float, float]], *, length:
 
 
 #============================================
+def sister_centerlines(axis: svgpathtools.Path, waist: float, width: float,
+	) -> tuple[svgpathtools.Path, svgpathtools.Path]:
+	"""Fit mirrored arm curves to the display lengths on either side of the waist."""
+	length = axis.length()
+	if max(waist, length-waist) <= width:
+		return axis, axis
+	segments = []
+	for direction, arm_length in ((-1, waist), (1, length-waist)):
+		if arm_length <= 0:
+			continue
+		if arm_length <= width:
+			arm = [svgpathtools.Line(0j, complex(direction*arm_length))]
+		else:
+			inner_stub, outer_stub = width*.55, width*.35
+			run = arm_length-inner_stub-outer_stub
+			# Limit the bend on short arms so the inner edge of the ribbon stays smooth.
+			flare = min(width*.5, run*(run/width)/8)
+			bend_start = complex(direction*inner_stub)
+			bend_end = complex(direction*(arm_length-outer_stub), flare)
+			handle = direction*run/3
+			bend = svgpathtools.CubicBezier(bend_start, bend_start+handle, bend_end-handle, bend_end)
+			arm = [svgpathtools.Line(0j, bend_start), bend,
+				svgpathtools.Line(bend_end, complex(direction*arm_length, flare))]
+			factor = arm_length / sum(segment.length() for segment in arm)
+			arm = [type(segment)(*(point*factor for point in segment.bpoints())) for segment in arm]
+		if direction < 0:
+			arm = [segment.reversed() for segment in reversed(arm)]
+		segments.extend(arm)
+	tangent = axis[0].unit_tangent(0)
+	x_start = segments[0].start.real
+	paths = []
+	for side in (-1, 1):
+		placed = []
+		for segment in segments:
+			points = [axis.start + tangent*complex(point.real-x_start, side*point.imag)
+				for point in segment.bpoints()]
+			placed.append(type(segment)(*points))
+		paths.append(svgpathtools.Path(*placed))
+	return paths[0], paths[1]
+
+
+#============================================
+def authored_centerline(path_d: str, *, closed: bool) -> svgpathtools.Path:
+	"""Validate the geometry of a supplied SVG path before applying the surface."""
+	path = svgpathtools.parse_path(path_d)
+	if not path or not path.iscontinuous():
+		raise ValueError('Supply one continuous nonempty centerline')
+	control_points = [point for segment in path for point in
+		((segment.start, segment.end, segment.radius, segment.center)
+		if isinstance(segment, svgpathtools.Arc) else segment.bpoints())]
+	if any(not math.isfinite(value) for point in control_points
+		for value in (point.real, point.imag)):
+		raise ValueError('Path coordinates must be finite')
+	if any(segment.length() <= 0 for segment in path):
+		raise ValueError('Centerline segments must have positive length')
+	if path.isclosed() != closed:
+		raise ValueError('Path closure must match the closed setting')
+	path = smooth_centerline(path)
+	length = path.length()
+	if not math.isfinite(length) or length <= 0:
+		raise ValueError('Centerline length must be finite and positive')
+	return path
+
+
+#============================================
 def smooth_centerline(path: svgpathtools.Path) -> svgpathtools.Path:
 	"""Return one tangent-continuous centerline without moving its joins.
 
@@ -236,6 +301,20 @@ class Surface:
 		self.distances = [self.distances[index] for index in indices]
 		self.distances = [value * self.length / distance for value in self.distances]
 
+	def parameter(self, distance: float) -> float:
+		"""Get the path parameter at a distance, including rounded segment joins."""
+		try:
+			return self.path.ilength(distance)
+		except ValueError:
+			if 0 < distance < self.length:
+				boundary = 0.0
+				for index, segment in enumerate(self.path[:-1]):
+					boundary += segment.length()
+					# Subtracting a segment's start can round its local distance past its end.
+					if abs(distance-boundary) <= math.ulp(boundary):
+						return self.path.t2T(index, 1)
+			raise
+
 	def point(self, along: float, across: float) -> complex:
 		index = min(len(self.distances)-2, max(0,
 			bisect.bisect_right(self.distances, along)-1))
@@ -266,7 +345,12 @@ class Surface:
 		terminal_ends: tuple[bool, bool] | None = None) -> str:
 		"""Round native ends and leave cut ends flat."""
 		half = self.width / 2
-		if closed or cut or terminal_ends == (False, False):
+		if closed:
+			# Outline both edges without stroking the radial seam between them.
+			indices = range(len(self.positions)-1)
+			return ' '.join(self._points_polygon([self._offset(index, across)
+				for index in order]) for across, order in ((-half, indices), (half, reversed(indices))))
+		if cut or terminal_ends == (False, False):
 			return self.ribbon(0, self.length, -half, half)
 		radius = min(6*self.scale, self.length/2)
 		round_start, round_end = (True, True) if terminal_ends is None else terminal_ends

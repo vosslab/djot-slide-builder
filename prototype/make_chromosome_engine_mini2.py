@@ -560,8 +560,8 @@ def build_c31(path: pathlib.Path) -> None:
 
 
 #============================================
-def build_c55(path: pathlib.Path) -> None:
-	"""Compare straight gene order with the opposite paths through a pairing loop."""
+def build_c55(path: pathlib.Path, *, loop_only: bool = False) -> None:
+	"""Draw the gene-order comparison or the matching loci in the pairing loop."""
 	# Source: LECT13B, slide 8 (chromosome_samples.csv).
 	render = svg_tools.chromosomes.render
 	genes = {'A': .071, 'B': .42, 'C': .5, 'D': .58, 'E': .929}
@@ -573,10 +573,6 @@ def build_c55(path: pathlib.Path) -> None:
 	inverted = topology.join(left, topology.reverse(middle), right)
 	palette = {('c55-normal', 'body'): '#83BCE3', ('c55-inverted', 'body'): '#CE9A74'}
 
-	straight_normal = render('c55-straight-normal', normal, points=((35, 231), (374, 231)),
-		width=29, scale=.339, palette=palette, texture=False)
-	straight_inverted = render('c55-straight-inverted', inverted, points=((35, 345), (374, 345)),
-		width=29, scale=.339, palette=palette, texture=False)
 	loop_width, loop_scale = 32, 1.13
 	axis = 810
 	# The head turns back inward above the flared arms of the omega.
@@ -610,17 +606,29 @@ def build_c55(path: pathlib.Path) -> None:
 	clip = (f'<clipPath id="c55-loop-overpass"><rect x="{front_x-32}" y="{front_y-loop_width/2}" '
 		f'width="64" height="{loop_width}" transform="rotate({angle} {front_x} {front_y})"/></clipPath>')
 
+	loop = ''
+	for locus in 'ABCDE':
+		anchor = f'gene_{locus}'
+		loop += drawing.line(*loop_normal.anchors[anchor], *loop_inverted.anchors[anchor],
+			color='#52657A', width=4)
+	loop += loop_normal.fragment + loop_inverted.fragment
+	loop += f'<defs>{clip}</defs><g clip-path="url(#c55-loop-overpass)">{front.fragment}</g>'
+	if loop_only:
+		drawing.write_svg(path, 560, 430, 'Inversion pairing loop',
+			'Matching loci A through E pair in the flanks and in the omega-shaped loop. '
+			'Both centromeres remain outside the inverted B through D interval.',
+			f'<g transform="translate(-528 -43)">{loop}</g>')
+		return
+
+	straight_normal = render('c55-straight-normal', normal, points=((35, 231), (374, 231)),
+		width=29, scale=.339, palette=palette, texture=False)
+	straight_inverted = render('c55-straight-inverted', inverted, points=((35, 345), (374, 345)),
+		width=29, scale=.339, palette=palette, texture=False)
 	ink = '#213449'
 	body = drawing.text(35, 187, 'Standard order', size=32, color=ink, anchor='start')
 	body += drawing.text(35, 301, 'Inverted order', size=32, color=ink, anchor='start')
 	body += drawing.text(axis, 34, 'Paired homologs', size=32, color=ink)
-	body += straight_normal.fragment + straight_inverted.fragment
-	for locus in 'ABCDE':
-		anchor = f'gene_{locus}'
-		body += drawing.line(*loop_normal.anchors[anchor], *loop_inverted.anchors[anchor],
-			color='#52657A', width=4)
-	body += loop_normal.fragment + loop_inverted.fragment
-	body += f'<defs>{clip}</defs><g clip-path="url(#c55-loop-overpass)">{front.fragment}</g>'
+	body += straight_normal.fragment + straight_inverted.fragment + loop
 	drawing.write_svg(path, 1200, 546, 'Homolog pairing with an inversion',
 		'Standard ABCDE and inverted ADCBE homologs. Their matching loci pair along the flanks '
 		'and around an omega-shaped loop. The centromeres stay outside the reversed interval. The curved '
@@ -703,16 +711,21 @@ def _c63_chromatids() -> dict[int, topology.Chromatid]:
 
 
 #============================================
-def build_c63(path: pathlib.Path) -> None:
-	"""Lay out two products in each segregation column on a shared chromosome scale."""
+C63_COLUMNS = (
+	('Adjacent-1', ((1, 2), (3, 4))),
+	('Adjacent-2', ((1, 3), (2, 4))),
+	('Alternate', ((1, 4), (2, 3))),
+)
+
+
+#============================================
+def write_c63_view(path: pathlib.Path, title: str, description: str,
+	columns: tuple[tuple[str, tuple[tuple[int, int], ...]], ...], *,
+	column_width: int = 378, scale: float = 5.45, chromatid_width: float = 30) -> None:
+	"""Lay out selected segregation columns and their DNA scale bar."""
 	# Source: LECT13D, slide 41 (chromosome_samples.csv).
 	models = _c63_chromatids()
 	labels = {1: 'Derivative X', 2: 'Normal 2', 3: 'Normal Y', 4: 'Derivative 2'}
-	columns = (
-		('Adjacent-1', ((1, 2), (3, 4))),
-		('Adjacent-2', ((1, 3), (2, 4))),
-		('Alternate', ((1, 4), (2, 3))),
-	)
 	ink, navy = '#333333', '#003366'
 	colors = {
 		'X': ('X', '#B74300', '#FFDFCC'),
@@ -724,17 +737,18 @@ def build_c63(path: pathlib.Path) -> None:
 	collars = {(source, f'{source}.cen'): svg_tools.chromosomes.CentromereStyle(label, fill)
 		for source, (label, _, fill) in colors.items()}
 	text = svg_tools.text.label
-	scale = 5.45
+	pitch = column_width + 12
+	width = pitch * len(columns) + 30
 	body = []
 	for column, (heading, pairs) in enumerate(columns):
-		left = 21 + column * 390
-		mid = left + 189
+		left = 21 + column * pitch
+		mid = left + column_width // 2
 		body.append(text(mid, 43, heading, size=34, color=ink, bold=True, anchor='middle').fragment)
 		for row, pair in enumerate(pairs):
 			top = 65 + row * 245
 			pair_id = f'{pair[0]}-{pair[1]}'
 			body.append(f'<g id="c63-pair-{pair_id}">')
-			body.append(f'<rect x="{left}" y="{top}" width="378" height="229" rx="14" '
+			body.append(f'<rect x="{left}" y="{top}" width="{column_width}" height="229" rx="14" '
 				'fill="#FFFFFF" stroke="#BFD1E3" stroke-width="2"/>')
 			body.append(text(mid, top + 34, f'{pair[0]} + {pair[1]}', size=29,
 				color=navy, bold=True, anchor='middle').fragment)
@@ -745,22 +759,31 @@ def build_c63(path: pathlib.Path) -> None:
 				model = models[chromosome_id]
 				x = left + 24
 				part = svg_tools.chromosomes.render(f'c63-pair-{pair_id}-chr-{chromosome_id}', model,
-					points=((x, y), (x + scale * model.length, y)), width=30, scale=scale,
+					points=((x, y), (x + scale * model.length, y)), width=chromatid_width, scale=scale,
 					palette=palette, centromere_styles=collars)
 				body.append(part.fragment)
 			body.append('</g>')
 	collar_marker = svg_tools.chromosomes.centromere_part('c63-legend', thickness=20,
 		label='X', fill=colors['X'][2])
-	body.append(svg_tools.parts.transform(collar_marker, 428, 567).fragment)
-	body.append(text(451, 575, 'Centromere', size=24, color=ink, anchor='start').fragment)
-	body.append(drawing.line(643, 567, 643+10*scale, 567, color=ink, width=3))
-	body.append(text(712, 575, '10 Mb', size=24, color=ink, anchor='start').fragment)
-	drawing.write_svg(path, 1200, 590, 'Six Drosophila gametes after reciprocal translocation',
+	legend_x = (width - 344) // 2
+	body.append(svg_tools.parts.transform(collar_marker, legend_x, 567).fragment)
+	body.append(text(legend_x + 23, 575, 'Centromere', size=24, color=ink, anchor='start').fragment)
+	bar_start = legend_x + 215
+	bar_end = bar_start + 10 * scale
+	body.append(drawing.line(bar_start, 567, bar_end, 567, color=ink, width=3))
+	body.append(text(round(bar_end + 14.5), 575, '10 Mb', size=24, color=ink, anchor='start').fragment)
+	drawing.write_svg(path, width, 590, title, description, ''.join(body))
+
+
+#============================================
+def build_c63(path: pathlib.Path) -> None:
+	"""Show all six products across the three segregation columns."""
+	write_c63_view(path, 'Six Drosophila gametes after reciprocal translocation',
 		'Adjacent-1 gives 1 + 2 and 3 + 4. Adjacent-2 gives 1 + 3 and 2 + 4. '
 		'Alternate gives 1 + 4 and 2 + 3. Chromosome 1 is derivative X (rb+), '
 		'2 is normal 2 (dp), 3 is normal Y, and 4 is derivative 2 (dp+). '
 		'The chromosomes share a DNA length scale. The pale collars carry centromere IDs. '
-		'White zigzags mark the exchanged tips in the two derivatives.', ''.join(body))
+		'White zigzags mark the exchanged tips in the two derivatives.', C63_COLUMNS)
 
 
 #============================================

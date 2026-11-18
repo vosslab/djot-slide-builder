@@ -1,7 +1,7 @@
 # Chromosome engine
 
 Define the material once, then draw it in different poses or cut and join it into new products.
-Use `svg_tools.chromosome_topology` for biology and `svg_tools.chromosomes.render()` for drawing.
+Use `svg_tools.chromosome_topology` for biology and `svg_tools.chromosomes` for drawing.
 The renderer uses the same BPQ surface paint as the existing chromosome drawing functions.
 
 Start with biological definitions in Python or load them from structured data. Keep source
@@ -66,13 +66,43 @@ last point, may move.
 Use `part.anchors['end']` for the actual endpoint. `width` is the body width in display units
 and stays fixed as `scale` changes. Keep one scale when comparing material lengths. Supply
 finite points with distinct neighbors and distinct ends. Use gentler bends if a curve doubles
-back locally or bends too tightly for its width. The engine handles open, linear material.
+back locally or bends too tightly for its width.
 
 For an axis-aligned telomere, put three collinear points at that end of a curved pose.
 Give them the same y coordinate for a horizontal arm or the same x coordinate for a
 vertical arm. Keep the outermost span at least one cap length after scaling
 (`8 * width / 30` on a full-size rod). This holds both sides of the cap at the same angle.
 For an angled tip, use collinear points along its intended direction.
+
+### Keep an authored pose
+
+Use `render_path()` for an open SVG centerline whose coordinates matter to the composition.
+It preserves smooth authored geometry and places source features by arc length, so the
+path's length sets the display scale. With `draw_centromeres=False`, active sites keep their
+anchors and layout clearance for a separately positioned collar or sister belt.
+`marker_size=(along, across)` sets the collar dimensions in display units, with an
+across span of at least 1.3 times the body width.
+
+```python
+authored = chromosomes.render_path('linked-authored', linked,
+	'M20 48 C105 0 180 86 260 43', width=22, palette=blue)
+```
+
+### Close an acentric fragment
+
+Use `render_ring()` on a fragment with two break ends and no centromere site. The circular
+centerline has circumference `fragment.length * scale`, starts at its top and runs clockwise.
+Its radius must exceed half the body width. Both material boundaries at the closure share
+one point. The ring has a geometric `center` anchor, source-region and locus anchors, and marks
+at its internal joins. It has no caps or terminal anchors. Use `allow_external_genes=True`
+for an outward leader when a locus near the closure cannot fit a card.
+
+```python
+_, distal = topology.split(linked, .55)
+fragment, _ = topology.split(distal, .75)
+ring = chromosomes.render_ring('linked-ring', fragment,
+	center=(75, 75), width=16, scale=3, palette=blue)
+```
 
 ## Name source material and loci
 
@@ -109,18 +139,22 @@ wild_part = chromosomes.render('wild-straight', wild, points=((20, 95), (260, 95
 	width=22, palette={('wild', 'body'): palette.shade('dark_orange', 'dark')})
 ```
 
-Use `replicate()` and one sequence of shape points to draw sisters. This pose is the reference
-between the two translated bodies. The automatic belt requires one corresponding active
-centromere per sister. The two chromatids remain available as `sisters.first` and `sisters.second`
-for separate poses or material operations. For a deep U-shaped bend, give each sister
-its own pose. The automatic pair uses one translation per sister, so their arms can
-overlap where the curve turns parallel to that translation.
+Use `replicate()` and `render_sisters()` to draw gently curved sisters with one shared centromere
+belt. The automatic belt requires one active centromere per sister with matching source and site
+IDs and the same material position. The axis begins at `start` and points toward `end`.
+Each chromatid follows its material length times `scale`,
+so the end anchor lies slightly closer to the start when the arms curve. An arm no longer
+than the body width stays straight. Pass `straight=True` for parallel arms throughout.
 
 ```python
 sisters = topology.replicate(linked)
-paired = chromosomes.render('linked-sisters', sisters, points=curved_points,
+paired = chromosomes.render_sisters('linked-sisters', sisters, start=(20, 95), end=(260, 95),
 	width=22, palette=blue)
 ```
+
+Use `render(..., points=...)` to draw a pair along one authored centerline. The renderer
+translates each sister from that line, so a sharp turn may leave overlapping arms. For separate
+poses or material operations, use the individual chromatids `sisters.first` and `sisters.second`.
 
 ## Exchange two terminal pieces
 
@@ -186,15 +220,15 @@ inactive = topology.with_centromere_activity(second_product, 'other.cen', active
 
 ## Place labels and compose
 
-`render()` returns an `SvgPart`. Use its `fragment` to write an SVG, its `bounds` to fit the
-canvas, and its `anchors` to position labels and leaders. Bounds are in SVG coordinates in the
+`render()` and `render_sisters()` return an `SvgPart`. Use its `fragment` to write an SVG,
+its `bounds` to fit the canvas, and its `anchors` to position labels and leaders. Bounds are in SVG coordinates in the
 order `(xmin, ymin, xmax, ymax)` and include painted collars, leaders, and measured external
 label text. The key anchors refer to the final shape in SVG coordinates.
 
 | Feature | Anchor |
 | --- | --- |
-| Start and end | `start`, `end` |
-| Arc midpoint | `center` |
+| Open ends | `start`, `end` |
+| Arc midpoint or geometric ring center | `center` |
 | Active centromere | `centromere` for the first, plus `centromere_0`, `centromere_1`, and so on in material order |
 | Gene locus | `gene_w` when `w` is unique on the chromatid. `gene:linked/linked/w` always identifies source, copy, and locus explicitly. Each qualified component is URL-encoded. |
 

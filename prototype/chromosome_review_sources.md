@@ -9,16 +9,18 @@ prototype revisions where the replacement inventory lists them.
 [chromosome_samples.csv](chromosome_samples.csv) is the authoritative 68-record source map for
 **C01-C68**. Its columns retain each review ID, review-slide number, title, family, original deck
 and slide, source-definition path and line, original asset path, and SHA-256 snapshot hash.
-[chromosome_replacements.csv](chromosome_replacements.csv) records prototype replacement assets
-and their generation provenance.
+[chromosome_replacements.csv](chromosome_replacements.csv) records all 70 replacement placements
+in deck order, including the recipe and SHA-256 hash of each SVG. C03/C36 and C13/C21 share
+artwork, so the inventory covers 68 distinct SVGs. C04 links directly to its original JPEG from
+the source inventory. Each shared figure retains its own review caption and original citation.
 
 ## Multi-view review records
 
-C55 has an overview and a loop view from the same LECT13B source; C55 in
+C55 has an overview and a loop view of the same Mini2 synapsis model based on LECT13B. C55 in
 [chromosome_feedback.csv](chromosome_feedback.csv) applies to both views. C63 has a three-column
-overview plus enlarged first-two-column and final-column views from the same LECT13D source; C63
-in the feedback sheet applies to all three views. The feedback sheet's `keep`, `change`, and
-`reason` fields replace the former on-slide review prompts.
+overview plus enlarged first-two-column and final-column views of the same Mini2 products
+based on LECT13D. C63 in the feedback sheet applies to all three views. The feedback sheet's
+`keep`, `change`, and `reason` fields replace the former on-slide review prompts.
 
 ## C18 scientific and visual references
 

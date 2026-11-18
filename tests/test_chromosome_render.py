@@ -1,5 +1,7 @@
 """Source-backed chromosomes keep material and annotations through BPQ painting."""
 
+import math
+
 import lxml.etree
 import pytest
 import svgpathtools
@@ -149,6 +151,62 @@ def test_sisters_keep_both_copies_under_one_foreground_belt() -> None:
 	assert belt.find('text') is None
 	order = list(root.iter())
 	assert all(order.index(body) < order.index(belt) for body in bodies)
+
+
+#============================================
+@pytest.mark.parametrize('centromere', (0, .05, .12, .44, 1))
+def test_sister_pose_mirrors_curves_at_exact_arm_lengths(centromere: float) -> None:
+	model = topology.replicate(topology.chromosome('A', length=110, centromere=centromere,
+		genes={'rb': .75}))
+	palette = {('A', 'body'): '#835BB2'}
+	start, end = (4, 9), (7, 13)
+	part = chromosomes.render_sisters('sisters', model, start=start, end=end,
+		width=16, scale=1.5, palette=palette)
+	root = lxml.etree.fromstring(part.fragment)
+	bodies = root.findall('.//g[@data-layer="body"]')
+	paths = [svgpathtools.parse_path(body.find('./path').attrib['d']) for body in bodies]
+	belt, = root.findall('.//g[@data-layer="centromere"]')
+	order = list(root.iter())
+	assert all(order.index(body) < order.index(belt) for body in bodies)
+	axis = .6 + .8j
+	origin = complex(*start)
+	assert part.anchors['start'] == pytest.approx(start)
+	assert part.anchors['first.gene_rb'] == part.anchors['first.gene:A/A.s1/rb']
+	assert part.anchors['second.gene_rb'] == part.anchors['second.gene:A/A.s2/rb']
+	for path in paths:
+		assert path.length() == pytest.approx(165)
+		assert any(isinstance(segment, svgpathtools.CubicBezier) for segment in path)
+		assert isinstance(path[0], svgpathtools.Line)
+		assert isinstance(path[-1], svgpathtools.Line)
+		for fraction in (0, centromere, 1):
+			assert path.unit_tangent(path.ilength(fraction*path.length())) == pytest.approx(axis)
+		assert ((path.end-path.start)/axis).real < 165
+	for fraction in (0, centromere, .75, 1):
+		left, right = ((path.point(path.ilength(fraction*path.length()))-origin)/axis for path in paths)
+		assert left == pytest.approx(right.conjugate())
+		if fraction == centromere:
+			assert left.imag == pytest.approx(0, abs=1e-9)
+			assert complex(*part.anchors['centromere']) == pytest.approx(origin+axis*left)
+	straight = chromosomes.render_sisters('parallel', model, start=start, end=end,
+		width=16, scale=1.5, palette=palette, straight=True)
+	assert straight == chromosomes.render('parallel', model, points=(start, end),
+		width=16, scale=1.5, palette=palette)
+
+
+#============================================
+@pytest.mark.parametrize('end', ((100, 0), (0, 100)))
+def test_sister_waist_at_a_rounded_path_join(end: tuple[int, int]) -> None:
+	model = topology.replicate(topology.chromosome('A', length=165, centromere=.44))
+	part = chromosomes.render_sisters('sisters', model, start=(0, 0), end=end,
+		width=16, scale=1, palette={('A', 'body'): '#835BB2'})
+	root = lxml.etree.fromstring(part.fragment)
+	bodies = root.findall('.//g[@data-layer="body"]/path[1]')
+	first_path, second_path = [svgpathtools.parse_path(body.attrib['d']) for body in bodies]
+	for path in (first_path, second_path):
+		assert sum(segment.length() for segment in path[:3]) == pytest.approx(72.6)
+		assert complex(*part.anchors['centromere']) == pytest.approx(path[2].end)
+	assert abs(complex(*part.anchors['first.centromere']) -
+		complex(*part.anchors['second.centromere'])) == pytest.approx(16*1.2)
 
 
 #============================================
@@ -402,3 +460,74 @@ def test_render_rejects_missing_palette_and_pair_without_centromere() -> None:
 	with pytest.raises(ValueError, match='one active centromere'):
 		chromosomes.render('no-belt', topology.replicate(model), points=points,
 			palette={('A', 'body'): '#835BB2'})
+
+
+#============================================
+def test_authored_path_preserves_geometry_and_clearance_for_an_overlaid_belt() -> None:
+	model = topology.chromosome('A', length=120, centromere=.5, genes={'q': .65})
+	palette = {('A', 'body'): '#3479A8'}
+	drawing = 'M 10,30 C 50,30 65,72 110,72 S 170,30 210,30'
+	marker_size = (64, 50)
+	part = chromosomes.render_path('authored', model, drawing, palette=palette,
+		marker_size=marker_size, allow_external_genes=True)
+	hidden = chromosomes.render_path('authored', model, drawing, palette=palette,
+		marker_size=marker_size, allow_external_genes=True, draw_centromeres=False)
+	assert part.anchors == hidden.anchors
+	assert part.anchors['start'] == (10, 30) and part.anchors['end'] == (210, 30)
+	assert part.anchors['centromere'] == pytest.approx((110, 72))
+	root = lxml.etree.fromstring(part.fragment)
+	body = root.find('./g[@data-layer="body"]/path')
+	assert svgpathtools.parse_path(body.get('d')) == svgpathtools.parse_path(drawing)
+	collar = root.find('./g[@data-layer="centromere"]')
+	border = collar.find('rect')
+	assert (float(border.get('width')), float(border.get('height'))) == marker_size
+	hidden_root = lxml.etree.fromstring(hidden.fragment)
+	assert hidden_root.find('./g[@data-layer="centromere"]') is None
+	for tree in (root, hidden_root):
+		assert tree.find('./g[@data-gene="q"]/circle') is not None
+	texture = './g[@data-layer="body"]/g[@data-layer="texture"]'
+	assert lxml.etree.tostring(root.find(texture)) == lxml.etree.tostring(hidden_root.find(texture))
+	with pytest.raises(ValueError, match='Path closure'):
+		chromosomes.render_path('closed', model, 'M0 0 L100 0 Z', palette=palette)
+
+
+#============================================
+def test_ring_preserves_material_and_has_a_seamless_outline() -> None:
+	left = topology.chromosome('A', length=100, genes={'q+': .4})
+	right = topology.chromosome('B', length=100, genes={'m': .6})
+	_, left = topology.split(left, .2)
+	_, right = topology.split(right, .2)
+	left, _ = topology.split(left, .75)
+	right, _ = topology.split(right, .75)
+	model = topology.join(topology.reverse(left), topology.reverse(right))
+	palette = {('A', 'body'): '#3479A8', ('B', 'body'): '#D6533C'}
+	part = chromosomes.render_ring('ring', model, center=(150, 90), width=14,
+		scale=2, palette=palette)
+	root = lxml.etree.fromstring(part.fragment)
+	body = root.find('./g[@data-layer="body"]')
+	path = svgpathtools.parse_path(body.find('./path').get('d'))
+	assert path.isclosed() and path.length() == pytest.approx(model.length*2)
+	assert part.anchors['center'] == pytest.approx((150, 90))
+	assert part.anchors['boundary_0'] == part.anchors['boundary_2']
+	assert part.anchors['boundary_0'] == pytest.approx((150, 90-model.length*2/math.tau))
+	assert 'start' not in part.anchors and 'end' not in part.anchors
+	assert 'centromere' not in part.anchors and body.find('./path[@data-layer="telomere"]') is None
+	assert [band.get('data-source-label') for band in body.findall('./g[@data-source-label]')] == ['A/body', 'B/body']
+	assert root.find('./path[@id="ring-join-1"]') is not None
+	outline = svgpathtools.parse_path(body.find('./path[@data-layer="outline"]').get('d'))
+	assert len(outline.continuous_subpaths()) == 2
+	for anchor, fraction in (('gene:A/A/q%2B', 1/3), ('gene:B/B/m', 2/3)):
+		point = path.point(path.ilength(path.length()*fraction))
+		assert part.anchors[anchor] == pytest.approx((point.real, point.imag))
+
+
+#============================================
+def test_ring_rejects_telomeres_and_inactive_centromeres() -> None:
+	model = topology.chromosome('A', length=180, centromere=.5)
+	palette = {('A', 'body'): '#3479A8'}
+	_, fragment = topology.split(model, .25)
+	fragment, _ = topology.split(fragment, 2/3)
+	inactive = topology.with_centromere_activity(fragment, 'A.cen', active=False)
+	for invalid in (model, fragment, inactive):
+		with pytest.raises(ValueError, match='acentric fragment with two break ends'):
+			chromosomes.render_ring('invalid-ring', invalid, center=(0, 0), palette=palette)

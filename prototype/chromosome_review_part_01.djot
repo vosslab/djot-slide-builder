@@ -15,7 +15,7 @@
 
 @image
 
-![Chromosome transfer](repo:prototype/chromosome_assets/genetics/LECT01/djot/assets/lect01b-genetic_disorders/chromosome_transfer_comparison.drawn.svg)
+![Chromosome transfer](repo:prototype/assets/chromosome_engine_mini2/c01.drawn.svg)
 
 @caption
 
@@ -27,7 +27,7 @@ LECT01B, source slide 8 | Simple forms
 
 @image
 
-![Meiosis and assortment](repo:prototype/chromosome_assets/genetics/LECT02/djot/assets/lect02b-genes_dogma/meiosis_assortment_i.drawn.svg)
+![Meiosis and assortment](repo:prototype/assets/chromosome_review_api/c02.drawn.svg)
 
 @caption
 
@@ -39,7 +39,7 @@ LECT02B, source slide 12 | Simple forms
 
 @image
 
-![Chromosome fusion](repo:prototype/chromosome_assets/assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg)
+![Chromosome fusion](repo:prototype/assets/chromosome_review_api/c03.drawn.svg)
 
 @caption
 
@@ -63,7 +63,7 @@ LECT02C, source slide 16 | Banding reference
 
 @image
 
-![A labeled chromosome region](repo:prototype/chromosome_assets/genetics/LECT03/djot/assets/lect03b-blood_hla_typing/hla_region.drawn.svg)
+![A labeled chromosome region](repo:prototype/assets/chromosome_review_api/c05.drawn.svg)
 
 @caption
 
@@ -75,7 +75,7 @@ LECT03B, source slide 22 | Simple forms
 
 @image
 
-![Chromosomes in fertilization](repo:prototype/chromosome_assets/assets/lect04e-segregation/fertilization_scene.drawn.svg)
+![Chromosomes in fertilization](repo:prototype/assets/chromosome_review_api/c06.drawn.svg)
 
 @caption
 
@@ -87,7 +87,7 @@ LECT04E, source slide 9 | Simple forms
 
 @image
 
-![Before replication](repo:prototype/assets/lect06b-intro_cells/chromosome_before_replication.svg)
+![Before replication](repo:prototype/assets/chromosome_review_api/c07.image.svg)
 
 @caption
 
@@ -99,7 +99,7 @@ LECT06B, source slide 13 | Replication and division
 
 @image
 
-![Replicated sisters](repo:prototype/assets/lect06b-intro_cells/chromosome_replication.svg)
+![Replicated sisters](repo:prototype/assets/chromosome_review_api/c08.image.svg)
 
 @caption
 
@@ -111,7 +111,7 @@ LECT06B, source slide 14 | Replication and division
 
 @image
 
-![Mitosis: a complete panel](repo:prototype/assets/lect06b-intro_cells/image_011.normal.svg)
+![Mitosis: a complete panel](repo:prototype/assets/chromosome_review_api/c09.image.svg)
 
 @caption
 
@@ -123,7 +123,7 @@ LECT06B, source slide 17 | Replication and division
 
 @image
 
-![Anaphase and telophase](repo:prototype/assets/lect06b-intro_cells/mitosis_anaphase_telophase.drawn.svg)
+![Anaphase and telophase](repo:prototype/assets/chromosome_review_api/c10.drawn.svg)
 
 @caption
 
@@ -135,7 +135,7 @@ LECT06B, source slide 22 | Replication and division
 
 @image
 
-![Early prophase and pairing](repo:prototype/assets/lect06c-meiosis/prophase_leptotene_zygotene.drawn.svg)
+![Early prophase and pairing](repo:prototype/assets/chromosome_review_api/c11.drawn.svg)
 
 @caption
 
@@ -147,7 +147,7 @@ LECT06C, source slide 10 | Replication and division
 
 @image
 
-![Late prophase and chiasmata](repo:prototype/assets/lect06c-meiosis/prophase_diplotene_diakinesis.drawn.svg)
+![Late prophase and chiasmata](repo:prototype/assets/chromosome_review_api/c12.drawn.svg)
 
 @caption
 
@@ -161,7 +161,7 @@ LECT06C, source slide 14 | Replication and division
 
 @left
 
-![Recombinant chromosomes](repo:prototype/assets/lect06c-meiosis/recombinant_chromosomes.svg)
+![Recombinant chromosomes](repo:prototype/assets/chromosome_review_api/c13.image.svg)
 
 @right
 
@@ -179,7 +179,7 @@ Nonsister chromatids held together during synapsis:
 
 @image
 
-![Meiosis: a complete panel](repo:prototype/assets/lect06c-meiosis/image_020.normal.svg)
+![Meiosis: a complete panel](repo:prototype/assets/chromosome_review_api/c14.image.svg)
 
 @caption
 
@@ -191,7 +191,7 @@ LECT06C, source slide 28 | Replication and division
 
 @image
 
-![Independent assortment](repo:prototype/assets/lect06c-meiosis/assortment_full.drawn.svg)
+![Independent assortment](repo:prototype/assets/chromosome_review_api/c15.drawn.svg)
 
 @caption
 
@@ -203,7 +203,7 @@ LECT06C, source slide 33 | Replication and division
 
 @image
 
-![Three ancestral genomes](repo:prototype/assets/lect06c-meiosis/wheat_genomes.drawn.svg)
+![Three ancestral genomes](repo:prototype/assets/chromosome_engine_mini2/c16.drawn.svg)
 
 @caption
 
@@ -215,7 +215,7 @@ LECT06C, source slide 37 | Replication and division
 
 @image
 
-![Mitosis beside meiosis](repo:prototype/assets/lect06c-meiosis/mitosis_meiosis_comparison.drawn.svg)
+![Mitosis beside meiosis](repo:prototype/assets/chromosome_review_api/c17.drawn.svg)
 
 @caption
 
@@ -249,7 +249,7 @@ the short arm of the Y. The two centromeres orient toward opposite spindle poles
 
 @image
 
-![Reciprocal eye-color crosses](repo:prototype/assets/lect06e-x_linked_genes_2/reciprocal_eye_crosses.drawn.svg)
+![Reciprocal eye-color crosses](repo:prototype/assets/chromosome_review_api/c19.drawn.svg)
 
 @caption
 
@@ -275,7 +275,7 @@ LECT08B, source slide 14 | Linkage and tetrads
 
 @left
 
-![Nonsister chromatids cross over before the homologs separate](repo:prototype/assets/lect06c-meiosis/recombinant_chromosomes.svg)
+![Nonsister chromatids cross over before the homologs separate](repo:prototype/assets/chromosome_review_api/c13.image.svg)
 
 @right
 
@@ -317,19 +317,19 @@ LECT08B, source slide 40 | Linkage and tetrads
 
 @image
 
-![Two exchanges](repo:prototype/assets/lect08f-three_point_testcross_bpw/two_exchanges.drawn.svg)
+![Two exchanges](repo:prototype/assets/chromosome_review_api/c24.drawn.svg)
 
 @caption
 
 *C24 | Two exchanges*
 
-LECT08F, source slide 43 | Linkage and tetrads
+LECT08F, source slide 43 | Linkage and tetrads. Two exchanges restore the parental D-H combination.
 
 === layout: one-panel
 
 @body
 
-![Mitotic recombination](repo:prototype/assets/lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg)
+![Mitotic recombination](repo:prototype/assets/chromosome_engine_mini2/c25.drawn.svg)
 
 *Twin spot.* Genetic markers are distal to the site of breakage and reunion.
 
@@ -341,7 +341,7 @@ LECT08F, source slide 43 | Linkage and tetrads
 
 @image
 
-![Loss of heterozygosity](repo:prototype/assets/lect09c-mitotic_crossover/loh_outcome.drawn.svg)
+![Loss of heterozygosity](repo:prototype/assets/chromosome_review_api/c26.drawn.svg)
 
 @caption
 
@@ -353,7 +353,7 @@ LECT09C, source slide 12 | Linkage and tetrads
 
 @image
 
-![Yeast meiosis](repo:prototype/assets/lect09d-yeast_unordered_tetrads/yeast_meiosis.drawn.svg)
+![Yeast meiosis](repo:prototype/assets/chromosome_review_api/c27.drawn.svg)
 
 @caption
 
@@ -365,7 +365,7 @@ LECT09D, source slide 13 | Linkage and tetrads
 
 @image
 
-![Four-strand double crossover](repo:prototype/assets/lect09e-tetrad_visuals/four_strand_dco_to_npd.svg)
+![Four-strand double crossover](repo:prototype/assets/chromosome_engine_mini2/c28.drawn.svg)
 
 @caption
 
@@ -389,7 +389,7 @@ LECT09H, source slide 7 | Linkage and tetrads
 
 @image
 
-![Preparing a karyotype](repo:prototype/chromosome_assets/assets/lect10_repaired_figures/karyotype_preparation.svg)
+![Preparing a karyotype](repo:prototype/assets/chromosome_review_api/c30.image.svg)
 
 @caption
 
@@ -413,7 +413,7 @@ LECT10B, source slide 14 | The reference overlays three separate staining patter
 
 @image
 
-![Centromere positions](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/centromere_positions.drawn.svg)
+![Centromere positions](repo:prototype/assets/chromosome_review_api/c32.drawn.svg)
 
 @caption
 
@@ -425,7 +425,7 @@ LECT10B, source slide 33 | Centromeres and movement
 
 @image
 
-![Metacentric movement](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/metacentric_movement.drawn.svg)
+![Metacentric movement](repo:prototype/assets/chromosome_review_api/c33.drawn.svg)
 
 @caption
 
@@ -437,7 +437,7 @@ LECT10B, source slide 34 | Centromeres and movement
 
 @image
 
-![Acrocentric movement](repo:prototype/chromosome_assets/assets/lect10b-karyotypes/acrocentric_movement.drawn.svg)
+![Acrocentric movement](repo:prototype/assets/chromosome_review_api/c34.drawn.svg)
 
 @caption
 

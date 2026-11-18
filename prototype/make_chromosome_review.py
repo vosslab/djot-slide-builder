@@ -1,123 +1,145 @@
 #!/usr/bin/env python3
-"""Regenerate the chromosome-review SVGs without touching lecture assets."""
+"""Regenerate the chromosome review SVGs and replacement inventory."""
 
+# Standard Library
 import csv
+import sys
+import shutil
 import hashlib
 import pathlib
+import argparse
+import tempfile
 import subprocess
-import sys
 
-import lxml.etree
-import genetics.LECT06.djot.make_chromosome_xlinked
-import genetics.LECT06.djot.chromosome_models.mixed.intro.intro_recipes
-import genetics.LECT06.djot.chromosome_models.mixed.recombination.recombination_recipes
-import genetics.LECT13.djot.lect13d_p2_composition_recipes
-
+# local repo modules
+import review_api_ring
+import review_api_forms
+import review_api_dosage
+import review_api_ploidy
+import review_api_linkage
+import review_api_movement
+import review_api_deletion
+import review_api_inversion
+import review_api_mini_views
+import review_api_assortment
+import review_api_duplication
+import review_api_translocation
+import review_api_division_intro
+import review_api_division_meiosis
 import make_chromosome_engine_mini2
-import make_chromosome_replacements
-import review_division_composition
-import review_inversion_composition
-import review_translocation_composition
-import svg_tools._xml
-import svg_tools.drawing
+from genetics.LECT06.djot import make_chromosome_xlinked
+from genetics.LECT13.djot import lect13d_chromosome_recipes
 
 
 REPOSITORY = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
 ROOT = REPOSITORY / 'prototype'
-ASSETS = ROOT / 'chromosome_assets'
+INVENTORY = 'chromosome_replacements.csv'
 
 
-def run(*arguments: str) -> None:
-	"""Run one source-backed recipe with an explicit prototype destination."""
-	subprocess.run((sys.executable, *arguments), cwd=REPOSITORY, check=True)
+#============================================
+def build_retained(output_root: pathlib.Path, scratch: pathlib.Path) -> None:
+	"""Rebuild the course-backed figures that already use chromosome models."""
+	xlinked = REPOSITORY / 'genetics/LECT06/djot/chromosome_models/xlinked'
+	make_chromosome_xlinked.generate_complements(xlinked / 'drosophila_chromosome_complements.json',
+		REPOSITORY, output_root)
+
+	# The cis/trans recipe also emits a portrait version for the lecture.
+	cis = pathlib.Path('lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg')
+	subprocess.run((sys.executable, 'genetics/LECT08/djot/chromosome_recipes/cis_recipe.py',
+		'--output-root', str(scratch)), cwd=REPOSITORY, check=True)
+	(output_root / 'assets' / cis.parent).mkdir(parents=True, exist_ok=True)
+	shutil.copyfile(scratch / cis, output_root / 'assets' / cis)
+
+	subprocess.run((sys.executable, 'genetics/LECT09/djot/make_centromere.py',
+		'--output-root', str(output_root / 'assets')), cwd=REPOSITORY, check=True)
+
+	fusion_dir = output_root / 'chromosome_assets/assets/lect13d-meiosis_translocation'
+	fusion_dir.mkdir(parents=True, exist_ok=True)
+	lect13d_chromosome_recipes.fusion(fusion_dir)
 
 
-def refresh_inventory() -> None:
-	"""Record the hashes produced by this prototype-only rebuild."""
-	path = ROOT / 'chromosome_replacements.csv'
-	with path.open(newline='') as handle:
-		rows = list(csv.DictReader(handle))
-	for row in rows:
-		asset = REPOSITORY / row['replacement_asset']
-		if not asset.is_file():
-			raise ValueError(f'Missing prototype replacement: {asset}')
-		row['replacement_sha256'] = hashlib.sha256(asset.read_bytes()).hexdigest()
-	with path.open('w', newline='') as handle:
-		writer = csv.DictWriter(handle, fieldnames=rows[0].keys(), lineterminator='\n')
+#============================================
+def build_assets(output_root: pathlib.Path, scratch: pathlib.Path) -> None:
+	"""Build each family and the figures shared with the smaller review deck."""
+	api = output_root / 'assets/chromosome_review_api'
+	for family in (
+		review_api_forms, review_api_division_intro, review_api_division_meiosis,
+		review_api_assortment, review_api_linkage, review_api_movement,
+		review_api_ploidy, review_api_dosage, review_api_deletion, review_api_ring,
+		review_api_duplication, review_api_inversion, review_api_translocation, review_api_mini_views,
+	):
+		family.build(api)
+
+	mini = output_root / 'assets/chromosome_engine_mini2'
+	mini.mkdir(parents=True, exist_ok=True)
+	for filename, build in (
+		('c01.drawn.svg', make_chromosome_engine_mini2.build_c01),
+		('c16.drawn.svg', make_chromosome_engine_mini2.build_c16),
+		('c22.drawn.svg', make_chromosome_engine_mini2.build_c22),
+		('c23.drawn.svg', make_chromosome_engine_mini2.build_c23),
+		('c25.drawn.svg', make_chromosome_engine_mini2.build_c25),
+		('c28.drawn.svg', make_chromosome_engine_mini2.build_c28),
+		('c31.image.svg', make_chromosome_engine_mini2.build_c31),
+		('c61.drawn.svg', make_chromosome_engine_mini2.build_c61),
+		('c63.drawn.svg', make_chromosome_engine_mini2.build_c63),
+	):
+		build(mini / filename)
+
+	build_retained(output_root, scratch)
+
+
+#============================================
+def publish(staged: pathlib.Path, output_root: pathlib.Path) -> None:
+	"""Publish the inventoried assets and hash the exact bytes being delivered."""
+	with (ROOT / INVENTORY).open(encoding='utf-8', newline='') as handle:
+		reader = csv.DictReader(handle)
+		fieldnames = reader.fieldnames
+		rows = list(reader)
+
+	# ASVS 5.3.2: Only publish paths emitted by the repository recipes.
+	paths = [pathlib.Path(row['replacement_asset']).relative_to('prototype') for row in rows]
+	built = {path.relative_to(staged) for path in staged.rglob('*.svg')}
+	expected = set(paths)
+	if built != expected:
+		raise ValueError(f'Review SVGs differ from inventory. Missing: {sorted(expected - built)}. '
+			f'Unexpected: {sorted(built - expected)}.')
+
+	hashes = {}
+	for path in sorted(expected):
+		asset = (staged / path).read_bytes()
+		target = output_root / path
+		target.parent.mkdir(parents=True, exist_ok=True)
+		target.write_bytes(asset)
+		hashes[path] = hashlib.sha256(asset).hexdigest()
+
+	for row, path in zip(rows, paths, strict=True):
+		row['replacement_sha256'] = hashes[path]
+	with (output_root / INVENTORY).open('w', encoding='utf-8', newline='') as handle:
+		writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator='\n')
 		writer.writeheader()
 		writer.writerows(rows)
 
 
-def separate_c58_prose() -> None:
-	"""Keep the C58 explanation in its native Djot text block."""
-	path = ASSETS / 'assets/lect13b-chromo_alter_3-inversion/pericentric-anaphase.drawn.svg'
-	root = svg_tools._xml.read(path)
-	canvas = root.find('{http://www.w3.org/2000/svg}g')
-	# The four explanation lines and their separator belong to the native text block.
-	for node in list(canvas):
-		if (node.tag == '{http://www.w3.org/2000/svg}text'
-			and node.attrib['x'] == '36' and float(node.attrib['y']) >= 600):
-			canvas.remove(node)
-		elif node.get('d') == 'M 30,590 H 1420':
-			canvas.remove(node)
-	root.set('height', '590')
-	root.set('viewBox', '0 0 1460 590')
-	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(path, encoding='ascii', xml_declaration=True)
+#============================================
+def generate(prototype_root: pathlib.Path) -> None:
+	"""Regenerate the review under the selected prototype root."""
+	scratch_root = REPOSITORY / '_temp'
+	scratch_root.mkdir(exist_ok=True)
+	with tempfile.TemporaryDirectory(prefix='chromosome-review-', dir=scratch_root) as scratch_dir:
+		scratch = pathlib.Path(scratch_dir)
+		staged = scratch / 'prototype'
+		build_assets(staged, scratch / 'cis')
+		publish(staged, prototype_root)
 
 
+#============================================
 def main() -> None:
-	"""Rebuild the review corpus from source recipes in the prototype tree only."""
-	# Lecture recipes receive the prototype root on their command line.
-	run('genetics/LECT01/djot/chromosome_transfer_recipes.py', str(ASSETS))
-	run('genetics/LECT02/djot/meiosis_assortment_recipes.py', str(ASSETS))
-	run('genetics/LECT03/djot/hla_region_recipe.py', str(ASSETS))
-	genetics.LECT06.djot.chromosome_models.mixed.intro.intro_recipes.build(ROOT / 'assets/lect06b-intro_cells')
-	genetics.LECT06.djot.chromosome_models.mixed.recombination.recombination_recipes.build(ROOT / 'assets/lect06c-meiosis')
-	genetics.LECT06.djot.make_chromosome_xlinked.generate(REPOSITORY / 'genetics/LECT06/djot/chromosome_models/xlinked',
-		REPOSITORY, ROOT)
-
-	# Scripts below all receive a prototype path rather than their course default.
-	run('genetics/LECT06/djot/make_chromosome_mitosis_panel.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT06/djot/make_chromosome_mitosis.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT06/djot/make_chromosome_early_meiosis.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT06/djot/make_chromosome_meiosis_panel.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT06/djot/make_chromosome_assortment.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT10/djot/human_chromosome_2_fusion_recipe.py',
-		str(ASSETS / 'assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg'))
-	run('genetics/LECT04/djot/assets/lect04e-segregation/make_fertilization_scene.py',
-		str(ASSETS / 'assets/lect04e-segregation/fertilization_scene.drawn.svg'))
-	for recipe in ('cis_recipe.py', 'exchanges_recipe.py'):
-		run('genetics/LECT08/djot/chromosome_recipes/' + recipe, '-o', str(ROOT / 'assets'))
-	# Both review decks use the same recipes and SVGs for crossovers and staining.
-	mini2 = ROOT / 'assets/chromosome_engine_mini2'
-	mini2.mkdir(parents=True, exist_ok=True)
-	make_chromosome_engine_mini2.build_c22(mini2 / 'c22.drawn.svg')
-	make_chromosome_engine_mini2.build_c23(mini2 / 'c23.drawn.svg')
-	make_chromosome_engine_mini2.build_c31(mini2 / 'c31.image.svg')
-	run('genetics/LECT09/djot/make_mitotic_yeast.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT09/djot/make_history_scenes.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT09/djot/make_centromere.py', '--output-root', str(ROOT / 'assets'))
-	run('genetics/LECT10/djot/make_lect10b_figures.py', '--output-root', str(ASSETS))
-	run('genetics/LECT10/djot/lect10_chromosome_recipes.py', str(ASSETS))
-
-	make_chromosome_replacements.main()
-
-	# LECT13 has one output-root convention: the supplied directory owns assets/.
-	run('genetics/LECT13/djot/lect13b_loop_chromosome_recipes.py', '--output-root', str(ASSETS))
-	run('genetics/LECT13/djot/lect13bc_chromosome_recipes.py', '--output-root', str(ASSETS))
-	run('genetics/LECT13/djot/lect13d_chromosome_recipes.py', '--output-root', str(ASSETS))
-	run('genetics/LECT13/djot/lect13d_p1_composition_recipes.py', '--output',
-		str(ASSETS / 'assets/lect13d-meiosis_translocation'), '--components-dir',
-		str(ASSETS / 'assets/lect13d-meiosis_translocation'))
-
-	# The remaining p2 compositions currently provide a function rather than an output option.
-	genetics.LECT13.djot.lect13d_p2_composition_recipes.render(ASSETS / 'assets/lect13d-meiosis_translocation')
-	review_division_composition.separate_division_prose()
-	review_inversion_composition.separate_inversion_prose()
-	review_translocation_composition.make_gamete_details()
-	separate_c58_prose()
-	refresh_inventory()
+	parser = argparse.ArgumentParser(description=__doc__)
+	parser.add_argument('--output-root', type=pathlib.Path, default=ROOT,
+		help='Destination for the prototype assets and inventory')
+	args = parser.parse_args()
+	generate(args.output_root)
 
 
 if __name__ == '__main__':
