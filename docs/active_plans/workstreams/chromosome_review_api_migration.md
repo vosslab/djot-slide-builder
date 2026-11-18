@@ -40,9 +40,10 @@ C03/C36 and C13/C21 share artwork and retain their original native captions and 
 
 The review has 73 pages, 68 IDs, and 71 figure placements. The inventory contains 70 SVG
 placements and 68 unique SVGs. C04 uses its original local course JPEG for export. The generator
-uses ten frozen image and blank template inputs in `prototype/assets/chromosome_review_sources/`.
-An audit hook blocked opens of all 1,024 tracked Genetics files during successful regeneration,
-and all 1,024 tracked Genetics files matched their original bytes.
+uses tracked models and poses alongside ten frozen image and blank template inputs in
+`prototype/assets/chromosome_review_sources/`. An audit hook allowed tracked files, those ten
+inputs, and scratch while blocking reads of other existing untracked repository files during
+successful regeneration. All 1,024 tracked Genetics files matched their original bytes.
 
 The shared painter closes the C48 excision ring without telomere caps. C57 uses independent
 paths and anchors the belt at the two sister waist centers. C56-C58 use authored paths to show
@@ -76,7 +77,7 @@ stages are static illustrations.
 | Recipe specification | Source comparisons and follow-up reviews confirmed conserved material, source locus order, chromosome counts, and product identities where applicable. The C56-C58 poses are schematic. | Pass |
 | Empirical evidence | Original C04 JPEG and embedded raster payloads match byte for byte. C49 preserves separate Mb/cM coordinates. C51 retains unequal spacing and distinct V/VI intervals. C52 retains equal slots and deletion membership. | Pass |
 | Deterministic generation | Scratch builds with `PYTHONHASHSEED=131`, `229`, and `453` match the 68 canonical SVGs and replacement CSV byte for byte. SVG IDs are unique, references resolve, and fonts and inventory hashes match. | Pass |
-| Lecture protection | All 1,024 tracked Genetics files and both preserved review records match baseline SHA-256. Detached regeneration also passed with lecture file opens blocked. | Pass |
+| Lecture protection | All 1,024 tracked Genetics files and both preserved review records match baseline SHA-256. The Genetics Git diff against `HEAD` is empty. | Pass |
 | Lint and tests | Pyflakes passed. Strict native Djot lint covered 3 decks, 87 slides, and 85 images. All 72 focused chromosome tests passed. The base suite passed 10,233 tests with one source-length advisory for `svg_tools/chromosomes.py` at 952 lines. | Pass |
 | ODP structure | 73 slides and 71 exact image embeds. Native titles, captions, and editable explanations match the source. C18 retains the only speaker note. | Pass |
 | PDF structure | 73 pages. Native visible text is selectable. Full review build reported zero fit or capacity findings. | Pass |

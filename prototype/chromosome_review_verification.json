@@ -772,7 +772,7 @@
     "immutable_review_records_verified_unchanged": 2,
     "frozen_input_files": 10,
     "frozen_input_directory": "prototype/assets/chromosome_review_sources",
-    "generator_passed_with_tracked_lecture_file_opens_blocked": true,
+    "audited_generator_reads": "Tracked files, the ten frozen inputs, and scratch. The audit hook blocked all other existing untracked repository file reads.",
     "original_local_jpeg_required_for_export": "C04",
     "raster_evidence_verified_byte_for_byte": ["C07", "C08", "C09", "C13", "C14", "C21", "C30", "C50"],
     "scratch_python_hash_seeds": [131, 229, 453],

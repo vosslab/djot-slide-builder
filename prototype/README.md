@@ -80,9 +80,9 @@ source source_me.sh && python3 prototype/make_chromosome_review.py
 ```
 
 Use `--output-root _temp/chromosome-review` to write the SVGs and inventory to a separate
-prototype directory for reproducibility checks. Both modes regenerate the 68 SVGs without opening
-lecture files. The ten inputs in `assets/chromosome_review_sources/` preserve image evidence and
-blank composition templates. A full deck export also needs the C04 JPEG at its original local path.
+prototype directory for reproducibility checks. The recipes use tracked models and poses,
+along with ten frozen image and blank template inputs in `assets/chromosome_review_sources/`.
+A full deck export also needs the C04 JPEG at its original local path.
 
 ```bash
 source source_me.sh && python3 deck_tools.py build prototype/chromosome_review.djot --format all
