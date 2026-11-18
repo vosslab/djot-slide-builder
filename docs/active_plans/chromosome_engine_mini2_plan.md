@@ -55,7 +55,7 @@ texture and sheen.
 | --- | --- | --- |
 | `prototype/chromosome_engine_mini2.djot` | Ten slides in ID order with native captions | |
 | `prototype/make_chromosome_engine_mini2.py` | One recipe for the ten figures | |
-| `prototype/assets/chromosome_engine_mini2/*.svg` | Ten generated figures, with an opaque band-color strip in `c31.svg` | `prototype/make_chromosome_engine_mini2.py` |
+| `prototype/assets/chromosome_engine_mini2/*.svg` | Ten generated figures, with an opaque band-color strip in `c31.image.svg` | `prototype/make_chromosome_engine_mini2.py` |
 | `svg_tools/chromosomes.py` and `tests/test_chromosome_render.py` | Renderer option and focused regression check | |
 | [CHANGELOG.md](../CHANGELOG.md) | Record the second prototype and renderer option | |
 | [chromosome_engine_mini2.md](workstreams/chromosome_engine_mini2.md) | Execution ledger and evidence | |

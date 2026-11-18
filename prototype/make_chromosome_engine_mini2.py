@@ -235,8 +235,8 @@ def build_c23(path: pathlib.Path) -> None:
 	ink = '#213449'
 	palette = {('red', 'body'): '#C63D47', ('blue', 'body'): '#076DAD'}
 	centromere_styles = {
-		('red', 'red.cen'): svg_tools.chromosomes.CentromereStyle(fill='#F4C9CD'),
-		('blue', 'blue.cen'): svg_tools.chromosomes.CentromereStyle(fill='#C4E3F7'),
+		('red', 'red.cen'): svg_tools.chromosomes.CentromereStyle(label='R', fill='#F4C9CD'),
+		('blue', 'blue.cen'): svg_tools.chromosomes.CentromereStyle(label='B', fill='#C4E3F7'),
 	}
 	outline = '#93A6B8'
 	(red, blue), (red_dyad, blue_dyad) = _c23_products()
@@ -307,7 +307,8 @@ def build_c23(path: pathlib.Path) -> None:
 
 	drawing.write_svg(path, 1200, 515, 'Double-crossover meiosis',
 		'The same two nonsister chromatids cross at two sites, swapping middle segments '
-		'that contain the centromeres. Homologs separate by centromere in meiosis I. '
+		'that contain the centromeres. R and B label the red and blue centromeres. '
+		'Homologs separate by centromere in meiosis I. '
 		'Meiosis II separates sisters, yielding solid red and blue parental chromatids '
 		'and reciprocal blue-red-blue and red-blue-red recombinants.', '\n'.join(body))
 
@@ -545,6 +546,10 @@ def build_c31(path: pathlib.Path) -> None:
 				stroke.getparent().remove(stroke)
 		fragments.append(lxml.etree.tostring(pair_svg, encoding='unicode'))
 		fragments.append(drawing.text(x, 556, label, size=42, color=label_color))
+		if method == 'reference':
+			_, y = pair.anchors['centromere']
+			fragments.append(drawing.line(x+76, y, x+87, y, color=ink, width=2))
+			fragments.append(drawing.text(x+93, y+7, 'Centromere', size=22, color=ink, anchor='start'))
 	drawing.write_svg(path, 1200, 570, 'Chromosome banding comparison',
 		'The reference at left combines the regions highlighted by three separate staining methods. '
 		'Arrows point to the individual staining patterns on the same chromosome. '
@@ -631,6 +636,10 @@ def build_c61(path: pathlib.Path) -> None:
 		('chr9', 'body'): '#9D90C2',
 		('chr22', 'body'): '#74396B',
 	}
+	centromere_styles = {
+		('chr9', 'chr9.cen'): svg_tools.chromosomes.CentromereStyle(label='9'),
+		('chr22', 'chr22.cen'): svg_tools.chromosomes.CentromereStyle(label='22'),
+	}
 	chr9 = topology.chromosome('chr9', length=310, centromere=68.2 / 310)
 	chr22 = topology.chromosome('chr22', length=155, centromere=34.1 / 155)
 	left9, tip9 = topology.split(chr9, (chr9.length - 25) / chr9.length)
@@ -657,7 +666,8 @@ def build_c61(path: pathlib.Path) -> None:
 	):
 		body += drawing.text(x, y - 48, label, size=34, color=ink, anchor='start')
 		part = svg_tools.chromosomes.render(f'c61-{name}', model,
-			points=[(x, y), (x + 1, y)], width=width, scale=scale, palette=palette)
+			points=[(x, y), (x + 1, y)], width=width, scale=scale, palette=palette,
+			centromere_styles=centromere_styles)
 		body += part.fragment
 	for left, y in ((left9, 186), (left22, 389)):
 		cut_x = before + scale * left.length
@@ -669,8 +679,8 @@ def build_c61(path: pathlib.Path) -> None:
 	drawing.write_svg(path, 1200, 520, 'Formation of the Philadelphia chromosome',
 		'Lavender chromosome 9 and plum chromosome 22 exchange the tips marked by ticks. '
 		'The derivative chromosome 9 is longer and has a plum tip. The Philadelphia '
-		'chromosome is the shorter derivative chromosome 22 and has a lavender tip. Each '
-		'chromosome retains its centromere at its original distance from the left end. '
+		'chromosome is the shorter derivative chromosome 22 and has a lavender tip. The '
+		'centromere collars retain their chromosome numbers and positions relative to the left ends. '
 		'Lengths share one schematic scale.', body)
 
 
@@ -765,7 +775,7 @@ def generate(output_dir: pathlib.Path) -> None:
 		('c23.drawn.svg', build_c23),
 		('c25.drawn.svg', build_c25),
 		('c28.drawn.svg', build_c28),
-		('c31.svg', build_c31),
+		('c31.image.svg', build_c31),
 		('c55.drawn.svg', build_c55),
 		('c61.drawn.svg', build_c61),
 		('c63.drawn.svg', build_c63),

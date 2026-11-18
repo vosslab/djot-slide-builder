@@ -94,7 +94,7 @@ def main() -> None:
 	mini2.mkdir(parents=True, exist_ok=True)
 	make_chromosome_engine_mini2.build_c22(mini2 / 'c22.drawn.svg')
 	make_chromosome_engine_mini2.build_c23(mini2 / 'c23.drawn.svg')
-	make_chromosome_engine_mini2.build_c31(mini2 / 'c31.svg')
+	make_chromosome_engine_mini2.build_c31(mini2 / 'c31.image.svg')
 	run('genetics/LECT09/djot/make_mitotic_yeast.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT09/djot/make_history_scenes.py', '--output-root', str(ROOT / 'assets'))
 	run('genetics/LECT09/djot/make_centromere.py', '--output-root', str(ROOT / 'assets'))

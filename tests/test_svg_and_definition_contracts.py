@@ -173,6 +173,7 @@ def test_drawn_svg_rejects_nested_images_without_blocking_image_wrappers(
 	path.write_text(wrapped)
 	with pytest.raises(ValueError, match=r"\.drawn\.svg cannot contain image elements"):
 		slide_lib.svg_images.dimensions(path)
+	assert slide_lib.svg_images.dimensions_blob(wrapped.encode(), "figure.image.svg") == (20, 10)
 	assert slide_lib.svg_images.dimensions_blob(wrapped.encode(), "figure.svg") == (20, 10)
 
 

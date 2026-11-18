@@ -35,7 +35,7 @@ render and all 12 Atkinson allele labels were verified.
 
 C31 now has 25 aligned bands on 444-unit chromatids, with one gray for unstained regions and
 a stain-colored label for each view. The shared renderer combines consecutive same-color strokes
-while preserving each region's identity and anchors. C31's `c31.svg` uses one opaque lossless
+while preserving each region's identity and anchors. C31's `c31.image.svg` uses one opaque lossless
 band-color image per chromatid to remove separate band paint operations in the PDF. Both decks
 embed that SVG. The base suite passed 9,919 tests (`c31-bands/pytest-final.log`).
 
@@ -64,10 +64,19 @@ collar per sister pair. All four middle-panel chromatids still measure 313 units
 their paths. The `c22-tips/` checks verified both edges of each cap, the Mini2 and full
 review exports, and pixel-identical C25 artwork. The base suite passed 9,921 tests.
 
+The centromere review covered all ten Mini2 slides. C23 now follows red and blue
+centromeres through meiosis, C61 carries chromosome numbers through the translocation,
+and C31 identifies the reference centromere once. The `centromere_labels/` checks
+confirmed the embedded figures and Atkinson labels in both exports and verified the
+existing figure geometry and paint. The base suite passed 9,921 tests.
+
+The SVG filename migration moved C31 to `c31.image.svg` with identical bytes. Both
+review decks embed that asset from the new path.
+
 | Current export | SHA-256 |
 | --- | --- |
-| `output/odp/chromosome_engine_mini2.odp` | `7645ae4240bc6c3e8497568da59fe45300019e85cf14a3ecb9f7858c64e81328` |
-| `output/pdf/chromosome_engine_mini2.pdf` | `e451c2b362b859a7690ac75cc83afdfe75b1838a5c3db873803b527b33bbf977` |
+| `output/odp/chromosome_engine_mini2.odp` | `0ac6a4879de5c55021e149435a0762bd5cb9166eeafe1f5210c8304c2953302d` |
+| `output/pdf/chromosome_engine_mini2.pdf` | `1f4ca77492ee5dad6306b1752b12c27ce463742991b184b6df32dd9ae3db525c` |
 
 ## Historical figure acceptance
 
@@ -83,7 +92,7 @@ the canonical SVGs byte for byte. The C16 and C31 entries below record the initi
 | C23 | `c23` | `c23.svg` | `c23_rereview` | `c23_quality_final` |
 | C25 | `c25` | `c25.svg` | `c25_spec` | `c25_quality` |
 | C28 | `c28` | `c28.svg` | `c28_spec` | `c28_quality` |
-| C31 | `c31` | `c31.svg` | `c31_spec` | `c31_quality` |
+| C31 | `c31` | `c31.image.svg` | `c31_spec` | `c31_quality` |
 | C55 | `c55` | `c55.svg` | `c55_spec` | `c55_quality` |
 | C61 | `c61` | `c61.svg` | `c61_spec` | `c61_quality` |
 | C63 | `c63` | `c63.svg` | `c63_spec` | `c63_quality` |

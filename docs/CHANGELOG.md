@@ -19,6 +19,10 @@
 
 ### Fixes and Maintenance
 
+- Track reviewed image-containing SVGs with the `.image.svg` suffix. Rename the 17 assets
+  covered by individual SVG exceptions and update their deck and generator references.
+- Label the centromeres in C23 and C61 to track their origin after exchange. Add one
+  centromere callout to the C31 reference chromosome.
 - Keep C22's crossover curved, with straight terminal runs and shared centromere collars.
 - Lengthen the C01 chromosomes and give gene groups distinct extra-light card colors.
   Reserve space beside visible splices and reject cramped cards unless external labels are

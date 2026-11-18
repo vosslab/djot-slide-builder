@@ -65,24 +65,24 @@
   ],
   "states": [
     {
-      "asset": "three_gene_homework_0.svg",
+      "asset": "three_gene_homework_0.image.svg",
       "completed_pairs": []
     },
     {
-      "asset": "three_gene_homework_1.svg",
+      "asset": "three_gene_homework_1.image.svg",
       "completed_pairs": [
         "AB"
       ]
     },
     {
-      "asset": "three_gene_homework_2.svg",
+      "asset": "three_gene_homework_2.image.svg",
       "completed_pairs": [
         "AB",
         "AC"
       ]
     },
     {
-      "asset": "three_gene_homework_3.svg",
+      "asset": "three_gene_homework_3.image.svg",
       "completed_pairs": [
         "AB",
         "AC",
@@ -227,42 +227,42 @@
   },
   "pair_focus_views": [
     {
-      "asset": "three_gene_homework_ab_question.svg",
+      "asset": "three_gene_homework_ab_question.image.svg",
       "pair": "AB",
       "covered_gene": "C",
       "source_state": 0,
       "covers": 28
     },
     {
-      "asset": "three_gene_homework_ab_answer.svg",
+      "asset": "three_gene_homework_ab_answer.image.svg",
       "pair": "AB",
       "covered_gene": "C",
       "source_state": 1,
       "covers": 28
     },
     {
-      "asset": "three_gene_homework_ac_question.svg",
+      "asset": "three_gene_homework_ac_question.image.svg",
       "pair": "AC",
       "covered_gene": "B",
       "source_state": 1,
       "covers": 28
     },
     {
-      "asset": "three_gene_homework_ac_answer.svg",
+      "asset": "three_gene_homework_ac_answer.image.svg",
       "pair": "AC",
       "covered_gene": "B",
       "source_state": 2,
       "covers": 28
     },
     {
-      "asset": "three_gene_homework_bc_question.svg",
+      "asset": "three_gene_homework_bc_question.image.svg",
       "pair": "BC",
       "covered_gene": "A",
       "source_state": 2,
       "covers": 28
     },
     {
-      "asset": "three_gene_homework_bc_answer.svg",
+      "asset": "three_gene_homework_bc_answer.image.svg",
       "pair": "BC",
       "covered_gene": "A",
       "source_state": 3,

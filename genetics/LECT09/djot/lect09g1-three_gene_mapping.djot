@@ -50,7 +50,7 @@ Given cross: a++ / +bc. Counts describe complete tetrads. Spore positions carry 
 
 @body
 
-![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_question.svg)
+![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_question.image.svg)
 
 For A-B, what class is Set 4?
 
@@ -73,7 +73,7 @@ Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD 
 
 @body
 
-![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_answer.svg)
+![AB homework table with C covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ab_answer.image.svg)
 
 [*Set 4 is PD for A-B:*]{color=#935D00} +b and a+ match the parents. Match the pair, not the count.
 
@@ -302,7 +302,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @body
 
-![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_question.svg)
+![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_question.image.svg)
 
 For A-C, what class is Set 3?
 
@@ -325,7 +325,7 @@ Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD 
 
 @body
 
-![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_answer.svg)
+![AC homework table with B covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_ac_answer.image.svg)
 
 [*Set 3 is PD for A-C:*]{color=#935D00} +c and a+ match the parents. Match the pair, not the count.
 
@@ -554,7 +554,7 @@ The table summarizes the classifications just completed. Count tetrads, not indi
 
 @body
 
-![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_question.svg)
+![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_question.image.svg)
 
 For B-C, what class is Set 1?
 
@@ -577,7 +577,7 @@ Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD 
 
 @body
 
-![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_answer.svg)
+![BC homework table with A covered and Set 6 outlined](assets/lect09c-tetrad_worked_examples_bpw/three_gene_homework_bc_answer.image.svg)
 
 [*Set 1 is PD for B-C:*]{color=#935D00} ++ and bc match the parents. Match the pair, not the count.
 

@@ -127,20 +127,16 @@ automatic insertion, or permanent slide-count test is needed.
 
 ### Distinguish drawings from SVG image wrappers
 
-**Decision.** Use `.drawn.svg` for reviewed, image-free drawings and allow that suffix in Git.
-Keep ordinary `.svg` files ignored by default, with exact-file exceptions for reviewed original
-generator captures. Reject `image` and `feImage` elements, including nested ones, in `.drawn.svg`.
+**Decision.** Track reviewed SVG assets by filename suffix. Use `.drawn.svg` for image-free
+drawings and `.image.svg` for figures with embedded images. Git ignores ordinary `.svg` files.
 
-**Why.** Folder wildcards admit future imported artwork, while long lists of drawing names
-obscure the distinction. Repaired labels or an SVG wrapper do not establish rights to its image.
+**Why.** A filename shows which figures are ready to track without a per-file ignore entry.
+Review provenance and redistribution rights before choosing a tracked suffix.
 
-**Consequence.** Rename 31 reviewed drawings without changing their bytes, update current
-references and the two-gene table builder, and retain 15 explicit generator-capture exceptions.
-Stop tracking other image-bearing SVGs while preserving local files. Existing validation uses
-the same restrictive XML parser (ASVS 1.5.1); the new structural check enforces the declared
-format at the shared validation boundary (ASVS 2.2.1). If it fails, use an ordinary ignored SVG
-and review image provenance before allowing it. Structure does not establish ownership.
-Earlier vector assets and Git history are outside this migration.
+**Consequence.** Lint and builds validate both suffixes as static, self-contained SVGs.
+The shared validator rejects `image` and `feImage` elements anywhere in `.drawn.svg`
+(ASVS 2.2.1). The reviewed image-containing figures formerly listed as exact-file exceptions
+use `.image.svg`.
 
 **Owner.** [.gitignore](../.gitignore), [svg_images.py](../slide_lib/svg_images.py),
 and [slide-specs/SVG_DIAGRAMS.md](slide-specs/SVG_DIAGRAMS.md).
