@@ -1,6 +1,6 @@
 """Stable structural contracts for the chromosome drawing primitives."""
 
-import defusedxml.ElementTree
+import lxml.etree
 import pytest
 
 import svg_tools.chromosomes as chromosomes
@@ -24,7 +24,7 @@ def test_curved_chromatid_keeps_width_and_source_order() -> None:
 		chromosomes.Segment('C', '#C1E7EE', 2)), (chromosomes.Centromere(1),))
 	part = chromosomes.chromosome_path_part('curve', model,
 		'M0 0 C35 -55 85 55 120 0', thickness=24)
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	regions = root.findall('.//g[@data-source-label]')
 	assert [node.attrib['data-source-label'] for node in regions] == ['A', 'B', 'C']
 	assert all(float(node.find('path').get('stroke-width')) == 24 for node in regions)
@@ -44,7 +44,7 @@ def test_internal_gene_labels_retain_regions_without_decorative_texture() -> Non
 	))
 	part = chromosomes.chromosome_path_part('loci', model,
 		'M0 0 C45 -25 75 25 120 0', thickness=24, texture=False)
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	regions = root.findall('.//g[@data-source-label]')
 	assert [node.find('./path').get('stroke') for node in regions] == ['#F3D788', '#D9C9EF', '#00775F']
 	labels = {''.join(node.itertext()): node for node in root.findall('./text')}
@@ -59,14 +59,20 @@ def test_explicit_gene_locus_follows_the_final_centerline() -> None:
 	surface = Surface(svgpathtools.parse_path('M40 10 V65 H110'), 26)
 	gene = chromosomes.Segment('rb+', '#F3D788', 24)
 	part = chromosomes.gene_locus_part('rb-locus', surface, 58, gene)
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	text = root.find('./text')
 	assert root.get('data-gene') == 'rb+'
 	assert [item.text for item in text.iter('tspan') if item.text] == ['rb', '+']
-	assert part.anchors['center'] == pytest.approx((surface.point(58, 0).real,
-		surface.point(58, 0).imag))
+	point = surface.path.point(surface.path.ilength(58))
+	assert part.anchors['center'] == pytest.approx((point.real, point.imag))
 	with pytest.raises(ValueError):
 		chromosomes.gene_locus_part('outside', surface, 4, gene)
+	# The same near-end locus has room for its block on a cut fragment.
+	tip = chromosomes.gene_locus_part('tip', surface, 14, gene)
+	cut = chromosomes.gene_locus_part('cut', surface, 14, gene, cut_ends=True)
+	assert lxml.etree.fromstring(tip.fragment).find('circle') is not None
+	assert lxml.etree.fromstring(cut.fragment).find('path[@class="gene-locus"]') is not None
+	assert tip.anchors['center'] == pytest.approx(cut.anchors['center'])
 
 
 def test_independent_sisters_and_compaction_keep_models() -> None:
@@ -79,7 +85,7 @@ def test_independent_sisters_and_compaction_keep_models() -> None:
 	assert {'sister0.centromere', 'sister1.centromere'} <= set(paired.anchors)
 	assert 'data-source-label="b"' in paired.fragment
 	compact = chromosomes.condensed_chromosome_part('barr', first, radius=18, label='Xi')
-	root = defusedxml.ElementTree.fromstring(compact.fragment)
+	root = lxml.etree.fromstring(compact.fragment)
 	assert root.attrib['data-chromosome-state'] == 'condensed'
 	assert root.find('./circle') is not None and root.find('./text').text == 'Xi'
 def test_replication_keeps_each_chromatid_length_and_thickness() -> None:
@@ -88,7 +94,7 @@ def test_replication_keeps_each_chromatid_length_and_thickness() -> None:
 	for sisters in (False, True):
 		layout = chromosomes.render_chromosome_layout('replication', model,
 			length=62, thickness=18, sisters=sisters, labels=False)
-		root = defusedxml.ElementTree.fromstring(layout.svg)
+		root = lxml.etree.fromstring(layout.svg)
 		regions = root.findall('.//g[@data-source-label]')
 		assert len(regions) == (4 if sisters else 2)
 		assert all(float(node.find('path').get('stroke-width')) == 18 for node in regions)

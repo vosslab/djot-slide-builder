@@ -4,7 +4,6 @@
 import pathlib
 import tempfile
 import unicodedata
-import xml.etree.ElementTree as ET
 import zipfile
 
 import lxml.etree
@@ -21,7 +20,7 @@ XLINK = "http://www.w3.org/1999/xlink"
 
 
 #============================================
-def frame_image(frame: ET.Element) -> ET.Element | None:
+def frame_image(frame: lxml.etree._Element) -> lxml.etree._Element | None:
 	"""Prefer the original vector figure over alternate raster previews."""
 	images = frame.findall(f"{{{DRAW}}}image")
 	if not images:

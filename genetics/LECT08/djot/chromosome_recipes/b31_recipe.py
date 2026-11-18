@@ -4,10 +4,11 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 # local repo modules
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 
@@ -30,16 +31,16 @@ def main() -> None:
 	source_path = HERE / 'b31_sources.json'
 	source=json.loads(source_path.read_text())
 	image_name = 'b31_micrograph_source.svg'
-	image_source = DET.fromstring((source_path.parent / image_name).read_bytes())
+	image_source = svg_tools._xml.parse((source_path.parent / image_name).read_bytes())
 	image_uri = next(node for node in image_source if node.tag.endswith('image')).attrib['href']
-	root=DET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
+	root=svg_tools._xml.parse((HERE / source['artwork']).read_text().replace('local-image:' + image_name, image_uri))
 	original=next(n for n in root if n.tag.endswith('image'))
-	layer=ET.Element('g')
+	layer=lxml.etree.Element('g')
 	# Source art occupies 987 by 937 pixels in the positioned SVG image.
 	layer.set('transform','translate(150.49099731445312 14.948984146118164) scale(0.4990932228743324 0.499335117)')
 	for patch in source['patches']:
 		for path, color in patch['spans']:
-			ET.SubElement(layer,'path',{'d':path,'fill':color})
+			lxml.etree.SubElement(layer,'path',{'d':path,'fill':color})
 	blue='#149dc8'
 	red='#e93b38'
 	# Centerlines follow the source's stage, homolog order and reciprocal products.
@@ -69,7 +70,7 @@ def main() -> None:
 		sites = () if center is None else (svg_tools.chromosomes.Centromere(center),)
 		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',c,n) for c,n in regions),sites)
 		part=svg_tools.chromosomes.chromosome_path_part(f'b31-chromatid-{i}',model,d,thickness=7 if i<4 else 9 if i<12 else 12,labels=False)
-		fragment=DET.fromstring(part.fragment)
+		fragment=svg_tools._xml.parse(part.fragment)
 		for node in list(fragment):
 			if node.get('id','').startswith(f'b31-chromatid-{i}-centromere-'):
 				fragment.remove(node)
@@ -78,13 +79,9 @@ def main() -> None:
 	for marker in markers:
 		layer.append(marker)
 	root.insert(list(root).index(original)+1,layer)
-	for node in root.iter():
-		if node.tag.startswith('{http://www.w3.org/2000/svg}'):
-			node.tag = node.tag.split('}',1)[1]
-	root.set('xmlns','http://www.w3.org/2000/svg')
 	out=(OUTPUT / 'b31_labeled.svg' if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS['b31_labeled.svg'])
 	out.parent.mkdir(parents=True, exist_ok=True)
-	out.write_bytes(ET.tostring(root,encoding='utf-8',xml_declaration=True))
+	out.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root),encoding='utf-8',xml_declaration=True))
 
 
 if __name__ == "__main__":

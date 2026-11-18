@@ -2,9 +2,9 @@
 
 # Standard Library
 import pathlib
-import xml.etree.ElementTree
 
 # PIP3 modules
+import lxml.etree
 import pytest
 
 # Local Modules
@@ -122,7 +122,7 @@ def test_preview_suppression_is_scoped_to_usable_table_frame(tmp_path: pathlib.P
 	"""Suppress the native-table preview only; unrelated or unsupported visuals stay."""
 	images = []
 
-	def add_picture(image: xml.etree.ElementTree.Element, *_unused: object) -> bool:
+	def add_picture(image: lxml.etree._Element, *_unused: object) -> bool:
 		images.append(image.get(odf_text.qname("xlink", "href")))
 		return True
 

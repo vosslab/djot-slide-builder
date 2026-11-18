@@ -6,11 +6,11 @@ import base64
 import json
 import math
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 import svgpathtools
 import subprocess
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
@@ -18,10 +18,10 @@ import svg_tools.parts
 
 
 #============================================
-def integrate_loci(root: ET.Element, source: dict) -> None:
+def integrate_loci(root: lxml.etree._Element, source: dict) -> None:
 	"""Replace exercise cards with small regions swept inside their fixed rods."""
 	cards = []
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		children = list(parent)
 		for index, card in enumerate(children[:-1]):
 			label = children[index+1]
@@ -44,8 +44,8 @@ def integrate_loci(root: ET.Element, source: dict) -> None:
 		parent.remove(label)
 		gene = svg_tools.chromosomes.Segment(label.text or '', '#F3D788', 24)
 		part = svg_tools.chromosomes.gene_locus_part(
-			f'inversion-double-crossover-gene-{number}', surface, center, gene)
-		parent.append(DET.fromstring(part.fragment))
+			f'inversion-double-crossover-gene-{number}', surface, center, gene, cut_ends=data['cut_ends'])
+		parent.append(svg_tools._xml.parse(part.fragment))
 
 
 #============================================
@@ -56,13 +56,13 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	image_uri = 'data:image/png;base64,' + base64.b64encode(
 		(source_path.parent / image_name).read_bytes()).decode('ascii')
 	for relative, source in sources.items():
-		root = DET.fromstring(source['svg'].replace('local-image:' + image_name, image_uri))
+		root = svg_tools._xml.parse((source_path.parent / source['artwork']).read_text().replace('local-image:' + image_name, image_uri))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
 			integrate_loci(root, source)
 		position_effect_loci = ()
 		if relative.endswith('position-effect-chromosomes.drawn.svg'):
 			position_effect_loci = ((0, complex(192.5, 110)), (1, complex(667.5, 300)))
-			for parent in root.iter():
+			for parent in list(root.iter()):
 				children = list(parent)
 				for card, label in zip(children, children[1:]):
 					if (card.tag.endswith('rect') and label.tag.endswith('text')
@@ -85,7 +85,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				part = svg_tools.chromosomes.chromosome_path_part(f'migrated13bc-chromosome-{index}',
 					model, data['path'], thickness=thickness,
 					cut_ends=data['cut_ends'], labels=False)
-				replacement = DET.fromstring(part.fragment)
+				replacement = svg_tools._xml.parse(part.fragment)
 				replacement.attrib['data-source-part'] = str(index)
 				replacement.attrib['stroke'] = 'none'
 				if 'centromere' in part.anchors:
@@ -101,8 +101,9 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 					center = svg_tools.chromosome_surface.nearest_distance(surface.path, source_center)
 					gene = svg_tools.chromosomes.Segment('w+', '#812F46', 65)
 					locus = svg_tools.chromosomes.gene_locus_part(
-						f'migrated13bc-position-effect-gene-{index}', surface, center, gene)
-					replacement.append(DET.fromstring(locus.fragment))
+						f'migrated13bc-position-effect-gene-{index}', surface, center, gene,
+						cut_ends=data['cut_ends'])
+					replacement.append(svg_tools._xml.parse(locus.fragment))
 		if relative.endswith('inversion-double-crossover-problem.drawn.svg'):
 			for number, (first_index, second_index) in enumerate(((0, 1), (2, 3))):
 				first, second = markers[first_index], markers[second_index]
@@ -116,17 +117,13 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				belt = svg_tools.chromosomes.centromere_part(
 					f'migrated13bc-sister-belt-{number}', thickness=thickness,
 					across=math.hypot(x2-x1, y2-y1)+thickness*1.3)
-				root.append(DET.fromstring(svg_tools.parts.transform(belt,
+				root.append(svg_tools._xml.parse(svg_tools.parts.transform(belt,
 					x=(x1+x2)/2, y=(y1+y2)/2,
 					rotation=math.degrees(math.atan2(y2-y1, x2-x1))-90).fragment))
 		path = output_root / relative
 		path.parent.mkdir(parents=True, exist_ok=True)
 		svg_tools.drawing.remove_canvas_background(root)
-		for node in root.iter():
-			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
-				node.tag = node.tag.split('}', 1)[1]
-		root.attrib['xmlns'] = 'http://www.w3.org/2000/svg'
-		path.write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
+		path.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 
 
 #============================================

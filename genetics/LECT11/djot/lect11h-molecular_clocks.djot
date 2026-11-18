@@ -27,7 +27,7 @@ color-theme: genetics
 
 # Sequence Differences Need a Rate to Become Time
 
-@notes
+@speaker-notes
 
 Open with the distinction students already know: the UPGMA trees had distance units. We never gave those units a value in years. Today we add that missing information.
 
@@ -41,7 +41,7 @@ Open with the distinction students already know: the UPGMA trees had distance un
 
 # The Plan for Estimating Time
 
-@notes
+@speaker-notes
 
 Keep returning to this order. Gene choice and rate choice are part of the calculation, not extra topics after it.
 
@@ -60,7 +60,7 @@ Keep returning to this order. Gene choice and rate choice are part of the calcul
 
 # Related Genes Can Have Different Histories
 
-@notes
+@speaker-notes
 
 Homology is about shared ancestry. Similar function can be useful evidence, but it does not define the relationship. Introduce speciation as the splitting of an ancestral species into descendant species.
 
@@ -74,7 +74,7 @@ Homology is about shared ancestry. Similar function can be useful evidence, but 
 
 # Name the Event That Separated the Copies
 
-@notes
+@speaker-notes
 
 Orthologs often retain similar functions, but that is not the definition. Paralogs can retain similar functions or change. They can also occur in different species if duplication happened before those species split.
 
@@ -86,7 +86,7 @@ Orthologs often retain similar functions, but that is not the definition. Paralo
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 Start at the early globin gene at the bottom. Follow duplication into alpha and beta. Then follow one copy through the species splits. Do not start by naming every tip.
 
@@ -102,7 +102,7 @@ Globin Genes Show Both Events
 
 # Which Pair Would You Compare?
 
-@notes
+@speaker-notes
 
 Let students choose and explain the event at the common ancestor before advancing.
 
@@ -121,7 +121,7 @@ To compare mouse and chick species histories, which pair is the better starting 
 
 # Compare Copies Separated by Speciation
 
-@notes
+@speaker-notes
 
 Point to the duplication node for the second pair. Its older history would add change from before the mouse-chick split.
 
@@ -137,7 +137,7 @@ Point to the duplication node for the second pair. Its older history would add c
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 A1 and A2 are orthologs; B1 and B2 are orthologs. An A copy and a B copy are paralogs. Different species alone does not make two genes orthologs.
 
@@ -151,7 +151,7 @@ Trace a Copy Through the Species Split
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 The ancestral copy is active in two tissues. After duplication, each copy loses different regulatory elements. Together the two copies retain the ancestral expression pattern.
 
@@ -171,7 +171,7 @@ After duplication, one copy works in tissue 1; the other works in tissue 2. This
 
 # A New Mutation Is Only the First Step
 
-@notes
+@speaker-notes
 
 For the simple population picture, describe a substitution as a new variant becoming fixed in the population. Distinguish a newly observed mutation from the changes retained in an evolutionary comparison.
 
@@ -185,7 +185,7 @@ For the simple population picture, describe a substitution as a new variant beco
 
 # Many DNA Changes Leave the Protein Unchanged
 
-@notes
+@speaker-notes
 
 Use this example before discussing codon positions. Third-position changes are often synonymous, but not always. The amino acid outcome defines the term.
 
@@ -197,7 +197,7 @@ Use this example before discussing codon positions. Third-position changes are o
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 Read the gene map first. Dark blocks are exons; pale blocks are introns. Orange marks are variable nucleotide positions. The red insertion arrows and gray deletion arrow are different kinds of changes. This figure compares variation among fruit flies, not a calibrated substitution rate.
 
@@ -213,7 +213,7 @@ The Adh Gene Contains More DNA Variation Than Protein Variation
 
 # Read the Adh Counts
 
-@notes
+@speaker-notes
 
 These are source-figure counts. The variants are within a sample of flies; do not call all 43 fixed substitutions. Connect the exon result to the codon example on the previous slide.
 
@@ -228,7 +228,7 @@ These are source-figure counts. The variants are within a sample of flies; do no
 
 # Selection Helps Explain Different Rates
 
-@notes
+@speaker-notes
 
 Mutation produces variation. Selection affects which changes persist. A slowly changing protein does not imply that its DNA never mutates.
 
@@ -240,7 +240,7 @@ Mutation produces variation. Selection affects which changes persist. A slowly c
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 First locate the vertical scale: substitutions per site per billion years. It is a logarithmic scale. Then compare synonymous and nonsynonymous sites. Point out the spread rather than presenting every region as having one universal rate.
 
@@ -256,7 +256,7 @@ Read the Substitution-Rate Figure
 
 # Use the Figure to Make One Comparison
 
-@notes
+@speaker-notes
 
 Ask for the direction first, then the explanation. Pause before advancing.
 
@@ -273,7 +273,7 @@ Ask for the direction first, then the explanation. Pause before advancing.
 
 # Protein Changes Often Face Stronger Constraints
 
-@notes
+@speaker-notes
 
 Synonymous does not mean always neutral. The figure shows a general pattern, not a guarantee for every site.
 
@@ -291,7 +291,7 @@ Synonymous does not mean always neutral. The figure shows a general pattern, not
 
 # Generation Time Can Affect Change per Year
 
-@notes
+@speaker-notes
 
 This inherited graph concerns mutation rate, not substitution rate. Keep that distinction explicit. Some RNA viruses have high mutation rates; bacteria often have low per-base mutation rates. Do not use one mutation rate for all genes or organisms.
 
@@ -309,7 +309,7 @@ This inherited graph concerns mutation rate, not substitution rate. Keep that di
 
 # A Protein Alignment Shows the Retained Differences
 
-@notes
+@speaker-notes
 
 Read one mouse difference aloud, then compare the baboon row. The picture is a short part of beta globin, not the entire chain. Amino acid sequences can be more conserved than their underlying DNA.
 
@@ -324,7 +324,7 @@ Read one mouse difference aloud, then compare the baboon row. The picture is a s
 
 # Rates Need Explicit Units
 
-@notes
+@speaker-notes
 
 Use the historical beta-globin example next. Its 1.23 rate is per lineage. A billion years is 1,000 million years. Emphasize the units before multiplying numbers.
 
@@ -341,7 +341,7 @@ Use the historical beta-globin example next. Its 1.23 rate is per lineage. A bil
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 Start with the axes, not the protein names. The x-axis is time since divergence. The y-axis is estimated amino acid substitutions per 100 residues, not simply percent different. More than 100 is possible because a site can change more than once. This is a historical teaching plot, not a current table of exact divergence dates.
 
@@ -357,7 +357,7 @@ Different Proteins Can Change at Different Rates
 
 # Read One Line at a Time
 
-@notes
+@speaker-notes
 
 Ask them to trace cytochrome c from left to right, then compare hemoglobin at the same x-coordinate.
 
@@ -375,7 +375,7 @@ Ask them to trace cytochrome c from left to right, then compare hemoglobin at th
 
 # A Molecular Clock Is a Rate Model
 
-@notes
+@speaker-notes
 
 A clock does not mean a mutation happens on schedule. It is a model for expected accumulated change. We will use an equal-rate example before discussing unequal rates.
 
@@ -389,7 +389,7 @@ A clock does not mean a mutation happens on schedule. It is a model for expected
 
 # Calibration Supplies the Time Scale
 
-@notes
+@speaker-notes
 
 Fossils often establish minimum ages. Other evidence includes dated ancient sequences and samples collected at known times. Keep the main example as a simplified known-time calibration, not a claim that fossil ages are exact.
 
@@ -401,7 +401,7 @@ Fossils often establish minimum ages. Other evidence includes dated ancient sequ
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 Point from the common ancestor to A, then return to the ancestor and trace B. Both branches have existed for the same elapsed time. The A-to-B distance includes both branches. This is the same path-sum logic used in the UPGMA activity.
 
@@ -417,7 +417,7 @@ Two Descendant Lineages Accumulate Change
 
 # A Worked Calibration: Find the Distance
 
-@notes
+@speaker-notes
 
 The numbers are invented for instruction. We approximate differences as substitutions here; later we explain repeated changes. Keep the same example for the next two steps.
 
@@ -433,7 +433,7 @@ Teaching example: two present-day orthologous sequences differ at 20 of 1,000 al
 
 # A Worked Calibration: Find the Rate
 
-@notes
+@speaker-notes
 
 The denominator has a two because the pairwise distance covers two branches. Point back to the two-lineage figure if anyone uses 0.004 as the per-lineage rate.
 
@@ -449,7 +449,7 @@ Both lineages have changed for 5 million years.
 
 # Use the Rate for a New Pair
 
-@notes
+@speaker-notes
 
 Leave the answer for the next slide. Ask students to identify what each symbol measures before doing arithmetic.
 
@@ -465,7 +465,7 @@ Use d = 2rt.
 
 # The Estimated Split Was 8 Million Years Ago
 
-@notes
+@speaker-notes
 
 Use the forward check to make the answer tangible. Dividing by r alone would give 16 million years, because it would assign the two-branch distance to just one branch.
 
@@ -480,7 +480,7 @@ Use the forward check to make the answer tangible. Dividing by r alone would giv
 
 # Return to Beta Globin
 
-@notes
+@speaker-notes
 
 This is the inherited protein-rate example with its assumptions made explicit. Treat 80 million years as the historical example value, not a newly verified mouse-human divergence date.
 
@@ -508,7 +508,7 @@ Expected replacements across both branches:
 
 # The Same Distance Can Come from Different Times
 
-@notes
+@speaker-notes
 
 This returns to the opening message. Have students explain why the slower rate needs more time. The time estimate depends on the rate and its calibration.
 
@@ -524,7 +524,7 @@ Suppose d = 0.032 substitutions per site.
 
 # A Site Can Change More Than Once
 
-@notes
+@speaker-notes
 
 This also explains why the historical protein graph can exceed 100 substitutions per 100 residues. Our 20/1000 example was a low-divergence approximation.
 
@@ -539,7 +539,7 @@ This also explains why the historical protein graph can exceed 100 substitutions
 
 # Real Rates Can Differ among Branches
 
-@notes
+@speaker-notes
 
 Do not imply relaxed clocks remove all uncertainty. They replace the equal-rate assumption with a model for rate variation. No software procedure is required today.
 
@@ -554,7 +554,7 @@ Do not imply relaxed clocks remove all uncertainty. They replace the equal-rate 
 
 # A Gene History Is Not Always a Species History
 
-@notes
+@speaker-notes
 
 Define an allele as a sequence variant at a locus. A population can carry more than one allele. This prepares students for the original figure, which previously appeared without enough setup.
 
@@ -567,7 +567,7 @@ Define an allele as a sequence variant at a locus. A population can carry more t
 
 === layout: big-image
 
-@notes
+@speaker-notes
 
 Read top to bottom. First there is A1. A2 arises before the species splits, so the ancestral population carries both. Follow the wide shaded species branches separately from the allele lines. Species 2 and 3 split last, but species 1 and 2 retain A2 while species 3 retains A1.
 
@@ -583,7 +583,7 @@ Ancestral Alleles Can Survive Multiple Splits
 
 # Separate the Two Histories
 
-@notes
+@speaker-notes
 
 Let students point to the broad branches for the first answer and the allele labels for the second. Pause before advancing.
 
@@ -601,7 +601,7 @@ Let students point to the broad branches for the first answer and the allele lab
 
 # Older Allele Variation Explains the Mismatch
 
-@notes
+@speaker-notes
 
 Keep the explanation local to the picture. This is one reason for discordance; it is not the only reason.
 
@@ -619,7 +619,7 @@ Keep the explanation local to the picture. This is one reason for discordance; i
 
 # A Gene Date May Predate a Species Split
 
-@notes
+@speaker-notes
 
 Connect the two cautions: ortholog choice avoids dating an older duplication, but even orthologous copies can have a common ancestor older than the species split. Do not equate every gene-node date with the date a species formed.
 
@@ -633,7 +633,7 @@ Connect the two cautions: ortholog choice avoids dating an older duplication, bu
 
 # Explain the Result, Not Just the Number
 
-@notes
+@speaker-notes
 
 Use this as a final verbal check. Give students time to explain in words. The following slide provides a study answer.
 
@@ -649,7 +649,7 @@ A comparison gives d = 0.032 substitutions per site and uses r = 0.002 per linea
 
 # A Complete Answer Includes the Assumptions
 
-@notes
+@speaker-notes
 
 Listen for the distinction between sequence distance, rate, and time. A student who only says eight has finished the arithmetic but not the interpretation.
 
@@ -664,7 +664,7 @@ Listen for the distinction between sequence distance, rate, and time. A student 
 
 # Molecular Clock Reference
 
-@notes
+@speaker-notes
 
 This slide is the reusable calculation reference. Gene ancestry and species ancestry need separate interpretation. Some sources define a combined two-lineage rate; that convention absorbs the factor of two. Always read the rate definition.
 

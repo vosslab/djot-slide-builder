@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 """Regenerate LECT13D chromosome compositions from frozen source data."""
 import argparse
+import functools
 import json
 import pathlib
 import re
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
+import svg_tools.annotations
 import svg_tools.chromosomes as chrom
 import svg_tools.chromosome_surface
+import svg_tools.chromosome_topology as topology
 import svg_tools.drawing
+import svg_tools.palette
+import svg_tools.text
 
 HERE = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT13/djot'
-SOURCES = json.loads((HERE / 'lect13d_chromosome_shells.json').read_text())
 NS = '{http://www.w3.org/2000/svg}'
-ET.register_namespace('', 'http://www.w3.org/2000/svg')
+
 NAMES = ('normal_y_chromosome_strip', 'normal_chromosome_2_strip',
 		'translocated_x_chromosome_strip', 'translocated_2_chromosome_strip',
 		'normal_y_translocated_2_subset', 'translocated_x_normal_y_subset',
@@ -24,24 +28,34 @@ NAMES = ('normal_y_chromosome_strip', 'normal_chromosome_2_strip',
 		'reciprocal_translocation_gamete_products')
 COLORS = {'slate': '#7895a2', 'blue': '#367cb7', 'red': '#df5146'}
 
-def write_svg(root: ET.Element, path: pathlib.Path) -> None:
+
+#============================================
+@functools.cache
+def _legacy_shells() -> dict[str, pathlib.Path]:
+	"""Load frozen SVG shells on the first legacy recipe call."""
+	shells = json.loads((HERE / 'lect13d_chromosome_shells.json').read_text())
+	return {name: HERE / path for name, path in shells.items()}
+
+
+def write_svg(root: lxml.etree._Element, path: pathlib.Path) -> None:
 	"""Write a source-derived SVG after removing only its canvas backdrop."""
 	svg_tools.drawing.remove_canvas_background(root)
-	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(path, encoding='ascii', xml_declaration=True)
 
-def marker(name: str, x: float, y: float, thickness: float, angle: float) -> ET.Element:
+def marker(name: str, x: float, y: float, thickness: float, angle: float) -> lxml.etree._Element:
 	"""Place the common structural marker without inventing chromosome material."""
 	part = chrom.centromere_part(name, thickness=thickness)
-	result = DET.fromstring(part.fragment)
+	result = svg_tools._xml.parse(part.fragment)
 	result.set('transform', f'translate({x} {y}) rotate({angle})')
 	return result
 
 
 def pairing() -> None:
 	"""Retain source arms, paint boundaries, sisters and centromeres with smooth bends."""
-	names = [name for name in SOURCES if name.startswith('pairing-') or name == 'segregation-three-forms.drawn.svg']
+	shells = _legacy_shells()
+	names = [name for name in shells if name.startswith('pairing-') or name == 'segregation-three-forms.drawn.svg']
 	for name in sorted(names):
-		root = DET.fromstring(SOURCES[name])
+		root = svg_tools._xml.read(shells[name])
 		for number, group in enumerate(list(root.iter(NS + 'g'))):
 			ellipses = group.findall(NS + 'ellipse')
 			paths = group.findall(NS + 'path')
@@ -92,7 +106,7 @@ def pairing() -> None:
 			else:
 				part = chrom.chromosome_path_part(f'{name[:-10]}-{number}', *chromatids[0],
 					thickness=thickness, labels=False)
-			group.insert(insert, DET.fromstring(part.fragment))
+			group.insert(insert, svg_tools._xml.parse(part.fragment))
 			for node in paths + ellipses:
 				group.remove(node)
 		write_svg(root, OUT / name)
@@ -104,8 +118,9 @@ def color(value: str) -> str:
 
 def ruby() -> None:
 	OUT.mkdir(parents=True, exist_ok=True)
+	shells = _legacy_shells()
 	for name in NAMES:
-		root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+		root = svg_tools._xml.read(shells[f'{name}.drawn.svg'])
 		# Neighboring strip canvases overlap; transparent backgrounds preserve their collars.
 		svg_tools.drawing.remove_canvas_background(root)
 		parents = {child: parent for parent in root.iter() for child in parent}
@@ -140,7 +155,7 @@ def ruby() -> None:
 			row_name = row_id.removesuffix('-rod')
 			group.clear()
 			group.set('id', row_id)
-			group.append(DET.fromstring(part.fragment))
+			group.append(svg_tools._xml.parse(part.fragment))
 			row = parents[group]
 			allele = row.find(f"{NS}text[@id='{row_name}-allele']")
 			if allele is not None:
@@ -151,7 +166,7 @@ def ruby() -> None:
 				center = svg_tools.chromosome_surface.nearest_distance(
 					surface.path, complex(float(allele.get('x')), y+height/2))
 				gene = chrom.Segment(label, '#F3D788', 36)
-				group.append(DET.fromstring(chrom.gene_locus_part(
+				group.append(svg_tools._xml.parse(chrom.gene_locus_part(
 					f'{name}-{row_name}-gene', surface, center, gene).fragment))
 		if name.endswith('_strip') or name.endswith('_subset'):
 			width, height = float(root.get('width')), float(root.get('height'))
@@ -164,7 +179,7 @@ def ruby() -> None:
 
 
 def convert_line_products(source_name: str, count: int) -> None:
-	root = DET.fromstring(SOURCES[f'{source_name}.drawn.svg'])
+	root = svg_tools._xml.read(_legacy_shells()[f'{source_name}.drawn.svg'])
 	for index in range(count):
 		paths = [node for node in root if node.tag == NS + 'path'][:2]
 		circle = next(node for node in root if node.tag == NS + 'circle')
@@ -178,7 +193,7 @@ def convert_line_products(source_name: str, count: int) -> None:
 		part = chrom.chromosome_path_part(f'{source_name}-{index}', model,
 			f'M {start} {y} L {end} {y}', thickness=float(paths[0].get('stroke-width')), labels=False)
 		position = list(root).index(paths[0])
-		root.insert(position, DET.fromstring(part.fragment))
+		root.insert(position, svg_tools._xml.parse(part.fragment))
 		for node in paths + [circle]:
 			root.remove(node)
 	write_svg(root, OUT / f'{source_name}.drawn.svg')
@@ -186,9 +201,9 @@ def convert_line_products(source_name: str, count: int) -> None:
 
 def gametes() -> None:
 	name = 'robertsonian_gamete_products'
-	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = svg_tools._xml.read(_legacy_shells()[f'{name}.drawn.svg'])
 	count = 0
-	for group in root.iter(NS + 'g'):
+	for group in list(root.iter(NS + 'g')):
 		if group.get('data-chromosome') is None:
 			continue
 		arms = group.findall(NS + 'path')
@@ -201,7 +216,7 @@ def gametes() -> None:
 		count += 1
 		for node in list(group):
 			group.remove(node)
-		group.append(DET.fromstring(part.fragment))
+		group.append(svg_tools._xml.parse(part.fragment))
 	if count != 18:
 		raise ValueError(f'Expected 18 chromosomes, found {count}')
 	write_svg(root, OUT / f'{name}.drawn.svg')
@@ -209,9 +224,9 @@ def gametes() -> None:
 
 def metaphase() -> None:
 	name = 'robertsonian_metaphase_orientations'
-	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+	root = svg_tools._xml.read(_legacy_shells()[f'{name}.drawn.svg'])
 	count = 0
-	for group in root.iter(NS + 'g'):
+	for group in list(root.iter(NS + 'g')):
 		sisters = [child for child in group if child.get('data-sister') is not None]
 		if not sisters:
 			continue
@@ -236,45 +251,70 @@ def metaphase() -> None:
 		position = list(group).index(sisters[0])
 		for sister in sisters:
 			group.remove(sister)
-		group.insert(position, DET.fromstring(part.fragment))
+		group.insert(position, svg_tools._xml.parse(part.fragment))
 		count += len(sisters)
 	if count != 18:
 		raise ValueError(f'Expected 18 sister chromatids, found {count}')
 	write_svg(root, OUT / f'{name}.drawn.svg')
 
 
-def fusion() -> None:
-	"""Use medial arm curves from source contours and retain terminal centromeres."""
-	# shortcut: filled source arms need medial estimates; replace only with measured source centerlines.
-	name = 'robertsonian_centromeric_fusion'
-	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
+def fusion(output_dir: pathlib.Path = HERE / 'assets/lect13d-meiosis_translocation') -> None:
+	"""Draw both products of a schematic Robertsonian long-arm fusion."""
+	ink = '#293e43'
+	root = lxml.etree.Element(NS + 'svg', {'width': '1120', 'height': '742',
+		'viewBox': '35 51 1120 742', 'font-family': 'Atkinson Hyperlegible Next',
+		'fill': ink, 'role': 'img', 'aria-labelledby': 'title desc'})
+	lxml.etree.SubElement(root, NS + 'title', {'id': 'title'}).text = 'Robertsonian centromeric fusion'
+	lxml.etree.SubElement(root, NS + 'desc', {'id': 'desc'}).text = (
+		'The long arms of two acrocentric chromosomes join near their centromeres. '
+		'The main product has one active centromere in this model. '
+		'The short arms form a separate product that is usually lost.')
+	blue_cut, red_cut = 10/110, 5.6/51.6
+	blue = topology.chromosome('A', length=110, centromere=blue_cut)
+	red = topology.chromosome('B', length=51.6, centromere=red_cut)
+	blue_short, blue_long = topology.split(blue, blue_cut)
+	red_short, red_long = topology.split(red, red_cut)
+	red_long = topology.with_centromere_activity(red_long, 'B.cen', active=False)
+	long_product = topology.join(topology.reverse(blue_long), red_long)
+	short_product = topology.join(blue_short, topology.reverse(red_short))
+	palette = {('A', 'body'): svg_tools.palette.shade('sky_blue', 'dark'),
+		('B', 'body'): svg_tools.palette.shade('red', 'dark')}
 	specs = {
-		'blue-input': (152, 99, (('M 152 99 C 144 212 164 274 153 361 C 143.5 450.5 146 518 152 595', '#377eaf'),)),
-		'red-input': (280, 99, (('M 280 99 C 276 206 294 262 283 326', '#d6533c'),)),
-		'fused-product': (877, 113, (
-			('M 877 113 C 869 226 889 288 878 375 C 868.5 464.5 871 532 877 609', '#377eaf'),
-			('M 877 113 C 943.5 137.5 1001.5 180.5 1068 222.5', '#d6533c'))),
+		'blue-input': (blue, [(132, 82), (143, 252), (138, 434), (149, 654)]),
+		'red-input': (red, [(278, 82), (271, 194), (287, 344)]),
+		'fused-product': (long_product, [(831, 624), (853, 404), (838, 233),
+			(890, 129), (983, 103), (1071, 150), (1132, 227)]),
+		'short-arm-product': (short_product, [(1000, 436), (1076, 436)]),
 	}
-	for group in root.iter(NS + 'g'):
-		if group.get('id') not in specs:
-			continue
-		cx, cy, arms = specs[group.attrib['id']]
-		for node in list(group):
-			group.remove(node)
-		for index, (path, paint) in enumerate(arms):
-			curve = chrom.svgpathtools.parse_path(path)
-			model = chrom.Chromosome((chrom.Segment('', paint, curve.length()),))
-			part = chrom.chromosome_path_part(f'fusion-{group.attrib["id"]}-arm-{index}',
-				model, path, thickness=50, labels=False)
-			group.append(DET.fromstring(part.fragment))
-		group.append(marker(f'fusion-{group.attrib["id"]}', cx, cy, 50, 90))
-	write_svg(root, OUT / f'{name}.drawn.svg')
+	# ASVS 1.5.1: use the restricted parser on fragments from drawing helpers.
+	for name, (model, points) in specs.items():
+		part = chrom.render(f'fusion-{name}', model, points=points,
+			width=30, scale=5.2, palette=palette)
+		root.append(svg_tools._xml.parse(part.fragment))
+
+	arrow = svg_tools.annotations.connector([(405, 323), (741, 323)], color=ink,
+		stroke_width=4, head_size=25)
+	root.append(svg_tools._xml.parse(arrow.fragment))
+	labels = (
+		(575, 230, 46, 'Centromeric'),
+		(575, 282, 46, 'fusion'),
+		(205, 708, 45, 'Normal'),
+		(205, 761, 45, 'chromosomes'),
+		(925, 708, 45, 'Robertsonian'),
+		(925, 761, 45, 'translocation'),
+		(1038, 493, 34, 'Short-arm'),
+		(1038, 532, 34, 'product'),
+	)
+	for x, y, size, value in labels:
+		label = svg_tools.text.label(x, y, value, size=size, color=ink)
+		root.append(svg_tools._xml.parse(label.fragment))
+	write_svg(root, output_dir / 'robertsonian_centromeric_fusion.drawn.svg')
 
 
 def human_fusion() -> None:
 	name = 'human_chromosome_2_fusion'
-	root = DET.fromstring(SOURCES[f'{name}.drawn.svg'])
-	for group in root.iter(NS + 'g'):
+	root = svg_tools._xml.read(_legacy_shells()[f'{name}.drawn.svg'])
+	for group in list(root.iter(NS + 'g')):
 		if group.get('id') not in ('ancestor-a', 'ancestor-b', 'dicentric', 'inactivation', 'human-2'):
 			continue
 		body = group.find(NS + 'rect')
@@ -285,7 +325,7 @@ def human_fusion() -> None:
 		part = chrom.chromosome_path_part(f'human2-{group.get("id")}-body', model,
 					f'M {x+width/2} {start} L {x+width/2} {end}', thickness=width, labels=False)
 		group.remove(body)
-		group.insert(0, DET.fromstring(part.fragment))
+		group.insert(0, svg_tools._xml.parse(part.fragment))
 		for index, circle in enumerate(circles):
 			cx, cy = float(circle.get('cx')), float(circle.get('cy'))
 			group.append(marker(f'human2-{group.attrib["id"]}-center-{index}', cx, cy, width, 90))
@@ -296,7 +336,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 	"""Keep authored text/composition and replace source-data chromosome placeholders."""
 	sources = json.loads(source_path.read_text())
 	for relative, source in sources.items():
-		root = DET.fromstring(source['svg'])
+		root = svg_tools._xml.read(source_path.parent / source['artwork'])
 		for parent in list(root.iter()):
 			for child in list(parent):
 				if 'data-shared-part' not in child.attrib:
@@ -311,7 +351,7 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				part = chrom.chromosome_path_part(f'migrated13bc-chromosome-{index}',
 					model, data['path'], thickness=data['thickness'],
 					cut_ends=data['cut_ends'], labels=False)
-				replacement = DET.fromstring(part.fragment)
+				replacement = svg_tools._xml.parse(part.fragment)
 				replacement.attrib['data-source-part'] = str(index)
 				replacement.attrib['stroke'] = 'none'
 				position = list(parent).index(child)
@@ -319,12 +359,8 @@ def generate(source_path: pathlib.Path, output_root: pathlib.Path) -> None:
 				parent.insert(position, replacement)
 		path = output_root / relative
 		path.parent.mkdir(parents=True, exist_ok=True)
-		for node in root.iter():
-			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
-				node.tag = node.tag.split('}', 1)[1]
-		root.attrib['xmlns'] = 'http://www.w3.org/2000/svg'
 		svg_tools.drawing.remove_canvas_background(root)
-		path.write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
+		path.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 
 
 def main() -> None:
@@ -338,7 +374,7 @@ def main() -> None:
 	ruby()
 	gametes()
 	metaphase()
-	fusion()
+	fusion(OUT)
 	human_fusion()
 	generate(HERE / 'lect13d_chromosome_duplicates.json', args.output_root)
 

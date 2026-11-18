@@ -7,11 +7,11 @@ import copy
 import json
 import math
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 import svgpathtools
 import subprocess
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes as chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
@@ -20,11 +20,11 @@ import svg_tools.parts
 
 HERE = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT13/djot'
 NS = 'http://www.w3.org/2000/svg'
-ET.register_namespace('', NS)
+
 
 
 #============================================
-def replace_markers(root: ET.Element, name: str) -> dict[str, tuple[ET.Element, ET.Element, float, float, float]]:
+def replace_markers(root: lxml.etree._Element, name: str) -> dict[str, tuple[lxml.etree._Element, lxml.etree._Element, float, float, float]]:
 	"""Replace source centromere symbols at their recorded positions."""
 	count = 0
 	markers = {}
@@ -49,7 +49,7 @@ def replace_markers(root: ET.Element, name: str) -> dict[str, tuple[ET.Element, 
 			part = chromosomes.chromosome_path_part(f'lect13b-{name}-marker-{count}', model,
 				f'M {x-thickness/2} {y} L {x+thickness/2} {y}',
 				thickness=thickness, cut_ends=True, labels=False)
-			replacement = DET.fromstring(part.fragment)
+			replacement = svg_tools._xml.parse(part.fragment)
 			replacement.set('stroke', 'none')
 			index = list(parent).index(child)
 			parent.remove(child)
@@ -61,7 +61,7 @@ def replace_markers(root: ET.Element, name: str) -> dict[str, tuple[ET.Element, 
 
 #============================================
 def replace_sister_markers(name: str,
-	markers: dict[str, tuple[ET.Element, ET.Element, float, float, float]], pairs: tuple[tuple[str, str], ...]) -> None:
+	markers: dict[str, tuple[lxml.etree._Element, lxml.etree._Element, float, float, float]], pairs: tuple[tuple[str, str], ...]) -> None:
 	"""Replace two source collars with one foreground belt for each known sister pair."""
 	for number, (first_name, second_name) in enumerate(pairs):
 		first = markers[first_name]
@@ -78,19 +78,19 @@ def replace_sister_markers(name: str,
 		angle = math.degrees(math.atan2(y2-y1, x2-x1))-90
 		# Marker coordinates are local to their shared parent.  In the anaphase
 		# figures that parent is the scaled Stage A group, not the document root.
-		first[0].append(DET.fromstring(svg_tools.parts.transform(belt,
+		first[0].append(svg_tools._xml.parse(svg_tools.parts.transform(belt,
 			x=(x1+x2)/2, y=(y1+y2)/2, rotation=angle).fragment))
 
 
 #============================================
-def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
+def integrate_loci(root: lxml.etree._Element, name: str, source: dict) -> None:
 	"""Replace cards with patches on their authored, fixed chromosome paths."""
 	stage_a = [0]*4 + [1]*4 + [2]*4 + [4]*4
 	stage_b = {
 		'paracentric-anaphase': [6]*4 + [7]*4 + [8, 8, 9, 9] + [10, 10, 11, 11],
 		'pericentric-anaphase': [6]*4 + [7, 7, 8, 8] + [9]*4 + [10, 10, 11, 11],
 	}
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		cards = []
 		children = list(parent)
 		for index, card in enumerate(children[:-1]):
@@ -115,15 +115,16 @@ def integrate_loci(root: ET.Element, name: str, source: dict) -> None:
 			center = svg_tools.chromosome_surface.nearest_distance(surface.path, point)
 			gene = chromosomes.Segment(label.text, '#F3D788', min(24, surface.length/6))
 			part = chromosomes.gene_locus_part(
-				f'{name}-part-{part_number}-gene-{number}', surface, center, gene)
-			parent.append(DET.fromstring(part.fragment))
+				f'{name}-part-{part_number}-gene-{number}', surface, center, gene,
+				cut_ends=source['parts'][part_number]['cut'])
+			parent.append(svg_tools._xml.parse(part.fragment))
 
 
 #============================================
-def render_source(name: str, source: dict) -> ET.Element:
+def render_source(name: str, source: dict) -> lxml.etree._Element:
 	"""Build one source-preserving composition from its shell and body data."""
-	root = DET.fromstring(source['svg'])
-	for parent in root.iter():
+	root = svg_tools._xml.read(HERE / source['artwork'])
+	for parent in list(root.iter()):
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:
 				continue
@@ -138,7 +139,7 @@ def render_source(name: str, source: dict) -> ET.Element:
 			if position and parent[position-1].tag == f'{{{NS}}}path' and parent[position-1].get('stroke') == 'white':
 				parent[position-1].set('d', path.d())
 			parent.remove(child)
-			replacement = DET.fromstring(part.fragment)
+			replacement = svg_tools._xml.parse(part.fragment)
 			replacement.set('stroke', 'none')
 			parent.insert(position, replacement)
 	if name in ('paracentric-anaphase', 'pericentric-pairing', 'pericentric-anaphase'):
@@ -156,7 +157,7 @@ def render_source(name: str, source: dict) -> ET.Element:
 		))
 		# Continuous chromatids establish the crossover order; separate overpass strokes
 		# leave false white breaks at the starts of the lower loop.
-		for parent in root.iter():
+		for parent in list(root.iter()):
 			for child in list(parent):
 				if child.get('id') in ('green-foreground-overpass', 'blue-foreground-overpass'):
 					parent.remove(child)
@@ -179,18 +180,18 @@ def render_source(name: str, source: dict) -> ET.Element:
 
 
 #============================================
-def image_006(body: ET.Element, source: dict) -> ET.Element:
+def image_006(body: lxml.etree._Element, source: dict) -> lxml.etree._Element:
 	"""Use the reference crop and callout with its four editable chromatids."""
-	root = ET.Element(f'{{{NS}}}svg', {'width': '784', 'height': '467',
+	root = lxml.etree.Element(f'{{{NS}}}svg', {'width': '784', 'height': '467',
 		'viewBox': '0 0 784 467', 'role': 'img'})
-	ET.SubElement(root, f'{{{NS}}}title').text = 'Inversion loop'
-	ET.SubElement(root, f'{{{NS}}}desc').text = 'Four chromatids pair in an inversion loop without crossing over.'
-	group = ET.SubElement(root, f'{{{NS}}}g', {'transform': 'translate(-55 -55) scale(0.70)'})
+	lxml.etree.SubElement(root, f'{{{NS}}}title').text = 'Inversion loop'
+	lxml.etree.SubElement(root, f'{{{NS}}}desc').text = 'Four chromatids pair in an inversion loop without crossing over.'
+	group = lxml.etree.SubElement(root, f'{{{NS}}}g', {'transform': 'translate(-55 -55) scale(0.70)'})
 	items = list(body)
 	for prefix in ('chromatid-', 'lect13b-inversion_loop_without_crossover-marker-'):
 		group.extend(copy.deepcopy(item) for item in items if item.get('id', '').startswith(prefix))
 	group.extend(copy.deepcopy(item) for item in items if item.get('class') == 'gene-label')
-	ET.SubElement(root, f'{{{NS}}}image', {'x': '400', 'y': '325', 'width': '384', 'height': '142',
+	lxml.etree.SubElement(root, f'{{{NS}}}image', {'x': '400', 'y': '325', 'width': '384', 'height': '142',
 		'href': 'data:image/png;base64,' + base64.b64encode(
 			(HERE / source['callout_png']).read_bytes()).decode('ascii')})
 	return root
@@ -212,13 +213,13 @@ def main() -> None:
 		if name == 'inversion_loop_without_crossover':
 			loop = root
 		svg_tools.drawing.remove_canvas_background(root)
-		(out / (name + '.drawn.svg')).write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
+		(out / (name + '.drawn.svg')).write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 	if loop is None:
 		raise ValueError('Missing inversion loop source')
 	root = image_006(loop, sources['image_006'])
 	svg_tools.drawing.remove_canvas_background(root)
 	(out / 'image_006_replacement.svg').write_bytes(
-		ET.tostring(root, encoding='ascii', xml_declaration=True))
+		lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 
 
 if __name__ == '__main__':

@@ -1,17 +1,17 @@
 """Replace only the embedded schematic; retain the empirical image bytes."""
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 import svgpathtools
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
 
 NS = 'http://www.w3.org/2000/svg'
 XLINK = 'http://www.w3.org/1999/xlink'
-ET.register_namespace('', NS)
-ET.register_namespace('xlink', XLINK)
+
+
 HERE = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT10/djot/lect10b_chromosome_recipe'
 # Approximate source band boundaries and colors read from the embedded illustration.
@@ -47,11 +47,11 @@ def distance_at_y(path: svgpathtools.Path, y: float) -> float:
 #============================================
 def main(destination: pathlib.Path) -> None:
 	"""Keep the source bands and photograph while drawing four smooth sisters."""
-	root=DET.parse(HERE/'templates'/'karyotype_preparation.svg').getroot()
+	root=svg_tools._xml.read(HERE/'templates'/'karyotype_preparation.svg')
 	parent=next(p for p in root.iter() if any(c.get('id')=='image_6' for c in p))
 	image=next(c for c in parent if c.get('id')=='image_6')
-	overlay=ET.Element(f'{{{NS}}}g',{'id':'chromosome-schematic-replacement'})
-	ET.SubElement(overlay,f'{{{NS}}}rect',{'x':'40','y':'180','width':'150','height':'255','fill':'white'})
+	overlay=lxml.etree.Element(f'{{{NS}}}g',{'id':'chromosome-schematic-replacement'})
+	lxml.etree.SubElement(overlay,f'{{{NS}}}rect',{'x':'40','y':'180','width':'150','height':'255','fill':'white'})
 	for i, knots in enumerate(CENTERLINES):
 		points = [complex(x, y) for y, x in knots]
 		path = svg_tools.chromosome_surface.smooth_centerline(svgpathtools.Path(
@@ -62,7 +62,7 @@ def main(destination: pathlib.Path) -> None:
 		model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('',band[2],length) for band,length in zip(BANDS,lengths)),
 			(svg_tools.chromosomes.Centromere(6),))
 		part=svg_tools.chromosomes.chromosome_path_part('schematic-sister-'+str(i),model,path.d(),thickness=8,labels=False)
-		overlay.append(DET.fromstring(part.fragment))
+		overlay.append(svg_tools._xml.parse(part.fragment))
 	parent.insert(list(parent).index(image)+1,overlay)
 	svg_tools.drawing.remove_canvas_background(root)
-	ET.ElementTree(root).write(destination, encoding='ascii', xml_declaration=False)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(destination, encoding='ascii', xml_declaration=False)

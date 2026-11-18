@@ -28,8 +28,10 @@ inspected viewports; white structures, panels and source image content retain th
 Each figure has a stable ID, **C01-C68**, and its original deck and slide number. Source numbers
 follow expanded source/ODP order, including hidden slides. Original paths and snapshot hashes are
 in [chromosome_samples.csv](chromosome_samples.csv); prototype replacement paths and hashes are
-in [chromosome_replacements.csv](chromosome_replacements.csv). The empirical C04 reference and
-the source coordinates in C51 are preserved. C51/C52 use BPQ deletion rows: gray retained
+in [chromosome_replacements.csv](chromosome_replacements.csv). The discoverable
+[source record](chromosome_review_sources.md) preserves the review snapshot, multi-view mappings,
+and C18 factual citations. The empirical C04 reference and the source coordinates in C51 are
+preserved. C51/C52 use BPQ deletion rows: gray retained
 material and thin magenta markers for missing intervals. C51 keeps unequal gene spacing
 and distinct V/VI breakpoints; C52 uses equal gene slots. Original lecture Djot and generated
 artwork remain unchanged; shared recipes are updated.
@@ -53,8 +55,8 @@ The [chromosome_label_survey.md](chromosome_label_survey.md) records gene-label 
 decisions, using C53 and C01/C47 as references. Colored loci follow the chromosome geometry;
 external labels remain where they improve readability.
 Compare body shape, sister spacing, centromere treatment, outlines, ancestry colors, labels, and
-amount of detail. Use the editable speaker notes or the optional
-[feedback sheet](chromosome_feedback.csv) to record what to keep, change, and why.
+amount of detail. Use the [feedback sheet](chromosome_feedback.csv) to record what to keep,
+change, and why; C55 and C63 cover each of their companion detail views.
 
 [chromosome_review.djot](chromosome_review.djot) is the one build target. Its two included source
 parts keep the source files manageable; they export as a single presentation.

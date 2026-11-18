@@ -1,6 +1,6 @@
 """Placement preserves geometry and local references."""
 
-import defusedxml.ElementTree
+import lxml.etree
 import pytest
 
 import svg_tools.chromosomes
@@ -29,7 +29,7 @@ def test_group_repeated_chromosome_ids_and_references() -> None:
 		(svg_tools.chromosomes.Centromere(1),))
 	part = svg_tools.chromosomes.chromosome_part('chrom', model, orientation='vertical')
 	combined = svg_tools.parts.group({'one': part, 'two': svg_tools.parts.transform(part, x=80)})
-	root = defusedxml.ElementTree.fromstring(combined.fragment)
+	root = lxml.etree.fromstring(combined.fragment)
 	ids = [el.attrib['id'] for el in root.iter() if 'id' in el.attrib]
 	assert len(ids) == len(set(ids))
 	for element in root.iter():

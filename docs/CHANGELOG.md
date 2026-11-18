@@ -1,3 +1,50 @@
+## 2026-11-18
+
+### Additions and New Features
+
+- Add a [four-slide chromosome deck](../prototype/chromosome_engine_mini.djot) for reviewing
+  the Drosophila complements, cis/trans alleles, sister chromatids and Robertsonian fusion.
+- Give C18 BPQ-style centromere collars with pale fills and upright chromosome IDs.
+  The shared renderer accepts centromere styles for individual chromatids and sister belts.
+
+### Behavior or Interface Changes
+
+- Rename the Djot speaker note directive to `@speaker-notes`. Keep lecture cues in ODP speaker
+  notes and move slide development rationale and provenance into `SLIDE_DEVELOPMENT_NOTES.md`
+  beside the decks. Document figure-specific choices in Python recipe docstrings.
+
+### Fixes and Maintenance
+
+- Standardize ODP, SVG recipes, and XML tests on lxml objects with document-local namespaces.
+  Store retained vector artwork in SVG files and build both C20 layouts from structured data.
+- Record lecture and course color assignments in [REPO_COLOR_PALETTE.md](REPO_COLOR_PALETTE.md),
+  with links from the slide guides and existing values for reproduction.
+- Use lxml across `svg_tools` for XML construction and safe parsing. Keep local SVG and
+  `xlink` namespaces in the writer for LibreOffice. Use the repository bootstrap in the SVG cookbook.
+- Lower the X chromosomes in C18 to bring the X and Y centromeres nearly level. Turn the
+  Y so that its short arm still faces the proximal X heterochromatin.
+- Use fixed palette hues with five shared lightness grades for authored SVG fills.
+  Apply them to C18, C20, C29, and C66 with the same Sky blue `#076DAD` on all four.
+- Move gene-locus drawing into `svg_tools/chromosome_loci.py` and put slide-writing,
+  conversion review, and teaching voice in [HUMAN_SLIDE_GUIDANCE.md](HUMAN_SLIDE_GUIDANCE.md).
+- Group matching chromosome texture marks into compound SVG paths. Regenerate C18,
+  C20, C29 and C66. The four-slide PDF shrinks by half with pixel-identical figures.
+- Pose the C18 Y with its short arm facing the X heterochromatin, as at the rDNA
+  pairing region in male metaphase I.
+- Move source records and citations out of the chromosome review decks' speaker notes.
+  The [figure sources](../prototype/chromosome_review_sources.md) link the original lecture
+  inventory and the studies behind C18.
+- Leave a visible stretch of chromosome color between an internal gene block and each
+  telomere cap. Extend the four C20 homologs past the last locus to show this spacing
+  while keeping the cis and trans allele labels inside their chromosomes.
+- Draw all 16 C18 chromosomes and the legend with a common centromere size. Lengthen
+  the chromosome bodies together so chromosome 4 shows both its collar and its arm.
+  Use mitotic chromosome maps for the heterochromatin blocks
+  and the unequal arms of the Y in the [chromosome mini deck](../prototype/chromosome_engine_mini.djot).
+- Allow rounding at equal material positions when drawing rearranged sisters. Give the C66
+  fusion recipe an explicit output directory for independent generation. Document the limits
+  of automatic sister placement on deep bends in the [chromosome engine audit](active_plans/audits/chromosome_engine_audit.md).
+
 ## 2026-11-17
 
 - Use actual Q&A slides for Genetics 11B with visible choices and a separate answer popup.
@@ -8,11 +55,27 @@
 
 ### Additions and New Features
 
+- Add a general-purpose linear chromosome model with immutable source intervals,
+  source genes, copy-specific centromere activity, and operations for cutting, reversing,
+  copying, joining, and making homologs or sisters. The renderer uses numeric pose points
+  and a separate color palette to map material along an open spline. It returns composable
+  parts with feature anchors and ink bounds. See [CHROMOSOME_ENGINE.md](CHROMOSOME_ENGINE.md).
+
 - Establish [CHROMOSOME_GENE_LABELS.md](CHROMOSOME_GENE_LABELS.md) as the chromosome
   gene-label convention and pipeline. Add one shared source-locus adapter using existing
   Segment data and final chromosome geometry.
 
 ### Behavior or Interface Changes
+
+- Publish four prototype review figures on the chromosome engine. C18 draws the XX and XY Drosophila
+  complements, C20 shows cis and trans locus ownership in the wide layout, C29 draws
+  sisters with one shared belt and the schematic locus A, and C66 joins the long arms
+  into one Robertsonian fusion product alongside the short-arm product.
+
+- Draw telomere caps at true ends and centromere collars at active sites in the new
+  renderer. Use the shared gene-letter pipeline and supply an external label when the
+  body lacks space. Compose the selected branches from engine parts and structured
+  Python or JSON data, generating SVG markup through the drawing helpers.
 
 - Give C31 irregular, matching sister-chromatid bands in C36's purple/pale-yellow palette.
   Preserve reversed G/R patterns and pericentromeric C-bands; identify the colors and widths
@@ -195,6 +258,12 @@
   `pyflakes` and focused tests; the cache scan is clean.
 
 ### Developer Tests and Notes
+
+- Chromosome engine authoring passed a standalone exercise using the public guide.
+  The example renders alternate poses, a homolog, a one-pose sister pair, and a
+  terminal exchange that conserves 448 units of source material. The 73-slide review
+  embeds all four replacements with native titles and captions. The base suite passed
+  9,515 checks with two source-line advisories.
 
 - C31 banding: 18 focused chromosome tests and pyflakes pass. Inspect the updated native
   PDF slide 32, verify its SVG is embedded unchanged, and compare all review/source asset

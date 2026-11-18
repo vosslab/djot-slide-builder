@@ -55,8 +55,8 @@ LibreOffice outside the sandbox on this Mac, including imports and builds.
   groups. Verify their inventory survives the weekly update; refresh dates before showing them.
 
 - [ ] Keep source filenames, source slide numbers, and conversion provenance out of Djot files,
-  including `@notes` and comments. Use separate import reports, slide maps, or review files for
-  traceability; reserve `@notes` for presentation note cards used while lecturing. Exclude selection history,
+  including `@speaker-notes` and comments. Use separate import reports, slide maps, or review files for
+  traceability; reserve `@speaker-notes` for presentation note cards used while lecturing. Exclude selection history,
   publication metadata, refresh commands, repair details, and verification logs from Djot files.
 
 - [ ] Import each source with the repository importer documented in [USAGE.md](USAGE.md).
@@ -134,8 +134,8 @@ section hierarchy, seasonal groups, and signup/profile deadlines.
   during conversion. Check repeated procedure slides against the same canonical colored version.
 - [ ] Before a new three-point testcross problem, repeat the matching colored roadmap: the
   pairwise-distance checklist for full mapping, or the DCO checklist for quick gene-order exercises.
-  Keep the two methods' step numbering distinct. Use the fixed [COLOR_PALETTE.md](COLOR_PALETTE.md)
-  colors in rainbow order, with matching colored step cross-references.
+  Keep the two methods' step numbering distinct. Use the roadmap colors in
+  [REPO_COLOR_PALETTE.md](REPO_COLOR_PALETTE.md) and match the step cross-references.
 - [ ] Remove textbook figure-number artifacts from titles, captions, citations, and editable
   diagram labels. Keep meaningful explanatory captions and all diagram content.
 - [ ] Inspect every rendered title for single-line fit, following the preference in

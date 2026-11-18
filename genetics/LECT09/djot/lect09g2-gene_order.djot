@@ -56,7 +56,7 @@
 - These are estimates from different pairwise counts.
 - Draw the map using its adjacent intervals; retain 24 cM as the calculated B-C answer.
 
-@notes
+@speaker-notes
 
 Connect this small discrepancy to the distinction between pairwise estimates and interval sums from the testcross lecture. The tetrad correction assumes a crossover model; separate pairwise estimates need not add exactly. Do not change the source counts to force equality.
 

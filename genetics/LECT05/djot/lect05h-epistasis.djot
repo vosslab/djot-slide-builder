@@ -20,7 +20,7 @@
 - Group genotypes to predict phenotype ratios
 - Compare F2 and testcross outcomes
 
-@notes
+@speaker-notes
 
 Use the flower, squash, and Labrador examples to explain phenotype grouping. The aim is to reconstruct ratios from the model, not memorize a catalog.
 
@@ -1292,7 +1292,7 @@ Six kinds of epistasis
 - [Add probabilities]{color=blue} for the same phenotype
 - Choose class weights for the actual cross
 
-@notes
+@speaker-notes
 
 For independent loci, an AaBb by AaBb cross supplies class weights 9,3,3,1; an AaBb by aabb testcross supplies 1,1,1,1. The pathway determines which classes share a phenotype. Ask students to explain one grouping.
 
@@ -1300,6 +1300,6 @@ For independent loci, an AaBb by AaBb cross supplies class weights 9,3,3,1; an A
 
 # THE END
 
-@notes
+@speaker-notes
 
 Pause for final questions before closing this deck.

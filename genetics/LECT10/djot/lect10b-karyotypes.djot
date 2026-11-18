@@ -41,7 +41,7 @@ color-theme: genetics
 
 # How Many Sets of Chromosomes in Human Cells?
 
-@notes
+@speaker-notes
 
 Start with somatic cells: two sets of 23 chromosomes, one maternal and one paternal.
 Distinguish two chromosome sets from 23 homologous pairs. Human gametes have one set of 23.
@@ -188,7 +188,7 @@ Answer\: all of the above
 
 ![Original homolog comparison](assets/lect10b-karyotypes/image_009.png)
 
-@notes
+@speaker-notes
 
 The question concerns chromosomes in a human karyotype: condensed, replicated chromosomes.
 The original X-shaped choice refers to that context. Each replicated chromosome has two sister
@@ -237,7 +237,7 @@ chromatids; the homologs carry genes for the same characters and may have differ
 - [*SKY*]{color=#A719DB}: software reads the fluorescence spectrum
   - Each chromosome type gets its own display color
 
-@notes
+@speaker-notes
 
 The library contains many chromosome-specific DNA fragments. Probes for the same chromosome
 share a dye combination. Software assigns display colors; for example, chromosome 1 can appear
@@ -267,7 +267,7 @@ yellow and chromosome 2 red.
 
 Speicher et al., 1996 (mFISH); Schrock et al., 1996 (SKY)
 
-@notes
+@speaker-notes
 
 Both methods use chromosome-specific probe mixtures and fluorescent dye combinations.
 Compare their readout: mFISH collects separate filter images; SKY distinguishes the emission
@@ -322,7 +322,7 @@ spectra. Both use software to identify chromosomes and produce the colored karyo
 
 ![Brainbow-labeled neurons](assets/lect10b-karyotypes/image_021.jpg)
 
-@notes
+@speaker-notes
 
 Use the colors to follow individual neurons and their processes through the crowded tissue.
 The following slides show how Cre-mediated recombination produces different fluorescent labels.
@@ -514,7 +514,7 @@ Match each description to a term.
 
 https://pubmed.ncbi.nlm.nih.gov/1587535/
 
-@notes
+@speaker-notes
 
 Two ancestral chromosomes joined. One centromere became inactive. Two active centromeres can make a chromosome unstable.
 

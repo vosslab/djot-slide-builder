@@ -113,7 +113,7 @@ One human nucleus: [*46,XY*]{color=#24578F} -> [*92,XXYY*]{color=#935D00}
 
 https://doi.org/10.1371/journal.pgen.1002679
 
-@notes
+@speaker-notes
 
 Follow the whole chromosome complement, not an extra copy of just one chromosome.
 Failure of cell separation can initially leave two diploid nuclei in one cell. The
@@ -527,15 +527,14 @@ https://www.cdc.gov/birth-defects/about/down-syndrome.html
 
 Simplified schematic. Age-related cohesin loss in mouse and human eggs: https://doi.org/10.1371/journal.pone.0096710
 
-@notes
+@speaker-notes
 
 Blue: sister chromatids of one replicated chromosome. Orange rings: cohesin complexes,
 shown schematically, not to scale. Both panels show the same chromosome identity and DNA amount.
 The changed spacing illustrates weakened cohesion, not a measured distance or a specific age.
 Arm cohesion helps maintain chiasmata between homologs; centromeric cohesion keeps sisters
 associated. Loss can disturb homolog segregation or permit premature sister separation.
-Tsutsumi et al. (2014) measured age-related loss of meiosis-specific cohesin subunits in
-human and mouse oocytes. Cohesion deterioration is one contributor to maternal-age effects.
+Cohesion deterioration is one contributor to maternal-age effects.
 
 === layout: question-ask
 
@@ -563,15 +562,11 @@ human and mouse oocytes. Cohesion deterioration is one contributor to maternal-a
 
 Historical reports: Pradhan et al. (2006), https://doi.org/10.1016/j.fertnstert.2006.03.071
 
-@notes
+@speaker-notes
 
-Restore the original slide's teaching contrast and historical counts, not a current census.
-The original phrasing was: "Men with Down syndrome are commonly believed to be sterile."
-The 2006 case report documents paternity in a man with nonmosaic Down syndrome.
 Rare documented paternity establishes that male infertility is not absolute; population
 fertility and paternal transmission risk remain poorly quantified. Do not describe all men
-as sterile or male fertility as completely unknown. See also the 2015 primary case report:
-https://pmc.ncbi.nlm.nih.gov/articles/PMC4595396/
+as sterile or male fertility as completely unknown.
 The offspring question leads into the explicit chromosome-segregation model on the next slide.
 
 === layout: one-panel
@@ -667,7 +662,7 @@ https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
 
 https://www.testing.com/tests/maternal-serum-screening-second-trimester/
 
-@notes
+@speaker-notes
 
 Keep the question anchored to trisomy 21: does this marker pattern suggest an increased chance?
 The triple/quad screen is not the first-trimester blood panel used with the NT scan.
@@ -697,7 +692,7 @@ These are established serum-screening examples; cell-free DNA is another screeni
 
 https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
 
-@notes
+@speaker-notes
 
 Both ultrasound images illustrate NT measurement, not a karyotype diagnosis.
 Increased NT is not specific to Down syndrome. Do not label an image as diagnostic by appearance.
@@ -722,7 +717,7 @@ First-trimester blood markers are PAPP-A and hCG, not the second-trimester tripl
 
 https://www.cdc.gov/birth-defects/diagnosis/screening-for-birth-defects.html
 
-@notes
+@speaker-notes
 
 For this comparison, wildtype means two copies of chromosome 21; it is not a judgment about people.
 Ask students which error could lead to unnecessary worry and which could miss a pregnancy
@@ -750,7 +745,7 @@ with trisomy 21. Both serum screening and NT screening can produce either kind o
 
 https://www.nichd.nih.gov/health/topics/down/conditioninfo/diagnosis
 
-@notes
+@speaker-notes
 
 The teaching sequence follows a positive screen into confirmation. A positive screen is not
 required to choose diagnostic testing; patients can also choose it directly after counseling.
@@ -888,7 +883,7 @@ https://www.cbsnews.com/video/is-iceland-on-track-to-eliminate-down-syndrome/
 - How does support for people with Down syndrome affect those choices?
 - What distinguishes personal choice from eugenics?
 
-@notes
+@speaker-notes
 
 Pause for discussion before advancing to the testing-market material.
 Allow quiet thinking, partner discussion, then several viewpoints. No personal disclosure is needed.
@@ -913,7 +908,7 @@ Avoid assuming that every decision after a diagnosis is the same or has the same
 
 NYTimes: [January 2022 investigation](https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html); [April 2022 follow-up](https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html).
 
-@notes
+@speaker-notes
 
 The investigation concerns expanded screening for rare conditions. Do not apply its
 false-positive proportions to Down syndrome screening or to diagnostic karyotypes.
@@ -965,7 +960,7 @@ https://www.simplefertility.com/eye-color-selection
 
 https://www.fertility-docs.com/programs-and-services/pgd-screening/choose-your-babys-eye-color/
 
-@notes
+@speaker-notes
 
 These are real advertisements, not an endorsement or independent proof of accuracy.
 The named clinics list US locations. Eye-color predictions depend on inherited variants and

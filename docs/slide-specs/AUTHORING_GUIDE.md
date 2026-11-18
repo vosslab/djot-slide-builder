@@ -53,13 +53,27 @@ Maintain canonical Djot with reachable local assets. ODP and PDF are generated d
 Keep large lectures divided into their established decks and cohesive chapter files; use includes
 instead of duplicate shared slides. Do not merge decks solely for tidiness.
 Keep visible slide-number footers off the slides, following the instructor's recorded preference.
-[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) owns includes, layouts, slots, tables, and notes.
+[DJOT_SLIDE_SYNTAX.md](DJOT_SLIDE_SYNTAX.md) owns includes, layouts, slots, tables, and speaker notes.
 Use [TABLE_AUTHORING_GUIDE.md](TABLE_AUTHORING_GUIDE.md) for native table selection, worked examples,
 and the maintained demonstration deck.
 
 Content-deck bookends and their teaching purpose are specified in
 [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md#give-each-deck-a-structure).
 Weekly announcements follow [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
+
+### Slide development notes
+
+Use `@speaker-notes` in Djot for oral explanations, questions, transitions, and delivery cues.
+Use `@citation` for a credit or reference that should appear on the slide.
+
+Keep author-facing source references, data provenance, and slide-design decisions in
+`SLIDE_DEVELOPMENT_NOTES.md` beside the decks. Create the file when the directory has notes
+worth keeping. Group entries under the deck filename and identify each relevant slide by title
+or stable identifier. Link to existing import reports, slide maps, and detailed source records.
+The Markdown file is maintained by authors and stays outside the build.
+
+Record figure-specific reasoning in the [Python recipe](../SVG_TOOLKIT.md#name-and-place-recipes)
+where it can guide the next change.
 
 ## Cover and layout conventions
 
@@ -122,8 +136,9 @@ Equations remain editable in Djot; their MathJax SVG output is an established ex
 text inside the presentation. Use the figure-plus-labels pipeline for actual figures, keeping
 titles, captions, and ordinary prose native.
 
-Use [../COLOR_PALETTE.md](../COLOR_PALETTE.md) for exact palette mappings and
-[COLOR_GUIDE.md](COLOR_GUIDE.md) for their meaning.
+Choose hex values from [../COLOR_PALETTE.md](../COLOR_PALETTE.md) and local mappings from
+[../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md). See [COLOR_GUIDE.md](COLOR_GUIDE.md) for
+their application on slides.
 Use [SLIDE_VISUAL_REVIEW_RUBRIC.md](SLIDE_VISUAL_REVIEW_RUBRIC.md) for advisory rendered review;
 source checks do not prove classroom quality, editability, or playback.
 

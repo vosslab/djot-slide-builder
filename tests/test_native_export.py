@@ -92,9 +92,9 @@ def test_native_odp_renderer_writes_editable_objects(tmp_path: pathlib.Path) -> 
 #============================================
 def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Path) -> None:
 	"""Plain note text stays editable and cannot inject visible ODP XML."""
-	source_path = write_deck(tmp_path, "=== layout: one-panel\n@notes\n"
+	source_path = write_deck(tmp_path, "=== layout: one-panel\n@speaker-notes\n"
 		"Ask <why> & wait.\n\n- Instructor reminder.\n@body\nStudent content.\n"
-		"=== layout: blank\nhidden: true\n@notes\nHidden reminder.\n")
+		"=== layout: blank\nhidden: true\n@speaker-notes\nHidden reminder.\n")
 	deck = slide_lib.native_export.parse_deck(source_path)
 	odp_path = slide_lib.native_export.render_native_odp(deck, tmp_path / "deck.odp")
 	with zipfile.ZipFile(odp_path) as archive:

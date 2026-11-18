@@ -21,7 +21,7 @@
 - Infer possible ABO genotypes
 - Distinguish one-gene and multigene traits
 
-@notes
+@speaker-notes
 
 Use the heterozygote as the comparison point. ABO and the donor-recipient examples make distinct allele effects visible; later examples contrast one-locus and multigene traits.
 
@@ -29,7 +29,7 @@ Use the heterozygote as the comparison point. ABO and the donor-recipient exampl
 
 # Patterns of dominance
 
-@notes
+@speaker-notes
 
 Begin by comparing how the heterozygote looks under different patterns of dominance.
 The next slides introduce the terms used for those patterns.
@@ -676,7 +676,7 @@ The next slides introduce the terms used for those patterns.
 - Codominant: both allele effects distinguishable
 - Dominance changes phenotypes, not allele segregation
 
-@notes
+@speaker-notes
 
 Ask students to classify a heterozygote before naming a dominance pattern. Alleles remain discrete even when the phenotype is intermediate. Under the usual Aa by Aa assumptions, genotypes remain 1:2:1.
 
@@ -684,6 +684,6 @@ Ask students to classify a heterozygote before naming a dominance pattern. Allel
 
 # THE END
 
-@notes
+@speaker-notes
 
 Pause for final questions before closing this deck.

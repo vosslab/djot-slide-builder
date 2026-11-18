@@ -1,8 +1,10 @@
 """Editable, locally positioned workflow nodes and authored connectors."""
 
 import math
-import xml.sax.saxutils
 
+import lxml.etree
+
+import svg_tools._xml
 import svg_tools.parts
 import svg_tools.text
 
@@ -28,14 +30,16 @@ def box(label: str | list[svg_tools.text.TextRun], width: float, height: float, 
 	if shape == 'decision' and (max(abs(text.bounds[0]), abs(text.bounds[2]))/w
 		+ max(abs(text.bounds[1]), abs(text.bounds[3]))/h > 1):
 		raise ValueError('Text overflows the decision diamond')
-	fill = xml.sax.saxutils.quoteattr(fill)
-	stroke_attr = xml.sax.saxutils.quoteattr(stroke)
+	group = lxml.etree.Element('g')
+	paint = lxml.etree.SubElement(group, 'g', {'fill': fill, 'stroke': stroke,
+		'stroke-width': str(stroke_width), 'stroke-linejoin': 'round'})
 	if shape == 'process':
-		geometry = f'<rect x="{-w}" y="{-h}" width="{width}" height="{height}" rx="8"'
+		lxml.etree.SubElement(paint, 'rect', {'x': str(-w), 'y': str(-h),
+			'width': str(width), 'height': str(height), 'rx': '8'})
 	else:
-		geometry = f'<polygon points="0,{-h} {w},0 0,{h} {-w},0"'
-	fragment = (f'<g><g fill={fill} stroke={stroke_attr} stroke-width="{stroke_width}" '
-		f'stroke-linejoin="round">{geometry}/></g>{text.fragment}</g>')
+		lxml.etree.SubElement(paint, 'polygon', {'points': f'0,{-h} {w},0 0,{h} {-w},0'})
+	group.append(svg_tools._xml.parse(text.fragment))
+	fragment = lxml.etree.tostring(group, encoding='unicode')
 	margin = stroke_width/2
 	bounds = (min(-w-margin, text.bounds[0]), min(-h-margin, text.bounds[1]),
 		max(w+margin, text.bounds[2]), max(h+margin, text.bounds[3]))
@@ -65,10 +69,11 @@ def connector(points: list[tuple[float, float]], *, kind: str = 'activation',
 	ux, uy = dx/length, dy/length
 	px, py = -uy, ux
 	geometry = ' '.join(f'{x},{y}' for x, y in points)
-	stroke = xml.sax.saxutils.quoteattr(color)
-	dash = ' stroke-dasharray="6 5"' if kind == 'indirect' else ''
-	fragment = (f'<g fill="none" stroke={stroke} stroke-width="{stroke_width}" '
-		f'stroke-linecap="round" stroke-linejoin="round"><polyline points="{geometry}"{dash}/>')
+	group = lxml.etree.Element('g', {'fill': 'none', 'stroke': color, 'stroke-width': str(stroke_width),
+		'stroke-linecap': 'round', 'stroke-linejoin': 'round'})
+	line = lxml.etree.SubElement(group, 'polyline', {'points': geometry})
+	if kind == 'indirect':
+		line.set('stroke-dasharray', '6 5')
 	head_points = []
 	if kind == 'activation':
 		head_points = [(end[0]-head_size*ux + head_size*.5*px, end[1]-head_size*uy + head_size*.5*py),
@@ -77,8 +82,8 @@ def connector(points: list[tuple[float, float]], *, kind: str = 'activation',
 		head_points = [(end[0]+head_size*.5*px, end[1]+head_size*.5*py),
 			(end[0]-head_size*.5*px, end[1]-head_size*.5*py)]
 	if head_points:
-		fragment += '<polyline points="' + ' '.join(f'{x},{y}' for x, y in head_points) + '"/>'
-	fragment += '</g>'
+		lxml.etree.SubElement(group, 'polyline', {'points': ' '.join(f'{x},{y}' for x, y in head_points)})
+	fragment = lxml.etree.tostring(group, encoding='unicode')
 	all_points = list(points) + head_points
 	margin = stroke_width/2
 	bounds = (min(p[0] for p in all_points)-margin, min(p[1] for p in all_points)-margin,

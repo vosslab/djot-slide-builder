@@ -1,9 +1,10 @@
-"""BPQ table paint layers mapped from longitudinal/transverse coordinates to SVG."""
+"""Build SVG centerlines and map BPQ paint onto their surfaces."""
 
-import bisect
 import math
-import xml.etree.ElementTree as ET
+import bisect
+import collections.abc
 
+import lxml.etree
 import svgpathtools
 
 
@@ -11,6 +12,80 @@ import svgpathtools
 REFERENCE_HEIGHT = 30
 TEXTURE_STOPS = ((5, 7, 8), (18, 21, 22), (29, 30, 31),
 	(46, 48, 49), (59, 62, 63))
+
+
+#============================================
+def _validate_spline_segment(segment: svgpathtools.CubicBezier, width: float) -> None:
+	"""Check forward progress and the local curvature limit for a swept ribbon."""
+	local = segment.translated(-segment.start)
+	velocity = local.poly().deriv()
+	forward = svgpathtools.real(velocity * local.end.conjugate())
+	progress_checks = [0, 1, *svgpathtools.polyroots01(forward.deriv())]
+	if min(forward(t) for t in progress_checks) <= 0:
+		raise ValueError('Spline has a stationary or reversing span')
+	dx, dy = svgpathtools.real(velocity), svgpathtools.imag(velocity)
+	speed_squared = dx*dx + dy*dy
+	cross = dx*dy.deriv() - dy*dx.deriv()
+	# Signed curvature is cross/speed_squared**(3/2). Check its extrema and endpoints.
+	curvature_extrema = 2*cross.deriv()*speed_squared - 3*cross*speed_squared.deriv()
+	bend_checks = [0, 1, *svgpathtools.polyroots01(curvature_extrema)]
+	if any(local.curvature(t) * (width/2) >= 1 for t in bend_checks):
+		raise ValueError('Spline bend would fold the surface at this width')
+
+
+#============================================
+def centerline(points: collections.abc.Sequence[tuple[float, float]], *, length: float,
+	width: float) -> svgpathtools.Path:
+	"""Fit an open centripetal Catmull-Rom spline to SVG shape points.
+
+	Scale uniformly about the first point to the requested arc length. The width
+	is in display units and limits local bends anywhere along the scaled curve.
+	"""
+	for value, name in ((length, 'length'), (width, 'width')):
+		if isinstance(value, bool) or not math.isfinite(value) or value <= 0:
+			raise ValueError(f'Spline {name} must be positive and finite')
+	if len(points) < 2:
+		raise ValueError('Spline needs at least two shape points')
+	positions = [complex(x, y) for x, y in points]
+	if not all(math.isfinite(point.real) and math.isfinite(point.imag) for point in positions):
+		raise ValueError('Spline points must be finite')
+	anchor = positions[0]
+	shape = [point-anchor for point in positions]
+	extent = max(math.hypot(point.real, point.imag) for point in shape)
+	if not extent or not math.isfinite(extent):
+		raise ValueError('Consecutive spline points must be distinct and finitely separated')
+	shape = [point/extent for point in shape]
+	chords = [end-start for start, end in zip(shape, shape[1:])]
+	if 0 in chords:
+		raise ValueError('Consecutive spline points must be distinct')
+	if positions[-1] == anchor:
+		raise ValueError('Spline must be open with distinct first and last points')
+	if len(shape) == 2:
+		segments = [svgpathtools.Line(0j, shape[1])]
+	else:
+		# Extrapolate one chord at each end. Centripetal knots use square-root chord lengths.
+		padded = [chords[0], *chords, chords[-1]]
+		intervals = [math.sqrt(abs(chord)) for chord in padded]
+		tangents = [(left/h_left * h_right + right/h_right * h_left) / (h_left+h_right)
+			for left, right, h_left, h_right in zip(padded, padded[1:], intervals, intervals[1:])]
+		segments = []
+		for index, (start, end) in enumerate(zip(shape, shape[1:])):
+			handle_scale = intervals[index+1]/3
+			segments.append(svgpathtools.CubicBezier(start, start+tangents[index]*handle_scale,
+				end-tangents[index+1]*handle_scale, end))
+	native_length = svgpathtools.Path(*segments).length()
+	display_segments = []
+	for segment in segments:
+		controls = [anchor + point/native_length * length for point in segment.bpoints()]
+		if (controls[0] == controls[-1] or not all(
+			math.isfinite(point.real) and math.isfinite(point.imag) for point in controls)):
+			raise ValueError('Spline length cannot be represented at this position')
+		display_segment = type(segment)(*controls)
+		if isinstance(display_segment, svgpathtools.CubicBezier):
+			_validate_spline_segment(display_segment, width)
+		display_segments.append(display_segment)
+	path = svgpathtools.Path(*display_segments)
+	return path
 
 
 #============================================
@@ -116,6 +191,7 @@ class Surface:
 		self.width = thickness
 		self.scale = thickness / REFERENCE_HEIGHT
 		self.length = self.path.length()
+		self.cap_length = min(thickness*8/30, self.length/4)
 		self.straight = len(self.path) == 1 and isinstance(self.path[0], svgpathtools.Line)
 		self.positions = []
 		self.normals = []
@@ -186,71 +262,84 @@ class Surface:
 			self._offset(index, bottom) for index in reversed(indices)] + [self.point(start, bottom)]
 		return self._points_polygon(points)
 
-	def envelope(self, closed: bool = False, cut: bool = False) -> str:
+	def envelope(self, closed: bool = False, cut: bool = False, *,
+		terminal_ends: tuple[bool, bool] | None = None) -> str:
+		"""Round native ends and leave cut ends flat."""
 		half = self.width / 2
-		if closed or cut:
+		if closed or cut or terminal_ends == (False, False):
 			return self.ribbon(0, self.length, -half, half)
 		radius = min(6*self.scale, self.length/2)
+		round_start, round_end = (True, True) if terminal_ends is None else terminal_ends
+		start = radius if round_start else 0
+		end = self.length-radius if round_end else self.length
 		indices = [index for index, distance in enumerate(self.distances)
-			if radius < distance < self.length-radius]
-		points = [self.point(radius, -half)] + [self._offset(index, -half) for index in indices] + [
-			self.point(self.length-radius, -half)]
-		for cx, cy, start in ((self.length-radius, -half+radius, -90),
-			(self.length-radius, half-radius, 0)):
-			points.extend(self.point(cx+radius*math.cos(math.radians(start+i*90/8)),
-				cy+radius*math.sin(math.radians(start+i*90/8))) for i in range(9))
+			if start < distance < end]
+		points = [self.point(start, -half)] + [self._offset(index, -half) for index in indices] + [
+			self.point(end, -half)]
+		if round_end:
+			for across, angle in ((-half+radius, -90), (half-radius, 0)):
+				points.extend(self.point(end+radius*math.cos(math.radians(angle+i*90/8)),
+					across+radius*math.sin(math.radians(angle+i*90/8))) for i in range(9))
+		else:
+			points.append(self.point(end, half))
 		points.extend(self._offset(index, half) for index in reversed(indices))
-		for cx, cy, start in ((radius, half-radius, 90), (radius, -half+radius, 180)):
-			points.extend(self.point(cx+radius*math.cos(math.radians(start+i*90/8)),
-				cy+radius*math.sin(math.radians(start+i*90/8))) for i in range(9))
+		if round_start:
+			for across, angle in ((half-radius, 90), (-half+radius, 180)):
+				points.extend(self.point(start+radius*math.cos(math.radians(angle+i*90/8)),
+					across+radius*math.sin(math.radians(angle+i*90/8))) for i in range(9))
+		else:
+			points.append(self.point(start, half))
 		return self._points_polygon(points)
 
-	def paint(self, parent: ET.Element, name: str, *, texture: bool = True,
+	def paint(self, parent: lxml.etree._Element, name: str, *, texture: bool = True,
 		texture_spans: tuple[tuple[float, float], ...] | None = None) -> None:
 		"""Background texture, foreground sheen, then zero-blur inset shadows."""
 		half = self.width/2
 		if texture:
-			layer = ET.SubElement(parent, 'g', {'data-layer': 'texture'})
+			layer = lxml.etree.SubElement(parent, 'g', {'data-layer': 'texture'})
 			# CSS 95deg gradient projected onto its 79 x 30 border-box tile.
 			angle = math.radians(5)
 			for number, (left, right) in enumerate(texture_spans or ((0, self.length),)):
 				clip_id = f'{name}-texture-{number}'
-				clip = ET.SubElement(layer, 'clipPath', {'id': clip_id})
-				ET.SubElement(clip, 'path', {'d': self.ribbon(left, right, -half, half)})
-				tile = ET.SubElement(layer, 'g', {'clip-path': f'url(#{clip_id})'})
+				clip = lxml.etree.SubElement(layer, 'clipPath', {'id': clip_id})
+				lxml.etree.SubElement(clip, 'path', {'d': self.ribbon(left, right, -half, half)})
+				tile = lxml.etree.SubElement(layer, 'g', {'clip-path': f'url(#{clip_id})'})
+				dark_marks, light_marks = [], []
 				for origin in range(-1, math.ceil((right-left)/(79*self.scale))+1):
 					for start, stop, end in TEXTURE_STOPS:
-						for a, b, color, alpha in ((start, stop, '#000000', '.09'),
-							(stop, end, '#FFFFFF', '.08')):
+						for marks, a, b in ((dark_marks, start, stop), (light_marks, stop, end)):
 							coords = []
 							for value, across in ((a, -half), (b, -half), (b, half), (a, half)):
 								along = left + origin*79*self.scale + (value*self.scale-
 									(across+half)*math.sin(angle))/math.cos(angle)
 								coords.append((along, across))
-							ET.SubElement(tile, 'path', {'d': self.polygon(coords), 'fill': color,
-								'fill-opacity': alpha})
-		layer = ET.SubElement(parent, 'g', {'data-layer': 'sheen'})
+							marks.append(self.polygon(coords))
+				# One paint operation per shade keeps translucent texture compact in PDF.
+				for marks, color, alpha in ((dark_marks, '#000000', '.09'), (light_marks, '#FFFFFF', '.08')):
+					lxml.etree.SubElement(tile, 'path', {'d': ' '.join(marks), 'fill': color,
+						'fill-opacity': alpha})
+		layer = lxml.etree.SubElement(parent, 'g', {'data-layer': 'sheen'})
 		if self.straight:
-			gradient = ET.SubElement(layer, 'linearGradient', {'id': name+'-sheen',
+			gradient = lxml.etree.SubElement(layer, 'linearGradient', {'id': name+'-sheen',
 				'gradientUnits': 'userSpaceOnUse'})
 			for prefix, position in (('1', self.point(0, -half)), ('2', self.point(0, half))):
 				gradient.set('x'+prefix, str(position.real))
 				gradient.set('y'+prefix, str(position.imag))
 			for offset, color, alpha in (('0', '#FFFFFF', '.25'), ('.45', '#FFFFFF', '0'),
 				('.45', '#000000', '0'), ('1', '#000000', '.16')):
-				ET.SubElement(gradient, 'stop', {'offset': offset, 'stop-color': color, 'stop-opacity': alpha})
-			ET.SubElement(layer, 'path', {'d': self.ribbon(0, self.length, -half, half),
+				lxml.etree.SubElement(gradient, 'stop', {'offset': offset, 'stop-color': color, 'stop-opacity': alpha})
+			lxml.etree.SubElement(layer, 'path', {'d': self.ribbon(0, self.length, -half, half),
 				'fill': f'url(#{name}-sheen)'})
 		else:
 			# SVG has no swept gradient: sample the BPQ alpha function across the rod.
 			for index in range(48):
 				t = (index+.5)/48
 				alpha = .25*(1-t/.45) if t < .45 else .16*(t-.45)/.55
-				ET.SubElement(layer, 'path', {'d': self.ribbon(0, self.length,
+				lxml.etree.SubElement(layer, 'path', {'d': self.ribbon(0, self.length,
 					-half+self.width*index/48, -half+self.width*(index+1)/48+.002*self.scale),
 					'fill': '#FFFFFF' if t < .45 else '#000000', 'fill-opacity': str(alpha)})
-		layer = ET.SubElement(parent, 'g', {'data-layer': 'inset-shadows'})
+		layer = lxml.etree.SubElement(parent, 'g', {'data-layer': 'inset-shadows'})
 		for top, bottom, color, alpha in ((-half+2*self.scale, -half+4*self.scale, '#FFFFFF', '.55'),
 			(half-5*self.scale, half-2*self.scale, '#000000', '.18')):
-			ET.SubElement(layer, 'path', {'d': self.ribbon(0, self.length, top, bottom),
+			lxml.etree.SubElement(layer, 'path', {'d': self.ribbon(0, self.length, top, bottom),
 				'fill': color, 'fill-opacity': alpha})

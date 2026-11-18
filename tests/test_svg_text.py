@@ -1,8 +1,6 @@
 """Font-backed editable SVG labels."""
 
-import xml.etree.ElementTree
-
-import defusedxml.ElementTree
+import lxml.etree
 import pytest
 
 import svg_tools.drawing
@@ -12,8 +10,8 @@ import svg_tools.text
 def test_label_escapes_and_measures_faces() -> None:
 	part = svg_tools.text.label(10, 40, 'A < B & \u03b1', size=24, color='red & blue',
 		role='sequence', bold=True, italic=True, anchor='start')
-	node = defusedxml.ElementTree.fromstring(part.fragment)
-	defusedxml.ElementTree.fromstring('<svg>' + part.fragment + '</svg>')
+	node = lxml.etree.fromstring(part.fragment)
+	lxml.etree.fromstring('<svg>' + part.fragment + '</svg>')
 	assert node.text == 'A < B & \u03b1'
 	assert node.attrib['fill'] == 'red & blue'
 	assert node.attrib['font-family'] == 'Atkinson Hyperlegible Mono'
@@ -26,7 +24,7 @@ def test_label_escapes_and_measures_faces() -> None:
 		'iiii', size=24, role='sequence')
 	spaced = svg_tools.text.label(100, 180, 'A   G', size=80, color='black',
 		role='sequence', anchor='start')
-	spaced_node = defusedxml.ElementTree.fromstring(spaced.fragment)
+	spaced_node = lxml.etree.fromstring(spaced.fragment)
 	assert spaced_node.text == 'A   G'
 	assert spaced_node.get('{http://www.w3.org/XML/1998/namespace}space') == 'preserve'
 	assert spaced.anchors['end'][0] > svg_tools.text.label(100, 180, 'A G', size=80,
@@ -42,10 +40,10 @@ def test_anchors_validation_and_existing_font_override() -> None:
 			svg_tools.text.label(0, 0, 'xxxx', size=size, color='black')
 	with pytest.raises(ValueError):
 		svg_tools.text.label(0, 0, 'x', size=12, color='black', role='other')
-	with pytest.raises(xml.etree.ElementTree.ParseError):
+	with pytest.raises(ValueError):
 		svg_tools.text.label(0, 0, '\x01', size=12, color='black')
-	default = defusedxml.ElementTree.fromstring(svg_tools.drawing.text(0, 0, 'x', size=12, color='black'))
-	override = defusedxml.ElementTree.fromstring(svg_tools.drawing.text(
+	default = lxml.etree.fromstring(svg_tools.drawing.text(0, 0, 'x', size=12, color='black'))
+	override = lxml.etree.fromstring(svg_tools.drawing.text(
 		0, 0, 'x', size=12, color='black', font='Custom & font'))
 	assert default.attrib['font-family'] == 'Atkinson Hyperlegible Next'
 	assert override.attrib['font-family'] == 'Custom & font'
@@ -54,7 +52,7 @@ def test_anchors_validation_and_existing_font_override() -> None:
 def test_styled_wrapping_preserves_words_styles_and_scripts() -> None:
 	short = svg_tools.text.wrapped_text(0, 20, [svg_tools.text.TextRun('a b')],
 		width=12, size=20, color='black')
-	short_node = defusedxml.ElementTree.fromstring(short.fragment)
+	short_node = lxml.etree.fromstring(short.fragment)
 	assert ''.join(short_node.itertext()) == 'a b'
 	assert len(list(short_node)) == 2
 	assert short.bounds[2] <= 12
@@ -62,7 +60,7 @@ def test_styled_wrapping_preserves_words_styles_and_scripts() -> None:
 		svg_tools.text.TextRun(' gene has H'), svg_tools.text.TextRun('2', color='blue', script='sub'),
 		svg_tools.text.TextRun('O and more words.')]
 	part = svg_tools.text.wrapped_text(10, 30, runs, width=130, size=20, color='black')
-	node = defusedxml.ElementTree.fromstring(part.fragment)
+	node = lxml.etree.fromstring(part.fragment)
 	assert ''.join(node.itertext()) == ''.join(run.text for run in runs)
 	lines = list(node)
 	assert len(lines) > 1
@@ -72,7 +70,7 @@ def test_styled_wrapping_preserves_words_styles_and_scripts() -> None:
 	assert any(child.get('baseline-shift') == 'baseline' and child.text == 'O' for child in children)
 	styled = svg_tools.text.styled_label(0, 20, [svg_tools.text.TextRun('x', script='super'),
 		svg_tools.text.TextRun('y')], size=20, color='black')
-	styled_children = list(defusedxml.ElementTree.fromstring(styled.fragment).iter('tspan'))
+	styled_children = list(lxml.etree.fromstring(styled.fragment).iter('tspan'))
 	assert any(child.get('baseline-shift') == 'super' and child.text == 'x' for child in styled_children)
 	assert any(child.get('baseline-shift') == 'baseline' and child.text == 'y' for child in styled_children)
 	with pytest.raises(ValueError, match='width'):

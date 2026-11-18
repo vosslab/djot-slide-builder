@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Regenerate four later meiosis stage figures from frozen source templates."""
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 import svgpathtools
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
+import svg_tools.drawing
 
 
 DIRECTORY = pathlib.Path(__file__).resolve().parent
@@ -20,7 +21,7 @@ NAMES = (
 	)
 
 
-def centerline(paths: list[ET.Element]) -> svgpathtools.Path:
+def centerline(paths: list[lxml.etree._Element]) -> svgpathtools.Path:
 	"""Join the two source arms in their existing source order around the neck."""
 	if len(paths) == 1:
 		return svgpathtools.parse_path(paths[0].attrib['d'])
@@ -32,7 +33,7 @@ def centerline(paths: list[ET.Element]) -> svgpathtools.Path:
 	return svgpathtools.Path(*first, *second)
 
 
-def replace_group(group: ET.Element, parent: ET.Element) -> bool:
+def replace_group(group: lxml.etree._Element, parent: lxml.etree._Element) -> bool:
 	"""Replace one explicitly marked source chromatid without changing its group."""
 	paths = [node for node in group if node.tag == NAMESPACE+'path' and node.attrib.get('stroke')]
 	if not paths:
@@ -90,25 +91,25 @@ def replace_group(group: ET.Element, parent: ET.Element) -> bool:
 	for node in list(group):
 		if node.tag in (NAMESPACE+'path', NAMESPACE+'circle'):
 			group.remove(node)
-	group.append(DET.fromstring(part.fragment))
+	group.append(svg_tools._xml.parse(part.fragment))
 	return True
 
 
 def main() -> None:
-	ET.register_namespace('', NAMESPACE[1:-1])
+
 	OUTPUT.mkdir(parents=True, exist_ok=True)
 	for name in NAMES:
-		root = DET.parse(TEMPLATES/(name+'.drawn.svg')).getroot()
+		root = svg_tools._xml.read(TEMPLATES/(name+'.drawn.svg'))
 		parents = {child: parent for parent in root.iter() for child in parent}
-		replaced = sum(replace_group(group, parents[group]) for group in root.iter(NAMESPACE+'g')
+		replaced = sum(replace_group(group, parents[group]) for group in list(root.iter(NAMESPACE+'g'))
 			if 'sister-' in group.attrib.get('id', '') or
 				(name == 'meiosis_homolog_sister_sequence' and
 					group.attrib.get('id', '').startswith(('A-', 'B-', 'C-', 'D-', 'E-')) and
 					'spindle' not in group.attrib.get('id', '')))
-		root.insert(0, ET.Comment(
+		root.insert(0, lxml.etree.Comment(
 			f'scratch migration: {replaced} source semantic sister groups use chromosome_path_part'))
 		output = OUTPUT/(name+'.drawn.svg')
-		output.write_text(ET.tostring(root, encoding='unicode')+'\n')
+		output.write_text(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='unicode')+'\n')
 		print(name, replaced)
 
 

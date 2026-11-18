@@ -1,14 +1,14 @@
 """Editable SVG labels measured with the bundled Atkinson font faces."""
 
-import dataclasses
-import math
 import re
+import math
 import pathlib
-import xml.etree.ElementTree
+import dataclasses
 
-import defusedxml.ElementTree
+import lxml.etree
 import PIL.ImageFont
 
+import svg_tools._xml
 import svg_tools.parts
 
 
@@ -58,6 +58,19 @@ def measure_text(value: str, *, size: float, role: str = 'normal', bold: bool = 
 
 
 #============================================
+def label_color(color: str) -> str:
+	"""Choose readable live text while retaining the established ink on light fills."""
+	channels = [int(color[pos:pos+2], 16) / 255 for pos in (1, 3, 5)]
+	linear = [v / 12.92 if v <= .04045 else ((v+.055)/1.055)**2.4 for v in channels]
+	luminance = sum(v * weight for v, weight in zip(linear, (.2126, .7152, .0722)))
+	if luminance >= .29:
+		return "#172B3A"
+	if luminance > .179:
+		return "#000000"
+	return "#FFFFFF"
+
+
+#============================================
 def label(x: float, y: float, value: str, *, size: float, color: str,
 	anchor: str = 'middle', role: str = 'normal', bold: bool = False,
 	italic: bool = False) -> svg_tools.parts.SvgPart:
@@ -67,7 +80,7 @@ def label(x: float, y: float, value: str, *, size: float, color: str,
 	left, top, right, bottom = measure_text(value, size=size, role=role,
 		bold=bold, italic=italic, anchor=anchor)
 	family = 'Atkinson Hyperlegible Next' if role == 'normal' else 'Atkinson Hyperlegible Mono'
-	element = xml.etree.ElementTree.Element('text', {
+	element = lxml.etree.Element('text', {
 		'x': str(x), 'y': str(y), 'font-size': str(size), 'fill': color,
 		'text-anchor': anchor, 'font-family': family,
 		'font-weight': 'bold' if bold else 'normal',
@@ -75,8 +88,7 @@ def label(x: float, y: float, value: str, *, size: float, color: str,
 		'{http://www.w3.org/XML/1998/namespace}space': 'preserve',
 	})
 	element.text = value
-	fragment = xml.etree.ElementTree.tostring(element, encoding='ascii', xml_declaration=False).decode('ascii')
-	defusedxml.ElementTree.fromstring(fragment)
+	fragment = lxml.etree.tostring(element, encoding='ascii', xml_declaration=False).decode('ascii')
 	_, font = _font(role, bold, italic)
 	advance = font.getlength(value) * (size / 1024)
 	start = x - {'start': 0, 'middle': advance / 2, 'end': advance}[anchor]
@@ -145,7 +157,7 @@ def _text_part(x: float, y: float, lines: list[list[TextRun]], *, size: float,
 	# Validate size, role, and anchor through the existing font measurement contract.
 	measure_text('', size=size, role=role, anchor=anchor)
 	family = 'Atkinson Hyperlegible Next' if role == 'normal' else 'Atkinson Hyperlegible Mono'
-	root = xml.etree.ElementTree.Element('text', {'x': str(x), 'y': str(y),
+	root = lxml.etree.Element('text', {'x': str(x), 'y': str(y),
 		'font-size': str(size), 'fill': color, 'font-family': family, 'text-anchor': anchor,
 		'{http://www.w3.org/XML/1998/namespace}space': 'preserve'})
 	boxes = []
@@ -153,7 +165,7 @@ def _text_part(x: float, y: float, lines: list[list[TextRun]], *, size: float,
 		baseline = y + index * line_height
 		width = sum(_run_advance(run, size, role) for run in line)
 		start = x - {'start': 0, 'middle': width / 2, 'end': width}[anchor]
-		span = xml.etree.ElementTree.SubElement(root, 'tspan', {'x': str(x), 'y': str(baseline)})
+		span = lxml.etree.SubElement(root, 'tspan', {'x': str(x), 'y': str(baseline)})
 		cursor = start
 		for run in line:
 			run_size = size * (.7 if run.script else 1)
@@ -162,7 +174,7 @@ def _text_part(x: float, y: float, lines: list[list[TextRun]], *, size: float,
 				left, top, right, bottom = measure_text(run.text, size=run_size, role=role,
 					bold=run.bold, italic=run.italic, anchor='start')
 				boxes.append((cursor + left, baseline + shift + top, cursor + right, baseline + shift + bottom))
-			child = xml.etree.ElementTree.SubElement(span, 'tspan', {
+			child = lxml.etree.SubElement(span, 'tspan', {
 				'font-weight': 'bold' if run.bold else 'normal',
 				'font-style': 'italic' if run.italic else 'normal',
 				'fill': run.color if run.color is not None else color,
@@ -170,8 +182,7 @@ def _text_part(x: float, y: float, lines: list[list[TextRun]], *, size: float,
 			child.text = run.text
 			cursor += _run_advance(run, size, role)
 	# ASVS 1.2.1: XML serialization escapes text and attribute values in context.
-	fragment = xml.etree.ElementTree.tostring(root, encoding='ascii', xml_declaration=False).decode('ascii')
-	defusedxml.ElementTree.fromstring(fragment)
+	fragment = lxml.etree.tostring(root, encoding='ascii', xml_declaration=False).decode('ascii')
 	bounds = (min(box[0] for box in boxes), min(box[1] for box in boxes),
 		max(box[2] for box in boxes), max(box[3] for box in boxes)) if boxes else (x, y, x, y)
 	return svg_tools.parts.SvgPart(fragment, bounds, {'baseline': (x, y),
@@ -238,11 +249,12 @@ def extract_text(path: pathlib.Path | str) -> TextExtraction:
 	Positions are the literal attributes on each text element, not transformed coordinates.
 	Paths and images may contain labels, but cannot be identified as such reliably.
 	"""
-	# ASVS 1.5.1: defusedxml rejects unsafe entity expansion in imported XML.
-	root = defusedxml.ElementTree.parse(path).getroot()
+	root = svg_tools._xml.parse_document(pathlib.Path(path).read_bytes())
 	labels = []
 	images = paths = 0
 	for element in root.iter():
+		if not isinstance(element.tag, str):
+			continue
 		tag = element.tag.rsplit('}', 1)[-1]
 		if tag == 'text':
 			labels.append(ExtractedLabel(''.join(element.itertext()), element.get('x'),

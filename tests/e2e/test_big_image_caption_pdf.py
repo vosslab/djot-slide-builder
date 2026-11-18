@@ -2,8 +2,8 @@
 
 import pathlib
 import subprocess
-import defusedxml.ElementTree as ET
 
+import lxml.etree
 import PIL.Image
 
 import slide_lib.djot_parser
@@ -28,7 +28,7 @@ def test_long_caption_words_and_link_remain_inside_pdf(tmp_path: pathlib.Path) -
 	odp = slide_lib.odp_export.write_odp(plan, theme, tmp_path / "caption.odp")
 	pdf = slide_lib.libreoffice.convert_file(odp, tmp_path, "pdf")
 	result = subprocess.run(["pdftotext", "-bbox", str(pdf), "-"], check=True, capture_output=True)
-	root = ET.fromstring(result.stdout)
+	root = lxml.etree.fromstring(result.stdout)
 	namespace = "{http://www.w3.org/1999/xhtml}"
 	page = root.find(f".//{namespace}page")
 	words = page.findall(f".//{namespace}word")

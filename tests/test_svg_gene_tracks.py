@@ -1,7 +1,7 @@
 """Protect distinct exon/intron anatomy and composable editable SVG output."""
 
-import defusedxml.ElementTree
 
+import lxml.etree
 import svg_tools.chromosomes
 import svg_tools.gene_tracks
 
@@ -15,7 +15,7 @@ def test_exon_order_gaps_and_scaled_coordinates() -> None:
 		natural = sum(exon.length for exon in exons) + sum(gaps)
 		fragment, width, boundaries = svg_tools.gene_tracks.gene_track_svg(
 			name, exons, gaps, width=natural * scale)
-		root = defusedxml.ElementTree.fromstring(fragment)
+		root = lxml.etree.fromstring(fragment)
 		blocks = root.findall(".//rect")
 		assert width == natural * scale
 		assert boundaries == [0, (40 + gaps[0]) * scale, (100 + sum(gaps)) * scale, width]
@@ -41,7 +41,7 @@ def test_single_exon_and_safe_live_text_composition() -> None:
 		assert width == 90 and boundaries == [0, 90]
 		assert fragment.isascii()
 		parts.append(fragment)
-	root = defusedxml.ElementTree.fromstring("<svg>" + "".join(parts) + "</svg>")
+	root = lxml.etree.fromstring("<svg>" + "".join(parts) + "</svg>")
 	assert [node.text for node in root.iter("text")] == [label, label]
 	ids = [node.attrib["id"] for node in root.iter() if "id" in node.attrib]
 	assert len(ids) == len(set(ids))

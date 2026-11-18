@@ -1,0 +1,30 @@
+{
+	"canvas": [261.92127, 248.0315],
+	"title": "Chromosome arms and centromere",
+	"description": "Two sister chromatids share a centromere belt where their short blue p arms meet their long orange q arms. Gene A is marked at the same schematic position on both q arms.",
+	"label_offset": [5, 6],
+	"callouts": [
+		{
+			"label": "p",
+			"label_size": 17,
+			"leader_x": 158,
+			"leader_y": 57,
+			"leader_elbows": [[141, 57]],
+			"target": "p_arm"
+		},
+		{
+			"label": "Centromere",
+			"label_size": 14,
+			"leader_x": 158,
+			"target": "centromere_belt"
+		},
+		{
+			"label": "q",
+			"label_size": 17,
+			"leader_x": 158,
+			"leader_y": 184,
+			"leader_elbows": [[141, 184]],
+			"target": "q_arm"
+		}
+	]
+}

@@ -3,7 +3,6 @@
 import pathlib
 import re
 import subprocess
-import xml.sax.saxutils
 
 import PIL.ImageColor
 
@@ -45,5 +44,5 @@ def icon(name: str, *, size: float, color: str) -> svg_tools.parts.SvgPart:
 		raise ValueError('Color must be a valid color name or hex color')
 	color = '#' + ''.join(f'{channel:02x}' for channel in PIL.ImageColor.getrgb(color))
 	markup = path.read_text(encoding='utf-8')
-	markup = markup.replace('currentColor', xml.sax.saxutils.escape(color, {'"': '&quot;'}))
+	markup = markup.replace('currentColor', color)
 	return svg_tools.svg_import.import_svg(markup, name='icon-' + name, size=size)

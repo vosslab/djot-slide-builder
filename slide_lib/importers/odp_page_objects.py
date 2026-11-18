@@ -5,10 +5,10 @@ import dataclasses
 import hashlib
 import pathlib
 import zipfile
-import xml.etree.ElementTree
 
 # PIP3 modules
 # local repo modules
+import lxml.etree
 import slide_lib.importers.odp_geometry as odp_geometry
 import slide_lib.odf_package
 import slide_lib.importers.odf_styles as odf_styles
@@ -77,7 +77,7 @@ def plain_text(runs: tuple[source_model.TextRun, ...]) -> str:
 
 
 #============================================
-def page_notes(page: xml.etree.ElementTree.Element,
+def page_notes(page: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
 	"""Read presenter-note paragraphs from one ODP page."""
 	notes: list[str] = []
@@ -90,7 +90,7 @@ def page_notes(page: xml.etree.ElementTree.Element,
 
 
 #============================================
-def unrecognized_text_colors(page: xml.etree.ElementTree.Element,
+def unrecognized_text_colors(page: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[str, ...]:
 	"""Return explicit nonneutral source colors outside the semantic palette."""
 	text_tags = {odp_geometry.qname("text", name) for name in ("a", "h", "p", "span")}
@@ -116,7 +116,7 @@ def append_geometry(accumulator: PageAccumulator, source_ordinal: int,
 
 #============================================
 def add_picture(
-		image: xml.etree.ElementTree.Element,
+		image: lxml.etree._Element,
 		geometry: tuple[float, float, float, float], source_ordinal: int,
 		archive: zipfile.ZipFile, member_names: frozenset[str], manifest_targets: frozenset[str],
 		assets_dir: pathlib.Path, djot_root: pathlib.PurePosixPath,
@@ -172,9 +172,9 @@ def add_picture(
 
 #============================================
 def add_text(
-		text_box: xml.etree.ElementTree.Element,
+		text_box: lxml.etree._Element,
 		geometry: tuple[float, float, float, float], source_ordinal: int,
-		role: str | None, element: xml.etree.ElementTree.Element,
+		role: str | None, element: lxml.etree._Element,
 		accumulator: PageAccumulator, z_order: tuple[int, ...],
 		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> bool:
@@ -204,9 +204,9 @@ def add_text(
 
 #============================================
 def add_table(
-		table: xml.etree.ElementTree.Element,
+		table: lxml.etree._Element,
 		geometry: tuple[float, float, float, float], source_ordinal: int,
-		role: str | None, element: xml.etree.ElementTree.Element,
+		role: str | None, element: lxml.etree._Element,
 		accumulator: PageAccumulator, z_order: tuple[int, ...],
 		definitions: dict[str, odf_styles.StyleDefinition],
 ) -> bool:
@@ -230,7 +230,7 @@ def add_table(
 
 #============================================
 def read_frame(
-		frame: xml.etree.ElementTree.Element, source_index: int, page_width: float,
+		frame: lxml.etree._Element, source_index: int, page_width: float,
 		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
 		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
@@ -274,7 +274,7 @@ def read_frame(
 
 #============================================
 def read_page_objects(
-		page: xml.etree.ElementTree.Element, source_index: int, page_width: float,
+		page: lxml.etree._Element, source_index: int, page_width: float,
 		page_height: float, archive: zipfile.ZipFile, member_names: frozenset[str],
 		manifest_targets: frozenset[str], assets_dir: pathlib.Path,
 		djot_root: pathlib.PurePosixPath, known_images: dict[str, str],
@@ -291,7 +291,7 @@ def read_page_objects(
 		accumulator.next_ordinal += 1
 		return accumulator.next_ordinal
 
-	def read_vector(element: xml.etree.ElementTree.Element, z_order: tuple[int, ...]) -> None:
+	def read_vector(element: lxml.etree._Element, z_order: tuple[int, ...]) -> None:
 		ordinal = next_object()
 		geometry = odp_geometry.vector_geometry(element, source_index)
 		if geometry is None:

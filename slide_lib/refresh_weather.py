@@ -113,7 +113,8 @@ def update_source(source: str, slide: str) -> str:
 	parts = re.split(r"(?m)(?=^===\s+(?:layout|include):)", source)
 	parts = [part for part in parts if WEATHER_ASSET_PATH not in part]
 	anchors = [index for index, part in enumerate(parts) if re.search(
-		r"(?im)^# .*\b(?:breakout room chat|ice[ -]?breaker)\b", part.split("@notes")[0])]
+		r"(?im)^# .*\b(?:breakout room chat|ice[ -]?breaker)\b",
+		re.split(r"(?m)^@speaker-notes\r?$", part, maxsplit=1)[0])]
 	if len(anchors) != 1:
 		raise ValueError(f"Expected one icebreaker slide, found {len(anchors)}; decks unchanged")
 	parts.insert(anchors[0], slide)

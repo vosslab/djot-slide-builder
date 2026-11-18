@@ -5,7 +5,6 @@ import copy
 import hashlib
 import mimetypes
 import pathlib
-import xml.etree.ElementTree
 import zipfile
 
 # PIP3 modules
@@ -42,23 +41,24 @@ _ROLE_COLORS = {
 	slide_lib.layout_primitives.StyleRole.DECORATION: "FFFFFF",
 }
 
-for _prefix, _namespace in (("office", OFFICE_NS), ("draw", DRAW_NS),
-		("manifest", MANIFEST_NS), ("style", STYLE_NS), ("text", TEXT_NS),
-		("presentation", PRESENTATION_NS), ("svg", SVG_NS), ("fo", FO_NS),
-		("xlink", XLINK_NS)):
-	xml.etree.ElementTree.register_namespace(_prefix, _namespace)
+_CONTENT_NAMESPACES = {
+	"office": OFFICE_NS, "draw": DRAW_NS, "style": STYLE_NS, "text": TEXT_NS,
+	"presentation": PRESENTATION_NS, "svg": SVG_NS, "fo": FO_NS, "xlink": XLINK_NS,
+	"table": slide_lib.odp_text.TABLE_NS, "anim": slide_lib.odp_animation.ANIMATION_NS,
+	"smil": slide_lib.odp_animation.SMIL_NS,
+}
 
 
 #============================================
 def _qname(namespace: str, local_name: str) -> str:
-	"""Build one ElementTree-qualified name."""
+	"""Build an expanded ODF name."""
 	return f"{{{namespace}}}{local_name}"
 
 
 #============================================
-def _xml_bytes(root: xml.etree.ElementTree.Element) -> bytes:
+def _xml_bytes(root: lxml.etree._Element) -> bytes:
 	"""Return deterministic UTF-8 XML with its ODF declaration."""
-	return _XML_DECLARATION + xml.etree.ElementTree.tostring(root, encoding="utf-8")
+	return _XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
 
 
 #============================================
@@ -68,11 +68,11 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 		picture_members: dict[tuple[str, str], str],
 		font_faces: tuple[slide_lib.presentation_theme.OdfFontFace, ...] | None = None) -> bytes:
 	"""Project the complete physical plan into editable native ODF objects."""
-	root = xml.etree.ElementTree.Element(_qname(OFFICE_NS, "document-content"), {
+	root = lxml.etree.Element(_qname(OFFICE_NS, "document-content"), {
 		_qname(OFFICE_NS, "version"): "1.3",
-	})
-	xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "scripts"))
-	fonts = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "font-face-decls"))
+	}, nsmap=_CONTENT_NAMESPACES)
+	lxml.etree.SubElement(root, _qname(OFFICE_NS, "scripts"))
+	fonts = lxml.etree.SubElement(root, _qname(OFFICE_NS, "font-face-decls"))
 	if font_faces is None:
 		font_faces = slide_lib.presentation_theme.odf_font_faces()
 	for face in font_faces:
@@ -82,25 +82,25 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 			_qname(SVG_NS, "font-weight"): "bold" if face.profile.bold else "normal",
 			_qname(SVG_NS, "font-style"): "italic" if face.profile.italic else "normal",
 		}
-		declaration = xml.etree.ElementTree.SubElement(fonts, _qname(STYLE_NS, "font-face"),
+		declaration = lxml.etree.SubElement(fonts, _qname(STYLE_NS, "font-face"),
 			attributes)
-		source = xml.etree.ElementTree.SubElement(declaration,
+		source = lxml.etree.SubElement(declaration,
 			_qname(SVG_NS, "font-face-src"))
-		xml.etree.ElementTree.SubElement(source, _qname(SVG_NS, "font-face-uri"), {
+		lxml.etree.SubElement(source, _qname(SVG_NS, "font-face-uri"), {
 			_qname(XLINK_NS, "href"): face.package_member,
 		})
 		uri = source[-1]
-		xml.etree.ElementTree.SubElement(uri, _qname(SVG_NS, "font-face-format"), {
+		lxml.etree.SubElement(uri, _qname(SVG_NS, "font-face-format"), {
 			_qname(SVG_NS, "string"): face.format_name,
 		})
-	automatic = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
+	automatic = lxml.etree.SubElement(root, _qname(OFFICE_NS, "automatic-styles"))
 	table_styles = slide_lib.odp_text.TableStyleRegistry(automatic)
 	page_style_names = _page_style_names(deck)
 	_add_page_styles(automatic, page_style_names, theme)
 	master_names = _decoration_master_names(deck)
 	slide_lib.odp_text.add_list_styles(automatic, deck, theme)
-	body = xml.etree.ElementTree.SubElement(root, _qname(OFFICE_NS, "body"))
-	presentation = xml.etree.ElementTree.SubElement(body, _qname(OFFICE_NS, "presentation"))
+	body = lxml.etree.SubElement(root, _qname(OFFICE_NS, "body"))
+	presentation = lxml.etree.SubElement(body, _qname(OFFICE_NS, "presentation"))
 	for slide_index, slide in enumerate(deck.slides):
 		decorations = _master_decorations(slide)
 		layout_key = slide.layout.topology.key_for_canvas(deck.canvas)
@@ -112,7 +112,7 @@ def _content_xml(deck: slide_lib.layout_model.LayoutDeck,
 				master_names.get((slide.surface.show_master_objects, decorations), theme.master_name),
 			_qname(PRESENTATION_NS, "presentation-page-layout-name"): layout_names[layout_key],
 		}
-		page = xml.etree.ElementTree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
+		page = lxml.etree.SubElement(presentation, _qname(DRAW_NS, "page"), page_attributes)
 		target_ids = _target_ids(slide, slide_index)
 		object_index = 0
 		for item in sorted(slide.objects,
@@ -161,12 +161,12 @@ def _page_style_names(deck: slide_lib.layout_model.LayoutDeck) -> dict[
 
 
 #============================================
-def _add_page_styles(automatic: xml.etree.ElementTree.Element,
+def _add_page_styles(automatic: lxml.etree._Element,
 		style_names: dict[tuple[slide_lib.layout_primitives.SlideSurface, bool, bool], str],
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Define each native page surface and its slide-show visibility."""
 	for (surface, hidden, decorations), style_name in style_names.items():
-		style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), {
+		style = lxml.etree.SubElement(automatic, _qname(STYLE_NS, "style"), {
 			_qname(STYLE_NS, "name"): style_name,
 			_qname(STYLE_NS, "family"): "drawing-page",
 		})
@@ -184,7 +184,7 @@ def _add_page_styles(automatic: xml.etree.ElementTree.Element,
 			properties[_qname(DRAW_NS, "fill")] = "solid"
 			properties[_qname(DRAW_NS, "fill-color")] = \
 				f"#{_color_for(surface.background_role, theme)}"
-		xml.etree.ElementTree.SubElement(style,
+		lxml.etree.SubElement(style,
 			_qname(STYLE_NS, "drawing-page-properties"), properties)
 
 
@@ -204,8 +204,8 @@ def _target_ids(slide: slide_lib.layout_model.LayoutSlide, slide_index: int) -> 
 
 
 #============================================
-def _write_object(page: xml.etree.ElementTree.Element,
-		automatic: xml.etree.ElementTree.Element, item: slide_lib.layout_model.LayoutObject,
+def _write_object(page: lxml.etree._Element,
+		automatic: lxml.etree._Element, item: slide_lib.layout_model.LayoutObject,
 		deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme, slide_id: str,
 		slide_index: int, object_index: int, target_ids: dict[str, str],
@@ -214,7 +214,7 @@ def _write_object(page: xml.etree.ElementTree.Element,
 	"""Write one plan object without recomputing its physical placement."""
 	positioned = slide_lib.odp_math.positioned_runs(item.content)
 	if positioned:
-		group = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "g"), {
+		group = lxml.etree.SubElement(page, _qname(DRAW_NS, "g"), {
 			_qname(DRAW_NS, "name"): item.object_id,
 		})
 		paragraph_groups = {}
@@ -223,7 +223,7 @@ def _write_object(page: xml.etree.ElementTree.Element,
 				group.set(_qname(XML_NS, "id"), target_ids[target.target_id])
 				group.set(_qname(DRAW_NS, "id"), target_ids[target.target_id])
 			else:
-				subgroup = xml.etree.ElementTree.SubElement(group, _qname(DRAW_NS, "g"), {
+				subgroup = lxml.etree.SubElement(group, _qname(DRAW_NS, "g"), {
 					_qname(XML_NS, "id"): target_ids[target.target_id],
 					_qname(DRAW_NS, "id"): target_ids[target.target_id],
 				})
@@ -245,7 +245,7 @@ def _write_object(page: xml.etree.ElementTree.Element,
 	object_parent = page
 	if isinstance(content, (slide_lib.layout_content.PictureContent,
 			slide_lib.layout_content.ShapeContent)) and content.link_url is not None:
-		object_parent = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "a"), {
+		object_parent = lxml.etree.SubElement(page, _qname(DRAW_NS, "a"), {
 			_qname(XLINK_NS, "href"): content.link_url,
 			_qname(XLINK_NS, "type"): "simple",
 			_qname(XLINK_NS, "show"): "new",
@@ -257,21 +257,21 @@ def _write_object(page: xml.etree.ElementTree.Element,
 	elif isinstance(content, slide_lib.layout_content.LineContent):
 		_write_line(page, item, content, deck, theme, style_name, target_ids)
 	elif isinstance(content, slide_lib.layout_content.TableContent):
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "frame"),
+		element = lxml.etree.SubElement(page, _qname(DRAW_NS, "frame"),
 			_frame_attributes(item, deck, theme, style_name, target_ids))
 		_write_accessibility(element, item)
 		slide_lib.odp_text.write_table(element, automatic, item.object_id, content,
 			deck, theme, slide_index, object_index, table_styles)
 	else:
-		element = xml.etree.ElementTree.SubElement(object_parent, _qname(DRAW_NS, "frame"),
+		element = lxml.etree.SubElement(object_parent, _qname(DRAW_NS, "frame"),
 			_frame_attributes(item, deck, theme, style_name, target_ids))
 		_write_accessibility(element, item)
 		if isinstance(content, slide_lib.layout_content.TextContent):
-			text_box = xml.etree.ElementTree.SubElement(element, _qname(DRAW_NS, "text-box"))
+			text_box = lxml.etree.SubElement(element, _qname(DRAW_NS, "text-box"))
 			slide_lib.odp_text.write_text(text_box, automatic, content, slide_index,
 				object_index, target_ids, item.reveal_targets)
 		elif isinstance(content, slide_lib.layout_content.PictureContent):
-			xml.etree.ElementTree.SubElement(element, _qname(DRAW_NS, "image"), {
+			lxml.etree.SubElement(element, _qname(DRAW_NS, "image"), {
 				_qname(XLINK_NS, "href"): picture_members[(slide_id, item.object_id)],
 				_qname(XLINK_NS, "type"): "simple",
 				_qname(XLINK_NS, "show"): "embed",
@@ -319,7 +319,7 @@ def _frame_attributes(item: slide_lib.layout_model.LayoutObject,
 
 
 #============================================
-def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
+def _add_frame_style(automatic: lxml.etree._Element, style_name: str,
 		item: slide_lib.layout_model.LayoutObject, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Define the exact frame behavior selected by the compiler."""
@@ -335,7 +335,7 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 			attributes[_qname(STYLE_NS, "parent-style-name")] = _parent_style(item, theme)
 	else:
 		attributes[_qname(STYLE_NS, "family")] = "graphic"
-	style = xml.etree.ElementTree.SubElement(automatic, _qname(STYLE_NS, "style"), attributes)
+	style = lxml.etree.SubElement(automatic, _qname(STYLE_NS, "style"), attributes)
 	properties = {
 		_qname(DRAW_NS, "auto-grow-height"): "false",
 		_qname(DRAW_NS, "fill"): "none",
@@ -376,7 +376,7 @@ def _add_frame_style(automatic: xml.etree.ElementTree.Element, style_name: str,
 			properties[_qname(DRAW_NS, "marker-end")] = "DjotArrow"
 			properties[_qname(DRAW_NS, "marker-end-width")] = _pt(
 				line_style.marker_width_pt)
-	xml.etree.ElementTree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), properties)
+	lxml.etree.SubElement(style, _qname(STYLE_NS, "graphic-properties"), properties)
 
 
 #============================================
@@ -391,12 +391,12 @@ def _parent_style(item: slide_lib.layout_model.LayoutObject,
 
 
 #============================================
-def _write_shape(page: xml.etree.ElementTree.Element,
-		automatic: xml.etree.ElementTree.Element, item: slide_lib.layout_model.LayoutObject,
+def _write_shape(page: lxml.etree._Element,
+		automatic: lxml.etree._Element, item: slide_lib.layout_model.LayoutObject,
 		content: slide_lib.layout_content.ShapeContent, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
 		slide_index: int, object_index: int,
-		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
+		target_ids: dict[str, str]) -> lxml.etree._Element:
 	"""Write one editable rectangle, rounded rectangle, polygon, or star."""
 	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
 	if content.kind in (slide_lib.layout_primitives.ShapeKind.RECTANGLE,
@@ -404,7 +404,7 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 		if content.kind is slide_lib.layout_primitives.ShapeKind.ROUNDED_RECTANGLE:
 			attributes[_qname(DRAW_NS, "corner-radius")] = \
 				_pt(content.style.corner_radius_pt)
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "rect"), attributes)
+		element = lxml.etree.SubElement(page, _qname(DRAW_NS, "rect"), attributes)
 		if content.text is not None:
 			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
 				object_index, target_ids, item.reveal_targets)
@@ -413,14 +413,14 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 			f"0 0 {item.rectangle.width:g} {item.rectangle.height:g}")
 		attributes[_qname(DRAW_NS, "points")] = " ".join(
 			f"{point.x:g},{point.y:g}" for point in content.points)
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "polygon"), attributes)
+		element = lxml.etree.SubElement(page, _qname(DRAW_NS, "polygon"), attributes)
 	else:
-		element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "custom-shape"),
+		element = lxml.etree.SubElement(page, _qname(DRAW_NS, "custom-shape"),
 			attributes)
 		if content.text is not None:
 			slide_lib.odp_text.write_text(element, automatic, content.text, slide_index,
 				object_index, target_ids, item.reveal_targets)
-		xml.etree.ElementTree.SubElement(element, _qname(DRAW_NS, "enhanced-geometry"), {
+		lxml.etree.SubElement(element, _qname(DRAW_NS, "enhanced-geometry"), {
 			_qname(SVG_NS, "viewBox"): "0 0 21600 21600",
 			_qname(DRAW_NS, "type"): "star5",
 		})
@@ -428,12 +428,12 @@ def _write_shape(page: xml.etree.ElementTree.Element,
 	return element
 
 
-def _write_line(page: xml.etree.ElementTree.Element,
+def _write_line(page: lxml.etree._Element,
 		item: slide_lib.layout_model.LayoutObject,
 		content: slide_lib.layout_content.LineContent,
 		deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme, style_name: str,
-		target_ids: dict[str, str]) -> xml.etree.ElementTree.Element:
+		target_ids: dict[str, str]) -> lxml.etree._Element:
 	"""Write one editable native line with explicit directional endpoints."""
 	attributes = _frame_attributes(item, deck, theme, style_name, target_ids)
 	for name in ("x", "y", "width", "height"):
@@ -443,20 +443,20 @@ def _write_line(page: xml.etree.ElementTree.Element,
 		_qname(SVG_NS, "y1"): _cm_y(geometry.start.y, deck, theme),
 		_qname(SVG_NS, "x2"): _cm_x(geometry.end.x, deck, theme),
 		_qname(SVG_NS, "y2"): _cm_y(geometry.end.y, deck, theme)})
-	element = xml.etree.ElementTree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
+	element = lxml.etree.SubElement(page, _qname(DRAW_NS, "line"), attributes)
 	_write_accessibility(element, item)
 	return element
 
 
 #============================================
-def _write_accessibility(element: xml.etree.ElementTree.Element,
+def _write_accessibility(element: lxml.etree._Element,
 		item: slide_lib.layout_model.LayoutObject) -> None:
 	"""Expose stable object identity and meaningful text to presentation readers."""
 	if isinstance(item.content, (slide_lib.layout_content.PictureContent,
 			slide_lib.layout_content.ShapeContent,
 			slide_lib.layout_content.LineContent)) and item.content.accessibility.decorative:
 		return
-	xml.etree.ElementTree.SubElement(element, _qname(SVG_NS, "title")).text = item.object_id
+	lxml.etree.SubElement(element, _qname(SVG_NS, "title")).text = item.object_id
 	if isinstance(item.content, slide_lib.layout_content.PictureContent):
 		description = item.content.accessibility.description
 	elif isinstance(item.content, slide_lib.layout_content.ShapeContent):
@@ -466,19 +466,19 @@ def _write_accessibility(element: xml.etree.ElementTree.Element,
 	else:
 		description = item.role.value
 	if description:
-		xml.etree.ElementTree.SubElement(element, _qname(SVG_NS, "desc")).text = description
+		lxml.etree.SubElement(element, _qname(SVG_NS, "desc")).text = description
 
 
 #============================================
-def _write_notes(page: xml.etree.ElementTree.Element,
+def _write_notes(page: lxml.etree._Element,
 		slide: slide_lib.layout_model.LayoutSlide, deck: slide_lib.layout_model.LayoutDeck,
 		theme: slide_lib.presentation_theme.PresentationTheme) -> None:
 	"""Write authored speaker notes."""
 	note_values = [note.text for note in slide.notes]
 	if not note_values:
 		return
-	notes = xml.etree.ElementTree.SubElement(page, _qname(PRESENTATION_NS, "notes"))
-	frame = xml.etree.ElementTree.SubElement(notes, _qname(DRAW_NS, "frame"), {
+	notes = lxml.etree.SubElement(page, _qname(PRESENTATION_NS, "notes"))
+	frame = lxml.etree.SubElement(notes, _qname(DRAW_NS, "frame"), {
 		_qname(DRAW_NS, "layer"): "layout",
 		_qname(PRESENTATION_NS, "class"): "notes",
 		_qname(SVG_NS, "x"): "2cm",
@@ -486,10 +486,10 @@ def _write_notes(page: xml.etree.ElementTree.Element,
 		_qname(SVG_NS, "width"): _cm_x(deck.canvas.width - 160, deck, theme),
 		_qname(SVG_NS, "height"): "10cm",
 	})
-	text_box = xml.etree.ElementTree.SubElement(frame, _qname(DRAW_NS, "text-box"))
+	text_box = lxml.etree.SubElement(frame, _qname(DRAW_NS, "text-box"))
 	# ASVS 1.1.2: let the XML serializer escape note text at the output boundary.
 	for value in note_values:
-		xml.etree.ElementTree.SubElement(text_box, _qname(TEXT_NS, "p")).text = value
+		lxml.etree.SubElement(text_box, _qname(TEXT_NS, "p")).text = value
 
 
 #============================================
@@ -601,7 +601,7 @@ def _styles_xml(content: bytes, deck: slide_lib.layout_model.LayoutDeck,
 					_qname(SVG_NS, "height"): _cm_y(rectangle.height, deck, theme),
 				})
 	_add_decoration_masters(root, deck, theme)
-	return _XML_DECLARATION + lxml.etree.tostring(root, encoding="utf-8")
+	return _xml_bytes(root)
 
 
 def _add_decoration_masters(root: lxml.etree._Element, deck: slide_lib.layout_model.LayoutDeck,
@@ -624,9 +624,6 @@ def _add_decoration_masters(root: lxml.etree._Element, deck: slide_lib.layout_mo
 			for child in list(master):
 				if isinstance(child.tag, str) and child.tag.startswith(_qname(DRAW_NS, "")):
 					master.remove(child)
-		# Reuse the native shape writer and the compiler's exact geometry.
-		shapes = xml.etree.ElementTree.Element("shapes")
-		styles = xml.etree.ElementTree.Element("styles")
 		# Unnumbered master objects still occupy stacking positions.
 		first_z_index = max((int(child.get(_qname(DRAW_NS, "z-index"), str(index)))
 			for index, child in enumerate(master)), default=-1) + 1
@@ -634,15 +631,11 @@ def _add_decoration_masters(root: lxml.etree._Element, deck: slide_lib.layout_mo
 			if not isinstance(item.content, slide_lib.layout_content.ShapeContent):
 				raise ValueError("theme decoration must be a native shape")
 			style_name = f"{master_name}_{index}"
-			_add_frame_style(styles, style_name, item, deck, theme)
-			element = _write_shape(shapes, styles, item, item.content, deck, theme,
+			_add_frame_style(automatic, style_name, item, deck, theme)
+			element = _write_shape(master, automatic, item, item.content, deck, theme,
 				style_name, 0, index, {})
 			element.set(_qname(DRAW_NS, "layer"), "backgroundobjects")
 			element.set(_qname(DRAW_NS, "z-index"), str(first_z_index + index))
-		for element in styles:
-			automatic.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
-		for element in shapes:
-			master.append(lxml.etree.fromstring(xml.etree.ElementTree.tostring(element)))
 		masters.append(master)
 
 
@@ -735,10 +728,10 @@ def _template_payloads(template_path: pathlib.Path) -> dict[str, bytes]:
 #============================================
 def _manifest_xml(payloads: dict[str, bytes], media_types: dict[str, str] | None = None) -> bytes:
 	"""Reconcile the ODF manifest with the exact retained/generated member set."""
-	root = xml.etree.ElementTree.Element(_qname(MANIFEST_NS, "manifest"), {
+	root = lxml.etree.Element(_qname(MANIFEST_NS, "manifest"), {
 		_qname(MANIFEST_NS, "version"): "1.3",
-	})
-	xml.etree.ElementTree.SubElement(root, _qname(MANIFEST_NS, "file-entry"), {
+	}, nsmap={"manifest": MANIFEST_NS})
+	lxml.etree.SubElement(root, _qname(MANIFEST_NS, "file-entry"), {
 		_qname(MANIFEST_NS, "full-path"): "/",
 		_qname(MANIFEST_NS, "media-type"): slide_lib.odf_package.ODP_MIMETYPE,
 		_qname(MANIFEST_NS, "version"): "1.3",
@@ -746,7 +739,7 @@ def _manifest_xml(payloads: dict[str, bytes], media_types: dict[str, str] | None
 	if media_types is None:
 		media_types = {}
 	for name in sorted(set(payloads) - {"mimetype", slide_lib.odf_package.MANIFEST_NAME}):
-		xml.etree.ElementTree.SubElement(root, _qname(MANIFEST_NS, "file-entry"), {
+		lxml.etree.SubElement(root, _qname(MANIFEST_NS, "file-entry"), {
 			_qname(MANIFEST_NS, "full-path"): name,
 			_qname(MANIFEST_NS, "media-type"): media_types.get(name, _media_type(name)),
 		})

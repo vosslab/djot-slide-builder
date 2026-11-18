@@ -2,17 +2,18 @@
 """Rebuild three crossover scenes; preserve the source's native ascus and labels."""
 import argparse
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 import subprocess
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svgpathtools
+import svg_tools.drawing
 
 BASE = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT09/djot'
 TEMPLATES = BASE / 'assets/lect09_history_scene_templates'
 OUTPUT = BASE / 'assets/lect09e-tetrad_visuals'
 NS = 'http://www.w3.org/2000/svg'
-ET.register_namespace('', NS)
+
 BROWN, OCHRE = '#774627', '#BD760E'
 # The inner chromatids cross first. The outer chromatids cross later in the DCO.
 paths = {
@@ -68,11 +69,11 @@ def main() -> None:
 	args = parser.parse_args()
 	output = args.output_root / 'lect09e-tetrad_visuals'
 	for name, strands in paths.items():
-		root = DET.parse(TEMPLATES / (name + '.svg')).getroot()
+		root = svg_tools._xml.read(TEMPLATES / (name + '.svg'))
 		if name == 'four_strand_dco_to_npd':
 			root.find(f'{{{NS}}}desc').text += ' White zigzags mark exchanges between homologs.'
 		viewport = next(e for e in root if e.tag == f'{{{NS}}}g')
-		scene = ET.Element('g', {'id':'chromosome-scene'})
+		scene = lxml.etree.Element('g', {'id':'chromosome-scene'})
 		viewport.insert(0, scene)
 		for i, (path, left, right) in enumerate(strands):
 			curve = svgpathtools.parse_path(path)
@@ -84,18 +85,18 @@ def main() -> None:
 			part = svg_tools.chromosomes.chromosome_path_part(
 				f'chromatid-{i+1}', model, path, thickness=34, labels=True,
 				junctions=(3,) if name == 'four_strand_dco_to_npd' else ())
-			group = ET.SubElement(scene, 'g', {'id': f'strand-{i+1}', 'data-chromatid':'true', 'data-product': ('AB','Ab','aB','ab')[i] if name == 'sco_to_tt' else (('AB','AB','ab','ab')[i] if name == 'nco_to_pd' else ('Ab','Ab','aB','aB')[i])})
-			group.append(DET.fromstring(part.fragment))
+			group = lxml.etree.SubElement(scene, 'g', {'id': f'strand-{i+1}', 'data-chromatid':'true', 'data-product': ('AB','Ab','aB','ab')[i] if name == 'sco_to_tt' else (('AB','AB','ab','ab')[i] if name == 'nco_to_pd' else ('Ab','Ab','aB','aB')[i])})
+			group.append(svg_tools._xml.parse(part.fragment))
 		for i, y in enumerate((100, 260), start=1):
-			marker = DET.fromstring(svg_tools.chromosomes.centromere_part(f'marker-{i}', thickness=34, across=20+34*1.3).fragment)
+			marker = svg_tools._xml.parse(svg_tools.chromosomes.centromere_part(f'marker-{i}', thickness=34, across=20+34*1.3).fragment)
 			marker.set('transform', f'translate(210 {y})')
 			scene.append(marker)
 		if name == 'four_strand_dco_to_npd':
-			title = ET.SubElement(scene, f'{{{NS}}}text', {'x':'50', 'y':'28', 'font-family':'Atkinson Hyperlegible Next', 'font-size':'25', 'fill':'#172B3A'})
+			title = lxml.etree.SubElement(scene, f'{{{NS}}}text', {'x':'50', 'y':'28', 'font-family':'Atkinson Hyperlegible Next', 'font-size':'25', 'fill':'#172B3A'})
 			title.text = '4-strand double crossing over'
 		output.mkdir(parents=True, exist_ok=True)
 		out = output / (name + '.svg')
-		ET.ElementTree(root).write(out, encoding='utf-8', xml_declaration=True)
+		lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(out, encoding='utf-8', xml_declaration=True)
 
 
 if __name__ == '__main__':

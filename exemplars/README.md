@@ -55,7 +55,9 @@ Deck counts and themes:
 
 Use the explanations below as authoring references, not as permission to change the science or
 invent new course policy. Keep a whole question, its assumptions, and its answer together. Keep
-delivery cues in `@notes`; source credits and design rationale belong in this index. For full
+delivery cues in `@speaker-notes`, and record authoring decisions in
+[SLIDE_DEVELOPMENT_NOTES.md](SLIDE_DEVELOPMENT_NOTES.md). Source credits for the established examples
+are listed in this index. For full
 syntax, use [DJOT_SLIDE_SYNTAX.md](../docs/slide-specs/DJOT_SLIDE_SYNTAX.md); for teaching
 decisions, use [PEDAGOGY_GUIDE.md](../docs/slide-specs/PEDAGOGY_GUIDE.md).
 

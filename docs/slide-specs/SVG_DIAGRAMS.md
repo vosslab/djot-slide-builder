@@ -112,9 +112,9 @@ a known LibreOffice SVG failure, crop, overlay, reveal or uncertain image frame.
 placement and context needed to resolve it. Complete ordinary art milestones through the brief
 review and image-URL integration; classroom, playback, printing and instructor feedback are optional.
 
-Keep source provenance in separate import reports, slide maps, or review files. Reserve `@notes`
-for instructor notes. Retain `@replaceme` where teaching relationships or reveals still need
-reconstruction; record unresolved targets with a reason and continue other artwork.
+Keep source provenance in [slide development notes](AUTHORING_GUIDE.md#slide-development-notes).
+Use `@speaker-notes` for instructor delivery cues. Retain `@replaceme` where teaching relationships
+or reveals still need reconstruction, and record unresolved targets with a reason.
 
 Lecture 06 results and remaining work are recorded in
 [../../genetics/LECT06/djot/LECT06_REVIEW.md](../../genetics/LECT06/djot/LECT06_REVIEW.md).

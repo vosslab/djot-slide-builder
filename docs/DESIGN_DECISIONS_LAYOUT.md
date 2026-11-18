@@ -441,7 +441,7 @@ Keep replacement markers for unresolved relationships. Existing four-panel layou
 ### Lecture 06 conversion boundary
 
 **Decision.** Keep the four science decks in original slide order. Keep source-slide traceability
-in separate slide maps or review files; reserve Djot `@notes` for instructor notes, following
+in separate slide maps or review files; reserve Djot `@speaker-notes` for instructor notes, following
 [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md).
 Mark unsupported teaching relationships with `@replaceme`; restore the exam announcements
 from legacy material and update calendar/policy details from the current local syllabus.

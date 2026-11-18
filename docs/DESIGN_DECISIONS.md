@@ -318,17 +318,18 @@ its requested summary and resolves the opening problem before introducing condit
 
 ### Authored instructor notes
 
-**Decision.** Every layout accepts one optional `@notes` region. It ends at the next named slot,
+**Decision.** Every layout accepts one optional `@speaker-notes` region. It ends at the next named slot,
 slide directive, or EOF. Store each plain-text line in the existing native speaker-note model,
 preserve internal blank lines, and decode complete character references once.
 
 **Why.** Instructor reminders belong to the slide but have no visible layout destination. The
-existing ODP writer already owns native notes, so the language needs no new layout or model.
+existing ODP writer already owns native notes. The directive names their role explicitly.
 
 **Consequence.** Required visible slots remain required. Notes survive in the editable ODP and
 are excluded from ordinary PDF export through explicit LibreOffice filter settings. Formatting
 and action-like text stay literal. Existing import reports continue to retain imported notes;
 automatic note emission during ODP import is outside this authoring change.
+The deck directory's `SLIDE_DEVELOPMENT_NOTES.md` holds provenance and authoring rationale.
 
 **Owner.** `slide_lib/djot_parser.py`, `slide_lib/odp_export.py`, `slide_lib/libreoffice.py`, and
 [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md#instructor-notes).
@@ -598,7 +599,7 @@ saves the editable caption and local thumbnail.
 reproducible and old lectures tied to the episode originally selected.
 
 **Consequence.** No API credentials or build-time network lookup are needed. The feed is a
-recent-entry view, not a complete playlist history. Preserve the managed marker in speaker notes;
+recent-entry view, not a complete playlist history. The thumbnail path identifies the managed slide;
 missing or ambiguous anchors require a source edit. Full-size thumbnails fall back to standard
 thumbnails only when YouTube returns HTTP 404.
 
@@ -712,7 +713,7 @@ advisory reporting only, not text, font selection, or rendering.
 **Decision.** Identify managed podcast slides by their existing thumbnail path under
 `assets/stump_the_vibe_coder/`; emit no administrative notes or comments in Djot.
 
-**Why.** The instructor reserves `@notes` for presentation note cards used while lecturing.
+**Why.** The instructor reserves `@speaker-notes` for presentation note cards used while lecturing.
 
 **Consequence.** Refresh replaces the previous episode using its asset path, including decks
 whose old metadata notes have been removed. Duplicate managed slides still stop refresh.
@@ -812,7 +813,7 @@ Source Djot wording remains unchanged. The final-paragraph audit exemption still
 
 **Decision.** Store the pairwise-distance and quick DCO procedure slides as separate canonical
 Djot files under `genetics/evergreen/`. Repeat the appropriate include before a new problem.
-Use the fixed [COLOR_PALETTE.md](COLOR_PALETTE.md) colors in rainbow order, including matching
+Use the roadmap colors in [REPO_COLOR_PALETTE.md](REPO_COLOR_PALETTE.md), including matching
 colors on internal step references. The six-step procedure uses red/orange/yellow/green/blue/purple;
 the four-step procedure uses red/green/blue/purple.
 
@@ -919,7 +920,7 @@ row colors, P/R labels, and pair colors without taking comparison space or causi
 
 **Decision.** Use CD red, CH blue, and DH purple from the fixed palette, with hue-matched lighter
 fills in progeny and summary tables. Reserve green for original parental rows and lime for other
-pairwise parental rows. The exact base/fill values are recorded in `docs/COLOR_PALETTE.md`.
+pairwise parental rows. The assignments are recorded in [REPO_COLOR_PALETTE.md](REPO_COLOR_PALETTE.md).
 
 **Why.** The instructor wants all classified rows colored and each recombinant sum visibly linked
 to its own pair's results, while preserving stable parental reference rows.

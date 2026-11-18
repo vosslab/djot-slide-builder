@@ -5,7 +5,8 @@ claims about molecular structure or affinity.
 """
 
 import math
-import xml.etree.ElementTree
+
+import lxml.etree
 
 import svg_tools.parts
 import svg_tools._style
@@ -16,17 +17,17 @@ def _shape(path: str, highlight: str, shadow: str, width: float, height: float,
 	color: str, anchors: dict[str, tuple[float, float]]) -> svg_tools.parts.SvgPart:
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError('Width and height must be finite and positive')
-	group = xml.etree.ElementTree.Element('g', {'fill': color, **svg_tools._style.outline(width, height)})
-	xml.etree.ElementTree.SubElement(group, 'path', {
+	group = lxml.etree.Element('g', {'fill': color, **svg_tools._style.outline(width, height)})
+	lxml.etree.SubElement(group, 'path', {
 		'd': svg_tools._style.scaled_path(path, width, height)})
-	xml.etree.ElementTree.SubElement(group, 'path', {
+	lxml.etree.SubElement(group, 'path', {
 		'd': svg_tools._style.scaled_path(shadow, width, height),
 		'fill': '#000000', 'fill-opacity': '.12', 'stroke': 'none'})
-	xml.etree.ElementTree.SubElement(group, 'path', {
+	lxml.etree.SubElement(group, 'path', {
 		'd': svg_tools._style.scaled_path(highlight, width, height),
 		'fill': 'white', 'fill-opacity': '.22', 'stroke': 'none'})
 	pad = .01 * min(width, height)
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		(-.5*width-pad, -.5*height-pad, .5*width+pad, .5*height+pad),
 		{name: (x*width, y*height) for name, (x, y) in anchors.items()})
 

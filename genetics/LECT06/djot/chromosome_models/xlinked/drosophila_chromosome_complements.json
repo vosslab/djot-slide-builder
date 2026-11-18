@@ -1,389 +1,97 @@
 {
   "target": "genetics/LECT06/djot/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg",
-  "placements": [
-    {
-      "group": "xx-chromosome-2-1",
-      "model": {
-        "segments": [
-          [
-            "#f5bd66",
-            158.9274829765512
-          ],
-          [
-            "#96bd7a",
-            51.14942573147215
-          ],
-          [
-            "#96bd7a",
-            50.79365145422432
-          ],
-          [
-            "#ef8173",
-            156.60452859751828
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 171.0,124.0 C 187.0,191.0 187.0,234.0 205.0,279.0 Q 217.0,328.0 205.0,380.0 C 201.0,435.0 150.0,461.0 94.0,474.0",
-      "thickness": 35.0
+  "chromosomes": {
+    "2": {
+      "length": 407.70349705,
+      "centromere": 0.53,
+      "regions": [[0, "2R"], [0.35, "heterochromatin"], [0.62, "2L"]]
     },
-    {
-      "group": "xx-chromosome-2-2",
-      "model": {
-        "segments": [
-          [
-            "#f5bd66",
-            157.03834846466904
-          ],
-          [
-            "#96bd7a",
-            51.12807837039634
-          ],
-          [
-            "#96bd7a",
-            50.81499881530013
-          ],
-          [
-            "#ef8173",
-            138.95047968675914
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 239.0,124.0 C 237.0,191.0 237.0,234.0 255.0,279.0 Q 267.0,328.0 255.0,380.0 C 251.0,435.0 200.0,461.0 164.0,474.0",
-      "thickness": 35.0
+    "3": {
+      "length": 398.58173250,
+      "centromere": 0.47,
+      "regions": [[0, "3L"], [0.35, "heterochromatin"], [0.59, "3R"]]
     },
-    {
-      "group": "xx-chromosome-3-1",
-      "model": {
-        "segments": [
-          [
-            "#987bb7",
-            164.20536963221352
-          ],
-          [
-            "#96bd7a",
-            61.10606311254102
-          ],
-          [
-            "#96bd7a",
-            54.177379384680535
-          ],
-          [
-            "#cabade",
-            137.30940276952856
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 472.0,126.0 C 455.0,188.0 402.0,224.0 390.0,267.0 Q 383.0,325.0 390.0,382.0 C 396.0,429.0 455.0,444.0 473.0,488.0",
-      "thickness": 35.0
+    "4": {
+      "length": 55.6,
+      "centromere": 0.86,
+      "regions": [[0, "euchromatin"], [0.28, "heterochromatin"]]
     },
-    {
-      "group": "xx-chromosome-3-2",
-      "model": {
-        "segments": [
-          [
-            "#987bb7",
-            140.63221288602531
-          ],
-          [
-            "#96bd7a",
-            61.2014862216046
-          ],
-          [
-            "#96bd7a",
-            54.08195627561696
-          ],
-          [
-            "#cabade",
-            124.44959471064355
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 526.0,154.0 C 509.0,188.0 456.0,224.0 444.0,267.0 Q 437.0,325.0 444.0,382.0 C 450.0,429.0 509.0,444.0 527.0,470.0",
-      "thickness": 35.0
+    "x": {
+      "length": 196.5,
+      "centromere": 0.045,
+      "regions": [[0, "heterochromatin"], [0.48, "euchromatin"]]
     },
-    {
-      "group": "xx-chromosome-4-1",
-      "model": {
-        "segments": [
-          [
-            "#78b9e1",
-            28.213460632898176
-          ],
-          [
-            "#96bd7a",
-            27.010115511394247
-          ],
-          [
-            "#96bd7a",
-            8.989884488605753
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 307.0,316.0 Q 304.0,331.0 307.0,344.0 L 307.0,363.0 L 307.0,380.0",
-      "thickness": 22.0
-    },
-    {
-      "group": "xx-chromosome-4-2",
-      "model": {
-        "segments": [
-          [
-            "#78b9e1",
-            28.213460632898176
-          ],
-          [
-            "#96bd7a",
-            27.010115511394247
-          ],
-          [
-            "#96bd7a",
-            8.989884488605753
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 347.0,316.0 Q 344.0,331.0 347.0,344.0 L 347.0,363.0 L 347.0,380.0",
-      "thickness": 22.0
-    },
-    {
-      "group": "xx-chromosome-x-1",
-      "model": {
-        "segments": [
-          [
-            "#96bd7a",
-            9.004735696335501
-          ],
-          [
-            "#96bd7a",
-            89.56038919552324
-          ],
-          [
-            "#f5d85b",
-            101.54011280448549
-          ]
-        ],
-        "centromere": 1
-      },
-      "path": "M 307.0,423.0 L 307.0,446.0 Q 299.0,484.0 307.0,521.0 Q 298.0,570.0 298.0,622.0",
-      "thickness": 29.0
-    },
-    {
-      "group": "xx-chromosome-x-2",
-      "model": {
-        "segments": [
-          [
-            "#96bd7a",
-            9.004735696335501
-          ],
-          [
-            "#96bd7a",
-            89.56038919552324
-          ],
-          [
-            "#f5d85b",
-            101.54011280448549
-          ]
-        ],
-        "centromere": 1
-      },
-      "path": "M 353.0,423.0 L 353.0,446.0 Q 345.0,484.0 353.0,521.0 Q 344.0,570.0 344.0,622.0",
-      "thickness": 29.0
-    },
-    {
-      "group": "xy-chromosome-2-1",
-      "model": {
-        "segments": [
-          [
-            "#f5bd66",
-            158.9274829765512
-          ],
-          [
-            "#96bd7a",
-            51.14942573147215
-          ],
-          [
-            "#96bd7a",
-            50.79365145422432
-          ],
-          [
-            "#ef8173",
-            156.60452859751828
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 171.0,124.0 C 187.0,191.0 187.0,234.0 205.0,279.0 Q 217.0,328.0 205.0,380.0 C 201.0,435.0 150.0,461.0 94.0,474.0",
-      "thickness": 35.0
-    },
-    {
-      "group": "xy-chromosome-2-2",
-      "model": {
-        "segments": [
-          [
-            "#f5bd66",
-            157.03834846466904
-          ],
-          [
-            "#96bd7a",
-            51.12807837039634
-          ],
-          [
-            "#96bd7a",
-            50.81499881530013
-          ],
-          [
-            "#ef8173",
-            138.95047968675914
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 239.0,124.0 C 237.0,191.0 237.0,234.0 255.0,279.0 Q 267.0,328.0 255.0,380.0 C 251.0,435.0 200.0,461.0 164.0,474.0",
-      "thickness": 35.0
-    },
-    {
-      "group": "xy-chromosome-3-1",
-      "model": {
-        "segments": [
-          [
-            "#987bb7",
-            164.20536963221352
-          ],
-          [
-            "#96bd7a",
-            61.10606311254102
-          ],
-          [
-            "#96bd7a",
-            54.177379384680535
-          ],
-          [
-            "#cabade",
-            137.30940276952856
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 472.0,126.0 C 455.0,188.0 402.0,224.0 390.0,267.0 Q 383.0,325.0 390.0,382.0 C 396.0,429.0 455.0,444.0 473.0,488.0",
-      "thickness": 35.0
-    },
-    {
-      "group": "xy-chromosome-3-2",
-      "model": {
-        "segments": [
-          [
-            "#987bb7",
-            140.63221288602531
-          ],
-          [
-            "#96bd7a",
-            61.2014862216046
-          ],
-          [
-            "#96bd7a",
-            54.08195627561696
-          ],
-          [
-            "#cabade",
-            124.44959471064355
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 526.0,154.0 C 509.0,188.0 456.0,224.0 444.0,267.0 Q 437.0,325.0 444.0,382.0 C 450.0,429.0 509.0,444.0 527.0,470.0",
-      "thickness": 35.0
-    },
-    {
-      "group": "xy-chromosome-4-1",
-      "model": {
-        "segments": [
-          [
-            "#78b9e1",
-            28.213460632898176
-          ],
-          [
-            "#96bd7a",
-            27.010115511394247
-          ],
-          [
-            "#96bd7a",
-            8.989884488605753
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 307.0,316.0 Q 304.0,331.0 307.0,344.0 L 307.0,363.0 L 307.0,380.0",
-      "thickness": 22.0
-    },
-    {
-      "group": "xy-chromosome-4-2",
-      "model": {
-        "segments": [
-          [
-            "#78b9e1",
-            28.213460632898176
-          ],
-          [
-            "#96bd7a",
-            27.010115511394247
-          ],
-          [
-            "#96bd7a",
-            8.989884488605753
-          ]
-        ],
-        "centromere": 2
-      },
-      "path": "M 347.0,316.0 Q 344.0,331.0 347.0,344.0 L 347.0,363.0 L 347.0,380.0",
-      "thickness": 22.0
-    },
-    {
-      "group": "xy-chromosome-x-1",
-      "model": {
-        "segments": [
-          [
-            "#96bd7a",
-            9.004735696335501
-          ],
-          [
-            "#96bd7a",
-            89.56038919552324
-          ],
-          [
-            "#f5d85b",
-            101.54011280448549
-          ]
-        ],
-        "centromere": 1
-      },
-      "path": "M 307.0,423.0 L 307.0,446.0 Q 299.0,484.0 307.0,521.0 Q 298.0,570.0 298.0,622.0",
-      "thickness": 29.0
-    },
-    {
-      "group": "xy-chromosome-y-2",
-      "model": {
-        "segments": [
-          [
-            "#96bd7a",
-            9.250403338837202
-          ],
-          [
-            "#96bd7a",
-            89.31472155302154
-          ],
-          [
-            "#f5d85b",
-            148.11229747713392
-          ]
-        ],
-        "centromere": 1
-      },
-      "path": "M 353.0,423.0 L 353.0,446.0 Q 345.0,484.0 353.0,521.0 C 365.0,576.5 395.7859114192842,621.0 445.7859114192842,621.0",
-      "thickness": 29.0
+    "y": {
+      "length": 254.1,
+      "centromere": 0.64,
+      "regions": [[0, "heterochromatin"]]
     }
-  ]
+  },
+  "poses": {
+    "2": {
+      "points": [[150, 101], [162, 184], [178, 263], [176, 331], [151, 398], [74, 445]],
+      "homolog_offset": [60, 22]
+    },
+    "3": {
+      "points": [[592, 100], [569, 157], [529, 209], [508, 265], [513, 337], [543, 397], [597, 448]],
+      "homolog_offset": [69, 0]
+    },
+    "4": {
+      "points": [[318, 161], [316.7, 175], [318, 196], [318, 216.5]],
+      "homolog_offset": [56, 0]
+    },
+    "x": {
+      "points": [[318, 387], [315.1, 436], [317, 481.2], [312.1, 531.3], [309.2, 582.4]],
+      "homolog_offset": [56, 0]
+    },
+    "y": {
+      "points": [[438, 160], [431, 238], [420, 305], [403, 378], [363, 424], [373, 464], [401, 493]]
+    }
+  },
+  "palette": {
+    "2": {"2R": ["dark_orange", "medium"], "2L": ["red", "dark"]},
+    "3": {"3L": ["purple", "dark"], "3R": ["purple", "light"]},
+    "4": {"euchromatin": ["sky_blue", "dark"]},
+    "x": {"euchromatin": ["dark_yellow", "dark"]},
+    "y": {}
+  },
+  "centromere_hues": {
+    "2": "dark_orange",
+    "3": "purple",
+    "4": "sky_blue",
+    "x": "dark_yellow",
+    "y": "teal"
+  },
+  "composition": {
+    "canvas": [1600, 744],
+    "chromosome_width": 35,
+    "length_scale": 1.55,
+    "title": "Drosophila chromosome complements",
+    "description": "Each panel shows eight chromosomes as single rods at the same schematic scale: pairs 2, 3 and 4 with XX on the left and XY on the right. Pale collars mark centromeres and carry chromosome IDs. The X and Y centromeres are nearly level, with the Y short arm facing the proximal X heterochromatin to suggest their rDNA pairing at metaphase I. Teal on the arms marks heterochromatin.",
+    "arm_labels": [
+      {"text": "2R", "position": [142, 38], "leaders": [[[151, 49], [149, 84]], [[151, 49], [208, 104]]]},
+      {"text": "2L", "position": [55, 734], "leaders": [[[23, 672], [55, 704], [86, 692]]]},
+      {"text": "3L", "position": [638, 36], "leaders": [[[638, 48], [596, 81]], [[638, 48], [664, 81]]]},
+      {"text": "3R", "position": [638, 714], "leaders": [[[602, 657], [638, 678], [671, 656]]]}
+    ],
+    "panels": {
+      "xx": {
+        "translation": [0, 0],
+        "sex_labels": [
+          {"text": "XX", "position": [332, 738], "leaders": [[[332, 713], [304, 698]], [[332, 713], [360, 698]]]}
+        ]
+      },
+      "xy": {
+        "translation": [840, 0],
+        "sex_labels": [
+          {"text": "X", "position": [304, 738], "leaders": []},
+          {"text": "Y", "position": [401, 556], "leaders": []}
+        ]
+      }
+    },
+    "legend": {
+      "heterochromatin": {"text": "Heterochromatin", "position": [724, 341], "swatch_position": [667, 310]},
+      "centromere": {"text": "Centromere", "position": [724, 403], "marker_position": [686.5, 391.5]}
+    }
+  }
 }

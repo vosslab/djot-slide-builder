@@ -68,7 +68,20 @@ repository maintenance utilities belong in `devel/`.
 General build utilities and toolkit example modules retain their existing names. A recipe's
 filename is separate from its output asset names; keep existing slide URLs when renaming code.
 
+Write a module or function docstring that explains what the figure teaches and why its model and
+drawing choices serve that purpose. For non-obvious choices, record details such as the reason for
+a length or scale, what a color encodes, or which features the schematic simplifies. Use a few
+paragraphs when the reasoning needs room. Link to the
+[slide development notes](slide-specs/AUTHORING_GUIDE.md#slide-development-notes) for the source record.
+
+Keep generator data in structured JSON. When a recipe preserves existing vector artwork, store the
+artwork in an `.svg` file and put its relative path in the data. Generate new chromosome geometry,
+labels, and composition from structured data and Python drawing functions.
+
 ## Compose parts
+
+Use `lxml.etree` for XML construction and the shared writer for complete figures.
+The writer uses the default SVG namespace and the standard `xlink` prefix for LibreOffice.
 
 `SvgPart(fragment, bounds, anchors)` contains SVG markup, conservative painted bounds
 `(xmin, ymin, xmax, ymax)`, and named `(x, y)` attachment points in local coordinates.
@@ -163,7 +176,8 @@ not follow a course accent hue. Use semantic colors consistently across related 
   documents sizes, boundaries, source maps and rearrangement limits.
 - `svg_import.import_svg(markup, name=..., size=None)` imports supported static SVG markup;
   `size` sets width and bounds are the clipped viewport, not tight paint bounds. Use distinct
-  names or `group` for repeated instances. Raster artists and unsupported SVG features are
+  names or `group` for repeated instances. The parser disables entity expansion and external
+  resource loading. Raster artists and unsupported SVG features are
   rejected; consult [the importer](../svg_tools/svg_import.py) and example for its scope.
 - `icons.search_icons(query)` searches installed Font Awesome Free solid icon names;
   `icons.icon(name, size=..., color=...)` loads one SVG, retaining its attribution comment.

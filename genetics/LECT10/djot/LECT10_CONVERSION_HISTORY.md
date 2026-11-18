@@ -567,8 +567,8 @@ it is distinct from the LECT08 six-step three-point-testcross roadmap. No new ro
   groups. Verify their inventory survives the weekly update; refresh dates before showing them.
 
 - [x] Keep source filenames, source slide numbers, and conversion provenance out of Djot files,
-  including `@notes` and comments. Use separate import reports, slide maps, or review files for
-  traceability; reserve `@notes` for presentation note cards used while lecturing. Exclude selection history,
+  including `@speaker-notes` and comments. Use separate import reports, slide maps, or review files for
+  traceability; reserve `@speaker-notes` for presentation note cards used while lecturing. Exclude selection history,
   publication metadata, refresh commands, repair details, and verification logs from Djot files.
 
 - [x] Import each source with the repository importer documented in [USAGE.md](../../../docs/USAGE.md).

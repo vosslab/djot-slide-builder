@@ -64,7 +64,8 @@ def test_refresh_is_repeatable_and_keeps_other_slides(tmp_path: pathlib.Path) ->
 	source = ("=== layout: title-slide\n\n# Lecture\n\n## Announcements\n"
 		"## Dr. Neil Voss\n## Sept 15, 2026\n\n"
 		"=== layout: one-panel\n\n# YouTube\n\n@body\n\nChannel.\n\n"
-		"=== layout: one-panel\nhidden: true\n\n# Later\n\n@body\n\nUnchanged.\n")
+		"=== layout: one-panel\nhidden: true\n\n# Later\n\n@body\n\nUnchanged.\n"
+		"@speaker-notes\nRemind them about YouTube.\n")
 	episode = {"id": "aaaaaaaaaaa", "title": "StVC 36: Bad Cell Day \u2014 Two Drugs, One Keyboard | Stump the Vibe Coder Episode 36",
 		"published": "2026-09-10T15:00:00Z", "project_url": "https://vosslab.github.io/game/"}
 	updated = refresh_podcast.update_source(source, episode)
@@ -76,7 +77,7 @@ def test_refresh_is_repeatable_and_keeps_other_slides(tmp_path: pathlib.Path) ->
 	assert refreshed.count(refresh_podcast.PODCAST_ASSET_PATH) == 1
 	assert episode["id"] not in refreshed
 	assert next_episode["id"] in refreshed
-	assert "@notes" not in updated
+	assert updated.count("\n@speaker-notes\n") == 1
 	assert episode["published"] not in updated
 	assert "@citation" not in updated
 	assert "Watch the Video: [https://www.youtube.com/watch" in updated

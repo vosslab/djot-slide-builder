@@ -35,6 +35,8 @@ source source_me.sh && MPLCONFIGDIR="$PWD/_temp/mplconfig" python3 -m \
 The cookbook explains adding the SVG to a native slide. Check example output paths before running
 them: some recipes default to lecture assets.
 
+For source-addressed chromosome figures, see [CHROMOSOME_ENGINE.md](CHROMOSOME_ENGINE.md).
+
 ## Core commands
 
 ```bash
@@ -155,8 +157,10 @@ Use the authoritative slide specifications for
 [slide-specs/AUTHORING_GUIDE.md](slide-specs/AUTHORING_GUIDE.md) overview retains layout,
 typography, and source-evidence conventions.
 
-Use [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) for layouts, slots, tables, speaker notes, and
-chapter includes. Use [SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md) while
+Use [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md) for layouts, slots,
+tables, `@speaker-notes`, and chapter includes. Record deck provenance and design decisions in
+[slide development notes](slide-specs/AUTHORING_GUIDE.md#slide-development-notes).
+Use [SLIDE_CONVERSION_CHECKLIST.md](SLIDE_CONVERSION_CHECKLIST.md) while
 converting a lecture and [slide-specs/ANNOUNCEMENT_DECK_GUIDE.md](slide-specs/ANNOUNCEMENT_DECK_GUIDE.md) for weekly
 announcement decks. Use [TALKING_POINT_DECK_RECIPE.md](TALKING_POINT_DECK_RECIPE.md) to merge
 annual student sources with expanded instructor material into an ordered study deck.

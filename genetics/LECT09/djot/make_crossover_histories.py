@@ -2,11 +2,12 @@
 """Reconstruct all six source panels using four continuous product chromatids each."""
 import copy
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 import svgpathtools
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 BASE = pathlib.Path(__file__).resolve().parent
 ROOT = BASE
@@ -60,22 +61,22 @@ PANELS = [
 													[(' C80 65 98 58 104 31',1),(' C108 9 122 0 138 0',0)]])
 ]
 
-def node(parent: ET.Element, tag: str, **attrs: str) -> ET.Element:
-	return ET.SubElement(parent, tag, {key.replace('_','-'):str(value) for key,value in attrs.items()})
+def node(parent: lxml.etree._Element, tag: str, **attrs: str) -> lxml.etree._Element:
+	return lxml.etree.SubElement(parent, tag, {key.replace('_','-'):str(value) for key,value in attrs.items()})
 
-def text(parent: ET.Element, x: float, y: float, label: str, size: float = 11, **attrs: str) -> ET.Element:
+def text(parent: lxml.etree._Element, x: float, y: float, label: str, size: float = 11, **attrs: str) -> lxml.etree._Element:
 	element=node(parent,'text',x=x,y=y,font_size=size,**attrs)
 	element.text=label
 	return element
 
-def strip_namespace(element: ET.Element) -> ET.Element:
+def strip_namespace(element: lxml.etree._Element) -> lxml.etree._Element:
 	for child in element.iter():
 		child.tag=child.tag.replace(NS,'')
 	return element
 
 def build() -> bytes:
-	source=DET.parse(SOURCE).getroot()
-	root=ET.Element('svg',{'xmlns':NS[1:-1], 'width':source.get('width'), 'height':source.get('height'),
+	source=svg_tools._xml.read(SOURCE)
+	root=lxml.etree.Element('svg',{'xmlns':NS[1:-1], 'width':source.get('width'), 'height':source.get('height'),
 		'viewBox':source.get('viewBox'), 'role':'img','aria-labelledby':'figure-title figure-description'})
 	node(root,'title',id='figure-title').text='Six Crossover Histories and Their Tetrad Outcomes'
 	node(root,'desc',id='figure-description').text=('Six source panels reconstructed as native vector artwork. Four continuous chromatids per panel, with zero, one, or two exchanges. Brown and gold identify parental regions; allele combinations in each ascus give PD, TT, or NPD.')
@@ -109,7 +110,7 @@ def build() -> bytes:
 				regions[-1]=(regions[-1][0]-1e-7,regions[-1][1])
 			model=svg_tools.chromosomes.Chromosome(tuple(svg_tools.chromosomes.Segment('brown' if color==0 else 'gold',(BROWN,GOLD)[color],length) for length,color in regions))
 			part=svg_tools.chromosomes.chromosome_path_part(f'{pid}-chromatid-{index}',model,whole,thickness=9,labels=False)
-			element=DET.fromstring(part.fragment)
+			element=svg_tools._xml.parse(part.fragment)
 			element.set('data-role','chromatid');element.set('data-source-index',str(index))
 			product=('A' if index<2 else 'a')+('B' if regions[-1][1]==0 else 'b')
 			element.set('data-product',product);element.set('data-centerline',whole)
@@ -119,7 +120,7 @@ def build() -> bytes:
 		if pid=='D':
 			middle=geometry[2];geometry.remove(middle);geometry.insert(0,middle)
 		for i,cy in enumerate((10,48)):
-			marker=DET.fromstring(svg_tools.chromosomes.centromere_part(f'{pid}-centromere-{i}',thickness=7).fragment)
+			marker=svg_tools._xml.parse(svg_tools.chromosomes.centromere_part(f'{pid}-centromere-{i}',thickness=7).fragment)
 			marker.set('transform',f'translate(30 {cy})'); geometry.append(marker)
 		labels=node(geometry,'g',id=f'{pid}-alleles',font_family='Georgia, serif',font_style='italic',fill='#FFFFFF')
 		for i,ly in enumerate((0,24,38,60)):
@@ -139,7 +140,7 @@ def build() -> bytes:
 	for element in source.iter(NS+'text'):
 		scene.append(strip_namespace(copy.deepcopy(element)))
 		expected.append(''.join(element.itertext()))
-	data=ET.tostring(root,encoding='utf-8',xml_declaration=True)+b'\n'
+	data=lxml.etree.tostring(svg_tools.drawing.svg_root(root),encoding='utf-8',xml_declaration=True)+b'\n'
 	return data
 
 def main() -> None:

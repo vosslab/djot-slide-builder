@@ -10,11 +10,11 @@ import math
 import base64
 import subprocess
 from pathlib import Path
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 # Local repo modules
 import svgpathtools
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosome_surface
 import svg_tools.drawing
 from svg_tools.chromosomes import (
@@ -22,7 +22,7 @@ from svg_tools.chromosomes import (
 )
 
 NS = '{http://www.w3.org/2000/svg}'
-ET.register_namespace('', NS[1:-1])
+
 ASSETS = Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()) / 'genetics/LECT12/djot/assets/lect12d-chromo_alter_1-deletions'
 
 MODELS = {'deletion_overview': [('deletion-before',
@@ -350,14 +350,14 @@ BACKDROPS = {
 
 def render_rods() -> None:
 	for stem, models in MODELS.items():
-		root = DET.fromstring(BACKDROPS[stem])
+		root = svg_tools._xml.parse(BACKDROPS[stem])
 		for name, regions, centromere, thickness, joins in models:
 			model = Chromosome(tuple(Segment(label, color, length)
 				for label, color, length in regions),
 				centromeres=() if centromere is None else (Centromere(centromere),))
 			layout = render_chromosome_layout(name, model, thickness=thickness, junctions=joins)
 			placeholder = root.find('.//' + NS + 'g[@data-chromosome="' + name + '"]')
-			placeholder.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'
+			placeholder.append(svg_tools._xml.parse('<g xmlns="http://www.w3.org/2000/svg">'
 				+ layout.svg + '</g>'))
 			placeholder.attrib.pop('data-chromosome')
 			parent=next(node for node in root.iter() if placeholder in list(node))
@@ -380,7 +380,7 @@ CHROMOSOME_COMPLEMENTS_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width
 
 DIRECT_REPEAT_LOOP_BACKDROP = '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title description">\n<title id="title">Direct-repeat recombination</title>\n<desc id="description">Two parallel ribbons contain directly oriented purple and blue repeat copies enclosing A B ... Y Z. The ribbons fold together, bringing the purple repeat above the blue repeat at one black exchange X. Both open paths pass through A B ... Y Z; the outgoing flanks cross over the right bend without joining it. Recombination produces paired deletion ribbons with a purple-then-blue junction and a separate paired ring retaining A B ... Y Z with a blue-then-purple junction across its top. The source does not identify the molecular or replication state of the paired ribbons. Continuation chevrons are not chromosome termini; no centromere position or length scale is asserted.</desc>\n<g font-family="Atkinson Hyperlegible Next" fill="#20252b" font-size="24">\n\n<g id="initial">\n<text id="repeat-callout-1" x="330" y="36" font-size="25" text-anchor="middle">Repeated DNA sequences with</text>\n<text id="repeat-callout-2" x="330" y="65" font-size="25" text-anchor="middle">same (direct) orientation.</text>\n<path id="repeat-leader-purple" d="M205 77 L180 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<path id="repeat-leader-blue" d="M460 77 L485 103" fill="none" stroke="#424a54" stroke-width="1.8" />\n<g id="initial-1">\n<text id="initial-1-gene-A" x="239" y="125" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-1-gene-B" x="270" y="125" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-1-gene-dotdotdot" x="330" y="125" font-size="23" text-anchor="middle">...</text>\n<text id="initial-1-gene-Y" x="394" y="125" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-1-gene-Z" x="426" y="125" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<g id="initial-2">\n<text id="initial-2-gene-A" x="239" y="160" font-size="23" text-anchor="middle" font-style="italic">A</text>\n<text id="initial-2-gene-B" x="270" y="160" font-size="23" text-anchor="middle" font-style="italic">B</text>\n<text id="initial-2-gene-dotdotdot" x="330" y="160" font-size="23" text-anchor="middle">...</text>\n<text id="initial-2-gene-Y" x="394" y="160" font-size="23" text-anchor="middle" font-style="italic">Y</text>\n<text id="initial-2-gene-Z" x="426" y="160" font-size="23" text-anchor="middle" font-style="italic">Z</text>\n</g>\n</g>\n<path id="initial-to-folded" d="M300 186 L300 232 M307.0 217.0 L300 232 L293.0 217.0" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="folded">\n<path id="overpass-clearance" d="M280 367 H510 V438 H280 Z" fill="white" stroke="none" stroke-width="0" />\n<path id="exchange-X" d="M264 338 L285 359 M285 338 L264 359" fill="none" stroke="#000000" stroke-width="3" />\n<text id="folded-1-gene-A" x="359" y="289" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-1-gene-B" x="421" y="327" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-1-gene-dotdotdot" x="300" y="555" font-size="22" text-anchor="middle">...</text>\n<text id="folded-1-gene-Y" x="210" y="542" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-1-gene-Z" x="176" y="484" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="folded-2-gene-A" x="340" y="322" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="folded-2-gene-B" x="389" y="348" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="folded-2-gene-dotdotdot" x="300" y="520" font-size="22" text-anchor="middle">...</text>\n<text id="folded-2-gene-Y" x="238" y="515" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="folded-2-gene-Z" x="211" y="479" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n</g>\n<path id="folded-to-deletion" d="M545 338 L650 252 M633.9600936697965 256.08918144844415 L650 252 L642.8310386498448 266.91998636594485" fill="none" stroke="#30363d" stroke-width="2.7" />\n<path id="folded-to-ring" d="M545 484 L658 461 M641.9052287869613 457.13239872790126 L658 461 L644.6975328443957 470.8511099666013" fill="none" stroke="#30363d" stroke-width="2.7" />\n<g id="deletion">\n<text id="deletion-label" x="820" y="303" font-size="27" text-anchor="middle">Deletion</text>\n</g>\n<g id="ring">\n<text id="ring-1-gene-A" x="882.27" y="380.74" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-1-gene-B" x="918.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-1-gene-dotdotdot" x="810.0" y="569.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-1-gene-Y" x="702.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-1-gene-Z" x="737.73" y="380.74" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-2-gene-A" x="858.85" y="406.75" font-size="22" text-anchor="middle" font-style="italic">A</text>\n<text id="ring-2-gene-B" x="883.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">B</text>\n<text id="ring-2-gene-dotdotdot" x="810.0" y="534.0" font-size="22" text-anchor="middle">...</text>\n<text id="ring-2-gene-Y" x="737.0" y="461.0" font-size="22" text-anchor="middle" font-style="italic">Y</text>\n<text id="ring-2-gene-Z" x="761.15" y="406.75" font-size="22" text-anchor="middle" font-style="italic">Z</text>\n<text id="ring-label" x="810" y="603" font-size="24" text-anchor="middle">Acentric ring fragment (lost)</text>\n</g></g></svg>'
 
-def _repeat_loci(parent: ET.Element, prefix: str) -> tuple[tuple[str, complex], ...]:
+def _repeat_loci(parent: lxml.etree._Element, prefix: str) -> tuple[tuple[str, complex], ...]:
 	"""Read the source's named gene centers for one known chromosome path."""
 	loci = []
 	for text in parent.findall(NS+'text'):
@@ -390,7 +390,7 @@ def _repeat_loci(parent: ET.Element, prefix: str) -> tuple[tuple[str, complex], 
 	return tuple(loci)
 
 
-def _replace_repeat_loci(parent: ET.Element, prefix: str) -> None:
+def _replace_repeat_loci(parent: lxml.etree._Element, prefix: str) -> None:
 	"""Keep ellipses as sequence shorthand while shared bodies draw gene letters."""
 	for text in list(parent.findall(NS+'text')):
 		if text.get('id', '').startswith(prefix) and text.text != '...':
@@ -434,7 +434,7 @@ def _repeat_segments(regions: list[tuple[str, float]], path: svgpathtools.Path,
 
 
 def path_body(
-	parent: ET.Element, name: str, regions: list[tuple[str, float]], path: str,
+	parent: lxml.etree._Element, name: str, regions: list[tuple[str, float]], path: str,
 	thickness: float = 28, closed: bool = False, cut: bool = False,
 	loci: tuple[tuple[str, complex], ...] = (),
 ) -> None:
@@ -444,21 +444,21 @@ def path_body(
 		tuple(Segment('', color, length) for color, length in regions))
 	part = chromosome_path_part(name, model, path, thickness=thickness,
 		closed=closed, cut_ends=cut, labels=bool(loci))
-	parent.append(DET.fromstring('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
+	parent.append(svg_tools._xml.parse('<g xmlns="http://www.w3.org/2000/svg">'+part.fragment+'</g>'))
 
-def write_svg(root: ET.Element, path: Path) -> None:
+def write_svg(root: lxml.etree._Element, path: Path) -> None:
 	svg_tools.drawing.remove_canvas_background(root)
-	body=ET.tostring(root,encoding='unicode').encode('ascii','xmlcharrefreplace').decode('ascii')
+	body=lxml.etree.tostring(svg_tools.drawing.svg_root(root),encoding='unicode').encode('ascii','xmlcharrefreplace').decode('ascii')
 	path.write_text('<?xml version="1.0" encoding="UTF-8"?>\n'+body,encoding='ascii')
 
-def write_scene(stem: str, root: ET.Element) -> None:
+def write_scene(stem: str, root: lxml.etree._Element) -> None:
 	write_svg(root, ASSETS / (stem+'.drawn.svg'))
 
 def render_complements() -> None:
-	root = DET.fromstring(CHROMOSOME_COMPLEMENTS_BACKDROP)
+	root = svg_tools._xml.parse(CHROMOSOME_COMPLEMENTS_BACKDROP)
 	for complement in ['XX','XY']:
 		group = root.find('.//' + NS + 'g[@id="complement-'+complement+'"]')
-		bodies = ET.Element(NS+'g', {'id': 'shared-'+complement})
+		bodies = lxml.etree.Element(NS+'g', {'id': 'shared-'+complement})
 		group.insert(0,bodies)
 		for x in [80,125]:
 			path_body(bodies,complement+'-2-'+str(x),[('#54798D',1)],
@@ -475,34 +475,34 @@ def render_complements() -> None:
 				path_body(bodies,complement+'-X-'+str(i),[('#086898',1)],f'M{x} 393 C{x-3} 428 {x-3} 471 {x} 512',25)
 	write_scene('chromosome_complements',root)
 
-def deletion_row(root: ET.Element, name: str, y: float, left: float, right: float,
+def deletion_row(root: lxml.etree._Element, name: str, y: float, left: float, right: float,
 	interval: tuple[float, float] | None) -> None:
 	"""BPQ evidence row: thick retained DNA and a shallow marker for missing DNA."""
-	group = ET.SubElement(root, NS+'g', {'id': name})
+	group = lxml.etree.SubElement(root, NS+'g', {'id': name})
 	shape = {'x': str(left), 'y': str(y-12.5), 'width': str(right-left),
 		'height': '25', 'rx': '5'}
-	defs = ET.SubElement(group, NS+'defs')
-	outer = ET.SubElement(defs, NS+'clipPath', {'id': name+'-outer'})
-	ET.SubElement(outer, NS+'rect', shape)
-	retained = ET.SubElement(defs, NS+'clipPath', {'id': name+'-retained'})
+	defs = lxml.etree.SubElement(group, NS+'defs')
+	outer = lxml.etree.SubElement(defs, NS+'clipPath', {'id': name+'-outer'})
+	lxml.etree.SubElement(outer, NS+'rect', shape)
+	retained = lxml.etree.SubElement(defs, NS+'clipPath', {'id': name+'-retained'})
 	spans = ((left, right),) if interval is None else ((left, interval[0]), (interval[1], right))
 	for start, end in spans:
-		ET.SubElement(retained, NS+'rect', {'x': str(start), 'y': str(y-12.5),
+		lxml.etree.SubElement(retained, NS+'rect', {'x': str(start), 'y': str(y-12.5),
 			'width': str(end-start), 'height': '25'})
-	face = ET.SubElement(group, NS+'g', {'clip-path': f'url(#{name}-outer)'})
-	face = ET.SubElement(face, NS+'g', {'clip-path': f'url(#{name}-retained)',
+	face = lxml.etree.SubElement(group, NS+'g', {'clip-path': f'url(#{name}-outer)'})
+	face = lxml.etree.SubElement(face, NS+'g', {'clip-path': f'url(#{name}-retained)',
 		'data-layer': 'retained-dna'})
-	ET.SubElement(face, NS+'rect', {**shape, 'fill': '#b8c0c8'})
+	lxml.etree.SubElement(face, NS+'rect', {**shape, 'fill': '#b8c0c8'})
 	path = svgpathtools.parse_path(f'M {left} {y} H {right}')
 	svg_tools.chromosome_surface.Surface(path, 25).paint(face, name)
 	# Clipping a four-unit stroke keeps the BPQ two-unit border inside retained DNA.
-	ET.SubElement(face, NS+'rect', {**shape, 'fill': 'none', 'stroke': '#161b20',
+	lxml.etree.SubElement(face, NS+'rect', {**shape, 'fill': 'none', 'stroke': '#161b20',
 		'stroke-width': '4'})
 	if interval is not None:
 		start, end = interval
-		ET.SubElement(face, NS+'path', {'d': f'M{start} {y-12.5} V{y+12.5} M{end} {y-12.5} V{y+12.5}',
+		lxml.etree.SubElement(face, NS+'path', {'d': f'M{start} {y-12.5} V{y+12.5} M{end} {y-12.5} V{y+12.5}',
 			'fill': 'none', 'stroke': '#161b20', 'stroke-width': '4'})
-		ET.SubElement(group, NS+'rect', {'x': str(start), 'y': str(y-5.5),
+		lxml.etree.SubElement(group, NS+'rect', {'x': str(start), 'y': str(y-5.5),
 			'width': str(end-start), 'height': '11', 'fill': '#CC0066',
 			'data-layer': 'deleted-interval'})
 
@@ -518,7 +518,7 @@ def render_intervals() -> None:
 	positions = (240, 345, 450, 555, 660, 765)
 	for index, x in enumerate(positions, 1):
 		text_at(root, x, 42, str(index), 40, anchor='middle')
-		ET.SubElement(root, NS+'path', {'d': f'M{x} 55 V455', 'stroke': '#DFE6EC',
+		lxml.etree.SubElement(root, NS+'path', {'d': f'M{x} 55 V455', 'stroke': '#DFE6EC',
 			'stroke-width': '1.5'})
 	text_at(root, 135, 98, 'Reference', 23, anchor='end')
 	deletion_row(root, 'reference', 88, 155, 850, None)
@@ -540,7 +540,7 @@ def render_cytological_intervals() -> None:
 		'This aligned evidence map retains source endpoint relations without asserting finer resolution.')
 	for x, band, gene, role in ((230, '3A3', 'zeste', 'eye-color gene'),
 		(500, '3A9', 'zw2', 'lethal gene'), (800, '3C2', 'white', 'eye-color gene')):
-		ET.SubElement(root, NS+'rect', {'x': str(x-16), 'y': '45', 'width': '32',
+		lxml.etree.SubElement(root, NS+'rect', {'x': str(x-16), 'y': '45', 'width': '32',
 			'height': '300', 'fill': '#E2E7EC'})
 		for y, label, size in ((385, band, 27), (430, gene, 28), (470, role, 23)):
 			text_at(root, x, y, label, size, anchor='middle')
@@ -553,7 +553,7 @@ def render_cytological_intervals() -> None:
 	write_scene('cytological_deletion_intervals', root)
 
 def render_repeat_loop() -> None:
-	root = DET.fromstring(DIRECT_REPEAT_LOOP_BACKDROP)
+	root = svg_tools._xml.parse(DIRECT_REPEAT_LOOP_BACKDROP)
 	neutral,purple,brown,blue = '#a6bac7','#c695d4','#d8b98e','#8dbce0'
 	initial=root.find('.//'+NS+'g[@id="initial"]')
 	for i,y in [(1,117),(2,152)]:
@@ -593,30 +593,30 @@ def render_repeat_loop() -> None:
 	for i,y,xs in [(1,117,[40,610]),(2,152,[40,610]),(1,278,[65]),(2,313,[65]),(1,385,[500]),(2,420,[500]),(1,220,[690,950]),(2,255,[690,950])]:
 		for x in xs:
 			direction=1 if i==1 else -1
-			ET.SubElement(root,NS+'path',{'d':f'M{x-5*direction} {y-9} L{x+5*direction} {y} L{x-5*direction} {y+9}', 'fill':'none','stroke':'#344651','stroke-width':'1.5'})
+			lxml.etree.SubElement(root,NS+'path',{'d':f'M{x-5*direction} {y-9} L{x+5*direction} {y} L{x-5*direction} {y+9}', 'fill':'none','stroke':'#344651','stroke-width':'1.5'})
 	write_scene('direct_repeat_loop',root)
 
 
 def text_at(
-	root: ET.Element, x: float, y: float, text: str, size: float = 22,
+	root: lxml.etree._Element, x: float, y: float, text: str, size: float = 22,
 	color: str = '#344651', anchor: str = 'start',
-) -> ET.Element:
-	el=ET.SubElement(root,NS+'text',{'x':str(x),'y':str(y),'font-size':str(size),
+) -> lxml.etree._Element:
+	el=lxml.etree.SubElement(root,NS+'text',{'x':str(x),'y':str(y),'font-size':str(size),
 		'fill':color,'text-anchor':anchor,'font-family':'Atkinson Hyperlegible Next'})
 	el.text=text
 	return el
 
-def scene(width: float, height: float, title: str, desc: str) -> ET.Element:
-	root=ET.Element(NS+'svg',{'width':str(width),'height':str(height),
+def scene(width: float, height: float, title: str, desc: str) -> lxml.etree._Element:
+	root=lxml.etree.Element(NS+'svg',{'width':str(width),'height':str(height),
 		'viewBox':f'0 0 {width} {height}','role':'img','aria-labelledby':'title desc'})
-	ET.SubElement(root,NS+'title',{'id':'title'}).text=title
-	ET.SubElement(root,NS+'desc',{'id':'desc'}).text=desc
+	lxml.etree.SubElement(root,NS+'title',{'id':'title'}).text=title
+	lxml.etree.SubElement(root,NS+'desc',{'id':'desc'}).text=desc
 	return root
 
-def photo(root: ET.Element, name: str, width: float, height: float) -> None:
+def photo(root: lxml.etree._Element, name: str, width: float, height: float) -> None:
 	# Embed the original source bytes, including any panel covered by an overlay.
 	payload=base64.b64encode((ASSETS/name).read_bytes()).decode('ascii')
-	ET.SubElement(root,NS+'image',{'href':'data:image/png;base64,'+payload,
+	lxml.etree.SubElement(root,NS+'image',{'href':'data:image/png;base64,'+payload,
 		'width':str(width),'height':str(height)})
 
 def render_quantitative_map() -> None:
@@ -624,11 +624,11 @@ def render_quantitative_map() -> None:
 		'Source chromosome lengths and map labels retained. Mbp and approximate cM '
 		'labels are separate scales. Arm extents follow the source schematic, not a new measured reconstruction.')
 	# Explicit source y coordinates retain the reference centromere line and arm proportions.
-	ET.SubElement(root,NS+'path',{'d':'M20 250 H965','stroke':'#72508C','stroke-width':'1.5'})
+	lxml.etree.SubElement(root,NS+'path',{'d':'M20 250 H965','stroke':'#72508C','stroke-width':'1.5'})
 	text_at(root,890,244,'centromere',20,'#72508C')
 	for name,x,y0,y1 in [('X',105,42,250),('Y',280,72,475),('2',455,42,460),('3',625,30,510),('4',805,242,250)]:
 		path_body(root,'map-'+name,[('#54798D',1)],f'M{x} {y0} V{y1}',14)
-		ET.SubElement(root,NS+'ellipse',{'cx':str(x),'cy':'250','rx':'11','ry':'6',
+		lxml.etree.SubElement(root,NS+'ellipse',{'cx':str(x),'cy':'250','rx':'11','ry':'6',
 			'fill':'none','stroke':'#72508C','stroke-width':'1.6'})
 		text_at(root,x,570,name,40,anchor='middle')
 	for x,y,txt,c in [(38,46,'0 cM','#D40000'),(122,46,'0 Mbp','#344651'),
@@ -657,7 +657,7 @@ def render_mixed_figures() -> None:
 		'The complete original empirical polytene micrograph, arrows, labels and caption are '
 		'retained. Only the upper-left diagrammatic inset is replaced with shared chromosome parts.')
 	photo(root,'image_015.png',663,500)
-	ET.SubElement(root,NS+'rect',{'x':'183','y':'42','width':'151','height':'133','fill':'white'})
+	lxml.etree.SubElement(root,NS+'rect',{'x':'183','y':'42','width':'151','height':'133','fill':'white'})
 	for side in [0,1]:
 		x=207+side*18
 		path_body(root,'inset-2-'+str(side),[('#54798D',1)],f'M{x} 59 C{x} 70 {x+24} 78 {x+24} 88 C{x+24} 98 {x} 109 {x} 122',8)

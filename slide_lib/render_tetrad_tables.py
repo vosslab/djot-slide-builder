@@ -7,12 +7,12 @@ import copy
 import json
 import pathlib
 import re
-import xml.etree.ElementTree as ET
 
-import defusedxml.ElementTree
+import lxml.etree
+import svg_tools._xml
+
 
 SVG_NS = "http://www.w3.org/2000/svg"
-ET.register_namespace("", SVG_NS)
 CLASS_COLORS = {
 	"PD": ("#935D00", "#FFE3A3"),
 	"TT": ("#A719DB", "#E8CCE6"),
@@ -21,14 +21,14 @@ CLASS_COLORS = {
 
 
 #============================================
-def element(parent: ET.Element, name: str, **attributes: object) -> ET.Element:
+def element(parent: lxml.etree._Element, name: str, **attributes: object) -> lxml.etree._Element:
 	"""Create a namespaced SVG primitive with escaped attribute values."""
-	return ET.SubElement(parent, f"{{{SVG_NS}}}{name}",
+	return lxml.etree.SubElement(parent, f"{{{SVG_NS}}}{name}",
 		{key.replace("_", "-"): str(value) for key, value in attributes.items()})
 
 
 #============================================
-def label(parent: ET.Element, x: float, y: float, value: object,
+def label(parent: lxml.etree._Element, x: float, y: float, value: object,
 		color: str = "#1D2433", bold: bool = False, anchor: str = "middle",
 		size: int = 30) -> None:
 	"""Keep headings, counts, and classifications as live SVG text."""
@@ -38,14 +38,16 @@ def label(parent: ET.Element, x: float, y: float, value: object,
 
 
 #============================================
-def load_asci(path: pathlib.Path) -> tuple[ET.Element, ...]:
+def load_asci(path: pathlib.Path) -> tuple[lxml.etree._Element, ...]:
 	"""Extract the three existing unordered-ascus drawings, without their captions."""
 	data = path.read_bytes()
 	# ASVS 1.5.1: accept self-contained SVG without DTDs or external entities/resources.
 	if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
 		raise ValueError(f"SVG must not contain a DTD or entity declaration: {path}")
-	root = defusedxml.ElementTree.fromstring(data)
+	root = svg_tools._xml.parse(data)
 	for node in root.iter():
+		if not isinstance(node.tag, str):
+			continue
 		if node.tag.rsplit("}", 1)[-1] in ("script", "foreignObject", "style"):
 			raise ValueError(f"Ascus SVG must contain only self-contained drawing content: {path}")
 		for name, value in node.attrib.items():
@@ -59,7 +61,7 @@ def load_asci(path: pathlib.Path) -> tuple[ET.Element, ...]:
 
 
 #============================================
-def classified_rows(example: dict, asci: tuple[ET.Element, ...]) -> list[tuple[dict, str]]:
+def classified_rows(example: dict, asci: tuple[lxml.etree._Element, ...]) -> list[tuple[dict, str]]:
 	"""Check the counts and classify drawings against the given parental combinations."""
 	genes = example["genes"]
 	if not isinstance(genes, str) or not re.fullmatch(r"[a-z]{2}", genes) or genes[0] == genes[1]:
@@ -100,13 +102,13 @@ def classified_rows(example: dict, asci: tuple[ET.Element, ...]) -> list[tuple[d
 
 
 #============================================
-def render_table(example: dict, asci: tuple[ET.Element, ...], reveal: bool) -> str:
+def render_table(example: dict, asci: tuple[lxml.etree._Element, ...], reveal: bool) -> str:
 	"""Compose a compact three-row table with legible four-spore figures."""
 	rows = classified_rows(example, asci)
-	root = ET.Element(f"{{{SVG_NS}}}svg", {
+	root = lxml.etree.Element(f"{{{SVG_NS}}}svg", {
 		"width": "482", "height": "504", "viewBox": "0 0 482 504",
 		"role": "img", "aria-labelledby": "table-title table-description",
-	})
+	}, nsmap={None: SVG_NS})
 	element(root, "title", id="table-title").text = "Two-Gene Tetrad Working Table"
 	description = element(root, "desc", id="table-description")
 	description.text = "Given parents: " + " / ".join(example["parents"]) + ". "
@@ -147,7 +149,7 @@ def render_table(example: dict, asci: tuple[ET.Element, ...], reveal: bool) -> s
 		element(grid, "line", x1=0, x2=480, y1=y, y2=y)
 	for x in (64, 278, 374):
 		element(grid, "line", x1=x, x2=x, y1=0, y2=452 if x == 64 else 502)
-	return ET.tostring(root, encoding="unicode") + "\n"
+	return lxml.etree.tostring(root, encoding="unicode") + "\n"
 
 
 #============================================

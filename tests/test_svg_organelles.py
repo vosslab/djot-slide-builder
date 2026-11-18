@@ -1,12 +1,12 @@
 """Schematic organelles expose useful placement geometry and distinct structures."""
 
-import defusedxml.ElementTree
 import svgpathtools
 
+import lxml.etree
 import svg_tools.cells
 def test_mitochondrial_membranes_are_closed_and_cristae_do_not_cross() -> None:
 	part = svg_tools.cells.organelle(kind='mitochondrion', width=130, height=86, color='#f3c8b7')
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	outer = svgpathtools.parse_path(root.find("path[@data-role='outer-membrane']").get('d'))
 	inner = svgpathtools.parse_path(root.find("path[@data-role='inner-membrane']").get('d'))
 	for membrane in (outer, inner):

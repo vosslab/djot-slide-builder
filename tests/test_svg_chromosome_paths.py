@@ -1,6 +1,6 @@
 """Authored chromatid bends preserve source regions and acentric ring topology."""
 
-import defusedxml.ElementTree
+import lxml.etree
 import pytest
 import svgpathtools
 
@@ -39,8 +39,8 @@ def test_curved_source_order_anchors_and_bounds() -> None:
 	model = c.Chromosome((source[2], source[0], source[1]))
 	drawing = 'M10 20 C60 -10 60 90 110 80 S160 20 210 40'
 	part = c.chromosome_path_part('curve', model, drawing, thickness=24)
-	defusedxml.ElementTree.fromstring('<svg>' + part.fragment + '</svg>')
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	lxml.etree.fromstring('<svg>' + part.fragment + '</svg>')
+	root = lxml.etree.fromstring(part.fragment)
 	regions = root.findall('.//g[@data-source-label]')
 	assert [node.attrib['data-source-label'] for node in regions] == ['C', 'A&B', 'B']
 	assert [node.find('path').attrib['stroke'] for node in regions] == [s.color for s in model.segments]
@@ -65,7 +65,7 @@ def test_closed_ring_and_flat_internal_ends() -> None:
 	model = c.Chromosome((c.Segment('B', '#8DBCE0', 3), c.Segment('P', '#C695D4', 1)))
 	drawing = 'M0 -60 A60 60 0 1 1 0 60 A60 60 0 1 1 0 -60 Z'
 	part = c.chromosome_path_part('ring', model, drawing, closed=True, labels=False)
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	assert 'start' not in part.anchors and 'end' not in part.anchors
 	assert part.anchors['boundary_0'] == part.anchors['boundary_2']
 	assert all(svgpathtools.parse_path(outline.attrib['d']).isclosed()
@@ -83,7 +83,7 @@ def test_curved_centromere_and_rejected_topology() -> None:
 	segments = (c.Segment('A', '#D9C9EF'), c.Segment('B', '#C1E7EE'))
 	model = c.Chromosome(segments, (c.Centromere(1), c.Centromere(0, active=False)))
 	part = c.chromosome_path_part('neck', model, 'M0 0 Q75 70 150 0', labels=False)
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	marker = root.find(".//*[@id='neck-centromere-0']")
 	assert marker.get('data-layer') == 'centromere'
 	inactive = root.find(".//*[@id='neck-centromere-1']")

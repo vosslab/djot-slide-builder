@@ -3,7 +3,8 @@
 # Standard Library
 import pathlib
 import dataclasses
-import xml.etree.ElementTree
+
+import lxml.etree
 
 NS = {
 	"draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
@@ -28,7 +29,7 @@ def qname(prefix: str, local_name: str) -> str:
 
 
 #============================================
-def style_visibility(style: xml.etree.ElementTree.Element) -> str | None:
+def style_visibility(style: lxml.etree._Element) -> str | None:
 	"""Read the visibility value directly specified by one style."""
 	properties = style.find("./style:drawing-page-properties", NS)
 	if properties is None:
@@ -41,7 +42,7 @@ def style_visibility(style: xml.etree.ElementTree.Element) -> str | None:
 
 #============================================
 def style_definitions_from_root(
-	root: xml.etree.ElementTree.Element,
+	root: lxml.etree._Element,
 ) -> dict[str, DrawingPageStyle]:
 	"""Extract local drawing-page style definitions from one XML root."""
 	definitions: dict[str, DrawingPageStyle] = {}
@@ -85,7 +86,7 @@ def resolve_style_visibility(
 
 #============================================
 def page_is_hidden(
-	page: xml.etree.ElementTree.Element,
+	page: lxml.etree._Element,
 	definitions: dict[str, DrawingPageStyle],
 ) -> bool:
 	"""Return page visibility, giving an explicit page value highest priority."""

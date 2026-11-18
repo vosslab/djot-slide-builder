@@ -3,29 +3,31 @@
 from copy import deepcopy
 from pathlib import Path
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
+
+import lxml.etree
+import svg_tools._xml
+import svg_tools.drawing
 
 
 SVG = '{http://www.w3.org/2000/svg}'
-ET.register_namespace('', 'http://www.w3.org/2000/svg')
 
 
-def _write(root: ET.Element, path: Path) -> None:
-	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+
+def _write(root: lxml.etree._Element, path: Path) -> None:
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(path, encoding='ascii', xml_declaration=True)
 
 
-def _canvas(root: ET.Element) -> ET.Element:
+def _canvas(root: lxml.etree._Element) -> lxml.etree._Element:
 	return root.find(f'{SVG}g')
 
 
-def _remove_text(canvas: ET.Element, values: set[str]) -> None:
+def _remove_text(canvas: lxml.etree._Element, values: set[str]) -> None:
 	for node in list(canvas):
 		if node.tag == f'{SVG}text' and ''.join(node.itertext()) in values:
 			canvas.remove(node)
 
 
-def _crop(root: ET.Element, width: int, height: int, y: int = 0) -> None:
+def _crop(root: lxml.etree._Element, width: int, height: int, y: int = 0) -> None:
 	root.set('width', str(width))
 	root.set('height', str(height))
 	root.set('viewBox', f'0 {y} {width} {height}')
@@ -33,7 +35,7 @@ def _crop(root: ET.Element, width: int, height: int, y: int = 0) -> None:
 
 def _split_c55(path: Path) -> None:
 	"""Split the overview and the loop into two compact, independent panels."""
-	original = DET.parse(path).getroot()
+	original = svg_tools._xml.read(path)
 
 	left = deepcopy(original)
 	left_canvas = _canvas(left)
@@ -62,7 +64,7 @@ def separate_inversion_prose() -> None:
 	_split_c55(assets / 'inversion-synapsis.drawn.svg')
 
 	path = assets / 'paracentric-anaphase.drawn.svg'
-	root = DET.parse(path).getroot()
+	root = svg_tools._xml.read(path)
 	canvas = _canvas(root)
 	_remove_text(canvas, {
 		'When the centromere is not included in the inverted region, one of the crossover products',
@@ -77,7 +79,7 @@ def separate_inversion_prose() -> None:
 	_write(root, path)
 
 	path = assets / 'inversion-double-crossover-problem.drawn.svg'
-	root = DET.parse(path).getroot()
+	root = svg_tools._xml.read(path)
 	canvas = _canvas(root)
 	_remove_text(canvas, {
 		'First crossover: between B/b and C/c',

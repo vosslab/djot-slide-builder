@@ -2,9 +2,10 @@
 
 import math
 import pathlib
-import xml.etree.ElementTree
 
-import defusedxml.ElementTree
+import lxml.etree
+
+import svg_tools._xml
 
 
 #============================================
@@ -18,10 +19,10 @@ def project(x: float, y: float, z: float) -> tuple[float, float]:
 
 #============================================
 def _polygon(points: list[tuple[float, float]], fill: str, stroke: str,
-	stroke_width: float) -> xml.etree.ElementTree.Element:
+	stroke_width: float) -> lxml.etree._Element:
 	"""Keep shared corners identical and escape authored face attributes."""
 	coords = " ".join(f"{x:.2f},{y:.2f}" for x, y in points)
-	element = xml.etree.ElementTree.Element("polygon", {
+	element = lxml.etree.Element("polygon", {
 		"points": coords, "fill": fill, "stroke": stroke,
 		"stroke-width": str(stroke_width), "stroke-linejoin": "round",
 	})
@@ -38,7 +39,7 @@ def cuboid(name: str, x: float, y: float, z: float, width: float, depth: float,
 	if not math.isfinite(stroke_width) or stroke_width < 0:
 		raise ValueError("Stroke width must be finite and nonnegative")
 	top, front, right = colors
-	group = xml.etree.ElementTree.Element("g", {"id": name})
+	group = lxml.etree.Element("g", {"id": name})
 	faces = [
 		([(x, y, z), (x + width, y, z), (x + width, y, z + height),
 			(x, y, z + height)], front),
@@ -49,7 +50,7 @@ def cuboid(name: str, x: float, y: float, z: float, width: float, depth: float,
 	]
 	for points, fill in faces:
 		group.append(_polygon([project(*point) for point in points], fill, stroke, stroke_width))
-	fragment = xml.etree.ElementTree.tostring(
+	fragment = lxml.etree.tostring(
 		group, encoding="ascii", xml_declaration=False).decode("ascii")
 	return fragment
 
@@ -72,15 +73,15 @@ def cylinder(name: str, x: float, y: float, z: float, radius: float, height: flo
 	lower = [project(x + radius * math.cos(t), y + radius * math.sin(t), z) for t in angles]
 	upper = [project(x + top_radius * math.cos(t), y + top_radius * math.sin(t), z + height)
 		for t in angles]
-	group = xml.etree.ElementTree.Element("g", {"id": name})
+	group = lxml.etree.Element("g", {"id": name})
 	group.append(_polygon(upper + lower[::-1], front, stroke, stroke_width))
 	group.append(_polygon(upper[16:] + lower[16:][::-1], right, "none", 0))
 	cx, cy = project(x, y, z + height)
-	xml.etree.ElementTree.SubElement(group, "circle", {
+	lxml.etree.SubElement(group, "circle", {
 		"r": str(top_radius), "transform": f"matrix(1 0 .46 -.36 {cx} {cy})",
 		"fill": top, "stroke": stroke, "stroke-width": str(stroke_width),
 	})
-	fragment = xml.etree.ElementTree.tostring(
+	fragment = lxml.etree.tostring(
 		group, encoding="ascii", xml_declaration=False).decode("ascii")
 	return fragment
 
@@ -89,12 +90,12 @@ def cylinder(name: str, x: float, y: float, z: float, radius: float, height: flo
 def text(x: float, y: float, value: str, *, size: float, color: str,
 	anchor: str = "middle", font: str = "Atkinson Hyperlegible Next") -> str:
 	"""Make an editable label, escaping its value and attributes as XML."""
-	element = xml.etree.ElementTree.Element("text", {
+	element = lxml.etree.Element("text", {
 		"x": str(x), "y": str(y), "font-size": str(size), "fill": color,
 		"text-anchor": anchor, "font-family": font,
 	})
 	element.text = value
-	fragment = xml.etree.ElementTree.tostring(
+	fragment = lxml.etree.tostring(
 		element, encoding="ascii", xml_declaration=False).decode("ascii")
 	return fragment
 
@@ -103,19 +104,19 @@ def text(x: float, y: float, value: str, *, size: float, color: str,
 def line(x1: float, y1: float, x2: float, y2: float, *, color: str,
 	width: float = 3, dash: str = "") -> str:
 	"""Make a round-ended line, optionally with an SVG dash pattern."""
-	element = xml.etree.ElementTree.Element("line", {
+	element = lxml.etree.Element("line", {
 		"x1": str(x1), "y1": str(y1), "x2": str(x2), "y2": str(y2),
 		"stroke": color, "stroke-width": str(width), "stroke-linecap": "round",
 	})
 	if dash:
 		element.set("stroke-dasharray", dash)
-	fragment = xml.etree.ElementTree.tostring(
+	fragment = lxml.etree.tostring(
 		element, encoding="ascii", xml_declaration=False).decode("ascii")
 	return fragment
 
 
 #============================================
-def remove_canvas_background(root: xml.etree.ElementTree.Element) -> None:
+def remove_canvas_background(root: lxml.etree._Element) -> None:
 	"""Remove unstyled white rectangles that only cover an SVG viewport."""
 	def local_name(name: str) -> str:
 		return name.rsplit("}", 1)[-1]
@@ -129,7 +130,7 @@ def remove_canvas_background(root: xml.etree.ElementTree.Element) -> None:
 			return None
 		return parsed if math.isfinite(parsed) else None
 
-	def view_box(element: xml.etree.ElementTree.Element) -> tuple[float, float, float, float] | None:
+	def view_box(element: lxml.etree._Element) -> tuple[float, float, float, float] | None:
 		values = element.get("viewBox", "").replace(",", " ").split()
 		if len(values) != 4:
 			return None
@@ -176,47 +177,50 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	"""Write a complete SVG after validating XML; the parent folder must exist."""
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError("SVG width and height must be finite and positive")
-	parser = defusedxml.ElementTree.DefusedXMLParser(
-		target=xml.etree.ElementTree.TreeBuilder(insert_comments=True))
-	parser.feed("<svg>" + body + "</svg>")
-	root = parser.close()
+	xlink = svg_tools._xml.XLINK
+	root = svg_tools._xml.parse(f'<svg xmlns:xlink="{xlink}">{body}</svg>')
 	root.attrib.update({
-		"xmlns": "http://www.w3.org/2000/svg", "width": str(width), "height": str(height),
+		"width": str(width), "height": str(height),
 		"viewBox": f"0 0 {width} {height}", "role": "img", "aria-labelledby": "title desc",
 	})
 	remove_canvas_background(root)
-	label = xml.etree.ElementTree.Element("title", {"id": "title"})
+	label = lxml.etree.Element("title", {"id": "title"})
 	label.text = title
 	root.insert(0, label)
-	detail = xml.etree.ElementTree.Element("desc", {"id": "desc"})
+	detail = lxml.etree.Element("desc", {"id": "desc"})
 	detail.text = description
 	root.insert(1, detail)
-	# LibreOffice requires unprefixed SVG elements and the literal xlink prefix.
-	svg_ns = "{http://www.w3.org/2000/svg}"
-	xlink_ns = "{http://www.w3.org/1999/xlink}"
-	namespaces = {xlink_ns: "xlink", "{http://www.w3.org/XML/1998/namespace}": "xml"}
-	def local_name(name: str, *, attribute: bool = False) -> str:
-		if not name.startswith("{"):
-			return name
-		namespace, local = name.split("}", 1)
-		namespace += "}"
-		if namespace == svg_ns and not attribute:
-			return local
-		if namespace not in namespaces:
-			namespaces[namespace] = f"local{len(namespaces)}"
-		prefix = namespaces[namespace]
-		if prefix != "xml":
-			root.set("xmlns:" + prefix, namespace[1:-1])
-		return prefix + ":" + local
-	for element in root.iter():
-		if not isinstance(element.tag, str):
-			continue
-		element.tag = local_name(element.tag)
-		for name in list(element.attrib):
-			if name.startswith("{"):
-				element.set(local_name(name, attribute=True), element.attrib.pop(name))
 	# LibreOffice may render SVGs with an ASCII declaration blank.
-	payload = xml.etree.ElementTree.tostring(root, encoding="ascii", xml_declaration=False)
-	# Reject invalid XML characters in metadata before opening an existing destination.
-	defusedxml.ElementTree.fromstring(payload)
+	payload = lxml.etree.tostring(svg_root(root), encoding="ascii", xml_declaration=False)
 	pathlib.Path(path).write_bytes(payload)
+
+
+#============================================
+def svg_root(source: lxml.etree._Element) -> lxml.etree._Element:
+	"""Normalize a complete SVG for LibreOffice with document-local namespaces."""
+	# LibreOffice needs unprefixed SVG elements and the literal xlink prefix.
+	svg = svg_tools._xml.SVG
+	if source.tag not in ("svg", f"{{{svg}}}svg"):
+		raise ValueError("Expected an SVG root")
+	attributes = {name: value for name, value in source.attrib.items() if name != "xmlns"}
+	root = lxml.etree.Element(f"{{{svg}}}svg", attributes,
+		nsmap={None: svg, "xlink": svg_tools._xml.XLINK})
+	root.text = source.text
+	_copy_contents(source, root, svg)
+	lxml.etree.cleanup_namespaces(root)
+	return root
+
+
+#============================================
+def _copy_contents(source: lxml.etree._Element, target: lxml.etree._Element, svg: str) -> None:
+	"""Copy expanded names so source prefixes cannot shadow the writer's prefixes."""
+	for child in source:
+		if isinstance(child, lxml.etree._Comment):
+			copy = lxml.etree.Comment(child.text)
+			target.append(copy)
+		else:
+			tag = child.tag if child.tag.startswith("{") else f"{{{svg}}}{child.tag}"
+			copy = lxml.etree.SubElement(target, tag, dict(child.attrib))
+			copy.text = child.text
+			_copy_contents(child, copy, svg)
+		copy.tail = child.tail

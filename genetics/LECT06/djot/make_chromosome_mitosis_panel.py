@@ -6,10 +6,10 @@ import base64
 import hashlib
 import json
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 import svgpathtools
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
@@ -59,13 +59,13 @@ def chromosome_overlay(ledger: dict) -> str:
 				position = complex(*part.anchors['centromere'])
 				if abs(position - complex(*chromosome['centromere'])) >= .001:
 					raise ValueError('Shared renderer moved a source centromere: ' + name)
-			fragment = DET.fromstring(part.fragment)
+			fragment = svg_tools._xml.parse(part.fragment)
 			marker = fragment.find(f".//*[@id='{name}-centromere-0']")
 			if marker is not None:
 				fragment.remove(marker)
 				if index == 0:
-					markers.append(ET.tostring(marker, encoding='unicode'))
-			fragments.append(ET.tostring(fragment, encoding='unicode'))
+					markers.append(lxml.etree.tostring(marker, encoding='unicode'))
+			fragments.append(lxml.etree.tostring(fragment, encoding='unicode'))
 		state = 'replicated' if len(chromosome['paths']) == 2 else 'single-chromatid'
 		group = f'<g id="{chromosome["id"]}" data-state="{state}">'
 		# The single sister-pair marker stays above both shared-renderer bodies.

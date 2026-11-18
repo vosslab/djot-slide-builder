@@ -4,10 +4,11 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 # local repo modules
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 
@@ -29,8 +30,8 @@ def main() -> None:
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	sources = json.loads((HERE / 'assortment_sources.json').read_text())
 	for name, source in sources.items():
-		root = DET.fromstring(source['svg'])
-		for parent in root.iter():
+		root = svg_tools._xml.read(HERE / source['artwork'])
+		for parent in list(root.iter()):
 			for child in list(parent):
 				if 'data-shared-part' not in child.attrib:
 					continue
@@ -43,17 +44,13 @@ def main() -> None:
 				part = svg_tools.chromosomes.chromosome_part(f'chromosome-{index}', model,
 					length=item['bottom']-item['top'], thickness=width,
 					orientation='vertical', sisters=item['paired'], texture=False, labels=False)
-				group = ET.Element('g', {'transform': f"translate({item['x']-width*(1.1 if item['paired'] else .5)} {item['top']})"})
-				group.append(DET.fromstring(part.fragment))
+				group = lxml.etree.Element('g', {'transform': f"translate({item['x']-width*(1.1 if item['paired'] else .5)} {item['top']})"})
+				group.append(svg_tools._xml.parse(part.fragment))
 				parent.insert(list(parent).index(child), group)
 				parent.remove(child)
-		for node in root.iter():
-			if node.tag.startswith('{http://www.w3.org/2000/svg}'):
-				node.tag = node.tag.split('}', 1)[1]
-		root.set('xmlns', 'http://www.w3.org/2000/svg')
 		output = (OUTPUT / name if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS[name])
 		output.parent.mkdir(parents=True, exist_ok=True)
-		output.write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
+		output.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='utf-8', xml_declaration=True))
 
 
 if __name__ == "__main__":

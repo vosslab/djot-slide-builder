@@ -19,7 +19,7 @@ Current instructor instructions and [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md)
 
 The vendored [../COLOR_PALETTE.md](../COLOR_PALETTE.md) and
 [../COLOR_CONTRAST_ACCESSIBILITY.md](../COLOR_CONTRAST_ACCESSIBILITY.md) stay in their managed
-locations. Reference their values and policy rather than copying them into these guides.
+locations. See [../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md) for local assignments.
 
 Build commands remain in [../USAGE.md](../USAGE.md); conversion workflow remains in
 [../SLIDE_CONVERSION_CHECKLIST.md](../SLIDE_CONVERSION_CHECKLIST.md).

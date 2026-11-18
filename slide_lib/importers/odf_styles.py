@@ -2,7 +2,8 @@
 
 # Standard Library
 import dataclasses
-import xml.etree.ElementTree
+
+import lxml.etree
 
 
 NS = {
@@ -28,7 +29,7 @@ def qname(prefix: str, local_name: str) -> str:
 	return f"{{{NS[prefix]}}}{local_name}"
 
 
-def definitions(roots: tuple[xml.etree.ElementTree.Element, ...]) \
+def definitions(roots: tuple[lxml.etree._Element, ...]) \
 		-> dict[str, StyleDefinition]:
 	"""Collect direct style properties and parent names from admitted XML roots."""
 	result: dict[str, StyleDefinition] = {}
@@ -46,7 +47,7 @@ def definitions(roots: tuple[xml.etree.ElementTree.Element, ...]) \
 	return result
 
 
-def attribute(element: xml.etree.ElementTree.Element,
+def attribute(element: lxml.etree._Element,
 		style_definitions: dict[str, StyleDefinition], name: str) -> str | None:
 	"""Resolve one direct or inherited style attribute with cycle detection."""
 	if name in element.attrib:
@@ -67,7 +68,7 @@ def attribute(element: xml.etree.ElementTree.Element,
 	return None
 
 
-def properties(element: xml.etree.ElementTree.Element,
+def properties(element: lxml.etree._Element,
 		style_definitions: dict[str, StyleDefinition]) -> dict[str, str]:
 	"""Retain resolved source properties, including parent-style inheritance."""
 	names = set(element.attrib)
@@ -87,7 +88,7 @@ def properties(element: xml.etree.ElementTree.Element,
 	return result
 
 
-def emphasis(element: xml.etree.ElementTree.Element,
+def emphasis(element: lxml.etree._Element,
 		style_definitions: dict[str, StyleDefinition], inherited_bold: bool,
 		inherited_underline: bool) -> tuple[bool, bool]:
 	"""Resolve run emphasis, including explicit normal/none style resets."""

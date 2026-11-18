@@ -18,9 +18,8 @@ P(...) means "the probability of ..."
 
 ![Each parent produces two equally likely gametes: A1 or A2 from parent 1, A3 or A4 from parent 2.](assets/exemplar_06_questions_sequences/gamete_branches.drawn.svg)
 
-@notes
+@speaker-notes
 
-Purpose: connect the full question to the parent-to-gamete visual explanation.
 Point to each parent, then its gametes. Assume equal segregation and random fertilization.
 
 P(...) means "the probability of ..."
@@ -53,9 +52,8 @@ B. &#x00BE;: three outcomes.
 
 Overlap was counted twice.
 
-@notes
+@speaker-notes
 
-Purpose: make the incorrect shortcut a claim to investigate.
 Vote before revealing the answer popup. Correct answer: B.
 Then use the square on the following slides to explain why.
 Ask: 'Can an offspring inherit both? Can it inherit neither?'
@@ -79,9 +77,8 @@ _A&#x2081;A&#x2082;_ &times; _A&#x2083;A&#x2084;_: fill the four offspring genot
 
 Which offspring inherit _A&#x2081;_ or _A&#x2083;_? Can you find one that inherits neither?
 
-@notes
+@speaker-notes
 
-Purpose: provide a large shared work surface.
 Ask for each cell aloud or in Zoom chat. Keep parent 1 on rows and parent 2 on columns.
 Each cell is equally likely here. The counterexample is A2A4.
 Transition: mark which completed outcomes answer our question.
@@ -104,9 +101,8 @@ The question counts _A&#x2081;_ or _A&#x2083;_, including offspring that inherit
 
 [P(_A&#x2081;_ or _A&#x2083;_) = &#x00BE;]{color=blue}, because three of four equally likely outcomes qualify.
 
-@notes
+@speaker-notes
 
-Purpose: answer the vote from the visible offspring, before repairing the equation.
 The words both, only, and neither carry the meaning even without color.
 Transition: 'The answer is three-quarters, but adding gave one. Where did the extra quarter come from?'
 
@@ -130,9 +126,8 @@ Count the top row for _A&#x2081;_, then the left column for _A&#x2083;_.
 
 Subtract one copy of the overlap so every qualifying offspring is counted once.
 
-@notes
+@speaker-notes
 
-Purpose: explain the shortcut's error in the same square and positions.
 Trace the row and column; pause on the shared cell. Retain that outcome once.
 Transition: the general addition rule makes this correction explicit for overlapping events.
 
@@ -152,9 +147,8 @@ If B and C are *not mutually exclusive*, subtract their overlap:
 
 Mutually exclusive? The last term is zero.
 
-@notes
+@speaker-notes
 
-Purpose: generalize the correction students just explained.
 B means inherits A1; C means inherits A3. The shared outcome is the A1A3 cell.
 The general rule always works; if overlap is impossible, the last term is zero.
 Transition: 'We counted the overlap as one-quarter. How can we calculate it without drawing every outcome?'
@@ -179,9 +173,8 @@ _A&#x2083;_ from parent 2.
 
 Random fertilization means the allele from one parent does not change the other parent's probabilities.
 
-@notes
+@speaker-notes
 
-Purpose: explain multiplication as a fraction of a fraction in the familiar square.
 Half the offspring are in the top row; half of that row also receives A3.
 Independence comes from random union of gametes, not equal probabilities.
 Close by connecting the overlap correction to the same cross. Independence means knowing

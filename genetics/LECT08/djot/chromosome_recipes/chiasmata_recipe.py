@@ -4,10 +4,11 @@
 import argparse
 import json
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 # local repo modules
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 
@@ -28,9 +29,9 @@ def main() -> None:
 	OUTPUT = args.output_root
 	DESTINATIONS = json.loads((HERE / 'destinations.json').read_text())
 	source = json.loads((HERE / 'chiasmata_sources.json').read_text())
-	root = DET.fromstring(source['svg'])
+	root = svg_tools._xml.read(HERE / source['artwork'])
 	markers = {}
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		for child in list(parent):
 			if 'data-shared-part' not in child.attrib:
 				continue
@@ -39,7 +40,7 @@ def main() -> None:
 			segments = (svg_tools.chromosomes.Segment('', item['color'], item['before']), svg_tools.chromosomes.Segment('', item['color'], item['after']))
 			model = svg_tools.chromosomes.Chromosome(segments, 1 if item['marker'] else None)
 			part = svg_tools.chromosomes.chromosome_path_part(f'chromatid-{index}', model, item['path'], thickness=23, labels=False)
-			fragment = DET.fromstring(part.fragment)
+			fragment = svg_tools._xml.parse(part.fragment)
 			for node in list(fragment):
 				if node.tag == 'ellipse' and node.get('id', '').endswith('-centromere'):
 					if index in (0, 1):
@@ -52,12 +53,9 @@ def main() -> None:
 			node.append(markers[0])
 		if node.get('id') == 'blue-centromere':
 			node.append(markers[1])
-		if node.tag.startswith('{http://www.w3.org/2000/svg}'):
-			node.tag = node.tag.split('}', 1)[1]
-	root.set('xmlns', 'http://www.w3.org/2000/svg')
 	output = (OUTPUT / 'two_chiasmata.drawn.svg' if OUTPUT is not None else HERE.parent / 'assets' / DESTINATIONS['two_chiasmata.drawn.svg'])
 	output.parent.mkdir(parents=True, exist_ok=True)
-	output.write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
+	output.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='utf-8', xml_declaration=True))
 
 
 if __name__ == "__main__":

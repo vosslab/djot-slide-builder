@@ -249,9 +249,9 @@ judgment or a flag for routine content updates.
 
 The editable source content remains here.
 
-@notes
+@speaker-notes
 
-Rebuild the diagram from the original slide before showing it.
+Ask students to explain the relationship shown in the diagram.
 ```
 
 The marker adds a large red **REPLACE ME** watermark above the slide content in ODP and PDF.
@@ -260,7 +260,7 @@ editable underneath. Remove the marker after review and rebuild to clear the wat
 
 The marker applies only to its slide. It can precede or follow `hidden: true`; a hidden marked
 slide retains the warning in ODP and stays out of the PDF. Duplicates, indentation, trailing prose,
-and placement after content are errors. Inside fenced code or `@notes`, it remains literal text.
+and placement after content are errors. Inside fenced code or `@speaker-notes`, it remains literal text.
 The marker does not fill required slots or bypass source validation, image checks, or capacity.
 
 New ODP imports add `@replaceme` to slides with nonempty `review_reasons`. The adjacent
@@ -271,7 +271,7 @@ New ODP imports add `@replaceme` to slides with nonempty `review_reasons`. The a
 Use one optional `@citation` region on any slide layout. It accepts ordinary text paragraphs,
 inline emphasis, and clickable URLs or links. Keep citations short enough to read at footer size. Compact instructional keys/legends may
 also use this footer to leave the main panels available for the current comparison or calculation.
-The region ends at the next slot, `@notes`, or slide boundary. It does not replace a layout slot.
+The region ends at the next slot, `@speaker-notes`, or slide boundary. It does not replace a layout slot.
 
 ```djot
 === layout: two-panels
@@ -302,12 +302,10 @@ in the main slide content, not in `@citation`. Citation paragraphs may use nativ
 
 ## Instructor notes
 
-Use `@notes` as presentation note cards for lecturing: speaking prompts, explanations, and
-reminders. Keep source attributions, selection history, publication metadata, refresh commands,
-conversion details, and verification logs out of Djot files. See
-[../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md) for the content policy.
+Use `@speaker-notes` for speaking prompts, explanations, and reminders for lecturing.
+Record provenance and authoring decisions in [slide development notes](AUTHORING_GUIDE.md#slide-development-notes).
 
-Use one optional `@notes` section on any slide. It continues until the next exact named-slot
+Use one optional `@speaker-notes` section on any slide. It continues until the next exact named-slot
 directive, such as `@body` or `@answer`, the next `=== layout:` line, or the end of the file.
 The next slot must belong to the chosen layout; `@section` is not a slot name.
 
@@ -316,7 +314,7 @@ The next slot must belong to the chosen layout; `@section` is not a slot name.
 
 # DNA replication
 
-@notes
+@speaker-notes
 
 Ask students which strand serves as the template.
 - Pause for discussion before explaining the answer.
@@ -327,14 +325,15 @@ Ask students which strand serves as the template.
 ```
 
 Place notes after the title and any `hidden` metadata, before or between named slots, or at the
-end of the slide. Notes do not replace required slots. Use an exact, unindented `@notes` line;
+end of the slide. Notes do not replace required slots. Use an exact, unindented `@speaker-notes` line;
 duplicates are errors. An empty notes section is allowed as an authoring placeholder.
+Update older decks by replacing each `@notes` directive with `@speaker-notes`.
 
 Notes are plain text: line breaks and internal blank lines remain, and leading/trailing blank
 lines are omitted. Complete character references such as `&alpha;` decode once. Bullet markers,
 inline markup, links, images, and action-like lines remain literal text. Code fences are also
 literal in notes; they do not protect a following slot or slide directive from ending the section.
-A `@notes` line inside a visible fenced code block remains part of that code example.
+A `@speaker-notes` line inside a visible fenced code block remains part of that code example.
 
 Notes become editable speaker notes in the ODP, including on hidden slides. They do not occupy
 slide space or affect capacity checks. The normal PDF export excludes notes and notes pages.

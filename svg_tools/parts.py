@@ -1,16 +1,16 @@
 """Local-coordinate SVG fragments with painted bounds and named anchors."""
 
-import math
-import dataclasses
-import functools
-import pathlib
 import re
+import math
+import pathlib
+import functools
+import dataclasses
 
+import lxml.etree
 import PIL.ImageFont
 import fontTools.ttLib
-import defusedxml.ElementTree
-import xml.sax.saxutils
-import xml.etree.ElementTree
+
+import svg_tools._xml
 
 
 @dataclasses.dataclass(frozen=True)
@@ -42,6 +42,14 @@ def _font_characters(path: pathlib.Path) -> frozenset[int]:
 
 
 #============================================
+def union_bounds(*bounds: tuple[float, float, float, float]) -> tuple[float, float, float, float]:
+	"""Return the smallest rectangle enclosing the supplied bounds."""
+	left, top, right, bottom = zip(*bounds)
+	union = (min(left), min(top), max(right), max(bottom))
+	return union
+
+
+#============================================
 def include_text_bounds(fragment: str, bounds: tuple[float, float, float, float]
 	) -> tuple[float, float, float, float]:
 	"""Expand bounds for centered live text, allowing for missing font glyphs.
@@ -51,7 +59,7 @@ def include_text_bounds(fragment: str, bounds: tuple[float, float, float, float]
 	"""
 	xmin, ymin, xmax, ymax = bounds
 	font_dir = pathlib.Path(__file__).resolve().parent.parent / 'assets/fonts/atkinson_hyperlegible_next'
-	for text in defusedxml.ElementTree.fromstring(fragment).iter('text'):
+	for text in svg_tools._xml.parse(fragment).iter('text'):
 		x, y = float(text.attrib['x']), float(text.attrib['y'])
 		size = float(text.attrib['font-size'])
 		weight = 'Bold' if text.attrib.get('font-weight') == '600' else 'Regular'
@@ -100,11 +108,8 @@ def namespace_ids(fragment: str, prefix: str) -> str:
 	"""Prefix native fragment IDs and their local URL and href references."""
 	if not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', prefix):
 		raise ValueError('Prefix must be an SVG identifier')
-	# ASVS 1.5.1: reject DTDs and entities when parsing fragment XML.
-	parser = defusedxml.ElementTree.DefusedXMLParser(
-		target=xml.etree.ElementTree.TreeBuilder(insert_comments=True), forbid_dtd=True)
-	parser.feed('<wrapper xmlns:xlink="http://www.w3.org/1999/xlink">' + fragment + '</wrapper>')
-	root = parser.close()
+	xlink = svg_tools._xml.XLINK
+	root = svg_tools._xml.parse(f'<wrapper xmlns:xlink="{xlink}">{fragment}</wrapper>')
 	ids = [element.attrib['id'] for element in root.iter() if 'id' in element.attrib]
 	if len(ids) != len(set(ids)):
 		raise ValueError('Fragment contains duplicate IDs')
@@ -113,16 +118,20 @@ def namespace_ids(fragment: str, prefix: str) -> str:
 		for attr, value in element.attrib.items():
 			if attr == 'id':
 				element.set(attr, names[value])
-			elif attr in ('href', '{http://www.w3.org/1999/xlink}href') and value.startswith('#'):
+			elif attr in ('href', f'{{{xlink}}}href') and value.startswith('#'):
 				element.set(attr, '#' + names.get(value[1:], value[1:]))
 			elif attr in ('aria-labelledby', 'aria-describedby'):
 				element.set(attr, re.sub(r'\S+', lambda m: names.get(m.group(), m.group()), value))
 			elif not attr.startswith('data-'):
 				element.set(attr, re.sub(r'(url\(\s*["\']?#)([^"\'\s)]+)(["\']?\s*\))',
 					lambda m: m.group(1) + names.get(m.group(2), m.group(2)) + m.group(3), value))
-	return xml.sax.saxutils.escape(root.text or '') + ''.join(
-		xml.etree.ElementTree.tostring(child, encoding='unicode') for child in root)
-
+	# Keep namespace declarations on the fragments that use them.
+	wrapper = lxml.etree.Element('wrapper')
+	wrapper.text = root.text or ''
+	wrapper.extend(list(root))
+	markup = lxml.etree.tostring(wrapper, encoding='unicode')
+	fragment = markup.removeprefix('<wrapper>').removesuffix('</wrapper>')
+	return fragment
 
 
 #============================================
@@ -155,8 +164,7 @@ def group(parts: dict[str, SvgPart]) -> SvgPart:
 	if not parts or any(not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_-]*', name) for name in parts):
 		raise ValueError('Group names must be XML-safe identifiers without dots')
 	values = list(parts.values())
-	bounds = (min(p.bounds[0] for p in values), min(p.bounds[1] for p in values),
-		max(p.bounds[2] for p in values), max(p.bounds[3] for p in values))
+	bounds = union_bounds(*(part.bounds for part in values))
 	anchors = {f'{name}.{key}': point for name, part in parts.items()
 		for key, point in part.anchors.items()}
 	fragments = [namespace_ids(part.fragment, f'part{index}')

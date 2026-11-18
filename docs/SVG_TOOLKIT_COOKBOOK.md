@@ -51,7 +51,7 @@ svg_tools.drawing.write_svg(output, 450, 230, 'Signaling example',
 ```
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B _temp/signaling_recipe.py
+source source_me.sh && python3 _temp/signaling_recipe.py
 ```
 
 The connectors use named anchors; labels use each part's center anchor and painted bottom bound
@@ -99,7 +99,7 @@ svg_tools.drawing.write_svg(output, 370, 170, 'Gene and protein',
 ```
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B _temp/svg_toolkit/styled_flow/example.py
+source source_me.sh && python3 _temp/svg_toolkit/styled_flow/example.py
 ```
 
 ## Reconstruct an existing figure
@@ -128,7 +128,7 @@ The complete [allele frequency script](../svg_tools/examples/allele_frequencies.
 optional output path and exposes `generate(pathlib.Path) -> pathlib.Path` for other Python code:
 
 ```bash
-MPLCONFIGDIR="$PWD/_temp/mplconfig" PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B -m svg_tools.examples.allele_frequencies _temp/allele_frequencies.svg
+source source_me.sh && MPLCONFIGDIR="$PWD/_temp/mplconfig" python3 -m svg_tools.examples.allele_frequencies _temp/allele_frequencies.svg
 ```
 
 It passes these illustrative values directly to Matplotlib, without fitting, normalization, or a
@@ -193,7 +193,7 @@ These supplied values illustrate how two allele frequencies can change over gene
 Build from the repository root using the configured Python:
 
 ```bash
-PYTHONPATH="$PWD" /opt/homebrew/bin/python3.12 -B deck_tools.py build _temp/allele_slide.djot --format odp
+source source_me.sh && python3 deck_tools.py build _temp/allele_slide.djot --format odp
 ```
 
 The command writes `output/odp/allele_slide.odp`. Run commands that invoke LibreOffice,

@@ -26,7 +26,7 @@ Keep useful technical terms, humor, and deliberate emphasis. Match the amount of
   use familiar words and short, direct sentences around them.
 - Write concise statements, phrases, and labels when developing new teaching material.
 - Keep complete questions, problem assumptions, and needed study-reference explanations readable.
-- Put newly written spoken elaboration and transitions in `@notes`.
+- Put newly written spoken elaboration and transitions in `@speaker-notes`.
 - Give students enough visible information to solve the problem and study afterward.
 - Distinguish actual instructor wording from proposed examples and generated prose.
 

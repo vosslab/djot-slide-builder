@@ -2,30 +2,30 @@
 
 from pathlib import Path
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.drawing
 
 
 SVG = '{http://www.w3.org/2000/svg}'
-ET.register_namespace('', 'http://www.w3.org/2000/svg')
 
 
-def _write(root: ET.Element, path: Path) -> None:
-	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+
+def _write(root: lxml.etree._Element, path: Path) -> None:
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(path, encoding='ascii', xml_declaration=True)
 
 
-def _remove_labels(root: ET.Element, labels: set[str]) -> None:
+def _remove_labels(root: lxml.etree._Element, labels: set[str]) -> None:
 	"""Remove the known explanatory labels, retaining the numbered callouts."""
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		for node in list(parent):
 			if node.tag == f'{SVG}text' and node.get('id') in labels:
 				parent.remove(node)
 
 
 def _crop_c13(path: Path) -> None:
-	root = DET.parse(path).getroot()
+	root = svg_tools._xml.read(path)
 	_remove_labels(root, {
 		'label-14', 'label-15', 'label-16',
 		'label-17', 'label-18',
@@ -39,7 +39,7 @@ def _crop_c13(path: Path) -> None:
 
 
 def _crop_c25(path: Path) -> None:
-	root = DET.parse(path).getroot()
+	root = svg_tools._xml.read(path)
 	svg_tools.drawing.remove_canvas_background(root)
 	nodes = list(root)
 	for index in (8, 9, 10, 11, 12, 22, 23):

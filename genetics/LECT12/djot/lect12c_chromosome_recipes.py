@@ -9,9 +9,9 @@ expression bars, and the source-backed gene distribution map retain their own fo
 import re
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.drawing
 
@@ -20,7 +20,7 @@ REPO_ROOT = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
 ROOT = REPO_ROOT / 'genetics/LECT12/djot/assets'
 NS = 'http://www.w3.org/2000/svg'
-ET.register_namespace('', NS)
+
 
 # C44-C46 keep a measured 12-unit clear edge around the visible teaching content.
 CANVAS_CROPS = {
@@ -31,7 +31,7 @@ CANVAS_CROPS = {
 
 #============================================
 def rod(name: str, x: float, y: float, width: float, length: float,
-	color: str, tip: str | None = None, centromere: float | None = None) -> ET.Element:
+	color: str, tip: str | None = None, centromere: float | None = None) -> lxml.etree._Element:
 	"""Place a shared chromatid with only source-depicted centromere anatomy."""
 	if color == '#888':
 		color = '#888888'
@@ -51,14 +51,14 @@ def rod(name: str, x: float, y: float, width: float, length: float,
 			centromeres=(svg_tools.chromosomes.Centromere(boundary),))
 	part = svg_tools.chromosomes.chromosome_part(f'{name}-body', model, length=length,
 		thickness=width, orientation='vertical', texture=False, labels=False)
-	group = ET.Element(f'{{{NS}}}g', {'data-lect12c-chromosome': 'true',
+	group = lxml.etree.Element(f'{{{NS}}}g', {'data-lect12c-chromosome': 'true',
 		'transform': f'translate({x} {y})'})
-	group.append(DET.fromstring(part.fragment))
+	group.append(svg_tools._xml.parse(part.fragment))
 	return group
 
 
 #============================================
-def replace_rect(parent: ET.Element, element: ET.Element, name: str,
+def replace_rect(parent: lxml.etree._Element, element: lxml.etree._Element, name: str,
 	centromere: float | None) -> None:
 	"""Replace one chromosome rectangle, preserving its surrounding ordering."""
 	color = element.attrib['fill']
@@ -73,7 +73,7 @@ def replace_rect(parent: ET.Element, element: ET.Element, name: str,
 
 
 #============================================
-def replace_barr_bodies(root: ET.Element, name: str) -> None:
+def replace_barr_bodies(root: lxml.etree._Element, name: str) -> None:
 	"""Render the source's inactive X circles from retained chromosome content."""
 	serial = 0
 	for parent in list(root.iter()):
@@ -86,7 +86,7 @@ def replace_barr_bodies(root: ET.Element, name: str) -> None:
 				svg_tools.chromosomes.Segment('', child.attrib['fill']),))
 			part = svg_tools.chromosomes.condensed_chromosome_part(
 				f'{name}-barr-{serial}', model, radius=12)
-			replacement = DET.fromstring(part.fragment)
+			replacement = svg_tools._xml.parse(part.fragment)
 			replacement.set('transform', f'translate({child.attrib["cx"]} {child.attrib["cy"]})')
 			index = list(parent).index(child)
 			parent.remove(child)
@@ -96,8 +96,7 @@ def replace_barr_bodies(root: ET.Element, name: str) -> None:
 #============================================
 def refresh(path: pathlib.Path) -> None:
 	"""Migrate old primitives or refresh renderer-owned groups idempotently."""
-	tree = DET.parse(path)
-	root = tree.getroot()
+	root = svg_tools._xml.read(path)
 	name = path.stem.replace('.', '-')
 	serial = 0
 	# image_005 necks: 70..241 with center 119 (~28%); image_009: central.
@@ -146,7 +145,7 @@ def refresh(path: pathlib.Path) -> None:
 				parent.insert(index, group)
 	# Summary highlight strokes belong to the replaced old rectangle silhouettes.
 	if path.name == 'dosage_compensation_summary.drawn.svg':
-		for parent in root.iter():
+		for parent in list(root.iter()):
 			if parent.attrib.get('data-chromosome') in ('X', 'Y'):
 				for child in list(parent):
 					if child.tag == f'{{{NS}}}path':
@@ -191,8 +190,9 @@ def refresh(path: pathlib.Path) -> None:
 		root.set('viewBox', crop[0])
 		root.set('width', crop[1])
 		root.set('height', crop[2])
-	ET.indent(tree, space='  ')
-	tree.write(path, encoding='ascii', xml_declaration=True)
+	lxml.etree.indent(root, space='  ')
+	path.write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root),
+		encoding='ascii', xml_declaration=True))
 
 
 #============================================

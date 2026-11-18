@@ -6,8 +6,8 @@ Derived from the archived cd/draw_trials.py.txt; course files are never opened.
 from pathlib import Path
 from html import escape
 # ASVS 1.5.1: reject XML entities while checking replay files.
-import defusedxml.ElementTree as ET
 import re
+import svg_tools._xml
 
 P = Path(__file__).resolve().parents[3] / "_temp/gene_tree_archive_replay"
 
@@ -57,7 +57,7 @@ def tree(
 	out += ["</g></svg>"]
 	path = P / (name + ".drawn.svg")
 	path.write_text("\n".join(out))
-	ET.parse(path)
+	svg_tools._xml.read(path).getroottree()
 	return path
 
 
@@ -147,7 +147,7 @@ def main() -> None:
 		)
 		p.write_text(s, encoding="ascii")
 	for p in P.glob("*.drawn.svg"):
-		ET.parse(p)
+		svg_tools._xml.read(p).getroottree()
 
 
 if __name__ == "__main__":

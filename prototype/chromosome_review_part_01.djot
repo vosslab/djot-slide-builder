@@ -11,10 +11,6 @@
 - Photos and evidence maps are labeled as references.
 - This collection awaits your critique; inclusion does not imply approval.
 
-@notes
-
-Review snapshot: November 16, 2026. Figures are reused unchanged. Source numbers refer to expanded source/ODP slide order, including hidden slides. Full source paths and SHA-256 hashes are in chromosome_samples.csv.
-
 === layout: big-image
 
 @image
@@ -26,22 +22,6 @@ Review snapshot: November 16, 2026. Figures are reused unchanged. Source numbers
 *C01 | Chromosome transfer*
 
 LECT01B, source slide 8 | Simple forms
-
-@notes
-
-Review ID: C01.
-
-Source deck: genetics/LECT01/djot/lect01b-genetic_disorders.djot
-
-Source definition: genetics/LECT01/djot/lect01b-genetic_disorders.djot:65
-
-Original figure: genetics/LECT01/djot/assets/lect01b-genetic_disorders/chromosome_transfer_comparison.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -55,22 +35,6 @@ Reason:
 
 LECT02B, source slide 12 | Simple forms
 
-@notes
-
-Review ID: C02.
-
-Source deck: genetics/LECT02/djot/lect02b-genes_dogma.djot
-
-Source definition: genetics/LECT02/djot/lect02b-genes_dogma.djot:113
-
-Original figure: genetics/LECT02/djot/assets/lect02b-genes_dogma/meiosis_assortment_i.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -82,22 +46,6 @@ Reason:
 *C03 | Chromosome fusion*
 
 LECT02C, source slide 14 | Simple forms
-
-@notes
-
-Review ID: C03.
-
-Source deck: genetics/LECT02/djot/lect02c-genome_sizes.djot
-
-Source definition: genetics/LECT02/djot/lect02c-genome_sizes.djot:151
-
-Original figure: genetics/LECT02/djot/assets/lect02c-genome_sizes/chromosome_2_fusion.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -111,22 +59,6 @@ Reason:
 
 LECT02C, source slide 16 | Banding reference
 
-@notes
-
-Review ID: C04.
-
-Source deck: genetics/LECT02/djot/lect02c-genome_sizes.djot
-
-Source definition: genetics/LECT02/djot/lect02c-genome_sizes.djot:174
-
-Original figure: genetics/LECT02/djot/assets/lect02c-genome_sizes/image_006.jpg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -138,22 +70,6 @@ Reason:
 *C05 | A labeled chromosome region*
 
 LECT03B, source slide 22 | Simple forms
-
-@notes
-
-Review ID: C05.
-
-Source deck: genetics/LECT03/djot/lect03b-blood_hla_typing.djot
-
-Source definition: genetics/LECT03/djot/lect03b-blood_hla_typing.djot:287
-
-Original figure: genetics/LECT03/djot/assets/lect03b-blood_hla_typing/hla_region.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -167,22 +83,6 @@ Reason:
 
 LECT04E, source slide 9 | Simple forms
 
-@notes
-
-Review ID: C06.
-
-Source deck: genetics/LECT04/djot/lect04e-segregation.djot
-
-Source definition: genetics/LECT04/djot/lect04e-segregation.djot:91
-
-Original figure: genetics/LECT04/djot/assets/lect04e-segregation/fertilization_scene.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -194,22 +94,6 @@ Reason:
 *C07 | Before replication*
 
 LECT06B, source slide 13 | Replication and division
-
-@notes
-
-Review ID: C07.
-
-Source deck: genetics/LECT06/djot/lect06b-intro_cells.djot
-
-Source definition: genetics/LECT06/djot/lect06b-intro_cells.djot:137
-
-Original figure: genetics/LECT06/djot/assets/lect06b-intro_cells/chromosome_before_replication.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -223,22 +107,6 @@ Reason:
 
 LECT06B, source slide 14 | Replication and division
 
-@notes
-
-Review ID: C08.
-
-Source deck: genetics/LECT06/djot/lect06b-intro_cells.djot
-
-Source definition: genetics/LECT06/djot/lect06b-intro_cells.djot:147
-
-Original figure: genetics/LECT06/djot/assets/lect06b-intro_cells/chromosome_replication.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -250,22 +118,6 @@ Reason:
 *C09 | Mitosis: a complete panel*
 
 LECT06B, source slide 17 | Replication and division
-
-@notes
-
-Review ID: C09.
-
-Source deck: genetics/LECT06/djot/lect06b-intro_cells.djot
-
-Source definition: genetics/LECT06/djot/lect06b-intro_cells.djot:185
-
-Original figure: genetics/LECT06/djot/assets/lect06b-intro_cells/image_011.normal.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -279,22 +131,6 @@ Reason:
 
 LECT06B, source slide 22 | Replication and division
 
-@notes
-
-Review ID: C10.
-
-Source deck: genetics/LECT06/djot/lect06b-intro_cells.djot
-
-Source definition: genetics/LECT06/djot/lect06b-intro_cells.djot:249
-
-Original figure: genetics/LECT06/djot/assets/lect06b-intro_cells/mitosis_anaphase_telophase.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -307,22 +143,6 @@ Reason:
 
 LECT06C, source slide 10 | Replication and division
 
-@notes
-
-Review ID: C11.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:107
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/prophase_leptotene_zygotene.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -334,22 +154,6 @@ Reason:
 *C12 | Late prophase and chiasmata*
 
 LECT06C, source slide 14 | Replication and division
-
-@notes
-
-Review ID: C12.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:164
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/prophase_diplotene_diakinesis.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: two-panels
 
@@ -371,22 +175,6 @@ Nonsister chromatids held together during synapsis:
 
 *C13 | Recombinant chromosomes* - LECT06C, source slide 20 | Replication and division
 
-@notes
-
-Review ID: C13.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:258
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/recombinant_chromosomes.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -398,22 +186,6 @@ Reason:
 *C14 | Meiosis: a complete panel*
 
 LECT06C, source slide 28 | Replication and division
-
-@notes
-
-Review ID: C14.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:338
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/image_020.normal.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -427,22 +199,6 @@ Reason:
 
 LECT06C, source slide 33 | Replication and division
 
-@notes
-
-Review ID: C15.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:390
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/assortment_full.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -454,22 +210,6 @@ Reason:
 *C16 | Three ancestral genomes*
 
 LECT06C, source slide 37 | Replication and division
-
-@notes
-
-Review ID: C16.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:460
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/wheat_genomes.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -483,22 +223,6 @@ Reason:
 
 LECT06C, source slide 47 | Replication and division
 
-@notes
-
-Review ID: C17.
-
-Source deck: genetics/LECT06/djot/lect06c-meiosis.djot
-
-Source definition: genetics/LECT06/djot/lect06c-meiosis.djot:560
-
-Original figure: genetics/LECT06/djot/assets/lect06c-meiosis/mitosis_meiosis_comparison.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -511,21 +235,15 @@ Reason:
 
 LECT06D, source slide 7 | Replication and division
 
-@notes
+@speaker-notes
 
-Review ID: C18.
+The collars mark centromeres, and the number or letter identifies the chromosome.
+Teal on the arms marks heterochromatin. The mitotic Y is almost entirely heterochromatic.
+It still carries genes needed for male fertility. The amount of X heterochromatin varies
+among fly stocks.
 
-Source deck: genetics/LECT06/djot/lect06d-x_linked_genes_1.djot
-
-Source definition: genetics/LECT06/djot/lect06d-x_linked_genes_1.djot:79
-
-Original figure: genetics/LECT06/djot/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
+In male meiosis I, ribosomal DNA (rDNA) in the X heterochromatin pairs with rDNA on
+the short arm of the Y. The two centromeres orient toward opposite spindle poles.
 
 === layout: big-image
 
@@ -539,22 +257,6 @@ Reason:
 
 LECT06E, source slide 4 | Sex-linked inheritance
 
-@notes
-
-Review ID: C19.
-
-Source deck: genetics/LECT06/djot/lect06e-x_linked_genes_2.djot
-
-Source definition: genetics/LECT06/djot/lect06e-x_linked_genes_2.djot:39
-
-Original figure: genetics/LECT06/djot/assets/lect06e-x_linked_genes_2/reciprocal_eye_crosses.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -566,22 +268,6 @@ Reason:
 *C20 | Cis and trans*
 
 LECT08B, source slide 14 | Linkage and tetrads
-
-@notes
-
-Review ID: C20.
-
-Source deck: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot
-
-Source definition: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot:142
-
-Original figure: genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: two-panels
 
@@ -603,22 +289,6 @@ Nonsister chromatids held together during synapsis:
 
 *C21 | Same source figure as C13* - LECT08B, source slide 34 | Mixed schematic and evidence
 
-@notes
-
-Review ID: C21.
-
-Source deck: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot
-
-Source definition: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot:380
-
-Original figure: genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/b31_labeled.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -630,22 +300,6 @@ Reason:
 *C22 | A single crossover*
 
 LECT08B, source slide 36 | Linkage and tetrads
-
-@notes
-
-Review ID: C22.
-
-Source deck: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot
-
-Source definition: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot:400
-
-Original figure: genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/single_crossover.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -659,22 +313,6 @@ Reason:
 
 LECT08B, source slide 40 | Linkage and tetrads
 
-@notes
-
-Review ID: C23.
-
-Source deck: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot
-
-Source definition: genetics/LECT08/djot/lect08b-chap8-linked_genes.djot:434
-
-Original figure: genetics/LECT08/djot/assets/lect08b-chap8-linked_genes/double_crossover_meiosis.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -686,22 +324,6 @@ Reason:
 *C24 | Two exchanges*
 
 LECT08F, source slide 43 | Linkage and tetrads
-
-@notes
-
-Review ID: C24.
-
-Source deck: genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot
-
-Source definition: genetics/LECT08/djot/lect08f-three_point_testcross_bpw.djot:1033
-
-Original figure: genetics/LECT08/djot/assets/lect08f-three_point_testcross_bpw/two_exchanges.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: one-panel
 
@@ -715,22 +337,6 @@ Reason:
 
 *C25 | Mitotic recombination* - LECT09C, source slide 6 | Linkage and tetrads
 
-@notes
-
-Review ID: C25.
-
-Source deck: genetics/LECT09/djot/lect09c-mitotic_crossover.djot
-
-Source definition: genetics/LECT09/djot/lect09c-mitotic_crossover.djot:59
-
-Original figure: genetics/LECT09/djot/assets/lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -742,22 +348,6 @@ Reason:
 *C26 | Loss of heterozygosity*
 
 LECT09C, source slide 12 | Linkage and tetrads
-
-@notes
-
-Review ID: C26.
-
-Source deck: genetics/LECT09/djot/lect09c-mitotic_crossover.djot
-
-Source definition: genetics/LECT09/djot/lect09c-mitotic_crossover.djot:172
-
-Original figure: genetics/LECT09/djot/assets/lect09c-mitotic_crossover/loh_outcome.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -771,22 +361,6 @@ Reason:
 
 LECT09D, source slide 13 | Linkage and tetrads
 
-@notes
-
-Review ID: C27.
-
-Source deck: genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot
-
-Source definition: genetics/LECT09/djot/lect09d-yeast_unordered_tetrads.djot:128
-
-Original figure: genetics/LECT09/djot/assets/lect09d-yeast_unordered_tetrads/yeast_meiosis.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -798,22 +372,6 @@ Reason:
 *C28 | Four-strand double crossover*
 
 LECT09E, source slide 16 | Linkage and tetrads
-
-@notes
-
-Review ID: C28.
-
-Source deck: genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot
-
-Source definition: genetics/LECT09/djot/lect09e-tetrad_classes_map_distance.djot:168
-
-Original figure: genetics/LECT09/djot/assets/lect09e-tetrad_visuals/four_strand_dco_to_npd.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -827,22 +385,6 @@ Reason:
 
 LECT09H, source slide 7 | Linkage and tetrads
 
-@notes
-
-Review ID: C29.
-
-Source deck: genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot
-
-Source definition: genetics/LECT09/djot/lect09h-ordered_tetrads_centromeres.djot:62
-
-Original figure: genetics/LECT09/djot/assets/lect09_tetrad_concepts/centromere.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -855,22 +397,6 @@ Reason:
 
 LECT10B, source slide 8 | Mixed schematic and evidence
 
-@notes
-
-Review ID: C30.
-
-Source deck: genetics/LECT10/djot/lect10b-karyotypes.djot
-
-Source definition: genetics/LECT10/djot/lect10b-karyotypes.djot:73
-
-Original figure: genetics/LECT10/djot/assets/lect10_repaired_figures/karyotype_preparation.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -882,24 +408,7 @@ Reason:
 *C31 | Chromosome staining*
 
 LECT10B, source slide 14 | Banding reference
-
 Schematic colors and band widths; purple marks the darker-staining regions.
-
-@notes
-
-Review ID: C31.
-
-Source deck: genetics/LECT10/djot/lect10b-karyotypes.djot
-
-Source definition: genetics/LECT10/djot/lect10b-karyotypes.djot:147
-
-Original figure: genetics/LECT10/djot/assets/lect10b-karyotypes/chromosome_staining_comparison.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 
 === layout: big-image
 
@@ -913,22 +422,6 @@ Reason:
 
 LECT10B, source slide 33 | Centromeres and movement
 
-@notes
-
-Review ID: C32.
-
-Source deck: genetics/LECT10/djot/lect10b-karyotypes.djot
-
-Source definition: genetics/LECT10/djot/lect10b-karyotypes.djot:368
-
-Original figure: genetics/LECT10/djot/assets/lect10b-karyotypes/centromere_positions.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -941,22 +434,6 @@ Reason:
 
 LECT10B, source slide 34 | Centromeres and movement
 
-@notes
-
-Review ID: C33.
-
-Source deck: genetics/LECT10/djot/lect10b-karyotypes.djot
-
-Source definition: genetics/LECT10/djot/lect10b-karyotypes.djot:376
-
-Original figure: genetics/LECT10/djot/assets/lect10b-karyotypes/metacentric_movement.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
-
 === layout: big-image
 
 @image
@@ -968,20 +445,4 @@ Reason:
 *C34 | Acrocentric movement*
 
 LECT10B, source slide 36 | Centromeres and movement
-
-@notes
-
-Review ID: C34.
-
-Source deck: genetics/LECT10/djot/lect10b-karyotypes.djot
-
-Source definition: genetics/LECT10/djot/lect10b-karyotypes.djot:392
-
-Original figure: genetics/LECT10/djot/assets/lect10b-karyotypes/acrocentric_movement.drawn.svg
-
-Keep:
-
-Change:
-
-Reason:
 

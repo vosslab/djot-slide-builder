@@ -131,7 +131,7 @@ def split_slides(path: pathlib.Path, source: str) -> tuple[str, tuple[_SlideSour
 				fail(path, number, "Djot decks must begin with an exact layout directive")
 			continue
 		content.append(_SourceLine(number, value))
-		if value == "@notes":
+		if value == "@speaker-notes":
 			in_notes = True
 	if layout_name is None:
 		fail(path, 1, "Djot decks require at least one layout directive")
@@ -376,16 +376,16 @@ def assemble_slide(path: pathlib.Path, source: _SlideSource) -> slide_lib.native
 				fail(path, source_line.line, "duplicate @replaceme marker")
 			replaceme = True
 			continue
-		if source_line.value == "@notes":
+		if source_line.value == "@speaker-notes":
 			# ASVS 2.2.1: one optional note region, independent of layout slots.
 			if note_lines is not None:
-				fail(path, source_line.line, "duplicate @notes section")
+				fail(path, source_line.line, "duplicate @speaker-notes section")
 			note_lines = []
 			active_slot = "notes"
 			content_started = True
 			continue
-		if re.fullmatch(r"\s*@notes(?:\s+.*)?", source_line.value):
-			fail(path, source_line.line, "notes directive must be exactly @notes on its own line")
+		if re.fullmatch(r"\s*@(?:speaker-notes|notes)(?:\s+.*)?", source_line.value):
+			fail(path, source_line.line, "use @speaker-notes on its own unindented line")
 		if source_line.value.strip().startswith("hidden:"):
 			# ASVS 2.2.1: accept only an explicit boolean at the slide metadata boundary.
 			match = slide_lib.djot_grammar.HIDDEN_DIRECTIVE_PATTERN.fullmatch(source_line.value)

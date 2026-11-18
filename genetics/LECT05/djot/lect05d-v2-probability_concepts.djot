@@ -12,7 +12,7 @@ color-theme: genetics
 
 ## Sept 29, 2026
 
-@notes
+@speaker-notes
 
 The story has three acts: find the mistake in adding, use multiplication to complete a
 cross, then combine the tools to solve the opening pollen problem. Conditional probability
@@ -31,9 +31,8 @@ Skip the gray-bordered study references during class unless needed.
 - Combine both rules to predict an F&#x2082; genotype ratio
 - Explain how known information changes a probability
 
-@notes
+@speaker-notes
 
-Purpose: state the tasks in the same order as the lecture.
 Transition: introduce the few words and symbols needed to follow those tasks.
 
 === layout: two-panels
@@ -66,9 +65,8 @@ In general rules, *B and C* name two events. They are not allele names.
 
 *Independent*: knowing one happened does not change the other's probability.
 
-@notes
+@speaker-notes
 
-Purpose: provide a reference for notation before the examples.
 Read P as 'the probability of'; distinguish italic alleles from B and C, which name events.
 Do not require mastery yet. Point back here as the conditions become meaningful.
 Transition: try a familiar F1-to-F2 cross with one new complication.
@@ -77,7 +75,7 @@ Transition: try a familiar F1-to-F2 cross with one new complication.
 
 # Probability in crosses
 
-@notes
+@speaker-notes
 
 Begin with a cross that the familiar 1:2:1 ratio cannot solve. Let students read the full
 question on the next slide before introducing the probability rules.
@@ -101,7 +99,7 @@ survive equally well.
 Complete the Punnett square for the F&#x2082; generation. What is the expected ratio of
 _AA_ : _Aa_ : _aa_ plants in the F&#x2082; generation?
 
-@notes
+@speaker-notes
 
 Connect explicitly to last week: F1 heterozygotes produce the F2 plants whose genotype ratio we are predicting.
 The mutation changes pollen success after equal allele segregation. Give students time to read
@@ -125,9 +123,8 @@ To predict the F&#x2082; ratio, we need to:
 
 We will first practice with equal gamete probabilities, then return to this cross.
 
-@notes
+@speaker-notes
 
-Purpose: give the opening problem a plan, rather than leaving it behind without explanation.
 Say: 'We need individual combinations and alternative ways to reach an outcome. Let's learn
 the rules in a simpler cross, where the gametes still have equal chances.'
 Transition: addition combines alternatives, after checking whether they overlap.
@@ -138,9 +135,8 @@ Transition: addition combines alternatives, after checking whether they overlap.
 
 ## When either event qualifies
 
-@notes
+@speaker-notes
 
-Purpose: mark the first tool: the probability that either event occurs.
 Begin where simple addition works, then change from one gamete to one offspring.
 Transition: show a parent producing its two possible gametes.
 
@@ -162,9 +158,8 @@ It cannot inherit both alleles at this locus.
 
 Here, adding counts each possible gamete once.
 
-@notes
+@speaker-notes
 
-Purpose: ground mutually exclusive in an ordinary haploid gamete before stating the rule.
 Trace the branches. Assume ordinary segregation at a single locus.
 Transition: write the rule that explains why addition worked here.
 
@@ -186,9 +181,8 @@ If two events, B and C, are [mutually exclusive]{color=red}, then:
 
 Overlap: P(B and C) = 0
 
-@notes
+@speaker-notes
 
-Purpose: attach the formula to the gamete example just seen.
 B and C name events, not alleles. Read the condition before the equation.
 Transition: 'Keep the one-half probabilities, but ask about an offspring instead of a gamete.
 Will the same shortcut still work?'
@@ -209,9 +203,8 @@ Assume equal segregation and random fertilization.
 
 ![Each parent produces two equally likely gametes: A1 or A2 from parent 1, A3 or A4 from parent 2.](assets/lect05d-v2-probability_concepts/gamete_branches.drawn.svg)
 
-@notes
+@speaker-notes
 
-Purpose: restore the original full question and parent-to-gamete visual explanation.
 Point to each parent, then its gametes. Assume equal segregation and random fertilization.
 These are four versions of one gene. An offspring receives one allele from each parent.
 Transition: both events have probability one-half. Test what happens if we simply add them.
@@ -235,9 +228,8 @@ Tempting answer: &#x00BD; + &#x00BD; = [1]{color=red}
 
 Before using the specific addition rule, do its events meet the condition?
 
-@notes
+@speaker-notes
 
-Purpose: make the incorrect shortcut a claim to investigate.
 Vote before showing the square. Correct answer: B; do not reveal it yet.
 Ask: 'Can an offspring inherit both? Can it inherit neither?'
 Transition: build the four possible offspring to test the claim visually.
@@ -260,9 +252,8 @@ _A&#x2081;A&#x2082;_ &times; _A&#x2083;A&#x2084;_: fill the four offspring genot
 
 Which offspring inherit _A&#x2081;_ or _A&#x2083;_? Can you find one that inherits neither?
 
-@notes
+@speaker-notes
 
-Purpose: provide a large shared work surface, as in the original deck.
 Ask for each cell aloud or in Zoom chat. Keep parent 1 on rows and parent 2 on columns.
 Each cell is equally likely here. The counterexample is A2A4.
 Transition: mark which completed outcomes answer our question.
@@ -285,9 +276,8 @@ The question counts _A&#x2081;_ or _A&#x2083;_, including offspring that inherit
 
 [P(_A&#x2081;_ or _A&#x2083;_) = &#x00BE;]{color=blue}, because three of four equally likely outcomes qualify.
 
-@notes
+@speaker-notes
 
-Purpose: answer the vote from the visible offspring, before repairing the equation.
 The words both, only, and neither carry the meaning even without color.
 Transition: 'The answer is three-quarters, but adding gave one. Where did the extra quarter come from?'
 
@@ -311,9 +301,8 @@ Count the top row for _A&#x2081;_, then the left column for _A&#x2083;_.
 
 Subtract one copy of the overlap so every qualifying offspring is counted once.
 
-@notes
+@speaker-notes
 
-Purpose: explain the shortcut's error in the same square and positions.
 Trace the row and column; pause on the shared cell. Retain that outcome once.
 Transition: the general addition rule makes this correction explicit for overlapping events.
 
@@ -333,9 +322,8 @@ If B and C are *not mutually exclusive*, subtract their overlap:
 
 Mutually exclusive? The last term is zero.
 
-@notes
+@speaker-notes
 
-Purpose: generalize the correction students just explained.
 B means inherits A1; C means inherits A3. The shared Venn region is the A1A3 cell.
 The general rule always works; if overlap is impossible, the last term is zero.
 Transition: 'We counted the overlap as one-quarter. How can we calculate it without drawing every outcome?'
@@ -347,9 +335,8 @@ This motivates multiplication, using the same cross.
 
 ## When both events must occur
 
-@notes
+@speaker-notes
 
-Purpose: introduce multiplication as the calculation for the shared cell, not a new story.
 We have counted the answer; now explain why one-half times one-half produces it.
 Transition: return immediately to the same parents and square.
 
@@ -374,9 +361,8 @@ _A&#x2083;_ from parent 2.
 
 Random fertilization means the allele from one parent does not change the other parent's probabilities.
 
-@notes
+@speaker-notes
 
-Purpose: explain multiplication as a fraction of a fraction in the familiar square.
 Half the offspring are in the top row; half of that row also receives A3.
 Independence comes from random union of gametes, not equal probabilities.
 Transition: name the condition that makes the shortcut valid.
@@ -399,9 +385,8 @@ If two events, B and C, are [independent]{color=red}, then:
 
 Knowing that one event occurred does not change the probability of the other.
 
-@notes
+@speaker-notes
 
-Purpose: attach the independent-events formula to the preceding calculation.
 Read the condition before the formula, as for addition.
 Transition: 'We used two different conditions. What does each ask about our cross?'
 
@@ -435,9 +420,8 @@ Knowing _A&#x2081;_ does not change P(_A&#x2083;_).
 
 P(_A&#x2083;_) = &#x00BD;
 
-@notes
+@speaker-notes
 
-Purpose: distinguish the two conditions using examples already taught.
 For a gamete: knowing A1 rules out A2. For an offspring: knowing A1 leaves P(A3) unchanged.
 Ask 'Can both happen?' for addition and 'Does knowing one change the other?' for multiplication.
 Transition: 'We now have the tools for the pollen problem. The rules stay the same; the gamete probabilities change.'
@@ -448,9 +432,8 @@ Transition: 'We now have the tools for the pollen problem. The rules stay the sa
 
 ## Return to the pollen cross
 
-@notes
+@speaker-notes
 
-Purpose: return to the opening question and fulfill the promise made there.
 Recall the Aa F1 parents and the reduced success of A pollen.
 Transition: before multiplying cells, determine the pollen probabilities at fertilization.
 
@@ -476,9 +459,8 @@ What fraction of the successful pollen carries _A_?
 
 A. &#x00BD; &emsp; B. &#x00BC; &emsp; C. &#x2153; &emsp; D. &#x2154;
 
-@notes
+@speaker-notes
 
-Purpose: separate the biological change from the probability rules.
 The counts illustrate relative success; they are not measured survival data.
 Vote: C. Let students identify 150 successful pollen before calculating.
 Transition: turn counts into the row and column probabilities for the square.
@@ -511,9 +493,8 @@ Ovules are unaffected: each allele still has probability &#x00BD;.
 | _A_ | &#x00BD; | &#x2153; |
 | _a_ | &#x00BD; | &#x2154; |
 
-@notes
+@speaker-notes
 
-Purpose: answer the vote and put the complete inputs together.
 The same genotype supplies different frequencies through pollen and ovules.
 Transition: 'Use these probabilities exactly as we used the halves in the previous square.'
 
@@ -535,9 +516,8 @@ Random fertilization: [multiply]{color=orange} the ovule and successful-pollen p
 
 The _AA_ cell is done. What probabilities belong in the other three cells?
 
-@notes
+@speaker-notes
 
-Purpose: apply multiplication, with one worked cell and three student calculations.
 Keep ovules on rows and pollen on columns. Pause for answers.
 Unequal allele frequencies do not prevent independent union.
 Transition: check the results, then find offspring genotypes that appear more than once.
@@ -562,9 +542,8 @@ The four probabilities sum to 1.
 
 Two cells produce _Aa_. How do we combine those two ways of making a heterozygote?
 
-@notes
+@speaker-notes
 
-Purpose: finish multiplication and motivate addition without changing examples.
 The Aa cells differ in which parent supplies A. Can one offspring take both routes?
 Transition: add these mutually exclusive routes using the specific addition rule.
 
@@ -592,9 +571,8 @@ Transition: add these mutually exclusive routes using the specific addition rule
 
 = [&#x00BD;]{color=blue}
 
-@notes
+@speaker-notes
 
-Purpose: connect the rules within one calculation.
 Multiply along each combination; add the mutually exclusive ways of obtaining Aa.
 The routes are exclusive even though their final genotype labels match.
 Transition: collect AA, Aa, and aa to answer the original F2 ratio question.
@@ -620,9 +598,8 @@ _A_ pollen contributes less
 
 Two routes produce _Aa_
 
-@notes
+@speaker-notes
 
-Purpose: resolve the opening challenge: AA:Aa:aa = 1:3:2.
 Recall initial guesses. Convert probabilities to sixths: one, three, and two parts.
 These are expected proportions, not a required tally in each group of six plants.
 Transition: explain what changed from last week's familiar 1:2:1 cross.
@@ -651,9 +628,8 @@ The ovule probabilities stayed &#x00BD; and &#x00BD;.
 
 Use the correct gamete probabilities before applying either rule.
 
-@notes
+@speaker-notes
 
-Purpose: make the solution's lesson explicit and give the main narrative a clear ending.
 We calculated the consequences of the biology rather than memorizing another ratio.
 Transition: 'So far we knew the parents' genotypes. What if a parent might carry an allele,
 but we do not yet know whether they do?' This motivates the conditional extension.
@@ -664,9 +640,8 @@ but we do not yet know whether they do?' This motivates the conditional extensio
 
 ## What if a parent's genotype is unknown?
 
-@notes
+@speaker-notes
 
-Purpose: introduce a new question after resolving the opening cross.
 Use one family to compare an unknown genotype with a known genotype.
 Transition: read the assumptions and identify the generations before calculating.
 
@@ -687,9 +662,8 @@ He has a child with a partner whose genotype is _hh_. Assume no new mutations.
 1. What is the probability that the son inherited _H_?
 2. What is the probability that his child inherits _H_?
 
-@notes
+@speaker-notes
 
-Purpose: state the full family problem with enough context for independent study.
 This is a classroom inheritance model. An H carrier eventually develops disease; absence of
 symptoms at the specified young age does not identify genotype.
 Name the original parents, their son, and the son's child. Ask the first question.
@@ -721,9 +695,8 @@ What is P(child inherits _H_)?
 - C. 0
 - D. 1
 
-@notes
+@speaker-notes
 
-Purpose: answer the son's question and make the child's question depend visibly on it.
 Vote: A. Ask whether choosing one-half assumes the son is already known to carry H.
 Transition: draw both possibilities for the son and follow each branch to his child.
 
@@ -741,9 +714,8 @@ For the child to inherit _H_, the son must have _H_ [AND]{color=orange} pass it 
 
 [&#x00BD; &times; &#x00BD; = &#x00BC;]{color=orange}. The _hh_ son contributes no _H_ route.
 
-@notes
+@speaker-notes
 
-Purpose: derive one-quarter by following the route that transmits H through both generations.
 Trace from the son's uncertain genotype to his child's genotype.
 The other branches account for the remaining probability.
 Transition: change only our information: suppose a test shows the son is Hh.
@@ -772,9 +744,8 @@ P(child inherits _H_ given son is _Hh_) = [&#x00BD;]{color=green}
 
 *Given* tells us which information to use.
 
-@notes
+@speaker-notes
 
-Purpose: give conditional probability meaning before introducing the vertical bar.
 The test changed our information, not the genotype. Cover the hh-son branch in the diagram.
 Transition: general multiplication uses this 'given the first event' probability.
 
@@ -796,9 +767,8 @@ In our family: &#x00BD; &times; &#x00BD; = &#x00BC;.
 
 For independent events, P(C | B) = P(C), giving the specific multiplication rule.
 
-@notes
+@speaker-notes
 
-Purpose: name the rule already used along the branch; it is not an extra recipe.
 P(C) is one-quarter but P(C given B) is one-half, so these events are not independent.
 Transition: ask which condition mattered in each familiar example.
 
@@ -815,9 +785,8 @@ Transition: ask which condition mattered in each familiar example.
 | Pollen cross: two gamete routes to _Aa_ | ? |
 | Child inherits _H_; son's genotype unknown | ? |
 
-@notes
+@speaker-notes
 
-Purpose: check the three lessons using only familiar examples.
 Ask students to explain a row in words before naming an operator.
 Transition: reveal the reasoning, then show where the reusable rules live in the summary.
 
@@ -834,7 +803,7 @@ Transition: reveal the reasoning, then show where the reusable rules live in the
 | Two routes to _Aa_ | [Multiply within]{color=orange}; [add between]{color=blue} | &#x00BD; |
 | Child _H_; son unknown | [Son has _H_ AND passes it on]{color=orange} | &#x00BC; |
 
-@notes
+@speaker-notes
 
 For row two, we mean the unequal-pollen example: &#x2153; plus &#x2159;. For row three,
 multiply the son's &#x00BD; probability of carrying H by his &#x00BD; transmission probability
@@ -847,7 +816,7 @@ If students give only an operator, ask what makes it valid here.
 
 ## Rules and worked explanations for homework
 
-@notes
+@speaker-notes
 
 These are the key references to return to while doing homework. Repeating the rules here
 signals their importance and keeps both forms of each rule together on one slide.
@@ -875,9 +844,8 @@ If two events, B and C, are *not mutually exclusive*, subtract their overlap:
 
 The general rule also works without overlap: P(B and C) = 0.
 
-@notes
+@speaker-notes
 
-Single-slide homework reference, repeating the earlier addition rule cards in one place.
 Connect the overlap term to the shared Venn region and the A1A3 cell in the Punnett square.
 The general rule always works; the first equation is its zero-overlap special case.
 
@@ -906,9 +874,8 @@ Equivalently: [P(B and C) = P(C) &times; P(B | C)]{color=orange}
 P(C | B) means the probability of C given B.
 The general rule also works for independent events: P(C | B) = P(C).
 
-@notes
+@speaker-notes
 
-Single-slide homework reference, repeating the earlier multiplication rule cards in one place.
 The bar means "given." Either order works when the conditional probability matches that order.
 Recall the family example: a child's probability changes when we learn the parent's genotype.
 
@@ -930,10 +897,9 @@ Use the [multiplication rule]{color=orange} when both events must occur. Multipl
 probability of the first event by the probability of the second given the first.
 For independent events, knowing the first occurred does not change the second probability.
 
-@notes
+@speaker-notes
 
-Study reference: skip during the live lecture unless students request a recap. These paragraphs
-make the rule conditions available in the exported slides, without requiring access to notes.
+Study reference: skip during the live lecture unless students request a recap.
 
 === layout: reference
 
@@ -956,7 +922,7 @@ Thus _AA_, _Aa_, and _aa_ have probabilities
 &#x2159;, &#x00BD;, and &#x2153;. These are one, three, and two parts out of six,
 giving the genotype ratio 1:3:2.
 
-@notes
+@speaker-notes
 
 Study reference: skip during class. The counts are an illustration of relative pollen success,
 not measured data. Fractions describe probabilities; the ratio compares genotype proportions.
@@ -979,9 +945,9 @@ Given that the son is _hh_, the probability is 0.
 
 "Given" changes which possibilities we count. It does not change the person's genotype.
 
-@notes
+@speaker-notes
 
-Purpose: provide a complete offline explanation. Skip in class.
+Skip in class.
 Use the rule cards and final takeaways for the live recap.
 
 === layout: reference
@@ -1004,10 +970,8 @@ P(B | C) = P(B and C) / P(C) = [P(B) &times; P(C | B)]{color=orange} / P(C)
 Both P(B and C) and P(C) equal &#x00BC;, so their ratio is 1.
 The denominator must be greater than zero.
 
-@notes
+@speaker-notes
 
-Purpose: preserve the reverse-condition and Bayes explanation without extending the live narrative.
-Define the extra term where it appears in this optional reference.
 Before observing the child, the child's probability remains one-quarter.
 Skip during class unless students ask about this extension.
 
@@ -1023,9 +987,8 @@ Skip during class unless students ask about this extension.
 - Given: restrict to the known group
 - Check totals against the biology
 
-@notes
+@speaker-notes
 
-Purpose: close with the sequence that solved the opening problem.
 Identify the gamete pool, multiply within combinations, and add exclusive alternatives.
 For OR with overlapping events, subtract the shared outcomes. For AND, use the probability
 of the second event given the first; independence allows the shortcut.
@@ -1035,6 +998,6 @@ Invite final questions, then end the deck.
 
 # THE END
 
-@notes
+@speaker-notes
 
 Pause for final questions before closing this deck.

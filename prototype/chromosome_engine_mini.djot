@@ -1,0 +1,60 @@
+color-theme: genetics
+
+=== layout: big-image
+
+@image
+
+![Drosophila complements](repo:prototype/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg)
+
+@caption
+
+*C18 | Drosophila complements*
+
+LECT06D, source slide 7 | Replication and division
+
+@speaker-notes
+
+The collars mark centromeres, and the number or letter identifies the chromosome.
+Teal on the arms marks heterochromatin. The mitotic Y is almost entirely heterochromatic.
+It still carries genes needed for male fertility. The amount of X heterochromatin varies
+among fly stocks.
+
+In male meiosis I, ribosomal DNA (rDNA) in the X heterochromatin pairs with rDNA on
+the short arm of the Y. The two centromeres orient toward opposite spindle poles.
+
+=== layout: big-image
+
+@image
+
+![Cis and trans](repo:prototype/assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg)
+
+@caption
+
+*C20 | Cis and trans*
+
+LECT08B, source slide 14 | Linkage and tetrads
+
+=== layout: big-image
+
+@image
+
+![A gene and its centromere](repo:prototype/assets/lect09_tetrad_concepts/centromere.drawn.svg)
+
+@caption
+
+*C29 | A gene and its centromere*
+
+LECT09H, source slide 7 | Linkage and tetrads
+
+=== layout: big-image
+
+@image
+
+![Robertsonian fusion](repo:prototype/chromosome_assets/assets/lect13d-meiosis_translocation/robertsonian_centromeric_fusion.drawn.svg)
+
+@caption
+
+*C66 | Robertsonian fusion*
+
+LECT13D, source slide 54 | The long arms fuse near their centromeres.
+One centromere is active in this model. The short-arm product is usually lost.

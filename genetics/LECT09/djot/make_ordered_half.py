@@ -2,10 +2,11 @@
 """Rebuild the ordered-half crossover figure from its layout model."""
 import json
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
+import svg_tools.drawing
 
 
 BASE = pathlib.Path(__file__).resolve().parent
@@ -13,11 +14,11 @@ ASSETS = BASE / 'assets/lect09_ordered_templates'
 OUTPUT = BASE / 'assets/lect09c-tetrad_worked_examples_bpw'
 NS = 'http://www.w3.org/2000/svg'
 TAG = '{' + NS + '}'
-ET.register_namespace('', NS)
+
 
 
 #============================================
-def build_body(model: dict) -> ET.Element:
+def build_body(model: dict) -> lxml.etree._Element:
 	"""Build one ordered chromatid with the shared straight-rod renderer.
 
 	Args:
@@ -34,17 +35,17 @@ def build_body(model: dict) -> ET.Element:
 		texture=False, labels=False,
 	)
 	wrapper = '<g xmlns="' + NS + '">' + layout.svg + '</g>'
-	element = list(DET.fromstring(wrapper))[0]
+	element = list(svg_tools._xml.parse(wrapper))[0]
 	return element
 
 
 #============================================
 def main() -> None:
 	"""Render all modeled chromosome bodies into the durable figure template."""
-	root = DET.parse(ASSETS / 'ordered_half.svg').getroot()
+	root = svg_tools._xml.read(ASSETS / 'ordered_half.svg')
 	models = json.loads((ASSETS / 'ordered_half_models.json').read_text())
 	by_id = {model['id']: model for model in models}
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		for node in list(parent):
 			body_id = node.get('data-chromosome-slot')
 			if body_id:
@@ -52,7 +53,7 @@ def main() -> None:
 				parent.remove(node)
 				parent.insert(index, build_body(by_id[body_id]))
 	OUTPUT.mkdir(parents=True, exist_ok=True)
-	ET.ElementTree(root).write(OUTPUT / 'ordered_half.svg', encoding='unicode', xml_declaration=True)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(OUTPUT / 'ordered_half.svg', encoding='utf-8', xml_declaration=True)
 
 
 if __name__ == '__main__':

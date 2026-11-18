@@ -1,10 +1,9 @@
 """Protect given-parent classification and genotype fidelity in the SVG working tables."""
 
 import copy
-import xml.etree.ElementTree as ET
 
-import defusedxml.ElementTree
 
+import lxml.etree
 import pytest
 
 import slide_lib.render_tetrad_tables as render_tetrad_tables
@@ -22,12 +21,12 @@ def test_table_preserves_genotypes_counts_and_question_reveal() -> None:
 	asci = []
 	ns = "{http://www.w3.org/2000/svg}"
 	for row in example["rows"]:
-		artwork = ET.Element(ns + "svg", {"viewBox": "0 0 122 94"})
+		artwork = lxml.etree.Element(ns + "svg", {"viewBox": "0 0 122 94"})
 		for genotype in row["spores"]:
-			ET.SubElement(artwork, ns + "g", {"data-genotype": genotype})
+			lxml.etree.SubElement(artwork, ns + "g", {"data-genotype": genotype})
 		asci.append(artwork)
 	for reveal, expected in ((False, ["?", "?", "?"]), (True, ["PD", "TT", "NPD"])):
-		root = defusedxml.ElementTree.fromstring(
+		root = lxml.etree.fromstring(
 			render_tetrad_tables.render_table(example, tuple(asci), reveal))
 		rows = root.findall(".//" + ns + "g[@data-set]")
 		assert [row.attrib["data-count"] for row in rows] == ["1", "2", "7"]

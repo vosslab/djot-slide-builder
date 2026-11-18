@@ -20,6 +20,11 @@ pytest rules rather than repeating them.
   Put human requirements in [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) and settled technical choices in
   [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md).
 
+Use `lxml.etree` for Python XML objects and document-local namespace maps. Read SVG inputs through
+`svg_tools._xml` and OpenDocument package XML through `slide_lib.odf_package.parse_xml`. Write
+complete SVGs with the shared drawing writer or normalize source-derived artwork with
+`svg_tools.drawing.svg_root` before serialization.
+
 ## Make and check a focused change
 
 1. Lint the relevant Djot source before an export:

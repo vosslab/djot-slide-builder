@@ -186,7 +186,7 @@ Chromosome A/B = homework +; lowercase a/b = mutant alleles. Positions in the as
 | Two, involving three chromatids | ? |
 | Two, involving four chromatids | ? |
 
-@notes
+@speaker-notes
 
 Ask students to distinguish the number of exchanges from the number of chromatids involved. A DCO can involve two, three, or four chromatids.
 
@@ -217,7 +217,7 @@ Two-strand DCO gives [PD]{color=#935D00}; three-strand DCO gives [TT]{color=#A71
 - The parents are ++ / ab.
 - In each class, how many of the four spores have a nonparental combination?
 
-@notes
+@speaker-notes
 
 Pause before showing the counts. Ask students to point to the a+ and +b spores. The class name describes the whole tetrad; the question asks about individual spores inside it.
 
@@ -238,7 +238,7 @@ Pause before showing the counts. Ask students to point to the a+ and +b spores. 
 | [*TT*]{color=#A719DB background-color=#E8CCE6} | 2 of 4 | Half |
 | [*NPD*]{color=#007A00 background-color=#BFE6C0} | 4 of 4 | All |
 
-@notes
+@speaker-notes
 
 The two parental combinations are ++ and ab. The two nonparental combinations are a+ and +b. This explains the half-weight for [TT]{color=#A719DB} when counting recombinant spores. [NPD]{color=#007A00} has full weight in this count; the map correction comes later.
 
@@ -261,7 +261,7 @@ $$
 RF = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + \textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100\%
 $$
 
-@notes
+@speaker-notes
 
 Ask where the four went. It cancels; we have not changed what the fraction measures. [TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are tetrad counts throughout. This formula measures the fraction of spores with nonparental combinations.
 
@@ -289,7 +289,7 @@ Ask where the four went. It cancels; we have not changed what the fraction measu
 
 For linked genes, considering zero, one, or two crossovers. Three or more are assumed rare.
 
-@notes
+@speaker-notes
 
 Ask the question before reading the answer. Recall the double-crossover diagrams we just followed. [PD]{color=#935D00} and [TT]{color=#A719DB} do not tell us the crossover history by themselves. [NPD]{color=#007A00} gives us a way to estimate the hidden doubles.
 
@@ -318,7 +318,7 @@ $$
 
 Model: random chromatid participation in the second exchange; three or more crossovers are rare.
 
-@notes
+@speaker-notes
 
 These are estimates of the double-crossover part of each class, not the total [PD]{color=#935D00} and [TT]{color=#A719DB} counts. With random chromatid participation, the four possible second exchanges give one [PD]{color=#935D00} outcome, two [TT]{color=#A719DB} outcomes, and one [NPD]{color=#007A00} outcome. [NPD]{color=#007A00} therefore estimates one quarter of the double-crossover tetrads.
 
@@ -336,7 +336,7 @@ $$
 SCO = \textcolor{#A719DB}{\mathrm{TT}} - 2\textcolor{#007A00}{\mathrm{NPD}}
 $$
 
-@notes
+@speaker-notes
 
 Ask why we subtract. The double-crossover tetrads will be counted in DCO, so we must remove them from [TT]{color=#A719DB} before calling the remaining tetrads singles. Keep the observed classes separate from the estimated crossover histories.
 
@@ -354,7 +354,7 @@ $$
 \text{Weighted count} = \frac{1}{2}SCO + DCO
 $$
 
-@notes
+@speaker-notes
 
 The map tracks exchanges per chromatid. Each exchange involves two chromatids, so divide the number of exchanges by two when averaging over all four chromatids. Two exchanges still count twice even when they restore a parental allele combination. This weighted count is not a count of recombinant spores.
 
@@ -382,7 +382,7 @@ Minus one plus four gives three.
 
 [NPD]{color=#007A00} still has four recombinant spores; three is a correction weight.
 
-@notes
+@speaker-notes
 
 Walk through the middle line before advancing. The three does not mean that an [NPD]{color=#007A00} tetrad has three recombinant spores. It comes from estimating the double crossovers hidden in all three tetrad classes. Ask students to explain the minus one and plus four in words.
 
@@ -400,7 +400,7 @@ $$
 D = \frac{\frac{1}{2}\textcolor{#A719DB}{\mathrm{TT}} + 3\textcolor{#007A00}{\mathrm{NPD}}}{N} \times 100 \;\mathrm{cM}
 $$
 
-@notes
+@speaker-notes
 
 [TT]{color=#A719DB}, [NPD]{color=#007A00}, and N are counts, just as in the spore-frequency calculation. Dividing by N averages over the sampled meioses. The chromatid weighting is already included in the numerator. Ask students to identify the weighted count, the averaging step, and the conversion to cM before using the numbers.
 

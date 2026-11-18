@@ -1,16 +1,16 @@
 {
-  "pages": 71,
+  "pages": 73,
   "figures": 68,
   "source_hashes_match": 68,
-  "prototype_asset_references": 68,
+  "prototype_asset_references": 70,
   "native_review_ids": 68,
-  "notes": 70,
+  "notes": 1,
   "contact_sheets": 5,
-  "pdf_sha256": "dfbc51c679adff366e636d8f4583d96ce1bb2e07a8b560a79f3ebcd6ba6e8f64",
-  "odp_sha256": "d1111ec0727b73a0857157b07fc21fb6d281353b73f1790b4ae8cc88785fd0b4",
-  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material. Native-text follow-up: inspected C13/C21/C25/C55 overview/C55 loop/C56/C59 after moving prose outside SVG. Both C55 panels are full-size; C21 now reuses C13 and its micrograph renders. Checked 12 pt condensed timestamp below THE END outline. Gene-label follow-up: reviewed embedded loci in C01/C22/C24/C28/C47/C48/C56-C59, preserving source labels and banding references. Independent path tracing confirms C28 products Ab/Ab/aB/aB.",
+  "pdf_sha256": "ed9503ecd02fff4e33fd3380c16c2b99b003307a36087f20d4014d9ad22d19c1",
+  "odp_sha256": "dec6641e4d68c04e9e842d4dcb368093499da99ec29144478e1142820d5a14f7",
+  "visual_review": "Surveyed all 68 current figures from rendered SVGs for sister-chromatid clarity. Inspected the final native PDF pages C16, C17, C37, C56, C57, C58, C59 and C67. The ODP contains all 67 current prototype SVGs by exact hash. Follow-up: inspected the final native C18 page after replacing manual collar coordinates with the model centerline anchors. SVG-size follow-up: inspected final native pages C11, C12, C14, C16, C17, C18, C28, C55, C57 and C67. Deletion-map follow-up: inspected final native C51 and C52 pages; original C51 endpoints and irregular gene spacing remain distinct. C58 follow-up: inspected the final native page with a separate explanation text box; exact paragraph text and all diagram labels/geometry verified. Bend-geometry follow-up: inspected all23 affected native pages and independently reviewed C18, C19, C40, C50, C62 and C66 before/after. Fusion follow-up: inspected final native C03/C36; their figure areas are pixel-identical, all three fused stages retain the same material, and the removed inactive collar leaves regular body material. Native-text follow-up: inspected C13/C21/C25/C55 overview/C55 loop/C56/C59 after moving prose outside SVG. Both C55 panels are full-size; C21 now reuses C13 and its micrograph renders. Checked 12 pt condensed timestamp below THE END outline. Gene-label follow-up: reviewed embedded loci in C01/C22/C24/C28/C47/C48/C56-C59, preserving source labels and banding references. Independent path tracing confirms C28 products Ab/Ab/aB/aB. Agents inspected the chromosome engine figures C18, C20, C29 and C66 in the final PDF. The ODP embeds all four published SVGs byte for byte and keeps their titles and captions editable. Agents also inspected the cover timestamp and closing page. C20 distal gene blocks now leave 13.8 units of body color before each 10.67-unit cap. The mini and full decks embed the same C20 SVG. The C18 lecture note is the only speaker note in either deck.",
   "known_issue": null,
-  "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval.",
+  "approval": "Agent verification complete for the four chromosome engine figures. Instructor assessment remains open.",
   "preserved_evidence_ids": [
     "C04",
     "C51"
@@ -628,5 +628,132 @@
       "C65"
     ],
     "full_repository_suite_run": false
+  },
+  "chromosome_engine_followup": {
+    "odp": {
+      "path": "output/odp/chromosome_review.odp",
+      "pages": 73,
+      "bytes": 20275334,
+      "sha256": "a40329beb75d22a05852f4bca17d93dd935ea3cf2c16533312478cbdf3dbe476"
+    },
+    "pdf": {
+      "path": "output/pdf/chromosome_review.pdf",
+      "pages": 73,
+      "bytes": 55964477,
+      "sha256": "15924f36ee55e9b9a82e7cb4028114ebcf2594b03df2b2fb94e815fad79b33c3",
+      "producer": "LibreOffice 26.2.7.3 (AARCH64)"
+    },
+    "native_review_ids": 68,
+    "source_inventory_hashes_verified": 68,
+    "replacement_inventory_hashes_verified": 70,
+    "prototype_svg_references": 70,
+    "distinct_embedded_svg_hashes": 68,
+    "pages_with_native_notes": 72,
+    "targets": {
+      "C18": {
+        "asset": "prototype/assets/lect06d-x_linked_genes_1/drosophila_chromosome_complements.drawn.svg",
+        "sha256": "a5d066d6057e2c62099a5233735a72ee0495b53b6e8af35cac162de105dd6f6e",
+        "page": 19,
+        "odp_svg_member": "Pictures/a5d066d6057e2c62099a5233.svg",
+        "native_title": "C18 | Drosophila complements",
+        "native_caption": "LECT06D, source slide 7 | Replication and division",
+        "webp": "_temp/chromosome_engine/final_publication/19_c18.webp"
+      },
+      "C20": {
+        "asset": "prototype/assets/lect08b-chap8-linked_genes/cis_trans_wide.drawn.svg",
+        "sha256": "845308914a31cd8468214ff4220b8c16f8f873a7cd829cf677e009d2b9bbf537",
+        "page": 21,
+        "odp_svg_member": "Pictures/845308914a31cd8468214ff4.svg",
+        "native_title": "C20 | Cis and trans",
+        "native_caption": "LECT08B, source slide 14 | Linkage and tetrads",
+        "webp": "_temp/chromosome_engine/final_publication/21_c20.webp"
+      },
+      "C29": {
+        "asset": "prototype/assets/lect09_tetrad_concepts/centromere.drawn.svg",
+        "sha256": "1b41a55e06c9dfd48cb4b6d589f27846c11543cd3f6bd84efa13dbfa9fccc087",
+        "page": 30,
+        "odp_svg_member": "Pictures/1b41a55e06c9dfd48cb4b6d5.svg",
+        "native_title": "C29 | A gene and its centromere",
+        "native_caption": "LECT09H, source slide 7 | Linkage and tetrads",
+        "webp": "_temp/chromosome_engine/final_publication/30_c29.webp"
+      },
+      "C66": {
+        "asset": "prototype/chromosome_assets/assets/lect13d-meiosis_translocation/robertsonian_centromeric_fusion.drawn.svg",
+        "sha256": "2f72c2fbe1b89fe880f69066191ba7390ab463c689360e4744d776e22bda4d43",
+        "page": 70,
+        "odp_svg_member": "Pictures/2f72c2fbe1b89fe880f69066.svg",
+        "native_title": "C66 | Robertsonian fusion",
+        "native_caption": "LECT13D, source slide 54 | The long arms fuse near their centromeres. One centromere is active in this model. The short-arm product is usually lost.",
+        "webp": "_temp/chromosome_engine/final_publication/70_c66.webp"
+      }
+    },
+    "cover": {
+      "page": 1,
+      "native_timestamp": "rendered on Tue, Nov 17, 2026 at 9:57:04 PM CST",
+      "webp": "_temp/chromosome_engine/final_publication/01_cover.webp"
+    },
+    "closing_discussion": {
+      "page": 73,
+      "native_title": "What should become the house style?",
+      "webp": "_temp/chromosome_engine/final_publication/73_closing_discussion.webp"
+    },
+    "generation_exit_codes": {
+      "C18": 0,
+      "C20": 0,
+      "C29": 0,
+      "C66": 0
+    },
+    "staged_svg_count": 48,
+    "staged_siblings_match_baseline": 44,
+    "published_svg_changes": [
+      "C18",
+      "C20",
+      "C29",
+      "C66"
+    ],
+    "replacement_inventory_hash_changes": 4,
+    "other_prototype_svgs_match_baseline": 202,
+    "lecture_svgs_match_baseline": 1124,
+    "added_or_removed_svgs": 0,
+    "build_command": "source source_me.sh && python3 deck_tools.py build prototype/chromosome_review.djot --format all",
+    "build_exit_code": 0,
+    "strict_native_lint_exit_code": 0,
+    "commands": "_temp/chromosome_engine/final_publication/commands.txt",
+    "native_visual_review_pages": [
+      1,
+      19,
+      21,
+      30,
+      70,
+      73
+    ],
+    "independent_native_visual_review": "PASS for C18, C20, C29, C66, cover and closing discussion. Fresh PDF renders matched the four selected WebPs byte for byte.",
+    "native_visual_review_report": "_temp/chromosome_engine/final_publication/native_visual_review.md",
+    "previous_summary": {
+      "pages": 71,
+      "pdf_sha256": "dfbc51c679adff366e636d8f4583d96ce1bb2e07a8b560a79f3ebcd6ba6e8f64",
+      "odp_sha256": "d1111ec0727b73a0857157b07fc21fb6d281353b73f1790b4ae8cc88785fd0b4",
+      "prototype_asset_references": 68,
+      "notes": 70,
+      "approval": "Prototype implementation awaiting instructor visual assessment; rendering checks are not instructor approval."
+    }
+  },
+  "c18_common_scale": {
+    "asset_sha256": "92c4fd09ac55b3c9f5c8aee4cf66ebf241bcc8f3c955edf968eb155055656646",
+    "body_width": 35,
+    "length_scale": 1.55,
+    "chromosomes": 16,
+    "collar_labels": "Inspected upright chromosome IDs and pale fills on all 16 collars in both PDF exports.",
+    "xy_pose": "Moved each X down 87 units. The X and Y collar centers are 5.1 units apart vertically. The Y short arm faces the X heterochromatin, and both rods retain their arc length. Inspected both PDF exports and verified that both ODPs embed the updated SVG.",
+    "matching_legend": true,
+    "mini_deck_page": 1,
+    "review_deck_page": 19
+  },
+  "compound_texture_followup": {
+    "figures": ["C18", "C20", "C29", "C66"],
+    "mini_odp_bytes_before_after": [979782, 975658],
+    "mini_pdf_bytes_before_after": [1996068, 1001242],
+    "mini_pdf_form_objects_before_after": [3795, 1137],
+    "visual_check": "Figure areas on all four mini-deck pages matched pixel for pixel at 2x. Both ODPs embed the four updated SVGs."
   }
 }

@@ -100,7 +100,8 @@ Brewfile             declared macOS command-line and desktop dependencies
   Biotechnology study-deck merges, inputs, organization, assets, tools, and review.
 - [PIPELINE.md](PIPELINE.md) is the detailed conversion flow and component-ownership reference.
 - [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) records settled architecture choices.
-- [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) records durable instructor guidance.
+- [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md) records durable instructor guidance and links to
+  [HUMAN_SLIDE_GUIDANCE.md](HUMAN_SLIDE_GUIDANCE.md) for slide writing, conversion, and teaching voice.
 - [PYTEST_STYLE.md](PYTEST_STYLE.md) defines permanent-test boundaries and test commands.
 - [ROADMAP.md](ROADMAP.md) and [TODO.md](TODO.md) track remaining work.
 

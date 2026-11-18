@@ -5,14 +5,14 @@ biology-problems' biochemistry-problems/membranes/phospholipid-unit.svg.
 """
 
 import math
-import xml.etree.ElementTree
 
+import lxml.etree
 import svgpathtools
 
+import svg_tools.text
 import svg_tools._style
 import svg_tools.curves
 import svg_tools.parts
-import svg_tools.text
 
 
 #============================================
@@ -41,7 +41,7 @@ def membrane(path_d: str, *, spacing: float, thickness: float, color: str,
 	radius = thickness * 0.09
 	head = thickness / 2 - radius
 	stroke = thickness * 0.035
-	group = xml.etree.ElementTree.Element('g', {
+	group = lxml.etree.Element('g', {
 		'stroke': '#344651', 'stroke-width': str(stroke),
 		'stroke-linecap': 'round', 'stroke-linejoin': 'round',
 	})
@@ -49,16 +49,16 @@ def membrane(path_d: str, *, spacing: float, thickness: float, color: str,
 	for index, (x, y, angle) in enumerate(samples):
 		if any(start <= index * spacing <= end for start, end in gaps):
 			continue
-		lipids = xml.etree.ElementTree.SubElement(group, 'g', {
+		lipids = lxml.etree.SubElement(group, 'g', {
 			'transform': f'translate({x} {y}) rotate({angle})',
 		})
 		for side in (-1, 1):
 			for offset in (-radius * 0.35, radius * 0.35):
-				xml.etree.ElementTree.SubElement(lipids, 'path', {
+				lxml.etree.SubElement(lipids, 'path', {
 					'd': f'M {offset} {side * head} C {offset + radius*.3} {side * head*.65} '
 						f'{offset - radius*.2} {side * head*.35} {offset} {side * thickness*.04}', 'fill': 'none',
 				})
-			xml.etree.ElementTree.SubElement(lipids, 'circle', {
+			lxml.etree.SubElement(lipids, 'circle', {
 				'cx': '0', 'cy': str(side * head), 'r': str(radius), 'fill': color,
 			})
 		placed.append((x, y))
@@ -76,7 +76,7 @@ def membrane(path_d: str, *, spacing: float, thickness: float, color: str,
 		'center': (point.real, point.imag),
 		'extracellular': ((point - normal).real, (point - normal).imag),
 		'cytoplasmic': ((point + normal).real, (point + normal).imag)}
-	fragment = xml.etree.ElementTree.tostring(group, encoding='unicode')
+	fragment = lxml.etree.tostring(group, encoding='unicode')
 	return svg_tools.parts.SvgPart(fragment, bounds, anchors)
 
 
@@ -85,16 +85,16 @@ def _molecule(path: str, width: float, height: float, color: str,
 	anchors: dict[str, tuple[float, float]], shape_kind: str) -> svg_tools.parts.SvgPart:
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError('Width and height must be finite and positive')
-	group = xml.etree.ElementTree.Element('g', {'fill': color})
+	group = lxml.etree.Element('g', {'fill': color})
 	shape = svg_tools._style.scaled_path(path, width, height)
-	xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, **svg_tools._style.outline(width, height)})
+	lxml.etree.SubElement(group, 'path', {'d': shape, **svg_tools._style.outline(width, height)})
 	shadows = {
 		'globular': 'M .44 -.08 C .49 .14 .34 .36 .11 .41 C -.13 .47 -.38 .34 -.44 .15 C -.32 .27 -.11 .34 .10 .31 C .28 .28 .39 .12 .44 -.08 Z',
 		'kinase': 'M .23 .08 C .34 .17 .30 .32 .16 .39 C -.01 .48 -.28 .40 -.37 .27 C -.24 .34 -.01 .38 .14 .30 C .24 .25 .25 .16 .23 .08 Z',
 		'ligand': 'M .43 -.06 C .46 .12 .32 .25 .17 .26 C .09 .27 .05 .35 0 .42 C -.07 .34 -.11 .27 -.20 .25 C -.35 .22 -.46 .10 -.43 -.06 C -.39 .12 -.27 .16 -.17 .17 C -.08 .18 -.04 .24 0 .30 C .05 .23 .09 .19 .18 .18 C .31 .17 .40 .09 .43 -.06 Z',
 		'receptor': 'M .38 .31 C .41 .41 .25 .46 .10 .44 C -.08 .48 -.32 .45 -.38 .34 C -.30 .39 -.08 .40 .10 .36 C .24 .38 .35 .36 .38 .31 Z',
 	}
-	xml.etree.ElementTree.SubElement(group, 'path', {
+	lxml.etree.SubElement(group, 'path', {
 		'd': svg_tools._style.scaled_path(shadows[shape_kind], width, height),
 		'fill': '#344651', 'opacity': '.18',
 	})
@@ -105,11 +105,11 @@ def _molecule(path: str, width: float, height: float, color: str,
 		'receptor': 'M -.32 -.34 C -.33 -.41 -.27 -.43 -.21 -.40 C -.16 -.38 -.14 -.34 -.11 -.31 C -.22 -.35 -.27 -.34 -.28 -.28 C -.31 -.30 -.32 -.32 -.32 -.34 Z',
 	}
 	highlight = highlights[shape_kind]
-	xml.etree.ElementTree.SubElement(group, 'path', {'d': svg_tools._style.scaled_path(highlight, width, height),
+	lxml.etree.SubElement(group, 'path', {'d': svg_tools._style.scaled_path(highlight, width, height),
 		'fill': 'white', 'opacity': '.30'})
-	xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, 'fill': 'none', **svg_tools._style.outline(width, height)})
+	lxml.etree.SubElement(group, 'path', {'d': shape, 'fill': 'none', **svg_tools._style.outline(width, height)})
 
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		(-.5525*width, -.5525*height, .5525*width, .5525*height),
 		{name: (x*width, y*height) for name, (x, y) in anchors.items()})
 
@@ -158,16 +158,16 @@ def _activity(part: svg_tools.parts.SvgPart, activity: str, size: float) -> svg_
 	r = font_size * .24
 	x = label.bounds[0] - r * 2
 	cy = y - font_size * .33
-	mark = xml.etree.ElementTree.Element('g', {'stroke': '#344651', 'stroke-width': str(r*.22)})
-	xml.etree.ElementTree.SubElement(mark, 'circle', {'cx': str(x), 'cy': str(cy),
+	mark = lxml.etree.Element('g', {'stroke': '#344651', 'stroke-width': str(r*.22)})
+	lxml.etree.SubElement(mark, 'circle', {'cx': str(x), 'cy': str(cy),
 		'r': str(r), 'fill': '#467449' if activity == 'active' else 'white'})
 	if activity == 'inactive':
-		xml.etree.ElementTree.SubElement(mark, 'path', {'d': f'M {x-r*.7} {cy+r*.7} L {x+r*.7} {cy-r*.7}'})
+		lxml.etree.SubElement(mark, 'path', {'d': f'M {x-r*.7} {cy+r*.7} L {x+r*.7} {cy-r*.7}'})
 	margin = r * 1.11
 	bounds = (min(part.bounds[0], label.bounds[0], x-margin), min(part.bounds[1], label.bounds[1], cy-margin),
 		max(part.bounds[2], label.bounds[2], x+margin), max(part.bounds[3], label.bounds[3], cy+margin))
 	anchors = dict(part.anchors, activity_label=label.anchors['center'])
-	return svg_tools.parts.SvgPart(part.fragment + xml.etree.ElementTree.tostring(mark, encoding='unicode')
+	return svg_tools.parts.SvgPart(part.fragment + lxml.etree.tostring(mark, encoding='unicode')
 		+ label.fragment, bounds, anchors)
 
 
@@ -185,7 +185,7 @@ def phosphate(part: svg_tools.parts.SvgPart, *, site: str = 'modification',
 	if site_label is not None and not site_label.strip():
 		raise ValueError('Site label must not be empty')
 	x, y = part.anchors[site]
-	circle = xml.etree.ElementTree.Element('circle', {'cx': str(x), 'cy': str(y),
+	circle = lxml.etree.Element('circle', {'cx': str(x), 'cy': str(y),
 		'r': str(radius), 'fill': '#f4cf9f', 'stroke': '#344651', 'stroke-width': str(radius*.12)})
 	badge = svg_tools.text.label(x, y + radius*.38, 'P', size=radius*1.15, color='#344651', bold=True)
 	labels = [badge]
@@ -198,7 +198,7 @@ def phosphate(part: svg_tools.parts.SvgPart, *, site: str = 'modification',
 		max(part.bounds[2], x+margin, *(p.bounds[2] for p in labels)),
 		max(part.bounds[3], y+margin, *(p.bounds[3] for p in labels)))
 	anchors = dict(part.anchors, phosphate=(x, y))
-	return svg_tools.parts.SvgPart(part.fragment + xml.etree.ElementTree.tostring(circle, encoding='unicode')
+	return svg_tools.parts.SvgPart(part.fragment + lxml.etree.tostring(circle, encoding='unicode')
 		+ ''.join(p.fragment for p in labels), bounds, anchors)
 
 

@@ -1,16 +1,16 @@
 """Replace chromosome bodies in the immutable source compositions for LECT10."""
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
 import svgpathtools
 
 NS = 'http://www.w3.org/2000/svg'
-ET.register_namespace('', NS)
+
 HERE = pathlib.Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip()) / 'genetics/LECT10/djot/lect10b_chromosome_recipe'
 
@@ -25,7 +25,7 @@ CENTERLINES = {
 
 def main(kind: str, destination: pathlib.Path) -> None:
 	first, second, top, bottom = CENTERLINES[kind]
-	root = DET.parse(HERE / 'templates' / f'{kind}_movement.drawn.svg').getroot()
+	root = svg_tools._xml.read(HERE / 'templates' / f'{kind}_movement.drawn.svg')
 	source_path = svgpathtools.parse_path(first + ' ' + second)
 	source_join = source_path[0].end
 	path = svg_tools.chromosome_surface.smooth_centerline(source_path)
@@ -39,15 +39,15 @@ def main(kind: str, destination: pathlib.Path) -> None:
 		(svg_tools.chromosomes.Centromere(1),))
 	rendered = svg_tools.chromosomes.render_chromosome_layout('metaphase-v2', metaphase, length=bottom-top,
 		thickness=26, orientation='vertical', sisters=True, texture=False, labels=False)
-	body = DET.fromstring(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
+	body = svg_tools._xml.parse(f'<g xmlns="{NS}" transform="translate(271.4 {top})">{rendered.svg}</g>')
 	left = svg_tools.chromosomes.chromosome_path_part('left-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)
 	right = svg_tools.chromosomes.chromosome_path_part('right-daughter-v2', daughter, first + ' ' + second,
 		thickness=26, labels=False)
-	daughters = DET.fromstring(f'<g xmlns="{NS}">{left.fragment}<g transform="translate(2200 0) scale(-1 1)">{right.fragment}</g></g>')
+	daughters = svg_tools._xml.parse(f'<g xmlns="{NS}">{left.fragment}<g transform="translate(2200 0) scale(-1 1)">{right.fragment}</g></g>')
 	replacements = {'replicated-chromosome': body, 'daughter-chromosomes': daughters}
 	remove = {'sister-join', 'paired-centromeric-units', 'daughter-centromeres'}
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		for child in list(parent):
 			name = child.get('id')
 			if name in replacements:
@@ -57,4 +57,4 @@ def main(kind: str, destination: pathlib.Path) -> None:
 			elif name in remove:
 				parent.remove(child)
 	svg_tools.drawing.remove_canvas_background(root)
-	ET.ElementTree(root).write(destination, encoding='unicode', xml_declaration=False)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(destination, encoding='utf-8', xml_declaration=False)

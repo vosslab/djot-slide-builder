@@ -134,7 +134,7 @@ def update_source(source: str, episode: dict[str, str]) -> str:
 		raise ValueError("Multiple managed podcast slides; resolve duplicates before refreshing")
 	parts = [part for part in parts if PODCAST_ASSET_PATH not in part]
 	anchors = [index for index, part in enumerate(parts)
-		if re.search(r"youtube", part.split("@notes")[0], re.IGNORECASE)]
+		if re.search(r"youtube", re.split(r"(?m)^@speaker-notes\r?$", part, maxsplit=1)[0], re.IGNORECASE)]
 	if len(anchors) != 1:
 		raise ValueError(f"Expected one YouTube channel slide, found {len(anchors)}; deck unchanged")
 	index = anchors[0]

@@ -515,7 +515,10 @@ def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 	with pytest.raises(ValueError, match="missing a manifest"):
 		package.validate_odp_members(items)
 	items = payloads()
-	items[package.MANIFEST_NAME] = items[package.MANIFEST_NAME].replace(b'<manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml" />', b"")
+	manifest = package.parse_xml(items[package.MANIFEST_NAME], package.MANIFEST_NAME)
+	entry = next(node for node in manifest if node.get(package.MANIFEST_FULL_PATH) == "styles.xml")
+	manifest.remove(entry)
+	items[package.MANIFEST_NAME] = lxml.etree.tostring(manifest)
 	with pytest.raises(ValueError, match="missing a manifest"):
 		package.validate_odp_members(items)
 	items = payloads()

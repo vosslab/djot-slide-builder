@@ -73,6 +73,9 @@ accuracy or exported-slide acceptance.
 
 ## Chromosome drawing tool
 
+For source-addressed loci and centromeres, material operations, and poses from shape points,
+start with [CHROMOSOME_ENGINE.md](../docs/CHROMOSOME_ENGINE.md).
+
 Use [chromosomes.py](chromosomes.py) for schematic segments, colors, sizes, independently
 constructed sisters, condensation, and source-backed named cytobands. Follow the all-course
 chromosome authority in [SVG_VISUAL_STYLE.md](../docs/SVG_VISUAL_STYLE.md#chromosome-family-authority):
@@ -106,7 +109,9 @@ for intervening material. The shared renderer measures and centers upright text 
 each region, selects contrasting ink, and formats allele suffixes such as `rb+` or `a-`.
 Source adapters can use `gene_locus_part(name, surface, center, gene)`, where `center` is
 arc distance on the known `Surface` and `gene` is a `Segment` containing its label, fill
-and displayed span. Both routes use the same label renderer. The full convention is
+and displayed span. Gene blocks leave a cap-length of body color beside each telomere.
+Pass the same `cut_ends=True` used for an internal fragment when labeling that fragment.
+The full convention is
 [CHROMOSOME_GENE_LABELS.md](../docs/CHROMOSOME_GENE_LABELS.md).
 
 For a locus supplied in source drawing coordinates,
@@ -123,7 +128,8 @@ for the selected thickness; smoothing a join cannot repair an overly tight autho
 The shared surface follows BPQ's paint order: base colors, irregular texture, translucent
 sheen, inset light/shadow, outline, and labels. Reference dimensions scale from a 30-unit
 chromatid height. Straight surfaces use SVG gradients; curved surfaces sample the same
-alpha function along local normals. No BPQ package is needed at runtime.
+alpha function along local normals. In each clipped body span, matching texture marks share
+a compound path for each color and opacity. No BPQ package is needed at runtime.
 
 `thickness` always means one chromatid's width. Straight sisters occupy 2.2 times that
 width, with a common foreground centromere belt extending beyond both outer edges.

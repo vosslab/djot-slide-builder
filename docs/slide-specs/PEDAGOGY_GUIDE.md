@@ -406,10 +406,10 @@ closure, rather than inserting one after every arbitrary block of slides.
 
 ### Use notes as speaking cards
 
-Use `@notes` for speaking prompts, explanations, transitions, examples, optional jokes, emphasis
+Use `@speaker-notes` for speaking prompts, explanations, transitions, examples, optional jokes, emphasis
 reminders, expected answers, and activity timing. Write naturally in the instructor's voice.
-Source filenames, slide mappings, repair history, and validation logs belong in separate review
-documents, not in the lecture's speaking notes.
+Record source filenames, slide mappings, repair history, and validation evidence in
+[slide development notes](AUTHORING_GUIDE.md#slide-development-notes).
 
 Explain the idea rather than routinely reading the slide aloud. Reading notes when needed is
 fine; keep the delivery natural. Focus explanation on what students need here. Curiosity,

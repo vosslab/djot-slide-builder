@@ -67,7 +67,8 @@ def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(
 	source = ("=== layout: one-panel\n# Today's Agenda\n@body\nAgenda.\n\n"
 		"=== layout: one-panel\n# [Breakout Room Chat]{color=red}\n@body\nQuestion.\n\n"
 		"=== include: repo:evergreen/youtube_channel.djot\n\n"
-		"=== layout: one-panel\nhidden: true\n# Later\n@body\nKeep this.\n")
+		"=== layout: one-panel\nhidden: true\n# Later\n@body\nKeep this.\n"
+		"@speaker-notes\n# Ice Breaker\n")
 	path.write_text(source)
 	(tmp_path / "lect09c-topic.djot").write_text("Not an announcement.")
 	assert refresh_weather.announcement_paths([str(tmp_path), str(path)]) == [path.resolve()]

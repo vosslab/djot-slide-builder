@@ -21,7 +21,7 @@
 - Predict offspring probabilities from gamete frequencies
 - Interpret a conditional probability
 
-@notes
+@speaker-notes
 
 Use the opening cross to motivate the rules. Ask students to explain the condition that
 makes each calculation valid.
@@ -30,7 +30,7 @@ makes each calculation valid.
 
 # Probability in crosses
 
-@notes
+@speaker-notes
 
 Introduce the opening challenge before defining the rules used to solve it.
 
@@ -457,7 +457,7 @@ Introduce the opening challenge before defining the rules used to solve it.
 - Use frequencies among successful gametes
 - Read "given" as a restriction on possible outcomes
 
-@notes
+@speaker-notes
 
 Connect each rule to its condition. Return to the opening pollen cross and distinguish
 the gametes produced from those that contribute to offspring.

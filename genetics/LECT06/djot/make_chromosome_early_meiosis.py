@@ -3,9 +3,9 @@
 import argparse
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.drawing
 
@@ -29,10 +29,10 @@ def main() -> None:
 	parser.add_argument('--output-root', type=pathlib.Path, default=DIRECTORY / 'assets')
 	args = parser.parse_args()
 	output_dir = args.output_root / 'lect06c-meiosis'
-	ET.register_namespace('', NS[1:-1])
+
 	output_dir.mkdir(parents=True, exist_ok=True)
 	for name, expected in zip(NAMES, EXPECTED):
-		root = DET.parse(SOURCE / (name + '.drawn.svg')).getroot()
+		root = svg_tools._xml.read(SOURCE / (name + '.drawn.svg'))
 		count = 0
 		for parent in list(root.iter()):
 			for index, node in enumerate(list(parent)):
@@ -47,7 +47,7 @@ def main() -> None:
 				model = svg_tools.chromosomes.Chromosome((svg_tools.chromosomes.Segment('', color, 1),))
 				part = svg_tools.chromosomes.chromosome_path_part(f'{name}-chromatid-{count-1}', model,
 					node.get('d'), thickness=width, labels=False)
-				body = DET.fromstring(part.fragment)
+				body = svg_tools._xml.parse(part.fragment)
 				if node.get('id'):
 					body.set('id', node.get('id'))
 				if node.get('data-chromatid'):
@@ -69,7 +69,7 @@ def main() -> None:
 					circle.set('stroke', '#72508C')
 		svg_tools.drawing.remove_canvas_background(root)
 		output = output_dir / (name + '.drawn.svg')
-		output.write_text(ET.tostring(root, encoding='unicode') + '\n')
+		output.write_text(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='unicode') + '\n')
 
 		print(name, count)
 

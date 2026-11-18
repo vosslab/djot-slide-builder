@@ -1,28 +1,29 @@
 """Preserve molecular evidence and redraw four condensed chromatids at two chiasmata."""
 
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes as chromosomes
+import svg_tools.drawing
 
 BASE = pathlib.Path(__file__).resolve().parent
 SVG = 'http://www.w3.org/2000/svg'
-ET.register_namespace('',SVG)
-ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
+
+
 
 
 def build(output_dir: pathlib.Path) -> None:
 	"""Insert four shared centerline bodies below the original molecular inset and labels."""
 	output_dir.mkdir(parents=True, exist_ok=True)
 	source = BASE/'sources/crossovers_chiasmata.svg'
-	root = DET.parse(source).getroot()
+	root = svg_tools._xml.read(source)
 	art = root.find('.//{'+SVG+'}g[@id="original-artwork"]')
-	group = ET.Element('{'+SVG+'}g',{'id':'shared-condensed-chromatids',
+	group = lxml.etree.Element('{'+SVG+'}g',{'id':'shared-condensed-chromatids',
 		'transform':'translate(105 39) scale(0.415625)'})
 	# This white area contains only the old lower chromosome bodies and white space.
 	# The separately embedded Holliday model is retained above this layer verbatim.
-	ET.SubElement(group,'{'+SVG+'}rect',{'x':'48','y':'615','width':'1012','height':'302',
+	lxml.etree.SubElement(group,'{'+SVG+'}rect',{'x':'48','y':'615','width':'1012','height':'302',
 		'fill':'#FFFFFF'})
 	paths = (
 		('blue-outer','#1684B4','M 112 654 C 285 710 440 730 600 727 C 760 725 873 699 988 650'),
@@ -33,21 +34,21 @@ def build(output_dir: pathlib.Path) -> None:
 	for name,color,path in paths:
 		model = chromosomes.Chromosome((chromosomes.Segment('',color),))
 		part = chromosomes.chromosome_path_part(name,model,path,thickness=32,labels=False)
-		group.append(DET.fromstring(part.fragment))
+		group.append(svg_tools._xml.parse(part.fragment))
 	# Alternate the existing red chromatid over the first contact to retain the weave.
-	defs = ET.SubElement(group,'{'+SVG+'}defs')
-	clip = ET.SubElement(defs,'{'+SVG+'}clipPath',{'id':'first-contact'})
-	ET.SubElement(clip,'{'+SVG+'}circle',{'cx':'389','cy':'769','r':'42'})
-	bridge = ET.SubElement(group,'{'+SVG+'}g',{'clip-path':'url(#first-contact)',
+	defs = lxml.etree.SubElement(group,'{'+SVG+'}defs')
+	clip = lxml.etree.SubElement(defs,'{'+SVG+'}clipPath',{'id':'first-contact'})
+	lxml.etree.SubElement(clip,'{'+SVG+'}circle',{'cx':'389','cy':'769','r':'42'})
+	bridge = lxml.etree.SubElement(group,'{'+SVG+'}g',{'clip-path':'url(#first-contact)',
 		'data-repeat-of':'red-inner'})
 	model = chromosomes.Chromosome((chromosomes.Segment('','#C95642'),))
 	part = chromosomes.chromosome_path_part('red-inner-contact',model,paths[2][2],
 		thickness=32,labels=False)
-	bridge.append(DET.fromstring(part.fragment))
+	bridge.append(svg_tools._xml.parse(part.fragment))
 	art.insert(1,group)
 	root.find('{'+SVG+'}desc').text += (' Lower condensed chromatids use shared chromosome paths. '
 		'Four chromatids and two nonsister crossings are retained; the source supplies no '
 		'explicit centromere marker in this panel. Original upper chromatin loops, '
 		'synaptonemal detail and Holliday molecular structure remain unchanged.')
 	result = output_dir/'crossovers_chiasmata.svg'
-	ET.ElementTree(root).write(result,encoding='utf-8',xml_declaration=True)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(result,encoding='utf-8',xml_declaration=True)

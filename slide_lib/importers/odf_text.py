@@ -3,8 +3,8 @@
 import dataclasses
 import re
 import urllib.parse
-import xml.etree.ElementTree
 
+import lxml.etree
 import slide_lib.importers.odf_styles as odf_styles
 import slide_lib.importers.source_model as source_model
 import slide_lib.presentation_theme
@@ -38,7 +38,7 @@ class TextStyle:
 	preserve_color: bool = False
 
 
-def text_style(element: xml.etree.ElementTree.Element,
+def text_style(element: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition], inherited: TextStyle) -> TextStyle:
 	"""Resolve properties independently so partial styles retain their context."""
 	source_color = odf_styles.attribute(element, definitions, qname("fo", "color"))
@@ -113,13 +113,13 @@ def append_run(runs: list[source_model.TextRun], text: str, link: str,
 
 
 #============================================
-def inline_runs(element: xml.etree.ElementTree.Element,
+def inline_runs(element: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition], link: str = "",
 		color: str = "", inherited: TextStyle | None = None) -> tuple[source_model.TextRun, ...]:
 	"""Extract styled ODF inline text and allow-listed link targets."""
 	runs: list[source_model.TextRun] = []
 
-	def visit(node: xml.etree.ElementTree.Element, inherited_link: str,
+	def visit(node: lxml.etree._Element, inherited_link: str,
 			inherited_style: TextStyle) -> None:
 		style = text_style(node, definitions, inherited_style)
 		append_run(runs, node.text or "", inherited_link, style)
@@ -145,7 +145,7 @@ def inline_runs(element: xml.etree.ElementTree.Element,
 
 
 #============================================
-def text_paragraphs(container: xml.etree.ElementTree.Element,
+def text_paragraphs(container: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition],
 		inherited: TextStyle = TextStyle()) -> tuple[
 	tuple[int, tuple[source_model.TextRun, ...]], ...,
@@ -153,7 +153,7 @@ def text_paragraphs(container: xml.etree.ElementTree.Element,
 	"""Extract paragraphs and explicit ODF nested-list levels in source order."""
 	lines: list[tuple[int, tuple[source_model.TextRun, ...]]] = []
 
-	def visit_children(parent: xml.etree.ElementTree.Element, level: int,
+	def visit_children(parent: lxml.etree._Element, level: int,
 			context: TextStyle) -> None:
 		style = text_style(parent, definitions, context)
 		for child in parent:
@@ -166,7 +166,7 @@ def text_paragraphs(container: xml.etree.ElementTree.Element,
 			else:
 				visit_children(child, level, style)
 
-	def visit_list(list_element: xml.etree.ElementTree.Element, level: int,
+	def visit_list(list_element: lxml.etree._Element, level: int,
 			context: TextStyle) -> None:
 		style = text_style(list_element, definitions, context)
 		for item in list_element:

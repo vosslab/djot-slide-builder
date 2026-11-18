@@ -231,7 +231,7 @@ Confirm the insertion, expression, inheritance, and intended trait.
 
 ![Slide image 72](assets/lect06c-set_4_tp_chapter_12_16_material/image_072.png)
 
-@notes
+@speaker-notes
 
 Introduce the nutritional problem; it does not claim that Golden Rice alone solves deficiency.
 
@@ -562,7 +562,7 @@ Evaluate the specific trait and farming system.
 - Herbicide tolerance alone does not tell you how a plant was made.
 - Would selection for resistant weeds depend on that label?
 
-@notes
+@speaker-notes
 
 LibertyLink is genetically engineered. The cited Clearfield sunflower is imidazolinone tolerant, not glyphosate tolerant; its tolerance came from wild Helianthus annuus through conventional breeding.
 
@@ -714,7 +714,7 @@ What result would justify that headline?
 
 Does that establish colony collapse?
 
-@notes
+@speaker-notes
 
 Headline wording is the discussion object, not the paper's conclusion.
 
@@ -731,9 +731,9 @@ Headline wording is the discussion object, not the paper's conclusion.
 | Newly emerged; colonization | Two 5-microliter feeds of 1 mM, 2 days apart | Gut microbiota |
 | Newly emerged; pathogen challenge | 0.1 mM for 5 days | Survival after Serratia challenge |
 
-@notes
+@speaker-notes
 
-The original slide mixed the adult-worker protocol with the 1 mM hand-feeding experiment. See main Figure 1, main Figure 3, and SI Materials and Methods. Controls and microbiota conditions differ among these experiments.
+Controls and microbiota conditions differ among these experiments.
 
 === layout: two-panels
 
@@ -757,7 +757,7 @@ The paper does not report "9 survivors out of 45."
 - How could recapture bias the sample?
 - Does mortality after Serratia challenge predict colony loss in the field?
 
-@notes
+@speaker-notes
 
 45 is the assay sample across three groups at a time point, not the returned cohort. Recapture and survival are different endpoints.
 

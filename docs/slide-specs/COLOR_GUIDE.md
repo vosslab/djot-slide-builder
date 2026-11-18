@@ -1,7 +1,7 @@
 # Slide color guide
 
-This is the authoritative working specification for slide color. Your current instructions and
-recorded preferences in [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md) take precedence. Use
+Use this guide for slide color roles, emphasis, and reveal timing. Follow the recorded preferences
+in [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md). Use
 [VOICE_GUIDE.md](VOICE_GUIDE.md) for wording and [PEDAGOGY_GUIDE.md](PEDAGOGY_GUIDE.md) for teaching sequences.
 The [AUTHORING_GUIDE.md](AUTHORING_GUIDE.md#authority-and-evidence) explains how
 to distinguish explicit preferences, established conventions, and observed habits.
@@ -16,7 +16,8 @@ Keep announcement explanations in regular dark type. Use the established color o
 label or another meaningful category, and let spacing and hierarchy organize its details. Choose
 emphasis for a specific reading task; preserve the instructor's prose while formatting it.
 
-- Start with [../COLOR_PALETTE.md](../COLOR_PALETTE.md), including its existing role mappings.
+- Choose hex values from [../COLOR_PALETTE.md](../COLOR_PALETTE.md). Reuse the local
+  assignments in [../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md).
 - Match references to the objects, concepts, or numbered steps they identify.
 - Carry associations through the question, explanation, worked calculation, and summary.
 - Pair color with words, symbols, labels, position, or shape.
@@ -29,9 +30,8 @@ These can carry teaching meaning. Standardizing colors does not authorize changi
 answer, example, sequence, or reveal. Follow the
 [../SLIDE_CONVERSION_CHECKLIST.md](../SLIDE_CONVERSION_CHECKLIST.md).
 
-Use the preferred explicit hex colors for new emphasis. An isolated imported shade is evidence of
-that source slide, not a new palette requirement. Preserve useful source relationships when
-standardizing; investigate uncertain relationships before recoloring them.
+Use explicit palette hex colors for new emphasis. Preserve the source's color relationships
+when standardizing and investigate uncertain relationships before recoloring them.
 
 ## Distinguish color roles
 
@@ -48,11 +48,16 @@ Choose general emphasis accents with the course hue in mind, using colors that r
 from its theme surfaces. Measure foreground/background contrast on the actual surface, including
 gradients. Preserve an established concept key while choosing accents for unrelated emphasis.
 
-Theme colors and concept colors serve different purposes. A red Biotechnology theme does not
-require every concept to be red. A procedure can use the same palette entries as a data figure
-without implying that a step and a gene pair are the same thing; make their local roles clear.
-These are local teaching associations, not a global dictionary assigning every scientific term
-one color across all courses.
+Use the fixed palette in [../COLOR_PALETTE.md](../COLOR_PALETTE.md) for authored figure colors.
+When figures share a role or a concept, reuse its hue and shade across the sequence. Use the
+established colors for course navigation and pair figure colors with clear labels.
+
+## Figure shades
+
+Choose the hex value for each hue and shade from [../COLOR_PALETTE.md](../COLOR_PALETTE.md).
+Reuse that hue in labels, marks, and fills for the same concept. Use distinct hue families for
+categories students need to distinguish and neutrals for outlines and telomere caps. See
+[../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md) for existing figure-tool behavior.
 
 ## Distinguish divider levels
 
@@ -101,10 +106,8 @@ An explanation that refers to another concept should use that referenced concept
 color. For example, a statement about the alternative hypothesis can refer to the null hypothesis
 in the null hypothesis's color. The color identifies the reference, not the truth of the sentence.
 
-Use coordinated, visibly distinct colors when several concepts need tracking. Preserve existing
-assignments where they work. There is no universal maximum number of colors: a six-step roadmap
-and a two-concept comparison have different jobs. Judge whether the distinctions remain useful in
-the rendered slide.
+Use distinct hues from the fixed palette when several concepts need tracking. Reuse established
+assignments across related slides and check the distinctions in the rendered figure.
 
 ## Carry associations through sequences
 
@@ -126,19 +129,18 @@ Established examples:
 - **Tetrads:** retain PD gold, TT magenta, and NPD green through related formulas and examples,
   following the instructor's labeled-diagram guidance.
 - **Banding/chromatin comparison:** use teal `#00775F` for G-bands and heterochromatin,
-  and magenta `#C80085` for R-bands and euchromatin. Carry these cues through the comparison.
+  and magenta `#C80085` for R-bands and euchromatin. Carry these hues through the comparison.
   Keep stain names and shared processes, such as both forms condensing, in neutral text.
 - **Chromosome alterations:** use the full alteration names and the mappings recorded in
-  [../COLOR_PALETTE.md](../COLOR_PALETTE.md); chromosome fills still identify source chromosomes.
+  [../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md). Chromosome fills identify source chromosomes.
 - **Contact options:** preserve green Office hours, red Discord, blue Email, and purple
   Anonymous Google Form, with their nested details. See
   [ANNOUNCEMENT_DECK_GUIDE.md](ANNOUNCEMENT_DECK_GUIDE.md).
 - **Assessment schedule:** past assessments are light gray, future assessments black, and next
   week's assessments dark red. This is a progress cue, not a global red-means-wrong convention.
 
-The palette reference owns the exact text/fill values and new-step rainbow selections. Retain a
-legacy method's established colors unless its recoloring is requested. Repeat roadmaps at useful
-problem and gene-pair transitions, not only at the method's first appearance.
+Use the procedure sequence assignments in [../REPO_COLOR_PALETTE.md](../REPO_COLOR_PALETTE.md).
+Repeat roadmaps at useful problem and gene-pair transitions.
 
 See the actual shared
 [three_point_testcross_steps.djot](../../genetics/evergreen/three_point_testcross_steps.djot)
@@ -166,8 +168,8 @@ figures and their labels.
 A question asking students to identify an address's parts can keep that address neutral until
 the worked answer. Its response prompts can use the five concept colors. In band-order
 questions, apply the same component key to every choice and retain the answer reveal.
-Karyotype counts, sex-chromosome complements, and whole-chromosome changes retain the separate
-key introduced by their own comparison table.
+Use fixed palette hues for chromosome material in karyotypes, complements, and rearrangements.
+Carry each role's color through related figures and use labels to identify chromosomes and arms.
 
 ## Preserve questions and reveals
 
@@ -204,9 +206,7 @@ method and house target. Measure the actual foreground/background pair; passing 
 does not prove readability over a colored cell, photo, or gradient. Hue separation alone does not
 prove contrast or distinguishability for every viewer.
 
-The instructor's optional color-wheel tool is described in
-[../COLOR_PALETTE.md](../COLOR_PALETTE.md). Keep chosen values explicit in Djot; building slides
-must not depend on a sibling checkout or regenerate a different palette.
+Keep chosen palette hex values explicit in Djot so slide builds reproduce the same colors.
 
 ## Review as a student
 

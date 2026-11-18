@@ -194,7 +194,7 @@ $$
 D = \frac{\frac{1}{2}(\textcolor{#A719DB}{340}) + 3(\textcolor{#007A00}{10})}{1000} \times 100 = 20 \;\mathrm{cM}
 $$
 
-@notes
+@speaker-notes
 
 Ask what changed between the formulas: the [NPD]{color=#007A00} weight changes from one to three. The correction adds 2 cM here. We still observed 18% recombinant spores; estimating hidden exchanges does not change those observed genotypes.
 

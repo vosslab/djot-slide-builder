@@ -6,9 +6,9 @@ import hashlib
 import json
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.drawing
 import svg_tools.parts
 import svg_tools.svg_import
@@ -26,16 +26,16 @@ def compose(name: str, specification: dict,
 		component = components[placement['asset']]
 		path = component_dir / placement['asset'] if component_dir else None
 		if path and path.is_file():
-			markup = path.read_text()
+			markup = path.read_bytes()
 		else:
-			markup = component['svg']
-			if hashlib.sha256(markup.encode()).hexdigest() != component['sha256']:
+			markup = (HERE / component['artwork']).read_bytes()
+			if hashlib.sha256(markup).hexdigest() != component['sha256']:
 				raise ValueError(f"Frozen component hash differs: {placement['asset']}")
-		component_root = DET.fromstring(markup)
+		component_root = svg_tools._xml.parse_document(markup)
 		svg_tools.drawing.remove_canvas_background(component_root)
-		markup = ET.tostring(component_root, encoding='unicode')
+		markup = lxml.etree.tostring(component_root, encoding='unicode')
 		part = svg_tools.svg_import.import_svg(markup, name=f'occurrence_{index}', size=placement['width'])
-		viewbox = [float(value) for value in DET.fromstring(markup).attrib['viewBox'].split()]
+		viewbox = [float(value) for value in component_root.attrib['viewBox'].split()]
 		# Keep source centers fixed when a strip gains room for its centromere collar.
 		y = placement['y'] + viewbox[1]*placement['width']/viewbox[2]
 		parts[f'occurrence_{index}'] = svg_tools.parts.transform(part, x=placement['x'], y=y)
@@ -43,30 +43,22 @@ def compose(name: str, specification: dict,
 	width, height = specification['size']
 	if group.bounds[0] < 0 or group.bounds[1] < 0 or group.bounds[2] > width or group.bounds[3] > height:
 		raise ValueError(f'Composition bounds exceed viewport: {name}: {group.bounds}')
-	root = ET.Element('svg', {'xmlns':'http://www.w3.org/2000/svg', 'width':str(width),
+	root = lxml.etree.Element('svg', {'xmlns':'http://www.w3.org/2000/svg', 'width':str(width),
 		'height':str(height), 'viewBox':f'0 0 {width} {height}', 'role':'img', 'aria-labelledby':'title description'})
-	ET.SubElement(root, 'title', {'id':'title'}).text = name.replace('_', ' ')
-	ET.SubElement(root, 'desc', {'id':'description'}).text = specification['description']
-	root.append(DET.fromstring(group.fragment))
+	lxml.etree.SubElement(root, 'title', {'id':'title'}).text = name.replace('_', ' ')
+	lxml.etree.SubElement(root, 'desc', {'id':'description'}).text = specification['description']
+	root.append(svg_tools._xml.parse(group.fragment))
 	for index, cross in enumerate(specification['crosses']):
 		x, y, half = cross['x'], cross['y'], cross['size'] / 2
 		path = f'M {x-half} {y-half} L {x+half} {y+half} M {x-half} {y+half} L {x+half} {y-half}'
-		marker = ET.SubElement(root, 'g', {'id':f'source-rejection-cross-{index}'})
+		marker = lxml.etree.SubElement(root, 'g', {'id':f'source-rejection-cross-{index}'})
 		for color, weight in (('#344651', 23), ('#F47777', 16)):
-			ET.SubElement(marker, 'path', {'d':path, 'stroke':color, 'stroke-width':str(weight), 'fill':'none'})
+			lxml.etree.SubElement(marker, 'path', {'d':path, 'stroke':color, 'stroke-width':str(weight), 'fill':'none'})
 	for index, label in enumerate(specification['labels']):
-		ET.SubElement(root, 'text', {'id':f'source-label-{index}', 'x':str(label['x']),
+		lxml.etree.SubElement(root, 'text', {'id':f'source-label-{index}', 'x':str(label['x']),
 			'y':str(label['y']), 'fill':label['color'], 'font-size':str(label['size']),
 			'font-family':'Atkinson Hyperlegible Next'}).text = label['text']
-	# LibreOffice needs SVG elements under the default namespace, without ns0 prefixes.
-	for element in root.iter():
-		if isinstance(element.tag, str):
-			element.tag = element.tag.removeprefix('{http://www.w3.org/2000/svg}')
-		for attribute in tuple(element.attrib):
-			if attribute.startswith('{http://www.w3.org/1999/xlink}'):
-				root.set('xmlns:xlink', 'http://www.w3.org/1999/xlink')
-				element.set('xlink:' + attribute.split('}', 1)[1], element.attrib.pop(attribute))
-	result = ET.tostring(root, encoding='unicode')
+	result = lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='unicode')
 	svg_tools.svg_import.import_svg(result, name='validated_composition')
 	return result + '\n'
 

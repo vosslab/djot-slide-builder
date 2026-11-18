@@ -151,7 +151,7 @@ def parse_error(tmp_path: pathlib.Path, source: str) -> str:
 def test_notes_end_at_next_slot_and_stay_off_visible_content(tmp_path: pathlib.Path) -> None:
 	"""Notes between question and answer leave both visible regions intact."""
 	deck = parse_source(tmp_path, "=== layout: multiple-choice\n@question\n- A\n- B\n"
-		"@notes\nAsk why B fits.\n\n- Wait for discussion.\n@answer\nB\n")
+		"@speaker-notes\nAsk why B fits.\n\n- Wait for discussion.\n@answer\nB\n")
 	assert deck.slides[0].notes == ("Ask why B fits.", "", "- Wait for discussion.")
 	assert slide_lib.djot_parser.visible_text(deck.slides[0].cells[1].blocks[0].inlines) == "B"
 
@@ -159,7 +159,7 @@ def test_notes_end_at_next_slot_and_stay_off_visible_content(tmp_path: pathlib.P
 #============================================
 def test_notes_keep_directive_like_text_and_end_at_next_slide(tmp_path: pathlib.Path) -> None:
 	"""Literal notes cannot alter visibility, deck metadata, or fence the next slide."""
-	deck = parse_source(tmp_path, "=== layout: blank\n@notes\n"
+	deck = parse_source(tmp_path, "=== layout: blank\n@speaker-notes\n"
 		"hidden: true\ncolor-theme: chemistry\n=> appear\n```\n"
 		"<tag> &amp; &#945; &amp;lt;\n=== layout: blank\n")
 	assert deck.slides[0].notes == (
@@ -172,11 +172,11 @@ def test_replaceme_is_slide_metadata_and_stays_literal_in_code_and_notes(
 		tmp_path: pathlib.Path) -> None:
 	"""Review status cannot leak to the next slide or be enabled by an example or note."""
 	deck = parse_source(tmp_path, "=== layout: blank\n@replaceme\nhidden: true\n"
-		"=== layout: one-panel\n@body\n```\n@replaceme\n```\n"
-		"@notes\n@replaceme\nExplain this marker.\n=== layout: blank\n")
+		"=== layout: one-panel\n@body\n```\n@replaceme\n@speaker-notes\n@notes\n```\n"
+		"@speaker-notes\n@replaceme\nExplain this marker.\n=== layout: blank\n")
 	assert tuple(slide.replaceme for slide in deck.slides) == (True, False, False)
 	assert deck.slides[0].hidden and deck.slides[0].blocks == ()
-	assert deck.slides[1].cells[0].blocks[0].value == "@replaceme"
+	assert deck.slides[1].cells[0].blocks[0].value == "@replaceme\n@speaker-notes\n@notes"
 	assert deck.slides[1].notes == ("@replaceme", "Explain this marker.")
 
 
@@ -331,6 +331,10 @@ def test_multiple_choice_answer_rejects_outside_popup_contract(tmp_path: pathlib
 @pytest.mark.parametrize(("source", "line", "phrase"), (
 	("=== layout: one-panel extra\n", 1, "layout directives must be exact"),
 	("=== layout: one-panel\n@body prose\n", 2, "slot directives must be exact"),
+	("=== layout: blank\n@notes\n", 2, "use @speaker-notes"),
+	("=== layout: blank\n @speaker-notes\n", 2, "use @speaker-notes"),
+	("=== layout: blank\n@speaker-notes comment\n", 2, "use @speaker-notes"),
+	("=== layout: blank\n@speaker-notes\n@speaker-notes\n", 3, "duplicate @speaker-notes"),
 	("=== layout: one-panel\n@body\n<= appear\n", 3, "require a preceding block"),
 	("=== layout: one-panel\n@body\n=> appear\n=> appear\nText\n", 4, "require a block before"),
 	("=== layout: one-panel\n@body\n=> vanish\nText\n", 3, "unknown Djot action"),
@@ -428,7 +432,7 @@ def test_explicit_link_target_wins_over_url_label(tmp_path: object) -> None:
 
 def test_citation_and_notes_are_independent_of_layout_slots(tmp_path: pathlib.Path) -> None:
 	deck = parse_source(tmp_path, "=== layout: section\n\n# Topic\n\n"
-		"@notes\n\nInstructor notes.\n\n@citation\n\nAuthor. _Article._ 2026.\n")
+		"@speaker-notes\n\nInstructor notes.\n\n@citation\n\nAuthor. _Article._ 2026.\n")
 	slide = deck.slides[0]
 	assert slide.notes == ("Instructor notes.",)
 	assert not slide.cells

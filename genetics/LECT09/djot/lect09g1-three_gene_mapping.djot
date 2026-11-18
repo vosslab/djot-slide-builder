@@ -58,7 +58,7 @@ For A-B, what class is Set 4?
 
 Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 [*Step 2: Pick A and B*]{color=#B74300}
 
@@ -81,7 +81,7 @@ Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD 
 
 Given parents: a++ / +bc. C is covered; read A and B. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 - Set 4: +b and a+ match the parents. It is [PD]{color=#935D00} for A-B; read only A and B.
 - Classify allele combinations, not counts.
@@ -310,7 +310,7 @@ For A-C, what class is Set 3?
 
 Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 [*Step 2: Pick A and C*]{color=#B74300}
 
@@ -333,7 +333,7 @@ Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD 
 
 Given parents: a++ / +bc. B is covered; read A and C. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 - Set 3: +c and a+ match the parents. It is [PD]{color=#935D00} for A-C; read only A and C.
 - Classify allele combinations, not counts.
@@ -562,7 +562,7 @@ For B-C, what class is Set 1?
 
 Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 [*Step 2: Pick B and C*]{color=#B74300}
 
@@ -585,7 +585,7 @@ Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD 
 
 Given parents: a++ / +bc. A is covered; read B and C. Gold outline: Set 6 is PD for every pair.
 
-@notes
+@speaker-notes
 
 - Set 1: ++ and bc match the parents. It is [PD]{color=#935D00} for B-C, despite its small count.
 - Classify allele combinations, not counts.

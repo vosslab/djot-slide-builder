@@ -88,8 +88,8 @@ The canonical checklist is reproduced below with applicability notes. Checked N/
   groups. Verify their inventory survives the weekly update; refresh dates before showing them.
 
 - [x] Keep source filenames, source slide numbers, and conversion provenance out of Djot files,
-  including `@notes` and comments. Use separate import reports, slide maps, or review files for
-  traceability; reserve `@notes` for presentation note cards used while lecturing. Exclude selection history,
+  including `@speaker-notes` and comments. Use separate import reports, slide maps, or review files for
+  traceability; reserve `@speaker-notes` for presentation note cards used while lecturing. Exclude selection history,
   publication metadata, refresh commands, repair details, and verification logs from Djot files.
 
 - [x] N/A (Only the expanded instructor ODP required import; annual PPTX sources were surveyed as ZIP/XML packages and existing native group fragments were reused.) Import each source with the repository importer documented in [USAGE.md](../../../docs/USAGE.md).

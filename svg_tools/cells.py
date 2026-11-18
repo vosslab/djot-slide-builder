@@ -5,10 +5,10 @@ caller; these silhouettes do not imply a cell-cycle stage or organelle count.
 """
 
 import math
-import xml.etree.ElementTree
 
-import defusedxml.ElementTree
+import lxml.etree
 
+import svg_tools._xml
 import svg_tools.parts
 import svg_tools._style
 
@@ -46,11 +46,11 @@ def cell_envelope(*, kind: str, width: float, height: float, color: str,
 def nucleus(*, width: float, height: float, color: str) -> svg_tools.parts.SvgPart:
 	"""Draw a nucleus without automatically adding nucleoli or chromosomes."""
 	part = _oval(width, height, color)
-	group = defusedxml.ElementTree.fromstring(part.fragment)
-	group.insert(1, xml.etree.ElementTree.Element('ellipse', {
+	group = svg_tools._xml.parse(part.fragment)
+	group.insert(1, lxml.etree.Element('ellipse', {
 		'cx': '0', 'cy': '0', 'rx': str(.435 * width), 'ry': str(.435 * height),
 		'fill': 'none', 'stroke-width': str(.5 * float(group.attrib['stroke-width']))}))
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		part.bounds, part.anchors)
 
 
@@ -65,11 +65,11 @@ def _oval(width: float, height: float, color: str) -> svg_tools.parts.SvgPart:
 	part = _shape('M 0 -0.48 C 0.265 -0.48 0.48 -0.265 0.48 0 C 0.48 0.265 0.265 0.48 0 0.48 C -0.265 0.48 -0.48 0.265 -0.48 0 C -0.48 -0.265 -0.265 -0.48 0 -0.48 Z',
 		width, height, color, {'center': (0, 0), 'top': (0, -.48), 'bottom': (0, .48),
 			'left': (-.48, 0), 'right': (.48, 0)})
-	group = defusedxml.ElementTree.fromstring(part.fragment)
+	group = svg_tools._xml.parse(part.fragment)
 	group.remove(group[0])
-	group.insert(0, xml.etree.ElementTree.Element('ellipse', {'cx': '0', 'cy': '0',
+	group.insert(0, lxml.etree.Element('ellipse', {'cx': '0', 'cy': '0',
 		'rx': str(.48 * width), 'ry': str(.48 * height), 'fill': color}))
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		part.bounds, part.anchors)
 
 
@@ -78,14 +78,14 @@ def _shape(path: str, width: float, height: float, color: str,
 	anchors: dict[str, tuple[float, float]], wall_color: str | None = None) -> svg_tools.parts.SvgPart:
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError('Width and height must be finite and positive')
-	group = xml.etree.ElementTree.Element('g', svg_tools._style.outline(width, height))
+	group = lxml.etree.Element('g', svg_tools._style.outline(width, height))
 	shape = svg_tools._style.scaled_path(path, width, height)
 	if wall_color is not None:
-		xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, 'fill': wall_color})
+		lxml.etree.SubElement(group, 'path', {'d': shape, 'fill': wall_color})
 		shape = svg_tools._style.scaled_path(path, .87 * width, .87 * height)
-		xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, 'fill': color})
+		lxml.etree.SubElement(group, 'path', {'d': shape, 'fill': color})
 	else:
-		xml.etree.ElementTree.SubElement(group, 'path', {'d': shape, 'fill': color})
+		lxml.etree.SubElement(group, 'path', {'d': shape, 'fill': color})
 	# Inset highlights follow the edges and leave the interior available for parts.
 	if 'left_lobe' in anchors:
 		edges = ('M -.46 -.06 C -.45 -.31 -.31 -.43 -.16 -.38 L -.17 -.36 C -.31 -.40 -.42 -.28 -.43 -.06 Z M .08 -.34 C .25 -.45 .39 -.40 .44 -.20 L .42 -.20 C .36 -.38 .23 -.41 .09 -.31 Z',
@@ -95,10 +95,10 @@ def _shape(path: str, width: float, height: float, color: str,
 			'M -.34 .30 C -.18 .45 .17 .46 .35 .27 L .32 .26 C .15 .42 -.16 .42 -.32 .28 Z')
 	for edge, shade, opacity in zip(edges, ('#ffffff', '#344651'), ('.60', '.18')):
 		scale = .9 if wall_color is not None or anchors['top'][1] == -.43 else 1
-		xml.etree.ElementTree.SubElement(group, 'path', {
+		lxml.etree.SubElement(group, 'path', {
 			'd': svg_tools._style.scaled_path(edge, scale * width, scale * height),
 			'fill': shade, 'fill-opacity': opacity, 'stroke': 'none'})
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		(-.5525 * width, -.5525 * height, .5525 * width, .5525 * height),
 		{name: (x * width, y * height) for name, (x, y) in anchors.items()})
 
@@ -141,7 +141,7 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 	part = _oval(width, height, color)
 	if kind in ('lysosome', 'vesicle'):
 		return part
-	group = xml.etree.ElementTree.Element('g', svg_tools._style.outline(width, height))
+	group = lxml.etree.Element('g', svg_tools._style.outline(width, height))
 	stroke_width = float(group.attrib['stroke-width'])
 	if kind == 'er':
 		for bridge in (
@@ -149,7 +149,7 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 			'M -.42 -.10 Q -.49 -.12 -.48 -.05 L -.48 .11 Q -.48 .18 -.42 .16 Z',
 			'M .39 .10 Q .48 .08 .47 .16 L .44 .30 Q .43 .36 .37 .33 Z',
 		):
-			xml.etree.ElementTree.SubElement(group, 'path', {
+			lxml.etree.SubElement(group, 'path', {
 				'd': svg_tools._style.scaled_path(bridge, width, height), 'fill': color})
 	for index, path in enumerate(features[kind]):
 		attributes = {'d': svg_tools._style.scaled_path(path, width, height)}
@@ -163,20 +163,20 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 				attributes.update(fill='#ffffff', **{'fill-opacity': '.45'})
 		if kind == 'chloroplast' and index == 1:
 			attributes.update(fill='#ffffff', **{'fill-opacity': '.25'})
-		xml.etree.ElementTree.SubElement(group, 'path', attributes)
+		lxml.etree.SubElement(group, 'path', attributes)
 		if kind == 'mitochondrion' and index == 0:
 			for plane, shade, opacity in (
 				('M -.41 .09 C -.28 .31 .05 .33 .23 .25 C .36 .19 .40 .08 .40 -.06 C .44 .19 .25 .37 .02 .37 C -.20 .37 -.38 .25 -.41 .09 Z', '#344651', '.18'),
 				('M -.415 -.04 C -.40 -.22 -.32 -.32 -.20 -.32 C -.09 -.32 -.01 -.25 .07 -.25 C -.06 -.28 -.10 -.30 -.20 -.30 C -.31 -.30 -.38 -.19 -.395 -.04 Z', '#ffffff', '.50'),
 			):
-				xml.etree.ElementTree.SubElement(group, 'path', {
+				lxml.etree.SubElement(group, 'path', {
 					'd': svg_tools._style.scaled_path(plane, width, height),
 					'fill': shade, 'fill-opacity': opacity, 'stroke': 'none'})
 	if kind == 'er':
 		for join in ('M .415 -.265 L .465 -.265 M .415 -.08 L .465 -.08',
 			'M -.465 -.075 L -.415 -.075 M -.465 .14 L -.415 .14',
 			'M .405 .13 L .46 .13 M .39 .31 L .43 .31'):
-			xml.etree.ElementTree.SubElement(group, 'path', {
+			lxml.etree.SubElement(group, 'path', {
 				'd': svg_tools._style.scaled_path(join, width, height), 'fill': 'none',
 				'stroke': color, 'stroke-width': str(.03 * min(width, height))})
 	if kind == 'chloroplast':
@@ -185,7 +185,7 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 			'M -.24 .015 C -.14 .015 -.11 -.045 0 -.045 L 0 -.025 C -.11 -.025 -.14 .035 -.24 .035 Z',
 			'M 0 .015 C .10 .015 .14 .035 .23 .035 L .23 .055 C .14 .055 .10 .035 0 .035 Z',
 		):
-			xml.etree.ElementTree.SubElement(group, 'path', {
+			lxml.etree.SubElement(group, 'path', {
 				'd': svg_tools._style.scaled_path(lamella, width, height),
 				'fill': color, 'stroke-width': str(.4 * stroke_width),
 				'data-role': 'stroma-lamella'})
@@ -194,10 +194,10 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 				y = top + .06 * layer
 				sac = (f'M {x - .075} {y} C {x - .075} {y - .022} {x + .075} {y - .022} {x + .075} {y} '
 					f'L {x + .075} {y + .023} C {x + .075} {y + .047} {x - .075} {y + .047} {x - .075} {y + .023} Z')
-				xml.etree.ElementTree.SubElement(group, 'path', {
+				lxml.etree.SubElement(group, 'path', {
 					'd': svg_tools._style.scaled_path(sac, width, height), 'fill': color,
 					'stroke-width': str(.4 * stroke_width), 'data-role': 'thylakoid'})
-				xml.etree.ElementTree.SubElement(group, 'ellipse', {
+				lxml.etree.SubElement(group, 'ellipse', {
 					'cx': str(x * width), 'cy': str(y * height), 'rx': str(.075 * width),
 					'ry': str(.018 * height), 'fill': '#ffffff', 'fill-opacity': '.30',
 					'stroke-width': str(.3 * stroke_width)})
@@ -205,7 +205,7 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 			('M -.405 -.03 C -.39 -.19 -.24 -.315 -.04 -.315', '#ffffff', '.65'),
 			('M -.22 .285 C -.02 .36 .25 .29 .36 .14', '#344651', '.22'),
 		):
-			xml.etree.ElementTree.SubElement(group, 'path', {
+			lxml.etree.SubElement(group, 'path', {
 				'd': svg_tools._style.scaled_path(edge, width, height), 'fill': 'none',
 				'stroke': shade, 'stroke-opacity': opacity,
 				'stroke-width': str(.015 * min(width, height))})
@@ -222,5 +222,5 @@ def organelle(*, kind: str, width: float, height: float, color: str) -> svg_tool
 	elif kind == 'golgi':
 		anchors.update(top=(.3144 * width, -.40 * height), bottom=(0, .315 * height),
 			left=(-.47 * width, 0), right=(.47 * width, 0))
-	return svg_tools.parts.SvgPart(xml.etree.ElementTree.tostring(group, encoding='unicode'),
+	return svg_tools.parts.SvgPart(lxml.etree.tostring(group, encoding='unicode'),
 		part.bounds, anchors)

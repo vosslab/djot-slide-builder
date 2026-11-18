@@ -1,7 +1,7 @@
 """Project format-neutral reveal targets into native ODF/SMIL timing trees."""
 
-import xml.etree.ElementTree
 
+import lxml.etree
 import slide_lib.layout_model
 
 
@@ -9,19 +9,14 @@ ANIMATION_NS = "urn:oasis:names:tc:opendocument:xmlns:animation:1.0"
 PRESENTATION_NS = "urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"
 SMIL_NS = "urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"
 
-for _prefix, _namespace in (("anim", ANIMATION_NS),
-		("presentation", PRESENTATION_NS), ("smil", SMIL_NS)):
-	xml.etree.ElementTree.register_namespace(_prefix, _namespace)
-
-
 #============================================
 def _qname(namespace: str, local_name: str) -> str:
-	"""Build one ElementTree-qualified name."""
+	"""Build an expanded ODF name."""
 	return f"{{{namespace}}}{local_name}"
 
 
 #============================================
-def write_reveals(page: xml.etree.ElementTree.Element,
+def write_reveals(page: lxml.etree._Element,
 		slide: slide_lib.layout_model.LayoutSlide, target_ids: dict[str, str]) -> None:
 	"""Project ordered on-click appear and fade effects into native ODF/SMIL.
 
@@ -38,10 +33,10 @@ def write_reveals(page: xml.etree.ElementTree.Element,
 		key=lambda value: value.activation_order)
 	if not targets:
 		return
-	root = xml.etree.ElementTree.SubElement(page, _qname(ANIMATION_NS, "par"), {
+	root = lxml.etree.SubElement(page, _qname(ANIMATION_NS, "par"), {
 		_qname(PRESENTATION_NS, "node-type"): "timing-root",
 	})
-	sequence = xml.etree.ElementTree.SubElement(root, _qname(ANIMATION_NS, "seq"), {
+	sequence = lxml.etree.SubElement(root, _qname(ANIMATION_NS, "seq"), {
 		_qname(PRESENTATION_NS, "node-type"): "main-sequence",
 		_qname(SMIL_NS, "dur"): "indefinite",
 	})
@@ -54,7 +49,7 @@ def write_reveals(page: xml.etree.ElementTree.Element,
 		if target.reveal.effect.value == "disappear":
 			click_attributes.update({_qname(PRESENTATION_NS, "preset-class"): "exit",
 				_qname(PRESENTATION_NS, "preset-id"): "ooo-exit-disappear"})
-		click = xml.etree.ElementTree.SubElement(sequence, _qname(ANIMATION_NS, "par"), click_attributes)
+		click = lxml.etree.SubElement(sequence, _qname(ANIMATION_NS, "par"), click_attributes)
 		attributes = {
 			_qname(SMIL_NS, "targetElement"): target_ids[target.target_id],
 			_qname(SMIL_NS, "dur"): "0.001s" if target.reveal.effect.value in ("appear", "disappear") else "1s",
@@ -63,11 +58,11 @@ def write_reveals(page: xml.etree.ElementTree.Element,
 		if target.reveal.effect.value in ("appear", "disappear"):
 			attributes.update({_qname(SMIL_NS, "attributeName"): "visibility",
 				_qname(SMIL_NS, "to"): "hidden" if target.reveal.effect.value == "disappear" else "visible"})
-			xml.etree.ElementTree.SubElement(click, _qname(ANIMATION_NS, "set"), attributes)
+			lxml.etree.SubElement(click, _qname(ANIMATION_NS, "set"), attributes)
 		elif target.reveal.effect.value == "fade":
 			attributes.update({_qname(SMIL_NS, "type"): "fade",
 				_qname(SMIL_NS, "subtype"): "crossfade"})
-			xml.etree.ElementTree.SubElement(click,
+			lxml.etree.SubElement(click,
 				_qname(ANIMATION_NS, "transitionFilter"), attributes)
 		else:
 			raise ValueError(f"unsupported ODP reveal effect: {target.reveal.effect.value}")

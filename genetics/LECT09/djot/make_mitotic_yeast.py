@@ -4,9 +4,9 @@ import argparse
 import json
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.drawing
 
@@ -23,10 +23,10 @@ DESTINATIONS = {
 }
 NS = 'http://www.w3.org/2000/svg'
 TAG = '{' + NS + '}'
-ET.register_namespace('', NS)
 
 
-def namespaced(element: ET.Element) -> ET.Element:
+
+def namespaced(element: lxml.etree._Element) -> lxml.etree._Element:
 	"""Apply the SVG namespace to a renderer fragment."""
 	for node in element.iter():
 		if not node.tag.startswith('{'):
@@ -67,7 +67,7 @@ def labeled_segments(model: dict) -> tuple:
 	return segments
 
 
-def body_part(model: dict) -> ET.Element:
+def body_part(model: dict) -> lxml.etree._Element:
 	"""Render one explicit centerline model with the shared body tool."""
 	segments = labeled_segments(model)
 	chromosome = svg_tools.chromosomes.Chromosome(segments)
@@ -77,7 +77,7 @@ def body_part(model: dict) -> ET.Element:
 	part = svg_tools.chromosomes.chromosome_path_part(
 		model['id'], chromosome, model['path'], thickness=thickness,
 		labels=bool(model.get('loci')))
-	element = namespaced(DET.fromstring(part.fragment))
+	element = namespaced(svg_tools._xml.parse(part.fragment))
 	if not model.get('loci'):
 		for region, source in zip((node for node in element if node.get('data-source-label') is not None),
 			model['regions']):
@@ -86,14 +86,14 @@ def body_part(model: dict) -> ET.Element:
 	return element
 
 
-def marker_part(identifier: str, thickness: float) -> ET.Element:
+def marker_part(identifier: str, thickness: float) -> lxml.etree._Element:
 	"""Render one hollow centromere marker with the shared tool."""
 	part = svg_tools.chromosomes.centromere_part(identifier, thickness=thickness)
-	element = namespaced(DET.fromstring(part.fragment))
+	element = namespaced(svg_tools._xml.parse(part.fragment))
 	return element
 
 
-def replace(parent: ET.Element, old: ET.Element, new: ET.Element) -> None:
+def replace(parent: lxml.etree._Element, old: lxml.etree._Element, new: lxml.etree._Element) -> None:
 	"""Replace one direct child while preserving source order."""
 	position = list(parent).index(old)
 	parent.remove(old)
@@ -102,10 +102,10 @@ def replace(parent: ET.Element, old: ET.Element, new: ET.Element) -> None:
 
 def build(name: str, model: dict) -> bytes:
 	"""Fill the body-free template for one output SVG."""
-	root = DET.parse(DATA / name).getroot()
+	root = svg_tools._xml.read(DATA / name)
 	bodies = {body['id']: body for body in model['bodies']}
 	markers = {marker['id']: marker for marker in model['markers']}
-	for parent in root.iter():
+	for parent in list(root.iter()):
 		for slot in list(parent):
 			body_id = slot.get('data-body-slot')
 			marker_id = slot.get('data-marker-slot')
@@ -115,7 +115,7 @@ def build(name: str, model: dict) -> bytes:
 			elif marker_id:
 				replace(parent, slot, marker_part(marker_id, markers[marker_id]['thickness']))
 	svg_tools.drawing.remove_canvas_background(root)
-	data = ET.tostring(root, encoding='ascii', xml_declaration=True)
+	data = lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True)
 	return data
 
 

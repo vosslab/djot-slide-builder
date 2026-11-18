@@ -5,9 +5,9 @@ import hashlib
 import json
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.drawing
 import svg_tools.parts
@@ -64,7 +64,7 @@ def robertsonian_footer(source: dict,
 	shared = output_directory / 'robertsonian_gamete_products.drawn.svg'
 	if not shared.is_file():
 		raise ValueError('Generate shared Robertsonian gamete products before this composition')
-	root = DET.parse(shared).getroot()
+	root = svg_tools._xml.read(shared)
 	root.set('data-chromosome-review', 'C68')
 	for element in root:
 		if element.tag.endswith('title'):
@@ -74,23 +74,8 @@ def robertsonian_footer(source: dict,
 				'outcomes, probabilities, and explanatory labels retained.')
 	path = output_directory / 'lect13d_p2_robertsonian_footer.drawn.svg'
 	svg_tools.drawing.remove_canvas_background(root)
-	ET.ElementTree(root).write(path, encoding='ascii', xml_declaration=True)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(path, encoding='ascii', xml_declaration=True)
 	return path
-
-
-#============================================
-def normalize_namespace(path: pathlib.Path) -> None:
-	"""Avoid LibreOffice's blank-import bug with prefixed SVG element names."""
-	root = DET.parse(path).getroot()
-	for element in root.iter():
-		if element.tag.startswith('{http://www.w3.org/2000/svg}'):
-			element.tag = element.tag.split('}', 1)[1]
-	root.set('xmlns', 'http://www.w3.org/2000/svg')
-	markup = ET.tostring(root, encoding='ascii', xml_declaration=True)
-	if any(not e.tag.startswith('{http://www.w3.org/2000/svg}')
-		for e in DET.fromstring(markup).iter()):
-		raise ValueError('A composition element lost its SVG namespace')
-	path.write_bytes(markup)
 
 
 #============================================
@@ -100,13 +85,13 @@ def rejection_cross(source: dict) -> str:
 	x1, y1, x2, y2 = source['target_bounds']
 	points = ' '.join(f'{x1 + (x-left)*(x2-x1)/(right-left):.6f},'
 		f'{y1 + (y-top)*(y2-y1)/(bottom-top):.6f}' for x, y in source['source_pdf_points'])
-	polygon = ET.Element('polygon', {
+	polygon = lxml.etree.Element('polygon', {
 		'id': source['target_id'], 'points': points, 'fill': source['source_fill'],
 		'fill-opacity': str(source['source_fill_opacity']), 'stroke': source['source_stroke'],
 		'stroke-width': str(source['source_stroke_width'] * (x2-x1)/(right-left)),
 		'stroke-linejoin': 'round',
 	})
-	fragment = ET.tostring(polygon, encoding='unicode')
+	fragment = lxml.etree.tostring(polygon, encoding='unicode')
 	return fragment
 
 
@@ -114,7 +99,7 @@ def rejection_cross(source: dict) -> str:
 def render(output_directory: pathlib.Path) -> list[pathlib.Path]:
 	"""Write only the four new compositions; verify both frozen reference inputs."""
 	source: dict = json.loads((HERE / 'lect13d_p2_sources.json').read_text())
-	reference_bytes = source['reference_svg'].encode('utf-8')
+	reference_bytes = (HERE / source['reference_artwork']).read_bytes()
 	if hashlib.sha256(reference_bytes).hexdigest() != source['reference_sha256']:
 		raise ValueError('The reviewed reference component changed; review before regenerating')
 	reference = svg_tools.svg_import.import_svg(reference_bytes, name='frozen_reference', size=450)
@@ -160,8 +145,6 @@ def render(output_directory: pathlib.Path) -> list[pathlib.Path]:
 			'<rect width="1400" height="750" fill="white" />' + cross + composite.fragment)
 		outputs.append(path)
 	outputs.append(robertsonian_footer(source['robertsonian'], output_directory))
-	for path in outputs:
-		normalize_namespace(path)
 	return outputs
 
 

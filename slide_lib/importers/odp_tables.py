@@ -1,9 +1,9 @@
 """Read bounded ODF tables into the importer source model."""
 
 # Standard Library
-import xml.etree.ElementTree
 
 # Local Modules
+import lxml.etree
 import slide_lib.importers.odf_styles as odf_styles
 import slide_lib.importers.odf_text as odf_text
 import slide_lib.importers.odp_geometry as odp_geometry
@@ -21,7 +21,7 @@ def qname(prefix: str, local_name: str) -> str:
 	return f"{{{NS[prefix]}}}{local_name}"
 
 
-def table_cell_runs(cell: xml.etree.ElementTree.Element,
+def table_cell_runs(cell: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TextRun, ...]:
 	"""Read cell text, inheriting its default style without changing source colors."""
 	result: list[source_model.TextRun] = []
@@ -33,7 +33,7 @@ def table_cell_runs(cell: xml.etree.ElementTree.Element,
 	return tuple(result)
 
 
-def repeat_count(element: xml.etree.ElementTree.Element, attribute: str) -> int:
+def repeat_count(element: lxml.etree._Element, attribute: str) -> int:
 	"""Return one bounded ODF repeat or span value."""
 	# ASVS 2.2.1: bound expansion before constructing the physical cell matrix.
 	raw_value = element.get(qname("table", attribute), "1")
@@ -42,7 +42,7 @@ def repeat_count(element: xml.etree.ElementTree.Element, attribute: str) -> int:
 	return int(raw_value)
 
 
-def source_cell(cell: xml.etree.ElementTree.Element, default_style: str,
+def source_cell(cell: lxml.etree._Element, default_style: str,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> source_model.SourceTableCell:
 	"""Keep physical-cell text, spans, and resolved ODF properties together."""
 	if default_style and not cell.get(qname("table", "style-name")):
@@ -66,7 +66,7 @@ def source_cell(cell: xml.etree.ElementTree.Element, default_style: str,
 	return result
 
 
-def read_table(table: xml.etree.ElementTree.Element, left: float, top: float,
+def read_table(table: lxml.etree._Element, left: float, top: float,
 		source_ordinal: int, definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[source_model.TableBlock,
 		list[tuple[int, int, tuple[source_model.TextRun, ...]]]]:
 	"""Extract a physical grid, preserving covered cells and default cell styles."""
@@ -86,7 +86,7 @@ def read_table(table: xml.etree.ElementTree.Element, left: float, top: float,
 			points = odp_geometry.parse_length(width, field_name="table column width", allow_negative=False)
 			column_widths.extend([points] * repeats)
 
-	def add_row(row: xml.etree.ElementTree.Element, is_header: bool) -> None:
+	def add_row(row: lxml.etree._Element, is_header: bool) -> None:
 		nonlocal header_row_count, total_cell_count
 		cells: list[source_model.SourceTableCell] = []
 		row_default = row.get(qname("table", "default-cell-style-name"), "")

@@ -3,10 +3,12 @@
 import re
 import math
 import collections.abc
-import xml.etree.ElementTree
 
-import svg_tools.chromosomes
+import lxml.etree
+
 import svg_tools.parts
+import svg_tools.text
+import svg_tools.chromosomes
 
 
 #============================================
@@ -38,35 +40,35 @@ def gene_track_svg(name: str,
 	if any(not isinstance(value, (int, float)) or isinstance(value, bool)
 		or not math.isfinite(value) or value <= 0 for value in (natural_width, width, height)):
 		raise ValueError("Track dimensions must be finite and positive")
-	group = xml.etree.ElementTree.Element("g", {"id": name})
+	group = lxml.etree.Element("g", {"id": name})
 	boundaries = []
 	x = 0.0
 	for index, exon in enumerate(exons):
 		boundaries.append(x)
 		exon_width = exon.length / natural_width * width
-		region = xml.etree.ElementTree.SubElement(group, "g", {"id": f"{name}-exon-{index}"})
-		xml.etree.ElementTree.SubElement(region, "rect", {
+		region = lxml.etree.SubElement(group, "g", {"id": f"{name}-exon-{index}"})
+		lxml.etree.SubElement(region, "rect", {
 			"x": str(x), "y": "0", "width": str(exon_width), "height": str(height),
 			"fill": exon.color, "stroke": "#344651", "stroke-width": str(height * .05),
 		})
 		font_size = min(height * .45, exon_width * .8 / max(1, len(exon.label)) / .65)
-		xml.etree.ElementTree.SubElement(region, "text", {
+		lxml.etree.SubElement(region, "text", {
 			"x": str(x + exon_width / 2), "y": str(height / 2 + font_size * .34),
 			"font-family": "Atkinson Hyperlegible Next", "font-size": str(font_size),
 			"font-weight": "600", "text-anchor": "middle",
-			"fill": svg_tools.chromosomes._label_color(exon.color),
+			"fill": svg_tools.text.label_color(exon.color),
 		}).text = exon.label
 		x += exon_width
 		if index < len(intron_lengths) and intron_lengths[index] > 0:
 			end = x + intron_lengths[index] / natural_width * width
-			xml.etree.ElementTree.SubElement(group, "line", {
+			lxml.etree.SubElement(group, "line", {
 				"id": f"{name}-intron-{index}", "x1": str(x), "x2": str(end),
 				"y1": str(height / 2), "y2": str(height / 2),
 				"stroke": "#344651", "stroke-width": str(height * .03),
 			})
 			x = end
 	boundaries.append(x)
-	fragment = xml.etree.ElementTree.tostring(
+	fragment = lxml.etree.tostring(
 		group, encoding="ascii", xml_declaration=False).decode("ascii")
 	return fragment, width, boundaries
 
@@ -106,17 +108,17 @@ def gene_feature_part(label: str, length: float, direction: str, *, color: str,
 	points = (f'0,0 {length-head},0 {length},{height/2} {length-head},{height} 0,{height}'
 		if direction == 'forward' else
 		f'{length},0 {head},0 0,{height/2} {head},{height} {length},{height}')
-	shape = xml.etree.ElementTree.Element('polygon', {'points': points, 'fill': color,
+	shape = lxml.etree.Element('polygon', {'points': points, 'fill': color,
 		'stroke': '#344651', 'stroke-width': '2', 'stroke-linejoin': 'round'})
 	return _labeled_feature(shape, label, length, height,
 		{'tip': (length if direction == 'forward' else 0, height/2)})
 
 
 #============================================
-def _labeled_feature(shape: xml.etree.ElementTree.Element, label: str, width: float,
+def _labeled_feature(shape: lxml.etree._Element, label: str, width: float,
 	height: float, extra: dict[str, tuple[float, float]]) -> svg_tools.parts.SvgPart:
 	import svg_tools.text
-	fragment = xml.etree.ElementTree.tostring(shape, encoding='unicode')
+	fragment = lxml.etree.tostring(shape, encoding='unicode')
 	label_part = svg_tools.text.label(width/2, -8, label, size=15, color='#344651')
 	bounds = (min(-1, label_part.bounds[0]), min(-1, label_part.bounds[1]),
 		max(width+1, label_part.bounds[2]), max(height+1, label_part.bounds[3]))
@@ -138,17 +140,17 @@ def landmark_part(kind: str, label: str, *, direction: str, width: float = 40,
 			or not math.isfinite(v) or v <= 0 for v in (width, height))):
 		raise ValueError('Supply a landmark, label, direction and positive dimensions')
 	svg_tools.chromosomes.Segment(label, color, width)
-	shape = xml.etree.ElementTree.Element('g', {'stroke': '#344651', 'stroke-width': '2',
+	shape = lxml.etree.Element('g', {'stroke': '#344651', 'stroke-width': '2',
 		'stroke-linejoin': 'round', 'fill': color})
 	if kind == 'operator':
-		xml.etree.ElementTree.SubElement(shape, 'rect', {'x': '0', 'y': str(height*.25),
+		lxml.etree.SubElement(shape, 'rect', {'x': '0', 'y': str(height*.25),
 			'width': str(width), 'height': str(height*.5), 'rx': '3'})
 	elif kind == 'terminator':
-		xml.etree.ElementTree.SubElement(shape, 'path', {'d': f'M {width/2} {height} V {height*.2} M {width*.15} {height*.2} H {width*.85}', 'fill': 'none'})
+		lxml.etree.SubElement(shape, 'path', {'d': f'M {width/2} {height} V {height*.2} M {width*.15} {height*.2} H {width*.85}', 'fill': 'none'})
 	else:
 		x = width if direction == 'forward' else 0
 		back = width*.68 if direction == 'forward' else width*.32
-		xml.etree.ElementTree.SubElement(shape, 'path', {'d': f'M {width/2} {height} V {height*.3} H {x} M {back} {height*.1} L {x} {height*.3} L {back} {height*.5}', 'fill': 'none'})
+		lxml.etree.SubElement(shape, 'path', {'d': f'M {width/2} {height} V {height*.3} H {x} M {back} {height*.1} L {x} {height*.3} L {back} {height*.5}', 'fill': 'none'})
 	return _labeled_feature(shape, label, width, height, {'landmark': (width/2, height/2)})
 
 

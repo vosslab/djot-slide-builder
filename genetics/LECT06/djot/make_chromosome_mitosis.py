@@ -4,11 +4,11 @@ import argparse
 import pathlib
 import re
 import subprocess
-import xml.etree.ElementTree as xml
-import defusedxml.ElementTree as DET
 
 import svgpathtools
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes
 import svg_tools.chromosome_surface
 import svg_tools.drawing
@@ -47,7 +47,7 @@ def chromosome(name: str, chromatids: int, path_d: str | None,
 	return f'<g transform="translate({-length/2} {-thickness/2})">' + part.fragment + '</g>'
 
 
-def body_extent(group: xml.Element) -> tuple[float, float]:
+def body_extent(group: lxml.etree._Element) -> tuple[float, float]:
 	"""Match the source painted envelope before replacing a duplicated X."""
 	points = []
 	stroke = 0.0
@@ -65,13 +65,13 @@ def body_extent(group: xml.Element) -> tuple[float, float]:
 	return max(xs)-min(xs)+stroke, max(ys)-min(ys)+stroke
 
 
-def outer_stroke(group: xml.Element) -> float:
+def outer_stroke(group: lxml.etree._Element) -> float:
 	"""Return the visible source body width, never its bounding-box height."""
 	return max((float(node.attrib.get('stroke-width', '0'))
 		for node in group.iter(SVG + 'path') if node.attrib.get('d')), default=10)
 
 
-def source_centromere_fraction(group: xml.Element, path_d: str) -> float:
+def source_centromere_fraction(group: lxml.etree._Element, path_d: str) -> float:
 	"""Project a source centromere ellipse onto its original body centerline."""
 	ellipse = next((node for node in group.iter(SVG + 'ellipse')
 		if 'cx' in node.attrib and 'cy' in node.attrib), None)
@@ -82,19 +82,19 @@ def source_centromere_fraction(group: xml.Element, path_d: str) -> float:
 	return max(.001, min(.999, svg_tools.chromosome_surface.nearest_distance(path, marker)/path.length()))
 
 
-def svg_fragment(fragment: str) -> xml.Element:
+def svg_fragment(fragment: str) -> lxml.etree._Element:
 	"""Parse a shared body fragment as SVG so serialization keeps one namespace."""
-	element = DET.fromstring(fragment)
+	element = svg_tools._xml.parse(fragment)
 	for node in element.iter():
 		if isinstance(node.tag, str) and not node.tag.startswith('{'):
 			node.tag = SVG + node.tag
 	return element
 
 
-def replace_groups(root: xml.Element) -> list[dict]:
+def replace_groups(root: lxml.etree._Element) -> list[dict]:
 	"""Keep each existing semantic chromosome group and its placement transform."""
 	records = []
-	for group in root.iter(SVG + 'g'):
+	for group in list(root.iter(SVG + 'g')):
 		identifier = group.attrib.get('id', '')
 		is_checkpoint_chromosome = re.fullmatch(r'(pro|meta)-chromosome-[1-6]', identifier)
 		if group.attrib.get('data-chromosomes') != '1' and not is_checkpoint_chromosome:
@@ -116,7 +116,7 @@ def replace_groups(root: xml.Element) -> list[dict]:
 			'transform': group.attrib.get('transform', '')})
 	# The anaphase checkpoint predates semantic groups. Its twelve purple V paths
 	# are still source-owned chromosome silhouettes and need the same migration.
-	for cell in root.iter(SVG + 'g'):
+	for cell in list(root.iter(SVG + 'g')):
 		if cell.attrib.get('id') != 'cell-ana':
 			continue
 		for index, child in enumerate(list(cell)):
@@ -134,16 +134,16 @@ def replace_groups(root: xml.Element) -> list[dict]:
 
 
 def main(output_root: pathlib.Path | None = None) -> None:
-	xml.register_namespace("", SVG[1:-1])
+
 	output_dir = OUT if output_root is None else output_root / 'lect06b-intro_cells'
 	output_dir.mkdir(parents=True, exist_ok=True)
 	manifest = {}
 	for stem in ASSETS:
-		root = DET.parse(TEMPLATES / (stem + '.drawn.svg')).getroot()
+		root = svg_tools._xml.read(TEMPLATES / (stem + '.drawn.svg'))
 		manifest[stem] = replace_groups(root)
 		svg_tools.drawing.remove_canvas_background(root)
 		output = output_dir / (stem + '.drawn.svg')
-		xml.ElementTree(root).write(output, encoding='unicode')
+		lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(output, encoding='utf-8')
 
 
 if __name__ == '__main__':

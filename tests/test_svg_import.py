@@ -1,10 +1,9 @@
 """Static figure import preserves viewports, references, and editable text."""
 
-import xml.etree.ElementTree as ET
 
 import pathlib
 
-import defusedxml.ElementTree
+import lxml.etree
 import pytest
 
 from svg_tools.parts import group
@@ -23,37 +22,26 @@ FIGURE = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.o
 def test_repeated_figures_preserve_geometry_and_references() -> None:
 	first = import_svg(FIGURE, name='first', size=80)
 	second = import_svg(FIGURE.encode(), name='second', size=80)
-	root = defusedxml.ElementTree.fromstring('<svg>' + group({'a': first, 'b': second}).fragment + '</svg>')
+	root = lxml.etree.fromstring('<svg>' + group({'a': first, 'b': second}).fragment + '</svg>')
 	figures = root.findall('.//{http://www.w3.org/2000/svg}svg')
 	assert first.bounds == (0, 0, 80, 40)
 	assert all(e.get('viewBox') == '10 20 40 20' and e.get('fill') == 'red' for e in figures)
 	assert [e.text for e in root.findall('.//{http://www.w3.org/2000/svg}text')] == ['Live words'] * 2
-	assert 'url(#part0-first-p)' in ET.tostring(root, encoding='unicode')
-	assert '#part1-second-line' in ET.tostring(root, encoding='unicode')
+	assert 'url(#part0-first-p)' in lxml.etree.tostring(root, encoding='unicode')
+	assert '#part1-second-line' in lxml.etree.tostring(root, encoding='unicode')
 
 
 #============================================
-@pytest.mark.parametrize('uri,prefix', [
-	('http://www.w3.org/1999/xlink', 'previous'),
-	('http://www.w3.org/2000/svg', 'xlink'),
-	('http://purl.org/dc/elements/1.1/', 'xlink'),
-])
-def test_import_preserves_namespace_registry_and_xlink(
-		monkeypatch: pytest.MonkeyPatch, tmp_path: pathlib.Path, uri: str, prefix: str) -> None:
-	monkeypatch.setattr(ET, '_namespace_map', ET._namespace_map.copy())
-	ET.register_namespace(prefix, uri)
-	before = ET._namespace_map.copy()
+def test_import_preserves_metadata_and_xlink(tmp_path: pathlib.Path) -> None:
 	part = import_svg(FIGURE, name='figure')
-	assert ET._namespace_map == before
-	assert defusedxml.ElementTree.fromstring(part.fragment).find('.//{http://www.w3.org/2000/svg}use').get(
+	assert lxml.etree.fromstring(part.fragment).find('.//{http://www.w3.org/2000/svg}use').get(
 		'{http://www.w3.org/1999/xlink}href') == '#figure-line'
 	output = tmp_path / 'figure.svg'
 	write_svg(output, 40, 20, 'Figure', 'Imported figure', part.fragment)
-	assert ET._namespace_map == before
 	assert 'xlink:href="#figure-line"' in output.read_text()
-	assert defusedxml.ElementTree.parse(output).find('.//{http://www.w3.org/2000/svg}use').get(
+	assert lxml.etree.parse(output).find('.//{http://www.w3.org/2000/svg}use').get(
 		'{http://www.w3.org/1999/xlink}href') == '#figure-line'
-	assert defusedxml.ElementTree.parse(output).find('.//{http://purl.org/dc/elements/1.1/}title').text == 'Figure metadata'
+	assert lxml.etree.parse(output).find('.//{http://purl.org/dc/elements/1.1/}title').text == 'Figure metadata'
 	assert '<!-- License: ISC -->' in output.read_text()
 
 
@@ -61,7 +49,7 @@ def test_import_preserves_namespace_registry_and_xlink(
 def test_matplotlib_universal_style_is_scoped_and_preserves_override() -> None:
 	svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><defs><style>*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><path style="stroke-linejoin: bevel" d="M0 0L10 10"/></svg>'
 	part = import_svg(svg, name='plot')
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	path = root.find('{http://www.w3.org/2000/svg}path')
 	assert path.get('style').endswith('stroke-linejoin: bevel')
 	assert 'stroke-linecap: butt' in path.get('style')
@@ -77,6 +65,7 @@ def test_matplotlib_universal_style_is_scoped_and_preserves_override() -> None:
 	'<svg viewBox="0 0 1 1"><use href="https://example.com/#x"/></svg>',
 	'<svg viewBox="0 0 1 1"><path fill="url(https://example.com/a)"/></svg>',
 	'<svg viewBox="0 0 1 1"><style>path {fill:red}</style></svg>',
+	'<!DOCTYPE svg SYSTEM "https://example.com/external.dtd"><svg viewBox="0 0 1 1"/>',
 	'<!DOCTYPE svg [<!ENTITY a "bad">]><svg viewBox="0 0 1 1">&a;</svg>',
 	'<svg viewBox="0 0 1 1"><path></svg>',
 ])
@@ -107,7 +96,7 @@ def test_group_imports_preserves_accessibility_and_metadata() -> None:
 	first = import_svg(svg, name='first')
 	second = import_svg(svg, name='second')
 	fragment = group({'a': first, 'b': second}).fragment
-	root = defusedxml.ElementTree.fromstring(fragment)
+	root = lxml.etree.fromstring(fragment)
 	ids = {element.get('id') for element in root.iter() if element.get('id')}
 	assert len(ids) == 6
 	figures = root.findall('.//svg')

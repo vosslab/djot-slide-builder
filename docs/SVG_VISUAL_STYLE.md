@@ -40,10 +40,10 @@ communicate a measurement, gene interval, or diagram structure.
 
 ### Color and depth
 
-Preserve caller-supplied and course-specific semantic colors. Follow
-[slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md): a course theme and a biological identity
-serve different purposes. Stable gene, phenotype, chromosome, and sample associations take
-precedence over decorative palette changes.
+Use the fixed hues and shade grades in
+[slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md#figure-shades) for authored colors.
+Keep the assignments for genes, phenotypes, chromosomes, and samples consistent across related
+figures. Use the course theme for navigation and the established biological colors for the figure.
 
 Use `#344651` as the shared charcoal contour and default label color where suitable against
 the background. Use a base body fill plus one darker same-family plane, optionally adding a
@@ -137,9 +137,9 @@ geometry. Choose the surface treatment from the represented condensation state.
   reversals and closed paths with sharp seams need authored curves. Fusion arms meet at one
   shared centromere anchor. Rectangular centromeres and terminal shapes keep their own edges.
 - Carry semantic colors, loci, source band fills and segment identity through rearrangements.
-  Band boundaries follow a curved chromatid locally rather than remaining page-vertical.
-  Homolog or parental colors need not match a course accent hue. Optional decorative texture
-  may be hidden; actual source bands and measured intervals must remain intact.
+  Band boundaries follow the local direction of a curved chromatid. Use the fixed palette to
+  distinguish homologs and parental origins and repeat those colors in the products. Preserve
+  actual source bands and measured intervals when simplifying decorative texture.
 - Follow [CHROMOSOME_GENE_LABELS.md](CHROMOSOME_GENE_LABELS.md) for the shared gene-label
   convention and pipeline. Model genes as labeled colored intervals on their known chromatids;
   use the shared renderer for upright, measured, contrasting text. Preserve source spacing

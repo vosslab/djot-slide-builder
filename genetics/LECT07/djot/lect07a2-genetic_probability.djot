@@ -20,7 +20,7 @@ color-theme: genetics
 
 ![Slide image 1](assets/source_fidelity/lect07a2/image_001.png)
 
-@notes
+@speaker-notes
 
 Run through the practice questions in the video
 
@@ -61,7 +61,7 @@ Run through the practice questions in the video
 - What's the probability of getting a&#160;_Bb_&#160;genotype?
 - What's the probability of getting an&#160;_Cc_&#160;genotype?
 
-@notes
+@speaker-notes
 
 In order for a puppy to have a&#160;BbCc&#160;genotype, both of these events must take place: the puppy must receive&#160;Bb&#160;alleles,&#160;and&#160;it must receive&#160;Cc&#160;alleles. The two events are independent because the genes assort independently (don't affect one another's inheritance). So, once we calculate the probability of each genetic event, we can multiply these probabilities using the product rule to get the probability of the genotype of interest (BbCc).
 

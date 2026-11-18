@@ -1,21 +1,17 @@
 """Import static SVG files as isolated, clipped parts."""
 
-import math
 import re
-import xml.etree.ElementTree as ET
+import math
 
-import defusedxml.ElementTree
-import defusedxml.common
+import lxml.etree
 
+import svg_tools._xml
 import svg_tools.parts
 
-SVG = 'http://www.w3.org/2000/svg'
 _ELEMENTS = frozenset('svg g defs path rect circle ellipse line polyline polygon text tspan use '
 	'clipPath mask pattern linearGradient radialGradient stop title desc metadata'.split())
 _METADATA = frozenset(('http://www.w3.org/1999/02/22-rdf-syntax-ns#',
 	'http://purl.org/dc/elements/1.1/', 'http://creativecommons.org/ns#'))
-_DOCTYPE = re.compile(r'<!DOCTYPE\s+svg\s+PUBLIC\s+["\']-//W3C//DTD SVG 1\.1//EN["\']\s+'
-	r'["\']http://www\.w3\.org/Graphics/SVG/1\.1/DTD/svg11\.dtd["\']\s*>', re.I)
 _URL = re.compile(r'url\(\s*["\']?#([A-Za-z_][\w.:-]*)["\']?\s*\)', re.I)
 
 
@@ -35,20 +31,16 @@ def import_svg(markup: str | bytes, *, name: str, size: float | None = None) -> 
 			raise ValueError('SVG must be UTF-8') from exc
 	if not isinstance(markup, str):
 		raise TypeError('SVG markup must be str or bytes')
-	markup = _DOCTYPE.sub('', markup)
 	try:
-		parser = defusedxml.ElementTree.DefusedXMLParser(
-			target=ET.TreeBuilder(insert_comments=True), forbid_dtd=True)
-		parser.feed(markup)
-		root = parser.close()
-	except (ET.ParseError, defusedxml.common.DefusedXmlException) as exc:
+		root = svg_tools._xml.parse_document(markup)
+	except (lxml.etree.XMLSyntaxError, ValueError) as exc:
 		raise ValueError('Invalid or unsafe SVG XML') from exc
-	if root.tag not in (f'{{{SVG}}}svg', 'svg'):
+	svg = svg_tools._xml.SVG
+	if root.tag not in (f'{{{svg}}}svg', 'svg'):
 		raise ValueError('Expected an SVG root')
 	# Preserve producer license comments that precede the document element.
-	prologue = markup[:markup.find('<svg')] if '<svg' in markup else ''
-	for comment in reversed(re.findall(r'<!--(.*?)-->', prologue, re.S)):
-		root.insert(0, ET.Comment(comment))
+	for comment in root.itersiblings(preceding=True, tag=lxml.etree.Comment):
+		root.insert(0, lxml.etree.Comment(comment.text))
 	try:
 		viewbox = [float(value) for value in re.split(r'[\s,]+', root.attrib['viewBox'].strip())]
 		if len(viewbox) != 4 or not all(math.isfinite(v) for v in viewbox) or min(viewbox[2:]) <= 0:
@@ -65,9 +57,9 @@ def import_svg(markup: str | bytes, *, name: str, size: float | None = None) -> 
 	styles = []
 	for parent in root.iter():
 		for child in list(parent):
-			if child.tag in (f'{{{SVG}}}style', 'style'):
+			if child.tag in (f'{{{svg}}}style', 'style'):
 				match = re.fullmatch(r'\s*\*\s*\{\s*(.*?)\s*\}\s*', child.text or '', re.S)
-				if child.attrib.keys() - {'type'} or child.attrib.get('type', 'text/css') != 'text/css' or not match or len(child):
+				if set(child.attrib) - {'type'} or child.get('type', 'text/css') != 'text/css' or not match or len(child):
 					raise ValueError('Unsupported SVG stylesheet')
 				declarations = match.group(1)
 				if not re.fullmatch(r'(?:\s*stroke-line(?:join|cap)\s*:\s*(?:round|butt|square|miter|bevel)\s*;?\s*)+', declarations):
@@ -77,14 +69,14 @@ def import_svg(markup: str | bytes, *, name: str, size: float | None = None) -> 
 
 	ids = set()
 	references = []
-	def validate(element: ET.Element, metadata: bool = False) -> None:
+	def validate(element: lxml.etree._Element, metadata: bool = False) -> None:
 		tag = element.tag
-		if tag is ET.Comment:
+		if isinstance(element, lxml.etree._Comment):
 			return
 		namespace, local = (tag[1:].split('}', 1) if tag.startswith('{') else ('', tag))
 		if metadata and namespace in _METADATA:
 			pass
-		elif namespace not in ('', SVG) or local not in _ELEMENTS:
+		elif namespace not in ('', svg) or local not in _ELEMENTS:
 			raise ValueError(f'Unsupported SVG element: {local}')
 		metadata = metadata or local == 'metadata'
 		for key, value in element.attrib.items():
@@ -119,5 +111,5 @@ def import_svg(markup: str | bytes, *, name: str, size: float | None = None) -> 
 	root.set('height', str(height))
 	# Inline style wins over any original overflow attribute or stylesheet.
 	root.set('style', root.attrib.get('style', '') + ';overflow:hidden')
-	fragment = svg_tools.parts.namespace_ids(ET.tostring(root, encoding='unicode'), name)
+	fragment = svg_tools.parts.namespace_ids(lxml.etree.tostring(root, encoding='unicode'), name)
 	return svg_tools.parts.SvgPart(fragment, (0, 0, width, height), {})

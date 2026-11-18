@@ -4,14 +4,23 @@ import re
 import math
 import pathlib
 import dataclasses
-import xml.etree.ElementTree
+import urllib.parse
+import collections.abc
 
-import defusedxml.ElementTree
+import lxml.etree
 import svgpathtools
 
+import svg_tools._xml
 import svg_tools.parts
-import svg_tools.chromosome_surface
 import svg_tools.text
+import svg_tools.palette
+import svg_tools.chromosome_loci
+import svg_tools.chromosome_surface
+import svg_tools.chromosome_topology
+
+
+_JUNCTION_HALF_SPAN = 3
+_GENE_CARD_COLOR = svg_tools.palette.shade('light_orange', 'light')
 
 
 #============================================
@@ -19,82 +28,6 @@ def _positive(value: float) -> bool:
 	valid = (isinstance(value, (int, float)) and not isinstance(value, bool)
 		and math.isfinite(value) and value > 0)
 	return valid
-
-
-#============================================
-def _label_color(color: str) -> str:
-	"""Choose readable live text while retaining the established ink on light fills."""
-	channels = [int(color[pos:pos+2], 16) / 255 for pos in (1, 3, 5)]
-	linear = [v / 12.92 if v <= .04045 else ((v+.055)/1.055)**2.4 for v in channels]
-	luminance = sum(v * weight for v, weight in zip(linear, (.2126, .7152, .0722)))
-	if luminance >= .29:
-		return "#172B3A"
-	if luminance > .179:
-		return "#000000"
-	return "#FFFFFF"
-
-
-#============================================
-def _gene_runs(label: str) -> list[svg_tools.text.TextRun]:
-	"""Keep gene symbols together while raising a terminal allele sign."""
-	match = re.fullmatch(r'(.+)([+-])', label)
-	if match:
-		runs = [svg_tools.text.TextRun(match.group(1), bold=True, italic=True),
-			svg_tools.text.TextRun(match.group(2), bold=True, script='super')]
-	else:
-		runs = [svg_tools.text.TextRun(label, bold=True)]
-	return runs
-
-
-#============================================
-def _gene_label_part(label: str, size: float, color: str) -> svg_tools.parts.SvgPart:
-	"""Make one measured upright label without guessing its baseline offset."""
-	part = svg_tools.text.styled_label(0, 0, _gene_runs(label), size=size,
-		color=_label_color(color), anchor='middle')
-	root = defusedxml.ElementTree.fromstring(part.fragment)
-	root.set('class', 'gene-label')
-	line = next(iter(root))
-	for span in list(line):
-		root.append(span)
-	root.remove(line)
-	fragment = xml.etree.ElementTree.tostring(root, encoding='ascii', xml_declaration=False).decode('ascii')
-	part = dataclasses.replace(part, fragment=fragment)
-	return part
-
-
-#============================================
-def _append_gene_label(parent: xml.etree.ElementTree.Element, x: float, y: float,
-	label: str, size: float, color: str) -> tuple[float, float, float, float]:
-	"""Center measured label ink over one chromosome point."""
-	part = _gene_label_part(label, size, color)
-	shift_x, shift_y = x-part.anchors['center'][0], y-part.anchors['center'][1]
-	root = defusedxml.ElementTree.fromstring(part.fragment)
-	for node in root.iter():
-		if node.get('x') is not None:
-			node.set('x', str(float(node.get('x'))+shift_x))
-		if node.get('y') is not None:
-			node.set('y', str(float(node.get('y'))+shift_y))
-	parent.append(root)
-	xmin, ymin, xmax, ymax = part.bounds
-	bounds = (xmin+shift_x, ymin+shift_y, xmax+shift_x, ymax+shift_y)
-	return bounds
-
-
-#============================================
-def _label_size(label: str, surface: svg_tools.chromosome_surface.Surface,
-	center: float, length: float, width: float, color: str) -> float:
-	"""Fit actual upright ink within a curved locus's tangent and normal spans."""
-	tangent = surface.path.unit_tangent(surface.path.ilength(center))
-	normal = tangent * 1j
-	part = _gene_label_part(label, 100, color)
-	xmin, ymin, xmax, ymax = part.bounds
-	corners = [complex(x, y) for x in (xmin, xmax) for y in (ymin, ymax)]
-	along = [point.real*tangent.real+point.imag*tangent.imag for point in corners]
-	across = [point.real*normal.real+point.imag*normal.imag for point in corners]
-	along_per_unit = (max(along)-min(along))/100
-	across_per_unit = (max(across)-min(across))/100
-	size = min(surface.width*.52, length*.82/along_per_unit, width*.82/across_per_unit)
-	return size
 
 
 #============================================
@@ -131,6 +64,22 @@ class Centromere:
 
 #============================================
 @dataclasses.dataclass(frozen=True)
+class CentromereStyle:
+	"""Optional label and face color for a centromere collar."""
+
+	label: str | None = None
+	fill: str | None = None
+
+	def __post_init__(self) -> None:
+		if self.label is not None and not isinstance(self.label, str):
+			raise ValueError('Centromere label must be a string')
+		if self.fill is not None and (not isinstance(self.fill, str)
+			or not re.fullmatch(r'#[0-9A-Fa-f]{6}', self.fill)):
+			raise ValueError('Centromere fill must be a six-digit hex color')
+
+
+#============================================
+@dataclasses.dataclass(frozen=True)
 class Chromosome:
 	"""Ordered regions and their structurally independent centromere sites."""
 
@@ -155,8 +104,8 @@ class Chromosome:
 
 #============================================
 def gene_locus_part(name: str, surface: svg_tools.chromosome_surface.Surface,
-	center: float, gene: Segment) -> svg_tools.parts.SvgPart:
-	"""Paint one explicitly located, labeled gene region on a prepared chromatid."""
+	center: float, gene: Segment, *, cut_ends: bool = False) -> svg_tools.parts.SvgPart:
+	"""Label an explicit locus, leaving chromosome color next to any telomere caps."""
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
 		raise ValueError('Use an XML-safe unique namespace')
 	if not isinstance(surface, svg_tools.chromosome_surface.Surface):
@@ -165,36 +114,15 @@ def gene_locus_part(name: str, surface: svg_tools.chromosome_surface.Surface,
 		raise ValueError('Gene loci need a labeled Segment')
 	if not isinstance(center, (int, float)) or not math.isfinite(center):
 		raise ValueError('Gene locus center must be finite')
-	start, end = center-gene.length/2, center+gene.length/2
-	if start < 0 or end > surface.length:
-		raise ValueError('Gene locus must fit on its chromosome surface')
-	inset = max(surface.scale, surface.width*.05)
-	if surface.width <= inset*2:
-		raise ValueError('Chromosome surface is too narrow for a gene locus')
-	inner_width = surface.width-inset*2
-	stroke = max(.7, surface.scale*.8)
-	group = xml.etree.ElementTree.Element('g', {'id': name, 'data-layer': 'gene-locus',
-		'data-gene': gene.label})
-	xml.etree.ElementTree.SubElement(group, 'path', {'d': surface.ribbon(start, end,
-		-surface.width/2+inset, surface.width/2-inset), 'fill': gene.color,
-		'stroke': '#344651', 'stroke-width': str(stroke),
-		'stroke-linejoin': 'round', 'class': 'gene-locus'})
-	point = surface.point(center, 0)
-	size = _label_size(gene.label, surface, center, gene.length, inner_width, gene.color)
-	label_bounds = _append_gene_label(group, point.real, point.imag, gene.label, size, gene.color)
-	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
-	path = surface.path.cropped(surface.path.ilength(start), surface.path.ilength(end))
-	xmin, xmax, ymin, ymax = path.bbox()
-	margin = inner_width/2+stroke/2
-	bounds = (min(xmin-margin, label_bounds[0]), min(ymin-margin, label_bounds[1]),
-		max(xmax+margin, label_bounds[2]), max(ymax+margin, label_bounds[3]))
-	start_point, end_point = surface.point(start, 0), surface.point(end, 0)
-	anchors = {'start': (start_point.real, start_point.imag), 'center': (point.real, point.imag),
-		'end': (end_point.real, end_point.imag)}
-	part = svg_tools.parts.SvgPart(fragment, bounds, anchors)
+	terminal = not cut_ends and not surface.path.isclosed()
+	part = svg_tools.chromosome_loci.card(name, surface, center, gene.label, gene.color,
+		gene.length, minimum_size=0, terminal_ends=(terminal, terminal))
+	if part is None:
+		part = svg_tools.chromosome_loci.external(name, surface, center, gene.label, 0j)
 	return part
 
 
+#============================================
 @dataclasses.dataclass(frozen=True)
 class Cytoband:
 	"""Original half-open source interval, linked to its immutable Segment by identity."""
@@ -349,45 +277,55 @@ def render_chromosome_layout(name: str, chromosome: Chromosome, *,
 
 #============================================
 def _centromere_element(name: str, along: float, across: float, thickness: float,
-	active: bool, label: str | None) -> xml.etree.ElementTree.Element:
+	active: bool, style: CentromereStyle | None, angle: float = 0) -> lxml.etree._Element:
 	"""The BPQ collar overlays continuing body color; belts add transverse overhang."""
 	scale = thickness/30
-	group = xml.etree.ElementTree.Element('g', {'id': name, 'data-layer': 'centromere'})
+	fill = '#e6eaf0' if active else '#D9DEE3'
+	if style and style.fill:
+		fill = style.fill
+	group = lxml.etree.Element('g', {'id': name, 'data-layer': 'centromere'})
 	shape = {'x': str(-along/2), 'y': str(-across/2), 'width': str(along),
 		'height': str(across), 'rx': str(4*scale)}
-	clip = xml.etree.ElementTree.SubElement(group, 'clipPath', {'id': name+'-clip'})
-	xml.etree.ElementTree.SubElement(clip, 'rect', shape)
-	face = xml.etree.ElementTree.SubElement(group, 'g', {'clip-path': f'url(#{name}-clip)'})
-	xml.etree.ElementTree.SubElement(face, 'rect', {**shape,
-		'fill': '#e6eaf0' if active else '#D9DEE3'})
+	clip = lxml.etree.SubElement(group, 'clipPath', {'id': name+'-clip'})
+	lxml.etree.SubElement(clip, 'rect', shape)
+	face = lxml.etree.SubElement(group, 'g', {'clip-path': f'url(#{name}-clip)'})
+	lxml.etree.SubElement(face, 'rect', {**shape, 'fill': fill})
 	path = svgpathtools.Path(svgpathtools.Line(complex(-along/2, 0), complex(along/2, 0)))
 	svg_tools.chromosome_surface.Surface(path, across).paint(face, name, texture=False)
 	border = {**shape, 'fill': 'none', 'stroke': '#40474E', 'stroke-width': str(2*scale)}
 	if not active:
 		border['stroke-dasharray'] = f'{4*scale} {2*scale}'
-	xml.etree.ElementTree.SubElement(group, 'rect', border)
-	if label:
-		xml.etree.ElementTree.SubElement(group, 'text', {'x': '0', 'y': str(thickness*.13),
-			'font-family': 'Atkinson Hyperlegible Next', 'font-size': str(thickness*.38),
-			'text-anchor': 'middle', 'fill': '#000000', 'font-weight': 'bold'}).text = label
+	lxml.etree.SubElement(group, 'rect', border)
+	if style and style.label:
+		size = thickness*.72
+		left, top, right, bottom = svg_tools.text.measure_text(style.label, size=size, bold=True)
+		# Fit the ink inside the collar at any rotation, keeping the text upright.
+		fit = min(1, min(along, across)*.86/math.hypot(right-left, bottom-top))
+		part = svg_tools.text.label(-(left+right)*fit/2, -(top+bottom)*fit/2,
+			style.label, size=size*fit, color=svg_tools.text.label_color(fill), bold=True)
+		text = svg_tools._xml.parse(part.fragment)
+		text.set('transform', f'rotate({-angle})')
+		group.append(text)
 	return group
 
 
 #============================================
 def centromere_part(name: str, *, thickness: float = 62, active: bool = True,
-	label: str | None = None, across: float | None = None) -> svg_tools.parts.SvgPart:
+	label: str | None = None, across: float | None = None,
+	fill: str | None = None) -> svg_tools.parts.SvgPart:
 	"""Labelable rounded rectangular centromere centered on an axis-aligned chromatid."""
 	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
 		raise ValueError('Use an XML-safe unique namespace')
 	if not _positive(thickness):
 		raise ValueError('Supply a finite positive thickness')
-	if type(active) is not bool or label is not None and not isinstance(label, str):
-		raise ValueError('Centromere activity and label must be valid')
+	if type(active) is not bool:
+		raise ValueError('Centromere activity must be a boolean')
 	if across is not None and not _positive(across):
 		raise ValueError("Across must be a finite positive span")
 	rx, ry, stroke = thickness*16/30, max(thickness*1.3, across or 0)/2, thickness*2/30
-	marker = _centromere_element(name+'-centromere', 2*rx, 2*ry, thickness, active, label)
-	fragment = xml.etree.ElementTree.tostring(marker, encoding='ascii', xml_declaration=False).decode('ascii')
+	marker = _centromere_element(name+'-centromere', 2*rx, 2*ry, thickness, active,
+		CentromereStyle(label=label, fill=fill))
+	fragment = lxml.etree.tostring(marker, encoding='ascii', xml_declaration=False).decode('ascii')
 	margin = stroke/2
 	return svg_tools.parts.SvgPart(fragment, (-rx-margin, -ry-margin, rx+margin, ry+margin),
 		{'center': (0, 0), 'left': (-rx, 0), 'right': (rx, 0),
@@ -413,26 +351,37 @@ def sister_chromatid_parts(name: str, chromatids: tuple[tuple[Chromosome, str], 
 		junctions=junctions)
 		for index, (chromosome, path_d) in enumerate(chromatids)}
 	for key, part in list(parts.items()):
-		root = defusedxml.ElementTree.fromstring(part.fragment)
+		root = svg_tools._xml.parse(part.fragment)
 		for child in list(root):
 			if child.get('data-layer') == 'centromere':
 				root.remove(child)
-		parts[key] = dataclasses.replace(part, fragment=xml.etree.ElementTree.tostring(root, encoding='unicode'))
+		parts[key] = dataclasses.replace(part, fragment=lxml.etree.tostring(root, encoding='unicode'))
 	for index, site in enumerate(chromatids[0][0].centromeres):
 		first = parts['sister0'].anchors[f'centromere_{index}']
 		second = parts['sister1'].anchors[f'centromere_{index}']
-		dx, dy = second[0]-first[0], second[1]-first[1]
-		separation = math.hypot(dx, dy)
-		along = marker_size[0] if marker_size else thickness*32/30
-		across = max(separation+thickness*1.3, marker_size[1] if marker_size else 0)
-		marker = _centromere_element(f'{name}-belt-{index}', along, across, thickness, site.active, site.label)
-		fragment = xml.etree.ElementTree.tostring(marker, encoding='unicode')
-		margin = thickness/30
-		belt = svg_tools.parts.SvgPart(fragment,
-			(-along/2-margin, -across/2-margin, along/2+margin, across/2+margin), {})
-		parts[f'belt{index}'] = svg_tools.parts.transform(belt, x=(first[0]+second[0])/2,
-			y=(first[1]+second[1])/2, rotation=math.degrees(math.atan2(dy, dx))-90)
+		parts[f'belt{index}'] = _sister_belt_part(f'{name}-belt-{index}', first, second,
+			thickness, marker_size, active=site.active, style=CentromereStyle(label=site.label))
 	return svg_tools.parts.group(parts)
+
+
+#============================================
+def _sister_belt_part(name: str, first: tuple[float, float], second: tuple[float, float],
+	thickness: float, marker_size: tuple[float, float] | None = None, *,
+	active: bool = True, style: CentromereStyle | None = None) -> svg_tools.parts.SvgPart:
+	"""Span both attachment sites with the same BPQ centromere paint as a collar."""
+	dx, dy = second[0]-first[0], second[1]-first[1]
+	separation = math.hypot(dx, dy)
+	along = marker_size[0] if marker_size else thickness*32/30
+	across = max(separation+thickness*1.3, marker_size[1] if marker_size else 0)
+	angle = math.degrees(math.atan2(dy, dx))-90
+	marker = _centromere_element(name, along, across, thickness, active, style, angle)
+	fragment = lxml.etree.tostring(marker, encoding='unicode')
+	margin = thickness/30
+	belt = svg_tools.parts.SvgPart(fragment,
+		(-along/2-margin, -across/2-margin, along/2+margin, across/2+margin), {})
+	part = svg_tools.parts.transform(belt, x=(first[0]+second[0])/2,
+		y=(first[1]+second[1])/2, rotation=angle)
+	return part
 
 
 #============================================
@@ -444,20 +393,20 @@ def condensed_chromosome_part(name: str, chromosome: Chromosome, *, radius: floa
 	if not isinstance(chromosome, Chromosome) or not _positive(radius):
 		raise ValueError('Supply a Chromosome and finite positive radius')
 	fill = chromosome.segments[0].color
-	group = xml.etree.ElementTree.Element('g', {'id': name, 'data-chromosome-state': 'condensed'})
-	clip = xml.etree.ElementTree.SubElement(group, 'clipPath', {'id': name+'-compact-clip'})
-	xml.etree.ElementTree.SubElement(clip, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius)})
-	face = xml.etree.ElementTree.SubElement(group, 'g', {'clip-path': f'url(#{name}-compact-clip)'})
-	xml.etree.ElementTree.SubElement(face, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius), 'fill': fill})
+	group = lxml.etree.Element('g', {'id': name, 'data-chromosome-state': 'condensed'})
+	clip = lxml.etree.SubElement(group, 'clipPath', {'id': name+'-compact-clip'})
+	lxml.etree.SubElement(clip, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius)})
+	face = lxml.etree.SubElement(group, 'g', {'clip-path': f'url(#{name}-compact-clip)'})
+	lxml.etree.SubElement(face, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius), 'fill': fill})
 	path = svgpathtools.Path(svgpathtools.Line(complex(-radius, 0), complex(radius, 0)))
 	svg_tools.chromosome_surface.Surface(path, radius*2).paint(face, name, texture=False)
-	xml.etree.ElementTree.SubElement(group, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius),
+	lxml.etree.SubElement(group, 'circle', {'cx': '0', 'cy': '0', 'r': str(radius),
 		'fill': 'none', 'stroke': '#40474E', 'stroke-width': str(radius*.09)})
 	if label:
-		xml.etree.ElementTree.SubElement(group, 'text', {'x': '0', 'y': str(radius*.18),
+		lxml.etree.SubElement(group, 'text', {'x': '0', 'y': str(radius*.18),
 			'font-family': 'Atkinson Hyperlegible Next', 'font-size': str(radius*.72),
-			'text-anchor': 'middle', 'fill': _label_color(fill)}).text = label
-	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
+			'text-anchor': 'middle', 'fill': svg_tools.text.label_color(fill)}).text = label
+	fragment = lxml.etree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
 	stroke = radius*.09/2
 	bounds = svg_tools.parts.include_text_bounds(fragment,
 		(-radius-stroke, -radius-stroke, radius+stroke, radius+stroke))
@@ -531,122 +480,344 @@ def chromosome_path_part(name: str, chromosome: Chromosome, path_d: str, *,
 		area = path.area(chord_length=length/256)
 		if not math.isfinite(area) or area == 0:
 			raise ValueError('A ring must enclose nonzero finite area')
-	lengths = [segment.length for segment in chromosome.segments]
+	surface = svg_tools.chromosome_surface.Surface(path, thickness)
+	terminal_ends = (not closed and not cut_ends,) * 2
+	total = sum(segment.length for segment in chromosome.segments)
 	distances = [0.0]
-	for segment_length in lengths:
-		distances.append(distances[-1] + segment_length/sum(lengths)*length)
-	distances[-1] = length
+	for segment in chromosome.segments:
+		distances.append(distances[-1] + segment.length/total*surface.length)
+	distances[-1] = surface.length
+	sites = [(distances[site.after], site.active, CentromereStyle(label=site.label))
+		for site in chromosome.centromeres]
+	part = _paint_chromatid(name, chromosome.segments, surface, distances, sites, closed=closed,
+		terminal_ends=terminal_ends, labels=labels, texture=texture,
+		junctions=junctions, marker_size=marker_size)
+	return part
+
+
+#============================================
+def _junction_coords(center: float, surface: svg_tools.chromosome_surface.Surface) -> list[tuple[float, float]]:
+	"""Vertices of the white zigzag in along- and across-surface coordinates."""
+	half_span = _JUNCTION_HALF_SPAN*surface.scale
+	half_height = surface.width/2-surface.width*2/30
+	coords = [(center+(half_span if step % 2 else 0), -half_height+2*half_height*step/6)
+		for step in range(7)]
+	coords += [(center-(half_span if step % 2 == 0 else 0), -half_height+2*half_height*step/6)
+		for step in reversed(range(7))]
+	return coords
+
+
+#============================================
+def _junction_clears_collars(surface: svg_tools.chromosome_surface.Surface, distance: float,
+	site_distances: list[float], outward: complex) -> bool:
+	"""Compare the bent glyph with each collar's stroked rectangle in its own frame."""
+	vertices = [surface.point(*xy) for xy in _junction_coords(distance, surface)]
+	along = surface.width*16/30+surface.scale
+	across = surface.width*.65+abs(outward)+surface.scale
+	for site in site_distances:
+		parameter = surface.path.ilength(site)
+		center = surface.path.point(parameter)-outward
+		tangent = surface.path.unit_tangent(parameter)
+		local = [(vertex-center)*tangent.conjugate() for vertex in vertices]
+		if (min(p.real for p in local) <= along and max(p.real for p in local) >= -along
+			and min(p.imag for p in local) <= across and max(p.imag for p in local) >= -across):
+			return False
+	return True
+
+
+#============================================
+def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
+	surface: svg_tools.chromosome_surface.Surface, distances: list[float],
+	sites: list[tuple[float, bool, CentromereStyle | None]], *, closed: bool = False,
+	terminal_ends: tuple[bool, bool] = (True, True), labels: bool = False,
+	texture: bool = True, junctions: tuple[int, ...] = (),
+	marker_size: tuple[float, float] | None = None,
+	loci: tuple[svg_tools.parts.SvgPart, ...] = (),
+	draw_centromeres: bool = True) -> svg_tools.parts.SvgPart:
+	"""Use one clipped BPQ body surface for legacy and source-backed chromatids."""
+	path, thickness, length = surface.path, surface.width, surface.length
 	if not all(a < b for a, b in zip(distances, distances[1:])):
 		raise ValueError('Geometry must retain distinct segment boundaries')
 	parameters = [path.ilength(distance) if 0 < distance < length else
 		(0.0 if distance == 0 else 1.0) for distance in distances]
 	def point(parameter: float) -> tuple[float, float]:
 		position = path.start if parameter == 0 else path.end if parameter == 1 else path.point(parameter)
-		return (position.real, position.imag)
+		xy = (position.real, position.imag)
+		return xy
 	anchors = {f'boundary_{index}': point(parameter)
 		for index, parameter in enumerate(parameters)}
 	if not closed:
 		anchors['start'], anchors['end'] = point(0), point(1)
-	group = xml.etree.ElementTree.Element('g', {'id': name})
+	group = lxml.etree.Element('g', {'id': name})
 	label_bounds = []
 	path_text = path.d() + (' Z' if closed else '')
 	stroke = thickness * 2/30
-	surface = svg_tools.chromosome_surface.Surface(path, thickness)
-	envelope = surface.envelope(closed, cut_ends)
-	defs = xml.etree.ElementTree.SubElement(group, 'defs')
-	clip = xml.etree.ElementTree.SubElement(defs, 'clipPath', {'id': name+'-body-clip'})
-	xml.etree.ElementTree.SubElement(clip, 'path', {'d': envelope, 'clip-rule': 'evenodd'})
-	paint = xml.etree.ElementTree.SubElement(group, 'g', {'clip-path': f'url(#{name}-body-clip)',
+	envelope = surface.envelope(closed, terminal_ends=terminal_ends)
+	defs = lxml.etree.SubElement(group, 'defs')
+	clip = lxml.etree.SubElement(defs, 'clipPath', {'id': name+'-body-clip'})
+	lxml.etree.SubElement(clip, 'path', {'d': envelope, 'clip-rule': 'evenodd'})
+	paint = lxml.etree.SubElement(group, 'g', {'clip-path': f'url(#{name}-body-clip)',
 		'data-layer': 'body'})
-	xml.etree.ElementTree.SubElement(paint, 'path', {'d': path_text, 'fill': 'none',
-		'stroke': chromosome.segments[0].color, 'stroke-width': str(thickness),
+	lxml.etree.SubElement(paint, 'path', {'d': path_text, 'fill': 'none',
+		'stroke': segments[0].color, 'stroke-width': str(thickness),
 		'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
-	for index, segment in enumerate(chromosome.segments):
-		region = xml.etree.ElementTree.SubElement(paint, 'g', {
+	for index, segment in enumerate(segments):
+		region = lxml.etree.SubElement(paint, 'g', {
 			'id': f'{name}-region-{index}', 'data-source-label': segment.label})
 		portion = path.cropped(parameters[index], parameters[index+1])
-		xml.etree.ElementTree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
+		lxml.etree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
 			'stroke': segment.color, 'stroke-width': str(thickness),
 			'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
 		middle = path.ilength((distances[index]+distances[index+1])/2)
 		anchors[f'segment_{index}'] = point(middle)
-	texture_edges = [0] + [index for index in range(1, len(chromosome.segments))
-		if chromosome.segments[index].color != chromosome.segments[index-1].color
-		or any(site.after == index for site in chromosome.centromeres)] + [len(chromosome.segments)]
+	site_distances = {distance for distance, _, _ in sites}
+	texture_edges = sorted({0.0, length, *site_distances,
+		*(distances[i] for i in range(1, len(segments)) if segments[i].color != segments[i-1].color)})
 	texture_spans = []
-	for first, last in zip(texture_edges, texture_edges[1:]):
-		left, right = distances[first], distances[last]
-		if not closed and not cut_ends:
-			if first == 0:
-				left += min(thickness*8/30, length/4)
-			if last == len(chromosome.segments):
-				right -= min(thickness*8/30, length/4)
-		if any(site.after == first for site in chromosome.centromeres):
-			left += (marker_size[0] if marker_size else thickness*32/30)/2
+	cap_length = surface.cap_length
+	collar_half = (marker_size[0] if marker_size else thickness*32/30)/2
+	for start, stop in zip(texture_edges, texture_edges[1:]):
+		left, right = start, stop
+		if terminal_ends[0] and start == 0:
+			left += cap_length
+		if terminal_ends[1] and stop == length:
+			right -= cap_length
+		if start in site_distances:
+			left += collar_half
 		if right > left:
 			texture_spans.append((left, right))
 	surface.paint(paint, name, texture=texture and bool(texture_spans), texture_spans=texture_spans)
-	if not closed and not cut_ends:
-		cap_length = min(thickness*8/30, length/4)
-		for left, right in ((0, cap_length), (length-cap_length, length)):
-			xml.etree.ElementTree.SubElement(paint, 'path', {
+	for terminal, (left, right) in zip(terminal_ends, ((0, cap_length), (length-cap_length, length))):
+		if terminal:
+			lxml.etree.SubElement(paint, 'path', {
 				'd': surface.ribbon(left, right, -thickness/2, thickness/2),
 				'fill': '#888888', 'data-layer': 'telomere'})
 	# A double-width clipped stroke puts the whole BPQ border inside the body.
-	xml.etree.ElementTree.SubElement(paint, 'path', {'d': envelope,
+	lxml.etree.SubElement(paint, 'path', {'d': envelope,
 		'fill': 'none', 'stroke': '#000000', 'stroke-width': str(2*stroke),
 		'stroke-linejoin': 'round', 'data-layer': 'outline'})
 	for index in junctions:
-		scale = thickness/30
-		center = distances[index]
-		coords = [(center+(3 if step % 2 else 0)*scale,
-			-thickness/2+stroke+(thickness-2*stroke)*step/6) for step in range(7)]
-		coords += [(center+(-3 if step % 2 == 0 else 0)*scale,
-			-thickness/2+stroke+(thickness-2*stroke)*step/6) for step in reversed(range(7))]
-		xml.etree.ElementTree.SubElement(group, 'path', {'id': f'{name}-join-{index}',
-			'd': surface.polygon(coords), 'fill': '#FFFFFF'})
-	for site_number, site in enumerate(chromosome.centromeres):
-		cx, cy = anchors[f'boundary_{site.after}']
+		lxml.etree.SubElement(group, 'path', {'id': f'{name}-join-{index}',
+			'd': surface.polygon(_junction_coords(distances[index], surface)), 'fill': '#FFFFFF'})
+	for locus in loci:
+		group.append(svg_tools._xml.parse(locus.fragment))
+		anchors.update(locus.anchors)
+		label_bounds.append(locus.bounds)
+	painted = set()
+	for site_number, (distance, active, style) in enumerate(sites):
+		parameter = path.ilength(distance)
+		cx, cy = point(parameter)
 		anchors[f'centromere_{site_number}'] = (cx, cy)
 		if site_number == 0:
 			anchors['centromere'] = (cx, cy)
-		tangent = path.unit_tangent(parameters[site.after])
+		if not draw_centromeres or distance in painted:
+			continue
+		painted.add(distance)
+		tangent = path.unit_tangent(parameter)
 		angle = math.degrees(math.atan2(tangent.imag, tangent.real))
 		along, across = marker_size if marker_size is not None else (thickness*32/30, thickness*1.3)
 		across = max(across, thickness*1.3)
 		marker = _centromere_element(f'{name}-centromere-{site_number}', along, across,
-			thickness, site.active, site.label)
+			thickness, active, style, angle)
 		marker.set('transform', f'translate({cx} {cy}) rotate({angle})')
 		group.append(marker)
 	if labels:
-		for index, segment in enumerate(chromosome.segments):
+		for index, segment in enumerate(segments):
 			if not segment.label:
 				continue
 			left, right = distances[index:index+2]
-			clearance = (marker_size[0] if marker_size else thickness*32/30)/2
-			if any(site.after == index for site in chromosome.centromeres):
-				left += clearance
-			if any(site.after == index+1 for site in chromosome.centromeres):
-				right -= clearance
+			if left in site_distances:
+				left += collar_half
+			if right in site_distances:
+				right -= collar_half
 			if right <= left:
 				left, right = distances[index:index+2]
 			center = (left+right)/2
 			middle = path.ilength(center)
 			x, y = point(middle)
-			size = _label_size(segment.label, surface, center, right-left, thickness,
-				segment.color)
-			label_bounds.append(_append_gene_label(group, x, y, segment.label, size,
-				segment.color))
-	fragment = xml.etree.ElementTree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
+			size = svg_tools.chromosome_loci.label_size(segment.label, surface, center,
+				right-left, thickness, segment.color)
+			label_bounds.append(svg_tools.chromosome_loci.append_label(group, x, y,
+				segment.label, size, segment.color))
+	fragment = lxml.etree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
 	xmin, xmax, ymin, ymax = path.bbox()
 	margin = thickness/2 + stroke
-	if chromosome.centromeres:
+	if draw_centromeres and sites:
 		margin = max(margin, max(marker_size or (thickness*32/30, thickness*1.3))/2+stroke)
 	anchors['center'] = ((xmin+xmax)/2, (ymin+ymax)/2)
-	bounds = svg_tools.parts.include_text_bounds(fragment,
-		(xmin-margin, ymin-margin, xmax+margin, ymax+margin))
-	for label_bounds_item in label_bounds:
-		bounds = (min(bounds[0], label_bounds_item[0]), min(bounds[1], label_bounds_item[1]),
-			max(bounds[2], label_bounds_item[2]), max(bounds[3], label_bounds_item[3]))
-	part = svg_tools.parts.SvgPart(fragment, bounds, anchors)
+	# Collar labels fit inside the collars. Locus and segment labels supply measured bounds.
+	bounds = (xmin-margin, ymin-margin, xmax+margin, ymax+margin)
+	part = svg_tools.parts.SvgPart(fragment, svg_tools.parts.union_bounds(bounds, *label_bounds), anchors)
 	return part
+
+
+#============================================
+def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.Chromatid,
+	surface: svg_tools.chromosome_surface.Surface, palette: dict[tuple[str, str], str], *,
+	sites: tuple[svg_tools.chromosome_topology.ProjectedCentromere, ...],
+	centromere_styles: dict[tuple[str, str], CentromereStyle],
+	outward: complex = 0j) -> tuple[svg_tools.parts.SvgPart, list[svg_tools.parts.SvgPart]]:
+	"""Project source features once into the existing BPQ paint and label inputs."""
+	topology = svg_tools.chromosome_topology
+	regions = topology.project_regions(model)
+	genes = topology.project_genes(model)
+	length, width = surface.length, surface.width
+	material_length = model.length
+	ratio = length/material_length
+	collar_half = width*16/30
+	collar_ink_half = collar_half+surface.scale
+	site_distances = [site.position/material_length*length for site in sites]
+	terminal_ends = (model.ends[0] == 'telomere', model.ends[1] == 'telomere')
+	left_cap, right_cap = (surface.cap_length if terminal else 0 for terminal in terminal_ends)
+	mark_half = _JUNCTION_HALF_SPAN*surface.scale
+	inset_outline = width*2/30
+	left_clearance = max(left_cap, inset_outline)+mark_half
+	right_clearance = max(right_cap, inset_outline)+mark_half
+	distances = [region.start/material_length*length for region in regions] + [length]
+	joins = set(model.junctions)
+	junctions = tuple(index for index, region in enumerate(regions) if region.start in joins
+		and left_clearance <= distances[index] <= length-right_clearance
+		and _junction_clears_collars(surface, distances[index], site_distances, outward))
+	junction_distances = [distances[index] for index in junctions]
+	segments = []
+	for region in regions:
+		key = (region.source_id, region.region_id)
+		if key not in palette:
+			raise ValueError(f'Missing palette color for source region {key!r}')
+		label = '/'.join(urllib.parse.quote(value, safe='') for value in key)
+		segments.append(Segment(label, palette[key], region.stop-region.start))
+	gene_positions = [length if gene.position == material_length else gene.position*ratio for gene in genes]
+	locus_ids = [gene.locus_id for gene in genes]
+	loci = []
+	external = []
+	for index, (gene, position) in enumerate(zip(genes, gene_positions)):
+		left = gene_positions[index-1] if index > 0 else -math.inf
+		right = gene_positions[index+1] if index+1 < len(genes) else math.inf
+		clearance = min(position, length-position,
+			*(abs(position-site)-collar_ink_half for site in site_distances),
+			*(abs(position-junction)-mark_half for junction in junction_distances))
+		block_length = min(width*.8, 2*clearance, position-left, right-position)
+		locus_name = f'{name}-gene-{index}'
+		locus = None
+		if block_length >= width*.4:
+			block = Segment(gene.allele, _GENE_CARD_COLOR, block_length)
+			locus = svg_tools.chromosome_loci.card(locus_name, surface, position,
+				block.label, block.color, block.length, minimum_size=width*.4,
+				terminal_ends=terminal_ends)
+		layer = loci
+		if locus is None:
+			locus = svg_tools.chromosome_loci.external(locus_name, surface, position, gene.allele, outward)
+			layer = external
+		key = '/'.join(urllib.parse.quote(value, safe='')
+			for value in (gene.source_id, gene.copy_id, gene.locus_id))
+		point = surface.path.point(surface.path.ilength(position))
+		anchor = (point.real, point.imag)
+		anchors = {f'gene:{key}': anchor}
+		if locus_ids.count(gene.locus_id) == 1:
+			anchors[f'gene_{gene.locus_id}'] = anchor
+		layer.append(dataclasses.replace(locus, anchors=anchors))
+	paint_sites = [(distance, True, centromere_styles.get((site.source_id, site.id)))
+		for distance, site in zip(site_distances, sites)]
+	part = _paint_chromatid(name, segments, surface, distances, paint_sites, terminal_ends=terminal_ends,
+		junctions=junctions, loci=tuple(loci), draw_centromeres=not outward)
+	bounds = part.bounds
+	if not outward:
+		# The rounded rectangle is an inset rectangle plus the corner and stroke radii.
+		radius = 4*surface.scale
+		along, across = collar_half-radius, width*1.3/2-radius
+		margin = radius+surface.scale
+		for index, distance in enumerate(site_distances):
+			x, y = part.anchors[f'centromere_{index}']
+			tangent = surface.path.unit_tangent(surface.path.ilength(distance))
+			dx, dy = abs(tangent.real), abs(tangent.imag)
+			half_x = dx*along+dy*across+margin
+			half_y = dy*along+dx*across+margin
+			bounds = svg_tools.parts.union_bounds(bounds, (x-half_x, y-half_y, x+half_x, y+half_y))
+	center = surface.path.point(surface.path.ilength(length/2))
+	anchors = {**part.anchors, 'center': (center.real, center.imag)}
+	for locus in external:
+		anchors.update(locus.anchors)
+	part = dataclasses.replace(part, bounds=bounds, anchors=anchors)
+	return part, external
+
+
+#============================================
+def _with_external_loci(part: svg_tools.parts.SvgPart,
+	loci: list[svg_tools.parts.SvgPart]) -> svg_tools.parts.SvgPart:
+	"""Overlay locus annotations on the completed body, including any sister belt."""
+	if not loci:
+		return part
+	group = svg_tools._xml.parse(part.fragment)
+	for locus in loci:
+		group.append(svg_tools._xml.parse(locus.fragment))
+	fragment = lxml.etree.tostring(group, encoding='ascii', xml_declaration=False).decode('ascii')
+	bounds = svg_tools.parts.union_bounds(part.bounds, *(locus.bounds for locus in loci))
+	return dataclasses.replace(part, fragment=fragment, bounds=bounds)
+
+
+#============================================
+def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools.chromosome_topology.SisterPair, *,
+	points: collections.abc.Sequence[tuple[float, float]], width: float = 20,
+	scale: float = 1, palette: dict[tuple[str, str], str],
+	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None) -> svg_tools.parts.SvgPart:
+	"""Render source material along a spline, at display length model.length*scale.
+	Anchors include start, end, center (arc midpoint), and active centromere sites.
+	Locus anchors use gene_<locus_id> when unique and always gene:source/copy/locus
+	with URL-encoded components. Pairs qualify child anchors with first. and second.
+	Gene cards leave one cap-length of body color at each telomere. Loci with
+	insufficient room for a card receive a linked external label.
+	Centromere styles are keyed by (source_id, site_id), including for shared sister belts.
+	"""
+	if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_.-]*', name):
+		raise ValueError('Use an XML-safe unique namespace')
+	if not _positive(width) or not _positive(scale) or not isinstance(palette, dict):
+		raise ValueError('Supply finite positive width and scale and a source-region palette')
+	topology = svg_tools.chromosome_topology
+	paired = isinstance(model, topology.SisterPair)
+	first = model.first if paired else model
+	if not isinstance(first, topology.Chromatid):
+		raise ValueError('Supply a Chromatid or SisterPair')
+	if paired:
+		second = model.second
+		# Cutting and rejoining the same material can round its projected distances differently.
+		material_tolerance = 2 * math.ulp(first.length)
+		if not isinstance(second, topology.Chromatid) or abs(first.length-second.length) > material_tolerance:
+			raise ValueError('Sisters must be chromatids of equal material length')
+		if {span.copy_id for span in first.spans} & {span.copy_id for span in second.spans}:
+			raise ValueError('Sisters must have distinct copy IDs')
+	path = svg_tools.chromosome_surface.centerline(points, length=first.length*scale, width=width)
+	if path.isclosed():
+		raise ValueError('Chromatid poses require an open centerline')
+	surface = svg_tools.chromosome_surface.Surface(path, width)
+	first_sites = tuple(site for site in topology.project_centromeres(first) if site.active)
+	offset = 0j
+	if paired:
+		second_sites = tuple(site for site in topology.project_centromeres(second) if site.active)
+		if len(first_sites) != 1 or len(second_sites) != 1:
+			raise ValueError('Automatic sister poses need one active centromere on each chromatid')
+		left, right = first_sites[0], second_sites[0]
+		if ((left.source_id, left.id) != (right.source_id, right.id)
+			or abs(left.position-right.position) > material_tolerance):
+			raise ValueError('Sisters need corresponding active centromeres at the same position')
+		parameter = surface.path.ilength(left.position/first.length*surface.length)
+		offset = surface.path.unit_tangent(parameter)*1j*(width*.6)
+	first_name = f'{name}-first' if paired else name
+	styles = centromere_styles or {}
+	first_part, first_external = _render_topology_chromatid(first_name, first, surface, palette,
+		sites=first_sites, centromere_styles=styles, outward=-offset)
+	if not paired:
+		return _with_external_loci(first_part, first_external)
+	second_part, second_external = _render_topology_chromatid(f'{name}-second', second, surface,
+		palette, sites=second_sites, centromere_styles=styles, outward=offset)
+	first_sister = svg_tools.parts.transform(first_part, x=-offset.real, y=-offset.imag)
+	second_sister = svg_tools.parts.transform(second_part, x=offset.real, y=offset.imag)
+	belt = _sister_belt_part(f'{name}-belt', first_sister.anchors['centromere'],
+		second_sister.anchors['centromere'], width, style=styles.get((left.source_id, left.id)))
+	part = svg_tools.parts.group({'first': first_sister, 'second': second_sister, 'belt': belt})
+	anchors = {key: first_part.anchors[key] for key in ('start', 'end', 'center', 'centromere')}
+	part = dataclasses.replace(part, anchors={**part.anchors, **anchors})
+	external = [svg_tools.parts.transform(locus, x=-offset.real, y=-offset.imag)
+		for locus in first_external]
+	external.extend(svg_tools.parts.transform(locus, x=offset.real, y=offset.imag)
+		for locus in second_external)
+	return _with_external_loci(part, external)

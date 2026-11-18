@@ -39,6 +39,14 @@ Use the existing [chromosomes.py](../svg_tools/chromosomes.py) model and
 they translate source data into the shared pipeline, rather than drawing their own gene
 cards or positioning independent text over the chromosome.
 
+The source-addressed engine uses logical locus IDs and allele labels on retained material.
+Both `render()` and `gene_locus_part()` leave at least one cap-length of chromosome body
+color between a telomere cap and the inked edge of an internal gene block, measured along
+the centerline. If the block cannot fit at its locus
+with that clearance, the renderer marks the locus with a dot and leads to an external label.
+Check the placement against other labels in the complete figure. See
+[CHROMOSOME_ENGINE.md](CHROMOSOME_ENGINE.md).
+
 ## Label appearance
 
 Keep letters upright on the page while the colored region follows the local chromosome
@@ -60,11 +68,14 @@ establish locus ownership, particularly at a crossing.
 
 ```python
 import svg_tools.chromosomes as chromosomes
+import svg_tools.palette as palette
 
+blue = palette.shade('sky_blue', 'dark')
+gene = palette.shade('light_orange', 'light')
 model = chromosomes.Chromosome((
-	chromosomes.Segment("", "#3479A8", 60),
-	chromosomes.Segment("rb+", "#F3D788", 32),
-	chromosomes.Segment("", "#3479A8", 108),
+	chromosomes.Segment("", blue, 60),
+	chromosomes.Segment("rb+", gene, 32),
+	chromosomes.Segment("", blue, 108),
 ))
 part = chromosomes.chromosome_path_part(
 	"ruby", model, "M0 0 C60 -20 140 20 200 0", thickness=30,

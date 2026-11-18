@@ -18,7 +18,7 @@ color-theme: biotechnology
 | Market and competition | Name the customer and a reason to switch |
 | Next step | State the key milestone and remaining uncertainty |
 
-@notes
+@speaker-notes
 
 This is a writing scaffold, not a new required paragraph count or rubric.
 The summary must stand alone even when the full plan contains much more detail.
@@ -40,7 +40,7 @@ outline: 0 85 28 13
 
 Find the problem quickly. *Aquazyme sample.*
 
-@notes
+@speaker-notes
 
 Look at the heading hierarchy, left alignment, and space between sections. Borrow those design choices.
 The environmental numbers and scientific claims still require checking; this is a formatting example.
@@ -66,7 +66,7 @@ Historical student proposals are used to discuss writing and design; their claim
 
 *Virona*: columns and numbered goals.
 
-@notes
+@speaker-notes
 
 These page views are for comparing structure, not reading every word on Zoom.
 Keep the useful moves from the earlier guidance: EnteroDetect starts from a testing problem; Aquazyme has clear headings; Virona exposes successive tests.
@@ -83,7 +83,7 @@ Historical student proposals are used to discuss writing and design; their claim
 
 What slows the test? *EnteroDetect excerpt.*
 
-@notes
+@speaker-notes
 
 The paragraph gives the reader costs, labor, and delay to investigate. Ask which one matters to a specific customer.
 Its list of methods and performance claims are historical proposal text, not a verified comparison of current food tests.
@@ -106,7 +106,7 @@ Historical student proposals are used to discuss writing and design; their claim
 - Who has the problem?
 - Who would pay to solve it?
 
-@notes
+@speaker-notes
 
 "Plastic pollution harms the entire planet" is too broad to identify a first product.
 Choose a material, setting, and purchase decision; do not invent a validated customer.
@@ -140,7 +140,7 @@ How does that change address the stated problem?
 
 Which result supports this step? What remains unknown?
 
-@notes
+@speaker-notes
 
 Have students sketch arrows linking the four boxes for their own proposal.
 This replaces lists of impressive techniques with a causal explanation.
@@ -163,7 +163,7 @@ Ethanol -> acetaldehyde -> acetate.
 - Where must they function?
 - How would the proposed product get them there?
 
-@notes
+@speaker-notes
 
 The sample includes a real pathway diagram, a useful visual move.
 A diagram of metabolism does not establish that the proposed swallowed-enzyme product works.
@@ -186,7 +186,7 @@ Historical student proposals are used to discuss writing and design; their claim
 - What evidence supports activity in the intended crop?
 - Which result would justify the next step?
 
-@notes
+@speaker-notes
 
 The original Nifty Genes example names nif genes and nitrogenase. That specificity gives the reader something to investigate.
 Preserve that strength while testing the jump from adding genes to eliminating fertilizer use.
@@ -210,7 +210,7 @@ Having the genes -> a working crop?
 
 *What evidence belongs between those steps?*
 
-@notes
+@speaker-notes
 
 Ask students to identify the missing evidence; do not endorse the proposed result.
 Historical student proposals are used to discuss writing and design; their claims are not presented as verified outcomes.
@@ -228,7 +228,7 @@ Historical student proposals are used to discuss writing and design; their claim
 | Company proposal | We propose to use X for this specific product. |
 | Development target | Our next test would measure Y against this comparator. |
 
-@notes
+@speaker-notes
 
 Several organ-printing samples describe a fully functional transplantable organ and
 the elimination of rejection as accomplished facts. These are proposal claims.
@@ -252,7 +252,7 @@ We aim to improve a defined outcome compared with a named alternative.
 
 The plan identifies the evidence still needed to assess performance and risk.
 
-@notes
+@speaker-notes
 
 Synthetic example, not a quotation from one student. Motivated by recurrent claims in
 the Chronic, FluCream, PurePod, organ-printing, and Lac Locks samples.
@@ -269,7 +269,7 @@ Enthusiasm should come from specificity and a plausible next step.
 - Name the molecular or cellular biotechnology that makes your product possible.
 - Use feedback to refine the proposal before polishing its branding.
 
-@notes
+@speaker-notes
 
 Compare the An Eye on Health and ChildBirth Pain Receptor samples with current course
 requirements. A historical sample is not automatic evidence that a new topic fits.

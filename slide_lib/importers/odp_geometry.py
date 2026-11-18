@@ -4,10 +4,10 @@
 import dataclasses
 import math
 import re
-import xml.etree.ElementTree
 
 # PIP3 modules
 # local repo modules
+import lxml.etree
 import slide_lib.importers.odf_styles as odf_styles
 
 
@@ -47,7 +47,7 @@ def qname(prefix: str, local_name: str) -> str:
 
 
 #============================================
-def local_name(element: xml.etree.ElementTree.Element) -> str:
+def local_name(element: lxml.etree._Element) -> str:
 	"""Return an XML tag without its namespace."""
 	return element.tag.rsplit("}", 1)[-1]
 
@@ -79,7 +79,7 @@ def parse_length(raw_value: str | None, *, field_name: str,
 
 #============================================
 def page_style_layouts(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
+		roots: tuple[lxml.etree._Element, ...],
 ) -> dict[str, tuple[str, str]]:
 	"""Map drawing-page styles to their page-layout and parent style names."""
 	definitions: dict[str, tuple[str, str]] = {}
@@ -116,7 +116,7 @@ def resolve_page_layout(style_name: str, definitions: dict[str, tuple[str, str]]
 
 #============================================
 def read_page_layout_dimensions(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
+		roots: tuple[lxml.etree._Element, ...],
 ) -> dict[str, tuple[float, float]]:
 	"""Read all named ODF physical page-layout dimensions."""
 	dimensions: dict[str, tuple[float, float]] = {}
@@ -137,7 +137,7 @@ def read_page_layout_dimensions(
 
 #============================================
 def master_page_layouts(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
+		roots: tuple[lxml.etree._Element, ...],
 ) -> dict[str, str]:
 	"""Map master-page names to their physical page-layout identities."""
 	definitions: dict[str, str] = {}
@@ -152,7 +152,7 @@ def master_page_layouts(
 
 #============================================
 def page_dimensions(
-		page: xml.etree.ElementTree.Element,
+		page: lxml.etree._Element,
 		style_layouts: dict[str, tuple[str, str]],
 		master_layouts: dict[str, str],
 		layout_dimensions: dict[str, tuple[float, float]],
@@ -173,7 +173,7 @@ def page_dimensions(
 
 #============================================
 def read_declared_placeholder_roles(
-		roots: tuple[xml.etree.ElementTree.Element, ...],
+		roots: tuple[lxml.etree._Element, ...],
 ) -> dict[str, tuple[str, ...]]:
 	"""Read page-layout placeholder roles without inferring target layouts."""
 	roles_by_layout: dict[str, tuple[str, ...]] = {}
@@ -191,7 +191,7 @@ def read_declared_placeholder_roles(
 
 
 #============================================
-def frame_geometry(element: xml.etree.ElementTree.Element,
+def frame_geometry(element: lxml.etree._Element,
 		source_index: int) -> tuple[float, float, float, float]:
 	"""Read finite source geometry for one visible ODF object."""
 	left = parse_length(element.get(qname("svg", "x"), "0cm"),
@@ -206,7 +206,7 @@ def frame_geometry(element: xml.etree.ElementTree.Element,
 
 
 #============================================
-def vector_geometry(element: xml.etree.ElementTree.Element,
+def vector_geometry(element: lxml.etree._Element,
 		source_index: int) -> tuple[float, float, float, float] | None:
 	"""Read a finite vector rectangle or line endpoints when ODF supplies them."""
 	if element.tag == qname("draw", "polyline"):
@@ -228,7 +228,7 @@ def vector_geometry(element: xml.etree.ElementTree.Element,
 
 
 #============================================
-def line_endpoints(element: xml.etree.ElementTree.Element) \
+def line_endpoints(element: lxml.etree._Element) \
 		-> tuple[float, float, float, float]:
 	"""Read one native line without discarding its authored direction."""
 	first_x = parse_length(element.get(qname("svg", "x1")), field_name="line x1",
@@ -257,7 +257,7 @@ def visible_geometry(
 
 
 #============================================
-def style_evidence(element: xml.etree.ElementTree.Element,
+def style_evidence(element: lxml.etree._Element,
 		definitions: dict[str, odf_styles.StyleDefinition]) -> tuple[bool, bool]:
 	"""Read direct positive style facts without treating ODF style names as data."""
 	fill = odf_styles.attribute(element, definitions, qname("draw", "fill"))
@@ -266,7 +266,7 @@ def style_evidence(element: xml.etree.ElementTree.Element,
 
 
 #============================================
-def rotation_degrees(element: xml.etree.ElementTree.Element) -> float:
+def rotation_degrees(element: lxml.etree._Element) -> float:
 	"""Return a finite explicit ODF rotation or zero when none is declared."""
 	matched = ROTATION_VALUE.search(element.get(qname("draw", "transform"), ""))
 	if matched is None:

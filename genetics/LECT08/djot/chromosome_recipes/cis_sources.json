@@ -1,60 +1,91 @@
 {
   "cis_trans_wide.drawn.svg": {
-    "svg": "<ns0:svg xmlns:ns0=\"http://www.w3.org/2000/svg\" width=\"1050\" height=\"390\" viewBox=\"0 0 1050 390\" role=\"img\" aria-labelledby=\"linkage_chromosomes-title linkage_chromosomes-desc\">\n\t<ns0:title id=\"linkage_chromosomes-title\">Cis and trans arrangements of linked w and m loci</ns0:title>\n\t<ns0:desc id=\"linkage_chromosomes-desc\">Each panel shows a homologous pair schematically, with one rod per homolog. Cis has w m together and + + together; trans has w + and + m. Gene positions match between homologs. Colors track homolog identity, not dominance. No replication or crossover is depicted.</ns0:desc>\n\t\n\t<ns0:g font-family=\"Atkinson Hyperlegible Next, sans-serif\">\n\t\t<ns0:g id=\"cis\">\n\t\t\t<ns0:text x=\"215\" y=\"47\" font-size=\"34\" fill=\"#253342\" text-anchor=\"middle\" font-style=\"italic\">cis</ns0:text>\n\t\t\t<ns0:g id=\"cis-blue-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"0\" /><ns0:path d=\"M210 134 V174\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"210\" y=\"120\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">w</ns0:text>\n\t\t\t\t<ns0:path d=\"M310 134 V174\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"310\" y=\"120\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">m</ns0:text>\n\t\t\t</ns0:g>\n\t\t\t<ns0:g id=\"cis-orange-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"1\" /><ns0:path d=\"M210 250 V290\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"210\" y=\"236\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t\t<ns0:path d=\"M310 250 V290\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"310\" y=\"236\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t</ns0:g>\n\t\t</ns0:g>\n\t\t<ns0:g id=\"trans\">\n\t\t\t<ns0:text x=\"785\" y=\"47\" font-size=\"34\" fill=\"#253342\" text-anchor=\"middle\" font-style=\"italic\">trans</ns0:text>\n\t\t\t<ns0:g id=\"trans-blue-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"2\" /><ns0:path d=\"M780 134 V174\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"780\" y=\"120\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">w</ns0:text>\n\t\t\t\t<ns0:path d=\"M880 134 V174\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"880\" y=\"120\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t</ns0:g>\n\t\t\t<ns0:g id=\"trans-orange-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"3\" /><ns0:path d=\"M780 250 V290\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"780\" y=\"236\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t\t<ns0:path d=\"M880 250 V290\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"880\" y=\"236\" font-size=\"30\" fill=\"#253342\" text-anchor=\"middle\">m</ns0:text>\n\t\t\t</ns0:g>\n\t\t</ns0:g>\n\t</ns0:g>\n</ns0:svg>",
-    "parts": [
-      {
-        "path": "M95 154 H333",
-        "color": "#24578F",
-        "before": 60,
-        "after": 178
+    "view_box": [
+      70,
+      0,
+      858,
+      323
+    ],
+    "title": "Cis and trans arrangements of linked w and m loci",
+    "description": "Each panel shows a homologous pair schematically, with one rod per homolog. Cis has w m together and + + together; trans has w + and + m. Gene positions match between homologs. Colors track homolog identity, not dominance. No replication or crossover is depicted.",
+    "panels": {
+      "cis": {
+        "caption_xy": [
+          215,
+          47
+        ]
       },
-      {
-        "path": "M95 270 H333",
-        "color": "#B74300",
-        "before": 60,
-        "after": 178
-      },
-      {
-        "path": "M665 154 H903",
-        "color": "#24578F",
-        "before": 60,
-        "after": 178
-      },
-      {
-        "path": "M665 270 H903",
-        "color": "#B74300",
-        "before": 60,
-        "after": 178
+      "trans": {
+        "caption_xy": [
+          785,
+          47
+        ]
       }
-    ]
+    }
   },
   "cis_trans_portrait.drawn.svg": {
-    "svg": "<ns0:svg xmlns:ns0=\"http://www.w3.org/2000/svg\" width=\"580\" height=\"660\" viewBox=\"0 0 580 660\" role=\"img\" aria-labelledby=\"linkage_portrait-title linkage_portrait-desc\">\n\t<ns0:title id=\"linkage_portrait-title\">Cis and trans arrangements in a narrow panel</ns0:title>\n\t<ns0:desc id=\"linkage_portrait-desc\">Two homologs in each arrangement; w m and + + in cis, w + and + m in trans. Homolog identity uses blue and orange. The view is schematic, with no replication or crossing over.</ns0:desc>\n\t\n\t<ns0:g font-family=\"Atkinson Hyperlegible Next, sans-serif\">\n\t\t<ns0:g id=\"cis\">\n\t\t\t<ns0:text x=\"290\" y=\"68\" font-size=\"46\" fill=\"#253342\" text-anchor=\"middle\" font-style=\"italic\">cis</ns0:text>\n\t\t\t<ns0:g id=\"cis-blue-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"0\" /><ns0:path d=\"M280 148 V188\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"280\" y=\"134\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">w</ns0:text>\n\t\t\t\t<ns0:path d=\"M380 148 V188\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"380\" y=\"134\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">m</ns0:text>\n\t\t\t</ns0:g>\n\t\t\t<ns0:g id=\"cis-orange-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"1\" /><ns0:path d=\"M280 253 V293\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"280\" y=\"239\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t\t<ns0:path d=\"M380 253 V293\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"380\" y=\"239\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t</ns0:g>\n\t\t</ns0:g>\n\t\t<ns0:g id=\"trans\">\n\t\t\t<ns0:text x=\"290\" y=\"390\" font-size=\"46\" fill=\"#253342\" text-anchor=\"middle\" font-style=\"italic\">trans</ns0:text>\n\t\t\t<ns0:g id=\"trans-blue-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"2\" /><ns0:path d=\"M280 470 V510\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"280\" y=\"456\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">w</ns0:text>\n\t\t\t\t<ns0:path d=\"M380 470 V510\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"380\" y=\"456\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t</ns0:g>\n\t\t\t<ns0:g id=\"trans-orange-homolog\">\n\t\t\t\t<ns0:path data-shared-part=\"3\" /><ns0:path d=\"M280 575 V615\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"280\" y=\"561\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">+</ns0:text>\n\t\t\t\t<ns0:path d=\"M380 575 V615\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n\t\t\t\t<ns0:text x=\"380\" y=\"561\" font-size=\"44\" fill=\"#253342\" text-anchor=\"middle\">m</ns0:text>\n\t\t\t</ns0:g>\n\t\t</ns0:g>\n\t</ns0:g>\n</ns0:svg>",
-    "parts": [
-      {
-        "path": "M165 168 H403",
-        "color": "#24578F",
-        "before": 60,
-        "after": 178
+    "size": [
+      580,
+      660
+    ],
+    "title": "Cis and trans arrangements in a narrow panel",
+    "description": "Two homologs in each arrangement; w m and + + in cis, w + and + m in trans. Homolog identity uses blue and orange. The view is schematic, with no replication or crossing over.",
+    "arm_extent": [
+      165,
+      403
+    ],
+    "centromere": 60,
+    "loci_x": [
+      280,
+      380
+    ],
+    "panels": {
+      "cis": {
+        "heading_y": 68,
+        "homologs": [
+          {
+            "name": "blue",
+            "y": 168,
+            "color": "#24578F",
+            "alleles": [
+              "w",
+              "m"
+            ]
+          },
+          {
+            "name": "orange",
+            "y": 273,
+            "color": "#B74300",
+            "alleles": [
+              "+",
+              "+"
+            ]
+          }
+        ]
       },
-      {
-        "path": "M165 273 H403",
-        "color": "#B74300",
-        "before": 60,
-        "after": 178
-      },
-      {
-        "path": "M165 490 H403",
-        "color": "#24578F",
-        "before": 60,
-        "after": 178
-      },
-      {
-        "path": "M165 595 H403",
-        "color": "#B74300",
-        "before": 60,
-        "after": 178
+      "trans": {
+        "heading_y": 390,
+        "homologs": [
+          {
+            "name": "blue",
+            "y": 490,
+            "color": "#24578F",
+            "alleles": [
+              "w",
+              "+"
+            ]
+          },
+          {
+            "name": "orange",
+            "y": 595,
+            "color": "#B74300",
+            "alleles": [
+              "+",
+              "m"
+            ]
+          }
+        ]
       }
-    ]
+    }
   }
 }

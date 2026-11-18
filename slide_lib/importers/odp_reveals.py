@@ -2,9 +2,9 @@
 
 # Standard Library
 import dataclasses
-import xml.etree.ElementTree
 
 # Local modules
+import lxml.etree
 import slide_lib.importers.multiple_choice_plan as multiple_choice_plan
 import slide_lib.importers.source_model as source_model
 import slide_lib.importers.slide_plan as slide_plan
@@ -22,7 +22,7 @@ def qname(namespace: str, local_name: str) -> str:
 	return f"{{{namespace}}}{local_name}"
 
 
-def appear_target_ids(page: xml.etree.ElementTree.Element) -> frozenset[str]:
+def appear_target_ids(page: lxml.etree._Element) -> frozenset[str]:
 	"""Return object IDs targeted by a native visibility-appear action."""
 	targets = {
 		(element.get(qname(SMIL_NS, "targetElement")) or "").removeprefix("#")
@@ -33,7 +33,7 @@ def appear_target_ids(page: xml.etree.ElementTree.Element) -> frozenset[str]:
 	return frozenset(target for target in targets if target)
 
 
-def element_appears(element: xml.etree.ElementTree.Element,
+def element_appears(element: lxml.etree._Element,
 		targets: frozenset[str]) -> bool:
 	"""Return whether one ODF object carries an imported appear target ID."""
 	identities = {
@@ -43,7 +43,7 @@ def element_appears(element: xml.etree.ElementTree.Element,
 	return bool(identities & targets)
 
 
-def read_text_reveals(page: xml.etree.ElementTree.Element,
+def read_text_reveals(page: lxml.etree._Element,
 		texts: list[source_model.PositionedText],
 		overlays: list[source_model.PositionedOverlay]) -> tuple[list[source_model.PositionedText], list[str]]:
 	"""Retain text appearances and report animation actions we cannot reproduce."""

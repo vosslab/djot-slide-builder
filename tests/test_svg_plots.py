@@ -1,7 +1,7 @@
 """Behavior checks for vector plot import and scoped styling."""
 
-import defusedxml.ElementTree
 import matplotlib
+import lxml.etree
 import pytest
 from matplotlib.figure import Figure
 
@@ -23,7 +23,7 @@ def test_plot_import_preserves_data_and_live_labels() -> None:
 		assert title.get_fontproperties() == original
 	assert matplotlib.rcParams['font.family'] == before
 	assert list(line.get_ydata()) == values == [2, 5, 3]
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	texts = list(root.iter('{http://www.w3.org/2000/svg}text'))
 	assert any('Measured response' == text.text for text in texts)
 	assert any('Dose' == text.text for text in texts)

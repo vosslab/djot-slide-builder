@@ -2,17 +2,18 @@
 
 import base64
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes as chromosomes
+import svg_tools.drawing
 
 BASE = pathlib.Path(__file__).resolve().parent
 SOURCE = BASE / 'sources/meiosis_overview.svg'
 SVG = 'http://www.w3.org/2000/svg'
 XLINK = 'http://www.w3.org/1999/xlink'
-ET.register_namespace('', SVG)
-ET.register_namespace('xlink', XLINK)
+
+
 RED = '#C95D48'
 BLUE = '#2196AD'
 
@@ -127,7 +128,7 @@ def geometry() -> tuple[list, list]:
 def build(output_dir: pathlib.Path) -> None:
 	"""Write the overview asset using only frozen source data and shared bodies."""
 	output_dir.mkdir(parents=True, exist_ok=True)
-	root = DET.parse(SOURCE).getroot()
+	root = svg_tools._xml.read(SOURCE)
 	group = root.find(f'{{{SVG}}}g')
 	paths, xs = geometry()
 	fragments = []
@@ -144,13 +145,13 @@ def build(output_dir: pathlib.Path) -> None:
 			thickness=width,texture=False,labels=False).fragment
 		fragments.append(f'<g transform="translate({x} {y})">{fragment}</g>')
 	patch_data = (BASE/'sources/body_cleanup.png').read_bytes()
-	overlay = ET.Element(f'{{{SVG}}}g', {'id':'shared-chromosome-migration',
+	overlay = lxml.etree.Element(f'{{{SVG}}}g', {'id':'shared-chromosome-migration',
 		'transform':'translate(21 78) scale(0.474375 0.4738955823)'})
-	ET.SubElement(overlay,f'{{{SVG}}}image',{'x':'0','y':'0','width':'1600','height':'747',
+	lxml.etree.SubElement(overlay,f'{{{SVG}}}image',{'x':'0','y':'0','width':'1600','height':'747',
 		f'{{{XLINK}}}href':'data:image/png;base64,'+base64.b64encode(patch_data).decode()})
 	for fragment in fragments:
-		overlay.append(DET.fromstring(fragment))
+		overlay.append(svg_tools._xml.parse(fragment))
 	group.insert(1,overlay)
 	root.find(f'{{{SVG}}}desc').text += ' Original artwork, stage tree, native labels and callouts are retained. Only schematic chromosome body pixels are locally masked; replacement rods and sisters use the shared chromosome tools.'
 	result = output_dir/'meiosis_overview.svg'
-	ET.ElementTree(root).write(result,encoding='utf-8',xml_declaration=True)
+	lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(result,encoding='utf-8',xml_declaration=True)

@@ -3,9 +3,9 @@
 # Standard Library
 import sys
 import pathlib
-import defusedxml.ElementTree
 
 # Third-Party Modules
+import lxml.etree
 import pytest
 
 # Local Modules
@@ -25,7 +25,7 @@ def test_xml_cleanup_preserves_text_and_attributes(
 	assert fix_ascii_compliance.main() == 2
 	output = path.read_bytes()
 	assert output.isascii() and b"\r" not in output
-	root = defusedxml.ElementTree.fromstring(output)
+	root = lxml.etree.fromstring(output)
 	assert root.attrib["label"] == root.find("text").text == "\u03b1 & < \u03b2\u00b2"
 	assert fix_ascii_compliance.main() == 0
 

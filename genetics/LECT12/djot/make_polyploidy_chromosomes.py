@@ -9,15 +9,15 @@ that differ from adjacent native ploidy notation; no extra bodies are inferred.
 
 from pathlib import Path
 import subprocess
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
 from svg_tools.chromosomes import Centromere, Chromosome, Segment, chromosome_part, chromosome_path_part
+import lxml.etree
+import svg_tools._xml
 import svg_tools.drawing
 
 NS = "{http://www.w3.org/2000/svg}"
-ET.register_namespace("", NS[1:-1])
-ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
+
+
 REPO_ROOT = Path(subprocess.check_output(
 	['git', 'rev-parse', '--show-toplevel'], text=True).strip())
 BASE = REPO_ROOT / 'genetics/LECT12/djot'
@@ -665,13 +665,13 @@ FIGURES = [
 
 def main() -> None:
 	for relative, template, specs in FIGURES:
-		root = DET.fromstring(template)
+		root = svg_tools._xml.parse(template)
 		for element in root.iter():
 			if "data-recipe-slot" in element.attrib:
 				index = int(element.attrib.pop("data-recipe-slot"))
-				element.append(DET.fromstring(chromosome(specs[index])))
+				element.append(svg_tools._xml.parse(chromosome(specs[index])))
 		svg_tools.drawing.remove_canvas_background(root)
-		data = ET.tostring(root, encoding="ascii", xml_declaration=True)
+		data = lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding="ascii", xml_declaration=True)
 		(BASE / relative).write_bytes(data)
 		if relative == 'assets/visual_renewal/ploidy_sets.drawn.svg':
 			root.set('height', '760')
@@ -685,7 +685,7 @@ def main() -> None:
 					element.set('font-size', '64')
 					element.set('y', '350' if element.get('y') == '325' else '735')
 			(BASE / 'assets/visual_renewal/ploidy_sets_nomenclature.drawn.svg').write_bytes(
-				ET.tostring(root, encoding='ascii', xml_declaration=True))
+				lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 
 
 # Source raster scenes retain the original canvas, cell positions, branch states,
@@ -721,9 +721,9 @@ def label(x: float, y: float, text: str, size: float = 36, anchor: str = 'middle
 def scene(relative: str, width: float, height: float, title: str, description: str,
 	content: str) -> None:
 	text = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">{description}</desc><defs><marker id="process-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11Z" fill="{INK}"/></marker></defs><rect width="{width}" height="{height}" fill="white"/>' + content + '</svg>'
-	root = DET.fromstring(text)
+	root = svg_tools._xml.parse(text)
 	svg_tools.drawing.remove_canvas_background(root)
-	(BASE/'assets/lect12b-polyploidy'/relative).write_bytes(ET.tostring(root, encoding='ascii', xml_declaration=True))
+	(BASE/'assets/lect12b-polyploidy'/relative).write_bytes(lxml.etree.tostring(svg_tools.drawing.svg_root(root), encoding='ascii', xml_declaration=True))
 
 
 def three_types(name: str, x: float, y: float, scale: float = 1, copies: int = 1,

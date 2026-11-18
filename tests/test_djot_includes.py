@@ -47,7 +47,7 @@ def test_mixed_includes_hide_whole_chapter_and_preserve_locations(tmp_path: path
 	chapter = tmp_path / "chapter.djot"
 	chapter.write_text("=== layout: blank\n=== layout: blank\nhidden: true\n")
 	text = ("=== layout: blank\n=== include: chapter.djot\nhidden: true\n"
-		"=== layout: blank\n@notes\nStill in the main file.\n")
+		"=== layout: blank\n@speaker-notes\nStill in the main file.\n")
 	master.write_text(text)
 	deck = slide_lib.djot_parser.parse_deck(master)
 	assert [slide.hidden for slide in deck.slides] == [False, True, True, False]
@@ -65,7 +65,7 @@ def test_chapters_preserve_order_notes_theme_and_image_base(tmp_path: pathlib.Pa
 	"""Splitting a deck must preserve native slide semantics and its shared asset directory."""
 	master = tmp_path / "lecture.djot"
 	master.write_text("color-theme: biotechnology\ninclude: second.djot\ninclude: first.djot\n")
-	(tmp_path / "first.djot").write_text("=== layout: section\n# Last\n@notes\nKeep this note.\n")
+	(tmp_path / "first.djot").write_text("=== layout: section\n# Last\n@speaker-notes\nKeep this note.\n")
 	second = tmp_path / "second.djot"
 	second.write_text("=== layout: one-panel\n# First\n@body\n![Photo](assets/photo.png)\n")
 	deck = slide_lib.djot_parser.parse_deck(master)
@@ -150,7 +150,7 @@ def test_cycles_and_conflicting_themes_fail_clearly(tmp_path: pathlib.Path) -> N
 def test_include_text_in_notes_is_literal_and_manifests_do_not_mix_slides(tmp_path: pathlib.Path) -> None:
 	"""Including a chapter is an explicit master-file operation, never hidden in slide text."""
 	path = tmp_path / "lecture.djot"
-	path.write_text("=== layout: blank\n@notes\ninclude: missing.djot\n")
+	path.write_text("=== layout: blank\n@speaker-notes\ninclude: missing.djot\n")
 	assert slide_lib.djot_parser.parse_deck(path).slides[0].notes == ("include: missing.djot",)
 	(tmp_path / "chapter.djot").write_text("=== layout: blank\n")
 	path.write_text("include: chapter.djot\n=== layout: blank\n")

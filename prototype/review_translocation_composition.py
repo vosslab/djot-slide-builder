@@ -4,13 +4,14 @@ import copy
 import json
 import pathlib
 import subprocess
-import xml.etree.ElementTree as ET
 
-import defusedxml.ElementTree as DET
+import lxml.etree
+import svg_tools._xml
+
 
 
 SVG = '{http://www.w3.org/2000/svg}'
-ET.register_namespace('', 'http://www.w3.org/2000/svg')
+
 
 
 def make_gamete_details() -> None:
@@ -20,7 +21,7 @@ def make_gamete_details() -> None:
 	data = json.loads((root / 'genetics/LECT13/djot/lect13d_p1_composition_data.json').read_text())
 	placements = data['figures']['lect13d_p1_gametes']['parts']
 	directory = root / 'prototype/chromosome_assets/assets/lect13d-meiosis_translocation'
-	source = DET.parse(directory / 'lect13d_p1_gametes.drawn.svg').getroot()
+	source = svg_tools._xml.read(directory / 'lect13d_p1_gametes.drawn.svg')
 	for suffix, left, width in (('left_middle', 0, 1866), ('right', 1866, 934)):
 		panel = copy.deepcopy(source)
 		canvas = panel.find(SVG+'g')
@@ -35,4 +36,4 @@ def make_gamete_details() -> None:
 			f'Enlarged {columns} of the gamete-product overview. '
 			'Chromosome identities, locus positions and allele states follow the source components.')
 		path = directory / f'lect13d_p1_gametes_{suffix}.drawn.svg'
-		path.write_bytes(ET.tostring(panel, encoding='ascii', xml_declaration=True))
+		path.write_bytes(lxml.etree.tostring(panel, encoding='ascii', xml_declaration=True))

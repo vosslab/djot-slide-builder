@@ -2,18 +2,19 @@
 
 import base64
 import pathlib
-import xml.etree.ElementTree as ET
-import defusedxml.ElementTree as DET
 
+import lxml.etree
+import svg_tools._xml
 import svg_tools.chromosomes as chromosomes
+import svg_tools.drawing
 
 BASE = pathlib.Path(__file__).resolve().parent
 SVG = 'http://www.w3.org/2000/svg'
 XLINK = 'http://www.w3.org/1999/xlink'
 BLUE = '#1684B4'
 RED = '#C95642'
-ET.register_namespace('',SVG)
-ET.register_namespace('xlink',XLINK)
+
+
 
 
 def model(colors: tuple[str, str, str]) -> chromosomes.Chromosome:
@@ -56,7 +57,7 @@ def source_bodies() -> tuple:
 	)
 
 
-def clean_bodies(root: ET.Element) -> None:
+def clean_bodies(root: lxml.etree._Element) -> None:
 	"""Use the reviewed frozen pixel layer, preserving all source annotations."""
 	image = root.find('.//{'+SVG+'}image[@id="artwork-1"]')
 	data = (BASE/'sources/cleaned_artwork.png').read_bytes()
@@ -68,26 +69,26 @@ def build(output_dir: pathlib.Path) -> None:
 	output_dir.mkdir(parents=True, exist_ok=True)
 	for name in ('recombinant_chromosomes','recombinant_chromosomes_review'):
 		source = BASE/'sources'/f'{name}.svg'
-		root = DET.parse(source).getroot()
+		root = svg_tools._xml.read(source)
 		clean_bodies(root)
 		canvas = root.find('{'+SVG+'}g')
-		bodies = ET.Element('{'+SVG+'}g',{'id':'shared-source-chromosome-bodies'})
+		bodies = lxml.etree.Element('{'+SVG+'}g',{'id':'shared-source-chromosome-bodies'})
 		for identity,colors,path,thick in source_bodies():
 			part = chromosomes.chromosome_path_part(identity,model(colors),path,
 				thickness=thick,labels=False)
-			bodies.append(DET.fromstring(part.fragment))
+			bodies.append(svg_tools._xml.parse(part.fragment))
 		# The source places blue over the upper contact and red over the lower contact.
-		defs = ET.SubElement(bodies,'{'+SVG+'}defs')
-		clip = ET.SubElement(defs,'{'+SVG+'}clipPath',{'id':'upper-synapsis-contact'})
-		ET.SubElement(clip,'{'+SVG+'}circle',{'cx':'387.7','cy':'144.2','r':'4.5'})
-		bridge = ET.SubElement(bodies,'{'+SVG+'}g',{'clip-path':'url(#upper-synapsis-contact)',
+		defs = lxml.etree.SubElement(bodies,'{'+SVG+'}defs')
+		clip = lxml.etree.SubElement(defs,'{'+SVG+'}clipPath',{'id':'upper-synapsis-contact'})
+		lxml.etree.SubElement(clip,'{'+SVG+'}circle',{'cx':'387.7','cy':'144.2','r':'4.5'})
+		bridge = lxml.etree.SubElement(bodies,'{'+SVG+'}g',{'clip-path':'url(#upper-synapsis-contact)',
 			'data-repeat-of':'synapsis-blue-inner'})
 		identity,colors,path,thick = source_bodies()[6]
-		bridge.append(DET.fromstring(chromosomes.chromosome_path_part(identity+'-contact',
+		bridge.append(svg_tools._xml.parse(chromosomes.chromosome_path_part(identity+'-contact',
 			model(colors),path,thickness=thick,labels=False).fragment))
 		canvas.insert(1,bodies)
 		root.find('{'+SVG+'}desc').text += (' Shared chromosome bodies preserve the two '
 			'chiasmata, two distinct homologs, sister identity and the red-blue-red / '
 			'blue-red-blue double-exchange products. Original source labels and arrows remain live.')
 		result = output_dir/f'{name}.svg'
-		ET.ElementTree(root).write(result,encoding='utf-8',xml_declaration=True)
+		lxml.etree.ElementTree(svg_tools.drawing.svg_root(root)).write(result,encoding='utf-8',xml_declaration=True)

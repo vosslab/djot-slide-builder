@@ -3,8 +3,8 @@
 import math
 import pathlib
 
-import defusedxml.ElementTree
 
+import lxml.etree
 import pytest
 
 from svg_tools.drawing import write_svg
@@ -20,7 +20,7 @@ def test_search_and_real_icon_geometry() -> None:
 	assert 'dna' in search_icons('dna')
 	assert 'diagram-project' in search_icons('diagram')
 	part = icon('microscope', size=48, color='#123456')
-	root = defusedxml.ElementTree.fromstring(part.fragment)
+	root = lxml.etree.fromstring(part.fragment)
 	assert root.findall(SVG + 'path')
 	assert '#123456' in part.fragment
 	assert 'currentColor' not in part.fragment
@@ -30,7 +30,7 @@ def test_export_keeps_vector_and_attribution(tmp_path: pathlib.Path) -> None:
 	part = icon('vial', size=24, color='red')
 	path = tmp_path / 'icon.svg'
 	write_svg(path, 24, 24, 'Vial', 'Vial icon', group({'vial': part}).fragment)
-	root = defusedxml.ElementTree.parse(path).getroot()
+	root = lxml.etree.parse(path).getroot()
 	assert root.findall('.//' + SVG + 'path')
 	assert 'Font Awesome Free' in path.read_text(encoding='utf-8')
 

@@ -56,8 +56,10 @@ in [USAGE.md](USAGE.md); installation and macOS conversion prerequisites are in 
   `{{course_url:key}}` tokens; runtime builds require valid configured HTTPS destinations.
 - Source-only lint recognizes course URL tokens without requiring the private configuration.
   It does not establish that those destinations are configured or reachable.
-- An authored `@notes` section exports as native ODP speaker notes. Notes remain separate from
+- An authored `@speaker-notes` section exports as native ODP speaker notes. Notes remain separate from
   projected slide content; their syntax is defined in [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md).
+- `SLIDE_DEVELOPMENT_NOTES.md` lives beside the decks and is read by slide authors. Use it for
+  [provenance and development decisions](slide-specs/AUTHORING_GUIDE.md#slide-development-notes).
 
 ## OpenDocument package boundary
 

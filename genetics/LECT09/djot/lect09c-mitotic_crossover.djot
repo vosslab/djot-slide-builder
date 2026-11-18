@@ -42,7 +42,7 @@ What would we see if those cells made one patch of the body?
 
 Lee et al. (2009): https://doi.org/10.1371/journal.pgen.1000410
 
-@notes
+@speaker-notes
 
 Start from the linked-gene crosses we just worked through. Ask what changes if an exchange happens in a cell making body tissue instead of gametes. "Mitotic" names the dividing-cell context; the exchange can happen before mitosis. Natural does not mean it happens in every division. DNA repair is a possible route to the exchange, explained later; it does not require an experimental treatment.
 
@@ -58,7 +58,7 @@ Start from the linked-gene crosses we just worked through. Ask what changes if a
 
 ![Lecture diagram](assets/lect09b-tetrads_1_introduction/mitotic_twin_spots.drawn.svg)
 
-@notes
+@speaker-notes
 
 The exchange shown is between the centromere and both linked genes. Follow the two possible ways the chromosomes separate afterward. The upper outcome keeps both daughter cells heterozygous. In the lower outcome, one daughter has two a alleles and the other has two b alleles. The recessive alleles were already there. The exchange and separation change which alleles end up together. A/a and B/b are generic labels for two linked genes; the fly example uses y and sn.
 
@@ -75,7 +75,7 @@ Patches sometimes show yellow color or singed bristles. Adjacent yellow and sing
 
 ![Single yellow spot, twin spot, and single singed spot](assets/lect09_tetrad_concepts/twin_spots.svg)
 
-@notes
+@speaker-notes
 
 Each original X chromosome has a wild-type allele that covers the recessive allele on the other X. After the lower segregation pattern in the preceding diagram, one daughter can be y/y and the other sn/sn at these loci. Both daughters still have two X chromosomes. Each daughter can divide to make one of the neighboring patches. A new y or sn mutation is not needed.
 
@@ -106,7 +106,7 @@ Predict each daughter's *genotype* and the *patch phenotype* it could produce.
 
 Would either daughter need a new mutation?
 
-@notes
+@speaker-notes
 
 Pause for predictions before showing the answer. Use the lower separation pattern in the earlier chromosome diagram. The genes start on opposite homologs: y is paired with sn+, and y+ is paired with sn. One exchange between the centromere and both genes swaps both distal alleles. With ordinary sister-chromatid separation and the exchanged chromatids going to opposite daughters, each daughter gets one exchanged and one unchanged chromatid. If the exchanged chromatids went together instead, both daughters could remain heterozygous; that is not the separation pattern specified here.
 
@@ -128,9 +128,9 @@ Pause for predictions before showing the answer. Use the lower separation patter
 
 The surrounding tissue stays normal: it has a normal allele for each gene.
 
-@notes
+@speaker-notes
 
-Read the two copies of each gene separately. Daughter 1 is y/y and sn+/sn+: yellow body with normal bristles. Daughter 2 is y+/y+ and sn/sn: normal body color with singed bristles. Each daughter can divide to form a patch; the next slide follows that growth. The recessive alleles existed before the exchange. Labels 1 and 2 are arbitrary. The surrounding tissue retains the original y sn+ / y+ sn combination, so the normal allele covers the recessive allele at each gene. This is an original classroom question based on the simple linked-marker prediction idea identified in the local Brooker exercises; no textbook figure or question text is reproduced.
+Read the two copies of each gene separately. Daughter 1 is y/y and sn+/sn+: yellow body with normal bristles. Daughter 2 is y+/y+ and sn/sn: normal body color with singed bristles. Each daughter can divide to form a patch; the next slide follows that growth. The recessive alleles existed before the exchange. Labels 1 and 2 are arbitrary. The surrounding tissue retains the original y sn+ / y+ sn combination, so the normal allele covers the recessive allele at each gene.
 
 === layout: two-panels
 
@@ -175,7 +175,7 @@ Graf (1995): https://doi.org/10.1007/BF01929364
 
 Hagstrom and Dryja (1999): https://doi.org/10.1073/pnas.96.6.2952
 
-@notes
+@speaker-notes
 
 Now name the genotype change we already saw in the twin spots. This diagram follows one gene. It omits replication and the four-chromatid intermediate. The exchange is between the centromere and A, followed by the lower segregation pattern in the earlier diagram. The other pattern can leave both daughters A/a. Loss of heterozygosity can also happen by other mechanisms.
 
@@ -251,7 +251,7 @@ Griffin et al. (2009): https://doi.org/10.1038/nmeth.1349
 
 Johnson and Jasin (2000): https://doi.org/10.1093/emboj/19.13.3398
 
-@notes
+@speaker-notes
 
 This is a short explanation of how an exchange can arise, after students have seen its effect. DNA damage can come from ordinary cell activity, including problems while DNA is copied. It need not come from radiation or another laboratory treatment. The matching copy guides repair; that copying step alone is not a crossover. A crossover exchanges chromosome segments. Most repair does not produce that exchange. In meiosis, cells make controlled DNA breaks to start recombination, so a DNA break does not by itself mean an unnatural event. Keep the repair details brief; the main story is the twin spots.
 
