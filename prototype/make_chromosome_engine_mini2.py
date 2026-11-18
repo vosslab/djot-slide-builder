@@ -2,12 +2,16 @@
 """Regenerate the ten chromosome figures for the second engine review deck."""
 
 # Standard library
+import io
 import math
 import pathlib
+import base64
 import itertools
 
 # Third-party modules
 import lxml.etree
+import PIL.Image
+import PIL.ImageColor
 
 # Local repo modules
 import svg_tools._xml
@@ -22,27 +26,30 @@ import svg_tools.chromosome_topology as topology
 
 #============================================
 def build_c01(path: pathlib.Path) -> None:
-	"""Draw insertional and reciprocal translocations of the same starting svg_tools.chromosomes."""
+	"""Draw insertional and reciprocal translocations of the same starting chromosomes."""
 	# Source: LECT01B, slide 8 (chromosome_samples.csv).
 	ink = '#213449'
 	palette = {
 		('chr1', 'body'): svg_tools.palette.shade('sky_blue', 'dark'),
 		('chr2', 'body'): svg_tools.palette.shade('green', 'dark'),
 	}
+	gene_palette = {(source, locus): fill
+		for source, loci, fill in (('chr1', 'ABCD', '#CEEBFD'), ('chr1', 'EF', '#EFD1FA'),
+			('chr1', 'GH', '#FFDFCC'), ('chr2', 'JKLM', '#E6FFCC'), ('chr2', 'NO', '#FFCCEE'))
+		for locus in loci}
 
-	def parent(source_id: str, letters: str, length: float) -> topology.Chromatid:
+	def parent(source_id: str, letters: str, positions: tuple[int, ...], length: float) -> topology.Chromatid:
 		# The centromere sits between the second and third loci, with room for its collar.
-		positions = (34, 72, 164, 202, 252, 302, 352, 402)
-		genes = {letter: position / length for letter, position in zip(letters, positions)}
-		return topology.chromosome(source_id, length=length, centromere=118 / length, genes=genes)
+		genes = {letter: position / length for letter, position in zip(letters, positions, strict=True)}
+		return topology.chromosome(source_id, length=length, centromere=129 / length, genes=genes)
 
-	donor = parent('chr1', 'ABCDEFGH', 436)
-	recipient = parent('chr2', 'JKLMNO', 336)
-	donor_left, donor_right = topology.split(donor, 227 / donor.length)
-	insert, donor_tip = topology.split(donor_right, 100 / donor_right.length)
-	recipient_head, recipient_tail = topology.split(recipient, 177 / recipient.length)
-	donor_head, donor_end = topology.split(donor, 327 / donor.length)
-	recipient_left, recipient_end = topology.split(recipient, 227 / recipient.length)
+	donor = parent('chr1', 'ABCDEFGH', (39, 80, 178, 220, 282, 330, 392, 446), 485)
+	recipient = parent('chr2', 'JKLMNO', (39, 80, 178, 240, 302, 352), 390)
+	donor_left, donor_right = topology.split(donor, 251 / donor.length)
+	insert, donor_tip = topology.split(donor_right, 110 / donor_right.length)
+	recipient_head, recipient_tail = topology.split(recipient, 209 / recipient.length)
+	donor_head, donor_end = topology.split(donor, 361 / donor.length)
+	recipient_left, recipient_end = topology.split(recipient, 271 / recipient.length)
 	rows = (
 		('insertion', 'Insertional translocation', 122,
 			(topology.join(donor_left, donor_tip),
@@ -51,21 +58,23 @@ def build_c01(path: pathlib.Path) -> None:
 			(topology.join(donor_head, recipient_end), topology.join(recipient_left, donor_end))),
 	)
 
-	body = drawing.text(284, 57, 'Before', size=30, color=ink)
-	body += drawing.text(917, 57, 'After', size=30, color=ink)
-	body += drawing.line(66, 305, 1135, 305, color='#C9D5DF', width=2)
+	body = drawing.text(288, 57, 'Before', size=30, color=ink)
+	body += drawing.text(905, 57, 'After', size=30, color=ink)
+	body += drawing.line(45, 305, 1155, 305, color='#C9D5DF', width=2)
 	for row_id, label, y, products in rows:
+		topology.validate_conservation((donor, recipient), products)
 		body += f'<g id="c01-{row_id}">'
 		body += drawing.text(600, y, label, size=34, color=ink)
-		body += svg_tools.annotations.connector([(555, y+92), (645, y+92)], color=ink,
+		body += svg_tools.annotations.connector([(552, y+92), (633, y+92)], color=ink,
 			stroke_width=4, head_size=18).fragment
 		for state, x, chromatids in (
-			('before', 66, (donor, recipient)), ('after', 699, products),
+			('before', 45, (donor, recipient)), ('after', 655, products),
 		):
 			for index, chromatid in enumerate(chromatids):
 				baseline = y + 59 + index*66
 				part = svg_tools.chromosomes.render(f'c01-{row_id}-{state}-{index+1}', chromatid,
-					points=[(x, baseline), (x+chromatid.length, baseline)], width=38, palette=palette)
+					points=[(x, baseline), (x+chromatid.length, baseline)], width=38,
+					palette=palette, gene_palette=gene_palette)
 				body += part.fragment
 		body += '</g>'
 
@@ -148,6 +157,7 @@ def build_c22(path: pathlib.Path) -> None:
 	render = svg_tools.chromosomes.render
 	ink = '#213449'
 	palette = {('ab', 'body'): '#076DAD', ('wild', 'body'): '#B74300'}
+	width = 40
 	ab, plus, products = c22_products()
 	body = ''
 	for x, label in ((180, 'Replicated homologs'), (549, 'Nonsisters exchange tips'), (911, 'Four products')):
@@ -158,25 +168,40 @@ def build_c22(path: pathlib.Path) -> None:
 		body += drawing.line(x+24, 310, x+34, 301, color=ink, width=3)
 	for key, pair, y in (('ab', ab, 216), ('wild', plus, 386)):
 		body += render(f'c22-before-{key}', pair, points=((23, y), (336, y)),
-			width=40, palette=palette).fragment
+			width=width, palette=palette).fragment
+	# Three level knots at each end keep a straight run through the cap and its inner edge.
+	bend = ((392, 268), (449, 268), (478, 268), (512, 268), (544.5, 279.25),
+		(577, 304), (609.5, 328.75), (642, 340), (667, 340), (685, 340))
 	exchange_poses = (
-		((392, 176), (705, 176)),
-		((392, 261), (518, 261), (580, 290), (644, 346), (726, 346)),
-		((392, 346), (518, 346), (580, 317), (644, 261), (726, 261)),
-		((392, 431), (705, 431)),
+		((392, 220), (705, 220)),
+		bend,
+		tuple((x, 608 - y) for x, y in bend),
+		((392, 388), (705, 388)),
 	)
+	exchange_parts = []
 	for index, (product, pose) in enumerate(zip(products, exchange_poses), 1):
-		body += render(f'c22-exchange-{index}', product, points=pose, width=40, palette=palette).fragment
+		part = render(f'c22-exchange-{index}', product, points=pose, width=width, palette=palette)
+		exchange_parts.append(part)
+		strand = svg_tools._xml.parse(part.fragment)
+		strand.remove(strand.find("g[@data-layer='centromere']"))
+		body += lxml.etree.tostring(strand, encoding='unicode')
+	for index, (first, second) in enumerate(zip(exchange_parts[::2], exchange_parts[1::2]), 1):
+		x, y1 = first.anchors['centromere']
+		_, y2 = second.anchors['centromere']
+		belt = svg_tools.chromosomes.centromere_part(f'c22-exchange-belt-{index}',
+			thickness=width, across=y2-y1+width*1.3)
+		body += svg_tools.parts.transform(belt, x=x, y=(y1+y2)/2).fragment
 	for index, product in enumerate(products, 1):
 		y = 176+(index-1)*85
 		body += render(f'c22-product-{index}', product, points=((754, y), (1067, y)),
-			width=40, palette=palette).fragment
+			width=width, palette=palette).fragment
 		alleles = ''.join(gene.allele for gene in topology.project_genes(product))
 		classification = 'Recombinant' if product.junctions else 'Parental'
 		body += drawing.text(1082, y-1, alleles, size=26, color=ink, anchor='start')
 		body += drawing.text(1082, y+25, classification, size=18, color=ink, anchor='start')
 	drawing.write_svg(path, 1200, 560, 'One crossover between linked loci',
-		'Two replicated homologs carry ab and ++. One nonsister from each homolog exchanges '
+		'Two replicated homologs carry ab and ++. Each sister pair shares a centromere collar '
+		'during the exchange. One nonsister from each homolog exchanges '
 		'tips between the two loci. The four products are ab parental, a+ recombinant, '
 		'+b recombinant, and ++ parental. A white zigzag marks each recombinant join.', body)
 
@@ -496,12 +521,29 @@ def build_c31(path: pathlib.Path) -> None:
 	for _, _, _, x, _, _ in methods[1:]:
 		fragments.append(svg_tools.annotations.connector([(x, 16), (x, 54)],
 			color=ink, stroke_width=4, head_size=15).fragment)
+	top, bottom, width = 68, 512, 60
 	for method, label, label_color, x, colors, belt in methods:
 		palette = {(source.id, region.id): color for region, color in zip(regions, colors)}
 		style = {(source.id, site.id): svg_tools.chromosomes.CentromereStyle(fill=belt)}
-		pair = svg_tools.chromosomes.render(f'c31-{method}', sisters, points=((x, 68), (x, 512)),
-			width=60, scale=444 / length, palette=palette, texture=False, centromere_styles=style)
-		fragments.append(pair.fragment)
+		pair = svg_tools.chromosomes.render(f'c31-{method}', sisters, points=((x, top), (x, bottom)),
+			width=width, scale=(bottom-top) / length, palette=palette, texture=False, centromere_styles=style)
+		# One opaque color strip avoids PDF stitching between separately painted bands.
+		rows = [rgb for rgb, band_length in zip(map(PIL.ImageColor.getrgb, colors), lengths)
+			for _ in range(band_length*8)]
+		strip = PIL.Image.new('RGB', (1, len(rows)))
+		strip.putdata(rows)
+		png = io.BytesIO()
+		strip.save(png, format='PNG')
+		strip_uri = 'data:image/png;base64,' + base64.b64encode(png.getvalue()).decode('ascii')
+		pair_svg = svg_tools._xml.parse(pair.fragment)
+		for body in pair_svg.findall('.//g[@data-layer="body"]'):
+			image = lxml.etree.Element('image', {'data-layer': 'band-colors',
+				'x': str(x-width/2), 'y': str(top), 'width': str(width), 'height': str(bottom-top),
+				'preserveAspectRatio': 'none', f'{{{svg_tools._xml.XLINK}}}href': strip_uri})
+			body.replace(body[0], image)
+			for stroke in body.findall('./g[@data-source-label]/path'):
+				stroke.getparent().remove(stroke)
+		fragments.append(lxml.etree.tostring(pair_svg, encoding='unicode'))
 		fragments.append(drawing.text(x, 556, label, size=42, color=label_color))
 	drawing.write_svg(path, 1200, 570, 'Chromosome banding comparison',
 		'The reference at left combines the regions highlighted by three separate staining methods. '
@@ -532,18 +574,22 @@ def build_c55(path: pathlib.Path) -> None:
 		width=29, scale=.339, palette=palette, texture=False)
 	loop_width, loop_scale = 32, 1.13
 	axis = 810
-	normal_half = ((435, 415), (509, 415), (568, 380), (596, 305),
-		(606, 216), (645, 148), (716, 102), (axis, 86))
+	# The head turns back inward above the flared arms of the omega.
+	normal_half = ((552, 384), (616, 384), (641, 379), (663, 369), (682, 351),
+		(683, 330), (667, 309), (650, 295), (638, 276), (628, 239), (633, 195),
+		(650, 153), (682, 117), (728, 92), (786, 83))
 	crossing = (axis, 292)
 	inverted_half = ((555, 445), (620, 434), (686, 397), (750, 344), crossing,
 		(870, 240), (891, 216), (903, 189), (898, 165), (877, 145),
 		(844, 134), (axis, 132))
-	normal_pose = normal_half + tuple((2*axis-x, y) for x, y in normal_half[-2::-1])
+	normal_pose = normal_half + tuple((2*axis-x, y) for x, y in reversed(normal_half))
 	inverted_pose = inverted_half + tuple((2*axis-x, y) for x, y in inverted_half[-2::-1])
 	loop_normal = render('c55-loop-normal', normal, points=normal_pose,
 		width=loop_width, scale=loop_scale, palette=palette, texture=False)
 	loop_inverted = render('c55-loop-inverted', inverted, points=inverted_pose,
 		width=loop_width, scale=loop_scale, palette=palette, texture=False)
+	loop_normal = svg_tools.parts.transform(loop_normal,
+		x=loop_inverted.anchors['gene_C'][0]-loop_normal.anchors['gene_C'][0])
 
 	# Paint just the nearly straight foreground at the self-crossing.
 	x0, y0 = inverted_pose[0]
@@ -564,15 +610,15 @@ def build_c55(path: pathlib.Path) -> None:
 	body += drawing.text(35, 301, 'Inverted order', size=32, color=ink, anchor='start')
 	body += drawing.text(axis, 34, 'Paired homologs', size=32, color=ink)
 	body += straight_normal.fragment + straight_inverted.fragment
-	for locus in 'BCD':
+	for locus in 'ABCDE':
 		anchor = f'gene_{locus}'
 		body += drawing.line(*loop_normal.anchors[anchor], *loop_inverted.anchors[anchor],
 			color='#52657A', width=4)
 	body += loop_normal.fragment + loop_inverted.fragment
 	body += f'<defs>{clip}</defs><g clip-path="url(#c55-loop-overpass)">{front.fragment}</g>'
 	drawing.write_svg(path, 1200, 546, 'Homolog pairing with an inversion',
-		'Standard ABCDE and inverted ADCBE homologs. Their B, C and D loci pair across an '
-		'inversion loop, with the centromeres outside the reversed interval. The curved '
+		'Standard ABCDE and inverted ADCBE homologs. Their matching loci pair along the flanks '
+		'and around an omega-shaped loop. The centromeres stay outside the reversed interval. The curved '
 		'homologs share one scale and preserve the distances between loci.', body)
 
 
@@ -591,6 +637,7 @@ def build_c61(path: pathlib.Path) -> None:
 	left22, tip22 = topology.split(chr22, (chr22.length - 75) / chr22.length)
 	der9 = topology.join(left9, tip22)
 	der22 = topology.join(left22, tip9)
+	topology.validate_conservation((chr9, chr22), (der9, der22))
 
 	scale = 1.29
 	width = 36
@@ -629,16 +676,19 @@ def build_c61(path: pathlib.Path) -> None:
 
 #============================================
 def _c63_chromatids() -> dict[int, topology.Chromatid]:
-	"""Exchange the distal X and 2 tips while keeping each proximal allele and centromere."""
-	# Space the X collar and rb+ card within the retained interval so the cap stays visible.
-	x = topology.chromosome('X', length=293, centromere=49/293, genes={'rb+': 122/293})
-	normal_2 = topology.chromosome('2', length=509, centromere=254/509, genes={'dp': 82/509})
+	"""Use whole-chromosome lengths in Mb and retain the schematic exchange and loci."""
+	# Hoskins et al. (2002), Fig. 1: https://doi.org/10.1186/gb-2002-3-12-research0085
+	x = topology.chromosome('X', length=41.8, centromere=.11, genes={'rb+': .41})
+	normal_2 = topology.chromosome('2', length=60.8, centromere=28.4/60.8, genes={'dp': .16})
 	partner_2 = topology.homolog(normal_2, '2-wildtype', alleles={'dp': 'dp+'})
-	y = topology.chromosome('Y', length=370, centromere=133/370)
-	x_base, x_tip = topology.split(x, 169/x.length)
-	two_base, two_tip = topology.split(partner_2, 385/partner_2.length)
-	models = {1: topology.join(x_base, two_tip), 2: normal_2,
-		3: y, 4: topology.join(two_base, x_tip)}
+	y = topology.chromosome('Y', length=40.9, centromere=.30)
+	tip_length = 15
+	x_base, x_tip = topology.split(x, 1-tip_length/x.length)
+	two_base, two_tip = topology.split(partner_2, 1-tip_length/partner_2.length)
+	der_x = topology.join(x_base, two_tip)
+	der_2 = topology.join(two_base, x_tip)
+	topology.validate_conservation((x, partner_2), (der_x, der_2))
+	models = {1: der_x, 2: normal_2, 3: y, 4: der_2}
 	return models
 
 
@@ -653,14 +703,18 @@ def build_c63(path: pathlib.Path) -> None:
 		('Adjacent-2', ((1, 3), (2, 4))),
 		('Alternate', ((1, 4), (2, 3))),
 	)
-	ink, blue = '#213449', '#076DAD'
-	palette = {(source, 'body'): color for source, color in (
-		('X', '#596F84'), ('2', blue), ('2-wildtype', blue), ('Y', '#C74540'))}
-	collars = {(source, f'{source}.cen'): svg_tools.chromosomes.CentromereStyle(fill=color)
-		for source, color in (('X', '#F2A39C'), ('Y', '#F2A39C'),
-			('2', '#A8CAE2'), ('2-wildtype', '#A8CAE2'))}
+	ink, navy = '#333333', '#003366'
+	colors = {
+		'X': ('X', '#B74300', '#FFDFCC'),
+		'Y': ('Y', navy, '#CCE6FF'),
+		'2': ('2', '#BFFF80', '#E6FFCC'),
+	}
+	colors['2-wildtype'] = colors['2']
+	palette = {(source, 'body'): fill for source, (_, fill, _) in colors.items()}
+	collars = {(source, f'{source}.cen'): svg_tools.chromosomes.CentromereStyle(label, fill)
+		for source, (label, _, fill) in colors.items()}
 	text = svg_tools.text.label
-	scale = .65
+	scale = 5.45
 	body = []
 	for column, (heading, pairs) in enumerate(columns):
 		left = 21 + column * 390
@@ -671,9 +725,9 @@ def build_c63(path: pathlib.Path) -> None:
 			pair_id = f'{pair[0]}-{pair[1]}'
 			body.append(f'<g id="c63-pair-{pair_id}">')
 			body.append(f'<rect x="{left}" y="{top}" width="378" height="229" rx="14" '
-				'fill="#F3F7FB" stroke="#B5CBDB" stroke-width="2"/>')
+				'fill="#FFFFFF" stroke="#BFD1E3" stroke-width="2"/>')
 			body.append(text(mid, top + 34, f'{pair[0]} + {pair[1]}', size=29,
-				color=blue, bold=True, anchor='middle').fragment)
+				color=navy, bold=True, anchor='middle').fragment)
 			for chromosome_row, chromosome_id in enumerate(pair):
 				y = top + 104 + chromosome_row * 88
 				body.append(text(left + 20, y - 30, f'{chromosome_id}  {labels[chromosome_id]}',
@@ -685,10 +739,17 @@ def build_c63(path: pathlib.Path) -> None:
 					palette=palette, centromere_styles=collars)
 				body.append(part.fragment)
 			body.append('</g>')
-	drawing.write_svg(path, 1200, 560, 'Six gametes after reciprocal translocation',
+	collar_marker = svg_tools.chromosomes.centromere_part('c63-legend', thickness=20,
+		label='X', fill=colors['X'][2])
+	body.append(svg_tools.parts.transform(collar_marker, 428, 567).fragment)
+	body.append(text(451, 575, 'Centromere', size=24, color=ink, anchor='start').fragment)
+	body.append(drawing.line(643, 567, 643+10*scale, 567, color=ink, width=3))
+	body.append(text(712, 575, '10 Mb', size=24, color=ink, anchor='start').fragment)
+	drawing.write_svg(path, 1200, 590, 'Six Drosophila gametes after reciprocal translocation',
 		'Adjacent-1 gives 1 + 2 and 3 + 4. Adjacent-2 gives 1 + 3 and 2 + 4. '
 		'Alternate gives 1 + 4 and 2 + 3. Chromosome 1 is derivative X (rb+), '
 		'2 is normal 2 (dp), 3 is normal Y, and 4 is derivative 2 (dp+). '
+		'The chromosomes share a DNA length scale. The pale collars carry centromere IDs. '
 		'White zigzags mark the exchanged tips in the two derivatives.', ''.join(body))
 
 
@@ -696,20 +757,20 @@ def build_c63(path: pathlib.Path) -> None:
 def generate(output_dir: pathlib.Path) -> None:
 	"""Write the review figures to the caller's output directory."""
 	output_dir.mkdir(parents=True, exist_ok=True)
-	# Use fixed figure IDs for filenames (ASVS 5.3.2).
-	for figure_id, build in (
-		('c01', build_c01),
-		('c16', build_c16),
-		('c22', build_c22),
-		('c23', build_c23),
-		('c25', build_c25),
-		('c28', build_c28),
-		('c31', build_c31),
-		('c55', build_c55),
-		('c61', build_c61),
-		('c63', build_c63),
+	# Use fixed filenames. C31 contains an embedded band-color image (ASVS 5.3.2).
+	for filename, build in (
+		('c01.drawn.svg', build_c01),
+		('c16.drawn.svg', build_c16),
+		('c22.drawn.svg', build_c22),
+		('c23.drawn.svg', build_c23),
+		('c25.drawn.svg', build_c25),
+		('c28.drawn.svg', build_c28),
+		('c31.svg', build_c31),
+		('c55.drawn.svg', build_c55),
+		('c61.drawn.svg', build_c61),
+		('c63.drawn.svg', build_c63),
 	):
-		build(output_dir / f'{figure_id}.drawn.svg')
+		build(output_dir / filename)
 
 
 #============================================

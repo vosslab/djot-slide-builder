@@ -569,13 +569,7 @@ def _paint_chromatid(name: str, segments: collections.abc.Sequence[Segment],
 		region = lxml.etree.SubElement(paint, 'g', {
 			'id': f'{name}-region-{index}', 'data-source-label': segment.label})
 		if index in run_ends:
-			end_index = run_ends[index]
-			end = parameters[end_index]
-			if surface.straight and end_index < len(segments) and end_index not in junctions:
-				# The next band paints over this overlap at its exact boundary.
-				overlap = min(stroke, (distances[end_index+1]-distances[end_index])/2)
-				end = path.ilength(distances[end_index]+overlap)
-			portion = path.cropped(parameters[index], end)
+			portion = path.cropped(parameters[index], parameters[run_ends[index]])
 			lxml.etree.SubElement(region, 'path', {'d': portion.d(), 'fill': 'none',
 				'stroke': segment.color, 'stroke-width': str(thickness),
 				'stroke-linecap': 'butt', 'stroke-linejoin': 'round'})
@@ -666,6 +660,7 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	surface: svg_tools.chromosome_surface.Surface, palette: dict[tuple[str, str], str], *,
 	sites: tuple[svg_tools.chromosome_topology.ProjectedCentromere, ...],
 	centromere_styles: dict[tuple[str, str], CentromereStyle], texture: bool,
+	gene_palette: dict[tuple[str, str], str], allow_external_genes: bool,
 	outward: complex = 0j) -> tuple[svg_tools.parts.SvgPart, list[svg_tools.parts.SvgPart]]:
 	"""Project source features once into the existing BPQ paint and label inputs."""
 	topology = svg_tools.chromosome_topology
@@ -682,6 +677,7 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 	terminal_ends = (model.ends[0] == 'telomere', model.ends[1] == 'telomere')
 	left_cap, right_cap = (surface.cap_length if terminal else 0 for terminal in terminal_ends)
 	mark_half = _JUNCTION_HALF_SPAN*surface.scale
+	junction_clearance = mark_half + surface.cap_length + card_stroke/2
 	inset_outline = width*2/30
 	left_clearance = max(left_cap, inset_outline)+mark_half
 	right_clearance = max(right_cap, inset_outline)+mark_half
@@ -707,17 +703,21 @@ def _render_topology_chromatid(name: str, model: svg_tools.chromosome_topology.C
 		right = gene_positions[index+1] if index+1 < len(genes) else math.inf
 		clearance = min(position, length-position,
 			*(abs(position-site)-collar_clearance for site in site_distances),
-			*(abs(position-junction)-mark_half for junction in junction_distances))
-		block_length = min(width*.8, 2*clearance, position-left, right-position)
+			*(abs(position-junction)-junction_clearance for junction in junction_distances))
+		block_length = min(width*.8, 2*clearance, position-left-card_stroke, right-position-card_stroke)
 		locus_name = f'{name}-gene-{index}'
 		locus = None
 		if block_length >= width*.4:
-			block = Segment(gene.allele, _GENE_CARD_COLOR, block_length)
+			color = gene_palette.get((gene.source_id, gene.locus_id), _GENE_CARD_COLOR)
+			block = Segment(gene.allele, color, block_length)
 			locus = svg_tools.chromosome_loci.card(locus_name, surface, position,
 				block.label, block.color, block.length, minimum_size=width*.4,
 				terminal_ends=terminal_ends)
 		layer = loci
 		if locus is None:
+			if not allow_external_genes:
+				raise ValueError(f'{name}: gene {gene.allele!r} cannot fit an internal card at '
+					f'material position {gene.position:g}. Increase the display scale or adjust the spacing.')
 			locus = svg_tools.chromosome_loci.external(locus_name, surface, position, gene.allele, outward)
 			layer = external
 		key = '/'.join(urllib.parse.quote(value, safe='')
@@ -771,13 +771,16 @@ def _with_external_loci(part: svg_tools.parts.SvgPart,
 def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools.chromosome_topology.SisterPair, *,
 	points: collections.abc.Sequence[tuple[float, float]], width: float = 20,
 	scale: float = 1, palette: dict[tuple[str, str], str], texture: bool = True,
-	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None) -> svg_tools.parts.SvgPart:
+	centromere_styles: dict[tuple[str, str], CentromereStyle] | None = None,
+	gene_palette: dict[tuple[str, str], str] | None = None,
+	allow_external_genes: bool = False) -> svg_tools.parts.SvgPart:
 	"""Render source material along a spline, at display length model.length*scale.
 	Anchors include start, end, center (arc midpoint), and active centromere sites.
 	Locus anchors use gene_<locus_id> when unique and always gene:source/copy/locus
 	with URL-encoded components. Pairs qualify child anchors with first. and second.
-	Gene cards leave one cap-length of body color at each telomere and beside each
-	centromere collar. Loci with insufficient room receive a linked external label.
+	Gene cards leave one cap-length of body color beside telomeres, centromere collars,
+	and visible junctions. A card that cannot fit raises ValueError unless the caller
+	supplies allow_external_genes=True. Gene-card fills are keyed by (source_id, locus_id).
 	Centromere styles are keyed by (source_id, site_id), including for shared sister belts.
 	Adjacent regions of the same color share a stroke and retain their boundary anchors.
 	Set texture=False to omit the background pattern while keeping source bands and shading.
@@ -817,12 +820,15 @@ def render(name: str, model: svg_tools.chromosome_topology.Chromatid | svg_tools
 		offset = surface.path.unit_tangent(parameter)*1j*(width*.6)
 	first_name = f'{name}-first' if paired else name
 	styles = centromere_styles or {}
+	gene_colors = gene_palette or {}
 	first_part, first_external = _render_topology_chromatid(first_name, first, surface, palette,
-		sites=first_sites, centromere_styles=styles, texture=texture, outward=-offset)
+		sites=first_sites, centromere_styles=styles, texture=texture, gene_palette=gene_colors,
+		allow_external_genes=allow_external_genes, outward=-offset)
 	if not paired:
 		return _with_external_loci(first_part, first_external)
 	second_part, second_external = _render_topology_chromatid(f'{name}-second', second, surface,
-		palette, sites=second_sites, centromere_styles=styles, texture=texture, outward=offset)
+		palette, sites=second_sites, centromere_styles=styles, texture=texture, gene_palette=gene_colors,
+		allow_external_genes=allow_external_genes, outward=offset)
 	first_sister = svg_tools.parts.transform(first_part, x=-offset.real, y=-offset.imag)
 	second_sister = svg_tools.parts.transform(second_part, x=offset.real, y=offset.imag)
 	belt = _sister_belt_part(f'{name}-belt', first_sister.anchors['centromere'],

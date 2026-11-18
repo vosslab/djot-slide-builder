@@ -459,6 +459,24 @@ def join(*fragments: Chromatid) -> Chromatid:
 
 
 #============================================
+def validate_conservation(before: collections.abc.Sequence[Chromatid],
+	after: collections.abc.Sequence[Chromatid]) -> None:
+	"""Require the same native intervals of each physical copy across a rearrangement."""
+	# Opposite changes at a shared boundary cancel regardless of how spans are split or oriented.
+	boundaries = collections.Counter()
+	for sign, chromatids in ((1, before), (-1, after)):
+		for chromatid in chromatids:
+			for span in chromatid.spans:
+				boundaries[span.source, span.copy_id, span.start] += sign
+				boundaries[span.source, span.copy_id, span.stop] -= sign
+	if any(boundaries.values()):
+		input_length = sum(chromatid.length for chromatid in before)
+		output_length = sum(chromatid.length for chromatid in after)
+		raise ValueError(f'Chromosome material must be conserved across products '
+			f'(total length {input_length:g} before, {output_length:g} after)')
+
+
+#============================================
 def replicate(fragment: Chromatid) -> SisterPair:
 	"""Make two equivalent sister chromatids with distinct physical copy IDs."""
 	pair = SisterPair(copy(fragment, f'{fragment.id}.s1'), copy(fragment, f'{fragment.id}.s2'))

@@ -82,9 +82,7 @@ def test_adjacent_same_color_bands_share_one_stroke() -> None:
 	strokes = root.findall('./g[@data-layer="body"]/g[@data-source-label]/path')
 	assert [stroke.get('stroke') for stroke in strokes] == ['#AAAAAA', '#752499', '#AAAAAA']
 	paths = [svgpathtools.parse_path(stroke.get('d')) for stroke in strokes]
-	assert [path.start.real for path in paths] == [0, 80, 120]
-	assert paths[-1].end.real == 200
-	assert all(first.end.real > second.start.real for first, second in zip(paths, paths[1:]))
+	assert [(path.start.real, path.end.real) for path in paths] == [(0, 80), (80, 120), (120, 200)]
 	assert [part.anchors[f'boundary_{index}'] for index in range(6)] == [(x, 0) for x in range(0, 201, 40)]
 
 
@@ -248,7 +246,7 @@ def test_bent_junction_glyph_clears_collar_at_same_material_spacing() -> None:
 def test_long_alleles_get_readable_external_labels_at_their_loci() -> None:
 	model = topology.chromosome('A', length=180, genes={'eyeless+': .25, 'Notch+': .75})
 	part = chromosomes.render('alleles', model, points=((0, 0), (180, 0)),
-		palette={('A', 'body'): '#3479A8'})
+		palette={('A', 'body'): '#3479A8'}, allow_external_genes=True)
 	root = lxml.etree.fromstring(part.fragment)
 	for allele, x in (('eyeless+', 45), ('Notch+', 135)):
 		locus = root.find(f'./g[@data-gene="{allele}"]')
@@ -266,7 +264,7 @@ def test_gene_at_visible_junction_keeps_its_label_and_ancestry_boundary() -> Non
 	_, tip = topology.split(b, .5)
 	product = topology.join(a, tip)
 	part = chromosomes.render('product', product, points=((0, 0), (140, 0)),
-		palette={('A', 'body'): '#3479A8', ('B', 'body'): '#D6533C'})
+		palette={('A', 'body'): '#3479A8', ('B', 'body'): '#D6533C'}, allow_external_genes=True)
 	root = lxml.etree.fromstring(part.fragment)
 	assert part.anchors['gene:B/B/q'] == part.anchors['gene_q'] == (100, 0)
 	locus, = root.findall('./g[@data-gene="q"]')
@@ -277,6 +275,27 @@ def test_gene_at_visible_junction_keeps_its_label_and_ancestry_boundary() -> Non
 	assert svgpathtools.parse_path(mark.attrib['d']).bbox()[:2] == (98, 102)
 	regions = root.findall('./g[@data-layer="body"]/g[@data-source-label]')
 	assert [region.attrib['data-source-label'] for region in regions] == ['A/body', 'B/body']
+
+
+#============================================
+def test_gene_card_needs_room_beside_junction_and_retains_its_fill() -> None:
+	left = topology.chromosome('A', length=100, genes={'q': .87})
+	right = topology.chromosome('B', length=80, genes={'q': .5})
+	product = topology.join(left, right)
+	points = ((0, 0), (180, 0))
+	palette = {('A', 'body'): '#3479A8', ('B', 'body'): '#D6533C'}
+	with pytest.raises(ValueError, match="product: gene 'q' cannot fit an internal card"):
+		chromosomes.render('product', product, points=points, width=38, palette=palette)
+
+	part = chromosomes.render('product', product, points=points, scale=2.5, width=38, palette=palette,
+		gene_palette={('A', 'q'): '#EFD1FA', ('B', 'q'): '#E6FFCC'})
+	root = lxml.etree.fromstring(part.fragment)
+	cards = root.findall('./g[@data-layer="gene-locus"]/path')
+	assert [card.get('fill') for card in cards] == ['#EFD1FA', '#E6FFCC']
+	_, card_end, _, _ = svgpathtools.parse_path(cards[0].get('d')).bbox()
+	mark, = root.findall('./path[@fill="#FFFFFF"]')
+	mark_start, _, _, _ = svgpathtools.parse_path(mark.get('d')).bbox()
+	assert mark_start - card_end - float(cards[0].get('stroke-width'))/2 >= 38*8/30 - 1e-3
 
 
 #============================================
@@ -318,8 +337,11 @@ def test_rotated_terminal_collar_is_inside_reported_bounds() -> None:
 ))
 def test_cramped_locus_keeps_an_exact_anchor_and_external_label(model: topology.Chromatid,
 	position: float) -> None:
+	with pytest.raises(ValueError, match="gene 'q' cannot fit an internal card"):
+		chromosomes.render('cramped', model, points=((0, 0), (120, 0)),
+			palette={('A', 'body'): '#3479A8'})
 	part = chromosomes.render('cramped', model, points=((0, 0), (120, 0)),
-		palette={('A', 'body'): '#3479A8'})
+		palette={('A', 'body'): '#3479A8'}, allow_external_genes=True)
 	root = lxml.etree.fromstring(part.fragment)
 	locus, = root.findall('./g[@data-gene="q"]')
 	dot = locus.find('circle')
@@ -339,7 +361,7 @@ def test_sisters_label_cramped_loci_outside_the_belt() -> None:
 	model = topology.replicate(topology.chromosome('A', length=80, centromere=.5,
 		genes={'q': .6}))
 	part = chromosomes.render('sisters', model, points=((0, 0), (80, 0)),
-		palette={('A', 'body'): '#3479A8'})
+		palette={('A', 'body'): '#3479A8'}, allow_external_genes=True)
 	root = lxml.etree.fromstring(part.fragment)
 	belt, = root.findall('.//g[@data-layer="centromere"]')
 	order = list(root.iter())

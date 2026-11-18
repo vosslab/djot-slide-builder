@@ -33,18 +33,41 @@ brought the sisters together under each collar and retained both exchange points
 collar footprints cover the chromatid outlines through both centromeres. The exported page 6
 render and all 12 Atkinson allele labels were verified.
 
-C31 now uses one gray for unstained regions and a stain-colored label for each individual view.
-The shared renderer combines consecutive same-color strokes while preserving each region's
-identity and anchors. Both decks embed the revised C31 SVG. The rendered Mini2 page has a
-continuous gray C-band arm, and the current base suite passed 9,921 tests (`c31-bands/pytest.log`).
+C31 now has 25 aligned bands on 444-unit chromatids, with one gray for unstained regions and
+a stain-colored label for each view. The shared renderer combines consecutive same-color strokes
+while preserving each region's identity and anchors. C31's `c31.svg` uses one opaque lossless
+band-color image per chromatid to remove separate band paint operations in the PDF. Both decks
+embed that SVG. The base suite passed 9,919 tests (`c31-bands/pytest-final.log`).
 
-The `c31-bands/native-check.log` check verified native ODP captions, byte-identical embedded SVGs
-with SVG MIME entries, and selectable PDF captions on all ten Mini2 slides.
+C55's blue path now follows the original lecture's omega-shaped loop. Five guides connect all
+matching loci, including A and E on the flanks. Both paths measure 1,130 SVG units and retain
+equal corresponding distances between loci. The exported page 8 and 42 focused tests passed.
+
+C63 uses whole-chromosome DNA length estimates of 41.8 Mb for X, 40.9 Mb for Y, and 60.8 Mb
+for chromosome 2. The exchange breakpoints and loci remain schematic. X is Dark orange Dark,
+Y is Navy Extra dark, and 2 is Lime green Light. The six gamete pairs carry 12 labeled
+centromeres and share a 10 Mb scale bar. [Hoskins et al., Fig. 1](https://doi.org/10.1186/gb-2002-3-12-research0085)
+
+The `c63-drosophila/` checks verified page 10 visually and confirmed native ODP captions,
+canonical SVG embedding, and selectable PDF captions across Mini2. The base suite passed
+9,919 tests.
+
+C01 uses five extra-light gene-card fills. The enlarged chromosomes give L a full card
+beside the insertion, with body color before the splice. Both rows start with 485 + 390
+units and conserve 875 units across their products. The source interval check also runs
+for the C61 and C63 exchanges. The `c01-clearance/` checks verified all eight C01
+chromatids, the exported page 1, and the SVG embedded in the ODP. The base suite passed
+9,921 tests.
+
+C22 uses straight terminal runs on two mirrored crossover curves and one centromere
+collar per sister pair. All four middle-panel chromatids still measure 313 units along
+their paths. The `c22-tips/` checks verified both edges of each cap, the Mini2 and full
+review exports, and pixel-identical C25 artwork. The base suite passed 9,921 tests.
 
 | Current export | SHA-256 |
 | --- | --- |
-| `output/odp/chromosome_engine_mini2.odp` | `adc6a4c00f60efba111098d8582983cd18b82f1482c9e3832f943c5f8ccff98d` |
-| `output/pdf/chromosome_engine_mini2.pdf` | `ed33065c8138013125fc7db5729fe01079af440a2958e4c68c9a9136810c3ce9` |
+| `output/odp/chromosome_engine_mini2.odp` | `7645ae4240bc6c3e8497568da59fe45300019e85cf14a3ecb9f7858c64e81328` |
+| `output/pdf/chromosome_engine_mini2.pdf` | `e451c2b362b859a7690ac75cc83afdfe75b1838a5c3db873803b527b33bbf977` |
 
 ## Historical figure acceptance
 

@@ -100,6 +100,27 @@ def test_unequal_terminal_exchange_preserves_both_sources() -> None:
 
 
 #============================================
+def test_validate_conservation_rejects_lost_or_reused_material() -> None:
+	first = topology.chromosome('A', length=10)
+	second = topology.chromosome('B', length=15)
+	first_head, first_tip = topology.split(first, .4)
+	second_head, second_tip = topology.split(second, 7/15)
+	left = topology.join(first_head, second_tip)
+	right = topology.join(second_head, first_tip)
+	assert (left.length, right.length) == (12, 13)
+	before = (first, second)
+	topology.validate_conservation(before, (topology.reverse(right), left))
+
+	for head_length, total in ((8, 26), (2, 20)):
+		head, _ = topology.split(second, head_length/second.length)
+		with pytest.raises(ValueError, match=f'total length 25 before, {total} after'):
+			topology.validate_conservation(before, (left, topology.join(head, first_tip)))
+
+	with pytest.raises(ValueError, match='total length 25 before, 25 after'):
+		topology.validate_conservation(before, (left, topology.copy(right, 'extra-copy')))
+
+
+#============================================
 def test_robertsonian_products_conserve_arms_and_separate_site_activities() -> None:
 	first = topology.chromosome('A', length=10, centromere=.2, regions=((0, 'p'), (.2, 'q')))
 	second = topology.chromosome('B', length=20, centromere=.15, regions=((0, 'p'), (.15, 'q')))

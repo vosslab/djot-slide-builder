@@ -68,6 +68,12 @@ and stays fixed as `scale` changes. Keep one scale when comparing material lengt
 finite points with distinct neighbors and distinct ends. Use gentler bends if a curve doubles
 back locally or bends too tightly for its width. The engine handles open, linear material.
 
+For an axis-aligned telomere, put three collinear points at that end of a curved pose.
+Give them the same y coordinate for a horizontal arm or the same x coordinate for a
+vertical arm. Keep the outermost span at least one cap length after scaling
+(`8 * width / 30` on a full-size rod). This holds both sides of the cap at the same angle.
+For an angled tip, use collinear points along its intended direction.
+
 ## Name source material and loci
 
 - `chromosome()` takes a positive length and optional feature fractions from 0 to 1, measured
@@ -128,6 +134,7 @@ linked_start, linked_tip = topology.split(linked, .65)
 other_start, other_tip = topology.split(other, .75)
 first_product = topology.join(linked_start, other_tip)
 second_product = topology.join(other_start, linked_tip)
+topology.validate_conservation((linked, other), (first_product, second_product))
 
 ancestry = {('linked', 'body'): blue['linked', 'body'],
 	('other', 'body'): palette.shade('red', 'dark')}
@@ -166,6 +173,10 @@ ends. Drawn fragments automatically get a gray cap at a native telomere and a fl
 break. The renderer can mark internal joins where they are clear of a centromere collar. Two
 independent drawings can visually cross without joining their DNA.
 
+For a rearrangement that retains all material, call `validate_conservation(before, after)` on
+the complete sets of chromatids. It raises `ValueError` when a native source interval is missing
+or reused, even if the total lengths agree. Product order, orientation, and cuts can change.
+
 An activity change leaves a site on its material. The drawing shows collars at active sites.
 Use `(copy_id, site_id)` when more than one retained copy has the same site ID.
 
@@ -196,11 +207,15 @@ Sister bodies have `first.` and `second.` anchor prefixes. For example,
 marks the midpoint of their shared belt. The unprefixed `start`, `end`, and `center` follow the
 reference pose.
 
-Internal gene cards leave one telomere-cap length of body color beside each telomere and
-centromere collar. When a card has too little clearance, the renderer draws a dot at the exact
-locus and leads to an upright external allele label. The leader follows the local normal and
-points outward on sisters. The locus anchor stays on the body. Check spacing among labels and
-neighboring objects when composing the complete figure.
+Internal gene cards leave one telomere-cap length of body color beside each telomere,
+centromere collar, and visible junction. A card that cannot fit raises `ValueError`.
+Use `gene_palette` to assign card fills by `(source_id, locus_id)`. A locus keeps its color
+as it moves to another product or changes alleles.
+
+Set `allow_external_genes=True` to allow dot-and-leader labels at loci with too little room
+for a card. The leader follows the local normal and points outward on sisters. The locus
+anchor stays on the body. Check spacing among external labels and neighboring objects in the
+complete figure.
 
 Cutting at `m` puts `terminal_part.anchors['gene_m']` at the start of the fragment. Add a
 10-unit margin around the reported bounds and write a transparent SVG.
@@ -210,7 +225,7 @@ import svg_tools.parts as parts
 
 _, terminal = topology.split(linked, .76)
 terminal_part = chromosomes.render('terminal-fragment', terminal, points=straight,
-	width=22, palette=blue)
+	width=22, palette=blue, allow_external_genes=True)
 
 xmin, ymin, xmax, ymax = terminal_part.bounds
 margin = 10

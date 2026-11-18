@@ -42,9 +42,9 @@ cards or positioning independent text over the chromosome.
 The source-addressed engine uses logical locus IDs and allele labels on retained material.
 Both `render()` and `gene_locus_part()` leave at least one cap-length of chromosome body
 color between a telomere cap and the inked edge of an internal gene block, measured along
-the centerline. If the block cannot fit at its locus
-with that clearance, the renderer marks the locus with a dot and leads to an external label.
-Check the placement against other labels in the complete figure. See
+the centerline. `render()` reserves the same clearance beside collars and visible junctions,
+and raises `ValueError` when a card cannot fit. Pass `allow_external_genes=True` to allow
+external dot-and-leader labels. Check their placement in the complete figure. See
 [CHROMOSOME_ENGINE.md](CHROMOSOME_ENGINE.md).
 
 ## Label appearance

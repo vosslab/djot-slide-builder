@@ -19,8 +19,16 @@
 
 ### Fixes and Maintenance
 
-- Use one neutral gray and stain-colored labels in C31. Paint consecutive same-color bands
-  as one stroke while retaining their source boundaries.
+- Keep C22's crossover curved, with straight terminal runs and shared centromere collars.
+- Lengthen the C01 chromosomes and give gene groups distinct extra-light card colors.
+  Reserve space beside visible splices and reject cramped cards unless external labels are
+  enabled. Validate source material conservation across Mini2 translocation products.
+- Scale C63 to estimated Drosophila chromosome lengths and label the centromeres.
+  Use fixed palette colors to track X, Y, and chromosome 2 through the exchange.
+- Shape the blue C55 homolog like an omega and guide matching loci across the loop and flanks.
+- Lengthen the C31 chromosomes and align 25 bands across all four views. Use one neutral gray,
+  stain-colored labels, and one opaque band-color strip per chromatid to avoid PDF hairlines.
+- Paint consecutive same-color bands as one stroke while retaining their source boundaries.
 - Bring C28 sister chromatids together under their shared centromere collars while preserving
   both crossover points.
 - Reserve body color between gene cards and centromeres. Refine Mini2 chromosome proportions,
