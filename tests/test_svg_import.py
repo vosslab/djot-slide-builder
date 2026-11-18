@@ -11,11 +11,16 @@ from svg_tools.drawing import write_svg
 from svg_tools.svg_import import import_svg
 
 
-FIGURE = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="10 20 40 20" fill="red">
- <!-- License: ISC --><metadata><dc:title>Figure metadata</dc:title></metadata><defs><pattern id="p" width="2" height="2">
- <path id="line" d="M0 0L2 2"/></pattern></defs><rect x="10" y="20" width="40"
- height="20" fill="url(#p)"/><use xlink:href="#line"/><text x="12" y="30">Live words</text></svg>'''
+FIGURE = (
+	'<svg xmlns="http://www.w3.org/2000/svg" '
+	'xmlns:xlink="http://www.w3.org/1999/xlink"\n'
+	' xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="10 20 40 20" fill="red">\n'
+	' <!-- License: ISC --><metadata><dc:title>Figure metadata</dc:title></metadata>'
+	'<defs><pattern id="p" width="2" height="2">\n'
+	' <path id="line" d="M0 0L2 2"/></pattern></defs><rect x="10" y="20" width="40"\n'
+	' height="20" fill="url(#p)"/><use xlink:href="#line"/>'
+	'<text x="12" y="30">Live words</text></svg>'
+)
 
 
 #============================================
@@ -47,7 +52,11 @@ def test_import_preserves_metadata_and_xlink(tmp_path: pathlib.Path) -> None:
 
 #============================================
 def test_matplotlib_universal_style_is_scoped_and_preserves_override() -> None:
-	svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><defs><style>*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><path style="stroke-linejoin: bevel" d="M0 0L10 10"/></svg>'
+	svg = (
+		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">'
+		'<defs><style>*{stroke-linejoin: round; stroke-linecap: butt}</style></defs>'
+		'<path style="stroke-linejoin: bevel" d="M0 0L10 10"/></svg>'
+	)
 	part = import_svg(svg, name='plot')
 	root = lxml.etree.fromstring(part.fragment)
 	path = root.find('{http://www.w3.org/2000/svg}path')

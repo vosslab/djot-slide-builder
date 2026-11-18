@@ -24,6 +24,12 @@ Use `lxml.etree` for Python XML objects and document-local namespace maps. Read 
 `svg_tools._xml` and OpenDocument package XML through `slide_lib.odf_package.parse_xml`. Write
 complete SVGs with the shared drawing writer or normalize source-derived artwork with
 `svg_tools.drawing.svg_root` before serialization.
+The [XML import check](../tests/test_xml_imports.py) flags `defusedxml` and `xml.etree` imports in
+tracked Python. Replace flagged imports with `lxml.etree` and use the shared parser for the format.
+
+Keep authored Python lines at 120 characters or fewer, including in tests. Wrap long expressions
+at logical boundaries and lay out inline Djot examples as readable source. Split files by
+responsibility when they approach the separate physical line-count limit.
 
 ## Make and check a focused change
 

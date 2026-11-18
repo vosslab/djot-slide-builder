@@ -42,7 +42,8 @@ def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: 
 	base = "=== layout: two-panels\n\n# Tutorial\n\n@left\n\nStory cue.\n\n@right\n\nComparison.\n"
 	url = "https://example.test/tutorial"
 	plain = layout_test_helpers.compile_source(tmp_path, base).plan.slides[0]
-	cited = layout_test_helpers.compile_source(tmp_path, base + "\n@citation\n\nSmith. _Study title._ 2026. " + url).plan.slides[0]
+	cited_source = base + "\n@citation\n\nSmith. _Study title._ 2026. " + url
+	cited = layout_test_helpers.compile_source(tmp_path, cited_source).plan.slides[0]
 	assert cited.slots == plain.slots
 	assert cited.objects[:-1] == plain.objects
 	citation = cited.objects[-1]

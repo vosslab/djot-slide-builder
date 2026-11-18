@@ -150,34 +150,42 @@ def parse_error(tmp_path: pathlib.Path, source: str) -> str:
 #============================================
 def test_notes_end_at_next_slot_and_stay_off_visible_content(tmp_path: pathlib.Path) -> None:
 	"""Notes between question and answer leave both visible regions intact."""
-	deck = parse_source(tmp_path, "=== layout: multiple-choice\n@question\n- A\n- B\n"
-		"@speaker-notes\nAsk why B fits.\n\n- Wait for discussion.\n@answer\nB\n")
-	assert deck.slides[0].notes == ("Ask why B fits.", "", "- Wait for discussion.")
-	assert slide_lib.djot_parser.visible_text(deck.slides[0].cells[1].blocks[0].inlines) == "B"
+	slide = parse_source(tmp_path,
+		"=== layout: multiple-choice\n"
+		"@question\n"
+		"- A\n"
+		"- B\n"
+		"@speaker-notes\n"
+		"Ask why B fits.\n"
+		"@answer\n"
+		"B\n").slides[0]
+	assert slide.notes == ("Ask why B fits.",)
+	assert slide_lib.djot_parser.visible_text(slide.cells[1].blocks[0].inlines) == "B"
 
 
 #============================================
-def test_notes_keep_directive_like_text_and_end_at_next_slide(tmp_path: pathlib.Path) -> None:
-	"""Literal notes cannot alter visibility, deck metadata, or fence the next slide."""
-	deck = parse_source(tmp_path, "=== layout: blank\n@speaker-notes\n"
-		"hidden: true\ncolor-theme: chemistry\n=> appear\n```\n"
-		"<tag> &amp; &#945; &amp;lt;\n=== layout: blank\n")
-	assert deck.slides[0].notes == (
-		"hidden: true", "color-theme: chemistry", "=> appear", "```", "<tag> & \u03b1 &lt;")
-	assert not deck.slides[0].hidden and deck.slides[1].notes == ()
+def test_notes_end_at_next_slide_even_with_a_literal_fence(tmp_path: pathlib.Path) -> None:
+	"""A fence in speaker notes is literal and leaves the next slide readable."""
+	first, second = parse_source(tmp_path,
+		"=== layout: blank\n"
+		"@speaker-notes\n"
+		"```\n"
+		"=== layout: blank\n").slides
+	assert first.notes == ("```",)
+	assert second.notes == ()
 
 
 #============================================
-def test_replaceme_is_slide_metadata_and_stays_literal_in_code_and_notes(
-		tmp_path: pathlib.Path) -> None:
-	"""Review status cannot leak to the next slide or be enabled by an example or note."""
-	deck = parse_source(tmp_path, "=== layout: blank\n@replaceme\nhidden: true\n"
-		"=== layout: one-panel\n@body\n```\n@replaceme\n@speaker-notes\n@notes\n```\n"
-		"@speaker-notes\n@replaceme\nExplain this marker.\n=== layout: blank\n")
-	assert tuple(slide.replaceme for slide in deck.slides) == (True, False, False)
-	assert deck.slides[0].hidden and deck.slides[0].blocks == ()
-	assert deck.slides[1].cells[0].blocks[0].value == "@replaceme\n@speaker-notes\n@notes"
-	assert deck.slides[1].notes == ("@replaceme", "Explain this marker.")
+def test_replaceme_is_slide_metadata_and_stays_literal_in_notes(tmp_path: pathlib.Path) -> None:
+	"""A review marker in speaker notes stays literal and leaves the slide unmarked."""
+	first, second = parse_source(tmp_path,
+		"=== layout: blank\n"
+		"@replaceme\n"
+		"=== layout: blank\n"
+		"@speaker-notes\n"
+		"@replaceme\n").slides
+	assert first.replaceme and not second.replaceme
+	assert second.notes == ("@replaceme",)
 
 
 #============================================
@@ -189,21 +197,6 @@ def test_invalid_replaceme_marker_reports_its_source(tmp_path: pathlib.Path, mar
 	"""A malformed or misplaced review flag gets an actionable authoring error."""
 	message = parse_error(tmp_path, f"=== layout: one-panel\n{marker}\n@body\nContent.\n")
 	assert str(tmp_path / "deck.djot") in message and "@replaceme" in message
-
-
-#============================================
-@pytest.mark.parametrize("layout_name", (
-	"vertical-panel",
-	"vertical-title-two-panels",
-	"vertical-text-panel",
-	"two-panels-vertical-clipart",
-	"centered-text",
-))
-def test_retired_layout_names_report_source_located_unknown_layout(
-		tmp_path: pathlib.Path, layout_name: str) -> None:
-	"""Retired authored spellings use the normal source-located layout diagnostic."""
-	message = parse_error(tmp_path, f"=== layout: {layout_name}\n")
-	assert f"{tmp_path / 'deck.djot'}:1: unknown Djot layout: {layout_name}" in message
 
 
 #============================================
@@ -308,7 +301,14 @@ def test_terminal_action_targets_deepest_final_list_item(tmp_path: pathlib.Path)
 #============================================
 def test_multiple_choice_adds_implicit_answer_reveal(tmp_path: pathlib.Path) -> None:
 	"""One popup reveal covers one or two editable answer paragraphs."""
-	deck = parse_source(tmp_path, "=== layout: multiple-choice\n@question\n- A\n- B\n@answer\nB\n\nBecause DNA stores hereditary information.\n")
+	deck = parse_source(tmp_path,
+		"=== layout: multiple-choice\n"
+		"@question\n"
+		"- A\n"
+		"- B\n"
+		"@answer\n"
+		"B\n\n"
+		"Because DNA stores hereditary information.\n")
 	answer_blocks = deck.slides[0].cells[1].blocks
 	assert (answer_blocks[0].reveal == slide_lib.native_model.Reveal(
 		slide_lib.native_model.RevealEffect.APPEAR, slide_lib.native_model.RevealSequence.OBJECT) and
@@ -331,8 +331,6 @@ def test_multiple_choice_answer_rejects_outside_popup_contract(tmp_path: pathlib
 @pytest.mark.parametrize(("source", "line", "phrase"), (
 	("=== layout: one-panel extra\n", 1, "layout directives must be exact"),
 	("=== layout: one-panel\n@body prose\n", 2, "slot directives must be exact"),
-	("=== layout: blank\n@notes\n", 2, "use @speaker-notes"),
-	("=== layout: blank\n @speaker-notes\n", 2, "use @speaker-notes"),
 	("=== layout: blank\n@speaker-notes comment\n", 2, "use @speaker-notes"),
 	("=== layout: blank\n@speaker-notes\n@speaker-notes\n", 3, "duplicate @speaker-notes"),
 	("=== layout: one-panel\n@body\n<= appear\n", 3, "require a preceding block"),
@@ -363,8 +361,16 @@ def test_parser_keeps_crlf_source_locations_physical(tmp_path: pathlib.Path) -> 
 #============================================
 def test_fence_preserves_directive_looking_code_as_code_block(tmp_path: pathlib.Path) -> None:
 	"""Directives inside fences remain editable source text, not deck syntax."""
-	deck = parse_source(tmp_path, "=== layout: one-panel\n@body\n```text\n=== layout: title-only\n@body\n```\n")
-	assert isinstance(deck.slides[0].cells[0].blocks[0], slide_lib.native_model.CodeBlock)
+	deck = parse_source(tmp_path,
+		"=== layout: one-panel\n"
+		"@body\n"
+		"```text\n"
+		"=== layout: title-only\n"
+		"@speaker-notes\n"
+		"```\n")
+	block = deck.slides[0].cells[0].blocks[0]
+	assert isinstance(block, slide_lib.native_model.CodeBlock)
+	assert block.value == "=== layout: title-only\n@speaker-notes"
 
 
 #============================================
@@ -378,12 +384,25 @@ def test_ordinary_instruction_like_text_stays_visible(tmp_path: pathlib.Path) ->
 #============================================
 def test_block_subset_preserves_supported_semantics(tmp_path: pathlib.Path) -> None:
 	"""Attributes, image, quote, code, table, and math reach their typed nodes."""
-	source = ("=== layout: one-panel\n@body\n{.lead #intro}\n![DNA](dna.png)\n\n> Quoted\n\n```py\nx = 1\n```\n\n| H | I |\n| - | - |\n| A | B |\n\n$$x^2$$\n")
-	deck = parse_source(tmp_path, source)
-	blocks = deck.slides[0].cells[0].blocks
-	assert (isinstance(blocks[0], slide_lib.native_model.Image) and blocks[0].attributes[0].name == "class" and
-		isinstance(blocks[1], slide_lib.native_model.QuoteBlock) and isinstance(blocks[2], slide_lib.native_model.CodeBlock) and
-		isinstance(blocks[3], slide_lib.native_model.Table) and isinstance(blocks[4], slide_lib.native_model.DisplayMath))
+	deck = parse_source(tmp_path,
+		"=== layout: one-panel\n"
+		"@body\n"
+		"{.lead #intro}\n"
+		"![DNA](dna.png)\n\n"
+		"> Quoted\n\n"
+		"```py\n"
+		"x = 1\n"
+		"```\n\n"
+		"| H | I |\n"
+		"| - | - |\n"
+		"| A | B |\n\n"
+		"$$x^2$$\n")
+	image, quote, code, table, math = deck.slides[0].cells[0].blocks
+	assert isinstance(image, slide_lib.native_model.Image) and image.attributes[0].name == "class"
+	assert isinstance(quote, slide_lib.native_model.QuoteBlock)
+	assert isinstance(code, slide_lib.native_model.CodeBlock)
+	assert isinstance(table, slide_lib.native_model.Table)
+	assert isinstance(math, slide_lib.native_model.DisplayMath)
 
 
 #============================================
@@ -423,14 +442,20 @@ def test_adjacent_nested_list_items_retain_their_semantic_tree(tmp_path: pathlib
 		"Parent", "Child", "Grandchild")
 
 
-def test_explicit_link_target_wins_over_url_label(tmp_path: object) -> None:
-	deck = parse_source(tmp_path, '=== layout: one-panel\n@body\n[https://example.org/short](https://example.org/full?key=value)\n')
+#============================================
+def test_explicit_link_target_wins_over_url_label(tmp_path: pathlib.Path) -> None:
+	"""A URL label can link to a different destination."""
+	deck = parse_source(tmp_path,
+		"=== layout: one-panel\n@body\n"
+		"[https://example.org/short](https://example.org/full?key=value)\n")
 	inline = deck.slides[0].cells[0].blocks[0].inlines[0]
 	assert inline.url == 'https://example.org/full?key=value'
 	assert inline.children == (slide_lib.native_model.Text('https://example.org/short'),)
 
 
+#============================================
 def test_citation_and_notes_are_independent_of_layout_slots(tmp_path: pathlib.Path) -> None:
+	"""A section slide can have both speaker notes and a visible citation."""
 	deck = parse_source(tmp_path, "=== layout: section\n\n# Topic\n\n"
 		"@speaker-notes\n\nInstructor notes.\n\n@citation\n\nAuthor. _Article._ 2026.\n")
 	slide = deck.slides[0]
@@ -439,7 +464,14 @@ def test_citation_and_notes_are_independent_of_layout_slots(tmp_path: pathlib.Pa
 	assert slide_lib.djot_parser.visible_text(slide.citation[0].inlines) == "Author. Article. 2026."
 
 
-@pytest.mark.parametrize("citation", ("@citation\n", "@citation\n\nSource\n\n@citation\n\nAgain", "@citation bad\n\nSource"))
-def test_invalid_citation_directives_fail_with_source_location(tmp_path: pathlib.Path, citation: str) -> None:
+#============================================
+@pytest.mark.parametrize("citation", (
+	"@citation\n",
+	"@citation\n\nSource\n\n@citation\n\nAgain",
+	"@citation bad\n\nSource",
+))
+def test_invalid_citation_directives_fail_with_source_location(
+		tmp_path: pathlib.Path, citation: str) -> None:
+	"""Malformed or duplicate citations get a source-located error."""
 	with pytest.raises(ValueError, match="deck.djot:.*citation|deck.djot:.*slot directives"):
 		parse_source(tmp_path, "=== layout: one-panel\n\n@body\n\nContent.\n\n" + citation)

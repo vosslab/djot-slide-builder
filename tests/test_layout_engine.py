@@ -65,7 +65,11 @@ def test_all_hidden_deck_has_no_classroom_output(tmp_path: pathlib.Path) -> None
 def test_title_only_body_uses_ordinary_source_ordered_objects(tmp_path: pathlib.Path) -> None:
 	"""Title Only retains its one title member while body content remains native objects."""
 	layout_test_helpers.write_image(tmp_path, "component.png")
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: title-only\n\n# Title\n\nParagraph.\n\n- First\n- Second\n\n![Tall](component.png)")
+	result = layout_test_helpers.compile_source(
+		tmp_path,
+		"=== layout: title-only\n\n# Title\n\nParagraph.\n\n"
+		"- First\n- Second\n\n![Tall](component.png)",
+	)
 	slide = result.plan.slides[0]
 	assert slide.layout.topology.libreoffice_layout.autolayout is \
 		slide_lib.layout_primitives.LibreOfficeAutoLayout.TITLE_ONLY

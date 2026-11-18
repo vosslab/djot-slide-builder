@@ -62,7 +62,8 @@ def test_all_stories_and_generated_caption_preserve_literal_forecast(tmp_path: p
 	assert slide_lib.layout_validation.inline_text(link.children) == link.url
 
 
-def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(tmp_path: object, monkeypatch: object) -> None:
+def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(
+		tmp_path: object, monkeypatch: object) -> None:
 	path = tmp_path / "lect09a-2026_announcements.djot"
 	source = ("=== layout: one-panel\n# Today's Agenda\n@body\nAgenda.\n\n"
 		"=== layout: one-panel\n# [Breakout Room Chat]{color=red}\n@body\nQuestion.\n\n"
@@ -101,7 +102,8 @@ def test_refresh_previews_then_replaces_snapshots_without_changing_other_slides(
 
 
 @pytest.mark.parametrize("failure", ["network", "image", "caption", "anchor"])
-def test_failed_refresh_preserves_every_selected_deck_and_saved_image(tmp_path: object, monkeypatch: object, failure: str) -> None:
+def test_failed_refresh_preserves_every_selected_deck_and_saved_image(
+		tmp_path: object, monkeypatch: object, failure: str) -> None:
 	source = "=== layout: one-panel\n# Ice Breaker\n@body\nTalk.\n"
 	first = tmp_path / "lect09a-2026_announcements.djot"
 	second = tmp_path / "lect10a-2026_announcements.djot"

@@ -29,7 +29,14 @@ STYLES_XML = """<office:document-styles
  xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"
  xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
  <office:styles><style:style style:name="dp" style:family="drawing-page" style:page-layout-name="pm"/></office:styles>
- <office:automatic-styles><style:page-layout style:name="pm"><style:page-layout-properties fo:page-width="28cm" fo:page-height="17.5cm"/></style:page-layout><style:presentation-page-layout style:name="section"><presentation:placeholder presentation:object="subtitle"/></style:presentation-page-layout></office:automatic-styles>
+ <office:automatic-styles>
+  <style:page-layout style:name="pm">
+   <style:page-layout-properties fo:page-width="28cm" fo:page-height="17.5cm"/>
+  </style:page-layout>
+  <style:presentation-page-layout style:name="section">
+   <presentation:placeholder presentation:object="subtitle"/>
+  </style:presentation-page-layout>
+ </office:automatic-styles>
 </office:document-styles>"""
 
 
@@ -53,15 +60,23 @@ def write_source_odp(tmp_path: pathlib.Path) -> pathlib.Path:
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <office:body><office:presentation>
   <draw:page draw:name="section" draw:style-name="dp" presentation:presentation-page-layout-name="section">
-   <draw:frame svg:x="1cm" svg:y="1cm" svg:width="20cm" svg:height="3cm" presentation:class="subtitle"><draw:text-box><text:p>Unit one</text:p></draw:text-box></draw:frame>
-   <presentation:notes><draw:frame><draw:text-box><text:p>Start with the central question.</text:p></draw:text-box></draw:frame></presentation:notes>
+   <draw:frame svg:x="1cm" svg:y="1cm" svg:width="20cm" svg:height="3cm"
+    presentation:class="subtitle"><draw:text-box><text:p>Unit one</text:p></draw:text-box></draw:frame>
+   <presentation:notes><draw:frame><draw:text-box>
+    <text:p>Start with the central question.</text:p>
+   </draw:text-box></draw:frame></presentation:notes>
   </draw:page>
   <draw:page draw:name="image" draw:style-name="dp">
-   <draw:frame svg:x="1cm" svg:y="1cm" svg:width="20cm" svg:height="3cm" presentation:class="title"><draw:text-box><text:p>Visible figure</text:p></draw:text-box></draw:frame>
-   <draw:frame svg:x="5cm" svg:y="5cm" svg:width="8cm" svg:height="6cm"><draw:image xlink:href="Pictures/visible.png"/></draw:frame>
+   <draw:frame svg:x="1cm" svg:y="1cm" svg:width="20cm" svg:height="3cm"
+    presentation:class="title"><draw:text-box><text:p>Visible figure</text:p></draw:text-box></draw:frame>
+   <draw:frame svg:x="5cm" svg:y="5cm" svg:width="8cm" svg:height="6cm">
+    <draw:image xlink:href="Pictures/visible.png"/>
+   </draw:frame>
   </draw:page>
   <draw:page draw:name="hidden" draw:style-name="dp" presentation:visibility="hidden">
-   <draw:frame svg:x="5cm" svg:y="5cm" svg:width="8cm" svg:height="6cm"><draw:image xlink:href="Pictures/hidden.png"/></draw:frame>
+   <draw:frame svg:x="5cm" svg:y="5cm" svg:width="8cm" svg:height="6cm">
+    <draw:image xlink:href="Pictures/hidden.png"/>
+   </draw:frame>
   </draw:page>
  </office:presentation></office:body></office:document-content>"""
 	manifest = """<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0">

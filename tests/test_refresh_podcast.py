@@ -66,7 +66,10 @@ def test_refresh_is_repeatable_and_keeps_other_slides(tmp_path: pathlib.Path) ->
 		"=== layout: one-panel\n\n# YouTube\n\n@body\n\nChannel.\n\n"
 		"=== layout: one-panel\nhidden: true\n\n# Later\n\n@body\n\nUnchanged.\n"
 		"@speaker-notes\nRemind them about YouTube.\n")
-	episode = {"id": "aaaaaaaaaaa", "title": "StVC 36: Bad Cell Day \u2014 Two Drugs, One Keyboard | Stump the Vibe Coder Episode 36",
+	episode = {
+		"id": "aaaaaaaaaaa",
+		"title": "StVC 36: Bad Cell Day \u2014 Two Drugs, One Keyboard | "
+			"Stump the Vibe Coder Episode 36",
 		"published": "2026-09-10T15:00:00Z", "project_url": "https://vosslab.github.io/game/"}
 	updated = refresh_podcast.update_source(source, episode)
 	assert refresh_podcast.lecture_date(source) == datetime.date(2026, 9, 15)

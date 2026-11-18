@@ -88,10 +88,18 @@ def table_cell_properties(root: lxml.etree._Element) -> list[dict[str, str]]:
 def payloads() -> dict[str, bytes]:
 	items = {
 		"mimetype": package.ODP_MIMETYPE.encode("ascii"),
-		"content.xml": xml('<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.3"/>'),
-		"styles.xml": xml('<office:document-styles xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.3"/>'),
-		"settings.xml": xml('<office:document-settings xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.3"/>'),
-		"meta.xml": xml('<office:document-meta xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.3"/>'),
+		"content.xml": xml(
+			'<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+			'office:version="1.3"/>'),
+		"styles.xml": xml(
+			'<office:document-styles xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+			'office:version="1.3"/>'),
+		"settings.xml": xml(
+			'<office:document-settings xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+			'office:version="1.3"/>'),
+		"meta.xml": xml(
+			'<office:document-meta xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+			'office:version="1.3"/>'),
 	}
 	items[package.MANIFEST_NAME] = exporter._manifest_xml(items)
 	return items
@@ -511,7 +519,10 @@ def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 		package.validate_odp_members(items)
 	items = payloads()
 	items["Pictures/reachable.png"] = b"reachable"
-	items["content.xml"] = xml('<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.3" xlink:href="Pictures/reachable.png"/>')
+	items["content.xml"] = xml(
+		'<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+		'xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.3" '
+		'xlink:href="Pictures/reachable.png"/>')
 	with pytest.raises(ValueError, match="missing a manifest"):
 		package.validate_odp_members(items)
 	items = payloads()
@@ -526,7 +537,10 @@ def test_validation_rejects_manifest_and_reference_consistency_errors() -> None:
 	with pytest.raises(ValueError, match="manifest references missing"):
 		package.validate_odp_members(items)
 	items = payloads()
-	items["content.xml"] = xml('<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.3" xlink:href="Pictures/missing.png"/>')
+	items["content.xml"] = xml(
+		'<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+		'xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.3" '
+		'xlink:href="Pictures/missing.png"/>')
 	with pytest.raises(ValueError, match="XML reference"):
 		package.validate_odp_members(items)
 	items = payloads()

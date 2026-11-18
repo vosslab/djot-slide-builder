@@ -74,7 +74,7 @@ def test_native_cell_fill_precedence_preserves_displayed_color(
 
 def test_native_table_roundtrip_keeps_style_inheritance_spans_blanks_and_scripts(tmp_path: pathlib.Path) -> None:
 	"""Do not flatten scientifically meaningful styling or covered-cell ownership."""
-	root = slide_lib.odf_package.parse_xml(f'''<office:document-content {NAMESPACES}>
+	source = f'''<office:document-content {NAMESPACES}>
 	<style:style style:name="base" style:family="table-cell">
 		<style:paragraph-properties fo:border="none" fo:text-align="center" fo:padding="0.1cm"/>
 		<style:text-properties fo:font-style="italic" fo:color="#135790"/>
@@ -83,18 +83,29 @@ def test_native_table_roundtrip_keeps_style_inheritance_spans_blanks_and_scripts
 		<style:graphic-properties draw:fill="solid" draw:fill-color="#CCDDEE" draw:textarea-vertical-align="bottom"/>
 		<style:paragraph-properties fo:border-bottom="0.5pt dashed #123456"/>
 	</style:style>
-	<style:style style:name="script"><style:text-properties style:text-position="33% 58%" fo:font-weight="bold"/></style:style>
+	<style:style style:name="script">
+		<style:text-properties style:text-position="33% 58%" fo:font-weight="bold"/>
+	</style:style>
 	<style:style style:name="subscript"><style:text-properties style:text-position="-33% 58%"/></style:style>
 	<style:style style:name="narrow"><style:table-column-properties style:column-width="1cm"/></style:style>
 	<style:style style:name="wide"><style:table-column-properties style:column-width="2cm"/></style:style>
 	<table:table table:use-first-row-styles="true">
 		<table:table-column table:style-name="narrow"/><table:table-column table:style-name="wide"/>
 		<table:table-row table:default-cell-style-name="cell">
-			<table:table-cell table:number-columns-spanned="2"><text:p>A<text:span text:style-name="script">2</text:span><text:span text:style-name="subscript">n</text:span></text:p></table:table-cell>
+'''
+	source += (
+		'\t\t\t<table:table-cell table:number-columns-spanned="2"><text:p>A'
+		'<text:span text:style-name="script">2</text:span>'
+		'<text:span text:style-name="subscript">n</text:span></text:p></table:table-cell>'
+	)
+	source += '''
 			<table:covered-table-cell/>
 		</table:table-row>
-		<table:table-row table:default-cell-style-name="cell"><table:table-cell/><table:table-cell><text:p>Total</text:p></table:table-cell></table:table-row>
-	</table:table></office:document-content>'''.encode("utf-8"), "content.xml")
+		<table:table-row table:default-cell-style-name="cell">
+			<table:table-cell/><table:table-cell><text:p>Total</text:p></table:table-cell>
+		</table:table-row>
+	</table:table></office:document-content>'''
+	root = slide_lib.odf_package.parse_xml(source.encode("utf-8"), "content.xml")
 	table = root.find("table:table", odf_text.NS)
 	block, positions = odp_tables.read_table(table, 12, 34, 7, odf_styles.definitions((root,)))
 	assert block.unsupported_reason is None
@@ -118,7 +129,9 @@ def test_native_table_roundtrip_keeps_style_inheritance_spans_blanks_and_scripts
 	assert emitted.formatting.background_color == "#CCDDEE"
 
 
-def test_preview_suppression_is_scoped_to_usable_table_frame(tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_preview_suppression_is_scoped_to_usable_table_frame(
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch,
+) -> None:
 	"""Suppress the native-table preview only; unrelated or unsupported visuals stay."""
 	images = []
 
@@ -129,15 +142,21 @@ def test_preview_suppression_is_scoped_to_usable_table_frame(tmp_path: pathlib.P
 	monkeypatch.setattr(odp_page_objects, "add_picture", add_picture)
 	accumulator = odp_page_objects.PageAccumulator(*([] for _index in range(13)))
 	bodies = (
-		'<table:table><table:table-row><table:table-cell><text:p>Cell</text:p></table:table-cell></table:table-row></table:table>'
+		'<table:table><table:table-row><table:table-cell><text:p>Cell</text:p>'
+		'</table:table-cell></table:table-row></table:table>'
 		'<draw:text-box><text:p>Cell duplicate</text:p></draw:text-box><draw:image xlink:href="table-preview.png"/>',
 		'<draw:image xlink:href="unrelated.png"/>',
-		'<table:table><table:table-row><table:table-cell table:number-rows-spanned="2"><text:p>Unsupported merge</text:p></table:table-cell></table:table-row></table:table>'
+		'<table:table><table:table-row><table:table-cell '
+		'table:number-rows-spanned="2"><text:p>Unsupported merge</text:p>'
+		'</table:table-cell></table:table-row></table:table>'
 		'<draw:image xlink:href="unsupported-preview.png"/>',
 	)
 	for index, body in enumerate(bodies):
 		frame = slide_lib.odf_package.parse_xml(
-			f'<draw:frame {NAMESPACES} svg:x="1cm" svg:y="2cm" svg:width="4cm" svg:height="3cm">{body}</draw:frame>'.encode("utf-8"),
+			(
+				f'<draw:frame {NAMESPACES} svg:x="1cm" svg:y="2cm" '
+				f'svg:width="4cm" svg:height="3cm">{body}</draw:frame>'
+			).encode("utf-8"),
 			"content.xml")
 		odp_page_objects.read_frame(frame, 1, 800, 600, None, frozenset(), frozenset(),
 			tmp_path, pathlib.PurePosixPath("."), {}, accumulator, odp_media.MediaBudget(), (index,), index, {})

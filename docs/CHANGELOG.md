@@ -15,6 +15,9 @@
 
 ### Fixes and Maintenance
 
+- Guard the shared lxml object model with a pytest that catches `defusedxml` and `xml.etree` imports.
+- Prune retired Djot syntax cases, simplify speaker-note fixtures, and wrap Python test lines
+  to fit the 120-character ceiling documented in [DEVELOPMENT.md](DEVELOPMENT.md).
 - Standardize ODP, SVG recipes, and XML tests on lxml objects with document-local namespaces.
   Store retained vector artwork in SVG files and build both C20 layouts from structured data.
 - Record lecture and course color assignments in [REPO_COLOR_PALETTE.md](REPO_COLOR_PALETTE.md),

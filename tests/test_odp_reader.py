@@ -103,8 +103,12 @@ STYLES_XML = """<?xml version="1.0" encoding="UTF-8"?>
   </style:style>
  </office:styles>
  <office:automatic-styles>
-  <style:page-layout style:name="pm"><style:page-layout-properties fo:page-width="28cm" fo:page-height="17.5cm"/></style:page-layout>
-  <style:presentation-page-layout style:name="section"><presentation:placeholder presentation:object="subtitle"/></style:presentation-page-layout>
+	<style:page-layout style:name="pm">
+		<style:page-layout-properties fo:page-width="28cm" fo:page-height="17.5cm"/>
+	</style:page-layout>
+	<style:presentation-page-layout style:name="section">
+		<presentation:placeholder presentation:object="subtitle"/>
+	</style:presentation-page-layout>
  </office:automatic-styles>
 </office:document-styles>"""
 
@@ -137,7 +141,8 @@ def manifest_xml(media_names: tuple[str, ...] = ()) -> str:
 <manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0">
  <manifest:file-entry manifest:full-path="/" manifest:media-type="application/vnd.oasis.opendocument.presentation"/>
  <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml"/>""" + entries + "</manifest:manifest>"
+ <manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml"/>""" + \
+		entries + "</manifest:manifest>"
 
 
 #============================================
@@ -162,7 +167,10 @@ def page(name: str, body: str, *, style: str = "dp", layout: str | None = None,
 	"""Build one physical ODP page from concise XML content."""
 	layout_attribute = "" if layout is None else f' presentation:presentation-page-layout-name="{layout}"'
 	visibility_attribute = "" if not visibility else f' presentation:visibility="{visibility}"'
-	return f'<draw:page draw:name="{name}" draw:style-name="{style}"{layout_attribute}{visibility_attribute}>{body}</draw:page>'
+	return (
+		f'<draw:page draw:name="{name}" draw:style-name="{style}" '
+		f'{layout_attribute}{visibility_attribute}>{body}</draw:page>'
+	)
 
 
 #============================================
@@ -170,7 +178,10 @@ def frame(body: str, *, role: str = "", x: str = "1cm", y: str = "1cm",
 		width: str = "10cm", height: str = "3cm") -> str:
 	"""Build one positioned ODP frame with an optional placeholder role."""
 	role_attribute = "" if not role else f' presentation:class="{role}"'
-	return f'<draw:frame svg:x="{x}" svg:y="{y}" svg:width="{width}" svg:height="{height}"{role_attribute}>{body}</draw:frame>'
+	return (
+		f'<draw:frame svg:x="{x}" svg:y="{y}" svg:width="{width}" '
+		f'svg:height="{height}"{role_attribute}>{body}</draw:frame>'
+	)
 
 
 #============================================
@@ -180,11 +191,26 @@ def test_reader_extracts_direct_text_list_links_table_image_notes_and_visibility
 	"""Direct ODP facts preserve current planner inputs without a conversion bridge."""
 	visible = page("visible", "".join((
 		frame('<draw:text-box><text:p>Title</text:p></draw:text-box>', role="title"),
-		frame("""<draw:text-box><text:list><text:list-item><text:p>Outer <text:a xlink:href="https://example.test/a">link</text:a></text:p><text:list><text:list-item><text:p>Inner</text:p></text:list-item></text:list></text:list-item></text:list></draw:text-box>""", y="5cm"),
-		frame("""<table:table><table:table-header-rows><table:table-row><table:table-cell><text:p>Gene</text:p></table:table-cell><table:table-cell><text:p>Value</text:p></table:table-cell></table:table-row></table:table-header-rows><table:table-row><table:table-cell><text:p>lacZ</text:p></table:table-cell><table:table-cell/></table:table-row></table:table>
-""", y="9cm"),
+		frame(
+			'<draw:text-box><text:list><text:list-item><text:p>Outer '
+			'<text:a xlink:href="https://example.test/a">link</text:a></text:p>'
+			'<text:list><text:list-item><text:p>Inner</text:p></text:list-item></text:list>'
+			'</text:list-item></text:list></draw:text-box>',
+			y="5cm",
+		),
+		frame(
+			'<table:table><table:table-header-rows><table:table-row>'
+			'<table:table-cell><text:p>Gene</text:p></table:table-cell>'
+			'<table:table-cell><text:p>Value</text:p></table:table-cell>'
+			'</table:table-row></table:table-header-rows><table:table-row>'
+			'<table:table-cell><text:p>lacZ</text:p></table:table-cell>'
+			'<table:table-cell/></table:table-row></table:table>',
+			y="9cm",
+		),
 		frame('<draw:image xlink:href="Pictures/figure.png"/>', y="12cm"),
-		'<presentation:notes><draw:frame><draw:text-box><text:p>Explain the mutation.</text:p></draw:text-box></draw:frame></presentation:notes>',
+		'<presentation:notes><draw:frame><draw:text-box>'
+		'<text:p>Explain the mutation.</text:p></draw:text-box>'
+		'</draw:frame></presentation:notes>',
 	)))
 	hidden = page("hidden", frame('<draw:text-box><text:p>Skip me</text:p></draw:text-box>'),
 		style="hidden")
@@ -266,7 +292,8 @@ def test_page_evidence_distinguishes_text_placeholders_from_image_and_table_role
 	image_page = page("image", frame(
 		'<draw:image xlink:href="Pictures/figure.png"/>', role="subtitle"), layout="section")
 	table_page = page("table", frame(
-		'<table:table><table:table-row><table:table-cell><text:p>Fact</text:p></table:table-cell></table:table-row></table:table>',
+		'<table:table><table:table-row><table:table-cell><text:p>Fact</text:p>'
+		'</table:table-cell></table:table-row></table:table>',
 		role="subtitle"), layout="section")
 	input_path = write_odp(
 		tmp_path, CONTENT_PREFIX + image_page + table_page + CONTENT_SUFFIX,
