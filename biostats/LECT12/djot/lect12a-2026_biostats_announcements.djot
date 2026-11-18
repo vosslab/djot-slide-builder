@@ -1,0 +1,349 @@
+color-theme: biostatistics
+
+=== layout: title-slide
+
+# Lecture 12A
+
+## Announcements
+
+## Dr. Neil Voss
+
+## November 18, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- Icebreaker and Announcements
+- Regression
+  - Model Choice
+  - Tutorial Walkthrough
+- Group Tutorial Work Time
+- Group Check-Ins
+
+@speaker-notes
+
+BIOL 318/418 meets in person from 5:00 to 5:55 p.m. in SCH 612, Schaumburg.
+In the regression tutorial, compare the linear and quadratic fits. Ask what the residuals
+and the biological context tell us about the choice.
+Give groups time to start their activity in class.
+
+=== layout: big-image
+
+@image
+
+![Five Day Outlook](assets/weather_story/chicago_3fb1b56e3dd5e513438ebebf47b837b15cc54a4a8eed1c22fa3c17fbe4ffeca6.webp)
+
+@caption
+
+Dry&#44; unseasonably warm and occasionally breezy conditions will continue into Saturday&#46; The next chance of showers then arrives later Saturday night into early Sunday afternoon with a cold front&#46; Seasonably cooler weather is then expected by early next week&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 18, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: prompt
+
+# Icebreaker
+
+@prompt
+
+[If you could measure one thing about your day to predict your mood, what would you track?]{color=#D40000}
+
+@examples
+
+Share your name and your pick.
+
+- Hours of sleep the night before
+- Minutes spent outside
+- Number of songs you listened to
+
+=== layout: one-panel
+
+# Thanksgiving Break
+
+@body
+
+- Wednesday, Nov 25
+- *No class. Nothing due.*
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+
+=== layout: one-panel
+
+# Next Class: Dec 9
+
+@body
+
+- *Dec 2 is asynchronous.*
+  - New group deadline: one working tutorial activity
+  - No separate individual assignment or quiz
+- *Dec 9 is in person.*
+  - [*No Quiz 3.*]{color=#D40000}
+  - Try another group's tutorial and give them feedback.
+  - Peer-trial video and feedback due.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== layout: big-image
+
+@image
+
+![StVC 39&#58; Red Dead Cell Counter &#8212; Count the Red Dots](assets/stump_the_vibe_coder/Iyz6WX2r8Rg.webp)
+
+@caption
+
+Stump the Vibe Coder &#35;39&#58; Red Dead Cell Counter\
+Watch the Video: [https://www.youtube.com/watch?v=Iyz6WX2r8Rg](https://www.youtube.com/watch?v=Iyz6WX2r8Rg)\
+Try the Tool: https://vosslab.github.io/red-dead-cell-counter/
+
+=== include: repo:evergreen/instructor_contact.djot
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# Biostatistics Resources
+
+@body
+
+- No required textbook
+  - Optional books are listed under [Course Information](https://vosslab.github.io/syllabus/fall_2026/biostats/COURSE_DETAILS/).
+- Google Sheets for the course tutorials
+- Practice problems
+  - https://biologyproblems.org/biostatistics/
+
+=== layout: one-panel
+
+# Syllabus Links
+
+@body
+
+- Biostatistics syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/
+- Weekly schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+- Coursework and grades
+  - https://vosslab.github.io/syllabus/fall_2026/biostats/ASSIGNMENTS_AND_GRADING/
+
+=== layout: subsection
+
+# Grading and Assessment
+
+=== layout: one-panel
+hidden: true
+
+# Tutorials and Quizzes
+
+@body
+
+- *Tutorial assignments* - 50 points
+- *Group quizzes* - 3 quizzes, 20 points each
+- *Total* - 110 points
+- Check Blackboard for your scores.
+
+=== layout: two-panels
+
+# Graded vs. Total Percentage
+
+@left
+
+- [*Graded percentage*]{color=#003FFF} uses items with a recorded grade.
+- Use it to check your performance on work already graded.
+
+@right
+
+- [*Total percentage*]{color=#C80085} counts ungraded items as zero.
+- Submitted work waiting to be graded can lower this percentage.
+
+=== layout: subsection
+
+# Quizzes
+
+=== layout: one-panel
+
+# Quiz 3 Is Canceled
+
+@body
+
+- *There won't be a Quiz 3 on Dec 9.*
+- We'll use class time to try another group's tutorial and give them feedback.
+- You'll have time to revise before the final tutorial is due Dec 16.
+
+=== layout: one-panel
+
+# Quiz Dates
+
+@body
+
+- [Quiz 1: Oct 7]{color=#AAAAAA}
+- [Quiz 2: Nov 4]{color=#AAAAAA}
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
+
+=== layout: section
+
+# Weekly Agenda and Work
+
+=== include: repo:genetics/evergreen/first_week_assignments.djot
+hidden: true
+
+=== layout: subsection
+
+# Today
+
+## In Person
+
+=== layout: one-panel
+
+# Build From Your Proposal
+
+@body
+
+Open your proposal and find the [*practice task*]{color=#007A00} you described.
+
+- [*Start the instructions*]{color=#007A00} in the Google Doc.
+- [*Set up the data*]{color=#007A00} in the Google Sheet and link it from the Doc.
+- [*Before you leave*]{color=#007A00}, decide who will finish the instructions, check the expected result, and submit both links.
+
+Start from your proposal today. [*Before Dec 2*]{color=#D40000}, test that someone can follow your Google Doc instructions and complete the activity in your Google Sheet without your help.
+
+@speaker-notes
+
+Ask each group to show what they have and identify what they'll finish next.
+
+- Predictive values: calculate PPV and NPV from simulated test results and check
+  the calculations against a worked solution.
+- Fertilizer graphs: compare the same plant growth data on two y-axis scales,
+  explain which exaggerates the difference, and suggest a correction.
+- Focus and sleep graphs: rebuild a misleading chart from the raw data and
+  interpret the tradeoff between focus and sleep.
+- Reaction time: calculate Cohen's d for regular gamers and non-gamers and
+  interpret the size of the difference.
+
+=== layout: subsection
+
+# December 2
+
+## Asynchronous
+
+=== layout: one-panel
+
+# Check That Your Activity Works
+
+@body
+
+- Have [*one group member*]{color=#007A00} follow the Doc instructions from start to finish without coaching. They should find the Sheet from the Doc and check their result against your expected answer.
+- Have [*someone outside your group*]{color=#007A00} verify that they can open both files and make a copy of the Sheet.
+
+[*One activity needs to work by Dec 2.*]{color=#D40000} The rest of the tutorial can still be in progress.
+
+@speaker-notes
+
+For example, show the same fertilizer data in two graphs with different axis scales.
+Ask which graph makes the difference look bigger and why. Give a short answer that
+explains how the scale changes the impression. A classmate should be able to do the
+task and check their own answer.
+
+After Dec 2, check both links from each group. Verify that the data can be copied
+and the activity can be completed. Flag any problems before the peer trial.
+
+=== layout: one-panel
+
+# Submit Both Links
+
+@body
+
+- [*Due Wed, Dec 2, 2026, at 11:59 p.m.*]{color=#D40000}
+- Have [*one person from each group*]{color=#007A00} submit both links for one working activity.
+  - [*Google Doc*]{color=#003FFF} with instructions and a checked answer or interpretation
+  - [*Google Sheet*]{color=#003FFF} with data classmates can copy and work with
+
+[https://forms.gle/e2xVpfunpnx7xHrU9](https://forms.gle/e2xVpfunpnx7xHrU9)
+
+=== layout: subsection
+
+# December 9
+
+## In Person
+
+=== layout: one-panel
+
+# Try Another Group's Activity
+
+@body
+
+1. [*Try the activity*]{color=#007A00} without help from its authors.
+2. Record a [*short, unedited video*]{color=#003FFF} while you try it in class.
+3. Give the authors [*feedback*]{color=#003FFF}. Where did you get stuck? What should change?
+
+Peer-trial video and feedback due [*Dec 9*]{color=#D40000}. [*No Quiz 3.*]{color=#D40000}
+
+=== layout: subsection
+
+# December 16
+
+## Asynchronous
+
+=== layout: one-panel
+
+# Submit the Final Tutorial
+
+@body
+
+- Submit [*one final tutorial per group*]{color=#003FFF} by [*Dec 16*]{color=#D40000}.
+  - [*Revised tutorial*]{color=#003FFF} with copyable data
+  - [*Checked answers or analysis*]{color=#003FFF}
+  - [*Brief revision note*]{color=#003FFF} on what changed after the peer trial
+
+=== layout: section
+
+# General Announcements
+
+=== layout: one-panel
+
+# Group Tutorial: Three December Dates
+
+@body
+
+- *Dec 2 (asynchronous)* - Submit one working activity per group: [*Google Doc + Google Sheet*]{color=#003FFF}.
+- *Dec 9 (in person)* - Try another group's activity and give them feedback.
+  - [*No Quiz 3.*]{color=#D40000} Peer-trial video and feedback are still due.
+- *Dec 16 (asynchronous)* - Submit your revised tutorial and a brief note on what changed after the peer trial.
+
+=== include: repo:evergreen/spring_registration.djot
+
+=== layout: subsection
+hidden: true
+
+# Course Evaluations
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Complete the survey when the university sends the invitation.
+- https://roosevelt.campuslabs.com/eval-home/
+- Watch for the actual evaluation window and deadline.
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: theend
+
+# THE END

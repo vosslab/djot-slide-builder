@@ -388,7 +388,7 @@ def test_dividers_preserve_course_color_and_background_contrast(
 		assert title.content.paragraphs[0].properties.horizontal_alignment is \
 			primitives.HorizontalAlignment.CENTER
 	for slide, ink, fill in zip(plan.slides[1:], ("000000", "FFFFFF"),
-			(palette.light_color, palette.dark_color)):
+			(palette.ultra_light_color, palette.dark_color)):
 		runs = [run for item in slide.objects if isinstance(item.content, content.TextContent)
 			for paragraph in item.content.paragraphs for run in paragraph.inlines
 			if isinstance(run, content.TextRun)]

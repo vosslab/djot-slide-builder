@@ -171,7 +171,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
   Their colors are guesses; use the measured course colors.
 - Keep slide text editable. Decorative shapes are an implementation choice; my LibreOffice
   shapes demonstrate the appearance I want using the tool available to me.
-- Sections use dark color, white text, and a rounded frame. Subsections use a light center band,
+- Sections use dark color, white text, and a rounded frame. Subsections use an extra-light center band,
   medium top/bottom, and black text. Subsubsections use a dark center panel, light edges, and
   white text.
 - Use an ultra light center hexagon and dark corners for the open-ended `question-ask` layout,
@@ -269,7 +269,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 ## Course links and evergreen announcements
 
-- Keep subsection dividers bilaterally symmetric, with a light center band and equal medium-color
+- Keep subsection dividers bilaterally symmetric, with an extra-light center band and equal medium-color
   regions at the top and bottom, following the November 10 reference.
 
 - Remove the obsolete Gmail-account warning from my contact slide; that issue was in 2019.

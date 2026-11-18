@@ -528,7 +528,7 @@ with no red-on-red dates or legacy midnight cutoff fragments.
 **Decision.** Follow the instructor's November 10 section-header appearance reference and retain
 editable slide text. Decorative shapes are an implementation choice; the current exporter uses
 native master shapes and slide-owned text. `section` uses dark color, white text, and a rounded frame.
-`subsection` uses a light full-width center band with medium top/bottom and black text.
+`subsection` uses an extra-light full-width center band with medium top/bottom and black text.
 `subsubsection` uses a dark rectangular center with light edges and white text. Course palettes
 provide `dark_color`, `medium_color`, `light_color`, and `ultra_light_color`; ordinary accents
 remain separate. Ultra light uses 90% HSL lightness while retaining the course accent's hue

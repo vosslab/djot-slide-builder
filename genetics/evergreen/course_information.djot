@@ -1,3 +1,5 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === include: repo:evergreen/instructor_contact.djot
 
 === layout: section
@@ -28,13 +30,17 @@ https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mec
 
 @body
 
-- Syllabus
+Syllabus
+
 - https://vosslab.github.io/syllabus/fall_2026/genetics/
-- Course schedule
+Course schedule
+
 - https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
-- Coursework and grades
+Coursework and grades
+
 - https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
-- Policies and student resources
+Policies and student resources
+
 - https://vosslab.github.io/syllabus/fall_2026/shared/policies/
 
 === layout: one-panel
@@ -57,13 +63,13 @@ https://bio.libretexts.org/Courses/Roosevelt_University/Advanced_Genetics%3A_Mec
 
 @body
 
-- [*Assignments*]{color=red}\: reinforce learning; explore new topics
+- [*Assignments*]{color=#D40000}\: reinforce learning; explore new topics
   - Weekly; 5-15 points; unlimited retakes
   - Collaboration and help encouraged
-- [*Quizzes*]{color=red}\: recent material
-  - Individual\: 20 points; 30 minutes
-  - Group quiz during class
-- [*Exams*]{color=red}\: cumulative midterm and final
+- [*Quizzes*]{color=#D40000}\: recent material
+  - Individual\: 20 points; 20-30 minutes
+  - Optional group quiz during class
+- [*Exams*]{color=#D40000}\: cumulative midterm and final
   - Individual; 100 points total
   - Each part\: 50 points; 75 minutes
 

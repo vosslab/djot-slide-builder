@@ -1,3 +1,5 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === layout: subsection
 
 # Spring Registration
@@ -25,8 +27,8 @@ Registration dates: https://www.roosevelt.edu/current-students/academics/registe
 
 - *Spring 2027*
   - [*BCHM 355/455: Biochemistry Lecture*]{color=#6B638F}
-  - [*BCHM 356/456: Biochemistry Lab*]{color=#C9211E}
-  - [*BIOL 301: Cellular and Molecular Biology*]{color=#24578F} ([teaching tentative]{color=red})
+  - [*BCHM 356/456: Biochemistry Lab*]{color=#D40000}
+  - [*BIOL 301: Cellular and Molecular Biology*]{color=#24578F} ([teaching tentative]{color=#D40000})
 - *Summer 2027*
   - [*BIOL 383/483: Biology and Ethics in Film*]{color=#45405C}
 
@@ -60,18 +62,18 @@ Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/9
 
 === layout: one-panel
 
-# [Biochemistry Lab]{color=#C9211E}
+# [Biochemistry Lab]{color=#D40000}
 
 @body
 
-- BCHM 356-20 / 456-20, [Spring 2027]{color=#C9211E}; 3 credits
+- BCHM 356-20 / 456-20, [Spring 2027]{color=#D40000}; 3 credits
   - Tuesdays, 10:00 a.m.-1:55 p.m.; SCH 550
   - Face-to-face, Schaumburg; January 19-May 10 (Session 1)
-- [*Less structured and more independent study-like*]{color=#C9211E}
+- [*Less structured and more independent study-like*]{color=#D40000}
   - Enzyme assays and kinetics: measure reaction rates and interpret the data.
   - Isolation and analysis of biological macromolecules.
   - Explore protein sequence, structure, and folding using molecular software and databases.
-- [*Experimental design and analysis*]{color=#C9211E}
+- [*Experimental design and analysis*]{color=#D40000}
   - Data collection, graphs, and interpretation are part of the lab work.
 
 === layout: one-panel
@@ -81,7 +83,7 @@ Textbook cover: Biology LibreTexts. https://bio.libretexts.org/@api/deki/files/9
 @body
 
 - BIOL 301, [Spring 2027]{color=#24578F}
-  - [My teaching assignment is not confirmed yet.]{color=red}
+  - [My teaching assignment is not confirmed yet.]{color=#D40000}
 - [*The chemistry of life*]{color=#24578F}
   - Biological molecules and how they work in cells.
   - Cell structure, membranes, transport, and communication.

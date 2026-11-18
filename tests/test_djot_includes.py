@@ -45,13 +45,15 @@ def test_mixed_includes_hide_whole_chapter_and_preserve_locations(tmp_path: path
 	"""A single include flag hides a chapter without hiding surrounding main-file slides."""
 	master = tmp_path / "lecture.djot"
 	chapter = tmp_path / "chapter.djot"
-	chapter.write_text("=== layout: blank\n=== layout: blank\nhidden: true\n")
+	chapter.write_text("{% Include this fragment directly. Do not fork it. %}\n"
+		"\n=== layout: blank\n=== layout: blank\nhidden: true\n")
 	text = ("=== layout: blank\n=== include: chapter.djot\nhidden: true\n"
 		"=== layout: blank\n@speaker-notes\nStill in the main file.\n")
 	master.write_text(text)
 	deck = slide_lib.djot_parser.parse_deck(master)
 	assert [slide.hidden for slide in deck.slides] == [False, True, True, False]
 	assert deck.slides[1].location.path == chapter
+	assert deck.slides[1].location.line == 3
 	assert deck.slides[-1].location.line == 4
 	assert deck.slides[-1].notes == ("Still in the main file.",)
 	assert slide_lib.native_export.discover_decks(str(tmp_path), tmp_path) == [master]

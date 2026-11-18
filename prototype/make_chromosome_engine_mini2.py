@@ -24,19 +24,24 @@ import svg_tools.chromosomes
 import svg_tools.chromosome_topology as topology
 
 
+C01_PALETTE = {
+	('chr1', 'body'): svg_tools.palette.shade('sky_blue', 'dark'),
+	('chr2', 'body'): svg_tools.palette.shade('green', 'dark'),
+}
+C01_GENE_PALETTE = {(source, locus): fill
+	for source, loci, fill in (('chr1', 'ABCD', '#CEEBFD'), ('chr1', 'EF', '#EFD1FA'),
+		('chr1', 'GH', '#FFDFCC'), ('chr2', 'JKLM', '#E6FFCC'), ('chr2', 'NO', '#FFCCEE'))
+	for locus in loci}
+
+C22_PALETTE = {('ab', 'body'): '#076DAD', ('wild', 'body'): '#B74300'}
+# Level knots at both ends keep the telomere caps square to the straight terminal runs.
+C22_BEND = ((392, 268), (449, 268), (478, 268), (512, 268), (544.5, 279.25),
+	(577, 304), (609.5, 328.75), (642, 340), (667, 340), (685, 340))
+
+
 #============================================
-def build_c01(path: pathlib.Path) -> None:
-	"""Draw insertional and reciprocal translocations of the same starting chromosomes."""
-	# Source: LECT01B, slide 8 (chromosome_samples.csv).
-	ink = '#213449'
-	palette = {
-		('chr1', 'body'): svg_tools.palette.shade('sky_blue', 'dark'),
-		('chr2', 'body'): svg_tools.palette.shade('green', 'dark'),
-	}
-	gene_palette = {(source, locus): fill
-		for source, loci, fill in (('chr1', 'ABCD', '#CEEBFD'), ('chr1', 'EF', '#EFD1FA'),
-			('chr1', 'GH', '#FFDFCC'), ('chr2', 'JKLM', '#E6FFCC'), ('chr2', 'NO', '#FFCCEE'))
-		for locus in loci}
+def c01_models() -> tuple[topology.Chromatid, topology.Chromatid]:
+	"""Place the LECT01B centromeres and loci on the two input chromosomes."""
 
 	def parent(source_id: str, letters: str, positions: tuple[int, ...], length: float) -> topology.Chromatid:
 		# The centromere sits between the second and third loci, with room for its collar.
@@ -45,9 +50,26 @@ def build_c01(path: pathlib.Path) -> None:
 
 	donor = parent('chr1', 'ABCDEFGH', (39, 80, 178, 220, 282, 330, 392, 446), 485)
 	recipient = parent('chr2', 'JKLMNO', (39, 80, 178, 240, 302, 352), 390)
+	return donor, recipient
+
+
+#============================================
+def c01_insertion_pieces(donor: topology.Chromatid, recipient: topology.Chromatid
+	) -> tuple[topology.Chromatid, ...]:
+	"""Cut out EF and open the recipient between L and M."""
 	donor_left, donor_right = topology.split(donor, 251 / donor.length)
 	insert, donor_tip = topology.split(donor_right, 110 / donor_right.length)
 	recipient_head, recipient_tail = topology.split(recipient, 209 / recipient.length)
+	return donor_left, insert, donor_tip, recipient_head, recipient_tail
+
+
+#============================================
+def build_c01(path: pathlib.Path) -> None:
+	"""Draw insertional and reciprocal translocations of the same starting chromosomes."""
+	# Source: LECT01B, slide 8 (chromosome_samples.csv).
+	ink = '#213449'
+	donor, recipient = c01_models()
+	donor_left, insert, donor_tip, recipient_head, recipient_tail = c01_insertion_pieces(donor, recipient)
 	donor_head, donor_end = topology.split(donor, 361 / donor.length)
 	recipient_left, recipient_end = topology.split(recipient, 271 / recipient.length)
 	rows = (
@@ -74,7 +96,7 @@ def build_c01(path: pathlib.Path) -> None:
 				baseline = y + 59 + index*66
 				part = svg_tools.chromosomes.render(f'c01-{row_id}-{state}-{index+1}', chromatid,
 					points=[(x, baseline), (x+chromatid.length, baseline)], width=38,
-					palette=palette, gene_palette=gene_palette)
+					palette=C01_PALETTE, gene_palette=C01_GENE_PALETTE)
 				body += part.fragment
 		body += '</g>'
 
@@ -151,12 +173,34 @@ def c22_products() -> tuple[
 
 
 #============================================
+def c22_exchange_bodies(chromatids: tuple[topology.Chromatid, ...], poses: tuple) -> str:
+	"""Draw separate crossover curves under one centromere belt per sister pair."""
+	body = ''
+	width = 40
+	exchange_parts = []
+	for index, (chromatid, pose) in enumerate(zip(chromatids, poses, strict=True), 1):
+		part = svg_tools.chromosomes.render(f'c22-exchange-{index}', chromatid,
+			points=pose, width=width, palette=C22_PALETTE)
+		exchange_parts.append(part)
+		strand = svg_tools._xml.parse(part.fragment)
+		strand.remove(strand.find("g[@data-layer='centromere']"))
+		body += lxml.etree.tostring(strand, encoding='unicode')
+	for index, (first, second) in enumerate(zip(exchange_parts[::2], exchange_parts[1::2]), 1):
+		x, y1 = first.anchors['centromere']
+		_, y2 = second.anchors['centromere']
+		belt = svg_tools.chromosomes.centromere_part(f'c22-exchange-belt-{index}',
+			thickness=width, across=y2-y1+width*1.3)
+		body += svg_tools.parts.transform(belt, x=x, y=(y1+y2)/2).fragment
+	return body
+
+
+#============================================
 def build_c22(path: pathlib.Path) -> None:
 	"""Draw the replicated homologs, the crossover pose, and aligned products."""
 	# Source: LECT08B, slide 36 (chromosome_samples.csv).
 	render = svg_tools.chromosomes.render
 	ink = '#213449'
-	palette = {('ab', 'body'): '#076DAD', ('wild', 'body'): '#B74300'}
+	palette = C22_PALETTE
 	width = 40
 	ab, plus, products = c22_products()
 	body = ''
@@ -169,28 +213,13 @@ def build_c22(path: pathlib.Path) -> None:
 	for key, pair, y in (('ab', ab, 216), ('wild', plus, 386)):
 		body += render(f'c22-before-{key}', pair, points=((23, y), (336, y)),
 			width=width, palette=palette).fragment
-	# Three level knots at each end keep a straight run through the cap and its inner edge.
-	bend = ((392, 268), (449, 268), (478, 268), (512, 268), (544.5, 279.25),
-		(577, 304), (609.5, 328.75), (642, 340), (667, 340), (685, 340))
 	exchange_poses = (
 		((392, 220), (705, 220)),
-		bend,
-		tuple((x, 608 - y) for x, y in bend),
+		C22_BEND,
+		tuple((x, 608 - y) for x, y in C22_BEND),
 		((392, 388), (705, 388)),
 	)
-	exchange_parts = []
-	for index, (product, pose) in enumerate(zip(products, exchange_poses), 1):
-		part = render(f'c22-exchange-{index}', product, points=pose, width=width, palette=palette)
-		exchange_parts.append(part)
-		strand = svg_tools._xml.parse(part.fragment)
-		strand.remove(strand.find("g[@data-layer='centromere']"))
-		body += lxml.etree.tostring(strand, encoding='unicode')
-	for index, (first, second) in enumerate(zip(exchange_parts[::2], exchange_parts[1::2]), 1):
-		x, y1 = first.anchors['centromere']
-		_, y2 = second.anchors['centromere']
-		belt = svg_tools.chromosomes.centromere_part(f'c22-exchange-belt-{index}',
-			thickness=width, across=y2-y1+width*1.3)
-		body += svg_tools.parts.transform(belt, x=x, y=(y1+y2)/2).fragment
+	body += c22_exchange_bodies(products, exchange_poses)
 	for index, product in enumerate(products, 1):
 		y = 176+(index-1)*85
 		body += render(f'c22-product-{index}', product, points=((754, y), (1067, y)),

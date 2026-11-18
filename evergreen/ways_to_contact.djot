@@ -1,3 +1,5 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === layout: one-panel
 
 # *Ways to Contact Dr. Voss*
@@ -5,7 +7,7 @@
 @body
 
 - [Attend Office Hours]{color=green}
-- [Discord]{color=red}
+- [Discord]{color=#D40000}
   - by far the quickest, check multiple times per day\
     you can send direct message (DM) to me or post to the whole class\
     Response time\: 1-2 calendar days.

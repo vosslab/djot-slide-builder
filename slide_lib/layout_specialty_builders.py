@@ -260,8 +260,8 @@ def section_components(headings: tuple[slide_lib.native_model.Heading, ...],
 		decorations = (_decorative_shape("subsection-center-band",
 			slide_lib.layout_primitives.LogicalRectangle(0, 190, 1280, 420),
 			slide_lib.layout_primitives.ShapeKind.RECTANGLE,
-			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION,
-			slide_lib.layout_primitives.StyleRole.SUBSUBSECTION,
+			slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT,
+			slide_lib.layout_primitives.StyleRole.ULTRA_LIGHT,
 			slide_lib.layout_primitives.LinePattern.NONE, 1, 0, 0, 1),)
 	elif is_subsubsection:
 		decorations = (_decorative_shape("subsubsection-center-panel",

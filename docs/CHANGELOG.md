@@ -2,6 +2,12 @@
 
 ### Additions and New Features
 
+- Add [Biostatistics Lecture 12A](../biostats/LECT12/djot/lect12a-2026_biostats_announcements.djot)
+  as one deck for announcements, class plans, and group tutorial work. Groups start from their
+  submitted proposals, submit one working activity with Google Doc and Sheet links by Dec 2 at
+  11:59 p.m., try another group's activity in class on Dec 9, and submit the revision on Dec 16
+  asynchronously.
+  Give the Quiz 3 cancellation its own slide in the Quizzes section.
 - Add a [ten-slide chromosome deck](../prototype/chromosome_engine_mini2.djot) for reviewing
   chromosome transfers, wheat genomes, crossovers, banding, inversions, and gamete products.
   The renderer's keyword-only `texture=True` controls the decorative pattern. Setting it to
@@ -13,6 +19,11 @@
 
 ### Behavior or Interface Changes
 
+- Use the course palette's extra-light center band on subsection dividers, with medium bands
+  above and below and centered black text.
+- Support a one-line Djot comment at the start of a source file. Add a reminder to include
+  evergreen fragments directly and edit them in place. Header comments stay out of exports
+  and preserve source line numbers in diagnostics.
 - Migrate the 73-slide [chromosome review](../prototype/chromosome_review.djot) to shared chromosome
   models and rendering. Promote seven Mini2 models and generate 68 SVGs for 70 placements. C04
   continues to use the original local course JPEG. Preserve the source images in mixed figures
@@ -26,6 +37,11 @@
 
 ### Fixes and Maintenance
 
+- Use the canonical evergreen sources in
+  [Genetics 11A announcements](../genetics/LECT11/djot/lect11a-2026_announcements.djot).
+  Move shared contact and registration corrections and
+  Genetics-specific assessment wording into the owning fragments. Apply Red Dark to the
+  shared announcement emphasis so courses using those fragments render the same red.
 - Add native explanations for the C24 crossover, C63 example frequencies, and C68 trisomy 21
   outcome. Improve map contrast in C49 and the figure layout in C68. Clarify C59's problem cue.
 - Track reviewed image-containing SVGs with the `.image.svg` suffix. Rename the 17 assets

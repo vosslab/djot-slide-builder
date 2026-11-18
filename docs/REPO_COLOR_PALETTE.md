@@ -6,10 +6,12 @@ materials named below. Reuse each assignment in related figures, labels, tables,
 For slide layout, emphasis, and reveal timing, see
 [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md).
 
-## Genetics 11A emphasis
+## Announcement emphasis
 
 Use Red Dark for assessment reminders, the icebreaker, policy emphasis, contact labels, and
-Biochemistry Lab promotions in this lecture. Preserve the icebreaker's typeface and size.
+Biochemistry Lab promotions in Genetics 11A and equivalent emphasis in Biostatistics 12A.
+Use the shared contact and registration fragments for these slides across courses.
+Preserve the icebreaker's typeface and size.
 
 ## Chromosome alterations
 

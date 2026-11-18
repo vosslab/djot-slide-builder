@@ -66,14 +66,15 @@ shape reference and the measured course palette as the color source. The referen
 colors illustrate the roles.
 
 - `section`: dark background, white centered text, and a white rounded frame.
-- `subsection`: light full-width center band, medium top/bottom regions, and black centered text.
+- `subsection`: extra-light full-width center band, medium top/bottom regions, and black centered text.
 - `subsubsection`: dark rectangular center panel, light surrounding edges, and white centered text.
 - `question-ask`: ultra light hexagon across a dark background, with a centered dark red question.
 - `prompt`: pale rounded icebreaker card, with a colored prompt and dark gray examples.
 
 Preserve the course accent's hue and saturation, changing lightness. Keep every step in
 `black -> dark -> medium -> light -> white` at least 2:1, aiming near `21**(1/4)` (2.14:1).
-Ultra light uses 90% HSL lightness, retaining the course accent's hue and saturation. These surfaces
+The theme's Ultra light uses the [shared palette's Extra light grade](../COLOR_PALETTE.md),
+90% HSL lightness, while retaining the course accent's hue and saturation. These surfaces
 remain recognizably blue, green, purple, or red. Native shapes and title sizes reinforce the levels.
 
 | Course | Dark | Medium | Light | Ultra light | Original HSL saturation |

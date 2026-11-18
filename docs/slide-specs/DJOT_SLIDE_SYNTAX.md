@@ -102,6 +102,9 @@ them into distinct frames, full-width bands, and inset panels; `question-ask` us
 
 ## Chapter files and includes
 
+A one-line Djot comment on the first line, such as `{% Include this fragment directly. %}`,
+stays in the source and does not appear in the deck.
+
 A large lecture can use a small master `.djot` file containing ordered chapter includes:
 
 ```djot
@@ -395,7 +398,7 @@ outside a named slot; required named slots still appear where listed.
 | `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
 | `theend` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | `# THE END` plus an optional root image | You are closing a lecture with the framed native closer. |
-| `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A light center band with medium top/bottom regions marks a topic within a chapter. |
+| `subsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | An extra-light center band with medium top/bottom regions marks a topic within a chapter. |
 | `subsubsection` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark inset panel with light surrounding edges marks a subdivision within a topic. |
 | `two-panels` | Title, 2 Content, `AUTOLAYOUT_TITLE_2CONTENT` | `left`, `right` | no | Two related ideas, figures, or comparisons belong side by side. |
 | `movie-panel` | project custom | `body`, `poster` | optional H1 | Movie text fills the left beside a narrower 2:3 poster area on the right. |

@@ -1,3 +1,5 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === layout: subsection
 
 # Quiz
@@ -8,33 +10,38 @@
 
 @left
 
-- 20 points; 18-24 questions
+- 20 points; 20-34 questions
 - MC\: 1 point; matching\: 1/2 per choice
-- 30 minutes; about 1.5 min/question
-- Backtracking allowed; random order
+- 20-30 minutes; about 1-1.5 min/question
+- Normally: backtracking allowed; random order
 - Limited calculations
-- Score\: (individual + group)/2
+- Both attempts\: (individual + group)/2
 - Example\: (14 + 20)/2 = 17
 
 @right
 
-- Individual\: Blackboard
-- Opens >20 hours before class
+- Individual\: current course assessment platform
+- Opens 20 hours before class
 - Due BEFORE class
-- Group\: In class and Blackboard
+- Optional group\: during class
 - 3-4 students; form a group in class
-- Hard group quizzes receive a curve
+- Group score: at least 18/20; curve if needed
 
 === layout: one-panel
 
-# *Missing Group Quizzes*
+# *Optional Group Quizzes*
 
 @body
 
-- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
-- Students missing group quizzes cannot later work in a group
-  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
-  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
+- Complete the individual attempt before class.
+- If you complete both attempts, your quiz score is their average.
+  - Example: (14 + 20)/2 = 17.
+- If you skip the optional group attempt, your individual score is your final quiz score.
+- Tell me before the quiz/exam if you need to discuss an absence.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
 
 === layout: one-panel
 

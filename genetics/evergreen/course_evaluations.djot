@@ -1,3 +1,5 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === layout: subsection
 
 # Course Evaluations
@@ -9,10 +11,10 @@
 @body
 
 - Hi Students,
-- You will be receiving an email to complete [course evaluations]{color=red} for your courses.
-- I want to encourage you to complete them, they are our [primary source for evaluating faculty performance]{color=red}.
+- You will be receiving an email to complete [course evaluations]{color=#D40000} for your courses.
+- I want to encourage you to complete them, they are our [primary source for evaluating faculty performance]{color=#D40000}.
 - Your opinion does matter; it can help determine who gets salary raises, and a string of negative evaluations can get a professor replaced.
-- Further, I appreciate getting [your feedback]{color=red} in an anonymous way. It helps me [improve the courses]{color=red} I teach.
+- Further, I appreciate getting [your feedback]{color=#D40000} in an anonymous way. It helps me [improve the courses]{color=#D40000} I teach.
 - Thanks, Dr. Voss
 
 === layout: one-panel

@@ -47,6 +47,8 @@ def read_source(path: pathlib.Path) -> str:
 	except UnicodeDecodeError as error:
 		report_encoding_error(path, error)
 	text = text.replace("\r\n", "\n").replace("\r", "\n")
+	# Keep the newline so diagnostics still refer to the authored lines.
+	text = re.sub(r"\A\{%[^\n]*%\}(?=\n|\Z)", "", text)
 	return text
 
 

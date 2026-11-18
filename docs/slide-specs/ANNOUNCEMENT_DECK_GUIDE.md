@@ -226,6 +226,9 @@ the graduation notice's first-two-weeks window for these assignments.
   not episode-number order. Verify its thumbnail, title, video, and game/tool destination.
 - Reuse shared fragments: root `evergreen/` for cross-course groups and the course's own
   `evergreen/` for course-specific material. Keep dated agendas, weather, and episodes weekly.
+- Edit reusable wording, formatting, and colors in the owning evergreen fragment. Use the
+  weekly include to control visibility. Make a lecture-local slide only when its content needs
+  to differ for that lecture, and record the reason in the lecture review.
 - Preserve course-specific material: Biotechnology talking marks/news and Veridian Dynamics;
   Biostatistics tutorials, projects, graduate milestones, and meeting format. Biostatistics has
   no exams; do not import Genetics assessment rules into it.

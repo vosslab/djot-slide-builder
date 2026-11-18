@@ -100,3 +100,15 @@ prototype is the evaluation environment; the implementation lives in the shared 
 Uncondensed chromatin, including stringy DNA in early prophase, retains simple paths.
 BPQ surface layers apply to condensed chromosome bodies; redundant curved-surface coordinates
 are removed to keep the SVGs compact without splitting them into dependent files.
+
+## Chromosome animations
+
+The transparent WebPs show the steps for
+[C01 insertional translocation](assets/chromosome_animations/c01_insertional_translocation.webp),
+[C22 single crossover](assets/chromosome_animations/c22_single_crossover.webp), and
+[C66 Robertsonian fusion](assets/chromosome_animations/c66_robertsonian_fusion.webp).
+Regenerate them from the repository root with `rsvg-convert` and Pillow installed.
+
+```bash
+source source_me.sh && python3 prototype/make_chromosome_animations.py
+```

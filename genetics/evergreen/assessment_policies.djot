@@ -1,16 +1,23 @@
+{% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
+
 === layout: one-panel
 
-# [*Don't Panic*]{color=red}
+# [*Don't Panic*]{color=#D40000}
 
 @body
 
-- If you experience internet troubles or non-academic distractions during a quiz/exam\:
-  - 1. Don't panic
-  - 2. Stop and close the quiz/exam without looking at all the questions
-  - 3. [Contact me immediately]{color=red}, preferably via Discord, but you do not need to rush
-- Note\: Once class begins, I no longer check my email.
-- If you haven't looked at all the questions, I can reset the quiz/exam
-- If you have looked at some questions, I can create a new custom quiz/exam with only the portion that you haven't seen yet.
+- If a limited-attempt quiz/exam is interrupted, close it without viewing more questions.
+- Contact me immediately: Discord preferred; email is also fine.
+- I will respond when I am available.
+- Recovery depends on how much you viewed:
+  - Less than 10%: I can reset the assessment.
+  - 10-90%: I will usually replace only the unseen questions.
+  - Entire assessment: I can offer a second attempt and average both scores.
+- Regular assignments allow unlimited retries: start a fresh attempt when technology is available.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
 
 === layout: one-panel
 
@@ -19,7 +26,7 @@
 @body
 
 - Since COVID, I am trying to be more considerate of student illnesses.
-- If you are sick, let me know. I will provide an extension.
+- [If you are sick, let me know. I will provide an extension.]{color=#D40000}
 - If a major event interferes (car accident, etc.), again contact me.
 - Communication is always helpful.
 
