@@ -3,7 +3,8 @@
 > This file is vendored. Local changes can and will be overwritten by propagation.
 
 Use the 91 colors below as the source colors for authored diagrams, charts, illustrations,
-slides, and question visuals. The published hex values define the palette.
+slides, question visuals, and visualizations within applications. The published hex values
+define the palette.
 
 ## Hue families
 
@@ -50,9 +51,10 @@ Use neutrals for ordinary text, outlines, axes, gridlines, backgrounds, or subdu
 
 ## Use colors together
 
-Choose source colors from the palette and combine them freely through gradients, transparency,
-layering, and blending. For a tinted background, try an Extra light shade, a Pastel, or a
-palette color layered over a neutral surface.
+Combine palette colors freely through gradients, transparency, layering, and blending. The
+intermediate colors are rendering results. Choose the source colors for these effects from
+the tables above. For a tinted background, try an Extra light shade, a Pastel, or a palette
+color layered over a neutral surface.
 
 - Use Blue Dark for a label on white and Blue Pastel to echo its hue behind black text.
 - Use Blue Dark and Light orange Dark for two chart series, with distinct markers and labels.
@@ -64,9 +66,11 @@ See [COLOR_CONTRAST_ACCESSIBILITY.md](COLOR_CONTRAST_ACCESSIBILITY.md).
 
 ## Record local assignments
 
-Record recurring assignments in `docs/REPO_COLOR_PALETTE.md`. For each concept or role, name
-the palette family, the shade used for each purpose, and the material where the assignment
-applies. Reuse the assignment across related figures, legends, labels, tables, and references.
+The shared palette governs color selection. Repository-specific guidance assigns approved
+colors to concepts and roles. Record recurring assignments in `docs/REPO_COLOR_PALETTE.md`
+with the palette family, the shade used for each purpose, and the material where the
+assignment applies. Reuse the assignment across related figures, legends, labels, tables,
+and references.
 When color distinguishes categories, use distinct families and identify them with labels, shapes,
 or patterns as well as color.
 
