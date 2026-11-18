@@ -390,7 +390,8 @@ def main() -> int:
 		return 1
 
 	if os.path.splitext(input_file)[1].lower() in (".svg", ".xml"):
-		# XML does not define HTML named entities; preserve characters with numeric references.
+		# ASVS 1.2.1: XML text and attribute values use numeric character references.
+		# shortcut: Assumes ASCII XML markup, use context-aware conversion for Unicode markup or CDATA.
 		fixed_text = normalize_line_endings(content).encode("ascii", "xmlcharrefreplace").decode("ascii")
 		changed = fixed_text != content
 	else:

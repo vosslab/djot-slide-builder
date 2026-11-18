@@ -106,7 +106,7 @@ PYTHONPATH="$PWD:$PWD/tests" MPLCONFIGDIR="$PWD/_temp/mplconfig" \
   tests/test_djot_parser.py \
   tests/test_djot_slide_lint.py \
   tests/test_emission_component_geometry.py \
-  tests/test_fix_ascii_compliance.py \
+  tests/test_xml_ascii_cleanup.py \
   tests/test_footer_topology.py \
   tests/test_image_area_audit.py \
   tests/test_image_covers.py \

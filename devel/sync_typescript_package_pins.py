@@ -23,7 +23,9 @@ import sys
 
 PIN_PREFIX = ">="
 DEP_SECTIONS = ("dependencies", "devDependencies", "optionalDependencies", "peerDependencies")
-EXCLUDED_PARTS = frozenset({"node_modules", "OTHER_REPOS", "output", "provenance", "templates", "fixtures", "dist", "build"})
+EXCLUDED_PARTS = frozenset({
+	"node_modules", "OTHER_REPOS", "output", "provenance", "templates", "fixtures", "dist", "build",
+})
 LOCAL_PREFIXES = (
 	"file:", "link:", "workspace:", "git+", "git:", "github:", "gitlab:",
 	"bitbucket:", "git@", "http:", "https:",

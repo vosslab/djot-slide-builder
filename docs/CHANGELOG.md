@@ -15,6 +15,8 @@
 
 ### Fixes and Maintenance
 
+- Restore numeric character references in the ASCII fixer for SVG and XML so cleanup preserves
+  scientific labels and existing XML escapes.
 - Guard the shared lxml object model with a pytest that catches `defusedxml` and `xml.etree` imports.
 - Prune retired Djot syntax cases, simplify speaker-note fixtures, and wrap Python test lines
   to fit the 120-character ceiling documented in [DEVELOPMENT.md](DEVELOPMENT.md).
@@ -47,7 +49,7 @@
 - Allow rounding at equal material positions when drawing rearranged sisters. Give the C66
   fusion recipe an explicit output directory for independent generation. Document the limits
   of automatic sister placement on deep bends in the [chromosome engine audit](active_plans/audits/chromosome_engine_audit.md).
-
+- Synchronized shared style guides, tests, and repository support files from the starter template.
 ## 2026-11-17
 
 - Use actual Q&A slides for Genetics 11B with visible choices and a separate answer popup.
