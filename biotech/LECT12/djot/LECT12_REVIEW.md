@@ -12,12 +12,10 @@ and 60-second speaking limit.
 - The Week 12 announcement deck has the Nov 19 Company Vision Report and Homework 6.
   Nov 26 is Thanksgiving break. Dec 3 has Group Project Discussion, BioTech News #2,
   and Homework 7. The news preparation slide is visible.
-- The NWS Chicago forecast immediately precedes Breakout Room Chat. The refresh
-  returned one story on Nov 18, and its full caption is editable. The forecast is a
-  dated snapshot.
-- Wrote a bioethics-adjacent icebreaker about a small decision students would keep for
-  themselves. Checked the available Fall 2026 Biotechnology announcement sources
-  across LECT03, 04, 05, 06, 07, 10 and 11 and the previous-year 12A breakout.
+- The Nov 19 NWS Chicago forecast immediately precedes the icebreaker.
+- Students choose a cyborg upgrade and share how they would use it aloud or in
+  the Zoom chat. The Fall 2026 announcement sources and the previous-year 12A
+  breakout were checked for repeats.
 - Used Stump the Vibe Coder #39, Red Dead Cell Counter. Its feed description contains
   two project links, so the automatic refresh refused to choose. The link explicitly
   labeled Project was verified against the playlist. On Nov 18, fetched the revised
@@ -32,7 +30,7 @@ and 60-second speaking limit.
   Compared the 2025 12B guide in LECT11/old and followed the Nov 19 stage in the
   [group project progression](../../GROUP_PROJECT_PROGRESSION.md).
 - Product choice and one Company Vision Report due Nov 19 lead the guide. The form
-  stays on Blackboard. The breakout connects the choice to the biological mechanism,
+  stays on Blackboard. The project discussion connects the choice to the biological mechanism,
   market, competition, group contributions, and a concrete milestone.
 - Showed the two original presentation rubric pages and the complete seven-part
   business-plan rubric for reference. The presentation rubric and form preview are
@@ -47,13 +45,14 @@ The Fall 2026 shared student deck holds presenter assignments and individual tal
 
 ## November 19 classroom edition
 
-- Expanded the 303-slide draft to 400 slides. The PDF has 100 figure slides, including
+- Expanded the 303-slide draft to 400 slides, then added six bonus slides after Topic 23.
+  The 406-page PDF has 102 figure slides, including
   county maps, primary-source micrographs, photos, experimental diagrams, and time series.
   Archival portraits and case photographs now illustrate 38 previously text-only slides.
   All 41 numbered topics open with the Fall 2026 discussion questions.
-- Checked source credits on the new photos and charts. The deck includes 351 source
+- Checked source credits on the new photos and charts. The deck includes 315 source
   footers. Each external target in a source footer appears as a link on the same PDF page.
-- Checked all 400 PDF pages for selectable text and page bounds, compared the page order
+- Checked all 406 PDF pages for selectable text and page bounds, compared the page order
   with the topic map, and matched every source image to the bytes embedded in the ODP.
   Reviewed the PDF contact sheets for the revised charts and all 38 new photo slides.
 - Strict Djot lint and the Set 7 capacity check passed. The classroom deck has no
@@ -65,7 +64,8 @@ The Fall 2026 shared student deck holds presenter assignments and individual tal
   test-file link in the chromosome SVG plan.
 - The earlier 303-slide draft had 22 figures and 254 citation footers.
   Its review files are in `_temp/set7_revision/`. Review files for the 400-slide
-  classroom edition are in `_temp/set7_expansion/` and `_temp/set7_people/`.
+  edition are in `_temp/set7_expansion/` and `_temp/set7_people/`. The six bonus
+  pages and their editable table were checked in `_temp/set7_bonus/`.
 
 ## Artifact verification
 
@@ -73,7 +73,7 @@ The Fall 2026 shared student deck holds presenter assignments and individual tal
 | --- | ---: | ---: | ---: |
 | 12A Announcements | 47 | 7 | 40 |
 | 12B Group Project Guide | 41 | 6 | 35 |
-| 12C Bioethics in Biotechnology | 400 | 0 | 400 |
+| 12C Bioethics in Biotechnology | 406 | 0 | 406 |
 
 - Strict Jotdown and repository slide lint passed for all three masters.
 - LibreOffice exported all three PDFs from the editable ODP artifacts. Reviewed contact

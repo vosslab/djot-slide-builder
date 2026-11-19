@@ -2,15 +2,22 @@
 
 ### Additions and New Features
 
+- Add `deck_tools.py stats` to count slides with images, tables, display equations, and
+  plain text. The terminal and JSON reports include a combined panel-layout count,
+  percentages with section headings excluded, and counts for each layout.
 - Expand the [Set 7 bioethics lecture](../biotech/LECT12/djot/SET7_TOPIC_GUIDE.md)
   from 303 to 400 slides across 41 topics. Add primary-source images, annual data on IVF,
   soybean acreage and overdose deaths, and paired naloxone county maps with different denominators.
 - Illustrate 38 previously text-only pages with portraits and case photographs. The deck
-  now has 100 illustrated slides, including the Del Zio courthouse photo and Gary Strobel
+  reached 100 illustrated slides, including the Del Zio courthouse photo and Gary Strobel
   preparing to cut down the elms in his Montana trial.
+- Add six Topic 23 bonus slides on the Shanghai gene-editing trial, with the November
+  investigation findings, a photo of Zilong Qiu, and a timeline of the 479 days from
+  the child's death to the first news report. The deck now has 406 slides.
 
 ### Behavior or Interface Changes
 
+- Remove the Set 7 self-citation from all 41 numbered discussion question slides in Lecture 12C.
 - Lower the `big-image` caption advisory floor from 18 pt to 15 pt. Short captions still
   start at 22 pt, and longer captions can use the available lower margin.
 

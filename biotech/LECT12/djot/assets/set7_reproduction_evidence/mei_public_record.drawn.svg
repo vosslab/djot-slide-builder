@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="title desc">
+  <title id="title">When the public learned of Mei's death</title>
+  <desc id="desc">Dates are spaced to scale. Mei died March 31, 2025. Nature published the team's animal study February 18, 2026. Journalists reported Mei's death July 23, 2026. Shanghai announced its investigation findings November 13, 2026.</desc>
+  <rect width="1040" height="360" rx="12" fill="#f8fafb"/>
+  <g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#20323e">
+    <path d="M96 174H942" fill="none" stroke="#a4afb5" stroke-width="5"/>
+    <path d="M96 174H780" fill="none" stroke="#007076" stroke-width="8"/>
+    <g fill="none" stroke="#50646f" stroke-width="3">
+      <path d="M96 120V174M559 174V214M780 120V174M942 174V214"/>
+    </g>
+    <g stroke="#f8fafb" stroke-width="3">
+      <circle cx="96" cy="174" r="12" fill="#007076"/>
+      <circle cx="559" cy="174" r="10" fill="#344651"/>
+      <circle cx="780" cy="174" r="12" fill="#007076"/>
+      <circle cx="942" cy="174" r="10" fill="#344651"/>
+    </g>
+    <g font-size="30" font-weight="bold">
+      <text x="62" y="58">Mar 31, 2025</text>
+      <text x="559" y="255" text-anchor="middle">Feb 18, 2026</text>
+      <text x="780" y="58" text-anchor="middle">Jul 23, 2026</text>
+      <text x="1000" y="255" text-anchor="end">Nov 13, 2026</text>
+    </g>
+    <g font-size="26">
+      <text x="62" y="98">Mei dies</text>
+      <text x="559" y="294" text-anchor="middle">Animal study</text>
+      <text x="559" y="327" text-anchor="middle">appears in Nature</text>
+      <text x="780" y="98" text-anchor="middle">Journalists report her death</text>
+      <text x="1000" y="294" text-anchor="end">Shanghai releases</text>
+      <text x="1000" y="327" text-anchor="end">its findings</text>
+    </g>
+  </g>
+</svg>

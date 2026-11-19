@@ -18,10 +18,6 @@
 - Modern Innovations: What does each person contribute in mitochondrial donation? What are the controversies around preimplantation genetic diagnosis? How predictable would eye color be?
 - Freezing Eggs: What are the main reasons individuals choose to freeze their eggs? Does oocyte cryopreservation work?
 
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 57.
-
 === layout: two-panels
 
 # 21. Follow the Egg, Sperm, and Embryo
@@ -214,10 +210,6 @@ An embryo can connect genetic, gestational, and intended parents. These roles so
 - What does a positive screening result mean?
 - How can a rare condition affect the chance that a positive result is correct?
 
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 60.
-
 === layout: one-panel
 
 # 22. Screening Estimates Risk
@@ -338,10 +330,6 @@ Placental DNA circulates in the blood. Amniotic fluid contains fetal cells.
 - What ethical concerns arise from the potential use of CRISPR to create designer babies?
 - What are the ethical implications of making heritable changes to the human genome?
 
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 62.
-
 === layout: two-panels
 
 # 23. The 2018 Announcement
@@ -435,6 +423,98 @@ Follow each branch. Which change could reach the next generation?
 
 === layout: subsection
 
+# Topic 23 bonus. A child's death in a gene-editing trial
+
+=== layout: two-panels
+
+# Why did Mei's parents seek treatment?
+
+@left
+
+![Zilong Qiu speaking at a Shanghai Jiao Tong University ceremony in 2023](assets/set7_people_repro/zilong_qiu.jpg)
+
+@right
+
+Mei was six and spoke in short sentences. Her parents worried she might never live independently. Reporters called her Mei to protect her privacy.
+
+She had Snijders Blok-Campeau syndrome, a rare condition linked to the CHD3 gene. Neuroscientist Zilong Qiu, pictured here, proposed a somatic edit to treat Mei's own cells.
+
+@citation
+
+[Science / Retraction Watch, July 23](https://retractionwatch.com/2026/07/23/exclusive-death-gene-editing-trial-china-nature-science-investigation/)  |  [Gizmodo, July 28](https://gizmodo.com/researcher-faces-investigation-for-concealing-6-year-old-girls-death-in-gene-editing-trial-2000791870)  |  [Photo: Shanghai Jiao Tong University](https://news.sjtu.edu.cn/zhxw/20230830/187501.html)
+
+=== layout: one-panel
+
+# Who knew what before Mei was treated?
+
+@body
+
+{table-style=comparison column-widths="1,3"}
+| Who | What Shanghai investigators found |
+| --- | --- |
+| Ethics committee | Asked for more safety data, then approved the trial before the data arrived. |
+| Research team | Received an animal safety report showing liver injury. Delayed telling the clinical lead. |
+| Family | Signed a form that warned of serious complications but gave little attention to the risk of death. |
+
+@citation
+
+[Shanghai investigation, Nov 13](https://www.thepaper.cn/newsDetail_forward_34468347)  |  [Nature News, Nov 16](https://www.nature.com/articles/d41586-026-03752-2)
+
+=== layout: big-image
+
+@image
+
+![Timeline drawn to scale from Mei's death on March 31, 2025 through publication of the animal study, the July news investigation and the Shanghai findings in November 2026](assets/set7_reproduction_evidence/mei_public_record.drawn.svg)
+
+@caption
+
+479 days passed between Mei's death and the first news report.\
+What could another family have learned during that gap?
+
+@citation
+
+[Shanghai findings](https://www.thepaper.cn/newsDetail_forward_34468347)  |  [Nature, publication date](https://www.nature.com/articles/s41586-026-10113-6#article-info)  |  [Science / Retraction Watch, July 23](https://retractionwatch.com/2026/07/23/exclusive-death-gene-editing-trial-china-nature-science-investigation/)
+
+=== layout: two-panels
+
+# What could a reader learn from the paper?
+
+@left
+
+*The hospital's record*
+
+Mei received the treatment on March 24, 2025. She died on March 31. On April 2, the hospital's ethics committee attributed her death to a complication that damaged small blood vessels. It called for the study to end.
+
+@right
+
+*The published record*
+
+The team had submitted its animal study before treating Mei. When Nature published it in February 2026, the paper omitted her death and her family's funding.
+
+On July 29, the editors added a note alerting readers to concerns about the paper and its data.
+
+@citation
+
+[Shanghai findings](https://www.thepaper.cn/newsDetail_forward_34468347)  |  [Science / Retraction Watch](https://retractionwatch.com/2026/07/23/exclusive-death-gene-editing-trial-china-nature-science-investigation/)  |  [Nature, editor's note](https://www.nature.com/articles/s41586-026-10113-6#change-history)
+
+=== layout: one-panel
+
+# What did Shanghai announce on November 13, 2026?
+
+@body
+
+Zilong Qiu lost his post as deputy director of the Songjiang Research Institute. The paper's first author, Kan Yang, was also dismissed. Shanghai authorities barred both from research projects for five years.
+
+Mei's family contributed about 5.3 million yuan to the research. Investigators also found that researchers accepted gifts from the family and failed to disclose them.
+
+A second family asks about the treatment. Their child's life is not in immediate danger. How would you explain what happened to Mei before asking them to decide?
+
+@citation
+
+[Shanghai investigation, Nov 13](https://www.thepaper.cn/newsDetail_forward_34468347)  |  [CBS / AFP, Nov 17](https://www.cbsnews.com/news/girl-dies-gene-editing-trial-scientist-fired-china-state-media/)
+
+=== layout: subsection
+
 # 24. Directed Human Evolution (GATTACA)
 
 === layout: bookend
@@ -448,10 +528,6 @@ Follow each branch. Which change could reach the next generation?
 - What traits might parents choose if trait selection became routine?
 - What social risks arise if genetic enhancement becomes available only to wealthy families?
 - How might directed evolution alter concepts of fairness, diversity, and disability?
-
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 64.
 
 === layout: one-panel
 
@@ -587,10 +663,6 @@ An employer, insurer, or school can turn a probability into a barrier for many p
 - What long-term outcomes would researchers need to track in a future human study?
 - How would society respond if ectogenesis became safer than traditional pregnancy?
 
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 66.
-
 === layout: two-panels
 
 # 25. Support During Part of Development
@@ -709,10 +781,6 @@ Survival, lung development, neurological development, and family experience can 
 - How important is informed consent in the collection of human tissues for research? Can you provide an example where consent was not properly obtained?
 - Who was Henrietta Lacks, and why is her story significant in the context of ethical sourcing of biological materials?
 - What is biopiracy? How does biopiracy using patents affect the livelihoods and cultural heritage of indigenous and local communities? Can you analyze a well-known case of biopiracy, discussing both the biological material involved and the community affected? What ethical guidelines should biotechnology companies follow to avoid biopiracy?
-
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 68.
 
 === layout: two-panels
 
@@ -848,10 +916,6 @@ A patent office can decide whether a claim meets patent law. Communities may sti
 @body
 
 - Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is "stimulus-triggered acquisition of pluripotency" or STAP even possible today?
-
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 70.
 
 === layout: two-panels
 
@@ -1007,10 +1071,6 @@ Researchers must also establish delivery, harms, durable benefit, and appropriat
 - What are the potential benefits of citizen science in biology?
 - What are the risks when a public demonstration involves genetic self-experimentation?
 
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 72.
-
 === layout: two-panels
 
 # 28. Citizen Science and Self-experimentation
@@ -1121,10 +1181,6 @@ Video evidence can show that a speaker made a claim or performed a public act. I
 
 - What ethical problems arise when experiments occur without approval or medical supervision?
 - How did Traywick differ from responsible community biology groups?
-
-@citation
-
-Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 74.
 
 === layout: two-panels
 

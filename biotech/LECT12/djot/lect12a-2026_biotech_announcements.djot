@@ -19,29 +19,31 @@ color-theme: biotechnology
 - Group Project Guide
 - Set #7: Bioethics in Biotechnology
 
-=== layout: one-panel
+=== layout: big-image
 
-@body
+@image
 
-![Five Day Outlook](assets/weather_story/chicago_3fb1b56e3dd5e513438ebebf47b837b15cc54a4a8eed1c22fa3c17fbe4ffeca6.webp)
+![Five Day Outlook](assets/weather_story/chicago_239b9f63a28e8c7ffbfaf4b3771a1005e8d04a9c98c59238f5e4d87fab501d58.webp)
 
-Dry&#44; unseasonably warm and occasionally breezy conditions will continue into Saturday&#46; The next chance of showers then arrives later Saturday night into early Sunday afternoon with a cold front&#46; Seasonably cooler weather is then expected by early next week&#46;
+@caption
+
+High temperatures will be 15 to 20 degrees above normal for mid November through Saturday&#46; A cold front will move across the area Sunday bringing a chance of showers and then colder temperatures early next week&#46;
 
 @citation
 
-NWS Chicago, retrieved Nov 18, 2026: https://www.weather.gov/lot/weatherstory
+NWS Chicago, retrieved Nov 19, 2026: https://www.weather.gov/lot/weatherstory
 
 === layout: prompt
 
-# Breakout Room Chat
+# Icebreaker
 
 @prompt
 
-What small decision would you refuse to let a robot make for you?
+If you could give yourself one cyborg upgrade, what would you pick and what would you use it for?
 
 @examples
 
-Introduce yourself and name one decision. Would you let a robot name your pet, pick your birthday cake, or answer texts from your family? Tell your group why you would keep that decision.
+Share your pick aloud or in the Zoom chat. Would you run faster, get super hearing, or see clearly without glasses? Maybe you'd want a stronger arm or back for lifting, longer arms to reach the top shelf, or the ability to do math in your head like a Mentat in _Dune_.
 
 === layout: one-panel
 

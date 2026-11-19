@@ -67,6 +67,30 @@ when present. Both show the same local date, time with seconds, and time-zone ab
 The small IBM Plex Sans Condensed text remains selectable in ODP/PDF and updates when you rebuild the source.
 It is generated automatically; no `@caption` or date text needs to be added to the source.
 
+### Count images and text-only slides
+
+```bash
+source source_me.sh && python3 deck_tools.py stats biotech/LECT12/djot/lect12c-set_7_bioethics_in_biotechnology.djot
+```
+
+Give `stats` a single Djot deck or its main include file. Add `--json` for machine-readable
+counts and percentages. The command reads the source, follows chapter includes and reports
+the number of hidden slides. All percentages use visible slides in the named row.
+
+- **Panel layouts** combines `one-panel` with all `*-panels` layouts. Moving a slide from
+  `one-panel` to `two-panels` to add a figure keeps the total number of panel slides the same.
+- **Without section headings** omits `section`, `subsection`, and `subsubsection`.
+- **Content slides** also omits the opening title, closer, and blank slides.
+  **Content without bookends** also omits the `bookend` layout often used for objectives and questions.
+- **Dedicated image layouts** groups `big-image`, `gallery`, `image-comparison`, and `movie-panel`.
+  The layout table also shows image use in ordinary layouts such as `two-panels`.
+
+An image, a native table, or a display equation counts as a visual. A slide with several
+such elements counts once under **Any visual**. **Image placements** counts each authored
+image reference, including repeated uses. **Text only** includes inline math. **No visual**
+also includes blank slides. Theme artwork and speaker notes do not contribute to coverage.
+Use `lint` to check that the referenced image files exist.
+
 ## Build the table demonstration
 
 The maintained [../exemplars/table_styles.djot](../exemplars/table_styles.djot) demonstrates the

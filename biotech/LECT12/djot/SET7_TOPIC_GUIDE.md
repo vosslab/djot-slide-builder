@@ -38,7 +38,7 @@ and the BrainEx and OrganEx evidence questions (2025 pp. 86 and 90).
 
 ## Using the revised deck
 
-The classroom PDF has 400 pages. Each of the 41 topics opens with its numbered divider and
+The classroom PDF has 406 pages. Each of the 41 topics opens with its numbered divider and
 the Fall 2026 discussion questions. The map below uses PDF page numbers. Sources are in the
 slide footers. The [original diagrams](assets/set7_drawings/build.py) and the new charts
 sit beside the Djot source. Photos and micrographs credit their creators on the slides.
@@ -50,10 +50,11 @@ sit beside the Djot source. Photos and micrographs credit their creators on the 
 | 48, 74 | Trace U.S. overdose deaths and herbicide-tolerant soybean acreage. Ask what each study counted before discussing why the line moved. |
 | 146, 151-152 | Identify Dolly's two sources of DNA, then calculate the success fraction twice. The study started with 277 reconstructed embryos and transferred 29. |
 | 216-219 | Read the U.S. trend in babies born after assisted reproductive technology. Compare a count of babies with a clinic's pregnancy rate per transfer. |
-| 257, 262-263 | Find the nuclei in a HeLa micrograph, then trace who controls access to the genome data. |
-| 346, 349-351 | Find the optic lobes on a fly brain, zoom in on a synapse, then consider what a copy of James Delos could demonstrate in *Westworld*. |
-| 382-384 | Compare the two 2018 naloxone maps side by side. The numerator stays the same. What happened to the denominator? |
-| 396-397 | Show the drug ad and ask for a vote before revealing the arithmetic. A fall from 10 headaches per 100 people to 5 can be reported two ways. |
+| 237-242 | Use the Topic 23 bonus to follow Mei's case from hospital approval to public disclosure. The timeline on p. 240 shows the gap between her death and the first news report. |
+| 263, 268-269 | Find the nuclei in a HeLa micrograph, then trace who controls access to the genome data. |
+| 352, 355-357 | Find the optic lobes on a fly brain, zoom in on a synapse, then consider what a copy of James Delos could demonstrate in *Westworld*. |
+| 388-390 | Compare the two 2018 naloxone maps side by side. The numerator stays the same. What happened to the denominator? |
+| 402-403 | Show the drug ad and ask for a vote before revealing the arithmetic. A fall from 10 headaches per 100 people to 5 can be reported two ways. |
 
 ### People to meet on screen
 
@@ -62,9 +63,10 @@ sit beside the Djot source. Photos and micrographs credit their creators on the 
 | 83, 87 | Meet plant pathologist Gary Strobel, then show the 1987 photograph of him preparing to cut down his experimental elms. |
 | 147 | Ian Wilmut stands beside Dolly. Ask what a cloned animal shares with its donor. |
 | 209-211 | The birth announcement for Louise Brown, Doris and John Del Zio outside court, and Jean Purdy and Robert Edwards at work tell three different IVF stories. |
-| 263, 385 | Meet Henrietta Lacks, then return to the case with a photograph of her family at her Virginia historical marker. |
-| 291, 306, 330 | Jesse Gelsinger, Richard Slayman, and Joe DiMeo each faced a different decision about an experimental treatment. |
-| 391 | President Kennedy presents an award to FDA reviewer Frances Kelsey. What evidence did she want before approving thalidomide? |
+| 238 | Zilong Qiu at a Shanghai Jiao Tong University event, two years before the trial. |
+| 269, 391 | Meet Henrietta Lacks, then return to the case with a photograph of her family at her Virginia historical marker. |
+| 297, 312, 336 | Jesse Gelsinger, Richard Slayman, and Joe DiMeo each faced a different decision about an experimental treatment. |
+| 397 | President Kennedy presents an award to FDA reviewer Frances Kelsey. What evidence did she want before approving thalidomide? |
 
 Photo records identify who appears in each image and where it came from.
 See the credits for [early cases](assets/set7_people_early/PROVENANCE.md),
@@ -73,6 +75,15 @@ See the credits for [early cases](assets/set7_people_early/PROVENANCE.md),
 [self-experimentation and consent](assets/set7_people_biohack/PROVENANCE.md),
 [medical research](assets/set7_people_medical/PROVENANCE.md), and
 [later cases](assets/set7_people_late/PROVENANCE.md).
+
+### Topic 23 bonus reading
+
+Mei is the pseudonym used in the investigation of the death of a six-year-old in Shanghai.
+The first report appeared on July 23. Gizmodo covered the university investigation on July 28.
+[Science and Retraction Watch](https://retractionwatch.com/2026/07/23/exclusive-death-gene-editing-trial-china-nature-science-investigation/) and [Gizmodo](https://gizmodo.com/researcher-faces-investigation-for-concealing-6-year-old-girls-death-in-gene-editing-trial-2000791870).
+
+For the November update, use the Shanghai investigation's November 13 findings and the November 17 CBS/AFP report. The animal paper's change history dates the editor's note to July 29.
+[Shanghai findings](https://www.thepaper.cn/newsDetail_forward_34468347), [CBS/AFP](https://www.cbsnews.com/news/girl-dies-gene-editing-trial-scientist-fired-china-state-media/), and [Nature editorial record](https://www.nature.com/articles/s41586-026-10113-6#change-history).
 
 ### Data behind the figures
 
@@ -118,24 +129,25 @@ historical records.
 | 21 | ART and IVF | Assisted Reproductive Technology (ART) | 207-219 | Adapted | 12-16 |
 | 22 | Prenatal Testing | Prenatal Testing | 220-228 | Adapted |  |
 | 23 | CRISPR babies | He Jiankui and Genome Editing in Humans | 229-236 | Adapted |  |
-| 24 | Directed Evolution | Directed Human Evolution (GATTACA) | 237-245 | 2026 source |  |
-| 25 | Synthetic Wombs | Synthetic Wombs and Ectogenesis | 246-254 | Adapted |  |
-| 26 | Biological Materials | Ethical Sourcing of Biological Materials | 255-264 | 2026 source |  |
-| 27 | Embryonic Stem Cells | Embryonic Stem Cells | 265-275 | 2026 source | 52-56 |
-| 28 | Biohackers Zayner | Biohackers and Josette Zayner | 276-283 | Adapted | 31 (topic context) |
-| 29 | Rogue Biohackers | Aaron Traywick and Rogue Biohackers | 284-291 | Adapted |  |
-| 30 | Cyborgs | Cyborgs and Human Enhancement | 292-299 | 2026 source |  |
-| 31 | Cloning for Organs | Human Cloning for Spare Organs | 300-308 | 2026 source |  |
-| 32 | Life Extension | Life Extension and Age-Reversal Biotechnology | 309-317 | 2026 source |  |
-| 33 | Cryonics | Cryonics and Long-Term Preservation | 318-325 | 2026 source |  |
-| 34 | Body Part Transplants | Body-Part Transplants and Identity | 326-333 | 2026 source |  |
-| 35 | Brains Outside Body | Brains Outside the Body | 334-341 | Adapted |  |
-| 36 | Digital Resurrection | Digital Resurrection and Mind Uploading | 342-351 | 2026 source |  |
-| 37 | Death Reversal | Resurrection Biology and Death Reversal | 352-359 | Adapted | 61-62 (topic context) |
-| 38 | Zombie Biology | Zombie Biology and Neuroparasitology | 360-367 | Adapted |  |
-| 39 | Aid in Dying | End-of-Life Ethics and Medical Aid in Dying | 368-375 | Adapted |  |
-| 40 | Controversial Biotech | Controversial Biotechnology | 377-386 | Adapted | 64 |
-| 41 | Pharma Ethics | Other Pharmaceutical Ethics | 387-397 | 2026 source | 44-45 |
+| 23 bonus | Optional news case | A child's death in a gene-editing trial | 237-242 | Instructor discussion |  |
+| 24 | Directed Evolution | Directed Human Evolution (GATTACA) | 243-251 | 2026 source |  |
+| 25 | Synthetic Wombs | Synthetic Wombs and Ectogenesis | 252-260 | Adapted |  |
+| 26 | Biological Materials | Ethical Sourcing of Biological Materials | 261-270 | 2026 source |  |
+| 27 | Embryonic Stem Cells | Embryonic Stem Cells | 271-281 | 2026 source | 52-56 |
+| 28 | Biohackers Zayner | Biohackers and Josette Zayner | 282-289 | Adapted | 31 (topic context) |
+| 29 | Rogue Biohackers | Aaron Traywick and Rogue Biohackers | 290-297 | Adapted |  |
+| 30 | Cyborgs | Cyborgs and Human Enhancement | 298-305 | 2026 source |  |
+| 31 | Cloning for Organs | Human Cloning for Spare Organs | 306-314 | 2026 source |  |
+| 32 | Life Extension | Life Extension and Age-Reversal Biotechnology | 315-323 | 2026 source |  |
+| 33 | Cryonics | Cryonics and Long-Term Preservation | 324-331 | 2026 source |  |
+| 34 | Body Part Transplants | Body-Part Transplants and Identity | 332-339 | 2026 source |  |
+| 35 | Brains Outside Body | Brains Outside the Body | 340-347 | Adapted |  |
+| 36 | Digital Resurrection | Digital Resurrection and Mind Uploading | 348-357 | 2026 source |  |
+| 37 | Death Reversal | Resurrection Biology and Death Reversal | 358-365 | Adapted | 61-62 (topic context) |
+| 38 | Zombie Biology | Zombie Biology and Neuroparasitology | 366-373 | Adapted |  |
+| 39 | Aid in Dying | End-of-Life Ethics and Medical Aid in Dying | 374-381 | Adapted |  |
+| 40 | Controversial Biotech | Controversial Biotechnology | 383-392 | Adapted | 64 |
+| 41 | Pharma Ethics | Other Pharmaceutical Ethics | 393-403 | 2026 source | 44-45 |
 
 ## Instructor source disposition
 

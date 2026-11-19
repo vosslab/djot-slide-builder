@@ -36,8 +36,8 @@ enters only through the one-time import workflow.
   [../slide_lib/importers/emission_topology.py](../slide_lib/importers/emission_topology.py) selects emitted
   component topology. Each stage imports these owners directly without compatibility re-exports.
 
-- [../deck_tools.py](../deck_tools.py) is the user-facing application entry point. It exposes build,
-  capacity, import, lint, and ODP visibility commands.
+- [../deck_tools.py](../deck_tools.py) is the user-facing application entry point for builds,
+  capacity checks, imports, linting, audits, deck statistics, and ODP visibility.
 - [../slide_lib/cli.py](../slide_lib/cli.py) parses command arguments and dispatches each operation
   without making format-specific decisions at the entry point.
 - [../slide_lib/djot_parser.py](../slide_lib/djot_parser.py),
