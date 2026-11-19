@@ -21,6 +21,9 @@
   Speaker notes summarize the tasks without group names or private links.
   Under Weekly Agenda and Work, today and each December date have a subsection divider
   with the meeting format.
+- **Peer trial and final submission.** Each testing group submits one feedback form or short
+  video before leaving on Dec 9. The same questions apply to both formats. For Dec 16, each group
+  checks its own revision and submits the final Doc, clean Sheet and revision note.
 - **Template.** Used the Nov 17 [Genetics Lecture 11A](../../../genetics/LECT11/djot/lect11a-2026_announcements.djot)
   sequence and the current [Biostatistics Lecture 08A](../../LECT08/djot/lect08a-2026_biostats_announcements.djot)
   for course context. The 2025 Biostatistics lecture directory had no matching A deck.
@@ -37,8 +40,8 @@
   dropped Quiz 3 and reserved Dec 9 for peer trials. The earlier points breakdown is hidden
   pending Blackboard verification. First-week assignments, course evaluations, and Natural
   Science Club are hidden.
-- **Verification.** Strict Jotdown lint passed. The 48-slide ODP retains seven hidden slides.
-  Reviewed the revised slides in the 41-page PDF and verified the
+- **Verification.** Strict Jotdown lint passed. The 49-slide ODP retains seven hidden slides.
+  Reviewed the revised slides in the 42-page PDF and verified the
   overdue proposal link is absent. The NWS caption fitted at 15.25 pt against an 18 pt floor.
   Three shared slides fitted slightly below the 20 pt body floor: Ways to Contact
   Dr. Voss (19.5 pt), Biochemistry Lecture (19.75 pt), and Biology and Ethics in Film (19.25 pt).

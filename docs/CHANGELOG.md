@@ -6,7 +6,8 @@
   as one deck for announcements, class plans, and group tutorial work. Groups start from their
   submitted proposals, submit one working activity with Google Doc and Sheet links by Dec 2 at
   11:59 p.m., try another group's activity in class on Dec 9, and submit the revision on Dec 16
-  asynchronously.
+  asynchronously. Let each testing group give feedback on Dec 9 through a form or short video.
+  Have each group check its own revised tutorial before submitting the final Doc and Sheet.
   Give the Quiz 3 cancellation its own slide in the Quizzes section.
 - Add a [ten-slide chromosome deck](../prototype/chromosome_engine_mini2.djot) for reviewing
   chromosome transfers, wheat genomes, crossovers, banding, inversions, and gamete products.

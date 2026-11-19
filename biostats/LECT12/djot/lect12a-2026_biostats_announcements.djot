@@ -85,7 +85,7 @@ https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
 - *Dec 9 is in person.*
   - [*No Quiz 3.*]{color=#D40000}
   - Try another group's tutorial and give them feedback.
-  - Peer-trial video and feedback due.
+  - One feedback form or short video per testing group.
 
 @citation
 
@@ -245,7 +245,7 @@ Ask each group to show what they have and identify what they'll finish next.
 
 @body
 
-- Have [*one group member*]{color=#007A00} follow the Doc instructions from start to finish without coaching. They should find the Sheet from the Doc and check their result against your expected answer.
+- Have [*one group member*]{color=#007A00} follow the Doc instructions from start to finish using a fresh copy of the Sheet. Check that they get the expected result.
 - Have [*someone outside your group*]{color=#007A00} verify that they can open both files and make a copy of the Sheet.
 
 [*One activity needs to work by Dec 2.*]{color=#D40000} The rest of the tutorial can still be in progress.
@@ -285,11 +285,27 @@ and the activity can be completed. Flag any problems before the peer trial.
 
 @body
 
-1. [*Try the activity*]{color=#007A00} without help from its authors.
-2. Record a [*short, unedited video*]{color=#003FFF} while you try it in class.
-3. Give the authors [*feedback*]{color=#003FFF}. Where did you get stuck? What should change?
+1. [*Follow the other group's Google Doc*]{color=#007A00} without help from the authors.
+2. [*Work in a fresh copy*]{color=#007A00} of their Google Sheet.
+3. Compare your result with their expected answer.
 
-Peer-trial video and feedback due [*Dec 9*]{color=#D40000}. [*No Quiz 3.*]{color=#D40000}
+Have any section you want in your final tutorial [*ready to try on Dec 9*]{color=#D40000}.
+
+=== layout: one-panel
+
+# Give Feedback Before You Leave
+
+@body
+
+Have [*one person from your testing group*]{color=#007A00} submit either the [*feedback form*]{color=#003FFF} or a [*short video*]{color=#003FFF}. Answer the same questions in either format.
+
+- Did you finish?
+- Did you get the expected result?
+- Where did you get stuck, and what should the authors change?
+
+We'll share your feedback with the authors.
+
+[*No Quiz 3.*]{color=#D40000}
 
 === layout: subsection
 
@@ -303,10 +319,16 @@ Peer-trial video and feedback due [*Dec 9*]{color=#D40000}. [*No Quiz 3.*]{color
 
 @body
 
-- Submit [*one final tutorial per group*]{color=#003FFF} by [*Dec 16*]{color=#D40000}.
-  - [*Revised tutorial*]{color=#003FFF} with copyable data
-  - [*Checked answers or analysis*]{color=#003FFF}
-  - [*Brief revision note*]{color=#003FFF} on what changed after the peer trial
+[*Revise your tutorial*]{color=#007A00} using the peer feedback.
+
+- Have a group member [*rerun the changed steps*]{color=#007A00} in a fresh copy of the Sheet.
+- Check that someone outside your group can [*open both files*]{color=#007A00}.
+
+Submit one set per group for the course collection by [*Dec 16*]{color=#D40000}:
+
+- [*Final Google Doc*]{color=#003FFF} with a title, one-sentence learning objective, data-source note, and checked answers or interpretations
+- [*Clean Google Sheet*]{color=#003FFF} classmates can copy
+- [*Brief revision note*]{color=#003FFF} on what changed after the peer trial
 
 === layout: section
 
@@ -319,8 +341,8 @@ Peer-trial video and feedback due [*Dec 9*]{color=#D40000}. [*No Quiz 3.*]{color
 @body
 
 - *Dec 2 (asynchronous)* - Submit one working activity per group: [*Google Doc + Google Sheet*]{color=#003FFF}.
-- *Dec 9 (in person)* - Try another group's activity and give them feedback.
-  - [*No Quiz 3.*]{color=#D40000} Peer-trial video and feedback are still due.
+- *Dec 9 (in person)* - Try another group's activity. Submit one feedback form or short video per testing group.
+  - [*No Quiz 3.*]{color=#D40000}
 - *Dec 16 (asynchronous)* - Submit your revised tutorial and a brief note on what changed after the peer trial.
 
 === include: repo:evergreen/spring_registration.djot
