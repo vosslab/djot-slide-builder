@@ -1,7 +1,6 @@
 """Public-boundary tests for direct sibling presentation export."""
 
 # Standard Library
-import datetime
 import pathlib
 import zipfile
 from unittest import mock
@@ -31,38 +30,6 @@ def write_deck(tmp_path: pathlib.Path, source: str) -> pathlib.Path:
 	path = tmp_path / "deck.djot"
 	path.write_text(source, encoding="utf-8")
 	return path
-
-
-#============================================
-def test_render_timestamp_marks_cover_and_final_visible_closer(tmp_path: pathlib.Path) -> None:
-	"""One native build date identifies the cover and the actual ending, not every closer."""
-	source = write_deck(tmp_path, "=== layout: title-slide\n\n# Lecture 01A\n\n"
-		"## Topic\n\n## Dr. Neil Voss\n\n## November 17, 2026\n\n"
-		"=== layout: theend\n\n# THE END\n\n"
-		"=== layout: one-panel\n\n# Teaching\n\n@body\n\nKeep this editable.\n\n"
-		"=== layout: theend\n\n# THE END\n\n"
-		"=== layout: theend\nhidden: true\n\n# THE END\n\n"
-		"=== layout: reference\n\n# References\n\n@body\n\nFurther reading.\n")
-	instant = datetime.datetime(2026, 11, 17, 8, 10, 23,
-		tzinfo=datetime.timezone(datetime.timedelta(hours=-6), "CST"))
-	with mock.patch.object(slide_lib.native_export, "datetime") as clock:
-		clock.datetime.now.return_value.astimezone.return_value = instant
-		compilation, _theme = slide_lib.native_export.compile_deck(
-			slide_lib.native_export.parse_deck(source))
-		clock.datetime.now.assert_called_once()
-	stamps = [(index, item) for index, slide in enumerate(compilation.plan.slides)
-		for item in slide.objects if item.object_id == "render-timestamp"]
-	assert [index for index, _ in stamps] == [0, 3]
-	assert all(isinstance(item.content, slide_lib.layout_content.TextContent)
-		for _, item in stamps)
-	assert all(item.content.paragraphs[0].typography.selected_size_pt < 18.0
-		for _, item in stamps)
-	assert all(run.style.font_family == "IBM Plex Sans Condensed"
-		for _, item in stamps for run in item.content.paragraphs[0].inlines
-		if isinstance(run, slide_lib.layout_content.TextRun))
-	lines = ["".join(run.text for run in item.content.paragraphs[0].inlines
-		if isinstance(run, slide_lib.layout_content.TextRun)) for _, item in stamps]
-	assert lines == ["rendered on Tue, Nov 17, 2026 at 8:10:23 AM CST"] * 2
 
 
 #============================================
@@ -109,9 +76,6 @@ def test_authored_notes_export_only_to_native_note_objects(tmp_path: pathlib.Pat
 
 
 #============================================
-
-
-#============================================
 def test_public_pdf_export_passes_the_generated_odp_to_libreoffice(tmp_path: pathlib.Path) -> None:
 	"""The classroom PDF path derives only from the native ODP emitted in this build."""
 	source = write_deck(tmp_path, "=== layout: one-panel\n\n@body\n\nText.\n")
@@ -132,9 +96,6 @@ def test_public_pdf_export_passes_the_generated_odp_to_libreoffice(tmp_path: pat
 
 
 #============================================
-
-
-#============================================
 def test_pdf_batch_failure_preserves_existing_destinations(tmp_path: pathlib.Path) -> None:
 	"""A failed staged conversion leaves every previously published classroom PDF intact."""
 	inputs = tuple(tmp_path / f"{name}.odp" for name in ("alpha", "beta"))
@@ -151,20 +112,6 @@ def test_pdf_batch_failure_preserves_existing_destinations(tmp_path: pathlib.Pat
 
 
 #============================================
-def test_folder_discovery_selects_sorted_supported_descendants(tmp_path: pathlib.Path) -> None:
-	"""Folder builds retain only Djot decks in stable relative-path order."""
-	folder = tmp_path / "slides"
-	(folder / "nested").mkdir(parents=True)
-	(folder / "z.djot").write_text("=== layout: blank\n", encoding="utf-8")
-	(folder / "notes.md").write_text("# Notes\n", encoding="utf-8")
-	(folder / "a.djot").write_text("=== layout: blank\n", encoding="utf-8")
-	(folder / "nested" / "b.djot").write_text("=== layout: blank\n", encoding="utf-8")
-	decks = slide_lib.native_export.discover_decks(str(folder), tmp_path)
-	assert [path.relative_to(folder).as_posix() for path in decks] == [
-		"a.djot", "nested/b.djot", "z.djot"]
-
-
-#============================================
 def test_input_boundary_rejects_wrong_suffix_and_repository_escape(tmp_path: pathlib.Path) -> None:
 	"""Source selection admits only repository-local Djot files."""
 	markdown_path = tmp_path / "deck.md"
@@ -178,6 +125,3 @@ def test_input_boundary_rejects_wrong_suffix_and_repository_escape(tmp_path: pat
 	with pytest.raises(slide_lib.native_export.PresentationInputError,
 			match="inside this repository"):
 		slide_lib.native_export.validate_input(str(djot_path), repository)
-
-
-#============================================

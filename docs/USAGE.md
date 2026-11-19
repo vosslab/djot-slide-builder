@@ -132,11 +132,20 @@ source source_me.sh && python3 -m slide_lib.refresh_weather genetics/LECT09
 source source_me.sh && python3 -m slide_lib.refresh_podcast genetics/LECT07 --by-lecture-date
 ```
 
-Both module commands accept lecture folders or `lect##a` Djot files. They fetch and validate required
-images before a `--write` update. The weather helper fetches the current Chicago NWS PNG graphics
-and saves only quality-90 WebP snapshots at their original dimensions. It retains complete captions.
-The podcast helper skips episodes marked special and uses publication time to select the latest regular
-episode. Use `--by-lecture-date` to limit selection to episodes published by each lecture date.
+Both module commands accept lecture folders or `lect##a` Djot files. The weather helper fetches the
+current Chicago NWS PNG graphics and saves only quality-90 WebP snapshots at their original dimensions.
+It retains complete captions. The podcast helper skips episodes marked special and uses publication time
+to select the latest regular episode. Use `--by-lecture-date` to limit selection to episodes published
+by each lecture date.
+
+Podcast preview prints the selected shared fragment and master references. With `--write`, the helper
+downloads and validates the thumbnail, writes
+`shared/assets/stump_the_vibe_coder/<YouTube ID>.webp`, and creates
+`shared/stump_the_vibe_coder/<YouTube ID>.djot` only when it is absent. It preserves an existing
+curated fragment, then updates each selected master to use the explicit
+`repo:shared/stump_the_vibe_coder/<YouTube ID>.djot` include. A legacy inlined managed podcast slide
+can be converted during that update. Each master pins its historical episode choice. For Episode 39,
+use its explicitly labeled `Project:` destination, Red Dead Cell Counter, rather than Plaque Attack.
 
 Rebuild the saved two-gene tetrad working-table SVGs from their adjacent data and ascus drawings:
 

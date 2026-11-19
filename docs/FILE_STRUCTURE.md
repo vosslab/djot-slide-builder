@@ -8,7 +8,8 @@ slide_lib/           reusable Djot, native-export, and importer package
 svg_tools/           reusable SVG figure authoring tools and examples
 genetics/            example and lecture Djot corpus
 biotech/             lecture-organized Biotechnology Djot corpus
-evergreen/           slides, prompt collections, and assets shared across courses
+evergreen/           reusable slides, prompt collections, and assets across courses
+shared/              dated slides and assets used across courses
 tests/               fast tests and explicitly separate native E2E runners
 docs/                durable project documentation and working plans
 devel/               maintainer and repository-engineering helpers
@@ -55,11 +56,13 @@ Brewfile             declared macOS command-line and desktop dependencies
 - [../biotech/](../biotech/) follows the same lecture layout: each `LECT##/` folder owns `djot/`
   sources and assets plus `old/` original decks, PDFs, and course source material. The
   [Lecture 04 review](../biotech/LECT04/djot/LECT04_REVIEW.md) records its conversion scope.
-- [../evergreen/](../evergreen/) owns shared announcement groups, the
+- [../evergreen/](../evergreen/) owns reusable announcement groups, the
   [icebreaker catalog](../evergreen/icebreakers.yaml), and their assets, including the recording
   reminder graphic. Fonts remain under `assets/fonts/`. Course-specific
-  reusable groups remain in folders such as `genetics/evergreen/`; dated weather and podcast
-  snapshots remain with their lecture.
+  reusable groups remain in folders such as `genetics/evergreen/`. Dated weather snapshots
+  remain with their lecture.
+- [../shared/](../shared/) owns dated material used by multiple courses, including one
+  Stump the Vibe Coder slide and thumbnail per episode.
 - `genetics/xlect99-template_2023.otp` is the sole master-slide theme authority.
   `presentation_theme.py` validates and reads it; `odp_export.py` projects the compiled physical
   plan directly to editable ODP, and `odp_text.py` writes its editable text objects.

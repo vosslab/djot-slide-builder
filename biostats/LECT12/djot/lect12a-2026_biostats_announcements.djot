@@ -93,17 +93,7 @@ https://vosslab.github.io/syllabus/fall_2026/biostats/SCHEDULE/
 
 === include: repo:evergreen/youtube_channel.djot
 
-=== layout: big-image
-
-@image
-
-![StVC 39&#58; Red Dead Cell Counter &#8212; Count the Red Dots](assets/stump_the_vibe_coder/Iyz6WX2r8Rg.webp)
-
-@caption
-
-Stump the Vibe Coder &#35;39&#58; Red Dead Cell Counter\
-Watch the Video: [https://www.youtube.com/watch?v=Iyz6WX2r8Rg](https://www.youtube.com/watch?v=Iyz6WX2r8Rg)\
-Try the Tool: https://vosslab.github.io/red-dead-cell-counter/
+=== include: repo:shared/stump_the_vibe_coder/Iyz6WX2r8Rg.djot
 
 === include: repo:evergreen/instructor_contact.djot
 

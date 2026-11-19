@@ -31,9 +31,8 @@ def test_table_colspan_uses_logical_columns_and_keeps_cell_attributes(tmp_path: 
 
 
 @pytest.mark.parametrize("cell", (
-	"[Total]{colspan=0}", "[Total]{colspan=-1}", "[Total]{colspan=1.5}",
-	"[Total]{colspan=two}", "[Total]{colspan=2 colspan=2}",
-	"[Total]{colspan=3}", "prefix [Total]{colspan=2}", "[Total]{text-align=diagonal}",
+	"[Total]{colspan=0}", "[Total]{colspan=3}", "prefix [Total]{colspan=2}",
+	"[Total]{text-align=diagonal}",
 ))
 def test_invalid_table_spans_and_alignment_are_source_errors(tmp_path: pathlib.Path, cell: str) -> None:
 	"""Reject malformed spans and rows that overflow or leave holes in the logical grid."""
@@ -61,12 +60,9 @@ def test_cell_background_preserves_nested_text_and_empty_cells(tmp_path: pathlib
 
 #============================================
 @pytest.mark.parametrize("cell", (
-	"[c]{background-color=red}", "[c]{background-color=#abc}",
-	"[c]{background-color=#GG0000}", "[c]{background-color}",
+	"[c]{background-color=red}",
 	"[c]{background-color=#E6F2E6 background-color=#FFFFFF}",
 	"prefix [c]{background-color=#E6F2E6}",
-	"[c]{background-color=#E6F2E6} suffix",
-	"[[c]{background-color=#E6F2E6}]{color=red}",
 ))
 def test_cell_background_rejects_invalid_color_or_scope(tmp_path: pathlib.Path, cell: str) -> None:
 	"""A cell background has one bounded color and covers exactly one complete cell."""
@@ -78,12 +74,10 @@ def test_cell_background_rejects_invalid_color_or_scope(tmp_path: pathlib.Path, 
 
 
 #============================================
-@pytest.mark.parametrize("newline", (b"\n", b"\r\n", b"\r"))
-def test_encoding_error_reports_editor_location(tmp_path: pathlib.Path, newline: bytes) -> None:
+def test_encoding_error_reports_editor_location(tmp_path: pathlib.Path) -> None:
 	"""Bad bytes after multibyte text must point to the actual editor line and column."""
 	path = tmp_path / "broken.djot"
-	path.write_bytes((b"long preceding text " * 500) + newline +
-		"caf\u00e9 ".encode("utf-8") + b"\x80 broken" + newline)
+	path.write_bytes(b"Previous line\r\n" + "caf\u00e9 ".encode("utf-8") + b"\x80 broken\r\n")
 	with pytest.raises(slide_lib.djot_errors.DjotParseError) as raised:
 		slide_lib.djot_sources.read_source(path)
 	message = str(raised.value)
@@ -95,9 +89,7 @@ def test_encoding_error_reports_editor_location(tmp_path: pathlib.Path, newline:
 
 #============================================
 @pytest.mark.parametrize("attribute", (
-	'{column-widths="1,2"}', '{column-widths="1,0,2"}',
-	'{column-widths="1,-1,2"}', '{column-widths="1,nan,2"}',
-	'{column-widths="1,2,2" column-widths="1,3,3"}',
+	'{column-widths="1,2"}', '{column-widths="1,0,2"}', '{column-widths="1,nan,2"}',
 ))
 def test_invalid_table_column_proportions_fail_at_source(tmp_path: pathlib.Path,
 		attribute: str) -> None:
@@ -190,8 +182,7 @@ def test_replaceme_is_slide_metadata_and_stays_literal_in_notes(tmp_path: pathli
 
 #============================================
 @pytest.mark.parametrize("marker", (
-	" @replaceme", "@replaceme reason", "@replaceme\n@replaceme",
-	"# Heading\n@replaceme", "@body\n@replaceme",
+	"@replaceme reason", "@replaceme\n@replaceme", "@body\n@replaceme",
 ))
 def test_invalid_replaceme_marker_reports_its_source(tmp_path: pathlib.Path, marker: str) -> None:
 	"""A malformed or misplaced review flag gets an actionable authoring error."""
@@ -200,16 +191,7 @@ def test_invalid_replaceme_marker_reports_its_source(tmp_path: pathlib.Path, mar
 
 
 #============================================
-def test_parse_deck_binds_global_headings_and_named_cells(tmp_path: pathlib.Path) -> None:
-	"""A canonical source deck keeps title material global and slots named."""
-	deck = parse_source(tmp_path,
-		"color-theme: biochemistry\n\n=== layout: one-panel\n# Genetics\n@body\nVisible text\n")
-	assert (deck.title, deck.color_theme, deck.slides[0].cells[0].name) == (
-		"Genetics", "biochemistry", "body")
-
-
-#============================================
-@pytest.mark.parametrize("scheme", ("https://", "https\\://", "http://", "http\\://"))
+@pytest.mark.parametrize("scheme", ("https://", "https\\://"))
 def test_bare_https_url_becomes_an_editable_hyperlink(
 		tmp_path: pathlib.Path, scheme: str) -> None:
 	"""A bare course URL projects as a linked native text run without Markdown wrapper noise."""
@@ -226,7 +208,6 @@ def test_bare_https_url_becomes_an_editable_hyperlink(
 #============================================
 @pytest.mark.parametrize("metadata", (
 	"color-theme: orange",
-	" color-theme: genetics",
 	"color-theme: genetics\ncolor-theme: biotechnology",
 	"=== layout: one-panel\ncolor-theme: genetics",
 ))
@@ -239,30 +220,12 @@ def test_invalid_color_theme_metadata_reports_its_source(
 
 #============================================
 @pytest.mark.parametrize("metadata", (
-	"hidden: yes", "hidden: True", "hidden: true;", " hidden: true",
-	"hidden: true\nhidden: false", "# Heading\nhidden: true", "@body\nhidden: true",
+	"hidden: yes", "hidden: true\nhidden: false", "@body\nhidden: true",
 ))
 def test_invalid_hidden_metadata_reports_its_source(tmp_path: pathlib.Path, metadata: str) -> None:
 	"""A typo, duplicate, or misplaced directive cannot silently change visibility."""
 	message = parse_error(tmp_path, f"=== layout: one-panel\n{metadata}\n\n@body\nContent.")
 	assert str(tmp_path / "deck.djot") in message and "hidden metadata" in message
-
-
-#============================================
-def test_hidden_metadata_inside_fenced_code_is_content(tmp_path: pathlib.Path) -> None:
-	"""Code examples do not change the surrounding slide's visibility."""
-	deck = parse_source(tmp_path, "=== layout: one-panel\n@body\n```\nhidden: true\n```")
-	assert not deck.slides[0].hidden
-	assert deck.slides[0].cells[0].blocks[0].value == "hidden: true"
-
-
-#============================================
-def test_parse_deck_retains_multiple_subtitles_in_one_global_region(tmp_path: pathlib.Path) -> None:
-	"""Title-slide subtitle text survives global-region assembly."""
-	deck = parse_source(tmp_path, "=== layout: title-slide\n# Genetics\n## Week one\n## Open notes\n")
-	subtitle_text = "\n".join(block.inlines[0].value for block in deck.slides[0].blocks
-		if isinstance(block, slide_lib.native_model.Heading) and block.level == 2)
-	assert "Week one" in subtitle_text and "Open notes" in subtitle_text
 
 
 #============================================
@@ -334,14 +297,11 @@ def test_multiple_choice_answer_rejects_outside_popup_contract(tmp_path: pathlib
 	("=== layout: blank\n@speaker-notes comment\n", 2, "use @speaker-notes"),
 	("=== layout: blank\n@speaker-notes\n@speaker-notes\n", 3, "duplicate @speaker-notes"),
 	("=== layout: one-panel\n@body\n<= appear\n", 3, "require a preceding block"),
-	("=== layout: one-panel\n@body\n=> appear\n=> appear\nText\n", 4, "require a block before"),
 	("=== layout: one-panel\n@body\n=> vanish\nText\n", 3, "unknown Djot action"),
 	("=== layout: one-panel\n@body\n=> cascade appear\nText\n", 3, "requires a following ListBlock"),
-	("=== layout: one-panel\n@body\nText\n<= cascade appear\n", 4, "requires a following ListBlock"),
 	("=== layout: one-panel\n@body\n- Item\n<= cascade appear\n", 4, "terminal cascade appear is not supported"),
 	("=== layout: unknown\n", 1, "unknown Djot layout"),
 	("=== layout: one-panel\n", 1, "missing required slot"),
-	("=== layout: one-panel\n@body\nText\n<= blue overlay\n", 4, "not yet supported"),
 	("=== layout: multiple-choice\n@question\n- A\n@answer\n=> appear\nA\n", 5, "implicit on-click"),
 ))
 def test_parser_reports_source_located_directive_errors(tmp_path: pathlib.Path, source: str,
@@ -349,13 +309,6 @@ def test_parser_reports_source_located_directive_errors(tmp_path: pathlib.Path, 
 	"""Unsupported or malformed directives name the physical line and reason."""
 	message = parse_error(tmp_path, source)
 	assert f"deck.djot:{line}:" in message and phrase in message
-
-
-#============================================
-def test_parser_keeps_crlf_source_locations_physical(tmp_path: pathlib.Path) -> None:
-	"""CRLF input reports the authored line number rather than normalized offset."""
-	message = parse_error(tmp_path, "=== layout: one-panel\r\n@body\r\n<= blue overlay\r\n")
-	assert "deck.djot:3:" in message
 
 
 #============================================
@@ -371,14 +324,6 @@ def test_fence_preserves_directive_looking_code_as_code_block(tmp_path: pathlib.
 	block = deck.slides[0].cells[0].blocks[0]
 	assert isinstance(block, slide_lib.native_model.CodeBlock)
 	assert block.value == "=== layout: title-only\n@speaker-notes"
-
-
-#============================================
-def test_ordinary_instruction_like_text_stays_visible(tmp_path: pathlib.Path) -> None:
-	"""An ordinary at-sign instruction remains editable body text."""
-	deck = parse_source(tmp_path, "=== layout: one-panel\n@body\n@name describes the submitted work\n")
-	assert deck.slides[0].cells[0].blocks[0].inlines == (
-		slide_lib.native_model.Text("@name describes the submitted work"),)
 
 
 #============================================

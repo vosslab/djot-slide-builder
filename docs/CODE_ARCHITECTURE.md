@@ -161,10 +161,9 @@ full-slide or composite raster fallbacks.
 
 - [../tests/](../tests/) contains the permanent fast pytest suite for CLI routing, parser and
   grammar behavior, layouts, native export, import boundaries, and repository hygiene.
-- [../tests/e2e/e2e_djot_native_layouts.py](../tests/e2e/e2e_djot_native_layouts.py) is a
-  non-browser native export acceptance runner and is intentionally outside normal pytest
-  collection. It removes successful proof artifacts and retains failed-run diagnostics under
-  `output/`.
+- [../tests/e2e/e2e_djot_native_layouts.py](../tests/e2e/e2e_djot_native_layouts.py) checks
+  editable ODP content after a LibreOffice resave and caption fit in the exported PDF.
+  Run it separately from pytest. Failed runs retain diagnostic files in `_temp/` and `output/`.
 - Run the fast suite with `source source_me.sh && python3 -m pytest tests/`.
 - Run source validation through `source source_me.sh && python3 deck_tools.py lint PATH`.
 - Inspect fitting concerns through `source source_me.sh && python3 deck_tools.py capacity PATH`.

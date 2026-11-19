@@ -1,0 +1,365 @@
+=== layout: subsection
+
+# 30. Cyborgs and Human Enhancement
+
+=== layout: bookend
+
+# 30. Questions
+
+@body
+
+- What counts as a cyborg in biotechnology? Are cochlear implants, pacemakers, and brain-computer interfaces part of this definition?
+- How does neural implant technology, such as Utah arrays or Neuralink devices, blur the line between therapy and enhancement?
+- What ethical issues arise when medical implants begin to provide abilities beyond normal human limits?
+- How do implanted technologies change ideas about personal identity, autonomy, and the ownership of digital or neural data?
+- Should enhanced individuals (military, medical, or recreational) be regulated? Who decides which enhancements are acceptable?
+
+=== layout: one-panel
+
+# 30. A Device and Its Biological Interface
+
+@body
+
+- A pacemaker helps regulate heart rhythm.
+- A cochlear implant converts sound into signals delivered to the auditory nerve.
+- A brain-computer interface measures neural activity and translates some of it into a device command.
+
+=== layout: one-panel
+
+# 30. Restoration, Enhancement, and Data
+
+@body
+
+- Ask what the device does and whether it restores or expands an ability.
+- Who may access the data produced by an implanted device?
+- Who is responsible for updates, repair, and long-term support?
+
+=== layout: subsection
+
+# 31. Human Cloning for Spare Organs
+
+=== layout: bookend
+
+# 31. Questions
+
+@body
+
+- Could cloned embryos be used to generate patient matched organs without immunosuppression?
+- What moral status would a partially formed cloned body possess?
+- How does therapeutic cloning differ from reproductive cloning?
+- Could organ growing clones develop consciousness or suffering?
+- Are there safer alternatives to cloning such as organoids or xenotransplants?
+- Could black market demand lead to unethical cloning?
+
+=== layout: one-panel
+
+# 31. Two Uses of the Word Cloning
+
+@body
+
+- Therapeutic cloning aims to derive cells for research or potential therapy.
+- Reproductive cloning aims to produce a new individual.
+- An organoid models some features of an organ. A transplantable organ must meet much wider functional demands.
+
+=== layout: one-panel
+
+# 31. Three Ways to Frame an Organ Shortage
+
+@body
+
+- Organoid research asks how to model or replace part of a tissue's function.
+- Xenotransplantation asks whether tissue from another species can function in a recipient.
+- Each approach has its own evidence requirements, welfare concerns, and oversight.
+
+=== layout: subsection
+
+# 32. Life Extension and Age-Reversal Biotechnology
+
+=== layout: bookend
+
+# 32. Questions
+
+@body
+
+- What biological mechanisms are believed to drive aging (e.g., telomere shortening, cellular senescence, mitochondrial damage)?
+- What therapies or technologies, such as senolytics, gene therapy for longevity, or caloric restriction mimetics, are being studied to extend lifespan?
+- How do scientists measure meaningful life extension in humans rather than just in model organisms like mice or worms?
+- What ethical issues arise if life extension treatments become available only to wealthy individuals or specific countries?
+- How could significantly extended human lifespans impact society, economies, retirement systems, and global equity?
+
+=== layout: one-panel
+
+# 32. Healthspan and Lifespan
+
+@body
+
+- Lifespan is how long an organism lives. Healthspan is the time spent in good health.
+- Cellular senescence refers to a state in which cells stop dividing and can change their signaling.
+- A change in one marker can be promising. Longer or healthier life requires outcomes measured over time.
+
+=== layout: one-panel
+
+# 32. An Endpoint Worth Measuring
+
+@body
+
+- A study reports a change in an aging biomarker.
+- Ask whether participants also stay mobile, experience less disease, or live longer.
+- Would benefits reach the people most affected by age-related illness?
+
+=== layout: subsection
+
+# 33. Cryonics and Long-Term Preservation
+
+=== layout: bookend
+
+# 33. Questions
+
+@body
+
+- What is cryonics, and at what point is a person considered legally dead before preservation begins?
+- What biological changes occur in the brain and body after death that cryonics attempts to slow or prevent?
+- What technologies are used during cryopreservation, such as vitrification, and what cellular damage still occurs?
+- What scientific arguments are made for the possibility of future revival, and what arguments challenge the idea that revival is achievable?
+- How does cryonics differ from suspended animation techniques studied in emergency medicine or space travel research? What organizations provide cryonics services, and how do they manage long term storage and future uncertainty?
+
+=== layout: one-panel
+
+# 33. Preserving a Sample and Restoring a Person
+
+@body
+
+- Cells and embryos can be cryopreserved under established conditions.
+- Cryonics attempts to preserve a person after legal death in the hope of future revival.
+- Improving preservation of small samples does not demonstrate that a whole person can be revived.
+
+=== layout: one-panel
+
+# 33. What Must Survive?
+
+@body
+
+- A cryonics claim raises separate questions about tissue damage, brain function, and memory.
+- A preserved shape alone cannot demonstrate function.
+- Ask what a provider can demonstrate and what remains a future hope.
+
+=== layout: subsection
+
+# 34. Body-Part Transplants and Identity
+
+=== layout: bookend
+
+# 34. Questions
+
+@body
+
+- How do face and limb transplants work, and what makes them more complex than organ transplants such as kidneys?
+- How does the immune system respond to transplanted body parts that contain skin, nerves, and bone?
+- What ethical issues arise when body parts from one individual become part of another person's identity?
+- Could future procedures mix neural tissue between individuals, and what questions would this raise about memory and self?
+- How do doctors obtain consent from donors and families for body parts that change a person's visible identity?
+
+=== layout: one-panel
+
+# 34. A Face or Hand Is a Composite Graft
+
+@body
+
+- A graft can include skin, muscle, nerves, bone, and blood vessels.
+- Blood supply, immune rejection, and recovery of movement and sensation all matter.
+- The patient may need prolonged rehabilitation and medicines to limit rejection.
+
+=== layout: one-panel
+
+# 34. How Should Success Be Defined?
+
+@body
+
+- A surviving graft is one measure. Function and quality of life are others.
+- Recipients and donors' families may have different views about the visible nature of the transplant.
+- Consent discussions should address the goals and tradeoffs of the procedure.
+
+=== layout: subsection
+
+# 35. Brains Outside the Body
+
+=== layout: bookend
+
+# 35. Questions
+
+@body
+
+- What experiments have shown that some brain activity can be restored outside the body, such as pig brain perfusion studies, and what does this reveal about cellular survival?
+- How do perfusion systems like BrainEx keep neurons alive, and what limits remain in restoring coordinated brain function?
+- What ethical issues arise when a brain is kept alive without a body, including awareness, suffering, and personal identity?
+- Could a bodiless brain receive artificial sensory input through electrodes or digital interfaces, and what does this imply about consciousness?
+- How would society classify a disembodied human brain in terms of personhood, rights, and medical decision making?
+
+=== layout: one-panel
+
+# 35. Cells Can Recover Some Functions
+
+@body
+
+BrainEx restored some metabolic activity in isolated pig brains after death.
+
+| Measurement | What the study reported |
+| --- | --- |
+| Circulation | Flow resumed in small vessels. |
+| Cell metabolism | Some cells resumed selected functions. |
+| Global electrical activity | The study detected none. |
+
+@citation
+
+Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
+
+=== layout: one-panel
+
+# 35. What Result Would Prompt New Safeguards?
+
+@body
+
+- A cell can use oxygen even when a whole circuit cannot coordinate activity.
+- An oversight group can decide in advance what signals would pause the work.
+- What combination of evidence would be needed to discuss awareness?
+
+=== layout: subsection
+
+# 36. Digital Resurrection and Mind Uploading
+
+=== layout: bookend
+
+# 36. Questions
+
+@body
+
+- What brain information would need to be recorded in order to simulate a human mind?
+- What experiments with whole brain emulation or connectome mapping exist today?
+- Would a simulated mind be the same person or only a copy?
+- How would identity, rights, and consciousness be defined for a digital person?
+- How might mind uploading affect grief, memory, or family structure?
+
+=== layout: one-panel
+
+# 36. Three Different Claims About a Digital Person
+
+@body
+
+- A chatbot can imitate a person's words using recordings or messages.
+- A connectome maps connections between neurons. It is one kind of evidence about a nervous system.
+- Whether a simulation would have the person's memories or consciousness is a separate question.
+
+=== layout: one-panel
+
+# 36. Whose Permission Is Needed?
+
+@body
+
+- A simulation could include private messages from people who are still alive.
+- Should someone be able to decide in advance whether a simulation may be made?
+- What responsibilities would the company have if a simulation caused harm?
+
+=== layout: subsection
+
+# 37. Resurrection Biology and Death Reversal
+
+=== layout: bookend
+
+# 37. Questions
+
+@body
+
+- When does biological death actually occur, and how do doctors decide when a person cannot be revived?
+- How have technologies like ECMO and therapeutic hypothermia revived patients who had no heartbeat for long periods of time?
+- What did experiments like Yale BrainEx and OrganEx show about restoring cell activity in organs hours after death?
+- How long can human brain cells survive without oxygen, and what does this imply about possible future revival methods?
+- Could organ or whole body preservation ever allow a person to return from a long period after death, or are there scientific limits that cannot be crossed?
+
+=== layout: one-panel
+
+# 37. Three Levels of Recovery
+
+@body
+
+- Resuscitation aims to restore circulation in a patient during a medical emergency.
+- In a 2022 pig study, OrganEx restored selected cellular processes in several organs after circulation had stopped.
+- Cellular recovery is a different result from restoring a conscious animal.
+
+@citation
+
+Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
+
+=== layout: one-panel
+
+# 37. What Did the Researchers Measure?
+
+@body
+
+- Separate blood flow, tissue integrity, and activity across a whole organ.
+- Ask which measurement improved, compared with what, and for how long.
+- Organ preservation research can be valuable even when organism-level recovery is outside the result.
+
+=== layout: subsection
+
+# 38. Zombie Biology and Neuroparasitology
+
+=== layout: bookend
+
+# 38. Questions
+
+@body
+
+- How do parasites such as Ophiocordyceps change the behavior of their hosts?
+- How do cultural ideas about zombies shape public reactions to this research?
+
+=== layout: one-panel
+
+# 38. A Parasite Can Change Behavior
+
+@body
+
+- Some Ophiocordyceps fungi change where infected ants climb and bite.
+- The ant's position can help the fungus disperse spores.
+- The observed behavior and the precise biological mechanism are separate questions.
+
+=== layout: one-panel
+
+# 38. From a Cultural Image to a Biological Test
+
+@body
+
+- Zombie stories draw in part on Haitian traditions and have changed through film and popular culture.
+- In biology, describe the specific behavior and compare infected and uninfected hosts.
+- Avoid assuming a parasite controls every action just because one behavior changes.
+
+=== layout: subsection
+
+# 39. End-of-Life Ethics and Medical Aid in Dying
+
+=== layout: bookend
+
+# 39. Questions
+
+@body
+
+- How do patient autonomy, relief of suffering, and safeguards enter end-of-life decisions?
+
+=== layout: one-panel
+
+# 39. Kinds of Decisions at the End of Life
+
+@body
+
+- Stopping a treatment, managing symptoms, and medical aid in dying are distinct clinical and ethical actions.
+- Ask about the patient's wishes, decision-making capacity, and possible pressure.
+- Legal definitions and safeguards depend on the jurisdiction.
+
+=== layout: one-panel
+
+# 39. Apply the Same Questions to a Case
+
+@body
+
+- A patient says a burdensome treatment no longer serves their goals.
+- Who should take part in discussing alternatives, and how should the patient's wishes be recorded?
+- What could make it harder for the patient to express a free choice?

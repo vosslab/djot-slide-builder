@@ -135,11 +135,14 @@ hidden: true
 # Back to the main deck
 ```
 
-Slides shared across courses live in root-level `evergreen/`. Course-specific reusable content
-stays in folders such as `genetics/evergreen/`. Both use explicit repository-relative includes:
+Reusable slides shared across courses live in root-level `evergreen/`. Dated material shared
+across courses, such as podcast episodes, lives in `shared/`. Course-specific reusable content
+stays in folders such as `genetics/evergreen/`. Use explicit repository-relative includes:
 
 ```djot
 === include: repo:evergreen/youtube_channel.djot
+
+=== include: repo:shared/stump_the_vibe_coder/Iyz6WX2r8Rg.djot
 
 === include: repo:genetics/evergreen/exam_guidance.djot
 hidden: true
@@ -167,8 +170,8 @@ from PDF when hidden. Include blocks contain only the path and optional visibili
   directive. Repeating a chapter deliberately repeats its slides in the combined deck.
 - The master controls the course theme. Chapters inherit it when omitted; an explicitly different
   chapter theme is an error. Keeping a matching theme on a chapter also supports standalone builds.
-- Shared images use `repo:evergreen/assets/<filename>` or a course's evergreen asset path to
-  resolve inside the repository.
+- Shared images use a repository-relative asset path under `repo:evergreen/`, `repo:shared/`,
+  or the course's evergreen directory.
   Lint, measurement, and ODP packaging use the same resolver. Ordinary image paths remain relative
   to the master file's directory. Keep sibling
   chapter files beside the master when they share its `assets/` directory. Moving slides between

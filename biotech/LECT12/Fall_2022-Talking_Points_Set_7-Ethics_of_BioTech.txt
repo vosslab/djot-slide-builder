@@ -5,7 +5,7 @@ Nov 10, 2022
 Talking Points Guide
 
 Talking Points Guide
-Talking points were assigned during last week’s class
+Talking points were assigned during last week&#8217;s class
 Each student was assigned to two talking points.
 Each talking point will have at least two students talking about it
 If you share a talking point with another student:
@@ -23,7 +23,7 @@ It is best to have as few words as possible on your slide -- you do the talking 
 Be prepared to give a 60-90 second presentation about each of your assigned talking point
 define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
 Try to be unique
-Don’t just copy the book, use the internet for research. 
+Don&#8217;t just copy the book, use the internet for research. 
 Provide your own perspective
 Please put into your own words
 It is okay if you read your notes, but put notes in your own words
@@ -59,8 +59,8 @@ Talking Points this Week
 
 #1 ethics and morals  - Shahd
 Examples
-Ethics → Doctors vow to “do no harm” unto their patients
-Moral → Not to cheat or lie. 
+Ethics &#8594; Doctors vow to &#8220;do no harm&#8221; unto their patients
+Moral &#8594; Not to cheat or lie. 
 A doctor who does not believe in abortion, performing abortion procedures to keep their license or stay employed. 
 (1) What is the difference between ethics and morals? Give an examples of each? Give an example of ethics conflicting with morals. 
 
@@ -69,9 +69,9 @@ Ethics: Rules recognized in a group or culture
 Morals: Person compass of right or wrong. Habits with respect to right and wrong.
 
 #2 Tania - public perception 
-(2) there are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
+(2) there are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
 https://pubmed.ncbi.nlm.nih.gov/17639530/  https://en.wikipedia.org/wiki/Big_Pharma_conspiracy_theory 
-Improving the public’s perception 
+Improving the public&#8217;s perception 
 Increase knowledge 
 Transparency
 Engagement 
@@ -104,7 +104,7 @@ Iterative Evolution
 (3) Present the challenges of de-extinction. How does the process work? What about the ethics? Which animals are we able to bring back? dinosaurs? mammoths? do-do birds? plants species? What are the limitations? What is the half-life of DNA?
 https://en.wikipedia.org/wiki/De-extinction  
 Ethics on de-extinction
-“unnatural” or “playing god”
+&#8220;unnatural&#8221; or &#8220;playing god&#8221;
 stealing funds and attention from traditional conservation efforts
 Preferable conservation in natural ecological context
 
@@ -117,18 +117,18 @@ Resurrect species as early as 2027
 
 #3 de-extinction - Shahd
 What are the limitations? What is the half-life of DNA?
-→ Limitations: 
+&#8594; Limitations: 
 Costly 
 Virus threats 
 Depleted resources
 Possible filled niche
-→ ½ life: 521 years 
+&#8594; ½ life: 521 years 
 
 #4 Rawan- in vitro fertilization (IVF) 
-Louise brown: first “test tube baby” 
+Louise brown: first &#8220;test tube baby&#8221; 
 born 1978
 Doris Del-Zio: ended up with a trial against Chairman, Columbia University and hospital
-(4) Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? 
+(4) Who was the first &#8220;test tube baby&#8221;? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? 
 
 
 #4 Rikita- in vitro fertilization (IVF) 
@@ -151,7 +151,7 @@ How can a baby have three (3) parents?
 
 
 
-Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
+Who was the first &#8220;test tube baby&#8221;? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
 
 
 
@@ -176,7 +176,7 @@ Collections of antibiotics in adipose tissue
 Selective pressures 
 Differences in regulation 
 Antibiotic pollution 
-Antibiotics are used today within medicine to treat various diseases. These can be classified as a bactericidal (kill bacteria) or bacteriostatic (inhibits growth). Antibiotics are further used in agriculture to aid/prevent diseases within animals and within their feed to promote growth and increase feed conversion efficiency.​ this can cause issues from consumers. Consuming these animal products and waste from the animals as well as humans can cause antibiotic pollution. This can cause extreme cases of antibiotic resistant drugs especially in developing countries. Animals are a source of income for some individuals so their production rate is a necessity. 
+Antibiotics are used today within medicine to treat various diseases. These can be classified as a bactericidal (kill bacteria) or bacteriostatic (inhibits growth). Antibiotics are further used in agriculture to aid/prevent diseases within animals and within their feed to promote growth and increase feed conversion efficiency.&#8203; this can cause issues from consumers. Consuming these animal products and waste from the animals as well as humans can cause antibiotic pollution. This can cause extreme cases of antibiotic resistant drugs especially in developing countries. Animals are a source of income for some individuals so their production rate is a necessity. 
 
 #5 Tania -antibiotics 
 2007 - no antibiotics in feed
@@ -228,13 +228,13 @@ Trivial transgenics: NON-serious applications of transgenics
 http://www.deweyhagborg.com/
 https://mica.bio/kerasynth/
 
-(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-&#8220;serious&#8221; applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to &#8220;serious&#8221; areas such as health care and agriculture?
 Please think about what I am asking, I keep getting wrong interpretations of this talking point. You have to do some looking.
 https://www.ekac.org/transgenic.html 
 https://research.ncsu.edu/ges/artswork--in-biotech/artwork/
 
 #7 trivial transgenics - Nathi
-(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-&#8220;serious&#8221; applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to &#8220;serious&#8221; areas such as health care and agriculture?
 Transgenic Artist: Eduardo Kac
 GFP Bunny 
 Kac's work is included in the permanent collections of the Museum of Modern Art, New York, Tate Modern, London, Institut Valencià d'Art Modern in Valencia, Spain, Les Abattoirs Toulouse, France, and the Victoria and Albert Museum, London
@@ -242,16 +242,16 @@ https://youtu.be/3LSJVD0m1Mg
 
 
 #8 Andrew Wakefield Audrey
-British anti-vaxxer activist, started a study in 1998 on vaccines and how they “cause autism” in children. The Lancet MMR Autism Fraud
+British anti-vaxxer activist, started a study in 1998 on vaccines and how they &#8220;cause autism&#8221; in children. The Lancet MMR Autism Fraud
 Potentially earned 43 million per year on testing kits
-Paid children $10 each for their blood at his son’s B-Day party…
+Paid children $10 each for their blood at his son&#8217;s B-Day party&#8230;
 Small sample size (n=12)
 
 #8 Meaghan: Andrew Wakefield
 Who is Andrew Wakefield? 
 Former physician anti-vaccine advocate
 What were his motivations for publishing his controversial paper? 
-“MMR vaccines cause Autism”
+&#8220;MMR vaccines cause Autism&#8221;
 $43 million in test kit residue 
 He was accused of deliberate falsification and mistreatment of children during his study. How did he alter his study to get the results he desired?
 Paying children for blood samples 
@@ -308,7 +308,7 @@ https://www.dailypaws.com/living-with-pets/pet-owner-relationship/pet-cloning
 
 #10 cloning animals Sonia
 (9) What services are available for cloning animals? Should people be allowed to clone their pets? How about cloning a race horse? Cloning a dead relative? Who is Hwang Woo-suk and what happened in his lab? Are we able to modify clones, such as change their eye color or sex?
-Cloning a dead relative theoretically yes…
+Cloning a dead relative theoretically yes&#8230;
 Not the same person
 Epigenetics (regulate whether genes are on or off)
 Ethical concerns 
@@ -364,7 +364,7 @@ Drug Marketing
 Approved uses
 Generic name
 Fairly present benefits and risks of medication
-Relevant information to the product’s advertised uses
+Relevant information to the product&#8217;s advertised uses
 
 #12 Pharmaceutical Ethics - Brianna 
 Pharmaceutical Fraud
@@ -372,7 +372,7 @@ Off Label Marketing - manufactures advertising non FDA approved uses for their m
 Kickbacks- offering physicians rewards such as cash, trips, and lavish gifts to entice them to prescribe their drug  
 Drug Importation 
 Forgein manufacturing facilities must meet the FDA regulations set for domestic manufacturing facilities 
-⅔ of eligible foriegn manufacturing facilities have never been inspected
+&#8532; of eligible foriegn manufacturing facilities have never been inspected
 (12) Select two other topics in pharmaceutical regulation or ethics that have not been discussed before in class and present them. Ideas include: drug safety, drug pricing, data disclosure, importation of drugs, clinical study design, drug marketing restrictions, accountability from deaths, complications related to drugs 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570985/  
 https://en.wikipedia.org/wiki/List_of_largest_pharmaceutical_settlements  
@@ -410,7 +410,7 @@ Haruko Obokata, is a former stem-cell biologist and research unit leader at Japa
 Adult stem cells have the potential to generate not only new stem cells but also several types of mature cells; neural stem cells, for example, can produce neurons and their supporting cells
 Destroying human embryos considered unethical
 Haruko Obokata is a former stem-cell biologist and research unit leader at Japan's Laboratory for Cellular Reprogramming.
-(14) Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+(14) Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
@@ -455,14 +455,14 @@ We don't need to make it africa is about to make one for us
 Yes by precise venom injection
 Yes it happens rn (prions, rabies ,etc.)
 No one should come back from the dead dead is dead.
-All are technically blasphemous “Playing God”
+All are technically blasphemous &#8220;Playing God&#8221;
 
 #17 Controversial Biotechnology - Laura
 (17) Present the class with two (2) controversial biotechnology topics not discussed in class so far, either recent or historical? What were the concerns? What the public's perception, morally, ethically? If the novelty is over, have the technologies been accepted?
 
 Bioterroism/biological warfare
 Biotechnology to create new viruses, bacteria or toxins with the intent to inflict harm
-Covid-19 “lab leak”
+Covid-19 &#8220;lab leak&#8221;
 Vaccine technology hesitancy
 Delay in acceptance or refusal of vaccines despite availability of vaccine services
 Not a new concept, started back in 1800s

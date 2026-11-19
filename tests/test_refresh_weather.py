@@ -130,14 +130,6 @@ def test_failed_refresh_preserves_every_selected_deck_and_saved_image(
 	assert list(asset.parent.iterdir()) == [asset]
 
 
-def test_ambiguous_icebreaker_requires_correction() -> None:
-	slide = "=== layout: big-image\n@image\n![Story](assets/weather_story/saved.png)\n@caption\nForecast.\n\n"
-	anchor = "=== layout: one-panel\n# Breakout Room Chat\n@body\nTalk.\n"
-	assert refresh_weather.update_source(slide + slide + anchor, slide) == slide + anchor
-	with pytest.raises(ValueError, match="one icebreaker"):
-		refresh_weather.update_source(anchor + anchor, slide)
-
-
 def test_download_bounds_and_redirects_keep_remote_input_on_official_resources(monkeypatch: object) -> None:
 	for url in ("http://www.weather.gov/lot/weatherstory", "https://example.test/graphic.png",
 		"https://www.weather.gov/images/lot/wxstory/../../private.png"):

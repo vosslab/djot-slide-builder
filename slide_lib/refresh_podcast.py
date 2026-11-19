@@ -8,6 +8,7 @@ import io
 import pathlib
 import random
 import re
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -18,9 +19,13 @@ import zoneinfo
 import lxml.etree
 import PIL.Image
 
+import slide_lib.djot_sources
+
 PLAYLIST_ID = "PL5LJPD9b2pRYsw2sU3LRCDhvDSiZ26E48"
 FEED_URL = f"https://www.youtube.com/feeds/videos.xml?playlist_id={PLAYLIST_ID}"
 PODCAST_ASSET_PATH = "assets/stump_the_vibe_coder/"
+PODCAST_SLIDE_PATH = "shared/stump_the_vibe_coder/"
+PODCAST_INCLUDE = f"=== include: repo:{PODCAST_SLIDE_PATH}"
 NAMESPACES = {"atom": "http://www.w3.org/2005/Atom",
 	"yt": "http://www.youtube.com/xml/schemas/2015",
 	"media": "http://search.yahoo.com/mrss/"}
@@ -77,8 +82,9 @@ def latest_episode(data: bytes, on_date: datetime.date | None = None) -> dict[st
 
 def project_url(description: str) -> str:
 	"""Require one published GitHub Pages destination, never a repository URL."""
-	urls = set(re.findall(
-		r"https://[A-Za-z0-9-]+\.github\.io(?:/[^\s<>\"\)]*)?", description))
+	url_pattern = r"https://[A-Za-z0-9-]+\.github\.io(?:/[^\s<>\"\)]*)?"
+	projects = re.findall(rf"(?mi)^Project:[ \t]*({url_pattern})[ \t]*$", description)
+	urls = set(projects or re.findall(url_pattern, description))
 	if len(urls) != 1:
 		raise ValueError("Expected one GitHub Pages project URL in the episode description; "
 			"decks were not changed")
@@ -118,7 +124,7 @@ def podcast_slide(episode: dict[str, str]) -> str:
 	video_id = episode["id"]
 	video_label = f"https://www.youtube.com/watch?v={video_id}".replace("_", "&#95;")
 	slide = "=== layout: big-image\n\n@image\n\n"
-	slide += f"![{title}](assets/stump_the_vibe_coder/{video_id}.jpg)\n\n"
+	slide += f"![{title}](repo:shared/{PODCAST_ASSET_PATH}{video_id}.webp)\n\n"
 	slide += f"@caption\n\n{caption}\\\n"
 	slide += f"Watch the Video: [{video_label}](https://www.youtube.com/watch?v={video_id})\\\n"
 	slide += f"Play the Game: {episode['project_url']}\n\n"
@@ -129,17 +135,17 @@ def podcast_slide(episode: dict[str, str]) -> str:
 def update_source(source: str, episode: dict[str, str]) -> str:
 	"""Replace the managed slide and insert it directly after the YouTube channel slide."""
 	parts = re.split(r"(?m)(?=^===\s+(?:layout|include):)", source)
-	managed = [part for part in parts if PODCAST_ASSET_PATH in part]
+	managed = [part for part in parts if part.startswith(PODCAST_INCLUDE) or PODCAST_ASSET_PATH in part]
 	if len(managed) > 1:
 		raise ValueError("Multiple managed podcast slides; resolve duplicates before refreshing")
-	parts = [part for part in parts if PODCAST_ASSET_PATH not in part]
+	parts = [part for part in parts if part not in managed]
 	anchors = [index for index, part in enumerate(parts)
 		if re.search(r"youtube", re.split(r"(?m)^@speaker-notes\r?$", part, maxsplit=1)[0], re.IGNORECASE)]
 	if len(anchors) != 1:
 		raise ValueError(f"Expected one YouTube channel slide, found {len(anchors)}; deck unchanged")
 	index = anchors[0]
 	parts[index] = parts[index].rstrip() + "\n\n"
-	parts.insert(index + 1, podcast_slide(episode))
+	parts.insert(index + 1, f"{PODCAST_INCLUDE}{episode['id']}.djot\n\n")
 	return "".join(parts)
 
 
@@ -163,7 +169,7 @@ def announcement_paths(selectors: list[str]) -> list[pathlib.Path]:
 
 #============================================
 def thumbnail(video_id: str) -> bytes:
-	"""Prefer the full-size thumbnail; older uploads may only supply the standard image."""
+	"""Save the full-size or standard YouTube thumbnail as a shared WebP."""
 	url = f"https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"
 	try:
 		data = download(url, 10_000_000)
@@ -172,10 +178,22 @@ def thumbnail(video_id: str) -> bytes:
 			raise
 		data = download(f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg", 10_000_000)
 	with PIL.Image.open(io.BytesIO(data)) as image:
-		if image.format != "JPEG":
-			raise ValueError("Episode thumbnail is not a JPEG")
-		image.verify()
-	return data
+		# ASVS 5.2.2, 5.2.6: verify the type and limit dimensions before decoding pixels.
+		if image.format != "JPEG" or image.width > 1280 or image.height > 720:
+			raise ValueError("Episode thumbnail must be a JPEG no larger than 1280 x 720")
+		webp = io.BytesIO()
+		image.save(webp, format="WEBP", quality=90)
+	return webp.getvalue()
+
+
+#============================================
+def save(path: pathlib.Path, data: bytes) -> None:
+	"""Publish complete files for other decks using the same episode."""
+	path.parent.mkdir(parents=True, exist_ok=True)
+	with tempfile.TemporaryDirectory(dir=path.parent) as directory:
+		staged = pathlib.Path(directory) / path.name
+		staged.write_bytes(data)
+		staged.replace(path)
 
 
 #============================================
@@ -190,6 +208,7 @@ def main() -> None:
 	paths = announcement_paths(args.decks)
 	data = download(FEED_URL, 2_000_000)
 	updates = []
+	shared = {}
 	# Validate every anchor before writing any files.
 	for path in paths:
 		source = path.read_text(encoding="utf-8")
@@ -197,20 +216,32 @@ def main() -> None:
 		episode = latest_episode(data, on_date)
 		print(f"{path.name}: {on_date or 'latest'}: {episode['title']} ({episode['published']})")
 		updated = update_source(source, episode)
-		updates.append((path, updated, episode))
+		if updated != source:
+			updates.append((path, updated))
+		video_id = episode["id"]
+		root = slide_lib.djot_sources.repository_root(path)
+		# ASVS 5.3.2: feed IDs are validated before use and resolved paths stay in this checkout.
+		slide_path = (root / PODCAST_SLIDE_PATH / f"{video_id}.djot").resolve()
+		image_path = (root / "shared" / PODCAST_ASSET_PATH / f"{video_id}.webp").resolve()
+		if not path.is_relative_to(root) or not all(
+				saved.is_relative_to(root) for saved in (slide_path, image_path)):
+			raise ValueError("Episode files and announcement deck must stay in the same repository")
+		shared[slide_path] = (image_path, episode)
 		print("".join(difflib.unified_diff(source.splitlines(keepends=True),
 			updated.splitlines(keepends=True), fromfile=str(path), tofile=str(path))), end="")
 	if not args.write:
 		print("Preview only. Run again with --write to save the episode and thumbnail.")
 		return
 	# Fetch every required image before mutating any deck; reuse shared episodes.
-	thumbnails = {episode["id"]: thumbnail(episode["id"])
-		for episode in {item[2]["id"]: item[2] for item in updates}.values()}
-	for path, updated, episode in updates:
-		image_path = path.parent / "assets" / "stump_the_vibe_coder" / f"{episode['id']}.jpg"
-		image_path.parent.mkdir(parents=True, exist_ok=True)
-		image_path.write_bytes(thumbnails[episode["id"]])
-		path.write_text(updated, encoding="utf-8")
+	video_ids = {episode["id"] for _, episode in shared.values()}
+	thumbnails = {video_id: thumbnail(video_id) for video_id in video_ids}
+	for slide_path, (image_path, episode) in shared.items():
+		save(image_path, thumbnails[episode["id"]])
+		if not slide_path.exists():
+			save(slide_path, podcast_slide(episode).encode("utf-8"))
+		print(f"Refreshed {image_path}")
+	for path, updated in updates:
+		save(path, updated.encode("utf-8"))
 		print(f"Updated {path}")
 
 

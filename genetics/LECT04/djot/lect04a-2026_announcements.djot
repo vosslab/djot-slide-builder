@@ -129,17 +129,7 @@ Watch Dr. Voss's videos for help with difficult problems.
 
 https://www.youtube.com/c/NeilVossLab/videos
 
-=== layout: big-image
-
-@image
-
-![StVC 33&#58; Fold Spacer &#8212; Racing Through Proteins &#124; Stump the Vibe Coder Episode 33](assets/stump_the_vibe_coder/gNA7VV_AGp0.jpg)
-
-@caption
-
-Stump the Vibe Coder &#35;33&#58; Fold Spacer &#8212; Racing Through Proteins\
-Watch the Video: [https://www.youtube.com/watch?v=gNA7VV&#95;AGp0](https://www.youtube.com/watch?v=gNA7VV_AGp0)\
-Play the Game: https://vosslab.github.io/Fold-Spacer/
+=== include: repo:shared/stump_the_vibe_coder/gNA7VV_AGp0.djot
 
 === layout: one-plus-two-panels
 

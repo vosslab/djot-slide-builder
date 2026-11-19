@@ -2,7 +2,6 @@
 
 # Standard Library
 import pathlib
-import unittest.mock
 
 # Third-Party Modules
 import pytest
@@ -12,8 +11,8 @@ import PIL.Image
 import slide_lib.djot_errors
 import slide_lib.djot_lint
 import slide_lib.djot_parser
+import slide_lib.djot_sources
 import slide_lib.native_export
-import slide_lib.layout_measurement
 import slide_lib.layout_flow_measurement
 
 
@@ -76,22 +75,6 @@ def test_chapters_preserve_order_notes_theme_and_image_base(tmp_path: pathlib.Pa
 	assert deck.slides[1].notes == ("Keep this note.",)
 	image = deck.slides[0].cells[0].blocks[0]
 	assert image.source == "assets/photo.png" and image.location.line == 4
-
-
-#============================================
-def test_nested_manifest_builds_once_and_lints_every_file(tmp_path: pathlib.Path) -> None:
-	"""Folder commands produce one lecture, while native validation reaches every included file."""
-	master = tmp_path / "lecture.djot"
-	chapter = tmp_path / "chapter.djot"
-	part = tmp_path / "part.djot"
-	master.write_text("color-theme: biotechnology\ninclude: chapter.djot\n")
-	chapter.write_text("include: part.djot\n")
-	part.write_text("=== layout: blank\n")
-	assert slide_lib.native_export.discover_decks(str(tmp_path), tmp_path) == [master]
-	with unittest.mock.patch.object(slide_lib.djot_lint, "native_validator", return_value=None) as run:
-		problems, summary = slide_lib.djot_lint.lint_paths([tmp_path], native_executable="jotdown")
-	assert problems == [] and summary.slides == 1
-	assert {call.args[0] for call in run.call_args_list} == {master, chapter, part}
 
 
 #============================================

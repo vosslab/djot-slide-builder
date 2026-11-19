@@ -68,6 +68,8 @@ figure-placeholder limitation.
 Downloaded the updated 1280 x 720 YouTube thumbnail for `Iyz6WX2r8Rg` using a
 cache-busting request. The revised image gives the hosts Western clothing and hats.
 Replaced the local WebP and rebuilt the 11A ODP/PDF; the episode title and links remain.
+On November 18, fetched the revised image again and verified it in the editable ODP
+and on PDF page 8, alongside the Biotechnology and Biostatistics announcement refreshes.
 
 ## 11B primate question/answer pairs and orange tree, November 17
 

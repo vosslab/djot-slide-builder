@@ -88,6 +88,13 @@ Use `layout: section` for the divider, followed by:
 5. Ways to contact the instructor.
 6. Anonymous-message form.
 
+Use the root [../../evergreen/youtube_channel.djot](../../evergreen/youtube_channel.djot) first,
+then an explicit `repo:shared/stump_the_vibe_coder/<YouTube ID>.djot` include for the selected
+episode. The shared fragment owns the thumbnail, title, video link, and game/tool destination.
+The master owns the dated episode choice, so historical decks stay pinned. Do not copy an episode
+slide or thumbnail into a course folder. Episode 39 uses the destination explicitly labeled
+`Project:`, Red Dead Cell Counter, rather than Plaque Attack.
+
 The evergreen Discord server reminder is separate from the credit-bearing signup assignment.
 Keep the reminder when the signup deadline has passed.
 
@@ -223,9 +230,11 @@ the graduation notice's first-two-weeks window for these assignments.
   Builds use saved files and never refresh weather.
 - Select the latest regular StVC episode published by the lecture date; skip special episodes
   such as #38. Unless the instructor selects another eligible episode, use publication time,
-  not episode-number order. Verify its thumbnail, title, video, and game/tool destination.
-- Reuse shared fragments: root `evergreen/` for cross-course groups and the course's own
-  `evergreen/` for course-specific material. Keep dated agendas, weather, and episodes weekly.
+  not episode-number order. Verify its thumbnail, title, video, and game/tool destination. Preview
+  the selected shared references first; use `--write` to save the WebP and create a missing fragment.
+- Reuse shared fragments: root `evergreen/` for reusable cross-course groups, `shared/` for dated
+  cross-course StVC episodes, and the course's own `evergreen/` for course-specific material. Keep
+  dated agendas and weather with the weekly deck.
 - Edit reusable wording, formatting, and colors in the owning evergreen fragment. Use the
   weekly include to control visibility. Make a lecture-local slide only when its content needs
   to differ for that lecture, and record the reason in the lecture review.

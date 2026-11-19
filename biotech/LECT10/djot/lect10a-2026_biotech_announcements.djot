@@ -68,17 +68,7 @@ Make Sure Dr. Voss Is Recording
 
 === include: repo:evergreen/youtube_channel.djot
 
-=== layout: big-image
-
-@image
-
-![Stump the Vibe Coder&#44; Episode 37](assets/stump_the_vibe_coder/syP64X9YvmY.jpg)
-
-@caption
-
-Stump the Vibe Coder &#35;37\
-Watch the Video: [https://www.youtube.com/watch?v=syP64X9YvmY](https://www.youtube.com/watch?v=syP64X9YvmY)\
-Play the Game: https://vosslab.github.io/bad-cell-day/
+=== include: repo:shared/stump_the_vibe_coder/syP64X9YvmY.djot
 
 === include: repo:biotech/evergreen/course_information.djot
 

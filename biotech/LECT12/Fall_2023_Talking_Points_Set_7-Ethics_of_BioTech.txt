@@ -58,7 +58,7 @@ Question Asker #24: controversial -- Sienna and Sowmya
 Helper Question Askers
 
 Talking Points Guide
-Talking points were assigned during last week’s class
+Talking points were assigned during last week&#8217;s class
 Each student was assigned to two talking points.
 Each talking point will have at least two students talking about it
 If you share a talking point with another student:
@@ -76,7 +76,7 @@ It is best to have as few words as possible on your slide -- you do the talking 
 Be prepared to give a 60-90 second presentation about each of your assigned talking point
 define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
 Try to be unique
-Don’t just copy the book, use the internet for research. 
+Don&#8217;t just copy the book, use the internet for research. 
 Provide your own perspective
 Please put into your own words
 It is okay if you read your notes, but put notes in your own words
@@ -126,7 +126,7 @@ ETHICS
 The study of what is morally right or wrong
 **External**
 MORALS
-Individual’s own principles regarding what is right or wrong → **personal**
+Individual&#8217;s own principles regarding what is right or wrong &#8594; **personal**
 HISTORICAL EXAMPLES
 Nuremberg Code (1947)
 Tuskegee Syphilis Study (1932-1972)
@@ -157,7 +157,7 @@ Data interpretation
 
 
 #public perception
-There are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. 
+There are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. 
 
 How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?                                                                                                         How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
 
@@ -184,16 +184,16 @@ Potential for misuse/abuse of biotech products
 Ethical, social, cultural challenges
 Predicting Danger
 Media inform, misinform, educate, & confuse public leading to misunderstanding or fear
-Influence public opinion/attitude →
+Influence public opinion/attitude &#8594;
  acceptance,  rejection, indifference
 Stimulate public engagement & participation
 Media Portrayal
 
 
-Universities should make it a priority that the next generation of researchers (ie, graduate students) and practitioners acquire real experience in community‐based programs.
+Universities should make it a priority that the next generation of researchers (ie, graduate students) and practitioners acquire real experience in community&#8208;based programs.
 - 
 Existing practitioners should receive quality training and opportunities for skills development to enhance their ability to apply scientific evidence and community knowledge at every stage of intervention development, adaptation, implementation and evaluation.
-public comment on new policies for biotechnologies being considered by a regulatory agency does not always influence that agency’s actions on those policies
+public comment on new policies for biotechnologies being considered by a regulatory agency does not always influence that agency&#8217;s actions on those policies
 Public comments are more likely to influence policy reform when they provide clear, concise, and compelling information relevant to analyzing the proposed policy and its implications.
 #Public perception :- kushil
 
@@ -252,7 +252,7 @@ https://en.wikipedia.org/wiki/Genetically_modified_food_controversies
 Difference between transgenic plants and traditional hybrids
 - A transgenic plant contains DNA from another organism via gene-splicing.
 - A hybrid plant contains DNA only from both parents via fertilization.
-Transgenic plants’ food security challenges
+Transgenic plants&#8217; food security challenges
 Pest and disease resistance 
 Improved crop yield
 Nutritional enhancement
@@ -343,7 +343,7 @@ Ecological
 Economical 
 Changes in biodiversity
 Altered landscape 
-💫 aesthetics💫
+&#128171; aesthetics&#128171;
 Costs
 Urban Planning & Design
 Property Values 
@@ -412,7 +412,7 @@ Somatic cell (with DNA) taken from the organism.
 #8 Animal De-Extinction (Sonia)
 Nuclear Transplantation
 Nuclear Transfer
-Somatic cell’s nucleus inserted into enucleated egg cell.
+Somatic cell&#8217;s nucleus inserted into enucleated egg cell.
 Implantation
 Cloned embryo implanted into surrogate.
 Dolly, 1996
@@ -489,7 +489,7 @@ Zebroids.
 
 #11 Trivial transgenics
 Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. How do regulatory bodies view and manage transgenic organisms created for art or entertainment?
-What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+What are some non-&#8220;serious&#8221; applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to &#8220;serious&#8221; areas such as health care and agriculture?
 Please think about what I am asking, I keep getting wrong interpretations of this talking point. You have to do some looking.
 https://www.ekac.org/transgenic.html 
 https://research.ncsu.edu/ges/arts-work-in-biotech/artwork/
@@ -513,7 +513,7 @@ Non Serious Application
 Humans and BioTech
 
 #12 In Vitro Fertilization (IVF)  
-Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
+Who was the first &#8220;test tube baby&#8221;? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
 https://www.newscientist.com/article/2107219-exclusive-worlds-first-baby-born-with-new-3-parent-technique/ 
 https://www.discovermagazine.com/health/how-can-a-baby-have-3-parents 
 
@@ -541,7 +541,7 @@ Sources:
 When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
 https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
 https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
-Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised “peace of mind” instead caused anguish and confusion.
+Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised &#8220;peace of mind&#8221; instead caused anguish and confusion.
 https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
 
 #13 Prenatal Testing - Uzma
@@ -581,10 +581,10 @@ How important is informed consent in the collection of human tissues for researc
 Informed consent is of paramount importance in the collection of human tissues for research. It ensures that potential donors are adequately informed about the research's risks and benefits and have freely and voluntarily agreed to participate. This ethical principle safeguards individual autonomy, protects against potential harm, fosters trust in research, and adheres to regulations.
 
 Ethical Sourcing of Biological Materials - QAZI
-“Biopiracy” refers to the unauthorised use of agricultural and indigenous genetic resources which occur naturally by individuals or organizations for the sole purpose of monopolizing them through patent or intellectual property rights.
+&#8220;Biopiracy&#8221; refers to the unauthorised use of agricultural and indigenous genetic resources which occur naturally by individuals or organizations for the sole purpose of monopolizing them through patent or intellectual property rights.
 Colgate was accused of stealing 1,000-year-old Indian toothpaste recipe.
 Colgate obtained a US patent for the tooth powder composition comprising rust-like red iron oxide, clove oil, camphor, black pepper and spearmint.
-Indian activists are accusing Colgate of ‘biopiracy’ for allegedly stealing and patenting a 1,000-year-old folk recipe for toothpaste.
+Indian activists are accusing Colgate of &#8216;biopiracy&#8217; for allegedly stealing and patenting a 1,000-year-old folk recipe for toothpaste.
 All the ingredients date back to antiquity. They have been used by the common Indian man for thousands of years.
 Efforts are going on from India for building 34 million webpages document for substantiating that the ingredients were known in the art.
 The Nagoya Protocol includes several commitments such as obtaining informed consent for research, providing dispute resolution options for violations, monitoring the use of genetic resources, collaborating with indigenous communities, respecting their customary laws and knowledge, allowing the customary use and exchange of genetic resources, and ensuring that governments can effectively implement the protocol.
@@ -595,14 +595,14 @@ Fairness
 Nagoya Protocol:
 
 #15 Embryonic stem cells
-Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
 
 What are they? Pluripotent cells
 Where do they come from?... Embryos (they have quite the self explanatory name)
-What’s the ethics? Embryonic stem cells are a point of ethical contention, despite their usefulness in scientific discovery 
-Haruko Obokata… A liar, or perhaps a misguided scientist
+What&#8217;s the ethics? Embryonic stem cells are a point of ethical contention, despite their usefulness in scientific discovery 
+Haruko Obokata&#8230; A liar, or perhaps a misguided scientist
 
 #15 
 EMBRYONIC STEM CELLS 

@@ -4,7 +4,7 @@ Nov 19, 2026
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the &#8220;Tropic&#8221; theme and that is it.
 
 Talking Points Guide
 
@@ -17,7 +17,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week&#8217;s class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -27,13 +27,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else&#8217;s talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller &#8211; limit the amount of text &#8211; you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -41,8 +41,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide&#8217;s look and content.
+Don&#8217;t just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -126,7 +126,7 @@ In what ways might personal morals of a scientist influence their research choic
 #1 Ethics and Morals  
 
 #2 Public perception 
-There are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. 
+There are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. 
 How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
 How have historical events shaped public trust in biotechnology? How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
 Can public perception influence funding and policy decisions in biotechnology?
@@ -149,11 +149,11 @@ Section: Public, Environment, and Plant BioTech
 
 #4 Purdue Pharma
 Overview of the Opioid Crisis: Describe the opioid crisis in the US. What is the scale of the problem in terms of overdose deaths today? 
-Purdue Pharma’s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive?
+Purdue Pharma&#8217;s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive?
 Marketing and Legal Issues: What tactics did Purdue Pharma use to promote OxyContin? Who within the company made the decisions to put profit over patient safety? What role did the Sackler family play? How did the marketing impact vulnerable communities?
 Legal Fallout: What were the legal consequences for Purdue Pharma? Did anyone go to prison? Where are the Sacklers now? 
 Future of the Crisis: When did the opioid industry move from OxyContin to fentanyl? How much more potent is fentanyl than morphine? What new challenges has fentanyl introduced?
-Bankruptcy and Compensation: How has Purdue Pharma’s bankruptcy affected compensation for victims’ families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
+Bankruptcy and Compensation: How has Purdue Pharma&#8217;s bankruptcy affected compensation for victims&#8217; families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
 Resources: https://en.wikipedia.org/wiki/Purdue_Pharma https://en.wikipedia.org/wiki/Sackler_family https://en.wikipedia.org/wiki/Opioid_epidemic_in_the_United_States https://en.wikipedia.org/wiki/Timeline_of_the_opioid_epidemic 
 
 #4 Purdue Pharma
@@ -222,12 +222,12 @@ Types of biological agents for bioweapons
 Entomological warfare - WWII
 
 
-Types of biological agents used for bioweapons: an important subtype of biological warefare is entomological (insect) warfare First important according to the Geneva Protocol - 1925 History of biological weapons goes back to the Middle Ages where Assyrians poisoned enemy wells with ergotUK was the first to develop BUT did not use them offensively Used offensively in the Arab-Israeli conflict of 1948 against Entomological warefareWOW fun fact kind of cool but also insane - we were all potentially apart of entomological warfare experiments according to wikipedia which is sourced from a Boston Globe article “The military also tested the mosquito biting capacity by dropping uninfected mosquitoes over U.S. cities” 
+Types of biological agents used for bioweapons: an important subtype of biological warefare is entomological (insect) warfare First important according to the Geneva Protocol - 1925 History of biological weapons goes back to the Middle Ages where Assyrians poisoned enemy wells with ergotUK was the first to develop BUT did not use them offensively Used offensively in the Arab-Israeli conflict of 1948 against Entomological warefareWOW fun fact kind of cool but also insane - we were all potentially apart of entomological warfare experiments according to wikipedia which is sourced from a Boston Globe article &#8220;The military also tested the mosquito biting capacity by dropping uninfected mosquitoes over U.S. cities&#8221; 
 
 #11 Gain-of-Function and Supervirus Research
 Summary: Gain-of-function research changes viruses in ways that can increase spread or severity, raising debates about safety and scientific value.
 What is gain-of-function research, and why do some scientists use it to study dangerous viruses?
-What happened during the H5N1 “supervirus” experiments, and why did they cause concern?
+What happened during the H5N1 &#8220;supervirus&#8221; experiments, and why did they cause concern?
 How do scientists decide whether a virus-modifying experiment is too risky to perform?
 How do biosafety levels (BSL) relate to handling viruses that have been engineered to be more transmissible?
 What national rules guide research that could create more dangerous pathogens?
@@ -262,11 +262,11 @@ Resources: https://en.wikipedia.org/wiki/Xenobiology https://en.wikipedia.org/wi
 #13 Xenobiology and Non-DNA Life
 
 #14 Xenobiology and Non-Organic Life
-Summary: Xenobiology explores the possibility of life that uses chemical systems different from Earth’s carbon-and-water biology.
+Summary: Xenobiology explores the possibility of life that uses chemical systems different from Earth&#8217;s carbon-and-water biology.
 What makes carbon based life so successful on Earth, and why do scientists wonder if other chemistries could also support living systems?
-Could silicon based life exist, given silicon’s similarity to carbon, and what limitations make it less stable than carbon for building complex molecules?
+Could silicon based life exist, given silicon&#8217;s similarity to carbon, and what limitations make it less stable than carbon for building complex molecules?
 Which alternative solvents, such as ammonia, methane, or ethane, could support biochemical reactions, and where in the solar system might these solvents exist naturally?
-How do scientists predict what “life” might look like if it used different molecular backbones, such as alternative nucleic acids or non carbon polymers?
+How do scientists predict what &#8220;life&#8221; might look like if it used different molecular backbones, such as alternative nucleic acids or non carbon polymers?
 How do space missions, such as those studying Titan or Europa, help guide scientific ideas about non terrestrial biochemistry?
 How would metabolism work in an organism that used a solvent colder or hotter than liquid water?
 What would be the challenges of identifying alien life if its chemistry does not match known Earth molecules?
@@ -323,7 +323,7 @@ ME
 #19 Consumer Oriented or Trivial Transgenics
 Summary: Some genetically modified animals are created for decoration, entertainment, or art, raising questions about purpose, regulation, and ethical limits.
 What are examples of genetically modified animals created mainly for appearance, decoration, or entertainment, such as GloFish?
-How do regulatory agencies decide whether a “trivial” transgenic organism is safe to sell or display?
+How do regulatory agencies decide whether a &#8220;trivial&#8221; transgenic organism is safe to sell or display?
 What artistic projects have used transgenic animals, and how were these projects received by the public?
 Do designer organisms blur the boundary between art and biotechnology, and should there be limits on how far this can go?
 Should genetic modification be restricted to health, agriculture, and research, or can nonessential uses be acceptable in society?
@@ -347,7 +347,7 @@ Can you detail the preventive strategies Esvelt has suggested to mitigate the ri
 Section: Humans and BioTech
 
 #21 Assisted Reproductive Technology (ART)
-Historical perspective: Who was the first “test tube baby”? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
+Historical perspective: Who was the first &#8220;test tube baby&#8221;? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
 Impact of IVF: How common is in vitro fertilization (IVF) today? How has IVF changed over the years? 
 IVF Alternatives: Why is intrauterine insemination (IUI) often used over IVF?  What are some other modern forms of assisted reproductive technology (ART) and how do they compare?
 Modern Innovations: How can a baby have three (3) parents using MRT? What are the controversies around preimplantation genetic diagnosis? Can you choose the color of your babies eyes?
@@ -359,7 +359,7 @@ Resources: https://en.wikipedia.org/wiki/Assisted_reproductive_technology https:
 Video from the Past
 American ExperienceTest Tube Babies
 Episode aired Oct 23, 2006
-“The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.”
+&#8220;The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.&#8221;
 Runtime: 52m:37s
 
 #22 Prenatal Testing (Shivani Patel )
@@ -370,7 +370,7 @@ Resources: https://en.wikipedia.org/wiki/Prenatal_testing https://en.wikipedia.o
 When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
 https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
 https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
-Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised “peace of mind instead caused anguish and confusion.
+Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised &#8220;peace of mind instead caused anguish and confusion.
 https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
 
 
@@ -417,7 +417,7 @@ What is biopiracy? How does biopiracy using patents affect the livelihoods and c
 
 #27 Embryonic stem cells (Bella)
 
-Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
 
@@ -435,18 +435,18 @@ https://www.the-odin.com
 #29 Aaron Traywick and Rogue Biohackers
 Summary: Aaron Traywick promoted radical DIY gene therapy outside normal rules, raising warnings about the risks of unsupervised biotechnology.
 What was the mission of Ascendance Biomedical, and how did it try to bypass traditional research, regulation, and medical oversight?
-How did Traywick use self-experimentation as a public demonstration of “open” biotechnology, and why did many scientists call his actions unsafe?
+How did Traywick use self-experimentation as a public demonstration of &#8220;open&#8221; biotechnology, and why did many scientists call his actions unsafe?
 In what ways did his approach directly challenge FDA rules, clinical trial standards, and accepted safety practices?
 How did Traywick justify giving or selling untested treatments to volunteers, and what ethical problems arise when experiments occur without approval or medical supervision?
 How did the biohacking community respond to his death, and what lessons does it offer about the dangers of rogue experimentation?
-How did Traywick’s behavior differ from responsible community biology groups that follow safety guidelines?
+How did Traywick&#8217;s behavior differ from responsible community biology groups that follow safety guidelines?
 Resources: https://en.wikipedia.org/wiki/Aaron_Traywick https://en.wikipedia.org/wiki/Biohacking https://en.wikipedia.org/wiki/Do-it-yourself_biology
 
 #29 Aaron Traywick and Rogue Biohackers
 
 #30 Cyborgs and Human Enhancement
 Summary: Cyborg biotechnology blends organic bodies with implanted devices that restore or enhance abilities, raising questions about identity, equity, and the definition of being human.
-What counts as a cyborg in biotechnology? Are cochlear implants, pacemakers, and brain–computer interfaces part of this definition?
+What counts as a cyborg in biotechnology? Are cochlear implants, pacemakers, and brain&#8211;computer interfaces part of this definition?
 How does neural implant technology, such as Utah arrays or Neuralink devices, blur the line between therapy and enhancement?
 What ethical issues arise when medical implants begin to provide abilities beyond normal human limits?
 How do implanted technologies change ideas about personal identity, autonomy, and the ownership of digital or neural data?
@@ -497,9 +497,9 @@ Resources: https://en.wikipedia.org/wiki/Cryonics https://en.wikipedia.org/wiki/
 Summary: New transplants such as faces, limbs, and mixed tissues raise ethical questions about identity, consent, and the limits of reconstructing the human body.
 How do face and limb transplants work, and what makes them more complex than organ transplants such as kidneys?
 How does the immune system respond to transplanted body parts that contain skin, nerves, and bone?
-What ethical issues arise when body parts from one individual become part of another person’s identity?
+What ethical issues arise when body parts from one individual become part of another person&#8217;s identity?
 Could future procedures mix neural tissue between individuals, and what questions would this raise about memory and self?
-How do doctors obtain consent from donors and families for body parts that change a person’s visible identity?
+How do doctors obtain consent from donors and families for body parts that change a person&#8217;s visible identity?
 Resources: https://en.wikipedia.org/wiki/Face_transplant https://en.wikipedia.org/wiki/Brain_transplant https://en.wikipedia.org/wiki/Allotransplantation https://en.wikipedia.org/wiki/Hand_transplantation https://en.wikipedia.org/wiki/Head_transplant 
 
 
@@ -522,7 +522,7 @@ Together Raad and I will take over the world! Ha! Ha! Ha! Ha!
 #35 Brains Outside the Body - Raad
 
 #36 Digital Resurrection and Mind Uploading
-Summary: Digital resurrection seeks to simulate a person’s mind using neural data, artificial intelligence, or brain scanning.
+Summary: Digital resurrection seeks to simulate a person&#8217;s mind using neural data, artificial intelligence, or brain scanning.
 What brain information would need to be recorded in order to simulate a human mind?
 What experiments with whole brain emulation or connectome mapping exist today?
 Would a simulated mind be the same person or only a copy?
@@ -547,9 +547,9 @@ Resources: (1) https://en.wikipedia.org/wiki/Death (2) https://en.wikipedia.org/
 
 #38 Zombie Biology and Neuroparasitology- Mehnoor 
 Summary: Some parasites naturally control animal behavior, raising questions about whether biotechnology could mimic these effects.
-Briefly, tell use the history of zombie lore based on witch doctors from Haiti. How do cultural ideas about “zombies” shape public reactions to this research?
+Briefly, tell use the history of zombie lore based on witch doctors from Haiti. How do cultural ideas about &#8220;zombies&#8221; shape public reactions to this research?
 What biological mechanisms allow parasites like jewel wasps or fungi to control the behavior of their hosts? How do parasites such as Ophiocordyceps infect insects and change their actions? How might neural gene editing be used to study or alter behavior in model organisms?
-How does neuroparasitology help scientists understand natural examples of “zombie-like” behavior?
+How does neuroparasitology help scientists understand natural examples of &#8220;zombie-like&#8221; behavior?
 Could biotechnology copy these natural mechanisms to alter animal behavior?  How would wildlife or ecosystems be affected if behavior-modifying organisms spread beyond intended areas?
 Resources: (1) https://en.wikipedia.org/wiki/Parasitoid_wasp (2) https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis (3) https://en.wikipedia.org/wiki/Behavior-altering_parasite 
 
@@ -562,7 +562,7 @@ What is the difference between stopping life support, giving strong pain medicin
 How do U.S. medical aid in dying laws usually work in practice, for example in Oregon or California, and what common safeguards (waiting periods, second opinions, mental capacity checks) are required?
 If Illinois legalizes medical aid in dying, how might that change choices for terminally ill patients here, and what arguments do supporters and opponents give?
 How do these laws try to protect people who are disabled, elderly, or financially vulnerable from being pressured into choosing death?
-What ethical tensions exist between a physician’s role as a healer, respect for patient autonomy, and the risk of sending a social message that some lives are “less worth” living?
+What ethical tensions exist between a physician&#8217;s role as a healer, respect for patient autonomy, and the risk of sending a social message that some lives are &#8220;less worth&#8221; living?
 Resources: (1) https://en.wikipedia.org/wiki/Assisted_suicide_in_the_United_States  (2) https://en.wikipedia.org/wiki/Euthanasia_in_the_United_States  (3) https://en.wikipedia.org/wiki/Assisted_suicide https://en.wikipedia.org/wiki/Euthanasia https://en.wikipedia.org/wiki/Palliative_sedation 
 
 

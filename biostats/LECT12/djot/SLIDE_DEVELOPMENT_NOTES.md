@@ -35,6 +35,8 @@
 - **Weather and episode.** Saved the single NWS Chicago story published at refresh on Nov 18.
   YouTube's Stump the Vibe Coder playlist listed episode 39 as the latest regular episode.
   Its watch page gives Nov 12 as the publication date and links the Red Dead Cell Counter tool.
+  Refreshed the thumbnail from YouTube on Nov 18 and verified the new image on PDF page 9
+  and in the editable ODP.
 - **Visibility.** Thanksgiving break, the Dec 2 asynchronous milestone, the Dec 9 peer trial
   and feedback, the Dec 16 final deadline, and spring registration are visible. The instructor
   dropped Quiz 3 and reserved Dec 9 for peer trials. The earlier points breakdown is hidden

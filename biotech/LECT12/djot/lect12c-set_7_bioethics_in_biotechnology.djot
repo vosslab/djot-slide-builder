@@ -1,0 +1,10 @@
+color-theme: biotechnology
+
+include: set7_opening.djot
+include: set7_ethics.djot
+include: set7_environment.djot
+include: set7_animals.djot
+include: set7_humans_21_29.djot
+include: set7_humans_30_39.djot
+include: set7_extra.djot
+include: set7_summary.djot

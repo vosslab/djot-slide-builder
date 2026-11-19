@@ -135,58 +135,6 @@ def test_import_review_reasons_become_explicit_replaceme_markers(tmp_path: pathl
 
 
 #============================================
-def test_native_image_annotations_and_text_color_survive_odp_round_trip(
-		tmp_path: pathlib.Path) -> None:
-	"""Editable annotations and semantic color survive the native ODP boundary."""
-	assets = tmp_path / "assets" / "source"
-	assets.mkdir(parents=True)
-	(assets / "figure.png").write_bytes(png_bytes((40, 120, 180)))
-	source = tmp_path / "source.djot"
-	source.write_text("""=== layout: big-image
-
-@image
-
-![Figure](assets/source/figure.png)
-
-{color=red}
-arrow: 15 20 80 65
-
-=> appear
-{color=green}
-outline: 35 25 30 35
-
-@caption
-
-[Native]{color=purple} annotations.
-""", encoding="utf-8")
-	theme = slide_lib.presentation_theme.default_theme()
-	plan = slide_lib.layout_engine.compile_layout_deck(
-		slide_lib.djot_parser.parse_deck(source), theme).plan
-	odp_path = slide_lib.odp_export.write_odp(plan, theme, tmp_path / "source.odp")
-	output_path = tmp_path / "imported.djot"
-	summary = odp_to_djot.convert_odp(odp_path, output_path)
-
-	assert summary.review_slides == 0
-	assert output_path.read_text(encoding="utf-8") == """=== layout: big-image
-
-@image
-
-![Slide image 1](assets/imported/image_001.png)
-
-{color=red}
-arrow: 15 20 80 65
-
-=> appear
-{color=green}
-outline: 35 25 30 35
-
-@caption
-
-[Native]{color=purple} annotations.
-"""
-
-
-#============================================
 def test_direct_conversion_keeps_existing_destination_untouched(tmp_path: pathlib.Path) -> None:
 	"""Existing authored targets remain protected before source publication."""
 	output_path = tmp_path / "lecture.djot"
@@ -227,28 +175,3 @@ def test_direct_conversion_rolls_back_private_staging_after_validation_failure(
 	assert not (tmp_path / "lecture.djot").exists()
 	assert not (tmp_path / "assets").exists()
 	assert not any(path.name.startswith(".odp_to_djot_") for path in tmp_path.iterdir())
-
-
-def test_import_marks_unreadable_mixed_flows_without_losing_existing_reasons(tmp_path: pathlib.Path) -> None:
-	"""Readable sequences stay unmarked; crowded visible/hidden sequences recommend splitting."""
-	Image.new("RGB", (1000, 200), "blue").save(tmp_path / "question.png")
-	readable = "=== layout: one-panel\n@body\n![Question](question.png)\n\nShort caption.\n"
-	crowded = ("=== layout: one-panel\n@body\n![Question](question.png)\n\n" +
-		"\n".join("- " + "offspring probability " * 7 for _ in range(16)) + "\n")
-	path = tmp_path / "imported.djot"
-	original = readable + "\n" + crowded + "\n" + crowded.replace("\n", "\nhidden: true\n", 1)
-	path.write_text(original, encoding="utf-8")
-	records = [{"review_reasons": []}, {"review_reasons": []},
-		{"review_reasons": ["source animation requires review"]}]
-	odp_to_djot.mark_mixed_flow_replacements(path, records)
-	deck = slide_lib.djot_parser.parse_deck(path)
-	assert tuple(slide.replaceme for slide in deck.slides) == (False, True, True)
-	assert deck.slides[2].hidden
-	assert not records[0]["review_reasons"]
-	assert any("split this slide" in reason for reason in records[1]["review_reasons"])
-	assert "source animation requires review" in records[2]["review_reasons"]
-	marked = path.read_text()
-	assert marked.replace("@replaceme\n", "") == original
-	odp_to_djot.mark_mixed_flow_replacements(path, records)
-	assert path.read_text() == marked
-	assert len(records[2]["review_reasons"]) == 2

@@ -594,19 +594,23 @@ the desktop GUI and does not require it to close. No AppleScript, private `UserI
 ### Explicit podcast announcement refresh
 
 **Decision.** `refresh_podcast.py` reads the public playlist Atom feed on demand, selects the
-newest publication date in its recent entries, and inserts or replaces one marked `big-image`
-slide after the selected deck's unique YouTube channel slide. Preview is the default; `--write`
-saves the editable caption and local thumbnail.
+newest eligible episode in its recent entries, and places an explicit
+`repo:shared/stump_the_vibe_coder/<YouTube ID>.djot` include after the selected deck's unique
+YouTube channel slide. Preview prints the selected shared and master references. With `--write`, it
+saves the thumbnail as `shared/assets/stump_the_vibe_coder/<YouTube ID>.webp`, creates the shared
+editable fragment only when absent, and then updates the selected masters.
 
-**Why.** One reusable command supports multiple lectures while keeping ordinary builds
-reproducible and old lectures tied to the episode originally selected.
+**Why.** One dated shared fragment supports multiple courses while keeping ordinary builds
+reproducible and historical lecture choices pinned.
 
 **Consequence.** No API credentials or build-time network lookup are needed. The feed is a
-recent-entry view, not a complete playlist history. The thumbnail path identifies the managed slide;
-missing or ambiguous anchors require a source edit. Full-size thumbnails fall back to standard
-thumbnails only when YouTube returns HTTP 404.
+recent-entry view, not a complete playlist history. Existing curated shared fragments remain intact;
+an old inlined managed slide can migrate to its shared include during refresh. Full-size thumbnails
+fall back to standard thumbnails only when YouTube returns HTTP 404. Episode 39 uses the destination
+explicitly labeled `Project:`, Red Dead Cell Counter.
 
-**Owner.** `refresh_podcast.py` and `docs/USAGE.md`.
+**Owner.** `slide_lib/refresh_podcast.py`, [../shared/README.md](../shared/README.md), and
+[USAGE.md](USAGE.md).
 
 ## Related decision records
 
@@ -713,15 +717,17 @@ advisory reporting only, not text, font selection, or rendering.
 
 ### Podcast slide identification
 
-**Decision.** Identify managed podcast slides by their existing thumbnail path under
-`assets/stump_the_vibe_coder/`; emit no administrative notes or comments in Djot.
+**Decision.** Identify managed podcast references by an explicit
+`repo:shared/stump_the_vibe_coder/<YouTube ID>.djot` include. Continue to recognize the legacy
+inlined thumbnail path under `assets/stump_the_vibe_coder/` so refresh can convert it. Emit no
+administrative notes or comments in Djot.
 
 **Why.** The instructor reserves `@speaker-notes` for presentation note cards used while lecturing.
 
-**Consequence.** Refresh replaces the previous episode using its asset path, including decks
-whose old metadata notes have been removed. Duplicate managed slides still stop refresh.
+**Consequence.** Refresh replaces the previous reference in a selected deck while retaining the
+shared fragment's curated content. Duplicate managed references still stop refresh.
 
-**Owner.** `launchers/refresh_podcast.py` and [USAGE.md](USAGE.md).
+**Owner.** `slide_lib/refresh_podcast.py` and [USAGE.md](USAGE.md).
 
 ### Announcement groups and visibility
 

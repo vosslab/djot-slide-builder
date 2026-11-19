@@ -1,0 +1,283 @@
+color-theme: biotechnology
+
+=== layout: title-slide
+
+# Lecture 12A
+
+## Announcements
+## Dr. Neil Voss
+## Nov 19, 2026
+
+=== layout: one-panel
+
+# Today's Agenda
+
+@body
+
+- _Announcements_
+- Choose Your Group Company Product
+- Group Project Guide
+- Set #7: Bioethics in Biotechnology
+
+=== layout: one-panel
+
+@body
+
+![Five Day Outlook](assets/weather_story/chicago_3fb1b56e3dd5e513438ebebf47b837b15cc54a4a8eed1c22fa3c17fbe4ffeca6.webp)
+
+Dry&#44; unseasonably warm and occasionally breezy conditions will continue into Saturday&#46; The next chance of showers then arrives later Saturday night into early Sunday afternoon with a cold front&#46; Seasonably cooler weather is then expected by early next week&#46;
+
+@citation
+
+NWS Chicago, retrieved Nov 18, 2026: https://www.weather.gov/lot/weatherstory
+
+=== layout: prompt
+
+# Breakout Room Chat
+
+@prompt
+
+What small decision would you refuse to let a robot make for you?
+
+@examples
+
+Introduce yourself and name one decision. Would you let a robot name your pet, pick your birthday cake, or answer texts from your family? Tell your group why you would keep that decision.
+
+=== layout: one-panel
+
+# Next Class: December 3
+
+@body
+
+- Nov 26: no class, Thanksgiving week.
+- Dec 3: Group Project Discussion and BioTech News Discussion #2.
+- Bring a recent biotechnology article with a clear biological mechanism.
+- Homework 7 is assigned Dec 3. Check Blackboard for the instructions and deadline.
+
+=== layout: big-image
+
+@image
+
+![Recording reminder](repo:evergreen/assets/rec_reminder_image.png)
+
+@caption
+
+Make Sure Dr. Voss Is Recording
+
+=== include: repo:evergreen/youtube_channel.djot
+
+=== include: repo:shared/stump_the_vibe_coder/Iyz6WX2r8Rg.djot
+
+=== include: repo:biotech/evergreen/course_information.djot
+
+=== include: repo:biotech/evergreen/zoom_guidance.djot
+
+=== layout: section
+
+# Course Content
+
+=== layout: one-panel
+
+# Important Course Links
+
+@body
+
+- Biotechnology syllabus
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/
+- Current course schedule
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
+- Projects and requirements
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
+- Points and assessment
+  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: two-panels
+
+# Optional Background Reading
+
+@left
+
+- There is no required textbook for this course.
+- Optional reference: _Biotechnology: The Technological Applications of Genetics and Genomics_, third edition.
+- For Set #7, use the assigned topic list and appropriate outside sources.
+
+@right
+
+![Biotechnology, third edition textbook cover](repo:biotech/evergreen/assets/biotechnology_textbook_cover.jpg)
+
+@citation
+
+https://d16jkos453if22.cloudfront.net/9780443184840.jpg
+
+=== layout: subsection
+
+# Grading and Assessment
+
+=== layout: one-panel
+
+# Course Point Plan
+
+@body
+
+| Component | Points |
+| --- | --- |
+| Individual company project | 88 |
+| Group company project | 91 |
+| Talking-point assignments | 72 |
+
+Blackboard is the authoritative record for your scores.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+
+=== layout: one-panel
+
+# The Project Transition
+
+@body
+
+- Your individual projects are complete.
+- Now use the pitches, feedback, and executive summaries to choose a shared company.
+- *Nov 12:* groups formed.
+- [*Tonight, Nov 19: Company Vision Report (Form) due.*]{color=red} Submit once per group on Blackboard.
+- *Dec 10:* group presentations.
+- *Dec 17:* group business plan due.
+
+=== layout: one-panel
+
+# This Week's Work
+
+@body
+
+- Set #7: Bioethics in Biotechnology.
+- Choose one product and submit the Company Vision Report (Form) tonight.
+- Homework 6 is assigned. Check Blackboard for instructions and the deadline.
+- Use the break to develop your product's science, competition, and milestones.
+
+=== layout: two-panels
+
+# Talking Points Guide
+
+@left
+
+- Edit and update your slide
+- Add several pictures and some text
+- It is best to have as few words as possible on your slide -- you do the talking not your slide
+- Be prepared to give a *60 second presentation* about each of your assigned talking point
+
+@right
+
+- define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+- Try to be unique
+- Don't just copy the book, use the internet for research.
+- Provide your own perspective
+
+=== layout: one-panel
+
+# Talking Points Guide
+
+@body
+
+- Please put into your own words
+- It is okay if you read your notes, but put notes in your own words
+- No direct quoting of an article, wikipedia or the textbook
+- Minimize jargon
+- Show ENTHUSIASM when you talk and make it exciting!
+
+=== layout: big-image
+hidden: true
+
+@image
+
+![Paste current talking marks here](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/talking_marks_paste_here.png)
+
+@caption
+
+Talking Marks
+
+@speaker-notes
+
+Review the current talking-point presentation marks with the class.
+
+=== layout: one-panel
+hidden: true
+
+# Student Profile and Discord Signup
+
+@body
+
+- These assignments were due September 21 and are complete.
+- Keep using Discord for course communication.
+
+=== layout: one-panel
+
+# BioTech News: December 3
+
+@body
+
+- Our next BioTech News discussion is December 3.
+- Choose a biotechnology article from the past two years with a clear biological mechanism.
+- Use the assigned slide and put the article link in the speaker notes.
+- Explain the product or process in one minute.
+
+=== layout: section
+
+# General Announcements
+
+=== include: repo:evergreen/spring_registration.djot
+
+=== include: repo:evergreen/natural_science_club.djot
+hidden: true
+
+=== layout: subsection
+hidden: true
+
+# Course Evaluations
+
+=== layout: one-panel
+hidden: true
+
+# Course Evaluations
+
+@body
+
+- Complete the survey when the university sends the invitation.
+- https://roosevelt.campuslabs.com/eval-home/
+- Watch for the actual evaluation window and deadline.
+
+=== layout: one-panel
+hidden: true
+
+# Evaluations and Business-Plan Submission
+
+@body
+
+- I link class evaluation completion to extra time for business-plan submission.
+- Evaluation completion can add up to five more days.
+- I can see only total completion, not individual students' responses.
+- Watch for the confirmed evaluation window and any announced adjusted deadline.
+
+=== layout: subsection
+
+# Veridian Dynamics
+
+=== layout: two-panels
+
+# Veridian Dynamics
+
+@left
+
+![Veridian Dynamics](repo:biotech/LECT07/djot/assets/lect05a-2026_biotech_announcements/image_010.png)
+
+@right
+
+## #11: Good / Bad
+
+[*Veridian Dynamics. Good.*]{color=red}
+
+"Digivation. Bad."
+
+=== layout: theend
+
+# THE END

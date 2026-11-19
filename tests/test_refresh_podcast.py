@@ -3,7 +3,9 @@
 import datetime
 import io
 import pathlib
+import sys
 
+import PIL.Image
 import pytest
 
 import slide_lib.refresh_podcast as refresh_podcast
@@ -59,46 +61,15 @@ def test_historical_selection_excludes_future_and_requires_feed_coverage() -> No
 		refresh_podcast.latest_episode(feed, datetime.date(2026, 9, 1))
 
 
-def test_refresh_is_repeatable_and_keeps_other_slides(tmp_path: pathlib.Path) -> None:
-	"""Refreshing twice leaves one managed slide and retains hidden source slides."""
-	source = ("=== layout: title-slide\n\n# Lecture\n\n## Announcements\n"
-		"## Dr. Neil Voss\n## Sept 15, 2026\n\n"
-		"=== layout: one-panel\n\n# YouTube\n\n@body\n\nChannel.\n\n"
-		"=== layout: one-panel\nhidden: true\n\n# Later\n\n@body\n\nUnchanged.\n"
-		"@speaker-notes\nRemind them about YouTube.\n")
-	episode = {
-		"id": "aaaaaaaaaaa",
-		"title": "StVC 36: Bad Cell Day \u2014 Two Drugs, One Keyboard | "
-			"Stump the Vibe Coder Episode 36",
-		"published": "2026-09-10T15:00:00Z", "project_url": "https://vosslab.github.io/game/"}
-	updated = refresh_podcast.update_source(source, episode)
-	assert refresh_podcast.lecture_date(source) == datetime.date(2026, 9, 15)
-	assert refresh_podcast.update_source(updated, episode) == updated
-	assert updated.count(refresh_podcast.PODCAST_ASSET_PATH) == 1
-	next_episode = dict(episode, id="bbbbbbbbbbb")
-	refreshed = refresh_podcast.update_source(updated, next_episode)
-	assert refreshed.count(refresh_podcast.PODCAST_ASSET_PATH) == 1
-	assert episode["id"] not in refreshed
-	assert next_episode["id"] in refreshed
-	assert updated.count("\n@speaker-notes\n") == 1
-	assert episode["published"] not in updated
-	assert "@citation" not in updated
-	assert "Watch the Video: [https://www.youtube.com/watch" in updated
-	assert "@caption\n\nStump the Vibe Coder &#35;36&#58; Bad Cell Day &#8212;" in updated
-	assert "https://www.youtube.com/watch?v=aaaaaaaaaaa)\\\nPlay the Game: https://vosslab.github.io/game/" in updated
-	assert updated.endswith(source[source.index("=== layout: one-panel\nhidden:"):])
-	announcement = tmp_path / "lect03a-2026_announcements.djot"
-	announcement.write_text(source)
-	(tmp_path / "lect01a-course_intro.djot").write_text(source)
-	assert refresh_podcast.announcement_paths([str(tmp_path)]) == [announcement.resolve()]
-
-
 def test_project_link_uses_pages_and_never_substitutes_a_repository() -> None:
 	"""Students need the runnable site; missing or ambiguous destinations need correction."""
 	description = "Project: https://vosslab.github.io/game/\nRepo: https://github.com/vosslab/game"
 	assert refresh_podcast.project_url(description) == "https://vosslab.github.io/game/"
+	side_game = "\nTry this game too: https://vosslab.github.io/another/"
+	assert refresh_podcast.project_url(description + side_game) == "https://vosslab.github.io/game/"
 	for invalid in ("https://github.com/vosslab/game", "",
-		description + "\nhttps://vosslab.github.io/another/"):
+		description + "\nProject: https://vosslab.github.io/another/",
+		description.replace("Project: ", "") + side_game):
 		with pytest.raises(ValueError, match="GitHub Pages"):
 			refresh_podcast.project_url(invalid)
 
@@ -116,3 +87,46 @@ def test_refresh_preserves_evergreen_includes() -> None:
 	assert updated.index("youtube_channel.djot") < updated.index(episode["id"])
 	assert updated.index(episode["id"]) < updated.index("course_information.djot")
 	assert updated.endswith("exam_guidance.djot\nhidden: true\n")
+
+
+def test_refresh_writes_one_shared_episode_for_two_courses(
+		tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch) -> None:
+	"""A legacy inline slide and a fresh deck resolve to the same saved episode."""
+	(tmp_path / "deck_tools.py").touch()
+	(tmp_path / "slide_lib").mkdir()
+	video_id = "aaaaaaaaaaa"
+	feed = b'''<feed xmlns="http://www.w3.org/2005/Atom"
+		xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+		xmlns:media="http://search.yahoo.com/mrss/">
+		<entry><yt:videoId>aaaaaaaaaaa</yt:videoId><title>StVC 36: Bad Cell Day</title>
+		<media:group><media:description>Project: https://vosslab.github.io/game/</media:description></media:group>
+		<published>2026-09-10T15:00:00+00:00</published></entry></feed>'''
+	jpeg = io.BytesIO()
+	PIL.Image.new("RGB", (32, 18), "red").save(jpeg, format="JPEG")
+	monkeypatch.setattr(refresh_podcast, "download",
+		lambda url, _limit: feed if url == refresh_podcast.FEED_URL else jpeg.getvalue())
+	shared_channel = "=== include: repo:evergreen/youtube_channel.djot\n\n"
+	legacy = "=== layout: big-image\n@image\n![Old](assets/stump_the_vibe_coder/old.jpg)\n\n"
+	decks = []
+	for course, source in (("genetics", shared_channel + legacy), ("biotech", shared_channel)):
+		path = tmp_path / course / "lect01a-announcements.djot"
+		path.parent.mkdir()
+		path.write_text(source)
+		decks.append(str(path))
+	argv = ["refresh_podcast", *decks]
+	monkeypatch.setattr(sys, "argv", argv)
+	refresh_podcast.main()
+	assert not (tmp_path / "shared").exists()
+	monkeypatch.setattr(sys, "argv", [*argv, "--write"])
+	refresh_podcast.main()
+	shared = tmp_path / refresh_podcast.PODCAST_SLIDE_PATH / f"{video_id}.djot"
+	image = tmp_path / "shared" / refresh_podcast.PODCAST_ASSET_PATH / f"{video_id}.webp"
+	expected = f"{shared_channel}{refresh_podcast.PODCAST_INCLUDE}{video_id}.djot\n\n"
+	assert all(pathlib.Path(path).read_text() == expected for path in decks)
+	assert f"repo:shared/{refresh_podcast.PODCAST_ASSET_PATH}{video_id}.webp" in shared.read_text()
+	with PIL.Image.open(image) as saved:
+		assert saved.format == "WEBP"
+	curated = shared.read_text().replace("Play the Game:", "Try the Tool:")
+	shared.write_text(curated)
+	refresh_podcast.main()
+	assert shared.read_text() == curated

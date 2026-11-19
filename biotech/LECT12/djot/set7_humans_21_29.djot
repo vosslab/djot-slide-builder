@@ -1,0 +1,375 @@
+=== layout: section
+
+# Humans and BioTech
+
+=== layout: subsection
+
+# 21. Assisted Reproductive Technology (ART)
+
+=== layout: bookend
+
+# 21. Questions
+
+@body
+
+- Historical perspective: Who was the first "test tube baby"? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio?
+- Impact of IVF: How common is in vitro fertilization (IVF) today? How has IVF changed over the years?
+- IVF Alternatives: Why is intrauterine insemination (IUI) often used over IVF?  What are some other modern forms of assisted reproductive technology (ART) and how do they compare?
+- Modern Innovations: How can a baby have three (3) parents using MRT? What are the controversies around preimplantation genetic diagnosis? Can you choose the color of your babies eyes?
+- Freezing Eggs: What are the main reasons individuals choose to freeze their eggs? Does oocyte cryopreservation work?
+
+=== layout: one-panel
+
+# 21. Follow the Egg, Sperm, and Embryo
+
+@body
+
+- In IVF, fertilization takes place outside the body. An embryo may later be transferred into a uterus.
+- In IUI, sperm are placed in the uterus. Fertilization, if it occurs, takes place inside the body.
+- Louise Brown, the first child born through IVF, was born in England in 1978.
+
+=== layout: one-panel
+
+# 21. Doris Del-Zio and a Disputed Experiment
+
+@body
+
+- Doris and John Del-Zio attempted IVF in the United States in 1973.
+- A physician at the hospital stopped the experiment by removing the culture from the incubator.
+- The case asks how experimental oversight and the wishes of the patient should interact.
+
+@citation
+
+PBS American Experience, Test Tube Babies: https://www.pbs.org/wgbh/americanexperience/films/babies/
+
+=== layout: one-panel
+
+# 21. Who Contributes to an IVF Pregnancy?
+
+@body
+
+- An egg donor and sperm donor contribute genetic material.
+- A gestational carrier can carry an embryo formed using an egg from another person.
+- Distinguish genetic contribution, pregnancy, and the role of raising a child.
+
+=== layout: subsection
+
+# 22. Prenatal Testing
+
+=== layout: bookend
+
+# 22. Questions
+
+@body
+
+- What is prenatal genetic screening?
+- What does a positive screening result mean?
+- How can a rare condition affect the chance that a positive result is correct?
+
+=== layout: one-panel
+
+# 22. Screening Estimates Risk
+
+@body
+
+- Cell-free DNA screening uses fragments in a pregnant patient's blood. The pregnancy-related fraction comes mainly from the placenta.
+- A positive screen means the chance is higher. Diagnostic testing can address whether the condition is present.
+- The chance a positive result is correct depends partly on how common the condition is.
+
+@citation
+
+FDA, Genetic Non-Invasive Prenatal Screening Tests May Have False Results: https://www.fda.gov/media/158169/download
+
+=== layout: one-panel
+
+# 22. Work the Numbers Before Interpreting the Result
+
+@body
+
+A hypothetical screen flags 20 of 1,000 pregnancies.
+
+| Result | Condition present | Condition absent |
+| --- | --- | --- |
+| Positive screen | 10 | 10 |
+| Negative screen | 0 | 980 |
+
+*10 of 20 positive results are correct in this example.*
+
+=== layout: subsection
+
+# 23. He Jiankui and Genome Editing in Humans
+
+=== layout: bookend
+
+# 23. Questions
+
+@body
+
+- What ethical concerns arise from the potential use of CRISPR to create designer babies?
+- What are the ethical implications of making heritable changes to the human genome?
+
+=== layout: one-panel
+
+# 23. The 2018 Announcement
+
+@body
+
+- He Jiankui announced the birth of children from embryos whose genomes had been edited.
+- The intended goal was to reduce susceptibility to HIV. The intervention raised questions about medical need, consent, and safety.
+- A heritable edit can affect future generations.
+
+@citation
+
+WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/item/9789240030381
+
+=== layout: one-panel
+
+# 23. Who Can Consent to a Heritable Change?
+
+@body
+
+- An adult can consent to a treatment of their own cells.
+- Embryo editing can expose the future child and later generations to uncertainty.
+- Ask what alternatives existed and who had the authority to approve the work.
+
+=== layout: subsection
+
+# 24. Directed Human Evolution (GATTACA)
+
+=== layout: bookend
+
+# 24. Questions
+
+@body
+
+- What is the difference between therapeutic editing and enhancement editing in human embryos?
+- How does preimplantation genetic testing already guide reproductive decisions today?
+- What traits might parents choose if trait selection became routine?
+- What social risks arise if genetic enhancement becomes available only to wealthy families?
+- How might directed evolution alter concepts of fairness, diversity, and disability?
+
+=== layout: one-panel
+
+# 24. Selection, Treatment, and Enhancement
+
+@body
+
+- Preimplantation genetic testing can inform a choice among embryos. Editing changes DNA.
+- Treating a serious disease and choosing a preferred trait raise different questions.
+- Many traits reflect many genetic variants plus the environment.
+
+=== layout: one-panel
+
+# 24. GATTACA and a Prediction Used as a Rule
+
+@body
+
+- In the film, genetic predictions affect a person's opportunities.
+- A prediction is a probability. Its accuracy may vary across populations.
+- Who would be disadvantaged if employers treated probabilities as certainties?
+
+=== layout: subsection
+
+# 25. Synthetic Wombs and Ectogenesis
+
+=== layout: bookend
+
+# 25. Questions
+
+@body
+
+- What recent experiments with artificial wombs in animals demonstrate the possibility of human ectogenesis?
+- How might synthetic wombs change reproductive medicine, prematurity care, or fertility options?
+- Which parts of fetal development are easiest or hardest to support outside the body?
+- How might ectogenesis shift parental roles, legal definitions of pregnancy, or reproductive rights?
+- What long term medical and psychological questions remain unanswered for babies born through ectogenesis?
+- How would society respond if ectogenesis became safer than traditional pregnancy?
+
+=== layout: one-panel
+
+# 25. Support During Part of Development
+
+@body
+
+- In a 2017 study, a fluid-filled system supported development of extremely premature lambs for several weeks.
+- The system modeled aspects of the womb during part of gestation.
+- Support for premature development and an entire pregnancy outside the body are separate claims.
+
+@citation
+
+Partridge et al. (2017), premature lambs: https://doi.org/10.1038/ncomms15112
+
+=== layout: one-panel
+
+# 25. What Would a Human Study Need to Establish?
+
+@body
+
+- Compare survival and long-term development with existing neonatal care.
+- Ask how parents could make a decision under stress and uncertainty.
+- Decide which harms would prompt researchers to stop a study.
+
+=== layout: subsection
+
+# 26. Ethical Sourcing of Biological Materials
+
+=== layout: bookend
+
+# 26. Questions
+
+@body
+
+- How important is informed consent in the collection of human tissues for research? Can you provide an example where consent was not properly obtained?
+- Who was Henrietta Lacks, and why is her story significant in the context of ethical sourcing of biological materials?
+- What is biopiracy? How does biopiracy using patents affect the livelihoods and cultural heritage of indigenous and local communities? Can you analyze a well-known case of biopiracy, discussing both the biological material involved and the community affected? What ethical guidelines should biotechnology companies follow to avoid biopiracy?
+
+=== layout: one-panel
+
+# 26. HeLa and Consent
+
+@body
+
+- Cells taken during Henrietta Lacks's cancer care became a widely used research cell line.
+- She did not give permission for the research use of those cells.
+- Her case connects consent, privacy, and who benefits from research.
+
+@citation
+
+NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
+
+=== layout: one-panel
+
+# 26. Who Supplied the Material and the Knowledge?
+
+@body
+
+- A resource may come from a community that has maintained it or shared knowledge about it.
+- Biopiracy concerns include taking that resource or knowledge without permission or fair benefit sharing.
+- Ask who can give permission and what the agreement should cover.
+
+=== layout: one-panel
+
+# 26. Neem Oil and Prior Knowledge
+
+@body
+
+- A European patent claimed a way to control plant fungi using neem oil.
+- The European Patent Office considered prior knowledge and upheld the revocation.
+- A patent decision addresses specific claims. Fair credit and benefit sharing are additional ethical questions.
+
+@citation
+
+[European Patent Office, decision T 0416/01](https://www.epo.org/en/boards-of-appeal/decisions/t010416eu1)
+
+=== layout: subsection
+
+# 27. Embryonic Stem Cells
+
+=== layout: bookend
+
+# 27. Questions
+
+@body
+
+- Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is "stimulus-triggered acquisition of pluripotency" or STAP even possible today?
+
+=== layout: one-panel
+
+# 27. Different Sources of Pluripotent Cells
+
+@body
+
+- Embryonic stem cells come from early embryos and can form many cell types.
+- Induced pluripotent stem cells are produced by reprogramming already specialized cells.
+- Both are research tools. A useful cell in culture is an early step toward a possible treatment.
+
+=== layout: one-panel
+
+# 27. A Claim About Stemness Can Be Tested
+
+@body
+
+- The STAP reports claimed that stress could turn specialized cells into pluripotent cells.
+- The reports were retracted after serious problems with the work.
+- A claim about cell identity needs convincing markers, functional evidence, and independent replication.
+
+@citation
+
+Nature, retraction of the STAP report (2014): https://doi.org/10.1038/nature13598
+
+=== layout: big-image
+
+@image
+
+![Haruko Obokata and the STAP Claims](assets/set7_instructor/haruko_obokata.jpg)
+
+@caption
+
+Topic 27: Haruko Obokata and the STAP Claims\
+The retracted reports make this a case about reproducibility as well as cell identity.
+
+=== layout: subsection
+
+# 28. Biohackers and Josiah Zayner
+
+=== layout: bookend
+
+# 28. Questions
+
+@body
+
+- What are the potential benefits of citizen science in biology?
+- What are the risks when a public demonstration involves genetic self-experimentation?
+
+=== layout: one-panel
+
+# 28. Citizen Science and Self-experimentation
+
+@body
+
+- Community labs can make biology education and shared equipment more accessible.
+- Josiah Zayner used a public self-experiment to argue for individual autonomy.
+- A demonstration can show that someone tried something. It cannot establish a reliable clinical result.
+
+=== layout: one-panel
+
+# 28. Who Else Can Be Affected?
+
+@body
+
+- A public demonstration can encourage imitation.
+- Ask how bystanders, volunteers, or future patients might be affected.
+- Compare a supervised education project with an untested intervention in a person.
+
+=== layout: subsection
+
+# 29. Aaron Traywick and Rogue Biohackers
+
+=== layout: bookend
+
+# 29. Questions
+
+@body
+
+- What ethical problems arise when experiments occur without approval or medical supervision?
+- How did Traywick differ from responsible community biology groups?
+
+=== layout: one-panel
+
+# 29. A Demonstration Is Weak Evidence
+
+@body
+
+- Aaron Traywick promoted experimental treatments outside normal clinical oversight.
+- An uncontrolled demonstration cannot show whether an intervention works or whether harms are common.
+- A credible study defines outcomes, monitors harms, and states what would stop the study.
+
+=== layout: one-panel
+
+# 29. Consent Under Uncertainty
+
+@body
+
+- A volunteer needs to understand the evidence, risks, and alternatives.
+- Publicity and promises of a cure can put pressure on the decision.
+- What would independent review add?

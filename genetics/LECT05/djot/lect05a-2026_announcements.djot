@@ -48,17 +48,7 @@ Watch Dr. Voss's videos for help with difficult problems.
 
 https://www.youtube.com/c/NeilVossLab/videos
 
-=== layout: big-image
-
-@image
-
-![StVC 34&#58; Nobel Combat &#8212; Great Song&#44; Questionable Fighting &#124; Stump the Vibe Coder Episode 34](assets/stump_the_vibe_coder/_9HjPmVv_MU.jpg)
-
-@caption
-
-Stump the Vibe Coder &#35;34&#58; Nobel Combat &#8212; Great Song&#44; Questionable Fighting\
-Watch the Video: [https://www.youtube.com/watch?v=&#95;9HjPmVv&#95;MU](https://www.youtube.com/watch?v=_9HjPmVv_MU)\
-Play the Game: https://vosslab.github.io/nobel-combat/
+=== include: repo:shared/stump_the_vibe_coder/_9HjPmVv_MU.djot
 
 === layout: one-plus-two-panels
 

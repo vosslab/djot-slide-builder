@@ -1,0 +1,423 @@
+=== layout: section
+
+# Animal BioTech
+
+=== layout: subsection
+
+# 12. Artificial Life
+
+=== layout: bookend
+
+# 12. Questions
+
+@body
+
+- What makes a system qualify as artificial life?
+- How do artificial life simulations help scientists study evolution, complexity, and self-organization?
+
+=== layout: one-panel
+
+# 12. Test a Definition of Life
+
+@body
+
+- A computer model can represent variation, inheritance, and selection.
+- A model produces outcomes from rules chosen by its designers.
+- A biological cell also carries out physical and chemical processes such as metabolism.
+
+=== layout: one-panel
+
+# 12. Which Evidence Would Change Your Answer?
+
+@body
+
+- Imagine a digital population that evolves new behaviors.
+- Now imagine a membrane compartment that maintains chemical reactions.
+- Which properties matter more for your definition: reproduction, metabolism, or independence?
+
+=== layout: one-panel
+
+# 12. Xenobots and the Definition of Artificial Life
+
+@body
+
+- A research team used living frog cells to make small structures that moved in a dish.
+- This case belongs between a computer simulation and an ordinary animal.
+- Which properties come from the cells already being alive?
+
+@citation
+
+[Wyss Institute, Xenobots](https://wyss.harvard.edu/news/team-builds-first-living-robots-that-can-reproduce/)
+
+=== layout: subsection
+
+# 13. Xenobiology and Non-DNA Life
+
+=== layout: bookend
+
+# 13. Questions
+
+@body
+
+- How do alternative information molecules challenge our definition of a gene?
+- Could xenobiology help answer questions about possible alien life?
+
+=== layout: one-panel
+
+# 13. An Information Molecule Is a Physical Object
+
+@body
+
+- On Earth, DNA and RNA carry genetic information in chains of nucleotides.
+- Xeno nucleic acids are synthetic analogues that change some of that chemistry.
+- Storing information is one property. A living system also needs to read, copy, and act on information.
+
+=== layout: one-panel
+
+# 13. Where Does the Claim Stop?
+
+@body
+
+- Evidence that a molecule carries a sequence establishes a molecular property.
+- A claim about an independently living organism would require organism-level evidence.
+- What observation would distinguish those two claims?
+
+=== layout: subsection
+
+# 14. Xenobiology and Non-Organic Life
+
+=== layout: bookend
+
+# 14. Questions
+
+@body
+
+- What makes carbon based life so successful on Earth?
+- What would be the challenges of identifying alien life if its chemistry does not match known Earth molecules?
+
+=== layout: one-panel
+
+# 14. Backbone and Solvent Are Different Roles
+
+@body
+
+- Carbon forms varied, stable structures under conditions found on Earth.
+- Water provides a medium for chemical reactions in Earth life.
+- Titan's methane and ethane lakes motivate questions about alternative solvents. Other biochemistries remain hypotheses.
+
+@citation
+
+NASA, Titan: https://science.nasa.gov/saturn/moons/titan/
+
+=== layout: one-panel
+
+# 14. A Signal Can Have More Than One Source
+
+@body
+
+- Suppose an extraterrestrial sample contains unexpected molecules.
+- Ask whether known geology, atmospheric chemistry, or contamination can explain them.
+- Look for independent evidence before calling the signal a sign of life.
+
+=== layout: subsection
+
+# 15. Cloning Animals
+
+=== layout: bookend
+
+# 15. Questions
+
+@body
+
+- How does the process of animal cloning technically work?
+- What are the success rates and potential risks associated with animal cloning?
+- What services are available for cloning animals? Should people be allowed to clone their pets? How about cloning a race horse? Cloning a dead relative? Who is Hwang Woo-suk and what happened in his lab? Are we able to modify clones, such as change their eye color or sex?
+
+=== layout: one-panel
+
+# 15. Dolly and the Donor Nucleus
+
+@body
+
+- Dolly was produced by moving a body-cell nucleus into an egg whose nucleus had been removed.
+- The egg directed development from the donor's nuclear DNA.
+- The egg contributes mitochondria. Development and environment still affect the animal.
+
+@citation
+
+Wilmut et al. (1997), Dolly and nuclear transfer: https://doi.org/10.1038/385810a0
+
+=== layout: one-panel
+
+# 15. A Clone of Your Dog
+
+@body
+
+- The clone starts with similar nuclear DNA. Its experiences and behavior can differ.
+- Evaluate animal welfare across egg donors, pregnancies, and offspring.
+- What would a company need to disclose before taking a customer's money?
+
+=== layout: big-image
+
+@image
+
+![Nuclear Transfer in Animal Cloning](assets/set7_instructor/animal_cloning.jpg)
+
+@caption
+
+Topic 15: Nuclear Transfer in Animal Cloning\
+Trace the donor nucleus, egg, embryo, and surrogate in the pig-cloning diagram.
+
+=== layout: subsection
+
+# 16. Animal De-Extinction
+
+=== layout: bookend
+
+# 16. Questions
+
+@body
+
+- What specific technologies are used in the de-extinction of animals? How does the process work?
+- Can you discuss a successful case study in animal de-extinction?
+- What are the limitations of current technology in reviving extinct species? What is the half-life of DNA? Which animals are we able to bring back? dinosaurs? mammoths? do-do birds? plants species?
+- How could de-extinction impact biodiversity conservation efforts?
+
+=== layout: one-panel
+
+# 16. The DNA and Habitat Problems
+
+@body
+
+- Ancient DNA breaks into fragments. The environment affects how long those fragments survive.
+- A proxy made using a living relative can share selected traits with an extinct species.
+- The habitat, other species, and learned behavior may also have changed.
+
+@citation
+
+Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/19167744/
+
+=== layout: one-panel
+
+# 16. What Counts as Success?
+
+@body
+
+- For a mammoth-like proxy, choose a measure: appearance, cold tolerance, or a role in the ecosystem.
+- Compare the cost and welfare concerns with conservation of living species.
+- Would the project still count as a success if the animal could only live in captivity?
+
+=== layout: one-panel
+
+# 16. The Pyrenean Ibex
+
+@body
+
+- A cloned Pyrenean ibex was born alive and died soon after birth.
+- A live birth and a healthy population are very different endpoints.
+- For a mammoth proxy, habitat and welfare would also enter the decision.
+
+=== layout: subsection
+
+# 17. Animal Chimeras
+
+=== layout: bookend
+
+# 17. Questions
+
+@body
+
+- What is an animal chimera, and how does it differ from a hybrid created by crossing two species?
+- What methods are used to create chimeras between different animals, and what scientific goals do these studies support?
+- Which real examples of animal chimeras have been made in research, and what traits did they show?
+- What ethical concerns arise when mixing tissues or organs from two different animal species?
+- How might chimeras be used in agriculture, conservation, or disease research, and what limits should be set on these uses?
+
+=== layout: one-panel
+
+# 17. Separate Cell Populations or One Cross?
+
+@body
+
+| Term | Where did the different DNA come from? |
+| --- | --- |
+| Chimera | The cells came from different individuals. |
+| Hybrid | DNA came from both parents at fertilization. |
+| Mosaic | A genetic change arose in some cells of one individual. |
+
+=== layout: one-panel
+
+# 17. Where Do the Cells Contribute?
+
+@body
+
+- Researchers may track donor cells to understand development or model disease.
+- The ethical questions change with the tissue involved, the proportion of donor cells, and effects on the animal.
+- An oversight committee can ask how the investigators will determine where donor cells went.
+
+=== layout: subsection
+
+# 18. Genetic Redesign of Animals
+
+=== layout: bookend
+
+# 18. Questions
+
+@body
+
+- How do natural hybrids like mules differ from genetically engineered hybrids created through modern biotechnology?
+- Would people accept an engineered hybrid made only for food production, such as a chicken with extra legs? What arguments support or challenge this idea?
+- How do scientists decide what level of body modification is biologically possible in livestock?
+- How do regulations differ for animals modified for food, for pets, and for research use?
+- How about a chickapede: a chicken with 10 legs? That way more people can eat more chicken legs, but only kill one organism.
+
+=== layout: one-panel
+
+# 18. A Real Trait and a Thought Experiment
+
+@body
+
+- A mule is produced by crossing a horse and a donkey.
+- AquaAdvantage salmon was developed for a growth trait.
+- The ten-legged chickapede is a thought experiment about changing a body plan.
+
+=== layout: one-panel
+
+# 18. What Does the Chickapede Trade Off?
+
+@body
+
+- More drumsticks is one proposed benefit.
+- Ask whether the animal can walk, feed, and behave normally.
+- Which evidence would you want before deciding whether this is acceptable?
+
+=== layout: big-image
+
+@image
+
+![A Mule Is a Hybrid](assets/set7_instructor/mule_hybrid.jpg)
+
+@caption
+
+Topic 18: A Mule Is a Hybrid\
+A mule inherits nuclear DNA from a horse and a donkey through a cross.
+
+=== layout: big-image
+
+@image
+
+![The Chickapede](assets/set7_instructor/chickapede.jpg)
+
+@caption
+
+Topic 18: The Chickapede\
+An illustration for the thought experiment. What could extra legs cost the animal?
+
+=== layout: subsection
+
+# 19. Consumer-Oriented or Trivial Transgenics
+
+=== layout: bookend
+
+# 19. Questions
+
+@body
+
+- What are examples of genetically modified animals created mainly for appearance, decoration, or entertainment, such as GloFish?
+- How do regulatory agencies decide whether a "trivial" transgenic organism is safe to sell or display?
+- What artistic projects have used transgenic animals, and how were these projects received by the public?
+- Do designer organisms blur the boundary between art and biotechnology, and should there be limits on how far this can go?
+- Should genetic modification be restricted to health, agriculture, and research, or can nonessential uses be acceptable in society?
+- How might future consumer trends push companies to design even more unusual transgenic pets?
+
+=== layout: one-panel
+
+# 19. GloFish and a Visible Trait
+
+@body
+
+- Fluorescent proteins absorb light and emit light at a different wavelength.
+- GloFish use an engineered fluorescent trait for appearance.
+- The scientific mechanism can be similar to a lab marker even when the product has a different purpose.
+
+=== layout: one-panel
+
+# 19. Would the Purpose Change Your Decision?
+
+@body
+
+- Compare a fluorescent pet with a fluorescent laboratory animal.
+- For each one, name the benefit, who receives it, and the welfare or environmental concern.
+- Would your decision change if the fish could persist after escape?
+
+=== layout: one-panel
+
+# 19. Alba and the Purpose of Bioart
+
+@body
+
+- Eduardo Kac presented a fluorescent rabbit named Alba as part of a work of art.
+- Compare the artist's purpose with the purpose of a fluorescent marker in research.
+- What responsibilities does an artist have when the work involves a living animal?
+
+@citation
+
+[Eduardo Kac, GFP Bunny project](https://ekac.org/gfpbunny_essay.html)
+
+=== layout: big-image
+
+@image
+
+![Advertising a Fluorescent Trait](assets/set7_instructor/glofish_ad.jpg)
+
+@caption
+
+Topic 19: Advertising a Fluorescent Trait\
+The GloFish advertisement sells a visible characteristic. What claims can the ad establish?
+
+=== layout: subsection
+
+# 20. Kevin Esvelt and Lyme Disease
+
+=== layout: bookend
+
+# 20. Questions
+
+@body
+
+- How has Esvelt engaged the Nantucket and Martha's Vineyard communities in the decision-making process?
+- What evidence would support a reduction in Lyme disease risk?
+
+=== layout: one-panel
+
+# 20. Mice, Ticks, and People
+
+@body
+
+- White-footed mice can serve as reservoirs for bacteria that cause Lyme disease.
+- Ticks can acquire the bacteria when feeding and later transmit them to people.
+- The Mice Against Ticks proposal focused on interrupting transmission and sought community input before an outdoor trial.
+
+@citation
+
+[MIT Media Lab, Mice Against Ticks](https://www.media.mit.edu/projects/preventing-tick-borne-disease-by-permanently-immunizing-mice/updates/)
+
+=== layout: one-panel
+
+# 20. What Would Demonstrate a Benefit?
+
+@body
+
+- Count infected ticks as an intermediate measure. A change in human infections is a different outcome.
+- Ask about comparison sites and other changes over time.
+- Local residents should have a say in whether research proceeds in their community.
+
+=== layout: one-panel
+
+# 20. Separate the Proposal from a General Gene-drive Debate
+
+@body
+
+- People in Nantucket and Martha's Vineyard discussed whether a local intervention was acceptable.
+- The Mice Against Ticks proposal and proposals for self-spreading interventions raise distinct oversight questions.
+- Keep community consent, research results, and proof of public-health benefit separate.

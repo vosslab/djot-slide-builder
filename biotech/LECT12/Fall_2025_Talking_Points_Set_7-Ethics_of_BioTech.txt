@@ -4,7 +4,7 @@ Nov 20, 2025
 
 DO NOT CHANGE
 THE THEME!!!
-We are using the “Tropic” theme and that is it.
+We are using the &#8220;Tropic&#8221; theme and that is it.
 
 Talking Points Guide
 
@@ -17,7 +17,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week&#8217;s class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -27,13 +27,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else&#8217;s talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller &#8211; limit the amount of text &#8211; you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -41,8 +41,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide&#8217;s look and content.
+Don&#8217;t just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -183,27 +183,27 @@ Research choice
 Using of animals or use alternative models
 
 Ethics and Morals  
-– Tania Ortega
-Ethics → Professional standards, codes, regulations
-Morals → Personal belief, cultural values
-Conflict Ex→ Genetic editing→ Beliefs
-Eugenic→Bioethics
-Tuskegee Study→ informed consent
-CRISPR→debates
+&#8211; Tania Ortega
+Ethics &#8594; Professional standards, codes, regulations
+Morals &#8594; Personal belief, cultural values
+Conflict Ex&#8594; Genetic editing&#8594; Beliefs
+Eugenic&#8594;Bioethics
+Tuskegee Study&#8594; informed consent
+CRISPR&#8594;debates
 Differ/Compare
-Doctors – “Do not harm”
+Doctors &#8211; &#8220;Do not harm&#8221;
 Lawyers - Justice, Confidentiality
-Biotech – Innovation vs. safety
+Biotech &#8211; Innovation vs. safety
 ROLES
-IRB IACUC – oversight, risk assessment
-Balance – progress vs. protection
+IRB IACUC &#8211; oversight, risk assessment
+Balance &#8211; progress vs. protection
 Personal Morals
 Project selection
 Data Transparency
 Animal testing stance
 
 #2 Public perception 
-There are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. 
+There are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. 
 How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
 How have historical events shaped public trust in biotechnology? How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
 Can public perception influence funding and policy decisions in biotechnology?
@@ -224,17 +224,17 @@ https://en.wikipedia.org/wiki/Category:Scientific_misconduct
 Motivators for scientific misconduct include pressure to publish, career advancement, funding competition, personal gain, and inadequate oversight.
 
 #3 Scientific misconduct-Gourav
-When a scientist is caught in misconduct—such as falsifying data—they face investigations, paper retractions, loss of funding, and possible job termination. For example, South Korean scientist Hwang Woo-suk was dismissed and banned from research after fabricating stem cell research results, damaging his reputation and career.
+When a scientist is caught in misconduct&#8212;such as falsifying data&#8212;they face investigations, paper retractions, loss of funding, and possible job termination. For example, South Korean scientist Hwang Woo-suk was dismissed and banned from research after fabricating stem cell research results, damaging his reputation and career.
 
 Section: Public, Environment, and Plant BioTech
 
 #4 Purdue Pharma
 Overview of the Opioid Crisis: Describe the opioid crisis in the US. What is the scale of the problem in terms of overdose deaths today? 
-Purdue Pharma’s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive?
+Purdue Pharma&#8217;s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive?
 Marketing and Legal Issues: What tactics did Purdue Pharma use to promote OxyContin? Who within the company made the decisions to put profit over patient safety? What role did the Sackler family play? How did the marketing impact vulnerable communities?
 Legal Fallout: What were the legal consequences for Purdue Pharma? Did anyone go to prison? Where are the Sacklers now? 
 Future of the Crisis: When did the opioid industry move from OxyContin to fentanyl? How much more potent is fentanyl than morphine? What new challenges has fentanyl introduced?
-Bankruptcy and Compensation: How has Purdue Pharma’s bankruptcy affected compensation for victims’ families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
+Bankruptcy and Compensation: How has Purdue Pharma&#8217;s bankruptcy affected compensation for victims&#8217; families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
 Resources: https://en.wikipedia.org/wiki/Purdue_Pharma https://en.wikipedia.org/wiki/Sackler_family https://en.wikipedia.org/wiki/Opioid_epidemic_in_the_United_States https://en.wikipedia.org/wiki/Timeline_of_the_opioid_epidemic 
 
 #4 Purdue Pharma
@@ -318,10 +318,10 @@ https://fpdcc.com/nature/people-nature/emerald-ash-borer-infestation/
 
 #8 Dutch elm disease
 Gary Strobel
-Dutch elm disease is caused by a fungal pathogen that spreads mainly through elm bark beetles, including Scolytus multistriatus and Hylurgopinus rufipes. The fungus blocks the tree’s water flow, causing wilting and death. Gary Strobel once claimed he found a cure by using a weakened fungal strain, but his results were never reproducible and his work was criticized for poor controls and scientific misconduct. Today, Dutch elm disease is managed with trunk injections of fungicides, sanitation and removal of infected trees, planting resistant elm varieties, and controlling bark beetle populations.”
-“Dutch elm disease can be compared to the emerald ash borer, Agrilus planipennis, an invasive beetle whose larvae tunnel under the bark and kill ash trees quickly. To fight the ash borer, scientists use quarantines on moving firewood, biological control using parasitic wasps, removal of infested trees, resistant ash breeding, and purple sticky traps or trap trees to monitor and reduce the beetle population.”
-“Both threats caused major ecological and economic damage by removing major shade trees from forests and cities. Dutch elm disease strategies focus on stopping a fungus and its beetle vectors, while ash borer strategies target the insect itself.”
-“Finally, using genetic engineering to save tree species raises ethical concerns, including ecological risks, long-term effects on wild forests, genetic contamination of natural tree populations, corporate ownership of engineered trees, and public trust. These issues need to be carefully balanced when considering genetic solutions to tree diseases.
+Dutch elm disease is caused by a fungal pathogen that spreads mainly through elm bark beetles, including Scolytus multistriatus and Hylurgopinus rufipes. The fungus blocks the tree&#8217;s water flow, causing wilting and death. Gary Strobel once claimed he found a cure by using a weakened fungal strain, but his results were never reproducible and his work was criticized for poor controls and scientific misconduct. Today, Dutch elm disease is managed with trunk injections of fungicides, sanitation and removal of infected trees, planting resistant elm varieties, and controlling bark beetle populations.&#8221;
+&#8220;Dutch elm disease can be compared to the emerald ash borer, Agrilus planipennis, an invasive beetle whose larvae tunnel under the bark and kill ash trees quickly. To fight the ash borer, scientists use quarantines on moving firewood, biological control using parasitic wasps, removal of infested trees, resistant ash breeding, and purple sticky traps or trap trees to monitor and reduce the beetle population.&#8221;
+&#8220;Both threats caused major ecological and economic damage by removing major shade trees from forests and cities. Dutch elm disease strategies focus on stopping a fungus and its beetle vectors, while ash borer strategies target the insect itself.&#8221;
+&#8220;Finally, using genetic engineering to save tree species raises ethical concerns, including ecological risks, long-term effects on wild forests, genetic contamination of natural tree populations, corporate ownership of engineered trees, and public trust. These issues need to be carefully balanced when considering genetic solutions to tree diseases.
 
 
 #9 Genetic Invasive Species Control
@@ -399,12 +399,12 @@ WW1: Japanese contaminate water wells in Chinese villages with cholera and typhu
 
 
 Accidental release of pathogens
-Soviet Union’s + China’s + Iraq + North Korea’s bioweapon program violating BWC
+Soviet Union&#8217;s + China&#8217;s + Iraq + North Korea&#8217;s bioweapon program violating BWC
 
 #11 Gain-of-Function and Supervirus Research
 Summary: Gain-of-function research changes viruses in ways that can increase spread or severity, raising debates about safety and scientific value.
 What is gain-of-function research, and why do some scientists use it to study dangerous viruses?
-What happened during the H5N1 “supervirus” experiments, and why did they cause concern?
+What happened during the H5N1 &#8220;supervirus&#8221; experiments, and why did they cause concern?
 How do scientists decide whether a virus-modifying experiment is too risky to perform?
 How do biosafety levels (BSL) relate to handling viruses that have been engineered to be more transmissible?
 What national rules guide research that could create more dangerous pathogens?
@@ -413,7 +413,7 @@ Resources: (1) https://en.wikipedia.org/wiki/Gain-of-function_research (2) https
 
 
 #11 Gain-of-Function and Supervirus Research
-H5N1 “supervirus” experiments
+H5N1 &#8220;supervirus&#8221; experiments
 led by Ron Fouchier in the Netherlands and Yoshihiro Kawaoka in the U.S./Japan)
 Why it caused a major concern?
 1.Lethality vs. Transmissibility
@@ -463,11 +463,11 @@ Xenobiology and Non DNA life - Kingston
 XNAs - Analogous to DNA
 
 #14 Xenobiology and Non-Organic Life
-Summary: Xenobiology explores the possibility of life that uses chemical systems different from Earth’s carbon-and-water biology.
+Summary: Xenobiology explores the possibility of life that uses chemical systems different from Earth&#8217;s carbon-and-water biology.
 What makes carbon based life so successful on Earth, and why do scientists wonder if other chemistries could also support living systems?
-Could silicon based life exist, given silicon’s similarity to carbon, and what limitations make it less stable than carbon for building complex molecules?
+Could silicon based life exist, given silicon&#8217;s similarity to carbon, and what limitations make it less stable than carbon for building complex molecules?
 Which alternative solvents, such as ammonia, methane, or ethane, could support biochemical reactions, and where in the solar system might these solvents exist naturally?
-How do scientists predict what “life” might look like if it used different molecular backbones, such as alternative nucleic acids or non carbon polymers?
+How do scientists predict what &#8220;life&#8221; might look like if it used different molecular backbones, such as alternative nucleic acids or non carbon polymers?
 How do space missions, such as those studying Titan or Europa, help guide scientific ideas about non terrestrial biochemistry?
 How would metabolism work in an organism that used a solvent colder or hotter than liquid water?
 What would be the challenges of identifying alien life if its chemistry does not match known Earth molecules?
@@ -508,9 +508,9 @@ How might chimeras be used in agriculture, conservation, or disease research, an
 Resources: (1) https://en.wikipedia.org/wiki/Chimera_(genetics)  (2) https://en.wikipedia.org/wiki/Hybrid_(biology)  (3) https://en.wikipedia.org/wiki/Genetic_chimerism_in_fiction https://en.wikipedia.org/wiki/Human%E2%80%93animal_hybrid https://en.wikipedia.org/wiki/Interspecific_pregnancy 
 
 #17 Animal Chimeras
-🧬What Is an Animal Chimera
+&#129516;What Is an Animal Chimera
 Organism with cells from two different species
-Not a hybrid (hybrids = mating → mixed DNA in every cell)
+Not a hybrid (hybrids = mating &#8594; mixed DNA in every cell)
 Chimeras are mosaics, showing patches from each species
 
 How Are They Created
@@ -518,19 +518,19 @@ Embryo fusion (combining two early embryos)
 Blastocyst stem-cell injection
 Organ-niche complementation to grow a missing organ
 
-⚖️ Ethical Concerns
+&#9878;&#65039; Ethical Concerns
 Human cells entering the brain or germline
 Animal welfare + abnormal development
 Questions about species identity and boundaries
 
-🐁 Examples in Research
+&#128001; Examples in Research
 Geep with mixed wool and hair
 Mouse coat-color chimeras with patchy fur
-Human–pig or human–monkey embryos (early-stage studies only)
+Human&#8211;pig or human&#8211;monkey embryos (early-stage studies only)
 
 Uses & Limits of Chimeras
-Uses • Organ research • Disease & conservation models
-Limits • No human cells in brain or germline • Chimeras cannot breed
+Uses &#8226; Organ research &#8226; Disease & conservation models
+Limits &#8226; No human cells in brain or germline &#8226; Chimeras cannot breed
 
 
 #18 Genetic Redesign of Animals
@@ -555,7 +555,7 @@ Created using DNA editingCan mix unrelated speciesTraits are designedCan pass
 
 Would people accept engineered food animals?
 Pros: More food, cheaper, efficient
-Cons: Ethical concerns, “unnatural,” animal welfare, safety worries
+Cons: Ethical concerns, &#8220;unnatural,&#8221; animal welfare, safety worries
 
 #18 Genetic Redesign of Animals : PAL
 Increased food supply: One animal produces more meat, reducing total animals needed.
@@ -566,14 +566,14 @@ Technological progress: Seen as a natural extension of biotechnology and GM crop
 Developmental biology: Scientists study how genes control growth, limb formation, organ development, and body patterns.Viability: Modifications must allow the animal to grow, move, and survive normally; extreme changes can be lethal or cause severe deformities
 Genetic feasibility: Only traits controlled by known genes and pathways can be targeted reliably.Ethical and welfare review: Institutional committees (like IACUC) ensure experiments do not cause unnecessary suffering.Testing in stages: Modifications are trialed in embryos or small animal models before livestock application.
 .
-Arguments Supporting the Idea:                              One chicken provides more legs → fewer animals need to be slaughtered.Saves resources such as feed, water, and space.Could help feed a larger population efficiently.Represents the potential of genetic redesign in agriculture.
+Arguments Supporting the Idea:                              One chicken provides more legs &#8594; fewer animals need to be slaughtered.Saves resources such as feed, water, and space.Could help feed a larger population efficiently.Represents the potential of genetic redesign in agriculture.
 
 Arguments Challenging the Idea:                  Animal welfare: extra legs may cause pain or movement problems.Biological feasibility: multiple limbs may be impossible or harmful.Ethical concerns: manipulating animals unnaturally may be unacceptable to many.Public perception: consumers may reject eating heavily modified animals.
 
 #19 Consumer Oriented or Trivial Transgenics
 Summary: Some genetically modified animals are created for decoration, entertainment, or art, raising questions about purpose, regulation, and ethical limits.
 What are examples of genetically modified animals created mainly for appearance, decoration, or entertainment, such as GloFish?
-How do regulatory agencies decide whether a “trivial” transgenic organism is safe to sell or display?
+How do regulatory agencies decide whether a &#8220;trivial&#8221; transgenic organism is safe to sell or display?
 What artistic projects have used transgenic animals, and how were these projects received by the public?
 Do designer organisms blur the boundary between art and biotechnology, and should there be limits on how far this can go?
 Should genetic modification be restricted to health, agriculture, and research, or can nonessential uses be acceptable in society?
@@ -593,7 +593,7 @@ Can you detail the preventive strategies Esvelt has suggested to mitigate the ri
 Section: Humans and BioTech
 
 #21 Assisted Reproductive Technology (ART)
-Historical perspective: Who was the first “test tube baby”? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
+Historical perspective: Who was the first &#8220;test tube baby&#8221;? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
 Impact of IVF: How common is in vitro fertilization (IVF) today? How has IVF changed over the years? 
 IVF Alternatives: Why is intrauterine insemination (IUI) often used over IVF?  What are some other modern forms of assisted reproductive technology (ART) and how do they compare?
 Modern Innovations: How can a baby have three (3) parents using MRT? What are the controversies around preimplantation genetic diagnosis? Can you choose the color of your babies eyes?
@@ -623,7 +623,7 @@ Oocyte cryopreservation allows women to delay childbearing or preserve fertility
 Video from the Past
 American ExperienceTest Tube Babies
 Episode aired Oct 23, 2006
-“The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.”
+&#8220;The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.&#8221;
 Runtime: 52m:37s
 
 #22 Prenatal Testing
@@ -634,7 +634,7 @@ Resources: https://en.wikipedia.org/wiki/Prenatal_testing https://en.wikipedia.o
 When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
 https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
 https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
-Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised “peace of mind instead caused anguish and confusion.
+Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised &#8220;peace of mind instead caused anguish and confusion.
 https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
 
 #22 Prenatal Testing by Jacky
@@ -656,7 +656,7 @@ Major Ethical Concerns:
 Safety risks (off-target mutations, unknown long-term effects)
 Consent issues for embryos & future generations
 Threats to genetic equity, diversity, and disability inclusion
-Slippery slope toward “designer babies” and trait enhancement
+Slippery slope toward &#8220;designer babies&#8221; and trait enhancement
 He Jiankui Case (2018):
 Created first gene-edited babies (Lulu & Nana) without proper ethics/oversight
 Immediate global condemnation; legal penalties; stricter regulations in China
@@ -664,7 +664,7 @@ Long-term impact: stronger calls for international governance & moratoriums
 Preventing Misuse:
 Global regulation & professional oversight
 DNA synthesis screening & lab security
-Clear bans on military enhancement (“super-soldiers”)
+Clear bans on military enhancement (&#8220;super-soldiers&#8221;)
 Transparency, whistleblower protections, and public involvement
 
 #24 Directed Human Evolution (GATTACA)
@@ -692,7 +692,7 @@ Resources: (1) https://en.wikipedia.org/wiki/Ectogenesis https://en.wikipedia.or
 Synthetic Wombs and Ectogenesis
 What Are They?
 - Growth of embryos/fetuses outside the body
-- CHOP “Biobag” lambs ~4 weeks of extra uterine support
+- CHOP &#8220;Biobag&#8221; lambs ~4 weeks of extra uterine support
 - Follow up lab studies: improved lung + brain maturation
 - BCNatal pump less artificial placenta prototypes (2023-24)
 Medical Uses and Advantages
@@ -707,11 +707,11 @@ Biological Challenges
 - Long term health + psychological outcomes unknown
 - Risk of altered parent child bonding patterns
 Social, Ethical, Legal
-- Redefinition of parental roles + “gestational parent”
+- Redefinition of parental roles + &#8220;gestational parent&#8221;
 - Questions around abortion law + fetal personhood
 - Possible inequality of access + social pressure to use
-- Public reaction if ectogenesis becomes “safer” than pregnancy
-Our future…?.
+- Public reaction if ectogenesis becomes &#8220;safer&#8221; than pregnancy
+Our future&#8230;?.
 (Probably).
 
 #26 Ethical Sourcing of Biological Materials
@@ -726,13 +726,13 @@ Henrietta
 Lacks
 Informed
 Consent
-“Immortal” HeLa Cells (did not die after a few cell divisions)
+&#8220;Immortal&#8221; HeLa Cells (did not die after a few cell divisions)
 Racial Injustice and profit 
 Research for modern medicine - polio, COVID-19, cancer research
 2023 compensated amount undisclosed
 #26 Ethical Sourcing of Biological Material- Rocelle
 AMA Code of Medical Ethics (1847) 7.1.1-7.1.2
-Ensure that voluntary consent has been obtained from each participant or from the participant’s legally authorized representative if the participant lacks the capacity to consent, in keeping with ethics guidance. 
+Ensure that voluntary consent has been obtained from each participant or from the participant&#8217;s legally authorized representative if the participant lacks the capacity to consent, in keeping with ethics guidance. 
 the unethical or unlawful appropriation or commercial exploitation of biological materials that are native to a particular country or territory without providing fair financial compensation to the people or government of that country or territory
 environmental justice, exploitation, and health disparities in these populations
 Neem Tree in india
@@ -746,7 +746,7 @@ Who was Henrietta Lacks, and why is her story significant in the context of ethi
 What is biopiracy? How does biopiracy using patents affect the livelihoods and cultural heritage of indigenous and local communities? Can you analyze a well-known case of biopiracy, discussing both the biological material involved and the community affected? What ethical guidelines should biotechnology companies follow to avoid biopiracy?
 
 #27 Embryonic stem cells
-Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
 
@@ -762,16 +762,16 @@ https://www.the-odin.com
 #29 Aaron Traywick and Rogue Biohackers
 Summary: Aaron Traywick promoted radical DIY gene therapy outside normal rules, raising warnings about the risks of unsupervised biotechnology.
 What was the mission of Ascendance Biomedical, and how did it try to bypass traditional research, regulation, and medical oversight?
-How did Traywick use self-experimentation as a public demonstration of “open” biotechnology, and why did many scientists call his actions unsafe?
+How did Traywick use self-experimentation as a public demonstration of &#8220;open&#8221; biotechnology, and why did many scientists call his actions unsafe?
 In what ways did his approach directly challenge FDA rules, clinical trial standards, and accepted safety practices?
 How did Traywick justify giving or selling untested treatments to volunteers, and what ethical problems arise when experiments occur without approval or medical supervision?
 How did the biohacking community respond to his death, and what lessons does it offer about the dangers of rogue experimentation?
-How did Traywick’s behavior differ from responsible community biology groups that follow safety guidelines?
+How did Traywick&#8217;s behavior differ from responsible community biology groups that follow safety guidelines?
 Resources: https://en.wikipedia.org/wiki/Aaron_Traywick https://en.wikipedia.org/wiki/Biohacking https://en.wikipedia.org/wiki/Do-it-yourself_biology
 
 #30 Cyborgs and Human Enhancement
 Summary: Cyborg biotechnology blends organic bodies with implanted devices that restore or enhance abilities, raising questions about identity, equity, and the definition of being human.
-What counts as a cyborg in biotechnology? Are cochlear implants, pacemakers, and brain–computer interfaces part of this definition?
+What counts as a cyborg in biotechnology? Are cochlear implants, pacemakers, and brain&#8211;computer interfaces part of this definition?
 How does neural implant technology, such as Utah arrays or Neuralink devices, blur the line between therapy and enhancement?
 What ethical issues arise when medical implants begin to provide abilities beyond normal human limits?
 How do implanted technologies change ideas about personal identity, autonomy, and the ownership of digital or neural data?
@@ -808,9 +808,9 @@ Resources: https://en.wikipedia.org/wiki/Life_extension https://en.wikipedia.org
 
 
 Life Extension: Can We Slow Aging?
-Telomeres get shorter over time (cells can’t divide forever)
-Old “senescent” cells build up and cause inflammation
-Mitochondria weaken → less energy, more damage
+Telomeres get shorter over time (cells can&#8217;t divide forever)
+Old &#8220;senescent&#8221; cells build up and cause inflammation
+Mitochondria weaken &#8594; less energy, more damage
 Why we age : - 
 What scientists are trying ? 
 Gene Therapy
@@ -823,7 +823,7 @@ Trick the body into anti-aging mode
 Challenges :- 
 Hard to measure life extension in humans
 Ethical worries: Will only rich people get these treatments?
-Society impact: longer life → big changes in jobs, retirement, population
+Society impact: longer life &#8594; big changes in jobs, retirement, population
 
 #33 Cryonics and Long Term Preservation
 Summary: Cryonics attempts to preserve a legally dead person at very low temperatures with the hope that future biotechnology might restore biological function.
@@ -840,9 +840,9 @@ Resources: https://en.wikipedia.org/wiki/Cryonics https://en.wikipedia.org/wiki/
 Summary: New transplants such as faces, limbs, and mixed tissues raise ethical questions about identity, consent, and the limits of reconstructing the human body.
 How do face and limb transplants work, and what makes them more complex than organ transplants such as kidneys?
 How does the immune system respond to transplanted body parts that contain skin, nerves, and bone?
-What ethical issues arise when body parts from one individual become part of another person’s identity?
+What ethical issues arise when body parts from one individual become part of another person&#8217;s identity?
 Could future procedures mix neural tissue between individuals, and what questions would this raise about memory and self?
-How do doctors obtain consent from donors and families for body parts that change a person’s visible identity?
+How do doctors obtain consent from donors and families for body parts that change a person&#8217;s visible identity?
 Resources: https://en.wikipedia.org/wiki/Face_transplant https://en.wikipedia.org/wiki/Brain_transplant https://en.wikipedia.org/wiki/Allotransplantation https://en.wikipedia.org/wiki/Hand_transplantation https://en.wikipedia.org/wiki/Head_transplant 
 
 
@@ -858,7 +858,7 @@ Resources: (1) https://en.wikipedia.org/wiki/Brain_in_a_vat  (2) https://en.wiki
 
 
 #36 Digital Resurrection and Mind Uploading
-Summary: Digital resurrection seeks to simulate a person’s mind using neural data, artificial intelligence, or brain scanning.
+Summary: Digital resurrection seeks to simulate a person&#8217;s mind using neural data, artificial intelligence, or brain scanning.
 What brain information would need to be recorded in order to simulate a human mind?
 What experiments with whole brain emulation or connectome mapping exist today?
 Would a simulated mind be the same person or only a copy?
@@ -870,7 +870,7 @@ Resources: https://en.wikipedia.org/wiki/Mind_uploading https://en.wikipedia.org
 Digital Resurrection & Mind Uploading
 The Delos Immortality Project 
 The core purpose of the Westworld park, was not just for entertainment, but to observe and decode the guests. 
-“Every piece of information in the world has been copied and backed up, except the human mind — the last analog device in a digital world.” He adds that the “humans are playing at resurrection; they want to live forever. They don’t want you to become them; they want to become you.”- Robert Ford 
+&#8220;Every piece of information in the world has been copied and backed up, except the human mind &#8212; the last analog device in a digital world.&#8221; He adds that the &#8220;humans are playing at resurrection; they want to live forever. They don&#8217;t want you to become them; they want to become you.&#8221;- Robert Ford 
 
 
 #37 Resurrection Biology and Death Reversal
@@ -885,9 +885,9 @@ Resources: (1) https://en.wikipedia.org/wiki/Death (2) https://en.wikipedia.org/
 
 #38 Zombie Biology and Neuroparasitology
 Summary: Some parasites naturally control animal behavior, raising questions about whether biotechnology could mimic these effects.
-Briefly, tell use the history of zombie lore based on witch doctors from Haiti. How do cultural ideas about “zombies” shape public reactions to this research?
+Briefly, tell use the history of zombie lore based on witch doctors from Haiti. How do cultural ideas about &#8220;zombies&#8221; shape public reactions to this research?
 What biological mechanisms allow parasites like jewel wasps or fungi to control the behavior of their hosts? How do parasites such as Ophiocordyceps infect insects and change their actions? How might neural gene editing be used to study or alter behavior in model organisms?
-How does neuroparasitology help scientists understand natural examples of “zombie-like” behavior?
+How does neuroparasitology help scientists understand natural examples of &#8220;zombie-like&#8221; behavior?
 Could biotechnology copy these natural mechanisms to alter animal behavior?  How would wildlife or ecosystems be affected if behavior-modifying organisms spread beyond intended areas?
 Resources: (1) https://en.wikipedia.org/wiki/Parasitoid_wasp (2) https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis (3) https://en.wikipedia.org/wiki/Behavior-altering_parasite 
 
@@ -900,7 +900,7 @@ What is the difference between stopping life support, giving strong pain medicin
 How do U.S. medical aid in dying laws usually work in practice, for example in Oregon or California, and what common safeguards (waiting periods, second opinions, mental capacity checks) are required?
 If Illinois legalizes medical aid in dying, how might that change choices for terminally ill patients here, and what arguments do supporters and opponents give?
 How do these laws try to protect people who are disabled, elderly, or financially vulnerable from being pressured into choosing death?
-What ethical tensions exist between a physician’s role as a healer, respect for patient autonomy, and the risk of sending a social message that some lives are “less worth” living?
+What ethical tensions exist between a physician&#8217;s role as a healer, respect for patient autonomy, and the risk of sending a social message that some lives are &#8220;less worth&#8221; living?
 Resources: (1) https://en.wikipedia.org/wiki/Assisted_suicide_in_the_United_States  (2) https://en.wikipedia.org/wiki/Euthanasia_in_the_United_States  (3) https://en.wikipedia.org/wiki/Assisted_suicide https://en.wikipedia.org/wiki/Euthanasia https://en.wikipedia.org/wiki/Palliative_sedation 
 
 

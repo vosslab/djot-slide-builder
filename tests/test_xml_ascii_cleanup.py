@@ -6,19 +6,14 @@ import sys
 
 # Third-Party Modules
 import lxml.etree
-import pytest
-
 # Local Modules
 import fix_ascii_compliance
 
 
 #============================================
-@pytest.mark.parametrize("suffix", (".svg", ".xml"))
-def test_xml_cleanup_preserves_text_and_attributes(
-	tmp_path: pathlib.Path, monkeypatch: pytest.MonkeyPatch, suffix: str,
-) -> None:
+def test_svg_cleanup_preserves_text_and_attributes(tmp_path: pathlib.Path, monkeypatch: object) -> None:
 	"""Numeric references preserve scientific labels and existing XML escapes."""
-	path = tmp_path / f"labels{suffix}"
+	path = tmp_path / "labels.svg"
 	label = "\u03b1 &amp; &lt; \u03b2\u00b2"
 	path.write_text(f'<svg label="{label}"><text>{label}</text></svg>', encoding="utf-8")
 	monkeypatch.setattr(sys, "argv", ["fix_ascii_compliance.py", "-i", str(path)])

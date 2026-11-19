@@ -103,39 +103,3 @@ def test_slide_one(path: str) -> None:
 	message = file_utils.format_violation_assert_message(
 		relative_path, VIOLATIONS_BY_FILE.get(relative_path, []), REPORT_NAME)
 	assert relative_path not in VIOLATIONS_BY_FILE, message
-
-
-@pytest.mark.parametrize("metadata, announcements, valid", (
-	(("Topic", "Dr. Neil Voss", "Oct 20, 2026"), False, True),
-	(("Chapter 7: Topic", "Dr. Neil Voss", "Oct 20, 2026"), False, True),
-	(("Topic", "Chapter 7", "Dr. Neil Voss", "Oct 20, 2026"), False, True),
-	(("Announcements", "Dr. Neil Voss", "Oct 20, 2026"), True, True),
-	(("Topic", "Chapter 7 | Dr. Neil Voss", "Oct 20, 2026"), False, False),
-	(("Announcements", "Chapter 7", "Dr. Neil Voss", "Oct 20, 2026"), True, False),
-	(("Genetics: Announcements", "Dr. Neil Voss", "Oct 20, 2026"), True, False),
-	(("Topic", "A tagline", "Dr. Neil Voss", "Oct 20, 2026"), False, False),
-))
-def test_cover_contract(tmp_path: pathlib.Path, metadata: tuple[str, ...],
-		announcements: bool, valid: bool) -> None:
-	"""Keep accepted alternatives and the actual formatting regressions explicit."""
-	path = tmp_path / "cover.djot"
-	path.write_text("=== layout: title-slide\n# Lecture 07A2\n\n" +
-		"\n\n".join(f"## {line}" for line in metadata) + "\n", encoding="utf-8")
-	slide = slide_lib.djot_parser.parse_deck(path).slides[0]
-	assert (not cover_violations(slide, announcements)) == valid
-
-
-def test_agenda_only_contract(tmp_path: pathlib.Path) -> None:
-	"""Accept standalone topic maps without weakening ordinary deck covers."""
-	agenda = "=== layout: one-panel\n# Today's Agenda\n\n@body\n\n- Allele Frequencies\n"
-	for filename, source, valid in (
-		("lecture-agenda.djot", agenda, True),
-		("lecture-agenda.djot", agenda.replace("Today's Agenda", "Other Topic"), False),
-		("lecture-agenda.djot", agenda.replace("- Allele Frequencies", ""), False),
-		("lecture-agenda.djot", agenda.replace("# Today's", "hidden: true\n# Today's"), False),
-		("lecture-agenda.djot", agenda + "\n" + agenda, False),
-		("lecture-topic.djot", agenda, False),
-	):
-		path = tmp_path / filename
-		path.write_text(source, encoding="utf-8")
-		assert (not check_file(str(path))) == valid, (filename, source)

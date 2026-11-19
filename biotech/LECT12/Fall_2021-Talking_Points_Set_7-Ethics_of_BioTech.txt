@@ -5,7 +5,7 @@ Nov 11, 2021
 Talking Points Guide
 
 Talking Points Guide
-Talking points were assigned during last week’s class
+Talking points were assigned during last week&#8217;s class
 Each student was assigned to two talking points.
 Each talking point will have at least two students talking about it
 If you share a talking point with another student:
@@ -23,7 +23,7 @@ It is best to have as few words as possible on your slide -- you do the talking 
 Be prepared to give a 60-90 second presentation about each of your assigned talking point
 define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
 Try to be unique
-Don’t just copy the book, use the internet for research. 
+Don&#8217;t just copy the book, use the internet for research. 
 Provide your own perspective
 Please put into your own words
 It is okay if you read your notes, but put notes in your own words
@@ -70,7 +70,7 @@ group or culture
 Principles or habits
 personal compass of right and wrong.
 
-What’s its origin (where do they come from)
+What&#8217;s its origin (where do they come from)
 Social system - External
 
 Individual - Internal
@@ -107,7 +107,7 @@ Altruism
 (1) What is the difference between ethics and morals? Give an examples of each? Give an example of ethics conflicting with morals. How do they change over time? Explain cultural viewpoint. How do morals differ between professions, such as lawyers and medical doctors?
 
 #2 public perception - Julia
-Two things dominate the public’s perception of biotechnology:
+Two things dominate the public&#8217;s perception of biotechnology:
 Lack of trust & Ignorance of Science
 How perceptions affect biotechnology
 Necessitates transparency to the public
@@ -122,15 +122,15 @@ Back up all claims
 Know fears early on 
 
 Difficulties in predicting possible dangers of biotechnology
-Long term effects can’t be explicitly known
+Long term effects can&#8217;t be explicitly known
 No technology is 100 %
 Complexity 
 Test subjects and ethical concerns
 
- Public discourse and caution when it comes to technological advancement in the industry is normal and can be healthy—except when it’s based on fiction.
+ Public discourse and caution when it comes to technological advancement in the industry is normal and can be healthy&#8212;except when it&#8217;s based on fiction.
 sition is often based on myths and personal beliefs rather than facts. Those with vocal negative opinions can have an immense impact on public opinion as a whole, which is why it is so important to consider public opinion when thinking about industry advancement.
 
-(2) there are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
+(2) there are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
 Public perceptions of biotechnology 
 https://en.wikipedia.org/wiki/Big_Pharma_conspiracy_theory 
 
@@ -180,7 +180,7 @@ Attempted three operations with no success
 First miscarriage in 1970
 Dr. Raymond Van de Wiele stopped her attempt at IVF
 Doris and John filed a $1.5 million lawsuit
-(4) Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today?
+(4) Who was the first &#8220;test tube baby&#8221;? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today?
 
 #4 in vitro fertilization (IVF) - Dominique  
 When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? 
@@ -195,7 +195,7 @@ Leigh Syndrome - progressive neurological disorder
 mtDNA mutation
 Mitochondrial donation ---> 3 parents
 
-Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
+Who was the first &#8220;test tube baby&#8221;? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
 https://www.newscientist.com/article/2107219-exclusive-worlds-first-baby-born-with-new-3-parent-technique/ 
 https://www.discovermagazine.com/health/how-can-a-baby-have-3-parents 
 
@@ -256,14 +256,14 @@ Alba: Transgenic Bunny
 Edunia: Transgenic Flower
 
 #7 trivial transgenics - Julia
-Non- “serious” applications of transgenics:
+Non- &#8220;serious&#8221; applications of transgenics:
 
 Eduardo Kac
 GFP K-9  dog that expresses the GFPuv protein
 can be seen by the naked eye with UV light.
 Ionat Zurr & Oron Catts
 semi-live frog "steak"
-“Victimless cooking”
+&#8220;Victimless cooking&#8221;
 Lauren Cinti
 mutant cacti to simulate appearance of human hair in the place of cactus spines 
 Insertion of keratin genes into cacti
@@ -271,8 +271,8 @@ Insertion of keratin genes into cacti
 
 
 Designer organisms:
-Ecoli – entire genome
-Yeast – one chromosome
+Ecoli &#8211; entire genome
+Yeast &#8211; one chromosome
 
 Art shows around transgenic organisms:
 Wei Yang - exhibition that ran on June 16
@@ -283,7 +283,7 @@ No
 Area for creativity 
 Transgenics allows for creation of design. Why do all designs have to be serious?
 can help enhance public understanding of advances in biotechnology and genetic engineering
-(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+(7) Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. What are some non-&#8220;serious&#8221; applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to &#8220;serious&#8221; areas such as health care and agriculture?
 Please think about what I am asking, I keep getting wrong interpretations of this talking point. You have to do some looking.
 https://www.ekac.org/transgenic.html 
 https://research.ncsu.edu/ges/arts-work-in-biotech/artwork/
@@ -367,7 +367,7 @@ Genetic copy but not the same animal
 
 
 #10 cloning animals - Ethan
-Cloning a dead relative? Theoretically yes…
+Cloning a dead relative? Theoretically yes&#8230;
 
 Hwang Woo-Suk
 -well-known scientific researcher in cloning
@@ -397,7 +397,7 @@ Community Service
 Prison
 Nobody went to prison
 What happened to the Sacklers?
-“Personally responsible” lawsuit
+&#8220;Personally responsible&#8221; lawsuit
 $10-12 billion settlement
 Gave up ownership
 No criminal charges
@@ -443,7 +443,7 @@ Fruit Flies- first insects to be preferred in research due to short life cycle a
 (13) What transgenic animals are available to consumers? Provide some examples of natural animal hybrids, such as the mule. Would it be publicly acceptable to develop animal hybrid using genetics? How about a chickapede: a chicken with 10 legs? That way more people can eat more chicken legs, but only kill one organism.
 
 #13 transgenic animals - Shivam
-Transgenic Animal - an organism who has its genome changed by having another species’ genome transferred into it.
+Transgenic Animal - an organism who has its genome changed by having another species&#8217; genome transferred into it.
 Ex of Transgenic Animals - goat, cattle, pig, rabbits
 Animal Hybrid Examples - Zonkey, Liger, Jaglion-jagaur and lion, mule, Wholphin
 Public Acceptance - 
@@ -476,7 +476,7 @@ Developed STAP - Stimulus-Triggered Acquisition of Pluripotency
 Research misconduct
 STAP unable to be replicated as of today
 
-(14) Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+(14) Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
 

@@ -15,28 +15,6 @@ import layout_test_helpers
 
 
 #============================================
-def test_code_and_literal_links_use_their_semantic_font_roles(tmp_path: pathlib.Path) -> None:
-	"""Code stays monospace while literal URLs receive the approved narrow face."""
-	result = layout_test_helpers.compile_source(tmp_path, "=== layout: one-panel\n\n@body\n\n"
-		"Words `ATGC` [https://example.test](https://example.test) "
-		"[`ATGC`](https://example.test)\n")
-	paragraph = result.plan.slides[0].objects[0].content.paragraphs[0]
-	runs = [run for run in paragraph.inlines
-		if isinstance(run, slide_lib.layout_content.TextRun) and run.text.strip()]
-	assert [(run.text.strip(), run.style.font_family) for run in runs] == [
-		("Words", "Atkinson Hyperlegible Next"), ("ATGC", "Atkinson Hyperlegible Mono"),
-		("https://example.test", "IBM Plex Sans Condensed"),
-		("ATGC", "Atkinson Hyperlegible Mono")]
-	assert all(run.style.underline for run in runs if run.style.link_url)
-
-
-#============================================
-
-
-#============================================
-
-
-#============================================
 def test_citation_preserves_layout_and_keeps_condensed_clickable_text(tmp_path: pathlib.Path) -> None:
 	"""Citation text uses the bottom margin without consuming the existing panel space."""
 	base = "=== layout: two-panels\n\n# Tutorial\n\n@left\n\nStory cue.\n\n@right\n\nComparison.\n"

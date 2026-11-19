@@ -265,7 +265,7 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - Keep quiz and exam guidance in course-wide evergreen Djot groups so one `hidden: true`
   or `hidden: false` setting in each weekly master controls the entire group. Use `genetics/evergreen/` for Genetics and explicit `repo:` includes, rather than copies under LECT08.
 - After the weekly agenda and chosen icebreaker, share the constant opening material, including
-  the YouTube channel, contact information, textbooks, course links, grading explanations, and assessment policies. Keep weekly agenda content, icebreaker selection, podcast episode, assessment status colors, and dated deadlines in the weekly master.
+  the YouTube channel, contact information, textbooks, course links, grading explanations, and assessment policies. Keep weekly agenda content, icebreaker and podcast episode selection, assessment status colors, and dated deadlines in the weekly master.
 
 ## Course links and evergreen announcements
 
@@ -348,8 +348,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 - General Announcements rarely has more than one active topic: Graduating Students in the first
   two weeks, registration midsemester, evaluations at semester end, and one-off events such as campus seminars when relevant. Natural Science Club remains hidden for now; the instructor has not decided how to bring it back since COVID.
 
-- Use root-level `evergreen/` for slides shared across courses. Keep course-specific reusable
-  slides in that course's `evergreen/` folder, and dated weather/podcast snapshots with the lecture.
+- Use root-level `evergreen/` for reusable slides used across courses, and `shared/` for
+  dated material used across courses such as StVC episodes. Keep course-specific reusable
+  slides in that course's `evergreen/` folder. Keep dated weather snapshots with the lecture.
 - Keep `icebreakers.yaml` and similar reusable teaching content in `evergreen/`.
 
 - Spring registration slides are evergreen. Show them roughly October 15 through December 1,

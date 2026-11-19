@@ -1,0 +1,127 @@
+=== layout: section
+
+# Intro to BioTech Ethics
+
+=== layout: subsection
+
+# 1. Ethics and Morals
+
+=== layout: bookend
+
+# 1. Questions
+
+@body
+
+- What is the difference between ethics and morals? Give an example of each. Give an example of ethics conflicting with morals.
+- What historical examples demonstrate the evolution of ethics and morals in science?
+- Can you provide a case where a scientific discovery challenged existing moral beliefs?
+- How do morals differ between professions, such as lawyers and medical doctors? How do ethics in biotechnology compare to those in other fields like information technology?
+- What role do ethics committees play in guiding moral decisions in biotech research?
+- In what ways might personal morals of a scientist influence their research choices?
+
+=== layout: one-panel
+
+# 1. A Personal Belief and a Professional Duty
+
+@body
+
+- Morals are personal convictions about right and wrong.
+- Professional ethics give a group shared standards for decisions.
+- A defense lawyer may believe a client did wrong and still have a duty to defend them.
+
+=== layout: one-panel
+
+# 1. A Decision an Ethics Committee Can Review
+
+@body
+
+- A researcher wants to reuse donated blood for a new study.
+- Ask what the donors agreed to, who bears the risk, and who gets the benefit.
+- Would your answer change if donors could never be identified?
+
+=== layout: subsection
+
+# 2. Public Perception
+
+=== layout: bookend
+
+# 2. Questions
+
+@body
+
+Two concerns raised in the original prompt are lack of trust and limited knowledge of the science.
+
+- How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
+- How have historical events shaped public trust in biotechnology? How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
+- Can public perception influence funding and policy decisions in biotechnology?
+
+=== layout: one-panel
+
+# 2. Why People Disagree About Biotechnology
+
+@body
+
+- Two reasons for concern are limited information and lack of trust.
+- Who gives the information and what they disclose affect trust.
+- People can agree about the biology and disagree about ownership, risk, or fairness.
+- A headline can turn an early result into a claim that feels certain.
+
+=== layout: one-panel
+
+# 2. Two Headlines, One Result
+
+@body
+
+- A crop survived disease in a greenhouse experiment.
+- A headline says the crop will end crop losses. What evidence is missing?
+- Ask who tested it, where it was tested, and what was measured.
+
+=== layout: subsection
+
+# 3. Scientific Misconduct
+
+=== layout: bookend
+
+# 3. Questions
+
+@body
+
+- What are the main forms of scientific misconduct as defined by the National Science Foundation (NSF)? How do data fabrication and falsification manifest in research, and what are their impacts?
+- What are the motivators for scientists to commit misconduct? Is scientific misconduct more prevalent in certain fields of research? If so, why might this be the case?
+- Are there cultural differences in how scientific misconduct is viewed or handled? Provide an example. What happens to a scientist that is caught in misconduct?
+
+=== layout: one-panel
+
+# 3. Fabrication, Falsification, and Plagiarism
+
+@body
+
+| Pattern | Example |
+| --- | --- |
+| Fabrication | Enter measurements for a sample you never ran. |
+| Falsification | Delete inconvenient values so the results look stronger. |
+| Plagiarism | Copy an explanation without crediting the author. |
+
+@citation
+
+Office of Research Integrity, Federal Policy on Research Misconduct: https://ori.hhs.gov/federal-research-misconduct-policy
+
+=== layout: one-panel
+
+# 3. One Image, Two Experiments
+
+@body
+
+- A scientist labels one micrograph as results from two separate experiments.
+- Compare the raw files with the published figure. Ask whether the error changes the result.
+- A correction or retraction changes the scientific record. A misconduct finding requires an investigation.
+
+=== layout: one-panel
+
+# 3. Hwang Woo-suk and Fabricated Stem-cell Results
+
+@body
+
+- Reports claiming patient-matched human stem-cell lines were retracted after an investigation.
+- The stem-cell claims and the separate evidence for cloning a dog are different findings.
+- The investigation also raised questions about how human eggs were obtained.

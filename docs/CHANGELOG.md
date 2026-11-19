@@ -2,6 +2,9 @@
 
 ### Additions and New Features
 
+- Add the November 19 BIOL 480 [Lecture 12 decks](../biotech/LECT12/djot/LECT12_REVIEW.md).
+  Update the announcements and Company Vision Report guide, make both project rubrics
+  available, and assemble Set #7 Bioethics in Biotechnology in current topic order.
 - Add [Biostatistics Lecture 12A](../biostats/LECT12/djot/lect12a-2026_biostats_announcements.djot)
   as one deck for announcements, class plans, and group tutorial work. Groups start from their
   submitted proposals, submit one working activity with Google Doc and Sheet links by Dec 2 at
@@ -38,6 +41,9 @@
 
 ### Fixes and Maintenance
 
+- Move Stump the Vibe Coder episode slides and quality-90 thumbnails to
+  [shared/README.md](../shared/README.md). Announcement masters now pin an explicit shared episode
+  include, preserving historical choices while refresh can migrate a legacy inlined managed slide.
 - Use the canonical evergreen sources in
   [Genetics 11A announcements](../genetics/LECT11/djot/lect11a-2026_announcements.djot).
   Move shared contact and registration corrections and
@@ -101,6 +107,13 @@
   fusion recipe an explicit output directory for independent generation. Document the limits
   of automatic sister placement on deep bends in the [chromosome engine audit](active_plans/audits/chromosome_engine_audit.md).
 - Synchronized shared style guides, tests, and repository support files from the starter template.
+
+### Developer Tests and Notes
+
+- Prune one-off test matrices, exact diagram and layout assertions, and obsolete test helpers.
+  Use one representative LibreOffice round trip to check editable objects, answer reveals,
+  and selectable PDF captions.
+
 ## 2026-11-17
 
 - Use actual Q&A slides for Genetics 11B with visible choices and a separate answer popup.

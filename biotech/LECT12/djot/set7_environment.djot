@@ -1,0 +1,337 @@
+=== layout: section
+
+# Public, Environment, and Plant BioTech
+
+=== layout: subsection
+
+# 4. Purdue Pharma
+
+=== layout: bookend
+
+# 4. Questions
+
+@body
+
+- How did Purdue Pharma contribute specifically to the crisis?
+- What makes OxyContin different than other opioids?
+- What tactics did Purdue Pharma use to promote OxyContin?
+
+=== layout: one-panel
+
+# 4. Extended Release and Risk Communication
+
+@body
+
+- OxyContin is an extended-release form of oxycodone. Extended release changes the timing of drug delivery.
+- Opioid treatment can carry risks of dependence, addiction, and overdose.
+- Purdue's marketing case asks what evidence prescribers and patients received about those risks.
+
+@citation
+
+[U.S. Department of Justice, Purdue Pharma's federal plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
+
+=== layout: one-panel
+
+# 4. Separate a Product Claim from a Public Health Trend
+
+@body
+
+- Ask how a safety claim was tested and what population was studied.
+- Purdue pleaded guilty in 2020 to federal charges related to its opioid practices.
+- Marketing, prescribing, and changes in the illicit drug supply are distinct parts of the epidemic.
+
+=== layout: big-image
+
+@image
+
+![Dopesick: A dramatization of the opioid crisis](assets/set7_instructor/dopesick.jpg)
+
+@caption
+
+Topic 4: Dopesick: A dramatization of the opioid crisis\
+Compare what a drama portrays with what court records document.
+
+=== layout: subsection
+
+# 5. Andrew Wakefield and Public Harm
+
+=== layout: bookend
+
+# 5. Questions
+
+@body
+
+- Who is Andrew Wakefield?
+- Why did his paper damage public trust?
+- What evidence would you need to test the claim about MMR vaccination and autism?
+
+=== layout: one-panel
+
+# 5. What a Case Series Can Tell You
+
+@body
+
+- Wakefield and colleagues published a small case series in 1998. The paper was later retracted.
+- Symptoms and vaccination can occur close together in time by chance.
+- A small series with no comparison group cannot establish that vaccination caused autism.
+
+@citation
+
+Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30831578/
+
+=== layout: one-panel
+
+# 5. A Comparison Group Changes the Question
+
+@body
+
+- Compare autism rates in a large vaccinated group and a suitable comparison group.
+- Account for factors that could differ between groups.
+- Large studies found no increased autism risk from the MMR vaccine.
+
+=== layout: subsection
+
+# 6. Antibiotic Overuse
+
+=== layout: bookend
+
+# 6. Questions
+
+@body
+
+- How are antibiotics used today in medicine? in agriculture? How does Europe differ from the USA in antibiotic use? Should use of antibiotics in agriculture be forbidden? Or should certain antibiotics be restricted to human use only? Which chicken companies have stopped the use of antibiotics? What was their reasoning for stopping?
+- What are the consequences of antibiotic resistance due to overuse in agriculture?
+- How have consumer attitudes influenced antibiotic use policies in the food industry?
+- What alternative strategies are being developed to reduce antibiotic dependence in agriculture?
+- How does antibiotic use in veterinary medicine compare to human medicine?
+- What role do regulatory agencies play in controlling antibiotic use across different countries?
+
+=== layout: one-panel
+
+# 6. Selection Changes What Survives
+
+@body
+
+| After an antibiotic is present | What happens? |
+| --- | --- |
+| Susceptible bacteria | Many stop growing or die. |
+| Resistant bacteria | More are able to survive and reproduce. |
+| Population afterward | A greater proportion can resist that drug. |
+
+=== layout: one-panel
+
+# 6. Read the Scope of the Label
+
+@body
+
+- A claim about medically important antibiotics covers a specific subset of drugs.
+- Ask whether the claim covers all antibiotics, the animal's entire life, and treatment of illness.
+- Better infection prevention can reduce the need to treat animals.
+
+=== layout: subsection
+
+# 7. Transgenic Plants
+
+=== layout: bookend
+
+# 7. Questions
+
+@body
+
+- What is a heirloom plant? What is a hybrid plant? Is it acceptable to develop plant hybrids using genetics? How do transgenic plants impact biodiversity and local ecosystems? How does public perception differ between transgenic plants and traditional hybrids? Can you discuss the role of transgenic plants in addressing food security challenges?
+
+=== layout: one-panel
+
+# 7. Three Different Descriptions of a Crop
+
+@body
+
+| Term | What it tells you |
+| --- | --- |
+| Heirloom | The variety was maintained over generations. |
+| Hybrid | Offspring came from a cross between genetically different parents. |
+| Transgenic | The plant carries introduced genetic material from another organism. |
+
+=== layout: one-panel
+
+# 7. Start with the Trait
+
+@body
+
+- A breeder can select for sweetness over many generations.
+- A transgenic crop can carry an introduced trait such as insect resistance.
+- Ask which trait changed, what the comparison crop is, and what environmental effects were measured.
+
+=== layout: subsection
+
+# 8. Dutch Elm Disease
+
+=== layout: bookend
+
+# 8. Questions
+
+@body
+
+- What is Dutch elm disease? Did Gary Strobel find a cure to Dutch elm disease? What did Strobel do wrong during his research? How does Dutch elm disease compare to the emerald ash borer? What is being done to stop the ash borer?
+- What were the ecological and economic impacts of Dutch elm disease?
+- Can you compare the strategies used to combat Dutch elm disease and the emerald ash borer?
+- What ethical considerations arise from using genetic engineering to combat tree diseases?
+
+=== layout: one-panel
+
+# 8. Two Tree Losses, Two Causes
+
+@body
+
+- Dutch elm disease is a fungal disease. Elm bark beetles can carry the fungus between trees.
+- The fungus damages the tree's ability to move water.
+- Emerald ash borer is an insect. Its larvae damage tissue under the bark of ash trees.
+
+=== layout: one-panel
+
+# 8. Why an Outdoor Trial Needs Approval
+
+@body
+
+- In 1987, Gary Strobel began an unauthorized outdoor trial to control Dutch elm disease.
+- The trial ended when the experimental trees were destroyed.
+- Promising results in a small trial give a reason for further study. Who has a say before an outdoor release?
+
+=== layout: one-panel
+
+# 8. Strobel's Trial and Independent Review
+
+@body
+
+- Why did the trial end even though some trees looked better?
+- An outdoor experiment can expose others to consequences beyond the experimenter's site.
+- List the control group, the intended benefit, and one question the reviewer should ask.
+
+=== layout: big-image
+
+@image
+
+![Elm Canopy Decline](assets/set7_instructor/dutch_elm_disease.jpg)
+
+@caption
+
+Topic 8: Elm Canopy Decline\
+Compare the canopy on both sides. What evidence would identify the cause of decline?
+
+=== layout: big-image
+
+@image
+
+![Emerald Ash Borers](assets/set7_instructor/emerald_ash_borer.jpg)
+
+@caption
+
+Topic 8: Emerald Ash Borers\
+Two adult beetles on a coin. The larvae damage tissue under ash bark.
+
+=== layout: subsection
+
+# 9. Genetic Invasive Species Control
+
+=== layout: bookend
+
+# 9. Questions
+
+@body
+
+- How do ecological models predict the impact of removing an invasive species?
+- What are the social and political challenges in releasing engineered organisms into ecosystems?
+
+=== layout: one-panel
+
+# 9. Removing the Invader Changes the Ecosystem
+
+@body
+
+- An invasive species can compete with native species or become prey for other animals.
+- A model can test how outcomes change if these relationships are uncertain.
+- Compare removing the invader, leaving it in place, and continuing existing control.
+
+=== layout: one-panel
+
+# 9. Who Should Get a Voice?
+
+@body
+
+- An intervention can affect land and communities beyond the original site.
+- Ask who monitors benefits and harms, who reviews the evidence, and who can stop a project.
+- Consultation matters before a decision is made.
+
+=== layout: subsection
+
+# 10. Bioweapons
+
+=== layout: bookend
+
+# 10. Questions
+
+@body
+
+- What international agreements, such as the Biological Weapons Convention, restrict the development of bioweapons?
+- What responsibilities do scientists have when research could be misused?
+
+=== layout: one-panel
+
+# 10. The Biological Weapons Convention
+
+@body
+
+- The convention prohibits biological weapons and supports peaceful cooperation in biology.
+- Public health preparedness includes recognizing unusual illness and sharing reliable information.
+- Researchers also have a responsibility to raise concerns about potential misuse.
+
+@citation
+
+WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https://www.who.int/publications/i/item/9789240056107
+
+=== layout: one-panel
+
+# 10. A Review Committee's Questions
+
+@body
+
+- A research team claims its work will benefit public health.
+- What public health outcome would count as a benefit? Could a lower-risk approach answer the same question?
+- Who should participate in independent review?
+
+=== layout: subsection
+
+# 11. Gain-of-Function and Supervirus Research
+
+=== layout: bookend
+
+# 11. Questions
+
+@body
+
+- How do scientists decide whether a virus-modifying experiment is too risky to perform?
+- How do scientists weigh the benefits of gain-of-function research against the possibility of accidental release?
+
+=== layout: one-panel
+
+# 11. A Broad Term and a Specific Concern
+
+@body
+
+- Gain of function describes a change that gives a biological system a new or increased activity.
+- The public debate about pathogen research concerns risks to people outside the lab as well as risks to workers.
+- A review asks whether the expected knowledge justifies the risk.
+
+@citation
+
+WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https://www.who.int/publications/i/item/9789240056107
+
+=== layout: one-panel
+
+# 11. Compare Evidence, Alternatives, and Oversight
+
+@body
+
+- Identify the public health question in plain English.
+- Ask whether existing samples, observational data, or computation can answer it.
+- Document remaining uncertainties and who is responsible for oversight.

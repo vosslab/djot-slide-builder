@@ -13,7 +13,7 @@ Overall Setup of Talking Points Assignment
 
 
 Talking Points Assigned
-Talking points were assigned during last week’s class.
+Talking points were assigned during last week&#8217;s class.
 Each student was assigned to one or two talking points based on class size.
 Collaboration with Classmates Expectation
 Each talking point will have at least two students talking about it.
@@ -23,13 +23,13 @@ Keep It Concise: 60 seconds per talking point is short;
 Stay on topic and be impactful.
 Earn Extra Discussion Marks:
 Contributing gets you more discussion points.
-If you have something interesting to say about someone else’s talking point, you can score some extra points.
+If you have something interesting to say about someone else&#8217;s talking point, you can score some extra points.
 Asking questions of other students gets you discussion marks as well.
 Use the chat for the question asking and answering
 
 Formatting Your Talking Point Slide Before Class
 Edit and update your slide
-Be a Visual Storyteller – limit the amount of text – you do the talking, not your slide.
+Be a Visual Storyteller &#8211; limit the amount of text &#8211; you do the talking, not your slide.
 Images Are Required: Try to have several pictures on your slide to maintain audience attention. You should have some text though.
 Add several pictures and some text.
 Movies and animated gifs are discouraged but not forbidden.
@@ -37,8 +37,8 @@ No external audio is allowed. Movies will be muted.
 Limit Text: No complete sentences on slides; use short phrases and keywords only.
 Content Preparation
 Define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news.
-Try to be unique and creative with your slide’s look and content.
-Don’t just copy the book; use the internet for research
+Try to be unique and creative with your slide&#8217;s look and content.
+Don&#8217;t just copy the book; use the internet for research
 Provide your own perspective.
 Minimize jargon to make it accessible to all classmates.
 
@@ -152,7 +152,7 @@ GREAT
 SLIDE
 
 #2 Public perception 
-There are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. 
+There are two common things which often dominate the public&#8217;s perception of biotechnology: lack of trust and ignorance of science. 
 How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?
 How have historical events shaped public trust in biotechnology? How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
 Can public perception influence funding and policy decisions in biotechnology?
@@ -237,7 +237,7 @@ SLIDE
 #5 Artificial Life and Xenobiology - Yamini
 Xenobiology in biotechnology is the creation of synthetic biological systems using non-natural molecules, genetic codes, or pathways, often to develop novel organisms or materials for various applications.
 Xenobiology extends biology by exploring hypothetical alien life and creating synthetic organisms with unnatural biochemistry, making it unique in testing the limits of life.
-Synthetic life challenges natural selection by introducing designed traits, bypassing traditional evolutionary processes, and redefining what constitutes “natural” in evolution.
+Synthetic life challenges natural selection by introducing designed traits, bypassing traditional evolutionary processes, and redefining what constitutes &#8220;natural&#8221; in evolution.
 
 #6 Dutch elm disease
 What is Dutch elm disease? Did Gary Strobel find a cure to Dutch elm disease? What did Strobel do wrong during his research? How does Dutch elm disease compare to the emerald ash borer? What is being done to stop the ash borer?
@@ -368,14 +368,14 @@ Goal: modify wild mouse populations to be immune to Lyme disease by altering the
 
 Preventive Strategies
 developing "daisy drives"
-→  designed to spread the genetic modification only locally  without affecting populations outside the target areas​
+&#8594;  designed to spread the genetic modification only locally  without affecting populations outside the target areas&#8203;
 Gene Drive: inserting protective antibodies into the mice's genome
 
-What is Lyme’s Disease and who is a vector?
+What is Lyme&#8217;s Disease and who is a vector?
 Lyme disease : Infectious disease caused by bacteria of the Borrelia species
 Primary Vector: Deer tick
 Reservoir Hosts: Mice
-→ mice do not directly spread but are susceptible to infection 
+&#8594; mice do not directly spread but are susceptible to infection 
 GREAT
 SLIDE
 
@@ -428,7 +428,7 @@ SLIDE
 #11 Trivial transgenics
 Ornamental
 Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. How do regulatory bodies view and manage transgenic organisms created for art or entertainment?
-What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+What are some non-&#8220;serious&#8221; applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to &#8220;serious&#8221; areas such as health care and agriculture?
 https://www.ekac.org/transgenic.html 
 https://research.ncsu.edu/ges/arts-work-in-biotech/artwork/
 
@@ -467,7 +467,7 @@ SLIDE
 Humans and BioTech
 
 #12 Assisted Reproductive Technology (ART)
-Historical perspective: Who was the first “test tube baby”? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
+Historical perspective: Who was the first &#8220;test tube baby&#8221;? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio? 
 Impact of IVF: How common is in vitro fertilization (IVF) today? How has IVF changed over the years? 
 IVF Alternatives: Why is intrauterine insemination (IUI) often used over IVF?  What are some other modern forms of assisted reproductive technology (ART) and how do they compare?
 Modern Innovations: How can a baby have three (3) parents using MRT? What are the controversies around preimplantation genetic diagnosis? Can you choose the color of your babies eyes?
@@ -481,7 +481,7 @@ SLIDE
 IUI = intrauterine insemination
 Mitochondrial Replacement Therapy (MRT)
 Egg from mom contains DNA and faulty mitochondria
-DNA is removed from mom’s egg
+DNA is removed from mom&#8217;s egg
 DNA is removed from donor leaving behind healthy mitochondria
 DNA from mom is transferred into donor egg
 End result is an egg with nuclear DNA from mom and mitochondrial DNA from donor
@@ -496,7 +496,7 @@ SLIDE
 Video from the Past
 American ExperienceTest Tube Babies
 Episode aired Oct 23, 2006
-“The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.”
+&#8220;The world's first successful in-vitro fertilization takes place in Great Britain resulting in a live birth on July 25,1978.&#8221;
 Runtime: 52m:37s
 
 #13 Prenatal Testing
@@ -507,10 +507,10 @@ Resources: https://en.wikipedia.org/wiki/Prenatal_testing https://en.wikipedia.o
 When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
 https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
 https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
-Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised “peace of mind instead caused anguish and confusion.
+Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised &#8220;peace of mind instead caused anguish and confusion.
 https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
 
-#13 Prenatal Testing—Fasiha
+#13 Prenatal Testing&#8212;Fasiha
 
                                                          #13 Prenatal Testing - Cynthia
 
@@ -538,10 +538,10 @@ Henrietta Lacks was an African American woman from Roanoke, Virginia, who unknow
 Henrietta Lacks' story is significant : Henrietta Lacks' family never received any compensation or recognition for their contribution to science. This raised questions about the fairness of research practices and the need for mechanisms to ensure that research participants benefit from the use of their biological materials.Henrietta Lacks' story brought to light the need for researchers to respect the rights of their participants, including their privacy, confidentiality, and control over their biological materials.
 
 #14 Ethical Sourcing of Biological Materials - Keren
-Biopiracy: “patenting of life”
-Root words “life” and “robbery”
+Biopiracy: &#8220;patenting of life&#8221;
+Root words &#8220;life&#8221; and &#8220;robbery&#8221;
 Unaffordable = bad for Indigenous populations
-Neem Tree “tree that cures everything”:
+Neem Tree &#8220;tree that cures everything&#8221;:
 India
 1994, USA patent, fungicides
 First case of patent being annulled
@@ -559,7 +559,7 @@ https://www.health.belgium.be/en/biopiracy-example-neem-tree
 
 
 #15 Embryonic stem cells
-Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is &#8220;stimulus-triggered acquisition of pluripotency&#8221; or STAP even possible today?
 https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
 https://stapcell.blogspot.com/2014/02/image-similarity.html 
 Hi leo, if you are watching this slide : I guess you need to cover last 3 questions, we both have covered first 3. 
@@ -568,15 +568,15 @@ https://docs.google.com/presentation/d/1t09Ixa2vyVvZUP7_qW68WboGLzVn3apLcT0l9XOg
 #15 Embryonic stem cells - Bhargavi
 
 #15 Embryonic stem cells - Leo
-stimulus-triggered acquisition of pluripotency” (STAP) 
+stimulus-triggered acquisition of pluripotency&#8221; (STAP) 
 
 #16 Purdue Pharma
 Overview of the Opioid Crisis: Describe the opioid crisis in the US. What is the scale of the problem in terms of overdose deaths today?  - Mudrika 
-Purdue Pharma’s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive? - Mudrika
+Purdue Pharma&#8217;s Role: How did Purdue Pharma contribute specifically to the crisis? Are they the primary instigators of the opioid crisis? Why? What makes OxyContin different than other opioids? Was OxyContin safer and less addictive? - Mudrika
 Marketing and Legal Issues: What tactics did Purdue Pharma use to promote OxyContin? Who within the company made the decisions to put profit over patient safety? What role did the Sackler family play? How did the marketing impact vulnerable communities?
 Legal Fallout: What were the legal consequences for Purdue Pharma? Did anyone go to prison? Where are the Sacklers now? 
 Future of the Crisis: When did the opioid industry move from OxyContin to fentanyl? How much more potent is fentanyl than morphine? What new challenges has fentanyl introduced?
-Bankruptcy and Compensation: How has Purdue Pharma’s bankruptcy affected compensation for victims’ families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
+Bankruptcy and Compensation: How has Purdue Pharma&#8217;s bankruptcy affected compensation for victims&#8217; families? What was the latest Supreme Court decision? What is the current status of the compensation funds?
 Resources: https://en.wikipedia.org/wiki/Purdue_Pharma https://en.wikipedia.org/wiki/Sackler_family https://en.wikipedia.org/wiki/Opioid_epidemic_in_the_United_States https://en.wikipedia.org/wiki/Timeline_of_the_opioid_epidemic 
 
 #16 Purdue Pharma - Mudrika
@@ -584,7 +584,7 @@ Opioid Crisis in 2024:
 Over 100,000 deaths annually still 
 2024: 12% reduction 
 Due to rise of synthetic opioids like fentanyl
-Purdue Pharma’s Role: 
+Purdue Pharma&#8217;s Role: 
 Oxycontin marketed 
 Heavily 
 As less addictive 
@@ -651,7 +651,7 @@ https://en.wikipedia.org/wiki/Category:Scientific_misconduct_incidents
 https://en.wikipedia.org/wiki/Category:Scientific_misconduct 
 
 #20 Scientific misconduct - Sai
-Misconduct → Investigation → Retraction → Career Damage.
+Misconduct &#8594; Investigation &#8594; Retraction &#8594; Career Damage.
 
 #20 Scientific misconduct - Chenyu
 Motivators for Scientific Misconduct
@@ -704,7 +704,7 @@ Paid for participation of children in studies
 Preformed unnecessary invasive procedures on children 
 
 #23 Blasphemous Biotech
-What are some examples of interference with nature (hypothetical or real) by biotechnology do you believe cross the line? Was SARS-CoV-2 created in a lab? Should we create super-viruses, such as the “transmissible H5N1 avian flu”? Jewel wasps can turn cockroaches into zombies? Can we make zombies? If possible, should we bring people back from the dead? Are they wrong, dangerous, or blasphemous? What are some other blasphemous experiments that are possible in biotech?
+What are some examples of interference with nature (hypothetical or real) by biotechnology do you believe cross the line? Was SARS-CoV-2 created in a lab? Should we create super-viruses, such as the &#8220;transmissible H5N1 avian flu&#8221;? Jewel wasps can turn cockroaches into zombies? Can we make zombies? If possible, should we bring people back from the dead? Are they wrong, dangerous, or blasphemous? What are some other blasphemous experiments that are possible in biotech?
 https://phys.org/news/2019-11-science-zombies-undead.html  
 https://www.sciencenewsforstudents.org/article/zombies-are-real  
 https://www.cidrap.umn.edu/news-perspective/2013/01/research-moratorium-modified-h5n1-viruses-ends 

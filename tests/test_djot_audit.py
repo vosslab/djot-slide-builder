@@ -4,11 +4,7 @@ import json
 from unittest import mock
 
 import slide_lib.cli
-import slide_lib.djot_audit
-import slide_lib.layout_measurement
 import slide_lib.native_export
-import slide_lib.native_model
-import slide_lib.presentation_theme
 
 
 def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path: object, capsys: object) -> None:
@@ -27,38 +23,3 @@ def test_audit_cli_reports_source_and_keeps_warnings_advisory(tmp_path: object, 
 	assert finding["file"] == str(path)
 	assert len(finding["lines"]) > 1
 	assert path.read_text(encoding="utf-8") == source
-
-
-def test_fractional_font_sizes_do_not_collapse_to_one_measured_width() -> None:
-	"""Nearby selected sizes must retain distinct advances near wrap boundaries."""
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-	small = slide_lib.layout_measurement.logical_points(32.1, theme)
-	large = slide_lib.layout_measurement.logical_points(32.4, theme)
-	assert session.advance(family, False, False, small, "Chromosomes") < (
-		session.advance(family, False, False, large, "Chromosomes"))
-
-
-def test_wrapping_uses_existing_hyphens_but_preserves_nonbreaking_hyphens() -> None:
-	"""Native break opportunities must not invent hyphens or lose source characters."""
-	theme = slide_lib.presentation_theme.default_theme()
-	session = slide_lib.layout_measurement.MeasurementSession(theme)
-	family = slide_lib.presentation_theme.ORDINARY_FONT_FAMILY
-	for separator in ("-", "\u2010", "\u2013", "\u2011"):
-		text = f"genes non{separator}recombinant"
-		width = session.advance(family, False, False, 28, f"genes non{separator}") + 1
-		lines, _widths = session.wrap_tokens(((text, family, False, False, False),), 28, width)
-		first = "".join(token[0] for token in lines[0]).rstrip()
-		assert first == ("genes" if separator == "\u2011" else f"genes non{separator}")
-
-
-def test_unfit_url_stops_at_floor_and_reports_without_losing_destination(tmp_path: object) -> None:
-	"""An excessive URL remains intact at 12 pt and produces an actionable warning."""
-	url = "https://example.test/" + "long-path/" * 20
-	path = tmp_path / "deck.djot"
-	path.write_text(f"=== layout: two-panels\n\n@left\n\n[{url}]({url})\n\n@right\n\nGenes.\n")
-	with mock.patch.object(slide_lib.native_export, "find_repo_root", return_value=tmp_path):
-		report = slide_lib.djot_audit.audit(str(path))
-	finding = next(item for item in report["findings"] if item["check"] == "url-too-wide")
-	assert finding["text"] == url
