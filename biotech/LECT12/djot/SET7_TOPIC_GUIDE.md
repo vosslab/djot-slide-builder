@@ -36,51 +36,62 @@ roles (2022 p. 16, 2023 p. 49), sourcing and consent (2023 p. 57),
 Xenobots (2024 p. 25), neem oil and the HeLa case (2024 p. 54, 2025 p. 73),
 and the BrainEx and OrganEx evidence questions (2025 pp. 86 and 90).
 
+## Using the revised deck
+
+The classroom PDF has 303 pages. Each topic opens with its numbered divider and the discussion
+questions from the Fall 2026 assignment. Use the page ranges below to jump straight to an assigned
+topic. Study and discussion slides carry source footers. The inherited images credit their original
+course pages. The fourteen new diagrams have an editable [drawing recipe](assets/set7_drawings/build.py).
+
+Worked examples include the Danish MMR cohort, DNA decay in moa bones, cloning and mitochondrial
+inheritance, and the effect of prevalence on positive screening results. Topic 21 uses the 2024
+SART member-clinic report. Topic 41 uses the March 2026 KFF poll.
+
 ## Topic map
 
 | # | Official topic label | Slide topic title | PDF pages | Question wording | Instructor PDF pages |
 | --: | --- | --- | ---: | --- | --- |
-| 1 | Ethics and Morals | Ethics and Morals | 6-9 | 2026 source | 2-5 |
-| 2 | Public Perception | Public Perception | 10-13 | 2026 source | 6-8 |
-| 3 | Scientific Misconduct | Scientific Misconduct | 14-18 | 2026 source | 33-34, 39 |
-| 4 | Purdue Pharma | Purdue Pharma | 20-24 | Adapted | 40-43 |
-| 5 | Andrew Wakefield | Andrew Wakefield and Public Harm | 25-28 | Adapted | 32 |
-| 6 | Antibiotic Overuse | Antibiotic Overuse | 29-32 | 2026 source | 17-21 |
-| 7 | Plant Transgenics | Transgenic Plants | 33-36 | 2026 source | 22-28 |
-| 8 | Dutch Elm Disease | Dutch Elm Disease | 37-43 | 2026 source | 57-60 |
-| 9 | Invasive Species | Genetic Invasive Species Control | 44-47 | Adapted |  |
-| 10 | Bioweapons | Bioweapons | 48-51 | Adapted |  |
-| 11 | Superviruses | Gain-of-Function and Supervirus Research | 52-55 | Adapted | 63 |
-| 12 | Artificial Life | Artificial Life | 57-61 | Adapted |  |
-| 13 | Xeno: Non DNA | Xenobiology and Non-DNA Life | 62-65 | Adapted |  |
-| 14 | Xeno: Non Organic | Xenobiology and Non-Organic Life | 66-69 | Adapted |  |
-| 15 | Animal Cloning | Cloning Animals | 70-74 | 2026 source | 35-39 |
-| 16 | De Extinction | Animal De-Extinction | 75-79 | 2026 source | 9-11 |
-| 17 | Animal Chimeras | Animal Chimeras | 80-83 | 2026 source |  |
-| 18 | Animal Redesign | Genetic Redesign of Animals | 84-89 | 2026 source | 46-51 |
-| 19 | Trivial Transgenics | Consumer-Oriented or Trivial Transgenics | 90-95 | 2026 source | 29-30 |
-| 20 | Esvelt and Lyme | Kevin Esvelt and Lyme Disease | 96-100 | Adapted |  |
-| 21 | ART and IVF | Assisted Reproductive Technology (ART) | 102-106 | 2026 source | 12-16 |
-| 22 | Prenatal Testing | Prenatal Testing | 107-110 | Adapted |  |
-| 23 | CRISPR babies | He Jiankui and Genome Editing in Humans | 111-114 | Adapted |  |
-| 24 | Directed Evolution | Directed Human Evolution (GATTACA) | 115-118 | 2026 source |  |
-| 25 | Synthetic Wombs | Synthetic Wombs and Ectogenesis | 119-122 | 2026 source |  |
-| 26 | Biological Materials | Ethical Sourcing of Biological Materials | 123-127 | 2026 source |  |
-| 27 | Embryonic Stem Cells | Embryonic Stem Cells | 128-132 | 2026 source | 52-56 |
-| 28 | Biohackers Zayner | Biohackers and Josiah Zayner | 133-136 | Adapted | 31 (topic context) |
-| 29 | Rogue Biohackers | Aaron Traywick and Rogue Biohackers | 137-140 | Adapted |  |
-| 30 | Cyborgs | Cyborgs and Human Enhancement | 141-144 | 2026 source |  |
-| 31 | Cloning for Organs | Human Cloning for Spare Organs | 145-148 | 2026 source |  |
-| 32 | Life Extension | Life Extension and Age-Reversal Biotechnology | 149-152 | 2026 source |  |
-| 33 | Cryonics | Cryonics and Long-Term Preservation | 153-156 | 2026 source |  |
-| 34 | Body Part Transplants | Body-Part Transplants and Identity | 157-160 | 2026 source |  |
-| 35 | Brains Outside Body | Brains Outside the Body | 161-164 | 2026 source |  |
-| 36 | Digital Resurrection | Digital Resurrection and Mind Uploading | 165-168 | 2026 source |  |
-| 37 | Death Reversal | Resurrection Biology and Death Reversal | 169-172 | 2026 source | 61-62 (topic context) |
-| 38 | Zombie Biology | Zombie Biology and Neuroparasitology | 173-176 | Adapted |  |
-| 39 | Aid in Dying | End-of-Life Ethics and Medical Aid in Dying | 177-180 | Adapted |  |
-| 40 | Controversial Biotech | Controversial Biotechnology | 182-185 | 2026 source | 64 |
-| 41 | Pharma Ethics | Other Pharmaceutical Ethics | 186-189 | 2026 source | 44-45 |
+| 1 | Ethics and Morals | Ethics and Morals | 6-13 | Adapted | 2-5 |
+| 2 | Public Perception | Public Perception | 14-19 | 2026 source | 6-8 |
+| 3 | Scientific Misconduct | Scientific Misconduct | 20-27 | 2026 source | 33-34, 39 |
+| 4 | Purdue Pharma | Purdue Pharma | 29-35 | Adapted | 40-43 |
+| 5 | Andrew Wakefield | Andrew Wakefield and Public Harm | 36-42 | Adapted | 32 |
+| 6 | Antibiotic Overuse | Antibiotic Overuse | 43-51 | Adapted | 17-21 |
+| 7 | Plant Transgenics | Transgenic Plants | 52-57 | Adapted | 22-28 |
+| 8 | Dutch Elm Disease | Dutch Elm Disease | 58-66 | Adapted | 57-60 |
+| 9 | Invasive Species | Genetic Invasive Species Control | 67-72 | Adapted |  |
+| 10 | Bioweapons | Bioweapons | 73-79 | Adapted |  |
+| 11 | Superviruses | Gain-of-Function and Supervirus Research | 80-85 | Adapted | 63 |
+| 12 | Artificial Life | Artificial Life | 87-93 | Adapted |  |
+| 13 | Xeno: Non DNA | Xenobiology and Non-DNA Life | 94-100 | Adapted |  |
+| 14 | Xeno: Non Organic | Xenobiology and Non-Organic Life | 101-107 | Adapted |  |
+| 15 | Animal Cloning | Cloning Animals | 108-115 | 2026 source | 35-39 |
+| 16 | De Extinction | Animal De-Extinction | 116-123 | Adapted | 9-11 |
+| 17 | Animal Chimeras | Animal Chimeras | 124-130 | 2026 source |  |
+| 18 | Animal Redesign | Genetic Redesign of Animals | 131-139 | Adapted | 46-51 |
+| 19 | Trivial Transgenics | Consumer-Oriented or Trivial Transgenics | 140-148 | Adapted | 29-30 |
+| 20 | Esvelt and Lyme | Kevin Esvelt and Lyme Disease | 149-155 | Adapted |  |
+| 21 | ART and IVF | Assisted Reproductive Technology (ART) | 157-166 | Adapted | 12-16 |
+| 22 | Prenatal Testing | Prenatal Testing | 167-173 | Adapted |  |
+| 23 | CRISPR babies | He Jiankui and Genome Editing in Humans | 174-179 | Adapted |  |
+| 24 | Directed Evolution | Directed Human Evolution (GATTACA) | 180-186 | 2026 source |  |
+| 25 | Synthetic Wombs | Synthetic Wombs and Ectogenesis | 187-193 | Adapted |  |
+| 26 | Biological Materials | Ethical Sourcing of Biological Materials | 194-200 | 2026 source |  |
+| 27 | Embryonic Stem Cells | Embryonic Stem Cells | 201-208 | 2026 source | 52-56 |
+| 28 | Biohackers Zayner | Biohackers and Josette Zayner | 209-214 | Adapted | 31 (topic context) |
+| 29 | Rogue Biohackers | Aaron Traywick and Rogue Biohackers | 215-220 | Adapted |  |
+| 30 | Cyborgs | Cyborgs and Human Enhancement | 221-226 | 2026 source |  |
+| 31 | Cloning for Organs | Human Cloning for Spare Organs | 227-233 | 2026 source |  |
+| 32 | Life Extension | Life Extension and Age-Reversal Biotechnology | 234-240 | 2026 source |  |
+| 33 | Cryonics | Cryonics and Long-Term Preservation | 241-246 | 2026 source |  |
+| 34 | Body Part Transplants | Body-Part Transplants and Identity | 247-252 | 2026 source |  |
+| 35 | Brains Outside Body | Brains Outside the Body | 253-258 | Adapted |  |
+| 36 | Digital Resurrection | Digital Resurrection and Mind Uploading | 259-266 | 2026 source |  |
+| 37 | Death Reversal | Resurrection Biology and Death Reversal | 267-272 | Adapted | 61-62 (topic context) |
+| 38 | Zombie Biology | Zombie Biology and Neuroparasitology | 273-278 | Adapted |  |
+| 39 | Aid in Dying | End-of-Life Ethics and Medical Aid in Dying | 279-284 | Adapted |  |
+| 40 | Controversial Biotech | Controversial Biotechnology | 286-292 | Adapted | 64 |
+| 41 | Pharma Ethics | Other Pharmaceutical Ethics | 293-300 | 2026 source | 44-45 |
 
 ## Instructor source disposition
 

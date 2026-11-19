@@ -12,7 +12,11 @@
 
 @body
 
-- Present the class with two (2) controversial biotechnology topics not discussed in class so far, either recent or historical? What were the concerns? What the public's perception, morally, ethically? If the novelty is over, have the technologies been accepted?
+- Choose two biotechnology controversies the class has yet to discuss. What concerned people at the time? Whose views changed as evidence or experience accumulated?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 99.
 
 === layout: one-panel
 
@@ -24,15 +28,74 @@
 - Identify what was actually demonstrated and what people disagreed about.
 - Ask whether the disagreement is about evidence, values, or who gets to decide.
 
-=== layout: one-panel
+@citation
+
+[UNESCO, Universal Declaration on Bioethics and Human Rights](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights)
+
+=== layout: two-panels
 
 # 40. A Common Format for Comparison
 
+@left
+
+*Case 1*
+
+Who receives the benefit? Who bears the risk? Name one finding that would change your position.
+
+@right
+
+*Case 2*
+
+Ask the same questions. Which disagreement between the two cases is about values?
+
+@citation
+
+[UNESCO, Universal Declaration on Bioethics and Human Rights](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights)
+
+=== layout: one-panel
+
+# 40. Example for Comparison: Access to Naloxone
+
 @body
 
-- For each case, list one claimed benefit, one possible harm, and who bears it.
-- Name one finding that could change your initial position.
-- Explain which question would still be a matter of values.
+In 2023 the FDA approved a naloxone nasal spray for sale without a prescription. Naloxone can reverse an opioid overdose.
+
+- The regulatory change removed one barrier to obtaining this product.
+- If a store never stocks it or the price is too high, what benefit will a neighbor actually see?
+
+@citation
+
+[FDA, First over-the-counter naloxone nasal spray (2023)](https://www.fda.gov/news-events/press-announcements/fda-approves-first-over-counter-naloxone-nasal-spray)
+
+=== layout: one-panel
+
+# 40. Example for Comparison: Access to Genome Data
+
+@body
+
+A research team wants to reuse HeLa genome data. Controlled access can help protect a family's privacy, but adds a step for researchers.
+
+- Compare this with access to naloxone. What is being made accessible in each case?
+- Use these as practice, then choose two different controversies for your own talking point.
+
+@citation
+
+[NIH, The NIH-Lacks Family Agreement](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement)
+
+=== layout: one-panel
+
+# 40. A 60-second Position You Could Defend
+
+@body
+
+Suppose a rural clinic can join a tissue bank, but the community has no seat on its review board.
+
+- A resident might support sharing samples if local patients receive results they can use.
+- Another resident might require a voice in deciding future uses. What evidence could resolve the first issue? What agreement could resolve the second?
+
+@citation
+
+[UNESCO, Universal Declaration on Bioethics and Human Rights](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights)
 
 === layout: subsection
 
@@ -46,6 +109,10 @@
 
 - Select two other topics in pharmaceutical regulation or ethics that have not been discussed before in class and present them.
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 101.
+
 === layout: one-panel
 
 # 41. Pricing and Evidence Disclosure
@@ -56,6 +123,10 @@
 - Selective reporting can make a treatment look more useful or safer than the full evidence suggests.
 - Distinguish a question about affordability from a question about reliable evidence.
 
+@citation
+
+[Turner et al., Selective publication of antidepressant trials (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)  |  [KFF Health Tracking Poll, March 2026, question 7](https://files.kff.org/attachment/topline-kff-health-tracking-poll-march-2026.pdf)
+
 === layout: one-panel
 
 # 41. Two Questions for the Company
@@ -65,3 +136,67 @@
 - What would show that patients can actually get the product?
 - What study results are available for an independent review?
 - Identify the groups that would be helped or harmed by each policy.
+
+@citation
+
+[Chan et al., Protocols compared with published trials (2004)](https://pubmed.ncbi.nlm.nih.gov/15161896/)  |  [KFF Health Tracking Poll, March 2026, question 7](https://files.kff.org/attachment/topline-kff-health-tracking-poll-march-2026.pdf)
+
+=== layout: one-panel
+
+# 41. Which Antidepressant Trials Reached Readers?
+
+@body
+
+Turner and colleagues compared the FDA record for 74 studies with the published literature. They found that 31% of the studies had gone unpublished.
+
+- Someone reading only published papers would see a more favorable picture.
+- How could a trial registry help a reader discover a study whose results never appeared in a journal?
+
+@citation
+
+[Turner et al., Selective publication of antidepressant trials (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)
+
+=== layout: big-image
+
+@image
+
+![How Does the Record Change the Picture?](assets/set7_drawings/publication_bias.drawn.svg)
+
+@caption
+
+Topic 41: Which Record Did the Reader See?\
+How did selective publication change the apparent share of positive trials?
+
+@citation
+
+[Turner et al., Selective publication of antidepressant trials (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)
+
+=== layout: one-panel
+
+# 41. When an Effective Medicine Stays at the Pharmacy
+
+@body
+
+In KFF's March 2026 U.S. poll, adults reported what they did in the past year because of cost.
+
+- *27%* left a prescription unfilled. *19%* cut pills in half or skipped doses.
+- One person could report both. Why would adding the percentages give a misleading estimate of how many people had trouble affording medicine?
+
+@citation
+
+[KFF Health Tracking Poll, March 2026, question 7](https://files.kff.org/attachment/topline-kff-health-tracking-poll-march-2026.pdf)
+
+=== layout: one-panel
+
+# 41. What Outcome Was Promised at the Start?
+
+@body
+
+Chan and colleagues compared clinical trial protocols with the papers that followed them. They found differences in which outcomes were reported.
+
+- An outcome specified before results are known gives readers a reference point.
+- If a paper highlights a favorable secondary outcome, where would you look for the original primary outcome?
+
+@citation
+
+[Chan et al., Protocols compared with published trials (2004)](https://pubmed.ncbi.nlm.nih.gov/15161896/)

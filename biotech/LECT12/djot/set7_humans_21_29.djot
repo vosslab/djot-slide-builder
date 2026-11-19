@@ -14,9 +14,13 @@
 
 - Historical perspective: Who was the first "test tube baby"? When was she born? Explain the controversy of IVF at the time. Who is Doris Del-Zio?
 - Impact of IVF: How common is in vitro fertilization (IVF) today? How has IVF changed over the years?
-- IVF Alternatives: Why is intrauterine insemination (IUI) often used over IVF?  What are some other modern forms of assisted reproductive technology (ART) and how do they compare?
-- Modern Innovations: How can a baby have three (3) parents using MRT? What are the controversies around preimplantation genetic diagnosis? Can you choose the color of your babies eyes?
+- Where does fertilization occur in IUI and IVF? Which one counts as ART in U.S. reporting?
+- Modern Innovations: What does each person contribute in mitochondrial donation? What are the controversies around preimplantation genetic diagnosis? How predictable would eye color be?
 - Freezing Eggs: What are the main reasons individuals choose to freeze their eggs? Does oocyte cryopreservation work?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 57.
 
 === layout: one-panel
 
@@ -27,6 +31,10 @@
 - In IVF, fertilization takes place outside the body. An embryo may later be transferred into a uterus.
 - In IUI, sperm are placed in the uterus. Fertilization, if it occurs, takes place inside the body.
 - Louise Brown, the first child born through IVF, was born in England in 1978.
+
+@citation
+
+[CDC, About assisted reproductive technology](https://www.cdc.gov/art/about/index.html)  |  [Nobel Assembly, Robert Edwards and IVF (2010)](https://www.nobelprize.org/uploads/2018/06/popular-medicineprize2010.pdf)
 
 === layout: one-panel
 
@@ -40,7 +48,7 @@
 
 @citation
 
-PBS American Experience, Test Tube Babies: https://www.pbs.org/wgbh/americanexperience/films/babies/
+[Library of Congress, Del Zio v. Presbyterian Hospital](https://www.loc.gov/exhibitions/drawing-justice-courtroom-illustrations/about-this-exhibition/significant-and-landmark-cases/frozen-embryos-as-personal-property/)
 
 === layout: one-panel
 
@@ -51,6 +59,90 @@ PBS American Experience, Test Tube Babies: https://www.pbs.org/wgbh/americanexpe
 - An egg donor and sperm donor contribute genetic material.
 - A gestational carrier can carry an embryo formed using an egg from another person.
 - Distinguish genetic contribution, pregnancy, and the role of raising a child.
+
+@citation
+
+[HFEA, Mitochondrial donation treatment](https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/mitochondrial-donation-treatment)  |  [CDC, About assisted reproductive technology](https://www.cdc.gov/art/about/index.html)
+
+=== layout: two-panels
+
+# 21. Why Does the Location of Fertilization Matter?
+
+@left
+
+*IUI*
+
+Sperm enter the uterus. The egg stays inside the body. U.S. ART surveillance excludes IUI alone.
+
+@right
+
+*IVF*
+
+Eggs are collected and can be fertilized in the lab. U.S. ART surveillance includes treatments that handle eggs or embryos.
+
+@citation
+
+[CDC, About assisted reproductive technology](https://www.cdc.gov/art/about/index.html)  |  [Nobel Assembly, Robert Edwards and IVF (2010)](https://www.nobelprize.org/uploads/2018/06/popular-medicineprize2010.pdf)
+
+=== layout: big-image
+
+@image
+
+![Follow the Egg](assets/set7_drawings/fertilization_site.drawn.svg)
+
+@caption
+
+Topic 21: Follow the Egg\
+Where is the egg when fertilization takes place in each treatment?
+
+@citation
+
+[CDC, About assisted reproductive technology](https://www.cdc.gov/art/about/index.html)  |  [Nobel Assembly, Robert Edwards and IVF (2010)](https://www.nobelprize.org/uploads/2018/06/popular-medicineprize2010.pdf)
+
+=== layout: one-panel
+
+# 21. Whose Mitochondria?
+
+@body
+
+Mitochondrial donation can help a family at risk of passing on serious mitochondrial disease.
+
+- The child has nuclear DNA from the egg and sperm providers and mitochondrial DNA mostly from the mitochondrial donor.
+- "Three parents" hides how different those contributions are. It also leaves out who carries and raises the child.
+
+@citation
+
+[HFEA, Mitochondrial donation treatment](https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/mitochondrial-donation-treatment)
+
+=== layout: one-panel
+
+# 21. A Frozen Egg Is One Chance
+
+@body
+
+Egg freezing preserves eggs at the age when they were collected. Some eggs may fail to survive warming, fertilize or develop into an embryo.
+
+- Imagine two clinics advertise the same number of births. One reports births per embryo transfer. The other reports births per patient who froze eggs.
+- Which number answers a patient's question before any eggs have been collected?
+
+@citation
+
+[HFEA, Egg freezing in fertility treatment](https://www.hfea.gov.uk/media/2658/egg-freezing-in-fertility-treatment-supplement.pdf)
+
+=== layout: one-panel
+
+# 21. How Many Babies Were Born Through IVF?
+
+@body
+
+U.S. clinics reporting to SART recorded *100,158 babies* in their 2024 IVF data.
+
+- *97,549 treatment cycles* resulted in at least one live birth. Why can there be more babies than successful cycles?
+- A twin delivery counts as one cycle with a live birth and two babies. What denominator would a patient need to ask about success per cycle started?
+
+@citation
+
+[ASRM and SART, 2024 IVF outcomes (released March 2026)](https://www.asrm.org/news-and-events/asrm-news/press-releasesbulletins/for-the-first-time-more-than-100000-babies-born-through-ivf-in-the-u.s.-in-a-single-year/)
 
 === layout: subsection
 
@@ -66,6 +158,10 @@ PBS American Experience, Test Tube Babies: https://www.pbs.org/wgbh/americanexpe
 - What does a positive screening result mean?
 - How can a rare condition affect the chance that a positive result is correct?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 60.
+
 === layout: one-panel
 
 # 22. Screening Estimates Risk
@@ -78,7 +174,7 @@ PBS American Experience, Test Tube Babies: https://www.pbs.org/wgbh/americanexpe
 
 @citation
 
-FDA, Genetic Non-Invasive Prenatal Screening Tests May Have False Results: https://www.fda.gov/media/158169/download
+[MedlinePlus, Prenatal cell-free DNA screening](https://medlineplus.gov/lab-tests/prenatal-cell-free-dna-screening/)
 
 === layout: one-panel
 
@@ -95,6 +191,55 @@ A hypothetical screen flags 20 of 1,000 pregnancies.
 
 *10 of 20 positive results are correct in this example.*
 
+@citation
+
+[MedlinePlus, Prenatal cell-free DNA screening](https://medlineplus.gov/lab-tests/prenatal-cell-free-dna-screening/)
+
+=== layout: big-image
+
+@image
+
+![Keep Only the Positive Screens](assets/set7_drawings/positive_screens.drawn.svg)
+
+@caption
+
+Topic 22: Count the Positive Screens\
+Of these 20 pregnancies, how many have the condition?
+
+@citation
+
+[MedlinePlus, Prenatal cell-free DNA screening](https://medlineplus.gov/lab-tests/prenatal-cell-free-dna-screening/)
+
+=== layout: one-panel
+
+# 22. Now Make the Condition Rarer
+
+@body
+
+Use the same imaginary screen as before. Assume it detects every affected pregnancy and flags about 1% of unaffected pregnancies.
+
+- In 10,000 pregnancies, suppose only 10 have the condition. Expect 10 true positives and about 100 false positives.
+- Of about 110 positive results, roughly 9% are true positives. What changed from the earlier 50% example?
+
+@citation
+
+[MedlinePlus, Prenatal cell-free DNA screening](https://medlineplus.gov/lab-tests/prenatal-cell-free-dna-screening/)
+
+=== layout: one-panel
+
+# 22. A Positive Screen and a Different Diagnostic Result
+
+@body
+
+Most pregnancy-related cell-free DNA in maternal blood comes from the placenta. Occasionally some placental cells have a chromosome change that fetal cells do not share.
+
+- A screen can pick up a real placental signal.
+- Genetic counseling and appropriate diagnostic testing help a patient learn what that signal means for this pregnancy.
+
+@citation
+
+[Choi et al., Confined placental mosaicism (2013)](https://pubmed.ncbi.nlm.nih.gov/23192749/)  |  [MedlinePlus, Prenatal cell-free DNA screening](https://medlineplus.gov/lab-tests/prenatal-cell-free-dna-screening/)
+
 === layout: subsection
 
 # 23. He Jiankui and Genome Editing in Humans
@@ -108,6 +253,10 @@ A hypothetical screen flags 20 of 1,000 pregnancies.
 - What ethical concerns arise from the potential use of CRISPR to create designer babies?
 - What are the ethical implications of making heritable changes to the human genome?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 62.
+
 === layout: one-panel
 
 # 23. The 2018 Announcement
@@ -120,7 +269,7 @@ A hypothetical screen flags 20 of 1,000 pregnancies.
 
 @citation
 
-WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/item/9789240030381
+[National Academies, Second International Summit (2018)](https://www.nationalacademies.org/read/25343)  |  [WHO, Human genome editing recommendations (2021)](https://www.who.int/publications-detail-redirect/9789240030381)
 
 === layout: one-panel
 
@@ -128,9 +277,43 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 
 @body
 
-- An adult can consent to a treatment of their own cells.
+- In 2023, FDA approved Casgevy for eligible patients with sickle cell disease. It uses the patient's own edited blood stem cells.
 - Embryo editing can expose the future child and later generations to uncertainty.
 - Ask what alternatives existed and who had the authority to approve the work.
+
+@citation
+
+[International Commission, Heritable Human Genome Editing (2020)](https://nap.nationalacademies.org/resource/25665/Heritable%20Human%20Genome%20Editing%20Report%20Summary%20-%20FINAL%2020200903.pdf)  |  [FDA, Casgevy approval for sickle cell disease (2023)](https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease)
+
+=== layout: one-panel
+
+# 23. What Evidence Did the Announcement Leave Out?
+
+@body
+
+The 2018 summit organizers heard the claim that children had been born after embryo editing. They challenged the medical justification, study design, and protection of participants.
+
+- A birth alone cannot show that the intended health benefit occurred.
+- What responsibility do investigators have to protect the children's privacy during follow-up?
+
+@citation
+
+[National Academies, Second International Summit (2018)](https://www.nationalacademies.org/read/25343)
+
+=== layout: one-panel
+
+# 23. Who Lives with the Decision?
+
+@body
+
+Compare a consenting adult considering a change to blood-forming cells with a proposed edit to an embryo intended for pregnancy.
+
+- In the first case, follow-up centers on the person receiving treatment.
+- In the second, the future child would live with the outcome. A change in cells that make eggs or sperm could also reach descendants.
+
+@citation
+
+[International Commission, Heritable Human Genome Editing (2020)](https://nap.nationalacademies.org/resource/25665/Heritable%20Human%20Genome%20Editing%20Report%20Summary%20-%20FINAL%2020200903.pdf)
 
 === layout: subsection
 
@@ -148,6 +331,10 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 - What social risks arise if genetic enhancement becomes available only to wealthy families?
 - How might directed evolution alter concepts of fairness, diversity, and disability?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 64.
+
 === layout: one-panel
 
 # 24. Selection, Treatment, and Enhancement
@@ -157,6 +344,10 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 - Preimplantation genetic testing can inform a choice among embryos. Editing changes DNA.
 - Treating a serious disease and choosing a preferred trait raise different questions.
 - Many traits reflect many genetic variants plus the environment.
+
+@citation
+
+[HFEA, Embryo testing for inherited conditions](https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/pre-implantation-genetic-testing-for-monogenic-disorders-pgt-m-and-pre-implantation-genetic-testing-for-chromosomal-structural-rearrangements-pgt-sr)  |  [Martin et al., Polygenic risk scores and health disparities (2019)](https://pubmed.ncbi.nlm.nih.gov/30926966/)
 
 === layout: one-panel
 
@@ -168,6 +359,60 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 - A prediction is a probability. Its accuracy may vary across populations.
 - Who would be disadvantaged if employers treated probabilities as certainties?
 
+@citation
+
+[Sony Pictures, Gattaca (1997)](https://www.sonypictures.com/movies/gattaca)  |  [Martin et al., Polygenic risk scores and health disparities (2019)](https://pubmed.ncbi.nlm.nih.gov/30926966/)
+
+=== layout: one-panel
+
+# 24. When the Family Variant Is Known
+
+@body
+
+One parent carries a particular disease-causing variant. During IVF, a clinic can test embryos for that familial variant.
+
+- The result can inform which embryo to transfer. The test changes the information available to the family.
+- What options remain if no embryo meets the family's criteria?
+
+@citation
+
+[HFEA, Embryo testing for inherited conditions](https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/pre-implantation-genetic-testing-for-monogenic-disorders-pgt-m-and-pre-implantation-genetic-testing-for-chromosomal-structural-rearrangements-pgt-sr)
+
+=== layout: two-panels
+
+# 24. Could an Employer Screen Vincent?
+
+@left
+
+*In GATTACA*
+
+Vincent loses access to jobs because of his genetic profile.
+
+@right
+
+*In the United States*
+
+GINA limits how covered employers and health insurers use genetic information. Life, disability, and long-term-care insurance fall outside this law.
+
+@citation
+
+[NHGRI, Genetic discrimination](https://www.genome.gov/about-genomics/policy-issues/Genetic-Discrimination)  |  [Sony Pictures, Gattaca (1997)](https://www.sonypictures.com/movies/gattaca)
+
+=== layout: one-panel
+
+# 24. A Risk Score Travels to Another Population
+
+@body
+
+A score built from one ancestry group may predict disease less accurately in people whose ancestry was poorly represented in the training data.
+
+- Before using the score in a new population, compare predictions with observed outcomes there.
+- If opportunities depend on the score, the cost of prediction error may fall unevenly.
+
+@citation
+
+[Martin et al., Polygenic risk scores and health disparities (2019)](https://pubmed.ncbi.nlm.nih.gov/30926966/)
+
 === layout: subsection
 
 # 25. Synthetic Wombs and Ectogenesis
@@ -178,12 +423,16 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 
 @body
 
-- What recent experiments with artificial wombs in animals demonstrate the possibility of human ectogenesis?
-- How might synthetic wombs change reproductive medicine, prematurity care, or fertility options?
+- Which part of gestation has been supported outside the body in animals? What would a human study still need to show?
+- How might partial support change care for extreme prematurity?
 - Which parts of fetal development are easiest or hardest to support outside the body?
 - How might ectogenesis shift parental roles, legal definitions of pregnancy, or reproductive rights?
-- What long term medical and psychological questions remain unanswered for babies born through ectogenesis?
+- What long-term outcomes would researchers need to track in a future human study?
 - How would society respond if ectogenesis became safer than traditional pregnancy?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 66.
 
 === layout: one-panel
 
@@ -191,13 +440,13 @@ WHO, Human Genome Editing Recommendations: https://www.who.int/publications/i/it
 
 @body
 
-- In a 2017 study, a fluid-filled system supported development of extremely premature lambs for several weeks.
+- In a 2017 study, fetal lambs continued developing in a fluid-filled system for up to four weeks.
 - The system modeled aspects of the womb during part of gestation.
 - Support for premature development and an entire pregnancy outside the body are separate claims.
 
 @citation
 
-Partridge et al. (2017), premature lambs: https://doi.org/10.1038/ncomms15112
+[Partridge et al., Extra-uterine support in lambs (2017)](https://pubmed.ncbi.nlm.nih.gov/28440792/)
 
 === layout: one-panel
 
@@ -208,6 +457,55 @@ Partridge et al. (2017), premature lambs: https://doi.org/10.1038/ncomms15112
 - Compare survival and long-term development with existing neonatal care.
 - Ask how parents could make a decision under stress and uncertainty.
 - Decide which harms would prompt researchers to stop a study.
+
+@citation
+
+[Partridge et al., Extra-uterine support in lambs (2017)](https://pubmed.ncbi.nlm.nih.gov/28440792/)  |  [FDA, Step 3 in drug development: Clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research)
+
+=== layout: one-panel
+
+# 25. What Did the Lamb Study Measure?
+
+@body
+
+The team supported fetal lambs for up to four weeks. The lungs continued to mature and the animals grew during support.
+
+- The lambs had already developed inside a ewe before entering the system.
+- An experiment that starts late in gestation cannot answer whether the same system could support an embryo from fertilization.
+
+@citation
+
+[Partridge et al., Extra-uterine support in lambs (2017)](https://pubmed.ncbi.nlm.nih.gov/28440792/)
+
+=== layout: big-image
+
+@image
+
+![Which Part of Gestation Was Studied?](assets/set7_drawings/lamb_support.drawn.svg)
+
+@caption
+
+Topic 25: Which Part of Gestation Was Studied?\
+Find the transfer point. What had already happened?
+
+@citation
+
+[Partridge et al., Extra-uterine support in lambs (2017)](https://pubmed.ncbi.nlm.nih.gov/28440792/)
+
+=== layout: one-panel
+
+# 25. Which Comparison Would Matter to a Family?
+
+@body
+
+Imagine a future study offers extra-uterine support for extreme prematurity.
+
+- Compare outcomes with the neonatal care available at the same developmental stage.
+- Counting days of support tells families something different from counting survivors with long-term follow-up.
+
+@citation
+
+[Partridge et al., Extra-uterine support in lambs (2017)](https://pubmed.ncbi.nlm.nih.gov/28440792/)  |  [FDA, Step 3 in drug development: Clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research)
 
 === layout: subsection
 
@@ -223,19 +521,23 @@ Partridge et al. (2017), premature lambs: https://doi.org/10.1038/ncomms15112
 - Who was Henrietta Lacks, and why is her story significant in the context of ethical sourcing of biological materials?
 - What is biopiracy? How does biopiracy using patents affect the livelihoods and cultural heritage of indigenous and local communities? Can you analyze a well-known case of biopiracy, discussing both the biological material involved and the community affected? What ethical guidelines should biotechnology companies follow to avoid biopiracy?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 68.
+
 === layout: one-panel
 
 # 26. HeLa and Consent
 
 @body
 
-- Cells taken during Henrietta Lacks's cancer care became a widely used research cell line.
+- In 1951, cells taken from Henrietta Lacks's cervical tumor became a widely used research cell line.
 - She did not give permission for the research use of those cells.
 - Her case connects consent, privacy, and who benefits from research.
 
 @citation
 
-NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
+[NIH, The NIH-Lacks Family Agreement](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement)
 
 === layout: one-panel
 
@@ -246,6 +548,10 @@ NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
 - A resource may come from a community that has maintained it or shared knowledge about it.
 - Biopiracy concerns include taking that resource or knowledge without permission or fair benefit sharing.
 - Ask who can give permission and what the agreement should cover.
+
+@citation
+
+[Convention on Biological Diversity, Nagoya Protocol, Article 5](https://www.cbd.int/abs/text/articles?sec=abs-05)
 
 === layout: one-panel
 
@@ -259,7 +565,37 @@ NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
 
 @citation
 
-[European Patent Office, decision T 0416/01](https://www.epo.org/en/boards-of-appeal/decisions/t010416eu1)
+[European Patent Office, Decision T 0416/01 (2005)](https://www.epo.org/en/boards-of-appeal/decisions/t010416eu1)
+
+=== layout: one-panel
+
+# 26. Why DNA Data Can Affect Relatives
+
+@body
+
+A research team wants to post a HeLa genome sequence. Henrietta Lacks's relatives share some inherited variants with her.
+
+- In 2013, NIH and the family agreed on controlled access to certain HeLa genome data. Family representatives take part in access review.
+- Growing cells and publishing identifiable family information raise different permission questions.
+
+@citation
+
+[NIH, The NIH-Lacks Family Agreement](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement)
+
+=== layout: one-panel
+
+# 26. A Patent Office and a Community Answer Different Questions
+
+@body
+
+The neem patent appeal examined earlier public use of the claimed method. A patent can fail if that method was already known.
+
+- Revoking a claim does not set the price of access or decide who shares future benefits.
+- Benefit-sharing agreements can address training, credit, or payment. Which would matter to the community in your example?
+
+@citation
+
+[Convention on Biological Diversity, Nagoya Protocol, Article 5](https://www.cbd.int/abs/text/articles?sec=abs-05)  |  [European Patent Office, Decision T 0416/01 (2005)](https://www.epo.org/en/boards-of-appeal/decisions/t010416eu1)
 
 === layout: subsection
 
@@ -273,6 +609,10 @@ NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
 
 - Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is "stimulus-triggered acquisition of pluripotency" or STAP even possible today?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 70.
+
 === layout: one-panel
 
 # 27. Different Sources of Pluripotent Cells
@@ -282,6 +622,10 @@ NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
 - Embryonic stem cells come from early embryos and can form many cell types.
 - Induced pluripotent stem cells are produced by reprogramming already specialized cells.
 - Both are research tools. A useful cell in culture is an early step toward a possible treatment.
+
+@citation
+
+[Thomson et al., Human embryonic stem cell lines (1998)](https://pubmed.ncbi.nlm.nih.gov/9804556/)  |  [Takahashi et al., Human induced pluripotent stem cells (2007)](https://pubmed.ncbi.nlm.nih.gov/18035408/)
 
 === layout: one-panel
 
@@ -295,7 +639,7 @@ NIH Office of Science Policy, HeLa Cells: https://osp.od.nih.gov/hela-cells/
 
 @citation
 
-Nature, retraction of the STAP report (2014): https://doi.org/10.1038/nature13598
+[Nature, Retraction of the STAP paper (2014)](https://pubmed.ncbi.nlm.nih.gov/24990753/)
 
 === layout: big-image
 
@@ -308,9 +652,58 @@ Nature, retraction of the STAP report (2014): https://doi.org/10.1038/nature1359
 Topic 27: Haruko Obokata and the STAP Claims\
 The retracted reports make this a case about reproducibility as well as cell identity.
 
+@citation
+
+Course image: instructor ethics deck, p. 55.
+
+=== layout: one-panel
+
+# 27. Two Starting Materials, One Property to Test
+
+@body
+
+One group derived cell lines from early human embryos. Another began with adult human skin cells and reprogrammed them.
+
+- Both groups needed evidence that the cells could develop into many kinds of specialized cells.
+- An iPS cell offers a way to study a patient's own genetic background. Which part of the embryo-sourcing debate changes?
+
+@citation
+
+[Thomson et al., Human embryonic stem cell lines (1998)](https://pubmed.ncbi.nlm.nih.gov/9804556/)  |  [Takahashi et al., Human induced pluripotent stem cells (2007)](https://pubmed.ncbi.nlm.nih.gov/18035408/)
+
+=== layout: one-panel
+
+# 27. A Headline After a Retraction
+
+@body
+
+Imagine an article says, "Stress turns ordinary cells into stem cells," and links to the retracted STAP report.
+
+- Follow the paper to the journal notice. The authors withdrew the report because they could no longer stand by it.
+- A fair headline would describe the withdrawal. Pointing to independent iPS cell results would not validate the STAP claim.
+
+@citation
+
+[Nature, Retraction of the STAP paper (2014)](https://pubmed.ncbi.nlm.nih.gov/24990753/)  |  [COPE, Retraction guidelines](https://doi.org/10.24318/cope.2019.1.4)
+
+=== layout: one-panel
+
+# 27. Can NIH Fund Work on Embryonic Stem Cells?
+
+@body
+
+The 2009 NIH guidelines set conditions for using eligible human embryonic stem cell lines in NIH-funded research. They distinguish research using an existing line from deriving the line.
+
+- Among the conditions for certain IVF-derived lines are voluntary donation, informed consent, and embryos no longer needed for reproduction.
+- To answer a funding question, first identify the cell line and the activity the grant would support.
+
+@citation
+
+[NIH, 2009 Guidelines for Human Stem Cell Research](https://stemcells.nih.gov/research-policy/guidelines-for-human-stem-cell-research)
+
 === layout: subsection
 
-# 28. Biohackers and Josiah Zayner
+# 28. Biohackers and Josette Zayner
 
 === layout: bookend
 
@@ -321,6 +714,10 @@ The retracted reports make this a case about reproducibility as well as cell ide
 - What are the potential benefits of citizen science in biology?
 - What are the risks when a public demonstration involves genetic self-experimentation?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 72.
+
 === layout: one-panel
 
 # 28. Citizen Science and Self-experimentation
@@ -328,8 +725,12 @@ The retracted reports make this a case about reproducibility as well as cell ide
 @body
 
 - Community labs can make biology education and shared equipment more accessible.
-- Josiah Zayner used a public self-experiment to argue for individual autonomy.
+- Josette Zayner, identified as Josiah in the original assignment, conducted a public self-experiment in 2017.
 - A demonstration can show that someone tried something. It cannot establish a reliable clinical result.
+
+@citation
+
+[Oral History Project, Interview with Zayner](https://protocol.ecologies.info/interviews/zayner-biohacking/)
 
 === layout: one-panel
 
@@ -340,6 +741,40 @@ The retracted reports make this a case about reproducibility as well as cell ide
 - A public demonstration can encourage imitation.
 - Ask how bystanders, volunteers, or future patients might be affected.
 - Compare a supervised education project with an untested intervention in a person.
+
+@citation
+
+[FDA, Self-administration of gene therapy](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/information-about-self-administration-gene-therapy)
+
+=== layout: one-panel
+
+# 28. What Can a Public Demonstration Document?
+
+@body
+
+An audience saw Zayner take a personal risk. A recording documents that public act and what the speaker said.
+
+- To establish a biological outcome, someone would need measurements made before and after, with a credible comparison.
+- Which claim can a journalist verify from the video alone?
+
+@citation
+
+[Oral History Project, Interview with Zayner](https://protocol.ecologies.info/interviews/zayner-biohacking/)
+
+=== layout: one-panel
+
+# 28. When a Personal Story Becomes an Advertisement
+
+@body
+
+Imagine a seller links a personal demonstration directly to a product order page.
+
+- A customer may read the story as a promise that the product works.
+- Ask which benefit the page implies and whether the seller has evidence for that particular benefit.
+
+@citation
+
+[FDA, Self-administration of gene therapy](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/information-about-self-administration-gene-therapy)  |  [FTC, Health Products Compliance Guidance](https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance)
 
 === layout: subsection
 
@@ -354,6 +789,10 @@ The retracted reports make this a case about reproducibility as well as cell ide
 - What ethical problems arise when experiments occur without approval or medical supervision?
 - How did Traywick differ from responsible community biology groups?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 74.
+
 === layout: one-panel
 
 # 29. A Demonstration Is Weak Evidence
@@ -364,6 +803,10 @@ The retracted reports make this a case about reproducibility as well as cell ide
 - An uncontrolled demonstration cannot show whether an intervention works or whether harms are common.
 - A credible study defines outcomes, monitors harms, and states what would stop the study.
 
+@citation
+
+[Sarah Zhang, Interview with Zayner on the Traywick demonstration (2018)](https://www.theatlantic.com/science/archive/2018/02/biohacking-stunts-crispr/553511/)  |  [FDA, Step 3 in drug development: Clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research)
+
 === layout: one-panel
 
 # 29. Consent Under Uncertainty
@@ -373,3 +816,37 @@ The retracted reports make this a case about reproducibility as well as cell ide
 - A volunteer needs to understand the evidence, risks, and alternatives.
 - Publicity and promises of a cure can put pressure on the decision.
 - What would independent review add?
+
+@citation
+
+[The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
+
+=== layout: one-panel
+
+# 29. An Audience Cannot Supply a Comparison Group
+
+@body
+
+Traywick publicly promoted an experimental intervention. Suppose a volunteer says afterward that symptoms improved.
+
+- Symptoms can change over time, with or without an intervention.
+- A study must compare outcomes and look for harms, including outcomes that volunteers never post online.
+
+@citation
+
+[Sarah Zhang, Interview with Zayner on the Traywick demonstration (2018)](https://www.theatlantic.com/science/archive/2018/02/biohacking-stunts-crispr/553511/)  |  [FDA, Step 3 in drug development: Clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research)
+
+=== layout: one-panel
+
+# 29. Who Hears About a Bad Outcome?
+
+@body
+
+In a hypothetical demonstration, the promoter is also the only person collecting feedback.
+
+- A volunteer with a bad outcome may worry about disappointing the group.
+- A private route for reporting harm and a reviewer independent of the promoter can change what becomes visible.
+
+@citation
+
+[The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)  |  [FDA, Step 3 in drug development: Clinical research](https://www.fda.gov/patients/drug-development-process/step-3-clinical-research)

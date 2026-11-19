@@ -15,6 +15,10 @@
 - What makes a system qualify as artificial life?
 - How do artificial life simulations help scientists study evolution, complexity, and self-organization?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 37.
+
 === layout: one-panel
 
 # 12. Test a Definition of Life
@@ -25,15 +29,29 @@
 - A model produces outcomes from rules chosen by its designers.
 - A biological cell also carries out physical and chemical processes such as metabolism.
 
-=== layout: one-panel
+@citation
+
+[Lenski et al., The evolutionary origin of complex features (2003)](https://pubmed.ncbi.nlm.nih.gov/12736677/)
+
+=== layout: two-panels
 
 # 12. Which Evidence Would Change Your Answer?
 
-@body
+@left
 
-- Imagine a digital population that evolves new behaviors.
-- Now imagine a membrane compartment that maintains chemical reactions.
-- Which properties matter more for your definition: reproduction, metabolism, or independence?
+*Digital population*
+
+Programs copy themselves. Their descendants evolve new behaviors.
+
+@right
+
+*Chemical compartment*
+
+Reactions continue inside a membrane. The compartment cannot yet reproduce. Which properties belong in your definition of life?
+
+@citation
+
+[Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
 
 === layout: one-panel
 
@@ -47,7 +65,37 @@
 
 @citation
 
-[Wyss Institute, Xenobots](https://wyss.harvard.edu/news/team-builds-first-living-robots-that-can-reproduce/)
+[Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
+
+=== layout: one-panel
+
+# 12. What Can Evolve Inside a Computer?
+
+@body
+
+In the digital evolution experiments of Lenski and colleagues, programs copied themselves. Inherited changes sometimes altered what their descendants could compute.
+
+- An environment rewarded some computations, so lineages left different numbers of descendants.
+- The experiment shows evolution under those rules. It leaves open which properties you require for life.
+
+@citation
+
+[Lenski et al., The evolutionary origin of complex features (2003)](https://pubmed.ncbi.nlm.nih.gov/12736677/)
+
+=== layout: one-panel
+
+# 12. What Was Alive at the Start?
+
+@body
+
+The frog cells used in the Xenobot study were alive before they were assembled.
+
+- Cell behavior helped the assembled structure move.
+- Calling the shape "designed" describes its organization. It does not imply that the team made living matter from scratch.
+
+@citation
+
+[Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
 
 === layout: subsection
 
@@ -62,6 +110,10 @@
 - How do alternative information molecules challenge our definition of a gene?
 - Could xenobiology help answer questions about possible alien life?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 39.
+
 === layout: one-panel
 
 # 13. An Information Molecule Is a Physical Object
@@ -71,6 +123,10 @@
 - On Earth, DNA and RNA carry genetic information in chains of nucleotides.
 - Xeno nucleic acids are synthetic analogues that change some of that chemistry.
 - Storing information is one property. A living system also needs to read, copy, and act on information.
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
 
 === layout: one-panel
 
@@ -82,6 +138,55 @@
 - A claim about an independently living organism would require organism-level evidence.
 - What observation would distinguish those two claims?
 
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
+=== layout: one-panel
+
+# 13. What Does the X in XNA Change?
+
+@body
+
+Imagine two chains that carry the same order of bases. In one, the chemical backbone differs from the one in DNA.
+
+- Sequence is the order of the symbols. The backbone is the material that holds them in order.
+- Can you tell which material a message was written on by reading only the message?
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
+=== layout: big-image
+
+@image
+
+![Read Both Chains](assets/set7_drawings/xna_backbones.drawn.svg)
+
+@caption
+
+Topic 13: Read Both Chains\
+The letters match at every position. Which feature of the molecules changed?
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
+=== layout: one-panel
+
+# 13. What Did the XNA Experiment Establish?
+
+@body
+
+The researchers showed that information could be copied between DNA and several synthetic polymers. Some XNA populations also responded to selection.
+
+- That is evidence that heredity can use different molecular backbones.
+- The experiment depended on a laboratory system. An organism living independently would be a much larger claim.
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
 === layout: subsection
 
 # 14. Xenobiology and Non-Organic Life
@@ -92,8 +197,12 @@
 
 @body
 
-- What makes carbon based life so successful on Earth?
+- What properties make carbon useful in living systems on Earth?
 - What would be the challenges of identifying alien life if its chemistry does not match known Earth molecules?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 41.
 
 === layout: one-panel
 
@@ -107,7 +216,7 @@
 
 @citation
 
-NASA, Titan: https://science.nasa.gov/saturn/moons/titan/
+[NASA, Titan facts](https://science.nasa.gov/saturn/moons/titan/facts/)
 
 === layout: one-panel
 
@@ -118,6 +227,55 @@ NASA, Titan: https://science.nasa.gov/saturn/moons/titan/
 - Suppose an extraterrestrial sample contains unexpected molecules.
 - Ask whether known geology, atmospheric chemistry, or contamination can explain them.
 - Look for independent evidence before calling the signal a sign of life.
+
+@citation
+
+[NASA, Ladder of Life Detection](https://science.nasa.gov/astrobiology/researchers/life-detection-resources/ladder-of-life-detection/)
+
+=== layout: one-panel
+
+# 14. Does a Methane Lake Contain Organic Molecules?
+
+@body
+
+Yes. Methane and ethane both contain carbon. On Titan they can be liquids at the surface.
+
+- A different solvent and a different element for building large molecules are two separate ideas.
+- The lakes are observed. Life using those lakes remains hypothetical.
+
+@citation
+
+[NASA, Titan facts](https://science.nasa.gov/saturn/moons/titan/facts/)
+
+=== layout: one-panel
+
+# 14. What Would Convince a Second Lab?
+
+@body
+
+Imagine a sample contains a molecule that living organisms make on Earth. A nonliving chemical reaction could make it too.
+
+- Check how the sample was collected and whether the signal also appears in a blank.
+- A second, independent sign of biological activity would change the weight of the evidence.
+
+@citation
+
+[NASA, Ladder of Life Detection](https://science.nasa.gov/astrobiology/researchers/life-detection-resources/ladder-of-life-detection/)
+
+=== layout: one-panel
+
+# 14. Viking Found a Signal on Mars
+
+@body
+
+The Viking landers detected unexpected chemical activity in Martian soil. NASA describes the observations as inconclusive evidence for life.
+
+- A detector can work and still leave two explanations for its signal.
+- Which result would distinguish a living source from a reaction in the soil?
+
+@citation
+
+[NASA, Viking project](https://science.nasa.gov/astrobiology/missions/viking-project/)
 
 === layout: subsection
 
@@ -133,6 +291,10 @@ NASA, Titan: https://science.nasa.gov/saturn/moons/titan/
 - What are the success rates and potential risks associated with animal cloning?
 - What services are available for cloning animals? Should people be allowed to clone their pets? How about cloning a race horse? Cloning a dead relative? Who is Hwang Woo-suk and what happened in his lab? Are we able to modify clones, such as change their eye color or sex?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 43.
+
 === layout: one-panel
 
 # 15. Dolly and the Donor Nucleus
@@ -140,12 +302,12 @@ NASA, Titan: https://science.nasa.gov/saturn/moons/titan/
 @body
 
 - Dolly was produced by moving a body-cell nucleus into an egg whose nucleus had been removed.
-- The egg directed development from the donor's nuclear DNA.
+- The egg supplied cytoplasm that helped the donor nucleus support embryonic development.
 - The egg contributes mitochondria. Development and environment still affect the animal.
 
 @citation
 
-Wilmut et al. (1997), Dolly and nuclear transfer: https://doi.org/10.1038/385810a0
+[Wilmut et al., Viable offspring from adult cells (1997)](https://pubmed.ncbi.nlm.nih.gov/9039911/)  |  [Evans et al., Mitochondrial DNA in cloned sheep (1999)](https://pubmed.ncbi.nlm.nih.gov/10471506/)
 
 === layout: one-panel
 
@@ -156,6 +318,10 @@ Wilmut et al. (1997), Dolly and nuclear transfer: https://doi.org/10.1038/385810
 - The clone starts with similar nuclear DNA. Its experiences and behavior can differ.
 - Evaluate animal welfare across egg donors, pregnancies, and offspring.
 - What would a company need to disclose before taking a customer's money?
+
+@citation
+
+[NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)
 
 === layout: big-image
 
@@ -168,6 +334,55 @@ Wilmut et al. (1997), Dolly and nuclear transfer: https://doi.org/10.1038/385810
 Topic 15: Nuclear Transfer in Animal Cloning\
 Trace the donor nucleus, egg, embryo, and surrogate in the pig-cloning diagram.
 
+@citation
+
+Course image: instructor ethics deck, p. 36.
+
+=== layout: one-panel
+
+# 15. Whose DNA Would a Test Find?
+
+@body
+
+A sheep provides a body cell, a second provides the egg, and a third carries the pregnancy.
+
+- A nuclear marker can link the lamb to the body-cell donor.
+- In the cloned sheep studied by Evans and colleagues, mitochondrial DNA matched the egg source. Carrying the pregnancy is a third role.
+
+@citation
+
+[Evans et al., Mitochondrial DNA in cloned sheep (1999)](https://pubmed.ncbi.nlm.nih.gov/10471506/)  |  [Wilmut et al., Viable offspring from adult cells (1997)](https://pubmed.ncbi.nlm.nih.gov/9039911/)
+
+=== layout: big-image
+
+@image
+
+![Trace Two Genetic Contributions](assets/set7_drawings/clone_dna.drawn.svg)
+
+@caption
+
+Topic 15: Two DNA Sources\
+Which donor supplied each kind of DNA in these cloned sheep?
+
+@citation
+
+[Evans et al., Mitochondrial DNA in cloned sheep (1999)](https://pubmed.ncbi.nlm.nih.gov/10471506/)
+
+=== layout: one-panel
+
+# 15. What Is the Denominator for Cloning Success?
+
+@body
+
+Imagine a report of two healthy births from ten pregnancies after 50 embryo transfers.
+
+- Per pregnancy, that is 2 out of 10. Per embryo transferred, it is 2 out of 50.
+- Both fractions are correct for this invented example. Which one would you want when assessing animal welfare?
+
+@citation
+
+[NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)
+
 === layout: subsection
 
 # 16. Animal De-Extinction
@@ -179,9 +394,13 @@ Trace the donor nucleus, egg, embryo, and surrogate in the pig-cloning diagram.
 @body
 
 - What specific technologies are used in the de-extinction of animals? How does the process work?
-- Can you discuss a successful case study in animal de-extinction?
-- What are the limitations of current technology in reviving extinct species? What is the half-life of DNA? Which animals are we able to bring back? dinosaurs? mammoths? do-do birds? plants species?
+- What endpoint did the Pyrenean ibex cloning study reach?
+- What are the limitations of current technology in reviving extinct species? What is the half-life of DNA? Which animals are we able to bring back? dinosaurs? mammoths? dodos? extinct plants?
 - How could de-extinction impact biodiversity conservation efforts?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 45.
 
 === layout: one-panel
 
@@ -195,7 +414,7 @@ Trace the donor nucleus, egg, embryo, and surrogate in the pig-cloning diagram.
 
 @citation
 
-Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/19167744/
+[Allentoft et al., DNA decay in dated bones (2012)](https://pubmed.ncbi.nlm.nih.gov/23055061/)  |  [IUCN, Proxies of extinct species (2016)](https://iucn.org/resources/grey-literature/iucn-ssc-guiding-principles-creating-proxies-extinct-species-conservation)
 
 === layout: one-panel
 
@@ -207,6 +426,10 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 - Compare the cost and welfare concerns with conservation of living species.
 - Would the project still count as a success if the animal could only live in captivity?
 
+@citation
+
+[IUCN, Proxies of extinct species (2016)](https://iucn.org/resources/grey-literature/iucn-ssc-guiding-principles-creating-proxies-extinct-species-conservation)
+
 === layout: one-panel
 
 # 16. The Pyrenean Ibex
@@ -216,6 +439,55 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 - A cloned Pyrenean ibex was born alive and died soon after birth.
 - A live birth and a healthy population are very different endpoints.
 - For a mammoth proxy, habitat and welfare would also enter the decision.
+
+@citation
+
+[Folch et al., Cloning the Pyrenean ibex (2009)](https://pubmed.ncbi.nlm.nih.gov/19167744/)
+
+=== layout: one-panel
+
+# 16. Does All DNA Have a 521-year Half-life?
+
+@body
+
+Researchers studied 158 dated moa bones from sites in New Zealand. For one 242-base-pair mitochondrial DNA fragment, they estimated a half-life of 521 years.
+
+- That estimate describes a particular fragment and burial environment.
+- Finding a short sequence in a bone does not mean an intact donor nucleus survived.
+
+@citation
+
+[Allentoft et al., DNA decay in dated bones (2012)](https://pubmed.ncbi.nlm.nih.gov/23055061/)
+
+=== layout: big-image
+
+@image
+
+![Apply the Bone Study Estimate Twice](assets/set7_drawings/fragment_decay.drawn.svg)
+
+@caption
+
+Topic 16: Apply the Bone Study Estimate Twice\
+If half the intact fragments remain after one half-life, what fraction remains after two?
+
+@citation
+
+[Allentoft et al., DNA decay in dated bones (2012)](https://pubmed.ncbi.nlm.nih.gov/23055061/)
+
+=== layout: one-panel
+
+# 16. A Birth, a Population, a Habitat
+
+@body
+
+The ibex team began with cells preserved while the animal was alive. The cloned newborn died within minutes from breathing problems.
+
+- One birth establishes that a particular developmental endpoint was reached.
+- A conservation project also needs animals that survive, reproduce, and can live in a suitable habitat.
+
+@citation
+
+[Folch et al., Cloning the Pyrenean ibex (2009)](https://pubmed.ncbi.nlm.nih.gov/19167744/)  |  [IUCN, Proxies of extinct species (2016)](https://iucn.org/resources/grey-literature/iucn-ssc-guiding-principles-creating-proxies-extinct-species-conservation)
 
 === layout: subsection
 
@@ -233,6 +505,10 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 - What ethical concerns arise when mixing tissues or organs from two different animal species?
 - How might chimeras be used in agriculture, conservation, or disease research, and what limits should be set on these uses?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 47.
+
 === layout: one-panel
 
 # 17. Separate Cell Populations or One Cross?
@@ -241,9 +517,13 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 
 | Term | Where did the different DNA come from? |
 | --- | --- |
-| Chimera | The cells came from different individuals. |
-| Hybrid | DNA came from both parents at fertilization. |
-| Mosaic | A genetic change arose in some cells of one individual. |
+| Chimera | Genetically distinct cell groups came from different fertilized eggs. |
+| Hybrid | Parents from distinct species or lines contributed DNA at fertilization. |
+| Mosaic | Genetically distinct cell groups arose from the same fertilized egg. |
+
+@citation
+
+[NHGRI, Mosaicism](https://www.genome.gov/genetics-glossary/Mosaicism)  |  [ISSCR, Guidelines for stem cell research and clinical translation](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
 
 === layout: one-panel
 
@@ -255,6 +535,55 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 - The ethical questions change with the tissue involved, the proportion of donor cells, and effects on the animal.
 - An oversight committee can ask how the investigators will determine where donor cells went.
 
+@citation
+
+[ISSCR, Guidelines for stem cell research and clinical translation](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
+
+=== layout: one-panel
+
+# 17. When Did the Difference Appear?
+
+@body
+
+Start with one fertilized egg. A DNA change occurs when one of its descendant cells divides. Only that branch of the family tree carries it.
+
+- This gives one individual two cell populations with different genotypes.
+- Sampling only the unaffected tissue could miss the change.
+
+@citation
+
+[NHGRI, Mosaicism](https://www.genome.gov/genetics-glossary/Mosaicism)
+
+=== layout: big-image
+
+@image
+
+![Trace Each Cell Group Back](assets/set7_drawings/cell_lineages.drawn.svg)
+
+@caption
+
+Topic 17: Trace the Cell Groups\
+A and B are different genotypes. Where did the difference arise?
+
+@citation
+
+[NHGRI, Mosaicism](https://www.genome.gov/genetics-glossary/Mosaicism)  |  [ISSCR, Guidelines for stem cell research and clinical translation](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
+
+=== layout: one-panel
+
+# 17. Two People Contribute to One Blood Sample
+
+@body
+
+After a successful donor marrow transplant, blood-forming cells from the donor can make new blood cells in the recipient.
+
+- A blood sample can therefore carry donor DNA. Many cells in other tissues still carry the recipient's DNA.
+- What would you need to know before interpreting a DNA test in this person?
+
+@citation
+
+[MedlinePlus, Bone marrow transplant](https://medlineplus.gov/ency/article/003009.htm)  |  [ISSCR, Guidelines for stem cell research and clinical translation](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
+
 === layout: subsection
 
 # 18. Genetic Redesign of Animals
@@ -265,11 +594,15 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 
 @body
 
-- How do natural hybrids like mules differ from genetically engineered hybrids created through modern biotechnology?
-- Would people accept an engineered hybrid made only for food production, such as a chicken with extra legs? What arguments support or challenge this idea?
-- How do scientists decide what level of body modification is biologically possible in livestock?
+- How does a cross such as a mule differ from an animal with an engineered trait?
+- Would people accept a hypothetical animal engineered only for food production, such as a chicken with extra legs? What arguments support or challenge this idea?
+- What evidence would show an animal can function with a changed body plan?
 - How do regulations differ for animals modified for food, for pets, and for research use?
-- How about a chickapede: a chicken with 10 legs? That way more people can eat more chicken legs, but only kill one organism.
+- What about a chickapede, a chicken with 10 legs? That way more people can eat more chicken legs, but only kill one organism.
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 49.
 
 === layout: one-panel
 
@@ -278,8 +611,12 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 @body
 
 - A mule is produced by crossing a horse and a donkey.
-- AquaAdvantage salmon was developed for a growth trait.
+- AquAdvantage salmon was developed for a growth trait.
 - The ten-legged chickapede is a thought experiment about changing a body plan.
+
+@citation
+
+[FDA, AquAdvantage Salmon fact sheet](https://www.fda.gov/animal-veterinary/aquadvantage-salmon/aquadvantage-salmon-fact-sheet)
 
 === layout: one-panel
 
@@ -290,6 +627,10 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 - More drumsticks is one proposed benefit.
 - Ask whether the animal can walk, feed, and behave normally.
 - Which evidence would you want before deciding whether this is acceptable?
+
+@citation
+
+[NC3Rs, The three Rs](https://nc3rs.org.uk/sites/default/files/2022-02/The%20Three%20Rs%20-%20The%20International%20Encyclopedia%20of%20Primatology%20-%20Prescott%20-%20John%20Wiley%20%26%20Sons%2C%20Inc..pdf)
 
 === layout: big-image
 
@@ -302,6 +643,10 @@ Folch et al. (2009), cloning the Pyrenean ibex: https://pubmed.ncbi.nlm.nih.gov/
 Topic 18: A Mule Is a Hybrid\
 A mule inherits nuclear DNA from a horse and a donkey through a cross.
 
+@citation
+
+Course image: instructor ethics deck, p. 48.
+
 === layout: big-image
 
 @image
@@ -313,6 +658,57 @@ A mule inherits nuclear DNA from a horse and a donkey through a cross.
 Topic 18: The Chickapede\
 An illustration for the thought experiment. What could extra legs cost the animal?
 
+@citation
+
+Course image: Fall 2026 Set #7, p. 50.
+
+=== layout: one-panel
+
+# 18. What Does Faster Growth Measure?
+
+@body
+
+The FDA described AquAdvantage Atlantic salmon as reaching a growth milestone more quickly than comparable farmed Atlantic salmon.
+
+- Compare fish of the same age under comparable conditions.
+- This evidence concerns the time needed to reach a size. Adult maximum size is a different measurement.
+
+@citation
+
+[FDA, AquAdvantage Salmon fact sheet](https://www.fda.gov/animal-veterinary/aquadvantage-salmon/aquadvantage-salmon-fact-sheet)
+
+=== layout: one-panel
+
+# 18. Who Gets the Extra Drumsticks?
+
+@body
+
+Imagine the chickapede grows ten legs but struggles to reach food.
+
+- A buyer gains meat per bird. The animal bears a cost every time it tries to eat.
+- Choose a welfare observation that could change your verdict even if the yield claim were true.
+
+@citation
+
+[FDA, AquAdvantage Salmon fact sheet](https://www.fda.gov/animal-veterinary/aquadvantage-salmon/aquadvantage-salmon-fact-sheet)
+
+=== layout: one-panel
+
+# 18. Three Questions Before an Animal Study
+
+@body
+
+- *Replacement:* Could a cell model answer this particular question?
+
+- *Reduction:* How many animals are needed for an interpretable result?
+- *Refinement:* How can the study reduce pain or distress?
+
+Apply these to the chickapede. Which question about a whole animal's ability to walk would a cell model leave open?
+
+@citation
+
+[NC3Rs, The three Rs](https://nc3rs.org.uk/sites/default/files/2022-02/The%20Three%20Rs%20-%20The%20International%20Encyclopedia%20of%20Primatology%20-%20Prescott%20-%20John%20Wiley%20%26%20Sons%2C%20Inc..pdf)
+
 === layout: subsection
 
 # 19. Consumer-Oriented or Trivial Transgenics
@@ -323,12 +719,15 @@ An illustration for the thought experiment. What could extra legs cost the anima
 
 @body
 
-- What are examples of genetically modified animals created mainly for appearance, decoration, or entertainment, such as GloFish?
-- How do regulatory agencies decide whether a "trivial" transgenic organism is safe to sell or display?
-- What artistic projects have used transgenic animals, and how were these projects received by the public?
-- Do designer organisms blur the boundary between art and biotechnology, and should there be limits on how far this can go?
-- Should genetic modification be restricted to health, agriculture, and research, or can nonessential uses be acceptable in society?
-- How might future consumer trends push companies to design even more unusual transgenic pets?
+- Which transgenic animals are sold for their appearance? Use GloFish as one example.
+- What does a regulator need to know before a fluorescent pet goes on sale?
+- How did people respond to an artwork involving a live transgenic animal?
+- Are there uses you would allow for health or agriculture but limit in art or entertainment? Why?
+- What other traits might buyers want? Who would need to consider the animal's welfare?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 52.
 
 === layout: one-panel
 
@@ -340,6 +739,25 @@ An illustration for the thought experiment. What could extra legs cost the anima
 - GloFish use an engineered fluorescent trait for appearance.
 - The scientific mechanism can be similar to a lab marker even when the product has a different purpose.
 
+@citation
+
+[Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)  |  [FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
+
+=== layout: big-image
+
+@image
+
+![Where Does the Light Come From?](assets/set7_drawings/fluorescence.drawn.svg)
+
+@caption
+
+Topic 19: Where Does the Light Come From?\
+GFP absorbs light and emits light at a longer wavelength.
+
+@citation
+
+[Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)
+
 === layout: one-panel
 
 # 19. Would the Purpose Change Your Decision?
@@ -349,6 +767,10 @@ An illustration for the thought experiment. What could extra legs cost the anima
 - Compare a fluorescent pet with a fluorescent laboratory animal.
 - For each one, name the benefit, who receives it, and the welfare or environmental concern.
 - Would your decision change if the fish could persist after escape?
+
+@citation
+
+[FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
 
 === layout: one-panel
 
@@ -362,7 +784,7 @@ An illustration for the thought experiment. What could extra legs cost the anima
 
 @citation
 
-[Eduardo Kac, GFP Bunny project](https://ekac.org/gfpbunny_essay.html)
+[Eduardo Kac, GFP Bunny (2000)](https://www.ekac.org/gfpbunny_essay.html)
 
 === layout: big-image
 
@@ -372,8 +794,42 @@ An illustration for the thought experiment. What could extra legs cost the anima
 
 @caption
 
-Topic 19: Advertising a Fluorescent Trait\
-The GloFish advertisement sells a visible characteristic. What claims can the ad establish?
+Topic 19: Advertising Fluorescence\
+Which claims can this GloFish ad establish?
+
+@citation
+
+Course image: instructor ethics deck, p. 30.
+
+=== layout: one-panel
+
+# 19. Why Put a Fluorescent Protein in a Worm?
+
+@body
+
+Chalfie and colleagues used green fluorescent protein to show where a gene was expressed in living organisms, including a nematode.
+
+- The fluorescent signal identified cells in which the marker was present.
+- Put a similar trait in an aquarium fish and the buyer sees color. The observation can serve very different purposes.
+
+@citation
+
+[Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)
+
+=== layout: one-panel
+
+# 19. Which Fish Did the Regulator Review?
+
+@body
+
+FDA lists specific lines of fluorescent fish in its inventory of risk-reviewed animal alterations.
+
+- A finding about one line in one setting does not decide every question about every fluorescent pet.
+- Suppose the climate at a possible release site changes. Which environmental assumption should be checked again?
+
+@citation
+
+[FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
 
 === layout: subsection
 
@@ -388,6 +844,10 @@ The GloFish advertisement sells a visible characteristic. What claims can the ad
 - How has Esvelt engaged the Nantucket and Martha's Vineyard communities in the decision-making process?
 - What evidence would support a reduction in Lyme disease risk?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 54.
+
 === layout: one-panel
 
 # 20. Mice, Ticks, and People
@@ -400,7 +860,7 @@ The GloFish advertisement sells a visible characteristic. What claims can the ad
 
 @citation
 
-[MIT Media Lab, Mice Against Ticks](https://www.media.mit.edu/projects/preventing-tick-borne-disease-by-permanently-immunizing-mice/updates/)
+[CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
 
 === layout: one-panel
 
@@ -412,6 +872,10 @@ The GloFish advertisement sells a visible characteristic. What claims can the ad
 - Ask about comparison sites and other changes over time.
 - Local residents should have a say in whether research proceeds in their community.
 
+@citation
+
+[Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+
 === layout: one-panel
 
 # 20. Separate the Proposal from a General Gene-drive Debate
@@ -421,3 +885,37 @@ The GloFish advertisement sells a visible characteristic. What claims can the ad
 - People in Nantucket and Martha's Vineyard discussed whether a local intervention was acceptable.
 - The Mice Against Ticks proposal and proposals for self-spreading interventions raise distinct oversight questions.
 - Keep community consent, research results, and proof of public-health benefit separate.
+
+@citation
+
+[Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+
+=== layout: one-panel
+
+# 20. What Did Residents Help Decide?
+
+@body
+
+The Mice Against Ticks authors described meetings with residents of Nantucket and Martha's Vineyard before a possible field study.
+
+- Residents raised preferences about what kinds of changes would be acceptable.
+- A meeting can influence the research question. Attendance alone cannot stand in for community agreement.
+
+@citation
+
+[Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+
+=== layout: one-panel
+
+# 20. Fewer Infected Ticks Per Walk?
+
+@body
+
+Suppose 20 of 100 ticks at a site carried the bacteria last year. This year 15 of 150 carry them.
+
+- The fraction fell from 20% to 10%. The number collected also changed.
+- To compare exposure on a walk, ask how much area and time each survey covered. Human case counts answer a further question.
+
+@citation
+
+[CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)

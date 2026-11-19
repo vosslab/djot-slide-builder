@@ -44,8 +44,14 @@ and 60-second speaking limit.
 See [SET7_TOPIC_GUIDE.md](SET7_TOPIC_GUIDE.md) for source inventory, all 41 official topics,
 annual examples, decisions on adapted prompts, and final PDF page ranges. See
 [PROVENANCE.md](assets/set7_instructor/PROVENANCE.md) for the eight embedded source
-figures. The result is an instructor discussion and study deck. The class's shared
+figures and the [Set 7 drawing recipe](assets/set7_drawings/build.py) for the 14 new SVG diagrams. The result is an instructor discussion and study deck. The class's shared
 student deck remains the place for presenter assignments and student slides.
+
+## November 19 Set 7 revision
+
+- Expanded all 41 topics with sourced cases, comparisons, or worked examples. The 303-page PDF includes 22 figures and 254 citation footers.
+- Rechecked the 41 page ranges against the exported PDF. Each newly drawn SVG is embedded in the ODP. All pages have selectable text and every external footer target matches a PDF link on the same page.
+- Strict Djot lint and the final build passed. The final 12C build emitted no capacity advisories. The revised deck review images are in `_temp/set7_revision/`.
 
 ## Artifact verification
 
@@ -53,7 +59,7 @@ student deck remains the place for presenter assignments and student slides.
 | --- | ---: | ---: | ---: |
 | 12A Announcements | 47 | 7 | 40 |
 | 12B Group Project Guide | 41 | 6 | 35 |
-| 12C Bioethics in Biotechnology | 192 | 0 | 192 |
+| 12C Bioethics in Biotechnology | 303 | 0 | 303 |
 
 - Strict Jotdown and repository slide lint passed for all three masters.
 - LibreOffice exported all three PDFs from the editable ODP artifacts. Reviewed contact
@@ -61,8 +67,8 @@ student deck remains the place for presenter assignments and student slides.
 - ODP package checks passed. The PDFs matched ODP visibility, all visible PDF pages
   contained selectable text, and no extracted words exceeded the page bounds.
   Checked the announcement media link targets and the PDF order of all 41 Set #7 topics.
-- Capacity advisories remain in inherited announcement/project material and in four
-  dense talking-point setup slides. The two presentation rubric images are useful
+- The November 18 build reported capacity advisories in inherited announcement/project material
+  and four talking-point setup slides. The two presentation rubric images are useful
   for reference at PDF zoom.
 - Focused suite: 241 passed. Base suite: 10,278 passed and four ASCII failures in
   existing Set #7 text exports. The base suite auto-normalized six historical/current

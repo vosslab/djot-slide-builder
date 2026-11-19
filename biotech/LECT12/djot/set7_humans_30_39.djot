@@ -14,6 +14,10 @@
 - How do implanted technologies change ideas about personal identity, autonomy, and the ownership of digital or neural data?
 - Should enhanced individuals (military, medical, or recreational) be regulated? Who decides which enhancements are acceptable?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 76.
+
 === layout: one-panel
 
 # 30. A Device and Its Biological Interface
@@ -24,6 +28,10 @@
 - A cochlear implant converts sound into signals delivered to the auditory nerve.
 - A brain-computer interface measures neural activity and translates some of it into a device command.
 
+@citation
+
+[NIDCD, Cochlear implants](https://www.nidcd.nih.gov/sites/default/files/cochlearimplants-12-2023.pdf)  |  [NHLBI, Pacemakers](https://www.nhlbi.nih.gov/health/pacemakers)  |  [Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
+
 === layout: one-panel
 
 # 30. Restoration, Enhancement, and Data
@@ -33,6 +41,45 @@
 - Ask what the device does and whether it restores or expands an ability.
 - Who may access the data produced by an implanted device?
 - Who is responsible for updates, repair, and long-term support?
+
+@citation
+
+[Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
+
+=== layout: one-panel
+
+# 30. Writing Without Moving a Pen
+
+@body
+
+In the handwriting study, one participant with paralysis attempted to write letters by hand. A system converted patterns of neural activity into text.
+
+- The team tested intended handwriting against what appeared on the screen.
+- That result supports communication for a specific task. It cannot tell an observer everything the person is thinking.
+
+@citation
+
+[Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
+
+=== layout: two-panels
+
+# 30. Where Does the Signal Go?
+
+@left
+
+*Pacemaker*
+
+An electrical pulse travels from the device to cardiac tissue and helps regulate the heartbeat.
+
+@right
+
+*Cochlear implant*
+
+Electrodes stimulate the auditory nerve. The listener learns to interpret the signals as sounds.
+
+@citation
+
+[NIDCD, Cochlear implants](https://www.nidcd.nih.gov/sites/default/files/cochlearimplants-12-2023.pdf)  |  [NHLBI, Pacemakers](https://www.nhlbi.nih.gov/health/pacemakers)
 
 === layout: subsection
 
@@ -51,6 +98,10 @@
 - Are there safer alternatives to cloning such as organoids or xenotransplants?
 - Could black market demand lead to unethical cloning?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 78.
+
 === layout: one-panel
 
 # 31. Two Uses of the Word Cloning
@@ -61,15 +112,68 @@
 - Reproductive cloning aims to produce a new individual.
 - An organoid models some features of an organ. A transplantable organ must meet much wider functional demands.
 
+@citation
+
+[NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)  |  [Kidney organoids after transplantation (2019)](https://pubmed.ncbi.nlm.nih.gov/31776328/)
+
 === layout: one-panel
 
-# 31. Three Ways to Frame an Organ Shortage
+# 31. Two Research Approaches to an Organ Shortage
 
 @body
 
 - Organoid research asks how to model or replace part of a tissue's function.
 - Xenotransplantation asks whether tissue from another species can function in a recipient.
 - Each approach has its own evidence requirements, welfare concerns, and oversight.
+
+@citation
+
+[Kidney organoids after transplantation (2019)](https://pubmed.ncbi.nlm.nih.gov/31776328/)  |  [FDA, Xenotransplantation](https://www.fda.gov/vaccines-blood-biologics/xenotransplantation)
+
+=== layout: one-panel
+
+# 31. What Did Therapeutic Cloning Produce?
+
+@body
+
+In 2013, researchers reported human embryonic stem cell lines made by somatic cell nuclear transfer.
+
+- The measured product was a cell line with the nuclear donor's genetic background.
+- A patient who needs a kidney also needs blood flow, filtration, and drainage. Those functions were outside this result.
+
+@citation
+
+[Tachibana et al., Stem cells from nuclear transfer (2013)](https://pubmed.ncbi.nlm.nih.gov/23683578/)
+
+=== layout: one-panel
+
+# 31. Why a Kidney Organoid Can Be Valuable
+
+@body
+
+A kidney organoid can contain recognizable kidney cell types and structures. In transplantation experiments, researchers also found immature tissue.
+
+- For a developmental biologist, that immaturity may be part of what makes the model useful.
+- For someone awaiting a transplant, sustained filtration would be a different test.
+
+@citation
+
+[Kidney organoids after transplantation (2019)](https://pubmed.ncbi.nlm.nih.gov/31776328/)
+
+=== layout: one-panel
+
+# 31. A Donated Pig Organ Raises Another Question
+
+@body
+
+In xenotransplantation, an animal can supply living tissue or an organ for a human recipient.
+
+- The recipient may hope for a shorter wait. The clinical team also has to consider immune rejection and possible infection.
+- Risks that might extend beyond the recipient give public health officials a reason to participate in oversight.
+
+@citation
+
+[FDA, Xenotransplantation](https://www.fda.gov/vaccines-blood-biologics/xenotransplantation)
 
 === layout: subsection
 
@@ -87,6 +191,10 @@
 - What ethical issues arise if life extension treatments become available only to wealthy individuals or specific countries?
 - How could significantly extended human lifespans impact society, economies, retirement systems, and global equity?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 80.
+
 === layout: one-panel
 
 # 32. Healthspan and Lifespan
@@ -94,8 +202,12 @@
 @body
 
 - Lifespan is how long an organism lives. Healthspan is the time spent in good health.
-- Cellular senescence refers to a state in which cells stop dividing and can change their signaling.
+- In cellular senescence, cells enter a lasting arrest of division and often release signals that affect nearby cells.
 - A change in one marker can be promising. Longer or healthier life requires outcomes measured over time.
+
+@citation
+
+[Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
 
 === layout: one-panel
 
@@ -103,9 +215,58 @@
 
 @body
 
-- A study reports a change in an aging biomarker.
+- Imagine a study reports a change in an aging biomarker.
 - Ask whether participants also stay mobile, experience less disease, or live longer.
 - Would benefits reach the people most affected by age-related illness?
+
+@citation
+
+[Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
+
+=== layout: one-panel
+
+# 32. What Did the Mice Actually Do?
+
+@body
+
+In one study of old mice, senolytic treatment improved measures of physical function. The investigators also tracked survival.
+
+- Movement and survival answer different questions. Both can matter.
+- To extend the conclusion to people, researchers would need human functional outcomes, follow-up, and safety data.
+
+@citation
+
+[Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
+
+=== layout: one-panel
+
+# 32. Which Group Gained Healthy Time?
+
+@body
+
+Imagine two groups of mice each live a median of 30 months. One group can still move easily at 26 months. The other loses mobility at 20 months.
+
+- Median lifespan is the same in this example. The mobility measure favors the first group.
+- Before claiming a longer healthspan, decide which signs of good health count and track them over time.
+
+@citation
+
+[Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
+
+=== layout: big-image
+
+@image
+
+![Same Lifespan, Different Mobility](assets/set7_drawings/healthspan.drawn.svg)
+
+@caption
+
+Topic 32: Same Lifespan, Different Mobility\
+How many extra months of mobility did Group A have?
+
+@citation
+
+[Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
 
 === layout: subsection
 
@@ -123,6 +284,10 @@
 - What scientific arguments are made for the possibility of future revival, and what arguments challenge the idea that revival is achievable?
 - How does cryonics differ from suspended animation techniques studied in emergency medicine or space travel research? What organizations provide cryonics services, and how do they manage long term storage and future uncertainty?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 82.
+
 === layout: one-panel
 
 # 33. Preserving a Sample and Restoring a Person
@@ -133,6 +298,10 @@
 - Cryonics attempts to preserve a person after legal death in the hope of future revival.
 - Improving preservation of small samples does not demonstrate that a whole person can be revived.
 
+@citation
+
+[Han et al., Kidney preservation and transplantation in rats (2023)](https://pubmed.ncbi.nlm.nih.gov/37296144/)  |  [Society for Cryobiology, Position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
+
 === layout: one-panel
 
 # 33. What Must Survive?
@@ -142,6 +311,40 @@
 - A cryonics claim raises separate questions about tissue damage, brain function, and memory.
 - A preserved shape alone cannot demonstrate function.
 - Ask what a provider can demonstrate and what remains a future hope.
+
+@citation
+
+[Society for Cryobiology, Position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
+
+=== layout: one-panel
+
+# 33. What Survived Freezing in the Rat Study?
+
+@body
+
+Researchers stored vitrified rat kidneys, rewarmed them, and transplanted them into rats. The transplanted kidneys supported life.
+
+- A functioning graft gives stronger evidence than a photograph of intact-looking tissue.
+- The animals receiving the kidneys were alive. Recovery of a stored organ and revival of a stored person require different evidence.
+
+@citation
+
+[Han et al., Kidney preservation and transplantation in rats (2023)](https://pubmed.ncbi.nlm.nih.gov/37296144/)
+
+=== layout: one-panel
+
+# 33. A Promise Whose Outcome Cannot Yet Be Checked
+
+@body
+
+A cryonics provider can document storage conditions. It cannot show a person restored to life after cryonic storage.
+
+- Put the demonstrated service in one column and the hoped-for outcome in another.
+- Which statements belong in a contract a family is asked to understand today?
+
+@citation
+
+[Society for Cryobiology, Position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
 
 === layout: subsection
 
@@ -159,6 +362,10 @@
 - Could future procedures mix neural tissue between individuals, and what questions would this raise about memory and self?
 - How do doctors obtain consent from donors and families for body parts that change a person's visible identity?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 84.
+
 === layout: one-panel
 
 # 34. A Face or Hand Is a Composite Graft
@@ -169,6 +376,10 @@
 - Blood supply, immune rejection, and recovery of movement and sensation all matter.
 - The patient may need prolonged rehabilitation and medicines to limit rejection.
 
+@citation
+
+[OPTN, Vascularized composite allografts](https://www.hrsa.gov/sites/default/files/hrsa/optn/06_list_vca.pdf)  |  [Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+
 === layout: one-panel
 
 # 34. How Should Success Be Defined?
@@ -178,6 +389,40 @@
 - A surviving graft is one measure. Function and quality of life are others.
 - Recipients and donors' families may have different views about the visible nature of the transplant.
 - Consent discussions should address the goals and tradeoffs of the procedure.
+
+@citation
+
+[Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+
+=== layout: one-panel
+
+# 34. What Changed by the One-year Follow-up?
+
+@body
+
+A published U.S. hand transplant follow-up described function, sensation, and episodes of rejection in one recipient.
+
+- A living graft is an early outcome. Being able to grasp and feel an object changes what a person can do.
+- Why would a medication side effect belong in the same follow-up report?
+
+@citation
+
+[Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+
+=== layout: one-panel
+
+# 34. The Same Graft, Different Goals
+
+@body
+
+One candidate hopes to hold a child's hand. Another needs fine finger control to return to work.
+
+- At follow-up, ask each person to perform a task that matters to them.
+- A shared measurement such as grip strength helps compare patients. An individual goal can reveal a difference the shared score misses.
+
+@citation
+
+[OPTN, Vascularized composite allografts](https://www.hrsa.gov/sites/default/files/hrsa/optn/06_list_vca.pdf)  |  [Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
 
 === layout: subsection
 
@@ -190,10 +435,14 @@
 @body
 
 - What experiments have shown that some brain activity can be restored outside the body, such as pig brain perfusion studies, and what does this reveal about cellular survival?
-- How do perfusion systems like BrainEx keep neurons alive, and what limits remain in restoring coordinated brain function?
+- Which cellular functions did BrainEx restore, and what signs of coordinated brain activity did researchers look for?
 - What ethical issues arise when a brain is kept alive without a body, including awareness, suffering, and personal identity?
 - Could a bodiless brain receive artificial sensory input through electrodes or digital interfaces, and what does this imply about consciousness?
 - How would society classify a disembodied human brain in terms of personhood, rights, and medical decision making?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 86.
 
 === layout: one-panel
 
@@ -211,7 +460,7 @@ BrainEx restored some metabolic activity in isolated pig brains after death.
 
 @citation
 
-Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
 
 === layout: one-panel
 
@@ -222,6 +471,40 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 - A cell can use oxygen even when a whole circuit cannot coordinate activity.
 - An oversight group can decide in advance what signals would pause the work.
 - What combination of evidence would be needed to discuss awareness?
+
+@citation
+
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
+
+=== layout: one-panel
+
+# 35. Which Level Recovered in BrainEx?
+
+@body
+
+Four hours after death, researchers began perfusing isolated pig brains. They found flow in small vessels and evidence of cellular activity.
+
+- They did not detect organized, global electrical activity.
+- Which finding could a microscope establish? Which would require measurements across the brain?
+
+@citation
+
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
+
+=== layout: one-panel
+
+# 35. A Negative Recording Has a Scope
+
+@body
+
+"No global activity detected" describes the signals measured under the study conditions.
+
+- That observation supports a limit on what the authors could claim about the experiment.
+- It does not give a universal time at which all brain functions become impossible. Why would that distinction matter in a news report?
+
+@citation
+
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
 
 === layout: subsection
 
@@ -239,6 +522,10 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 - How would identity, rights, and consciousness be defined for a digital person?
 - How might mind uploading affect grief, memory, or family structure?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 90.
+
 === layout: one-panel
 
 # 36. Three Different Claims About a Digital Person
@@ -249,6 +536,10 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 - A connectome maps connections between neurons. It is one kind of evidence about a nervous system.
 - Whether a simulation would have the person's memories or consciousness is a separate question.
 
+@citation
+
+[Hollanek and Nowaczyk-Basinska, Consent and digital afterlives (2024)](https://link.springer.com/article/10.1007/s13347-024-00744-w)  |  [Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
+
 === layout: one-panel
 
 # 36. Whose Permission Is Needed?
@@ -258,6 +549,70 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 - A simulation could include private messages from people who are still alive.
 - Should someone be able to decide in advance whether a simulation may be made?
 - What responsibilities would the company have if a simulation caused harm?
+
+@citation
+
+[Hollanek and Nowaczyk-Basinska, Consent and digital afterlives (2024)](https://link.springer.com/article/10.1007/s13347-024-00744-w)
+
+=== layout: one-panel
+
+# 36. A Wiring Map of One Fly
+
+@body
+
+The adult fruit fly connectome reported in 2024 contains 139,255 neurons and roughly 50 million chemical synapses.
+
+- A connection between two neurons is a structural observation.
+- To predict a response, a model must also make assumptions about how activity crosses those connections.
+
+@citation
+
+[Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
+
+=== layout: one-panel
+
+# 36. Who Gets to Decline a Conversation?
+
+@body
+
+Imagine a service builds a chatbot from a parent's messages. One adult child asks for it. Another wants no messages from it.
+
+- The parent's consent to use an archive and the recipient's consent to interact are separate decisions.
+- What should happen when the two children want different things?
+
+@citation
+
+[Hollanek and Nowaczyk-Basinska, Consent and digital afterlives (2024)](https://link.springer.com/article/10.1007/s13347-024-00744-w)
+
+=== layout: one-panel
+
+# 36. One Map, Two Possible Responses
+
+@body
+
+Imagine two neurons connected by the same synapse in two trials. A sensory cue arrives in only one trial.
+
+- The anatomical connection is present both times. The resulting activity can differ.
+- What measurement would you add to the wiring map to tell the two trials apart?
+
+@citation
+
+[Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
+
+=== layout: big-image
+
+@image
+
+![Can a Wiring Map Show Which Neurons Fired?](assets/set7_drawings/connectome.drawn.svg)
+
+@caption
+
+Topic 36: Which Neurons Fired?\
+Structure stays the same. Which activity can you see on the right?
+
+@citation
+
+[Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
 
 === layout: subsection
 
@@ -270,14 +625,18 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 @body
 
 - When does biological death actually occur, and how do doctors decide when a person cannot be revived?
-- How have technologies like ECMO and therapeutic hypothermia revived patients who had no heartbeat for long periods of time?
+- How does supporting circulation during resuscitation differ from recovering cellular activity in a research study?
 - What did experiments like Yale BrainEx and OrganEx show about restoring cell activity in organs hours after death?
 - How long can human brain cells survive without oxygen, and what does this imply about possible future revival methods?
 - Could organ or whole body preservation ever allow a person to return from a long period after death, or are there scientific limits that cannot be crossed?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 92.
+
 === layout: one-panel
 
-# 37. Three Levels of Recovery
+# 37. Circulation, Cell Function, and Consciousness
 
 @body
 
@@ -287,7 +646,7 @@ Vrselja et al. (2019), BrainEx: https://doi.org/10.1038/s41586-019-1099-1
 
 @citation
 
-Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
+[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
 
 === layout: one-panel
 
@@ -298,6 +657,45 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 - Separate blood flow, tissue integrity, and activity across a whole organ.
 - Ask which measurement improved, compared with what, and for how long.
 - Organ preservation research can be valuable even when organism-level recovery is outside the result.
+
+@citation
+
+[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
+
+=== layout: one-panel
+
+# 37. One Hour Without Circulation in Pigs
+
+@body
+
+In the OrganEx study, treatment began after one hour without circulation. Several organs showed better tissue preservation and recovery of selected cellular processes.
+
+- The endpoints were measurements in tissues and cells.
+- A headline saying the pigs returned to life would claim an outcome beyond the experiment.
+
+@citation
+
+[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
+
+=== layout: two-panels
+
+# 37. Read the Sample Label First
+
+@left
+
+*BrainEx*
+
+An isolated pig brain. The team measured small-vessel flow, metabolism, and electrical activity.
+
+@right
+
+*OrganEx*
+
+Several organs in a pig after circulation stopped. The team measured tissue integrity and cellular processes. Which study examined kidneys?
+
+@citation
+
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)  |  [Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
 
 === layout: subsection
 
@@ -312,15 +710,23 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 - How do parasites such as Ophiocordyceps change the behavior of their hosts?
 - How do cultural ideas about zombies shape public reactions to this research?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 94.
+
 === layout: one-panel
 
 # 38. A Parasite Can Change Behavior
 
 @body
 
-- Some Ophiocordyceps fungi change where infected ants climb and bite.
-- The ant's position can help the fungus disperse spores.
+- In one Thai forest, infected ants descended from the canopy and bit into leaf veins near the forest floor.
+- Researchers tested how the location of the dead ant affected fungal development.
 - The observed behavior and the precise biological mechanism are separate questions.
+
+@citation
+
+[Hughes et al., Behavior of fungus-infected ants (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)  |  [Andersen et al., The life of a dead ant (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
 
 === layout: one-panel
 
@@ -331,6 +737,40 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 - Zombie stories draw in part on Haitian traditions and have changed through film and popular culture.
 - In biology, describe the specific behavior and compare infected and uninfected hosts.
 - Avoid assuming a parasite controls every action just because one behavior changes.
+
+@citation
+
+[Library of Congress, Haitian zombie traditions](https://blogs.loc.gov/law/2014/10/does-the-haitian-criminal-code-outlaw-making-zombies/)  |  [Hughes et al., Behavior of fungus-infected ants (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)
+
+=== layout: one-panel
+
+# 38. Which Way Did the Infected Ants Move?
+
+@body
+
+In one Thai forest study, ants usually nested high in trees. Infected ants descended to low vegetation and bit veins on the undersides of leaves.
+
+- The measured behavior depends on the host, fungus, and habitat.
+- "The fungus makes ants climb" misses the direction that mattered in this particular forest.
+
+@citation
+
+[Hughes et al., Behavior of fungus-infected ants (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)
+
+=== layout: one-panel
+
+# 38. Does the Position Help the Fungus?
+
+@body
+
+Researchers moved some dead, infected ants away from the usual biting sites and followed fungal development.
+
+- If the location matters, fungi in the new sites should develop differently.
+- That comparison tests a benefit to the fungus. It does not reveal what the ant experienced.
+
+@citation
+
+[Andersen et al., The life of a dead ant (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
 
 === layout: subsection
 
@@ -344,6 +784,10 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 
 - How do patient autonomy, relief of suffering, and safeguards enter end-of-life decisions?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 96.
+
 === layout: one-panel
 
 # 39. Kinds of Decisions at the End of Life
@@ -354,6 +798,10 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 - Ask about the patient's wishes, decision-making capacity, and possible pressure.
 - Legal definitions and safeguards depend on the jurisdiction.
 
+@citation
+
+[AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)  |  [Illinois Department of Public Health, End-of-life options](https://dph.illinois.gov/topics-services/provider-partner-resources/end-of-life-options-for-terminally-ill.html)
+
 === layout: one-panel
 
 # 39. Apply the Same Questions to a Case
@@ -363,3 +811,37 @@ Andrijevic et al. (2022), OrganEx: https://pubmed.ncbi.nlm.nih.gov/35922506/
 - A patient says a burdensome treatment no longer serves their goals.
 - Who should take part in discussing alternatives, and how should the patient's wishes be recorded?
 - What could make it harder for the patient to express a free choice?
+
+@citation
+
+[AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)
+
+=== layout: one-panel
+
+# 39. When a Patient Wants to Stop Treatment
+
+@body
+
+A patient who can make this decision asks to stop a burdensome treatment. The family wants it continued.
+
+- Ask what outcome the patient values and whether they understand the likely consequences.
+- Discuss symptom relief and ongoing care. The decision about one treatment does not end the care team's responsibilities.
+
+@citation
+
+[AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)
+
+=== layout: one-panel
+
+# 39. Whose Request Counts in Illinois?
+
+@body
+
+Illinois' End-of-Life Options for Terminally Ill Patients Act took effect September 12, 2026. It applies to eligible adult Illinois residents with a terminal illness.
+
+- Under the Act, the patient must make the request. A family member or surrogate cannot request it on the patient's behalf.
+- Compare this with the previous discussion about declining a treatment. Which question would you ask first in each case?
+
+@citation
+
+[Illinois Department of Public Health, End-of-life options](https://dph.illinois.gov/topics-services/provider-partner-resources/end-of-life-options-for-terminally-ill.html)

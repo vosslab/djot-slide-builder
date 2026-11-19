@@ -1,3 +1,11 @@
+## 2026-11-19
+
+### Additions and New Features
+
+- Expand the [Set 7 bioethics lecture](../biotech/LECT12/djot/SET7_TOPIC_GUIDE.md)
+  to 303 slides across 41 topics. Add 14 editable SVG diagrams, slide-level sources,
+  and worked comparisons using the 2024 SART IVF data and March 2026 KFF survey.
+
 ## 2026-11-18
 
 ### Additions and New Features

@@ -13,8 +13,12 @@
 @body
 
 - How did Purdue Pharma contribute specifically to the crisis?
-- What makes OxyContin different than other opioids?
+- What does extended release change about oxycodone delivery?
 - What tactics did Purdue Pharma use to promote OxyContin?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 20.
 
 === layout: one-panel
 
@@ -28,7 +32,7 @@
 
 @citation
 
-[U.S. Department of Justice, Purdue Pharma's federal plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
+[FDA, OxyContin prescribing information (2025)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022272s052lbl.pdf)  |  [DOJ, Purdue Pharma guilty plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
 
 === layout: one-panel
 
@@ -40,6 +44,10 @@
 - Purdue pleaded guilty in 2020 to federal charges related to its opioid practices.
 - Marketing, prescribing, and changes in the illicit drug supply are distinct parts of the epidemic.
 
+@citation
+
+[DOJ, Purdue Pharma guilty plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)  |  [CDC, Understanding the opioid overdose epidemic](https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html)
+
 === layout: big-image
 
 @image
@@ -50,6 +58,40 @@
 
 Topic 4: Dopesick: A dramatization of the opioid crisis\
 Compare what a drama portrays with what court records document.
+
+@citation
+
+Course image: instructor ethics deck, p. 42.
+
+=== layout: one-panel
+
+# 4. What Did Purdue Actually Admit?
+
+@body
+
+Purdue continued to market opioids to more than 100 prescribers it had reason to suspect of diverting drugs.
+
+- Its statements to the Drug Enforcement Administration gave a different picture of its efforts to prevent diversion.
+- The plea documents what the company did. To estimate deaths attributable to it, what other data would you need?
+
+@citation
+
+[DOJ, Purdue Pharma guilty plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
+
+=== layout: one-panel
+
+# 4. One Trend, Several Drug Supplies
+
+@body
+
+The CDC describes overlapping waves of U.S. overdose deaths involving prescription opioids, then heroin, then illicitly manufactured fentanyl.
+
+- A national total combines people exposed to different drugs.
+- To evaluate a change in prescription marketing, compare the time period, place, and drugs involved.
+
+@citation
+
+[CDC, Understanding the opioid overdose epidemic](https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html)
 
 === layout: subsection
 
@@ -65,6 +107,10 @@ Compare what a drama portrays with what court records document.
 - Why did his paper damage public trust?
 - What evidence would you need to test the claim about MMR vaccination and autism?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 22.
+
 === layout: one-panel
 
 # 5. What a Case Series Can Tell You
@@ -77,7 +123,7 @@ Compare what a drama portrays with what court records document.
 
 @citation
 
-Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30831578/
+[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)
 
 === layout: one-panel
 
@@ -87,7 +133,56 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 - Compare autism rates in a large vaccinated group and a suitable comparison group.
 - Account for factors that could differ between groups.
-- Large studies found no increased autism risk from the MMR vaccine.
+- The Danish MMR study found no increased autism risk. In 2025, WHO's vaccine safety committee again concluded that the evidence shows no causal link between vaccines and autism.
+
+@citation
+
+[Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)  |  [WHO vaccine safety committee, December 2025 review](https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism)
+
+=== layout: one-panel
+
+# 5. What Happened in the Danish Cohort?
+
+@body
+
+Researchers followed 657,461 children using national registries. They could compare children who received MMR with children who had not received it.
+
+- The adjusted hazard ratio for autism was 0.93. A ratio of 1 would mean equal rates over follow-up.
+- The 95% confidence interval was 0.85 to 1.02. The data gave no evidence of increased risk.
+
+@citation
+
+[Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)
+
+=== layout: big-image
+
+@image
+
+![Read the Confidence Interval](assets/set7_drawings/mmr_interval.drawn.svg)
+
+@caption
+
+Topic 5: Read the Confidence Interval\
+The dot is the estimate. The interval crosses 1, the value for equal rates.
+
+@citation
+
+[Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)
+
+=== layout: one-panel
+
+# 5. Why Compare Children of Similar Ages?
+
+@body
+
+Imagine reading only reports from families who noticed developmental changes after a vaccination.
+
+- That list has no count of children who had similar changes without a recent vaccination.
+- The Danish study accounted for age and other differences between the groups. A timeline for one child cannot supply that comparison.
+
+@citation
+
+[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)  |  [Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)
 
 === layout: subsection
 
@@ -99,12 +194,15 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 @body
 
-- How are antibiotics used today in medicine? in agriculture? How does Europe differ from the USA in antibiotic use? Should use of antibiotics in agriculture be forbidden? Or should certain antibiotics be restricted to human use only? Which chicken companies have stopped the use of antibiotics? What was their reasoning for stopping?
-- What are the consequences of antibiotic resistance due to overuse in agriculture?
-- How have consumer attitudes influenced antibiotic use policies in the food industry?
-- What alternative strategies are being developed to reduce antibiotic dependence in agriculture?
-- How does antibiotic use in veterinary medicine compare to human medicine?
-- What role do regulatory agencies play in controlling antibiotic use across different countries?
+- How do uses of antibiotics in human and veterinary medicine compare?
+- How do U.S. and European rules differ? Which uses should be restricted?
+- How does antibiotic use on farms select for resistance?
+- Compare two chicken companies' label claims. What do the claims cover, and why might consumers care?
+- How can farms prevent infections and still treat sick animals? Who oversees those decisions?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 24.
 
 === layout: one-panel
 
@@ -118,6 +216,25 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 | Resistant bacteria | More are able to survive and reproduce. |
 | Population afterward | A greater proportion can resist that drug. |
 
+@citation
+
+[CDC, About antimicrobial resistance](https://www.cdc.gov/antimicrobial-resistance/about/index.html)
+
+=== layout: big-image
+
+@image
+
+![Which Cells Left Descendants?](assets/set7_drawings/bacterial_selection.drawn.svg)
+
+@caption
+
+Topic 6: Who Survives Exposure?\
+In this example, resistance rises from 2 of 8 cells to 2 of 3 survivors.
+
+@citation
+
+[CDC, About antimicrobial resistance](https://www.cdc.gov/antimicrobial-resistance/about/index.html)
+
 === layout: one-panel
 
 # 6. Read the Scope of the Label
@@ -127,6 +244,80 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 - A claim about medically important antibiotics covers a specific subset of drugs.
 - Ask whether the claim covers all antibiotics, the animal's entire life, and treatment of illness.
 - Better infection prevention can reduce the need to treat animals.
+
+@citation
+
+[FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)  |  [USDA FSIS, Substantiating animal-raising claims (2024)](https://www.govinfo.gov/content/pkg/FR-2024-09-10/pdf/2024-19696.pdf)
+
+=== layout: two-panels
+
+# 6. A Sick Animal and a Healthy Herd
+
+@left
+
+*Treatment*
+
+A veterinarian treats an animal with a bacterial infection. The animal stands to benefit.
+
+@right
+
+*Growth promotion*
+
+A producer wants healthy animals to gain weight. FDA calls for medically important antibiotics to serve animal health needs under veterinary oversight.
+
+@citation
+
+[FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)
+
+=== layout: one-panel
+
+# 6. Which Number Answers the Farm's Question?
+
+@body
+
+Imagine a farm buys half as much antibiotic this year, and its herd is half as large.
+
+- Total purchases fell. Drug purchased per animal stayed the same.
+- Neither number tells you how many bacterial samples resisted the drug. That takes a separate measurement.
+
+@citation
+
+[CDC, About antimicrobial resistance](https://www.cdc.gov/antimicrobial-resistance/about/index.html)  |  [FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)
+
+=== layout: one-panel
+
+# 6. How Would You Check a Chicken Label?
+
+@body
+
+"No antibiotics ever" and "raised without medically important antibiotics" make different promises.
+
+- A claim can cover all antibiotics or only a named class. Look for the exact words and the records behind them.
+- Ask how the farm treats a sick bird and where that bird goes afterward. Animal welfare and label eligibility are separate questions.
+
+@citation
+
+[FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)  |  [USDA FSIS, Substantiating animal-raising claims (2024)](https://www.govinfo.gov/content/pkg/FR-2024-09-10/pdf/2024-19696.pdf)
+
+=== layout: two-panels
+
+# 6. Which Farm Uses Changed?
+
+@left
+
+*European Union, 2006*
+
+The EU removed antibiotic growth promoters from its feed-additive register. Treating a sick animal is a separate use.
+
+@right
+
+*United States, 2017*
+
+Production claims such as faster growth were removed from affected feed and water products containing antibiotics important in human medicine.
+
+@citation
+
+[EU Regulation 1831/2003, Article 11](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02003R1831-20151230)  |  [FDA, 2017 antimicrobial sales report](https://www.fda.gov/media/119332/download)
 
 === layout: subsection
 
@@ -138,7 +329,11 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 @body
 
-- What is a heirloom plant? What is a hybrid plant? Is it acceptable to develop plant hybrids using genetics? How do transgenic plants impact biodiversity and local ecosystems? How does public perception differ between transgenic plants and traditional hybrids? Can you discuss the role of transgenic plants in addressing food security challenges?
+- What is an heirloom plant? What is a hybrid plant? Is it acceptable to develop plant hybrids using genetics? How do transgenic plants impact biodiversity and local ecosystems? How does public perception differ between transgenic plants and traditional hybrids? Can you discuss the role of transgenic plants in addressing food security challenges?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 26.
 
 === layout: one-panel
 
@@ -150,7 +345,11 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 | --- | --- |
 | Heirloom | The variety was maintained over generations. |
 | Hybrid | Offspring came from a cross between genetically different parents. |
-| Transgenic | The plant carries introduced genetic material from another organism. |
+| Transgenic | The plant carries DNA introduced through genetic engineering from a different species. |
+
+@citation
+
+[University of Minnesota Extension, Saving vegetable seeds](https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-minnesota/saving-vegetable-seeds)  |  [NHGRI, Transgenic](https://www.genome.gov/genetics-glossary/Transgenic)
 
 === layout: one-panel
 
@@ -162,6 +361,40 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 - A transgenic crop can carry an introduced trait such as insect resistance.
 - Ask which trait changed, what the comparison crop is, and what environmental effects were measured.
 
+@citation
+
+[FDA, GMO crops and their uses](https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-animal-food-and-beyond)
+
+=== layout: one-panel
+
+# 7. Can the Same Seed Have Two Labels?
+
+@body
+
+Imagine a family has saved seed from the same tomato variety for four generations. A breeder crosses it with a different line.
+
+- "Heirloom" tells you about the history of a parent.
+- "Hybrid" describes the offspring of the cross. That word alone tells you nothing about whether either parent carried an introduced gene.
+
+@citation
+
+[University of Minnesota Extension, Saving vegetable seeds](https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-minnesota/saving-vegetable-seeds)  |  [NHGRI, Transgenic](https://www.genome.gov/genetics-glossary/Transgenic)
+
+=== layout: one-panel
+
+# 7. A Papaya Grower Faces Ringspot Disease
+
+@body
+
+In Hawaii, researchers compared virus-resistant transgenic papaya with susceptible papaya in the field.
+
+- They recorded which plants developed disease and what the trees yielded.
+- A grower deciding what to plant needs both answers. A healthy-looking tree also has to produce marketable fruit.
+
+@citation
+
+[Ferreira et al., Field trials of virus-resistant papaya (2002)](https://pubmed.ncbi.nlm.nih.gov/30823304/)
+
 === layout: subsection
 
 # 8. Dutch Elm Disease
@@ -172,10 +405,14 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 @body
 
-- What is Dutch elm disease? Did Gary Strobel find a cure to Dutch elm disease? What did Strobel do wrong during his research? How does Dutch elm disease compare to the emerald ash borer? What is being done to stop the ash borer?
+- What is Dutch elm disease? What could Gary Strobel's unfinished trial establish about a possible treatment? What did Strobel do wrong during his research? How does Dutch elm disease compare to the emerald ash borer? What is being done to stop the ash borer?
 - What were the ecological and economic impacts of Dutch elm disease?
 - Can you compare the strategies used to combat Dutch elm disease and the emerald ash borer?
 - What ethical considerations arise from using genetic engineering to combat tree diseases?
+
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 28.
 
 === layout: one-panel
 
@@ -187,6 +424,10 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 - The fungus damages the tree's ability to move water.
 - Emerald ash borer is an insect. Its larvae damage tissue under the bark of ash trees.
 
+@citation
+
+[American Phytopathological Society, Dutch elm disease](https://www.apsnet.org/edcenter/pdlessons/Pages/DutchElm.aspx)  |  [USDA APHIS, Emerald ash borer](https://www.aphis.usda.gov/plant-pests-diseases/eab)
+
 === layout: one-panel
 
 # 8. Why an Outdoor Trial Needs Approval
@@ -195,7 +436,11 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 - In 1987, Gary Strobel began an unauthorized outdoor trial to control Dutch elm disease.
 - The trial ended when the experimental trees were destroyed.
-- Promising results in a small trial give a reason for further study. Who has a say before an outdoor release?
+- A trial stopped early leaves the intended benefit uncertain. Who has a say before an outdoor release?
+
+@citation
+
+[GAO, Role of institutional biosafety committees (1988)](https://www.gao.gov/assets/rced-88-64br.pdf)
 
 === layout: one-panel
 
@@ -203,9 +448,13 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 
 @body
 
-- Why did the trial end even though some trees looked better?
+- Why did the trial end before it could establish whether the treatment worked?
 - An outdoor experiment can expose others to consequences beyond the experimenter's site.
 - List the control group, the intended benefit, and one question the reviewer should ask.
+
+@citation
+
+[GAO, Role of institutional biosafety committees (1988)](https://www.gao.gov/assets/rced-88-64br.pdf)
 
 === layout: big-image
 
@@ -218,6 +467,10 @@ Hviid et al. (2019), nationwide cohort study: https://pubmed.ncbi.nlm.nih.gov/30
 Topic 8: Elm Canopy Decline\
 Compare the canopy on both sides. What evidence would identify the cause of decline?
 
+@citation
+
+Course image: instructor ethics deck, p. 58.
+
 === layout: big-image
 
 @image
@@ -228,6 +481,45 @@ Compare the canopy on both sides. What evidence would identify the cause of decl
 
 Topic 8: Emerald Ash Borers\
 Two adult beetles on a coin. The larvae damage tissue under ash bark.
+
+@citation
+
+Course image: instructor ethics deck, p. 60.
+
+=== layout: one-panel
+
+# 8. A Permit Application and a Decision
+
+@body
+
+In June 1987, Strobel submitted a permit application and began the Montana elm trial before the EPA had completed its review.
+
+- The sequence matters. Submitting a proposal gives others a chance to review it only if they have time to act.
+- A later observation about tree health cannot supply the missing review.
+
+@citation
+
+[GAO, Role of institutional biosafety committees (1988)](https://www.gao.gov/assets/rced-88-64br.pdf)
+
+=== layout: two-panels
+
+# 8. Start with the Host Tree
+
+@left
+
+*Elm*
+
+Test for the fungus. Look for evidence of disrupted water transport.
+
+@right
+
+*Ash*
+
+Look beneath the bark for feeding galleries left by larvae. A thin canopy alone fits either tree.
+
+@citation
+
+[American Phytopathological Society, Dutch elm disease](https://www.apsnet.org/edcenter/pdlessons/Pages/DutchElm.aspx)  |  [USDA APHIS, Emerald ash borer](https://www.aphis.usda.gov/plant-pests-diseases/eab)
 
 === layout: subsection
 
@@ -242,6 +534,10 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 - How do ecological models predict the impact of removing an invasive species?
 - What are the social and political challenges in releasing engineered organisms into ecosystems?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 30.
+
 === layout: one-panel
 
 # 9. Removing the Invader Changes the Ecosystem
@@ -252,6 +548,10 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 - A model can test how outcomes change if these relationships are uncertain.
 - Compare removing the invader, leaving it in place, and continuing existing control.
 
+@citation
+
+[Jones, Seabird island recovery after rat removal (2010)](https://pubmed.ncbi.nlm.nih.gov/21265441/)
+
 === layout: one-panel
 
 # 9. Who Should Get a Voice?
@@ -261,6 +561,40 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 - An intervention can affect land and communities beyond the original site.
 - Ask who monitors benefits and harms, who reviews the evidence, and who can stop a project.
 - Consultation matters before a decision is made.
+
+@citation
+
+[National Academies, Gene Drives on the Horizon (2016)](https://nap.nationalacademies.org/resource/23405/Gene-Drives-Brief.pdf)
+
+=== layout: one-panel
+
+# 9. After the Rats Are Gone
+
+@body
+
+On seabird islands, rats prey on birds. Nesting birds also bring nutrients from the sea onto land.
+
+- The researcher compared soil and plant indicators across islands with different rat histories.
+- A count of the remaining rats answers one question. Recovery of the island's food web can take much longer.
+
+@citation
+
+[Jones, Seabird island recovery after rat removal (2010)](https://pubmed.ncbi.nlm.nih.gov/21265441/)
+
+=== layout: one-panel
+
+# 9. Where Should Monitoring Stop?
+
+@body
+
+A hypothetical island project monitors a seabird colony on the release site. Fishing families on the neighboring coast ask to take part.
+
+- Their concern widens the map of who may bear costs.
+- Agree on a baseline, who will receive the reports, and what observation would trigger a new decision.
+
+@citation
+
+[National Academies, Gene Drives on the Horizon (2016)](https://nap.nationalacademies.org/resource/23405/Gene-Drives-Brief.pdf)
 
 === layout: subsection
 
@@ -275,6 +609,10 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 - What international agreements, such as the Biological Weapons Convention, restrict the development of bioweapons?
 - What responsibilities do scientists have when research could be misused?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 32.
+
 === layout: one-panel
 
 # 10. The Biological Weapons Convention
@@ -287,7 +625,7 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 
 @citation
 
-WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https://www.who.int/publications/i/item/9789240056107
+[United Nations, Biological Weapons Convention, Articles I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)  |  [WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
 
 === layout: one-panel
 
@@ -298,6 +636,53 @@ WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https:/
 - A research team claims its work will benefit public health.
 - What public health outcome would count as a benefit? Could a lower-risk approach answer the same question?
 - Who should participate in independent review?
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
+=== layout: one-panel
+
+# 10. Read Two Articles Together
+
+@body
+
+Article I commits parties to keep biological agents and toxins only in types and quantities justified by protective, preventive or other peaceful purposes. It also prohibits biological weapons.
+Article X addresses cooperation for peaceful uses of biology. Vaccine and public health work belong in that conversation.
+
+@citation
+
+[United Nations, Biological Weapons Convention, Articles I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)
+
+=== layout: one-panel
+
+# 10. Who Receives the Concern?
+
+@body
+
+A trainee worries that a project's risks were overlooked. The project leader is also the trainee's supervisor.
+
+- An institution can provide a confidential route to an independent reviewer.
+- The reviewer needs enough information to assess the concern and a way to tell the trainee it was heard.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
+=== layout: one-panel
+
+# 10. What Can a Government Report Show?
+
+@body
+
+Under the Biological Weapons Convention, states exchange annual confidence-building information. The UN maintains a reporting portal.
+
+- A public report can make stated activities visible and invite follow-up questions.
+- A missing report leaves uncertainty. It cannot by itself establish what happened inside a country.
+
+@citation
+
+[UN Office for Disarmament Affairs, Confidence-building reports](https://bwc-cbm.un.org/reports)
 
 === layout: subsection
 
@@ -312,6 +697,10 @@ WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https:/
 - How do scientists decide whether a virus-modifying experiment is too risky to perform?
 - How do scientists weigh the benefits of gain-of-function research against the possibility of accidental release?
 
+@citation
+
+Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 34.
+
 === layout: one-panel
 
 # 11. A Broad Term and a Specific Concern
@@ -324,7 +713,7 @@ WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https:/
 
 @citation
 
-WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https://www.who.int/publications/i/item/9789240056107
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
 
 === layout: one-panel
 
@@ -335,3 +724,37 @@ WHO, Global Guidance Framework for Responsible Use of the Life Sciences: https:/
 - Identify the public health question in plain English.
 - Ask whether existing samples, observational data, or computation can answer it.
 - Document remaining uncertainties and who is responsible for oversight.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
+=== layout: one-panel
+
+# 11. What Decision Is the Committee Making?
+
+@body
+
+A public health team proposes a study. The review panel first asks what decision a health department could make with the result.
+
+- A clear answer lets the panel weigh the likely benefit.
+- If existing observations already answer the question, further work may add risk without adding much knowledge.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
+=== layout: one-panel
+
+# 11. Who Can Reopen the Review?
+
+@body
+
+Suppose a project's expected public benefit changes halfway through the funding period.
+
+- The original benefit-risk judgment used information that has changed.
+- Give the review group a defined opportunity to pause, reconsider alternatives, and record its reasons.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
