@@ -1,0 +1,734 @@
+Set #7: Ethics of BioTech
+Talking Points
+Nov 30, 2023
+
+Talking Points Guide
+
+Slides will be
+locked immediately
+prior to class
+~5:45pm
+
+Talking Point #1: ethics/morals -- Therese and Rutvi
+Talking Point #2: perception -- Jackie and Kushil
+Talking Point #3: antibiotics -- Steve and Preet
+Talking Point #4: plant transgenics -- Lakshmidhar and Mit
+Talking Point #5: artificial life -- Harnish and Misbah
+Talking Point #6: dutch elm -- Janella and Jocelyn
+Talking Point #7: cloning animals -- Freny and Dhruvi
+Talking Point #8: de-extinction -- Sonia and Rudra
+Talking Point #9: Kevin Esvelt -- Pegah and Erick
+Talking Point #10: transgenic animals -- Jinal and Bharat
+Talking Point #11: trivial transgenics -- Het and 
+Talking Point #12: IVF -- Anjali and Veronica
+Talking Point #13: prenatal test -- Uzma and Hiba
+Talking Point #14: bio-materials -- Shubham and Qazi
+Talking Point #15: embryo stem cells -- Sienna and Sowmya
+Talking Point #16: Purdue Pharma --  and 
+Talking Point #17: Josiah Zayner --  and 
+Talking Point #18: Aaron Traywick -- Justin and 
+Talking Point #19: pharma ethics -- Mansi and 
+Talking Point #20: misconduct -- Alfredo and 
+Talking Point #21: Genome Editing -- Srilatha and Miraj
+Talking Point #22: Andrew Wakefield --  and 
+Talking Point #23: blasphemous --  and 
+Talking Point #24: controversial -- Serene and 
+Primary Presenters
+
+Question Asker #1: ethics/morals -- Freny and Dhruvi
+Question Asker #2: perception -- Sonia and Rudra
+Question Asker #3: antibiotics -- Pegah and Erick
+Question Asker #4: plant transgenics -- Jinal and Bharat
+Question Asker #5: artificial life -- Het and 
+Question Asker #6: dutch elm -- Anjali and Veronica
+Question Asker #7: cloning animals -- Therese and Rutvi
+Question Asker #8: de-extinction -- Jackie and Kushil
+Question Asker #9: Kevin Esvelt -- Steve and Preet
+Question Asker #10: transgenic animals -- Lakshmidhar and Mit
+Question Asker #11: trivial transgenics -- Harnish and Misbah
+Question Asker #12: IVF -- Janella and Jocelyn
+Question Asker #13: prenatal test -- Justin and 
+Question Asker #14: bio-materials -- Mansi and 
+Question Asker #15: embryo stem cells -- Alfredo and 
+Question Asker #18: Aaron Traywick -- Srilatha and Miraj
+Question Asker #19: pharma ethics -- Anjali and Veronica
+Question Asker #20: misconduct -- Uzma and Hiba
+Question Asker #21: Genome Editing -- Shubham and Qazi
+Question Asker #24: controversial -- Sienna and Sowmya
+Helper Question Askers
+
+Talking Points Guide
+Talking points were assigned during last week’s class
+Each student was assigned to two talking points.
+Each talking point will have at least two students talking about it
+If you share a talking point with another student:
+listen to what they say
+try to not repeat or duplicate what they said
+90 seconds of content is not much content!
+Contributing gets you more discussion points
+If you have something interesting to say about someone else's talking you can score some extra points.
+Asking questions of other students gets you discussion marks as well
+
+Talking Points Guide
+Edit and update your slide
+Add several pictures and some text
+It is best to have as few words as possible on your slide -- you do the talking not your slide
+Be prepared to give a 60-90 second presentation about each of your assigned talking point
+define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
+Try to be unique
+Don’t just copy the book, use the internet for research. 
+Provide your own perspective
+Please put into your own words
+It is okay if you read your notes, but put notes in your own words
+No direct quoting of an article, wikipedia or the textbook
+Minimize jargon
+
+Tips for a Good Presentation
+Remember you telling a story. Should have a beginning, a middle, and an end. 
+Respect the time allotted for the sake of your audience. 
+If you go over time, they are no longer focusing on the talk, but watching the clock to see when you are going to stop. 
+Explain at the level of the class. 
+Have a technical term, define it. If you don't quite understand it, no one will. 
+Because we are all novices, you will need to have a long intro. 
+But try to engage the audience. 
+Do not read from your slides; use notecards, if you must.
+No complete sentences on slides, use short phrases, break the content up. 
+Try to have a picture on every slide, helps maintain attention of the audience 
+If you have a movie, talk during the movie, do not use narrator
+Be prepared for questions. 
+Show ENTHUSIASM when you talk and make it exciting! 
+
+Best Advice
+Be Enthusiastic
+Use More Pictures and Diagrams on your Slides
+be a visual storyteller
+Use Less Words on your Slides
+put the words in your notes, not the slide
+Keep Things to the Point
+Be creative with your slide with look and content; go beyond the book
+
+
+Internet-Only Based
+Talking Points this Week
+
+Intro to Ethics
+
+#1 Ethics and Morals  
+What is the difference between ethics and morals? Give an example of each. Give an example of ethics conflicting with morals.
+What historical examples demonstrate the evolution of ethics and morals in science?
+Can you provide a case where a scientific discovery challenged existing moral beliefs?
+How do morals differ between professions, such as lawyers and medical doctors? How do ethics in biotechnology compare to those in other fields like information technology?
+What role do ethics committees play in guiding moral decisions in biotech research?
+In what ways might personal morals of a scientist influence their research choices?
+
+ETHICS AND MORALS - Therese
+ETHICS
+The study of what is morally right or wrong
+**External**
+MORALS
+Individual’s own principles regarding what is right or wrong → **personal**
+HISTORICAL EXAMPLES
+Nuremberg Code (1947)
+Tuskegee Syphilis Study (1932-1972)
+- CRISPR-Cas9 Gene Editing (2010s)
+SCIENTIFIC DISCOVERY
+Copernican Revolution
+Heliocentric model
+
+Ethics and Morals  - Rutvi
+Moral difference Medical doctors and Lawyers 
+
+May vary due to unique ethical framework guiding each field.
+Doctors - altruistic desire to help people
+Lawyers - neutral stance , without personal moral viewpoints
+Role of ethics committees in biotech research 
+
+Reviewing research protocols
+Informed consent
+Risk benefit analysis 
+Privacy and confidentiality
+Regulatory compliance 
+ 
+Personal morals influencing research choices 
+
+Research topics 
+Experimental design 
+Data interpretation
+
+
+#public perception
+There are two common things which often dominate the public’s perception of biotechnology: lack of trust and ignorance of science. 
+
+How do these two perceptions affect biotechnology? What can we do to improve the public's perception? What are some of the difficulties in predicting possible dangers of biotechnology?                                                                                                         How might the media's portrayal of biotech developments impact public perception? Can you provide examples of how misinformation has influenced public opinion on biotech? What role do educational initiatives play in bridging the gap between scientific knowledge and public understanding?
+
+Can public perception influence funding and policy decisions in biotechnology?
+ 
+https://pubmed.ncbi.nlm.nih.gov/17639530/ 
+https://en.wikipedia.org/wiki/Big_Pharma_conspiracy_theory
+
+#2 JACKIE - PUBLIC PERCEPTIONS OF BIOTECHNOLOGY 
+LACK OF TRUST
+IGNORANCE OF SCIENCE
+People lack trust in scientists, pharmaceuticals, governments involved in biotechnology research & development
+People misunderstand, misinform, are scared of biotechnology advancements, causing rejection or apathy of potential benefits
+ 
+ 
+ 
+Education to make informed decisions
+Public engagement & participation
+Build public trust  with transparency  & accountability
+Enhanced communication
+How Can We Improve?
+Rapidly evolving field - hard to see all possible outcomes & unforeseen consequences
+Potential for misuse/abuse of biotech products
+Ethical, social, cultural challenges
+Predicting Danger
+Media inform, misinform, educate, & confuse public leading to misunderstanding or fear
+Influence public opinion/attitude →
+ acceptance,  rejection, indifference
+Stimulate public engagement & participation
+Media Portrayal
+
+
+Universities should make it a priority that the next generation of researchers (ie, graduate students) and practitioners acquire real experience in community‐based programs.
+- 
+Existing practitioners should receive quality training and opportunities for skills development to enhance their ability to apply scientific evidence and community knowledge at every stage of intervention development, adaptation, implementation and evaluation.
+public comment on new policies for biotechnologies being considered by a regulatory agency does not always influence that agency’s actions on those policies
+Public comments are more likely to influence policy reform when they provide clear, concise, and compelling information relevant to analyzing the proposed policy and its implications.
+#Public perception :- kushil
+
+Biotech and the Environment
+
+#3 Antibiotic Overuse
+How are antibiotics used today in medicine? in agriculture? How does Europe differ from the USA in antibiotic use? Should use of antibiotics in agriculture be forbidden? Or should certain antibiotics be restricted to human use only? Which chicken companies have stopped the use of antibiotics? What was their reasoning for stopping?
+What are the consequences of antibiotic resistance due to overuse in agriculture?
+How have consumer attitudes influenced antibiotic use policies in the food industry?
+What alternative strategies are being developed to reduce antibiotic dependence in agriculture?
+How does antibiotic use in veterinary medicine compare to human medicine?
+What role do regulatory agencies play in controlling antibiotic use across different countries?
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6017557/ 
+https://www.nature.com/articles/s41599-018-0152-2 
+
+#3 Antibiotic Overuse - Steve
+Antibiotics in Medicine and Agriculture: Used for treating infections in humans and animals. Europe has stricter agricultural antibiotic use regulations than the USA.
+
+Poultry Industry's Antibiotic Reduction: Companies reducing antibiotic use due to health concerns and consumer demands.
+
+Antibiotic Resistance Consequences: Overuse in agriculture leads to resistant bacteria, posing health risks.
+Regulatory Agencies: Monitor and enforce antibiotic use to prevent resistance and protect public health.
+
+#3 Antibiotic Overuse - Preet
+Alternative Strategies to Reduce Antibiotic Dependence in Agriculture:
+
+Immune Modulation
+Selective Breeding
+Nutritional Interventions
+Probiotics and Prebiotics
+Precision Farming
+Vaccination Programs
+Alternative Antimicrobial Agents
+Improved Hygiene Practices
+Integrated Pest Management
+
+Consequences of Antibiotic Resistance due to Overuse in Agriculture:
+Human Health Concerns
+Reduced Effectiveness of Antibiotics
+Impact on Food Safety
+Environmental Contamination
+Loss of Effective Disease Prevention
+
+Antibiotic use in Veterinary Medicine Compared to Human Medicine
+Antibiotic use in veterinary medicine is similar to human medicine in that it is aimed at treating bacterial infections in animals. 
+Role Regulatory Agencies Play in Controlling Antibiotic Use:
+Regulatory agencies oversee and enforce standards, approve antibiotics, monitor usage patterns, and promote responsible practices to control antibiotic use and combat resistance globally.
+
+#4 Transgenic plant 
+What is a heirloom plant? What is a hybrid plant? Is it acceptable to develop plant hybrids using genetics? How do transgenic plants impact biodiversity and local ecosystems? How does public perception differ between transgenic plants and traditional hybrids? Can you discuss the role of transgenic plants in addressing food security challenges?
+https://en.wikipedia.org/wiki/Genetically_modified_food_controversies 
+
+#4 Transgenic plant - Lakshmidhar
+
+#4 Transgenic plant - Mit 
+Difference between transgenic plants and traditional hybrids
+- A transgenic plant contains DNA from another organism via gene-splicing.
+- A hybrid plant contains DNA only from both parents via fertilization.
+Transgenic plants’ food security challenges
+Pest and disease resistance 
+Improved crop yield
+Nutritional enhancement
+Adaptation to local conditions
+
+#5 Artificial Life and Xenobiology
+What is artificial life in the context of biotechnology, and how does it differ from natural life?
+Can you identify a real-world example where artificial life has been created or attempted?
+Can you provide examples of existing or theoretical artificial life forms?
+How does xenobiology extend this concept? What makes it unique?
+How does the concept of synthetic life challenge our understanding of natural selection and evolution?
+
+#5 Artificial Life and Xenobiology - Harnish
+Creation and Design
+Synthetic Biology: 
+Genetic Engineering
+Purposeful Modification: 
+Ethical Considerations:
+
+
+
+
+
+
+
+
+
+
+
+
+Synthetic Bacterium (JCVI-syn1.0): 
+XNA-Based Organisms:  
+Semisynthetic Organisms:
+Engineered Microbes for Industrial Applications:
+ Designer Yeast:
+
+#5 Artificial Life and Xenobiology - Misbah
+Aspect that makes Xenobiology unique:
+Alternative Biochemistries
+Unconventional Genetic Systems
+Adaptation to Extreme Conditions
+ Implications for Astrobiology
+A branch of synthetic biology that focuses on creating and modifying biological systems and apparatuses is called xenobiology.
+
+#6 Dutch elm disease
+What is Dutch elm disease? Did Gary Strobel find a cure to Dutch elm disease? What did Strobel do wrong during his research? How does Dutch elm disease compare to the emerald ash borer? What is being done to stop the ash borer?
+What were the ecological and economic impacts of Dutch elm disease?
+Can you compare the strategies used to combat Dutch elm disease and the emerald ash borer?
+What ethical considerations arise from using genetic engineering to combat tree diseases?
+https://www.nytimes.com/1987/09/04/us/tearful-scientist-halts-gene-test.html 
+https://apnews.com/article/f1db001350cb7e7f0cfbb3a7f403e36 
+https://en.wikipedia.org/wiki/Gary_Strobel 
+https://fpdcc.com/nature/people-nature/emerald-ash-borer-infestation/ 
+
+#6 Dutch elm disease - Jannela
+
+Dutch elm disease
+Jannela Lopez
+Dutch elm disease (DED) is a destructive tree disease affecting American elms in North America.
+Gary Strobel
+Strobel developed a genetically altered strain to protect elms from DED.
+Dr. Strobel conducted an experiment to combat Dutch elm disease with genetically altered bacteria. He proceeded without federal approval, citing time constraints, leading to reprimands from the EPA and university committees. 
+Dutch elm disease vs Emerald ash borer
+Affected Trees:
+DED: Affects elm trees.
+EAB: Affects ash trees.
+Causative Agents and Impact:
+DED: Fungi transmitted by elm bark beetles, causing rapid tree death.
+EAB: Invasive beetle disrupting nutrient flow, causing canopy dieback, & potentially leading to tree death.
+Geographic Impact and Control:
+DED: Widespread in Europe and North America
+EAB: From Asia, a significant problem in North America
+
+Dutch Elm Disease (DED) is a tree disease prevalent among various elm tree species. Its initial discovery traces back to Ohio in 1930. Strobel created a genetically modified strain of the bacteria Pseudomonas syringae, which, demonstrated the ability to protect elms from the fungus responsible for DED.  Dr. Strobel proceeded with experiment involving the genetically altered bacteria to combat the disease without FDA approval and was described as an act of "civil disobedience." The EPA reprimanded him, and two committees at Montana State University acknowledged his violation of federal rules. Dutch elm disease and emerald ash borer have caused substantial ecological and economic damage, resulting in the depletion of trees and alterations in urban and forest environments. It is imperative to continue research and implement effective management strategies to curb the proliferation and adverse effects of these destructive pests.
+
+Resources:
+https://extension.okstate.edu/fact-sheets/dutch-elm-disease-and-its-control.html
+https://www.nytimes.com/1987/09/04/us/tearful-scientist-halts-gene-test.html#:~:text=Strobel%20had%20developed%20a%20genetically,that%20causes%20Dutch%20elm%20disease.
+
+
+
+Dutch Elm Disease
+
+Removal of ash trees
+Monitoring & Hazard assessment of trees
+Impacts
+Ecological
+Economical 
+Changes in biodiversity
+Altered landscape 
+💫 aesthetics💫
+Costs
+Urban Planning & Design
+Property Values 
+Dutch Elm Disease
+Emerald Ash Border
+Detection & Monitoring
+Tree Removal &  Replacement
+Quarantine
+Biological Control
+Specific insect control
+Resistant Varieties
+Focuses on prevention of spread
+Jocelyn
+Combat Strategies
+
+Animal Modification and Genetic Engineering
+
+#7 Cloning animals
+How does the process of animal cloning technically work?
+What are the success rates and potential risks associated with animal cloning?
+What services are available for cloning animals? Should people be allowed to clone their pets? How about cloning a race horse? Cloning a dead relative? Who is Hwang Woo-suk and what happened in his lab? Are we able to modify clones, such as change their eye color or sex?
+https://www.viagenpets.com/ 
+https://wtop.com/animals-pets/2018/03/cloning-a-pet-involves-some-unpleasant-facts-explains-one-veterinarian/ 
+https://www.cnbc.com/2018/03/08/viagen-pets-cloned-a-chihuahua-for-50000.html  
+https://www.dailypaws.com/living-with-pets/pet-owner-relationship/pet-cloning 
+
+#7 Cloning animals - Freny
+Cloning animal: Freny
+Donor Cell Collection
+Egg Cell Extraction
+Nuclear Transfer
+Stimulation of Cell Division
+Implantation
+
+Low Success Rates
+Species Variation
+Health Issues
+Abnormalities
+Genetic Aging
+Reproductive Issues 
+Ethical Concerns
+Unpredictable Outcomes:
+
+DHRUVI
+Services for cloning
+ViaGen Pets
+SoaM Biotech Research Foundation
+Boyalife Group
+Genica Research Corporation
+Startups and Research Institutions
+
+#8 Animal De-Extinction 
+What specific technologies are used in the de-extinction of animals? How does the process work? 
+Can you discuss a successful case study in animal de-extinction?
+What are the limitations of current technology in reviving extinct species? What is the half-life of DNA? Which animals are we able to bring back? dinosaurs? mammoths? do-do birds? plants species? 
+How could de-extinction impact biodiversity conservation efforts?
+https://en.wikipedia.org/wiki/De-extinction  
+
+
+Stimulate Cell Division
+Using electrical or chemical stimulation, can mimic development.
+Egg Cell Preparation
+Mature egg cell from donor is enucleated.
+Somatic Cell Donor
+Somatic cell (with DNA) taken from the organism. 
+#8 Animal De-Extinction (Sonia)
+Nuclear Transplantation
+Nuclear Transfer
+Somatic cell’s nucleus inserted into enucleated egg cell.
+Implantation
+Cloned embryo implanted into surrogate.
+Dolly, 1996
+First mammal cloned.
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+Mammoth, 2027 ??
+Elephant + Mammoth (Harvard Uni, Dr. Church)
+
+#8 Animal De-Extinction - Rudra
+Limitations of Current Technology in Reviving Extinct Species:
+Current technology faces limitations in de-extinction, including incomplete genetic information, ethical concerns, ecological challenges, and uncertainties in the survivability and adaptability of revived species.
+Which animals are we able to bring back dinosaurs As of now, there is no technology or capability to bring back dinosaurs, as their extinction occurred millions of years ago, and complete genetic information for cloning is not available.
+Which animals are we able to bring back mammoths: Scientists are exploring the possibility of bringing back mammoths through genetic engineering, particularly by using closely related elephants as surrogate mothers for hybrid mammoth-elephant embryos.
+Which animals are we able to bring back dodo birds:  There are currently no known efforts or technologies to bring back extinct species like the dodo bird as the genetic material required for de-extinction is not available.
+Which animals are we able to bring back plants species: Reviving extinct plant species is currently not feasible as it requires intact, viable seeds or genetic material, and the technology for de-extinction in plants is in early stages of development.
+
+De-extinction could impact biodiversity conservation efforts by potentially restoring lost species, but ethical, ecological, and resource allocation challenges may divert attention from existing conservation priorities.
+ 
+
+
+#9 Kevin Esvelt and Lyme disease
+Which particular gene editing techniques is Kevin Esvelt applying to combat Lyme disease in the Nantucket and Martha's Vineyard project?
+How does the proposed gene drive in mice potentially reduce the incidence of Lyme disease?
+What are the steps Esvelt's team has taken to ensure local ecological compatibility with the gene drive project?
+Discuss the specific gene alterations proposed for mice and their expected outcomes in the context of Lyme disease vectors.
+How has Esvelt engaged the Nantucket and Martha's Vineyard communities in the decision-making process for this gene drive project? 
+What measures are in place to monitor the long-term effects of the gene drive on the mouse population and local environment?
+Can you detail the preventive strategies Esvelt has suggested to mitigate the risk of the gene drive spreading beyond intended areas?
+
+#9 Kevin Esvelt and Lyme disease - Pegah
+Potential designs for encoding antibodies in the germline using only native DNA from white-footed mice.
+Steps of the Experiment 
+White-Footed Mice 
+Lyme Exterminator
+here to help!!!   
+
+#9 Kevin Esvelt and Lyme disease - Erick
+Community engagement:
+	Public meetings
+	Totally dependent on community
+	Multiple Options
+Reversible:
+	Trapping mutants 
+	Release wild-type
+
+#10 Transgenic animals
+What transgenic animals are available to consumers? Provide some examples of natural animal hybrids, such as the mule. Would it be publicly acceptable to develop animal hybrid using genetics? How about a chickapede: a chicken with 10 legs? That way more people can eat more chicken legs, but only kill one organism.
+https://en.wikipedia.org/wiki/Genetically_modified_animal 
+
+#10 Transgenic animals - Jinal
+
+
+FDA approved AquAdvantage Salmon
+The GalSafe pig are available in the US as a food consumption & potential therapeutic
+Horses can breed with Przewalski's horse to produce fertile hybrids.
+Mule, a cross of female horse and a male donkey.
+Hinny, a cross between a female donkey and a male horse. Mule and hinny are examples of reciprocal hybrids.
+Kunga, a cross between a donkey and a Syrian wild ass.
+Zebroids.
+
+
+
+
+#10 Transgenic animals - Bharat
+
+#11 Trivial transgenics
+Transgenics can be used for relatively trivial purposes for art or entertainment, such as Glo-Fish. How do regulatory bodies view and manage transgenic organisms created for art or entertainment?
+What are some non-“serious” applications of transgenics? What about designer organisms? Have there been any art shows around transgenic organisms? Should transgenics be restricted to “serious” areas such as health care and agriculture?
+Please think about what I am asking, I keep getting wrong interpretations of this talking point. You have to do some looking.
+https://www.ekac.org/transgenic.html 
+https://research.ncsu.edu/ges/arts-work-in-biotech/artwork/
+
+#11 Trivial transgenics - Het  
+Regulatory bodies approach transgenic organisms for art or entertainment by:
+Environmental and Safety Evaluation
+Ethical Considerations
+Public Awareness and Engagement
+Compliance with GMO Regulations
+Case-by-Case Assessment
+Non-"serious" applications of transgenics:
+Glo-Fish
+Bioluminescent Plants
+Color-Changing Animals
+Transgenic Artwork
+Scent-Producing Flowers
+The question of restricting transgenics to some non"serious" areas like healthcare and agriculture is debated.
+Non Serious Application
+
+Humans and BioTech
+
+#12 In Vitro Fertilization (IVF)  
+Who was the first “test tube baby”? When was she born?  Explain the controversy. Who is Doris Del-Zio? How common is in vitro fertilization (IVF) today? When a surrogate is used, who should be considered the real mother: the woman giving birth or the egg donor? How has IVF changed over the years? How can a baby have three (3) parents?
+https://www.newscientist.com/article/2107219-exclusive-worlds-first-baby-born-with-new-3-parent-technique/ 
+https://www.discovermagazine.com/health/how-can-a-baby-have-3-parents 
+
+#12 In Vitro Fertilization (IVF)  - Anjali
+
+
+
+     CONTROVERSIES:
+Ethical Concerns
+Religious Views
+Commodification of Life
+Social and Cultural     Impact
+Legal and Regulatory challenges
+
+
+
+
+In 1973, Doris and John made history as the country's first couple to try in vitro fertilization (IVF). Their attempt did not result in a child, but it was a historical event that helped IVF move from science fiction to the real world.
+
+#12 In Vitro Fertilization (IVF)  - Veronica
+
+#13 Prenatal Testing
+What do you think about Pre-Natal Testing? How does maternal age affect the occurrence of Down syndrome? 9 in 10 fetuses with Down syndrome are being aborted. Is this just another form of eugenics? Should we do something about this? Pre-natal testing has become a large market in BioTech? What are the false positive rates? What is wrong with that? Are we heading towards a GATTACA society? Where if your genome is not edited, you will be considered inferior?
+Sources:
+When They Warn of Rare Disorders, These Prenatal Tests Are Usually Wrong
+https://www.nytimes.com/2022/01/01/upshot/pregnancy-birth-genetic-testing.html
+https://www.nytimes.com/2022/04/20/upshot/prenatal-genetic-tests-warning.html
+Investigating the Prenatal Testing Market: How screenings for chromosomal abnormalities that promised “peace of mind” instead caused anguish and confusion.
+https://www.nytimes.com/2022/01/04/podcasts/the-daily/prenatal-tests-pregnancy-birth.html
+
+#13 Prenatal Testing - Uzma
+
+
+
+
+
+
+Maternal Age
+Age can play an important role in fetus health
+chances of Down Syndrome increase with age. division. 
+
+Eugenics
+Set of beliefs or practices that choose to selectively breed to create a population with more desirable traits
+pre-implantation diagnosis
+embryo selection,
+selective breeding
+What do you think about Pre-Natal Testing? How does maternal age affect the occurrence of Down syndrome? 9 in 10 fetuses with Down syndrome are being aborted. Is this just another form of eugenics? Should we do something about this?
+
+#13 Prenatal Testing - Hiba
+Gattaca society: If genome is not edited, you will be considered inferior
+Are we heading towards a Gattaca society? 
+Are we heading towards a Gattaca society?
+Pre-natal testing has become a large market in BioTech? What are the false positive rates? What is wrong with that? Are we heading towards a GATTACA society? Where if your genome is not edited, you will be considered inferior?
+
+#14 Ethical Sourcing of Biological Materials
+How important is informed consent in the collection of human tissues for research? Can you provide an example where consent was not properly obtained?
+Who was Henrietta Lacks, and why is her story significant in the context of ethical sourcing of biological materials?
+What is biopiracy? How does biopiracy using patents affect the livelihoods and cultural heritage of indigenous and local communities? Can you analyze a well-known case of biopiracy, discussing both the biological material involved and the community affected? What ethical guidelines should biotechnology companies follow to avoid biopiracy?
+
+Ethical Sourcing of Biological Materials-shubham 
+Who was Henrietta Lacks, and why is her story significant in the context of ethical sourcing of biological materials?
+Henrietta Lacks was an African American woman from Roanoke, Virginia, who unknowingly contributed to a groundbreaking medical discovery when her cervical cancer cells were taken without her consent in 1951. These cells, later known as HeLa cells, became the first human cells to reproduce continuously in a laboratory, revolutionizing biological research and leading to significant advancements in medicine. 
+Henrietta Lacks' story is significant : Henrietta Lacks' family never received any compensation or recognition for their contribution to science. This raised questions about the fairness of research practices and the need for mechanisms to ensure that research participants benefit from the use of their biological materials.Henrietta Lacks' story brought to light the need for researchers to respect the rights of their participants, including their privacy, confidentiality, and control over their biological materials.
+How important is informed consent in the collection of human tissues for research? Can you provide an example where consent was not properly obtained?
+Informed consent is of paramount importance in the collection of human tissues for research. It ensures that potential donors are adequately informed about the research's risks and benefits and have freely and voluntarily agreed to participate. This ethical principle safeguards individual autonomy, protects against potential harm, fosters trust in research, and adheres to regulations.
+
+Ethical Sourcing of Biological Materials - QAZI
+“Biopiracy” refers to the unauthorised use of agricultural and indigenous genetic resources which occur naturally by individuals or organizations for the sole purpose of monopolizing them through patent or intellectual property rights.
+Colgate was accused of stealing 1,000-year-old Indian toothpaste recipe.
+Colgate obtained a US patent for the tooth powder composition comprising rust-like red iron oxide, clove oil, camphor, black pepper and spearmint.
+Indian activists are accusing Colgate of ‘biopiracy’ for allegedly stealing and patenting a 1,000-year-old folk recipe for toothpaste.
+All the ingredients date back to antiquity. They have been used by the common Indian man for thousands of years.
+Efforts are going on from India for building 34 million webpages document for substantiating that the ingredients were known in the art.
+The Nagoya Protocol includes several commitments such as obtaining informed consent for research, providing dispute resolution options for violations, monitoring the use of genetic resources, collaborating with indigenous communities, respecting their customary laws and knowledge, allowing the customary use and exchange of genetic resources, and ensuring that governments can effectively implement the protocol.
+Guidelines to follow:
+Credit
+Consent
+Fairness
+Nagoya Protocol:
+
+#15 Embryonic stem cells
+Are there viable alternatives to using embryonic stem cells? Is a human embryo equivalent to a human child? Is the destruction of a single embryo justified if it provides a cure for millions of patients? Can federal funds be used to research embryonic stem cells? Who is Haruko Obokata? Is “stimulus-triggered acquisition of pluripotency” or STAP even possible today?
+https://www.newyorker.com/magazine/2016/02/29/the-stem-cell-scandal 
+https://stapcell.blogspot.com/2014/02/image-similarity.html 
+
+What are they? Pluripotent cells
+Where do they come from?... Embryos (they have quite the self explanatory name)
+What’s the ethics? Embryonic stem cells are a point of ethical contention, despite their usefulness in scientific discovery 
+Haruko Obokata… A liar, or perhaps a misguided scientist
+
+#15 
+EMBRYONIC STEM CELLS 
+Sienna
+
+#15 Embryonic stem cells - Sowmya
+The use of federal funds for research involving embryonic stem cells in the United States was subject to certain restrictions. These restrictions were mainly associated with the Dickey-Wicker Amendment, which has been included in the annual appropriations bills for the Department of Health and Human Services (HHS) since the 1990s.
+
+Biological standpoint, an embryo is the earliest stage of human development, beginning at fertilization and continuing through the first eight weeks of development. During this time, the embryo undergoes rapid cell division and differentiation.
+
+#18 Aaron Traywick
+What was the stated mission of Ascendance Biomedical under Aaron Traywick's leadership? How did it aim to disrupt traditional biomedicine?
+Detail an instance where Traywick self-administered a treatment. What was the treatment, and how did the scientific community respond?
+How did Traywick's approach to biotechnology challenge FDA regulations and traditional drug development processes?
+How did Traywick justify the risks associated with using untested therapies, particularly gene therapies?
+What ethical dilemmas did Traywick's approach to biotechnology raise, especially regarding patient consent and informed decision-making?
+How did Aaron Traywick's untimely death impact the biohacking community? What can the biotech community learn from Traywick's approach and the outcomes of his actions?
+
+Aaron Traywick - Justin                  
+- American businessman and life extension activist in the transhumanism and biohacking communities
+- Ascendance Biomedical was formed in the spring of 2016
+- To make it easier for everyone to gain access to life-saving treatments without the hassle.
+
+
+- He sought to develop gene therapies to make inexpensive treatments available for incurable conditions such as AIDS and the herpes simplex virus
+- Injected Himself with a DIY Herpes Treatment
+- His death body was discovered in a sensory deprivation tank
+
+#19 Other Pharmaceutical ethics
+Select two other topics in pharmaceutical regulation or ethics that have not been discussed before in class and present them.
+Ideas include: drug safety, drug pricing, data disclosure, importation of drugs, clinical study design, drug marketing restrictions, accountability from deaths, complications related to drugs
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570985/  
+https://en.wikipedia.org/wiki/List_of_largest_pharmaceutical_settlements  
+https://en.wikipedia.org/wiki/Pharmaceutical_fraud 
+
+#19 Other Pharmaceutical ethics - Mansi
+
+Scientific Misconduct
+
+#20 Scientific misconduct
+What are the main forms of scientific misconduct as defined by the National Science Foundation (NSF)? How do data fabrication and falsification manifest in research, and what are their impacts?
+What are the motivators for scientists to commit misconduct? Is scientific misconduct more prevalent in certain fields of research? If so, why might this be the case?
+Are there cultural differences in how scientific misconduct is viewed or handled? Provide an example. What happens to a scientist that is caught in misconduct?
+https://en.wikipedia.org/wiki/List_of_scientific_misconduct_incidents 
+https://en.wikipedia.org/wiki/Category:Scientific_misconduct_incidents  
+https://en.wikipedia.org/wiki/Category:Scientific_misconduct 
+
+#20 Scientific misconduct - Alfredo
+Cultural Differences
+
+Some countries say misconduct requires an intention to deceive
+Others define it as any violation of the code, even negligent ones. 
+Some nations hold all co-authors jointly responsible for fraudulent work
+Others don't specify who is responsible.
+Consequences
+
+Debarments from obtaining grants 
+Burn bridges of trust between themselves and their colleagues
+Lose their positions/credibility
+Work retracted
+Fines
+
+#21 Genome Editing in Humans
+While CRISPR holds the potential to cure genetic diseases, what ethical considerations must be balanced in its application? How does this challenge our notions of genetic equity and diversity? 
+What ethical concerns arise from the potential use of CRISPR to create 'designer babies'? What are the ethical implications of making heritable changes to the human genome? How might this impact future generations?
+He Jiankui announced in November 2018 that he had created the first gene-edited babies, twin girls named Lulu and Nana. What were the immediate and long-term ethical repercussions of Jiankui's announcement in the scientific community?
+What measures can be implemented to prevent the misuse of genome editing technologies, especially in the context of creating 'super soldiers' or similar enhancements as rumored in countries like North Korea or under leaders like Putin?
+
+#21 Genome Editing in Humans - Srilatha
+Ethical Considerations in CRISPR Application:
+Safety and Unforeseen Consequences:
+Informed Consent and Equity:
+Germline Editing and Human Identity
+Designer Babies and Heritable Changes
+Eugenics and Social Implications
+Unintended Consequences and Future Generations
+He Jiankui's Gene-Edited Babies
+Preventing Misuse of Genome Editing
+ International Regulations and Guidelines,
+Public Awareness and Education: 
+International Cooperation and Surveillance
+
+
+CRISPR holds immense potential for improving human health, but its application must be guided by ethical principles and rigorous scientific research. Careful consideration of the ethical implications is essential to ensure CRISPR responsible and beneficial use for the betterment of humanity.
+
+#21 Genome Editing in Humans - Miraj
+Unethical gene-edited babies.
+
+Jiankui sentenced for violations.
+
+Ethical concerns, transparency needed.
+
+Safety and efficacy questioned.
+
+Demands for stricter regulations.
+
+
+#24 Controversial biotechnology 
+Present the class with two (2) controversial biotechnology topics not discussed in class so far, either recent or historical? What were the concerns? What the public's perception, morally, ethically? If the novelty is over, have the technologies been accepted?
+https://en.wikipedia.org/wiki/Category:Pseudoscience  
+https://en.wikipedia.org/wiki/List_of_topics_characterized_as_pseudoscience  
+https://en.wikipedia.org/wiki/Category:Scientific_controversies  
+https://en.wikipedia.org/wiki/Category:Medical_controversies 
+
+						Controversial Biotechnology
+          
+
+Lariam 
+   Chickenpox Virus 
+        Polio Virus
+        Ebola Virus
+Fetal Tissue in Vaccines
+-Used in malaria treatment
+-AKA Mefloquine
+-Serious side effects like neurotoxicity
+-no longer used in USA
+-fetal tissue from abortions
+-many life saving vaccines developed 
+-still used today 
+
+Best Slide Award
+GREAT
+SLIDE
+GREAT
+SLIDE
+GREAT
+SLIDE
+
+The End
