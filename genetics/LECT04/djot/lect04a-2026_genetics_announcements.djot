@@ -26,7 +26,7 @@ color-theme: genetics
 === layout: one-panel
 hidden: true
 
-# [Breakout Room Chat]{color=red}
+# [Icebreaker]{color=red}
 
 @body
 
@@ -37,7 +37,7 @@ hidden: true
 === layout: one-panel
 hidden: true
 
-# [Breakout Room Chat]{color=red}
+# [Icebreaker]{color=red}
 
 @body
 
@@ -75,131 +75,11 @@ hidden: true
 - E. Poor, group did not work well
 - [F. Disaster!]{color=red}
 
-=== layout: one-panel
-hidden: true
-
-# Classroom Course Policy
-
-@body
-
-- This class is going primarily remote for time being.
-- The classrooms will still be available for students who prefer to be on campus.
-- [BUT you have to let me know]{color=red} if you plan to be on campus
-  - I need to coordinate with the AV technicians to get things working at least 30 minutes before the start of class
-- You can Slack DM me or send an email
-
-=== layout: big-image
-
-@image
-
-![Biotechnology recording visual](assets/lect04a-2026_announcements/recording_biotech.png)
-
-@caption
-
-Make sure Dr. Voss is recording.
-
-=== layout: section
-
-# Informational Slides
-
-=== layout: two-panels
-
-# How to Use Zoom Like a Pro
-
-@left
-
-- 1. Mute yourself when you are not speaking.
-- 2. Plug in your headphones.
-- 3. Turn off video if you have a slow connection.
-  - Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
-
-@right
-
-![Biotechnology Zoom visual](assets/lect04a-2026_announcements/zoom_biotech.png)
-
-=== layout: big-image
-
-@image
-
-![Biotechnology YouTube visual](assets/lect04a-2026_announcements/youtube_biotech.png)
-
-@caption
-
-Watch Dr. Voss's videos for help with difficult problems.
-
-https://www.youtube.com/c/NeilVossLab/videos
+=== include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/gNA7VV_AGp0.djot
 
-=== layout: one-plus-two-panels
-
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab.
-  - You earn credit for signing up, and Discord is the quickest way to reach me.
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website.
-  - Be sure to connect to my server rather than creating your own server.
-
-@top-right
-
-![Biotechnology Discord QR visual](assets/lect04a-2026_announcements/discord_qr_biotech.png)
-
-@bottom-right
-
-![Biotechnology Discord visual](assets/lect04a-2026_announcements/discord_biotech.png)
-
-=== layout: two-panels
-
-# Office Hours
-
-@left
-
-- Office: SCH 600E, Schaumburg campus
-- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
-- Thursday, 12:30-1:30 p.m.
-- Wednesday, 2:30-3:30 p.m.
-- Also available by appointment
-- [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
-
-@right
-
-![Biotechnology office-hours visual](assets/lect04a-2026_announcements/office_hours_biotech.png)
-
-=== layout: one-panel
-
-# Ways to Contact Dr. Voss
-
-@body
-
-- 1. Attend office hours.
-- 2. Discord.
-  - Check several times per day; it is the quickest option.
-  - Send a direct message for private questions or post general questions to the class.
-  - Response time: 1-2 calendar days.
-- 3. Email.
-  - Response time: 2 business days.
-- 4. Anonymous Google Form.
-  - Response time: 2-4 business days.
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-- Google Form to send me an *_anonymous_* message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- https://forms.gle/gZ8nx28q9YDwSy8g7
-
-@right
-
-![Anonymous Form](assets/anonymous_form.png)
-
-
+=== include: repo:evergreen/instructor_contact.djot
 
 === layout: section
 
@@ -293,14 +173,14 @@ https://www.youtube.com/c/NeilVossLab/videos
 
 @body
 
-- Assignments\: Tasks completed outside of class
+- Assignments\: Complete on Blackboard outside of class
   - Aims to reinforce learning or explore new topics.
   - Assigned weekly, 5-15 points, Unlimited retakes allowed.
   - Collaboration and seeking help encouraged.
 - Quizzes\: Short assessments to test knowledge on recent topics.
   - Aims to quickly assess understanding of recent material.
   - 20 points, 30 min, individual.
-  - Followed by a group quiz during class.
+  - Optional group quiz in person during class.
 - Exams\: Cumulative assessments covering course material.
   - Cumulative, mid-term/final.
   - 100 points total (50 points/75 minutes each part).
@@ -357,82 +237,8 @@ hidden: true
 
 # Exam
 
-=== layout: one-panel
+=== include: repo:genetics/evergreen/exam_guidance.djot
 hidden: true
-
-# Approximate Exam Rules
-
-@body
-
-- It will be in 2 parts of about 50 questions each
-  - Backtracking is allowed
-  - random question order
-  - Only 1&#189;  minutes per question
-    - to prevent collaboration or excessive research
-- Exam questions consist of variations on the assignment and quiz questions. Very similar in format.
-  - If present, essay questions will be handled in a separate part.
-
-=== layout: one-panel
-hidden: true
-
-# Exam Week, Feb 28th
-
-@body
-
-- Exam review session [2\:00pm]{color=red}!
-- Timing\:
-  - Open 3\:00pm Wed, Feb 28th
-  - Finish 10\:00pm Sun, March 3rd
-- Take anytime between 3pm Wednesday and 10pm Sunday
-  - For example, Thurs night for part 2 and then Sunday morning for part 1.
-- Once you open one part of the exam, the timer does begin, so you have to finish that part in one sitting
-
-=== layout: one-panel
-hidden: true
-
-# Final Exam
-
-@body
-
-- Cumulative exam, all chapters from semester
-- Exam review session begins at [2\:00pm]{color=red}!
-- Timing\:
-  - Open 3pm Wed, May 1st
-  - Finish 10pm Sun, May 5th
-- Take anytime between 3pm Wed and 10pm Sun
-  - For example, Wed night for part 2 and then Fri morning for part 1.
-
-=== layout: one-panel
-hidden: true
-
-# New Exam Bonus
-
-@body
-
-- ([+1 point]{color=green}) Complete either exam part by
-  - Sat evening (5pm)
-- ([+1 point]{color=green}) Complete both exam parts by
-  - Sun evening (5pm)
-- ([-1 point]{color=red}) Completing the exam after the deadline
-  - additional penalties for even more late submissions
-- Justification, late students give me anxiety. Things come up (life interferes) and deadlines are missed.
-
-=== layout: two-panels
-hidden: true
-
-# Reviewing Old Quiz Questions
-
-@left
-
-- After everyone has completed the quiz, it will be available to look at.
-- The fastest way to find your answers, is to go under the Grade Center and click on your score for the quiz.
-  - Then click view attempt
-- [Group Quizzes are only available from the student that submitted]{color=red}
-  - [Contact Dr. Voss if they cannot be reached]{color=red}
-
-@right
-
-![Slide image 12](assets/lect04a-2026_announcements/image_012.png)
 
 === layout: one-panel
 hidden: true
@@ -456,97 +262,7 @@ hidden: true
 - All assignments are due[ Friday, Dec 13th, ]{color=red}at midnight
 - Retake the assignments as many times as needed to solidify your understanding. Only your highest score counts!
 
-=== layout: section
-
-# Quiz
-
-=== layout: two-panels
-
-# Quiz System Information
-
-@left
-
-- 20 points total in 18-24 questions
-  - 1 point for each multiple choice
-  - &#189; point for each choice in a matching question
-- 30 minutes for the quiz
-  - Back-tracking is allowed
-  - random order
-  - Limited calculations, not testing calculator use
-  - 1&#189; min per question
-- Final Score
-  - Average of Individual and Group Scores\: (14 + 20)/2 = 17 points
-
-@right
-
-- Individual Quiz
-  - on blackboard
-  - Opens > 20 hours before start of class
-  - due BEFORE class
-- Group Quiz
-  - During class over Zoom and Blackboard
-  - Form groups of 3-4 students
-    - may take awhile to organize break out groups
-  - Group scores are curved for hard quizzes
-
-=== layout: one-panel
-
-# Missing Group Quizzes
-
-@body
-
-- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
-- Students missing group quizzes cannot later work in a group
-  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
-  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
-
-=== layout: one-panel
-
-# Please Volunteer Only If Plan to Work in Group
-
-@body
-
-- You get Group Quiz points no matter what.
-  - your individual score will be averaged with the standard 18 points (sometimes higher) instead of a group quiz score
-- Group Quiz is not required.
-- Do not join if you do not want to actively participate.
-- Let me know if you want to work with someone in particular.
-
-=== layout: one-panel
-
-# Group Quiz Setup
-
-@body
-
-- If you have not finished the individual quiz, you MUST complete it before participating in the group quiz.
-- Pre-Group Quiz\:
-  - You have been pre-assigned into groups
-  - You will be placed into breakout rooms based on these groups.
-  - Select one student in your group as the Recorder.
-  - The Recorder will share their screen and enter the decided upon answers for the quiz.
-  - The Recorder should go into Blackboard to begin the group quiz.
-  - Make sure only the Recorder starts the quiz because each quiz has unique questions.
-- Begin the Group Quiz\:
-  - You will have 30 minutes to complete the quiz
-  - The first question will ask you to enter your first names.
-  - Your group can discuss answers either verbally or through the chat.
-  - If you need my assistance, click the 'Ask for Help' button.
-- Post-Group Quiz\:
-  - After you submit, you should see the correct answers along with what you submitted.
-  - If your group experience was not good, please reach out to me through email or direct message.
-  - Once you are finished, you are free to return to the main room or stay in the breakout room and chat or whatever.
-
-=== layout: one-panel
-
-# Low Quiz Grades
-
-@body
-
-- How can I do better in this class?
-- Did you complete the relevant assignments before taking the quiz?
-  - The assignments and quizzes mostly have the same questions.
-- Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
-  - The assignments and quizzes mostly have the same questions.
+=== include: repo:genetics/evergreen/quiz_format.djot
 
 === layout: one-panel
 
@@ -579,34 +295,14 @@ hidden: true
 - Complete it within the first two weeks of class.
 
 === layout: one-panel
+hidden: true
 
-# Discord Server
+# Discord Signup
 
 @body
 
 - Discord signup is worth 2 points.
-- Please use Discord to contact the instructor rather than email when possible.
-- Complete it within the first few weeks of class.
-
-=== layout: one-plus-two-panels
-
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab
-  - You earn credit for signing up, and Discord is the quickest way to reach me.
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server rather than creating your own server.
-
-@top-right
-
-![Slide image 6](assets/lect04a-2026_announcements/image_006.png)
-
-@bottom-right
-
-![Slide image 7](assets/lect04a-2026_announcements/image_007.png)
+- Due September 21, 2026.
 
 === layout: two-panels
 
@@ -771,71 +467,11 @@ hidden: true
 - I cannot see individual students only total completion
 - percentage. [Ends Sun, May 4.]{color=red}
 
-=== layout: section
+=== include: repo:evergreen/spring_registration.djot
 hidden: true
 
-# [Spring]{color=red} [Registration]{color=red}
-
-=== layout: one-panel
+=== include: repo:evergreen/natural_science_club.djot
 hidden: true
-
-# Spring 2025 Registration
-
-@body
-
-- Registration for Spring 2025 usually starts November 1
-- Meet with your advisor to get your registration code.
-  - If they don't know who your advisor is, you should look in DegreeWorks, EAB, or contact the department office.
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Spring Courses
-
-@body
-
-- [BCHM 355/455]{color=blue}
-  - Biochemistry Lecture
-  - Thurs evenings 6pm to 9pm
-  - Remote over Zoom
-  - [WaitListed - but willing to take more students]{color=red}
-- BCHM 356/456
-  - Biochemistry Lab
-  - Tues mornings, 10am to 2pm
-  - Face-to-face Schaumburg
-  - [Only 3 students as of now \:(]{color=red}
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Summer Course
-
-@body
-
-- BIOL 383/483 Special Topics
-  - [Biology and Ethics in Film]{color=purple}
-  - Tue/Thurs night 6-9p (Zoom)
-  - July 1st through August 4th
-- Summer 2024\:
-  - Schedule\: [https\://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit](https://docs.google.com/spreadsheets/d/1L2NZcMY99Nfo7RsXeIcBDXjEkrtjD9shhZandkivfPc/edit)
-  - Points\: [https\://docs.google.com/spreadsheets/d/1E2Lz0c\_DKwqCHkDKCnPD4BsEU-918uKr4oZvv\_dXgvA/edit](https://docs.google.com/spreadsheets/d/1E2Lz0c_DKwqCHkDKCnPD4BsEU-918uKr4oZvv_dXgvA/edit)
-- Most of grade is weekly writing prompt, just getting it done is key
-
-=== layout: one-panel
-hidden: true
-
-# [Schaumburg]{color=blue} Natural Science Club
-
-@body
-
-- Upcoming Meetings\:
-  - [TBD]{color=red}
-
-- Outreach/volunteer opportunities
-- Fun social activities
-- Professional development
-
-![Slide image 14](assets/lect04a-2026_announcements/image_014.png)
 
 === layout: theend
 

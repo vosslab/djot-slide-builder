@@ -41,7 +41,7 @@ are restored. Each slide records its source slide number in notes.
 
 | Deck | Authored | Visible | Review markers |
 | --- | ---: | ---: | ---: |
-| lect07a-2026_announcements | 36 | 25 | 0 |
+| lect07a-2026_genetics_announcements | 36 | 25 | 0 |
 | lect07a2-genetic_probability | 8 | 8 | 3 |
 | lect07b-prob_of_progeny | 51 | 51 | 13 |
 | lect07c-prob_of_progeny_2 | 38 | 38 | 1 |

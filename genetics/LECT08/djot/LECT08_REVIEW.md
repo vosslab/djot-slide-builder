@@ -184,7 +184,7 @@ with specific unresolved drafts, not a claim that all slides are classroom ready
 
 | Deck | Authored | Visible | Hidden | Replacement markers |
 | --- | --- | --- | --- | --- |
-| lect08a-2026_announcements.djot | 38 | 25 | 13 | 0 |
+| lect08a-2026_genetics_announcements.djot | 38 | 25 | 13 | 0 |
 | lect08b-chap8-linked_genes.djot | 44 | 44 | 0 | 12 |
 | lect08c-gene_mapping.djot | 49 | 48 | 1 | 5 |
 | lect08d-3_point_testcross_voss.djot | 47 | 47 | 0 | 17 |

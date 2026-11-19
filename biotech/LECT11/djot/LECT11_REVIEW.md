@@ -399,8 +399,8 @@ re-exported from the existing ODPs during the final delivery recovery described 
 
 ### Source and scope
 
-- Extracted the exact contact block from `evergreen/instructor_contact.djot` into the shared
-  `evergreen/ways_to_contact.djot`; both the original group and Biotechnology now include it.
+- Use the original contact block in the shared
+  [instructor-contact group](../../../evergreen/instructor_contact.djot).
   Expanding that include reproduces the prior shared contact group verbatim.
 - The class meeting had incorrectly reused the office-hours URL. Its supplied join link now
   resolves from `biotechnology.zoom`, with `class_zoom_short` as the visible URL. Office hours

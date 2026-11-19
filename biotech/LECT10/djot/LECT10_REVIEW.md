@@ -35,9 +35,8 @@ announcements. Prior-year Lecture 09/10 material supplies the reusable project a
 
 ## Announcement sources and visibility
 
-- Stable contact information comes from the Fall 2026 instructor-contact fragment and the
-  cleaned Lecture 07 material. The reusable slides now live in
-  [../../evergreen/course_information.djot](../../evergreen/course_information.djot).
+- The Discord, office-hours, contact options, and anonymous-message slides now come directly
+  from the [shared instructor-contact fragment](../../../evergreen/instructor_contact.djot).
 - Keep the three main sections: Informational Slides, Course Content, General Announcements.
   The opening includes today's agenda, a dated lookahead, weather, and a group-work icebreaker.
 - Save the November 5 NWS Chicago Four Day Outlook and its full description. Keep the original
@@ -378,7 +377,7 @@ Live Impress playback and a new full-suite run are not claimed.
 
 Lecture 07 supplies the three original reminder titles: How to Use Zoom Like a Pro,
 Setting Your Name in Zoom, and Change Name Before a Meeting. The reusable
-[zoom_guidance.djot](../../evergreen/zoom_guidance.djot) group is visible before Course Content.
+[zoom_guidance.djot](../../../evergreen/zoom_guidance.djot) group is visible before Course Content.
 The class link resolves through the existing local `zoom` key rather than the office-hours key.
 Names and participation guidance preserve the source's first-name/consistent-nickname rule;
 UI steps are refreshed against [Zoom's instructions](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061891).

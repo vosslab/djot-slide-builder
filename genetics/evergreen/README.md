@@ -15,7 +15,8 @@ Each weekly master controls visibility with its include's `hidden: true` or `hid
 
 - `course_information.djot`: shared instructor contact slides, Genetics textbook, course links, and grading explanations.
 - `assessment_policies.djot`: technical difficulties and illness policies.
-- `quiz_guidance.djot`: quiz rules and grade guidance; show when a quiz is this week or next week.
+- `quiz_format.djot`: Genetics full-quiz rules and scoring. Includes the root evergreen quiz
+  guidance. Show when a quiz is this week or next week.
 - `exam_guidance.djot`: exam rules, what to bring, and reviewing old quiz answers.
 - `first_week_assignments.djot`: Student Profile and Discord signup credit; show through September 21 in fall or February 14 in spring, then hide.
 - `course_evaluations.djot`: evaluation instructions and final-exam extra-time information; hide until needed.

@@ -81,21 +81,21 @@ hidden: true
 
 @image
 
-![Presentation Rubric](repo:biotech/LECT10/djot/assets/group_project_details/presentation_rubric_1.png)
+![Group presentation timing, slide formatting bonus, and key aspects](assets/presentation_rubric_timing_and_checklist.drawn.svg)
 
 @caption
 
-Presentation Rubric
+Presentation Rubric: Timing, slide formatting, and key aspects
 
 === layout: big-image
 
 @image
 
-![Presentation Rubric](repo:biotech/LECT10/djot/assets/group_project_details/presentation_rubric_2.png)
+![Scoring levels for slide quality, content depth, and presentation delivery](assets/presentation_rubric_scoring.drawn.svg)
 
 @caption
 
-Presentation Rubric
+Presentation Rubric: Slide quality, content depth, and delivery
 
 === layout: two-panels
 hidden: true

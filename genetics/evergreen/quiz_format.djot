@@ -1,0 +1,33 @@
+{% Genetics quiz format and scoring. Include this group from the weekly master. %}
+
+=== layout: subsection
+
+# Quiz
+
+=== layout: two-panels
+
+# *Quiz System Information*
+
+@left
+
+- Full quiz: 20 points; 20-34 questions
+- MC\: 1 point; matching\: 1/2 per choice
+- 20-30 minutes; about 1-1.5 min/question
+- Normally: backtracking allowed; random order
+- Limited calculations
+- Both attempts\: (individual + group)/2
+- Example\: (14 + 20)/2 = 17
+
+@right
+
+- Individual attempt\: opens 20 hours before class
+- Complete it before class
+- Optional group quiz\: in person during class
+- 3-4 students; form a group in class
+- Group score: at least 18/20; curve if needed
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/ASSIGNMENTS_AND_GRADING/
+
+=== include: repo:evergreen/quiz_guidance.djot

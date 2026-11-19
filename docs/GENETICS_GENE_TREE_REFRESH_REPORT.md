@@ -34,7 +34,7 @@ source maps are linked from the two reviews.
 
 | Deck | Canonical master | Local ODP and PDF paths |
 | --- | --- | --- |
-| 11A | [lect11a-2026_announcements.djot](../genetics/LECT11/djot/lect11a-2026_announcements.djot) | `output/odp/lect11a-2026_announcements.odp`, `output/pdf/lect11a-2026_announcements.pdf` |
+| 11A | [lect11a-2026_genetics_announcements.djot](../genetics/LECT11/djot/lect11a-2026_genetics_announcements.djot) | `output/odp/lect11a-2026_genetics_announcements.odp`, `output/pdf/lect11a-2026_genetics_announcements.pdf` |
 | 11B | [lect11b-interpreting_gene_trees.djot](../genetics/LECT11/djot/lect11b-interpreting_gene_trees.djot) | `output/odp/lect11b-interpreting_gene_trees.odp`, `output/pdf/lect11b-interpreting_gene_trees.pdf` |
 | 11C | [lect11c-gene_trees_from_sequences.djot](../genetics/LECT11/djot/lect11c-gene_trees_from_sequences.djot) | `output/odp/lect11c-gene_trees_from_sequences.odp`, `output/pdf/lect11c-gene_trees_from_sequences.pdf` |
 | 11D | [lect11d-upgma_three_and_four_sequences.djot](../genetics/LECT11/djot/lect11d-upgma_three_and_four_sequences.djot) | `output/odp/lect11d-upgma_three_and_four_sequences.odp`, `output/pdf/lect11d-upgma_three_and_four_sequences.pdf` |
@@ -42,7 +42,7 @@ source maps are linked from the two reviews.
 | 11F | [lect11f-upgma_class_activity.djot](../genetics/LECT11/djot/lect11f-upgma_class_activity.djot) | `output/odp/lect11f-upgma_class_activity.odp`, `output/pdf/lect11f-upgma_class_activity.pdf` |
 | 11G | [lect11g-upgma_extension_activity.djot](../genetics/LECT11/djot/lect11g-upgma_extension_activity.djot) | `output/odp/lect11g-upgma_extension_activity.odp`, `output/pdf/lect11g-upgma_extension_activity.pdf` |
 | 11H | [lect11h-molecular_clocks.djot](../genetics/LECT11/djot/lect11h-molecular_clocks.djot) | `output/odp/lect11h-molecular_clocks.odp`, `output/pdf/lect11h-molecular_clocks.pdf` |
-| 12A | [lect12a-2026_announcements.djot](../genetics/LECT12/djot/lect12a-2026_announcements.djot) | `output/odp/lect12a-2026_announcements.odp`, `output/pdf/lect12a-2026_announcements.pdf` |
+| 12A | [lect12a-2026_genetics_announcements.djot](../genetics/LECT12/djot/lect12a-2026_genetics_announcements.djot) | `output/odp/lect12a-2026_genetics_announcements.odp`, `output/pdf/lect12a-2026_genetics_announcements.pdf` |
 | 12B | [lect12b-polyploidy.djot](../genetics/LECT12/djot/lect12b-polyploidy.djot) | `output/odp/lect12b-polyploidy.odp`, `output/pdf/lect12b-polyploidy.pdf` |
 | 12C | [lect12c-sex_dosage.djot](../genetics/LECT12/djot/lect12c-sex_dosage.djot) | `output/odp/lect12c-sex_dosage.odp`, `output/pdf/lect12c-sex_dosage.pdf` |
 | 12D | [lect12d-chromo_alter_1-deletions.djot](../genetics/LECT12/djot/lect12d-chromo_alter_1-deletions.djot) | `output/odp/lect12d-chromo_alter_1-deletions.odp`, `output/pdf/lect12d-chromo_alter_1-deletions.pdf` |

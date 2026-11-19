@@ -2,17 +2,13 @@ color-theme: genetics
 
 === layout: title-slide
 
-# Lecture 13A
+# Lecture 12A
 
 ## Announcements
 
 ## Dr. Neil Voss
 
-## December 8, 2026
-
-=== layout: section
-
-# Group Quiz 5 (if retained)
+## December 1, 2026
 
 === layout: one-panel
 
@@ -20,27 +16,14 @@ color-theme: genetics
 
 @body
 
-- Group Quiz 5 (if retained)
+- Group Quiz 4
 - Icebreaker and Announcements
-- Chapter 9:
-  - Inversions
+- Chromosome Abnormalities, Part 2
+  - Polyploidy
+  - Sex Dosage
+  - Deletions and Duplications
   - Translocations
-  - Meiosis Translocations
 - Closing Remarks
-
-=== layout: one-panel
-
-# Next Week: Dec 15, 2026
-
-@body
-
-- Cumulative final exam: December 15, during class.
-- Homework assignment 13 is due December 15.
-- Review your assignments and old quizzes before the exam.
-
-@citation
-
-https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === layout: big-image
 hidden: true
@@ -59,13 +42,28 @@ NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
 
 === layout: one-panel
 
-# Breakout Room Chat
+# Icebreaker
 
 @body
 
 - State your name, major, and post-grad plans
-- [What is the best dish you can cook?]{color=red}
-  - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
+- What piece of popular culture are you looking forward to? Movies, music, books, concerts, video games?
+  - Dr. Voss\:
+
+=== layout: one-panel
+
+# Next Week: Dec 08, 2026
+
+@body
+
+- Quiz 5 is due before class. The group quiz is in person during class.
+- Population Genetics: allele frequencies, Hardy-Weinberg, and inbreeding.
+- Homework assignments 11 and 12 are due December 8.
+- The cumulative final exam is December 15.
+
+@citation
+
+https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === include: repo:evergreen/youtube_channel.djot
 
@@ -87,45 +85,47 @@ NWS Chicago, retrieved Nov 09, 2026: https://www.weather.gov/lot/weatherstory
 - [Quiz 2: Oct 06]{color=#AAAAAA}
 - [Midterm: Oct 13]{color=#AAAAAA}
 - [Quiz 3: Nov 03]{color=#AAAAAA}
-- [Quiz 4: Dec 01]{color=#AAAAAA}
-- [Quiz 5: Dec 08]{color=red}
-- [Final exam: Dec 15]{color=#990000}
+- [Quiz 4: Dec 01]{color=#990000}
+- [Quiz 5: Dec 08]{color=#990000}
+- [Final exam: Dec 15]{color=#000000}
 
 === include: repo:genetics/evergreen/assessment_policies.djot
 
 === layout: subsection
+hidden: true
 
 # Exam
 
 === layout: one-panel
+hidden: true
 
-# Final Exam: December 15
+# *Midterm reference: October 13*
 
 @body
 
-- Cumulative, in-person written exam during class.
-- Completed individually; worth 100 points.
-- Check Blackboard and the syllabus for final instructions.
+- Tuesday, Oct 13, 2026\: in-person written exam during class
+- Chapters 1-4
+- Class meeting\: 1\:30-4\:25 p.m.
+- Worth 100 points; completed individually
 
 === include: repo:genetics/evergreen/exam_guidance.djot
-hidden: false
+hidden: true
 
 === layout: one-panel
+hidden: true
 
-# Assignments Before the Final Exam
+# *BB Assignments for Mid-Term Exam*
 
 @body
 
-- Homework assignments 11 and 12 are due December 8.
-- Homework assignment 13 is due December 15.
-- Retake available assignments to check your understanding.
-- Unlimited homework attempts; only your highest score counts.
+- Prepare for the Oct 13 midterm\: Chapters 1-4
+- Retake available assignments until you understand the questions
+- Unlimited homework attempts; only the highest score counts
+- Assignments 4-5 were due Oct 6
+- Assignment 6 is due Oct 13
+- Check Blackboard for assignment availability and submission times
 
-@citation
-
-https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
-
-=== include: repo:genetics/evergreen/quiz_guidance.djot
+=== include: repo:genetics/evergreen/quiz_format.djot
 hidden: false
 
 === layout: subsection
@@ -142,14 +142,15 @@ hidden: true
 
 @left
 
+{table-style=comparison table-group=lect12-homework-dates}
 | Assignment | Due date |
 | --- | --- |
-| [Week 01]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 02]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 03]{color=#AAAAAA} | [Sept 22]{color=#AAAAAA} |
-| [Week 04]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 05]{color=#AAAAAA} | [Oct 06]{color=#AAAAAA} |
-| [Week 06]{color=#AAAAAA} | [Oct 13]{color=#AAAAAA} |
+| [Week 01]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 02]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 03]{color=#686868} | [Sept 22]{color=#686868} |
+| [Week 04]{color=#686868} | [Oct 06]{color=#686868} |
+| [Week 05]{color=#686868} | [Oct 06]{color=#686868} |
+| [Week 06]{color=#686868} | [Oct 13]{color=#686868} |
 
 @right
 
@@ -164,15 +165,16 @@ hidden: true
 
 @left
 
+{table-style=comparison table-group=lect12-homework-dates}
 | Assignment | Due date |
 | --- | --- |
-| [Week 07]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 08]{color=#AAAAAA} | [Nov 03]{color=#AAAAAA} |
-| [Week 09]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
-| [Week 10]{color=#AAAAAA} | [Nov 17]{color=#AAAAAA} |
-| [Week 11]{color=red} | [Dec 08]{color=red} |
-| [Week 12]{color=red} | [Dec 08]{color=red} |
-| [Week 13]{color=#990000} | [Dec 15]{color=#990000} |
+| [Week 07]{color=#686868} | [Nov 03]{color=#686868} |
+| [Week 08]{color=#686868} | [Nov 03]{color=#686868} |
+| [Week 09]{color=#686868} | [Nov 17]{color=#686868} |
+| [Week 10]{color=#686868} | [Nov 17]{color=#686868} |
+| [Week 11]{color=#990000} | [Dec 08]{color=#990000} |
+| [Week 12]{color=#990000} | [Dec 08]{color=#990000} |
+| [Week 13]{color=#000000} | [Dec 15]{color=#000000} |
 
 @right
 
@@ -184,7 +186,7 @@ hidden: true
 # General Announcements
 
 === include: repo:evergreen/spring_registration.djot
-hidden: true
+hidden: false
 
 === include: repo:genetics/evergreen/course_evaluations.djot
 hidden: true

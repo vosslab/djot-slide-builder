@@ -14,6 +14,12 @@ prior year. Use the current-year deck for current formatting and course informat
 prior-year deck for useful week-specific activities and reminders. Combine them into the target
 lecture's current-year announcements, checking dates and relevance against the current schedule.
 
+Name weekly masters `lect##a-YYYY_<course>_announcements.djot`, using the course's short
+directory name, such as `biotech`, `biostats`, or `genetics`. For example, use
+`lect04a-2026_biotech_announcements.djot` and `lect13a-2026_genetics_announcements.djot`.
+Week 1 uses a course-intro name without a year, such as `lect01a-genetic_course_intro.djot`.
+Use `lect##a-<course>_agenda.djot` for agenda-only decks. ODP and PDF exports use the master filename.
+
 ## Opening before sections
 
 1. Title page: lecture number/letter, Announcements, instructor, and lecture date.
@@ -95,8 +101,9 @@ The master owns the dated episode choice, so historical decks stay pinned. Do no
 slide or thumbnail into a course folder. Episode 39 uses the destination explicitly labeled
 `Project:`, Red Dead Cell Counter, rather than Plaque Attack.
 
-The evergreen Discord server reminder is separate from the credit-bearing signup assignment.
-Keep the reminder when the signup deadline has passed.
+Include the evergreen **Discord Server** slide in Informational Slides. Put a second slide,
+**Discord Signup**, with the dated credit-bearing assignments. Keep the server slide visible
+throughout the semester and hide the signup slide after the deadline.
 
 Preserve the contact slide's four colored options: Office hours (green), Discord (red),
 Email (blue), and Anonymous Google Form (purple). Keep response details nested under their
@@ -109,23 +116,19 @@ text in regular dark type. Give the contact details the slide's full width, and 
 lines together. The anonymous-message slide pairs plain instructions with the original form image
 and a visible clickable form URL.
 
-### Biotechnology classroom Zoom
+### Classroom Zoom and recording
 
-BIOL 480 Biotechnology has a course Zoom component. Genetics and Biostatistics do not use
-this classroom Zoom group. Keep ordinary office-hours information separate.
+BIOL 480 Biotechnology has a classroom Zoom link in Fall 2026. Include the full group when
+class meets on Zoom. In-person Fall 2026 Genetics uses the shared instructor-contact group
+for office hours and omits classroom Zoom and recording slides. Genetics group quizzes take
+place in person, and assignments are on Blackboard. Keep Zoom details for guest events as needed.
 
 For Zoom breakout activities, title the selected icebreaker **Breakout Room Chat**.
 
-Include [../../biotech/evergreen/zoom_guidance.djot](../../biotech/evergreen/zoom_guidance.djot) visibly in Informational
-Slides, before Course Content. Begin with a Zoom subsection and retain the class meeting page
-and original visual reminders:
-
-1. Biotechnology Class Zoom: meeting ID, password, and clickable class link.
-2. How to Use Zoom Like a Pro: course meeting link, mute when not speaking, headphones or
-   earbuds, and video advice for a slow connection.
-3. Setting Your Name in Zoom: proper first name or consistent nickname and the original name badge.
-4. Change Your Name During Class: native steps beside the original Rename-menu image.
-5. Change Name Before a Meeting: native steps beside the original profile-menu image.
+Include the [shared Zoom group](../../evergreen/zoom_guidance.djot) after instructor contact
+and before Course Content. It opens with the Zoom subsection and the clickable class URL,
+then shows the recording reminder, meeting etiquette, and three display-name slides.
+Keep these common slides in the same Djot file.
 
 The class link uses `{{course_url:zoom}}` and display URL `{{course_url:class_zoom_short}}`;
 office hours uses `{{course_url:office_hours}}` and its existing `{{course_url:zoom_short}}`.
@@ -163,6 +166,11 @@ it may be informational/syllabus material or course-content/logistics material.
 Show quiz guidance when a quiz falls in the current or following lecture week. Check exam
 relevance against the schedule. Retain reusable groups hidden when they are not needed, with
 visibility controlled in the weekly master. Update dated references before showing them again.
+Include [shared quiz guidance](../../evergreen/quiz_guidance.djot) for courses that average
+the individual and optional group attempts. Keep points, examples, timing, and syllabus links
+with the course format. Fall 2026 Genetics uses 20-point full quizzes and Biostatistics uses
+10-point half quizzes.
+Check the course's current rules before reusing the guidance in a new semester.
 
 On the assessment schedule, keep one abbreviated `item: date` per line. Past assessments are
 light gray, assessments at the next class meeting dark red, and later assessments black.

@@ -35,7 +35,7 @@ content slide, hidden status, source PDF page, and final page.
 
 | Deck | Authored ODP | Hidden | PDF pages | Replacement slides |
 | --- | --- | --- | --- | --- |
-| lect11a-2026_announcements | 55 | 18 | 37 | 0 |
+| lect11a-2026_genetics_announcements | 55 | 18 | 37 | 0 |
 | lect11b-polyploidy | 49 | 1 | 48 | 13 |
 | lect11c-sex_dosage | 67 | 0 | 67 | 26 |
 | lect11d-chromo_alter_1-deletions | 112 | 0 | 112 | 20 |
@@ -246,7 +246,7 @@ paragraphs, and 1 final-paragraph runt exemption.
 
 | Deck | Djot slide | Typography finding |
 | --- | --- | --- |
-| lect11a-2026_announcements | 11 | runt |
+| lect11a-2026_genetics_announcements | 11 | runt |
 | lect11b-polyploidy | 21 | title-wrap |
 | lect11b-polyploidy | 22 | title-wrap |
 | lect11b-polyploidy | 45 | url-too-wide |
@@ -263,10 +263,10 @@ replacement markers. Small source/reference text can remain below the advisory 2
 
 | Deck | Djot slide | Slot | Concern | Required pt |
 | --- | --- | --- | --- | --- |
-| lect11a-2026_announcements | 5 | caption | paragraph/list | 15.25 |
-| lect11a-2026_announcements | 44 | left | paragraph/list | 19.75 |
-| lect11a-2026_announcements | 44 | bottom-right | paragraph/list | 18.5 |
-| lect11a-2026_announcements | 45 | body | paragraph/list | 19.75 |
+| lect11a-2026_genetics_announcements | 5 | caption | paragraph/list | 15.25 |
+| lect11a-2026_genetics_announcements | 44 | left | paragraph/list | 19.75 |
+| lect11a-2026_genetics_announcements | 44 | bottom-right | paragraph/list | 18.5 |
+| lect11a-2026_genetics_announcements | 45 | body | paragraph/list | 19.75 |
 | lect11b-polyploidy | 10 | body | mixed-readability | 20.0 |
 | lect11b-polyploidy | 12 | right | paragraph/list | 17.0 |
 | lect11b-polyploidy | 25 | body | mixed-readability | 12.0 |

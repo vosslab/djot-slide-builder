@@ -390,6 +390,10 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - Course Zoom and Discord URLs are not on the syllabus; include the actual course URLs in the
   student slides. Only Biotechnology has a Zoom meeting this semester (Fall 2026).
+- “I do not record unless I am connected to Zoom.” Keep recording and classroom Zoom in the
+  same evergreen group. Fall 2026 Genetics meets in person. Keep event and office-hours Zoom
+  details where they apply.
+- All Fall 2026 Genetics group quizzes are in person. Use Blackboard for assignments.
 - Any URL for the course should be in the slides. The slides are generally available only to
   students, and we already give them QR codes. Keep the URLs visible and clickable alongside the QR codes; do not substitute "The sign-up link is available on Blackboard."
 - Store private Discord and Zoom URLs in ignored root `course_links.local.yaml` and import

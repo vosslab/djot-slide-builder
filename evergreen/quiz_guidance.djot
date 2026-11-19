@@ -1,0 +1,22 @@
+{% Shared slides for courses that average individual and optional group attempts. Keep point values and timing in the course deck. %}
+
+=== layout: one-panel
+
+# *Optional Group Quizzes*
+
+@body
+
+- Complete the individual attempt first.
+- If you also take the group quiz, your quiz score is the average of your two attempts.
+- If you skip the group quiz, your individual score is your final quiz score.
+- Tell me before the quiz if you need to discuss an absence.
+
+=== layout: one-panel
+
+# *Low Quiz Grades*
+
+@body
+
+- How can I do better in this class?
+- Complete the relevant assignments before taking the quiz.
+- If you can retry an assignment, keep practicing until you understand how to answer the questions.

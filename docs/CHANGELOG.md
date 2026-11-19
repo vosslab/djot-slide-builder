@@ -17,9 +17,38 @@
 
 ### Behavior or Interface Changes
 
+- Use course shortnames in weekly announcement and agenda filenames. Keep the Genetics
+  week-one introduction under `lect01a-genetic_course_intro.djot`.
+- Share optional group quiz and quiz preparation slides across courses. Keep the 20-point
+  Genetics full quiz and 10-point Biostatistics half quiz details in their course decks.
 - Remove the Set 7 self-citation from all 41 numbered discussion question slides in Lecture 12C.
 - Lower the `big-image` caption advisory floor from 18 pt to 15 pt. Short captions still
   start at 22 pt, and longer captions can use the available lower margin.
+
+### Fixes and Maintenance
+
+- Break the Biotechnology Lecture 12A cyborg icebreaker examples into short bullets and
+  add the prompt to the evergreen icebreaker catalog.
+- Rejoin Biotechnology announcements with the shared evergreen instructor-contact slides,
+  including the updated office-hours slide. Preserve dated Discord signup reminders and
+  the separate Biotechnology classroom Zoom group.
+- Format Lecture 12A's Important Course Links with plain labels and bulleted URLs.
+- Bring the Set 7 source's orange section headings and red emphasis to the Lecture 12A
+  Talking Points Guide.
+- Rebuild Lecture 12B's two presentation rubric screenshots as editable SVGs that
+  retain the group-project timing, checklist, and scoring tiers.
+- Consolidate Discord, office hours, contact options, and anonymous messages in one
+  evergreen source. Update earlier Biotechnology, Biostatistics, and Genetics
+  announcement decks to include shared contact, channel, recording, registration,
+  and club slides where they previously carried local copies.
+- Keep the early Genetics and Biotechnology Discord reminder in Informational Slides
+  and the dated signup slide with assignments. Hide the signup slide after September 21.
+- Share one Zoom group across Biotechnology announcements, including the recording
+  reminder and etiquette in the same Djot file. Resolve the classroom link per course.
+- Remove classroom Zoom, recording reminders, and remote-class instructions from Fall 2026
+  Genetics decks. Keep the in-person activities and shared office-hours information.
+- Use the LECT11A and LECT12A evergreen quiz guidance in earlier Genetics decks. Identify
+  group quizzes as in person and Blackboard as the assignment platform.
 
 ## 2026-11-18
 
@@ -46,11 +75,14 @@
 
 ### Behavior or Interface Changes
 
+<<<<<<< Updated upstream
 - Use the course palette's extra-light center band on subsection dividers, with medium bands
   above and below and centered black text.
 - Support a one-line Djot comment at the start of a source file. Add a reminder to include
   evergreen fragments directly and edit them in place. Header comments stay out of exports
   and preserve source line numbers in diagnostics.
+=======
+>>>>>>> Stashed changes
 - Migrate the 73-slide [chromosome review](../prototype/chromosome_review.djot) to shared chromosome
   models and rendering. Promote seven Mini2 models and generate 68 SVGs for 70 placements. C04
   continues to use the original local course JPEG. Preserve the source images in mixed figures
@@ -64,14 +96,17 @@
 
 ### Fixes and Maintenance
 
+<<<<<<< Updated upstream
 - Move Stump the Vibe Coder episode slides and quality-90 thumbnails to
   [shared/README.md](../shared/README.md). Announcement masters now pin an explicit shared episode
   include, preserving historical choices while refresh can migrate a legacy inlined managed slide.
 - Use the canonical evergreen sources in
-  [Genetics 11A announcements](../genetics/LECT11/djot/lect11a-2026_announcements.djot).
+  [Genetics 11A announcements](../genetics/LECT11/djot/lect11a-2026_genetics_announcements.djot).
   Move shared contact and registration corrections and
   Genetics-specific assessment wording into the owning fragments. Apply Red Dark to the
   shared announcement emphasis so courses using those fragments render the same red.
+=======
+>>>>>>> Stashed changes
 - Add native explanations for the C24 crossover, C63 example frequencies, and C68 trisomy 21
   outcome. Improve map contrast in C49 and the figure layout in C68. Clarify C59's problem cue.
 - Track reviewed image-containing SVGs with the `.image.svg` suffix. Rename the 17 assets

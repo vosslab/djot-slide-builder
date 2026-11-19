@@ -21,147 +21,16 @@ color-theme: biotechnology
 - More Discussion of Individual Project
 - Next week: {=Shark Talk presentations=}
 
-=== layout: big-image
-
-@image
-
-![Slide image 2](assets/lect05a-2026_biotech_announcements/image_002.png)
-
-@caption
-Make Sure Dr. Voss Is Recording
-
-=== layout: two-panels
-
-# How to Use Zoom Like a Pro
-
-@left
-
-- 1. Mute yourself when you are not speaking.
-- 2. Plug in your headphones.
-- 3. Turn off video if you have a slow connection
-  - Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
-
-@right
-
-![Slide image 3](assets/lect05a-2026_biotech_announcements/image_003.png)
-
-=== layout: big-image
-
-@image
-
-![Slide image 4](assets/lect05a-2026_biotech_announcements/image_004.png)
-
-@caption
-
-Dr. Voss YouTube Channel
-watch our weekly "Stump the Vibe Coder" podcast
-
-https://www.youtube.com/c/NeilVossLab/videos
+=== include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/0zhh6g-DJFs.djot
 
-=== layout: one-plus-two-panels
+=== include: repo:evergreen/instructor_contact.djot
 
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, not create your own server
-- Join the server: {{course_url:discord}}
-
-@top-right
-
-![Slide image 5](assets/lect05a-2026_biotech_announcements/image_005.png)
-
-@bottom-right
-
-![Slide image 6](assets/lect05a-2026_biotech_announcements/image_006.png)
-
-=== layout: two-panels
-
-# Office Hours
-
-@left
-
-![Slide image 7](assets/lect05a-2026_biotech_announcements/image_007.png)
-
-@right
-
-- Schaumburg office\: SCH 600E
-- Zoom link\:
-  - [{{course_url:zoom_short}}]({{course_url:office_hours}})
-  - Meeting ID: 976 3875 4024
-  - Password: voss
-- Available\:
-  - Wednesdays, 2\:30-3\:30 p.m.
-  - Thursdays, 12\:30-1\:30 p.m.
-  - Also available by appointment
-
-=== layout: one-panel
-
-# Ways to Contact Dr. Voss
-
-@body
-
-- [Office hours]{color=green}: Attend to ask in person.
-- [Discord]{color=red}: Fastest; DM me or post to class. I check several times daily; replies take 1-2 calendar days.
-- [Email]{color=blue}: About 20 emails daily; I check once daily for mental health. Replies take 2 business days.
-- [Anonymous Google Form]{color=purple}: Sent to my email and read on laptop; replies take 2-4 business days.
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-- Google Form to send me an *_anonymous_* message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- https://forms.gle/gZ8nx28q9YDwSy8g7
-
-@right
-
-![Anonymous Form](assets/anonymous_form.png)
-
-
+=== include: repo:evergreen/zoom_guidance.djot
 
 === layout: section
 # Discussion Points
-
-=== layout: one-panel
-hidden: true
-
-# Setting Your Name in Zoom
-
-@body
-
-- Use your proper first name or a consistent nickname.
-- Discussion marks are assigned by sorting names alphabetically by first name.
-- Do not use:
-  - Start with your last name (e.g., "Smith Jane").
-  - Use something obscure (e.g., "iPhone User").
-  - Use a different name each time (consistency is key).
-
-- How to Change Your Name\:
-  - Click on the "Participants" button at the bottom of the meeting window.
-  - Hover over your name in the participant list and click "More."
-  - Select "Rename."
-  - Enter your new name and click "OK."
-
-=== layout: one-panel
-hidden: true
-
-# Change Name Before a Meeting
-
-@body
-
-- Open the Zoom desktop client or the mobile app.
-- Go to your profile by clicking on your profile picture or initials in the top-right corner.
-- Select "Profile" from the dropdown menu.
-- Click "Edit" next to your name.
-- Enter your preferred name and then click "Save."
 
 === layout: one-panel
 hidden: true
@@ -243,6 +112,16 @@ hidden: true
 - See link on Blackboard
 
 === layout: one-panel
+hidden: true
+
+# Discord Signup
+
+@body
+
+- You earn credit for signing up for the class Discord server.
+- Signup was due September 21, 2026.
+
+=== layout: one-panel
 
 # Important Course Links
 
@@ -306,48 +185,11 @@ hidden: true
 
 # General Announcements
 
-=== layout: one-panel
+=== include: repo:evergreen/natural_science_club.djot
 hidden: true
 
-# Schaumburg Natural Science Club
-
-@body
-
-- Upcoming Meetings\:
-  - [TBD]{color=red}
-
-- All meetings at 5PM on Mon/Tues
-- Outreach/volunteer opportunities
-- Fun social activities
-- Professional development
-
-=== layout: one-panel
+=== include: repo:evergreen/spring_registration.djot
 hidden: true
-
-# Spring 2027 Registration
-
-@body
-
-- Spring registration usually starts November 1.
-- Meet with your advisor if you are unsure what to take.
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Spring Courses
-
-@body
-
-- Spring course information will be posted when available.
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Summer Course
-
-@body
-
-- Summer course information will be posted when available.
 
 === layout: section
 hidden: true

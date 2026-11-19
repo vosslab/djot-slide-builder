@@ -96,8 +96,14 @@ genetics:
   zoom_short: https://example.org/meeting
 biotechnology:
   discord: https://example.org/biotech-invite
-  zoom: https://example.org/biotech-meeting
+  office_hours: https://example.org/office-hours
+  zoom_short: https://example.org/office-hours
+  zoom: https://example.org/biotech-meeting?pwd=example
+  class_zoom_short: https://example.org/biotech-meeting
 ```
+
+The classroom Zoom slide uses `zoom` as its link target and `class_zoom_short` as the visible
+URL. Set both for each course that includes the full Zoom group.
 
 Copy this local file separately when setting up another checkout. Built ODP and PDF artifacts
 contain the resolved URLs and are suitable for student distribution.

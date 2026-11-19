@@ -9,7 +9,7 @@ Preserves 155 original content slides and 12 previously added bookends/dividers.
 
 ## November 10 agenda addition
 
-Add `lect14a-agenda.djot`, a one-slide agenda using brief labels from B-E: Allele Frequencies,
+Add `lect14a-genetics_agenda.djot`, a one-slide agenda using brief labels from B-E: Allele Frequencies,
 Hardy-Weinberg, Conditions for Hardy-Weinberg, and Chi-Square Test, grouped under Chapter 10.
 This is an undated agenda-only deck; the course schedule supplies no Lecture 14 teaching date.
 No full announcement deck was supplied. Rebuilt ODP/PDF, passed strict native lint, and inspected
@@ -24,7 +24,7 @@ use the same deck stem under `output/odp/` and `output/pdf/` at the repository r
 
 | Canonical deck | Authored ODP | Hidden | PDF pages | Replacements |
 | --- | --- | --- | --- | --- |
-| lect14a-agenda | 1 | 0 | 1 | 0 |
+| lect14a-genetics_agenda | 1 | 0 | 1 | 0 |
 | lect14b-allele_freq | 31 | 0 | 31 | 6 |
 | lect14c-hardy_weinberg_1 | 64 | 0 | 64 | 24 |
 | lect14d-hardy_weinberg_conditions | 36 | 0 | 36 | 16 |

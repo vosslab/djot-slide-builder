@@ -8,7 +8,7 @@ the 249 visible slides. The page references below refer to visible classroom pag
 
 | Source | Visible slides | Classroom outputs |
 | --- | ---: | --- |
-| [lect03a-2026_announcements.djot](lect03a-2026_announcements.djot) | 40 | `output/{odp,pdf}/lect03a-2026_announcements.*` |
+| [lect03a-2026_genetics_announcements.djot](lect03a-2026_genetics_announcements.djot) | 40 | `output/{odp,pdf}/lect03a-2026_genetics_announcements.*` |
 | [lect03b-blood_hla_typing.djot](lect03b-blood_hla_typing.djot) | 44 | `output/{odp,pdf}/lect03b-blood_hla_typing.*` |
 | [lect03c-fingerprinting.djot](lect03c-fingerprinting.djot) | 51 | `output/{odp,pdf}/lect03c-fingerprinting.*` |
 | [lect03d-genotyping_1.djot](lect03d-genotyping_1.djot) | 51 | `output/{odp,pdf}/lect03d-genotyping_1.*` |

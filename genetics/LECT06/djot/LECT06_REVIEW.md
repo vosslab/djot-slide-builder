@@ -16,7 +16,7 @@ pages. This targeted pass is not a complete formatting audit of the lecture.
 
 | Deck | Slides | Replacement markers |
 | --- | ---: | ---: |
-| [lect06a-2026_announcements.djot](lect06a-2026_announcements.djot) | 36 | 0 |
+| [lect06a-2026_genetics_announcements.djot](lect06a-2026_genetics_announcements.djot) | 36 | 0 |
 | [lect06b-intro_cells.djot](lect06b-intro_cells.djot) | 24 | 0 |
 | [lect06c-meiosis.djot](lect06c-meiosis.djot) | 53 | 4 |
 | [lect06d-x_linked_genes_1.djot](lect06d-x_linked_genes_1.djot) | 62 | 6 |

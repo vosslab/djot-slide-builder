@@ -55,16 +55,6 @@ hidden: true
 - State your name, major, and plans after graduation.
 - [What do you usually call a carbonated soft drink, like Sprite or Mountain Dew?]{color=red}
 
-=== layout: big-image
-
-@image
-
-![Slide image 1](assets/lect03a-2026_announcements/image_001.png)
-
-@caption
-
-Make sure Dr. Voss is recording.
-
 === layout: one-panel
 hidden: true
 
@@ -76,150 +66,17 @@ hidden: true
 - [What is the best dish you can cook?]{color=red}
   - Dr. Voss\: Lasagne, Waffles, Teriyaki Chicken
 
-=== layout: big-image
-hidden: true
-
-@image
-
-![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
-
-@caption
-
-Make sure Dr. Voss is recording.
-
-=== layout: two-panels
-
-# How to Use Zoom Like a Pro
-
-@left
-
-- 1. Mute yourself when you are not speaking.
-- 2. Plug in your headphones.
-- 3. Turn off video if you have a slow connection
-  - Join Zoom: [{{course_url:zoom_short}}]({{course_url:zoom}})
-
-@right
-
-![Slide image 4](assets/lect03a-2026_announcements/image_004.png)
-
-=== layout: big-image
-
-@image
-
-![Slide image 2](assets/lect03a-2026_announcements/image_002.png)
-
-@caption
-
-Watch Dr. Voss's videos for help with difficult problems.
-
-https://www.youtube.com/c/NeilVossLab/videos
+=== include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/gNA7VV_AGp0.djot
 
-=== layout: one-plus-two-panels
+=== include: repo:evergreen/instructor_contact.djot
 
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab
-  - You earn credit for signing up, and Discord is the quickest way to reach me.
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server rather than creating your own server.
-
-@top-right
-
-![Slide image 6](assets/lect03a-2026_announcements/image_006.png)
-
-@bottom-right
-
-![Slide image 7](assets/lect03a-2026_announcements/image_007.png)
-
-=== layout: two-panels
-
-# Office Hours
-
-@left
-
-- Office: SCH 600E, Schaumburg campus
-- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
-  - Thursday, 12:30-1:30 p.m.
-  - Wednesday, 2:30-3:30 p.m.
-- Also available by appointment
-- [Instructor information](https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/)
-
-@right
-
-![Slide image 3](assets/lect03a-2026_announcements/image_003.png)
-
-=== layout: one-panel
-
-# Ways to Contact Dr. Voss
-
-@body
-
-- 1. Attend office hours
-- 2. Discord
-  - Check several times per day; it is the quickest option.
-  - Send a direct message for private questions or post general questions to the class.
-  - Response time: 1-2 calendar days.
-- 3. Email
-  - Response time: 2 business days.
-- 4. Anonymous Google Form
-  - Response time: 2-4 business days.
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-- Google Form to send me an *_anonymous_* message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- https://forms.gle/gZ8nx28q9YDwSy8g7
-
-@right
-
-![Anonymous Form](assets/anonymous_form.png)
-
-
+=== include: repo:evergreen/zoom_guidance.djot
 
 === layout: section
 hidden: true
 # Discussion Points
-
-=== layout: one-panel
-hidden: true
-# Setting Your Name in Zoom
-
-@body
-
-- Use your proper first name or a consistent nickname.
-- Discussion marks are assigned by sorting names alphabetically by first name.
-- Do not use:
-  - Start with your last name (e.g., "Smith Jane").
-  - Use something obscure (e.g., "iPhone User").
-  - Use a different name each time (consistency is key).
-
-- How to Change Your Name\:
-  - Click on the "Participants" button at the bottom of the meeting window.
-  - Hover over your name in the participant list and click "More."
-  - Select "Rename."
-  - Enter your new name and click "OK."
-
-=== layout: one-panel
-hidden: true
-# Change Name Before a Meeting
-
-@body
-
-- Open the Zoom desktop client or the mobile app.
-- Go to your profile by clicking on your profile picture or initials in the top-right corner.
-- Select "Profile" from the dropdown menu.
-- Click "Edit" next to your name.
-- Enter your preferred name and then click "Save."
 
 === layout: one-panel
 hidden: true
@@ -300,6 +157,16 @@ hidden: true
 
 === layout: one-panel
 
+# Discord Signup
+
+@body
+
+- You earn credit for signing up for the class Discord server.
+- Due September 21, 2026.
+- Join the server: {{course_url:discord}}
+
+=== layout: one-panel
+
 # Syllabus Links
 
 @body
@@ -359,48 +226,11 @@ hidden: true
 
 # General Announcements
 
-=== layout: one-panel
+=== include: repo:evergreen/natural_science_club.djot
 hidden: true
 
-# Schaumburg Natural Science Club
-
-@body
-
-- Upcoming Meetings\:
-  - [TBD]{color=red}
-
-- All meetings at 5PM on Mon/Tues
-- Outreach/volunteer opportunities
-- Fun social activities
-- Professional development
-
-=== layout: one-panel
+=== include: repo:evergreen/spring_registration.djot
 hidden: true
-
-# Spring 2027 Registration
-
-@body
-
-- Spring registration usually starts November 1.
-- Meet with your advisor if you are unsure what to take.
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Spring Courses
-
-@body
-
-- Spring course information will be posted when available.
-
-=== layout: one-panel
-hidden: true
-
-# Dr. Voss Summer Course
-
-@body
-
-- Summer course information will be posted when available.
 
 === layout: section
 hidden: true

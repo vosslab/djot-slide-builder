@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="650" viewBox="0 0 1280 650" role="img" aria-labelledby="title desc">
+  <title id="title">Presentation rubric: timing and checklist</title>
+  <desc id="desc">Group presentation timing scores, bonus slide formatting, and four product and project criteria.</desc>
+  <g font-family="IBM Plex Sans Condensed">
+    <g id="timing">
+      <rect x="0" y="0" width="1280" height="196" rx="18" fill="#FFF2F2"/>
+      <text x="28" y="46" font-size="35" fill="#7B1E2B" font-weight="700" text-anchor="start">Time of Presentation (3 points)</text>
+      <text x="222" y="116" font-size="38" fill="#7B1E2B" font-weight="700" text-anchor="middle">3.0 points</text>
+      <text x="222" y="158" font-size="27" fill="#172033" font-weight="400" text-anchor="middle">Within 10% of the target range</text>
+      <text x="640" y="116" font-size="38" fill="#7B1E2B" font-weight="700" text-anchor="middle">1.5 points</text>
+      <text x="640" y="158" font-size="27" fill="#172033" font-weight="400" text-anchor="middle">More than 10% and up to 20% off</text>
+      <text x="1058" y="116" font-size="38" fill="#7B1E2B" font-weight="700" text-anchor="middle">0.0 points</text>
+      <text x="1058" y="158" font-size="27" fill="#172033" font-weight="400" text-anchor="middle">More than 20% off target</text>
+    </g>
+    <g id="slide-formatting">
+      <rect x="0" y="219" width="630" height="425" rx="18" fill="#FAF6F6"/>
+      <text x="26" y="270" font-size="35" fill="#7B1E2B" font-weight="700" text-anchor="start">Slide Formatting (bonus points)</text>
+      <text x="26" y="316" font-size="27" fill="#172033" font-weight="400" text-anchor="start">Up to 2 stars per item. Each star is 0.5 point.</text>
+      <circle cx="36" cy="366" r="5" fill="#7B1E2B"/>
+      <text x="67" y="375" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Pictures (and title/text) on every slide</text>
+      <circle cx="36" cy="424" r="5" fill="#7B1E2B"/>
+      <text x="67" y="433" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Short phrases, no complete sentences</text>
+      <circle cx="36" cy="482" r="5" fill="#7B1E2B"/>
+      <text x="67" y="491" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Break up large blocks of content,</text>
+      <text x="67" y="522" font-size="29" fill="#172033" font-weight="400" text-anchor="start">for example with flip-book animations</text>
+    </g>
+    <g id="key-aspects">
+      <rect x="650" y="219" width="630" height="425" rx="18" fill="#FAF6F6"/>
+      <text x="676" y="270" font-size="35" fill="#7B1E2B" font-weight="700" text-anchor="start">Quality of Key Aspects (4 points)</text>
+      <text x="676" y="316" font-size="27" fill="#172033" font-weight="400" text-anchor="start">Up to 2 stars per item. Each star is 0.5 point.</text>
+      <circle cx="686" cy="366" r="5" fill="#7B1E2B"/>
+      <text x="717" y="375" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Product feasibility</text>
+      <circle cx="686" cy="424" r="5" fill="#7B1E2B"/>
+      <text x="717" y="433" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Market niche</text>
+      <circle cx="686" cy="482" r="5" fill="#7B1E2B"/>
+      <text x="717" y="491" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Scientific background</text>
+      <circle cx="686" cy="540" r="5" fill="#7B1E2B"/>
+      <text x="717" y="549" font-size="29" fill="#172033" font-weight="400" text-anchor="start">Realistic timeline and milestones</text>
+    </g>
+  </g>
+</svg>

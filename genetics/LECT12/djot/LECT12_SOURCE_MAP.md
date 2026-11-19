@@ -4,7 +4,7 @@
 
 | Master | Current content |
 | --- | --- |
-| [lect12a-2026_announcements.djot](lect12a-2026_announcements.djot) | December 1 agenda, Quiz 4 and upcoming dates |
+| [lect12a-2026_genetics_announcements.djot](lect12a-2026_genetics_announcements.djot) | December 1 agenda, Quiz 4 and upcoming dates |
 | [lect12b-polyploidy.djot](lect12b-polyploidy.djot) | Polyploidy |
 | [lect12c-sex_dosage.djot](lect12c-sex_dosage.djot) | Sex dosage and determination |
 | [lect12d-chromo_alter_1-deletions.djot](lect12d-chromo_alter_1-deletions.djot) | Chromosome deletions |
@@ -25,7 +25,7 @@ slides and additions. PDF numbers omit hidden slides. No source content slide wa
 
 ## Announcements
 
-The canonical deck is `lect11a-2026_announcements.djot`. Announcements combine annual sources;
+The canonical deck is `lect12a-2026_genetics_announcements.djot`. Announcements combine annual sources;
 a one-to-one slide map is inapplicable to this weekly update. The current-year Lecture 10
 Djot supplies the latest shared formatting and course details, superseding the supplied
 Lecture 09 starter. The prior-year Lecture 11 supplies the Group Quiz 4 cue and topic agenda.

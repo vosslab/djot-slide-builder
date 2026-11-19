@@ -43,7 +43,13 @@ If you could give yourself one cyborg upgrade, what would you pick and what woul
 
 @examples
 
-Share your pick aloud or in the Zoom chat. Would you run faster, get super hearing, or see clearly without glasses? Maybe you'd want a stronger arm or back for lifting, longer arms to reach the top shelf, or the ability to do math in your head like a Mentat in _Dune_.
+Share your pick aloud or in the Zoom chat.
+
+- Run faster.
+- Hear better or see clearly without glasses.
+- Lift heavy things with a stronger arm or back.
+- Reach the top shelf with longer arms.
+- Do math in your head like a Mentat in _Dune_.
 
 === layout: one-panel
 
@@ -56,23 +62,13 @@ Share your pick aloud or in the Zoom chat. Would you run faster, get super heari
 - Bring a recent biotechnology article with a clear biological mechanism.
 - Homework 7 is assigned Dec 3. Check Blackboard for the instructions and deadline.
 
-=== layout: big-image
-
-@image
-
-![Recording reminder](repo:evergreen/assets/rec_reminder_image.png)
-
-@caption
-
-Make Sure Dr. Voss Is Recording
-
 === include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/Iyz6WX2r8Rg.djot
 
-=== include: repo:biotech/evergreen/course_information.djot
+=== include: repo:evergreen/instructor_contact.djot
 
-=== include: repo:biotech/evergreen/zoom_guidance.djot
+=== include: repo:evergreen/zoom_guidance.djot
 
 === layout: section
 
@@ -84,14 +80,18 @@ Make Sure Dr. Voss Is Recording
 
 @body
 
-- Biotechnology syllabus
-  - https://vosslab.github.io/syllabus/fall_2026/biotech/
-- Current course schedule
-  - https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
-- Projects and requirements
-  - https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
-- Points and assessment
-  - https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
+Biotechnology syllabus
+
+- https://vosslab.github.io/syllabus/fall_2026/biotech/
+Current course schedule
+
+- https://vosslab.github.io/syllabus/fall_2026/biotech/SCHEDULE/
+Projects and requirements
+
+- https://vosslab.github.io/syllabus/fall_2026/biotech/PROJECTS/
+Points and assessment
+
+- https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 === layout: two-panels
 
@@ -163,17 +163,19 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 @left
 
-- Edit and update your slide
-- Add several pictures and some text
-- It is best to have as few words as possible on your slide -- you do the talking not your slide
-- Be prepared to give a *60 second presentation* about each of your assigned talking point
+[*Edit and update your slide*]{color=#B74300}
+
+- [*Images are required.*]{color=#D40000} Add several pictures and some text.
+- [*No complete sentences on slides.*]{color=#D40000} Use short phrases and keywords.
+- Be a visual storyteller. _You do the talking, not your slide._
 
 @right
 
-- define the talking point, describe its relation to biotechnology, or provide a recent example of the talking point in biotechnology news
-- Try to be unique
-- Don't just copy the book, use the internet for research.
-- Provide your own perspective
+[*Content preparation*]{color=#B74300}
+
+- Define the talking point, connect it to biotechnology, or give a recent example from biotechnology news.
+- Try to be unique. Use the internet for research and provide your own perspective.
+- Minimize jargon. Define technical terms your classmates may not know.
 
 === layout: one-panel
 
@@ -181,11 +183,15 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 @body
 
-- Please put into your own words
-- It is okay if you read your notes, but put notes in your own words
-- No direct quoting of an article, wikipedia or the textbook
-- Minimize jargon
-- Show ENTHUSIASM when you talk and make it exciting!
+[*Presentation delivery*]{color=#B74300}
+
+- You have [*60 seconds per talking point.*]{color=#D40000} Choose the most interesting part.
+- Show *ENTHUSIASM* when you talk and make it exciting!
+
+[*Put it in your own words*]{color=#B74300}
+
+- It is okay to read from notes you wrote yourself.
+- [*No direct quotes*]{color=#D40000} from an article, Wikipedia, or the textbook.
 
 === layout: big-image
 hidden: true

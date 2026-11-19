@@ -31,7 +31,7 @@ color-theme: genetics
 @body
 
 - In class: tetrad analysis.
-- Quiz 3 is due before class; group quiz during class.
+- Quiz 3 is due before class. The group quiz is in person during class.
 - Homework assignments 07 and 08 are due.
 
 @citation
@@ -40,7 +40,7 @@ https://vosslab.github.io/syllabus/fall_2026/genetics/SCHEDULE/
 
 === layout: one-panel
 
-# [Breakout Room Chat]{color=red}
+# [Icebreaker]{color=red}
 
 @body
 
@@ -110,7 +110,7 @@ hidden: true
 - Assignment 6 is due Oct 13
 - Check Blackboard for assignment availability and submission times
 
-=== include: repo:genetics/evergreen/quiz_guidance.djot
+=== include: repo:genetics/evergreen/quiz_format.djot
 hidden: false
 
 === layout: subsection

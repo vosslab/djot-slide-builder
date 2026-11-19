@@ -9,7 +9,7 @@ Preserves 184 original content slides and 11 previously added bookends/dividers.
 
 ## November 10 agenda addition
 
-Add `lect15a-agenda.djot`, a one-slide agenda using the B-E titles: Genetics and Evolution,
+Add `lect15a-genetics_agenda.djot`, a one-slide agenda using the B-E titles: Genetics and Evolution,
 Natural Selection, Genetic Drift, and Inbreeding, plus the drift activity. It retains Chapter 10.
 This is an undated
 agenda-only deck; the course schedule supplies no Lecture 15 teaching date. No full announcement
@@ -25,7 +25,7 @@ use the same deck stem under `output/odp/` and `output/pdf/` at the repository r
 
 | Canonical deck | Authored ODP | Hidden | PDF pages | Replacements |
 | --- | --- | --- | --- | --- |
-| lect15a-agenda | 1 | 0 | 1 | 0 |
+| lect15a-genetics_agenda | 1 | 0 | 1 | 0 |
 | lect15b-genetic_evolution | 22 | 0 | 22 | 7 |
 | lect15c-natural_selection | 77 | 1 | 76 | 29 |
 | lect15d-genetic_drift | 35 | 0 | 35 | 12 |

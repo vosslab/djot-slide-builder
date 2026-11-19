@@ -68,7 +68,7 @@ NWS Chicago, retrieved Nov 03, 2026: https://www.weather.gov/lot/weatherstory
 
 === layout: one-panel
 
-# [Breakout Room Chat]{color=red}
+# [Icebreaker]{color=red}
 
 @body
 
@@ -136,7 +136,7 @@ hidden: true
 - Assignment 6 is due Oct 13
 - Check Blackboard for assignment availability and submission times
 
-=== include: repo:genetics/evergreen/quiz_guidance.djot
+=== include: repo:genetics/evergreen/quiz_format.djot
 hidden: false
 
 === layout: subsection

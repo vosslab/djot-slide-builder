@@ -4,7 +4,7 @@
 
 | Master | Current content | PDF pages |
 | --- | --- | --- |
-| [lect11a-2026_announcements.djot](lect11a-2026_announcements.djot) | Announcements and movie | 36 |
+| [lect11a-2026_genetics_announcements.djot](lect11a-2026_genetics_announcements.djot) | Announcements and movie | 36 |
 | [lect11b-interpreting_gene_trees.djot](lect11b-interpreting_gene_trees.djot) | Interpreting gene trees, with three primate question/answer reveals | 27 |
 | [lect11c-gene_trees_from_sequences.djot](lect11c-gene_trees_from_sequences.djot) | Sequence alignments and distance-based versus character-based methods | 17 |
 | [lect11d-upgma_three_and_four_sequences.djot](lect11d-upgma_three_and_four_sequences.djot) | From distances to a tree: three-rhino and four-sequence UPGMA | 45 |
@@ -49,7 +49,7 @@ All content slides remain one-to-one and in their original order; none was split
 
 See [LECT11_REVIEW.md](LECT11_REVIEW.md) for source roles, repairs, and limitations.
 
-## lect12a-2026_announcements
+## lect12a-2026_genetics_announcements
 
 Weekly announcement update: current-year Lecture 11A supplies shared course material;
 prior-year lect12A supplies useful week-specific cues. One-to-one annual mapping is inapplicable.

@@ -238,18 +238,18 @@ The tables below describe the original conversion before the approved homework r
 Their page numbers and replacement flags are historical.
 
 
-### lect10a-2026_announcements
+### lect10a-2026_genetics_announcements
 
 Weekly master based on the maintained LECT08 2026 announcements. Includes expand to 43 authored slides; hidden assignment, evaluation, and exam groups remain retained.
 
 | Authored | Visible PDF | Hidden | Owning Djot |
 | --- | --- | --- | --- |
-| 1 | 1 | False | lect10a-2026_announcements.djot |
-| 2 | 2 | False | lect10a-2026_announcements.djot |
-| 3 | 3 | False | lect10a-2026_announcements.djot |
+| 1 | 1 | False | lect10a-2026_genetics_announcements.djot |
+| 2 | 2 | False | lect10a-2026_genetics_announcements.djot |
+| 3 | 3 | False | lect10a-2026_genetics_announcements.djot |
 | 4 | 4 | False | youtube_channel.djot |
 | 5 | 5 | False | youtube_channel.djot |
-| 6 | 6 | False | lect10a-2026_announcements.djot |
+| 6 | 6 | False | lect10a-2026_genetics_announcements.djot |
 | 7 | 7 | False | course_information.djot |
 | 8 | 8 | False | course_information.djot |
 | 9 | 9 | False | course_information.djot |
@@ -262,31 +262,31 @@ Weekly master based on the maintained LECT08 2026 announcements. Includes expand
 | 16 | 16 | False | course_information.djot |
 | 17 | 17 | False | course_information.djot |
 | 18 | 18 | False | course_information.djot |
-| 19 | 19 | False | lect10a-2026_announcements.djot |
-| 20 | 20 | False | lect10a-2026_announcements.djot |
+| 19 | 19 | False | lect10a-2026_genetics_announcements.djot |
+| 20 | 20 | False | lect10a-2026_genetics_announcements.djot |
 | 21 | 21 | False | assessment_policies.djot |
 | 22 | 22 | False | assessment_policies.djot |
-| 23 | - | True | lect10a-2026_announcements.djot |
-| 24 | - | True | lect10a-2026_announcements.djot |
+| 23 | - | True | lect10a-2026_genetics_announcements.djot |
+| 24 | - | True | lect10a-2026_genetics_announcements.djot |
 | 25 | - | True | exam_guidance.djot |
 | 26 | - | True | exam_guidance.djot |
 | 27 | - | True | exam_guidance.djot |
-| 28 | - | True | lect10a-2026_announcements.djot |
+| 28 | - | True | lect10a-2026_genetics_announcements.djot |
 | 29 | 23 | False | quiz_guidance.djot |
 | 30 | 24 | False | quiz_guidance.djot |
 | 31 | 25 | False | quiz_guidance.djot |
 | 32 | 26 | False | quiz_guidance.djot |
-| 33 | 27 | False | lect10a-2026_announcements.djot |
+| 33 | 27 | False | lect10a-2026_genetics_announcements.djot |
 | 34 | - | True | first_week_assignments.djot |
 | 35 | - | True | first_week_assignments.djot |
-| 36 | - | True | lect10a-2026_announcements.djot |
-| 37 | 28 | False | lect10a-2026_announcements.djot |
+| 36 | - | True | lect10a-2026_genetics_announcements.djot |
+| 37 | 28 | False | lect10a-2026_genetics_announcements.djot |
 | 38 | - | True | course_evaluations.djot |
 | 39 | - | True | course_evaluations.djot |
 | 40 | - | True | course_evaluations.djot |
 | 41 | - | True | course_evaluations.djot |
 | 42 | - | True | course_evaluations.djot |
-| 43 | 29 | False | lect10a-2026_announcements.djot |
+| 43 | 29 | False | lect10a-2026_genetics_announcements.djot |
 
 ### lect10b-karyotypes
 

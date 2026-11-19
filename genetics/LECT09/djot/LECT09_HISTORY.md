@@ -255,7 +255,7 @@ Original ODP/PDF files remain unchanged in the lecture directory.
 
 | Djot | Authored | Visible PDF | Hidden | Replacement markers |
 | --- | --- | --- | --- | --- |
-| [lect09a-2026_announcements.djot](lect09a-2026_announcements.djot) | 43 | 29 | 14 | 0 |
+| [lect09a-2026_genetics_announcements.djot](lect09a-2026_genetics_announcements.djot) | 43 | 29 | 14 | 0 |
 | [lect09b-crossover_interference.djot](lect09b-crossover_interference.djot) | 23 | 23 | 0 | 9 |
 | the former 09B introduction source | 68 | 68 | 0 | 22 |
 | the former activity-format source | 53 | 53 | 0 | 24 |
@@ -273,7 +273,7 @@ Import evidence and extracted components are in `assets/<content-deck>/import_re
 | `lect09b-tetrads_1_introduction.odp` | 66 | none | [51] | 66 |
 | `lect09c-tetrads_2_activity_format.odp` | 50 | none | [12, 15, 17] | 50 |
 
-The maintained `genetics/LECT08/djot/lect08a-2026_announcements.djot` is the canonical
+The maintained `genetics/LECT08/djot/lect08a-2026_genetics_announcements.djot` is the canonical
 announcement model, following the cleaned Biotechnology announcements through the shared evergreen
 content. LECT09's original A file is a copy of Lecture 08; LECT10's original A is from 2025.
 These are inventory/comparison evidence, not current weekly masters. All content ODPs are authoritative;

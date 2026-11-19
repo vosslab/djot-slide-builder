@@ -7,7 +7,7 @@ slides. Every source content slide retains its original position within its deck
 See [LECT15_REVIEW.md](LECT15_REVIEW.md) for the topic split, cover-date limitation,
 replacement tasks, and verification.
 
-## lect15a-agenda
+## lect15a-genetics_agenda
 
 New undated agenda-only source, authored November 10 from the B-E topic sequence.
 One authored ODP slide / one visible PDF page; no original announcement source was supplied.

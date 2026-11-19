@@ -348,7 +348,7 @@ and unresolved-slide lists predate the approved revision above.
 
 | Djot | Authored | Visible PDF | Hidden | Replacement markers |
 | --- | --- | --- | --- | --- |
-| [lect10a-2026_announcements.djot](lect10a-2026_announcements.djot) | 43 | 29 | 14 | 0 |
+| [lect10a-2026_genetics_announcements.djot](lect10a-2026_genetics_announcements.djot) | 43 | 29 | 14 | 0 |
 | [lect10b-karyotypes.djot](lect10b-karyotypes.djot) | 52 | 52 | 0 | 20 |
 | [lect10c-chromo_nomenclature.djot](lect10c-chromo_nomenclature.djot) | 22 | 22 | 0 | 10 |
 | [lect10d-chromo_aneuploid.djot](lect10d-chromo_aneuploid.djot) | 58 | 58 | 0 | 19 |
@@ -366,7 +366,7 @@ Import evidence and extracted components are in `assets/<content-deck>/import_re
 | `lect10c-chromo_nomenclature.odp` | 19 | none | none | 19 |
 | `lect10d-chromo_aneuploid.odp` | 55 | none | [10, 39, 40] | 55 |
 
-The maintained `genetics/LECT08/djot/lect08a-2026_announcements.djot` is the canonical
+The maintained `genetics/LECT08/djot/lect08a-2026_genetics_announcements.djot` is the canonical
 announcement model, following the cleaned Biotechnology announcements through the shared evergreen
 content. LECT09's original A file is a copy of Lecture 08; LECT10's original A is from 2025.
 These are inventory/comparison evidence, not current weekly masters. All content ODPs are authoritative;

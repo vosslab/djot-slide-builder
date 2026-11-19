@@ -6,7 +6,7 @@ The canonical sources retain all 325 source slides in order. None of these input
 
 | Source | Authored | Visible | Hidden |
 | --- | ---: | ---: | ---: |
-| [lect05a-2026_announcements.djot](lect05a-2026_announcements.djot) | 35 | 35 | 0 |
+| [lect05a-2026_genetics_announcements.djot](lect05a-2026_genetics_announcements.djot) | 35 | 35 | 0 |
 | [lect05b-unknown_genotype_problems.djot](lect05b-unknown_genotype_problems.djot) | 16 | 16 | 0 |
 | [lect05c-pedigree.djot](lect05c-pedigree.djot) | 49 | 49 | 0 |
 | [lect05d-probability_concepts.djot](lect05d-probability_concepts.djot) | 31 | 31 | 0 |

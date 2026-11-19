@@ -23,6 +23,13 @@ and 60-second speaking limit.
 - Used Veridian Dynamics #11, Good / Bad, from the local episode transcript and
   existing course logo. The talking-mark screenshot, completed signup reminder,
   dormant club announcement, and unconfirmed evaluations remain hidden.
+- Replaced the Biotechnology instructor-contact copy with the
+  [shared evergreen group](../../../evergreen/instructor_contact.djot). All eight Fall
+  2026 Biotechnology announcement decks now include the same Office Hours slide.
+  Early decks retain their dated Discord signup slides and visibility. Verified PDF
+  contact order, identical Office Hours renders, and distinct office-hours and classroom
+  Zoom destinations. The shared Ways to Contact slide still reports a 19.5 pt advisory
+  against the 20 pt floor.
 
 ## 12B group project
 
@@ -32,9 +39,11 @@ and 60-second speaking limit.
 - Product choice and one Company Vision Report due Nov 19 lead the guide. The form
   stays on Blackboard. The project discussion connects the choice to the biological mechanism,
   market, competition, group contributions, and a concrete milestone.
-- Showed the two original presentation rubric pages and the complete seven-part
-  business-plan rubric for reference. The presentation rubric and form preview are
-  inherited images. Presentations are Dec 10 and the business plan is due Dec 17.
+- Show the two-page presentation rubric as editable SVG artwork. The timing, bonus
+  criteria, and key aspects follow the original group-project rubric. Slide quality,
+  content depth, and delivery match the Fall 2026 Shark Tank ODT and PDF. The complete
+  seven-part business-plan rubric follows. Presentations are Dec 10 and the business
+  plan is due Dec 17.
   Prerecording/upload, peer evaluation, and final logistics stay hidden for this week.
 
 ## 12C talking points
@@ -82,8 +91,7 @@ The Fall 2026 shared student deck holds presenter assignments and individual tal
   contained selectable text, and no extracted words exceeded the page bounds.
   Checked the announcement media link targets and the PDF order of all 41 Set #7 topics.
 - The November 18 build reported capacity advisories in inherited announcement/project material
-  and four talking-point setup slides. The two presentation rubric images are useful
-  for reference at PDF zoom.
+  and four talking-point setup slides. The two presentation rubric SVGs stay sharp at PDF zoom.
 - In the November 18 review, the focused suite passed 241 tests. The base suite passed
   10,278 tests and reported four ASCII failures in
   existing Set #7 text exports. The base suite auto-normalized six historical/current

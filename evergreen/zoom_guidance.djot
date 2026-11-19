@@ -6,19 +6,27 @@
 
 === layout: two-panels
 
-# Biotechnology Class Zoom
+# Class Zoom
 
 @left
 
-- Meeting ID:
-  - *972 4581 5713*
-- Password: *biotech*
-- Join class:
-  - [{{course_url:class_zoom_short}}]({{course_url:zoom}})
+Join class on Zoom:
+
+[{{course_url:class_zoom_short}}]({{course_url:zoom}})
 
 @right
 
 ![Zoom Video Conferencing](repo:biotech/evergreen/assets/zoom_logo.png)
+
+=== layout: big-image
+
+@image
+
+![Recording reminder](repo:evergreen/assets/rec_reminder_image.svg)
+
+@caption
+
+Make sure Dr. Voss is recording.
 
 === layout: two-panels
 
@@ -29,7 +37,6 @@
 - Mute yourself when you are not speaking.
 - Plug in your headphones or earbuds.
 - Turn off video if your connection is slow.
-- Join class: [{{course_url:class_zoom_short}}]({{course_url:zoom}})
 
 @right
 

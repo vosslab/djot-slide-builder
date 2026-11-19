@@ -6,7 +6,7 @@ All content slides remain one-to-one and in their original order; none was split
 
 See [LECT13_REVIEW.md](LECT13_REVIEW.md) for source roles, repairs, and limitations.
 
-## lect13a-2026_announcements
+## lect13a-2026_genetics_announcements
 
 Weekly announcement update: current-year Lecture 11A supplies shared course material;
 prior-year lect13A supplies useful week-specific cues. One-to-one annual mapping is inapplicable.

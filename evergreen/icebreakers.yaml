@@ -11,7 +11,7 @@ icebreakers:
   tags:
   - general
   - fallback
-  source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 3
+  source: genetics/LECT03/djot/lect03a-2026_genetics_announcements.djot, authored slide 3
   title: Icebreaker
   body: |-
     @prompt
@@ -27,7 +27,7 @@ icebreakers:
   tags:
   - general
   - fallback
-  source: genetics/LECT03/djot/lect03a-2026_announcements.djot, authored slide 4
+  source: genetics/LECT03/djot/lect03a-2026_genetics_announcements.djot, authored slide 4
   title: Icebreaker
   body: |-
     @prompt
@@ -44,7 +44,7 @@ icebreakers:
   tags:
   - general
   - fallback
-  source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 5
+  source: biotech/LECT03/djot/lect03a-2026_biotech_announcements.djot, authored slide 5
   title: Icebreaker
   body: |-
     @prompt
@@ -62,7 +62,7 @@ icebreakers:
   tags:
   - general
   - fallback
-  source: biotech/LECT03/djot/lect03a-2026_announcements.djot, authored slide 7
+  source: biotech/LECT03/djot/lect03a-2026_biotech_announcements.djot, authored slide 7
   title: Icebreaker
   body: |-
     @prompt
@@ -259,3 +259,23 @@ icebreakers:
 
     - Ideas: Jaws from the shark's side, Jurassic Park from a dinosaur's side, or a fairy tale from the sidekick's.
     - Example: "Jurassic Park, narrated by a dinosaur defending its home."
+- id: cyborg-upgrade
+  tags:
+  - biotechnology
+  - human-enhancement
+  source: biotech/LECT12/djot/lect12a-2026_biotech_announcements.djot, authored slide 4
+  title: Icebreaker
+  body: |-
+    @prompt
+
+    If you could give yourself one cyborg upgrade, what would you pick and what would you use it for?
+
+    @examples
+
+    Share your pick aloud or in the Zoom chat.
+
+    - Run faster.
+    - Hear better or see clearly without glasses.
+    - Lift heavy things with a stronger arm or back.
+    - Reach the top shelf with longer arms.
+    - Do math in your head like a Mentat in _Dune_.

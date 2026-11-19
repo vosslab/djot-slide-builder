@@ -24,7 +24,7 @@
 - **Peer trial and final submission.** Each testing group submits one feedback form or short
   video before leaving on Dec 9. The same questions apply to both formats. For Dec 16, each group
   checks its own revision and submits the final Doc, clean Sheet and revision note.
-- **Template.** Used the Nov 17 [Genetics Lecture 11A](../../../genetics/LECT11/djot/lect11a-2026_announcements.djot)
+- **Template.** Used the Nov 17 [Genetics Lecture 11A](../../../genetics/LECT11/djot/lect11a-2026_genetics_announcements.djot)
   sequence and the current [Biostatistics Lecture 08A](../../LECT08/djot/lect08a-2026_biostats_announcements.djot)
   for course context. The 2025 Biostatistics lecture directory had no matching A deck.
 - **Icebreaker.** The prediction prompt asks what students would measure to predict their mood.

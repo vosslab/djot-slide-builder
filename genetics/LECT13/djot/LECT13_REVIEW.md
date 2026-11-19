@@ -23,7 +23,7 @@ Editable sources are in this directory. Generated artifacts use the same stem un
 
 | Deck | Authored ODP | Hidden | PDF pages | Replacements |
 | --- | --- | --- | --- | --- |
-| lect13a-2026_announcements | 55 | 18 | 37 | 0 |
+| lect13a-2026_genetics_announcements | 55 | 18 | 37 | 0 |
 | lect13b-chromo_alter_3-inversion | 48 | 0 | 48 | 11 |
 | lect13c-chromo_alter_4-translocation | 31 | 0 | 31 | 14 |
 | lect13d-meiosis_translocation | 62 | 0 | 62 | 45 |
@@ -89,7 +89,7 @@ The inherited November 9 NWS weather snapshot remains hidden; it is not a Decemb
 Refresh weather on the day before class. YouTube/anonymous-message/Discord/Zoom slides use
 the shared groups, local artwork, and existing private course-link references.
 
-The canonical announcement deck is `lect13a-2026_announcements.djot`, dated December 8.
+The canonical announcement deck is `lect13a-2026_genetics_announcements.djot`, dated December 8.
 The cooking icebreaker comes from `evergreen/icebreakers.yaml`; Group Quiz 5 remains visible.
 Quiz 5/homework 11/12 are red for this week and the cumulative final is next week's emphasis.
 The old hidden midterm overview/deadlines were replaced by the current final-exam overview,
@@ -228,10 +228,10 @@ compared using the source map, and unresolved figure size/relationships remain m
 
 | Deck / Djot | Slot | Cause | Required / floor pt | Review outcome |
 | --- | --- | --- | --- | --- |
-| lect13a-2026_announcements / 5 | caption | paragraph/list | 15.25 / 18.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect13a-2026_announcements / 44 | left | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect13a-2026_announcements / 44 | bottom-right | paragraph/list | 18.5 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
-| lect13a-2026_announcements / 45 | body | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
+| lect13a-2026_genetics_announcements / 5 | caption | paragraph/list | 15.25 / 18.0 | Below-floor advisory retained; inspect at teaching distance. |
+| lect13a-2026_genetics_announcements / 44 | left | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
+| lect13a-2026_genetics_announcements / 44 | bottom-right | paragraph/list | 18.5 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
+| lect13a-2026_genetics_announcements / 45 | body | paragraph/list | 19.75 / 20.0 | Below-floor advisory retained; inspect at teaching distance. |
 | lect13b-chromo_alter_3-inversion / 24 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
 | lect13c-chromo_alter_4-translocation / 10 | body | mixed-readability | 19.0 / 20.0 | Retain replacement marker. |
 | lect13d-meiosis_translocation / 6 | body | mixed-readability | 20.0 / 20.0 | Retain replacement marker. |
@@ -268,7 +268,7 @@ No instructor-authored title was shortened solely to silence an audit warning.
 
 | Deck / Djot | Finding | Review or possible shorter title |
 | --- | --- | --- |
-| lect13a-2026_announcements / 11 | runt in left, paragraph 4 | Existing wording retained; advisory line fit. |
+| lect13a-2026_genetics_announcements / 11 | runt in left, paragraph 4 | Existing wording retained; advisory line fit. |
 | lect13b-chromo_alter_3-inversion / 7 | Title wraps | Inversions from Ectopic Recombination |
 | lect13b-chromo_alter_3-inversion / 8 | Title wraps | Pairing with an Inversion |
 | lect13b-chromo_alter_3-inversion / 9 | Title wraps | No Crossing Over in the Inversion Loop |

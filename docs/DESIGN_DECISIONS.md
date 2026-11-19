@@ -357,18 +357,18 @@ the figures, but normal ODP/PDF builds consume only the checked-in PNG component
 
 ### Recurring recording visual
 
-**Decision.** Use one clean, locally authored recording card for recurring Genetics announcement
-slides. Do not copy a stock-image watermark from a reference deck into a classroom asset.
+**Decision.** Use one clean, locally authored recording card in the shared classroom Zoom deck.
+Fall 2026 Genetics meets in person and omits the classroom Zoom deck.
 
 **Why.** The Biotechnology reference's recording image was itself the Shutterstock-watermarked
 asset that had been propagated into Genetics 02A, 03A, and 04A. A simple original card preserves
 the recording cue without reproducing an unlicensed or distracting mark.
 
-**Consequence.** The shared visual is rendered from `devel/recording-card.svg` into each lecture's
-local `recording_biotech.png`; each announcement deck remains self-contained for the ordinary
-Djot build.
+**Consequence.** The Zoom group includes the shared recording SVG, meeting etiquette, name
+instructions, and the course's classroom meeting link. Office hours stay in instructor contact.
 
-**Owner.** `devel/recording-card.svg` and the Genetics announcement asset directories.
+**Owner.** [../evergreen/zoom_guidance.djot](../evergreen/zoom_guidance.djot) and
+[../evergreen/assets/rec_reminder_image.svg](../evergreen/assets/rec_reminder_image.svg).
 
 ### Lecture-organized Genetics source tree
 
@@ -451,7 +451,7 @@ The instructor supplies the talking-marks spreadsheet directly in the editable O
 retains the original Veridian image. Its talking-marks page is a large image, with no spreadsheet
 embedded in the canonical Djot.
 
-**Owner.** `biotech/LECT04/djot/lect04a-2026_announcements.djot` and the course sources in
+**Owner.** `biotech/LECT04/djot/lect04a-2026_biotech_announcements.djot` and the course sources in
 `biotech/LECT04/old/`.
 
 ### Biotechnology Lecture 04B project archive
@@ -750,7 +750,7 @@ source uses the shared groups, remove unused starter copies and their extracted 
 the new lecture folder; they are not additional lecture material.
 
 **Owner.** [HUMAN_GUIDANCE.md](HUMAN_GUIDANCE.md), [slide-specs/DJOT_SLIDE_SYNTAX.md](slide-specs/DJOT_SLIDE_SYNTAX.md),
-and `genetics/LECT08/djot/lect08a-2026_announcements.djot`.
+and `genetics/LECT08/djot/lect08a-2026_genetics_announcements.djot`.
 
 ### Shared evergreen slides
 

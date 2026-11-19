@@ -16,11 +16,14 @@ own `evergreen/` folder; single-lecture content and dated snapshots stay with th
   If freshness cannot be established, use a visible REPLACEME prompt and `@replaceme`. New options cover food classification, look-alike
   mix-ups, missing pairs, unhelpful directions, group traditions, and movie perspectives.
   Source paths identify prompt provenance.
-- [assets/rec_reminder_image.svg](assets/rec_reminder_image.svg): reusable recording reminder.
-  Its editable ODG source and PNG companion remain local and ignored by Git.
-- [instructor_contact.djot](instructor_contact.djot): Discord, office hours, contact options, and anonymous message slides.
-- [ways_to_contact.djot](ways_to_contact.djot): the canonical contact-options slide used by both
-  the shared instructor group and Biotechnology, with the original wording and four colors.
+- [zoom_guidance.djot](zoom_guidance.djot): classroom Zoom link, recording reminder, meeting
+  etiquette, and display-name instructions in one source. The class link resolves from
+  the deck's course. Include this group for classes that meet on Zoom.
+- [instructor_contact.djot](instructor_contact.djot): the shared Discord, office hours, contact
+  options, and anonymous-message slides. Place any dated signup assignment in the weekly deck.
+- [quiz_guidance.djot](quiz_guidance.djot): optional group attempts and quiz preparation.
+  Include after the course's quiz format. Keep point values, worked score examples,
+  and timing in the course's own slides.
 - [youtube_channel.djot](youtube_channel.djot): Informational Slides divider and channel slide.
   Follow it with the selected dated Stump the Vibe Coder fragment from
   [../shared/README.md](../shared/README.md). The channel image is in `assets/youtube_channel.png`.

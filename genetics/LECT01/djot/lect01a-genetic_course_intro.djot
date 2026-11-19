@@ -26,112 +26,11 @@ color-theme: genetics
   - Associate Professor
 - email\:
   - [nvoss@roosevelt.edu](mailto:nvoss@roosevelt.edu)
-- Office\:
-  - Via Zoom Video Conference\:
-  - [{{course_url:zoom_short}}]({{course_url:office_hours}})
-  - Meeting ID\: 976 3875 4024
-  - Password\: voss
 - Favorite Biology Subjects\: Biophysics, Structural Biology and Electron Microscopy
 
-=== layout: one-panel
+=== include: repo:evergreen/youtube_channel.djot
 
-# Ways to Contact Dr. Voss
-
-@body
-
-- 1. Attend Office Hours
-- 2. Discord
-  - by far the quickest, check multiple times per day
-  - you can send direct message (DM) to me or post to the whole class
-  - response time\: 1-2 calendar days
-- 4. Email
-  - I receive 20 emails per day and only check once per day for mental health reasons
-  - response time\: 2 business days
-- 5. Anonymous Google Form
-  - goes to my email, but I can only read on laptop
-  - response time\: 2-4 business days
-
-=== layout: one-panel
-
-# Dr. Voss YouTube Channel
-
-@body
-
-![Slide image 2](assets/lect01a-course_intro/image_002.png)
-
-- [https\://www.youtube.com/c/NeilVossLab/videos](https://www.youtube.com/c/NeilVossLab/videos)
-- a few videos for hard problems
-
-=== layout: one-plus-two-panels
-
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
-
-@top-right
-
-![Slide image 4](assets/lect01a-course_intro/image_004.png)
-
-@bottom-right
-
-![Slide image 3](assets/lect01a-course_intro/image_003.png)
-
-=== layout: one-panel
-
-# Discord Signup
-
-@body
-
-![Slide image 5](assets/lect01a-course_intro/image_005.png)
-
-
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-![Slide image 6](assets/lect01a-course_intro/image_006.png)
-
-
-@right
-
-- New Google Form to send me an anonymous message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- [https\://forms.gle/gZ8nx28q9YDwSy8g7](https://forms.gle/gZ8nx28q9YDwSy8g7)
-
-=== layout: four-panels
-
-# Office Hours
-
-@top-left
-
-- Via Zoom Video Conference\:
-- [{{course_url:zoom_short}}]({{course_url:office_hours}})
-- Meeting ID\:
-  - 976 3875 4024
-- Password\: voss
-
-@top-right
-
-![Office Hours pinned note](assets/lect01a-course_intro/office_hours.drawn.svg)
-
-@bottom-left
-
-![Slide image 8](assets/lect01a-course_intro/image_008.png)
-
-@bottom-right
-
-- To be determined
-- also available by appointment
+=== include: repo:evergreen/instructor_contact.djot
 
 === layout: section
 
@@ -214,7 +113,7 @@ color-theme: genetics
   - class is cancelled, tests are rescheduled, get help with homework
 - Read the book and go over the lectures again
   - I follow the book very closely, so it can only help your understanding
-- Review old exams (on blackboard) as preparation
+- Review old exams to prepare
   - review your old exams to see where you went wrong
 - Come to my office hours
 
@@ -241,45 +140,13 @@ color-theme: genetics
 
 === layout: one-panel
 
-# Discord Server
-
-@body
-
-- Discord Server\:
-  - Students will be awarded 2 points for simply signing up for the Discord Server.
-  - Please use this method to contact the instructor rather than email.
-- Due Within First Few Weeks of Class,
-  - Due Sept 21.
-
-=== layout: one-plus-two-panels
-
-# Discord Server
-
-@left
-
-- I created a Discord Server called Neil Voss Lab
-  - Participation in Discord is technically not required, but I give you are required to sign up
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website
-  - Be sure to connect to my server, you should not create your own server
-
-@top-right
-
-![Slide image 4](assets/lect01a-course_intro/image_004.png)
-
-@bottom-right
-
-![Slide image 3](assets/lect01a-course_intro/image_003.png)
-
-=== layout: one-panel
-
 # Discord Signup
 
 @body
 
-![Slide image 5](assets/lect01a-course_intro/image_005.png)
-
-
+- Discord signup is worth 2 points.
+- Due September 21, 2026.
+- Join the server: {{course_url:discord}}
 
 === layout: two-panels
 

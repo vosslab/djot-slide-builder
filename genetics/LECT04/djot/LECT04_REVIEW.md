@@ -15,7 +15,7 @@ exports contain the 289 visible slides. The page references below refer to visib
 
 | Source | Authored | Visible | Hidden | Classroom outputs |
 | --- | ---: | ---: | ---: | --- |
-| [lect04a-2026_announcements.djot](lect04a-2026_announcements.djot) | 64 | 36 | 28 | `output/{odp,pdf}/lect04a-2026_announcements.*` |
+| [lect04a-2026_genetics_announcements.djot](lect04a-2026_genetics_announcements.djot) | 64 | 36 | 28 | `output/{odp,pdf}/lect04a-2026_genetics_announcements.*` |
 | [lect04b-mendel_history.djot](lect04b-mendel_history.djot) | 29 | 29 | 0 | `output/{odp,pdf}/lect04b-mendel_history.*` |
 | [lect04c-two_principles.djot](lect04c-two_principles.djot) | 36 | 35 | 1 | `output/{odp,pdf}/lect04c-two_principles.*` |
 | [lect04d-cross_experiments.djot](lect04d-cross_experiments.djot) | 19 | 19 | 0 | `output/{odp,pdf}/lect04d-cross_experiments.*` |

@@ -80,23 +80,13 @@ Introduce yourself, then share your warning. A snooze button: "May cause acciden
 - Homework 6 is assigned; check Blackboard for its instructions and deadline.
 - Nov 26: no class, Thanksgiving week.
 
-=== layout: big-image
-
-@image
-
-![Recording reminder](repo:evergreen/assets/rec_reminder_image.png)
-
-@caption
-
-Make Sure Dr. Voss Is Recording
-
 === include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/syP64X9YvmY.djot
 
-=== include: repo:biotech/evergreen/course_information.djot
+=== include: repo:evergreen/instructor_contact.djot
 
-=== include: repo:biotech/evergreen/zoom_guidance.djot
+=== include: repo:evergreen/zoom_guidance.djot
 
 === layout: section
 

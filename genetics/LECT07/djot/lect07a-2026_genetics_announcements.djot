@@ -26,7 +26,7 @@ color-theme: genetics
 
 === layout: one-panel
 
-# [Breakout Room Chat]{color=red}
+# [Icebreaker]{color=red}
 
 @body
 
@@ -35,92 +35,11 @@ color-theme: genetics
 - [What pets do you have?]{color=red}
   - Dog, cat, none, other.
 
-=== layout: section
-
-# Informational Slides
-
-=== layout: big-image
-
-@image
-
-![Slide image 1](assets/lect07a-2026_announcements/image_001.png)
-
-@caption
-
-Watch Dr. Voss's videos for help with difficult problems.
-
-https://www.youtube.com/c/NeilVossLab/videos
+=== include: repo:evergreen/youtube_channel.djot
 
 === include: repo:shared/stump_the_vibe_coder/0zhh6g-DJFs.djot
 
-=== layout: one-plus-two-panels
-
-# *Discord Server*
-
-@left
-
-- I created a Discord Server called Neil Voss Lab.
-  - Discord is the quickest way to reach me.
-- Join the server: {{course_url:discord}}
-  - It is available as a mobile app, a desktop app, and a website.
-  - Be sure to connect to my server rather than creating your own server.
-
-@top-right
-
-![Slide image 2](assets/lect07a-2026_announcements/image_002.png)
-
-@bottom-right
-
-![Slide image 3](assets/lect07a-2026_announcements/image_003.png)
-
-=== layout: two-panels
-
-# *Office Hours*
-
-@left
-
-- Office\: SCH 600E, Schaumburg campus
-- Office-hours Zoom: [{{course_url:zoom_short}}]({{course_url:office_hours}})
-- Thursday, 12\:30-1\:30 p.m.
-- Wednesday, 2\:30-3\:30 p.m.
-- Also available by appointment
-- Instructor information
-- https://vosslab.github.io/syllabus/fall_2026/shared/INSTRUCTOR_INFORMATION/
-
-@right
-
-![Slide image 4](assets/lect07a-2026_announcements/image_004.png)
-
-=== layout: one-panel
-
-# *Ways to Contact Dr. Voss*
-
-@body
-
-- [Office hours]{color=green}\: Ask questions in person or over Zoom.
-- [Discord]{color=red}\: The quickest way to reach me.
-  - I check several times per day.
-  - Send a direct message for private questions or post general questions to the class.
-  - Response time\: 1-2 calendar days.
-- [Email]{color=blue}.
-  - Response time\: 2 business days.
-- [Anonymous Google Form]{color=purple}.
-  - Response time\: 2-4 business days.
-
-=== layout: two-panels
-
-# Send an Anonymous Message to Instructor
-
-@left
-
-- Google Form to send me an *_anonymous_* message.
-- I took great care to make sure it is completely anonymous
-- Form goes directly to my email.
-- https://forms.gle/gZ8nx28q9YDwSy8g7
-
-@right
-
-![Anonymous Form](assets/anonymous_form.png)
+=== include: repo:evergreen/instructor_contact.djot
 
 === layout: section
 
@@ -181,11 +100,11 @@ https://www.youtube.com/c/NeilVossLab/videos
 @body
 
 - [*Assignments*]{color=red}\: reinforce learning; explore new topics
-  - Weekly; 5-15 points; unlimited retakes
+  - Weekly on Blackboard; 5-15 points; unlimited retakes
   - Collaboration and help encouraged
 - [*Quizzes*]{color=red}\: recent material
   - Individual\: 20 points; 30 minutes
-  - Group quiz during class
+  - Optional group quiz in person during class
 - [*Exams*]{color=red}\: cumulative midterm and final
   - Individual; 100 points total
   - Each part\: 50 points; 75 minutes
@@ -294,17 +213,6 @@ hidden: true
 === layout: one-panel
 hidden: true
 
-# *Reviewing Old Quiz Questions*
-
-@body
-
-- Review a quiz after everyone has completed it
-- In Blackboard, open your quiz score in the gradebook
-- Select the attempt to review your answers
-
-=== layout: one-panel
-hidden: true
-
 # *BB Assignments for Mid-Term Exam*
 
 @body
@@ -316,94 +224,15 @@ hidden: true
 - Assignment 6 is due Oct 13
 - Check Blackboard for assignment availability and submission times
 
-=== layout: section
+=== include: repo:genetics/evergreen/quiz_format.djot
 hidden: true
-
-# Quiz
-
-=== layout: two-panels
-hidden: true
-
-# *Quiz System Information*
-
-@left
-
-- 20 points; 18-24 questions
-- MC\: 1 point; matching\: 1/2 per choice
-- 30 minutes; about 1.5 min/question
-- Backtracking allowed; random order
-- Limited calculations
-- Score\: (individual + group)/2
-- Example\: (14 + 20)/2 = 17
-
-@right
-
-- Individual\: Blackboard
-- Opens >20 hours before class
-- Due BEFORE class
-- Group\: Zoom and Blackboard
-- 3-4 students; breakout setup takes time
-- Hard group quizzes receive a curve
-
-=== layout: one-panel
-hidden: true
-
-# *Missing Group Quizzes*
-
-@body
-
-- Make-up quizzes will be allowed for full credit only if the student notifies the instructor BEFORE the quiz/exam
-- Students missing group quizzes cannot later work in a group
-  - the individual score will be averaged with the minimum 18 points (or higher) instead of a group quiz score
-  - so you still get the benefit of the group score average, albeit small, even though you missed the in-class quiz.
-
-=== layout: one-panel
-hidden: true
-
-# *Please Volunteer Only If Plan to Work in Group*
-
-@body
-
-- You get Group Quiz points no matter what.
-  - your individual score will be averaged with the standard 18 points (sometimes higher) instead of a group quiz score
-- Group Quiz is not required.
-- Do not join if you do not want to actively participate.
-- Let me know if you want to work with someone in particular.
-
-=== layout: one-panel
-hidden: true
-
-# *Group Quiz Setup*
-
-@body
-
-- Complete your individual quiz FIRST
-- Before\: join your assigned breakout group
-  - Select a Recorder to share their screen
-  - ONLY the Recorder starts the unique Blackboard quiz
-- During\: 30 minutes; enter your first names
-  - Discuss verbally or in chat
-  - Use Ask for Help for instructor assistance
-- After\: review correct and submitted answers
-  - Report problems by email or Discord DM
-  - Return to main room or stay and chat
-
-=== layout: one-panel
-hidden: true
-
-# *Low Quiz Grades*
-
-@body
-
-- How can I do better in this class?
-- Did you complete the relevant assignments before taking the quiz?
-  - The assignments and quizzes mostly have the same questions.
-- Did you retake the relevant assignments and make sure you understood the questions? Did you retake them until you had a grade you were happy with?
-  - The assignments and quizzes mostly have the same questions.
 
 === layout: section
 
 # Weekly Assignments
+
+=== include: repo:genetics/evergreen/first_week_assignments.djot
+hidden: true
 
 === layout: two-panels
 hidden: true
