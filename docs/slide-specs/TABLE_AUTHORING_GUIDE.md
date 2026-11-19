@@ -1,8 +1,10 @@
 # Native table authoring
 
-Write an ordinary pipe table first. The builder supplies course-colored headings, comfortable
-spacing, numeric alignment, and a distinct total row. Keep the table's labels, units, and
-scientific notation in the source.
+**When in doubt, use the default.** Start each native table with `{table-style=standard}`.
+Choose another shared preset when it serves a specific teaching purpose. Let the builder
+fit the type and columns and supply padding, alignment, colors, borders, and total-row
+formatting. Keep an override only when the rendered preset obscures the meaning or makes
+the table hard to read. Keep the table's labels, units, and scientific notation in the source.
 
 Alignment follows each body column. If every nonempty, unmerged value is recognized as numeric,
 the column receives the preset's numeric alignment (normally right). Mixed columns such as
@@ -14,6 +16,7 @@ outcomes keep their centered preset alignment; matrix styles retain their existi
 Explicit table and cell alignment overrides still take precedence.
 
 ```djot
+{table-style=standard}
 | Offspring phenotype | Observed | Expected |
 | --- | --- | --- |
 | Purple flowers | 787 | 750 |
@@ -44,7 +47,7 @@ SVG artwork is outside the native table styling system.
 
 ## Choose a teaching treatment
 
-Add one attribute immediately before a table when its teaching job benefits from a preset:
+Declare the preset immediately before the table:
 
 ```djot
 {table-style=working}
@@ -65,7 +68,8 @@ Add one attribute immediately before a table when its teaching job benefits from
 | `matrix-lower` | Pairwise values below the diagonal | Shaded axes and diagonal; quiet unused triangle |
 | `matrix-upper` | Pairwise values above the diagonal | Shaded axes and diagonal; quiet unused triangle |
 
-Omitting `table-style` selects `standard`. Course decoration follows the deck's `color-theme`.
+The builder also uses `standard` for existing tables with no explicit style. Course decoration
+follows the deck's `color-theme`.
 Explicit scientific fills remain the same across course themes. Preserve labels alongside color;
 a color alone should not carry a classification or answer.
 
@@ -152,7 +156,8 @@ fitted type. Pair a value's color with the category or syndrome it identifies.
 
 ## Fit explanations and matrices
 
-Give prose room with a larger column weight before reducing text size. Row height follows wrapped
+If automatic widths leave a prose column too narrow in the rendered slide, give it a larger
+column weight before setting a font size. Row height follows wrapped
 content, padding, and notation. Use `vertical-align=top` for a short label beside a long explanation;
 use `middle` or `bottom` when the comparison requires it. Adjust padding sparingly, in points.
 
@@ -187,9 +192,9 @@ vocabulary, not arbitrary CSS. Inline emphasis and scientific text colors remain
 
 ## Add a shared preset
 
-For a recurring teaching treatment, add a small entry under `styles` in
-[../../slide_lib/table_styles.yaml](../../slide_lib/table_styles.yaml), then select it with
-`table-style`. Prefer a cell override for a one-off highlight.
+When an existing preset cannot support a recurring teaching treatment, add a small entry under
+`styles` in [../../slide_lib/table_styles.yaml](../../slide_lib/table_styles.yaml), then select
+it with `table-style`. Use a cell override for a one-off highlight that conveys meaning.
 
 ```yaml
 summary:

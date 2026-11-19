@@ -7,10 +7,15 @@ Include [instructor_contact.djot](../../evergreen/instructor_contact.djot) direc
 recurring Discord, office-hours, contact, and anonymous-message slides. Keep dated signup
 assignments with their weekly deck.
 
-Include [zoom_guidance.djot](../../evergreen/zoom_guidance.djot) after instructor contact.
-It contains the class meeting link, recording reminder, etiquette, and display-name instructions.
-Class and office-hours links resolve separately from ignored local configuration. See
-[assets/PROVENANCE.md](assets/PROVENANCE.md) for the recovered Zoom images and textbook cover.
+After instructor contact, include `repo:biotech/evergreen/class_zoom.local.djot` for
+the full class link, meeting ID, password, and phone QR. Follow with the global evergreen
+[recording, etiquette, and display-name slides](../../evergreen/zoom_guidance.djot).
+See [local Zoom setup](../../docs/INSTALL.md#local-course-links) for updating the meeting
+and [asset provenance](assets/PROVENANCE.md) for the recovered images.
+
+Follow the [shared course evaluation slides](../../evergreen/course_evaluations.djot)
+with [business_plan_extension.djot](business_plan_extension.djot) when announcing
+the evaluation window.
 
 Cross-course content stays in [../../evergreen/](../../evergreen/). Dated agendas, weather, podcast
 episodes, assignments, and talking-mark screenshots stay with their lecture. Use the

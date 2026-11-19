@@ -1,11 +1,13 @@
 """Protect editable scientific labels and existing drawings on invalid input."""
 
 import pathlib
+import shutil
 
 import lxml.etree
 import pytest
 
 import svg_tools.drawing
+import svg_tools.normalize_svg
 
 
 #============================================
@@ -94,4 +96,22 @@ def test_scientific_labels_survive_and_invalid_xml_preserves_file(tmp_path: path
 		svg_tools.drawing.write_svg(output, 300, 80, "Broken", "", "<g>")
 	with pytest.raises(ValueError):
 		svg_tools.drawing.write_svg(output, 300, 80, "\x01", "", body)
+	assert output.read_bytes() == payload
+
+
+#============================================
+@pytest.mark.skipif(shutil.which("rsvg-convert") is None, reason="needs the SVG crop renderer")
+def test_crop_removes_pale_canvas_and_preserves_diagram_panel(tmp_path: pathlib.Path) -> None:
+	"""Crop around the actual painted marks, retaining opaque fills inside the diagram."""
+	output = tmp_path / "diagram.drawn.svg"
+	body = ('<rect width="160" height="100" rx="8" fill="#f8fafb"/>'
+		'<rect id="panel" x="40" y="30" width="60" height="30" fill="white" '
+		'stroke="black" stroke-width="4"/>')
+	svg_tools.drawing.write_svg(output, 160, 100, "Title", "Description", body, crop=True)
+	root = lxml.etree.parse(output).getroot()
+	assert root.get("viewBox") == "28 18 84 54"
+	rectangles = root.findall("{http://www.w3.org/2000/svg}rect")
+	assert [(rect.get("id"), rect.get("fill")) for rect in rectangles] == [("panel", "white")]
+	payload = output.read_bytes()
+	assert svg_tools.normalize_svg.normalize_file(output, write=True) == "no changes"
 	assert output.read_bytes() == payload

@@ -93,7 +93,7 @@ Concepts, Chapter 5, Dr. Neil Voss, and Sept 29, 2026. This illustrates the form
 every deck needs five fields. The detailed authority is [../HUMAN_GUIDANCE.md](../HUMAN_GUIDANCE.md#slide-1-title-slide).
 
 Use supported layouts for recurring jobs. The shared `bookend` layout serves Learning Objectives
-and Key Takeaways; `definitions` gives terms a recognizable frame. Keep their thin angular frames,
+and Key Takeaways; `definitions` gives terms a recognizable frame. Keep their shared angular frame,
 opposite-corner symmetry, and light/dark accents in the selected course hue. `section`, `subsection`,
 and `subsubsection` use the course's framed, banded, and inset transitions. Use `question-ask`
 sparingly for one question to ponder in a pale hexagon with dark corners. Icebreakers use `prompt`

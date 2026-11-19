@@ -125,14 +125,13 @@ place in person, and assignments are on Blackboard. Keep Zoom details for guest 
 
 For Zoom breakout activities, title the selected icebreaker **Breakout Room Chat**.
 
-Include the [shared Zoom group](../../evergreen/zoom_guidance.djot) after instructor contact
-and before Course Content. It opens with the Zoom subsection and the clickable class URL,
-then shows the recording reminder, meeting etiquette, and three display-name slides.
-Keep these common slides in the same Djot file.
+After instructor contact, include the course's own evergreen Zoom subsection and Class Zoom
+slide. Follow with the [shared Zoom group](../../evergreen/zoom_guidance.djot), which
+contains the recording reminder, meeting etiquette, and display-name slides.
 
-The class link uses `{{course_url:zoom}}` and display URL `{{course_url:class_zoom_short}}`;
-office hours uses `{{course_url:office_hours}}` and its existing `{{course_url:zoom_short}}`.
-Resolve these distinct meetings from the ignored local course-links file.
+Show the full clickable class URL, meeting ID, password, and a phone-scannable QR code
+for that exact URL. Keep the class and office-hours meetings distinct. Resolve them from the
+[local course configuration](../INSTALL.md#local-course-links).
 Refresh software steps against Zoom's official instructions when editing the name slides.
 Discussion Marks were dropped for Fall 2026 because some students attend face-to-face;
 omit the grading slide, the discussion-points row, and the name-sorting explanation.
@@ -186,7 +185,7 @@ this is a menu of relevant groups, not a list to display every week.
 | --- | --- |
 | Graduating Students | First two weeks of class only; refresh dates before showing. |
 | Spring registration and upcoming courses | Midsemester, roughly October 15 through December 1. |
-| Course evaluations | End of semester, during the actual evaluation period. |
+| Course evaluations | At the last meeting before the survey opens and during the evaluation period. Show the opening date in the weekly lookahead. |
 | Natural Science Club | Hidden for now; the instructor has not decided how to restart it after COVID. |
 | One-off announcements | Relevant campus seminars, events, and other timely notices. |
 

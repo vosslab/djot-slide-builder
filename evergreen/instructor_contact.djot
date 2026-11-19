@@ -1,6 +1,6 @@
 {% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
 
-=== layout: two-panels
+=== layout: one-plus-two-panels
 
 # *Discord Server*
 
@@ -12,11 +12,13 @@
   - It is available as a mobile app, a desktop app, and a website.
   - Be sure to connect to my server rather than creating your own server.
 
-@right
+@top-right
 
-![Slide image 2](repo:evergreen/assets/image_002.png)
+![QR code to join the Neil Voss Lab Discord server](repo:evergreen/assets/image_002.png)
 
-![Slide image 3](repo:evergreen/assets/image_003.png)
+@bottom-right
+
+![Discord logo](repo:evergreen/assets/image_003.png)
 
 === layout: two-panels
 

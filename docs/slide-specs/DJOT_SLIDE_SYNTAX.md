@@ -67,8 +67,10 @@ authored formatting. An entry without a term boundary is a source-located error.
 explanations on ordinary teaching slides or in lecturing notes.
 
 The layouts inherit the deck's course theme and preserve standard title/body geometry. Their
-thin, editable angular frames remain behind the text, with paired diagonal breaks at opposite
-corners. Long bands use the course accent; matching corner accents use its pale tint. Both `bookend` and `definitions` use the selected course theme's accent color. The neutral gray `reference` layout retains its later-study footer.
+editable angular frames remain behind the text. Both use 16-unit bands that extend inward from
+the original outer edge, with paired diagonal breaks at opposite corners. Long bands use the course
+accent, and matching corner accents use its pale tint. The neutral gray `reference` layout retains
+its later-study footer.
 
 ## Deck color theme
 
@@ -396,7 +398,7 @@ outside a named slot; required named slots still appear where listed.
 | `title-only` | Title Only, `AUTOLAYOUT_TITLE_ONLY` | none | H1 plus ordinary root body | A title introduces flexible editable text, lists, component images, or one table below when no panel layout fits. |
 | `title-slide` | Title Slide, `AUTOLAYOUT_TITLE` | none | title/subtitle only | You are opening a lecture or major presentation. |
 | `one-panel` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One coherent explanation, outline, table, or contained component image needs the full content area. |
-| `bookend` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Learning objectives, key takeaways, and complete talking-point setup questions share a thin, symmetric course-colored frame, with ordinary one-panel content space. |
+| `bookend` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Learning objectives, key takeaways, and complete talking-point setup questions share a symmetric course-colored frame, with ordinary one-panel content space. |
 | `definitions` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | Definition entries receive automatic bold, underlined terms inside a course-colored frame. |
 | `reference` | Title, Content, `AUTOLAYOUT_TITLE_CONTENT` | `body` | yes | One-panel study material with an unfilled light gray border and automatic reference-only footer. |
 | `section` | Centered Text, `AUTOLAYOUT_ONLY_TEXT` | none | title/subtitle only | A dark framed chapter transition needs one prominent centered heading and little else. |
@@ -588,8 +590,9 @@ Use separate slots for multiple tables. Start with
 
 ### Cell formatting and spans
 
-Ordinary tables use the course-themed `standard` treatment. Select a named preset immediately
-before a table with `{table-style=working}`. The shared presets are `standard`, `comparison`,
+Declare a shared preset immediately before each table. Use `{table-style=standard}` for ordinary
+tables and start with the preset's defaults. See [TABLE_AUTHORING_GUIDE.md](TABLE_AUTHORING_GUIDE.md)
+for the default-first authoring policy. The shared presets are `standard`, `comparison`,
 `working`, `testcross`, `punnett`, `matrix-lower`, and `matrix-upper`.
 Formatting precedence is theme defaults, preset/region rules, table attributes, then cell
 attributes. Region rules apply in this order: numeric, row header, header, total, matrix diagonal,

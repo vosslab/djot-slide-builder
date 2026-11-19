@@ -364,8 +364,9 @@ Fall 2026 Genetics meets in person and omits the classroom Zoom deck.
 asset that had been propagated into Genetics 02A, 03A, and 04A. A simple original card preserves
 the recording cue without reproducing an unlicensed or distracting mark.
 
-**Consequence.** The Zoom group includes the shared recording SVG, meeting etiquette, name
-instructions, and the course's classroom meeting link. Office hours stay in instructor contact.
+**Consequence.** The global evergreen Zoom group contains the shared recording SVG, meeting
+etiquette, and name instructions. The course's evergreen Class Zoom slide comes before it.
+Office hours stay in instructor contact.
 
 **Owner.** [../evergreen/zoom_guidance.djot](../evergreen/zoom_guidance.djot) and
 [../evergreen/assets/rec_reminder_image.svg](../evergreen/assets/rec_reminder_image.svg).
@@ -783,11 +784,11 @@ symlink-containment checks use the resolved native root as their boundary.
 ### Bookend and definitions layouts
 
 **Decision.** Share one `bookend` layout for learning objectives and key takeaways. Use its
-ordinary one-panel geometry with an editable, thin angular course-colored frame. Give
+ordinary one-panel geometry with an editable, angular course-colored frame. Give
 `definitions` the same frame geometry and course accent color with automatic bold/underline on
 leading terms. Keep `reference` gray with its later-study footer. Use the existing course accent for the long bands and its pale tint for the opposite corner
-accents. Pair shapes with exact half-turn symmetry and diagonal gaps. Native editable polygons
-keep the 8-pixel bands outside the standard content area.
+accents. Pair shapes with exact half-turn symmetry and diagonal gaps. The 16-unit bands
+extend inward from the original outer edge, outside the standard content area.
 
 **Why.** Objectives and takeaways bookend the lecture with equal prominence. Definitions need
 consistent term emphasis; live teaching anchors need a distinct identity from later-study material.

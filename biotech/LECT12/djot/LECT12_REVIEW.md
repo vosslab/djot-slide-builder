@@ -39,18 +39,64 @@ and 60-second speaking limit.
 - Product choice and one Company Vision Report due Nov 19 lead the guide. The form
   stays on Blackboard. The project discussion connects the choice to the biological mechanism,
   market, competition, group contributions, and a concrete milestone.
-- Show the two-page presentation rubric as editable SVG artwork. The timing, bonus
-  criteria, and key aspects follow the original group-project rubric. Slide quality,
-  content depth, and delivery match the Fall 2026 Shark Tank ODT and PDF. The complete
+- Show the two presentation rubric images from the instructor's Fall 2026 Group Project
+  ODP. They carry the group scoring, including three points for timing. The complete
   seven-part business-plan rubric follows. Presentations are Dec 10 and the business
   plan is due Dec 17.
   Prerecording/upload, peer evaluation, and final logistics stay hidden for this week.
+
+### Refresh the presentation rubric
+
+Update the two rubric images in the instructor's ODP. The refresh copies the PNG bytes in
+slide order from the two pages captioned **Presentation Rubric**. Run from the repository root:
+
+```bash
+source source_me.sh && python3 biotech/LECT12/djot/refresh_presentation_rubric.py \
+  "$HOME/Documents/teaching/CLASS/biol_480-biotech/2026-BioTech-2fall/LECTURES-2026/lect11b-2026_group_project.odp"
+```
+
+Build the editable ODP, then export the classroom PDF at the rubric images' native
+resolution. The standard PDF build downsamples images to 100 ppi. Run the LibreOffice
+command outside the sandbox.
+
+```bash
+source source_me.sh
+python3 deck_tools.py build --format odp biotech/LECT12/djot/lect12b-2026_group_project.djot
+mkdir -p output/pdf
+soffice_bin="$(python3 -c 'from slide_lib.libreoffice import require_soffice; print(require_soffice())')"
+"$soffice_bin" --headless --norestore --convert-to \
+  'pdf:impress_pdf_Export:{"UseLosslessCompression":{"type":"boolean","value":"true"},"ReduceImageResolution":{"type":"boolean","value":"false"},"ExportHiddenSlides":{"type":"boolean","value":"false"},"ExportNotes":{"type":"boolean","value":"false"},"ExportNotesPages":{"type":"boolean","value":"false"},"ExportOnlyNotesPages":{"type":"boolean","value":"false"},"SelectPdfVersion":{"type":"long","value":"3"}}' \
+  --outdir output/pdf output/odp/lect12b-2026_group_project.odp
+```
+
+If the ODP rubric is redesigned as native slide shapes or text, use a slide export for that layout.
 
 ## 12C talking points
 
 The [Set 7 topic guide](SET7_TOPIC_GUIDE.md) has PDF page ranges for all 41 topics,
 a short list of pages to pull up in class, and links to the data behind the figures.
 The Fall 2026 shared student deck holds presenter assignments and individual talks.
+
+### Drawn SVG canvas audit
+
+All 40 Set 7 `.drawn.svg` figures were cropped to their painted content with a small
+clearance for labels, strokes, and arrowheads. The audit found 12 opaque canvas fills in
+two batches of evidence figures:
+
+- `set7_human_outcomes/` used a pale blue `#f8fbfd` rectangle behind all five figures
+  (`bci_speed`, `cell_to_person`, `claim_ladder`, `kidney_waitlist`, and
+  `organex_timeline`).
+- `set7_reproduction_evidence/` used a pale gray `#f8fafb` rectangle behind all seven
+  figures (`art_infants_2010_2021`, `cell_sources`, `consent_map`, `evidence_compare`,
+  `mei_public_record`, `screen_compare`, and `somatic_compare`). The public-record
+  timeline rounded the corners of that same canvas fill.
+
+Both batches explicitly painted these backdrops in their SVG source. The other 28 drawings
+already had transparent canvases. The crop and background removal preserved all editable
+foreground elements. All 40 images were verified in the rebuilt 406-page PDF. The three
+drawing recipes in this lecture use the
+[shared normalizer](../../../docs/slide-specs/SVG_DIAGRAMS.md#normalize-a-drawn-svg)
+when regenerating their assets.
 
 ## November 19 classroom edition
 

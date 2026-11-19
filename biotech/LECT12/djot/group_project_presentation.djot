@@ -52,36 +52,29 @@ hidden: true
 - Videos are due [Thursday, Dec 10 before 12PM noon]{color=red} (or Wed night) of the presentation day
   - Dr. Voss plans to download all of the videos (including from YouTube) to his desktop and play them from his computer to avoid internet connectivity issues.
 
-=== layout: two-panels
+=== layout: one-panel
 
 # Suggested Presentation Outline
 
-@left
+@body
 
-- [The best presentations deviate from this outline]{color=red}
-- Introduce problem in great detail
-- Two members talk about science in great detail
-  - switch back and forth between members for each slide
-  - Looking for specifics
-  - bonus if related to course material
-  - this should be the focus of the presentation
+[_The best presentations deviate from this outline._]{color=#D40000}
 
-@right
+1. *Introduce the problem.* Explain it in detail.
+2. *Explain the science.* Make this the focus of your presentation.
+   - Two speakers alternate slides. Give specifics. Bonus for connecting to course material.
+3. *Reveal the product.*
+   - Show how it solves the problem and improves on the competition.
+4. *Keep marketing brief.*
+   - Give the market size, projected revenue, and milestones. Explain how you will reach them.
 
-- Reveal the Product
-  - Introduce your product as the solution to the problem
-  - Talk about how your product is better than competition
-- Marketing
-  - Discuss size of the market; Talk about revenue projections
-  - Show milestones and your plan to achieve them
-  - recommend to keep this short, it is usually pretty boring
-- Introduce team members as needed
+_Introduce team members as needed._
 
 === layout: big-image
 
 @image
 
-![Group presentation timing, slide formatting bonus, and key aspects](assets/presentation_rubric_timing_and_checklist.drawn.svg)
+![Group presentation timing, slide formatting bonus, and key aspects](assets/presentation_rubric_1.png)
 
 @caption
 
@@ -91,7 +84,7 @@ Presentation Rubric: Timing, slide formatting, and key aspects
 
 @image
 
-![Scoring levels for slide quality, content depth, and presentation delivery](assets/presentation_rubric_scoring.drawn.svg)
+![Scoring levels for slide quality, content depth, and presentation delivery](assets/presentation_rubric_2.png)
 
 @caption
 

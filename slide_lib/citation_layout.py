@@ -25,6 +25,9 @@ def add_citation(page: slide_lib.layout_model.LayoutSlide,
 	if not source.citation:
 		return page
 	slide_lib.layout_validation.validate_citation(source)
+	rectangle = CITATION_RECTANGLE
+	if source.layout_class in ("bookend", "definitions"):
+		rectangle = dataclasses.replace(rectangle, y=715)
 	frame = slide_lib.layout_primitives.FrameTextProperties(
 		slide_lib.layout_primitives.Insets(0, 0, 0, 0),
 		slide_lib.layout_primitives.VerticalAlignment.TOP,
@@ -32,13 +35,13 @@ def add_citation(page: slide_lib.layout_model.LayoutSlide,
 		slide_lib.layout_primitives.OverflowPolicy.SHRINK)
 	size = slide_lib.layout_size_selection.select_size(
 		slide_lib.layout_measurement.items_for(source.citation),
-		slide_lib.layout_measurement.text_frame_measurement(CITATION_RECTANGLE),
+		slide_lib.layout_measurement.text_frame_measurement(rectangle),
 		14.0, 12.0, theme, source.citation[0].location,
 		source.layout_class, "citation", session)
 	order = max((item.reading_order for item in page.objects), default=-1) + 1
 	z_index = max((item.z_index for item in page.objects), default=-1) + 1
 	item = slide_lib.layout_object_builders.text_object(
-		"citation", source.citation, CITATION_RECTANGLE, size, 12.0,
+		"citation", source.citation, rectangle, size, 12.0,
 		slide_lib.layout_primitives.StyleRole.BODY, frame, None, order,
 		slide_lib.layout_primitives.PlaceholderKind.NONE, theme, session=session)
 	# The ordinary-font measurement is conservative; all citation runs use the narrow face.

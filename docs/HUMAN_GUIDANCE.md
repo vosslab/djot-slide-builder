@@ -94,6 +94,9 @@ Working specifications: [slide-specs/COLOR_GUIDE.md](slide-specs/COLOR_GUIDE.md)
 
 - Use black table-header text on light course-colored backgrounds.
 
+- For tables, “When in doubt, use the default.” Declare a shared table style and start with its
+  defaults. See [the table authoring guide](slide-specs/TABLE_AUTHORING_GUIDE.md).
+
 - Use comfortable default table-cell padding, center all table headings, and vertically
   align table-cell content in the middle.
 
@@ -390,8 +393,9 @@ inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an ent
 
 - Course Zoom and Discord URLs are not on the syllabus; include the actual course URLs in the
   student slides. Only Biotechnology has a Zoom meeting this semester (Fall 2026).
-- “I do not record unless I am connected to Zoom.” Keep recording and classroom Zoom in the
-  same evergreen group. Fall 2026 Genetics meets in person. Keep event and office-hours Zoom
+- “I do not record unless I am connected to Zoom.” Follow the course-evergreen Class Zoom
+  slide with the shared recording reminder. Show the full clickable join URL, meeting ID,
+  password, and phone QR on Class Zoom. Fall 2026 Genetics meets in person. Keep event and office-hours Zoom
   details where they apply.
 - All Fall 2026 Genetics group quizzes are in person. Use Blackboard for assignments.
 - Any URL for the course should be in the slides. The slides are generally available only to

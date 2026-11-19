@@ -402,9 +402,8 @@ re-exported from the existing ODPs during the final delivery recovery described 
 - Use the original contact block in the shared
   [instructor-contact group](../../../evergreen/instructor_contact.djot).
   Expanding that include reproduces the prior shared contact group verbatim.
-- The class meeting had incorrectly reused the office-hours URL. Its supplied join link now
-  resolves from `biotechnology.zoom`, with `class_zoom_short` as the visible URL. Office hours
-  retains its own `office_hours` and `zoom_short` values in ignored local configuration.
+- The course-evergreen Class Zoom slide shows the full join URL from `biotechnology.zoom`
+  with the matching meeting ID, password, and phone QR. Office hours uses its own meeting.
 - Original Zoom images come from authored slides 26-27 of
   `biotech/LECT11/old/lect11a-2025_announcements.odp`. The during-class rename steps have their
   own visual page so both the instructions and original menu image remain readable.

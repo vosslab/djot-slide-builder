@@ -99,14 +99,18 @@ biotechnology:
   office_hours: https://example.org/office-hours
   zoom_short: https://example.org/office-hours
   zoom: https://example.org/biotech-meeting?pwd=example
-  class_zoom_short: https://example.org/biotech-meeting
 ```
 
-The classroom Zoom slide uses `zoom` as its link target and `class_zoom_short` as the visible
-URL. Set both for each course that includes the full Zoom group.
+Biotechnology's Class Zoom slide is in the ignored
+`biotech/evergreen/class_zoom.local.djot`. It displays the full clickable
+`{{course_url:zoom}}` with the matching meeting ID and password. Build its phone QR
+with `~/nsh/junk-drawer/QRCODE/qrcode2.py` using the same full join URL, square
+modules, and a four-module border. Save it as
+`biotech/evergreen/assets/class_zoom_qr.png`. Update the credentials and QR
+together whenever the class meeting changes.
 
-Copy this local file separately when setting up another checkout. Built ODP and PDF artifacts
-contain the resolved URLs and are suitable for student distribution.
+Copy the local YAML, Djot fragment, and QR image separately when setting up another checkout. Distribute
+the built ODP and PDF to students through the course's usual channel.
 
 ## LibreOffice boundary
 

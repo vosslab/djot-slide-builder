@@ -749,6 +749,7 @@ IUCN describes a proxy as an organism created to resemble an extinct species for
 
 @body
 
+{table-style=standard}
 | Term | Where did the different DNA come from? |
 | --- | --- |
 | Chimera | Genetically distinct cell groups came from different fertilized eggs. |
@@ -854,6 +855,7 @@ Ask when the distinct DNA first came together.
 
 A patient received bone marrow from a donor. A lab can distinguish the two people at one DNA marker.
 
+{table-style=standard}
 | Sample in this example | Marker found |
 | --- | --- |
 | Patient's skin sample before transplant | A |

@@ -129,9 +129,15 @@ def reference_decorations(source: slide_lib.native_model.Slide,
 
 def teaching_decorations(theme: slide_lib.presentation_theme.PresentationTheme,
 		order: int) -> tuple[slide_lib.layout_model.LayoutObject, ...]:
-	"""Pair thin angular bands and opposite corners with exact half-turn symmetry."""
-	main = ((20, 20), (1096, 20), (1088, 28), (28, 28), (28, 608), (20, 616))
-	corner = ((1124, 20), (1260, 20), (1260, 156), (1252, 148), (1252, 28), (1116, 28))
+	"""Draw symmetric angular bands with a fixed outer inset and an inward thickness."""
+	outer = 20
+	thickness = 16
+	inner = outer + thickness
+	right = 1280 - outer
+	main = ((outer, outer), (1096, outer), (1096 - thickness, inner),
+		(inner, inner), (inner, 616 - thickness), (outer, 616))
+	corner = ((1124, outer), (right, outer), (right, 156),
+		(right - thickness, 156 - thickness), (right - thickness, inner), (1124 - thickness, inner))
 	objects = []
 	for name, vertices, role in (
 			("band", main, slide_lib.layout_primitives.StyleRole.ACCENT),

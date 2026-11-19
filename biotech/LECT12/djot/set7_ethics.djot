@@ -346,6 +346,7 @@ Imagine two teams publish the same crop result. One posts the comparison data. T
 
 @body
 
+{table-style=standard}
 | Pattern | Example |
 | --- | --- |
 | Fabrication | Enter measurements for a sample you never ran. |

@@ -31,7 +31,7 @@ def box(x: float, y: float, width: float, height: int, fill: str, words: str, de
 
 
 def write(name: str, height: int, title: str, desc: str, parts: list[str]) -> None:
-	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, height, title, desc, ''.join(parts))
+	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, height, title, desc, ''.join(parts), crop=True)
 
 
 def ethics_questions() -> None:

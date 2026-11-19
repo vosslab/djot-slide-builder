@@ -55,6 +55,23 @@ and LibreOffice compatibility corrections are recorded in
 Existing labels already baked into source artwork remain raster labels. Newly reconstructed labels
 are editable text. Review both at presentation scale, particularly after changing crops or fonts.
 
+### Normalize a drawn SVG
+
+Run the normalizer from the repository root with `rsvg-convert` installed:
+
+```bash
+source source_me.sh
+python3 -m svg_tools.normalize_svg path/to/*.drawn.svg
+python3 -m svg_tools.normalize_svg --write path/to/*.drawn.svg
+```
+
+The first command reports the proposed edits. With `--write`, the tool removes a plain
+canvas-sized rectangle behind the artwork and fits the viewport to the painted content with
+10 SVG units of clearance where available. `--padding` sets that clearance. Text, shapes,
+and internal fills stay editable. The tool measures static drawings with absolute viewports.
+Review other background constructions by hand, and inspect the exported slide after cropping.
+Recipes that use `svg_tools.drawing.write_svg` can set `crop=True` to normalize before saving.
+
 ## Comparison layout
 
 `image-comparison` gives two diagrams equal-width upper slots and two native captions a shared

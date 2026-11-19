@@ -62,6 +62,8 @@ NWS Chicago, retrieved Nov 05, 2026: https://www.weather.gov/lot/weatherstory
 
 === include: repo:evergreen/instructor_contact.djot
 
+=== include: repo:biotech/evergreen/class_zoom.local.djot
+
 === include: repo:evergreen/zoom_guidance.djot
 
 === layout: section

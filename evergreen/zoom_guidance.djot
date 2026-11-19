@@ -1,23 +1,5 @@
 {% Do not fork this evergreen fragment. Include it directly and make reusable edits here. %}
 
-=== layout: subsection
-
-# Zoom
-
-=== layout: two-panels
-
-# Class Zoom
-
-@left
-
-Join class on Zoom:
-
-[{{course_url:class_zoom_short}}]({{course_url:zoom}})
-
-@right
-
-![Zoom Video Conferencing](repo:biotech/evergreen/assets/zoom_logo.png)
-
 === layout: big-image
 
 @image

@@ -232,6 +232,7 @@ An embryo can connect genetic, gestational, and intended parents. These roles so
 
 A hypothetical screen flags 20 of 1,000 pregnancies.
 
+{table-style=standard}
 | Result | Condition present | Condition absent |
 | --- | --- | --- |
 | Positive screen | 10 | 10 |
@@ -449,7 +450,7 @@ She had Snijders Blok-Campeau syndrome, a rare condition linked to the CHD3 gene
 
 @body
 
-{table-style=comparison column-widths="1,3"}
+{table-style=comparison}
 | Who | What Shanghai investigators found |
 | --- | --- |
 | Ethics committee | Asked for more safety data, then approved the trial before the data arrived. |

@@ -39,8 +39,8 @@ def bar(x, y, w, h, fill):
 	return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill}"/>'
 
 
-def write(name, h, title, desc, parts):
-	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, h, title, desc, ''.join(parts))
+def write(name: str, h: int, title: str, desc: str, parts: list[str]) -> None:
+	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, h, title, desc, ''.join(parts), crop=True)
 
 
 def hazard():

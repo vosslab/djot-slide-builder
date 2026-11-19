@@ -90,13 +90,14 @@ Purple `#A719DB`, which is retained here for reproduction.
 
 Carry the course accent through titles, course summaries, and selected teaching labels. Use
 neutral colors for ordinary prose and Red Dark for the tentative-assignment warning.
+Use the standard title color for Biology and Ethics in Film so Purple Dark appears on white.
 
 | Course | Accent | Existing accent for reproduction |
 | --- | --- | --- |
 | Biochemistry Lecture | Purple Dark | `#6B638F` |
 | Biochemistry Lab | Red Dark | `#C9211E` |
 | Cellular and Molecular Biology | Navy Dark | `#24578F` |
-| Biology and Ethics in Film | Blue Extra dark | `#45405C` |
+| Biology and Ethics in Film | Purple Dark | `#A719DB` |
 
 ## Existing figure tools
 

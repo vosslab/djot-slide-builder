@@ -18,6 +18,16 @@ color-theme: biotechnology
 - Choose Your Group Company Product
 - Group Project Guide
 - Set #7: Bioethics in Biotechnology
+  - Intro to BioTech Ethics
+  - Public, Environment, and Plant BioTech
+  - Animal BioTech
+  - Humans and BioTech
+  - Controversial Biotech and Pharma Ethics
+- *Group Work Time*
+
+@speaker-notes
+
+Give groups time to polish their Group Vision proposal.
 
 === layout: big-image
 
@@ -58,6 +68,7 @@ Share your pick aloud or in the Zoom chat.
 @body
 
 - Nov 26: no class, Thanksgiving week.
+- [*Nov 29: Student course evaluations open.*]{color=#D40000}
 - Dec 3: Group Project Discussion and BioTech News Discussion #2.
 - Bring a recent biotechnology article with a clear biological mechanism.
 - Homework 7 is assigned Dec 3. Check Blackboard for the instructions and deadline.
@@ -67,6 +78,8 @@ Share your pick aloud or in the Zoom chat.
 === include: repo:shared/stump_the_vibe_coder/Iyz6WX2r8Rg.djot
 
 === include: repo:evergreen/instructor_contact.djot
+
+=== include: repo:biotech/evergreen/class_zoom.local.djot
 
 === include: repo:evergreen/zoom_guidance.djot
 
@@ -121,6 +134,7 @@ https://d16jkos453if22.cloudfront.net/9780443184840.jpg
 
 @body
 
+{table-style=standard}
 | Component | Points |
 | --- | --- |
 | Individual company project | 88 |
@@ -163,15 +177,15 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 @left
 
-[*Edit and update your slide*]{color=#B74300}
+[*Edit and update your slide*]{color=#00775f}
 
-- [*Images are required.*]{color=#D40000} Add several pictures and some text.
-- [*No complete sentences on slides.*]{color=#D40000} Use short phrases and keywords.
+- [*Images are required.*]{color=#003366} Add several pictures and some text.
+- [*No complete sentences on slides.*]{color=#003366} Use short phrases and keywords.
 - Be a visual storyteller. _You do the talking, not your slide._
 
 @right
 
-[*Content preparation*]{color=#B74300}
+[*Content preparation*]{color=#00775f}
 
 - Define the talking point, connect it to biotechnology, or give a recent example from biotechnology news.
 - Try to be unique. Use the internet for research and provide your own perspective.
@@ -183,15 +197,15 @@ https://vosslab.github.io/syllabus/fall_2026/biotech/ASSIGNMENTS_AND_GRADING/
 
 @body
 
-[*Presentation delivery*]{color=#B74300}
+[*Presentation delivery*]{color=#00775f}
 
-- You have [*60 seconds per talking point.*]{color=#D40000} Choose the most interesting part.
+- You have [*60 seconds per talking point.*]{color=#003366} Choose the most interesting part.
 - Show *ENTHUSIASM* when you talk and make it exciting!
 
-[*Put it in your own words*]{color=#B74300}
+[*Put it in your own words*]{color=#00775f}
 
 - It is okay to read from notes you wrote yourself.
-- [*No direct quotes*]{color=#D40000} from an article, Wikipedia, or the textbook.
+- [*No direct quotes*]{color=#003366} from an article, Wikipedia, or the textbook.
 
 === layout: big-image
 hidden: true
@@ -238,33 +252,38 @@ hidden: true
 === include: repo:evergreen/natural_science_club.djot
 hidden: true
 
-=== layout: subsection
-hidden: true
+=== include: repo:evergreen/course_evaluations.djot
 
-# Course Evaluations
+=== include: repo:biotech/evergreen/business_plan_extension.djot
 
 === layout: one-panel
-hidden: true
 
-# Course Evaluations
+# Business Plan Extra Time
 
 @body
 
-- Complete the survey when the university sends the invitation.
-- https://roosevelt.campuslabs.com/eval-home/
-- Watch for the actual evaluation window and deadline.
+{table-style=working}
+| Students | Completion | Extra days | Example deadline |
+| --- | --- | --- | --- |
+| 0 | 0% | 0.00 | Dec 17 at 11:59pm |
+| 1 | 8% | 0.04 | Dec 18 at 12:50am |
+| 6 | 50% | 1.25 | Dec 19 at 5:59am |
+| 8 | 67% | 2.22 | Dec 20 at 5:19am |
+| 10 | 83% | 3.47 | Dec 21 at 11:19am |
+| 11 | 92% | 4.20 | Dec 22 at 4:49am |
+| *12 of 12* | *100%* | *5.00* | *Dec 22 at 11:59pm* |
 
-=== layout: one-panel
-hidden: true
+@citation
 
-# Evaluations and Business-Plan Submission
+Final grades are due from instructors at noon Thu, Dec 24, 2026.
 
-@body
+@speaker-notes
 
-- I link class evaluation completion to extra time for business-plan submission.
-- Evaluation completion can add up to five more days.
-- I can see only total completion, not individual students' responses.
-- Watch for the confirmed evaluation window and any announced adjusted deadline.
+The table shows the fewest students needed to reach each date, plus the result at full participation.
+These examples assume a Dec 17 baseline at 11:59pm. The Fall 2025 workbook calculates extension days as
+ROUND(5 * (students completed / class size)^2, 3) before adding them to the baseline.
+Calculate extra days from the exact completion fraction. Round the displayed percentages to whole numbers
+and the displayed extra days to two decimals. Announce the official deadline separately.
 
 === layout: subsection
 

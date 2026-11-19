@@ -17,6 +17,7 @@
 
 ### Behavior or Interface Changes
 
+- Use 16-unit bands extending inward from the original outer edge for Bookend and Definitions.
 - Use course shortnames in weekly announcement and agenda filenames. Keep the Genetics
   week-one introduction under `lect01a-genetic_course_intro.djot`.
 - Share optional group quiz and quiz preparation slides across courses. Keep the 20-point
@@ -27,16 +28,22 @@
 
 ### Fixes and Maintenance
 
+- Show the shared course evaluation slides and Biotechnology Business Plan extension in
+  Lecture 12A. Announce the Nov 29 opening in the next-class lookahead.
+- Use Purple Dark for the Biology and Ethics in Film accents in shared registration slides.
+  Keep the standard title color over the course gradient.
 - Break the Biotechnology Lecture 12A cyborg icebreaker examples into short bullets and
   add the prompt to the evergreen icebreaker catalog.
 - Rejoin Biotechnology announcements with the shared evergreen instructor-contact slides,
   including the updated office-hours slide. Preserve dated Discord signup reminders and
   the separate Biotechnology classroom Zoom group.
 - Format Lecture 12A's Important Course Links with plain labels and bulleted URLs.
-- Bring the Set 7 source's orange section headings and red emphasis to the Lecture 12A
-  Talking Points Guide.
+- Bring the Set 7 source's color hierarchy to the Lecture 12A Talking Points Guide. Use
+  Teal Dark for headings and Navy Extra dark for key rules on the red Biotechnology theme.
 - Rebuild Lecture 12B's two presentation rubric screenshots as editable SVGs that
   retain the group-project timing, checklist, and scoring tiers.
+- Replace the adapted Lecture 12B rubric artwork with the original PNGs from the
+  instructor's Group Project ODP. Add a repeatable extraction command for revisions.
 - Consolidate Discord, office hours, contact options, and anonymous messages in one
   evergreen source. Update earlier Biotechnology, Biostatistics, and Genetics
   announcement decks to include shared contact, channel, recording, registration,

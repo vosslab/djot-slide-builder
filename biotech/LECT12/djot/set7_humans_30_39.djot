@@ -341,6 +341,7 @@ How many extra months of mobility did Group A have?
 
 @body
 
+{table-style=standard}
 | Claim | Stronger evidence |
 | --- | --- |
 | "Aging marker changed" | A replicated marker result |
@@ -448,6 +449,7 @@ A cryonics provider can document cold storage. What could it show a family about
 
 @body
 
+{table-style=standard}
 | Claim | Evidence to look for |
 | --- | --- |
 | Cells survived | Viability after rewarming |
@@ -590,6 +592,7 @@ One patient wants to hold a child's hand. Another wants to button a shirt. Would
 
 BrainEx restored some metabolic activity in isolated pig brains after death.
 
+{table-style=standard}
 | Measurement | What the study reported |
 | --- | --- |
 | Circulation | Flow resumed in small vessels. |
@@ -926,6 +929,7 @@ Topic 37: The intervention began one hour after cardiac arrest and ran for six h
 
 @body
 
+{table-style=standard}
 | Headline | Does the study support it? |
 | --- | --- |
 | "Some cell functions returned in treated organs" | Yes, within the study's measurements. |

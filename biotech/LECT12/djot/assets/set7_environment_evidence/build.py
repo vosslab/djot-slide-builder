@@ -20,7 +20,7 @@ def line(x1: float, y1: float, x2: float, y2: float, width: float = 3, color: st
 
 
 def write(name: str, title: str, description: str, parts: list[str]) -> None:
-	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, 500, title, description, ''.join(parts))
+	drawing.write_svg(HERE / f'{name}.drawn.svg', 1000, 500, title, description, ''.join(parts), crop=True)
 
 
 def read_series(name: str, value_name: str) -> list[tuple[int, float]]:

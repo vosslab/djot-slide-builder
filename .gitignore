@@ -24,6 +24,7 @@ site/
 # ADD YOUR CUSTOM IGNORES BELOW
 # Propagation preserves this section.
 /course_links.local.yaml
+/biotech/evergreen/class_zoom.local.djot
 *.svg
 # Reviewed image-free drawings use a checked filename suffix.
 !*.drawn.svg
@@ -33,6 +34,8 @@ site/
 *.pptx
 *.gif
 *.png
+!/biotech/LECT12/djot/assets/presentation_rubric_1.png
+!/biotech/LECT12/djot/assets/presentation_rubric_2.png
 *.jpg
 *.jpeg
 *textbooks*

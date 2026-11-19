@@ -10,6 +10,7 @@
 
 @body
 
+{table-style=standard}
 | Section | Weight |
 | --- | --- |
 | Cover page and table of contents | 5% |
@@ -19,7 +20,7 @@
 | Management team | 5% |
 | Investment summary | 5% |
 | Overall style | 20% |
-| *Total* | *100%* |
+| Total | 100% |
 
 === layout: two-panels
 
@@ -76,12 +77,13 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Cover page \[5% of grade\]
-  - Exactly one page
-  - cool and effective logo
-  - Effective company name
-  - Provide fake address and contact info
-  - clean table of contents (TOC) on same page
+## [Cover page \[5% of grade\]]{color=#00775F}
+
+- Exactly one page
+- cool and effective logo
+- Effective company name
+- Provide fake address and contact info
+- clean table of contents (TOC) on same page
 
 === layout: one-panel
 
@@ -89,17 +91,18 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Executive summary \[30% of grade\]
-  - Exactly one page
-    - Double check after uploading to TurnItIn
-  - Key concepts\:
-    - Problem
-    - Background
-    - Analysis
-    - Solution
-    - Future outlook
-  - Make it exciting for the reader!!!
-  - Should be a complete summary that stands alone
+## [Executive summary \[30% of grade\]]{color=#00775F}
+
+- Exactly one page
+  - Double check after uploading to TurnItIn
+- Key concepts\:
+  - Problem
+  - Background
+  - Analysis
+  - Solution
+  - Future outlook
+- Make it exciting for the reader!!!
+- Should be a complete summary that stands alone
 
 === layout: one-panel
 
@@ -107,18 +110,19 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Science and technology background \[15% of grade\]
-  - At least 2 pages of content
-  - Your audience is the rest of the class, so avoid complex jargon.
-    - more of science proposal than a fake lab report
-  - 1. address the problem being solved in more detail
-  - 2. what is the science/technology, relate to course concepts, how is it being used
-    - Include a figure of the science if possible
-    - Provide all details, no hiding trade secrets
-    - Any planned intellectual property (IP)
-  - 3. how does your technology compare to existing methods
-    - unmet market need in terms of technology
-      - We can do it cheaper, more efficient, or just better
+## [Science and technology background \[15% of grade\]]{color=#00775F}
+
+- At least 2 pages of content
+- Your audience is the rest of the class, so avoid complex jargon.
+  - more of science proposal than a fake lab report
+- 1. address the problem being solved in more detail
+- 2. what is the science/technology, relate to course concepts, how is it being used
+  - Include a figure of the science if possible
+  - Provide all details, no hiding trade secrets
+  - Any planned intellectual property (IP)
+- 3. how does your technology compare to existing methods
+  - unmet market need in terms of technology
+    - We can do it cheaper, more efficient, or just better
 
 === layout: one-panel
 
@@ -126,18 +130,19 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Market opportunity \[20% of grade\]
-  - More than one page
-  - what is the company and what are you selling?
-  - what value do you bring to market?
-  - what is your niche, what makes you unique?
-  - what is the demand for your product?
-    - Disease prevalence
-    - unmet market need in terms of market demand
-  - What is your direct and indirect competition
-  - how does your IP give you an advantage
-  - what is your sales strategy, how do you find your clients, how do you stand out?
-  - Introduce milestones
+## [Market opportunity \[20% of grade\]]{color=#00775F}
+
+- More than one page
+- what is the company and what are you selling?
+- what value do you bring to market?
+- what is your niche, what makes you unique?
+- what is the demand for your product?
+  - Disease prevalence
+  - unmet market need in terms of market demand
+- What is your direct and indirect competition
+- how does your IP give you an advantage
+- what is your sales strategy, how do you find your clients, how do you stand out?
+- Introduce milestones
 
 === layout: one-panel
 
@@ -145,18 +150,19 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Management team \[5% of grade\]
-  - About 1 page
-  - Provide some company history and philosophy
-  - Have fun, but within reason
-    - Keep your undergrad real to life, but get a Ph.D. from Oxford or an M.D. from Hopkins
-    - No time travelers, e.g., Steve jobs
-    - learn about your past, but also hear about some far off dreams.
-  - How does each person contribute to milestones
-  - What is the motivation for each person to do this project
-  - Optional\:
-    - Include professional photos of your team members
-    - Have an Organization Chart, who is the boss?
+## [Management team \[5% of grade\]]{color=#00775F}
+
+- About 1 page
+- Provide some company history and philosophy
+- Have fun, but within reason
+  - Keep your undergrad real to life, but get a Ph.D. from Oxford or an M.D. from Hopkins
+  - No time travelers, e.g., Steve jobs
+  - learn about your past, but also hear about some far off dreams.
+- How does each person contribute to milestones
+- What is the motivation for each person to do this project
+- Optional\:
+  - Include professional photos of your team members
+  - Have an Organization Chart, who is the boss?
 
 === layout: two-panels
 
@@ -164,17 +170,18 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @left
 
-![Slide image 6](repo:biotech/LECT10/djot/assets/group_project_details/hockey_stick_growth.png)
+## [Investment summary \[5% of grade\]]{color=#00775F}
+
+- Funding ideas
+- timeline w/ milestones
+- MILESTONES; key steps in the process (at least three)
+- Required to have a financial table
+  - projected revenues and expenses
+  - Big hockey stick revenue figure \_\_\_\_\_/
 
 @right
 
-- Investment summary \[5% of grade\]
-  - Funding ideas
-  - timeline w/ milestones
-  - MILESTONES; key steps in the process (at least three)
-  - Required to have a financial table
-    - projected revenues and expenses
-    - Big hockey stick revenue figure \_\_\_\_\_/
+![Slide image 6](repo:biotech/LECT10/djot/assets/group_project_details/hockey_stick_growth.png)
 
 === layout: one-panel
 
@@ -182,16 +189,36 @@ Use these pages as reference. Point groups to science, competition, and mileston
 
 @body
 
-- Overall style \[20% of grade\]
-  - Based on the overall look and formatting
-  - Things I look for\:
-    - Effective font and paragraph spacing
-      - No _Comic Sans_ or Papyrus for paragraphs
-    - Font size at least 11pt
-      - My eyes are getting old
-    - Full justification in paragraphs
-    - Effective use of white space
-    - Awesome figures, graphs, and tables
+## [Overall style \[20% of grade\]]{color=#00775F}
+
+- Based on the overall look and formatting
+- Things I look for\:
+  - Effective font and paragraph spacing
+    - No _Comic Sans_ or Papyrus for paragraphs
+  - Font size at least 11pt
+    - My eyes are getting old
+  - Full justification in paragraphs
+  - Effective use of white space
+  - Awesome figures, graphs, and tables
+
+=== layout: one-panel
+
+# Business Plan Rubric Summary
+
+@body
+
+{table-style=standard}
+| Section or criterion | Page length | % of plan grade |
+| --- | --- | --- |
+| Cover page and table of contents | Exactly 1 page | 5% |
+| Executive summary | Exactly 1 page | 30% |
+| Science and technology background | At least 2 pages | 15% |
+| Market opportunity | More than 1 page | 20% |
+| Management team | About 1 page | 5% |
+| Investment summary | Not specified | 5% |
+| Appendix (required) | Not specified | No separate weight |
+| Overall style | Whole document | 20% |
+| Total | 12–18 pages | 100% |
 
 === layout: section
 

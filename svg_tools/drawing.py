@@ -6,6 +6,7 @@ import pathlib
 import lxml.etree
 
 import svg_tools._xml
+import svg_tools.normalize_svg
 
 
 #============================================
@@ -173,7 +174,7 @@ def remove_canvas_background(root: lxml.etree._Element) -> None:
 
 #============================================
 def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
-	description: str, body: str) -> None:
+	description: str, body: str, *, crop: bool = False) -> None:
 	"""Write a complete SVG after validating XML; the parent folder must exist."""
 	if not all(math.isfinite(value) and value > 0 for value in (width, height)):
 		raise ValueError("SVG width and height must be finite and positive")
@@ -192,6 +193,8 @@ def write_svg(path: str | pathlib.Path, width: float, height: float, title: str,
 	root.insert(1, detail)
 	# LibreOffice may render SVGs with an ASCII declaration blank.
 	payload = lxml.etree.tostring(svg_root(root), encoding="ascii", xml_declaration=False)
+	if crop:
+		payload, _report = svg_tools.normalize_svg.normalize(payload, str(path))
 	pathlib.Path(path).write_bytes(payload)
 
 
