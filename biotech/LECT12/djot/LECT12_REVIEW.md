@@ -41,17 +41,31 @@ and 60-second speaking limit.
 
 ## 12C talking points
 
-See [SET7_TOPIC_GUIDE.md](SET7_TOPIC_GUIDE.md) for source inventory, all 41 official topics,
-annual examples, decisions on adapted prompts, and final PDF page ranges. See
-[PROVENANCE.md](assets/set7_instructor/PROVENANCE.md) for the eight embedded source
-figures and the [Set 7 drawing recipe](assets/set7_drawings/build.py) for the 14 new SVG diagrams. The result is an instructor discussion and study deck. The class's shared
-student deck remains the place for presenter assignments and student slides.
+The [Set 7 topic guide](SET7_TOPIC_GUIDE.md) has PDF page ranges for all 41 topics,
+a short list of pages to pull up in class, and links to the data behind the figures.
+The Fall 2026 shared student deck holds presenter assignments and individual talks.
 
-## November 19 Set 7 revision
+## November 19 classroom edition
 
-- Expanded all 41 topics with sourced cases, comparisons, or worked examples. The 303-page PDF includes 22 figures and 254 citation footers.
-- Rechecked the 41 page ranges against the exported PDF. Each newly drawn SVG is embedded in the ODP. All pages have selectable text and every external footer target matches a PDF link on the same page.
-- Strict Djot lint and the final build passed. The final 12C build emitted no capacity advisories. The revised deck review images are in `_temp/set7_revision/`.
+- Expanded the 303-slide draft to 400 slides. The PDF has 100 figure slides, including
+  county maps, primary-source micrographs, photos, experimental diagrams, and time series.
+  Archival portraits and case photographs now illustrate 38 previously text-only slides.
+  All 41 numbered topics open with the Fall 2026 discussion questions.
+- Checked source credits on the new photos and charts. The deck includes 351 source
+  footers. Each external target in a source footer appears as a link on the same PDF page.
+- Checked all 400 PDF pages for selectable text and page bounds, compared the page order
+  with the topic map, and matched every source image to the bytes embedded in the ODP.
+  Reviewed the PDF contact sheets for the revised charts and all 38 new photo slides.
+- Strict Djot lint and the Set 7 capacity check passed. The classroom deck has no
+  capacity advisories. A separate check of the original 15.25 pt Genetics caption
+  confirms the new 15 pt advisory floor. Short captions still use 22 pt.
+- The focused parser, link, slide-lint and layout checks passed all 207 tests. The isolated
+  full-suite run passed 10,211 tests. Three pre-existing checks still fail: type annotations
+  and script entry-point conventions in the original Set 7 drawing recipe, and a missing
+  test-file link in the chromosome SVG plan.
+- The earlier 303-slide draft had 22 figures and 254 citation footers.
+  Its review files are in `_temp/set7_revision/`. Review files for the 400-slide
+  classroom edition are in `_temp/set7_expansion/` and `_temp/set7_people/`.
 
 ## Artifact verification
 
@@ -59,7 +73,7 @@ student deck remains the place for presenter assignments and student slides.
 | --- | ---: | ---: | ---: |
 | 12A Announcements | 47 | 7 | 40 |
 | 12B Group Project Guide | 41 | 6 | 35 |
-| 12C Bioethics in Biotechnology | 303 | 0 | 303 |
+| 12C Bioethics in Biotechnology | 400 | 0 | 400 |
 
 - Strict Jotdown and repository slide lint passed for all three masters.
 - LibreOffice exported all three PDFs from the editable ODP artifacts. Reviewed contact
@@ -70,7 +84,8 @@ student deck remains the place for presenter assignments and student slides.
 - The November 18 build reported capacity advisories in inherited announcement/project material
   and four talking-point setup slides. The two presentation rubric images are useful
   for reference at PDF zoom.
-- Focused suite: 241 passed. Base suite: 10,278 passed and four ASCII failures in
+- In the November 18 review, the focused suite passed 241 tests. The base suite passed
+  10,278 tests and reported four ASCII failures in
   existing Set #7 text exports. The base suite auto-normalized six historical/current
   text snapshots. Verified that the shared fixers explained the changes and restored
   all six source files to their original bytes.

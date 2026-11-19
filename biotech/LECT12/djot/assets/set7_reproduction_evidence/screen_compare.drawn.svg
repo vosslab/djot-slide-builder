@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+<title id="title">Two prenatal samples answer different questions</title><desc id="desc">A pregnant person's blood contains mostly their own cell-free DNA and some placental fragments. An amniotic-fluid sample contains fetal cells.</desc>
+<rect width="1000" height="470" fill="#f8fafb"/>
+<g font-family="Atkinson Hyperlegible Next, sans-serif" fill="#344651">
+<text x="500" y="43" text-anchor="middle" font-size="31">Two samples, two sources</text>
+<path d="M282 123 C186 123 137 209 155 303 C170 380 231 410 288 382 C338 357 349 297 331 238 C318 194 354 160 401 157" fill="#F5EAF7" stroke="#694079" stroke-width="4"/>
+<circle cx="271" cy="267" r="77" fill="#FFD47C" stroke="#344651" stroke-width="3"/><circle cx="271" cy="267" r="42" fill="#C3E0F1" stroke="#344651" stroke-width="3"/>
+<path d="M234 216 Q272 177 309 216 M209 290 Q270 344 332 292" fill="none" stroke="#247257" stroke-width="12" stroke-linecap="round"/>
+<path d="M347 174 C432 143 507 167 530 223 C548 268 532 322 493 349 C460 372 408 351 384 315 C361 279 370 223 402 196" fill="#C3E0F1" stroke="#344651" stroke-width="3"/><path d="M385 266 C421 231 472 227 506 255" fill="none" stroke="#694079" stroke-width="8"/>
+<text x="273" y="428" text-anchor="middle" font-size="25">pregnant person</text><text x="454" y="383" text-anchor="middle" font-size="25">placenta and fetus</text>
+<path d="M90 100 C42 120 42 380 90 400" fill="none" stroke="#C74450" stroke-width="20" stroke-linecap="round"/><path d="M90 100 C139 130 129 191 161 201 M90 400 C135 369 131 324 164 318" fill="none" stroke="#C74450" stroke-width="8"/><text x="90" y="77" text-anchor="middle" font-size="23">blood</text>
+<g fill="#694079"><path d="M106 150 l20 -8 l19 12 l-20 8z"/><path d="M116 245 l20 -8 l19 12 l-20 8z"/><path d="M101 330 l20 -8 l19 12 l-20 8z"/></g><g fill="#247257"><path d="M170 166 l20 -8 l19 12 l-20 8z"/><path d="M157 345 l20 -8 l19 12 l-20 8z"/></g>
+<path d="M536 219 C653 195 680 163 788 159" fill="none" stroke="#247257" stroke-width="5" stroke-dasharray="10 9"/><path d="M483 337 C644 383 714 367 793 331" fill="none" stroke="#275A88" stroke-width="5" stroke-dasharray="10 9"/>
+<rect x="672" y="91" width="270" height="125" rx="18" fill="#E8F2F4" stroke="#344651" stroke-width="3"/><text x="807" y="129" text-anchor="middle" font-size="29">blood screen</text><text x="807" y="163" text-anchor="middle" font-size="23">cell-free DNA fragments</text><text x="807" y="193" text-anchor="middle" font-size="21">mostly person, some placenta</text>
+<rect x="672" y="278" width="270" height="125" rx="18" fill="#E8F2F4" stroke="#344651" stroke-width="3"/><text x="807" y="316" text-anchor="middle" font-size="29">amniotic sample</text><text x="807" y="350" text-anchor="middle" font-size="23">fetal cells</text><text x="807" y="380" text-anchor="middle" font-size="21">a diagnostic sample</text>
+</g></svg>

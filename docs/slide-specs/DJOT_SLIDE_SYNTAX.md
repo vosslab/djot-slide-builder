@@ -499,8 +499,8 @@ layout never rasterizes lettering.
 
 Use `big-image` for a single focal image and an editable caption. Longer captions can extend
 downward into the lower margin without moving or shrinking the image allocation. Short captions
-retain their usual geometry, and slides with `@citation` reserve that footer. Font fitting still
-applies when the available caption area is exhausted:
+retain their usual geometry, and slides with `@citation` reserve that footer. Captions start at
+22 pt. The capacity report flags a caption only when it needs less than 15 pt.
 
 ```djot
 === layout: big-image

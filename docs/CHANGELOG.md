@@ -3,8 +3,16 @@
 ### Additions and New Features
 
 - Expand the [Set 7 bioethics lecture](../biotech/LECT12/djot/SET7_TOPIC_GUIDE.md)
-  to 303 slides across 41 topics. Add 14 editable SVG diagrams, slide-level sources,
-  and worked comparisons using the 2024 SART IVF data and March 2026 KFF survey.
+  from 303 to 400 slides across 41 topics. Add primary-source images, annual data on IVF,
+  soybean acreage and overdose deaths, and paired naloxone county maps with different denominators.
+- Illustrate 38 previously text-only pages with portraits and case photographs. The deck
+  now has 100 illustrated slides, including the Del Zio courthouse photo and Gary Strobel
+  preparing to cut down the elms in his Montana trial.
+
+### Behavior or Interface Changes
+
+- Lower the `big-image` caption advisory floor from 18 pt to 15 pt. Short captions still
+  start at 22 pt, and longer captions can use the available lower margin.
 
 ## 2026-11-18
 

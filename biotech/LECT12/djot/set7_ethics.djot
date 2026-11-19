@@ -42,6 +42,20 @@ The client still deserves a defense. Representing a client does not mean endorsi
 
 [ABA, Model Rule 1.2(b)](https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_2_scope_of_representation_allocation_of_authority_between_client_lawyer/)
 
+=== layout: big-image
+
+@image
+
+![Three questions in an ethics decision](assets/set7_ethics_evidence/ethics_questions.drawn.svg)
+
+@caption
+
+Topic 1: A lab result can answer the evidence question without answering the consent or justice question.
+
+@citation
+
+[The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
+
 === layout: one-panel
 
 # 1. A Decision an Ethics Committee Can Review
@@ -72,6 +86,26 @@ A patient agrees to give blood for a diabetes study. Years later, a team wants t
 
 [The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
 
+=== layout: two-panels
+
+# 1. A Good Study Can Still Have an Ethics Problem
+
+@left
+
+*The biology works*
+
+The test measures the promised protein accurately.
+
+@right
+
+*The question remains*
+
+Did people understand that their samples could also be used for ancestry research?
+
+@citation
+
+[The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
+
 === layout: one-panel
 
 # 1. Who Holds the Key?
@@ -92,6 +126,20 @@ The sample label says A17. A hospital file connects A17 to a patient's name.
 
 @image
 
+![Consent connects a donor to a specific use](assets/set7_ethics_evidence/consent_path.drawn.svg)
+
+@caption
+
+Topic 1: A new proposal can be close to the original study and still ask a different question of the donor.
+
+@citation
+
+[HHS, Coded specimens in research](https://www.hhs.gov/ohrp/coded-private-information-or-biospecimens-used-research.html)
+
+=== layout: big-image
+
+@image
+
 ![Who Can Identify Donor A17?](assets/set7_drawings/coded_sample.drawn.svg)
 
 @caption
@@ -103,20 +151,37 @@ Follow the code from the tube to the hospital file.
 
 [HHS, Coded specimens in research](https://www.hhs.gov/ohrp/coded-private-information-or-biospecimens-used-research.html)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 1. Who Knew Treatment Was Available?
 
-@body
+@left
 
-From 1932 to 1972, the U.S. Public Health Service studied Black men in Tuskegee, Alabama, without obtaining their informed consent. Investigators withheld available treatment from participants with syphilis.
+These men took part in the U.S. Public Health Service study at Tuskegee. The researchers enrolled Black men without their informed consent and withheld treatment from men with syphilis.
 
-- Once penicillin was widely available, what duty did the researchers owe the participants?
-- What would it mean to earn trust from families familiar with this history?
+Once penicillin became available, what did the researchers owe them?
+
+@right
+
+![Tuskegee study participants](assets/set7_people_early/tuskegee_participants.jpg)
 
 @citation
 
-[CDC, The untreated syphilis study at Tuskegee](https://www.cdc.gov/tuskegee/about/index.html)  |  [The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
+[CDC, Tuskegee study](https://www.cdc.gov/tuskegee/about/index.html)  |  [Belmont Report](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)  |  [Photo: National Archives](https://rediscovering-black-history.blogs.archives.gov/2022/02/23/a-long-overdue-apology/)
+
+=== layout: one-panel
+
+# 1. When the available treatment changed
+
+@body
+
+- The Public Health Service began the Tuskegee study in 1932 to observe untreated syphilis.
+- By 1943, penicillin was the treatment of choice. Participants were not offered it.
+- The study continued until 1972. A study team has to revisit consent and treatment when the facts change.
+
+@citation
+
+[CDC, Tuskegee study timeline](https://www.cdc.gov/tuskegee/about/timeline.html)  |  [The Belmont Report (1979)](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html)
 
 === layout: subsection
 
@@ -153,6 +218,20 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 15.
 
 [National Academies, Communicating Science Effectively](https://nap.nationalacademies.org/read/23674/chapter/4)
 
+=== layout: big-image
+
+@image
+
+![Public views of gene editing depend on purpose](assets/set7_ethics_evidence/gene_editing_views.drawn.svg)
+
+@caption
+
+Topic 2: A number from a poll needs the full question. These two questions also change who would receive the editing.
+
+@citation
+
+[Pew Research Center, *AI and Human Enhancement* (2022), p. 105](https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2022/03/PS_2022.03.17_AI-HE_REPORT.pdf)
+
 === layout: two-panels
 
 # 2. Two Headlines, One Result
@@ -177,6 +256,20 @@ What would a grower need to see in the field?
 
 === layout: one-panel
 
+# 2. What the Poll Did and Did Not Ask
+
+@body
+
+- Pew surveyed U.S. adults Nov. 1-7, 2021. It asked whether they favored gene editing to treat a serious disease or health condition a person currently has, or to make a baby more physically attractive.
+- The responses describe the people surveyed at that time. They do not settle whether a specific treatment is safe or ethical.
+- Before using a poll, read the exact population, date, and wording.
+
+@citation
+
+[Pew Research Center, *AI and Human Enhancement* (2022), p. 105](https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2022/03/PS_2022.03.17_AI-HE_REPORT.pdf)
+
+=== layout: one-panel
+
 # 2. A Neighbor Asks About the Greenhouse Result
 
 @body
@@ -185,6 +278,26 @@ What would a grower need to see in the field?
 
 - Show what the researchers counted in the greenhouse.
 - Ask which insects and seasons matter to her. That answer changes what a field study should measure.
+
+@citation
+
+[National Academies, Communicating Science Effectively](https://nap.nationalacademies.org/read/23674/chapter/4)
+
+=== layout: two-panels
+
+# 2. A Result Needs a Comparator
+
+@left
+
+*Press release*
+
+"The new crop resisted infection."
+
+@right
+
+*Study record*
+
+How many plants, which field conditions, which comparison crop, and how much infection?
 
 @citation
 
@@ -200,6 +313,22 @@ Imagine two teams publish the same crop result. One posts the comparison data. T
 
 - Which result can another grower check?
 - Both teams may be right about the plants. The difference is what a grower can verify before planting.
+
+@citation
+
+[National Academies, Communicating Science Effectively](https://nap.nationalacademies.org/read/23674/chapter/4)
+
+=== layout: one-panel
+
+# 2. The Trust Question Is Usually Specific
+
+@body
+
+"Do you trust biotechnology?" is too broad to act on.
+
+- A grower may trust a disease assay and still want insect data before planting a new crop.
+- A patient may trust a treatment study and still ask who can see genetic data.
+- Ask which claim, evidence, decision, and institution the person means.
 
 @citation
 
@@ -241,6 +370,20 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 17.
 
 === layout: one-panel
 
+# 3. The Definition Has Limits
+
+@body
+
+- The federal definition names fabrication, falsification, and plagiarism in proposing, performing, reviewing, or reporting research.
+- A surprising result is not misconduct. A documented error also has a different meaning from an intentional change to the record.
+- The records matter because they let an investigation distinguish those situations.
+
+@citation
+
+[NSF, 45 CFR 689.1: Research misconduct](https://www.ecfr.gov/current/title-45/subtitle-B/chapter-VI/part-689/section-689.1)
+
+=== layout: one-panel
+
 # 3. One Image, Two Experiments
 
 @body
@@ -253,15 +396,53 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 17.
 
 [COPE, Retraction guidelines](https://doi.org/10.24318/cope.2019.1.4)  |  [NSF, 45 CFR 689.1: Research misconduct](https://www.ecfr.gov/current/title-45/subtitle-B/chapter-VI/part-689/section-689.1)
 
-=== layout: one-panel
+=== layout: big-image
+
+@image
+
+![A concern about a figure starts with the record](assets/set7_ethics_evidence/correction_record.drawn.svg)
+
+@caption
+
+Topic 3: The published panel is only one part of the evidence available during review.
+
+@citation
+
+[COPE, Retraction guidelines](https://doi.org/10.24318/cope.2019.1.4)  |  [NSF, 45 CFR 689.1: Research misconduct](https://www.ecfr.gov/current/title-45/subtitle-B/chapter-VI/part-689/section-689.1)
+
+=== layout: two-panels
 
 # 3. Hwang Woo-suk and Fabricated Stem-cell Results
 
-@body
+@left
 
-- Reports claiming patient-matched human stem-cell lines were retracted after an investigation.
-- The stem-cell claims and the separate evidence for cloning a dog are different findings.
-- The investigation also raised questions about how human eggs were obtained.
+Hwang Woo-suk is holding Snuppy, the dog his team cloned. Investigators verified the dog's origin.
+
+The same investigation found that the team's reports of patient-matched human stem cells were fabricated. What did the evidence about Snuppy actually establish?
+
+@right
+
+![Hwang Woo-suk holding Snuppy](assets/set7_people_early/hwang_woo_suk_snuppy.jpg)
+
+@citation
+
+[Seoul National University, Hwang investigation (2006)](https://en.snu.ac.kr/snunow/snu_media/news?bbsidx=71497&md=v)  |  [Photo: Hwang with Snuppy](https://www.koinuno-heya.com/famous/snuppy.html)
+
+=== layout: two-panels
+
+# 3. What Would Another Lab Need?
+
+@left
+
+*Claim*
+
+Patient-matched stem-cell lines came from the reported donors.
+
+@right
+
+*Evidence to inspect*
+
+Cell-line identity, donor records and consent, laboratory notebooks, and independent genetic tests.
 
 @citation
 
@@ -316,3 +497,18 @@ Two students measure the same sample. One result looks much higher than expected
 @citation
 
 [NSF, 45 CFR 689.1: Research misconduct](https://www.ecfr.gov/current/title-45/subtitle-B/chapter-VI/part-689/section-689.1)
+
+=== layout: one-panel
+
+# 3. The U.S. Oversight System Has a Workload
+
+@body
+
+The HHS Office of Research Integrity reported 713 allegations received in calendar year 2024. It opened 117 cases and recorded 119 total closures.
+
+- An allegation is a report, not a finding that misconduct occurred.
+- A closure can reflect an administrative decision, no finding, or a misconduct finding after investigation.
+
+@citation
+
+[HHS Office of Research Integrity, *Annual Report CY 2024*, p. 3](https://ori.hhs.gov/sites/default/files/2025-12/CY%202024%20ORI%20Annual%20Report_final.pdf)

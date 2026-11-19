@@ -21,7 +21,8 @@ END_TITLE_SIZE_PT = 156.0
 END_TITLE_FLOOR_SIZE_PT = 110.0
 END_LINE_SPACING_EM = 1.06
 CAPTION_SIZE_PT = 22.0
-CAPTION_FLOOR_SIZE_PT = 18.0
+CAPTION_EXPANSION_SIZE_PT = 18.0
+CAPTION_FLOOR_SIZE_PT = 15.0
 
 
 @dataclasses.dataclass(frozen=True)
@@ -324,7 +325,7 @@ def big_image_components(deck: slide_lib.native_model.Deck,
 		0, 0, caption_rectangle.width - 36, caption_rectangle.height - 20)
 	items = slide_lib.layout_measurement.items_for(caption_cell.blocks)
 	required_height = slide_lib.layout_measurement.text_height(
-		items, CAPTION_FLOOR_SIZE_PT, inner.width, theme, session) + 20 + \
+		items, CAPTION_EXPANSION_SIZE_PT, inner.width, theme, session) + 20 + \
 		slide_lib.layout_measurement.point_height(slide_lib.layout_measurement.TEXT_FRAME_CLEARANCE_PT, theme)
 	# Use the lower margin only when no citation needs it; keep the image untouched.
 	bottom = caption_rectangle.y + caption_rectangle.height if source.citation else \

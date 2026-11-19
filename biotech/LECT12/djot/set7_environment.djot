@@ -63,20 +63,23 @@ Compare what a drama portrays with what court records document.
 
 Course image: instructor ethics deck, p. 42.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 4. What Did Purdue Actually Admit?
 
-@body
+@left
 
-Purdue continued to market opioids to more than 100 prescribers it had reason to suspect of diverting drugs.
+Richard Sackler, a former president of Purdue Pharma, is pictured giving a deposition. In 2020 the company pleaded guilty. It had continued marketing opioids to more than 100 prescribers it suspected of diverting them.
 
-- Its statements to the Drug Enforcement Administration gave a different picture of its efforts to prevent diversion.
-- The plea documents what the company did. To estimate deaths attributable to it, what other data would you need?
+What could the plea establish about the company? What evidence would you need to attribute a death to its drug?
+
+@right
+
+![Richard Sackler during a deposition](assets/set7_people_early/richard_sackler.jpg)
 
 @citation
 
-[DOJ, Purdue Pharma guilty plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
+[DOJ, Purdue plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)  |  [Deposition still: ProPublica](https://commons.wikimedia.org/wiki/File:Richard_Sackler_deposition_screenshot_%28cropped%29.jpg)
 
 === layout: one-panel
 
@@ -92,6 +95,35 @@ The CDC describes overlapping waves of U.S. overdose deaths involving prescripti
 @citation
 
 [CDC, Understanding the opioid overdose epidemic](https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html)
+
+=== layout: big-image
+
+@image
+
+![U.S. drug overdose deaths over time](assets/set7_environment_evidence/overdose_deaths.drawn.svg)
+
+@caption
+
+Topic 4: U.S. overdose deaths, 2014-2024\
+Can this national count tell you how many deaths involved one company's drug?
+
+@citation
+
+[CDC NCHS, Drug overdose deaths in the United States, 2023-2024](https://www.cdc.gov/nchs/products/databriefs/db549.htm)
+
+=== layout: one-panel
+
+# 4. What Does This Graph Answer?
+
+@body
+
+- The series rose from 70,630 deaths in 2019 to 107,941 in 2022.
+- The 2024 count fell to 79,384, yet it remained above the 2019 count.
+- The series includes every drug-overdose death. It cannot assign a death to Purdue or any specific supply.
+
+@citation
+
+[CDC NCHS, Drug overdose deaths in the United States, 2023-2024](https://www.cdc.gov/nchs/products/databriefs/db549.htm)  |  [DOJ, Purdue Pharma guilty plea (2020)](https://www.justice.gov/usao-nj/pr/opioid-manufacturer-purdue-pharma-admits-guilt-fraud-and-kickback-conspiracies)
 
 === layout: subsection
 
@@ -111,33 +143,41 @@ The CDC describes overlapping waves of U.S. overdose deaths involving prescripti
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 22.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 5. What a Case Series Can Tell You
 
-@body
+@left
 
-- Wakefield and colleagues published a small case series in 1998. The paper was later retracted.
+- Andrew Wakefield and colleagues published a small case series in 1998. The paper was later retracted.
 - Symptoms and vaccination can occur close together in time by chance.
 - A small series with no comparison group cannot establish that vaccination caused autism.
 
-@citation
+@right
 
-[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)
-
-=== layout: one-panel
-
-# 5. A Comparison Group Changes the Question
-
-@body
-
-- Compare autism rates in a large vaccinated group and a suitable comparison group.
-- Account for factors that could differ between groups.
-- The Danish MMR study found no increased autism risk. In 2025, WHO's vaccine safety committee again concluded that the evidence shows no causal link between vaccines and autism.
+![Andrew Wakefield in 2010](assets/set7_people_early/andrew_wakefield.jpg)
 
 @citation
 
-[Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)  |  [WHO vaccine safety committee, December 2025 review](https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism)
+[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)  |  [Photo: MPR News (2010)](https://www.mprnews.org/story/2010/02/04/autism-study)
+
+=== layout: two-panels
+
+# 5. Who is missing from the picture?
+
+@left
+
+Children lined up for sugar cubes carrying polio vaccine at a Georgia school in 1961. The picture shows who came that day. Who would you look for outside the frame to study a vaccine's effects?
+
+Now ask that question about MMR. Which two groups of children should the Danish study compare?
+
+@right
+
+![Children receive oral polio vaccine at a school in Decatur, Georgia, in 1961](assets/set7_people_early/polio_campaign_1961.jpg)
+
+@citation
+
+[Photo: CDC, Georgia polio campaign (1961)](https://wwwn.cdc.gov/phil/Details.aspx?pid=29084)  |  [Hviid et al., MMR cohort (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)  |  [WHO review (2025)](https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism)
 
 === layout: one-panel
 
@@ -179,6 +219,40 @@ Imagine reading only reports from families who noticed developmental changes aft
 
 - That list has no count of children who had similar changes without a recent vaccination.
 - The Danish study accounted for age and other differences between the groups. A timeline for one child cannot supply that comparison.
+
+@citation
+
+[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)  |  [Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)
+
+=== layout: two-panels
+
+# 5. Two Different Records
+
+@left
+
+*1998 case series*
+
+Twelve children. No comparison group. The paper was retracted in 2010.
+
+@right
+
+*2019 cohort study*
+
+657,461 children. Registry data and a comparison group. The estimate did not show increased autism risk after MMR.
+
+@citation
+
+[The Lancet, Retraction of the 1998 case series (2010)](https://pubmed.ncbi.nlm.nih.gov/20137807/)  |  [Hviid et al., MMR vaccination and autism (2019)](https://pubmed.ncbi.nlm.nih.gov/30831578/)
+
+=== layout: one-panel
+
+# 5. A Retraction Does Not Measure Risk
+
+@body
+
+- A retraction corrects the publication record.
+- A cohort study estimates whether two groups had different rates over follow-up.
+- These are connected questions, but they need different evidence.
 
 @citation
 
@@ -248,6 +322,41 @@ In this example, resistance rises from 2 of 8 cells to 2 of 3 survivors.
 @citation
 
 [FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)  |  [USDA FSIS, Substantiating animal-raising claims (2024)](https://www.govinfo.gov/content/pkg/FR-2024-09-10/pdf/2024-19696.pdf)
+
+=== layout: one-panel
+
+# 6. A Policy Can Change the Reason for Use
+
+@body
+
+FDA's 2017 changes removed production uses, such as faster growth, from affected medically important antibiotics in feed and water.
+
+- The change did not mean that sick animals should go untreated.
+- A veterinarian still decides whether treatment is medically needed.
+
+@citation
+
+[FDA, 2017 antimicrobial sales report](https://www.fda.gov/media/119332/download)  |  [FDA, Judicious use of medically important antimicrobials](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cvm-gfi-209-judicious-use-medically-important-antimicrobial-drugs-food-producing-animals)
+
+=== layout: two-panels
+
+# 6. Count the Right Outcome
+
+@left
+
+*Drug use*
+
+How many kilograms of a drug were sold or used per animal?
+
+@right
+
+*Resistance*
+
+What fraction of sampled bacteria resist a named drug, in a named setting?
+
+@citation
+
+[CDC, About antimicrobial resistance](https://www.cdc.gov/antimicrobial-resistance/about/index.html)  |  [FDA, 2023 summary report on antimicrobials sold or distributed](https://www.fda.gov/media/183070/download)
 
 === layout: two-panels
 
@@ -365,6 +474,35 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 26.
 
 [FDA, GMO crops and their uses](https://www.fda.gov/food/agricultural-biotechnology/gmo-crops-animal-food-and-beyond)
 
+=== layout: big-image
+
+@image
+
+![Adoption of herbicide-tolerant soybeans](assets/set7_environment_evidence/ge_soybean_adoption.drawn.svg)
+
+@caption
+
+Topic 7: Which soybeans did U.S. farmers plant?\
+Follow the share of planted acres. When did adoption start to level off?
+
+@citation
+
+[USDA ERS, adoption of genetically engineered crops, 1996-2024](https://ers.usda.gov/sites/default/files/_laserfiche/Charts/58020/biotechcrops2024_d.html?v=56818)
+
+=== layout: one-panel
+
+# 7. Read the Adoption Trend Carefully
+
+@body
+
+- In 1996, 7.4% of U.S. soybean acres used herbicide-tolerant seed. In 2001, it was 68%.
+- By 2007, adoption reached 91% and then stayed near that level through 2024.
+- This series reports planted acres. A claim about yield, herbicide use, biodiversity, or farm profit needs another measurement.
+
+@citation
+
+[USDA ERS, adoption of genetically engineered crops, 1996-2024](https://ers.usda.gov/sites/default/files/_laserfiche/Charts/58020/biotechcrops2024_d.html?v=56818)
+
 === layout: one-panel
 
 # 7. Can the Same Seed Have Two Labels?
@@ -380,16 +518,39 @@ Imagine a family has saved seed from the same tomato variety for four generation
 
 [University of Minnesota Extension, Saving vegetable seeds](https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-minnesota/saving-vegetable-seeds)  |  [NHGRI, Transgenic](https://www.genome.gov/genetics-glossary/Transgenic)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 7. A Papaya Grower Faces Ringspot Disease
+# 7. Which papaya would you plant?
 
-@body
+@left
 
-In Hawaii, researchers compared virus-resistant transgenic papaya with susceptible papaya in the field.
+![A papaya leaf showing a mosaic pattern associated with ringspot disease](assets/set7_case_photos/papaya_ringspot.webp)
 
-- They recorded which plants developed disease and what the trees yielded.
-- A grower deciding what to plant needs both answers. A healthy-looking tree also has to produce marketable fruit.
+@right
+
+Look for the patchwork of pale and dark green on this leaf. The photograph shows symptoms of papaya ringspot.
+
+In Hawaii, researchers grew resistant and susceptible trees. Besides counting sick trees, what would a grower want them to weigh?
+
+@citation
+
+[Photo: Plant pests and diseases, CC0](https://commons.wikimedia.org/wiki/File:Papaya_%28Carica_papaya%29-_Papaya_ringspot.jpg)  |  [Ferreira et al., Hawaii field trials (2002)](https://doi.org/10.1094/PDIS.2002.86.2.101)
+
+=== layout: two-panels
+
+# 7. A Field Trial Needs Two Results
+
+@left
+
+*Disease outcome*
+
+How many trees became infected with ringspot virus?
+
+@right
+
+*Farm outcome*
+
+How much marketable fruit did each treatment produce?
 
 @citation
 
@@ -428,19 +589,43 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 28.
 
 [American Phytopathological Society, Dutch elm disease](https://www.apsnet.org/edcenter/pdlessons/Pages/DutchElm.aspx)  |  [USDA APHIS, Emerald ash borer](https://www.aphis.usda.gov/plant-pests-diseases/eab)
 
-=== layout: one-panel
+=== layout: two-panels
+
+# 8. A Thinning Canopy Is a Clue
+
+@left
+
+*Elm question*
+
+Does the tree have evidence of a vascular fungal disease?
+
+@right
+
+*Ash question*
+
+Does the bark reveal the insect's galleries or exit holes?
+
+@citation
+
+[American Phytopathological Society, Dutch elm disease](https://www.apsnet.org/edcenter/pdlessons/Pages/DutchElm.aspx)  |  [USDA APHIS, Emerald ash borer](https://www.aphis.usda.gov/plant-pests-diseases/eab)
+
+=== layout: two-panels
 
 # 8. Why an Outdoor Trial Needs Approval
 
-@body
+@left
 
 - In 1987, Gary Strobel began an unauthorized outdoor trial to control Dutch elm disease.
 - The trial ended when the experimental trees were destroyed.
 - A trial stopped early leaves the intended benefit uncertain. Who has a say before an outdoor release?
 
+@right
+
+![Montana State University portrait of plant pathologist Gary Strobel](assets/set7_people_early/gary_strobel.jpg)
+
 @citation
 
-[GAO, Role of institutional biosafety committees (1988)](https://www.gao.gov/assets/rced-88-64br.pdf)
+[GAO, review of the Montana trial](https://www.gao.gov/assets/rced-88-64br.pdf)  |  [Portrait: Montana State University Library](https://arc.lib.montana.edu/msu-photos/item.php?id=2023)
 
 === layout: one-panel
 
@@ -486,20 +671,41 @@ Two adult beetles on a coin. The larvae damage tissue under ash bark.
 
 Course image: instructor ethics deck, p. 60.
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 8. A Permit Application and a Decision
+# 8. Why did Strobel cut down the elms?
 
-@body
+@left
 
-In June 1987, Strobel submitted a permit application and began the Montana elm trial before the EPA had completed its review.
+![Gary Strobel holds a chain saw beside an elm as students watch, 1987](assets/set7_people_early/strobel_elm_1987.jpg)
 
-- The sequence matters. Submitting a proposal gives others a chance to review it only if they have time to act.
-- A later observation about tree health cannot supply the missing review.
+@right
+
+Gary Strobel is about to cut down one of his experimental elms. Montana State students watched in 1987.
+
+The EPA had yet to approve the trial. What could the researchers still learn after the trees were gone?
 
 @citation
 
-[GAO, Role of institutional biosafety committees (1988)](https://www.gao.gov/assets/rced-88-64br.pdf)
+[Photo: Montana State University Library (1987)](https://arc.lib.montana.edu/msu-photos/item.php?id=2822)  |  [GAO, trial review](https://www.gao.gov/assets/rced-88-64br.pdf)
+
+=== layout: two-panels
+
+# 8. What Review Needs Before a Trial
+
+@left
+
+In 1958, Charles Webster sprayed elms for the village of Maple Bluff, Wisconsin. A village ordinance called for the work.
+
+Decades later, Strobel wanted to test a new treatment in Montana. Who should decide where a trial can take place? What would make them stop it?
+
+@right
+
+![Charles Webster spraying elm trees in Maple Bluff, Wisconsin, 1958](assets/set7_people_early/elm_spraying_1958.jpg)
+
+@citation
+
+[Photo: Wisconsin Historical Society (1958)](https://www.wisconsinhistory.org/Records/Image/IM141318)  |  [GAO, review of the Montana trial](https://www.gao.gov/assets/rced-88-64br.pdf)
 
 === layout: two-panels
 
@@ -581,6 +787,41 @@ On seabird islands, rats prey on birds. Nesting birds also bring nutrients from 
 
 [Jones, Seabird island recovery after rat removal (2010)](https://pubmed.ncbi.nlm.nih.gov/21265441/)
 
+=== layout: two-panels
+
+# 9. Two Clocks After Control
+
+@left
+
+*Immediate*
+
+Did the local control remove or reduce the invasive species?
+
+@right
+
+*Longer term*
+
+Did native species, soil, and plant indicators change as predicted?
+
+@citation
+
+[Jones, Seabird island recovery after rat removal (2010)](https://pubmed.ncbi.nlm.nih.gov/21265441/)
+
+=== layout: one-panel
+
+# 9. Compare Islands Before Claiming Recovery
+
+@body
+
+An island without rats can differ from an island with rats for many reasons.
+
+- A strong comparison uses several islands and records the rat history of each one.
+- Soil and plant measurements help test whether a food web changed after removal.
+
+@citation
+
+[Jones, Seabird island recovery after rat removal (2010)](https://pubmed.ncbi.nlm.nih.gov/21265441/)
+
 === layout: one-panel
 
 # 9. Where Should Monitoring Stop?
@@ -595,6 +836,20 @@ A hypothetical island project monitors a seabird colony on the release site. Fis
 @citation
 
 [National Academies, Gene Drives on the Horizon (2016)](https://nap.nationalacademies.org/resource/23405/Gene-Drives-Brief.pdf)
+
+=== layout: one-panel
+
+# 9. Rats leave. What should you measure next?
+
+@body
+
+- Rat eradication can remove a predator without restoring an island overnight.
+- On New Zealand islands, seabird-derived nutrients in soil, plants, and spiders recovered over decades after rat removal.
+- A project should decide whether its next measurement is rats, breeding birds, or the ecosystem that birds help support.
+
+@citation
+
+[Jones, Seabird island recovery after rat removal (2010)](https://esajournals.onlinelibrary.wiley.com/doi/10.1890/10-0118.1)  |  [National Academies, Gene Drives on the Horizon (2016)](https://nap.nationalacademies.org/resource/23405/Gene-Drives-Brief.pdf)
 
 === layout: subsection
 
@@ -613,19 +868,23 @@ A hypothetical island project monitors a seabird colony on the release site. Fis
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 32.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 10. The Biological Weapons Convention
 
-@body
+@left
 
-- The convention prohibits biological weapons and supports peaceful cooperation in biology.
-- Public health preparedness includes recognizing unusual illness and sharing reliable information.
-- Researchers also have a responsibility to raise concerns about potential misuse.
+President Richard Nixon and Secretary of State William Rogers attended the Washington signing on April 10, 1972.
+
+The treaty bans biological weapons and protects peaceful work in biology. How could countries share information about an unusual outbreak?
+
+@right
+
+![President Nixon and Secretary of State William Rogers at the Biological Weapons Convention signing, Washington, April 10, 1972](assets/set7_people_early/bwc_signing_1972.jpg)
 
 @citation
 
-[United Nations, Biological Weapons Convention, Articles I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)  |  [WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+[UN treaty, Arts. I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)  |  [WHO (2022)](https://www.who.int/publications/i/item/9789240056107)  |  [Photo: Nixon Library, NARA](https://2021-2025.state.gov/celebrating-fifty-years-of-biological-weapons-nonproliferation/)
 
 === layout: one-panel
 
@@ -654,6 +913,26 @@ Article X addresses cooperation for peaceful uses of biology. Vaccine and public
 
 [United Nations, Biological Weapons Convention, Articles I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)
 
+=== layout: two-panels
+
+# 10. Treaty Language and a Lab Decision
+
+@left
+
+*Treaty question*
+
+Is the work limited to protective, preventive, or other peaceful purposes?
+
+@right
+
+*Institution question*
+
+Does the project have a clear public-health use and independent oversight?
+
+@citation
+
+[United Nations, Biological Weapons Convention, Articles I and X](https://treaties.un.org/doc/Publication/UNTS/Volume%201015/volume-1015-I-14860-English.pdf)  |  [WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
 === layout: one-panel
 
 # 10. Who Receives the Concern?
@@ -679,6 +958,20 @@ Under the Biological Weapons Convention, states exchange annual confidence-build
 
 - A public report can make stated activities visible and invite follow-up questions.
 - A missing report leaves uncertainty. It cannot by itself establish what happened inside a country.
+
+@citation
+
+[UN Office for Disarmament Affairs, Confidence-building reports](https://bwc-cbm.un.org/reports)
+
+=== layout: one-panel
+
+# 10. A Missing Report Has a Limited Meaning
+
+@body
+
+- A submitted report makes a country's stated information available for questions and comparison.
+- A missing report leaves a gap in the public record.
+- Neither result directly measures work that was never reported.
 
 @citation
 
@@ -729,6 +1022,21 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 34.
 
 [WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
 
+=== layout: big-image
+
+@image
+
+![Research review starts with the decision](assets/set7_environment_evidence/review_decision.drawn.svg)
+
+@caption
+
+Topic 11: Who could use the result?\
+Name a decision a health department could make, then work back to the evidence.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
 === layout: one-panel
 
 # 11. What Decision Is the Committee Making?
@@ -754,6 +1062,26 @@ Suppose a project's expected public benefit changes halfway through the funding 
 
 - The original benefit-risk judgment used information that has changed.
 - Give the review group a defined opportunity to pause, reconsider alternatives, and record its reasons.
+
+@citation
+
+[WHO, Responsible use of the life sciences (2022)](https://www.who.int/publications/i/item/9789240056107)
+
+=== layout: two-panels
+
+# 11. What Would Change the Decision?
+
+@left
+
+*Benefit changes*
+
+New evidence shows that the result would no longer guide a public-health decision.
+
+@right
+
+*Risk changes*
+
+New information changes who could be affected or whether the safeguards still fit.
 
 @citation
 

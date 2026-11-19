@@ -54,7 +54,7 @@ Ask the same questions. Which disagreement between the two cases is about values
 
 === layout: one-panel
 
-# 40. Example for Comparison: Access to Naloxone
+# 40. Could Your Neighbor Buy Naloxone?
 
 @body
 
@@ -67,20 +67,84 @@ In 2023 the FDA approved a naloxone nasal spray for sale without a prescription.
 
 [FDA, First over-the-counter naloxone nasal spray (2023)](https://www.fda.gov/news-events/press-announcements/fda-approves-first-over-counter-naloxone-nasal-spray)
 
-=== layout: one-panel
+=== layout: big-image
 
-# 40. Example for Comparison: Access to Genome Data
+@image
 
-@body
+![Annual U.S. retail pharmacy naloxone dispensing rates](assets/set7_pharma_evidence/naloxone_dispensing.drawn.svg)
 
-A research team wants to reuse HeLa genome data. Controlled access can help protect a family's privacy, but adds a step for researchers.
+@caption
 
-- Compare this with access to naloxone. What is being made accessible in each case?
-- Use these as practice, then choose two different controversies for your own talking point.
+Topic 40: Naloxone at the pharmacy\
+Through 2016 the series counts prescriptions prepared. From 2017 it counts pickups.
 
 @citation
 
-[NIH, The NIH-Lacks Family Agreement](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement)
+[CDC, Retail naloxone dispensing (2019), table 1](https://www.cdc.gov/mmwr/volumes/68/wr/pdfs/mm6831e1-h.pdf)
+
+@speaker-notes
+
+The last two points count prescriptions sold. The earlier five include prescriptions prepared but never picked up. Ask when the climb began. This entire series predates the 2023 over-the-counter approval.
+
+=== layout: big-image
+
+@image
+
+![2018 county naloxone prescriptions per 100,000 residents](assets/set7_pharma_evidence/county_population.webp)
+
+@caption
+
+Topic 40: Naloxone prescriptions per 100,000 residents, 2018\
+Find two neighboring counties with different rates. White means no data.
+
+@citation
+
+[CDC, Retail naloxone dispensing (2019), p. 683](https://www.cdc.gov/mmwr/volumes/68/wr/pdfs/mm6831e1-h.pdf)
+
+@speaker-notes
+
+Start in the Midwest. A white county has missing data. A light blue county has a measured rate in the lowest group. County population is the denominator.
+
+=== layout: big-image
+
+@image
+
+![2018 county naloxone prescriptions per 100 high-dose opioid prescriptions](assets/set7_pharma_evidence/county_prescriptions.webp)
+
+@caption
+
+Topic 40: Naloxone per 100 high-dose opioid prescriptions, 2018\
+Can either map tell you how many patients got both drugs?
+
+@citation
+
+[CDC, Retail naloxone dispensing (2019), p. 683](https://www.cdc.gov/mmwr/volumes/68/wr/pdfs/mm6831e1-h.pdf)
+
+@speaker-notes
+
+No. These are two totals from the same county. The map does not link a naloxone prescription to an individual who filled an opioid prescription. A county can change color when we change the denominator.
+
+=== layout: two-panels
+
+# 40. Who can use the HeLa genome?
+
+@left
+
+![Members of Henrietta Lacks's family at a Virginia historical marker dedicated to her in 2011](assets/set7_people_late/lacks_family.jpg)
+
+@right
+
+Henrietta Lacks's family gathered at this Virginia marker in 2011. Two years later, family members and NIH reached an agreement about access to HeLa genome data.
+
+A researcher wants to download those data. What should the family get to know about the project?
+
+@citation
+
+[Photo: Lacks family/Virginia Department of Historic Resources, via Nature](https://doi.org/10.1038/500141a)  |  [NIH-Lacks Family Agreement](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/privacy/nih-lacks-family-agreement)
+
+@speaker-notes
+
+Compare access to genome data with access to naloxone on the preceding slides. Students choose two other controversies for their own talking points.
 
 === layout: one-panel
 
@@ -127,34 +191,60 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 101.
 
 [Turner et al., Selective publication of antidepressant trials (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)  |  [KFF Health Tracking Poll, March 2026, question 7](https://files.kff.org/attachment/topline-kff-health-tracking-poll-march-2026.pdf)
 
-=== layout: one-panel
+=== layout: big-image
 
-# 41. Two Questions for the Company
+@image
 
-@body
+![Generic manufacturer price ratios by number of producers](assets/set7_pharma_evidence/generic_prices.drawn.svg)
 
-- What would show that patients can actually get the product?
-- What study results are available for an independent review?
-- Identify the groups that would be helped or harmed by each policy.
+@caption
 
-@citation
-
-[Chan et al., Protocols compared with published trials (2004)](https://pubmed.ncbi.nlm.nih.gov/15161896/)  |  [KFF Health Tracking Poll, March 2026, question 7](https://files.kff.org/attachment/topline-kff-health-tracking-poll-march-2026.pdf)
-
-=== layout: one-panel
-
-# 41. Which Antidepressant Trials Reached Readers?
-
-@body
-
-Turner and colleagues compared the FDA record for 74 studies with the published literature. They found that 31% of the studies had gone unpublished.
-
-- Someone reading only published papers would see a more favorable picture.
-- How could a trial registry help a reader discover a study whose results never appeared in a journal?
+Topic 41: The brand price before generic entry is 100%\
+Dots show median price ratios. Bars span the middle 50%. What would a patient pay?
 
 @citation
 
-[Turner et al., Selective publication of antidepressant trials (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)
+[FDA, Generic competition and drug prices (2019), p. 9](https://www.fda.gov/media/133509/download)
+
+@speaker-notes
+
+The FDA followed 181 products with initial generic entry in 2015-2017. With one producer, the median manufacturer price was about 61% of the earlier brand price. With four it was about 21%. Patients can pay a different amount at the pharmacy.
+
+=== layout: two-panels
+
+# 41. Why did Frances Kelsey ask for more evidence?
+
+@left
+
+FDA reviewer Frances Oldham Kelsey kept asking the company selling thalidomide for better safety data. The drug was already on sale overseas.
+
+President Kennedy honored her in 1962. What would you have wanted the company to show her before the drug went on sale here?
+
+@right
+
+![Frances Oldham Kelsey receives a public service award from President John F. Kennedy in 1962](assets/set7_people_late/frances_kelsey.jpg)
+
+@citation
+
+[FDA, Frances Oldham Kelsey](https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy)  |  [Photo: FDA History](https://commons.wikimedia.org/wiki/File:FDA_History_-_Dr._Kelsey_and_John_F._Kennedy.jpg)
+
+=== layout: two-panels
+
+# 41. Which antidepressant trials reached readers?
+
+@left
+
+![Psychiatrist Erick Turner](assets/set7_people_late/erick_turner.jpg)
+
+@right
+
+Erick Turner and his colleagues compared the FDA's files on 74 antidepressant studies with the medical journals. They found that 31% of the studies went unpublished.
+
+If you read only the journals, how would you know a study was missing?
+
+@citation
+
+[Turner et al., Selective publication (2008)](https://pubmed.ncbi.nlm.nih.gov/18199864/)  |  [Portrait: OHSU](https://news.ohsu.edu/2026/07/20/accolades-awards-honors-and-appointments-july-6926159)
 
 === layout: big-image
 
@@ -200,3 +290,50 @@ Chan and colleagues compared clinical trial protocols with the papers that follo
 @citation
 
 [Chan et al., Protocols compared with published trials (2004)](https://pubmed.ncbi.nlm.nih.gov/15161896/)
+
+=== layout: one-panel
+
+# 41. An ad says the drug cuts the risk in half
+
+@body
+
+Suppose a company advertises a drug that prevents headaches. Its trial followed two groups for one week.
+
+| Group | People in trial | Had a headache |
+| --- | --- | --- |
+| Placebo | 100 | 10 |
+| Drug | 100 | 5 |
+
+Would you let the company run that ad? Write one sentence you would want to see beside the headline.
+
+@citation
+
+Class example with invented counts.  |  [FDA, Communicating benefits and risks in drug ads (2023)](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/presenting-quantitative-efficacy-and-risk-information-direct-consumer-dtc-promotional-labeling-and)
+
+@speaker-notes
+
+Give the class a moment to write a line in chat. Ask which counts they used.
+
+=== layout: two-panels
+
+# 41. How much did the drug help?
+
+@left
+
+*The headline*
+
+The risk fell from 10 in 100 to 5 in 100. Five is half of ten. That's a 50% relative reduction.
+
+@right
+
+*What a patient might ask*
+
+For every 100 people in these groups, the drug group had 5 fewer people with a headache that week.
+
+@citation
+
+Class example with invented counts.  |  [FDA, Communicating benefits and risks in drug ads (2023)](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/presenting-quantitative-efficacy-and-risk-information-direct-consumer-dtc-promotional-labeling-and)
+
+@speaker-notes
+
+Ask for one more fact a patient would want before deciding: side effects, headache severity, or what happens after the first week.

@@ -1,0 +1,4 @@
+time_after_cardiac_arrest_hours,event
+0,cardiac_arrest
+1,OrganEx_perfusion_begins
+7,six_hours_of_perfusion_complete

@@ -46,20 +46,23 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 76.
 
 [Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 30. Writing Without Moving a Pen
 
-@body
+@left
 
-In the handwriting study, one participant with paralysis attempted to write letters by hand. A system converted patterns of neural activity into text.
+![Frank Willett at Stanford Medicine](assets/set7_people_medical/frank_willett.jpeg)
 
-- The team tested intended handwriting against what appeared on the screen.
-- That result supports communication for a specific task. It cannot tell an observer everything the person is thinking.
+@right
+
+Frank Willett and his colleagues asked one participant with paralysis to imagine writing letters by hand. Their system turned patterns of neural activity into text.
+
+How would you test whether a system trained on this person's handwriting could read someone else's?
 
 @citation
 
-[Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
+[Stanford Medicine, Frank Willett (2025)](https://med.stanford.edu/news/all-news/2025/08/brain-computer-interface.html)  |  [Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
 
 === layout: two-panels
 
@@ -80,6 +83,34 @@ Electrodes stimulate the auditory nerve. The listener learns to interpret the si
 @citation
 
 [NIDCD, Cochlear implants](https://www.nidcd.nih.gov/sites/default/files/cochlearimplants-12-2023.pdf)  |  [NHLBI, Pacemakers](https://www.nhlbi.nih.gov/health/pacemakers)
+
+=== layout: big-image
+
+@image
+
+![Claim ladder from a neural signal to a thought claim](assets/set7_human_outcomes/claim_ladder.drawn.svg)
+
+@caption
+
+Topic 30: A decoder can be impressive and still have a narrow endpoint.
+
+@citation
+
+[Willett et al., Brain-to-text communication (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
+
+=== layout: big-image
+
+@image
+
+![Handwriting BCI speed in the original study](assets/set7_human_outcomes/bci_speed.drawn.svg)
+
+@caption
+
+Topic 30: 90 characters per minute, 94.1% raw online accuracy. What information would you need before applying this result to another person?
+
+@citation
+
+[Willett et al., High-performance brain-to-text communication via handwriting (2021)](https://pubmed.ncbi.nlm.nih.gov/33981047/)
 
 === layout: subsection
 
@@ -145,35 +176,69 @@ In 2013, researchers reported human embryonic stem cell lines made by somatic ce
 
 [Tachibana et al., Stem cells from nuclear transfer (2013)](https://pubmed.ncbi.nlm.nih.gov/23683578/)
 
+=== layout: two-panels
+
+# 31. What can you recognize in this kidney organoid?
+
+@left
+
+![Kidney organoid section with podocyte and tubule markers](assets/set7_photos/kidney_organoid.webp)
+
+@right
+
+Green marks cells with a podocyte marker. Red marks tubules. Blue marks DNA. Find a cluster of green cells in the inset.
+
+What else would the organoid have to do to filter a patient's blood?
+
+@citation
+
+[Photo: Bjuliar89, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Organoid.jpg)  |  [Kidney organoids after transplantation (2019)](https://pubmed.ncbi.nlm.nih.gov/31776328/)
+
+=== layout: two-panels
+
+# 31. A Donated Pig Organ Raises Another Question
+
+@left
+
+![Richard Slayman with his Massachusetts General Hospital care team](assets/set7_people_medical/rick_slayman.png)
+
+@right
+
+Richard "Rick" Slayman received a pig kidney in 2024. His care team joined him for this photo before he went home.
+
+If you were following his recovery, how would you tell whether the kidney was working? What signs of rejection or infection would you track?
+
+@citation
+
+[MGH, Slayman discharge](https://www.massgeneral.org/news/rick-slayman-discharge-statement)  |  [Photo: MGH via Times of India](https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/worlds-first-living-patient-62-who-underwent-pig-kidney-transplantation-discharged-from-hospital/articleshow/109029845.cms)  |  [FDA, xenotransplantation](https://www.fda.gov/vaccines-blood-biologics/xenotransplantation)
+
+=== layout: big-image
+
+@image
+
+![U.S. transplant wait-list counts by organ in 2024](assets/set7_human_outcomes/kidney_waitlist.drawn.svg)
+
+@caption
+
+Topic 31: The count gives context for alternatives. It does not show that an experimental organ works.
+
+@citation
+
+[OPTN/SRTR, 2024 annual data report: kidney](https://srtr.hrsa.gov/adr/2024/Kidney/)
+
 === layout: one-panel
 
-# 31. Why a Kidney Organoid Can Be Valuable
+# 31. A Genetic Match Does Not Solve Every Transplant Problem
 
 @body
 
-A kidney organoid can contain recognizable kidney cell types and structures. In transplantation experiments, researchers also found immature tissue.
-
-- For a developmental biologist, that immaturity may be part of what makes the model useful.
-- For someone awaiting a transplant, sustained filtration would be a different test.
+- Matching nuclear DNA can address one kind of immune compatibility question.
+- A working replacement also needs the right cell types, blood supply, plumbing, and long-term safety.
+- Which requirement is biological engineering? Which is a clinical outcome?
 
 @citation
 
 [Kidney organoids after transplantation (2019)](https://pubmed.ncbi.nlm.nih.gov/31776328/)
-
-=== layout: one-panel
-
-# 31. A Donated Pig Organ Raises Another Question
-
-@body
-
-In xenotransplantation, an animal can supply living tissue or an organ for a human recipient.
-
-- The recipient may hope for a shorter wait. The clinical team also has to consider immune rejection and possible infection.
-- Risks that might extend beyond the recipient give public health officials a reason to participate in oversight.
-
-@citation
-
-[FDA, Xenotransplantation](https://www.fda.gov/vaccines-blood-biologics/xenotransplantation)
 
 === layout: subsection
 
@@ -268,6 +333,36 @@ How many extra months of mobility did Group A have?
 
 [Xu et al., Senolytics and physical function in mice (2018)](https://pubmed.ncbi.nlm.nih.gov/29988130/)
 
+=== layout: one-panel
+
+# 32. Why use three mouse laboratories?
+
+@body
+
+- The National Institute on Aging tests proposed longevity interventions at three independent mouse laboratories.
+- Even with the same protocol, control male mice at one site have weighed less and lived longer than controls at the other sites.
+- When a company says "reversal," ask what happened in each site, in which sex, and for which endpoint.
+
+@citation
+
+[National Institute on Aging, Interventions Testing Program FAQ](https://www.nia.nih.gov/research/dab/interventions-testing-program-itp/frequently-asked-questions-about-itp)  |  [Miller et al., NIA Interventions Testing Program](https://pmc.ncbi.nlm.nih.gov/articles/PMC5514387/)
+
+=== layout: one-panel
+
+# 32. Which Outcome Would Change Your Mind?
+
+@body
+
+| Claim | Stronger evidence |
+| --- | --- |
+| "Aging marker changed" | A replicated marker result |
+| "People stayed healthier" | Fewer meaningful illnesses or better function |
+| "People lived longer" | Long-term survival data |
+
+@citation
+
+[National Institute on Aging, Interventions Testing Program](https://www.nia.nih.gov/research/dab/interventions-testing-program-itp)
+
 === layout: subsection
 
 # 33. Cryonics and Long-Term Preservation
@@ -331,20 +426,53 @@ Researchers stored vitrified rat kidneys, rewarmed them, and transplanted them i
 
 [Han et al., Kidney preservation and transplantation in rats (2023)](https://pubmed.ncbi.nlm.nih.gov/37296144/)
 
+=== layout: two-panels
+
+# 33. What would you count as surviving storage?
+
+@left
+
+A USDA researcher freezes plant shoot tips for storage. To test recovery, you can warm a sample and see whether it grows.
+
+A cryonics provider can document cold storage. What could it show a family about recovery?
+
+@right
+
+![USDA researcher freezing plant shoot tips](assets/set7_photos/plant_cryopreservation.webp)
+
+@citation
+
+[Photo: USDA ARS, public domain](https://commons.wikimedia.org/wiki/File:Cryopreservation.jpg)  |  [Society for Cryobiology, position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
+
 === layout: one-panel
 
-# 33. A Promise Whose Outcome Cannot Yet Be Checked
+# 33. The Temperature Is a Measurement, Not a Revival Result
 
 @body
 
-A cryonics provider can document storage conditions. It cannot show a person restored to life after cryonic storage.
-
-- Put the demonstrated service in one column and the hoped-for outcome in another.
-- Which statements belong in a contract a family is asked to understand today?
+- A storage log can show a container stayed cold.
+- It cannot show that memory, identity, or a whole body can be restored.
+- What result would distinguish excellent storage from a demonstrated revival technology?
 
 @citation
 
 [Society for Cryobiology, Position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
+
+=== layout: one-panel
+
+# 33. Compare Three Preservation Claims
+
+@body
+
+| Claim | Evidence to look for |
+| --- | --- |
+| Cells survived | Viability after rewarming |
+| An organ worked | Function after transplant |
+| A person returned | Recovery of the person after storage |
+
+@citation
+
+[Han et al., Kidney preservation and transplantation in rats (2023)](https://pubmed.ncbi.nlm.nih.gov/37296144/)  |  [Society for Cryobiology, Position on cryonics](https://www.societyforcryobiology.org/assets/documents/Position_Statement_Cryonics_Nov_18.pdf)
 
 === layout: subsection
 
@@ -394,16 +522,51 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 84.
 
 [Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
 
+=== layout: two-panels
+
+# 34. What would Joe DiMeo call a good result?
+
+@left
+
+![Joe DiMeo and Eduardo Rodriguez at an NYU Langone press event](assets/set7_people_medical/joe_dimeo.jpg)
+
+@right
+
+Joe DiMeo and his surgeon, Eduardo Rodriguez, spoke together after DiMeo's face and double-hand transplant.
+
+The team can measure grip strength. What everyday task would you ask DiMeo about? How would you weigh that gain against the medicines and rehabilitation he needs?
+
+@citation
+
+[NYU Langone, Joe DiMeo press event (2021)](https://nyulangone.org/news/associated-press-new-chance-life-man-gets-face-hands-rare-surgery)  |  [Louisville Hand Transplant Team, one-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+
+=== layout: two-panels
+
+# 34. What would you want your hand to do?
+
+@left
+
+![Historical photograph of a man wearing an arm prosthesis](assets/set7_case_photos/prosthetic_arm.webp)
+
+@right
+
+This man is wearing a prosthesis. A transplanted hand is another way to regain some hand function.
+
+One patient wants to hold a child's hand. Another wants to button a shirt. Would a grip-strength score tell either patient what they want to know?
+
+@citation
+
+[National Library of Medicine, historical prosthesis photograph](https://resource.nlm.nih.gov/101406686)  |  [Louisville Hand Transplant Team, follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+
 === layout: one-panel
 
-# 34. What Changed by the One-year Follow-up?
+# 34. A Hand Is Both Tissue and a Tool
 
 @body
 
-A published U.S. hand transplant follow-up described function, sensation, and episodes of rejection in one recipient.
-
-- A living graft is an early outcome. Being able to grasp and feel an object changes what a person can do.
-- Why would a medication side effect belong in the same follow-up report?
+- A composite graft can survive while the recipient still has limited sensation or fine control.
+- A follow-up needs clinical measurements and the patient's own goals.
+- Which matters more in a given case: a strong grip, feeling a child's hand, or being free from rejection drugs?
 
 @citation
 
@@ -411,18 +574,17 @@ A published U.S. hand transplant follow-up described function, sensation, and ep
 
 === layout: one-panel
 
-# 34. The Same Graft, Different Goals
+# 34. Consent Has More Than One Audience
 
 @body
 
-One candidate hopes to hold a child's hand. Another needs fine finger control to return to work.
-
-- At follow-up, ask each person to perform a task that matters to them.
-- A shared measurement such as grip strength helps compare patients. An individual goal can reveal a difference the shared score misses.
+- The donor or donor family can decide about donation.
+- The recipient can decide whether the tradeoffs fit their life.
+- The clinical team needs a plan for rehabilitation, rejection, and long-term follow-up.
 
 @citation
 
-[OPTN, Vascularized composite allografts](https://www.hrsa.gov/sites/default/files/hrsa/optn/06_list_vca.pdf)  |  [Louisville Hand Transplant Team, One-year follow-up (2000)](https://pubmed.ncbi.nlm.nih.gov/10950668/)
+[OPTN, Vascularized composite allografts](https://www.hrsa.gov/sites/default/files/hrsa/optn/06_list_vca.pdf)
 
 === layout: subsection
 
@@ -462,19 +624,23 @@ BrainEx restored some metabolic activity in isolated pig brains after death.
 
 [Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 35. What Result Would Prompt New Safeguards?
+# 35. Can you see activity in this picture?
 
-@body
+@left
 
-- A cell can use oxygen even when a whole circuit cannot coordinate activity.
-- An oversight group can decide in advance what signals would pause the work.
-- What combination of evidence would be needed to discuss awareness?
+![Fluorescent section of a human brain organoid](assets/set7_photos/brain_organoid.webp)
+
+@right
+
+This is a section of a human brain organoid. Teal marks cell nuclei. Magenta marks a receptor called VIPR2.
+
+Which cells are firing? A still image of these stains cannot tell us.
 
 @citation
 
-[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
+[Photo: Nreis1, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Human_Brain_Organoid.jpg)  |  [BrainEx study in pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
 
 === layout: one-panel
 
@@ -505,6 +671,38 @@ Four hours after death, researchers began perfusing isolated pig brains. They fo
 @citation
 
 [Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
+
+=== layout: big-image
+
+@image
+
+![Levels from cellular activity to a conscious organism](assets/set7_human_outcomes/cell_to_person.drawn.svg)
+
+@caption
+
+Topic 35: Which level did the BrainEx study actually measure?
+
+@citation
+
+[Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
+
+=== layout: two-panels
+
+# 35. BrainEx planned for a signal it did not find
+
+@left
+
+![Nenad Sestan at Yale University](assets/set7_people_medical/nenad_sestan.jpg)
+
+@right
+
+Nenad Sestan led the BrainEx study. The team used drugs to block nerve cells from firing. The electrodes recorded no coordinated electrical activity across the brain.
+
+What can we conclude about the brains under those conditions? What question is still open?
+
+@citation
+
+[Yale University, Nenad Sestan profile](https://wti.yale.edu/profile/nenad-sestan)  |  [Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)
 
 === layout: subsection
 
@@ -554,20 +752,23 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 90.
 
 [Hollanek and Nowaczyk-Basinska, Consent and digital afterlives (2024)](https://link.springer.com/article/10.1007/s13347-024-00744-w)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 36. A Wiring Map of One Fly
+# 36. Can you find the two optic lobes?
 
-@body
+@left
 
-The adult fruit fly connectome reported in 2024 contains 139,255 neurons and roughly 50 million chemical synapses.
+![Color reconstruction of a fruit fly brain with the optic lobes at either side](assets/set7_human_outcomes/fly_brain.webp)
 
-- A connection between two neurons is a structural observation.
-- To predict a response, a model must also make assumptions about how activity crosses those connections.
+@right
+
+These are the shapes of 139,255 neurons reconstructed from electron micrographs of one adult female fruit fly. Find the central brain between the two optic lobes.
+
+If the fly saw a flash of light, could you tell which neurons fired from this picture?
 
 @citation
 
-[Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
+[Dorkenwald et al., Fig. 1 (2024), cropped](https://www.nature.com/articles/s41586-024-07558-y/figures/1)  |  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 === layout: one-panel
 
@@ -614,6 +815,42 @@ Structure stays the same. Which activity can you see on the right?
 
 [Dorkenwald et al., Adult fruit fly wiring diagram (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/)
 
+=== layout: two-panels
+
+# 36. Zoom in on one synapse
+
+@left
+
+Pink marks the sending side of a chemical synapse. Blue marks the receiving side. Trace one black line from a pink dot to a blue dot.
+
+The reconstruction contains 54.5 million chemical synapses. What did the researchers have to recognize in the images to count them?
+
+@right
+
+![Electron micrograph of a synapse with annotated inputs and outputs](assets/set7_human_outcomes/fly_synapse.webp)
+
+@citation
+
+[Dorkenwald et al., Fig. 1 (2024), cropped](https://www.nature.com/articles/s41586-024-07558-y/figures/1)  |  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+=== layout: two-panels
+
+# 36. Would you recognize James Delos?
+
+@left
+
+![Peter Mullan as James Delos in the HBO series Westworld](assets/set7_people_late/james_delos.jpg)
+
+@right
+
+Peter Mullan plays James Delos in *Westworld*. A company builds a copy of Delos and tests it by having someone who knew him start a conversation.
+
+What would his answers tell you about his memories? Could they tell you whether Delos himself had survived?
+
+@citation
+
+[Photo: John P. Johnson/HBO, via TV Guide](https://www.tvguide.com/news/westworld-james-delos-robert-ford-clones/)  |  Fall 2025 Set 7, p. 89.  |  [Consent and digital afterlives](https://link.springer.com/article/10.1007/s13347-024-00744-w)
+
 === layout: subsection
 
 # 37. Resurrection Biology and Death Reversal
@@ -648,19 +885,23 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 92.
 
 [Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 37. What Did the Researchers Measure?
+# 37. What came back in these pig organs?
 
-@body
+@left
 
-- Separate blood flow, tissue integrity, and activity across a whole organ.
-- Ask which measurement improved, compared with what, and for how long.
-- Organ preservation research can be valuable even when organism-level recovery is outside the result.
+![Four micrographs comparing liver and kidney tissue from the control group and the OrganEx group](assets/set7_people_late/organex_cells.jpg)
+
+@right
+
+Compare left (control) with right (OrganEx). The top row shows albumin staining in liver. The bottom row shows actin staining in kidney.
+
+Where do you see more staining? What else would you want to measure before saying the kidney could filter blood?
 
 @citation
 
-[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
+[Images: Sestan Laboratory, Yale, via Pesquisa FAPESP](https://revistapesquisa.fapesp.br/en/organs-partially-revived/)  |  [Andrijevic et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
 
 === layout: one-panel
 
@@ -697,6 +938,35 @@ Several organs in a pig after circulation stopped. The team measured tissue inte
 
 [Vrselja et al., BrainEx in isolated pig brains (2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844189/)  |  [Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
 
+=== layout: big-image
+
+@image
+
+![OrganEx time course from cardiac arrest to measurements](assets/set7_human_outcomes/organex_timeline.drawn.svg)
+
+@caption
+
+Topic 37: The intervention began one hour after cardiac arrest and ran for six hours.
+
+@citation
+
+[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
+
+=== layout: one-panel
+
+# 37. A Headline Test
+
+@body
+
+| Headline | Does the study support it? |
+| --- | --- |
+| "Some cell functions returned in treated organs" | Yes, within the study's measurements. |
+| "Dead pigs came back to life" | No, that was not the study outcome. |
+
+@citation
+
+[Andrijevic et al., OrganEx in pigs (2022)](https://pubmed.ncbi.nlm.nih.gov/35922506/)
+
 === layout: subsection
 
 # 38. Zombie Biology and Neuroparasitology
@@ -714,19 +984,23 @@ Several organs in a pig after circulation stopped. The team measured tissue inte
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 94.
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 38. A Parasite Can Change Behavior
+# 38. Where did the infected ants go?
 
-@body
+@left
 
-- In one Thai forest, infected ants descended from the canopy and bit into leaf veins near the forest floor.
-- Researchers tested how the location of the dead ant affected fungal development.
-- The observed behavior and the precise biological mechanism are separate questions.
+David Hughes and his team followed carpenter ants in a Thai forest. Healthy ants nested high in the canopy. Infected ants bit leaves near the ground.
+
+Why would it matter where the ant died?
+
+@right
+
+![Ecologist David Hughes, photographed by the Hughes Lab](assets/set7_people_late/david_hughes.jpg)
 
 @citation
 
-[Hughes et al., Behavior of fungus-infected ants (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)  |  [Andersen et al., The life of a dead ant (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
+[Portrait: Hughes Lab, via Penn State](https://www.psu.edu/news/research/story/getting-bottom-zombie-ant-phenomenon)  |  [Hughes et al. (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)  |  [Andersen et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
 
 === layout: one-panel
 
@@ -772,6 +1046,38 @@ Researchers moved some dead, infected ants away from the usual biting sites and 
 
 [Andersen et al., The life of a dead ant (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
 
+=== layout: one-panel
+
+# 38. One Strong Comparison Is Better Than a Horror Story
+
+@body
+
+- Compare infected and uninfected ants of the same kind in the same habitat.
+- Measure a behavior before guessing at a mechanism.
+- A colorful zombie analogy can start a conversation. The data need to finish it.
+
+@citation
+
+[Hughes et al., Behavior of fungus-infected ants (2011)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3118224/)
+
+=== layout: two-panels
+
+# 38. Which part is the fungus?
+
+@left
+
+![A dead ant clings to a leaf with a fungal stalk emerging from its head](assets/set7_people_late/ant_on_leaf.jpg)
+
+@right
+
+Look just behind the ant's head. The stalk growing out of it belongs to the fungus. The dead ant is still attached to the leaf.
+
+How might that location affect where the fungal spores land?
+
+@citation
+
+[Photo: David Hughes/Penn State](https://www.psu.edu/news/research/story/getting-bottom-zombie-ant-phenomenon)  |  [Andersen et al., The life of a dead ant (2009)](https://pubmed.ncbi.nlm.nih.gov/19627240/)
+
 === layout: subsection
 
 # 39. End-of-Life Ethics and Medical Aid in Dying
@@ -802,19 +1108,23 @@ Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 96.
 
 [AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)  |  [Illinois Department of Public Health, End-of-life options](https://dph.illinois.gov/topics-services/provider-partner-resources/end-of-life-options-for-terminally-ill.html)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 39. Apply the Same Questions to a Case
+# 39. Who could speak for Nancy Cruzan?
 
-@body
+@left
 
-- A patient says a burdensome treatment no longer serves their goals.
-- Who should take part in discussing alternatives, and how should the patient's wishes be recorded?
-- What could make it harder for the patient to express a free choice?
+![Nancy Cruzan seated in a red shirt](assets/set7_people_late/nancy_cruzan.jpg)
+
+@right
+
+After a car crash, Nancy Cruzan could no longer tell doctors what she wanted. Her parents asked for her feeding tube to be removed.
+
+In 1990 the U.S. Supreme Court allowed Missouri to require clear and convincing evidence of her wishes. What could her family offer as evidence?
 
 @citation
 
-[AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)
+[Cruzan v. Director, Missouri Department of Health (1990)](https://www.law.cornell.edu/supremecourt/text/497/261)  |  [Photo: Boulder Community Health, p. 28](https://www.bch.org/documents/lectures/7-27-22-Planning-for-Future-2022-BCH-template-100th-year-ORIGINAL.pdf)
 
 === layout: one-panel
 
@@ -845,3 +1155,33 @@ Illinois' End-of-Life Options for Terminally Ill Patients Act took effect Septem
 @citation
 
 [Illinois Department of Public Health, End-of-life options](https://dph.illinois.gov/topics-services/provider-partner-resources/end-of-life-options-for-terminally-ill.html)
+
+=== layout: one-panel
+
+# 39. A Family Hears Two Different Things
+
+@body
+
+A patient says they want to stop a burdensome treatment. One family member hears, "We are giving up." Another hears, "They should decide."
+
+- Start by asking the patient what outcome they want and whether they can make the decision.
+- Then discuss symptom care and how the family can stay involved.
+- Which question would help the family hear the same decision clearly?
+
+@citation
+
+[Illinois Department of Public Health, End-of-life options](https://dph.illinois.gov/topics-services/provider-partner-resources/end-of-life-options-for-terminally-ill.html)
+
+=== layout: one-panel
+
+# 39. Keep Care in the Picture
+
+@body
+
+- A decision about a treatment belongs alongside symptom care, support for family, and an honest discussion of goals.
+- Respecting a patient's decision still requires good communication and ongoing care.
+- What would you want a clinician to explain before any end-of-life decision?
+
+@citation
+
+[AMA Code of Medical Ethics, Withdrawing life-sustaining treatment](https://code-medical-ethics.ama-assn.org/ethics-opinions/withholding-or-withdrawing-life-sustaining-treatment)

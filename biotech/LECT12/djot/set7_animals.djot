@@ -53,49 +53,96 @@ Reactions continue inside a membrane. The compartment cannot yet reproduce. Whic
 
 [Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 12. Xenobots and the Definition of Artificial Life
 
-@body
+@left
 
-- A research team used living frog cells to make small structures that moved in a dish.
-- This case belongs between a computer simulation and an ordinary animal.
-- Which properties come from the cells already being alive?
+![Michael Levin, Xenobot coauthor](assets/set7_people_animals/michael_levin.jpeg)
+
+@right
+
+Michael Levin was one of the Xenobot researchers. The team used living frog cells to make small structures that moved in a dish.
+
+This case sits between a computer simulation and an ordinary animal. Which properties came from the cells already being alive?
 
 @citation
 
-[Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
+[Photo: Tufts Biology, Michael Levin](https://as.tufts.edu/biology/people/faculty/michael-levin)  |  [Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 12. What Can Evolve Inside a Computer?
 
-@body
+@left
 
-In the digital evolution experiments of Lenski and colleagues, programs copied themselves. Inherited changes sometimes altered what their descendants could compute.
+![Richard Lenski, digital-evolution researcher](assets/set7_people_animals/richard_lenski.png)
 
-- An environment rewarded some computations, so lineages left different numbers of descendants.
-- The experiment shows evolution under those rules. It leaves open which properties you require for life.
+@right
 
-@citation
+Richard Lenski and colleagues studied programs that copied themselves. Inherited changes sometimes altered what descendants could compute.
 
-[Lenski et al., The evolutionary origin of complex features (2003)](https://pubmed.ncbi.nlm.nih.gov/12736677/)
-
-=== layout: one-panel
-
-# 12. What Was Alive at the Start?
-
-@body
-
-The frog cells used in the Xenobot study were alive before they were assembled.
-
-- Cell behavior helped the assembled structure move.
-- Calling the shape "designed" describes its organization. It does not imply that the team made living matter from scratch.
+An environment rewarded some computations, so lineages left different numbers of descendants. What does that establish about evolution? What does it leave open about life?
 
 @citation
 
-[Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
+[Photo: American Society for Microbiology, Richard Lenski](https://asm.org/biographies/richard-lenski-2020-dc-white-award)  |  [Lenski et al., The evolutionary origin of complex features (2003)](https://pubmed.ncbi.nlm.nih.gov/12736677/)
+
+=== layout: two-panels
+
+# 12. What was alive at the start?
+
+@left
+
+![Adult African clawed frog](assets/set7_photos/xenopus_adult.webp)
+
+@right
+
+This is the African clawed frog, *Xenopus laevis*. The cells in the Xenobot study came from frog embryos.
+
+The cells were already alive. What did the researchers design?
+
+@citation
+
+[Photo: Brian Gratwicke, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Xenopus_laevis_01.jpg)  |  [Kriegman et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
+
+=== layout: two-panels
+
+# 12. Living Cells, Designed Shape
+
+@left
+
+![Josh Bongard, Xenobot coauthor](assets/set7_people_animals/josh_bongard.jpg)
+
+@right
+
+Josh Bongard helped design the Xenobots. A computer suggested shapes. Living frog cells formed the structures.
+
+Which part of the project is a design decision, and which part comes from the properties of living cells?
+
+@citation
+
+[Photo: University of Vermont, Josh Bongard](https://www.uvm.edu/cems/cs/profile/josh-bongard)  |  [Kriegman et al., Reconfigurable living organisms (2020)](https://pubmed.ncbi.nlm.nih.gov/31932426/)
+
+=== layout: big-image
+
+@image
+
+![Results from 50 independent populations of digital organisms](assets/set7_animals_evidence/avida_outcomes.drawn.svg)
+
+@caption
+
+Topic 12: Same rewards, different results\
+In 23 of 50 populations, programs evolved a way to test whether two bits match.
+
+@citation
+
+[Lenski et al., The evolutionary origin of complex features (2003)](https://www.nature.com/articles/nature01568)
+
+@speaker-notes
+
+The software rewarded simpler operations too. The other 27 populations did not evolve this particular operation during the experiment. They could still evolve other abilities.
 
 === layout: subsection
 
@@ -187,6 +234,45 @@ The researchers showed that information could be copied between DNA and several 
 
 [Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
 
+=== layout: two-panels
+
+# 13. Same Sequence, Different Chemistry
+
+@left
+
+*What was tested*
+
+- Six synthetic genetic polymers
+- Information transfer between DNA and XNA
+- Selection of XNA molecules in vitro
+
+@right
+
+*What remains to show*
+
+- A self-maintaining cell
+- Independent reproduction
+- An ecosystem using the chemistry
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
+=== layout: big-image
+
+@image
+
+![DNA and XNA Evidence Scope](assets/set7_animals_evidence/xna_scope.drawn.svg)
+
+@caption
+
+Topic 13: Can the same message travel through XNA?\
+Trace the base sequence from DNA to XNA and back again.
+
+@citation
+
+[Pinheiro et al., Synthetic genetic polymers (2012)](https://pubmed.ncbi.nlm.nih.gov/22517858/)
+
 === layout: subsection
 
 # 14. Xenobiology and Non-Organic Life
@@ -262,20 +348,66 @@ Imagine a sample contains a molecule that living organisms make on Earth. A nonl
 
 [NASA, Ladder of Life Detection](https://science.nasa.gov/astrobiology/researchers/life-detection-resources/ladder-of-life-detection/)
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 14. Viking Found a Signal on Mars
+# 14. What did Viking find on Mars?
 
-@body
+@left
 
-The Viking landers detected unexpected chemical activity in Martian soil. NASA describes the observations as inconclusive evidence for life.
+You can see Viking 1's footpad beside the rocks. Viking's instruments also detected chemical activity in soil samples.
 
-- A detector can work and still leave two explanations for its signal.
-- Which result would distinguish a living source from a reaction in the soil?
+Living cells could produce a signal. So could a chemical reaction in the soil. What evidence would let you choose?
+
+@right
+
+![Lander footpad on the rocky Martian surface](assets/set7_case_photos/viking_footpad.webp)
 
 @citation
 
-[NASA, Viking project](https://science.nasa.gov/astrobiology/missions/viking-project/)
+[NASA/JPL, Viking 1 image](https://photojournal.jpl.nasa.gov/catalog/PIA10738)  |  [NASA, Viking project](https://science.nasa.gov/astrobiology/missions/viking-project/)
+
+=== layout: two-panels
+
+# 14. A Life-Detection Claim Needs a Ladder
+
+@left
+
+*One observation*
+
+An unexpected molecule appears in a sample.
+
+- It might have a nonliving source.
+- It might be contamination.
+
+@right
+
+*A stronger case*
+
+- Independent measurements agree
+- Nonliving explanations are tested
+- The result is reproduced
+
+@citation
+
+[NASA, Ladder of Life Detection](https://science.nasa.gov/astrobiology/researchers/life-detection-resources/ladder-of-life-detection/)
+
+=== layout: two-panels
+
+# 14. Can you find a shoreline on Titan?
+
+@left
+
+![Cassini radar image of lake shores on Titan](assets/set7_case_photos/titan_lakes.webp)
+
+@right
+
+Cassini sent a radar pulse toward Titan. The smooth lake surface reflects little of that signal back to the spacecraft. Trace the dark shoreline.
+
+What evidence would it take to go from a lake of hydrocarbons to a claim about life?
+
+@citation
+
+[NASA/JPL, Cassini radar, October 2006](https://science.nasa.gov/resource/lakes-and-more-lakes/)  |  [NASA, Titan facts](https://science.nasa.gov/saturn/moons/titan/facts/)
 
 === layout: subsection
 
@@ -295,33 +427,41 @@ The Viking landers detected unexpected chemical activity in Martian soil. NASA d
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 43.
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 15. Dolly and the Donor Nucleus
+# 15. Where did Dolly get her DNA?
 
-@body
+@left
 
-- Dolly was produced by moving a body-cell nucleus into an egg whose nucleus had been removed.
-- The egg supplied cytoplasm that helped the donor nucleus support embryonic development.
-- The egg contributes mitochondria. Development and environment still affect the animal.
+This is Dolly at the National Museum of Scotland. Her nuclear DNA came from an adult sheep's mammary cell.
 
-@citation
+Another sheep supplied the egg. Which DNA did Dolly inherit from her?
 
-[Wilmut et al., Viable offspring from adult cells (1997)](https://pubmed.ncbi.nlm.nih.gov/9039911/)  |  [Evans et al., Mitochondrial DNA in cloned sheep (1999)](https://pubmed.ncbi.nlm.nih.gov/10471506/)
+@right
 
-=== layout: one-panel
-
-# 15. A Clone of Your Dog
-
-@body
-
-- The clone starts with similar nuclear DNA. Its experiences and behavior can differ.
-- Evaluate animal welfare across egg donors, pregnancies, and offspring.
-- What would a company need to disclose before taking a customer's money?
+![Dolly on display at the National Museum of Scotland](assets/set7_photos/dolly_museum.webp)
 
 @citation
 
-[NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)
+[Photo: Sgerbic, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Dolly_the_Sheep_National_Museum_of_Scotland.jpg)  |  [Evans et al., mitochondrial DNA in cloned sheep](https://pubmed.ncbi.nlm.nih.gov/10471506/)
+
+=== layout: two-panels
+
+# 15. Would a clone behave like your dog?
+
+@left
+
+![Ian Wilmut with Dolly](assets/set7_people_animals/ian_wilmut_dolly.jpg)
+
+@right
+
+Ian Wilmut is pictured with Dolly, the sheep his team cloned. A clone starts with similar nuclear DNA. Its experiences and behavior can differ.
+
+What would a company need to disclose about egg donors, pregnancies, and offspring before taking a customer's money?
+
+@citation
+
+[Photo: Science Photo Library via ABPI Schools](https://www.abpischools.org.uk/topics/biotechnology/biotechnology-timeline/)  |  [NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)
 
 === layout: big-image
 
@@ -378,6 +518,67 @@ Imagine a report of two healthy births from ten pregnancies after 50 embryo tran
 
 - Per pregnancy, that is 2 out of 10. Per embryo transferred, it is 2 out of 50.
 - Both fractions are correct for this invented example. Which one would you want when assessing animal welfare?
+
+@citation
+
+[NHGRI, Cloning fact sheet](https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet)
+
+=== layout: big-image
+
+@image
+
+![Dolly study counts for embryos, recipient ewes and live lambs](assets/set7_animals_evidence/dolly_funnel.drawn.svg)
+
+@caption
+
+Topic 15: One lamb. Which denominator?\
+1 of 29 transferred embryos (3.4%) or 1 of 277 reconstructed embryos (0.36%).
+
+@citation
+
+[Wilmut et al., Viable offspring from adult cells (1997)](https://pubmed.ncbi.nlm.nih.gov/9039911/)
+
+@speaker-notes
+
+For the adult mammary-cell group, 29 embryos went to 13 recipients. The two percentages answer different questions. Neither is a general success rate for animal cloning.
+
+=== layout: two-panels
+
+# 15. Three Animals, Three Roles
+
+@left
+
+*Body-cell donor*
+
+Provides nuclear DNA.
+
+*Egg donor*
+
+Provides egg cytoplasm and mitochondrial DNA.
+
+@right
+
+*Surrogate*
+
+Carries the pregnancy.
+
+*Question*
+
+Which role is missing if an ad says only "your pet's DNA"?
+
+@citation
+
+[Evans et al., Mitochondrial DNA in cloned sheep (1999)](https://pubmed.ncbi.nlm.nih.gov/10471506/)
+
+=== layout: one-panel
+
+# 15. Similar Genome Does Not Mean Same Dog
+
+@body
+
+- A clone begins with nuclear DNA like the donor's.
+- The egg, pregnancy, development, training, and life history also matter.
+- "Bring back your dog" is a much bigger claim than "produce a genetically similar puppy."
 
 @citation
 
@@ -489,6 +690,63 @@ The ibex team began with cells preserved while the animal was alive. The cloned 
 
 [Folch et al., Cloning the Pyrenean ibex (2009)](https://pubmed.ncbi.nlm.nih.gov/19167744/)  |  [IUCN, Proxies of extinct species (2016)](https://iucn.org/resources/grey-literature/iucn-ssc-guiding-principles-creating-proxies-extinct-species-conservation)
 
+=== layout: big-image
+
+@image
+
+![Outcomes in the Pyrenean ibex cloning study](assets/set7_animals_evidence/ibex_endpoints.drawn.svg)
+
+@caption
+
+Topic 16: Did the Pyrenean ibex come back?\
+One kid was born alive. How far did the project get toward a breeding population?
+
+@citation
+
+[Folch et al., Cloning the Pyrenean ibex (2009)](https://pubmed.ncbi.nlm.nih.gov/19167744/)
+
+@speaker-notes
+
+A live birth matters to a developmental biologist. To sustain a population the animals would also have to reach reproductive age, produce offspring and have suitable habitat.
+
+=== layout: two-panels
+
+# 16. The Ibex Result Had a Narrow Endpoint
+
+@left
+
+*What happened*
+
+- One cloned Pyrenean ibex was born alive
+- It died soon after birth from respiratory problems
+
+@right
+
+*What did not follow*
+
+- A viable breeding population
+- Restored ecological interactions
+- A general method for any extinct animal
+
+@citation
+
+[Folch et al., Cloning the Pyrenean ibex (2009)](https://pubmed.ncbi.nlm.nih.gov/19167744/)
+
+=== layout: one-panel
+
+# 16. A Proxy Is a Conservation Choice
+
+@body
+
+IUCN describes a proxy as an organism created to resemble an extinct species for conservation purposes.
+
+- The word keeps an important distinction visible. A proxy has selected similarities. It is not the original species.
+- Any proposed release still needs a habitat, a conservation goal, and a welfare plan.
+
+@citation
+
+[IUCN, Proxies of extinct species (2016)](https://iucn.org/resources/grey-literature/iucn-ssc-guiding-principles-creating-proxies-extinct-species-conservation)
+
 === layout: subsection
 
 # 17. Animal Chimeras
@@ -583,6 +841,54 @@ After a successful donor marrow transplant, blood-forming cells from the donor c
 @citation
 
 [MedlinePlus, Bone marrow transplant](https://medlineplus.gov/ency/article/003009.htm)  |  [ISSCR, Guidelines for stem cell research and clinical translation](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
+
+=== layout: two-panels
+
+# 17. Chimera, Hybrid, and Mosaic Answer Different Questions
+
+@left
+
+*Chimera*
+
+Cell populations trace to different embryos.
+
+*Hybrid*
+
+Parents from different species or distinct genetic lines produce offspring. Their nuclear DNA comes together at fertilization.
+
+@right
+
+*Mosaic*
+
+One embryo develops a second cell population after a genetic change.
+
+*Check*
+
+Ask when the distinct DNA first came together.
+
+@citation
+
+[NHGRI, Mosaicism](https://www.genome.gov/genetics-glossary/Mosaicism)  |  [ISSCR, Guidelines](https://www.isscr.org/resources/guidelines-for-stem-cell-research)
+
+=== layout: one-panel
+
+# 17. Which DNA is in the tube?
+
+@body
+
+A patient received bone marrow from a donor. A lab can distinguish the two people at one DNA marker.
+
+| Sample in this example | Marker found |
+| --- | --- |
+| Patient's skin sample before transplant | A |
+| Donor's marrow before transplant | B |
+| Patient's blood cells after transplant | B |
+
+Did the patient's skin cells also switch to B? What tissue did the lab actually test?
+
+@citation
+
+Invented marker labels.  |  [MedlinePlus, bone marrow transplant](https://medlineplus.gov/ency/article/003009.htm)
 
 === layout: subsection
 
@@ -709,6 +1015,45 @@ Apply these to the chickapede. Which question about a whole animal's ability to 
 
 [NC3Rs, The three Rs](https://nc3rs.org.uk/sites/default/files/2022-02/The%20Three%20Rs%20-%20The%20International%20Encyclopedia%20of%20Primatology%20-%20Prescott%20-%20John%20Wiley%20%26%20Sons%2C%20Inc..pdf)
 
+=== layout: two-panels
+
+# 18. Faster Growth Is One Trait, Not a Welfare Verdict
+
+@left
+
+*Measure it*
+
+- Age at harvest size
+- Survival
+- Feeding and swimming behavior
+
+@right
+
+*Then decide*
+
+- Does the trait cause harm?
+- Who benefits?
+- What evidence changes the answer?
+
+@citation
+
+[FDA, AquAdvantage Salmon fact sheet](https://www.fda.gov/animal-veterinary/aquadvantage-salmon/aquadvantage-salmon-fact-sheet)  |  [NC3Rs, The three Rs](https://nc3rs.org.uk/sites/default/files/2022-02/The%20Three%20Rs%20-%20The%20International%20Encyclopedia%20of%20Primatology%20-%20Prescott%20-%20John%20Wiley%20%26%20Sons%2C%20Inc..pdf)
+
+=== layout: one-panel
+
+# 18. Turn the Chickapede Into a Testable Claim
+
+@body
+
+"Ten legs make more food per bird" is a yield claim. It does not answer whether an animal can use the legs, reach food, or avoid chronic injury.
+
+- Pick an observable welfare outcome before building the argument.
+- A cartoon is useful when it makes us name the evidence we would demand from a real proposal.
+
+@citation
+
+[NC3Rs, The three Rs](https://nc3rs.org.uk/sites/default/files/2022-02/The%20Three%20Rs%20-%20The%20International%20Encyclopedia%20of%20Primatology%20-%20Prescott%20-%20John%20Wiley%20%26%20Sons%2C%20Inc..pdf)
+
 === layout: subsection
 
 # 19. Consumer-Oriented or Trivial Transgenics
@@ -729,19 +1074,23 @@ Apply these to the chickapede. Which question about a whole animal's ability to 
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 52.
 
-=== layout: one-panel
+=== layout: two-panels
 
-# 19. GloFish and a Visible Trait
+# 19. The green part of the fish
 
-@body
+@left
 
-- Fluorescent proteins absorb light and emit light at a different wavelength.
-- GloFish use an engineered fluorescent trait for appearance.
-- The scientific mechanism can be similar to a lab marker even when the product has a different purpose.
+![Fluorescence overlaid on a photograph of a research zebrafish](assets/set7_photos/gfp_zebrafish.webp)
+
+@right
+
+Find the eye. Now follow the green signal toward the tail. The camera picked up light emitted by green fluorescent protein (GFP).
+
+A biologist can use that signal as a marker. Why would a pet shop want a fluorescent fish?
 
 @citation
 
-[Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)  |  [FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
+[Photo: JTAVANTI, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Fluorescent_Zebrafish_Juvenile.jpg)  |  [Chalfie et al., GFP as a marker (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)
 
 === layout: big-image
 
@@ -772,19 +1121,23 @@ GFP absorbs light and emits light at a longer wavelength.
 
 [FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 19. Alba and the Purpose of Bioart
 
-@body
+@left
 
-- Eduardo Kac presented a fluorescent rabbit named Alba as part of a work of art.
-- Compare the artist's purpose with the purpose of a fluorescent marker in research.
-- What responsibilities does an artist have when the work involves a living animal?
+![Eduardo Kac, GFP Bunny artist](assets/set7_people_animals/eduardo_kac.jpg)
+
+@right
+
+Eduardo Kac presented a fluorescent rabbit named Alba as art. Compare the artist's purpose with the purpose of a fluorescent marker in research.
+
+What responsibilities does an artist have when the work involves a living animal?
 
 @citation
 
-[Eduardo Kac, GFP Bunny (2000)](https://www.ekac.org/gfpbunny_essay.html)
+[Photo: SETI Institute, Eduardo Kac](https://www.seti.org/news/speculative-life-nominees/)  |  [Eduardo Kac, GFP Bunny (2000)](https://www.ekac.org/gfpbunny_essay.html)
 
 === layout: big-image
 
@@ -831,6 +1184,50 @@ FDA lists specific lines of fluorescent fish in its inventory of risk-reviewed a
 
 [FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas-animals-risk-reviewed-igas)
 
+=== layout: two-panels
+
+# 19. One Fluorescent Trait, Two Uses
+
+@left
+
+*Laboratory marker*
+
+Signal can show where a gene is active in a living animal.
+
+@right
+
+*Consumer fish*
+
+Signal changes visible appearance for a buyer.
+
+*Discussion*
+
+The molecule is similar. Do purpose and downstream effects change your ethical judgment?
+
+@citation
+
+[Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)  |  [FDA, Risk-reviewed alterations in animals](https://www.fda.gov/animal-veterinary/intentional-genomic-alterations-igas-animals/intentional-genomic-alterations-igas)
+
+=== layout: two-panels
+
+# 19. Why photograph an ordinary fish too?
+
+@left
+
+*Fish with the fluorescent protein*
+
+You see a bright green patch under the excitation light. Before you say where the protein is, check what else gives off light.
+
+@right
+
+*Fish without the fluorescent protein*
+
+Look at the same part of this fish under the same light and camera settings. If both fish glow there, what else could explain your picture?
+
+@citation
+
+Class comparison adapted from [Chalfie et al., GFP as a marker for gene expression (1994)](https://pubmed.ncbi.nlm.nih.gov/8303295/)
+
 === layout: subsection
 
 # 20. Kevin Esvelt and Lyme Disease
@@ -848,19 +1245,23 @@ FDA lists specific lines of fluorescent fish in its inventory of risk-reviewed a
 
 Discussion prompt source: BIOL 480, Fall 2026 Set #7, p. 54.
 
-=== layout: one-panel
+=== layout: two-panels
 
 # 20. Mice, Ticks, and People
 
-@body
+@left
 
-- White-footed mice can serve as reservoirs for bacteria that cause Lyme disease.
-- Ticks can acquire the bacteria when feeding and later transmit them to people.
-- The Mice Against Ticks proposal focused on interrupting transmission and sought community input before an outdoor trial.
+![Kevin Esvelt, Mice Against Ticks researcher](assets/set7_people_animals/kevin_esvelt.jpg)
+
+@right
+
+Kevin Esvelt discussed a proposal to interrupt Lyme transmission through white-footed mice. Ticks can acquire the bacteria from mice and later transmit them to people.
+
+The Mice Against Ticks proposal sought community input before an outdoor trial.
 
 @citation
 
-[CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+[Photo: Brookhaven National Laboratory, Kevin Esvelt](https://www.bnl.gov/newsroom/news.php?a=112257)  |  [CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
 
 === layout: one-panel
 
@@ -919,3 +1320,32 @@ Suppose 20 of 100 ticks at a site carried the bacteria last year. This year 15 o
 @citation
 
 [CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+=== layout: big-image
+
+@image
+
+![Local Lyme Outcome Ladder](assets/set7_animals_evidence/outcomes_ladder.drawn.svg)
+
+@caption
+
+Topic 20: What Outcome Answers the Question?\
+Tick infection, exposure, and disease cases answer different questions.
+
+@citation
+
+[CDC, How Lyme disease spreads](https://www.cdc.gov/lyme/causes/index.html)  |  [Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
+
+=== layout: one-panel
+
+# 20. A Community Can Change the Research Question
+
+@body
+
+The Mice Against Ticks team reported meetings with residents before a potential field study on Nantucket and Martha's Vineyard.
+
+- Community discussion can identify which outcomes and tradeoffs matter locally.
+- A public meeting documents input. It does not automatically establish agreement across everyone affected.
+
+@citation
+
+[Buchthal et al., Mice Against Ticks (2019)](https://pubmed.ncbi.nlm.nih.gov/30905296/)
